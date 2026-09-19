@@ -1,0 +1,155 @@
+{
+  "stage": "Stage 16 - Live API Integration",
+  "generated_at": "2026-09-16T20:44:38+00:00",
+  "results": [
+    {
+      "type": "supported",
+      "http_status": 200,
+      "latency_seconds": 24.634,
+      "question": "What is Computer Engineering?",
+      "rag_status": "answered",
+      "answer": "- [S1] The Department of Computer Engineering aims to educate Computer engineers who will contribute to institutions and organizations.\n- [S1] It focuses on teaching skills for technical management, analysis, synthesis, and modeling to solve engineering problems.\n- [S1] It also emphasizes the ability to conduct personal research, produce information from a universal perspective, transfer technology to industry, and share knowledge and experience with society and industry.",
+      "llm_called": true,
+      "source_count": 1,
+      "timing": {
+        "retrieval_seconds": 0.533,
+        "context_construction_seconds": 0.0,
+        "llm_generation_seconds": 23.97,
+        "initial_llm_generation_seconds": 23.97,
+        "retry_llm_generation_seconds": 0.0,
+        "llm_reported_total_duration_seconds": 23.916,
+        "total_seconds": 24.504
+      },
+      "sources": [
+        {
+          "source_id": "src_001",
+          "title": "About the Department | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "source_name": "OSTIM Technical University - Department of Computer Engineering (English)",
+          "source_type": "official_department_page",
+          "url": "https://mfcs.ostimteknik.edu.tr/about-the-department",
+          "category": "department_information",
+          "best_similarity_score": 0.5095690488815308,
+          "similarity_score": 0.5095690488815308,
+          "supporting_chunk_ids": [
+            "src_001_chunk_001"
+          ],
+          "evidence_labels": [
+            "S1"
+          ],
+          "section_headings": [
+            "Department of Computer Engineering (English)"
+          ],
+          "supporting_passages": [
+            "Source ID: src_001 About the Department | MF-Bilgisayar Mühendisliği (İngilizce) Barrier Free Department of Computer Engineering (English) The aim of the Department of Computer Engineering is to educate Computer engineers who will contribute to the institution and organization in which they are participating, enabling them to gain skills for technical management; teach them analysis, synthesis and modelling in order ato solve engineering problems, ensure ability which will lead to carry out personal research, produce information based on a universal perspective, be able to transfer this technology into industry and share knowledge and experience with society and industry and also be..."
+          ]
+        }
+      ],
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1"
+        ],
+        "normalized": false,
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1
+      },
+      "error": null
+    },
+    {
+      "type": "curriculum",
+      "http_status": 200,
+      "latency_seconds": 23.827,
+      "question": "What courses are taught in Computer Engineering?",
+      "rag_status": "answered",
+      "answer": "- [S1] CENG 213 Discrete Computing Structures introduces fundamental mathematical concepts.\n- [S2] SENG116 Object Oriented Programming covers fundamental concepts of object-oriented software development.\n- [S3] SENG 204 Software Engineering provides an introduction to systematic processes in software development.",
+      "llm_called": true,
+      "source_count": 1,
+      "timing": {
+        "retrieval_seconds": 0.046,
+        "context_construction_seconds": 0.0,
+        "llm_generation_seconds": 23.776,
+        "initial_llm_generation_seconds": 23.776,
+        "retry_llm_generation_seconds": 0.0,
+        "llm_reported_total_duration_seconds": 23.762,
+        "total_seconds": 23.822
+      },
+      "sources": [
+        {
+          "source_id": "src_004",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "source_name": "OSTIM Technical University - Department of Computer Engineering (English)",
+          "source_type": "course_descriptions",
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "category": "curriculum",
+          "best_similarity_score": 0.4731024503707886,
+          "similarity_score": 0.4731024503707886,
+          "supporting_chunk_ids": [
+            "src_004_chunk_004",
+            "src_004_chunk_003",
+            "src_004_chunk_007"
+          ],
+          "evidence_labels": [
+            "S1",
+            "S2",
+            "S3"
+          ],
+          "section_headings": [
+            "FOURTH SEMESTER",
+            "THIRD SEMESTER",
+            "SEVENTH SEMESTER"
+          ],
+          "supporting_passages": [
+            "during and after the Democratic Party. TUR 102 Turkish Language II This course will cover the topics of; Turkish suffixes; Turkish suffixes; Word types. Sentence knowledge; Reading and examining selected texts. THIRD SEMESTER MATH 202 Differential Equations First-order differential equations, linear equations, homogeneous and non-homogeneous, series solutions, the Laplace transform, systems of first-order linear equations, boundary value problems, Fourier series. CENG 213 Discrete Computing Structures This course introduces the fundamental mathematical concepts and techniques that form the foundation of computer science and software engineering.",
+            "workplace experience course will provide candidates with various skills that will enable them to become an experienced employee. The students' progress in understanding the future profession and gaining the competencies constituting the profession will be evaluated by the university instructors who are in close cooperation with them and the application trainers and mentors who have gained experience in their work. SENG116 Object Oriented Programming Object-Oriented Programming introduces the fundamental concepts and principles of object-oriented software development. This course covers key topics such as classes, objects, inheritance, encapsulation, polymorphism, and abstraction.",
+            "applications, software analytics, and emerging software quality assurance techniques. Students will analyze current research, study real-world case studies, and engage in hands-on projects to understand how these trends impact the design, development, deployment, and maintenance of modern software systems. The course aims to equip students with the awareness and adaptability needed to navigate the rapidly evolving landscape of computer engineering. ELEC-1 Technical Elective I ELEC-2 Technical Elective II SENG 204 Software Engineering This course provides an in-depth introduction to the systematic processes involved in the development of reliable, efficient, and maintainable software systems."
+          ]
+        }
+      ],
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "normalized": false,
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1
+      },
+      "error": null
+    },
+    {
+      "type": "out_of_scope",
+      "http_status": 200,
+      "latency_seconds": 0.055,
+      "question": "What is the best chocolate cake recipe?",
+      "rag_status": "out_of_scope",
+      "answer": "I don't have enough reliable information in the current knowledge base to answer that question.",
+      "llm_called": false,
+      "source_count": 0,
+      "timing": {
+        "retrieval_seconds": 0.032,
+        "context_construction_seconds": 0.0,
+        "llm_generation_seconds": 0.0,
+        "total_seconds": 0.032
+      },
+      "sources": [],
+      "citation_metadata": {},
+      "error": null
+    }
+  ]
+}

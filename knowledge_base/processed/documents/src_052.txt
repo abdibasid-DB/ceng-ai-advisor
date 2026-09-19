@@ -1,0 +1,49 @@
+Source ID: src_052
+
+DORA Accelerate State of DevOps 2024 Report
+
+GoogleResearch
+
+DORA Accelerate State of DevOps 2024 Report
+
+Derek DeBellis
+
+Kevin Storer
+
+Amanda Lewis
+
+Ben Good
+
+Daniella Villalba
+
+Eric Maxwell
+
+Kim Castillo
+
+Michelle Irvine
+
+Nathen Harvey
+
+DORA, Google (2024)
+
+DownloadGoogle Scholar
+Copy Bibtex
+
+Abstract
+
+DORA has been investigating the capabilities, practices, and measures of high-performing technology-driven teams and organizations for over a decade. This is our tenth DORA report. We have heard from more than 39,000 professionals working at organizations of every size and across many different industries globally.
+
+This report highlights the significant impact of AI on software development, explores platform engineering's promises and challenges, and emphasizes user-centricity and stable priorities for organizational success.
+
+Findings from our research can help inform your team's continuous improvement journey.
+
+Research Areas
+
+Machine intelligence
+
+Software engineering
+
+Meet the teams driving innovation
+
+Our teams advance the state of the art through research, systems engineering, and collaboration across Google.
+See our teams

@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "stage": "Stage 11 - Embedding Model Design and Testing",
+  "generation_timestamp": "2026-09-18T19:12:59+00:00",
+  "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "model_provider_repository": "Hugging Face / Sentence Transformers",
+  "model_type": "sentence-transformers dense embedding model",
+  "embedding_dimension": 384,
+  "total_chunks": 803,
+  "total_embeddings": 803,
+  "normalization_setting": true,
+  "similarity_metric_intended": "cosine",
+  "batch_size": 32,
+  "device_used": "cpu",
+  "generation_time_seconds": 170.63,
+  "input_files": {
+    "chunks": "knowledge_base/chunks/chunks.jsonl",
+    "chunking_manifest": "knowledge_base/chunks/chunking_manifest.json"
+  },
+  "output_files": {
+    "embeddings": "knowledge_base/embeddings/embeddings.npy",
+    "metadata": "knowledge_base/embeddings/embedding_metadata.jsonl",
+    "manifest": "knowledge_base/embeddings/embedding_manifest.json"
+  },
+  "chunking_manifest_total_chunks": 803,
+  "validation_results": {
+    "total_chunks": 803,
+    "total_embeddings": 803,
+    "embedding_dimension": 384,
+    "embedding_count_matches_chunks": true,
+    "nan_value_count": 0,
+    "infinite_value_count": 0,
+    "duplicate_chunk_id_count": 0,
+    "minimum_vector_norm": 0.9999998807907104,
+    "maximum_vector_norm": 1.0000001192092896
+  }
+}

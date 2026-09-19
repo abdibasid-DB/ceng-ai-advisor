@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-09-18T18:45:07+00:00",
+  "source_count": 5,
+  "results": [
+    {
+      "source_id": "src_010",
+      "original_url": "https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm",
+      "status": "manual_required",
+      "acquisition_method": "http_get",
+      "local_file_path": null,
+      "file_type": null,
+      "http_status": 403,
+      "content_length": null,
+      "acquisition_timestamp": "2026-09-18T18:45:00+00:00",
+      "error": "HTTPError 403: Forbidden",
+      "notes": "Automatic acquisition failed after retry handling; manual review required."
+    },
+    {
+      "source_id": "src_012",
+      "original_url": "https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm",
+      "status": "manual_required",
+      "acquisition_method": "http_get",
+      "local_file_path": null,
+      "file_type": null,
+      "http_status": 403,
+      "content_length": null,
+      "acquisition_timestamp": "2026-09-18T18:45:02+00:00",
+      "error": "HTTPError 403: Forbidden",
+      "notes": "Automatic acquisition failed after retry handling; manual review required."
+    },
+    {
+      "source_id": "src_013",
+      "original_url": "https://www.bls.gov/ooh/computer-and-information-technology/computer-and-information-research-scientists.htm",
+      "status": "manual_required",
+      "acquisition_method": "http_get",
+      "local_file_path": null,
+      "file_type": null,
+      "http_status": 403,
+      "content_length": null,
+      "acquisition_timestamp": "2026-09-18T18:45:04+00:00",
+      "error": "HTTPError 403: Forbidden",
+      "notes": "Automatic acquisition failed after retry handling; manual review required."
+    },
+    {
+      "source_id": "src_042",
+      "original_url": "https://ccecc.acm.org/guidance",
+      "status": "success",
+      "acquisition_method": "official_http_download",
+      "local_file_path": "knowledge_base/raw/html/src_042.html",
+      "file_type": "html",
+      "http_status": 200,
+      "content_length": 39647,
+      "acquisition_timestamp": "2026-09-18T18:45:05+00:00",
+      "error": null,
+      "notes": "Official source HTML saved and validated as substantive local content."
+    },
+    {
+      "source_id": "src_043",
+      "original_url": "https://ece.illinois.edu/academics/ugrad/subdisciplines",
+      "status": "success",
+      "acquisition_method": "official_http_download",
+      "local_file_path": "knowledge_base/raw/html/src_043.html",
+      "file_type": "html",
+      "http_status": 200,
+      "content_length": 56519,
+      "acquisition_timestamp": "2026-09-18T18:45:07+00:00",
+      "error": null,
+      "notes": "Official source HTML saved and validated as substantive local content."
+    }
+  ]
+}

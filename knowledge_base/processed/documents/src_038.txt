@@ -1,0 +1,242 @@
+Source ID: src_038
+
+Programming/software development — English
+
+Newsletter
+
+English
+
+Deutsch
+
+Español
+
+Français
+
+Italiano
+
+Nederlands
+
+Polski
+
+Português
+
+Français (Canada)
+
+العربية
+
+日本語
+
+Русский
+
+The global skills and competency framework for the digital world
+
+Programming/software developmentDeveloping software components to deliver value to stakeholders.https://sfia-online.org/en/sfia-9/skills/programming-software-developmenthttps://sfia-online.org/@@site-logo/sfialogo-outlines.svg
+
+Programming/software development
+PROG
+
+Developing software components to deliver value to stakeholders.
+
+Levels of responsibility for this skill
+
+Revision notes
+
+Updates for SFIA 9
+
+Theme(s) influencing the updates for this skill: Making SFIA easier to consume (enhance readability/guidance/descriptions), Support for cyber security working practices (both specialised and general).
+
+Readability improvements have been made to level 2.
+
+You can move to SFIA 9 when you are ready - SFIA 8 skill descriptions will still be available to use.
+
+Previous SFIA assessments or skills mapping are not impacted by this change.
+
+Guidance notes
+
+Activities may include, but are not limited to:
+
+identifying, creating and applying software development and security standards and processes
+
+planning and designing software components
+
+estimating time and effort required for software development
+
+constructing, amending, and verifying software components, ensuring security is embedded
+
+applying test-driven development and ensuring appropriate test coverage
+
+using peer review techniques such as pair programming
+
+documenting software components
+
+understanding and obtaining agreement to the value of the software components to be developed
+
+selecting appropriate development methods and lifecycles
+
+applying recovery techniques to ensure the software being developed is not lost
+
+implementing appropriate change control to software development practices
+
+resolving operational problems with software and fixing bugs
+
+Depending on requirements and the characteristics of the project or assigned work, software development methods and lifecycles can be predictive (plan-driven) approaches or adaptive (iterative/agile) approaches.
+
+Understanding the responsibility levels of this skill
+
+Where lower levels are not defined...
+
+Specific tasks and responsibilities are not defined because the skill requires a higher level of autonomy, influence, and complexity in decision-making than is typically expected at these levels. You can use the essence statements to understand the generic responsibilities associated with these levels.
+
+Where higher levels are not defined...
+
+Responsibilities and accountabilities are not defined because these higher levels involve strategic leadership and broader organisational influence that goes beyond the scope of this specific skill. See the essence statements.
+
+Developing skills and demonstrating responsibilities related to this skill
+
+The defined levels show the incremental progression in skills and responsibilities.
+
+Where lower levels are not defined...
+
+You can develop your knowledge and support others who do have responsibility in this area by:
+
+Learning key concepts and principles related to this skill and its impact on your role
+
+Performing related skills (see the related SFIA skills)
+
+Supporting others who are performing higher level tasks and activities
+
+Where higher levels are not defined...
+
+You can progress by developing related skills which are better suited to higher levels of organisational leadership.
+
+Click to learn why SFIA skills are not defined at all 7 levels.
+
+Show/hide extra descriptions and levels.
+
+Level 1
+
+Level 1 - Follow:
+Essence of the level: Performs routine tasks under close supervision, follows instructions, and requires guidance to complete their work. Learns and applies basic skills and knowledge.
+
+Programming/software development:
+Level 2
+
+Level 2 - Assist:
+Essence of the level: Provides assistance to others, works under routine supervision, and uses their discretion to address routine problems. Actively learns through training and on-the-job experiences.
+
+Designs, codes, verifies, tests, documents, amends and refactors simple programs/scripts.
+
+Applies agreed standards, tools and basic security practices to achieve a well-engineered result.
+
+Reviews own work.
+
+Programming/software development:
+Level 3
+
+Level 3 - Apply:
+Essence of the level: Performs varied tasks, sometimes complex and non-routine, using standard methods and procedures. Works under general direction, exercises discretion, and manages own work within deadlines. Proactively enhances skills and impact in the workplace.
+
+Designs, codes, verifies, tests, documents, amends and refactors moderately complex programs/scripts.
+
+Applies agreed standards, tools and security measures to achieve a well-engineered result.
+
+Monitors and reports on progress. Identifies issues related to software development activities. Proposes practical solutions to resolve issues.
+
+Collaborates in reviews of work with others as appropriate.
+
+Programming/software development:
+Level 4
+
+Level 4 - Enable:
+Essence of the level: Performs diverse complex activities, supports and guides others, delegates tasks when appropriate, works autonomously under general direction, and contributes expertise to deliver team objectives.
+
+Designs, codes, verifies, tests, documents, amends and refactors complex programs/scripts and integration software services.
+
+Contributes to the selection of the software development methods, tools, techniques, and security practices.
+
+Applies agreed standards, tools, and security measures to achieve well-engineered outcomes.
+
+Participates in reviews of own work and leads reviews of colleagues' work.
+
+Programming/software development:
+Level 5
+
+Level 5 - Ensure, advise:
+Essence of the level: Provides authoritative guidance in their field and works under broad direction. Accountable for delivering significant work outcomes, from analysis through execution to evaluation.
+
+Takes technical responsibility across all stages and iterations of software development.
+
+Plans and drives software construction activities. Adopts and adapts appropriate software development methods, tools and techniques.
+
+Measures and monitors applications of project/team standards for software construction, including software security.
+
+Contributes to the development of organisational policies, standards and guidelines for software development.
+
+Programming/software development:
+Level 6
+
+Level 6 - Initiate, influence:
+Essence of the level: Has significant organisational influence, makes high-level decisions, shapes policies, demonstrates leadership, promotes organisational collaboration, and accepts accountability in key areas.
+
+Develops organisational policies, standards and guidelines for software construction and refactoring.
+
+Plans and leads software construction activities for strategic, large and complex development projects.
+
+Adapts or develops new methods and organisational capabilities and drives adoption of, and adherence to, policies and standards.
+
+Level 7
+
+Level 7 - Set strategy, inspire, mobilise:
+Essence of the level: Operates at the highest organisational level, determines overall organisational vision and strategy, and assumes accountability for overall success.
+
+SFIA version
+
+Framework status:Current standard
+
+Links
+
+Find out about the next version of SFIA
+
+Skills directory A-Z
+
+Levels of responsibility
+
+SFIA skills profiles
+
+Bodies of knowledge
+
+Related SFIA skills
+
+Requirements definition and management
+
+Software configuration
+
+Software design
+
+Functional testing
+
+Configuration management
+
+Systems integration and build
+
+Systems and software lifecycle engineering
+
+Real-time/embedded systems development
+
+Application support
+
+Systems development management
+
+Animation development
+
+Short links to this skill
+
+Explanation
+
+SFIA 10
+
+SFIA 8
+
+SFIA 7
+
+SFIA 6

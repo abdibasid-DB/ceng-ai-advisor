@@ -1,0 +1,236 @@
+{
+  "schema_version": "1.0",
+  "description": "Planning file for future source collection. These entries describe desired source types and topics only. They do not contain invented source titles, URLs, or references.",
+  "candidate_schema": {
+    "candidate_id": "Unique planned candidate identifier, for example cand_001.",
+    "target_category": "Primary category key from knowledge_base/categories.json.",
+    "desired_source_type": "Kind of source to search for later.",
+    "desired_topic": "Topic or evidence need the source should cover.",
+    "preferred_recency": "Ideal publication or update recency for the source.",
+    "priority": "high, medium, or low.",
+    "status": "planned, searching, accepted, rejected, or replaced.",
+    "notes": "Planning notes. Do not place fake URLs or fake titles here."
+  },
+  "candidates": [
+    {
+      "candidate_id": "cand_001",
+      "target_category": "department_information",
+      "desired_source_type": "official_department_page",
+      "desired_topic": "Official description of the Computer Engineering department and discipline.",
+      "preferred_recency": "current official page",
+      "priority": "high",
+      "status": "planned",
+      "notes": "Prefer OSTIM Technical University first."
+    },
+    {
+      "candidate_id": "cand_002",
+      "target_category": "department_information",
+      "desired_source_type": "professional_organization",
+      "desired_topic": "Authoritative explanation of Computer Engineering and how it differs from related fields.",
+      "preferred_recency": "stable source acceptable if authoritative",
+      "priority": "high",
+      "status": "planned",
+      "notes": "Useful for Computer Engineering vs Computer Science vs Software Engineering questions."
+    },
+    {
+      "candidate_id": "cand_003",
+      "target_category": "curriculum",
+      "desired_source_type": "official_curriculum_page",
+      "desired_topic": "Current Computer Engineering curriculum, courses, and program structure.",
+      "preferred_recency": "current academic year",
+      "priority": "high",
+      "status": "planned",
+      "notes": "Official university curriculum source is essential."
+    },
+    {
+      "candidate_id": "cand_004",
+      "target_category": "curriculum",
+      "desired_source_type": "course_descriptions",
+      "desired_topic": "Course descriptions covering programming, mathematics, hardware, software, labs, and projects.",
+      "preferred_recency": "current academic year",
+      "priority": "high",
+      "status": "planned",
+      "notes": "Helps answer what students study and what projects they build."
+    },
+    {
+      "candidate_id": "cand_005",
+      "target_category": "programming",
+      "desired_source_type": "official_course_or_documentation",
+      "desired_topic": "Programming languages taught and beginner programming expectations.",
+      "preferred_recency": "3-4 years, or current official documentation",
+      "priority": "high",
+      "status": "planned",
+      "notes": "Should support questions about prior coding experience and first programming language."
+    },
+    {
+      "candidate_id": "cand_006",
+      "target_category": "mathematics",
+      "desired_source_type": "official_curriculum_or_course_descriptions",
+      "desired_topic": "Mathematics courses and level of math required in Computer Engineering.",
+      "preferred_recency": "current academic year",
+      "priority": "medium",
+      "status": "planned",
+      "notes": "Should be paired with a student-friendly preparation source later."
+    },
+    {
+      "candidate_id": "cand_007",
+      "target_category": "student_life",
+      "desired_source_type": "official_university_or_student_activity_source",
+      "desired_topic": "Student workload, teamwork, projects, clubs, competitions, and academic life.",
+      "preferred_recency": "3-4 years",
+      "priority": "medium",
+      "status": "planned",
+      "notes": "Local university evidence is helpful where available."
+    },
+    {
+      "candidate_id": "cand_008",
+      "target_category": "career_opportunities",
+      "desired_source_type": "professional_organization_or_career_resource",
+      "desired_topic": "Industries and roles available to Computer Engineering graduates.",
+      "preferred_recency": "1-3 years",
+      "priority": "high",
+      "status": "planned",
+      "notes": "Should cover software, hardware, data, cloud, AI, cybersecurity, and embedded paths."
+    },
+    {
+      "candidate_id": "cand_009",
+      "target_category": "employment",
+      "desired_source_type": "government_or_recognized_labor_data",
+      "desired_topic": "Employment outlook, job availability, and labor-market context.",
+      "preferred_recency": "1-3 years",
+      "priority": "high",
+      "status": "planned",
+      "notes": "Important for Turkey/world job-market questions."
+    },
+    {
+      "candidate_id": "cand_010",
+      "target_category": "employment",
+      "desired_source_type": "university_career_or_reliable_career_guidance",
+      "desired_topic": "CVs, portfolios, GPA concerns, projects, and first job preparation.",
+      "preferred_recency": "2-4 years",
+      "priority": "high",
+      "status": "planned",
+      "notes": "Should answer practical student concerns."
+    },
+    {
+      "candidate_id": "cand_011",
+      "target_category": "salaries",
+      "desired_source_type": "recognized_salary_or_labor_data",
+      "desired_topic": "Starting salaries, salary growth, and specialization salary differences.",
+      "preferred_recency": "1-2 years",
+      "priority": "high",
+      "status": "planned",
+      "notes": "Salary data must be recent and carefully qualified."
+    },
+    {
+      "candidate_id": "cand_012",
+      "target_category": "artificial_intelligence",
+      "desired_source_type": "major_industry_report_or_academic_publication",
+      "desired_topic": "AI career opportunities, AI engineering pathways, and AI's impact on software/computer engineers.",
+      "preferred_recency": "1-2 years",
+      "priority": "high",
+      "status": "planned",
+      "notes": "Needed for AI replacement and AI-era career choice questions."
+    },
+    {
+      "candidate_id": "cand_013",
+      "target_category": "cybersecurity",
+      "desired_source_type": "professional_organization_or_industry_report",
+      "desired_topic": "Cybersecurity career paths, skills, and demand.",
+      "preferred_recency": "1-3 years",
+      "priority": "high",
+      "status": "planned",
+      "notes": "Useful for cybersecurity specialization questions."
+    },
+    {
+      "candidate_id": "cand_014",
+      "target_category": "internships",
+      "desired_source_type": "university_career_or_reliable_career_guidance",
+      "desired_topic": "Importance of internships, finding a first internship, and handling no internship experience.",
+      "preferred_recency": "2-4 years",
+      "priority": "high",
+      "status": "planned",
+      "notes": "Should include actionable but source-grounded student guidance."
+    },
+    {
+      "candidate_id": "cand_015",
+      "target_category": "skills_and_technologies",
+      "desired_source_type": "official_technical_documentation_or_industry_report",
+      "desired_topic": "Git, GitHub, Linux, web/mobile/cloud basics, databases, and professional software practices.",
+      "preferred_recency": "1-3 years, or current official documentation",
+      "priority": "high",
+      "status": "planned",
+      "notes": "Should connect technologies to student readiness."
+    },
+    {
+      "candidate_id": "cand_016",
+      "target_category": "graduate_studies",
+      "desired_source_type": "university_graduate_program_or_academic_guidance",
+      "desired_topic": "Master's degree decisions, research paths, and AI work without a master's degree.",
+      "preferred_recency": "3-4 years or current official program page",
+      "priority": "medium",
+      "status": "planned",
+      "notes": "Should avoid presenting graduate school as mandatory for every career."
+    },
+    {
+      "candidate_id": "cand_017",
+      "target_category": "specializations",
+      "desired_source_type": "industry_report_or_professional_organization",
+      "desired_topic": "Comparing specializations, demand by field, and choosing a path.",
+      "preferred_recency": "1-3 years",
+      "priority": "high",
+      "status": "planned",
+      "notes": "May overlap with AI, cybersecurity, career opportunities, and future technologies."
+    },
+    {
+      "candidate_id": "cand_018",
+      "target_category": "future_technologies",
+      "desired_source_type": "major_industry_report_or_labor_forecast",
+      "desired_topic": "Future-proof careers, emerging technologies, market saturation, and next-10-year opportunity trends.",
+      "preferred_recency": "1-2 years",
+      "priority": "high",
+      "status": "planned",
+      "notes": "One of the most time-sensitive categories."
+    },
+    {
+      "candidate_id": "cand_019",
+      "target_category": "remote_work",
+      "desired_source_type": "recognized_remote_work_or_labor_report",
+      "desired_topic": "Remote work, working abroad, and digital nomad possibilities for computer engineers.",
+      "preferred_recency": "1-3 years",
+      "priority": "medium",
+      "status": "planned",
+      "notes": "Should separate general global trends from local claims."
+    },
+    {
+      "candidate_id": "cand_020",
+      "target_category": "entrepreneurship",
+      "desired_source_type": "university_entrepreneurship_or_startup_ecosystem_resource",
+      "desired_topic": "Starting a software company, freelancing, product building, and startup paths.",
+      "preferred_recency": "2-4 years",
+      "priority": "medium",
+      "status": "planned",
+      "notes": "Should be realistic and not overpromise success."
+    },
+    {
+      "candidate_id": "cand_021",
+      "target_category": "work_life_balance",
+      "desired_source_type": "career_guidance_or_workplace_report",
+      "desired_topic": "Stress, lifestyle expectations, workload, and work-life balance in computing careers.",
+      "preferred_recency": "2-4 years",
+      "priority": "medium",
+      "status": "planned",
+      "notes": "Should be balanced and avoid stereotypes."
+    },
+    {
+      "candidate_id": "cand_022",
+      "target_category": "common_misconceptions",
+      "desired_source_type": "professional_organization_or_university_outreach_resource",
+      "desired_topic": "Misconceptions about coding all day, math ability, women in engineering, starting late, and choosing Computer Engineering.",
+      "preferred_recency": "3-4 years, or stable authoritative source",
+      "priority": "medium",
+      "status": "planned",
+      "notes": "Should support reassuring answers grounded in evidence."
+    }
+  ]
+}

@@ -1,0 +1,414 @@
+Source ID: src_051
+Title: State of Developer Ecosystem Report 2024
+
+Software Developers Statistics 2024 - State of Developer Ecosystem Report | JetBrains: Developer Tools for Professionals and Teams
+
+English
+
+Welcome to the State of
+Developer Ecosystem Report 2024
+
+Every year, we release the State of Developer Ecosystem Report to capture a snapshot of the developer world. This time, we’re keeping it streamlined – just the highlights on one web page, bringing together the most compelling insights from our research. The full raw data is available to download if you’d like to dig deeper.
+
+Based on the responses from 23,262 developers worldwide, this report shines a bright light on the vast and diverse developer community. Our goal? To share what matters most to developers, from the programming languages, tools, and technologies they rely on to key issues shaping the industry.
+
+This year, we continue exploring developers’ views on AI across various areas. Spoiler alert: Fear of AI seems to be diminishing! We also take a closer look at career and employment trends, diversity in the field, and even some insights into the recent mass layoffs in the sphere.
+
+This is a public report; its contents may be used only for non-commercial purposes. Get the full details here.
+
+Share:
+
+Other Developer Ecosystem reports:
+
+2017
+
+2018
+
+2019
+
+2020
+
+2021
+
+2022
+
+2023
+
+2025
+
+Key Takeaways
+
+Which programming languages have you used in the last 12 months?
+
+Programming, scripting, and markup language usage
+
+JavaScript is the most used programming language
+
+61%of all developers worldwide use JavaScript to create web pages.
+
+Comfort zones
+
+Once developers choose an ecosystem, they typically don’t plan on adopting any other technology or toolset. As is often the case, people tend to pick what they like and stick with what they know.
+
+Programming, scripting, and markup languages
+
+Go and Rust: most adopted languages
+
+The languages most respondents plan to adopt are clearly Go and Rust. Both languages are built with performance and concurrency in mind and have compiler safety guarantees in place to help reduce bugs.
+
+However, while we see Rust’s popularity growing, the share of Go developers remains stable.
+
+Will Rust replace C++?
+
+The only language to set a new usage record among this year’s most popular ones is Rust. Aspiring to replace C++ with its strict safety and memory ownership mechanisms, Rust has seen its user base steadily grow over the last five years. According to our data, one in six Go users is considering adopting Rust.
+
+JavaScript vs. TypeScript
+
+JavaScript remains the most popular programming language in the world, boasting a massive developer community and a plethora of resources. However, TypeScript is rapidly gaining traction. Its adoption has surged from 12% in 2017 up to an impressive 35% in 2024.
+
+Should I learn TypeScript in 2025?
+
+As we approach 2025, learning TypeScript can provide significant advantages in terms of code reliability, maintainability, and modern development practices. Whether you're an experienced developer or just starting out, integrating TypeScript into your skill set could prove to be a valuable career investment.
+
+5 benefits of TypeScript over JavaScript:
+
+Early error detection during development
+
+Improved code quality and easier long-term maintenance
+
+Compile-time error catching
+
+More reliable and less error-prone refactoring
+
+Native support for ES6 modules for organized coding
+
+Will TypeScript replace JavaScript?
+
+The shortest answer is NO! JavaScript is one of the most popular and fundamental technologies in the software development industry and it’s safe to say that it isn’t going anywhere soon.
+
+While TypeScript is gaining popularity for its enhanced features and benefits, JavaScript’s widespread adoption, simplicity, and robust ecosystem ensure it remains a vital part of web development. Instead of replacing JavaScript, TypeScript is more likely to continue coexisting with it, offering developers a choice based on their project needs and preferences.
+
+JetBrains Language Promise Index
+
+In last year’s report, we outlined the growth prospects of languages like TypeScript and Rust and predicted the continued decline in JavaScript's share. Both forecasts proved accurate. Although the percentage of JavaScript users hasn’t changed, the share of those who consider it their primary language has decreased by 2 percentage points.
+
+This year, we decided to take things further and introduce a new index to the public – the JetBrains Language Promise Index. This index is based on a combination of audience growth over the past five years, the stability of this growth, the share of people expressing an intention to adopt the language, and the share of its users who want to adopt another language. The undisputed leaders of the JetBrains Language Promise Index are TypeScript, Rust, and Python.
+
+Python, which started out with a 32% share in our first survey seven years ago (nearly on par with PHP's 30%), is now used by more than half of the world’s programmers.
+
+Technologies
+
+Do you develop any applications? If so, where is the end-user application executed?
+
+Desktop vs. mobile development
+
+While some believe that mobile development is more prevalent than desktop development, our data shows that desktop application development surpasses mobile by 6 percentage points. This challenges the notion that mobile has overtaken desktop, proving that desktops remain essential for many developers.
+
+Platform usage: browser, desktop, and mobile
+
+According to the survey, 58% of developers run their code on browser platforms. Desktop is close behind at 53%, showing its continued importance, especially for tasks that require more power or specialized tools. Mobile, at 30%, is growing but hasn't yet caught up to desktop usage.
+
+On which platforms is your code executed?
+
+Which specific functionality does your code implement?
+
+Blockchain has been receiving a lot of attention lately, but nonetheless, our data reveals that the technology hasn’t actually gained much traction – it is targeted by only 3% of all developers.
+
+18%of developers are involved in building integrations with AI, indicating that AI is steadily infiltrating developed software.
+
+Code functionality by primary programming language
+
+Which programming languages are being used for artificial intelligence (AI) and machine learning (ML)?
+
+The most commonly used programming language for AI and ML is Python. Given its status as the second most popular programming language, Python boasts extensive libraries (such as TensorFlow, Keras, PyTorch, and scikit-learn) and strong community support.
+
+A substantial percentage of C++ developers reported that they are actively involved in AI and ML.
+
+Which kinds of software, products, or services do you develop?
+
+Software type by primary programming language
+
+Which kinds of websites do you develop?
+
+Complex testing scenarios have become more accessible than ever thanks to tools like Playwright, Selenium, JetBrains Aqua, and others.
+
+Which types of tests do you use in your projects?
+
+Which databases have you used in the last 12 months, if any?
+
+What are the most popular databases?
+
+Database popularity has remained fairly stable in recent years. Open-source databases – MySQL, PostgreSQL, MongoDB, SQLite, and Redis – dominate the storage options used by developers in our ecosystem.
+
+It seems that the main databases driving business are well-established, with very few organizations switching from the databases they’ve adopted.
+
+Which cloud service do you use the most?
+
+Do you use virtualization or containers during development?
+
+Developer Experience
+
+Does your company measure developer experience and developer productivity (either for individuals or teams)?
+
+Who is responsible for developer experience and developer productivity engineering in your company?
+
+What is developer experience and do companies care about it?
+
+Developer experience (DevEx or DX) refers to the overall satisfaction and feeling of productivity that developers experience when interacting with software development tools, processes, environments, and platforms.
+
+This topic has been gaining increasing attention lately, as developer experience is closely connected with the effectiveness of software development delivery. Companies are stepping up their efforts to assess DevEx and developer productivity, aiming to better understand the factors that influence them. Developers state that both technical and non-technical factors are almost equally critical in shaping their developer experience.
+
+Almost half of tech managers reported that their companies measure developer productivity, DevEx, or both, and 16% of companies have dedicated specialists responsible for developer productivity engineering and developer experience.
+
+Which of the following AI tools have you ever used or tried for coding and other development-related activities?
+
+How many developers use ChatGPT or Copilot while programming?
+
+69%of developers have tried, and 49% regularly use, ChatGPT for coding and other development-related activities. The second most popular AI tool for developers, GitHub Copilot, has been tried by 40% and is regularly used by 26% of our respondents.
+
+Many coders are clearly getting a feel for AI, but only time will tell whether this emerging tooling will be embraced in the long run.
+
+What is your company’s policy regarding the usage of third-party cloud-based AI tools (such as ChatGPT, GitHub Copilot, or Google Gemini) for coding and development-related tasks?
+
+How many companies ban or restrict AI?
+
+The majority of companies (almost 80%), either allow the use of third-party AI tools to varying extent or have no established policy. Only 11% of organizations completely prohibit the usage of third-party cloud-based AI tools.
+
+This suggests that the fear of AI is gradually fading.
+
+What benefits do you get from using AI tools for coding and other development-related activities?
+
+On average, how much time do you think you save per week by using AI tools for coding and other development-related activities?
+
+Do you use a Virtual Reality (VR) headset for coding, and if so, for how long have you been doing so?
+
+Coding with a VR headset
+
+8%of developers have experimented with coding using Virtual Reality (VR), and nearly 50% are eager to try it.
+
+The most common barriers preventing developers from adopting VR for coding include the high cost of the equipment and the uncertainty about its benefits. Additionally, 18% of developers experience physical discomfort or have health concerns related to prolonged VR use.
+
+Why do you use a VR headset for coding?
+
+Developers’ Life
+
+How much of your working time do you spend on activities directly involving code?
+
+How much of your working time do you spend on meetings, work-related chats, and emails?
+
+Salary
+
+Median salary by region in USD
+
+Salary ranges in USD
+
+Share of top-paid employees by programming language
+
+Note: Top-paid employees are those whose salaries are in the top quartile in their country or region.
+
+What are the highest-paying programming languages?
+
+The programming languages that command the highest paychecks are Scala, Go, Kotlin, C++, Rust, C, Shell, Java, and Python.
+
+However, salaries aren’t determined by language alone. Job roles matter! For example, Shell scripting falls under the top-paid category because it’s heavily used by DevOps engineers, who usually have higher salaries.
+
+For more detailed information about salaries in the tech industry, check out our Salary Calculator.
+
+Share of top-paid employees by gender
+
+Note: Top-paid employees are those whose salaries are in the top quartile in their country or region.
+
+Have you ever made a career transition to tech or IT?
+
+How many career switchers are in tech?
+
+A substantial 22% of software developers who took part in our survey previously worked in different industries, which demonstrates the industry’s accessibility and appeal to professionals from diverse backgrounds. For career switchers, it’s crucial to focus on building a strong foundation in essential programming languages and software development principles. Gaining practical experience through projects, internships, or coding boot camps can help facilitate this significant life change.
+
+Which of the following educational institutions or resources empowered you to take your first step toward becoming a developer?
+
+Software Developer Job Market Trends
+
+Because layoffs in the tech industry have been a hot topic over the past two years, we asked developers about their experiences. Half of the respondents’ companies did not have any job reductions, suggesting that the overall industry seems relatively stable at this point. However, 14% of businesses experienced mass layoffs, and one-third faced small-scale downsizing.
+
+Have there been any layoffs in companies you worked for in the past two years?
+
+Have you personally been affected by layoffs in the past two years?
+
+>50%of the respondents weren’t directly impacted by layoffs, though 30% felt the indirect effects. 16% lost their jobs. This paints a picture of a workforce where layoffs have had a notable, albeit uneven, impact over the past two years.
+
+How secure do you feel in your current job?
+
+Are developers concerned about losing their job?
+
+Given the current climate, most developers feel safe and secure in their jobs. Only 11% claim to be insecure to some extent.
+
+In your current job, how would you rate the amount of work you do compared to what is expected of you?
+
+How would you describe the current job market for software developers in your city or area, particularly in terms of how easy it is to get a job?
+
+While people with jobs feel secure, it seems the prospect of finding a new position and general mobility is a concern for many. This may hurt career progression in general.
+
+Khalid Abuhakmeh
+
+.NET Developer Advocate
+
+How would you describe the current job market for software developers in your city or area, particularly in terms of how easy it is to get a job?
+
+In which countries is it easiest and hardest for people to find jobs in tech?
+
+The top four countries with the easiest job markets are Germany, France, Japan, and Argentina, with combined positive scores of 60%, 58%, 54%, and 51%, respectively.
+
+Mainland China and India are where people find it hardest to find tech work. In Mainland China, 41% find it challenging to find a job, and 30% find it very challenging. In India, the proportion of respondents who experience difficulty finding employment is also very high at 56%.
+
+What are the most challenging parts of your job?
+
+Communication, communication, communication. Technical work is rarely seen as the difficult aspect of the job, but working with others can be challenging.
+
+Khalid Abuhakmeh
+
+.NET Developer Advocate
+
+While we pride ourselves on being problem solvers, understanding the problem is half the work. Communication remains key, as always.
+
+Marit van Dijk
+
+Java Developer Advocate
+
+Demographics
+
+How many full years of professional coding experience do you have?
+
+What is your gender?
+
+We have been tracking gender distribution among developers since 2021. The share of female developers has previously stayed at 5%, but this year, it went up by 1 percentage point! We hope this is a promising sign of a more inclusive future for women in tech.
+
+Khalid Abuhakmeh
+
+.NET Developer Advocate
+
+The software development industry has, unfortunately, failed thus far with gender diversity, excluding meaningful perspectives from contributing to the creative process. I hope for a future where we can do better.
+
+What is your gender?
+
+What percentage of the tech industry is female?
+
+On average, women make up 6% of the tech workforce, but this percentage varies in different regions.
+
+South Korea and Argentina are the leaders in terms of the proportion of women. This year, we asked a few more questions to better understand the problems women face in the industry, and these also vary significantly. In Argentina, not a single woman reported experiencing disrespectful or dismissive behavior or unwanted physical contact at work. Meanwhile, in China and India, where the proportion of women among developers is minimal, more than a quarter of women have reported encountering such issues over the past year.
+
+The data suggests a potential inverse correlation between the proportion of women in tech and the prevalence of negative experiences. Regions with higher female representation, like South Korea and Argentina, seem to have more positive work environments.
+
+What is your age range?
+
+Percentage of young developers in different regions (18–29 years old)
+
+The age distribution is similar in most countries, with young developers making up 40%–50% of the total.
+
+The regions with the youngest developers are India and the Middle East, Africa, and Central Asia.
+
+Japan has the highest number of older specialists and the lowest percentage of younger specialists. This is highly correlated with the aging population and how the industry is evolving in the region.
+
+In which country or region do you currently reside?
+
+Note: The report is weighted according to our estimations of the populations of professional developers in each country as shown in the Data Playground
+
+How many people work for your company or organization?
+
+What percentage of people in your company or organization write code (approximately)?
+
+Which kinds of development is your company or organization involved in?
+
+In-house development is still very popular, which leads me to believe that every company in the world is a tech company, regardless of whether it thinks of itself as one.
+
+Khalid Abuhakmeh
+
+.NET Developer Advocate
+
+Which of the following sectors is your company or organization primarily active in?
+
+26%of all developers claim to work for a startup, while 6% reported that they work for governmental organizations. It is interesting to note that some of the respondents claiming to be employed by startups work in companies with more than 1,000 employees. This leads us to question the precise definition of the term “startup” and the criteria used to gauge when a company evolves beyond that classification.
+
+Which of the following describe the company or organization you work for? Select all that apply.
+
+How many people work in your project team?
+
+What is the average size of a software development team?
+
+Half of all developers surveyed work in small teams of 2–7 people, while 88% reported working in teams of under 20.
+
+Game developers are a unique breed. While many work independently as hobbyists, they're also more likely than other developers to collaborate on large teams of over 40 people.
+
+Have you faced any of the following situations in the tech industry over the last year?
+
+Methodology
+
+We conducted the survey between May and June of 2024. The report is based on the input of 23,262 developers after data cleaning. We weighted the data according to where the responses came from. As a base, we took responses collected from external sources that are less biased toward JetBrains users. After that, we weighted the data based on geography, employment status, programming languages, and JetBrains product usage.
+
+Despite these measures, some bias is likely present, as JetBrains users might have been more willing, on average, to complete the survey.
+
+Click here for an in-depth look at our methodology
+
+Raw data
+
+Want to dig into the results yourself? Download the anonymized survey responses and see what you discover!
+
+This report covers only the main highlights, but the raw data contains all 600+ survey questions.
+
+Download the 2024 Survey Raw Data
+
+Our products are technology-agnostic and support a mix of languages and other tools that your team and project may be using now or might adopt tomorrow.
+
+VB.net
+
+Java
+
+Kotlin
+
+Android
+
+JavaScript
+
+TypeScript
+
+PHP
+
+Python
+
+HTML
+
+Scala
+
+VB.net
+
+Java
+
+Kotlin
+
+Android
+
+JavaScript
+
+TypeScript
+
+PHP
+
+Python
+
+HTML
+
+Scala
+
+Explore and find the right JetBrains tool for you!
+
+Join the JetBrains Tech Insights Lab
+
+Take part in surveys and UX studies to help make JetBrains products even better. For participating in our research, you’ll also get the chance to earn rewards.
+Sign up
+
+Thank you for your time!
+
+Once again, we’d like to thank everyone who took part in this survey. Your contribution helps shape our understanding of the developer community!
+
+If you have any questions or suggestions, please contact us at surveys@jetbrains.com.
+
+Check out other industry reports

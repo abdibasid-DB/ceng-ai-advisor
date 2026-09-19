@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "categories": [
+    {
+      "id": "department_information",
+      "name": "Department Information",
+      "description": "General explanations of Computer Engineering, what the discipline includes, how it differs from Computer Science and Software Engineering, and what students can expect from the department."
+    },
+    {
+      "id": "curriculum",
+      "name": "Curriculum",
+      "description": "Courses, academic plans, hardware/software balance, laboratory work, projects, course descriptions, and learning outcomes."
+    },
+    {
+      "id": "programming",
+      "name": "Programming",
+      "description": "Programming languages, coding expectations, prior experience, beginner pathways, and the role of software development in Computer Engineering."
+    },
+    {
+      "id": "mathematics",
+      "name": "Mathematics",
+      "description": "Mathematics requirements, difficulty concerns, mathematical thinking, and how students can improve their preparation."
+    },
+    {
+      "id": "student_life",
+      "name": "Student Life",
+      "description": "Study workload, teamwork, academic difficulty, university experience, clubs, hackathons, competitions, and daily student expectations."
+    },
+    {
+      "id": "career_opportunities",
+      "name": "Career Opportunities",
+      "description": "Career paths available to Computer Engineering graduates, including software, hardware, data, AI, cybersecurity, cloud, embedded systems, and related fields."
+    },
+    {
+      "id": "employment",
+      "name": "Employment",
+      "description": "Job market conditions, employability after graduation, job search preparation, CVs, portfolios, GPA concerns, and employment in Turkey or abroad."
+    },
+    {
+      "id": "salaries",
+      "name": "Salaries",
+      "description": "Starting salaries, salary growth, seniority, specialization salary differences, and salary-related career expectations."
+    },
+    {
+      "id": "artificial_intelligence",
+      "name": "Artificial Intelligence",
+      "description": "AI-related careers, AI engineering pathways, AI-era career concerns, and the effect of AI tools on software and computer engineering roles."
+    },
+    {
+      "id": "cybersecurity",
+      "name": "Cybersecurity",
+      "description": "Cybersecurity career paths, required skills, relationship to Computer Engineering, and specialization options."
+    },
+    {
+      "id": "internships",
+      "name": "Internships",
+      "description": "Internship importance, finding a first internship, lack of internship experience, and practical work preparation before graduation."
+    },
+    {
+      "id": "skills_and_technologies",
+      "name": "Skills and Technologies",
+      "description": "Technical and professional skills students should develop, including Git, GitHub, Linux, web, mobile, cloud, databases, software engineering practices, and communication."
+    },
+    {
+      "id": "graduate_studies",
+      "name": "Graduate Studies",
+      "description": "Master's degree decisions, research pathways, working before graduate school, and whether advanced degrees are required for specific fields."
+    },
+    {
+      "id": "specializations",
+      "name": "Specializations",
+      "description": "Choosing among Computer Engineering fields, discovering interests, comparing specializations, and identifying paths with strong demand."
+    },
+    {
+      "id": "future_technologies",
+      "name": "Future Technologies",
+      "description": "Emerging technologies, future-proof skills, long-term job opportunities, market saturation concerns, and technology trends."
+    },
+    {
+      "id": "remote_work",
+      "name": "Remote Work",
+      "description": "Remote work, working abroad, digital nomad possibilities, international employability, and location-independent Computer Engineering careers."
+    },
+    {
+      "id": "entrepreneurship",
+      "name": "Entrepreneurship",
+      "description": "Starting a software company, building products, startup paths, freelancing, and entrepreneurial opportunities for graduates."
+    },
+    {
+      "id": "work_life_balance",
+      "name": "Work-Life Balance",
+      "description": "Stress, workload, work-life balance, lifestyle expectations, and wellbeing in Computer Engineering careers."
+    },
+    {
+      "id": "common_misconceptions",
+      "name": "Common Misconceptions",
+      "description": "Frequent misunderstandings about Computer Engineering, including coding all day, math ability, gender stereotypes, starting late, and comparisons with other engineering fields."
+    }
+  ]
+}

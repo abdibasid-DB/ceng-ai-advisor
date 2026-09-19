@@ -1,0 +1,1450 @@
+{
+  "stage": "Stage 13 - Retrieval Pipeline and Retrieval Quality",
+  "generated_at": "2026-09-16T14:30:03+00:00",
+  "top_k": 5,
+  "test_case_count": 23,
+  "label_counts": {
+    "Highly relevant": 14,
+    "Relevant": 5,
+    "Irrelevant": 1,
+    "Correctly rejected": 3
+  },
+  "cases": [
+    {
+      "id": "department_001",
+      "type": "in_scope",
+      "category": "department_information",
+      "question": "What is Computer Engineering at OSTIM Technical University?",
+      "expected_categories": [
+        "department_information",
+        "curriculum"
+      ],
+      "label": "Highly relevant",
+      "evidence_sufficient": true,
+      "out_of_scope": false,
+      "top_similarity_score": 0.7289572954177856,
+      "results_above_threshold": 5,
+      "top_results": [
+        {
+          "rank": 1,
+          "chunk_id": "src_001_chunk_001",
+          "source_id": "src_001",
+          "category": "department_information",
+          "title": "About the Department | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "similarity_score": 0.7289572954177856,
+          "rerank_score": 0.8589572954177856
+        },
+        {
+          "rank": 2,
+          "chunk_id": "src_004_chunk_008",
+          "source_id": "src_004",
+          "category": "curriculum",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "similarity_score": 0.5108358263969421,
+          "rerank_score": 0.6408358263969421
+        },
+        {
+          "rank": 3,
+          "chunk_id": "src_006_chunk_001",
+          "source_id": "src_006",
+          "category": "department_information",
+          "title": "Academic Staff",
+          "similarity_score": 0.4930553436279297,
+          "rerank_score": 0.6230553436279297
+        },
+        {
+          "rank": 4,
+          "chunk_id": "src_004_chunk_007",
+          "source_id": "src_004",
+          "category": "curriculum",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "similarity_score": 0.48841196298599243,
+          "rerank_score": 0.6184119629859924
+        },
+        {
+          "rank": 5,
+          "chunk_id": "src_005_chunk_001",
+          "source_id": "src_005",
+          "category": "student_life",
+          "title": "Our Difference | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "similarity_score": 0.4876657724380493,
+          "rerank_score": 0.6176657724380493
+        }
+      ]
+    },
+    {
+      "id": "curriculum_001",
+      "type": "in_scope",
+      "category": "curriculum",
+      "question": "What courses are taught in Computer Engineering?",
+      "expected_categories": [
+        "curriculum",
+        "programming",
+        "mathematics"
+      ],
+      "label": "Highly relevant",
+      "evidence_sufficient": true,
+      "out_of_scope": false,
+      "top_similarity_score": 0.5630455017089844,
+      "results_above_threshold": 5,
+      "top_results": [
+        {
+          "rank": 1,
+          "chunk_id": "src_039_chunk_001",
+          "source_id": "src_039",
+          "category": "programming",
+          "title": "Which Introductory Course Should I Take?",
+          "similarity_score": 0.5630455017089844,
+          "rerank_score": 0.6630455017089844
+        },
+        {
+          "rank": 2,
+          "chunk_id": "src_004_chunk_004",
+          "source_id": "src_004",
+          "category": "curriculum",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "similarity_score": 0.4731024503707886,
+          "rerank_score": 0.6231024503707886
+        },
+        {
+          "rank": 3,
+          "chunk_id": "src_039_chunk_004",
+          "source_id": "src_039",
+          "category": "programming",
+          "title": "Which Introductory Course Should I Take?",
+          "similarity_score": 0.5214192271232605,
+          "rerank_score": 0.6214192271232605
+        },
+        {
+          "rank": 4,
+          "chunk_id": "src_004_chunk_003",
+          "source_id": "src_004",
+          "category": "curriculum",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "similarity_score": 0.4678647518157959,
+          "rerank_score": 0.6178647518157959
+        },
+        {
+          "rank": 5,
+          "chunk_id": "src_004_chunk_007",
+          "source_id": "src_004",
+          "category": "curriculum",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "similarity_score": 0.461620569229126,
+          "rerank_score": 0.611620569229126
+        }
+      ]
+    },
+    {
+      "id": "programming_001",
+      "type": "in_scope",
+      "category": "programming",
+      "question": "What programming languages should a Computer Engineering student learn?",
+      "expected_categories": [
+        "programming",
+        "curriculum",
+        "skills_and_technologies"
+      ],
+      "label": "Highly relevant",
+      "evidence_sufficient": true,
+      "out_of_scope": false,
+      "top_similarity_score": 0.4525519609451294,
+      "results_above_threshold": 5,
+      "top_results": [
+        {
+          "rank": 1,
+          "chunk_id": "src_004_chunk_003",
+          "source_id": "src_004",
+          "category": "curriculum",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "similarity_score": 0.4525519609451294,
+          "rerank_score": 0.5825519609451294
+        },
+        {
+          "rank": 2,
+          "chunk_id": "src_039_chunk_004",
+          "source_id": "src_039",
+          "category": "programming",
+          "title": "Which Introductory Course Should I Take?",
+          "similarity_score": 0.4932767152786255,
+          "rerank_score": 0.5732767152786254
+        },
+        {
+          "rank": 3,
+          "chunk_id": "src_004_chunk_001",
+          "source_id": "src_004",
+          "category": "curriculum",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "similarity_score": 0.4267997741699219,
+          "rerank_score": 0.5567997741699219
+        },
+        {
+          "rank": 4,
+          "chunk_id": "src_004_chunk_004",
+          "source_id": "src_004",
+          "category": "curriculum",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "similarity_score": 0.4196889400482178,
+          "rerank_score": 0.5496889400482178
+        },
+        {
+          "rank": 5,
+          "chunk_id": "src_051_chunk_003",
+          "source_id": "src_051",
+          "category": "skills_and_technologies",
+          "title": "State of Developer Ecosystem Report 2024",
+          "similarity_score": 0.4495711326599121,
+          "rerank_score": 0.5495711326599121
+        }
+      ]
+    },
+    {
+      "id": "programming_para_001",
+      "type": "paraphrase",
+      "category": "programming",
+      "question": "Which coding languages are most useful for someone studying Computer Engineering?",
+      "expected_categories": [
+        "programming",
+        "curriculum",
+        "skills_and_technologies"
+      ],
+      "label": "Highly relevant",
+      "evidence_sufficient": true,
+      "out_of_scope": false,
+      "top_similarity_score": 0.511564314365387,
+      "results_above_threshold": 5,
+      "top_results": [
+        {
+          "rank": 1,
+          "chunk_id": "src_051_chunk_003",
+          "source_id": "src_051",
+          "category": "skills_and_technologies",
+          "title": "State of Developer Ecosystem Report 2024",
+          "similarity_score": 0.511564314365387,
+          "rerank_score": 0.6115643143653869
+        },
+        {
+          "rank": 2,
+          "chunk_id": "src_004_chunk_003",
+          "source_id": "src_004",
+          "category": "curriculum",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "similarity_score": 0.4375550150871277,
+          "rerank_score": 0.5175550150871276
+        },
+        {
+          "rank": 3,
+          "chunk_id": "src_003_chunk_002",
+          "source_id": "src_003",
+          "category": "curriculum",
+          "title": "Curriculum | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "similarity_score": 0.43579423427581787,
+          "rerank_score": 0.5157942342758178
+        },
+        {
+          "rank": 4,
+          "chunk_id": "src_051_chunk_002",
+          "source_id": "src_051",
+          "category": "skills_and_technologies",
+          "title": "State of Developer Ecosystem Report 2024",
+          "similarity_score": 0.3943357467651367,
+          "rerank_score": 0.49433574676513675
+        },
+        {
+          "rank": 5,
+          "chunk_id": "src_045_chunk_087",
+          "source_id": "src_045",
+          "category": "skills_and_technologies",
+          "title": "Skills for the digital age",
+          "similarity_score": 0.4086783528327942,
+          "rerank_score": 0.4886783528327942
+        }
+      ]
+    },
+    {
+      "id": "math_001",
+      "type": "in_scope",
+      "category": "mathematics",
+      "question": "How important is mathematics in Computer Engineering courses?",
+      "expected_categories": [
+        "curriculum",
+        "mathematics"
+      ],
+      "label": "Highly relevant",
+      "evidence_sufficient": true,
+      "out_of_scope": false,
+      "top_similarity_score": 0.4661726951599121,
+      "results_above_threshold": 5,
+      "top_results": [
+        {
+          "rank": 1,
+          "chunk_id": "src_004_chunk_004",
+          "source_id": "src_004",
+          "category": "curriculum",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "similarity_score": 0.4661726951599121,
+          "rerank_score": 0.6161726951599121
+        },
+        {
+          "rank": 2,
+          "chunk_id": "src_039_chunk_004",
+          "source_id": "src_039",
+          "category": "programming",
+          "title": "Which Introductory Course Should I Take?",
+          "similarity_score": 0.47627580165863037,
+          "rerank_score": 0.5762758016586303
+        },
+        {
+          "rank": 3,
+          "chunk_id": "src_004_chunk_001",
+          "source_id": "src_004",
+          "category": "curriculum",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "similarity_score": 0.42149102687835693,
+          "rerank_score": 0.571491026878357
+        },
+        {
+          "rank": 4,
+          "chunk_id": "src_003_chunk_002",
+          "source_id": "src_003",
+          "category": "curriculum",
+          "title": "Curriculum | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "similarity_score": 0.3975166082382202,
+          "rerank_score": 0.5475166082382202
+        },
+        {
+          "rank": 5,
+          "chunk_id": "src_004_chunk_007",
+          "source_id": "src_004",
+          "category": "curriculum",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "similarity_score": 0.37141525745391846,
+          "rerank_score": 0.5214152574539185
+        }
+      ]
+    },
+    {
+      "id": "career_001",
+      "type": "in_scope",
+      "category": "career_opportunities",
+      "question": "What jobs can I do after graduating from Computer Engineering?",
+      "expected_categories": [
+        "career_opportunities",
+        "employment",
+        "skills_and_technologies",
+        "future_technologies"
+      ],
+      "label": "Highly relevant",
+      "evidence_sufficient": true,
+      "out_of_scope": false,
+      "top_similarity_score": 0.4934086203575134,
+      "results_above_threshold": 5,
+      "top_results": [
+        {
+          "rank": 1,
+          "chunk_id": "src_014_chunk_001",
+          "source_id": "src_014",
+          "category": "skills_and_technologies",
+          "title": "Computer Hardware Engineers: 17-2061.00",
+          "similarity_score": 0.4934086203575134,
+          "rerank_score": 0.5734086203575134
+        },
+        {
+          "rank": 2,
+          "chunk_id": "src_017_chunk_097",
+          "source_id": "src_017",
+          "category": "future_technologies",
+          "title": "The Future of Jobs Report 2025",
+          "similarity_score": 0.41968995332717896,
+          "rerank_score": 0.49968995332717897
+        },
+        {
+          "rank": 3,
+          "chunk_id": "src_017_chunk_022",
+          "source_id": "src_017",
+          "category": "future_technologies",
+          "title": "The Future of Jobs Report 2025",
+          "similarity_score": 0.41782301664352417,
+          "rerank_score": 0.4978230166435242
+        },
+        {
+          "rank": 4,
+          "chunk_id": "src_016_chunk_013",
+          "source_id": "src_016",
+          "category": "skills_and_technologies",
+          "title": "2024 State of Tech Talent Report",
+          "similarity_score": 0.4164954423904419,
+          "rerank_score": 0.4964954423904419
+        },
+        {
+          "rank": 5,
+          "chunk_id": "src_017_chunk_119",
+          "source_id": "src_017",
+          "category": "future_technologies",
+          "title": "The Future of Jobs Report 2025",
+          "similarity_score": 0.4116728901863098,
+          "rerank_score": 0.49167289018630983
+        }
+      ]
+    },
+    {
+      "id": "employment_001",
+      "type": "in_scope",
+      "category": "employment",
+      "question": "Is Computer Engineering still a good career choice?",
+      "expected_categories": [
+        "employment",
+        "career_opportunities",
+        "future_technologies"
+      ],
+      "label": "Highly relevant",
+      "evidence_sufficient": true,
+      "out_of_scope": false,
+      "top_similarity_score": 0.5033737421035767,
+      "results_above_threshold": 5,
+      "top_results": [
+        {
+          "rank": 1,
+          "chunk_id": "src_016_chunk_013",
+          "source_id": "src_016",
+          "category": "skills_and_technologies",
+          "title": "2024 State of Tech Talent Report",
+          "similarity_score": 0.5033737421035767,
+          "rerank_score": 0.5833737421035766
+        },
+        {
+          "rank": 2,
+          "chunk_id": "src_017_chunk_097",
+          "source_id": "src_017",
+          "category": "future_technologies",
+          "title": "The Future of Jobs Report 2025",
+          "similarity_score": 0.4815067648887634,
+          "rerank_score": 0.5615067648887634
+        },
+        {
+          "rank": 3,
+          "chunk_id": "src_017_chunk_099",
+          "source_id": "src_017",
+          "category": "future_technologies",
+          "title": "The Future of Jobs Report 2025",
+          "similarity_score": 0.4552077054977417,
+          "rerank_score": 0.5352077054977417
+        },
+        {
+          "rank": 4,
+          "chunk_id": "src_017_chunk_098",
+          "source_id": "src_017",
+          "category": "future_technologies",
+          "title": "The Future of Jobs Report 2025",
+          "similarity_score": 0.4405360221862793,
+          "rerank_score": 0.5205360221862793
+        },
+        {
+          "rank": 5,
+          "chunk_id": "src_045_chunk_087",
+          "source_id": "src_045",
+          "category": "skills_and_technologies",
+          "title": "Skills for the digital age",
+          "similarity_score": 0.39488136768341064,
+          "rerank_score": 0.47488136768341066
+        }
+      ]
+    },
+    {
+      "id": "ai_001",
+      "type": "in_scope",
+      "category": "artificial_intelligence",
+      "question": "Will artificial intelligence replace Computer Engineers?",
+      "expected_categories": [
+        "artificial_intelligence",
+        "future_technologies",
+        "skills_and_technologies"
+      ],
+      "label": "Highly relevant",
+      "evidence_sufficient": true,
+      "out_of_scope": false,
+      "top_similarity_score": 0.5765566825866699,
+      "results_above_threshold": 5,
+      "top_results": [
+        {
+          "rank": 1,
+          "chunk_id": "src_017_chunk_097",
+          "source_id": "src_017",
+          "category": "future_technologies",
+          "title": "The Future of Jobs Report 2025",
+          "similarity_score": 0.5765566825866699,
+          "rerank_score": 0.6765566825866699
+        },
+        {
+          "rank": 2,
+          "chunk_id": "src_017_chunk_102",
+          "source_id": "src_017",
+          "category": "future_technologies",
+          "title": "The Future of Jobs Report 2025",
+          "similarity_score": 0.5541332960128784,
+          "rerank_score": 0.6541332960128784
+        },
+        {
+          "rank": 3,
+          "chunk_id": "src_053_chunk_001",
+          "source_id": "src_053",
+          "category": "artificial_intelligence",
+          "title": "How Gen AI Affects the Value of Development Work",
+          "similarity_score": 0.5522944927215576,
+          "rerank_score": 0.6522944927215576
+        },
+        {
+          "rank": 4,
+          "chunk_id": "src_017_chunk_099",
+          "source_id": "src_017",
+          "category": "future_technologies",
+          "title": "The Future of Jobs Report 2025",
+          "similarity_score": 0.548869252204895,
+          "rerank_score": 0.648869252204895
+        },
+        {
+          "rank": 5,
+          "chunk_id": "src_045_chunk_094",
+          "source_id": "src_045",
+          "category": "skills_and_technologies",
+          "title": "Skills for the digital age",
+          "similarity_score": 0.5370330214500427,
+          "rerank_score": 0.6170330214500427
+        }
+      ]
+    },
+    {
+      "id": "cybersecurity_001",
+      "type": "in_scope",
+      "category": "cybersecurity",
+      "question": "Can Computer Engineers work in cybersecurity?",
+      "expected_categories": [
+        "cybersecurity",
+        "specializations",
+        "skills_and_technologies",
+        "future_technologies"
+      ],
+      "label": "Highly relevant",
+      "evidence_sufficient": true,
+      "out_of_scope": false,
+      "top_similarity_score": 0.4567452073097229,
+      "results_above_threshold": 5,
+      "top_results": [
+        {
+          "rank": 1,
+          "chunk_id": "src_017_chunk_119",
+          "source_id": "src_017",
+          "category": "future_technologies",
+          "title": "The Future of Jobs Report 2025",
+          "similarity_score": 0.4567452073097229,
+          "rerank_score": 0.5367452073097229
+        },
+        {
+          "rank": 2,
+          "chunk_id": "src_045_chunk_093",
+          "source_id": "src_045",
+          "category": "skills_and_technologies",
+          "title": "Skills for the digital age",
+          "similarity_score": 0.4521854519844055,
+          "rerank_score": 0.5321854519844055
+        },
+        {
+          "rank": 3,
+          "chunk_id": "src_014_chunk_001",
+          "source_id": "src_014",
+          "category": "skills_and_technologies",
+          "title": "Computer Hardware Engineers: 17-2061.00",
+          "similarity_score": 0.44335615634918213,
+          "rerank_score": 0.5233561563491821
+        },
+        {
+          "rank": 4,
+          "chunk_id": "src_017_chunk_098",
+          "source_id": "src_017",
+          "category": "future_technologies",
+          "title": "The Future of Jobs Report 2025",
+          "similarity_score": 0.4366253614425659,
+          "rerank_score": 0.5166253614425659
+        },
+        {
+          "rank": 5,
+          "chunk_id": "src_014_chunk_008",
+          "source_id": "src_014",
+          "category": "skills_and_technologies",
+          "title": "Computer Hardware Engineers: 17-2061.00",
+          "similarity_score": 0.4227863550186157,
+          "rerank_score": 0.5027863550186157
+        }
+      ]
+    },
+    {
+      "id": "cybersecurity_002",
+      "type": "in_scope",
+      "category": "cybersecurity",
+      "question": "What cybersecurity careers can a Computer Engineering graduate do?",
+      "expected_categories": [
+        "cybersecurity",
+        "specializations",
+        "skills_and_technologies",
+        "future_technologies"
+      ],
+      "label": "Highly relevant",
+      "evidence_sufficient": true,
+      "out_of_scope": false,
+      "top_similarity_score": 0.47101926803588867,
+      "results_above_threshold": 5,
+      "top_results": [
+        {
+          "rank": 1,
+          "chunk_id": "src_017_chunk_043",
+          "source_id": "src_017",
+          "category": "future_technologies",
+          "title": "The Future of Jobs Report 2025",
+          "similarity_score": 0.47101926803588867,
+          "rerank_score": 0.5510192680358886
+        },
+        {
+          "rank": 2,
+          "chunk_id": "src_017_chunk_005",
+          "source_id": "src_017",
+          "category": "future_technologies",
+          "title": "The Future of Jobs Report 2025",
+          "similarity_score": 0.4424436688423157,
+          "rerank_score": 0.5224436688423156
+        },
+        {
+          "rank": 3,
+          "chunk_id": "src_017_chunk_023",
+          "source_id": "src_017",
+          "category": "future_technologies",
+          "title": "The Future of Jobs Report 2025",
+          "similarity_score": 0.4407942295074463,
+          "rerank_score": 0.5207942295074462
+        },
+        {
+          "rank": 4,
+          "chunk_id": "src_045_chunk_192",
+          "source_id": "src_045",
+          "category": "skills_and_technologies",
+          "title": "Skills for the digital age",
+          "similarity_score": 0.42209547758102417,
+          "rerank_score": 0.5020954775810241
+        },
+        {
+          "rank": 5,
+          "chunk_id": "src_014_chunk_001",
+          "source_id": "src_014",
+          "category": "skills_and_technologies",
+          "title": "Computer Hardware Engineers: 17-2061.00",
+          "similarity_score": 0.411467969417572,
+          "rerank_score": 0.49146796941757204
+        }
+      ]
+    },
+    {
+      "id": "internships_001",
+      "type": "in_scope",
+      "category": "internships",
+      "question": "How important are internships for Computer Engineering students?",
+      "expected_categories": [
+        "internships",
+        "curriculum",
+        "employment"
+      ],
+      "label": "Highly relevant",
+      "evidence_sufficient": true,
+      "out_of_scope": false,
+      "top_similarity_score": 0.524385392665863,
+      "results_above_threshold": 5,
+      "top_results": [
+        {
+          "rank": 1,
+          "chunk_id": "src_018_chunk_001",
+          "source_id": "src_018",
+          "category": "internships",
+          "title": "Students Recognize the Importance of Gaining Internship Experience",
+          "similarity_score": 0.524385392665863,
+          "rerank_score": 0.604385392665863
+        },
+        {
+          "rank": 2,
+          "chunk_id": "src_004_chunk_008",
+          "source_id": "src_004",
+          "category": "curriculum",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "similarity_score": 0.45075690746307373,
+          "rerank_score": 0.5307569074630737
+        },
+        {
+          "rank": 3,
+          "chunk_id": "src_004_chunk_007",
+          "source_id": "src_004",
+          "category": "curriculum",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "similarity_score": 0.3950306177139282,
+          "rerank_score": 0.47503061771392824
+        },
+        {
+          "rank": 4,
+          "chunk_id": "src_037_chunk_001",
+          "source_id": "src_037",
+          "category": "internships",
+          "title": "Intern Hiring Is Stable for 2024",
+          "similarity_score": 0.39353108406066895,
+          "rerank_score": 0.47353108406066896
+        },
+        {
+          "rank": 5,
+          "chunk_id": "src_036_chunk_005",
+          "source_id": "src_036",
+          "category": "employment",
+          "title": "Resumes",
+          "similarity_score": 0.37562596797943115,
+          "rerank_score": 0.45562596797943117
+        }
+      ]
+    },
+    {
+      "id": "skills_001",
+      "type": "in_scope",
+      "category": "skills_and_technologies",
+      "question": "What technical skills should Computer Engineering students develop?",
+      "expected_categories": [
+        "skills_and_technologies",
+        "programming",
+        "curriculum"
+      ],
+      "label": "Highly relevant",
+      "evidence_sufficient": true,
+      "out_of_scope": false,
+      "top_similarity_score": 0.500313401222229,
+      "results_above_threshold": 5,
+      "top_results": [
+        {
+          "rank": 1,
+          "chunk_id": "src_045_chunk_087",
+          "source_id": "src_045",
+          "category": "skills_and_technologies",
+          "title": "Skills for the digital age",
+          "similarity_score": 0.500313401222229,
+          "rerank_score": 0.500313401222229
+        },
+        {
+          "rank": 2,
+          "chunk_id": "src_041_chunk_001",
+          "source_id": "src_041",
+          "category": "common_misconceptions",
+          "title": "Engagement Practices Framework: Address Misconceptions About the Field of CS",
+          "similarity_score": 0.49869048595428467,
+          "rerank_score": 0.49869048595428467
+        },
+        {
+          "rank": 3,
+          "chunk_id": "src_004_chunk_007",
+          "source_id": "src_004",
+          "category": "curriculum",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "similarity_score": 0.49745792150497437,
+          "rerank_score": 0.49745792150497437
+        },
+        {
+          "rank": 4,
+          "chunk_id": "src_016_chunk_013",
+          "source_id": "src_016",
+          "category": "skills_and_technologies",
+          "title": "2024 State of Tech Talent Report",
+          "similarity_score": 0.4954238533973694,
+          "rerank_score": 0.4954238533973694
+        },
+        {
+          "rank": 5,
+          "chunk_id": "src_017_chunk_045",
+          "source_id": "src_017",
+          "category": "future_technologies",
+          "title": "The Future of Jobs Report 2025",
+          "similarity_score": 0.46284598112106323,
+          "rerank_score": 0.46284598112106323
+        }
+      ]
+    },
+    {
+      "id": "graduate_001",
+      "type": "in_scope",
+      "category": "graduate_studies",
+      "question": "Is a master's degree necessary after Computer Engineering?",
+      "expected_categories": [
+        "graduate_studies",
+        "career_opportunities",
+        "employment"
+      ],
+      "label": "Relevant",
+      "evidence_sufficient": true,
+      "out_of_scope": false,
+      "top_similarity_score": 0.30889052152633667,
+      "results_above_threshold": 5,
+      "top_results": [
+        {
+          "rank": 1,
+          "chunk_id": "src_044_chunk_002",
+          "source_id": "src_044",
+          "category": "graduate_studies",
+          "title": "Prepare for graduate & professional school",
+          "similarity_score": 0.30889052152633667,
+          "rerank_score": 0.3888905215263367
+        },
+        {
+          "rank": 2,
+          "chunk_id": "src_001_chunk_001",
+          "source_id": "src_001",
+          "category": "department_information",
+          "title": "About the Department | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "similarity_score": 0.3875269889831543,
+          "rerank_score": 0.3875269889831543
+        },
+        {
+          "rank": 3,
+          "chunk_id": "src_014_chunk_001",
+          "source_id": "src_014",
+          "category": "skills_and_technologies",
+          "title": "Computer Hardware Engineers: 17-2061.00",
+          "similarity_score": 0.38408195972442627,
+          "rerank_score": 0.38408195972442627
+        },
+        {
+          "rank": 4,
+          "chunk_id": "src_031_chunk_098",
+          "source_id": "src_031",
+          "category": "skills_and_technologies",
+          "title": "A Skills-First Labour Market",
+          "similarity_score": 0.3736525774002075,
+          "rerank_score": 0.3736525774002075
+        },
+        {
+          "rank": 5,
+          "chunk_id": "src_016_chunk_013",
+          "source_id": "src_016",
+          "category": "skills_and_technologies",
+          "title": "2024 State of Tech Talent Report",
+          "similarity_score": 0.35777270793914795,
+          "rerank_score": 0.35777270793914795
+        }
+      ]
+    },
+    {
+      "id": "specializations_001",
+      "type": "in_scope",
+      "category": "specializations",
+      "question": "Which specialization can I choose in Computer Engineering?",
+      "expected_categories": [
+        "specializations",
+        "skills_and_technologies",
+        "curriculum"
+      ],
+      "label": "Highly relevant",
+      "evidence_sufficient": true,
+      "out_of_scope": false,
+      "top_similarity_score": 0.49542200565338135,
+      "results_above_threshold": 5,
+      "top_results": [
+        {
+          "rank": 1,
+          "chunk_id": "src_014_chunk_001",
+          "source_id": "src_014",
+          "category": "skills_and_technologies",
+          "title": "Computer Hardware Engineers: 17-2061.00",
+          "similarity_score": 0.49542200565338135,
+          "rerank_score": 0.49542200565338135
+        },
+        {
+          "rank": 2,
+          "chunk_id": "src_016_chunk_013",
+          "source_id": "src_016",
+          "category": "skills_and_technologies",
+          "title": "2024 State of Tech Talent Report",
+          "similarity_score": 0.48066842555999756,
+          "rerank_score": 0.48066842555999756
+        },
+        {
+          "rank": 3,
+          "chunk_id": "src_003_chunk_002",
+          "source_id": "src_003",
+          "category": "curriculum",
+          "title": "Curriculum | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "similarity_score": 0.46406543254852295,
+          "rerank_score": 0.46406543254852295
+        },
+        {
+          "rank": 4,
+          "chunk_id": "src_045_chunk_121",
+          "source_id": "src_045",
+          "category": "skills_and_technologies",
+          "title": "Skills for the digital age",
+          "similarity_score": 0.4600541591644287,
+          "rerank_score": 0.4600541591644287
+        },
+        {
+          "rank": 5,
+          "chunk_id": "src_045_chunk_087",
+          "source_id": "src_045",
+          "category": "skills_and_technologies",
+          "title": "Skills for the digital age",
+          "similarity_score": 0.4553478956222534,
+          "rerank_score": 0.4553478956222534
+        }
+      ]
+    },
+    {
+      "id": "future_001",
+      "type": "in_scope",
+      "category": "future_technologies",
+      "question": "Which future technologies are important for Computer Engineering students?",
+      "expected_categories": [
+        "future_technologies",
+        "skills_and_technologies",
+        "artificial_intelligence"
+      ],
+      "label": "Highly relevant",
+      "evidence_sufficient": true,
+      "out_of_scope": false,
+      "top_similarity_score": 0.5030397772789001,
+      "results_above_threshold": 5,
+      "top_results": [
+        {
+          "rank": 1,
+          "chunk_id": "src_017_chunk_005",
+          "source_id": "src_017",
+          "category": "future_technologies",
+          "title": "The Future of Jobs Report 2025",
+          "similarity_score": 0.5030397772789001,
+          "rerank_score": 0.5030397772789001
+        },
+        {
+          "rank": 2,
+          "chunk_id": "src_017_chunk_097",
+          "source_id": "src_017",
+          "category": "future_technologies",
+          "title": "The Future of Jobs Report 2025",
+          "similarity_score": 0.48017460107803345,
+          "rerank_score": 0.48017460107803345
+        },
+        {
+          "rank": 3,
+          "chunk_id": "src_016_chunk_013",
+          "source_id": "src_016",
+          "category": "skills_and_technologies",
+          "title": "2024 State of Tech Talent Report",
+          "similarity_score": 0.4789009690284729,
+          "rerank_score": 0.4789009690284729
+        },
+        {
+          "rank": 4,
+          "chunk_id": "src_017_chunk_046",
+          "source_id": "src_017",
+          "category": "future_technologies",
+          "title": "The Future of Jobs Report 2025",
+          "similarity_score": 0.47881144285202026,
+          "rerank_score": 0.47881144285202026
+        },
+        {
+          "rank": 5,
+          "chunk_id": "src_001_chunk_001",
+          "source_id": "src_001",
+          "category": "department_information",
+          "title": "About the Department | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "similarity_score": 0.4747087359428406,
+          "rerank_score": 0.4747087359428406
+        }
+      ]
+    },
+    {
+      "id": "remote_001",
+      "type": "in_scope",
+      "category": "remote_work",
+      "question": "Can Computer Engineers work remotely?",
+      "expected_categories": [
+        "remote_work",
+        "employment"
+      ],
+      "label": "Relevant",
+      "evidence_sufficient": true,
+      "out_of_scope": false,
+      "top_similarity_score": 0.4047946333885193,
+      "results_above_threshold": 5,
+      "top_results": [
+        {
+          "rank": 1,
+          "chunk_id": "src_014_chunk_001",
+          "source_id": "src_014",
+          "category": "skills_and_technologies",
+          "title": "Computer Hardware Engineers: 17-2061.00",
+          "similarity_score": 0.4047946333885193,
+          "rerank_score": 0.4047946333885193
+        },
+        {
+          "rank": 2,
+          "chunk_id": "src_049_chunk_002",
+          "source_id": "src_049",
+          "category": "remote_work",
+          "title": "Work | 2024 Stack Overflow Developer Survey",
+          "similarity_score": 0.30095160007476807,
+          "rerank_score": 0.3809516000747681
+        },
+        {
+          "rank": 3,
+          "chunk_id": "src_045_chunk_093",
+          "source_id": "src_045",
+          "category": "skills_and_technologies",
+          "title": "Skills for the digital age",
+          "similarity_score": 0.3805476427078247,
+          "rerank_score": 0.3805476427078247
+        },
+        {
+          "rank": 4,
+          "chunk_id": "src_017_chunk_098",
+          "source_id": "src_017",
+          "category": "future_technologies",
+          "title": "The Future of Jobs Report 2025",
+          "similarity_score": 0.37243950366973877,
+          "rerank_score": 0.37243950366973877
+        },
+        {
+          "rank": 5,
+          "chunk_id": "src_014_chunk_008",
+          "source_id": "src_014",
+          "category": "skills_and_technologies",
+          "title": "Computer Hardware Engineers: 17-2061.00",
+          "similarity_score": 0.36878013610839844,
+          "rerank_score": 0.36878013610839844
+        }
+      ]
+    },
+    {
+      "id": "entrepreneurship_001",
+      "type": "in_scope",
+      "category": "entrepreneurship",
+      "question": "Can a Computer Engineering graduate start a technology company?",
+      "expected_categories": [
+        "entrepreneurship",
+        "career_opportunities"
+      ],
+      "label": "Irrelevant",
+      "evidence_sufficient": true,
+      "out_of_scope": false,
+      "top_similarity_score": 0.4203997850418091,
+      "results_above_threshold": 5,
+      "top_results": [
+        {
+          "rank": 1,
+          "chunk_id": "src_016_chunk_013",
+          "source_id": "src_016",
+          "category": "skills_and_technologies",
+          "title": "2024 State of Tech Talent Report",
+          "similarity_score": 0.4203997850418091,
+          "rerank_score": 0.500399785041809
+        },
+        {
+          "rank": 2,
+          "chunk_id": "src_031_chunk_095",
+          "source_id": "src_031",
+          "category": "skills_and_technologies",
+          "title": "A Skills-First Labour Market",
+          "similarity_score": 0.4161478281021118,
+          "rerank_score": 0.49614782810211183
+        },
+        {
+          "rank": 3,
+          "chunk_id": "src_031_chunk_088",
+          "source_id": "src_031",
+          "category": "skills_and_technologies",
+          "title": "A Skills-First Labour Market",
+          "similarity_score": 0.40842700004577637,
+          "rerank_score": 0.4884270000457764
+        },
+        {
+          "rank": 4,
+          "chunk_id": "src_014_chunk_001",
+          "source_id": "src_014",
+          "category": "skills_and_technologies",
+          "title": "Computer Hardware Engineers: 17-2061.00",
+          "similarity_score": 0.4077552556991577,
+          "rerank_score": 0.48775525569915773
+        },
+        {
+          "rank": 5,
+          "chunk_id": "src_017_chunk_097",
+          "source_id": "src_017",
+          "category": "future_technologies",
+          "title": "The Future of Jobs Report 2025",
+          "similarity_score": 0.40337324142456055,
+          "rerank_score": 0.48337324142456056
+        }
+      ]
+    },
+    {
+      "id": "work_life_001",
+      "type": "in_scope",
+      "category": "work_life_balance",
+      "question": "What is work-life balance like for software and Computer Engineering careers?",
+      "expected_categories": [
+        "work_life_balance",
+        "employment"
+      ],
+      "label": "Relevant",
+      "evidence_sufficient": true,
+      "out_of_scope": false,
+      "top_similarity_score": 0.515925943851471,
+      "results_above_threshold": 5,
+      "top_results": [
+        {
+          "rank": 1,
+          "chunk_id": "src_014_chunk_007",
+          "source_id": "src_014",
+          "category": "skills_and_technologies",
+          "title": "Computer Hardware Engineers: 17-2061.00",
+          "similarity_score": 0.515925943851471,
+          "rerank_score": 0.5959259438514709
+        },
+        {
+          "rank": 2,
+          "chunk_id": "src_016_chunk_013",
+          "source_id": "src_016",
+          "category": "skills_and_technologies",
+          "title": "2024 State of Tech Talent Report",
+          "similarity_score": 0.476898729801178,
+          "rerank_score": 0.5568987298011779
+        },
+        {
+          "rank": 3,
+          "chunk_id": "src_051_chunk_001",
+          "source_id": "src_051",
+          "category": "skills_and_technologies",
+          "title": "State of Developer Ecosystem Report 2024",
+          "similarity_score": 0.4424945116043091,
+          "rerank_score": 0.5424945116043091
+        },
+        {
+          "rank": 4,
+          "chunk_id": "src_050_chunk_001",
+          "source_id": "src_050",
+          "category": "work_life_balance",
+          "title": "Professional Developers | 2024 Stack Overflow Developer Survey",
+          "similarity_score": 0.4361388683319092,
+          "rerank_score": 0.5361388683319092
+        },
+        {
+          "rank": 5,
+          "chunk_id": "src_051_chunk_005",
+          "source_id": "src_051",
+          "category": "skills_and_technologies",
+          "title": "State of Developer Ecosystem Report 2024",
+          "similarity_score": 0.41112804412841797,
+          "rerank_score": 0.511128044128418
+        }
+      ]
+    },
+    {
+      "id": "misconceptions_001",
+      "type": "in_scope",
+      "category": "common_misconceptions",
+      "question": "Do I need to be a math genius to study Computer Engineering?",
+      "expected_categories": [
+        "common_misconceptions",
+        "curriculum",
+        "mathematics"
+      ],
+      "label": "Relevant",
+      "evidence_sufficient": true,
+      "out_of_scope": false,
+      "top_similarity_score": 0.3900355100631714,
+      "results_above_threshold": 5,
+      "top_results": [
+        {
+          "rank": 1,
+          "chunk_id": "src_004_chunk_004",
+          "source_id": "src_004",
+          "category": "curriculum",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "similarity_score": 0.3900355100631714,
+          "rerank_score": 0.3900355100631714
+        },
+        {
+          "rank": 2,
+          "chunk_id": "src_004_chunk_001",
+          "source_id": "src_004",
+          "category": "curriculum",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "similarity_score": 0.3852158188819885,
+          "rerank_score": 0.3852158188819885
+        },
+        {
+          "rank": 3,
+          "chunk_id": "src_003_chunk_002",
+          "source_id": "src_003",
+          "category": "curriculum",
+          "title": "Curriculum | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "similarity_score": 0.37686657905578613,
+          "rerank_score": 0.37686657905578613
+        },
+        {
+          "rank": 4,
+          "chunk_id": "src_039_chunk_004",
+          "source_id": "src_039",
+          "category": "programming",
+          "title": "Which Introductory Course Should I Take?",
+          "similarity_score": 0.3382583260536194,
+          "rerank_score": 0.3382583260536194
+        },
+        {
+          "rank": 5,
+          "chunk_id": "src_045_chunk_087",
+          "source_id": "src_045",
+          "category": "skills_and_technologies",
+          "title": "Skills for the digital age",
+          "similarity_score": 0.3327024579048157,
+          "rerank_score": 0.3327024579048157
+        }
+      ]
+    },
+    {
+      "id": "multi_001",
+      "type": "multi_topic",
+      "category": "multi_topic",
+      "question": "Should I focus more on GPA, projects, or internships when preparing for a software career?",
+      "expected_categories": [
+        "internships",
+        "employment",
+        "skills_and_technologies",
+        "career_opportunities"
+      ],
+      "label": "Relevant",
+      "evidence_sufficient": true,
+      "out_of_scope": false,
+      "top_similarity_score": 0.4138059616088867,
+      "results_above_threshold": 5,
+      "top_results": [
+        {
+          "rank": 1,
+          "chunk_id": "src_036_chunk_005",
+          "source_id": "src_036",
+          "category": "employment",
+          "title": "Resumes",
+          "similarity_score": 0.4138059616088867,
+          "rerank_score": 0.49380596160888673
+        },
+        {
+          "rank": 2,
+          "chunk_id": "src_044_chunk_002",
+          "source_id": "src_044",
+          "category": "graduate_studies",
+          "title": "Prepare for graduate & professional school",
+          "similarity_score": 0.4607676863670349,
+          "rerank_score": 0.4607676863670349
+        },
+        {
+          "rank": 3,
+          "chunk_id": "src_039_chunk_005",
+          "source_id": "src_039",
+          "category": "programming",
+          "title": "Which Introductory Course Should I Take?",
+          "similarity_score": 0.37170982360839844,
+          "rerank_score": 0.45170982360839845
+        },
+        {
+          "rank": 4,
+          "chunk_id": "src_039_chunk_002",
+          "source_id": "src_039",
+          "category": "programming",
+          "title": "Which Introductory Course Should I Take?",
+          "similarity_score": 0.3437719941139221,
+          "rerank_score": 0.42377199411392213
+        },
+        {
+          "rank": 5,
+          "chunk_id": "src_039_chunk_001",
+          "source_id": "src_039",
+          "category": "programming",
+          "title": "Which Introductory Course Should I Take?",
+          "similarity_score": 0.3433370590209961,
+          "rerank_score": 0.4233370590209961
+        }
+      ]
+    },
+    {
+      "id": "unrelated_001",
+      "type": "out_of_scope",
+      "category": "out_of_scope",
+      "question": "What is the best recipe for chocolate cake?",
+      "expected_categories": [],
+      "label": "Correctly rejected",
+      "evidence_sufficient": false,
+      "out_of_scope": true,
+      "top_similarity_score": 0.20974069833755493,
+      "results_above_threshold": 0,
+      "top_results": [
+        {
+          "rank": 1,
+          "chunk_id": "src_048_chunk_002",
+          "source_id": "src_048",
+          "category": "common_misconceptions",
+          "title": "Employed information and communications technology (ICT) specialists by sex",
+          "similarity_score": 0.20974069833755493,
+          "rerank_score": 0.20974069833755493
+        },
+        {
+          "rank": 2,
+          "chunk_id": "src_045_chunk_267",
+          "source_id": "src_045",
+          "category": "skills_and_technologies",
+          "title": "Skills for the digital age",
+          "similarity_score": 0.17603176832199097,
+          "rerank_score": 0.17603176832199097
+        },
+        {
+          "rank": 3,
+          "chunk_id": "src_045_chunk_269",
+          "source_id": "src_045",
+          "category": "skills_and_technologies",
+          "title": "Skills for the digital age",
+          "similarity_score": 0.166484534740448,
+          "rerank_score": 0.166484534740448
+        },
+        {
+          "rank": 4,
+          "chunk_id": "src_045_chunk_274",
+          "source_id": "src_045",
+          "category": "skills_and_technologies",
+          "title": "Skills for the digital age",
+          "similarity_score": 0.16492539644241333,
+          "rerank_score": 0.16492539644241333
+        },
+        {
+          "rank": 5,
+          "chunk_id": "src_045_chunk_284",
+          "source_id": "src_045",
+          "category": "skills_and_technologies",
+          "title": "Skills for the digital age",
+          "similarity_score": 0.1517801284790039,
+          "rerank_score": 0.1517801284790039
+        }
+      ]
+    },
+    {
+      "id": "unrelated_002",
+      "type": "out_of_scope",
+      "category": "out_of_scope",
+      "question": "Who won the football match yesterday?",
+      "expected_categories": [],
+      "label": "Correctly rejected",
+      "evidence_sufficient": false,
+      "out_of_scope": true,
+      "top_similarity_score": 0.25365960597991943,
+      "results_above_threshold": 0,
+      "top_results": [
+        {
+          "rank": 1,
+          "chunk_id": "src_045_chunk_287",
+          "source_id": "src_045",
+          "category": "skills_and_technologies",
+          "title": "Skills for the digital age",
+          "similarity_score": 0.25365960597991943,
+          "rerank_score": 0.25365960597991943
+        },
+        {
+          "rank": 2,
+          "chunk_id": "src_045_chunk_283",
+          "source_id": "src_045",
+          "category": "skills_and_technologies",
+          "title": "Skills for the digital age",
+          "similarity_score": 0.1986544132232666,
+          "rerank_score": 0.1986544132232666
+        },
+        {
+          "rank": 3,
+          "chunk_id": "src_045_chunk_289",
+          "source_id": "src_045",
+          "category": "skills_and_technologies",
+          "title": "Skills for the digital age",
+          "similarity_score": 0.19668841361999512,
+          "rerank_score": 0.19668841361999512
+        },
+        {
+          "rank": 4,
+          "chunk_id": "src_045_chunk_295",
+          "source_id": "src_045",
+          "category": "skills_and_technologies",
+          "title": "Skills for the digital age",
+          "similarity_score": 0.19548678398132324,
+          "rerank_score": 0.19548678398132324
+        },
+        {
+          "rank": 5,
+          "chunk_id": "src_045_chunk_259",
+          "source_id": "src_045",
+          "category": "skills_and_technologies",
+          "title": "Skills for the digital age",
+          "similarity_score": 0.18957626819610596,
+          "rerank_score": 0.18957626819610596
+        }
+      ]
+    },
+    {
+      "id": "unrelated_003",
+      "type": "out_of_scope",
+      "category": "out_of_scope",
+      "question": "How do I repair a washing machine?",
+      "expected_categories": [],
+      "label": "Correctly rejected",
+      "evidence_sufficient": false,
+      "out_of_scope": true,
+      "top_similarity_score": 0.10495448112487793,
+      "results_above_threshold": 0,
+      "top_results": [
+        {
+          "rank": 1,
+          "chunk_id": "src_017_chunk_174",
+          "source_id": "src_017",
+          "category": "future_technologies",
+          "title": "The Future of Jobs Report 2025",
+          "similarity_score": 0.10495448112487793,
+          "rerank_score": 0.10495448112487793
+        },
+        {
+          "rank": 2,
+          "chunk_id": "src_051_chunk_008",
+          "source_id": "src_051",
+          "category": "skills_and_technologies",
+          "title": "State of Developer Ecosystem Report 2024",
+          "similarity_score": 0.10381108522415161,
+          "rerank_score": 0.10381108522415161
+        },
+        {
+          "rank": 3,
+          "chunk_id": "src_017_chunk_173",
+          "source_id": "src_017",
+          "category": "future_technologies",
+          "title": "The Future of Jobs Report 2025",
+          "similarity_score": 0.10096138715744019,
+          "rerank_score": 0.10096138715744019
+        },
+        {
+          "rank": 4,
+          "chunk_id": "src_017_chunk_048",
+          "source_id": "src_017",
+          "category": "future_technologies",
+          "title": "The Future of Jobs Report 2025",
+          "similarity_score": 0.09951871633529663,
+          "rerank_score": 0.09951871633529663
+        },
+        {
+          "rank": 5,
+          "chunk_id": "src_026_chunk_007",
+          "source_id": "src_026",
+          "category": "employment",
+          "title": "Turkey - Information and Communication Technology",
+          "similarity_score": 0.08883386850357056,
+          "rerank_score": 0.08883386850357056
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,266 @@
+Source ID: src_004
+
+Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)
+
+Barrier Free
+
+FIRST SEMESTER
+
+MATH 101 Engineering Mathematics I
+Functions, limits, continuity, differentiation and applications,
+integration, fundamental theorem of calculus, techniques and
+applications of integration, improper integrals and series, Taylor
+polynomials, power series, basic transcendental functions.
+
+PHYS 101 Engineering Physics I
+Vectors, translational kinematics and dynamics work and energy, system
+of particles, rotational kinematics and dynamics, equilibrium,
+gravitation oscillations, waves, fluid mechanics, statistical mechanics,
+heat and thermodynamics. (One laboratory session every week.)
+
+CENG109 Programming and Computation I
+This course provides an introduction to mathematical modeling of
+computational problems. It covers the common algorithms, algorithmic
+paradigms, and data structures used to solve these problems. The course
+emphasizes the relationship between algorithms and programming and
+introduces basic performance measures and analysis techniques for these
+problems. Typed functions, conditional expressions, and repetition
+(recursion) are introduced alongside as the basic methods to operate on
+this structured data.
+
+ENG 101 Academic English I
+This course is an integrated skills-based course in the four language
+skills (reading, writing, listening and speaking) along with the grammar
+and vocabulary knowledge. With its engaging content and systematic
+skills work, students will be able to express their ideas and develop
+their communicative abilities. It also includes a strong focus on study
+skills encouraging independent learning.
+
+IUL 151 Introduction to University Life
+It is a program that aims to adapt to the new environment of the
+university in a pleasant way, consisting of various activities that will
+be offered in addition to academic studies, in order for our students
+to adapt to university life. These activities will support students as
+an active individual with programs that can help students to achieve
+their goals and contribute to their personal development. The program,
+which is focused on socio-cultural activities, aims to create an
+awareness about intellectual curiosity, cultural sensitivity and taking
+responsibility, by giving you a weekly break, and to improve students’
+vision as well as to educate them as a beneficial individual to the
+society and the world.
+
+EPR 121 Fundamentals of Entrepreneurship
+To become entrepreneurs and project makers, our students receive
+information such as establishment and management of business, business
+accounting, business start-up and incentives, R & D and design
+center activities, project supports. By collaborating with students who
+choose similar projects from other programs, they start their experience
+of forming a team and doing business together.
+
+TUR 101 Turkish Language I
+Definition of the language, social value of language; Characteristics of
+written and oral expression; Sentence knowledge; Speech disorders;
+written and oral expression; Effective reading and text analysis will be
+included during this course.
+
+MATH 201 Linear Algebra with Engineering Applications
+Matrix algebra, determinants, Gaussian elimination, Cramer's rule,
+inverses, systems of linear equations, rank, eigenvalues and
+eigenvectors, introduction to linear programming.
+
+ATA 101 Principles of Atatürk and History of Turkish Revolution I
+This course will cover the topics of; The concept of revolution, the
+factors leading to Turkish revolution and the reasons of the collapse of
+the Ottoman Empire, Ottoman Empire in the rescue efforts, flows of
+ideas, World War I, Mustafa Kemal Anatolian transition and congresses,
+Turkey opening of the Grand National Assembly, the liberation war,
+foreign policy, Mudanya cease-fire, the Lausanne conference.
+
+SECOND SEMESTER
+
+MATH 102 Engineering Mathematics II
+Vector calculus, functions of several variables, directional
+derivatives, gradient, Lagrange multipliers, multiple integrals and
+applications, change of variables, coordinate systems, line integrals,
+Green's theorem and its applications.
+
+PHYS 102 Engineering Physics II
+Charge and matter, the electric field, Gauss law, electrostatic
+potential, capacitance, current and resistance, electromotive force and
+circuits, the magnetic field, Ampére's law, Faraday's law, inductance,
+magnetic properties of matter. (One laboratory session every week.)
+
+CENG110 Programming and Computation II
+This course builds upon the foundations of computational problem modeling introduced in Programming and Computation 1. It explores advanced data structures and algorithmic techniques to efficiently manage and manipulate complex data. Key topics include recursive and iterative algorithm design, sorting and searching algorithms, and an introduction to algorithm complexity and optimization. The course also covers fundamental concepts in modular programming, higher-order functions, and introduces abstract data types. Emphasis is placed on the development of robust, maintainable code through the application of structured programming principles and formal reasoning about program correctness and efficiency.
+
+ENG 102 Academic English II
+This course is an integrated skills-based course in the four language
+skills (reading, writing, listening and speaking) along with the grammar
+and vocabulary knowledge. With its engaging content and systematic
+skills work, students will be able to express their ideas and develop
+their communicative abilities. It also includes a strong focus on study
+skills encouraging independent learning.
+
+WED 128 Workplace Education
+Students make observations and experience in the workplace one day of
+the week. Students take this course in business environment. The tasks
+and activities of the vocational candidates in this course should
+provide them with the opportunity to observe experienced superiors and
+workplace trainers on-the-job, to work individually with the students,
+even if they are limited. The activities carried out in the workplace
+experience course will provide candidates with various skills that will
+enable them to become an experienced employee. The students' progress in
+understanding the future profession and gaining the competencies
+constituting the profession will be evaluated by the university
+instructors who are in close cooperation with them and the application
+trainers and mentors who have gained experience in their work.
+
+SENG116 Object Oriented Programming
+Object-Oriented Programming introduces the fundamental concepts and principles of object-oriented software development. This course covers key topics such as classes, objects, inheritance, encapsulation, polymorphism, and abstraction. Students learn how to design and implement modular, reusable, and maintainable code using an object-oriented approach. The course emphasizes problem-solving through real-world examples, focusing on designing class hierarchies, applying design patterns, and using modern development tools. Through hands-on projects and coding exercises, students gain practical experience in building robust software systems using object-oriented languages such as Python or C++.
+
+IUL 152 Building the Future
+This course, which is the continuation of the Introduction to University
+Life Course, aims to raise the competence of the student in subjects
+such as career planning, interview processes, image and communication
+and to train highly qualified people. In addition, the course aims to
+provide students with the knowledge of science, technique, industry,
+creative thinking, developments in R & D, rational and critical
+thinking, reasoning ability, generating rational solutions and
+evaluating future business opportunities through various seminars. This
+course contributes to the development of the basic sciences in our
+country, giving students the opportunity to make applied research,
+renewing the existing knowledge and ideas, enriching and educating the
+elements needed by the profession branches.
+
+EPR 122 Entrepreneurship Project
+To become entrepreneurs and project makers, our students receive information such as establishment and management of business, business accounting, business start-up and incentives, R & D and design center activities, project supports. By collaborating with students who choose similar projects from other programs, they start their experience of forming a team and doing business together.
+
+ATA 102 Principles of Atatürk and History of Turkish Revolution II
+This course will cover the topics of; The proclamation of the Republic
+and political, social and cultural reforms. Problems that Lausanne Peace
+Treaty could not be solved and their conclusions movements against the
+new order. Multiparty life experiments and results. Turkish Foreign
+Policy in the period of Atatürk. İnönü Period and the Second World War
+years, Turkey's transition to multi-party life during and after the
+Democratic Party.
+
+TUR 102 Turkish Language II
+This course will cover the topics of; Turkish suffixes; Turkish
+suffixes; Word types. Sentence knowledge; Reading and examining selected
+texts.
+
+THIRD SEMESTER
+
+MATH 202 Differential Equations
+First-order differential equations, linear equations, homogeneous and
+non-homogeneous, series solutions, the Laplace transform, systems of
+first-order linear equations, boundary value problems, Fourier series.
+
+CENG 213 Discrete Computing Structures
+This course introduces the fundamental mathematical concepts and techniques that form the foundation of computer science and software engineering. Topics include logic, sets, relations, functions, combinatorics, graph theory, trees, recursion, and finite state machines. Students learn how to apply formal reasoning, proof techniques, and discrete models to solve computational problems, analyze algorithms, and understand the theoretical underpinnings of software systems. The course emphasizes the relevance of discrete structures in areas such as data organization, algorithm design, software verification, and complexity analysis.
+
+EEE 201 Electrical Circuits I
+Circuit elements and Kirchhoff’s laws. Analysis of resistive circuits.
+Network theorems. Analysis of first and second order circuits.
+Operational Amplifiers. Sinusoidal steady-state analysis. Measurement
+and error analysis. Laboratory work.
+
+NTE 1 Non-Technical Elective
+
+WAP 227 Workplace Application I
+This course is the continuation of the workplace experience 1 course and the students continue their workplace experience which they started in the previous semester with their mentors.
+
+ENG 211 Academic English III
+
+CENG 205 Data Structures and Algorithms
+This course explores the fundamental techniques for organizing, storing, and processing data efficiently. The course covers essential data structures such as arrays, linked lists, stacks, queues, trees, heaps, graphs, and hash tables, as well as key algorithms for searching, sorting, recursion, dynamic programming, and graph traversal. Students will analyze the time and space complexity of algorithms, gaining an understanding of algorithmic efficiency and performance trade-offs. Emphasis is placed on selecting appropriate data structures and algorithms for solving various computational problems, with hands-on programming assignments that reinforce theoretical concepts through practical implementation.
+
+FOURTH SEMESTER
+
+SENG 305 Formal Languages and Automata
+This course introduces the mathematical foundations of computing through the study of formal languages, grammars, and computational models. The course covers topics such as finite automata, regular languages, context-free grammars, pushdown automata, Turing machines, and undecidability. Students learn how to model and analyze computational problems, understand the limits of what can be computed, and explore the connections between language theory and practical applications such as compiler design, lexical analysis, and pattern matching. Emphasis is placed on developing rigorous reasoning and problem-solving skills through proofs, constructions, and algorithmic analysis.
+
+SENG 202 Introduction to Database Systems
+This course introduces the fundamental concepts, principles, and architectures of modern database systems. The course covers data models (with a focus on the relational model), database design using entity-relationship (ER) diagrams, relational algebra, SQL querying, and normalization techniques. Students learn how to design, implement, and manage databases effectively, ensuring data integrity, security, and performance. Additional topics include transaction management, concurrency control, indexing, and an introduction to NoSQL systems. Through hands-on exercises and projects, students gain practical experience in building and interacting with real-world database applications.
+
+CENG 207 Digital Design I
+Digital-analogue concepts, number systems, Boole functions,
+combinational logic circuits, simplification, sequential logic circuits,
+programmable devices, VERILOG principles, digital to analog, and analog
+to digital conversion.
+
+WAP 228 Workplace Application II
+This course is the continuation of the WAP 227 workplace application I course and the students continue their workplace experience which they started in the previous semester with their mentors.
+
+MATH 204 Probability and Statistics for Engineers
+Introduction to probability theory. Random variables, expectation, variance and moment generating functions. Distributions: Bernoulli, binomial, uniform, Gaussian, exponential, Poisson, gamma. Introduction to statistical concepts. Sampling and sample statistics. Point and interval estimation. Hypothesis testing. Regression. Numerical and computational aspects of random variable generation, sampling, and estimation.
+
+ENG 212 Academic English IV
+
+FIFTH SEMESTER
+
+MATH 301 Numerical Methods and Scientific Computing
+Data structures, structured programming. Numerical solution of multidimensional optimization problems, convergence properties, gradient and Newton methods. Solution of linear, nonlinear equations, and differential equations, numerical integration.
+
+CENG 303 Operating Systems Design & Construction
+This course provides a comprehensive introduction to the fundamental concepts, principles, and design of modern operating systems. The course covers key topics such as process management, thread scheduling, synchronization, deadlocks, memory management, file systems, input/output systems, and security. Students learn how operating systems serve as the interface between hardware and software, managing resources and ensuring system stability and performance. The course combines theoretical foundations with hands-on experience, including practical exercises and projects that explore real-world operating system implementations such as Linux or Windows.
+
+CENG 309 Introduction to Computer Architecture
+This course provides fundamental knowledge of the organization and architecture of computer systems. Topics include instruction set architecture, data path and control unit design, memory hierarchies, input-output systems, pipelining, and parallelism. Emphasis is placed on understanding how software interacts with hardware to perform computation.
+
+EEE 309 Signals and Systems
+Basic signal and system concepts, properties of linear time-invariant systems, Fourier series expansions of continuous and discrete-time periodic signals, Fourier transforms of continuous and discrete-time signals, computation of the outputs of linear time-invariant systems, frequency, selective filters and the relation between time and frequency, the Laplace transform and its region of convergence, the z-transform and its region of convergence.
+
+WAP 327 Workplace Application III
+This course is the continuation of the WAP 228 workplace application I course and the students continue their workplace experience which they started in the previous semester with their mentors.
+
+LCE 301 Law Concepts for Engineering
+This course provides an overview of the fundamental legal principles, regulations, and ethical responsibilities that impact engineering practice. The course covers topics such as intellectual property (patents, copyrights, trademarks), contract law, liability, professional ethics, workplace safety, environmental regulations, and legal standards relevant to engineering projects. Students learn how to navigate the legal landscape in their professional activities, understand the implications of their decisions, and recognize the importance of ethical and legal compliance in engineering work. Emphasis is placed on real-world case studies and practical examples that help future engineers make informed, responsible choices in their careers.
+
+SIXTH SEMESTER
+
+CENG 314 Computer Networks
+The aim of this course is to introduce the students with theoretical and practical aspects of computer networks using the Internet as a framework. Homeworks and projects will be used for shedding light on the basics, applications and design of computer networks.
+
+CENG 316 New Trends in Computer Engineering
+This course explores the latest innovations, tools, and methodologies shaping the future of software development. The course covers contemporary topics such as agile and DevOps practices, continuous integration and delivery, microservices architecture, cloud-native development, artificial intelligence in computer engineering, blockchain applications, software analytics, and emerging software quality assurance techniques. Students will analyze current research, study real-world case studies, and engage in hands-on projects to understand how these trends impact the design, development, deployment, and maintenance of modern software systems. The course aims to equip students with the awareness and adaptability needed to navigate the rapidly evolving landscape of computer engineering.
+
+ELEC-1 Technical Elective I
+
+ELEC-2 Technical Elective II
+
+SENG 204 Software Engineering
+This course provides an in-depth introduction to the systematic processes involved in the development of reliable, efficient, and maintainable software systems. The course covers the full software development lifecycle, including requirements analysis, system design, implementation, testing, deployment, and maintenance. Key topics include software process models, project management, software architecture, design patterns, version control, documentation, and team collaboration. Students gain practical experience by working on team-based projects that simulate real-world software development, applying engineering principles and best practices to deliver quality solutions. Emphasis is placed on balancing technical, organizational, and human factors to ensure successful software project outcomes.
+
+WEX 328 Workplace Experience I
+Within this course, students practice in the workplace one day of the week. Students apply this course in business environment. Candidates of the profession will have the opportunity to know the work environment and fully participate in what is happening at the workplace. The work to be carried out during the workplace application is planned according to the workplace before the beginning of the semester and by taking the opinions of the students and the application trainers who will guide them. Since each workplace's eco system will be different, the term plan is prepared after getting acquainted with the workplace's eco system, so that each student's weekly schedule may change.
+
+SEVENTH SEMESTER
+
+WEX 427 Workplace Experience II
+Students gain experience by observing at work one day a week. Students take classes at work instead of school. In this course, vocational candidates have the opportunity to work individually and observe them, even if their duties and activities are limited to their experienced supervisors and trainers.
+
+CENG 401 Grauation Project I
+This course is the first part of a two-semester capstone project in computer engineering. Students identify a research or design problem related to computer systems and develop a comprehensive project plan. The course includes literature review, problem definition, methodology development, and preliminary analysis or design. Emphasis is placed on independent study, technical reporting, and project planning under faculty supervision.
+
+ELEC-3 Technical Elective III
+
+ELEC-4 Technical Elective IV
+
+ELEC-5 Technical Elective V
+
+ELEC-6 Technical Elective VI
+
+ELEC-7 Technical Elective VII
+
+EIGHTH SEMESTER
+
+WEX 428 Workplace Experience III
+In the last semester of the program, all of the students will carry out practical training in a factory / production unit located in all provinces of Ankara or in Ankara in accordance with the predefined principles and principles that OSTIM Technical University deems appropriate. In addition, internship / on-the-job training will be carried out in a factory / production unit located in Ankara within the framework of the cooperation protocol between the OSTİM Technical University and the OSTİM Clusters within the framework of the development and cooperation. During this internship / on-the-job training, students will simultaneously take the “Project Management” course as internship / on-the-job training course. In this course, each student will be able to jointly identify the problem areas related to the Design, Production, Installation and Maintenance of various systems in the areas encountered in the factory / production unit where he / she is doing internship / on-the-job training, and jointly identify with the company the new generation creative solution proposals and will create a project idea, design it, develop it and reflect it on the field of application. This project will be evaluated in the performance of internship / on the job training.
+
+CENG 402 Graduation Project II
+This course is the continuation of Graduation Project I and involves the execution, completion, and presentation of the proposed computer engineering project. Students conduct detailed analysis, design, prototyping, simulations, or experiments as outlined in their project plans. The course culminates in a comprehensive final report and an oral presentation. Emphasis is placed on problem-solving, engineering application, teamwork, and effective communication of technical results.
+
+personalize content. Strictly necessary cookies are always active
+for the site to work. You can change your choice at any time via
+the “Cookie Settings” link in the footer.

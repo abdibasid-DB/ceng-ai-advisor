@@ -1,0 +1,347 @@
+{
+  "stage": "Stage 15 - Core RAG Pipeline Integration",
+  "generated_at": "2026-09-16T15:25:12+00:00",
+  "case_count": 4,
+  "results": [
+    {
+      "question": "What courses are taught in Computer Engineering?",
+      "status": "answered",
+      "answer": "- CENG 213 Discrete Computing Structures [S2]\n- SENG116 Object Oriented Programming [S4]",
+      "llm_called": true,
+      "sources": [
+        {
+          "source_id": "src_039",
+          "title": "Which Introductory Course Should I Take?",
+          "source_name": "Brown University Department of Computer Science",
+          "source_type": "university_academic_advising_resource",
+          "url": "https://cs.brown.edu/degrees/undergrad/whatcourse/",
+          "category": "programming",
+          "supporting_chunk_ids": [
+            "src_039_chunk_001",
+            "src_039_chunk_004"
+          ],
+          "evidence_labels": [
+            "S1",
+            "S3"
+          ],
+          "best_similarity_score": 0.5630455017089844
+        },
+        {
+          "source_id": "src_004",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "source_name": "OSTIM Technical University - Department of Computer Engineering (English)",
+          "source_type": "course_descriptions",
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "category": "curriculum",
+          "supporting_chunk_ids": [
+            "src_004_chunk_004",
+            "src_004_chunk_003"
+          ],
+          "evidence_labels": [
+            "S2",
+            "S4"
+          ],
+          "best_similarity_score": 0.4731024503707886
+        }
+      ],
+      "retrieved_chunks": [
+        {
+          "label": "S1",
+          "chunk_id": "src_039_chunk_001",
+          "source_id": "src_039",
+          "title": "Which Introductory Course Should I Take?",
+          "category": "programming",
+          "similarity_score": 0.5630455017089844,
+          "url": "https://cs.brown.edu/degrees/undergrad/whatcourse/",
+          "passage_preview": "Source ID: src_039 Title: Which Introductory Course Should I Take? Brown CS: Which Introductory Course Should I Take? About Brown Academics Admission Research Campus Life Information for: Current Students Faculty Staff Families Alumni Friends & Neighbors A to Z Index People Directory Social@Brown Facebook Twitter LinkedIn Google+ Computer Science About About the Department Contact Directions Rooms Systems & Software Conduit Diversity Socially Responsible Computing Positions / Jobs Brown CS News "
+        },
+        {
+          "label": "S2",
+          "chunk_id": "src_004_chunk_004",
+          "source_id": "src_004",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "curriculum",
+          "similarity_score": 0.4731024503707886,
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "passage_preview": "during and after the Democratic Party. TUR 102 Turkish Language II This course will cover the topics of; Turkish suffixes; Turkish suffixes; Word types. Sentence knowledge; Reading and examining selected texts. THIRD SEMESTER MATH 202 Differential Equations First-order differential equations, linear equations, homogeneous and non-homogeneous, series solutions, the Laplace transform, systems of first-order linear equations, boundary value problems, Fourier series. CENG 213 Discrete Computing Stru"
+        },
+        {
+          "label": "S3",
+          "chunk_id": "src_039_chunk_004",
+          "source_id": "src_039",
+          "title": "Which Introductory Course Should I Take?",
+          "category": "programming",
+          "similarity_score": 0.5214192271232605,
+          "url": "https://cs.brown.edu/degrees/undergrad/whatcourse/",
+          "passage_preview": "the course uses games as a motivating domain, this is not a course in game design, and the techniques and skills learned are equally applicable across other domains. Even if you have programmed in Java before, you might find this a challenging course. Here is a sample lecture from CS0150. Direct questions to the professor: Andy van Dam, avd@cs.brown.edu. 0170 0170 integrates learning programming with learning the theoretical foundations of computer science. Students learn how to break problems d"
+        },
+        {
+          "label": "S4",
+          "chunk_id": "src_004_chunk_003",
+          "source_id": "src_004",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "curriculum",
+          "similarity_score": 0.4678647518157959,
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "passage_preview": "workplace experience course will provide candidates with various skills that will enable them to become an experienced employee. The students' progress in understanding the future profession and gaining the competencies constituting the profession will be evaluated by the university instructors who are in close cooperation with them and the application trainers and mentors who have gained experience in their work. SENG116 Object Oriented Programming Object-Oriented Programming introduces the fun"
+        }
+      ],
+      "retrieval_metadata": {
+        "top_k": 5,
+        "candidate_top_k": 12,
+        "similarity_threshold": 0.3,
+        "results_above_threshold": 5,
+        "top_similarity_score": 0.5630455017089844,
+        "evidence_sufficient": true,
+        "out_of_scope": false
+      },
+      "timing": {
+        "retrieval_seconds": 0.494,
+        "context_construction_seconds": 0.0,
+        "llm_generation_seconds": 3.523,
+        "llm_reported_total_duration_seconds": 3.471,
+        "total_seconds": 4.018
+      },
+      "error": null,
+      "answer_warnings": [],
+      "id": "curriculum_supported",
+      "type": "curriculum"
+    },
+    {
+      "question": "Can Computer Engineers work in cybersecurity?",
+      "status": "insufficient_information",
+      "answer": "I don't have enough reliable information in the current knowledge base to answer that question.",
+      "llm_called": false,
+      "sources": [],
+      "retrieved_chunks": [
+        {
+          "label": null,
+          "chunk_id": "src_017_chunk_119",
+          "source_id": "src_017",
+          "title": "The Future of Jobs Report 2025",
+          "category": "future_technologies",
+          "similarity_score": 0.4567452073097229,
+          "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+          "passage_preview": "Media and Communication Workers Photographers Video Game Designers Writers and Authors Business and Financial Operations Accountants and Auditors Business Intelligence Analysts Claims Adjusters, Examiners, and Investigators Compliance Officers Credit and Loans Officers Digital Marketing and Strategy Specialists Digital Transformation Specialists Job taxonomy The occupational taxonomy was modified and extended from O*NET SOC. TABLE A3 Future of Jobs Report 2025 102\n\nPage 103\nJob family Occupation"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_045_chunk_093",
+          "source_id": "src_045",
+          "title": "Skills for the digital age",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.4521854519844055,
+          "url": "https://www.oecd.org/en/publications/2024/11/oecd-digital-economy-outlook-2024-volume-2_9b2801fc/full-report/skills-for-the-digital-age_da6162fb.html",
+          "passage_preview": "Page 78\nLooking ahead, the risk of automation will increasingly fall on low-educated workers. Moreover, the COVID-19 crisis\nmay have accelerated automation, as companies reduce reliance on human labour and contact between workers, or\nre-shore some production (Georgieff and Milanez, 2021\n[43]). Importantly, these findings highlight that jobs requiring lower\nskill levels face the greatest automation risk, implying a decrease in automation vulnerability with higher educational\nattainment. Other stu"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_014_chunk_001",
+          "source_id": "src_014",
+          "title": "Computer Hardware Engineers: 17-2061.00",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.44335615634918213,
+          "url": "https://www.onetonline.org/link/summary/17-2061.00",
+          "passage_preview": "Source ID: src_014\nTitle: Computer Hardware Engineers: 17-2061.00\n\n17-2061.00 - Computer Hardware Engineers\n\nOccupation keyword search\n\nType a title or code for matches\n\nNo quick matches found\n\nSearch for keyword results\n\nComputer Hardware Engineers\n\n17-2061.00\n\nBright Outlook Updated 2026\n\nResearch, design, develop, or test computer or computer-related equipment for commercial, industrial, military, or scientific use. May supervise the manufacturing and installation of computer or computer-rela"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_017_chunk_098",
+          "source_id": "src_017",
+          "title": "The Future of Jobs Report 2025",
+          "category": "future_technologies",
+          "similarity_score": 0.4366253614425659,
+          "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+          "passage_preview": "Page 86\nBig Data Specialists, AI and Machine Learning\nSpecialists, and Security Management Specialists.\nTo improve talent availability, the industry is\nplanning on investing in reskilling and upskilling\n(71% of employers), supporting employees’ well-\nbeing (64%) and improving promotion processes\n(61%). Remote and hybrid work is also seen as a\nstrategy to stay attractive for 58% of companies\nin the industry, and one out of two respondents\nis calling for changes to labour laws that support\nremote "
+        },
+        {
+          "label": null,
+          "chunk_id": "src_014_chunk_008",
+          "source_id": "src_014",
+          "title": "Computer Hardware Engineers: 17-2061.00",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.4227863550186157,
+          "url": "https://www.onetonline.org/link/summary/17-2061.00",
+          "passage_preview": "CompTIAexternal site\n\nWas this page helpful?\nYes, it was helpfulNo, it was not helpful\n\nJob Seeker Help • Contact Us\n\nShare:\nFacebookXLinkedInRedditEmail\n\nLink to Us • Cite this Page\n\nCreative Commons CC-BY License\n17-2061.00 - Computer Hardware Engineers by U.S. Department of Labor, Employment and Training Administration is licensed under a Creative Commons Attribution 4.0 International License.\n\nAbout this Site • Privacy • Disclaimer\n\nSite updated August 25, 2026\n\nLoading..."
+        }
+      ],
+      "retrieval_metadata": {
+        "top_k": 5,
+        "candidate_top_k": 12,
+        "similarity_threshold": 0.3,
+        "results_above_threshold": 5,
+        "top_similarity_score": 0.4567452073097229,
+        "evidence_sufficient": true,
+        "out_of_scope": false,
+        "unsupported_reason": "retrieved evidence did not include a cybersecurity-category source"
+      },
+      "timing": {
+        "retrieval_seconds": 0.069,
+        "context_construction_seconds": 0.0,
+        "llm_generation_seconds": 0.0,
+        "total_seconds": 0.069
+      },
+      "error": null,
+      "answer_warnings": [],
+      "id": "cybersecurity_supported",
+      "type": "cybersecurity"
+    },
+    {
+      "question": "What is the exact 2026 tuition fee for OSTIM Technical University Computer Engineering?",
+      "status": "insufficient_information",
+      "answer": "I don't have enough reliable information in the current knowledge base to answer that question.",
+      "llm_called": false,
+      "sources": [],
+      "retrieved_chunks": [
+        {
+          "label": null,
+          "chunk_id": "src_001_chunk_001",
+          "source_id": "src_001",
+          "title": "About the Department | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "department_information",
+          "similarity_score": 0.43396878242492676,
+          "url": "https://mfcs.ostimteknik.edu.tr/about-the-department",
+          "passage_preview": "Source ID: src_001\n\nAbout the Department | MF-Bilgisayar Mühendisliği (İngilizce)\n\nBarrier Free\n\nDepartment of Computer Engineering (English)\n\nThe aim of the Department of Computer Engineering is to educate Computer engineers who will contribute to the institution and organization in which they are participating, enabling them to gain skills for technical management; teach them analysis, synthesis and modelling in order ato solve engineering problems, ensure ability which will lead to carry out "
+        },
+        {
+          "label": null,
+          "chunk_id": "src_004_chunk_008",
+          "source_id": "src_004",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "curriculum",
+          "similarity_score": 0.3884063959121704,
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "passage_preview": "I This course is the first part of a two-semester capstone project in computer engineering. Students identify a research or design problem related to computer systems and develop a comprehensive project plan. The course includes literature review, problem definition, methodology development, and preliminary analysis or design. Emphasis is placed on independent study, technical reporting, and project planning under faculty supervision.\n\nELEC-3 Technical Elective III\n\nELEC-4 Technical Elective IV\n"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_005_chunk_001",
+          "source_id": "src_005",
+          "title": "Our Difference | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "student_life",
+          "similarity_score": 0.3431755304336548,
+          "url": "https://mfcs.ostimteknik.edu.tr/our-difference",
+          "passage_preview": "Source ID: src_005\n\nOur Difference | MF-Bilgisayar Mühendisliği (İngilizce)\n\nBarrier Free\n\n• Applied Education Model\n\nOSTIM Technical University was founded in the basin provides business has contributed to Turkey's industrialization. In this basin, a participatory training will be given to practical applications by giving importance to practical training besides theoretical knowledge in order to benefit from the knowledge and project making and product development experiences of the companies i"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_006_chunk_001",
+          "source_id": "src_006",
+          "title": "Academic Staff",
+          "category": "department_information",
+          "similarity_score": 0.3385828733444214,
+          "url": "https://mfcs.ostimteknik.edu.tr/academic-staff",
+          "passage_preview": "Source ID: src_006\nTitle: Academic Staff\n\nAkademik Kadro\n\nBarrier Free\n\nComputer Engineering (English) Academic Staff\n\nRESUME\n\nProf. Dr. Serdar MÜLDÜR (Dean)\n\nFields of Research:\nComputer Software and Software Engineering, Database, Programming Languages.\n\nE-mail: serdar.muldur@ostimteknik.edu.tr\n\nTel:+90 312 386 1092 / Internal: -\n\nOffice:Main Campus, F Block, 8th Floor, Room No: 810\n\nRESUME\n\nAssist. Prof. Dr. Ahmet ÖZDİL\n(Head of Department)\n\nFields of Research:Computer Software and Software E"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_004_chunk_006",
+          "source_id": "src_004",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "curriculum",
+          "similarity_score": 0.3202451467514038,
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "passage_preview": "explore real-world operating system implementations such as Linux or Windows. CENG 309 Introduction to Computer Architecture This course provides fundamental knowledge of the organization and architecture of computer systems. Topics include instruction set architecture, data path and control unit design, memory hierarchies, input-output systems, pipelining, and parallelism. Emphasis is placed on understanding how software interacts with hardware to perform computation.\n\nEEE 309 Signals and Syste"
+        }
+      ],
+      "retrieval_metadata": {
+        "top_k": 5,
+        "candidate_top_k": 12,
+        "similarity_threshold": 0.3,
+        "results_above_threshold": 5,
+        "top_similarity_score": 0.43396878242492676,
+        "evidence_sufficient": true,
+        "out_of_scope": false,
+        "unsupported_reason": "retrieved evidence does not contain requested specific fact terms: [['tuition', 'fee', 'fees', 'cost', 'payment']]"
+      },
+      "timing": {
+        "retrieval_seconds": 0.057,
+        "context_construction_seconds": 0.0,
+        "llm_generation_seconds": 0.0,
+        "total_seconds": 0.057
+      },
+      "error": null,
+      "answer_warnings": [],
+      "id": "unsupported_in_domain",
+      "type": "unsupported_in_domain"
+    },
+    {
+      "question": "Who won the football match yesterday?",
+      "status": "out_of_scope",
+      "answer": "I don't have enough reliable information in the current knowledge base to answer that question.",
+      "llm_called": false,
+      "sources": [],
+      "retrieved_chunks": [
+        {
+          "label": null,
+          "chunk_id": "src_045_chunk_287",
+          "source_id": "src_045",
+          "title": "Skills for the digital age",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.25365960597991943,
+          "url": "https://www.oecd.org/en/publications/2024/11/oecd-digital-economy-outlook-2024-volume-2_9b2801fc/full-report/skills-for-the-digital-age_da6162fb.html",
+          "passage_preview": "+ TV 300 Mbps 39 / 96 0.8 46.7 0.0 0 0 47.5 Portugal Vodafone Net + Voz 30 Mbps 0.0 43.3 7.4 0 0 50.7 Slovak Republic T-Com Slovakia Chytrý balík - KlasikNET & Pevná linka (FBB + FV) 30 Mbps 0.0 21.5 16.0 0 0 37.4 Slovenia Telemach EON Light 200 Mbps 62 / 90 0.0 56.3 3.6\n\n+ TV 300 Mbps 39 / 96 0.8 46.7 0.0 0 0 47.5 Portugal Vodafone Net + Voz 30 Mbps 0.0 43.3 7.4 0 0 50.7 Slovak Republic T-Com Slovakia Chytrý balík - KlasikNET & Pevná linka (FBB + FV) 30 Mbps 0.0 21.5 16.0 0 0 37.4 Slovenia Tele"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_045_chunk_283",
+          "source_id": "src_045",
+          "title": "Skills for the digital age",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.1986544132232666,
+          "url": "https://www.oecd.org/en/publications/2024/11/oecd-digital-economy-outlook-2024-volume-2_9b2801fc/full-report/skills-for-the-digital-age_da6162fb.html",
+          "passage_preview": "Mbps 80 / 0 5.3 63.0 0 0 0 68.3 Mexico IZZI (cablemas) Internet + Telefonia + TV 100ch 500 Mbps 67 / 42 1.1 30.9 0 0 0 32.0 Netherlands T-Mobile NL Build Your Own Bundle 100 Mbps 5 / 59 0.0 54.8 0 0 0 54.8 Norway Telia Norway Bredband 100 Mbps 56 / 0 0.0 57.8 0\n\nMbps 80 / 0 5.3 63.0 0 0 0 68.3 Mexico IZZI (cablemas) Internet + Telefonia + TV 100ch 500 Mbps 67 / 42 1.1 30.9 0 0 0 32.0 Netherlands T-Mobile NL Build Your Own Bundle 100 Mbps 5 / 59 0.0 54.8 0 0 0 54.8 Norway Telia Norway Bredband 10"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_045_chunk_289",
+          "source_id": "src_045",
+          "title": "Skills for the digital age",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.19668841361999512,
+          "url": "https://www.oecd.org/en/publications/2024/11/oecd-digital-economy-outlook-2024-volume-2_9b2801fc/full-report/skills-for-the-digital-age_da6162fb.html",
+          "passage_preview": "127.1 0 0 166.9 Slovenia Telekom Slovenije NEO A 1024 Mbps 96 / 6 2.0 83.3 13.3 0 0 98.6 Spain Vodafone España Fibra + Llamadas 600 Mbps 0.0 47.5 0.0 0 0 47.5 Sweden Tele2 Sweden Bredband + Fast telefoni + TV 600 Mbps 1.6 54.8 15.3 0 0 71.8 Switzerland Sunrise Internet + Phone 1024 Mbps 0.0 50.0\n\n127.1 0 0 166.9 Slovenia Telekom Slovenije NEO A 1024 Mbps 96 / 6 2.0 83.3 13.3 0 0 98.6 Spain Vodafone España Fibra + Llamadas 600 Mbps 0.0 47.5 0.0 0 0 47.5 Sweden Tele2 Sweden Bredband + Fast telefon"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_045_chunk_295",
+          "source_id": "src_045",
+          "title": "Skills for the digital age",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.19548678398132324,
+          "url": "https://www.oecd.org/en/publications/2024/11/oecd-digital-economy-outlook-2024-volume-2_9b2801fc/full-report/skills-for-the-digital-age_da6162fb.html",
+          "passage_preview": "1024 Mbps 113 / 0 Unlimited 0.0 142.5 0.0 0.0 16.1 158.6 Sweden Tele2 Sweden Premium 600 600 Mbps 45 / 37 1.6 102.5 15.3 0.0 0.0 119.4 Switzerland Sunrise Essential Internet + TV 1024 Mbps 320 / 17 -2.3 52.8 12.6 0.0 33.5 96.5 Türkiye TTNet Tivibu’lu İnternet Kampanyasi - Ev Süper 1000 Mbps 131 / 20 0.0 103.5\n\n1024 Mbps 113 / 0 Unlimited 0.0 142.5 0.0 0.0 16.1 158.6 Sweden Tele2 Sweden Premium 600 600 Mbps 45 / 37 1.6 102.5 15.3 0.0 0.0 119.4 Switzerland Sunrise Essential Internet + TV 1024 Mbps"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_045_chunk_259",
+          "source_id": "src_045",
+          "title": "Skills for the digital age",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.18957626819610596,
+          "url": "https://www.oecd.org/en/publications/2024/11/oecd-digital-economy-outlook-2024-volume-2_9b2801fc/full-report/skills-for-the-digital-age_da6162fb.html",
+          "passage_preview": "11.3 35.7 7.8 Portugal 2021 22.8 10.6 27.8 .. 18.3 28.3 Romania 2021 9.4 8.0 13.0 13.4 10.4 7.1 Slovak Republic 2021 30.7 22.1 30.0 24.1 32.5 28.0 Slovenia 2021 52.6 38.2 50.3 60.9 61.8 52.5 Spain 2021 27.9 22.5 28.9 26.6 30.2 27.3 Sweden 2021 44.1 37.6 38.0 48.1 43.0 37.3 Türkiye 2021 21.9 13.4 24.4 26.7 23.8 21.8\n\nPage 188\n186 OECD DIGITAL ECONOMY OUTLOOK 2024 (VOLUME 2) © OECD 2024\nTable 7. Technology adoption, by industry, most recent year (cont.)\nCountry\nB. Internet of Things\nYear\nInformati"
+        }
+      ],
+      "retrieval_metadata": {
+        "top_k": 5,
+        "candidate_top_k": 12,
+        "similarity_threshold": 0.3,
+        "results_above_threshold": 0,
+        "top_similarity_score": 0.25365960597991943,
+        "evidence_sufficient": false,
+        "out_of_scope": true
+      },
+      "timing": {
+        "retrieval_seconds": 0.033,
+        "context_construction_seconds": 0.0,
+        "llm_generation_seconds": 0.0,
+        "total_seconds": 0.033
+      },
+      "error": null,
+      "answer_warnings": [],
+      "id": "out_of_scope_football",
+      "type": "out_of_scope"
+    }
+  ]
+}

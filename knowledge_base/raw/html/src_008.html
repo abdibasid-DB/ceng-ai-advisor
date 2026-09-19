@@ -1,0 +1,1820 @@
+<!DOCTYPE html>
+     <xpath expr="//div[@id=&#39;wrapwrap&#39;]" position="before">
+    
+</xpath>
+
+        
+        
+        
+<html lang="en-US" data-website-id="27" data-main-object="website.page(1071,)" data-add2cart-redirect="1">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <xpath expr="//head/meta[last()]" position="after">
+           
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script>
+    // 2nd preloader + lazy loader using the data-original-src attribute
+document.addEventListener("DOMContentLoaded", function () {
+
+    /* PART 1 — Preload FIRST carousel slide using reliable URL */
+    const firstSlide = document.querySelector('.carousel-item.active');
+    if (firstSlide) {
+        const preloadUrl = firstSlide.getAttribute("data-original-src");
+        if (preloadUrl) {
+            const link = document.createElement("link");
+            link.rel = "preload";
+            link.as = "image";
+            link.href = preloadUrl;
+            document.head.appendChild(link);
+        }
+    }
+
+    /* PART 2 — Lazy-load OTHER slides using data-original-src */
+    document.querySelectorAll('.carousel-item:not(.active)').forEach(function (slide) {
+        const lazyUrl = slide.getAttribute("data-original-src");
+        if (!lazyUrl) return;
+
+        slide.dataset.lazyBg = lazyUrl;
+        slide.style.backgroundImage = "none";
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    slide.style.backgroundImage = `url('${slide.dataset.lazyBg}')`;
+                    observer.unobserve(slide);
+                }
+            });
+        });
+
+        observer.observe(slide);
+    });
+
+});
+</script>
+
+</xpath>
+        
+        <meta name="generator" content="Odoo"/>
+        <meta name="robots" content="noindex"/>
+            
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Research | MF-Bilgisayar Mühendisliği (İngilizce)"/>
+        <meta property="og:site_name" content="MF-Bilgisayar Mühendisliği (İngilizce)"/>
+        <meta property="og:url" content="https://mfcs.ostimteknik.edu.tr/research"/>
+        <meta property="og:image" content="https://mfcs.ostimteknik.edu.tr/web/image/website/27/logo?unique=885d64b"/>
+            
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:title" content="Research | MF-Bilgisayar Mühendisliği (İngilizce)"/>
+        <meta name="twitter:image" content="https://mfcs.ostimteknik.edu.tr/web/image/website/27/logo/300x300?unique=885d64b"/>
+        
+        <link rel="alternate" hreflang="en" href="https://mfcs.ostimteknik.edu.tr/research"/>
+        <link rel="alternate" hreflang="tr" href="https://mfcs.ostimteknik.edu.tr/tr/research"/>
+        <link rel="alternate" hreflang="x-default" href="https://mfcs.ostimteknik.edu.tr/research"/>
+        <link rel="canonical" href="https://mfcs.ostimteknik.edu.tr/research"/>
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""/>
+        <title> Research | MF-Bilgisayar Mühendisliği (İngilizce) </title>
+        <link type="image/x-icon" rel="shortcut icon" href="/web/image/website/27/favicon?unique=885d64b"/>
+		<link rel="preload" href="/theme_nextbiz/static/lib/RemixIcon/remixicon.woff2?t=1580819880586" as="font" crossorigin=""/>
+		<link rel="preload" href="/theme_nextbiz/static/lib/linearicons/fonts/Linearicons-Free.woff2?w118d" as="font" crossorigin=""/>
+		<link rel="preload" href="/theme_nextbiz/static/lib/themify-icons/fonts/themify.woff?-fvbane" as="font" crossorigin=""/>
+		<link rel="preload" href="/theme_nextbiz/static/lib/icofont/fonts/icofont.woff2" as="font" crossorigin=""/>
+        <link rel="preload" href="/web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" crossorigin=""/>
+        <link type="text/css" rel="stylesheet" href="/web/assets/617576-5c644c1/27/web.assets_frontend.min.css" data-asset-bundle="web.assets_frontend" data-asset-version="5c644c1"/>
+        <script id="web.layout.odooscript" type="text/javascript">
+            var odoo = {
+                csrf_token: "403265adfeed4677de0d8292e7d21d85b6fe0e78o1819628922",
+                debug: "",
+            };
+        </script>
+        <script type="text/javascript">
+            odoo.__session_info__ = {"is_admin": false, "is_system": false, "is_website_user": true, "user_id": false, "is_frontend": true, "profile_session": null, "profile_collectors": null, "profile_params": null, "show_effect": true, "bundle_params": {"lang": "en_US", "website_id": 27}, "translationURL": "/website/translations", "cache_hashes": {"translations": "9f711fc8684c2f849bc57e8d4b97c6f81a4a459a"}, "geoip_country_code": null, "geoip_phone_code": null, "lang_url_code": "en"};
+            if (!/(^|;\s)tz=/.test(document.cookie)) {
+                const userTZ = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                document.cookie = `tz=${userTZ}; path=/`;
+            }
+        </script>
+        <script defer="defer" type="text/javascript" src="/web/assets/589080-8b7938f/27/web.assets_frontend_minimal.min.js" data-asset-bundle="web.assets_frontend_minimal" data-asset-version="8b7938f"></script>
+        <script defer="defer" type="text/javascript" data-src="/web/assets/589090-846727e/27/web.assets_frontend_lazy.min.js" data-asset-bundle="web.assets_frontend_lazy" data-asset-version="846727e"></script>
+        
+                
+                
+                <script>
+                    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                    })(window,document,'script','dataLayer','GTM-WTWPNVZ');
+                </script>
+                
+
+            
+
+                
+                
+
+                
+                <script type="text/javascript">
+                    window.OSTIM_A11Y = {
+                        position: 'bottom_right',
+                        color:    '#005f73',
+                        iconSize: 'large',
+                        lang:     'en',
+                        autoLang: true,
+                    };
+                </script>
+
+                
+                <link rel="stylesheet" href="/ostim_accessibility/static/src/css/accessibility_widget.css?v=12"/>
+
+                
+                <script type="text/javascript" src="/ostim_accessibility/static/src/js/aria_fixes.js?v=12"></script>
+
+                
+                <script type="text/javascript" src="/ostim_accessibility/static/src/js/accessibility_widget.js?v=12"></script>
+
+        
+    </head>
+    <body>
+                <noscript><iframe height="0" width="0" style="display:none;visibility:hidden" src="https://www.googletagmanager.com/ns.html?id=GTM-WTWPNVZ"></iframe></noscript>
+        <div id="wrapwrap" class="   ">
+                <header id="top" data-anchor="true" data-name="Header" role="banner" class=" ">
+                    
+                <div class="oe_structure oe_structure_solo" id="oe_structure_header_contact_1">
+            <section class="s_text_block o_colored_level o_cc o_cc3 pb0 pt0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+                <div class="container">
+                    <div class="row">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+                        
+                        
+                    <div class="o_colored_level col-lg-5 pt4"><p style="text-align: left;"><small><span class="me-3"><small><span class="me-3"></span></small><a href="https://www.ostimteknik.edu.tr/?_gl=1*1ofv7hh*_gcl_au*NzYxMzk1MDUwLjE3NTIxNDM4NTYuMTA2MzU2OTg1MS4xNzU3MzE3NTc5LjE3NTczMTc1ODA.*_ga*MTA2Mzg3NjQ1LjE3NTEzNzUxNDM.*_ga_6P0BTM0P2R*czE3NTczMTcwMTMkbzU2JGcxJHQxNzU3MzE4OTQ4JGo1OCRsMCRoMA.." class="btn btn-custom" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;"><span class="fa fa-institution text-white fa-2x" data-bs-original-title="" title="" aria-describedby="tooltip764431"></span><br/><font class="text-white"><span style="font-size: 14px;"><strong>Home Page</strong></span></font></a><a href="https://obs.ostimteknik.edu.tr/" target="_blank" class="btn btn-custom text-white btn-sm" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;"><span class="fa fa-user-circle text-white fa-2x" data-bs-original-title="" title="" aria-describedby="tooltip865065"></span><br/><span style="font-size: 14px;"><strong>OBS</strong></span></a><span style="font-size: 14px;"></span><a href="https://eob.ostimteknik.edu.tr/" target="_blank" class="btn btn-custom btn-sm" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;"><span class="fa fa-wheelchair text-white fa-2x" style="width: 50% !important;" data-bs-original-title="" title="" aria-describedby="tooltip162320"></span><span style="font-size: 14px;"><strong><br/></strong></span><font class="text-white"><span style="font-size: 14px;"><strong>Barrier Free</strong></span></font></a><span style="font-size: 14px;"><strong>&nbsp;</strong></span><a href="http://ebys.ostimteknik.edu.tr" class="btn btn-custom" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;" target="_blank"><span class="fa fa-file-o text-white fa-2x" data-bs-original-title="" title="" aria-describedby="tooltip753779"></span><span style="font-size: 14px;"><strong><br/></strong></span><font class="text-white"><span style="font-size: 14px;"><strong>EBYS</strong></span></font></a><font class="text-white"></font><a href="https://kutuphane.ostimteknik.edu.tr/our-services-library" target="_blank" class="btn btn-custom btn-sm" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;"><font class="text-white"><span class="icofont icofont-library fa-2x"></span><span style="font-size: 14px;"><strong><br/>Library&nbsp;</strong></span></font></a><span style="font-size: 14px;"></span><a href="https://lmsclus.ostimteknik.edu.tr/" target="_blank" class="btn btn-custom btn-sm" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;"><span class="lni lni-network text-white fa-2x"></span><span style="font-size: 14px;"><strong>&nbsp;<br/></strong></span><font class="text-white"><span style="font-size: 14px;"><strong>LMS</strong></span></font></a><small><span class="me-3"><a style="border-width: 1px; border-style: solid;" title="" data-bs-original-title="" class="btn btn-custom btn-sm" href="#"><span style="font-size: 14px;"><strong><br/></strong></span><font class="text-white"></font></a></span></small></span></small></p></div><div class="o_colored_level col-lg-5 offset-lg-2 pt16"><p style="text-align: right;"><a href="https://www.facebook.com/ostimteknikuniversitesi/" data-bs-original-title="" title=""><span class="fa fa-facebook-f text-white" data-bs-original-title="" title="" aria-describedby="tooltip548407"></span></a>&nbsp; &nbsp;&nbsp; <a href="https://www.linkedin.com/company/otumuhendislik" data-bs-original-title="" title=""><span aria-describedby="tooltip473041" title="" data-bs-original-title="" class="fa fa-linkedin text-white"></span></a>&nbsp; &nbsp;&nbsp; <a href="https://www.youtube.com/@ostimteknikuniversitesi9646" data-bs-original-title="" title=""><span aria-describedby="tooltip499547" title="" data-bs-original-title="" class="fa fa-youtube text-white"></span></a>&nbsp; &nbsp;&nbsp; <a href="https://www.instagram.com/ostimtech.muhendislik/" data-bs-original-title="" title=""><span aria-describedby="tooltip126813" title="" data-bs-original-title="" class="fa fa-instagram text-white"></span></a>&nbsp; &nbsp;&nbsp;<a href="https://mfcs.ostimteknik.edu.tr/contactus" data-bs-original-title="" title=""><span class="fa fa-envelope-o img-thumbnail text-o-color-3" data-bs-original-title="" title="" aria-describedby="tooltip643803"></span></a>&nbsp; &nbsp;<a href="https://mfcs.ostimteknik.edu.tr/tr/contactus" data-bs-original-title="" title=""><span class="fa fa-phone img-thumbnail text-o-color-3" data-bs-original-title="" title="" aria-describedby="tooltip737996"></span></a></p></div></div></div>
+            </section>
+        </div>
+    <nav data-name="Navbar" class="navbar navbar-expand-lg navbar-light o_colored_level o_cc shadow-sm">
+        
+            <div id="top_menu_container" class="container">
+                
+    <a href="/" class="navbar-brand logo ">
+            
+            <span role="img" aria-label="Logo of MF-Bilgisayar Mühendisliği (İngilizce)" title="MF-Bilgisayar Mühendisliği (İngilizce)"><img src="/web/image/website/27/logo/MF-Bilgisayar%20M%C3%BChendisli%C4%9Fi%20%28%C4%B0ngilizce%29?unique=885d64b" class="img img-fluid" width="95" height="40" alt="MF-Bilgisayar Mühendisliği (İngilizce)" loading="lazy"/></span>
+        </a>
+    
+                
+    <button type="button" data-bs-toggle="collapse" data-bs-target="#top_menu_collapse" aria-label="Menu" aria-expanded="false" aria-controls="top_menu_collapse" class="navbar-toggler ">
+        <span class="navbar-toggler-icon o_not_editable"></span>
+    </button>
+                
+        <div class="oe_structure oe_structure_solo d-block d-lg-none">
+            
+        </div>
+                
+                <div id="top_menu_collapse" class="collapse navbar-collapse ms-lg-3">
+    <ul id="top_menu" role="menu" class="nav navbar-nav o_menu_loading flex-grow-1">
+        
+                        
+    <li class="nav-item dropdown  ">
+        <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle ">
+            <span>About Our Department</span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+    <li role="presentation" class="">
+        <a role="menuitem" href="/about-the-department" class="dropdown-item ">
+            <span>About Us</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/chairperson-s-message" class="dropdown-item ">
+            <span>Department Head&#39;s Message</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/commissions" class="dropdown-item ">
+            <span>Committees</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/academic-staff" class="dropdown-item ">
+            <span>Academic Staff</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/our-difference" class="dropdown-item ">
+            <span>Our Differences</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/mission-and-vission" class="dropdown-item ">
+            <span>Mission and Vission</span>
+        </a>
+    </li>
+        </ul>
+    </li>
+    <li class="nav-item dropdown  ">
+        <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle ">
+            <span>Student</span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+    <li role="presentation" class="">
+        <a role="menuitem" href="/curriculum" class="dropdown-item ">
+            <span>Curriculum</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/course-schedule" class="dropdown-item ">
+            <span>Course Schedules</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/exam-schedule" class="dropdown-item ">
+            <span>Exam Schedules</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/course-contents" class="dropdown-item ">
+            <span>Course Contents</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/activities" class="dropdown-item ">
+            <span>Activities</span>
+        </a>
+    </li>
+        </ul>
+    </li>
+    <li class="nav-item dropdown  ">
+        <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle ">
+            <span>Forms and Documents</span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+    <li role="presentation" class="">
+        <a role="menuitem" href="/workplace-documents" class="dropdown-item ">
+            <span>Workplace Documents</span>
+        </a>
+    </li>
+        </ul>
+    </li>
+    <li class="nav-item dropdown active ">
+        <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle ">
+            <span>Research</span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+    <li role="presentation" class="">
+        <a role="menuitem" href="/research" class="dropdown-item active">
+            <span>Publications</span>
+        </a>
+    </li>
+        </ul>
+    </li>
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="/contactus" class="nav-link ">
+            <span>Contact Us</span>
+        </a>
+    </li>
+        
+            <li class="nav-item ms-lg-3 divider d-none"></li> 
+            <li class="o_wsale_my_cart align-self-md-start d-none nav-item ms-lg-3">
+                <a href="/shop/cart" class="nav-link">
+                    <span>My Cart</span>
+                    <sup class="my_cart_quantity badge text-bg-primary" data-order-id="">0</sup>
+                </a>
+            </li>
+        
+                        
+                        
+        
+        
+                    
+    </ul>
+                    
+        
+            <div class="js_language_selector my-auto ms-lg-2 align-self-lg-center dropdown d-print-none">
+                <button type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="btn btn-sm btn-outline-secondary border-0 dropdown-toggle ">
+    <img class="o_lang_flag" src="/base/static/img/country_flags/us.png?height=25" loading="lazy"/>
+                    <span class="align-middle">English (US)</span>
+                </button>
+                <div role="menu" class="dropdown-menu ">
+                        <a href="/research" class="dropdown-item js_change_lang active" data-url_code="en">
+    <img class="o_lang_flag" src="/base/static/img/country_flags/us.png?height=25" loading="lazy"/>
+                            <span>English (US)</span>
+                        </a>
+                        <a href="/tr/research" class="dropdown-item js_change_lang " data-url_code="tr">
+    <img class="o_lang_flag" src="/base/static/img/country_flags/tr.png?height=25" loading="lazy"/>
+                            <span> Türkçe</span>
+                        </a>
+                </div>
+            </div>
+        
+                    
+        <div class="oe_structure oe_structure_solo d-none d-lg-block ms-3">
+            
+        </div>
+                </div>
+            </div>
+        
+    </nav>
+    
+        </header>
+                <main role="main">
+                    
+        <div id="wrap" class="oe_structure oe_empty"><section class="s_title pt40 pb40 o_colored_level" data-vcss="001" data-snippet="s_title" data-name="Başlık" style="background-image: none;">
+        <div class="container s_allow_columns">
+            <h1 style="text-align: center;"><font style="font-size: 62px;">
+</font></h1><h3 style="text-align: center;"><span style="font-size: 36px;"><strong>Research</strong></span></h3></div>
+    </section><section class="s_tabs pt48 pb48 o_colored_level" data-vcss="001" data-snippet="s_tabs" data-name="Sekmeler" style="background-image: none;">
+        <div class="container">
+            <div class="s_tabs_main">
+                <div class="s_tabs_nav mb-3">
+                    <ul class="nav nav-pills" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav_tabs_link_1713094275620_1598" data-bs-toggle="tab" href="#nav_tabs_content_1713094275620_1598" role="tab" aria-controls="nav_tabs_content_1713094275620_1598" aria-selected="false">Research Areas</a></li><li class="nav-item"><br/></li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav_tabs_link_1713094275620_1599" data-bs-toggle="tab" href="#nav_tabs_content_1713094275620_1599" role="tab" aria-controls="nav_tabs_content_1713094275620_1599" aria-selected="false">Publications</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="s_tabs_content tab-content">
+                    <div class="tab-pane fade" id="nav_tabs_content_1713094275620_1598" role="tabpanel" aria-labelledby="nav_tabs_link_1713094275620_1598">
+                        <div class="oe_structure oe_empty" data-editor-message-default="true" data-editor-message="YAPI BLOKLARINI BURYA SÜRÜKLEYİN"><section class="s_faq_collapse pt32 pb0" data-snippet="s_faq_collapse" data-name="Accordion" style="background-image: none;">
+        <div class="container">
+            <div id="myCollapse" class="accordion" role="tablist">
+                <div class="card bg-white" data-name="Item">
+                    <a href="#" role="tab" data-bs-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-bs-target="#myCollapseTab906260_1">
+ Computer Software and Programming Languages
+
+<br/></a>
+                    <div class="collapse" data-bs-parent="#myCollapse" role="tabpanel" id="myCollapseTab906260_1">
+                        <div class="card-body">
+                            <p class="card-text o_default_snippet_text">
+<span style="color: rgb(33, 37, 41);font-size: 18px;font-style: normal;font-weight: 400;background-color: rgb(255, 255, 255)">Prof. Dr. Serhan DAĞTAŞ</span><br/><span style="color: rgb(33, 37, 41);font-size: 18px;font-style: normal;font-weight: 400;background-color: rgb(255, 255, 255)">Assoc. Prof. Çağatay BÜYÜKKOÇ</span><br/><span style="color: rgb(33, 37, 41);font-size: 18px;font-style: normal;font-weight: 400;background-color: rgb(255, 255, 255)">Assist. Prof. Dr. Ramazan KOCAOĞLU</span><br/><span style="color: rgb(33, 37, 41);font-size: 18px;font-style: normal;font-weight: 400;background-color: rgb(255, 255, 255)">Assist. Prof. Dr. Emine YAMAN</span>
+
+<br/></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-white" data-name="Item">
+                    <a href="#" role="tab" data-bs-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-bs-target="#myCollapseTab906260_2">
+ Artificial Intelligence and Artificial Learning 
+
+<br/></a>
+                    <div class="collapse" data-bs-parent="#myCollapse" role="tabpanel" id="myCollapseTab906260_2">
+                        <div class="card-body">
+                            <p class="card-text o_default_snippet_text">
+<span style="color: rgb(33, 37, 41);font-size: 18px;font-style: normal;font-weight: 400;background-color: rgb(255, 255, 255)">Assist. Prof. Dr. Rayan ABRİ</span><br/><span style="color: rgb(33, 37, 41);font-size: 18px;font-style: normal;font-weight: 400;background-color: rgb(255, 255, 255)">Assist. Prof. Dr. Emine YAMAN</span><br/><span style="color: rgb(33, 37, 41);font-size: 18px;font-style: normal;font-weight: 400;background-color: rgb(255, 255, 255)">Prof. Dr. Serhan DAĞTAŞ</span><br/><span style="color: rgb(33, 37, 41);font-size: 18px;font-style: normal;font-weight: 400;background-color: rgb(255, 255, 255)">Assist. Prof. Dr. Ramazan KOCAOĞLU</span>
+
+<br/></p></div>
+                    </div>
+                </div>
+                <div class="card bg-white" data-name="Item">
+                    <a href="#" role="tab" data-bs-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-bs-target="#myCollapseTab906260_3">
+ Embedded systems 
+
+<br/></a>
+                    <div class="collapse" data-bs-parent="#myCollapse" role="tabpanel" id="myCollapseTab906260_3">
+                        <div class="card-body">
+                            <p class="card-text o_default_snippet_text">
+<span style="color: rgb(33, 37, 41);font-size: 18px;font-style: normal;font-weight: 400;background-color: rgb(255, 255, 255)">Prof. Dr. Serhan DAĞTAŞ</span><br/><span style="color: rgb(33, 37, 41);font-size: 18px;font-style: normal;font-weight: 400;background-color: rgb(255, 255, 255)">Assoc. Prof. Çağatay BÜYÜKKOÇ</span>
+
+<br/></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><section class="s_faq_collapse pt0 pb0" data-snippet="s_faq_collapse" data-name="Accordion" style="background-image: none;">
+        <div class="container">
+            <div id="myCollapse1713094319669" class="accordion" role="tablist">
+                <div class="card bg-white" data-name="Item">
+                    <a href="#" role="tab" data-bs-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-bs-target="#myCollapseTab1713094319670">
+ Computer Networks and Communication Networks
+
+<br/></a>
+                    <div class="collapse" data-bs-parent="#myCollapse1713094319669" role="tabpanel" id="myCollapseTab1713094319670">
+                        <div class="card-body">
+                            <p class="card-text">
+<span style="color: rgb(33, 37, 41);font-size: 18px;font-style: normal;font-weight: 400;background-color: rgb(255, 255, 255)">Assoc. Prof. Çağatay BÜYÜKKOÇ</span><br/><span style="color: rgb(33, 37, 41);font-size: 18px;font-style: normal;font-weight: 400;background-color: rgb(255, 255, 255)">Assist. Prof. Dr. Ramazan KOCAOĞLU</span>
+
+<br/></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-white" data-name="Item">
+                    <a href="#" role="tab" data-bs-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-bs-target="#myCollapseTab1713094319669">
+ Image Processing and Natural Language Processing
+
+<br/></a>
+                    <div class="collapse" data-bs-parent="#myCollapse1713094319669" role="tabpanel" id="myCollapseTab1713094319669">
+                        <div class="card-body">
+                            <p class="card-text o_default_snippet_text">
+<span style="color: rgb(33, 37, 41);font-size: 18px;font-style: normal;font-weight: 400;background-color: rgb(255, 255, 255)">Assist. Prof. Dr. Rayan ABRİ</span><br/><span style="color: rgb(33, 37, 41);font-size: 18px;font-style: normal;font-weight: 400;background-color: rgb(255, 255, 255)">Prof. Dr. Serhan DAĞTAŞ</span>
+
+<br/></p></div>
+                    </div>
+                </div>
+                <div class="card bg-white" data-name="Item">
+                    <a href="#" role="tab" data-bs-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-bs-target="#myCollapseTab1713094319671">
+ Big Data 
+
+<br/></a>
+                    <div class="collapse" data-bs-parent="#myCollapse1713094319669" role="tabpanel" id="myCollapseTab1713094319671">
+                        <div class="card-body">
+                            <p class="card-text">
+<span style="color: rgb(33, 37, 41);font-size: 18px;font-style: normal;font-weight: 400;background-color: rgb(255, 255, 255)">Assist. Prof. Dr. Rayan ABRİ</span><br/><span style="color: rgb(33, 37, 41);font-size: 18px;font-style: normal;font-weight: 400;background-color: rgb(255, 255, 255)">Prof. Dr. Serhan DAĞTAŞ</span><br/><span style="color: rgb(33, 37, 41);font-size: 18px;font-style: normal;font-weight: 400;background-color: rgb(255, 255, 255)">Assist. Prof. Dr. Ramazan KOCAOĞLU</span><br/><span style="color: rgb(33, 37, 41);font-size: 18px;font-style: normal;font-weight: 400;background-color: rgb(255, 255, 255)">Assist. Prof. Dr. Emine YAMAN</span>
+
+<br/></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><section class="s_faq_collapse pb32 pt0" data-snippet="s_faq_collapse" data-name="Accordion" style="background-image: none;">
+        <div class="container">
+            <div id="myCollapse1713094322178" class="accordion" role="tablist">
+                
+                
+                <div class="card bg-white" data-name="Item">
+                    <a href="#" role="tab" data-bs-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-bs-target="#myCollapseTab1713094322181">
+ Information Security and Cryptology 
+
+<br/></a>
+                    <div class="collapse" data-bs-parent="#myCollapse1713094322178" role="tabpanel" id="myCollapseTab1713094322181">
+                        <div class="card-body">
+                            <p class="card-text o_default_snippet_text">
+<span style="color: rgb(33, 37, 41);font-size: 18px;font-style: normal;font-weight: 400;background-color: rgb(255, 255, 255)">Assist. Prof. Dr. Ramazan KOCAOĞLU</span>
+
+<br/></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+                            
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav_tabs_content_1713094275620_1599" role="tabpanel" aria-labelledby="nav_tabs_link_1713094275620_1599">
+                        <div class="oe_structure oe_empty" data-editor-message-default="true" data-editor-message="YAPI BLOKLARINI BURYA SÜRÜKLEYİN">
+                            
+                        <section class="s_text_block pt40 pb40" data-snippet="s_text_block" data-name="Metin" style="background-image: none;">
+        <div class="s_allow_columns container">
+            <table class="table table-bordered o_table"><tbody><tr style="height: 268px;"><td><h5><a href="https://otuperformans.ostimteknik.edu.tr/detail.jsp?doi=10.1007/s10586-024-04811-x" data-bs-original-title="" title="">Optimizing smart health 
+monitoring systems: enahancing energy efficiency and reducing latency 
+with multi-level clustering and grey wolf optimizer
+                                    </a>
+                                    
+
+                                </h5><p>
+                                    <strong>Dergi İsmi:</strong> CLUSTER COMPUTING-THE JOURNAL OF NETWORKS SOFTWARE TOOLS AND APPLICATIONS
+                                </p><p>
+                                    <strong>Yazar:</strong>
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Niayesh+Gharaei">Niayesh Gharaei
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Aliaa+M.+Alabdali">
+                                        Aliaa M. Alabdali
+                                    </a>
+                                    
+                                </p><p><strong>DOI:</strong> 10.1007/s10586-024-04811-x
+                                </p><p><strong>Yayın Yılı:</strong> 2025
+                                </p><p><strong>Article Type:</strong> Article
+                                </p><p><strong>İndeks Yeri:</strong>
+                                    
+                                    WOS
+                                    
+                                    Scopus
+                                    
+                                </p><p>
+
+</p></td></tr><tr style="height: 54px;"><td><h5><a href="https://otuperformans.ostimteknik.edu.tr/detail.jsp?doi=10.1038/s41598-025-88532-0" data-bs-original-title="" title="">Secure and energy-efficient 
+inter- and intra-cluster optimization scheme for smart cities using 
+UAV-assisted wireless sensor networks
+                                    </a>
+                                    
+
+                                </h5><p>
+                                    <strong>Dergi İsmi:</strong> SCIENTIFIC REPORTS
+                                </p><p>
+                                    <strong>Yazar:</strong>
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Niayesh+Gharaei">Niayesh Gharaei
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Aliaa+M.+Alabdali">
+                                        Aliaa M. Alabdali
+                                    </a>
+                                    
+                                </p><p><strong>DOI:</strong> 10.1038/s41598-025-88532-0
+                                </p><p><strong>Yayın Yılı:</strong> 2025
+                                </p><p><strong>Article Type:</strong> Article
+                                </p><p><strong>İndeks Yeri:</strong>
+                                    
+                                    WOS
+                                    
+                                    Scopus
+                                    
+                                </p><p>
+
+</p></td></tr><tr style="height: 54px;"><td><h5><a href="https://otuperformans.ostimteknik.edu.tr/detail.jsp?doi=10.1142/S0219498825501609" data-bs-original-title="" title="">A look at FPF rings
+                                    </a>
+                                    
+                                    
+                                    </h5><p>
+                                    <strong>Dergi İsmi:</strong> JOURNAL OF ALGEBRA AND ITS APPLICATIONS
+                                </p><p>
+                                    <strong>Yazar:</strong>
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=E.+Ghashghaei">E. Ghashghaei
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=M.+Tamer+Kosan">
+                                        M. Tamer Kosan
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=T.+Cong+Quynh">
+                                        T. Cong Quynh
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=L.+Van+Thuyet">
+                                        L. Van Thuyet
+                                    </a>
+                                    
+                                </p><p><strong>DOI:</strong> 10.1142/S0219498825501609
+                                </p><p><strong>Yayın Yılı:</strong> 2024
+                                </p><p><strong>Article Type:</strong> Article
+                                </p><p><strong>İndeks Yeri:</strong>
+                                    
+                                    WOS
+                                    
+                                    Scopus
+                                    
+                                </p><p>
+
+</p><p>
+
+</p></td></tr><tr style="height: 54px;"><td><h5><a href="https://otuperformans.ostimteknik.edu.tr/detail.jsp?doi=10.1109/ICSINTESA62455.2024.10748165" data-bs-original-title="" title="">Optimizing Cloud Storage Costs: 
+Introducing the Pre-Evaluation-Based Cost Optimization (PECSCO) 
+Mechanism
+                                    </a>
+                                    
+
+                                </h5><p>
+                                    <strong>Dergi İsmi:</strong> 
+ICSINTESA 2024 - 2024 4th International Conference of Science and 
+Information Technology in Smart Administration: The Collaboration of 
+Smart Technology and Good Governance for Sustainable Development Goals
+                                </p><p>
+                                    <strong>Yazar:</strong>
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Mohammed+F.+Alomari">Mohammed F. Alomari
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Moamin+A.+Mahmoud">
+                                        Moamin A. Mahmoud
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Niayesh+Gharaei">
+                                        Niayesh Gharaei
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Samer+Mohammed+Rasool">
+                                        Samer Mohammed Rasool
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Riyam+A.+Hasan">
+                                        Riyam A. Hasan
+                                    </a>
+                                    
+                                </p><p><strong>DOI:</strong> 10.1109/ICSINTESA62455.2024.10748165
+                                </p><p><strong>Yayın Yılı:</strong> 2024
+                                </p><p><strong>Article Type:</strong> Conference Paper
+                                </p><p><strong>İndeks Yeri:</strong>
+                                    
+                                    Scopus
+                                    
+                                </p><p>
+
+</p></td></tr><tr style="height: 54px;"><td><h5><a href="https://otuperformans.ostimteknik.edu.tr/detail.jsp?doi=10.3389/fgene.2022.1127832" data-bs-original-title="" title="">Editorial: Transcriptional and 
+post-transcriptional regulations in agricultural species after stresses
+                                    </a>
+                                    
+
+                                </h5><p>
+                                    <strong>Dergi İsmi:</strong> FRONTIERS IN GENETICS
+                                </p><p>
+                                    <strong>Atıf Sayısı:</strong> 1
+                                </p><p>
+                                    <strong>Yazar:</strong>
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Suxu+Tan">Suxu Tan
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Rani+Alex">
+                                        Rani Alex
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Turgay+Unver">
+                                        Turgay Unver
+                                    </a>
+                                    
+                                </p><p><strong>DOI:</strong> 10.3389/fgene.2022.1127832
+                                </p><p><strong>Yayın Yılı:</strong> 2023
+                                </p><p><strong>Article Type:</strong> Editorial Material
+                                </p><p><strong>İndeks Yeri:</strong>
+                                    
+                                    WOS
+                                    
+                                    Scopus
+                                    
+                                </p><p>
+
+</p></td></tr><tr style="height: 54px;"><td><h5><a href="https://otuperformans.ostimteknik.edu.tr/detail.jsp?doi=10.3390/s23208477" data-bs-original-title="" title="">Two-Stage Feature Generator for Handwritten Digit Classification
+                                    </a>
+                                    
+
+                                </h5><p>
+                                    <strong>Dergi İsmi:</strong> SENSORS
+                                </p><p>
+                                    <strong>Atıf Sayısı:</strong> 1
+                                </p><p>
+                                    <strong>Yazar:</strong>
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=M.+Altinay+Gunler+Pirim">M. Altinay Gunler Pirim
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Hakan+Tora">
+                                        Hakan Tora
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Kasim+Oztoprak">
+                                        Kasim Oztoprak
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Ismail+Butun">
+                                        Ismail Butun
+                                    </a>
+                                    
+                                </p><p><strong>DOI:</strong> 10.3390/s23208477
+                                </p><p><strong>Yayın Yılı:</strong> 2023
+                                </p><p><strong>Article Type:</strong> Article
+                                </p><p><strong>İndeks Yeri:</strong>
+                                    
+                                    WOS
+                                    
+                                    Scopus
+                                    
+                                </p><p>
+
+</p></td></tr><tr style="height: 54px;"><td><h5><a href="https://otuperformans.ostimteknik.edu.tr/detail.jsp?doi=10.1109/JIOT.2023.3298264" data-bs-original-title="" title="">A Storage Optimization and 
+Energy-Efficiency-Based Edge-Enabled Companion-Side eHealth Monitoring 
+System for IoT-Based Smart Hospitals
+                                    </a>
+                                    
+
+                                </h5><p>
+                                    <strong>Dergi İsmi:</strong> IEEE INTERNET OF THINGS JOURNAL
+                                </p><p>
+                                    <strong>Atıf Sayısı:</strong> 2
+                                </p><p>
+                                    <strong>Yazar:</strong>
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Niayesh+Gharaei">Niayesh Gharaei
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Yasser+D.+Al-Otaibi">
+                                        Yasser D. Al-Otaibi
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Sharaf+Jameel+Malebary">
+                                        Sharaf Jameel Malebary
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Alaa+Omran+Almagrabi">
+                                        Alaa Omran Almagrabi
+                                    </a>
+                                    
+                                </p><p><strong>DOI:</strong> 10.1109/JIOT.2023.3298264
+                                </p><p><strong>Yayın Yılı:</strong> 2024
+                                </p><p><strong>Article Type:</strong> Article
+                                </p><p><strong>İndeks Yeri:</strong>
+                                    
+                                    WOS
+                                    
+                                    Scopus
+                                    
+                                </p><p>
+
+</p></td></tr><tr style="height: 54px;"><td><h5><a href="https://otuperformans.ostimteknik.edu.tr/detail.jsp?doi=10.3390/su15043354" data-bs-original-title="" title="">A Novel Blockchain-Based Scientific Publishing System
+                                    </a>
+                                    
+
+                                </h5><p>
+                                    <strong>Dergi İsmi:</strong> SUSTAINABILITY
+                                </p><p>
+                                    <strong>Atıf Sayısı:</strong> 2
+                                </p><p>
+                                    <strong>Yazar:</strong>
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Mansur+Bestas">Mansur Bestas
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Ruhi+Tas">
+                                        Ruhi Tas
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Erdal+Akin">
+                                        Erdal Akin
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Merve+Ozkan-Okay">
+                                        Merve Ozkan-Okay
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Omer+Aslan">
+                                        Omer Aslan
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Semih+Serkant+Aktug">
+                                        Semih Serkant Aktug
+                                    </a>
+                                    
+                                </p><p><strong>DOI:</strong> 10.3390/su15043354
+                                </p><p><strong>Yayın Yılı:</strong> 2023
+                                </p><p><strong>Article Type:</strong> Article
+                                </p><p><strong>İndeks Yeri:</strong>
+                                    
+                                    WOS
+                                    
+                                    Scopus
+                                    
+                                </p><p>
+
+</p></td></tr><tr style="height: 54px;"><td><h5><a href="https://otuperformans.ostimteknik.edu.tr/detail.jsp?doi=10.1007/s10973-025-14019-9" data-bs-original-title="" title="">Numerical treatment of 
+magnetohydrodynamic flow of nanofluids through free convection in a 
+hexagonal-complex-shaped cavity having an embedded heated fin
+                                    </a>
+                                    
+
+                                </h5><p>
+                                    <strong>Dergi İsmi:</strong> JOURNAL OF THERMAL ANALYSIS AND CALORIMETRY
+                                </p><p>
+                                    <strong>Yazar:</strong>
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=M.+Ibtesam">M. Ibtesam
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Sohail+Nadeem">
+                                        Sohail Nadeem
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Jehad+Alzabut">
+                                        Jehad Alzabut
+                                    </a>
+                                    
+                                </p><p><strong>DOI:</strong> 10.1007/s10973-025-14019-9
+                                </p><p><strong>Yayın Yılı:</strong> 2025
+                                </p><p><strong>Article Type:</strong> Article
+                                </p><p><strong>İndeks Yeri:</strong>
+                                    
+                                    WOS
+                                    
+                                    Scopus
+                                    
+                                </p><p>
+
+</p></td></tr><tr style="height: 54px;"><td><h5><a href="https://otuperformans.ostimteknik.edu.tr/detail.jsp?doi=10.3390/fractalfract9010016" data-bs-original-title="" title="">The Use of Artificial 
+Intelligence in Data Analysis with Error Recognitions in Liver 
+Transplantation in HIV-AIDS Patients Using Modified ABC Fractional Order
+ Operators
+                                    </a>
+                                    
+
+                                </h5><p>
+                                    <strong>Dergi İsmi:</strong> FRACTAL AND FRACTIONAL
+                                </p><p>
+                                    <strong>Yazar:</strong>
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Hasib+Khan">Hasib Khan
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Jehad+Alzabut">
+                                        Jehad Alzabut
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=D.+K.+Almutairi">
+                                        D. K. Almutairi
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Wafa+Khalaf+Alqurashi">
+                                        Wafa Khalaf Alqurashi
+                                    </a>
+                                    
+                                </p><p><strong>DOI:</strong> 10.3390/fractalfract9010016
+                                </p><p><strong>Yayın Yılı:</strong> 2025
+                                </p><p><strong>Article Type:</strong> Article
+                                </p><p><strong>İndeks Yeri:</strong>
+                                    
+                                    WOS
+                                    
+                                    Scopus
+                                    
+                                </p><p>
+
+</p></td></tr><tr style="height: 54px;"><td><h5><a href="https://otuperformans.ostimteknik.edu.tr/detail.jsp?doi=10.21121/eab.20250110" data-bs-original-title="" title="">Bitcoin Crypto-Asset Prediction:
+ With an Application of Linear Autoregressive Integrated Moving Average 
+Method, and Non-Linear Multi-Layered and Feedback Artificial Neural 
+Network Models
+                                    </a>
+                                    
+
+                                </h5><p>
+                                    <strong>Dergi İsmi:</strong> EGE ACADEMIC REVIEW
+                                </p><p>
+                                    <strong>Yazar:</strong>
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Ersin+Sunbul">Ersin Sunbul
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Hamide+Ozyurek">
+                                        Hamide Ozyurek
+                                    </a>
+                                    
+                                </p><p><strong>DOI:</strong> 10.21121/eab.20250110
+                                </p><p><strong>Yayın Yılı:</strong> 2025
+                                </p><p><strong>Article Type:</strong> Review
+                                </p><p><strong>İndeks Yeri:</strong>
+                                    
+                                    WOS
+                                    
+                                </p><p>
+
+</p></td></tr><tr style="height: 54px;"><td><h5><a href="https://otuperformans.ostimteknik.edu.tr/detail.jsp?doi=10.3390/fractalfract9020125" data-bs-original-title="" title="">AI-Based Data Analysis of 
+Contaminant Transportation with Regression of Oxygen and Nutrients 
+Measurement
+                                    </a>
+                                    
+
+                                </h5><p>
+                                    <strong>Dergi İsmi:</strong> FRACTAL AND FRACTIONAL
+                                </p><p>
+                                    <strong>Yazar:</strong>
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Hasib+Khan">Hasib Khan
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Jehad+Alzabut">
+                                        Jehad Alzabut
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Mohamed+Tounsi">
+                                        Mohamed Tounsi
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Dalal+Khalid+Almutairi">
+                                        Dalal Khalid Almutairi
+                                    </a>
+                                    
+                                </p><p><strong>DOI:</strong> 10.3390/fractalfract9020125
+                                </p><p><strong>Yayın Yılı:</strong> 2025
+                                </p><p><strong>Article Type:</strong> Article
+                                </p><p><strong>İndeks Yeri:</strong>
+                                    
+                                    WOS
+                                    
+                                    Scopus
+                                    
+                                </p><p>
+
+</p></td></tr><tr style="height: 54px;"><td><h5><a href="https://otuperformans.ostimteknik.edu.tr/detail.jsp?doi=10.3390/inorganics13020054" data-bs-original-title="" title="">Characterization of Boron-Modified Activated Carbons
+                                    </a>
+                                    
+
+                                </h5><p>
+                                    <strong>Dergi İsmi:</strong> INORGANICS
+                                </p><p>
+                                    <strong>Yazar:</strong>
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Ayhan+Orhan">Ayhan Orhan
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Nurettin+Cek">
+                                        Nurettin Cek
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Selman+Sezer">
+                                        Selman Sezer
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Ismail+Demir">
+                                        Ismail Demir
+                                    </a>
+                                    
+                                </p><p><strong>DOI:</strong> 10.3390/inorganics13020054
+                                </p><p><strong>Yayın Yılı:</strong> 2025
+                                </p><p><strong>Article Type:</strong> Article
+                                </p><p><strong>İndeks Yeri:</strong>
+                                    
+                                    WOS
+                                    
+                                    Scopus
+                                    
+                                </p><p>
+
+</p></td></tr><tr style="height: 54px;"><td><h5><a href="https://otuperformans.ostimteknik.edu.tr/detail.jsp?doi=10.1016/j.bspc.2025.107740" data-bs-original-title="" title="">Medical image enhancement using war strategy optimization algorithm
+                                    </a>
+                                    
+
+                                </h5><p>
+                                    <strong>Dergi İsmi:</strong> BIOMEDICAL SIGNAL PROCESSING AND CONTROL
+                                </p><p>
+                                    <strong>Yazar:</strong>
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Yusuf+Uzun">Yusuf Uzun
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Mehmet+Bilgin">
+                                        Mehmet Bilgin
+                                    </a>
+                                    
+                                </p><p><strong>DOI:</strong> 10.1016/j.bspc.2025.107740
+                                </p><p><strong>Yayın Yılı:</strong> 2025
+                                </p><p><strong>Article Type:</strong> Article
+                                </p><p><strong>İndeks Yeri:</strong>
+                                    
+                                    WOS
+                                    
+                                    Scopus
+                                    
+                                </p><p>
+
+</p></td></tr><tr style="height: 54px;"><td><h5><a href="https://otuperformans.ostimteknik.edu.tr/detail.jsp?doi=10.1016/j.bir.2024.12.017" data-bs-original-title="" title="">House price dynamics in 
+Istanbul: District-level analysis of convergence clubs, spillovers, and 
+key drivers
+                                    </a>
+                                    
+
+                                </h5><p>
+                                    <strong>Dergi İsmi:</strong> BORSA ISTANBUL REVIEW
+                                </p><p>
+                                    <strong>Yazar:</strong>
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Lokman+Gunduz">Lokman Gunduz
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Mustafa+Cakir">
+                                        Mustafa Cakir
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Oguzhan+Cepni">
+                                        Oguzhan Cepni
+                                    </a>
+                                    
+                                </p><p><strong>DOI:</strong> 10.1016/j.bir.2024.12.017
+                                </p><p><strong>Yayın Yılı:</strong> 2025
+                                </p><p><strong>Article Type:</strong> Article
+                                </p><p><strong>İndeks Yeri:</strong>
+                                    
+                                    WOS
+                                    
+                                    Scopus
+                                    
+                                </p><p>
+
+</p></td></tr><tr style="height: 54px;"><td><h5><a href="https://otuperformans.ostimteknik.edu.tr/detail.jsp?doi=10.1016/j.eswa.2024.125382" data-bs-original-title="" title="">Sustainable brand logo selection using an AI-Supported PF-WENSLO-ARLON hybrid method
+                                    </a>
+                                    
+
+                                </h5><p>
+                                    <strong>Dergi İsmi:</strong> EXPERT SYSTEMS WITH APPLICATIONS
+                                </p><p>
+                                    <strong>Yazar:</strong>
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Karahan+Kara">Karahan Kara
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Elif+Akagun+Ergin">
+                                        Elif Akagun Ergin
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Galip+Cihan+Yalcin">
+                                        Galip Cihan Yalcin
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Tugce+Celik">
+                                        Tugce Celik
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Muhammet+Deveci">
+                                        Muhammet Deveci
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Seifedine+Kadry">
+                                        Seifedine Kadry
+                                    </a>
+                                    
+                                </p><p><strong>DOI:</strong> 10.1016/j.eswa.2024.125382
+                                </p><p><strong>Yayın Yılı:</strong> 2025
+                                </p><p><strong>Article Type:</strong> Article
+                                </p><p><strong>İndeks Yeri:</strong>
+                                    
+                                    WOS
+                                    
+                                    Scopus
+                                    
+                                </p><p>
+
+</p></td></tr><tr style="height: 53.3px;"><td><h5><a href="https://otuperformans.ostimteknik.edu.tr/detail.jsp?doi=10.1109/OJCOMS.2024.3523304" data-bs-original-title="" title="">A Novel Approach to 
+Approximating Generalized Pointing Errors Modeled by Beckmann 
+Distribution in FSO Communication Systems
+                                    </a>
+                                    
+
+                                </h5><p>
+                                    <strong>Dergi İsmi:</strong> IEEE OPEN JOURNAL OF THE COMMUNICATIONS SOCIETY
+                                </p><p>
+                                    <strong>Yazar:</strong>
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Emna+Zedini">Emna Zedini
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Yalcin+Ata">
+                                        Yalcin Ata
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Abla+Kammoun">
+                                        Abla Kammoun
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Mohamed-Slim+Alouini">
+                                        Mohamed-Slim Alouini
+                                    </a>
+                                    
+                                </p><p><strong>DOI:</strong> 10.1109/OJCOMS.2024.3523304
+                                </p><p><strong>Yayın Yılı:</strong> 2025
+                                </p><p><strong>Article Type:</strong> Article
+                                </p><p><strong>İndeks Yeri:</strong>
+                                    
+                                    WOS
+                                    
+                                    Scopus
+                                    
+                                </p><p>
+
+</p></td></tr><tr style="height: 53.3px;"><td><h5><a href="https://otuperformans.ostimteknik.edu.tr/detail.jsp?doi=10.1515/ms-2025-0008" data-bs-original-title="" title="">On nonoscillation of fractional 
+order functional differential equations with forcing term and 
+distributed delays
+                                    </a>
+                                    
+
+                                </h5><p>
+                                    <strong>Dergi İsmi:</strong> MATHEMATICA SLOVACA
+                                </p><p>
+                                    <strong>Yazar:</strong>
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=James+Viji">James Viji
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Jehad+Alzabut">
+                                        Jehad Alzabut
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Velu+Muthulakshmi">
+                                        Velu Muthulakshmi
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Abdulah+Ozbekler">
+                                        Abdulah Ozbekler
+                                    </a>
+                                    
+                                </p><p><strong>DOI:</strong> 10.1515/ms-2025-0008
+                                </p><p><strong>Yayın Yılı:</strong> 2025
+                                </p><p><strong>Article Type:</strong> Article
+                                </p><p><strong>İndeks Yeri:</strong>
+                                    
+                                    WOS
+                                    
+                                    Scopus
+                                    
+                                </p><p>
+
+</p></td></tr><tr style="height: 53.3px;"><td><h5><a href="https://otuperformans.ostimteknik.edu.tr/detail.jsp?doi=10.1108/JKM-05-2024-0633" data-bs-original-title="" title="">Impact of knowledge-sharing 
+culture on organizational creativity: integrating explicit and tacit 
+knowledge sharing as mediators
+                                    </a>
+                                    
+
+                                </h5><p>
+                                    <strong>Dergi İsmi:</strong> JOURNAL OF KNOWLEDGE MANAGEMENT
+                                </p><p>
+                                    <strong>Yazar:</strong>
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Tayfun+Yildiz">Tayfun Yildiz
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Betul+Balkan+Akan">
+                                        Betul Balkan Akan
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Unsal+Sigri">
+                                        Unsal Sigri
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Marina+Dabic">
+                                        Marina Dabic
+                                    </a>
+                                    
+                                </p><p><strong>DOI:</strong> 10.1108/JKM-05-2024-0633
+                                </p><p><strong>Yayın Yılı:</strong> 2025
+                                </p><p><strong>Article Type:</strong> Article
+                                </p><p><strong>İndeks Yeri:</strong>
+                                    
+                                    WOS
+                                    
+                                    Scopus
+                                    
+                                </p><p>
+
+</p><p>
+
+</p><p>
+
+</p></td></tr><tr style="height: 53.3px;"><td><h5><a href="https://otuperformans.ostimteknik.edu.tr/detail.jsp?doi=10.1142/S0218348X2540105X" data-bs-original-title="" title="">A COUPLED NONLINEAR SYSTEM OF INTEGRO-DIFFERENTIAL EQUATIONS USING MODIFIED ABC OPERATOR
+                                    </a>
+                                    
+
+                                </h5><p>
+                                    <strong>Dergi İsmi:</strong> FRACTALS-COMPLEX GEOMETRY PATTERNS AND SCALING IN NATURE AND SOCIETY
+                                </p><p>
+                                    <strong>Yazar:</strong>
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Hasib+Khan">Hasib Khan
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Jehad+Alzabut">
+                                        Jehad Alzabut
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=D.+K.+Almutairi">
+                                        D. K. Almutairi
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Wafa+khalaf+Alqurashi">
+                                        Wafa khalaf Alqurashi
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Sandra+Pinelas">
+                                        Sandra Pinelas
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Osman+Tunc">
+                                        Osman Tunc
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Mohammad+athar+Azim">
+                                        Mohammad athar Azim
+                                    </a>
+                                    
+                                </p><p><strong>DOI:</strong> 10.1142/S0218348X2540105X
+                                </p><p><strong>Yayın Yılı:</strong> 2025
+                                </p><p><strong>Article Type:</strong> Article
+                                </p><p><strong>İndeks Yeri:</strong>
+                                    
+                                    WOS
+                                    
+                                    Scopus
+                                    
+                                </p><p>
+
+</p></td></tr><tr style="height: 53.3px;"><td><h5><a href="https://otuperformans.ostimteknik.edu.tr/detail.jsp?doi=10.1142/S0218348X25400997">DATA ANALYSIS OF 
+FRACTAL-FRACTIONAL CO-INFECTION COVID-TB MODEL WITH THE USE OF 
+ARTIFICIAL INTELLIGENCE
+                                    </a>
+                                    
+
+                                </h5><p>
+                                    <strong>Dergi İsmi:</strong> FRACTALS-COMPLEX GEOMETRY PATTERNS AND SCALING IN NATURE AND SOCIETY
+                                </p><p>
+                                    <strong>Yazar:</strong>
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Hasib+Khan">Hasib Khan
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Jehad+Alzabut">
+                                        Jehad Alzabut
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=D.+K.+Almutairi">
+                                        D. K. Almutairi
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Haseena+Gulzar">
+                                        Haseena Gulzar
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Wafa+khalaf+Alqurashi">
+                                        Wafa khalaf Alqurashi
+                                    </a>
+                                    
+                                </p><p><strong>DOI:</strong> 10.1142/S0218348X25400997
+                                </p><p><strong>Yayın Yılı:</strong> 2025
+                                </p><p><strong>Article Type:</strong> Article
+                                </p><p><strong>İndeks Yeri:</strong>
+                                    
+                                    WOS
+                                    
+                                    Scopus
+                                    
+                                </p><p>
+
+</p></td></tr><tr style="height: 53.3px;"><td><h5><a href="https://otuperformans.ostimteknik.edu.tr/detail.jsp?doi=10.1016/j.net.2025.103526" data-bs-original-title="" title="">Dual on-premises storage 
+framework for memory optimization and secure data transmission in 
+nuclear power plants
+                                    </a>
+                                    
+
+                                </h5><p>
+                                    <strong>Dergi İsmi:</strong> NUCLEAR ENGINEERING AND TECHNOLOGY
+                                </p><p>
+                                    <strong>Yazar:</strong>
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Niayesh+Gharaei">Niayesh Gharaei
+                                    </a>
+                                    
+                                </p><p><strong>DOI:</strong> 10.1016/j.net.2025.103526
+                                </p><p><strong>Yayın Yılı:</strong> 2025
+                                </p><p><strong>Article Type:</strong> Article
+                                </p><p><strong>İndeks Yeri:</strong>
+                                    
+                                    WOS
+                                    
+                                    Scopus
+                                    
+                                </p><p>
+
+</p></td></tr><tr style="height: 53.3px;"><td><h5><a href="https://otuperformans.ostimteknik.edu.tr/detail.jsp?doi=10.1016/j.mssp.2024.109027" data-bs-original-title="" title="">Understanding the pressure 
+effect on the physical properties of half-Heusler semiconductor LiCaX (X
+ = As, Sb, N) compounds from Ab-initio calculations
+                                    </a>
+                                    
+
+                                </h5><p>
+                                    <strong>Dergi İsmi:</strong> MATERIALS SCIENCE IN SEMICONDUCTOR PROCESSING
+                                </p><p>
+                                    <strong>Yazar:</strong>
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Yasemin+O.+Ciftci">Yasemin O. Ciftci
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Belgin+Kocak">
+                                        Belgin Kocak
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Engin+Ateser">
+                                        Engin Ateser
+                                    </a>
+                                    
+                                </p><p><strong>DOI:</strong> 10.1016/j.mssp.2024.109027
+                                </p><p><strong>Yayın Yılı:</strong> 2025
+                                </p><p><strong>Article Type:</strong> Article
+                                </p><p><strong>İndeks Yeri:</strong>
+                                    
+                                    WOS
+                                    
+                                    Scopus
+                                    
+                                </p><p>
+
+</p></td></tr><tr style="height: 53.3px;"><td><h5><a href="https://otuperformans.ostimteknik.edu.tr/detail.jsp?doi=10.1016/j.intfin.2025.102156" data-bs-original-title="" title="">Predicting the conditional 
+distribution of US stock market systemic Stress: The role of climate 
+risks
+                                    </a>
+                                    
+
+                                </h5><p>
+                                    <strong>Dergi İsmi:</strong> JOURNAL OF INTERNATIONAL FINANCIAL MARKETS INSTITUTIONS &amp; MONEY
+                                </p><p>
+                                    <strong>Yazar:</strong>
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Massimiliano+Caporin">Massimiliano Caporin
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Petre+Caraiani">
+                                        Petre Caraiani
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Oguzhan+Cepni">
+                                        Oguzhan Cepni
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Rangan+Gupta">
+                                        Rangan Gupta
+                                    </a>
+                                    
+                                </p><p><strong>DOI:</strong> 10.1016/j.intfin.2025.102156
+                                </p><p><strong>Yayın Yılı:</strong> 2025
+                                </p><p><strong>Article Type:</strong> Article
+                                </p><p><strong>İndeks Yeri:</strong>
+                                    
+                                    WOS
+                                    
+                                    Scopus
+                                    
+                                </p><p>
+
+</p></td></tr><tr style="height: 53.3px;"><td><h5><a href="https://otuperformans.ostimteknik.edu.tr/detail.jsp?doi=10.1142/S0219622025500300" data-bs-original-title="" title="" aria-describedby="popover120429">Evaluation of Companies in 
+Applied Education: Determining the Criteria and a Case Study at an 
+Industrial University
+                                    </a>
+                                    
+
+                                </h5><p>
+                                    <strong>Dergi İsmi:</strong> INTERNATIONAL JOURNAL OF INFORMATION TECHNOLOGY &amp; DECISION MAKING
+                                </p><p>
+                                    <strong>Yazar:</strong>
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Sema+Ciftci">Sema Ciftci
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Mehmet+Pinarbasi">
+                                        Mehmet Pinarbasi
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Hacimehmet+Alakas">
+                                        Hacimehmet Alakas
+                                    </a>
+                                    
+                                </p><p><strong>DOI:</strong> 10.1142/S0219622025500300
+                                </p><p><strong>Yayın Yılı:</strong> 2025
+                                </p><p><strong>Article Type:</strong> Article
+                                </p><p><strong>İndeks Yeri:</strong>
+                                    
+                                    WOS
+                                    
+                                    Scopus
+                                    
+                                </p><p>
+
+</p></td></tr><tr style="height: 53.3px;"><td><h5><a href="https://otuperformans.ostimteknik.edu.tr/detail.jsp?doi=10.1007/s10973-025-14032-y" data-bs-original-title="" title="">MHD natural convection of 
+nanofluid flow using a corrugated permeable medium within corrugated 
+circular cavity
+                                    </a>
+                                    
+
+                                </h5><p>
+                                    <strong>Dergi İsmi:</strong> JOURNAL OF THERMAL ANALYSIS AND CALORIMETRY
+                                </p><p>
+                                    <strong>Yazar:</strong>
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Sohail+Nadeem">Sohail Nadeem
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=M.+Arif">
+                                        M. Arif
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Inayat+Ullah">
+                                        Inayat Ullah
+                                    </a>, 
+                                    
+                                    <a href="https://otuperformans.ostimteknik.edu.tr/search.jsp?authorFilter=Jehad+Alzabut">
+                                        Jehad Alzabut
+                                    </a>
+                                    
+                                </p><p><strong>DOI:</strong> 10.1007/s10973-025-14032-y
+                                </p><p><strong>Yayın Yılı:</strong> 2025
+                                </p><p><strong>Article Type:</strong> Article
+                                </p><p><strong>İndeks Yeri:</strong>
+                                    
+                                    WOS
+                                    
+                                    Scopus
+                                    
+                                </p><p>
+
+</p></td></tr><tr style="height: 53.3px;"><td><p><br/></p></td></tr><tr style="height: 53.3px;"><td><p><br/></p></td></tr><tr style="height: 53.3px;"><td><p><br/></p></td></tr><tr style="height: 53.3px;"><td><p><br/></p></td></tr><tr style="height: 53.3px;"><td><p><br/></p></td></tr><tr style="height: 53.3px;"><td><p><br/></p></td></tr></tbody></table><p><br/></p>
+        </div>
+    </section></div>
+                    </div>
+                    <div class="tab-pane fade active show" id="nav_tabs_content_1713094275620_1600" role="tabpanel" aria-labelledby="nav_tabs_link_1713094275620_1600">
+                        <div class="oe_structure oe_empty" data-editor-message-default="true" data-editor-message="YAPI BLOKLARINI BURYA SÜRÜKLEYİN">
+                            
+                        <section class="s_text_block pt40 pb40" data-snippet="s_text_block" data-name="Metin" style="background-image: none;">
+        <div class="container s_allow_columns">
+            <table class="table table-bordered"><thead><tr><th>#</th><th>Project Name</th><th>Project Owner</th><th>Year</th><th>Institution</th></tr></thead><tbody><tr><th>1</th><td>Kurumsal Ağlar İçin Kullanıcıların Ağa Erişiminde Gerçek Zamanlı Güvenlik Zafiyeti ve Anomali Tespiti Yapan Güvenlik Donanım ve Yazılım Cihazı Geliştirilmesi</td><td>Assist. Prof. Dr. Ramazan KOCAOĞLU</td><td>2020</td><td>Tübitak</td></tr></tbody></table><p>
+
+
+
+<br/></p></div>
+    </section></div>
+                    </div><div class="tab-pane fade" id="nav_tabs_content_1713094275620_1601" role="tabpanel" aria-labelledby="nav_tabs_link_1713094275620_1601">
+                        <div class="oe_structure oe_empty" data-editor-message-default="true" data-editor-message="YAPI BLOKLARINI BURYA SÜRÜKLEYİN">
+                            <section class="s_text_block" style="background-image: none;" data-name="Metin">
+                                <div class="container s_allow_columns">
+                                    <p class="o_default_snippet_text">Müşteri ile başlayın - ne istediklerini bulun ve onlara verin.</p>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section></div>
+    
+                </main>
+                <footer id="bottom" data-anchor="true" data-name="Footer" role="contentinfo" class="o_footer o_colored_level o_cc ">
+                    <div id="footer" class="oe_structure oe_structure_solo">
+            <section class="s_text_block pt32" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+                <div class="s_allow_columns o_container_small">
+                    <div class="s_social_media mb-4 o_not_editable text-center" data-snippet="s_social_media" data-name="Social Media">
+                        <h5 class="s_social_media_title d-none">Follow us</h5>
+<a href="/website/social/facebook" class="s_social_media_facebook" target="_blank">
+                            <i class="fa fa-facebook rounded-circle rounded shadow-sm o_editable_media text-o-color-3"></i>
+                        </a>
+<a href="/website/social/linkedin" class="s_social_media_linkedin" target="_blank">
+                            <i class="fa fa-linkedin rounded-circle shadow-sm o_editable_media rounded text-o-color-3"></i>
+                        </a>
+<a href="/website/social/youtube" class="s_social_media_youtube" target="_blank">
+                            <i class="fa rounded-circle rounded shadow-sm o_editable_media fa-youtube text-o-color-3"></i>
+                        </a>
+<a href="/website/social/instagram" class="s_social_media_instagram" target="_blank">
+                            <i class="fa rounded-circle rounded shadow-sm o_editable_media fa-instagram text-o-color-3"></i>
+                        </a>
+</div>
+
+
+
+                    <p class="text-center mb-1">Ostim 100. Yıl Bulvarı No: 55/F Yenimahalle • Ankara• Türkiye<br/></p>
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item mx-3"><i class="fa fa-1x fa-fw fa-phone me-2" data-bs-original-title="" title="" aria-describedby="tooltip887161"></i><span class="o_force_ltr"><a href="tel:1 (650) 555-0111" data-bs-original-title="" title=""><font class="text-white">+90 (312) 386 10 92</font></a></span></li>
+                        <li class="list-inline-item mx-3"><i class="fa fa-1x fa-fw fa-envelope me-2" data-bs-original-title="" title=""></i><a href="mailto:info@yourcompany.example.com" data-bs-original-title="" title=""><font class="text-white">info@ostimteknik.edu.tr</font></a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="s_text_block pt16 pb16 d-lg-block d-none o_snippet_mobile_invisible" data-snippet="s_text_block" data-name="Logo" style="background-image: none;" data-invisible="1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2 offset-lg-5 o_colored_level">
+                            <a href="/" class="o_footer_logo logo" data-bs-original-title="" title="">
+                                <img src="/web/image/203980-73bcd963/200px-Ostim_Teknik_%C3%9Cniversitesi_Logosu-Byz.png" alt="" class="img-fluid mx-auto img o_we_custom_image" data-original-id="187296" data-original-src="/web/image/187296-fc4b5bad/200px-Ostim_Teknik_%C3%9Cniversitesi_Logosu-Byz.png" data-mimetype="image/png" data-resize-width="200" loading="lazy"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+                <div class="ostim-consent-reopen-wrap container">
+                    <a href="#" class="ostim-consent-reopen" role="button">
+                        Cookie Settings
+                    </a>
+                </div>
+                </footer>
+    	<nav id="sidebar" class="sidebar-wrapper bg-white d-block d-md-none">
+	    	<div class="sidebar-content">
+				
+				<div class="card bg-white">
+	                <div class="card-header d-flex align-items-center justify-content-between">
+	                  	<div class="header-brand mt16 mb16 text-start">
+	    					<a href="/" class="navbar-brand logo ">
+					            <span role="img" aria-label="Logo of MF-Bilgisayar Mühendisliği (İngilizce)" title="MF-Bilgisayar Mühendisliği (İngilizce)"><img src="/web/image/website/27/sidebar_logo/MF-Bilgisayar%20M%C3%BChendisli%C4%9Fi%20%28%C4%B0ngilizce%29?unique=885d64b" class="img img-fluid" alt="MF-Bilgisayar Mühendisliği (İngilizce)" loading="lazy"/></span>
+					        </a>
+	            		</div>
+						<div class="search">
+							<div class="close-mbl-sidebar  text-center">
+								<a href="#" class="text-decoration-none"><span class="lnr lnr-cross text-black" id="close_mbl_sidebar"></span></a>							
+							</div>
+						</div>
+	                </div>
+	                <div class="card-body tab-content">
+	                  	<div class="tab-pane fade active show" id="nav_tabs_content_1595584408392_2" role="tabpanel" aria-labelledby="nav_tabs_link_1595584408392_2">
+	                    	<ul class="nav navbar-nav align-items-md-center" id="top_menu">
+    <li class="nav-item dropdown  ">
+        <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle ">
+            <span>About Our Department</span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+    <li role="presentation" class="">
+        <a role="menuitem" href="/about-the-department" class="dropdown-item ">
+            <span>About Us</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/chairperson-s-message" class="dropdown-item ">
+            <span>Department Head&#39;s Message</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/commissions" class="dropdown-item ">
+            <span>Committees</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/academic-staff" class="dropdown-item ">
+            <span>Academic Staff</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/our-difference" class="dropdown-item ">
+            <span>Our Differences</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/mission-and-vission" class="dropdown-item ">
+            <span>Mission and Vission</span>
+        </a>
+    </li>
+        </ul>
+    </li>
+    <li class="nav-item dropdown  ">
+        <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle ">
+            <span>Student</span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+    <li role="presentation" class="">
+        <a role="menuitem" href="/curriculum" class="dropdown-item ">
+            <span>Curriculum</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/course-schedule" class="dropdown-item ">
+            <span>Course Schedules</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/exam-schedule" class="dropdown-item ">
+            <span>Exam Schedules</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/course-contents" class="dropdown-item ">
+            <span>Course Contents</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/activities" class="dropdown-item ">
+            <span>Activities</span>
+        </a>
+    </li>
+        </ul>
+    </li>
+    <li class="nav-item dropdown  ">
+        <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle ">
+            <span>Forms and Documents</span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+    <li role="presentation" class="">
+        <a role="menuitem" href="/workplace-documents" class="dropdown-item ">
+            <span>Workplace Documents</span>
+        </a>
+    </li>
+        </ul>
+    </li>
+    <li class="nav-item dropdown active ">
+        <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle ">
+            <span>Research</span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+    <li role="presentation" class="">
+        <a role="menuitem" href="/research" class="dropdown-item active">
+            <span>Publications</span>
+        </a>
+    </li>
+        </ul>
+    </li>
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="/contactus" class="nav-link ">
+            <span>Contact Us</span>
+        </a>
+    </li>
+							</ul>
+	                  	</div>
+	                </div>
+	          	</div>
+	    	</div>
+	    </nav>
+            </div>
+                
+                <div id="ostim_consent_banner" class="ostim-consent" role="dialog" aria-modal="true" aria-labelledby="ostim_consent_title" aria-describedby="ostim_consent_desc" hidden="hidden" data-has-consent="0">
+                    <div class="ostim-consent__panel" role="document">
+                        <h2 id="ostim_consent_title" class="ostim-consent__title">
+                            Cookie Preferences
+                        </h2>
+                        <p id="ostim_consent_desc" class="ostim-consent__desc">
+                                We use cookies to improve your experience, analyze traffic and
+                                personalize content. Strictly necessary cookies are always active
+                                for the site to work. You can change your choice at any time via
+                                the “Cookie Settings” link in the footer.
+                                For details, see <a class="ostim-consent__policy" href="https://ostimteknik.edu.tr/cookie-policy">Cookie Policy</a>.
+                        </p>
+                        <div class="ostim-consent__actions">
+                            <button type="button" class="ostim-consent__btn ostim-consent__btn--reject" data-consent="reject">
+                                Reject All
+                            </button>
+                            <button type="button" class="ostim-consent__btn ostim-consent__btn--analytics" data-consent="analytics">
+                                Analytics Only
+                            </button>
+                            <button type="button" class="ostim-consent__btn ostim-consent__btn--accept" data-consent="accept">
+                                Accept All
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            <script id="tracking_code" async="1" src="https://www.googletagmanager.com/gtag/js?id=G-0TBK8RPZRT"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-0TBK8RPZRT');
+            </script>
+
+        
+        </body>
+</html>

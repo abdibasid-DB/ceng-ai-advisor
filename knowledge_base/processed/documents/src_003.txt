@@ -1,0 +1,1487 @@
+Source ID: src_003
+
+Curriculum | MF-Bilgisayar Mühendisliği (İngilizce)
+
+Ana Sayfa
+Engelsiz
+Kütüphane
+
+MÜFREDAT
+
+Güncel Müfredat (2024-2025 Sonrası)
+
+Sınıf
+
+Dönem
+
+Ders Tipi
+
+Ders Kodu
+
+Ders Adı
+
+Th.
+
+Pr.
+
+Lab.
+
+Credi
+
+ECTS
+
+Ön koşul
+
+1. Yıl
+
+1. Dönem
+
+Zorunlu
+
+MATH 101
+
+Engineering Mathematics I
+
+1. Yıl
+
+1. Dönem
+
+Zorunlu
+
+PHYS 101
+
+Engineering Physics I
+
+1. Yıl
+
+1. Dönem
+
+Zorunlu
+
+CENG109
+
+Programming and Computation I
+
+1. Yıl
+
+1. Dönem
+
+Zorunlu
+
+ENG 101
+
+Academic English I
+
+1. Yıl
+
+1. Dönem
+
+Zorunlu
+
+IUL 151
+
+Introduction to University Life
+
+1. Yıl
+
+1. Dönem
+
+Zorunlu
+
+EPR 121
+
+Fundamentals of Entrepreneurship
+
+1. Yıl
+
+1. Dönem
+
+Zorunlu
+
+TUR 101
+
+Turkish Language I
+
+1. Yıl
+
+1. Dönem
+
+Zorunlu
+
+MATH 201
+
+Linear Algebra with Engineering Applications
+
+ATA 101
+
+Principles of Atatürk and History of Turkish Revolution I
+
+Özet
+
+2. Dönem
+
+MATH 102
+
+Engineering Mathematics II
+
+MATH 101
+
+2. Dönem
+
+PHYS 102
+
+Engineering Physics II
+
+2. Dönem
+
+CENG110
+
+Programming and Computation II
+
+CENG 109
+
+2. Dönem
+
+ENG 102
+
+Academic English II
+
+2. Dönem
+
+WED 128
+
+Workplace Education
+
+2. Dönem
+
+SENG116
+
+Object Oriented Programming
+
+2. Dönem
+
+IUL 152
+
+Building the Future
+
+2. Dönem
+
+EPR 122
+
+Entrepreneurship Project
+
+ATA 102
+
+Principles of Atatürk and History of Turkish Revolution II
+
+TUR 102
+
+Turkish Language II
+
+Özet
+
+2. Yıl
+
+3. Dönem
+
+MATH 202
+
+Differential Equations
+
+MATH 101
+
+2. Yıl
+
+3. Dönem
+
+CENG 213
+
+Discrete Computing Structures
+
+2. Yıl
+
+3. Dönem
+
+EEE 201
+
+Electrical Circuits I
+
+2. Yıl
+
+3. Dönem
+
+Seçmeli
+
+NTE 1
+
+Non-Technical Elective
+
+2. Yıl
+
+3. Dönem
+
+WAP 227
+
+Workplace Application I
+
+2. Yıl
+
+3. Dönem
+
+ENG 211
+
+Academic English III
+
+2. Yıl
+
+3. Dönem
+
+CENG 205
+
+Data Structures and Algorithms
+
+CENG110
+
+Özet
+
+2. Yıl
+
+4. Dönem
+
+SENG 305
+
+Formal Languages and Automata
+
+4. Dönem
+
+SENG 202
+
+Introduction to Database Systems
+
+4. Dönem
+
+CENG 207
+
+Digital Design I
+
+4. Dönem
+
+WAP 228
+
+Workplace Application II
+
+4. Dönem
+
+MATH 204
+
+Probability and Statistics for Engineers
+
+4. Dönem
+
+ENG 212
+
+Academic English IV
+
+Özet
+
+3. Yıl
+
+5. Dönem
+
+MATH 301
+
+Numerical Methods and Scientific Computing
+
+3. Yıl
+
+5. Dönem
+
+CENG 303
+
+Operating Systems Design & Construction
+
+3. Yıl
+
+5. Dönem
+
+CENG 309
+
+Introduction to Computer Architecture
+
+3. Yıl
+
+5. Dönem
+
+EEE 309
+
+Signals and Systems
+
+3. Yıl
+
+5. Dönem
+
+WAP 327
+
+Workplace Application III
+
+3. Yıl
+
+5. Dönem
+
+LCE 301
+
+Law Concepts for Engineering
+
+Özet
+
+3. Yıl
+
+6. Dönem
+
+CENG 314
+
+Computer Networks
+
+3. Yıl
+
+6. Dönem
+
+CENG 316
+
+New Trends in Computer Engineering
+
+6. Dönem
+
+Seçmeli
+
+ELEC-1
+
+Technical Elective I
+
+6. Dönem
+
+Seçmeli
+
+ELEC-2
+
+Technical Elective II
+
+6. Dönem
+
+SENG 204
+
+Software Engineering
+
+6. Dönem
+
+WEX 328
+
+Workplace Experience I
+
+Özet
+
+4. Yıl
+
+7. Dönem
+
+WEX 427
+
+Workplace Experience II
+
+4. Yıl
+
+7. Dönem
+
+CENG 401
+
+Grauation Project I
+
+4. Yıl
+
+7. Dönem
+
+Seçmeli
+
+ELEC-3
+
+Technical Elective III
+
+4. Yıl
+
+7. Dönem
+
+Seçmeli
+
+ELEC-4
+
+Technical Elective IV
+
+4. Yıl
+
+7. Dönem
+
+Seçmeli
+
+ELEC-5
+
+Technical Elective V
+
+4. Yıl
+
+7. Dönem
+
+Seçmeli
+
+ELEC-6
+
+Technical Elective VI
+
+4. Yıl
+
+7. Dönem
+
+Seçmeli
+
+ELEC-7
+
+Technical Elective VII
+
+Özet
+
+4. Yıl
+
+8. Dönem
+
+WEX 428
+
+Workplace Experience III
+
+8. Dönem
+
+CENG 402
+
+Graduation Project II
+
+Summary
+
+Genel Özet
+
+168
+
+240
+
+Seçmeli Dersler
+
+CENG 208
+
+Mikroelektronik Aygıtlar ve Devreler
+
+SENG 208
+
+Python ile Programlama
+
+CENG 309
+
+Bilgisayar Mimarisine Giriş
+
+CENG 323
+
+İşletim Sistemleri Tasarımı ve İnşası
+
+EEE 309
+
+Sinyaller ve Sistemler
+
+LCE 301
+
+Mühendisler için Hukuk Kavramları
+
+MATH 301
+
+Sayısal Yöntemler ve Bilimsel Hesaplama
+
+WAP 327
+
+İş Yeri Uygulaması III
+
+CENG 301
+
+Algoritmalar Analizi
+
+CENG 311
+
+Mikroişlemciler
+
+CENG 318
+
+Web Programlam
+
+CENG 384
+
+Fundamentals of Quantum Computing
+
+CENG 427
+
+Dağıtık Sistemler
+
+CENG 452
+
+Geniş Bant Hücresel İletişim Sistemlerine Giriş
+
+CENG 454
+
+Kablosuz Sensör Ağları
+
+SENG 364
+
+E-İmza Teknolojileri
+
+SENG 374
+
+Görüntü Adli Bilişimine Giriş
+
+SENG 376
+
+Yalın Yazılım Geliştirme
+
+SENG 378
+
+Üretken Yapay Zeka
+
+SENG 380
+
+Kablosuz Sensör Ağları
+
+CENG 401
+
+Mezuniyet Projesi I
+
+WEX 427
+
+İş Yeri Deneyimi II
+
+ELEC-3
+
+Teknik Seçmeli Ders III
+
+ELEC-4
+
+Teknik Seçmeli Ders IV
+
+ELEC-5
+
+Teknik Seçmeli Ders V
+
+ELEC-6
+
+Teknik Seçmeli Ders VI
+
+ELEC-7
+
+Teknik Seçmeli Ders VII
+
+CENG_403
+
+Şebeke Analizi
+
+CENG 407
+
+Robotik ve Robot Otonomisi
+
+MAR 401
+
+E-Ticaret
+
+MFBP 402
+
+Mezuniyet Projesi II
+
+WEX 428
+
+İş Yeri Deneyimi III
+
+CENG 431
+
+Bilgi Güvenliği
+
+Dersler (2022-2023 / 2024-2025)
+
+Semester
+
+Type
+
+Code
+
+Course Name
+
+Th.
+
+Pr.
+
+Lab.
+
+Credi
+
+ECTS
+
+Prerequisite
+
+ENG 101
+
+Akademik İngilizce I
+
+EHS 101
+
+İş Sağlığı ve Güvenliği
+
+EPR 121
+
+Girişimciliğin Temelleri
+
+IUL 151
+
+Üniversite Hayatına Giriş
+
+CENG 105
+
+Bilgisayar Programlama (C Programlama) I
+
+CENG 107
+
+Bilgisayar Programlama (C Programlama) Laboratuvarı I
+
+MATH 101
+
+Mühendislik Matematiği I
+
+PHYS 103
+
+Mühendislik Fiziği I
+
+PHYS 105
+
+Mühendislik Fiziği Laboratuvarı I
+
+CENG 111
+
+Bilgisayar ve Yazılım Mühendisliğine Giriş
+
+Total
+
+Semester
+
+Type
+
+Code
+
+Course Name
+
+Th.
+
+Pr.
+
+Lab.
+
+Credi
+
+ECTS
+
+Prerequisite
+
+ENG 102
+
+Akademik İngilizce II
+
+EPR 122
+
+Girişimcilik Projesi
+
+IUL 152
+
+Geleceğin İnşası
+
+WED 126
+
+İş Yeri Eğitimi
+
+MATH 102
+
+Mühendislik Matematiği II
+
+MATH 101
+
+PHYS 104
+
+Mühendislik Fiziği II
+
+PHYS 106
+
+Mühendislik Fiziği II Laboratuvarı
+
+CENG 106
+
+Bilgisayar Programlama (C++ Programlama ) II
+
+CENG 105
+
+CENG 108
+
+Bilgisayar Programlama (C++ Programlama ) Laboratuvarı II
+
+CENG 107
+
+MATH 201
+
+Lineer Cebir
+
+Total
+
+Semester
+
+Type
+
+Code
+
+Course Name
+
+Th.
+
+Pr.
+
+Lab.
+
+Credi
+
+ECTS
+
+Prerequisite
+
+ATA 101
+
+Atatürk İlkeleri ve İnkılap Tarihi I
+
+TUR 101
+
+Türk Dili I
+
+WAP 227
+
+İş Yeri Uygulaması I
+
+EEE 201
+
+Elektrik Devreleri I
+
+CENG 213
+
+Ayrık Hesaplama Yapıları
+
+MATH 202
+
+Diferansiyel Denklemler
+
+MATH 101
+
+CENG 207
+
+Sayısal Tasarım I
+
+CENG 215
+
+Nesneye Dayalı Programlama
+
+CENG 106
+
+Total
+
+Semester
+
+Type
+
+Code
+
+Course Name
+
+Th.
+
+Pr.
+
+Lab.
+
+Credi
+
+ECTS
+
+Prerequisite
+
+ATA 102
+
+Atatürk İlkeleri ve İnkılap Tarihi II
+
+TUR 102
+
+Türk Dili II
+
+WAP 228
+
+İş Yeri Uygulaması II
+
+SENG 208
+
+Python ile Programlama
+
+MATH 204
+
+Olasılık ve İstatistik
+
+CENG 208
+
+Mikroelektronik Aygıtlar ve Devreler
+
+CENG 204
+
+Sistem Programlama
+
+CENG 206
+
+Veri Yapıları ve Algoritmalar
+
+CENG 105
+
+Total
+
+Semester
+
+Type
+
+Code
+
+Course Name
+
+Th.
+
+Pr.
+
+Lab.
+
+Credi
+
+ECTS
+
+Prerequisite
+
+LCE 301
+
+Mühendisler için Hukuk Kavramları
+
+WAP 327
+
+İş Yeri Uygulaması III
+
+MATH 301
+
+Sayısal Analiz ve Bilimsel Hesaplama
+
+CENG 301
+
+Algoritmalar Analizi
+
+CENG 303
+
+İşletim Sistemleri
+
+CENG 311
+
+Mikroişlemciler
+
+CENG 207
+
+CENG 313
+
+Yönetim Bilişim Sistemleri
+
+SENG 305
+
+Formal Diller ve Automata
+
+CENG 213
+
+Total
+
+Semester
+
+Type
+
+Code
+
+Course Name
+
+Th.
+
+Pr.
+
+Lab.
+
+Credi
+
+ECTS
+
+Prerequisite
+
+WEX 328
+
+İş Yeri Deneyimi I
+
+CENG 302
+
+Veri Tabanı Sistemlerine Giriş
+
+CENG 310
+
+Yazılım Mühendisliği
+
+CENG 312
+
+Bilgisayar Mühendisleri için Sinyal İşleme
+
+CENG 314
+
+Bilgisayar Ağları
+
+CENG 106
+
+CENG 316
+
+Bilgisayar Organizasyonu
+
+CENG 311
+
+CENG 318
+
+Web Programlama
+
+Elective
+
+NTE 1
+
+Teknik Olmayan Seçmeli
+
+Total
+
+Semester
+
+Type
+
+Code
+
+Course Name
+
+Th.
+
+Pr.
+
+Lab.
+
+Credi
+
+ECTS
+
+Prerequisite
+
+WEX 427
+
+İş Yeri Deneyimi II
+
+SENG 405
+
+Makine Öğrenmesi ve Yapay Zeka
+
+CENG 206
+
+CENG 403
+
+Mobil Sistemlerde Uygulama Geliştirme
+
+Elective
+
+ELEC 1
+
+Seçmeli Ders I (CENG 4XX)
+
+Elective
+
+ELEC 2
+
+Seçmeli Ders II (CENG 4XX)
+
+Elective
+
+ELEC 3
+
+Seçmeli Ders III (CENG 4XX)
+
+Elective
+
+ELEC 4
+
+Seçmeli Ders IV (CENG 4XX)
+
+Total
+
+Semester
+
+Type
+
+Code
+
+Course Name
+
+Prerequisite
+
+WEX 428
+
+İş Yeri Deneyimi III
+
+CENG 400
+
+Mezuniyet Projesi
+
+Total
+
+GENERAL TOTAL
+
+183
+
+240
+
+SEÇMELİ DERSLER LİSTESİ
+
+CENG 340
+
+MATLAB’a Giriş
+
+CENG 405
+
+Haberleşme Temelleri
+
+CENG 407
+
+Robotik ve Robot Otonomisi
+
+CENG 409
+
+İnsan-Bilgisayar Arayüzleri
+
+CENG 411
+
+Siber Güvenlik
+
+CENG 413
+
+Web Tabanlı Teknolojiler
+
+CENG 415
+
+Gömülü Sistemlere Giriş
+
+CENG 417
+
+Elektronik Ticaretin Temelleri
+
+CENG 419
+
+Kablosuz ve Mobil Ağlar
+
+CENG 421
+
+Denetim Sistemlerine Giriş
+
+CENG 423
+
+Oyun Programlama
+
+CENG 425
+
+Görüntü İşlemeye Giriş
+
+CENG 427
+
+Dağıtık Sistemler
+
+CENG 429
+
+Bioinformatik
+
+CENG 431
+
+Bilgi Güvenliği
+
+CENG 433
+
+Genetik Algoritma ve Programlama
+
+CENG 435
+
+Tasarım Örüntüleri
+
+CENG 437
+
+Uzaktan Eğitim Teknolojileri
+
+CENG 439
+
+Bulanık Mantık
+
+CENG 441
+
+Veri Madenciliği
+
+CENG 443
+
+Veri İletişimi
+
+CENG 445
+
+Bilgisayar Grafikleri
+
+CENG 447
+
+Blockchain'e Giriş
+
+CENG 449
+
+Veri Tabanı Uygulamaları
+
+Dersler (2022-2023 Öncesi)
+
+Cr.
+
+Ön koşul
+
+Required
+
+ENG 101
+
+Akademik İngilizce I
+
+Required
+
+EHS 101
+
+İş Sağlığı ve Güvenliği
+
+Required
+
+EPR 121
+
+Girişimcilik I
+
+Required
+
+IUL 151
+
+Üniversite Hayatına Giriş
+
+Required
+
+CENG 103
+
+Bilgisayar Programlama I (C/C++ Programlama)
+
+Required
+
+MATH 101
+
+Mühendislik Matematiği I
+
+Required
+
+PHYS 101
+
+Mühendislik Fiziği I
+
+Required
+
+CENG 101
+
+Bilgisayar Mühendisliği Kavramlarına Giriş
+
+Toplam
+
+Cr.
+
+Ön koşul
+
+ENG 102
+
+Akademik İngilizce II
+
+EPR 122
+
+Girişimcilik II
+
+IUL 152
+
+Geleceğin İnşası
+
+WED 124
+
+İş Yeri Eğitimi
+
+MATH 102
+
+Mühendislik Matematiği II
+
+MATH 101
+
+PHYS 102
+
+Mühendislik Fiziği II
+
+CENG 104
+
+Bilgisayar Programlama II (C/C++ Programlama )
+
+CENG 103
+
+Toplam
+
+Cr.
+
+Ön koşul
+
+ATA 101
+
+Atatürk İlkeleri ve İnkılap Tarihi I
+
+TUR 101
+
+Türk Dili I
+
+WAP 225
+
+İş Yeri Uygulaması I
+
+EEE 201
+
+Elektrik Devreleri I
+
+MATH 201
+
+Lineer Cebir
+
+CENG 203
+
+Ayrık Hesaplama Yapıları
+
+CENG 205
+
+Veri Yapıları ve Algoritmalar
+
+Toplam
+
+Cr.
+
+Ön koşul
+
+ATA 102
+
+Atatürk İlkeleri ve İnkılap Tarihi II
+
+TUR 102
+
+Türk Dili II
+
+WAP 226
+
+İş Yeri Uygulaması II
+
+MATH 202
+
+Diferansiyel Denklemler
+
+MATH 204
+
+Olasılık ve İstatistik
+
+CENG 202
+
+Mikroelektrınik Aygıtlar ve Devreler
+
+CENG 204
+
+Sistem Programlama
+
+Toplam
+
+Cr.
+
+Ön koşul
+
+WAP 325
+
+İş Yeri Uygulaması III
+
+MATH 301
+
+Sayısal Analiz ve Bilimsel Hesaplama
+
+CENG 301
+
+Algoritmalar Analizi
+
+CENG 303
+
+İşletim Sistemleri
+
+CENG 305
+
+Bilgisayar Organizasyonu
+
+CENG 307
+
+Yönetim Bilişim Sistemleri
+
+Toplam
+
+Cr.
+
+Ön koşul
+
+WEX 326
+
+İş Yeri Deneyimi I
+
+CENG 302
+
+Veri Tabanı Sistemlerine Giriş
+
+CENG 306
+
+Yazlım Mühendisliği
+
+CENG 308
+
+Bilgisayar Mühendisleri için Sinyal İşleme
+
+CENG 304
+
+Bilgisayar Ağları
+
+Elective
+
+ELEC 1
+
+Seçmeli Ders I (CENG 3XX)
+
+Toplam
+
+Cr.
+
+Ön koşul
+
+WEX 425
+
+İş Yeri Deneyimi II
+
+CENG 401
+
+Makine Öğrenmesi ve Yapay Zeka
+
+CENG 403
+
+Mobil Sistemlerde Uygulama Geliştirme
+
+Elective
+
+ELEC 2
+
+Seçmeli Ders II (CENG 4XX)
+
+Elective
+
+ELEC 3
+
+Seçmeli Ders III (CENG 4XX)
+
+ELEC 4
+
+Seçmeli Ders IV (CENG 4XX)
+
+ELEC 5
+
+Seçmeli Ders V
+
+Toplam
+
+Cr.
+
+WEX 426
+
+İş Yeri Deneyimi III
+
+CENG 400
+
+Mezuniyer Projesi
+
+Toplam
+
+SEÇMELİ DERSLER LİSTESİ
+
+Haberleşme Temelleri
+
+Nesne Yönelimli Programlama
+
+Web Tabanlı Teknolojiler
+
+İnternet Programlama
+
+Gömülü Sistemlere Giriş
+
+Elektronik Ticaretin Temelleri
+
+Biçimsel Diller ve Otomata
+
+Kablosuz ve Mobil Ağlar
+
+Denetim Sistemlerine Giriş
+
+Oyun Programlama
+
+Görüntü İşlemeye Giriş
+
+Dağıtık Sistemler
+
+Bioinformatik
+
+Bilgi Güvenliği
+
+Genetik Algoritma ve Programlama
+
+Mikrodenetleyiciler
+
+Tasarım Örüntüleri
+
+Uzaktan Eğitim Teknolojileri
+
+Veri İletişimi
+
+Veri Tabanı Uygulamaları
+
+Bulanık Mantık
+
+Veri Madenciliği
+
+Çerez Tercihleri
+
+Web sitemizde deneyiminizi iyileştirmek, trafiği analiz etmek ve
+içeriği kişiselleştirmek için çerezler kullanıyoruz. Zorunlu çerezler
+sitenin çalışması için her zaman etkindir. Tercihinizi istediğiniz
+zaman alt bilgideki “Çerez Ayarları” bağlantısından değiştirebilirsiniz.
+Ayrıntılar için Çerez Politikası.
+
+Tümünü Reddet
+
+Yalnızca Analitik
+
+Tümünü Kabul Et

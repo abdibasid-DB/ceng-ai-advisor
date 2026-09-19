@@ -1,0 +1,155 @@
+Source ID: src_042
+
+Curricular Guidance - ACM CCECC
+
+Facebook
+
+Twitter
+
+LinkedIn
+
+YouTube
+
+ACM CCECC
+
+Celebrating 40++ years of service to computing education communities.
+
+Curricular Guidance
+
+Computer Engineering
+
+Computer Science
+
+Cybersecurity
+
+Data Science - Coming soon!
+
+Information Technology
+
+Information Technology - Applied
+
+Information Technology - Transfer
+
+Software Engineering
+
+Curricular Guidance
+
+The Sub-Disciplines of Computing
+
+The Association for Computing Machinery (ACM) currently categorizes the overarching discipline of computing into five defined sub-disciplines: computer science, computer engineering, software engineering, information systems and information technology. These are fully discussed in the ACM baccalaureate computing curricula volumes and from that perspective can be summarized as follows:
+
+Computer Science involves design and innovation developed from computing principles. This four-year curriculum focuses on the theoretical foundations of computing, algorithms, and programming techniques, as applied to operating systems, artificial intelligence, informatics and the like. Upon graduation, students initiating careers as computer scientists should be prepared to work in a broad range of positions involving tasks from theoretical work to software development.
+
+Computer Engineering involves the design and construction of processor-based systems comprised of hardware, software, and communications components. This four-year curriculum focuses on the synthesis of electrical engineering and computer science as applied to the design of systems such as cellular communications, consumer electronics, medical imaging and devices, alarm systems and military technologies. Upon graduation, students initiating careers as computer engineers should be able to design and implement systems that involve the integration of software and hardware devices.
+
+Cybersecurity is a computing-based discipline involving technology, people, information, and processes to enable assured operations in the context of adversaries. It involves the creation, operation, analysis, and testing of secure computer systems. It is an interdisciplinary course of study, including aspects of law, policy, human factors, ethics, and risk management. Upon graduation, students initiating careers as cybersecurity technicians and analysts should possess basic knowledge and skills to help organizations defend their information systems against various cybersecurity threats.
+
+Data Science is an inherently interdisciplinary field. The rise of Data Science is directly connected to the rise of large data sets across nearly every topic domain. The sciences, social sciences, business, humanities, and engineering all are seeing opportunities for discovery and decision-making expanded by unprecedented amounts of raw or structured data. The data is too large to allow effective human analysis without the automation of processes. Data Science is the field that brings together domain data, computer science, and the statistical tools for interrogating the data and extracting useful information. Most Data Science graduates will work in an application discipline, driving forward exciting change and innovation in a business or other type of institution.
+
+Information Systems involves the application of computing principles to business processes, bridging the technical and management fields. This four-year curriculum focuses on the design, implementation and testing of information systems as applied to business processes such as payroll, human resources, corporate databases, data warehousing and mining, ecommerce, finance, customer relations management, transaction processing, and data-driven decision-making and executive support. Upon graduation, students initiating careers as information systems specialists should be able to analyze information requirements and business processes and be able specify and design systems that are aligned with organizational goals.
+
+Information Technology involves the design, implementation and maintenance of technology solutions and support for users of such systems. This four-year curriculum focuses on crafting hardware and software solutions as applied to networks, security, client-server and mobile computing, web applications, multimedia resources, communications systems, and the planning and management of the technology lifecycle. Upon graduation, students initiating careers as information technology professionals should be able to work effectively at planning, implementation, configuration, and maintenance of an organization's computing infrastructure.
+
+Software Engineering involves the design, development and testing of large, complex, and safety-critical software applications. This four-year curriculum focuses on the integration of computer science principles with engineering practices as applied to constructing software systems for avionics, healthcare applications, cryptography, traffic control, meteorological systems and the like. Upon graduation, students initiating careers as software engineers should be able to properly perform and manage activities at every stage of the life cycle of large-scale software systems.
+
+Security in the Computing Curricula
+
+Whether referred to as "cybersecurity", "information security", "information assurance" or some other heading, curriculum content in creating and maintaining secure computing environments is a critical component in all associate-degree computing programs. Almost every career path open to a computing student encompasses some aspect of security. System administrators and engineers must be able to properly design, configure and maintain a secure system; programmers and application developers must know how to build and configure secure software systems from the bottom up; web specialists must be capable of assessing risks and determining how best to reduce the potential impact of breached systems; user support technicians must be knowledgeable in security concerns surrounding desktop computing; and project managers must be able to calculate the cost/benefit tradeoffs involved with implementing secure systems.
+
+It is the responsibility of faculty to ensure that students are well prepared for the security challenges they will inevitably encounter in their careers as computing professionals. This can be addressed by way of a variety of implementation strategies. One approach that some associate-degree computing programs offer is a host of individual courses on specific security topics. This approach can provide a wealth of content opportunities for specialization but may create scheduling challenges for many students as it runs the risk of students graduating without having taken sufficient electives to achieve the understanding of the security concepts necessary to function in their professional roles. Another approach is to fully integrate and incorporate fundamental security topics into core computing courses in the program of study with specialized courses reserved for targeted settings; this is the approach promoted by the ACM Committee for Computing Education in Community Colleges in its computing curriculum resources. The Committee also advocates strongly for learning activities that require students to actively demonstrate mastery of the tenets of professional conduct, ethical and responsible behavior and appreciation for security matters in a holistic manner.
+
+Computing for Other Disciplines
+
+Computing technology has become an integral part of every field of study and every profession.Therefore, an institution must consider the means by which its computing curricula can also be responsive to the needs of "computing for other disciplines". The groundbreaking 1993 report Computing Curricula Guidelines for Associate Degree Programs in Computing for Other Disciplines, produced by the ACM Committee for Computing Education in Community Colleges, provided the first formal set of recommendations identifying courses that a computing department could offer for students in other disciplines.
+
+Glossary of Terms
+
+The ACM Committee for Computing Education in Community Colleges defines the following terms in relationship to curricula associated with computing education in associate-degree granting institutions.
+
+Associate Degreesare well-defined and meaningful completion points at the conclusion of two-year degree programs (career or transfer); such degrees are awarded by two-year, community or technical colleges, as well as some four-year colleges.
+
+Career Programsare specifically designed to enable students to pursue entry into the workforce after two years of college studies; these are typically Associate of Applied Science (AAS) degree programs
+
+Transfer Programsare specifically designed for students intending to matriculate into the junior year of a four-year program; these are typically Associate of Arts (AA) or Associate of Science (AS) degree programs.
+
+Two-Year College Environment
+
+According to the American Association of Community Colleges, approximately one-half of all undergraduates in the United States are enrolled in community colleges, and more than half of all first-time college freshman attend community colleges. "Community colleges are centers of educational opportunity. They are an American invention that put publicly funded higher education at close-to-home facilities, beginning nearly 100 years ago with Joliet Junior College [in Joliet, Illinois]. Since then, they have been inclusive institutions that welcome all who desire to learn, regardless of wealth, heritage, or previous academic experience. The process of making higher education available to the maximum number of people continues to evolve." (http://www.aacc.nche.edu/)
+
+Baccalaureate Program Guidelines
+
+The professional societies of the ACM, the IEEE Computer Society, the Association of Information Technology Professionals and the Association for Information Systems have a history of collaborating on computing materials for higher education. These organizations have jointly produced significant volumes of curricular recommendations and guidelines for baccalaureate and graduate computing programs; these volumes are referred to as the ACM Computing Curricula series. Likewise through its interactive web resource, the ACM Committee for Computing Education in Community Colleges has produced a corresponding set of curricular guidelines that provide similar guidance for associate-degree granting institutions, in a manner that fosters inter-institutional cooperation and student articulation. The web resource provides discussion on transfer considerations and discussion on articulation.
+
+Since the number of traditional two-year colleges which are now also offering baccalaureate programs continues to increase, it is becoming more important to consider the needs of individual academic programs rather than those of academic institutions.
+
+Articulation
+
+Articulation is a key consideration in associate-degree programs which are designed as transfer curricula. Articulation of courses and programs between academic institutions is a process that facilitates transfer by students from one institution to another. The goal is to enable students to transfer in as seamless a manner as possible. Efficient and effective articulation requires accurate assessment of courses and programs as well as meaningful communication and cooperation. Both students and faculty have responsibilities and obligations for successful articulation. Ultimately, students are best served when educational institutions establish well defined articulation agreements that actively promote transfer.
+
+Career Programs
+
+Typically associate-degree programs fall into two categories: those designed to prepare graduates for immediate entry into career paths and those designed for transfer into baccalaureate-degree programs. Colleges should make students aware at the beginning of their studies of the distinctions between career and transfer programs, the academic requirements of each, and the resultant employment options. Students graduating from a career-oriented associate-degree computing program will typically enter the work force directly upon graduation.
+
+Transfer Programs
+
+Typically associate-degree programs fall into two categories: those designed for transfer into baccalaureate-degree programs and those designed to prepare graduates for immediate entry into career paths. Colleges should make students aware at the onset of their studies of the distinctions between career and transfer programs, the academic requirements of each, and the resultant employment options. Transfer-oriented associate-degree programs rely on formal inter-institutional articulation agreements to ensure that students experience a seamless transition between lower division associate-degree coursework and upper division baccalaureate-degree coursework. Articulation of courses and programs between two academic institutions facilitates the transfer of students from one institution to the other. Faculty and students alike have responsibilities and obligations to achieve successful articulation.
+
+Efficient and effective articulation requires a close evaluation of well-defined course and program outcomes as well as meaningful communication and cooperation. For example, a particular course in one institution might not be equivalent to a single course at a second institution; however, a group or sequence of courses could be determined equivalent to another course grouping or sequence. Faculty must ensure that they clearly define program requirements, address program goals in a responsible manner, and assess students effectively against defined standards. When specifying points of exit within the articulation agreement document, faculty at the transferring institution must provide sufficient material to prepare students to pursue further academic work at least as well as students at the second institution.
+
+It is not uncommon for students to complete an associate-degree program of study, choose to work for a period of time, and then return to college to pursue their upper division studies for career advancement. (And many employers will provide tuition reimbursement for workers who wish to continue toward a baccalaureate degree.) Because of the ever evolving nature of computing, students must be aware that course content and program requirements are updated frequently, potentially subjecting them to new program requirements and revised articulation agreements. Students are best served when sequences of courses are completed as a unit at one institution due to the comprehensive and conceptual nature of the computing and mathematics content. Hence, students should complete programs of study in their entirety up to well-defined exit points at one institution before transferring to another institution; articulation cannot be expected to accommodate potential transfers in the middle of a well-defined and recognized body of knowledge. Therefore, the ACM Committee for Computing Education in Community Colleges strongly recommends that the entire CS I - CS II - CS III core course sequence be completed at the same educational institution.
+
+Academic institutions are advised to work collaboratively to design compatible and consistent programs of study that enable students to transfer easily from associate-degree programs into baccalaureate-degree programs. In support of this goal, the ACM provides curricular guidelines for both associate- and baccalaureate-degree programs in computer science, computer engineering, software engineering, information systems and information technology.
+
+ACM Computing Classification System (CCS)
+
+The computing sub-disciplines have much in common as well as distinguishing characteristics. The 2012 ACM Computing Classification System (CCS) is an ontology that has been integrated into the search capabilities and visual topic displays of the ACM Digital Library. As noted on the ACM website, this classification system "relies on a semantic vocabulary as the single source of categories and concepts that reflect the state of the art of the computing discipline and is receptive to structural change as ACM ensures that the CCS stays current and relevant."
+
+Internationalization
+
+The ACM Committee for Computing Education in Community Colleges computing curricula resources provide meaningful guidance for two-year post-secondary ("tertiary") higher education programs both locally within the United States and globally throughout the world.
+
+The American Association of Community Colleges (AACC) has established an Office of International Programs and Services hose stated goals are "to advocate the community college role in global education among key constituencies, nationally and internationally, to advance global exchanges and partnerships between member colleges and international entities, and to promote intercultural understanding and engagement among students, faculty, staff, and decision makers." James McKenney, AACC Vice-President for Economic Development and International Programs, spoke as early as 2002 in a reflective interview titled "The G The Global Linkage" appearing in the journal "US Society and Values" about the rapidly expanding phenomenon of "community colleges", "two-year technical colleges", and the "two-year structure" in general throughout Europe, the Americas and Asia.
+
+This phenomenon has since been reported on, promoted and codified in any number of publications and resources. For example, the Council for Industry and Higher Education (CIHE) and The Mixed Economy Group in England have prepared a comprehensive report titled "Higher Education and Colleges: A Comparison Between England and the USA". The United Nations-affiliated Institute of International Education provides a wealth of resources regarding post-secondary and higher education around the world, including activities of institutions akin to the two-year colleges of the United States. The Paris-based Organization for Economic Cooperation and Development (OECD) provides background information, analyses and recommendations for "opportunities for education in the years after compulsory schooling" across Europe, as does the Directorate-General for Education and Culture of the European Commission. The "University World News"and the "World Education News and Reviews" publications are sources of current events worldwide in post-secondary education; the Community College Research Center at Columbia University also provides links to such documentation. The Association of Canadian Community Colleges (ACCC) offers a wealth of information on two-year colleges in Canada.
+
+Clearly then curricular guidance for computing programs found in the first two years of a post-secondary higher education setting has the potential for global impact. The ACM Committee for Computing Education in Community Colleges computing curricula resources provide a strong foundation for such programs, by defining specific content in a structured format, describing meaningful pedagogy and measurable student learning outcomes, and detailing rubrics for effective assessment of student learning. While some specific implementation aspects of these resources may be more relevant or prominent in the United States the resources are useful and sound, readily applicable to numerous settings and easily adapted to a wide variety of implementation strategies.
+
+Accreditation
+
+Regional institutional accreditation is common among the associate-degree granting institutions in the United States. Such accreditation is intended to promote public confidence that institutions are maintaining a defined level of educational excellence, as validated by quality assurance and improvement through a rigorous process of peer evaluation. Under this process institutions are assessed and accredited in whole, with each component of the college or university contributing to a shared mission, as evidenced by comprehensive measures of institutional effectiveness and holistic assessment of defined student outcomes.In a university setting, individual colleges or schools (for example, in fields such as business, medicine, dentistry, etc.) may be accredited by associations that specialize at that particular level.
+
+Program accreditation, as distinguished from regional institutional accreditation and school accreditation, has long been available for particular disciplines in associate-degree granting institutions, including programs such as electrical technology, mechanical technology and construction technology (and of course notably in health-related fields). Even associate-degree granting institutions not pursuing specific program accreditation often take pride in the placement and subsequent success of their graduates into the upper division of accredited baccalaureate programs. Curricular guidelines have frequently taken into consideration program accreditation standards. While the relationship between accrediting criteria and curricular guidelines should be a symbiotic one, inasmuch as they have the mutual goal of sound student preparation in the discipline, the criteria for program accreditation do not necessarily directly impact curricular guidelines given that the accrediting criteria and curricular guidelines arise from differing sources. Accreditation is also closely associated with assessment.
+
+Sources of information on accreditation include the United States Department of Education, the Council for Higher Education Accreditation, and the American Association of Community Colleges.
+
+U.S. Department of Labor Competency Model
+
+At the direction of the United States Department of Labor, the Employment & Training Administration has produced a comprehensive competency model for the Information Technology industry. The Information Technology Competency Model identifies the knowledge, skills, and abilities deemed necessary for workers to perform successfully in the field of IT.
+
+Ethics and Professionalism
+
+Professional, legal and ethical issues are important elements in the overall curricula for computing disciplines, and must be integrated throughout the programs of study. This context should be established at the onset and these matters should appear routinely in discussions and learning activities throughout the curriculum. The ACM Code of Ethics notes that "When designing or implementing systems, computing professionals must attempt to ensure that the products of their efforts will be used in socially responsible ways, will meet social needs, and will avoid harmful effects to health and welfare." The Code goes on to provide an excellent framework for conduct that should be fostered beginning early in students' experiences.
+
+As computing technologies become ubiquitous in society, ethical behavior and adherence to codes of conduct for computing professionals is imperative; therefore, careful consideration of legal, ethical, and societal issues involving computing, the Internet and databases are essential to the education of computing professionals. Students who realize the potential uses and abuses of technology will, as citizens, be able to contribute to public policy debate from a knowledgeable perspective on issues such as property rights and privacy concerns that affect everyone.
+
+Computer systems have substantial social impact in nearly every setting including applications such as healthcare, finance, transportation, defense, government, education, and communications; real-time and safety-critical systems typically have acceptable margins of error close to nil. Developers and support technologists of such computing systems are confronted by challenges regarding choices and tradeoffs in the design, implementation, and maintenance of these systems. Engaging students in the consideration of the ethical aspects for such decisions as well as giving them practice in identifying and weighing the ethical issues enables them to make more judicious choices. It is crucial that students pursuing computing careers be made aware of and properly equipped to handle the complexities of professional judgments; as computing professionals, graduates must follow codes of conduct and take responsibility for their actions and be accountable for the systems that they develop and support.
+
+General Education
+
+Associate-degree programs are subject to general education requirements which mandate that students complete a minimum number of courses spanning a variety of major discipline categories. Such requirements vary among states, institutions and the type of associate degree being pursued (e.g., AAS, AA, or AS). Colleges must ensure that degree programs include the courses appropriate to fulfill all general education and related requirements arising from institutional and state mandates, as well as regional institutional accreditation guidelines. Categories of general education courses typically include: mathematics and quantitative reasoning; natural sciences; English and oral communication; cultural and diversity studies, humanities and the arts; world languages; social and behavioral sciences; health and physical education.
+
+Mathematics
+
+A strong foundation in mathematics provides the necessary basis for associate-degree transfer programs in computing. This foundation must include both mathematical techniques and formal mathematical reasoning. Mathematics provides a language for working with ideas relevant to computing, specific tools for analysis and verification, and a theoretical framework for understanding important concepts. For these reasons, mathematics content must be initiated early in the student's academic career, reinforced frequently, and integrated into the student's entire course of study. Curriculum content, pre- and co-requisite structures, and learning activities and laboratory assignments must be designed to reflect and support this framework. Many students enter two-year colleges with insufficient mathematics preparation for a computing program. Such students must devote additional semesters to achieve the mathematical maturity and problem-solving skills required to be successful in computing coursework.
+
+Supplemental Work
+
+Rigorous laboratory science courses such as physics, chemistry and biology provide students pursuing associate-degree transfer programs in computing with content knowledge, direct hands-on laboratory experiences and strong training in the tenets of the "scientific method". The scientific method (summarized as formulating problem statements and hypothesizing, designing and conducting experiments, observing and collecting data, analyzing and reasoning, and evaluating and concluding) reasonably presents a basic methodology for much of the discipline of computing; it also provides a process of abstraction that is vital to developing a framework for logical thought. Learning activities and laboratory assignments found in computing courses should be designed to incorporate and reinforce this framework. Furthermore, advisors should guide students intending to transfer into a baccalaureate program (immediately or as a long-term goal) to select specific science coursework appropriate to that objective. Science courses can provide important content for distinct specializations within computing disciplines; such considerations will vary by institution based on program design and resources. Program requirements of this nature can provide students with a crucial foundation should they later pursue computing careers in those scientific domains (for example, bioinformatics).
+
+Association for Computing Machinery
+
+Login
+
+Acceptable Use
+
+Copyright © 2026 ACM CCECC

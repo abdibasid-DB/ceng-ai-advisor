@@ -1,0 +1,168 @@
+{
+  "description": "Representative Stage 13 retrieval evaluation cases. These are qualitative retrieval checks, not formal ground-truth accuracy labels.",
+  "default_top_k": 5,
+  "cases": [
+    {
+      "id": "department_001",
+      "category": "department_information",
+      "question": "What is Computer Engineering at OSTIM Technical University?",
+      "expected_categories": ["department_information", "curriculum"],
+      "type": "in_scope"
+    },
+    {
+      "id": "curriculum_001",
+      "category": "curriculum",
+      "question": "What courses are taught in Computer Engineering?",
+      "expected_categories": ["curriculum", "programming", "mathematics"],
+      "type": "in_scope"
+    },
+    {
+      "id": "programming_001",
+      "category": "programming",
+      "question": "What programming languages should a Computer Engineering student learn?",
+      "expected_categories": ["programming", "curriculum", "skills_and_technologies"],
+      "type": "in_scope"
+    },
+    {
+      "id": "programming_para_001",
+      "category": "programming",
+      "question": "Which coding languages are most useful for someone studying Computer Engineering?",
+      "expected_categories": ["programming", "curriculum", "skills_and_technologies"],
+      "type": "paraphrase",
+      "pair_id": "programming_001"
+    },
+    {
+      "id": "math_001",
+      "category": "mathematics",
+      "question": "How important is mathematics in Computer Engineering courses?",
+      "expected_categories": ["curriculum", "mathematics"],
+      "type": "in_scope"
+    },
+    {
+      "id": "career_001",
+      "category": "career_opportunities",
+      "question": "What jobs can I do after graduating from Computer Engineering?",
+      "expected_categories": ["career_opportunities", "employment", "skills_and_technologies", "future_technologies"],
+      "type": "in_scope"
+    },
+    {
+      "id": "employment_001",
+      "category": "employment",
+      "question": "Is Computer Engineering still a good career choice?",
+      "expected_categories": ["employment", "career_opportunities", "future_technologies"],
+      "type": "in_scope"
+    },
+    {
+      "id": "ai_001",
+      "category": "artificial_intelligence",
+      "question": "Will artificial intelligence replace Computer Engineers?",
+      "expected_categories": ["artificial_intelligence", "future_technologies", "skills_and_technologies"],
+      "type": "in_scope"
+    },
+    {
+      "id": "cybersecurity_001",
+      "category": "cybersecurity",
+      "question": "Can Computer Engineers work in cybersecurity?",
+      "expected_categories": ["cybersecurity", "specializations", "skills_and_technologies", "future_technologies"],
+      "type": "in_scope"
+    },
+    {
+      "id": "cybersecurity_002",
+      "category": "cybersecurity",
+      "question": "What cybersecurity careers can a Computer Engineering graduate do?",
+      "expected_categories": ["cybersecurity", "specializations", "skills_and_technologies", "future_technologies"],
+      "type": "in_scope"
+    },
+    {
+      "id": "internships_001",
+      "category": "internships",
+      "question": "How important are internships for Computer Engineering students?",
+      "expected_categories": ["internships", "curriculum", "employment"],
+      "type": "in_scope"
+    },
+    {
+      "id": "skills_001",
+      "category": "skills_and_technologies",
+      "question": "What technical skills should Computer Engineering students develop?",
+      "expected_categories": ["skills_and_technologies", "programming", "curriculum"],
+      "type": "in_scope"
+    },
+    {
+      "id": "graduate_001",
+      "category": "graduate_studies",
+      "question": "Is a master's degree necessary after Computer Engineering?",
+      "expected_categories": ["graduate_studies", "career_opportunities", "employment"],
+      "type": "in_scope"
+    },
+    {
+      "id": "specializations_001",
+      "category": "specializations",
+      "question": "Which specialization can I choose in Computer Engineering?",
+      "expected_categories": ["specializations", "skills_and_technologies", "curriculum"],
+      "type": "in_scope"
+    },
+    {
+      "id": "future_001",
+      "category": "future_technologies",
+      "question": "Which future technologies are important for Computer Engineering students?",
+      "expected_categories": ["future_technologies", "skills_and_technologies", "artificial_intelligence"],
+      "type": "in_scope"
+    },
+    {
+      "id": "remote_001",
+      "category": "remote_work",
+      "question": "Can Computer Engineers work remotely?",
+      "expected_categories": ["remote_work", "employment"],
+      "type": "in_scope"
+    },
+    {
+      "id": "entrepreneurship_001",
+      "category": "entrepreneurship",
+      "question": "Can a Computer Engineering graduate start a technology company?",
+      "expected_categories": ["entrepreneurship", "career_opportunities"],
+      "type": "in_scope"
+    },
+    {
+      "id": "work_life_001",
+      "category": "work_life_balance",
+      "question": "What is work-life balance like for software and Computer Engineering careers?",
+      "expected_categories": ["work_life_balance", "employment"],
+      "type": "in_scope"
+    },
+    {
+      "id": "misconceptions_001",
+      "category": "common_misconceptions",
+      "question": "Do I need to be a math genius to study Computer Engineering?",
+      "expected_categories": ["common_misconceptions", "curriculum", "mathematics"],
+      "type": "in_scope"
+    },
+    {
+      "id": "multi_001",
+      "category": "multi_topic",
+      "question": "Should I focus more on GPA, projects, or internships when preparing for a software career?",
+      "expected_categories": ["internships", "employment", "skills_and_technologies", "career_opportunities"],
+      "type": "multi_topic"
+    },
+    {
+      "id": "unrelated_001",
+      "category": "out_of_scope",
+      "question": "What is the best recipe for chocolate cake?",
+      "expected_categories": [],
+      "type": "out_of_scope"
+    },
+    {
+      "id": "unrelated_002",
+      "category": "out_of_scope",
+      "question": "Who won the football match yesterday?",
+      "expected_categories": [],
+      "type": "out_of_scope"
+    },
+    {
+      "id": "unrelated_003",
+      "category": "out_of_scope",
+      "question": "How do I repair a washing machine?",
+      "expected_categories": [],
+      "type": "out_of_scope"
+    }
+  ]
+}

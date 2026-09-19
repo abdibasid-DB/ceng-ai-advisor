@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+     <xpath expr="//div[@id=&#39;wrapwrap&#39;]" position="before">
+    
+</xpath>
+
+        
+        
+        
+<html lang="en-US" data-website-id="27" data-main-object="website.page(3782,)" data-add2cart-redirect="1">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <xpath expr="//head/meta[last()]" position="after">
+           
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script>
+    // 2nd preloader + lazy loader using the data-original-src attribute
+document.addEventListener("DOMContentLoaded", function () {
+
+    /* PART 1 — Preload FIRST carousel slide using reliable URL */
+    const firstSlide = document.querySelector('.carousel-item.active');
+    if (firstSlide) {
+        const preloadUrl = firstSlide.getAttribute("data-original-src");
+        if (preloadUrl) {
+            const link = document.createElement("link");
+            link.rel = "preload";
+            link.as = "image";
+            link.href = preloadUrl;
+            document.head.appendChild(link);
+        }
+    }
+
+    /* PART 2 — Lazy-load OTHER slides using data-original-src */
+    document.querySelectorAll('.carousel-item:not(.active)').forEach(function (slide) {
+        const lazyUrl = slide.getAttribute("data-original-src");
+        if (!lazyUrl) return;
+
+        slide.dataset.lazyBg = lazyUrl;
+        slide.style.backgroundImage = "none";
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    slide.style.backgroundImage = `url('${slide.dataset.lazyBg}')`;
+                    observer.unobserve(slide);
+                }
+            });
+        });
+
+        observer.observe(slide);
+    });
+
+});
+</script>
+
+</xpath>
+        
+        <meta name="generator" content="Odoo"/>
+            
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Akademik Kadro"/>
+        <meta property="og:site_name" content="MF-Bilgisayar Mühendisliği (İngilizce)"/>
+        <meta property="og:url" content="https://mfcs.ostimteknik.edu.tr/academic-staff"/>
+        <meta property="og:image" content="https://mfcs.ostimteknik.edu.tr/web/image/website/27/logo?unique=67f758d"/>
+            
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:title" content="Akademik Kadro"/>
+        <meta name="twitter:image" content="https://mfcs.ostimteknik.edu.tr/web/image/website/27/logo?unique=67f758d"/>
+        
+        <link rel="alternate" hreflang="en" href="https://mfcs.ostimteknik.edu.tr/academic-staff"/>
+        <link rel="alternate" hreflang="tr" href="https://mfcs.ostimteknik.edu.tr/tr/academic-staff"/>
+        <link rel="alternate" hreflang="x-default" href="https://mfcs.ostimteknik.edu.tr/academic-staff"/>
+        <link rel="canonical" href="https://mfcs.ostimteknik.edu.tr/academic-staff"/>
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""/>
+        <title>Akademik Kadro</title>
+        <link type="image/x-icon" rel="shortcut icon" href="/web/image/website/27/favicon?unique=885d64b"/>
+		<link rel="preload" href="/theme_nextbiz/static/lib/RemixIcon/remixicon.woff2?t=1580819880586" as="font" crossorigin=""/>
+		<link rel="preload" href="/theme_nextbiz/static/lib/linearicons/fonts/Linearicons-Free.woff2?w118d" as="font" crossorigin=""/>
+		<link rel="preload" href="/theme_nextbiz/static/lib/themify-icons/fonts/themify.woff?-fvbane" as="font" crossorigin=""/>
+		<link rel="preload" href="/theme_nextbiz/static/lib/icofont/fonts/icofont.woff2" as="font" crossorigin=""/>
+        <link rel="preload" href="/web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" crossorigin=""/>
+        <link type="text/css" rel="stylesheet" href="/web/assets/617576-5c644c1/27/web.assets_frontend.min.css" data-asset-bundle="web.assets_frontend" data-asset-version="5c644c1"/>
+        <script id="web.layout.odooscript" type="text/javascript">
+            var odoo = {
+                csrf_token: "4b3872a06da89d470444b943ec72af0036c31314o1819628921",
+                debug: "",
+            };
+        </script>
+        <script type="text/javascript">
+            odoo.__session_info__ = {"is_admin": false, "is_system": false, "is_website_user": true, "user_id": false, "is_frontend": true, "profile_session": null, "profile_collectors": null, "profile_params": null, "show_effect": true, "bundle_params": {"lang": "en_US", "website_id": 27}, "translationURL": "/website/translations", "cache_hashes": {"translations": "9f711fc8684c2f849bc57e8d4b97c6f81a4a459a"}, "geoip_country_code": null, "geoip_phone_code": null, "lang_url_code": "en"};
+            if (!/(^|;\s)tz=/.test(document.cookie)) {
+                const userTZ = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                document.cookie = `tz=${userTZ}; path=/`;
+            }
+        </script>
+        <script defer="defer" type="text/javascript" src="/web/assets/589080-8b7938f/27/web.assets_frontend_minimal.min.js" data-asset-bundle="web.assets_frontend_minimal" data-asset-version="8b7938f"></script>
+        <script defer="defer" type="text/javascript" data-src="/web/assets/589090-846727e/27/web.assets_frontend_lazy.min.js" data-asset-bundle="web.assets_frontend_lazy" data-asset-version="846727e"></script>
+        
+                
+                
+                <script>
+                    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                    })(window,document,'script','dataLayer','GTM-WTWPNVZ');
+                </script>
+                
+
+            
+
+                
+                
+
+                
+                <script type="text/javascript">
+                    window.OSTIM_A11Y = {
+                        position: 'bottom_right',
+                        color:    '#005f73',
+                        iconSize: 'large',
+                        lang:     'en',
+                        autoLang: true,
+                    };
+                </script>
+
+                
+                <link rel="stylesheet" href="/ostim_accessibility/static/src/css/accessibility_widget.css?v=12"/>
+
+                
+                <script type="text/javascript" src="/ostim_accessibility/static/src/js/aria_fixes.js?v=12"></script>
+
+                
+                <script type="text/javascript" src="/ostim_accessibility/static/src/js/accessibility_widget.js?v=12"></script>
+
+        
+    </head>
+    <body>
+                <noscript><iframe height="0" width="0" style="display:none;visibility:hidden" src="https://www.googletagmanager.com/ns.html?id=GTM-WTWPNVZ"></iframe></noscript>
+        <div id="wrapwrap" class="   ">
+                <header id="top" data-anchor="true" data-name="Header" role="banner" class=" ">
+                    
+                <div class="oe_structure oe_structure_solo" id="oe_structure_header_contact_1">
+            <section class="s_text_block o_colored_level o_cc o_cc3 pb0 pt0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+                <div class="container">
+                    <div class="row">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+                        
+                        
+                    <div class="o_colored_level col-lg-5 pt4"><p style="text-align: left;"><small><span class="me-3"><small><span class="me-3"></span></small><a href="https://www.ostimteknik.edu.tr/?_gl=1*1ofv7hh*_gcl_au*NzYxMzk1MDUwLjE3NTIxNDM4NTYuMTA2MzU2OTg1MS4xNzU3MzE3NTc5LjE3NTczMTc1ODA.*_ga*MTA2Mzg3NjQ1LjE3NTEzNzUxNDM.*_ga_6P0BTM0P2R*czE3NTczMTcwMTMkbzU2JGcxJHQxNzU3MzE4OTQ4JGo1OCRsMCRoMA.." class="btn btn-custom" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;"><span class="fa fa-institution text-white fa-2x" data-bs-original-title="" title="" aria-describedby="tooltip764431"></span><br/><font class="text-white"><span style="font-size: 14px;"><strong>Home Page</strong></span></font></a><a href="https://obs.ostimteknik.edu.tr/" target="_blank" class="btn btn-custom text-white btn-sm" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;"><span class="fa fa-user-circle text-white fa-2x" data-bs-original-title="" title="" aria-describedby="tooltip865065"></span><br/><span style="font-size: 14px;"><strong>OBS</strong></span></a><span style="font-size: 14px;"></span><a href="https://eob.ostimteknik.edu.tr/" target="_blank" class="btn btn-custom btn-sm" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;"><span class="fa fa-wheelchair text-white fa-2x" style="width: 50% !important;" data-bs-original-title="" title="" aria-describedby="tooltip162320"></span><span style="font-size: 14px;"><strong><br/></strong></span><font class="text-white"><span style="font-size: 14px;"><strong>Barrier Free</strong></span></font></a><span style="font-size: 14px;"><strong>&nbsp;</strong></span><a href="http://ebys.ostimteknik.edu.tr" class="btn btn-custom" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;" target="_blank"><span class="fa fa-file-o text-white fa-2x" data-bs-original-title="" title="" aria-describedby="tooltip753779"></span><span style="font-size: 14px;"><strong><br/></strong></span><font class="text-white"><span style="font-size: 14px;"><strong>EBYS</strong></span></font></a><font class="text-white"></font><a href="https://kutuphane.ostimteknik.edu.tr/our-services-library" target="_blank" class="btn btn-custom btn-sm" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;"><font class="text-white"><span class="icofont icofont-library fa-2x"></span><span style="font-size: 14px;"><strong><br/>Library&nbsp;</strong></span></font></a><span style="font-size: 14px;"></span><a href="https://lmsclus.ostimteknik.edu.tr/" target="_blank" class="btn btn-custom btn-sm" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;"><span class="lni lni-network text-white fa-2x"></span><span style="font-size: 14px;"><strong>&nbsp;<br/></strong></span><font class="text-white"><span style="font-size: 14px;"><strong>LMS</strong></span></font></a><small><span class="me-3"><a style="border-width: 1px; border-style: solid;" title="" data-bs-original-title="" class="btn btn-custom btn-sm" href="#"><span style="font-size: 14px;"><strong><br/></strong></span><font class="text-white"></font></a></span></small></span></small></p></div><div class="o_colored_level col-lg-5 offset-lg-2 pt16"><p style="text-align: right;"><a href="https://www.facebook.com/ostimteknikuniversitesi/" data-bs-original-title="" title=""><span class="fa fa-facebook-f text-white" data-bs-original-title="" title="" aria-describedby="tooltip548407"></span></a>&nbsp; &nbsp;&nbsp; <a href="https://www.linkedin.com/company/otumuhendislik" data-bs-original-title="" title=""><span aria-describedby="tooltip473041" title="" data-bs-original-title="" class="fa fa-linkedin text-white"></span></a>&nbsp; &nbsp;&nbsp; <a href="https://www.youtube.com/@ostimteknikuniversitesi9646" data-bs-original-title="" title=""><span aria-describedby="tooltip499547" title="" data-bs-original-title="" class="fa fa-youtube text-white"></span></a>&nbsp; &nbsp;&nbsp; <a href="https://www.instagram.com/ostimtech.muhendislik/" data-bs-original-title="" title=""><span aria-describedby="tooltip126813" title="" data-bs-original-title="" class="fa fa-instagram text-white"></span></a>&nbsp; &nbsp;&nbsp;<a href="https://mfcs.ostimteknik.edu.tr/contactus" data-bs-original-title="" title=""><span class="fa fa-envelope-o img-thumbnail text-o-color-3" data-bs-original-title="" title="" aria-describedby="tooltip643803"></span></a>&nbsp; &nbsp;<a href="https://mfcs.ostimteknik.edu.tr/tr/contactus" data-bs-original-title="" title=""><span class="fa fa-phone img-thumbnail text-o-color-3" data-bs-original-title="" title="" aria-describedby="tooltip737996"></span></a></p></div></div></div>
+            </section>
+        </div>
+    <nav data-name="Navbar" class="navbar navbar-expand-lg navbar-light o_colored_level o_cc shadow-sm">
+        
+            <div id="top_menu_container" class="container">
+                
+    <a href="/" class="navbar-brand logo ">
+            
+            <span role="img" aria-label="Logo of MF-Bilgisayar Mühendisliği (İngilizce)" title="MF-Bilgisayar Mühendisliği (İngilizce)"><img src="/web/image/website/27/logo/MF-Bilgisayar%20M%C3%BChendisli%C4%9Fi%20%28%C4%B0ngilizce%29?unique=885d64b" class="img img-fluid" width="95" height="40" alt="MF-Bilgisayar Mühendisliği (İngilizce)" loading="lazy"/></span>
+        </a>
+    
+                
+    <button type="button" data-bs-toggle="collapse" data-bs-target="#top_menu_collapse" aria-label="Menu" aria-expanded="false" aria-controls="top_menu_collapse" class="navbar-toggler ">
+        <span class="navbar-toggler-icon o_not_editable"></span>
+    </button>
+                
+        <div class="oe_structure oe_structure_solo d-block d-lg-none">
+            
+        </div>
+                
+                <div id="top_menu_collapse" class="collapse navbar-collapse ms-lg-3">
+    <ul id="top_menu" role="menu" class="nav navbar-nav o_menu_loading flex-grow-1">
+        
+                        
+    <li class="nav-item dropdown active ">
+        <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle ">
+            <span>About Our Department</span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+    <li role="presentation" class="">
+        <a role="menuitem" href="/about-the-department" class="dropdown-item ">
+            <span>About Us</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/chairperson-s-message" class="dropdown-item ">
+            <span>Department Head&#39;s Message</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/commissions" class="dropdown-item ">
+            <span>Committees</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/academic-staff" class="dropdown-item active">
+            <span>Academic Staff</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/our-difference" class="dropdown-item ">
+            <span>Our Differences</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/mission-and-vission" class="dropdown-item ">
+            <span>Mission and Vission</span>
+        </a>
+    </li>
+        </ul>
+    </li>
+    <li class="nav-item dropdown  ">
+        <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle ">
+            <span>Student</span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+    <li role="presentation" class="">
+        <a role="menuitem" href="/curriculum" class="dropdown-item ">
+            <span>Curriculum</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/course-schedule" class="dropdown-item ">
+            <span>Course Schedules</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/exam-schedule" class="dropdown-item ">
+            <span>Exam Schedules</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/course-contents" class="dropdown-item ">
+            <span>Course Contents</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/activities" class="dropdown-item ">
+            <span>Activities</span>
+        </a>
+    </li>
+        </ul>
+    </li>
+    <li class="nav-item dropdown  ">
+        <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle ">
+            <span>Forms and Documents</span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+    <li role="presentation" class="">
+        <a role="menuitem" href="/workplace-documents" class="dropdown-item ">
+            <span>Workplace Documents</span>
+        </a>
+    </li>
+        </ul>
+    </li>
+    <li class="nav-item dropdown  ">
+        <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle ">
+            <span>Research</span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+    <li role="presentation" class="">
+        <a role="menuitem" href="/research" class="dropdown-item ">
+            <span>Publications</span>
+        </a>
+    </li>
+        </ul>
+    </li>
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="/contactus" class="nav-link ">
+            <span>Contact Us</span>
+        </a>
+    </li>
+        
+            <li class="nav-item ms-lg-3 divider d-none"></li> 
+            <li class="o_wsale_my_cart align-self-md-start d-none nav-item ms-lg-3">
+                <a href="/shop/cart" class="nav-link">
+                    <span>My Cart</span>
+                    <sup class="my_cart_quantity badge text-bg-primary" data-order-id="">0</sup>
+                </a>
+            </li>
+        
+                        
+                        
+        
+        
+                    
+    </ul>
+                    
+        
+            <div class="js_language_selector my-auto ms-lg-2 align-self-lg-center dropdown d-print-none">
+                <button type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="btn btn-sm btn-outline-secondary border-0 dropdown-toggle ">
+    <img class="o_lang_flag" src="/base/static/img/country_flags/us.png?height=25" loading="lazy"/>
+                    <span class="align-middle">English (US)</span>
+                </button>
+                <div role="menu" class="dropdown-menu ">
+                        <a href="/academic-staff" class="dropdown-item js_change_lang active" data-url_code="en">
+    <img class="o_lang_flag" src="/base/static/img/country_flags/us.png?height=25" loading="lazy"/>
+                            <span>English (US)</span>
+                        </a>
+                        <a href="/tr/academic-staff" class="dropdown-item js_change_lang " data-url_code="tr">
+    <img class="o_lang_flag" src="/base/static/img/country_flags/tr.png?height=25" loading="lazy"/>
+                            <span> Türkçe</span>
+                        </a>
+                </div>
+            </div>
+        
+                    
+        <div class="oe_structure oe_structure_solo d-none d-lg-block ms-3">
+            
+        </div>
+                </div>
+            </div>
+        
+    </nav>
+    
+        </header>
+                <main role="main">
+                    
+        <div id="wrap" class="oe_structure oe_empty"><section class="s_text_block o_colored_level pb0 pt16" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container">
+            <h1 style="text-align: justify;"><span style="font-size: 36px;"><strong>Computer&nbsp;Engineering (English)&nbsp;<strong>Academic Staff&nbsp;</strong></strong></span></h1></div>
+    </section><section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container">
+            <div class="o_text_columns"><div class="row"><div class="col-3 o_colored_level col-lg-2"><p style="text-align: center;"><a href="https://mfcs.ostimteknik.edu.tr/serdar-muldur" target="_blank" data-bs-original-title="" title=""><img src="/web/image/580469-8419561c/serdar%20m%C3%BCld%C3%BCr%20dekan.png" class="img img-fluid o_we_custom_image mx-auto d-block" data-original-id="473206" data-original-src="/web/image/473206-89842048/serdar%20m%C3%BCld%C3%BCr%20dekan.png" data-mimetype="image/png" data-resize-width="690" data-bs-original-title="" title="" aria-describedby="tooltip560244" alt="Prof. Dr. Serdar MÜLDÜR" loading="lazy"/></a><br/><a href="/serdar-muldur" class="btn btn-fill-primary btn-lg" data-bs-original-title="" title="" target="_blank"><strong>RESUME</strong></a><br/></p></div><div class="col-3 o_colored_level col-lg-4"><h2><span style="font-size: 24px;"><strong><a href="/serdar-muldur" data-bs-original-title="" title="" target="_blank">Prof. Dr.&nbsp;Serdar MÜLDÜR (Dean)</a></strong></span><span style="font-size: 18px;"><strong></strong></span><br/></h2><p style="text-align: left;"><strong><strong>Fields of Research:</strong>&nbsp;</strong>
+Computer Software and Software Engineering, Database, Programming Languages.<strong>&nbsp;</strong><br/></p><p style="text-align: left;"><strong><strong>E-mail: </strong></strong><a href="mailto:serdar.muldur@ostimteknik.edu.tr" data-bs-original-title="" title=""><strong><strong></strong></strong>serdar.muldur@ostimteknik.edu.tr</a><strong><strong></strong></strong><br/></p><p><strong><strong>Tel:</strong> </strong>+90 312 386 1092 /&nbsp;Internal:&nbsp;-<strong></strong><br/></p><p><strong><strong><strong>Office:</strong>&nbsp;</strong></strong>Main Campus, F Block, 8th Floor, Room No: 810</p><p><strong><font style="color: rgb(66, 133, 245);"><strong><font style="color: rgb(66, 133, 245);"><a title="" data-bs-original-title="" href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&amp;sira=_D2bDdARDMCOgjHVGzFVZw&amp;authorId=F9D1CB2417F2A773" target="_blank"><img aria-describedby="tooltip694958" title="" data-bs-original-title="" src="/web/image/358056-35e059ea/y%C3%B6k%20akademi%20logo.png" alt="" class="img img-fluid o_we_custom_image" data-original-id="358053" data-original-src="/web/image/358053-9757f8e8/y%C3%B6k%20akademi%20logo.png" data-mimetype="image/png" data-resize-width="146" loading="lazy"/></a></font></strong>&nbsp;<a href="https://scholar.google.com/citations?user=mXcwj8YAAAAJ&amp;hl=tr" data-bs-original-title="" title=""><img loading="lazy" src="/web/image/358548-a67c917c/google-scholar-logo-logo.png" alt="" class="img img-fluid o_we_custom_image" data-original-id="357738" data-original-src="/web/image/357738-a67c917c/google-scholar-logo-logo.png" data-mimetype="image/png" data-resize-width="40" data-bs-original-title="" title="" aria-describedby="tooltip834032"/></a>&nbsp;<a href="https://tr.linkedin.com/in/dr-serdar-muldur-b9821480" data-bs-original-title="" title=""><img aria-describedby="tooltip966199" title="" data-bs-original-title="" src="/web/image/357848-cfccc71d/linkedin%20logo.jpg" alt="" class="img img-fluid o_we_custom_image" data-original-id="357847" data-original-src="/web/image/357847-b3aec94e/linkedin%20logo.jpg" data-mimetype="image/jpeg" data-resize-width="40" loading="lazy"/></a></font></strong>&nbsp;</p></div><div class="col-3 o_colored_level col-lg-2"><p style="text-align: center;"><a href="https://mfcs.ostimteknik.edu.tr/ahmet-ozdil" target="_blank" data-bs-original-title="" title=""><img src="/web/image/580465-5fcde023/Dr.%20%C3%96%C4%9Fr.%20%C3%9Cyesi%20Ahmet%20%C3%96zdil.jpg" alt="Assist. Prof. Dr. Ahmet ÖZDİL" class="img img-fluid o_we_custom_image mx-auto d-block o_we_image_cropped" data-original-id="359378" data-original-src="/web/image/359378-1a461cd9/Dr.%20%C3%96%C4%9Fr.%20%C3%9Cyesi%20Ahmet%20%C3%96zdil.jpg" data-mimetype="image/jpeg" data-bs-original-title="" title="" aria-describedby="tooltip117622" data-width="182" data-height="198.35736703630633" data-scale-x="1" data-scale-y="1" data-aspect-ratio="0/0" loading="lazy"/></a><br/><a title="" data-bs-original-title="" class="btn btn-fill-primary btn-lg" href="/ahmet-ozdil" target="_blank"><strong>RESUME</strong></a><br/></p></div><div class="col-3 o_colored_level col-lg-4"><p><span style="font-size: 24px;"><strong><strong><a href="/ahmet-ozdil" data-bs-original-title="" title="">Assist. Prof. Dr. Ahmet ÖZDİL<br/>(Head of Department)</a>​</strong></strong></span><span style="font-size: 18px;"><strong></strong></span><br/></p><p style="text-align: left;"><strong><strong>Fields of Research:</strong> </strong>Computer Software and Software Engineering, Image Processing, Artificial Intelligence.<strong></strong>&nbsp;</p><p style="text-align: left;"><strong><strong>E-mail:</strong> <a href="mailto:ahmet.ozdil@ostimteknik.edu.tr"><span style="font-weight: normal;">ahmet.ozdil@ostimteknik.edu.tr</span></a></strong><br/></p><p><strong><strong>Tel:</strong> </strong>+90 312 386 1092 / Internal:&nbsp;1910<strong></strong><br/></p><p><strong><strong>Office:</strong>&nbsp;</strong>Main Campus, F Block, 8th Floor, Room No:&nbsp;813&nbsp;</p><p><strong><font style="color: rgb(66, 133, 245);"><strong><font style="color: rgb(66, 133, 245);"><a title="" data-bs-original-title="" href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&amp;sira=_D2bDdARDMCOgjHVGzFVZw&amp;authorId=5DC69EB634E4264D"><img aria-describedby="tooltip694958" title="" data-bs-original-title="" src="/web/image/358056-35e059ea/y%C3%B6k%20akademi%20logo.png" alt="" class="img img-fluid o_we_custom_image" data-original-id="358053" data-original-src="/web/image/358053-9757f8e8/y%C3%B6k%20akademi%20logo.png" data-mimetype="image/png" data-resize-width="146" loading="lazy"/></a></font></strong>&nbsp;<a data-bs-original-title="" title="" href="https://scholar.google.com/citations?user=T534J64AAAAJ&amp;hl=tr&amp;oi=ao"><img loading="lazy" src="/web/image/358548-a67c917c/google-scholar-logo-logo.png" alt="" class="img img-fluid o_we_custom_image" data-original-id="357738" data-original-src="/web/image/357738-a67c917c/google-scholar-logo-logo.png" data-mimetype="image/png" data-resize-width="40" data-bs-original-title="" title="" aria-describedby="tooltip586220"/></a>&nbsp;<a href="https://www.linkedin.com/in/ahmet-%C3%B6zdil-bm/" data-bs-original-title="" title=""><img aria-describedby="tooltip966199" title="" data-bs-original-title="" src="/web/image/357848-cfccc71d/linkedin%20logo.jpg" alt="" class="img img-fluid o_we_custom_image" data-original-id="357847" data-original-src="/web/image/357847-b3aec94e/linkedin%20logo.jpg" data-mimetype="image/jpeg" data-resize-width="40" loading="lazy"/></a></font></strong>&nbsp;</p></div></div></div></div></section><section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container">
+            <div class="o_text_columns"><div class="row"><div class="col-3 o_colored_level col-lg-2"><p style="text-align: center;"><a href="https://mfcs.ostimteknik.edu.tr/prof-dr-cagatay-buyukkoc" target="_blank" data-bs-original-title="" title=""><img src="/web/image/580466-3097bac8/CagatayBuyukkoc.jpg" alt="Prof. Dr. Çağatay BÜYÜKKOÇ" class="img img-fluid o_we_custom_image mx-auto d-block" data-original-id="580462" data-original-src="/web/image/580462-b77b303b/CagatayBuyukkoc.jpg" data-mimetype="image/jpeg" data-resize-width="182" data-bs-original-title="" title="" aria-describedby="tooltip146388" loading="lazy"/></a><br/><a href="/prof-dr-cagatay-buyukkoc" class="btn btn-fill-primary btn-lg" data-bs-original-title="" title="" target="_blank"><strong>RESUME</strong></a><br/></p></div><div class="col-3 o_colored_level col-lg-4"><h2><span style="font-size: 24px;"><strong><a title="" data-bs-original-title="" href="/prof-dr-cagatay-buyukkoc">Prof. Dr. Çağatay BÜYÜKKOÇ</a></strong></span><span style="font-size: 18px;"><strong></strong></span><br/></h2><p style="text-align: left;"><strong><strong>Fields of Research:</strong> </strong>Communication<strong></strong><br/></p><p style="text-align: left;"><strong><strong>E-mail:&nbsp;<a title="" data-bs-original-title="" href="https://cagatay.buyukkoc@ostimteknik.edu.tr"><span style="font-weight: normal;">cagatay.buyukkoc@ostimteknik.edu.tr</span></a></strong></strong><br/></p><p><strong><strong>Tel:</strong> </strong>+90 312 386 1092 /&nbsp;Internal:&nbsp;1910<strong></strong><br/></p><p><strong><strong><strong>Office:</strong>&nbsp;</strong></strong>Main Campus, F Block, 8th Floor<br/></p><p><strong><font style="color: rgb(66, 133, 245);"><strong><font style="color: rgb(66, 133, 245);"><a href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&amp;sira=_D2bDdARDMCOgjHVGzFVZw&amp;authorId=885C6EBD81B3A16B" data-bs-original-title="" title=""><img loading="lazy" data-resize-width="146" data-mimetype="image/png" data-original-src="/web/image/358053-9757f8e8/y%C3%B6k%20akademi%20logo.png" data-original-id="358053" class="img img-fluid o_we_custom_image" alt="" src="/web/image/358056-35e059ea/y%C3%B6k%20akademi%20logo.png" data-bs-original-title="" title="" aria-describedby="tooltip694958"/></a></font></strong>&nbsp;<a href="https://scholar.google.com/citations?hl=tr&amp;user=V-WTGHMAAAAJ"><img aria-describedby="tooltip834032" title="" data-bs-original-title="" data-resize-width="40" data-mimetype="image/png" data-original-src="/web/image/357738-a67c917c/google-scholar-logo-logo.png" data-original-id="357738" class="img img-fluid o_we_custom_image" alt="" src="/web/image/358548-a67c917c/google-scholar-logo-logo.png" loading="lazy"/></a>&nbsp;<a aria-describedby="popover758710" title="" data-bs-original-title="" href="https://www.linkedin.com/in/cagatay-buyukkoc-3b64291/"><img loading="lazy" data-resize-width="40" data-mimetype="image/jpeg" data-original-src="/web/image/357847-b3aec94e/linkedin%20logo.jpg" data-original-id="357847" class="img img-fluid o_we_custom_image" alt="" src="/web/image/357848-cfccc71d/linkedin%20logo.jpg" data-bs-original-title="" title="" aria-describedby="tooltip966199"/></a></font></strong>&nbsp;</p></div><div class="col-3 o_colored_level col-lg-2"><p style="text-align: center;"><a href="https://mfcs.ostimteknik.edu.tr/assist-prof-dr-ali-metin-balci" target="_blank" data-bs-original-title="" title=""><img src="/web/image/434937-08973071/Dr.%20%C3%96%C4%9Fr.%20%C3%9Cyesi%20Ali%20Metin%20BALCI.jpg" alt="Asst. Prof. Dr. Ali Metin BALCI" class="img img-fluid o_we_custom_image mx-auto d-block o_we_image_cropped" data-original-id="359382" data-original-src="/web/image/359382-72642159/Dr.%20%C3%96%C4%9Fr.%20%C3%9Cyesi%20Ali%20Metin%20BALCI.jpg" data-mimetype="image/jpeg" data-resize-width="182" data-bs-original-title="" title="" aria-describedby="tooltip844910" loading="lazy"/></a><br/><a title="" data-bs-original-title="" class="btn btn-fill-primary btn-lg" href="/assist-prof-dr-ali-metin-balci" target="_blank"><strong>RESUME</strong></a><br/></p></div><div class="col-3 o_colored_level col-lg-4"><h2><span style="font-size: 24px;"><strong><strong><strong><strong><a title="" data-bs-original-title="" href="/assist-prof-dr-ali-metin-balci">Asst. Prof. Dr. Ali Metin BALCI</a></strong></strong></strong></strong></span><span style="font-size: 18px;"><strong></strong></span><br/></h2><p style="text-align: left;"><strong><strong>Fields of Research:<strong>&nbsp;<strong></strong></strong></strong></strong>Cloud Computing, Computer Software and Software Engineering, Computer and Communication Networks.<strong></strong><br/></p><p style="text-align: left;"><strong><strong>E-mail:</strong>&nbsp;</strong><a href="mailto:metin.balci@ostimteknik.edu.tr">metin.balci@ostimteknik.edu.tr</a><strong></strong><br/></p><p><strong><strong>Tel:</strong>&nbsp;</strong>+90 312 386 1092 /&nbsp;Internal:&nbsp;1910<strong></strong><br/></p><p><strong><strong><strong><strong>Office:</strong>&nbsp;</strong></strong></strong>Main Campus, F Block, 8th Floor, Room No: 822<strong></strong><br/></p><p><strong><font style="color: rgb(66, 133, 245);"><strong><font style="color: rgb(66, 133, 245);"><a href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&amp;sira=VAWp5jxMDUj5cB0bvOvsDw&amp;authorId=2453A2A5548854F4" data-bs-original-title="" title=""><img loading="lazy" data-resize-width="146" data-mimetype="image/png" data-original-src="/web/image/358053-9757f8e8/y%C3%B6k%20akademi%20logo.png" data-original-id="358053" class="img img-fluid o_we_custom_image" alt="" src="/web/image/358056-35e059ea/y%C3%B6k%20akademi%20logo.png" data-bs-original-title="" title="" aria-describedby="tooltip694958"/></a></font></strong>&nbsp;<a title="" data-bs-original-title="" href="https://scholar.google.com.tr/citations?user=04DB3VwAAAAJ&amp;hl=tr&amp;oi=sra"><img aria-describedby="tooltip392604" title="" data-bs-original-title="" data-resize-width="40" data-mimetype="image/png" data-original-src="/web/image/357738-a67c917c/google-scholar-logo-logo.png" data-original-id="357738" class="img img-fluid o_we_custom_image" alt="" src="/web/image/358548-a67c917c/google-scholar-logo-logo.png" loading="lazy"/></a>&nbsp;<a href="https://www.linkedin.com/in/metin-balci-47b19777/?originalSubdomain=tr" title="" data-bs-original-title=""><img loading="lazy" data-resize-width="40" data-mimetype="image/jpeg" data-original-src="/web/image/357847-b3aec94e/linkedin%20logo.jpg" data-original-id="357847" class="img img-fluid o_we_custom_image" alt="" src="/web/image/357848-cfccc71d/linkedin%20logo.jpg" data-bs-original-title="" title="" aria-describedby="tooltip966199"/></a></font></strong>&nbsp;</p></div></div></div></div></section><section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container">
+            <div class="o_text_columns"><div class="row"><div class="col-3 o_colored_level col-lg-2"><p style="text-align: center;"><a href="https://mfcs.ostimteknik.edu.tr/assist-prof-dr-farzin-asadi" target="_blank" data-bs-original-title="" title=""><img src="/web/image/370175-7950e1ed/Farzin%20Asadi%201.jpg" alt="Asst. Prof. Dr. Farzin ASADİ" class="img img-fluid o_we_custom_image mx-auto d-block" data-original-id="370168" data-original-src="/web/image/370168-e07b1f3c/Farzin%20Asadi%201.jpg" data-mimetype="image/jpeg" data-resize-width="182" loading="lazy" data-bs-original-title="" title="" aria-describedby="tooltip452515"/></a><br/><a href="/assist-prof-dr-farzin-asadi" class="btn btn-fill-primary btn-lg" data-bs-original-title="" title="" target="_blank"><strong>RESUME</strong></a><br/></p></div><div class="col-3 o_colored_level col-lg-4"><h2><span style="font-size: 24px;"><strong><a title="" data-bs-original-title="" href="/assist-prof-dr-farzin-asadi">Asst. Prof. Dr. Farzin ASADİ</a></strong></span><span style="font-size: 18px;"><strong></strong></span><br/></h2><p style="text-align: left;"><strong><strong>Fields of Research:<strong>&nbsp;</strong></strong></strong>Power Electronics, Electrical Machinery and Energy Conversion, Control Theory and Applications.<strong><strong><strong><strong></strong></strong></strong></strong><br/></p><p style="text-align: left;"><strong><strong>E-mail:</strong>&nbsp;</strong><a title="" data-bs-original-title="" href="mailto:farzin.asadi@ostimteknik.edu.tr">farzin.asadi@ostimteknik.edu.tr</a></p><p><strong><strong>Tel:</strong>&nbsp;</strong>0312 386 1092 /&nbsp;Internal:&nbsp;1910</p><p><strong><strong><strong><strong>Office:</strong>&nbsp;</strong></strong></strong>Main Campus, A&nbsp;Block,<strong><strong><strong>&nbsp;</strong></strong></strong>3rd Floor, Room No: -&nbsp;</p><p><strong><font style="color: rgb(66, 133, 245);"><strong><font style="color: rgb(66, 133, 245);"><a href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&amp;sira=_D2bDdARDMCOgjHVGzFVZw&amp;authorId=D7CC806930AAB50E" data-bs-original-title="" title="" target="_blank"><img loading="lazy" data-resize-width="146" data-mimetype="image/png" data-original-src="/web/image/358053-9757f8e8/y%C3%B6k%20akademi%20logo.png" data-original-id="358053" class="img img-fluid o_we_custom_image" alt="" src="/web/image/358056-35e059ea/y%C3%B6k%20akademi%20logo.png" data-bs-original-title="" title="" aria-describedby="tooltip694958"/></a></font></strong>&nbsp;<a href="https://scholar.google.com.tr/citations?user=hKCTe6wAAAAJ&amp;hl=tr&amp;oi=ao" title="" data-bs-original-title="" target="_blank"><img aria-describedby="tooltip392604" title="" data-bs-original-title="" data-resize-width="40" data-mimetype="image/png" data-original-src="/web/image/357738-a67c917c/google-scholar-logo-logo.png" data-original-id="357738" class="img img-fluid o_we_custom_image" alt="" src="/web/image/358548-a67c917c/google-scholar-logo-logo.png" loading="lazy"/></a>&nbsp;<a title="" data-bs-original-title=""><img loading="lazy" data-resize-width="40" data-mimetype="image/jpeg" data-original-src="/web/image/357847-b3aec94e/linkedin%20logo.jpg" data-original-id="357847" class="img img-fluid o_we_custom_image" alt="" src="/web/image/357848-cfccc71d/linkedin%20logo.jpg" data-bs-original-title="" title="" aria-describedby="tooltip966199"/></a></font></strong>&nbsp;</p></div><div class="col-3 o_colored_level col-lg-2"><p style="text-align: center;"><a href="https://mfcs.ostimteknik.edu.tr/mohammadreza-najaftomraei" target="_blank" data-bs-original-title="" title=""><img src="/web/image/369506-8c826d7f/Muhammed%20Reza.jpg" alt="Asst. Prof. Dr. Mohammadreza NAJAFTOMRAEI" class="img img-fluid o_we_custom_image mx-auto d-block o_we_image_cropped" data-original-id="369505" data-original-src="/web/image/369505-c3efec4c/Muhammed%20Reza.jpg" data-mimetype="image/jpeg" data-resize-width="182" data-bs-original-title="" title="" aria-describedby="tooltip517582" loading="lazy"/></a><br/><a title="" data-bs-original-title="" class="btn btn-fill-primary btn-lg" href="/mohammadreza-najaftomraei" target="_blank"><strong>RESUME</strong></a><br/></p></div><div class="col-3 o_colored_level col-lg-4"><p style="margin-bottom: 0px;"><span style="font-size: 24px;"><strong><a title="" data-bs-original-title="" href="/mohammadreza-najaftomraei"><strong>Asst. Prof. Dr.&nbsp;</strong>Mohammadreza NAJAFTOMRAEI</a></strong></span></p><p><strong><strong>Fields of Research:<strong>&nbsp;-&nbsp;<strong></strong></strong></strong></strong><br/></p><p><strong><strong>E-mail:&nbsp; </strong></strong><span style="font-size: 16px;"><strong><strong></strong></strong></span><span style="font-size: 14px;"><a title="" data-bs-original-title="" href="https://mohammadreza.najaftomraei@ostimteknik.edu.tr​"><span style="font-size: 16px;">mohammadreza.najaftomraei@ostimteknik.edu.t</span></a></span><span style="font-size: 16px;"></span><span style="font-size: 14px;">r</span><span style="font-size: 16px;"><strong><strong></strong></strong></span><strong><strong></strong></strong></p><p><strong><strong>Tel:&nbsp;</strong></strong>0312 386 1092 /&nbsp;Internal:&nbsp;1910</p><p><strong><strong><strong><strong>Office:</strong>&nbsp;</strong></strong></strong>Main Campus, F Block, 8th Floor<br/></p><p><strong><font style="color: rgb(66, 133, 245);"><strong><font style="color: rgb(66, 133, 245);"><a href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&amp;sira=_D2bDdARDMCOgjHVGzFVZw&amp;authorId=0A1C8733DCCA08DC" data-bs-original-title="" title=""><img loading="lazy" data-resize-width="146" data-mimetype="image/png" data-original-src="/web/image/358053-9757f8e8/y%C3%B6k%20akademi%20logo.png" data-original-id="358053" class="img img-fluid o_we_custom_image" alt="" src="/web/image/358056-35e059ea/y%C3%B6k%20akademi%20logo.png" data-bs-original-title="" title="" aria-describedby="tooltip694958"/></a></font></strong>&nbsp;<a href="https://scholar.google.com/citations?user=ECmN7qQAAAAJ&amp;hl=en" title="" data-bs-original-title=""><img aria-describedby="tooltip392604" title="" data-bs-original-title="" data-resize-width="40" data-mimetype="image/png" data-original-src="/web/image/357738-a67c917c/google-scholar-logo-logo.png" data-original-id="357738" class="img img-fluid o_we_custom_image" alt="" src="/web/image/358548-a67c917c/google-scholar-logo-logo.png" loading="lazy"/></a>&nbsp;<a href="https://www.linkedin.com/in/mohammadreza-najaftomaraei-86a94a52/?originalSubdomain=ir" title="" data-bs-original-title=""><img loading="lazy" data-resize-width="40" data-mimetype="image/jpeg" data-original-src="/web/image/357847-b3aec94e/linkedin%20logo.jpg" data-original-id="357847" class="img img-fluid o_we_custom_image" alt="" src="/web/image/357848-cfccc71d/linkedin%20logo.jpg" data-bs-original-title="" title="" aria-describedby="tooltip966199"/></a></font></strong>&nbsp;</p></div></div></div></div></section><section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container">
+            <div class="o_text_columns"><div class="row"><div class="col-3 o_colored_level col-lg-2"><p style="text-align: center;"><a href="https://mfcs.ostimteknik.edu.tr/assist-prof-dr-ramazan-kocaoglu" target="_blank" data-bs-original-title="" title=""><img src="/web/image/370173-2751d38d/Ramazan%20Kocaog%CC%86lu.jpg" alt="Asst. Prof. Dr. Ramazan KOCAOĞLU" class="img img-fluid o_we_custom_image mx-auto d-block" data-original-id="370169" data-original-src="/web/image/370169-a78709d8/Ramazan%20Kocaog%CC%86lu.jpg" data-mimetype="image/jpeg" data-resize-width="182" data-bs-original-title="" title="" aria-describedby="tooltip248897" loading="lazy"/></a><br/><a href="/assist-prof-dr-ramazan-kocaoglu" class="btn btn-fill-primary btn-lg" data-bs-original-title="" title="" target="_blank"><strong>RESUME</strong></a><br/></p></div><div class="col-3 o_colored_level col-lg-4"><h3><span style="font-size: 24px;"><strong><strong><strong><strong><a title="" data-bs-original-title="" href="/assist-prof-dr-ramazan-kocaoglu" target="_blank">Asst. Prof. Dr. Ramazan KOCAOĞLU</a>​</strong></strong></strong></strong></span><span style="font-size: 18px;"><strong></strong></span><br/></h3><p style="text-align: left;"><span style="font-size: 16px;"><strong><strong>Fields of Research:<strong>&nbsp;</strong></strong></strong>Computer and Communication Networks, Information Security and Cryptology, Computer System Software.</span><strong><strong><strong><strong></strong></strong></strong></strong><span style="font-size: 16px;"><br/></span></p><p style="text-align: left;"><span style="font-size: 16px;"><strong><strong>E-mail:&nbsp;</strong></strong><a href="mailto:ramazan.kocaoglu@ostimteknik.edu.tr" data-bs-original-title="" title="">ramazan.kocaoglu@ostimteknik.edu.tr</a></span></p><p><span style="font-size: 16px;"><strong><strong>Tel:</strong>&nbsp;</strong>0312 386 1092 /&nbsp;Internal:&nbsp;1910</span></p><p><span style="font-size: 16px;"><strong><strong><strong><strong>Office:</strong>&nbsp;</strong></strong></strong>Main Campus, F Block, 8th Floor<br/></span></p><p><strong><font style="color: rgb(66, 133, 245);"><strong><font style="color: rgb(66, 133, 245);"><a href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&amp;sira=_D2bDdARDMCOgjHVGzFVZw&amp;authorId=D397540D538D30C9" data-bs-original-title="" title="" target="_blank"><img loading="lazy" data-resize-width="146" data-mimetype="image/png" data-original-src="/web/image/358053-9757f8e8/y%C3%B6k%20akademi%20logo.png" data-original-id="358053" class="img img-fluid o_we_custom_image" alt="" src="/web/image/358056-35e059ea/y%C3%B6k%20akademi%20logo.png" data-bs-original-title="" title="" aria-describedby="tooltip694958"/></a></font></strong>&nbsp;<a title="" data-bs-original-title="" href="https://scholar.google.com.tr/citations?user=F7YThiMAAAAJ&amp;hl=tr&amp;oi=ao" target="_blank"><img aria-describedby="tooltip392604" title="" data-bs-original-title="" data-resize-width="40" data-mimetype="image/png" data-original-src="/web/image/357738-a67c917c/google-scholar-logo-logo.png" data-original-id="357738" class="img img-fluid o_we_custom_image" alt="" src="/web/image/358548-a67c917c/google-scholar-logo-logo.png" loading="lazy"/></a>&nbsp;<a href="https://www.linkedin.com/in/dr-ramazan-kocao%C4%9Flu-9bab824b/?originalSubdomain=tr" title="" data-bs-original-title="" target="_blank"><img loading="lazy" data-resize-width="40" data-mimetype="image/jpeg" data-original-src="/web/image/357847-b3aec94e/linkedin%20logo.jpg" data-original-id="357847" class="img img-fluid o_we_custom_image" alt="" src="/web/image/357848-cfccc71d/linkedin%20logo.jpg" data-bs-original-title="" title="" aria-describedby="tooltip966199"/></a></font></strong>&nbsp;</p></div><div class="col-3 o_colored_level col-lg-2"><p style="text-align: center;"><a href="https://mfcs.ostimteknik.edu.tr/assist-prof-dr-nergiz-khankishiyeva-hati" target="_blank" data-bs-original-title="" title=""><img src="/web/image/580835-0ec21276/Dr.%20%C3%96%C4%9Fr.%20Nergiz%20KHANKISHIYEVA%20HAT%C4%B0.jpg" alt="Asst. Prof. Dr. Nergiz KHANKISHIYEVA HATİ" class="img img-fluid o_we_custom_image mx-auto d-block o_we_image_cropped" data-original-id="359394" data-original-src="/web/image/359394-fbce3536/Dr.%20%C3%96%C4%9Fr.%20Nergiz%20KHANKISHIYEVA%20HAT%C4%B0.jpg" data-mimetype="image/jpeg" data-resize-width="182" data-bs-original-title="" title="" aria-describedby="tooltip833923" loading="lazy"/></a><br/><a title="" data-bs-original-title="" class="btn btn-fill-primary btn-lg" href="/assist-prof-dr-nergiz-khankishiyeva-hati" target="_blank"><strong>RESUME</strong></a><br/></p></div><div class="col-3 o_colored_level col-lg-4"><h3><span style="font-size: 24px;"><strong><a title="" data-bs-original-title="" href="/assist-prof-dr-nergiz-khankishiyeva-hati">Asst. Prof. Dr. Nergiz
+KHANKISHIYEVA HATİ</a></strong></span></h3><p style="text-align: left;"><strong><strong><strong>Fields of Research:&nbsp;</strong></strong></strong>Computer Science, Foundations of Mathematics and Mathematical Logic, Algebra and Number Theory.<br/></p><p style="text-align: left;"><strong><strong><strong>E-mail:&nbsp;</strong></strong></strong><a title="" data-bs-original-title="" href="mailto:nergiz.khankishiyevahati@ostimteknik.edu.tr"><span style="font-size: 16px;">nergiz.khankishiyevahati@ostimteknik.edu.tr</span></a></p><p><strong><strong><strong>Tel:</strong></strong></strong>&nbsp;0312 386 1092 /&nbsp;Internal:&nbsp;1910</p><p><strong><strong><strong><strong><strong>Office:&nbsp;</strong></strong></strong></strong></strong>Main Campus, F Block, 8th Floor, Room No: 820</p><p><strong><font style="color: rgb(66, 133, 245);"><strong><font style="color: rgb(66, 133, 245);"><a href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&amp;sira=_D2bDdARDMCOgjHVGzFVZw&amp;authorId=3E7DA9FDF98FE653" data-bs-original-title="" title="" target="_blank"><img loading="lazy" data-resize-width="146" data-mimetype="image/png" data-original-src="/web/image/358053-9757f8e8/y%C3%B6k%20akademi%20logo.png" data-original-id="358053" class="img img-fluid o_we_custom_image" alt="" src="/web/image/358056-35e059ea/y%C3%B6k%20akademi%20logo.png" data-bs-original-title="" title="" aria-describedby="tooltip694958"/></a></font></strong>&nbsp;<a href="https://scholar.google.com/citations?user=yKf1Gz8AAAAJ&amp;hl=tr" title="" data-bs-original-title="" target="_blank"><img aria-describedby="tooltip608275" title="" data-bs-original-title="" data-resize-width="40" data-mimetype="image/png" data-original-src="/web/image/357738-a67c917c/google-scholar-logo-logo.png" data-original-id="357738" class="img img-fluid o_we_custom_image" alt="" src="/web/image/358548-a67c917c/google-scholar-logo-logo.png" loading="lazy"/></a>&nbsp;<a href="https://www.linkedin.com/in/nergiz-khankishiyeva-hati-3544721b0/" title="" data-bs-original-title="" target="_blank"><img loading="lazy" data-resize-width="40" data-mimetype="image/jpeg" data-original-src="/web/image/357847-b3aec94e/linkedin%20logo.jpg" data-original-id="357847" class="img img-fluid o_we_custom_image" alt="" src="/web/image/357848-cfccc71d/linkedin%20logo.jpg" data-bs-original-title="" title="" aria-describedby="tooltip966199"/></a></font></strong>&nbsp;</p></div></div></div></div></section><section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container">
+            <div class="o_text_columns"><div class="row"><div class="col-3 o_colored_level col-lg-2"><p style="text-align: center;"><a href="https://mfcs.ostimteknik.edu.tr/assist-prof-dr-arif-furkan-mendi" target="_blank" data-bs-original-title="" title=""><img src="/web/image/497236-8de804bb/Arif%20Furkan%20Mendi.jpg" alt="Assoc. Prof. Dr. Arif Furkan MENDİ" class="img img-fluid o_we_custom_image mx-auto d-block" data-original-id="372531" data-original-src="/web/image/372531-69be0237/Arif%20Furkan%20Mendi.jpg" data-mimetype="image/jpeg" data-resize-width="182" data-bs-original-title="" title="" aria-describedby="tooltip531816" loading="lazy"/></a><br/><a href="/assist-prof-dr-arif-furkan-mendi" class="btn btn-fill-primary btn-lg" data-bs-original-title="" title="" target="_blank"><strong>RESUME</strong></a><br/></p></div><div class="col-3 o_colored_level col-lg-4"><h2><span style="font-size: 24px;"><strong><a title="" data-bs-original-title="" href="/assist-prof-dr-arif-furkan-mendi" target="_blank">Assoc. Prof. Dr.&nbsp;Arif Furkan
+MENDİ</a></strong></span><span style="font-size: 18px;"><strong></strong></span><br/></h2><p style="text-align: left;"><strong><strong>Fields of Research:<strong>&nbsp;</strong></strong></strong>Computer Software and Software Engineering, Parallel and Distributed Systems, Information Systems.<strong><strong><strong><strong></strong></strong></strong></strong><br/></p><p style="text-align: left;"><strong><strong>E-mail:&nbsp;</strong></strong><a title="" data-bs-original-title="" href="mailto:ariffurkan.mendi@ostimteknik.edu.tr">ariffurkan.mendi@ostimteknik.edu.tr</a></p><p><strong><strong>Tel:&nbsp;</strong></strong>0312 386 1092 /&nbsp;Internal:&nbsp;1910</p><p><strong><strong><strong><strong>Office:</strong>&nbsp;</strong></strong></strong>Main Campus, F Block, 8th Floor<br/></p><p><strong><font style="color: rgb(66, 133, 245);"><strong><font style="color: rgb(66, 133, 245);"><a href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&amp;sira=_D2bDdARDMCOgjHVGzFVZw&amp;authorId=7A2BCFF3E9A62511" data-bs-original-title="" title="" target="_blank"><img loading="lazy" data-resize-width="146" data-mimetype="image/png" data-original-src="/web/image/358053-9757f8e8/y%C3%B6k%20akademi%20logo.png" data-original-id="358053" class="img img-fluid o_we_custom_image" alt="" src="/web/image/358056-35e059ea/y%C3%B6k%20akademi%20logo.png" data-bs-original-title="" title="" aria-describedby="tooltip694958"/></a></font></strong>&nbsp;<a href="https://scholar.google.com/citations?user=VGm8nIgAAAAJ&amp;hl=tr&amp;oi=ao" title="" data-bs-original-title="" target="_blank"><img aria-describedby="tooltip392604" title="" data-bs-original-title="" data-resize-width="40" data-mimetype="image/png" data-original-src="/web/image/357738-a67c917c/google-scholar-logo-logo.png" data-original-id="357738" class="img img-fluid o_we_custom_image" alt="" src="/web/image/358548-a67c917c/google-scholar-logo-logo.png" loading="lazy"/></a>&nbsp;<a href="https://www.linkedin.com/in/afmendi/" title="" data-bs-original-title="" target="_blank"><img loading="lazy" data-resize-width="40" data-mimetype="image/jpeg" data-original-src="/web/image/357847-b3aec94e/linkedin%20logo.jpg" data-original-id="357847" class="img img-fluid o_we_custom_image" alt="" src="/web/image/357848-cfccc71d/linkedin%20logo.jpg" data-bs-original-title="" title="" aria-describedby="tooltip966199"/></a></font></strong>&nbsp;</p></div><div class="col-3 o_colored_level col-lg-2"><p style="text-align: center;"><a href="https://mfcs.ostimteknik.edu.tr/murad-naghiyev" target="_blank" data-bs-original-title="" title=""><img src="/web/image/370174-c3ee20f5/Murad%20Naghiyev.jpg" alt="Teaching Asst. Murad NAGHIYEV" class="img img-fluid o_we_custom_image mx-auto d-block o_we_image_cropped" data-original-id="370172" data-original-src="/web/image/370172-dadfb5cf/Murad%20Naghiyev.jpg" data-mimetype="image/jpeg" data-resize-width="182" data-bs-original-title="" title="" aria-describedby="tooltip260786" loading="lazy"/></a><br/><a title="" data-bs-original-title="" class="btn btn-fill-primary btn-lg" href="/murad-naghiyev" target="_blank"><strong>RESUME</strong></a><br/></p></div><div class="col-3 o_colored_level col-lg-4"><h2 style="margin-bottom: 0px;"><span style="font-size: 24px;"><strong><a title="" data-bs-original-title="" href="/murad-naghiyev" target="_blank">Teaching Asst. Murad NAGHIYEV</a></strong></span></h2><p><strong><strong><strong>Fields of Research: </strong></strong></strong>Machine Learning and AI,&nbsp;Natural Language Processing (NLP)</p><p><strong><strong><strong>E-mail:&nbsp;</strong></strong></strong><a title="" data-bs-original-title="" href="mailto:murad.naghiyev@ostimteknik.edu.tr">murad.naghiyev@ostimteknik.edu.tr</a></p><p><strong><strong><strong>Tel:</strong></strong></strong>&nbsp;0312 386 1092 /&nbsp;Internal:&nbsp;1910</p><p><strong><strong><strong><strong><strong>Office:&nbsp;</strong></strong></strong></strong></strong>Main Campus, A Block,&nbsp;3rd Floor</p><h6><strong><font style="color: rgb(66, 133, 245);"><a href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&amp;sira=_D2bDdARDMCOgjHVGzFVZw&amp;authorId=19EB2AA1EE863C67" title="" data-bs-original-title="" target="_blank"><img loading="lazy" aria-describedby="tooltip255720" title="" data-bs-original-title="" data-resize-width="195" data-mimetype="image/png" data-original-src="/web/image/161903-6d48bec4/yokakademik.png" data-original-id="161903" class="img img-fluid o_we_custom_image" alt="" src="/web/image/367032-e3b23f87/yokakademik.png"/></a>&nbsp;<a href="https://scholar.google.com/citations?user=PyjKkakAAAAJ&amp;hl=tr&amp;oi=ao" title="" data-bs-original-title="" target="_blank"><img aria-describedby="tooltip608275" title="" data-bs-original-title="" data-resize-width="40" data-mimetype="image/png" data-original-src="/web/image/357738-a67c917c/google-scholar-logo-logo.png" data-original-id="357738" class="img img-fluid o_we_custom_image" alt="" src="/web/image/358548-a67c917c/google-scholar-logo-logo.png" loading="lazy"/></a>&nbsp;<a href="https://www.linkedin.com/in/murad-n-844538237/" title="" data-bs-original-title="" target="_blank"><img loading="lazy" data-resize-width="40" data-mimetype="image/jpeg" data-original-src="/web/image/357847-b3aec94e/linkedin%20logo.jpg" data-original-id="357847" class="img img-fluid o_we_custom_image" alt="" src="/web/image/357848-cfccc71d/linkedin%20logo.jpg" data-bs-original-title="" title="" aria-describedby="tooltip966199"/></a></font></strong>&nbsp;</h6></div></div></div></div></section><section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container">
+            <div class="o_text_columns"><div class="row"><div class="col-3 o_colored_level col-lg-2"><p style="text-align: center;"><img src="/web/image/580854-6a31a6ad/BerkayGunduz.jpg" alt="Res. Asst. Berkay GÜNDÜZ" class="img img-fluid o_we_custom_image mx-auto d-block o_we_image_cropped" data-original-id="580848" data-original-src="/web/image/580848-ba0af330/BerkayGunduz.jpg" data-mimetype="image/jpeg" data-bs-original-title="" title="" aria-describedby="tooltip827374" data-y="42.770624073273545" data-width="194" data-height="216.22937592672645" data-scale-x="1" data-scale-y="1" data-aspect-ratio="0/0" loading="lazy"/><br/><a href="/tr/berkay-gunduz" class="btn btn-fill-primary btn-lg" data-bs-original-title="" title="" target="_blank"><strong>RESUME</strong></a><br/></p></div><div class="col-3 o_colored_level col-lg-4"><h2><span style="font-size: 24px;"><strong><a href="/tr/berkay-gunduz">Res. Asst. Berkay GÜNDÜZ</a></strong></span></h2><p><strong><strong><strong>Fields of Research:&nbsp;</strong></strong></strong>Computer Software, Natural Language Processing (NLP)</p><p><strong><strong><strong>E-mail:&nbsp;</strong></strong></strong><a href="mailto:berkay.gunduz@ostimteknik.edu.tr"><strong><strong><strong></strong></strong></strong>berkay.gunduz@ostimteknik.edu.tr</a></p><p><strong><strong><strong>Tel:</strong></strong></strong>&nbsp;0312 386 1092 /&nbsp;Internal:&nbsp;1910</p><p><strong><strong><strong><strong><strong>Office:&nbsp;</strong></strong></strong></strong></strong>Main Campus, A Block,&nbsp;3rd Floor</p><h6><strong><a href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&amp;sira=_D2bDdARDMCOgjHVGzFVZw&amp;authorId=A296EC637F7FAF00" data-bs-original-title="" title="" target="_blank"><img class="img-fluid" src="https://mfcs.ostimteknik.edu.tr/web/image/367032-e3b23f87/yokakademik.png" loading="lazy" data-bs-original-title="" title="" aria-describedby="tooltip903795" data-original-id="161903" data-original-src="/web/image/161903-6d48bec4/yokakademik.png" data-mimetype="image/png"/></a>&nbsp;<a href="https://scholar.google.com/citations?view_op=list_works&amp;hl=en&amp;user=ekWlwvIAAAAJ" data-bs-original-title="" title="" target="_blank"><img class="img-fluid" src="https://mfcs.ostimteknik.edu.tr/web/image/358548-a67c917c/google-scholar-logo-logo.png" loading="lazy" data-bs-original-title="" title="" aria-describedby="tooltip15142" data-original-id="357738" data-original-src="/web/image/357738-a67c917c/google-scholar-logo-logo.png" data-mimetype="image/png"/></a>&nbsp;<a href="https://www.linkedin.com/in/berkaygndzs/" data-bs-original-title="" title="" target="_blank"><img class="img-fluid" src="https://mfcs.ostimteknik.edu.tr/web/image/357848-cfccc71d/linkedin%20logo.jpg" data-bs-original-title="" title="" aria-describedby="tooltip722952" data-original-id="357847" data-original-src="/web/image/357847-b3aec94e/linkedin%20logo.jpg" data-mimetype="image/jpeg" loading="lazy"/></a></strong>&nbsp;</h6><p>
+
+</p></div><div class="col-3 o_colored_level col-lg-2"><p style="text-align: center;"><img src="/web/image/580855-41cd5d1d/DilaraAksoy.jpg" alt="Res. Asst. Dilara AKSOY" class="img img-fluid o_we_custom_image mx-auto d-block o_we_image_cropped" data-original-id="580851" data-original-src="/web/image/580851-0cd3d531/DilaraAksoy.jpg" data-mimetype="image/jpeg" data-resize-width="209" data-bs-original-title="" title="" aria-describedby="tooltip52041" loading="lazy"/><br/><a title="" data-bs-original-title="" class="btn btn-fill-primary btn-lg" href="/tr/dilara-aksoy" target="_blank"><strong>RESUME</strong></a><br/></p></div><div class="col-3 o_colored_level col-lg-4"><h2 style="margin-bottom: 0px;"><span style="font-size: 24px;"><strong><a href="/tr/dilara-aksoy" target="_blank">Res. Asst.&nbsp;Dilara AKSOY</a></strong></span></h2><p><span style="font-size: 16px;"><strong><strong><strong>Fields of Research:&nbsp;</strong></strong></strong>Image Processing, Computer Vision, and Natural Language Processing (NLP)<br/></span></p><p><span style="font-size: 16px;"><strong><strong><strong>E-mail:&nbsp;</strong></strong></strong><a title="" data-bs-original-title="" href="mailto:dilara.aksoy@ostimteknik.edu.tr">dilara.aksoy@ostimteknik.edu.tr</a></span><strong><strong><strong> </strong></strong></strong></p><p><span style="font-size: 16px;"><strong><strong><strong>Tel:</strong></strong></strong>&nbsp;0312 386 1092 /&nbsp;Internal:&nbsp;1910</span></p><p><span style="font-size: 16px;"><strong><strong><strong><strong><strong>Office:&nbsp;</strong></strong></strong></strong></strong>Main Campus, F&nbsp;Block, 8th Floor</span></p><h6><strong><font style="color: rgb(66, 133, 245);"><a href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&amp;sira=EpjhmFgiSAVk66O84AtUZg&amp;authorId=1C5CAA1B97BD68CF" title="" data-bs-original-title="" target="_blank"><img loading="lazy" aria-describedby="tooltip255720" title="" data-bs-original-title="" data-resize-width="195" data-mimetype="image/png" data-original-src="/web/image/161903-6d48bec4/yokakademik.png" data-original-id="161903" class="img img-fluid o_we_custom_image" alt="" src="/web/image/367032-e3b23f87/yokakademik.png"/></a>&nbsp;<a title="" data-bs-original-title=""><img aria-describedby="tooltip608275" title="" data-bs-original-title="" data-resize-width="40" data-mimetype="image/png" data-original-src="/web/image/357738-a67c917c/google-scholar-logo-logo.png" data-original-id="357738" class="img img-fluid o_we_custom_image" alt="" src="/web/image/358548-a67c917c/google-scholar-logo-logo.png" loading="lazy"/></a>&nbsp;<a href="https://www.linkedin.com/in/dilara-aksoyy/" title="" data-bs-original-title=""><img loading="lazy" data-resize-width="40" data-mimetype="image/jpeg" data-original-src="/web/image/357847-b3aec94e/linkedin%20logo.jpg" data-original-id="357847" class="img img-fluid o_we_custom_image" alt="" src="/web/image/357848-cfccc71d/linkedin%20logo.jpg" data-bs-original-title="" title="" aria-describedby="tooltip966199"/></a></font></strong>&nbsp;</h6></div></div></div></div></section><section class="s_text_block pt40 o_colored_level pb24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container">
+            <div class="o_text_columns"><div class="row"><div class="col-3 o_colored_level col-lg-2"><p style="text-align: center;"><img src="/web/image/580890-6aed365d/FurkanGen%C3%A7.jpg" alt="Res. Asst. Furkan GENÇ" class="img img-fluid o_we_custom_image mx-auto d-block o_we_image_cropped" data-original-id="580862" data-original-src="/web/image/580862-8de9f5a9/FurkanGen%C3%A7.jpg" data-mimetype="image/jpeg" data-bs-original-title="" title="" aria-describedby="tooltip820137" data-y="14.256889798225613" data-width="194" data-height="232.387117893324" data-scale-x="1" data-scale-y="1" data-aspect-ratio="0/0" loading="lazy"/><br/><a href="/furkan-genc" class="btn btn-fill-primary btn-lg" data-bs-original-title="" title="" target="_blank"><strong>RESUME</strong></a><br/></p></div><div class="col-3 o_colored_level col-lg-4 pb0"><h2 style="margin-bottom: 0px;"><span style="font-size: 24px;"><strong><a href="/furkan-genc">Res. Asst.&nbsp;Furkan GENÇ</a></strong></span></h2><p><strong><strong><strong>Fields of Research:&nbsp;</strong></strong></strong>Web-Based Software Development, Cybersecurity, and Power Electronics<br/></p><p><strong><strong><strong>E-mail:&nbsp;</strong></strong></strong><a title="" data-bs-original-title="" href="mailto:furkan.genc@ostimteknik.edu.tr"><strong><strong><strong></strong></strong></strong>furkan.genc@ostimteknik.edu.tr</a></p><p><strong><strong><strong>Tel:</strong></strong></strong>&nbsp;0312 386 1092 /&nbsp;Internal:&nbsp;1910</p><p><strong><strong><strong><strong><strong>Office:&nbsp;</strong></strong></strong></strong></strong>Main Campus, F&nbsp;Block, 8th Floor</p><h6><strong><font style="color: rgb(66, 133, 245);"><a href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&amp;sira=iHDPgsbZ-szm5UHCxj3mmg&amp;authorId=645DDA53D36CEAF9" data-bs-original-title="" title=""><img src="/web/image/367032-e3b23f87/yokakademik.png" alt="" class="img img-fluid o_we_custom_image" data-original-id="161903" data-original-src="/web/image/161903-6d48bec4/yokakademik.png" data-mimetype="image/png" data-resize-width="195" data-bs-original-title="" title="" aria-describedby="tooltip255720" loading="lazy"/></a>&nbsp;<a data-bs-original-title="" title=""><img loading="lazy" src="/web/image/358548-a67c917c/google-scholar-logo-logo.png" alt="" class="img img-fluid o_we_custom_image" data-original-id="357738" data-original-src="/web/image/357738-a67c917c/google-scholar-logo-logo.png" data-mimetype="image/png" data-resize-width="40" data-bs-original-title="" title="" aria-describedby="tooltip608275"/></a>&nbsp;<a href="https://www.linkedin.com/in/furkan-genç-605b25214/" data-bs-original-title="" title=""><img aria-describedby="tooltip966199" title="" data-bs-original-title="" src="/web/image/357848-cfccc71d/linkedin%20logo.jpg" alt="" class="img img-fluid o_we_custom_image" data-original-id="357847" data-original-src="/web/image/357847-b3aec94e/linkedin%20logo.jpg" data-mimetype="image/jpeg" data-resize-width="40" loading="lazy"/></a></font></strong></h6><p>
+
+</p></div><div class="col-3 o_colored_level col-lg-2"><p style="text-align: center;"><img src="/web/image/580891-ddb0673b/EmineBet%C3%BClErdo%C4%9Fan.jpg" alt="" class="img img-fluid o_we_custom_image mx-auto d-block o_we_image_cropped" data-original-id="580869" data-original-src="/web/image/580869-b27c430a/EmineBet%C3%BClErdo%C4%9Fan.jpg" data-mimetype="image/jpeg" data-bs-original-title="" title="" aria-describedby="tooltip20154" data-width="193.77413185693882" data-height="235" data-scale-x="1" data-scale-y="1" data-aspect-ratio="0/0" loading="lazy"/><br/><a title="" data-bs-original-title="" class="btn btn-fill-primary btn-lg" href="/emine-betul-erdogan" target="_blank"><strong>RESUME</strong></a><br/></p></div><div class="col-3 o_colored_level col-lg-4"><h2 style="margin-bottom: 0px;"><span style="font-size: 24px;"><strong><a href="/emine-betul-erdogan">Res. Asst.&nbsp;Emine Betül ERDOĞAN</a></strong></span></h2><p style="margin-bottom: 0px;"><br/></p><p><strong><strong><strong>Fields of Research:&nbsp;</strong></strong></strong>Machine Learning, Computer Vision, and Deep Learning<br/></p><p><span style="font-size: 16px;"><strong><strong><strong>E-mail:&nbsp;</strong></strong></strong><a title="" data-bs-original-title="" href="mailto:eminebetul.erdogan@ostimteknik.edu.tr">eminebetul.erdogan@ostimteknik.edu.tr</a></span></p><p><strong><strong><strong>Tel:</strong></strong></strong>&nbsp;0312 386 1092 /&nbsp;Internal:&nbsp;1910</p><p><strong><strong><strong><strong><strong>Office:&nbsp;</strong></strong></strong></strong></strong>Main Campus, F&nbsp;Block, 8th Floor</p><h6><strong><font style="color: rgb(66, 133, 245);"><a href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&amp;sira=VAWp5jxMDUj5cB0bvOvsDw&amp;authorId=CFA94D5845039F39" title="" data-bs-original-title=""><img loading="lazy" aria-describedby="tooltip255720" title="" data-bs-original-title="" data-resize-width="195" data-mimetype="image/png" data-original-src="/web/image/161903-6d48bec4/yokakademik.png" data-original-id="161903" class="img img-fluid o_we_custom_image" alt="" src="/web/image/367032-e3b23f87/yokakademik.png"/></a>&nbsp;<a href="https://scholar.google.com/citations?user=Y7rS-6MAAAAJ&amp;hl=en" title="" data-bs-original-title=""><img aria-describedby="tooltip608275" title="" data-bs-original-title="" data-resize-width="40" data-mimetype="image/png" data-original-src="/web/image/357738-a67c917c/google-scholar-logo-logo.png" data-original-id="357738" class="img img-fluid o_we_custom_image" alt="" src="/web/image/358548-a67c917c/google-scholar-logo-logo.png" loading="lazy"/></a>&nbsp;<a href="https://www.linkedin.com/in/emine-betul-erdogan-0852341b6/" title="" data-bs-original-title=""><img loading="lazy" data-resize-width="40" data-mimetype="image/jpeg" data-original-src="/web/image/357847-b3aec94e/linkedin%20logo.jpg" data-original-id="357847" class="img img-fluid o_we_custom_image" alt="" src="/web/image/357848-cfccc71d/linkedin%20logo.jpg" data-bs-original-title="" title="" aria-describedby="tooltip966199"/></a></font></strong>&nbsp;</h6></div></div></div></div></section></div>
+    
+                </main>
+                <footer id="bottom" data-anchor="true" data-name="Footer" role="contentinfo" class="o_footer o_colored_level o_cc ">
+                    <div id="footer" class="oe_structure oe_structure_solo">
+            <section class="s_text_block pt32" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+                <div class="s_allow_columns o_container_small">
+                    <div class="s_social_media mb-4 o_not_editable text-center" data-snippet="s_social_media" data-name="Social Media">
+                        <h5 class="s_social_media_title d-none">Follow us</h5>
+<a href="/website/social/facebook" class="s_social_media_facebook" target="_blank">
+                            <i class="fa fa-facebook rounded-circle rounded shadow-sm o_editable_media text-o-color-3"></i>
+                        </a>
+<a href="/website/social/linkedin" class="s_social_media_linkedin" target="_blank">
+                            <i class="fa fa-linkedin rounded-circle shadow-sm o_editable_media rounded text-o-color-3"></i>
+                        </a>
+<a href="/website/social/youtube" class="s_social_media_youtube" target="_blank">
+                            <i class="fa rounded-circle rounded shadow-sm o_editable_media fa-youtube text-o-color-3"></i>
+                        </a>
+<a href="/website/social/instagram" class="s_social_media_instagram" target="_blank">
+                            <i class="fa rounded-circle rounded shadow-sm o_editable_media fa-instagram text-o-color-3"></i>
+                        </a>
+</div>
+
+
+
+                    <p class="text-center mb-1">Ostim 100. Yıl Bulvarı No: 55/F Yenimahalle • Ankara• Türkiye<br/></p>
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item mx-3"><i class="fa fa-1x fa-fw fa-phone me-2" data-bs-original-title="" title="" aria-describedby="tooltip887161"></i><span class="o_force_ltr"><a href="tel:1 (650) 555-0111" data-bs-original-title="" title=""><font class="text-white">+90 (312) 386 10 92</font></a></span></li>
+                        <li class="list-inline-item mx-3"><i class="fa fa-1x fa-fw fa-envelope me-2" data-bs-original-title="" title=""></i><a href="mailto:info@yourcompany.example.com" data-bs-original-title="" title=""><font class="text-white">info@ostimteknik.edu.tr</font></a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="s_text_block pt16 pb16 d-lg-block d-none o_snippet_mobile_invisible" data-snippet="s_text_block" data-name="Logo" style="background-image: none;" data-invisible="1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2 offset-lg-5 o_colored_level">
+                            <a href="/" class="o_footer_logo logo" data-bs-original-title="" title="">
+                                <img src="/web/image/203980-73bcd963/200px-Ostim_Teknik_%C3%9Cniversitesi_Logosu-Byz.png" alt="" class="img-fluid mx-auto img o_we_custom_image" data-original-id="187296" data-original-src="/web/image/187296-fc4b5bad/200px-Ostim_Teknik_%C3%9Cniversitesi_Logosu-Byz.png" data-mimetype="image/png" data-resize-width="200" loading="lazy"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+                <div class="ostim-consent-reopen-wrap container">
+                    <a href="#" class="ostim-consent-reopen" role="button">
+                        Cookie Settings
+                    </a>
+                </div>
+                </footer>
+    	<nav id="sidebar" class="sidebar-wrapper bg-white d-block d-md-none">
+	    	<div class="sidebar-content">
+				
+				<div class="card bg-white">
+	                <div class="card-header d-flex align-items-center justify-content-between">
+	                  	<div class="header-brand mt16 mb16 text-start">
+	    					<a href="/" class="navbar-brand logo ">
+					            <span role="img" aria-label="Logo of MF-Bilgisayar Mühendisliği (İngilizce)" title="MF-Bilgisayar Mühendisliği (İngilizce)"><img src="/web/image/website/27/sidebar_logo/MF-Bilgisayar%20M%C3%BChendisli%C4%9Fi%20%28%C4%B0ngilizce%29?unique=885d64b" class="img img-fluid" alt="MF-Bilgisayar Mühendisliği (İngilizce)" loading="lazy"/></span>
+					        </a>
+	            		</div>
+						<div class="search">
+							<div class="close-mbl-sidebar  text-center">
+								<a href="#" class="text-decoration-none"><span class="lnr lnr-cross text-black" id="close_mbl_sidebar"></span></a>							
+							</div>
+						</div>
+	                </div>
+	                <div class="card-body tab-content">
+	                  	<div class="tab-pane fade active show" id="nav_tabs_content_1595584408392_2" role="tabpanel" aria-labelledby="nav_tabs_link_1595584408392_2">
+	                    	<ul class="nav navbar-nav align-items-md-center" id="top_menu">
+    <li class="nav-item dropdown active ">
+        <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle ">
+            <span>About Our Department</span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+    <li role="presentation" class="">
+        <a role="menuitem" href="/about-the-department" class="dropdown-item ">
+            <span>About Us</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/chairperson-s-message" class="dropdown-item ">
+            <span>Department Head&#39;s Message</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/commissions" class="dropdown-item ">
+            <span>Committees</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/academic-staff" class="dropdown-item active">
+            <span>Academic Staff</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/our-difference" class="dropdown-item ">
+            <span>Our Differences</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/mission-and-vission" class="dropdown-item ">
+            <span>Mission and Vission</span>
+        </a>
+    </li>
+        </ul>
+    </li>
+    <li class="nav-item dropdown  ">
+        <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle ">
+            <span>Student</span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+    <li role="presentation" class="">
+        <a role="menuitem" href="/curriculum" class="dropdown-item ">
+            <span>Curriculum</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/course-schedule" class="dropdown-item ">
+            <span>Course Schedules</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/exam-schedule" class="dropdown-item ">
+            <span>Exam Schedules</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/course-contents" class="dropdown-item ">
+            <span>Course Contents</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/activities" class="dropdown-item ">
+            <span>Activities</span>
+        </a>
+    </li>
+        </ul>
+    </li>
+    <li class="nav-item dropdown  ">
+        <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle ">
+            <span>Forms and Documents</span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+    <li role="presentation" class="">
+        <a role="menuitem" href="/workplace-documents" class="dropdown-item ">
+            <span>Workplace Documents</span>
+        </a>
+    </li>
+        </ul>
+    </li>
+    <li class="nav-item dropdown  ">
+        <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle ">
+            <span>Research</span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+    <li role="presentation" class="">
+        <a role="menuitem" href="/research" class="dropdown-item ">
+            <span>Publications</span>
+        </a>
+    </li>
+        </ul>
+    </li>
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="/contactus" class="nav-link ">
+            <span>Contact Us</span>
+        </a>
+    </li>
+							</ul>
+	                  	</div>
+	                </div>
+	          	</div>
+	    	</div>
+	    </nav>
+            </div>
+                
+                <div id="ostim_consent_banner" class="ostim-consent" role="dialog" aria-modal="true" aria-labelledby="ostim_consent_title" aria-describedby="ostim_consent_desc" hidden="hidden" data-has-consent="0">
+                    <div class="ostim-consent__panel" role="document">
+                        <h2 id="ostim_consent_title" class="ostim-consent__title">
+                            Cookie Preferences
+                        </h2>
+                        <p id="ostim_consent_desc" class="ostim-consent__desc">
+                                We use cookies to improve your experience, analyze traffic and
+                                personalize content. Strictly necessary cookies are always active
+                                for the site to work. You can change your choice at any time via
+                                the “Cookie Settings” link in the footer.
+                                For details, see <a class="ostim-consent__policy" href="https://ostimteknik.edu.tr/cookie-policy">Cookie Policy</a>.
+                        </p>
+                        <div class="ostim-consent__actions">
+                            <button type="button" class="ostim-consent__btn ostim-consent__btn--reject" data-consent="reject">
+                                Reject All
+                            </button>
+                            <button type="button" class="ostim-consent__btn ostim-consent__btn--analytics" data-consent="analytics">
+                                Analytics Only
+                            </button>
+                            <button type="button" class="ostim-consent__btn ostim-consent__btn--accept" data-consent="accept">
+                                Accept All
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            <script id="tracking_code" async="1" src="https://www.googletagmanager.com/gtag/js?id=G-0TBK8RPZRT"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-0TBK8RPZRT');
+            </script>
+
+        
+        </body>
+</html>

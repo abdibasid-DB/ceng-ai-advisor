@@ -1,0 +1,246 @@
+{
+  "stage": "Stage 15/15B - Core RAG Pipeline Validation",
+  "generated_at": "2026-09-16T19:57:48+00:00",
+  "case_count": 3,
+  "results": [
+    {
+      "question": "Can Computer Engineers work in cybersecurity?",
+      "status": "insufficient_information",
+      "answer": "I don't have enough reliable information in the current knowledge base to answer that question.",
+      "llm_called": false,
+      "sources": [],
+      "retrieved_chunks": [
+        {
+          "label": null,
+          "chunk_id": "src_017_chunk_119",
+          "source_id": "src_017",
+          "title": "The Future of Jobs Report 2025",
+          "category": "future_technologies",
+          "similarity_score": 0.4567452073097229,
+          "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+          "passage_preview": "Media and Communication Workers Photographers Video Game Designers Writers and Authors Business and Financial Operations Accountants and Auditors Business Intelligence Analysts Claims Adjusters, Examiners, and Investigators Compliance Officers Credit and Loans Officers Digital Marketing and Strategy Specialists Digital Transformation Specialists Job taxonomy The occupational taxonomy was modified and extended from O*NET SOC. TABLE A3 Future of Jobs Report 2025 102\n\nPage 103\nJob family Occupation"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_045_chunk_093",
+          "source_id": "src_045",
+          "title": "Skills for the digital age",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.4521854519844055,
+          "url": "https://www.oecd.org/en/publications/2024/11/oecd-digital-economy-outlook-2024-volume-2_9b2801fc/full-report/skills-for-the-digital-age_da6162fb.html",
+          "passage_preview": "Page 78\nLooking ahead, the risk of automation will increasingly fall on low-educated workers. Moreover, the COVID-19 crisis\nmay have accelerated automation, as companies reduce reliance on human labour and contact between workers, or\nre-shore some production (Georgieff and Milanez, 2021\n[43]). Importantly, these findings highlight that jobs requiring lower\nskill levels face the greatest automation risk, implying a decrease in automation vulnerability with higher educational\nattainment. Other stu"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_014_chunk_001",
+          "source_id": "src_014",
+          "title": "Computer Hardware Engineers: 17-2061.00",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.44335615634918213,
+          "url": "https://www.onetonline.org/link/summary/17-2061.00",
+          "passage_preview": "Source ID: src_014\nTitle: Computer Hardware Engineers: 17-2061.00\n\n17-2061.00 - Computer Hardware Engineers\n\nOccupation keyword search\n\nType a title or code for matches\n\nNo quick matches found\n\nSearch for keyword results\n\nComputer Hardware Engineers\n\n17-2061.00\n\nBright Outlook Updated 2026\n\nResearch, design, develop, or test computer or computer-related equipment for commercial, industrial, military, or scientific use. May supervise the manufacturing and installation of computer or computer-rela"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_017_chunk_098",
+          "source_id": "src_017",
+          "title": "The Future of Jobs Report 2025",
+          "category": "future_technologies",
+          "similarity_score": 0.4366253614425659,
+          "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+          "passage_preview": "Page 86\nBig Data Specialists, AI and Machine Learning\nSpecialists, and Security Management Specialists.\nTo improve talent availability, the industry is\nplanning on investing in reskilling and upskilling\n(71% of employers), supporting employees’ well-\nbeing (64%) and improving promotion processes\n(61%). Remote and hybrid work is also seen as a\nstrategy to stay attractive for 58% of companies\nin the industry, and one out of two respondents\nis calling for changes to labour laws that support\nremote "
+        },
+        {
+          "label": null,
+          "chunk_id": "src_014_chunk_008",
+          "source_id": "src_014",
+          "title": "Computer Hardware Engineers: 17-2061.00",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.4227863550186157,
+          "url": "https://www.onetonline.org/link/summary/17-2061.00",
+          "passage_preview": "CompTIAexternal site\n\nWas this page helpful?\nYes, it was helpfulNo, it was not helpful\n\nJob Seeker Help • Contact Us\n\nShare:\nFacebookXLinkedInRedditEmail\n\nLink to Us • Cite this Page\n\nCreative Commons CC-BY License\n17-2061.00 - Computer Hardware Engineers by U.S. Department of Labor, Employment and Training Administration is licensed under a Creative Commons Attribution 4.0 International License.\n\nAbout this Site • Privacy • Disclaimer\n\nSite updated August 25, 2026\n\nLoading..."
+        }
+      ],
+      "retrieval_metadata": {
+        "top_k": 5,
+        "candidate_top_k": 12,
+        "similarity_threshold": 0.3,
+        "results_above_threshold": 5,
+        "top_similarity_score": 0.4567452073097229,
+        "evidence_sufficient": true,
+        "out_of_scope": false,
+        "unsupported_reason": "retrieved evidence did not include a cybersecurity-category source"
+      },
+      "timing": {
+        "retrieval_seconds": 0.452,
+        "context_construction_seconds": 0.0,
+        "llm_generation_seconds": 0.0,
+        "total_seconds": 0.452
+      },
+      "error": null,
+      "answer_warnings": [],
+      "citation_metadata": {},
+      "id": "cybersecurity_supported",
+      "type": "cybersecurity"
+    },
+    {
+      "question": "What is the exact 2026 tuition fee for OSTIM Technical University Computer Engineering?",
+      "status": "insufficient_information",
+      "answer": "I don't have enough reliable information in the current knowledge base to answer that question.",
+      "llm_called": false,
+      "sources": [],
+      "retrieved_chunks": [
+        {
+          "label": null,
+          "chunk_id": "src_001_chunk_001",
+          "source_id": "src_001",
+          "title": "About the Department | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "department_information",
+          "similarity_score": 0.43396878242492676,
+          "url": "https://mfcs.ostimteknik.edu.tr/about-the-department",
+          "passage_preview": "Source ID: src_001\n\nAbout the Department | MF-Bilgisayar Mühendisliği (İngilizce)\n\nBarrier Free\n\nDepartment of Computer Engineering (English)\n\nThe aim of the Department of Computer Engineering is to educate Computer engineers who will contribute to the institution and organization in which they are participating, enabling them to gain skills for technical management; teach them analysis, synthesis and modelling in order ato solve engineering problems, ensure ability which will lead to carry out "
+        },
+        {
+          "label": null,
+          "chunk_id": "src_004_chunk_008",
+          "source_id": "src_004",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "curriculum",
+          "similarity_score": 0.3884063959121704,
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "passage_preview": "I This course is the first part of a two-semester capstone project in computer engineering. Students identify a research or design problem related to computer systems and develop a comprehensive project plan. The course includes literature review, problem definition, methodology development, and preliminary analysis or design. Emphasis is placed on independent study, technical reporting, and project planning under faculty supervision.\n\nELEC-3 Technical Elective III\n\nELEC-4 Technical Elective IV\n"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_005_chunk_001",
+          "source_id": "src_005",
+          "title": "Our Difference | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "student_life",
+          "similarity_score": 0.3431755304336548,
+          "url": "https://mfcs.ostimteknik.edu.tr/our-difference",
+          "passage_preview": "Source ID: src_005\n\nOur Difference | MF-Bilgisayar Mühendisliği (İngilizce)\n\nBarrier Free\n\n• Applied Education Model\n\nOSTIM Technical University was founded in the basin provides business has contributed to Turkey's industrialization. In this basin, a participatory training will be given to practical applications by giving importance to practical training besides theoretical knowledge in order to benefit from the knowledge and project making and product development experiences of the companies i"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_006_chunk_001",
+          "source_id": "src_006",
+          "title": "Academic Staff",
+          "category": "department_information",
+          "similarity_score": 0.3385828733444214,
+          "url": "https://mfcs.ostimteknik.edu.tr/academic-staff",
+          "passage_preview": "Source ID: src_006\nTitle: Academic Staff\n\nAkademik Kadro\n\nBarrier Free\n\nComputer Engineering (English) Academic Staff\n\nRESUME\n\nProf. Dr. Serdar MÜLDÜR (Dean)\n\nFields of Research:\nComputer Software and Software Engineering, Database, Programming Languages.\n\nE-mail: serdar.muldur@ostimteknik.edu.tr\n\nTel:+90 312 386 1092 / Internal: -\n\nOffice:Main Campus, F Block, 8th Floor, Room No: 810\n\nRESUME\n\nAssist. Prof. Dr. Ahmet ÖZDİL\n(Head of Department)\n\nFields of Research:Computer Software and Software E"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_004_chunk_006",
+          "source_id": "src_004",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "curriculum",
+          "similarity_score": 0.3202451467514038,
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "passage_preview": "explore real-world operating system implementations such as Linux or Windows. CENG 309 Introduction to Computer Architecture This course provides fundamental knowledge of the organization and architecture of computer systems. Topics include instruction set architecture, data path and control unit design, memory hierarchies, input-output systems, pipelining, and parallelism. Emphasis is placed on understanding how software interacts with hardware to perform computation.\n\nEEE 309 Signals and Syste"
+        }
+      ],
+      "retrieval_metadata": {
+        "top_k": 5,
+        "candidate_top_k": 12,
+        "similarity_threshold": 0.3,
+        "results_above_threshold": 5,
+        "top_similarity_score": 0.43396878242492676,
+        "evidence_sufficient": true,
+        "out_of_scope": false,
+        "unsupported_reason": "retrieved evidence does not contain requested specific fact terms: [['tuition', 'fee', 'fees', 'cost', 'payment']]"
+      },
+      "timing": {
+        "retrieval_seconds": 0.028,
+        "context_construction_seconds": 0.0,
+        "llm_generation_seconds": 0.0,
+        "total_seconds": 0.028
+      },
+      "error": null,
+      "answer_warnings": [],
+      "citation_metadata": {},
+      "id": "unsupported_in_domain",
+      "type": "unsupported_in_domain"
+    },
+    {
+      "question": "What is the best chocolate cake recipe?",
+      "status": "out_of_scope",
+      "answer": "I don't have enough reliable information in the current knowledge base to answer that question.",
+      "llm_called": false,
+      "sources": [],
+      "retrieved_chunks": [
+        {
+          "label": null,
+          "chunk_id": "src_048_chunk_002",
+          "source_id": "src_048",
+          "title": "Employed information and communications technology (ICT) specialists by sex",
+          "category": "common_misconceptions",
+          "similarity_score": 0.2115529179573059,
+          "url": "https://dgs-p.eige.europa.eu/data/view?code=ta_wrklab_lab_employ_selected_kwnd__isoc_sks_itsps",
+          "passage_preview": "40(b)\n\n31.8(e)\n\n27.4\n\n25.7\n\n22.4(e)\n\n19.2\n\n19.3(e)\n\n19.5(e)\n\n18.5(be)\n\n15.3\n\n16.2(e)\n\n15.3(u)\n\n17.6(u)\n\n14.4(u)\n\n15.4(bu)\n\n16.6(u)\n\n22.8\n\n21.6\n\n20.3\n\n19.1\n\n16.5(b)\n\n14.9\n\n15.2(e)\n\n14.5(e)\n\n12.5\n\n11.9(e)\n\n11.1(b)\n\n11.2\n\n10.6\n\n8.6(b)\n\n8.9(e)\n\n8.5(b)\n\n8.9(e)\n\n6.3(be)\n\n5.8(e)\n\n6.2(be)\n\n6.3(e)\n\n181.4(e)\n\n179.1(e)\n\n168.6(e)\n\n168.8(e)\n\n157.1(be)\n\n148.4(e)\n\n135\n\n151.4(b)\n\n143.6\n\n137.4\n\n134.5\n\n127.4\n\n123.1\n\n110.6(e)\n\n92.3(b)\n\n99.3(e)\n\n101.4(e)\n\n113(e)\n\n113.9(e)\n\n113.5(e)\n\n102.1(be)\n\n106.2(e)\n\n13.2\n\n14.4\n"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_045_chunk_267",
+          "source_id": "src_045",
+          "title": "Skills for the digital age",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.18495452404022217,
+          "url": "https://www.oecd.org/en/publications/2024/11/oecd-digital-economy-outlook-2024-volume-2_9b2801fc/full-report/skills-for-the-digital-age_da6162fb.html",
+          "passage_preview": "Australia Optus Optus Flex Annual 60 GB, MyData 5120 MB, 12 months 9.3 0.0 0.0 0.0 0.0 9.3 Pre-paid Austria Magenta Mobile KLAX S, Data 33280 MB 13.2 0.0 0.0 0.0 0.0 13.2 Pre-paid Belgium Proximus Mobilus Easy 5G, Data 10240 MB, 1 month 23.3 0.0 0.0 0.0 0.0 23.3 Canada Fido (Rogers) 6 Month Prepaid - Talk & Text & Data 150, Data 1024 MB, 6 months 22.4 0.0 0.0 0.0 0.0 22.4 Pre-paid Chile Entel Movil Bolsa Datos + Minutos, $5000 Top up - 30 days, Mobile Internet 10240 MB, 1 month 9.7 0.0 0.0 3.9 0"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_045_chunk_269",
+          "source_id": "src_045",
+          "title": "Skills for the digital age",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.17956280708312988,
+          "url": "https://www.oecd.org/en/publications/2024/11/oecd-digital-economy-outlook-2024-volume-2_9b2801fc/full-report/skills-for-the-digital-age_da6162fb.html",
+          "passage_preview": "Australia Optus Optus Flex Annual 60 GB, MyData 5120 MB, 12 months 9.3 0 0 0 0 9.31 Pre-paid Austria Magenta Mobile KLAX S, Data 33280 MB 13.2 0 0 0 0 13.17 Pre-paid Belgium Proximus Mobilus Easy 5G, Data 10240 MB, 1 month 23.3 0 0 0 0 23.33 Canada Fido (Rogers) 6 Month Prepaid - Talk & Text & Data 150, Data 1024 MB, 6 months 22.4 0 0 0 0 22.43 Pre-paid Chile Entel Movil Recarga Facil $8000, 4 GB + 150 mins, Mobile Internet 40 960 MB 15.5 0 0 0 0 15.48 Pre-paid Colombia Movistar Combo Mes TODO E"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_045_chunk_274",
+          "source_id": "src_045",
+          "title": "Skills for the digital age",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.1744670271873474,
+          "url": "https://www.oecd.org/en/publications/2024/11/oecd-digital-economy-outlook-2024-volume-2_9b2801fc/full-report/skills-for-the-digital-age_da6162fb.html",
+          "passage_preview": "(Magenta) Einfach, Data 15360 MB, SIM only, 1 month 14.7 0 0 0 0 14.7 Belgium Proximus Mobilus Easy 5G, Data 10240 MB, 1 month 23.3 0 0 0 0 23.3 Canada Virgin (Bell Mobility) BYOP Data, Talk & Text 10 GB, Data 10240 MB, SIM only, 12 month 36.5 0.0 0 0 0 36.5 Chile Movistar Plan 5G Libre Full, Bolsa de Internet 204800 MB, SIM only, 18 months 26.4 0 0 0 0 26.4 Colombia Movistar Combo Mes TODO EN UNO ULTRA $16000 (6 GB) promo 4x1, Datos Full 24576 MB, 1 month 10.0 0 0 0 0 10.0 Pre-paid Costa Rica K"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_045_chunk_272",
+          "source_id": "src_045",
+          "title": "Skills for the digital age",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.15921944379806519,
+          "url": "https://www.oecd.org/en/publications/2024/11/oecd-digital-economy-outlook-2024-volume-2_9b2801fc/full-report/skills-for-the-digital-age_da6162fb.html",
+          "passage_preview": "(Magenta) Einfach, Data 15360 MB, SIM only, 1 month 14.7 0 0 0 0 14.7 Belgium Proximus Mobilus Easy 5G, Data 10240 MB, 1 month 23.3 0 0 0 0 23.3 Canada Fido (Rogers) 6 Month Prepaid - Talk & Text & Data 200, Data 3072 MB, 6 months 29.9 0 0 0 0 29.9 Pre-paid Chile Movistar Plan 5G Libre Full, Bolsa de Internet 204800 MB, SIM only, 18 months 26.4 0 0 0 0 26.4 Colombia Movistar Combo Mes TODO EN UNO ULTRA $16000 (6 GB) promo 4x1, Datos Full 24576 MB, 1 month 10.0 0 0 0 0 10.0 Pre-paid Costa Rica Kö"
+        }
+      ],
+      "retrieval_metadata": {
+        "top_k": 5,
+        "candidate_top_k": 12,
+        "similarity_threshold": 0.3,
+        "results_above_threshold": 0,
+        "top_similarity_score": 0.2115529179573059,
+        "evidence_sufficient": false,
+        "out_of_scope": true
+      },
+      "timing": {
+        "retrieval_seconds": 0.014,
+        "context_construction_seconds": 0.0,
+        "llm_generation_seconds": 0.0,
+        "total_seconds": 0.014
+      },
+      "error": null,
+      "answer_warnings": [],
+      "citation_metadata": {},
+      "id": "out_of_scope_cake",
+      "type": "out_of_scope"
+    }
+  ]
+}

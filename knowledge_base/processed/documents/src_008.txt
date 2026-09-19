@@ -1,0 +1,571 @@
+Source ID: src_008
+
+Research | MF-Bilgisayar Mühendisliği (İngilizce)
+
+Barrier Free
+
+Research
+
+Research Areas
+
+Publications
+
+Computer Software and Programming Languages
+
+Prof. Dr. Serhan DAĞTAŞ
+Assoc. Prof. Çağatay BÜYÜKKOÇ
+Assist. Prof. Dr. Ramazan KOCAOĞLU
+Assist. Prof. Dr. Emine YAMAN
+
+Artificial Intelligence and Artificial Learning
+
+Assist. Prof. Dr. Rayan ABRİ
+Assist. Prof. Dr. Emine YAMAN
+Prof. Dr. Serhan DAĞTAŞ
+Assist. Prof. Dr. Ramazan KOCAOĞLU
+
+Embedded systems
+
+Prof. Dr. Serhan DAĞTAŞ
+Assoc. Prof. Çağatay BÜYÜKKOÇ
+
+Computer Networks and Communication Networks
+
+Assoc. Prof. Çağatay BÜYÜKKOÇ
+Assist. Prof. Dr. Ramazan KOCAOĞLU
+
+Image Processing and Natural Language Processing
+
+Assist. Prof. Dr. Rayan ABRİ
+Prof. Dr. Serhan DAĞTAŞ
+
+Big Data
+
+Assist. Prof. Dr. Rayan ABRİ
+Prof. Dr. Serhan DAĞTAŞ
+Assist. Prof. Dr. Ramazan KOCAOĞLU
+Assist. Prof. Dr. Emine YAMAN
+
+Information Security and Cryptology
+
+Assist. Prof. Dr. Ramazan KOCAOĞLU
+
+Optimizing smart health
+monitoring systems: enahancing energy efficiency and reducing latency
+with multi-level clustering and grey wolf optimizer
+
+Dergi İsmi: CLUSTER COMPUTING-THE JOURNAL OF NETWORKS SOFTWARE TOOLS AND APPLICATIONS
+
+Yazar:Niayesh Gharaei
+
+Aliaa M. Alabdali
+
+DOI: 10.1007/s10586-024-04811-x
+
+Yayın Yılı: 2025
+
+Article Type: Article
+
+İndeks Yeri:
+
+WOS
+
+Scopus
+
+Secure and energy-efficient
+inter- and intra-cluster optimization scheme for smart cities using
+UAV-assisted wireless sensor networks
+
+Dergi İsmi: SCIENTIFIC REPORTS
+
+Yazar:Niayesh Gharaei
+
+Aliaa M. Alabdali
+
+DOI: 10.1038/s41598-025-88532-0
+
+Yayın Yılı: 2025
+
+Article Type: Article
+
+İndeks Yeri:
+
+WOS
+
+Scopus
+
+A look at FPF rings
+
+Dergi İsmi: JOURNAL OF ALGEBRA AND ITS APPLICATIONS
+
+Yazar:E. Ghashghaei
+
+M. Tamer Kosan
+
+T. Cong Quynh
+
+L. Van Thuyet
+
+DOI: 10.1142/S0219498825501609
+
+Yayın Yılı: 2024
+
+Article Type: Article
+
+İndeks Yeri:
+
+WOS
+
+Scopus
+
+Optimizing Cloud Storage Costs:
+Introducing the Pre-Evaluation-Based Cost Optimization (PECSCO)
+Mechanism
+
+Dergi İsmi:
+ICSINTESA 2024 - 2024 4th International Conference of Science and
+Information Technology in Smart Administration: The Collaboration of
+Smart Technology and Good Governance for Sustainable Development Goals
+
+Yazar:Mohammed F. Alomari
+
+Moamin A. Mahmoud
+
+Niayesh Gharaei
+
+Samer Mohammed Rasool
+
+Riyam A. Hasan
+
+DOI: 10.1109/ICSINTESA62455.2024.10748165
+
+Yayın Yılı: 2024
+
+Article Type: Conference Paper
+
+İndeks Yeri:
+
+Scopus
+
+Editorial: Transcriptional and
+post-transcriptional regulations in agricultural species after stresses
+
+Dergi İsmi: FRONTIERS IN GENETICS
+
+Atıf Sayısı: 1
+
+Yazar:Suxu Tan
+
+Rani Alex
+
+Turgay Unver
+
+DOI: 10.3389/fgene.2022.1127832
+
+Yayın Yılı: 2023
+
+Article Type: Editorial Material
+
+İndeks Yeri:
+
+WOS
+
+Scopus
+
+Two-Stage Feature Generator for Handwritten Digit Classification
+
+Dergi İsmi: SENSORS
+
+Atıf Sayısı: 1
+
+Yazar:M. Altinay Gunler Pirim
+
+Hakan Tora
+
+Kasim Oztoprak
+
+Ismail Butun
+
+DOI: 10.3390/s23208477
+
+Yayın Yılı: 2023
+
+Article Type: Article
+
+İndeks Yeri:
+
+WOS
+
+Scopus
+
+A Storage Optimization and
+Energy-Efficiency-Based Edge-Enabled Companion-Side eHealth Monitoring
+System for IoT-Based Smart Hospitals
+
+Dergi İsmi: IEEE INTERNET OF THINGS JOURNAL
+
+Atıf Sayısı: 2
+
+Yazar:Niayesh Gharaei
+
+Yasser D. Al-Otaibi
+
+Sharaf Jameel Malebary
+
+Alaa Omran Almagrabi
+
+DOI: 10.1109/JIOT.2023.3298264
+
+Yayın Yılı: 2024
+
+Article Type: Article
+
+İndeks Yeri:
+
+WOS
+
+Scopus
+
+A Novel Blockchain-Based Scientific Publishing System
+
+Dergi İsmi: SUSTAINABILITY
+
+Atıf Sayısı: 2
+
+Yazar:Mansur Bestas
+
+Ruhi Tas
+
+Erdal Akin
+
+Merve Ozkan-Okay
+
+Omer Aslan
+
+Semih Serkant Aktug
+
+DOI: 10.3390/su15043354
+
+Yayın Yılı: 2023
+
+Article Type: Article
+
+İndeks Yeri:
+
+WOS
+
+Scopus
+
+Numerical treatment of
+magnetohydrodynamic flow of nanofluids through free convection in a
+hexagonal-complex-shaped cavity having an embedded heated fin
+
+Dergi İsmi: JOURNAL OF THERMAL ANALYSIS AND CALORIMETRY
+
+Yazar:M. Ibtesam
+
+Sohail Nadeem
+
+Jehad Alzabut
+
+DOI: 10.1007/s10973-025-14019-9
+
+Yayın Yılı: 2025
+
+Article Type: Article
+
+WOS
+
+The Use of Artificial
+Intelligence in Data Analysis with Error Recognitions in Liver
+Transplantation in HIV-AIDS Patients Using Modified ABC Fractional Order
+Operators
+
+Dergi İsmi: FRACTAL AND FRACTIONAL
+
+Yazar:Hasib Khan
+
+Jehad Alzabut
+
+D. K. Almutairi
+
+Wafa Khalaf Alqurashi
+
+DOI: 10.3390/fractalfract9010016
+
+Yayın Yılı: 2025
+
+Article Type: Article
+
+Bitcoin Crypto-Asset Prediction:
+With an Application of Linear Autoregressive Integrated Moving Average
+Method, and Non-Linear Multi-Layered and Feedback Artificial Neural
+Network Models
+
+Dergi İsmi: EGE ACADEMIC REVIEW
+
+Yazar:Ersin Sunbul
+
+Hamide Ozyurek
+
+DOI: 10.21121/eab.20250110
+
+Yayın Yılı: 2025
+
+Article Type: Review
+
+AI-Based Data Analysis of
+Contaminant Transportation with Regression of Oxygen and Nutrients
+Measurement
+
+Dergi İsmi: FRACTAL AND FRACTIONAL
+
+Yazar:Hasib Khan
+
+Jehad Alzabut
+
+Mohamed Tounsi
+
+Dalal Khalid Almutairi
+
+DOI: 10.3390/fractalfract9020125
+
+Yayın Yılı: 2025
+
+Characterization of Boron-Modified Activated Carbons
+
+Dergi İsmi: INORGANICS
+
+Yazar:Ayhan Orhan
+
+Nurettin Cek
+
+Selman Sezer
+
+Ismail Demir
+
+DOI: 10.3390/inorganics13020054
+
+Yayın Yılı: 2025
+
+Medical image enhancement using war strategy optimization algorithm
+
+Dergi İsmi: BIOMEDICAL SIGNAL PROCESSING AND CONTROL
+
+Yazar:Yusuf Uzun
+
+Mehmet Bilgin
+
+DOI: 10.1016/j.bspc.2025.107740
+
+Yayın Yılı: 2025
+
+House price dynamics in
+Istanbul: District-level analysis of convergence clubs, spillovers, and
+key drivers
+
+Dergi İsmi: BORSA ISTANBUL REVIEW
+
+Yazar:Lokman Gunduz
+
+Mustafa Cakir
+
+Oguzhan Cepni
+
+DOI: 10.1016/j.bir.2024.12.017
+
+Sustainable brand logo selection using an AI-Supported PF-WENSLO-ARLON hybrid method
+
+Dergi İsmi: EXPERT SYSTEMS WITH APPLICATIONS
+
+Yazar:Karahan Kara
+
+Elif Akagun Ergin
+
+Galip Cihan Yalcin
+
+Tugce Celik
+
+Muhammet Deveci
+
+Seifedine Kadry
+
+DOI: 10.1016/j.eswa.2024.125382
+
+A Novel Approach to
+Approximating Generalized Pointing Errors Modeled by Beckmann
+Distribution in FSO Communication Systems
+
+Dergi İsmi: IEEE OPEN JOURNAL OF THE COMMUNICATIONS SOCIETY
+
+Yazar:Emna Zedini
+
+Yalcin Ata
+
+Abla Kammoun
+
+Mohamed-Slim Alouini
+
+DOI: 10.1109/OJCOMS.2024.3523304
+
+On nonoscillation of fractional
+order functional differential equations with forcing term and
+distributed delays
+
+Dergi İsmi: MATHEMATICA SLOVACA
+
+Yazar:James Viji
+
+Jehad Alzabut
+
+Velu Muthulakshmi
+
+Abdulah Ozbekler
+
+DOI: 10.1515/ms-2025-0008
+
+Impact of knowledge-sharing
+culture on organizational creativity: integrating explicit and tacit
+knowledge sharing as mediators
+
+Dergi İsmi: JOURNAL OF KNOWLEDGE MANAGEMENT
+
+Yazar:Tayfun Yildiz
+
+Betul Balkan Akan
+
+Unsal Sigri
+
+Marina Dabic
+
+DOI: 10.1108/JKM-05-2024-0633
+
+A COUPLED NONLINEAR SYSTEM OF INTEGRO-DIFFERENTIAL EQUATIONS USING MODIFIED ABC OPERATOR
+
+Dergi İsmi: FRACTALS-COMPLEX GEOMETRY PATTERNS AND SCALING IN NATURE AND SOCIETY
+
+Yazar:Hasib Khan
+
+Jehad Alzabut
+
+D. K. Almutairi
+
+Wafa khalaf Alqurashi
+
+Sandra Pinelas
+
+Osman Tunc
+
+Mohammad athar Azim
+
+DOI: 10.1142/S0218348X2540105X
+
+DATA ANALYSIS OF
+FRACTAL-FRACTIONAL CO-INFECTION COVID-TB MODEL WITH THE USE OF
+ARTIFICIAL INTELLIGENCE
+
+Dergi İsmi: FRACTALS-COMPLEX GEOMETRY PATTERNS AND SCALING IN NATURE AND SOCIETY
+
+Yazar:Hasib Khan
+
+Jehad Alzabut
+
+D. K. Almutairi
+
+Haseena Gulzar
+
+Wafa khalaf Alqurashi
+
+DOI: 10.1142/S0218348X25400997
+
+Dual on-premises storage
+framework for memory optimization and secure data transmission in
+nuclear power plants
+
+Dergi İsmi: NUCLEAR ENGINEERING AND TECHNOLOGY
+
+Yazar:Niayesh Gharaei
+
+DOI: 10.1016/j.net.2025.103526
+
+Understanding the pressure
+effect on the physical properties of half-Heusler semiconductor LiCaX (X
+= As, Sb, N) compounds from Ab-initio calculations
+
+Dergi İsmi: MATERIALS SCIENCE IN SEMICONDUCTOR PROCESSING
+
+Yazar:Yasemin O. Ciftci
+
+Belgin Kocak
+
+Engin Ateser
+
+DOI: 10.1016/j.mssp.2024.109027
+
+Predicting the conditional
+distribution of US stock market systemic Stress: The role of climate
+risks
+
+Dergi İsmi: JOURNAL OF INTERNATIONAL FINANCIAL MARKETS INSTITUTIONS & MONEY
+
+Yazar:Massimiliano Caporin
+
+Petre Caraiani
+
+Oguzhan Cepni
+
+Rangan Gupta
+
+DOI: 10.1016/j.intfin.2025.102156
+
+Evaluation of Companies in
+Applied Education: Determining the Criteria and a Case Study at an
+Industrial University
+
+Dergi İsmi: INTERNATIONAL JOURNAL OF INFORMATION TECHNOLOGY & DECISION MAKING
+
+Yazar:Sema Ciftci
+
+Mehmet Pinarbasi
+
+Hacimehmet Alakas
+
+DOI: 10.1142/S0219622025500300
+
+MHD natural convection of
+nanofluid flow using a corrugated permeable medium within corrugated
+circular cavity
+
+Dergi İsmi: JOURNAL OF THERMAL ANALYSIS AND CALORIMETRY
+
+Yazar:Sohail Nadeem
+
+M. Arif
+
+Inayat Ullah
+
+Jehad Alzabut
+
+DOI: 10.1007/s10973-025-14032-y
+
+Project Name
+
+Project Owner
+
+Year
+
+Institution
+
+Kurumsal Ağlar İçin Kullanıcıların Ağa Erişiminde Gerçek Zamanlı Güvenlik Zafiyeti ve Anomali Tespiti Yapan Güvenlik Donanım ve Yazılım Cihazı Geliştirilmesi
+
+Assist. Prof. Dr. Ramazan KOCAOĞLU
+
+2020
+
+Tübitak
+
+Müşteri ile başlayın - ne istediklerini bulun ve onlara verin.
+
+personalize content. Strictly necessary cookies are always active
+for the site to work. You can change your choice at any time via
+the “Cookie Settings” link in the footer.

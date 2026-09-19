@@ -1,0 +1,691 @@
+Source ID: src_016
+Title: 2024 State of Tech Talent Report
+
+Page 1
+2024 State of
+Tech Talent Report
+Survey-Based Insights into the Current State
+of Technical Talent Acquisition, Retention, and
+Management Globally
+April 2024
+Adrienn Lawson, The Linux Foundation
+Stephen Hendrick, The Linux Foundation
+Foreword by Clyde Seepersad, SVP & General
+Manager, Linux Foundation Training & Certification
+
+Page 2
+2024 State of Tech Talent Report
+Copyright © 2024 The Linux Foundation | April 2024. This report is licensed under the Creative Commons Attribution-NoDerivatives 4.0 International Public License .
+Cloud (55%), DevOps
+(51%), Cybersecurity
+(49%), & AI/ML (43%)
+stand out as the key
+technology domains
+prioritized for
+stafﬁng.
+The top training challenges
+include nurturing a continuous
+learning environment (39%)
+and translating knowledge into
+practical applications (36%) -
+highlighting the effectiveness
+of performance-based training.
+The most cited beneﬁts of
+upskilling emphasize its
+ability to diversify
+employee skillsets for
+redeployment (40%),
+advance careers (40%),
+and develop junior
+potential (40%).
+Technical talent can
+broaden skills while their
+organizations optimize
+processes through GenAI
+primarily in data analysis
+(45%), IT infrastructure
+monitoring (42%), and
+software development (35%).
+The impact of GenAI is
+complex: In 2024, 27% of
+organizations intend to
+reduce their technical
+headcount, while 23%
+plan to increase due to
+GenAI.
+A signiﬁcantly higher
+number of organizations
+involve only training
+methods (39%) in their
+talent agenda compared to
+those who only involve
+hiring methods (29%).
+Despite the news
+headlines, less than 1/3
+of organizations
+surveyed reduced their
+technical headcount in
+2023.
+Across all technology
+domains, on average, 48%
+of organizations would
+prioritize upskilling or
+cross-skilling existing
+staff over hiring new
+employees or engaging
+consultants in 2024.
+Cross-skilling (47%) &
+upskilling (43%)
+are key strategies for
+technical talent
+management.
+External hiring is both
+lengthy and risky: It
+takes on average 10
+months to hire & onboard
+new technical hires, and
+nearly 40% experience
+turnover.
+Certiﬁcations rank
+higher than college
+or university
+degrees (23% to 16%)
+when asssessing
+technical skills.
+98% of organizations
+consider upskilling
+an important
+strategy, with 36%
+rating it extremely
+important.
+
+Page 3
+Foreword .....................................................................................................................4
+Executive summary ...............................................................................................5
+Key findings and trends ..................................................................................................................5
+Opportunities in talent management ....................................................................................5
+Introduction ..............................................................................................................6
+Upskilling takes center stage: Diverse approaches to technical
+talent management in 2023 and beyond ....................................................7
+Upskilling or cross-skilling staff is at the top of the talent agenda across all
+technology areas for 2024 ..............................................................................................................8
+The impact of the economy in technical talent management .....10
+Despite the news headlines, the majority of IT organizations did not reduce
+their headcount in 2023 ................................................................................................................10
+Organizations aim to adapt to the continuously changing
+technology landscape ........................................................................................12
+GenAI continues to drive intelligent automation across the workforce
+presenting an opportunity to upskill the workforce ..................................................13
+Upskilling presents a solution to adapt staff to technological
+changes .......................................................................................................................15
+Thoughtful planning is essential for effective training strategies ...................16
+Technical recruiting remains a challenge .............................................18
+Certifications are key criteria in the hiring process .................................................20
+Methodology ...........................................................................................................23
+Data.World access .............................................................................................................................24
+Demographics ....................................................................................................................................25
+Appendix A ...............................................................................................................28
+About the authors .................................................................................................29
+Acknowledgments ...............................................................................................29
+
+Page 4
+Foreword
+It is a pleasure to present the 2024 State of Tech
+Talent Survey results. I am confident you will find
+the report to be a valuable resource as you seek
+to understand current IT professional staffing
+trends and as a guide to your own retention,
+recruitment, and training efforts.
+Continuing a trend we saw last year, organizations
+are continuing to increase their use of upskilling
+and cross-skilling to address technical talent gaps.
+This recognizes the value of investing in existing
+staff and the challenges of finding, onboarding,
+and retaining the right external candidates.
+Organizations increasingly agree that talent is
+something you should build as well as buy.
+Another important accelerating trend is
+the acceptance of real-life experience and
+certifications as proof of knowledge and skills for
+non-degreed candidates across the IT spectrum.
+You may be surprised to read that despite all the
+headlines about IT layoffs over the last year, the
+post-2023 reality appears to be more of a shift in
+roles (mostly toward more junior folks) than any
+significant, across-the-board reduction in overall
+technical headcounts. Unsurprisingly, demand for
+cloud, DevOps, cybersecurity, and AI / ML talent
+continues to grow.
+We couldn’t look at today’s IT talent market
+without attempting to ascertain the impact of
+generative artificial intelligence (GenAI) on hiring
+as well as work roles. GenAI continues to drive
+intelligent automation across the workforce, with
+organizations planning to use it for data analysis
+and reporting, IT infrastructure monitoring, and
+software development. While some organizations
+are reducing headcount due to GenAI, many are
+planning to maintain or increase their overall
+technical headcount. While much is uncertain
+about the actual impacts of GenAI on the
+workforce, one trend is clear: knowing how to
+work effectively with GenAI will be a competitive
+advantage for organizations and IT professionals.
+Taking a step back to the big picture, the major
+trends we have seen for more than a decade
+continue. The pace of technological evolution
+continues to accelerate along with the challenges
+of identifying, recruiting, retaining, and upskilling
+IT talent. It appears, however, that organizations
+are shifting their approach. The hire-at-all-costs
+perspective is carefully being replaced by an
+approach focused on identifying smart, talented,
+IT professionals and providing them with the
+tools they need to keep themselves—and the
+organizations they work for—along, if not ahead
+of, the curve.
+
+Clyde Seepersad
+SVP & General Manager, Training &
+Certification, The Linux Foundation
+Photo: KubeCon + CloudNativeCon Europe 2024
+2024 STATE OF TECH TALENT REPORT | 4
+
+Page 5
+Executive summary
+The 2024 State of Tech Talent Report by The Linux Foundation offers a comprehensive analysis of global trends in technology talent acquisition, retention, and
+management. Through a survey-based approach involving individuals responsible for hiring and training IT professionals, the report provides valuable insights into
+the evolving landscape of technical skill development and organizational strategies in response to emerging technologies and economic challenges.
+Key findings and trends
+The report highlights a significant shift in organizational priorities toward upskilling and cross-skilling strategies, with 47% and 43% of respondents, respectively,
+identifying these approaches as key to technical talent management (Figure 1a). A significantly greater number of organizations prioritize training methods exclusively
+(39%), showcasing a strong commitment to employee development, compared to those focusing solely on hiring methods (29%) (Figure 1b). This is further strengthened
+by future plans, where across all technology areas, the majority of organizations will prioritize upskilling / cross-skilling instead of hiring new employees or engaging
+consultants (Figure 3).
+Despite concerns about economic uncertainty, the majority of organizations surveyed did not reduce their technical headcount in 2023 (Figure 4). This resilience
+underscores the strategic value placed on technical expertise within organizations, particularly in areas such as cloud, DevOps, cybersecurity, and AI / ML, which
+emerged as the top technology domains prioritized for staffing (Figure 7).
+The report also sheds light on the impact of emerging technologies, notably GenAI, on workforce planning. While GenAI presents opportunities for streamlining
+processes and optimizing workflows, it also poses challenges and opportunities in terms of workforce restructuring, with 27% of organizations intending to reduce their
+technical headcount in response to these advancements, while 23% would increase it (Figure 8).
+Demand for skilled technical talent
+In addressing the challenges of talent management, organizations are presented with significant opportunities to capitalize on the potential of upskilling and cross-
+skilling initiatives. By prioritizing these strategies, organizations can empower their existing workforce to adapt to evolving technology trends and bridge the gap
+between theoretical knowledge and practical application. Performance-based training emerges as an important tool in fostering a culture of continuous learning,
+enabling employees to enhance their problem-solving skills and drive innovation within the organization.
+We gained insight into the timeline of talent acquisition and turnover rates. The hiring and onboarding process on average now takes 10.2 months, and 38% of new hires
+experience turnover, with both numbers increasing from last year (Figures 14 and 16). With the rising turnover rates and increased hiring expenses, possibly influenced
+by GenAI automation, prioritizing upskilling and cross-skilling is vital for effective resource management.
+2024 STATE OF TECH TALENT REPORT | 5
+
+Page 6
+Introduction
+The 2024 Tech Talent report offers a comprehensive analysis of talent
+management practices in the ever-evolving landscape of the IT sector. Our
+findings are based on a survey conducted among individuals responsible
+for hiring or training within the IT sector. With 418 respondents contributing
+their insights, this report offers a deep understanding of the diverse talent
+management approaches adopted across industries and geographies. For a
+detailed understanding of our methodology, detailed demographics, and survey
+framework, please refer to the Methodology section.
+In this report, we shed light on the critical concepts of upskilling and cross-
+skilling. Upskilling refers to the process of enhancing the skills of existing
+employees, equipping them with the latest technological competencies and
+domain knowledge to meet evolving job requirements. In contrast, cross-skilling
+involves diversifying the skillsets of technical staff, enabling them to proficiently
+handle tasks beyond their primary expertise, thus enhancing organizational
+flexibility and resilience. Throughout this report, we examine the effectiveness
+of these strategies in conjunction with hiring practices in addressing the
+challenges and opportunities that the rapidly changing technological landscape
+presents.
+Photo: KubeCon + CloudNativeCon Europe 2024
+2024 STATE OF TECH TALENT REPORT | 6
+
+Page 7
+Upskilling takes
+center stage: Diverse
+approaches to technical
+talent management in
+2023 and beyond
+In 2023 and beyond, organizations are expected to embrace new approaches to managing technical
+talent, moving away from traditional methods. Previously, organizations primarily focused on hiring to
+acquire technical talent. This proved to be time-consuming, expensive, and sometimes unsuccessful,
+as revealed in our report. Upskilling and cross-skilling are in the spotlight, with 64% of tech leaders
+saying that their candidates for IT and tech positions lack essential skills or experience as reported by
+the MIT Technology Review1. Moreover, shifts in the economic landscape have prompted organizations
+to reconsider their talent management strategies, a trend that our survey findings also support.
+The table in FIGURE 1 illustrates a range of strategies that organizations employ for technical talent
+management, highlighting not only hiring (49%) but also cross-skilling (47%), upskilling (43%), and other
+approaches. Following some data transformations, the right-hand panel of FIGURE 1 shows that 29% of
+organizations utilize only hiring methods in their technical talent agenda, whereas for training methods,
+the number is much higher: 39% of organizations utilize only training methods. The response, “Hiring
+inexperienced professionals and upskilling them,” was included in both the hiring and training counts.
+This demonstrates the increased focus that organizations now have on training relative to hiring.
+FIGURE 2 indicates the growing importance of upskilling as a strategy, emphasizing
+1 MIT Technology Review Insights (2023), New Approaches to the Tech Talent Shortage. Available at: https://www.technologyreview.
+com/2023/09/21/1079695/new-approaches-to-the-tech-talent-shortage/
+Figure 1: Organizations employ various
+strategies beyond simply hiring to address their
+technological needs
+2024 STATE OF TECH TALENT REPORT | 7
+
+Page 8
+that both upskilling and hiring are deemed essential by more than 94% of organizations. However, there is a disparity on one
+end of the perceived importance levels—74% of organizations find upskilling at least very important compared to 54% for
+hiring, and this is further strengthened by 36% rating upskilling as extremely important compared to 17% for hiring.
+Upskilling or cross-skilling staff is at the top of the talent
+agenda across all technology areas for 2024
+While understanding overarching trends is valuable, it’s crucial to recognize that preferences in technical talent management can vary significantly across
+different technology domains. Among the 19 technology areas we examined, upskilling or cross-skilling current staff emerged as the preferred strategy
+over hiring new personnel or engaging consultants. These technology areas are ranked in FIGURE 3 according to their perceived priority (the priority
+percentages are not shown in the figure).
+Cloud technology stands out as the top priority on this list, with open hardware ranking at the bottom. Notably, 54% of organizations expressed a
+preference for cross-skilling or upskilling existing employees in cloud technologies, whereas only 24% prioritized hiring technical staff, and 22% favored
+hiring consultants.
+2024 Tech Talent Survey, Q26, Sample Size =414 (DKNS and ‘No experience’ excluded)
+2024 Tech Talent Survey, Q27, Sample Size =415 (DKNS excluded)
+Figure 2: A greater emphasis is being placed on upskilling within organizations
+2024 STATE OF TECH TALENT REPORT | 8
+
+Page 9
+This same pattern, where training (upskilling or cross-skilling) is the dominant approach, persists across each of these technologies. However, subtle differences do
+emerge in areas such as blockchain and AI, ML, data, and analytics, where hiring staff is given greater emphasis likely due to the complexity of the subject area and the
+need for more highly specialized capabilities.
+Figure 3: Across all technology areas upskilling / cross-skilling are the most preferred methods
+2024 STATE OF TECH TALENT REPORT | 9
+
+Page 10
+The impact of the
+economy on technical
+talent management
+2 https://layoffs.fyi
+3 BCG (2023), The Race for Tech Talent Hasn’t Stopped. Available at: https://www.bcg.com/publications/2023/the-
+race-for-tech-talent-has-not-stopped
+Despite the news headlines, the majority of IT
+organizations did not reduce their headcount in 2023
+Since the spring of 2022, there has been a noticeable increase in negative news sentiment in
+the media and a rapidly growing number of technology companies implementing layoffs to
+demonstrate responsible fiscal management as recessionary concerns loomed in the Americas.
+Layoffs escalated throughout 2022 and peaked in 2023 Q1, but they have persisted at a moderate
+level even as we close out 2024 Q12.
+However, our data depicted in FIGURE 4 suggests that the situation may not be as dire as
+perceived in the news. Of those laid off in 2022, according to a Boston Consulting Group (BCG)
+survey, nine out of ten tech workers found new jobs and improved their positions3. Among the
+2024 Tech Talent Survey sample, 29% reported a reduction in their technical headcount in 2023,
+while 34% remained unchanged, and 37% even increased their headcount. When compared to
+the planned changes reported in the previous year’s survey, it appears that more organizations
+implemented reductions than initially intended. Although the severity of reductions does not
+match news headlines, this certainly shows the powerful impact of the 2023 economic recession
+on headcount especially when compared to the reductions made in 2022 (19%).
+Segmenting the data for 2023 headcount changes reveals insights into which types of
+Figure 4: One-third of organizations surveyed reduced
+their technical headcount in 2023
+2024 STATE OF TECH TALENT REPORT | 10
+
+Page 11
+organizations experienced more reductions. Both vendors and end-user organizations reduced their headcount at similar rates, but vendors increased their
+headcount by 70% more (FIGURE 5 ). IT organizations operating across industries also increased their headcount at a higher rate compared to industry-specific
+organizations (TABLE A1 ). In terms of company size, large organizations with 5,000 or more employees experienced the highest reduction rate at 33%, while nearly
+half of small organizations increased their technical headcount in 2023 (TABLE A2 ).
+Overall sentiment about the 2024 economy among most organizations is not positive, with 46% expressing similar levels of concern as in 2023 and 34% reporting
+heightened concerns. Regional disparities exist with the U.S. / Canada showing slightly less concern compared to Europe or the Asia-Pacific region, while Europe
+exhibits slightly higher concern. However, these early sentiments are subject to change based on the latest economic news updates, which show positive signs of
+economic recovery (FIGURE 6 ).
+Figure 5: Vendors experienced a higher percentage increase in technical headcount compared to end-user organizations
+Figure 6: Organizations continue to express concerns about the economy
+2024 STATE OF TECH TALENT REPORT | 11
+
+Page 12
+Organizations
+aim to adapt to
+the continuously
+changing technology
+landscape
+As shown in FIGURE 7 , 55% of organizations have technical headcount allocated
+to cloud services, followed closely by 51% in DevOps and 49% in cybersecurity.
+Additionally, the field of AI, ML, data, and analytics is gaining traction, with
+43% of organizations surveyed reporting technical staff dedicated to this
+domain. Conversely, there has been a slight decline in web and application
+development compared to the previous year.
+The fluctuating rankings reflect the dynamic nature of the technology
+landscape, where organizations that adapt effectively are rewarded in the
+market. The table in FIGURE 7 shows the top five technology areas staffed
+by headcount in 2023 and 2024. Cloud services, cybersecurity, and DevOps
+remain the top three categories in terms of allocation of technical headcount.
+However, web and application development has dropped from the top five,
+while the AI, ML, and data field have surged in popularity, possibly driven
+by the growing interest in GenAI applications across IT operations and
+development.
+Figure 7: Cloud, DevOps, cybersecurity and AI/ML stand out
+as the key technology domains prioritized for staffing
+2024 STATE OF TECH TALENT REPORT | 12
+
+Page 13
+GenAI continues to drive intelligent automation across the
+workforce, presenting an opportunity for upskilling
+We were interested in understanding the impact of GenAI on technical talent management. FIGURE 8 shows that in 2023, 18% of organizations decreased their headcount
+using GenAI technologies. The projected impact in 2024 is that 27% of organizations plan to reduce their headcount. The reduction of technical staff due to GenAI is also
+more pronounced in middle-sized organizations (TABLE A3 ). If there is any good news in this data, it is that only 5.3% of organizations reduced or are reducing staff in both
+years. This means that GenAI has not yet reached a capability that is causing persistent annual reductions in organizational headcount. Other notable findings in FIGURE 8
+are that 23% of organizations intend to increase staff and GenAI is not projected to cause any headcount changes at 29% of organizations.
+Unfortunately, we currently lack data on the specific roles being affected by these changes brought about by GenAI. It is likely it will involve the streamlining of routine
+tasks, which presents an opportunity to upskill headcount on a broad skillset that can be utilized beyond GenAI processes. Executives are aware of this trend, as revealed
+by the BCG AI Radar survey, where 46% of tech leaders surveyed report that their workforce will need to undergo upskilling in the next three years due to GenAI4.
+4 BCG (2023), BCG AI Radar. Available at: https://www.bcg.com/publications/2024/from-potential-to-profit-with-genai
+Figure 8: GenAI will have a diverse impact on organizations’ headcount
+2024 STATE OF TECH TALENT REPORT | 13
+
+Page 14
+FIGURE 9 provides insight into the use cases of GenAI. The majority of organizations are planning to use it for data analysis and reporting (45%), followed by IT
+infrastructure monitoring (42%) and software development (35%). These three domains represent relatively new fronts in automation, prompting fresh reflections
+about the future of high-value work. IT professionals should ensure the relevance and currency of their skills, delivering value beyond what GenAI can provide.
+Surprisingly, customer support and helpdesk services rank lower on the list, possibly due to existing automation in many processes. Only 5% of organizations stated
+that they have no plans to use GenAI.
+Figure 9: The primary applications of GenAI include data analysis, IT infrastructure monitoring, and software development
+2024 STATE OF TECH TALENT REPORT | 14
+
+Page 15
+Upskilling presents a solution to adapt
+staff to technological changes
+While GenAI is bound to significantly influence how technical professionals carry out their work, a promising avenue arises wherein organizations can enhance
+employees’ skills to achieve even greater business outcomes. FIGURE 10 shows that the most cited benefit of upskilling and cross-skilling is the diverse skillsets
+individuals can acquire (40%). These initiatives also offer opportunities for career advancement (40%) and enhance the capabilities of junior staff (40%). These
+combined benefits illustrate how organizations are creatively leveraging resources amid changes, focusing on talent development rather than external recruitment.
+Figure 10: Upskilling presents an opportunity to reassign existing staff as technology needs evolve and economic concerns prevail
+2024 STATE OF TECH TALENT REPORT | 15
+
+Page 16
+Thoughtful planning is essential for effective training strategies
+Various options are available for training and certifying technical staff, with the most popular methods being online virtual courses and employer-funded training
+and certifications, as shown in FIGURE 11 . This figure also illustrates a decrease in available training opportunities compared to 2023, likely a result of budget cuts
+amid economic challenges. Nevertheless, as highlighted in this report, 2024 appears to be a pivotal year for upskilling, suggesting that organizations will adjust their
+training strategies and provide more opportunities.
+Figure 11: Various opportunities exist to train and certify technical staff
+2024 STATE OF TECH TALENT REPORT | 16
+
+Page 17
+The primary challenge (FIGURE 12 ) in training is creating and nurturing an environment for continuous learning (39%), as it demands considerable effort and time.
+Another obstacle is the difficulty in effectively translating new knowledge into practical applications (35%). Only a minority of organizations (23%) encounter issues
+with backfilling during training. However, by implementing strategic planning and thoughtfully selecting training courses, organizations can effectively address these
+challenges. For example, instructor-led training offers expert guidance and structured learning, while performance-based training emphasizes practical application,
+problem solving, and measurable outcomes, both fostering continuous learning within companies.
+Figure 12: The top challenges in training staff include nurturing a continuous learning environment and effectively
+translating knowledge into practical applications
+2024 STATE OF TECH TALENT REPORT | 17
+
+Page 18
+Technical recruiting remains a challenge
+FIGURE 13 shows that the primary challenge in hiring, as reported by 43% of organizations, is that it is costly, time-consuming, and often does not lead to the right
+candidate. This issue is compounded by the 38% of organizations reporting that problems in finding suitable candidates can lead to project delays, while verifying
+claimed technical skills poses an additional hurdle, as cited by 37%.
+Further investigation into these challenges included explicit questions on the time spent on hiring processes. On average, organizations spend 5.4 months on hiring,
+with 64% of them requiring over four months to fill open positions. For 33% of organizations, this process extends beyond seven months, and the trend seems to be
+getting worse compared to 2023, when the average time to hire was 4.6 months (FIGURE 14 ).
+Figure 13: According to 43% of respondents, recruitment is costly, time consuming, and often does not lead to the right candidate
+2024 STATE OF TECH TALENT REPORT | 18
+
+Page 19
+We asked the same question for different technical roles (see FIGURE 15 ). Notably, filling an open position typically takes at least five months for all roles. Executive
+management roles are the most time-consuming to fill, averaging 6.2 months, followed by AI / ML engineers and SRE / Platform engineers, which aligns with the high
+demand for these positions. Conversely, front-end / back-end developers and network administrators generally have shorter hiring periods.
+Figure 15: Hiring front-end/back-end developers and network administrators is typically quicker, whereas recruiting executive management positions or
+SRE/Al engineers tend to require more time
+Figure 14: On average, 64% of organizations spend more than four months to fill an open position
+About how long does it take to hire a headcount to fill an open position in your organization for the following technical roles? (select one response per row)
+2024 Tech Talent Survey, Q29, Sample size = 292-311 (DKNS excluded)
+Role Average time to hire (months)
+Executive Management 6.2
+Al/ML Engineer 6.1
+SRE / Platform Engineer 6.0
+Project Manager 5.9
+Data Analyst / Scientist 5.9
+Systems Administrator 5.9
+IT Management 5.9
+Data Management 5.8
+Role Average time to hire (months)
+DevOps / DevSecOps / GitOps 5.8
+Cloud Architect / Engineer 5.8
+Security Professional 5.6
+Front-end / Back-end developer 5.5
+Network Administrator 5.3
+2024 STATE OF TECH TALENT REPORT | 19
+
+Page 20
+Regarding onboarding (FIGURE 16 ), the average time is 4.8 months, with 58% of
+organizations requiring more than four months to onboard new hires to achieve
+normal productivity. Additionally, the process to take on a new hire typically
+spans at least eight months for most organizations. In 2024, a significant rate of
+resignation or layoff among new hires can be observed from the sample in the
+right-hand panel of FIGURE 16 . On average, two out of five new technical hires
+experience turnover within the first six months, which is a higher rate compared
+to the rate observed in 2023 (29%).
+The combined duration for hiring and onboarding stands at 10.2 months and
+shows an increase of 34% from 7.6 months in 2023. In addition to the high
+turnover rates, the hiring process has become significantly more expensive. This
+trend is possibly aggravated by the impact of GenAI automation, which is reducing
+the need for lower-level positions and leading to a higher demand for senior
+technical staff. This highlights the importance of prioritizing upskilling and cross-
+skilling as a key strategy for resource management.
+Certifications are key criteria
+in the hiring process
+Employers utilize various methods to evaluate candidates’ skills during the hiring
+process. FIGURE 17 shows that the most crucial aspect they seek is relevant
+hands-on experience from previous employment, deemed extremely or very
+important by 71% of respondents. Additionally, the importance of showcasing
+a portfolio of past achievements to demonstrate skills is increasing. However,
+candidates who might not have relevant experience in the roles advertised
+can demonstrate their capabilities through university degrees or certificates.
+Certificates rank higher than university degrees in importance, but all factors
+listed above are very influential for hiring managers.
+The findings above reveal the dilemmas hiring managers encounter in a job
+market where having a degree is still highly valued. In 2022, in the United
+States, 69% of computer programmer positions and 95% of mobile application
+Figure 16: It takes more time to onboard compared to 2023, and
+more technical staff resigned or were asked to leave than in the
+previous year
+2024 STATE OF TECH TALENT REPORT | 20
+
+Page 21
+developer jobs still required a degree5. However, research shows that focusing on skills during hiring is five times better at predicting job performance than hiring
+for education6. The situation becomes more intricate when managers aim to hire candidates with strong non-technical skills, particularly problem-solving, which are
+also highly valued (TABLE A4 ).
+Based on the most commonly cited benefits of hiring in FIGURE 18 , organizations have reached a stage where they prioritize candidates with diverse skillsets that
+can be utilized effectively. Rather than focusing solely on specific skills, organizations seek individuals capable of handling a variety of tasks. More than half of the
+hiring managers are keen on hiring new perspectives and innovative approaches, which are often challenging to obtain from existing employees. This need for fresh
+perspectives is particularly pronounced in the IT industry, where companies must stay abreast of the latest advancements.
+5 BCG (2023), Competence over Credentials: The Rise of Skills-Based Hiring. Available at: https://www.bcg.com/publications/2023/rise-of-skills-based-hiring
+6 John E. Hunter and Rhonda F. Hunter, “Validity and utility of alternative predictors of job performance.” Psychology Bulletin, 1984, Volume 96, Issue 1; “Skills-based sourcing & hiring playbook”, Rework
+America Alliance, April 2022.
+Figure 17: When assessing technical skills, certifcations rank above a college or university degree in terms of importance
+2024 STATE OF TECH TALENT REPORT | 21
+
+Page 22
+Figure 18: Fresh perspectives and innovative approaches are the most cited benefits of hiring technical staff
+2024 STATE OF TECH TALENT REPORT | 22
+
+Page 23
+Methodology
+This study is based on a web survey conducted by the LF and its partners from the end of December 2023 through the beginning of February 2024. The survey’s
+goal was to gain fresh insights into the current state of technology talent acquisition, retention, and management globally. In the following, we present the study
+methodology, context regarding how we analyzed the data, and the demographics of the respondents.
+From a research perspective, it was important to eliminate any perception of sample bias and ensure high data quality. We handled the elimination of sample bias
+by sourcing our usable sample from the LF membership, partner communities, social media, and a third-party panel provider. We addressed data quality through
+extensive prescreening, survey screening questions, and data quality checks to ensure that respondents had sufficient professional experience to answer questions
+accurately on behalf of the organization they worked for.
+We collected survey data from industry-specific, IT vendors and service providers, nonprofit, academic, and government organizations. Respondents spanned many
+vertical industries and companies of all sizes, and we collected data from several geographies, including the Americas, Europe, and Asia-Pacific.
+The 2024 State of Tech Talent Survey comprised 42 questions that addressed the topic of cloud native computing, containers, Kubernetes, cybersecurity, and
+webAssembly. For information about access to the 2024 State of Tech Talent Survey, its dataset, and survey frequencies, see the Data.World access heading below.
+Survey screening involves the use of five variables to validate the respondent. The respondent needed to answer all the demographic questions:
+• The respondent had to hire or recruit IT professionals.
+• The respondent needed to self-identify as a real person.
+• The respondent had to be employed.
+• The respondent had to speak from the perspective of their team.
+• The respondent had to accurately answer a verbatim question.
+A total of 1,455 candidates started the survey. There were 993 candidates disqualified due to the screening criteria outlined above, 34 were eliminated because of
+data quality concerns, and 418 records remained as the basis for this analysis. The margin of error for this sample size was ±4.1% at a 90% confidence level.
+We stratified the data collection by company size, geographic region, and organization type. The data was primarily segmented by geographic region (Q9), company
+size (Q14), and industry (Q10 and Q13).
+2024 STATE OF TECH TALENT REPORT | 23
+
+Page 24
+Although respondents were required to answer nearly all questions in the survey, there were times when the respondent was unable to answer one because it was
+outside the scope of their role or experience. For this reason, we added a “Don’t know or not sure” (DKNS) response to the list of responses for nearly all questions.
+However, this creates a variety of analytical challenges.
+One approach was to treat a DKNS just like any other response so that the percentage of respondents that answered the DKNS is known. The advantage of this
+approach is that it shows the exact distribution of data collected. The challenge with this approach is that it can distort the distribution of valid responses, i.e.,
+responses where respondents could answer the question.
+Some of the analyses in this report exclude DKNS responses. This is because we can classify the missing data as either missing at random or missing completely
+at random. Excluding DKNS data from a question does not change the distribution of data (counts) for the other responses, but it does change the size of the
+denominator used to calculate the percent of responses across the remaining responses. This has the effect of proportionally increasing the percentage values of
+the remaining responses. Where we have elected to exclude DKNS data, the footnote for the figure includes the phrase “DKNS responses excluded.”
+The percentage values in this report may not total to exactly 100% due to rounding.
+Data.World access
+LF Research makes each of its empirical project datasets available on Data.World. Included in this dataset are the survey instrument, raw survey data, screening and
+filtering criteria, and frequency charts for each question in the survey. LF research datasets, including this project, can be found at data.world/thelinuxfoundation.
+2024 STATE OF TECH TALENT REPORT | 24
+
+Page 25
+Demographics
+These demographics provide you with a profile of the 2024 State of Tech Talent Survey respondents.
+The left-hand panel of FIGURE 19 shows that the majority of the sample hire for their team or department. The other 25% of respondents are HR / talent managers or
+recruitment / learning professionals. The center panel shows the perspectives our respondents were able to take: 46% of respondents were able to speak for their
+entire company or organization, while 45% were only able to speak for the team or department they work for. The right-hand panel asked respondents about their
+roles, and at least 64% of respondents were in technical roles.
+Figure 19: Selected demographics from the 2024 Tech Talent Survey I
+2024 STATE OF TECH TALENT REPORT | 25
+
+Page 26
+In the left chart of FIGURE 20 , we see a balanced sample between the three regions: North America (30%), Europe (22%), and Asia-Pacific (35%). Responses from
+Japan are purposefully overrepresented to filter for this specific country and create a separate analysis and report. The right-hand panel of Figure 20 shows that
+most organizations in the sample are operating across industries, the second-largest industry present is financial services, and the third is telecommunications.
+An important variable used for segmentation is shown in the left-hand panel of FIGURE 21 . This question helped us to differentiate between vendors and end-user
+organizations. The sample consisted of 55% vendors and 43% end-user organizations. The right-hand panel shows company size, with 57% of the employees in
+middle organizations between 250 and 4,999 in the sample.IT products and services to support their business activities. This contrasts with vendors and service
+providers (55%), whose primary activity is creating horizontal and vertical IT products and services for sale to end users. This leaves 10% of organizations that are in
+academia, research, government, nonprofits, foundations, or other areas.
+Figure 20: Selected demographics from the 2024 Tech Talent Survey II
+2024 STATE OF TECH TALENT REPORT | 26
+
+Page 27
+Figure 21: Selected demographics from 2024 Tech Talent Survey III
+2024 STATE OF TECH TALENT REPORT | 27
+
+Page 28
+Appendix A
+Please identify what changes were
+made to your technical headcount
+during 2023. (select one) segmented by
+Cross-industry IT vs. industry specific
+Cross-
+industry
+Industry
+specific
+We reduced our technical headcount
+in 2023 24% 31%
+We didn’t make any changes to our
+technical headcount in 2023 28% 37%
+We increased our technical headcount
+in 2023 46% 31%
+Don’t know or not sure 3% 2%
+What are the top three core skills that you look for
+in a candidate outside of their technical capabilities?
+(select up to three responses)
+Column %
+Problem-solving skills 64%
+Communication skills 52%
+Critical thinking 49%
+Collaboration and teamwork 43%
+Learning agility 32%
+Cultural fit 12%
+Other (please specify) 0%
+Don’t know or not sure 0%
+Please identify what changes
+were made to your technical
+headcount during 2023. (select
+one) segmented by company size
+(regrouped)
+Total 1 to 249
+employees
+250 to 4,999
+employees
+5,000 or more
+employees
+We reduced our technical
+headcount in 2023 28% 22% 27% 33%
+We didn’t make any changes to our
+technical headcount in 2023 33% 25% 39% 27%
+We increased our technical
+headcount in 2023 36% 49% 32% 36%
+Don’t know or not sure 2% 4% 1% 4%
+How has generative AI (GenAI)
+impacted or how will it impact the
+headcount of your organization?
+(select all that apply) segmented by
+company size (regrouped)
+Total 1 to 249
+employees
+250 to 4,999
+employees
+5,000 or more
+employees
+GenAI reduced our headcount in
+2023 19% 17% 21% 13%
+GenAI will reduce our headcount
+in 2024 27% 20% 30% 24%
+GenAI will not impact our
+headcount in 2024 29% 29% 29% 29%
+GenAI will increase our headcount
+in 2024 24% 19% 24% 26%
+Don’t know or not sure 11% 23% 7% 14%
+2024 STATE OF TECH TALENT REPORT | 28
+
+Page 29
+About the authors
+ADRIENN LAWSON is a data analyst at the Linux Foundation. Adrienn obtained a master’s degree from the University of Oxford in social data science. She supports
+LF Research with survey development, analysis, and report writing. Adrienn has previously conducted research at the University of Oxford, the Budapest Institute
+for Policy Analysis, and the U.K.’s Office for National Statistics.
+STEPHEN HENDRICK is the vice president of research at the Linux Foundation, where he is the principal investigator on a variety of research projects core to the
+Linux Foundation’s understanding of how OSS is an engine of innovation for producers and consumers of IT. Steve specializes in primary research techniques
+developed over 30 years as a software industry analyst. Steve is a subject matter expert in application development and deployment topics, including DevOps,
+application management, and decision analytics. Steve brings experience in a variety of quantitative and qualitative research techniques that enable deep insight
+into market dynamics and has pioneered research across many application development and deployment domains. Steve has authored over 1,000 publications and
+provided market guidance through syndicated research and custom consulting to the world’s leading software vendors and high-profile start-ups.
+Acknowledgments
+Special thanks to Linux Foundation colleagues Hilary Carter, Anna Hermansen, Christina Oliviero, Ali Rowan, Craig Ross, Scott Punk, Mary Simpkins, and Clyde
+Seepersad for your contributions to and support of this research project.
+2024 STATE OF TECH TALENT REPORT | 29
+
+Page 30
+Founded in 2021, the Linux Foundation Research explores the
+growing scale of open source collaboration, providing insight into
+emerging technology trends, best practices, and the global impact
+of open source projects. Through leveraging project databases
+and networks, and a commitment to best practices in quantitative
+and qualitative methodologies, the Linux Foundation Research is
+creating the go-to library for open source insights for the benefit of
+organizations the world over.
+The Linux Foundation’s training program features courses
+developed and taught by expert instructors, many of whom are
+well-respected professionals in the open source community. Our
+certification team performs comprehensive industry and job
+analyses to ensure every professional certification program we
+offer meets our exceedingly high standards. Combined with our
+outstanding customer success team, we can deliver responsive
+support and customized training solutions to enable individuals and
+businesses to succeed.
+twitter.com/linuxfoundation
+facebook.com/TheLinuxFoundation
+linkedin.com/company/the-linux-foundation
+youtube.com/user/TheLinuxFoundation
+github.com/LF-Engineering
+April 2024
+
+Copyright © 2023 The Linux Foundation
+This report is licensed under the Creative Commons
+Attribution-NoDerivatives 4.0 International Public
+License.
+To reference this work, please cite as follows:
+Adrienn Lawson and Stephen Hendrick, “2024 State
+of Tech Talent Report,” foreword by Clyde Seepersad,
+The Linux Foundation, April 2024.

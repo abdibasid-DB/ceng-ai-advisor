@@ -1,0 +1,684 @@
+Source ID: src_054
+Title: Study Demands-Resources Theory: Understanding Student Well-Being in Higher Education
+
+Study Demands–Resources Theory: Understanding Student Well-Being in Higher Education | Educational Psychology Review | Springer Nature Link
+
+Advertisement
+
+Study Demands–Resources Theory: Understanding Student Well-Being in Higher Education
+
+Review Article
+
+Open access
+
+Published: 19 August 2024
+
+Volume 36, article number 92 (2024)
+
+Cite this article
+
+You have full access to this open access article
+
+Download PDF
+
+Save article
+View saved research
+
+Educational Psychology Review
+Aims and scope
+
+Submit manuscript
+
+Study Demands–Resources Theory: Understanding Student Well-Being in Higher Education
+
+Download PDF
+
+Arnold B. BakkerORCID: orcid.org/0000-0003-1489-18471,2 &
+
+Karina Mostert2
+
+59k Accesses
+
+144 Citations
+
+Altmetric
+
+1 Mention
+
+Explore all metrics
+
+Abstract
+
+This article reviews the literature on student well-being (burnout and engagement) and their relationships with study demands and resources, student behaviors (proactive and self-undermining study behaviors), and student outcomes in higher education. Building on research that used Job Demands–Resources and Study Demands–Resources models to investigate student well-being, we develop the Study Demands–Resources (SD–R) theory to delineate the various processes, mechanisms, and behaviors involved in student burnout and engagement. Study demands and resources have unique and combined effects on higher education students’ well-being. In addition, students can influence their own well-being and study-related outcomes by either proactively optimizing their study demands and resources or displaying self-undermining behaviors that can adversely affect their study environment. We discuss several avenues for future research, including (a) rigorous tests of SD–R propositions; (b) trait versus state effects in SD–R theory; (c) the impact of the higher education climate and lecturer influence; and (d) an expanded SD–R theory.
+
+Similar content being viewed by others
+
+Study Demands-Resources Model of Student Engagement and Burnout
+
+Chapter© 2022
+
+Understanding student satisfaction in their online learning: a student demands–resources model of engagement and burnout
+
+Article18 July 2026
+
+The Student Resilience and Well-Being Project: Opportunities, Challenges, and Lessons Learned
+
+Article09 July 2021
+
+Explore related subjects
+Discover the latest articles, books and news in related subjects, suggested using machine learning.
+
+Educational Research
+
+Educational Psychology
+
+Education Science
+
+Higher Education
+
+Social Theory
+
+Study and Learning Skills
+
+Student Engagement and Well-Being in Higher Education
+
+Higher education students are confronted with a range of demands, such as coursework deadlines, group assignments, financial problems, and exams. Such demands necessitate time management, coordination, and focused attention. Over time, study demands require considerable cognitive, emotional, and physical effort, which may drain psychological resources and lead to study anxiety, fatigue, and even burnout (Gusy et al., 2016; Madigan & Curran, 2021; Salmela-Aro & Upadyaya, 2014). However, students may also encounter various resources while studying, including support and constructive feedback from lecturers, social support from family and friends, and development opportunities (Bakker et al., 2015). Such resources help students manage their demands, facilitate student engagement (Gusy et al., 2016), and guide goal-oriented behaviors. Resources are inherently motivating because they satisfy basic psychological needs, such as the needs for autonomy, relatedness, and competence (Vansteenkiste et al., 2009).
+
+To better understand the factors influencing student well-being, educational psychologists have adopted the Job Demands–Resources (JD–R) model (Demerouti et al., 2001) that originated in an organizational context. JD–R theory is a comprehensive, well-established, and widely utilized theory to measure and explain well-being in organizational contexts empirically (Bakker, Demerouti, & Sanz-Vergel, 2023; Bakker, Hetland, et al., 2023; Bakker, Xanthopoulou, & Demerouti, 2023), offers insights from both positive and negative well-being perspectives, and integrates various job stress and motivational perspectives (Bakker, Demerouti, & Sanz-Vergel, 2023; Demerouti et al., 2001). The JD–R model categorizes characteristics of the work environment into demands (facets of work that cost effort and instigate a health impairment process) and resources (facets of work that help cope with demands, give meaning, and fuel a motivational process) (Bakker & Demerouti, 2007; Schaufeli & Bakker, 2004).
+
+Over the past 15 years, numerous studies have provided evidence that the university environment can similarly be organized into study demands and resources, which evoke parallel health impairment and motivational processes among students (e.g., Calderwood & Gabriel, 2017; Cho et al., 2023; Clements & Kamau, 2018; Salanova et al., 2010; Wilson & Sheetz, 2010; Wolff et al., 2014). Thus, building on the JD–R framework, several scholars have proposed and tested Study Demands–Resources (SD–R) models tailored to the higher education context (e.g., Gusy et al., 2016; Jagodics & Szabó, 2023; Lesener et al., 2020; Martin & Collie, 2022; Mokgele & Rothmann, 2014; Salmela-Aro et al., 2022).
+
+In this position paper, we rely on recent formulations of JD–R theory (Bakker et al., 2014; Bakker & Demerouti, 2024; Bakker, Demerouti, & Sanz-Vergel, 2023; Demerouti & Bakker, 2023) to systematically delineate the various processes, mechanisms, and study behaviors (proactive behaviors and self-undermining) associated with student burnout and engagement. We build on and strengthen existing SD–R models and review literature on higher education students’ demands and resources. In addition, we discuss how study demands and resources impact student well-being and achievement and the implications for optimizing the university experience.
+
+Although the experiences of students in the higher education environment are not exactly the same as those of employees, there are several similarities between studying and working. Like employees, students need to engage in organized, structured, and compulsory activities, like attending classes, working on group assignments, and studying for exams. In addition, like work activities, study activities are goal-oriented and evaluated, and have important implications for one’s career (Salanova et al., 2010). We align empirical evidence for the Study Demands–Resources (SD–R) model with new developments in JD–R theory that build on and strengthen existing research (Gusy et al., 2016; Jagodics & Szabó, 2023; Lesener et al., 2020; Salmela-Aro et al., 2022) and focus on the higher education context, although SD–R theory may also be relevant for other educational contexts (e.g., primary school and high school) (Salmela-Aro & Upadyaya, 2014).
+
+We aim to make the following contributions to the educational psychology literature. We systematically integrate JD–R principles and propositions based on the existing student well-being literature and build on and strengthen current SD–R models to inform a sound, holistic SD–R theory for the higher education context. First, we integrate the various causes and consequences of two types of student well-being: burnout and engagement. Second, we explain the roles of study demands and resources. Why, how, and when do study demands result in strain and burnout? What is the function of study resources such as autonomy, recognition, and social support? How do study demands and resources have a combined impact on student well-being? We integrate the buffer and boost hypotheses in SD–R theory. Third, we look at the role of personal resources, such as self-efficacy, optimism, and resiliency. How do such beliefs and cognitions influence student burnout and engagement? We explain how personal resources may result in new study resources, and how personal resources statistically interact with study demands and resources. Fourth, we discuss proactive self-enhancing study behaviors such as study crafting and playful study design, as well as reactive self-undermining behaviors. We describe how these behaviors may result in gain and loss spirals of study events and experiences, respectively. Fifth, we discuss the underlying psychological processes linking study demands and resources and student burnout and engagement to individual and higher education outcomes. Specifically, we show how student burnout and engagement mediate the relationship between antecedents and outcomes. Finally, we make several recommendations for future research and practice.
+
+Study Demands–Resources Theory
+
+An important building block of SD–R theory is that the features of the study environment can be categorized as either a demand or a resource. Following this logic and the findings of previous JD–R and SD–R models, SD–R theory proposes that higher education students’ experiences can be categorized as being demanding or resourceful. Study demands require effort and may, therefore, consume considerable physical, emotional, and cognitive energy and capacity. These demands encompass challenges that facilitate learning (e.g., intricate assignments) as well as hindrances that thwart progress (e.g., ambiguous tasks that create uncertainty) (Salmela-Aro et al., 2022). In contrast, study resources play a functional role in helping students achieve their academic goals and are instrumental in helping the student studying, regulating study demands, and motivating students to grow, learn, and progress while studying. These resources frequently comprise multilayered factors that assist students’ learning and engagement (Salmela-Aro et al., 2022). In our review, we will examine two distinct processes outlined in JD–R and SD–R models (Demerouti et al., 2001; Lesener et al., 2020; Salmela-Aro et al., 2022; Schaufeli & Bakker, 2004): the health impairment process and the motivational process. In the organizational context, these processes have demonstrated notable and disparate negative and positive impacts on well-being. The health impairment process is associated with adverse health outcomes, while the motivational process is linked to positive outcomes (Bakker, Demerouti, & Sanz-Vergel, 2023).
+
+A second building block of SD–R theory is student well-being with the opposing states of student burnout and engagement. Here, as with JD–R theory, SD–R theory outlines that students may either feel exhausted and be cynical about their studies or rather the opposite, i.e., feel vigorous and enthusiastic. The third building block concerns student behaviors. SD–R theory proposes that certain study environments trigger reactive and maladaptive study behaviors that can undermine effective studying, whereas other study environments trigger proactive and adaptive study behaviors that facilitate effective studying. The proposed SD–R theory also includes feedback loops and is graphically depicted in Fig. 1. In what follows, we discuss each of these building blocks in more detail while reviewing the available evidence in the educational literature. We start with discussing student well-being.
+
+Fig. 1
+
+Full size image
+
+The Study Demands–Resources model
+
+Student Well-Being
+
+During the past two decades, student well-being has received considerable attention (for meta-analyses, see Bücker et al., 2018; Kaya & Erdem, 2021). However, since scholars have used a wide range of student well-being definitions and indicators, it is challenging to get a good overview of the potential predictors and outcomes of student well-being. In the present paper, we focus on two specific types of student well-being: student burnout and student engagement.
+
+Student Burnout
+
+Student burnout refers to feeling exhausted because of study demands, expressing a cynical, detached attitude toward one’s studies, and feeling incompetent as a student (Schaufeli et al., 2002). Burned-out students experience chronic mental, emotional, or physical exhaustion due to the many demands they face while studying. They often feel disconnected or cynical about their classes and suffer from reduced academic efficacy, may skip classes, or may not complete assignments. Student burnout has been linked to several unfavorable outcomes, including depressive symptoms (Cheng et al., 2020), increased use of substances such as alcohol and cannabis (Allen et al., 2022), suicidal ideation (Dyrbye et al., 2008), class absenteeism (Seibert et al., 2017), and dropping out (Bumbacco & Scharfe, 2023). Consequently, burnout is a predictor of impaired academic achievement (Madigan & Curran, 2021).
+
+Student Engagement
+
+Student engagement is defined as a positive, fulfilling, study-related psychological state characterized by vigor, dedication, and absorption (Salmela-Aro & Read, 2017; Schaufeli et al., 2002). Engaged students display mental resilience while studying and perseverance in the face of challenges and difficulties (Finn & Zimmer, 2012; Hu, 2010). In addition, they exhibit a strong commitment to their studies, experiencing a sense of excitement, enthusiasm, and focus (Pekrun & Linnenbrink-Garcia, 2012; Schaufeli et al., 2002). Engaged students show active learning behaviors and receive better grades (Bakker et al., 2015; Schaufeli et al., 2002), and low levels of academic withdrawal (Tuominen-Soini & Salmela-Aro, 2014). In addition, student engagement predicts various long-term positive outcomes, such as persistence in educational pathways (Öz & Boyacı, 2021) and better job possibilities (Ma & Bennett, 2021). Engaged students are also more likely to start an entrepreneurial career (e.g., Liu, Gorgievski, et al., 2023). Moreover, both student burnout and engagement are the consequence of a unique combination of study demands and resources, which are discussed next.
+
+Study Demands and Resources
+
+Higher education institutions serve as a transformative space where students develop invaluable skills and can gain life-changing opportunities. Engaging in tertiary education means gaining new experiences, meeting new people, and learning a passion for your subject. On days with lectures and tutorial meetings, there are opportunities to learn new things and have interesting conversations with professors and fellow students. The days students prepare for an exam may demand focused reading, intensive information processing, and dealing with interruptions. Moreover, in some countries, students may encounter various other demands, including transportation problems, limited access to technology, poor housing, unsafe living conditions, financial struggles, and difficulty adjusting to the higher education environment (Haverila et al., 2020; Martin et al., 2023; Martin & Collie, 2022).
+
+Studying is also a social activity. Students may be asked to collaborate with their peers when writing papers, preparing presentations, or creating podcasts — which provides an opportunity for an enjoyable and fulfilling experience. However, collaborating may also mean dealing with interpersonal conflicts, for example, when finding out that a group member engages in social loafing and exerts little effort to contribute to the group task. As a final example, students may enhance their academic experience by participating in extracurricular activities, joining study associations, planning study visits to organizations, or inviting experts to give interesting talks.
+
+Research indicates that students from higher social classes typically have access to more resources such as academic materials, financial support, family assistance, and developmental opportunities than their peers from lower social classes (Munir et al., 2023; Van Zyl, 2016). These resources may enable them to better navigate and manage their demands and reduce study stress, facilitating engagement and study success. In contrast, students from lower social classes often face a larger range of demands, including academic unpreparedness for higher education, difficulties in commuting to campus, challenges in adapting to new social circles (resulting in lower levels of peer support), and being enrolled in courses that were not their preferred choice (Van Zyl, 2016). These demands may intensify the perceived academic workload and stress levels, making it more difficult to succeed.
+
+The activities and events students encounter in their study life seem countless and manifold. Following JD–R theory and previous SD–R models (e.g., Lesener et al., 2020; Salmela-Aro et al., 2022; Salmela-Aro & Upadyaya, 2014), SD–R theory proposes that the characteristics of study life can be distinguished into two categories, namely study demands and resources. We define study demands as all the facets of studying that cost effort and, therefore, expend physical, emotional, and mental energy (cf. Bakker, Demerouti, & Sanz-Vergel, 2023). Study demands may manifest in diverse forms, such as a high pace and volume of study work and cognitive challenges (Cilliers et al., 2018). Students may also face time constraints (Lesener et al., 2020), conflicting deadlines (Martin et al., 2023), and learning obstacles (Martin et al., 2021).
+
+In contrast, study resources are defined as all the aspects of studying that have motivating potential, can buffer the impact of study demands, and facilitate growth and learning (cf. Demerouti et al., 2001; Demerouti & Bakker, 2023). Specifically, resources tailored to studying can manifest as study resources (e.g., having competent lecturers, access to books and study materials, study facilitators, and mentors) and university resources (e.g., classrooms, library and computer facilities, good infrastructure, and an atmosphere creating a sense of belonging). Resources specific to studying may include learning support (Martin et al., 2021), autonomy and sense of control (Collie et al., 2015), family and friend support (Cilliers et al., 2018), developmental and growth opportunities (Cilliers et al., 2018; Lesener et al., 2020), lecturer support (Cilliers et al., 2018; Kulikowski et al., 2019), and role clarity (Lesener et al., 2020) among others.
+
+Proposition 1: Study characteristics can be modeled using two distinctive categories, namely study demands and study resources.
+
+Another central proposition in SD–R theory is that study demands and resources have unique effects on student burnout and engagement. Research on such effects within the work context has provided consistent evidence for two processes: (a) a health impairment process triggered by excessive job demands and (b) a motivational process triggered by job resources (Lesener et al., 2019). The health impairment process refers to the impact of demands on physical health complaints through fatigue, anxiety, and other strains. In contrast, the motivational process refers to the impact of resources on creativity and task performance through the experience of engagement (vigor, dedication, absorption) (Bakker, Demerouti, & Sanz-Vergel, 2023; Schaufeli & Bakker, 2004).
+
+Research among students has also provided evidence for these dual processes. For instance, study demands have been shown to deplete students’ energy levels (Cilliers et al., 2018; Jagodics & Szabó, 2023) and negatively affect their physical and psychological well-being (Gusy et al., 2016; Mokgele & Rothmann, 2014). Kaggwa et al. (2021) recently highlighted that the demands prevalent in the higher education context can potentially lead to burnout symptoms, ultimately resulting in negative student outcomes such as procrastination, decreased life and study satisfaction, and intention to drop out (Turhan et al., 2022). Research has also demonstrated a clear link between escalated levels of student burnout and mental health disorders (e.g., depression; Jackson et al., 2016) as well as reduced academic performance (Madigan & Curran, 2021). Thus, consistent with the health impairment process proposed by JD–R theory (Bakker, Demerouti, & Sanz-Vergel, 2023), study demands are de-energizing to students, and lead to health problems and unfavorable study outcomes.
+
+While study demands are positively associated with strain and student burnout, study resources are more clearly positively associated with positive aspects of student well-being, including student engagement (Gusy et al., 2016; Robins et al., 2015). Indeed, several studies underscore the importance of study resources in shaping student motivation and performance. Resources like support from lecturers and peers have been demonstrated to enhance aspects of student well-being such as life satisfaction and engagement (Mokgele & Rothmann, 2014). Bellini et al. (2022) further suggest that a resourceful study environment facilitates students’ learning goals. When students perceived an abundance of study resources, their engagement and motivation to study were significantly heightened (Liu, Gorgievski, et al., 2023).
+
+Bakker et al. (2015) followed students for three consecutive weeks in which they attended six tutorial group meetings. They found that in the weeks that students had access to more study resources (autonomy, social support, opportunities to learn about new topics, and positive feedback), they were more energized and enthusiastic about their studies (i.e., more engaged). During these weeks, students exhibited increased engagement in tutorial meetings, actively participating in problem-solving brainstorms and posing critical questions. In contrast to study demands, study resources, therefore, have the potential to trigger the motivational process in students (Bakker, Demerouti, & Sanz-Vergel, 2023). Lesener et al. (2020) found support for the health impairment and motivational processes in a sample of 5660 university students. Their findings showed that study demands were positively associated with student burnout and that student burnout mediated the link between study demands and students’ life satisfaction. They also found support for the motivational process, where study resources were positively related to life satisfaction through student engagement.
+
+Proposition 2: Study demands and resources instigate two different processes, a health impairment process, and a motivational process.
+
+The third proposition in SD–R theory is that study demands and resources have a combined impact on student well-being and outcomes. According to Bakker, Demerouti, and Sanz-Vergel (2023), there are two ways in which demands and resources interact and have an impact on well-being. The buffer hypothesis states that study resources such as social support and constructive feedback alleviate or buffer the positive influence of study demands on strain. Thus, buffer effects refer to the protective role of resources in alleviating the adverse consequences of high study demands. For example, when students face demanding coursework and interpersonal conflicts, certain study resources, such as time control and support from fellow students, can act as buffers to diminish the negative impact on their well-being. Aloia and McTigue (2019) found evidence for a buffer effect in their study among college students in the USA. Specifically, they found that the impact of study demands (e.g., workload, and pressures to perform) on psychological well-being was weakened when students had access to an abundance of study resources (supportive informational and emotional communication). In addition, research by Naylor (2022) suggested that a study environment rich in resources (e.g., teacher autonomy support and interesting coursework) can compensate for study demands such as study load and financial stress. They also showed that students who had access to more study resources reported lower levels of burnout, anxiety, and depression in the face of high study demands.
+
+The boost hypothesis states that challenging study demands can amplify or boost the positive impact of study resources on engagement and performance (cf. Bakker et al., 2014). Particularly when students are confronted with complex study tasks and deadlines, they will benefit most from lecturer support and constructive feedback. Hospel and Galand (2016) found evidence for a boost effect by showing that students were more emotionally engaged (e.g., curious, interested, enthusiastic) in the lessons when teachers combined high study demands (i.e., high expectations, strong guidance) with study resources in the form of autonomy and support. When students had numerous opportunities to take initiative and when their perspectives and feelings were well acknowledged, study demands positively influenced positive emotional engagement and negatively influenced negative emotional engagement. However, the demands × resources interaction term showed only marginal, mainly nonsignificant, effects on cognitive and behavioral engagement. We refer to Salmela-Aro et al. (2022) for a further review of synergistic relationships among study demands and resources in the SD–R model.
+
+Proposition 3: Study demands and resources have a multiplicative, combined impact on student well-being.
+
+The Role of Personal Resources
+
+Personal resources refer to individuals’ beliefs in their ability to control and impact their environment successfully (Hobfoll et al., 2018; Xanthopoulou et al., 2009). Examples are self-efficacy, optimism, hope, and resiliency (also referred to as psychological capital; Luthans et al., 2013). In the organizational context, several studies have demonstrated the importance of personal resources for employee outcomes (e.g., Bakker & Van Wingerden, 2021; Knight et al., 2017). Moreover, research suggests that individuals who have more personal resources also have access to more environmental resources (e.g., Xanthopoulou et al., 2009). These findings suggest that when individuals believe they can influence their environment successfully, they are more likely to gain more environmental resources (e.g., autonomy, social support, feedback), which helps them feel engaged and perform well (Bakker, Demerouti, & Sanz-Vergel, 2023).
+
+Over the past decade, research suggests that personal resources are also important for student well-being and learning outcomes. Spanish and Portuguese students who reported many personal resources (optimism, self-efficacy, resilience, hope) were more engaged in their studies and demonstrated a higher grade point average than students with few personal resources (Martínez et al., 2019). Similarly, Vietnamese business students with higher personal resources reported greater happiness and higher quality of university life (Tho, 2023). Personal resources such as hope and self-efficacy were most important for students who had only limited access to social and organizational resources and vice versa (Junça Silva et al., 2022). This suggests that personal resources can compensate for a lack of study resources. Finally, a scoping review of Theron (2022) showed that personal resources (e.g., self-confidence, self-efficacy) and personal skills (e.g., talent for learning, time management skills) help students navigate challenges, achieving goals, and enhancing their well-being.
+
+Is there any evidence that students with more personal resources also gain more study resources over time? Even though Bakker et al. (2015) did not test the causal relationship between personal and study resources, they did find that on the days students had access to more personal resources, they reported more study resources, and vice versa. Robayo-Tamayo et al. (2020) investigated the influence of early-day personal resources on end-of-day student engagement through study resources. They used a 5-day quantitative diary study and showed that on the days students felt more self-efficacious and curious, they mobilized more social support from their professors and peers, increasing their engagement.
+
+Lee et al. (2022) argued that social support from peers and teachers (study resources) and self-compassion (i.e., being mindful and kind to oneself — a personal resource) would be reciprocally related. Although the design of their study could not test (reversed) causal effects, they did find a positive link between social support and self-compassion. In addition, both resources were positively related to academic engagement and negatively related to academic burnout. Finally, it can be argued that students who believe in themselves and think they have control over their study environment are more likely to proactively ask for resources from others. Indeed, Tho (2023) showed that students with more personal resources (hope, optimism, self-efficacy, and resilience) were more likely to engage in study crafting, i.e., they took the personal initiative to increase their social and structural study resources.
+
+Proposition 4: Personal resources such as optimism, self-efficacy, hope, and resilience have a reciprocal relationship with study resources.
+
+SD–R theory further proposes that, like study resources, personal resources can moderate the negative impact of study demands on student well-being. In the organizational context, several studies have shown that personal resources alleviate the impact of job demands on well-being (e.g., Bakker & Sanz-Vergel, 2013; Demirović Bajrami et al., 2022). However, in the context of higher education, most research has focused on mediating effects, with limited literature available that provides evidence for a moderating effect of personal resources.
+
+In one of the few studies available, ‘t Mannetje et al. (2021) used interviews to explore the personal resources high-achieving honors students rely on to perform well in a demanding academic environment. This study across three Dutch universities showed that several personal resources, including self-direction, inquiry-mindedness, and perseverance, were crucial for achieving academic success and helped students cope with the demands they faced. Further, a recent study by Martin et al. (2023) investigated the roles of self-perceived adaptability and fluid reasoning, which both can be classified as personal resources in an educational setting. The authors hypothesized that students with higher levels of adaptability and fluid reasoning would be less prone to experiencing the adverse effects of a mandated lockdown, which was considered a study demand. Results showed that fluid reasoning (but not adaptability) buffered the unfavorable effects of the lockdown on self-efficacy. In line with JD–R and SD–R models, a boost effect was also observed, indicating that fluid reasoning was a more important resource with a stronger impact on self-efficacy when the demands were high rather than low (Martin et al., 2023).
+
+Proposition 5: Similar to study resources, personal resources moderate the impact of study demands on student well-being.
+
+Proactive Self-Enhancing Study Behaviors Producing Gain Spirals
+
+The previous section has shown that study demands and resources have unique as well as multiplicative effects on student well-being. A critical insight in JD–R theory is that individuals do not merely respond to the characteristics of their environment, but rather may take initiative to actively influence this environment (Bakker, 2017; Demerouti & Bakker, 2024). Accordingly, engaged individuals are motivated to proactively shape the design of their tasks and social environment. This phenomenon is called crafting — the proactive adjustments individuals make in their tasks and social relationships (Wrzesniewski & Dutton, 2001) or more broadly in their demands and resources (Tims & Bakker, 2010) to enhance the meaning of their activities and to create a better fit between their personal abilities, preferences, and the situation. Several reviews and meta-analyses have shown that job crafting has a range of positive consequences in the organizational context, including increased engagement, meaningfulness, task performance, and prosocial behavior (Demerouti & Bakker, 2024; Lazazzara et al., 2020; Rudolph et al., 2017). Thus, individuals who proactively increase their challenging demands (e.g., start a new project), reduce their hindrance demands (e.g., reduce workload and negative interactions with others), and/or actively increase their resources (e.g., ask for feedback, seek support) are more likely to feel energized and enthusiastic about their work, and consequently perform better (Demerouti & Bakker, 2024), creating a positive and upward spiral.
+
+In SD–R theory, we propose that students may also engage in proactive self-enhancing behaviors (e.g., study crafting), to optimize their study environment, engagement, and performance. They are more likely to do so when they feel well and are enthusiastic about their studies (see Fig. 1). By taking the personal initiative to influence their study environment, students can sustain their engagement and create an upward spiral of resources, engagement, and study performance (Llorens et al., 2007). Bindl and Parker (2011) have defined such proactive behavior as “self-initiated, anticipatory action aimed at changing either the situation or oneself.” (p. 567). Examples in the study context include taking the initiative to set clear study goals, proactive problem-solving, and proactively using one’s strengths and improving one’s deficits. Students who proactively build a network during their studies are more likely to approach each other for help when needed, and adapt to university life (Brouwer & Engels, 2022). Moreover, students’ characteristics and behaviors influence other students’ academic performance and social outcomes — known as peer effects (Cao et al., 2024; Yeung & Nguyen-Hoang, 2016).
+
+Recent research has shown that students engage in feedback-seeking behaviors, study crafting, and playful study design and that such behaviors can have favorable consequences for student engagement and outcomes. Using a weekly diary design, Körner et al. (2021) investigated study crafting among higher education students. Findings showed that weekly study resources (decision latitude, social support from lecturers, and support from fellow students) were positively related to weekly study crafting via weekly student engagement. Thus, study resources fostered energy and enthusiasm in students, which, in turn, made them more likely to proactively increase their study challenges, try to learn new things, and ask lecturers for feedback about their performance.
+
+Tho (2023) investigated the consequences of study crafting (asking for feedback, taking on extra study tasks) among a large sample of Vietnamese undergraduate business students. Results of this study showed that study crafting was an important determinant of satisfaction with study life, when students believed that they had control over their study environment. Particularly when students’ personal resources (e.g., hope, optimism) were high, study crafting was positively related to indicators of happiness and satisfaction with study life. In a similar vein, Mülder et al. (2022) conducted a study among almost 3000 German university students and found that study crafting was positively related to well-being. Students who proactively improved their study demands and resources were more engaged with their studies, were less exhausted, and reported higher overall well-being (e.g., quality of life, satisfaction with health and personal relationships).
+
+Luu and Vo (2020) conducted a study among medical students and their teachers. They used observations and video recordings of medical teachers’ authentic leadership (e.g., observations of self-awareness and relational transparency) and student reports of study crafting. The results showed that teacher authentic leadership was positively related to student crafting behaviors. Thus, when teachers were more authentic, students were more likely to proactively seek study challenges and resources. Postema et al. (2022) conducted a study among Dutch student-athletes and investigated possible spillover effects of study crafting to the sports domain. Consistent with an enrichment perspective, results showed that on the days students engaged in study crafting (increasing challenges, increasing resources, and cognitive crafting), they experienced higher levels of activated positive affect (e.g., feeling inspired, excited, alert) and increased student engagement. Positive affect also had a spillover effect on the sports domain: students who experienced more positive emotions because of study crafting showed better training performance as evident from self- and coach-ratings.
+
+Körner et al. (2023) evaluated a study crafting intervention’s effectiveness by randomly assigning students to a training or control group. Study crafting and student engagement and exhaustion were assessed before and after the intervention. Results showed that students learned to optimize their study demands and resources (i.e., study crafting), and this increased their levels of student engagement and decreased their levels of exhaustion.
+
+Liu, Zhang, et al. (2023) investigated another proactive study behavior called playful study design — a cognitive-behavioral approach to study tasks through which tasks and/or activities are redesigned to be more fun and more challenging (Scharp et al., 2023). They used a day reconstruction method and collected data from university students across five consecutive days. The results showed that playful study design fostered the daily experiences of flow and flourishing, particularly under difficult conditions (when students often ruminated about COVID-19). In another study, Wang et al. (2023) investigated the impact of weekly playful study design on student engagement and goal attainment. This study showed that students were highly engaged and successful in achieving their goals when they redesigned their study tasks to be more playful. For example, by guessing the hypothesized outcomes, segmenting tasks to increase the challenge of studying, or by using cognitive mind maps for summarizing the literature, students increased their own engagement and performed better. The effects were strongest for students who were high (vs. low) in proactive personality — they benefitted most from using playful study design. These findings are consistent with JD–R theory and previous findings in the work context showing that job crafting and playful work design have favorable effects on engagement, creativity, and performance (Bakker, Demerouti, & Sanz-Vergel, 2023; Bakker & Scharp, 2024; Oprea et al., 2019).
+
+Proposition 6: Students proactively optimize their own study demands and resources through study crafting and playful study design.
+
+Proposition 7: Student engagement can instigate a gain spiral of proactive, self-enhancing study behaviors, (study and personal) resources, and optimal study demands.
+
+Reactive Self-Undermining Study Behaviors Producing Loss Spirals
+
+Whereas proactive study behaviors play an important role in the gain spiral of SD–R theory, self-undermining behaviors play an important role in the loss spiral (see Fig. 1). Self-undermining refers to certain undesirable behaviors in response to stress, creating obstacles (Bakker & Wang, 2020). One example is that a student experiencing strain because of an upcoming exam and accompanying high study demands may feel upset and irritated and creates interpersonal conflicts with other students. Students may also have trouble concentrating and, therefore, create a backlog in their study tasks. Self-undermining behaviors create hindrances or new, additional demands that add up to the demands that already exist (Bakker & Costa, 2014).
+
+Widlund et al. (2021) used an accelerated longitudinal study design to investigate differences in Finnish adolescents’ developmental trajectories of school burnout and engagement and their associations with students’ progression in mathematics performance and educational aspirations. One of the trajectory profiles the authors identified was that of declining academic well-being (low and declining engagement, high and increasing burnout). Students in this group started with high performance and aspirations, but they progressed at a slower rate in mathematics and lowered their aspirations over time. Widlund and her colleagues explained these findings by self-undermining behaviors. They argued that self-undermining may have taken the form of poor communication (cf. Bakker & Wang, 2020), which reduced the availability of study resources. Students with elevated stress levels may have fallen behind in their studies, and possibly created conflict with peers and teachers because of their own feelings of irritation and impatience. This, in turn, creates more demands over time (Bakker & Costa, 2014).
+
+Previous research has provided evidence for such a loss spiral by revealing a reciprocal relationship between school stress and students’ perceived conflicts with teachers (Kiuru et al., 2020). In their weekly diary study among German higher education students, Körner et al. (2021) found that in the weeks students faced higher study demands (time pressure, overload, complex study tasks), they were more likely to feel emotionally exhausted and consequently more likely to show self-undermining behaviors. Particularly in the weeks students faced complex assignments and needed to process a lot of information, they were drained by their studies and reported a backlog in their study tasks, more mistakes, and poorer communication (i.e., self-undermining). Jia et al. (2021) conducted a study on self-handicapping among Chinese medical students during the COVID-19 crisis. Self-handicapping shows some conceptual overlap with self-undermining. It refers to the process of finding or creating barriers to achieving successful study performance — with the aim of safeguarding one’s sense of self-competence (Jones & Berglas, 1978). The results of this study showed that students who experienced higher levels of academic stress (e.g., nervousness and anxiety for the final exams) were more likely to procrastinate and consequently showed more self-handicapping behaviors (e.g., drinking alcohol and deliberately losing learning materials).
+
+Research has also shown that procrastination is predictive of future stress, through maladaptive coping (Sirois & Kitner, 2015). Tice and Baumeister (1997) assert that procrastination is a self-undermining behavior pattern characterized by short-term benefits (such as rest), but long-term costs (such as exhaustion). Their study examined the occurrence and effects of procrastination on physical symptoms and stress, among a small sample of higher education students. The findings showed that at the beginning of the semester, students who procrastinated reported lower levels of stress and fewer illnesses compared to students who did not procrastinate, indicating short-term benefits. However, toward the end of the term, students who procrastinated reported higher stress levels and more illnesses, as well as lower academic performance. This supports the idea of a loss spiral in which students who show self-undermining behaviors (creating a backlog, avoidance coping) create more stress over time.
+
+A recent study was conducted among a large sample of German university students to investigate the relationship between academic procrastination and learning-related anxiety and hope. The study was conducted with 6-week intervals at the beginning, middle, and end of the academic semester (Gadosey et al., 2023). The results showed that academic procrastination at the start of the academic semester predicted learning-related anxiety and low levels of learning-related hope during the middle of the semester, which, in turn, resulted in even more procrastination toward the end of the semester. These findings suggest that higher tendencies to procrastinate could lead to low levels of hope over time and that students may end up in a spiral of more self-undermining behavior. Conversely, the study reports that lower tendencies to procrastinate may lead to increasing levels of hope, which relates to the gain spirals mentioned earlier.
+
+These results are consistent with previous findings in an organizational context. For example, Bakker and Wang (2020) showed in a series of studies that individuals who were exposed to higher job demands felt more exhausted and were more likely to engage in self-undermining behaviors. Using a weekly diary design, Bakker, Xanthopoulou, and Demerouti (2023) argued and found that weekly emotional demands and workload were predictive of weekly burnout complaints, and indirectly predictive of self-undermining and dysfunctional coping (avoidance and passive coping). These effects were stronger for individuals who already scored relatively high (vs. low) on chronic burnout at the start of the study. Providing additional evidence for a loss cycle, Roczniewska and Bakker (2021) found that employees who felt lower on energetic resources at the start of the day were more likely to engage in self-undermining behaviors and less likely to engage in job crafting, which consequently undermined their daily functioning.
+
+Proposition 8: Study demands and strain may lead to reactive, maladaptive self-regulation cognitions and behaviors (self-undermining).
+
+Proposition 9: Study-related strain can instigate a loss spiral of self-undermining and study demands.
+
+Student and Higher Education Outcomes
+
+Study characteristics, like job characteristics, can have an important impact on student burnout and engagement and indirectly influence student and higher education outcomes. Student burnout and engagement are positioned as two central well-being constructs in SD–R theory because of their significant impact on student behaviors as well as student and higher education outcomes (see Fig. 1).
+
+Research has shown that demands and resources directly relate to key student outcomes. A study among higher education students found that hindering study demands (e.g., high workload, inadequate comprehension in classes) adversely affected students’ academic achievement (i.e., GPA scores). In contrast, challenging study demands (e.g., perception of the degree of work difficulty in classes) showed a positive relationship with students’ academic achievement and were negatively related to students’ hours of withdrawal or disengagement (Travis et al., 2020). Study resources have a positive impact on student outcomes. For instance, resources such as student support (instructional, peer, and technical support) were shown to have a positive impact on students’ satisfaction with their study course (Lee et al., 2011), while support from family and friends directly affected students’ academic achievement (Saeed et al., 2023).
+
+Research among students has also provided evidence of burnout and engagement’s unique and differential effects on various key outcomes. Such outcomes include, but are not limited to, academic performance (e.g., GPA score) (Schreiber & Yu, 2016), life satisfaction (Lesener et al., 2020), intention to drop out and satisfaction with studies (Álvarez-Pérez et al., 2021; Mostert & Pienaar, 2020), psychological well-being (Chaudhry et al., 2024), students’ likelihood of being satisfied with the higher education experience, and pursuing postgraduate studies (Öz & Boyacı, 2021).
+
+However, the relationship between student burnout, engagement, and student outcomes is not necessarily direct or linear. Rather, it is a result of the dynamic interplay of different factors, influenced by both antecedents and outcomes as outlined in the health impairment and the motivational processes. Öz and Boyacı (2021) conducted a study to examine the association between student engagement and outcomes. Their findings showed that engagement explained variance in students’ GPA scores and increased the likelihood that students were satisfied with their experience at the university, as well as the likelihood that students pursued a postgraduate degree. This is consistent with the idea that activated positive emotions like energy and enthusiasm encourage active involvement with goal pursuits and with the environment (Lyubomirsky et al., 2005).
+
+In addition, various studies have shown that student burnout and engagement can act as mediators between study-related antecedents and outcomes in SD–R theory (cf. Fig. 1). For example, a study among part-time employed students (Laughman et al., 2016) investigated the relationship between work–school conflict and job outcomes. Their findings showed that work–school conflict predicted work outcomes and that burnout mediated these effects. Similarly, Chaudhry et al. (2024) provided evidence for the mediating effect of student engagement. Their study among management students investigated the relationship between various types of student support and psychological well-being. Their findings showed that academic engagement partially mediated the relationship between a positive internal team environment, family support, and psychological well-being. Moreover, academic engagement fully mediated the relationship between institutional support and psychological well-being.
+
+Körner et al. (2021) specifically investigated the mediating role of engagement and exhaustion in the relationship between study characteristics and study crafting and self-undermining behaviors among students. Their findings revealed a positive relationship between study resources and study crafting mediated by engagement, as well as a positive relationship between study demands and self-undermining mediated by exhaustion. Another recent survey among medical students found that students with a high risk of burnout tend to have a lower academic performance rate (Ilić & Ilić, 2023). Interestingly, this study also found that students with higher GPAs tended to have a higher risk of burnout — highlighting the intricate dynamics between these relationships.
+
+We conclude that when students feel full of energy and are really enthusiastic about their studies (i.e., engaged), they are able to invest considerable cognitive and energetic resources in their studies. Consistent with this perspective, SD–R theory proposes that engaged students are more likely to be proactive (e.g., engage in study crafting, playful work design, and strengths use) and function better. In contrast, when students feel exhausted and cynical about their studies (i.e., burnout), they do not have the psychological resources to invest effort in their studies. As a consequence, they may start to undermine themselves and enter a loss spiral. This has negative implications for their own performance and for the higher education institution at large. Therefore, using previous SD–R models and theory, we may predict student and higher education outcomes, including academic performance, class attendance, learning activities, active participation, and inclination to drop out (Bakker et al., 2015; Loyens et al., 2007).
+
+Proposition 10: Study demands and resources are directly related to student and higher education outcomes and indirectly related through the mediation of student burnout and engagement.
+
+Recommendations for Research
+
+Now that we have formulated SD–R theory, it is important to set an agenda for future research. Rigorous testing of the propositions put forward in this article is needed. SD–R theory (graphically depicted in Fig. 1) can be used to guide such research. Studies could test health impairment versus motivational processes and investigate whether the two processes are indeed unique and predict different outcomes. For example, SD–R theory predicts that study demands are most predictive of physical health and class absence, whereas study resources are most predictive of grades and university dropout. In addition, research should test statistical interactions between study demands and study resources. Are time pressure, interpersonal conflicts, and complex assignments less stressful if students have access to an abundance of study resources (e.g., support from professors, career opportunities) and personal resources (e.g., optimism, self-efficacy)? Do study resources such as study skills workshops and extracurricular activities particularly have a positive influence on engagement and performance when study challenges are high? Another stream of research may test the loss and gain spirals proposed in SD–R theory (Bakker, Demerouti, & Sanz-Vergel, 2023; Bakker, Xanthopoulou, & Demerouti, 2023). Are students with burnout complaints more likely to show self-undermining and procrastination, and does this lead to a further increase in study demands? Are students high in engagement more likely to craft their studies and to proactively optimize their demands and resources leading to more engagement? Does a playful approach of study tasks and assignments facilitate persistence and help students deal with daily hindrance demands (e.g., repetitive study tasks, financial uncertainty, higher education bureaucracy)?
+
+It should be noted that various pathways in SD–R theory are reciprocal, implying that scholars can use most variables as predictors and outcomes. Thus, next to using study demands as predictors of strain and self-undermining, study demands could be used as outcomes of strain and self-undermining. Similarly, study resources can be modeled and tested as predictors and outcomes of student engagement and study crafting. In short, testing the basic hypotheses in SD–R theory has just started, and we need a range of new studies to further establish its validity. Studies may apply longitudinal research designs with months or years between the assessments, or “shortitudinal” designs (Dormann & Griffin, 2015) with daily or weekly assessments so that causal and reversed causal effects can be modeled. Shortitudinal studies collect data over short periods of time, typically a few days or weeks with frequent assessments conducted daily. They allow examining changes in variables over time and capture short-term fluctuations in student experiences and behaviors. We also need rigorous qualitative research to explore the various study demands and resources students are exposed to and to explore their unique experiences in various higher education settings.
+
+Future research may also extend SD–R theory and explore new avenues. Here, we briefly discuss three possible research directions, namely (a) trait versus state effects in SD–R theory; (b) the impact of the higher education climate and lecturer influence; and (c) an expanded SD–R theory.
+
+Traits Versus States in SD–R Theory
+
+Scholars in educational psychology have typically relied on self-report questionnaires and cross-sectional and longitudinal research designs to investigate student well-being and performance. In these studies, the person is the unit of analysis and the statistical analyses are based on differences between persons (e.g., their personalities, or their typical (“trait-like”) study environment, well-being, and behaviors). An underlying assumption in these studies is that the investigated constructs have some stability over time. However, students’ experiences and behaviors may fluctuate considerably over short periods of time, for example, as a function of daily discussions with peers and professors, participation in group coursework, and engagement in extracurricular activities (Bakker et al., 2015; Doerksen et al., 2014; Xue et al., 2022). Such short-term fluctuations (“states”) can be studied using daily diary designs in which not the person, but the situation is the unit of analysis. Diary studies enable researchers to capture “life as it is lived” (Bolger et al., 2003, p. 597). For example, with the experience sampling method, students may be asked to fill out a brief questionnaire on their smartphone every time they receive a push message. Alternatively, in a daily diary study, students may be requested to fill out a short online questionnaire at the end of every day during a 1- or 2-week period (see Ohly et al., 2010).
+
+In JD–R theory (Bakker, 2015; Bakker, Demerouti, & Sanz-Vergel, 2023), personality is positioned as a trait-level variable that moderates the loss and gain cycles displayed in Fig. 1. Thus, the impact of daily demands and resources on well-being and study behaviors, as well as the impact of daily (proactive or reactive) behaviors on demands and resources, is proposed to be different for individuals with different personalities (see, for example, Bakker & Oerlemans, 2016). In an educational context, this may mean that students high (vs. low) in extraversion (i.e., likely to make contact with other students and be at the center of attention) benefit more from daily social resources in their study environment (feedback, social support). Such social interactions could result in feeling more engaged while studying. There is some preliminary evidence for the proposition that personality traits moderate daily study processes.
+
+Longua et al. (2009) used a 30-day diary study to examine the influence of personality on how students responded to combinations of negative and positive daily events (e.g., progress on study tasks, conflicts with friends or family). They found that positive daily events buffered the effect of negative daily events on negative affect (e.g., feeling angry, jittery, nervous) for students low in neuroticism and those high in extraversion, but not for students high in neuroticism or low in extraversion. Positive daily events also buffered the impact of negative daily events on night-time stress, but only for students low in neuroticism. Bakker et al. (2015) conducted a study among psychology students and found that students’ weekly study resources (e.g., social support, feedback) and personal resources (self-esteem, optimism, self-efficacy) facilitated their student engagement (vigor, dedication, and absorption). Student engagement, in turn, was predictive of observed learning activities during the weekly educational group meetings and contributed significantly to the course grade. Moreover, as hypothesized using a SD–R theoretical perspective, the results showed that the impact of study and personal resources on student engagement was stronger for students high versus low in openness to new experiences. Future research should test other personality factors (e.g., conscientiousness, proactive personality) as cross-level moderators of the impact of daily study demands and resources on student well-being, behaviors, and outcomes.
+
+The Higher Education Climate and Lecturer Influence
+
+The abovementioned research recommendations focus on individual students — their perceptions of study demands and resources, their study behaviors, and their well-being. However, students are part of a system and may also be influenced by their teachers or professors, or by the overall climate of the educational institute where they study. The higher education climate refers to “factors that serve as conditions for learning and that support physical and emotional safety, connection and support, and engagement” (U.S. Department of Education, Office of Safe and Healthy Students, 2016, p. 1). When students perceive that the climate in their institution is psychologically safe, they have a stronger sense of belonging (Allen et al., 2018) and their academic achievements are better (Bear et al., 2011). We argue that the higher education climate is predictive of study demands and resources. In institutes with a psychologically safe climate, students can be expected to be exposed to reasonable study demands and have access to sufficient study resources (cf. Dollard & Bakker, 2010). New research is needed to test psychosocial safety climate as a higher-level variable that influences the study environment, and indirectly contributes to student well-being and performance.
+
+Research with the JD–R theory has shown that leaders may influence the prevalence of job demands and resources, employee well-being, and employee proactive behaviors (e.g., Thun & Bakker, 2018; Tummers & Bakker, 2021). When leaders empower their employees and show individual consideration — i.e., supporting their development and providing trust and autonomy — their employees are more likely to take initiative and proactively optimize their own job design. Consequently, employees can feel more engaged and perform better (Bakker, 2022). Mirroring these leader–employee effects in a work context, future research in educational contexts could test the impact of professors and lecturers on students. This is a multilevel effect in which the enthusiastic behaviors and engagement of professors are expected to influence study demands and resources, student well-being, and student behaviors. For example, it can be hypothesized that engaged professors will be best able to inspire students, influence their enthusiasm and vigor (i.e., student engagement), and influence their study performance (Bakker, 2005; Frenzel et al., 2018; Pachler et al., 2019). Vujčić et al. (2022) found that teacher engagement was positively related to student well-being because students were more willing to invest time and energy in study tasks and activities. In addition, teacher engagement will have a positive impact on study resources, because engaged teachers are more willing to help their students — offering support, information, and feedback (cf. Christian et al., 2011; Simbula & Guglielmi, 2013).
+
+Expanding SD–R Theory
+
+We have identified various opportunities for future research, but there are many more options that we will briefly mention here. First, we have indicated that more research on study demands and resources is needed, but students are also confronted with demands and resources in other life domains, including family, self, and sports, for example. Demerouti and Bakker (2023) have recently integrated demands and resources from the home and personal domains and argued that demands in one domain can be buffered or boosted by resources from another domain. In a study context, the impact of family and personal demands (e.g., high expectations, perfectionism) on student burnout may, for example, be buffered by study resources (e.g., social support and feedback from lecturers).
+
+Second, future research is needed to explore how SD–R theory relates to or complements other established motivational theories within the educational context. One potential theory to explore is expectancy-value theory, which posits that an individual’s motivation is influenced by the perceived likelihood of success and the value they place on the potential outcome (Wigfield & Eccles, 2000). This theory could complement SD–R theory by providing a more nuanced understanding of how the study resource of feedback about study performance (e.g., derived from course grades and other indicators of study success) predicts student engagement. In a similar vein, future research could investigate how principles from goal-setting theory could be integrated into SD–R theory. Goal-setting theory proposes that setting specific, challenging, and attainable goals can enhance an individual’s motivation and performance (Locke & Latham, 2002). New research could explore how goal-setting influences students’ ability to manage study demands and proactively use study resources, and how these SD–R strategies indirectly facilitate student engagement. As a final example, it would be interesting to investigate how growth mindset (Dweck, 2006; Yeager & Dweck, 2020) may qualify the impact of daily or weekly study demands and resources on student engagement and performance. Integrating mindset and SD–R theories, it can be hypothesized that study challenges and resources will have a stronger positive impact on engagement and performance for students with a growth mindset, because they tend to view challenges as opportunities to learn and improve, rather than threats. They invest more effort, proactively try new strategies, and seek resources when needed. Exploring the potential synergies between SD–R theory and other motivational theories in the educational psychology literature could contribute to developing more comprehensive and effective interventions for supporting student well-being.
+
+Third and finally, it would be interesting and important to investigate the role of other proactive behaviors students may use next to study crafting and playful study design, and to integrate these behaviors in the SD–R theory. For example, research has elucidated that when students proactively use their character strengths, they report more personal resources (hope, resilience), improved happiness and subjective well-being, and reduced stress and depressive complaints (e.g., Ghielen et al., 2018). When students use their strengths (e.g., kindness, courage, creativity), they can be authentic and are more likely to succeed, which boosts their personal resources. In a similar vein, a recent study has shown that when students use proactive vitality management — i.e., individual, goal-oriented behavior aimed at managing physical and mental energy to promote optimal functioning (Op den Kamp et al., 2020), they experience more meaning and improved subjective well-being (Zhang et al., 2024).
+
+Practical Recommendations
+
+SD–R theory has several implications for practice. Here, we recommend three practical approaches that can be considered. First, the SD–R theory offers a clear framework for the assessment of student well-being and its possible causes and consequences. Higher education institutions may want to include various specific study demands and resources in their underlying survey instruments to assess drivers of student burnout, engagement, and critical outcomes (e.g., information about class attendance, course grades, dropouts, and career progress). Once a higher education institution or faculty has made a clear diagnosis of their students’ levels of study demands and resources and their predictive validity for student well-being, behaviors, and study outcomes, management could detect groups of students with the most versus least favorable study demands and resources and initiate interventions at the group or department level. For example, departments in which students report very high time pressure could take measures by adjusting courses and grading, or by offering their students training in time management, goal setting, and new efficient ways of dealing with high quantities of complex information in a short time. Departments in which students report low opportunities for skill variety could try to initiate novel ways of educating their students.
+
+A second practical implication is that student counsellors may try to reduce self-undermining behaviors and increase proactive study behaviors through training and workshops (proven effective in job crafting interventions; for a meta-analysis, see Oprea et al., 2019). A recent study among students has provided evidence for the effectiveness of a study crafting intervention (Körner et al., 2023), showing that students can learn to optimize their own study demands and resources, and increase their own well-being. Furthermore, workshops and trainings could be organized to reduce burnout and self-undermining behaviors. These trainings may first use rational emotive training therapy or mindfulness (Madigan et al., 2023), and then explain how self-undermining behaviors may be warning signs of burnout. Once students have regained energy in several sessions, they may learn about study crafting to optimize their study design so that the root cause of their burnout complaints is addressed as well.
+
+Third, higher education institutions may provide interventions for lecturers and professors to facilitate positive crossover of engagement and optimization of the study design (study demands and resources). In trainings and workshops, professors may learn about SD–R theory, role-modeling, and the crossover of teacher engagement to students (cf. Bakker, 2005, 2022). Through exercises, lecturers can learn about possible ways to increase study resources for students and to stimulate proactive behaviors such as study crafting and playful study design. Research in the work context has suggested that leaders who intellectually challenge their employees and inspire and empower them can indeed increase employee proactive behaviors and engagement (Bakker, Hetland, et al., 2023).
+
+Conclusion
+
+In this article, we introduced the Study Demands–Resources theory to explain various processes that are involved in student well-being (burnout and engagement). We used the well-established Job Demands–Resources theory, previous Study Demands–Resources models, and existing literature on student well-being to develop 10 propositions. Our review showed that students are confronted with a variety of study demands and resources, and that it is crucial to self-regulate the impact of these study characteristics. We identified several studies showing that students can engage in proactive study behaviors, including study crafting and playful study design. Students feel more engaged when they proactively optimize their own job demands and resources and playfully redesign their study tasks to be more fun or more challenging. Higher education institutions’ management, lecturers, professors, and students may use SD–R theory to optimize student well-being and outcomes. We hope that this article will inspire educational psychology scholars, fostering collective efforts to enhance the well-being and academic success of our students.
+
+References
+
+‘t Mannetje, J., Heijne-Penninga, M., Mastenbroek, N., Wolfensberger, M., & Jaarsma, D. (2021). Personal resources conducive to educational success: High achieving students’ perspectives. Journal of the European Honors Council, 5(1), 1–20. https://doi.org/10.31378/jehc.147
+
+Article
+Google Scholar
+
+Allen, H. K., Lilly, F., Green, K. M., Zanjani, F., Vincent, K. B., & Arria, A. M. (2022). Graduate student burnout: Substance use, mental health, and the moderating role of advisor satisfaction. International Journal of Mental Health and Addiction, 20, 1130-1146.
+
+Allen, K., Kern, M. L., Vella-Brodrick, D., Hattie, J., & Waters, L. (2018). What schools need to know about fostering school belonging: A meta-analysis. Educational Psychology Review, 30, 1–34.
+
+Article
+Google Scholar
+
+Aloia, L. S., & McTigue, M. (2019). Buffering against sources of academic stress: The influence of supportive informational and emotional communication on psychological well-being. Communication Research Reports, 36(2), 126–135. https://doi.org/10.1080/08824096.2019.1590191
+
+Article
+Google Scholar
+
+Álvarez-Pérez, P. R., López-Aguilar, D., González-Morales, M. O., & Peña-Vázquez, R. (2021). Academic engagement and dropout intention in undergraduate university students (p. 152102512110636). https://doi.org/10.1177/15210251211063611
+
+Book
+Google Scholar
+
+Bakker, A. B. (2005). Flow among music teachers and their students: The crossover of peak experiences. Journal of Vocational Behavior, 66, 26–44.
+
+Article
+Google Scholar
+
+Bakker, A. B. (2015). Towards a multilevel approach of employee well-being. European Journal of Work and Organizational Psychology, 24(6), 839–843. https://doi.org/10.1080/1359432x.2015.1071423
+
+Article
+Google Scholar
+
+Bakker, A. B. (2017). Strategic and proactive approaches to work engagement. Organizational Dynamics, 46(2), 67–75. https://doi.org/10.1016/j.orgdyn.2017.04.002
+
+Article
+Google Scholar
+
+Bakker, A. B. (2022). The social psychology of work engagement: State of the field. Career Development International, 27, 36–53.
+
+Article
+Google Scholar
+
+Bakker, A. B., & Costa, P. (2014). Chronic job burnout and daily functioning: A theoretical analysis. Burnout Research, 1(3), 112–119. https://doi.org/10.1016/j.burn.2014.04.003
+
+Article
+
+Bakker, A. B., & Demerouti, E. (2007). The Job Demands-Resources model: State of the art. Journal of Managerial Psychology, 22(3), 309–328. https://doi.org/10.1108/02683940710733115
+
+Bakker, A. B., & Demerouti, E. (2024). Job Demands–Resources theory: Frequently-asked questions. Journal of Occupational Health Psychology.
+
+Bakker, A. B., Demerouti, E., & Sanz-Vergel, A. (2023). Job Demands–Resources theory: Ten years later. Annual Review of Organizational Psychology and Organizational Behavior, 10, 25–53.
+
+Bakker, A. B., Demerouti, E., & Sanz-Vergel, A. I. (2014). Burnout and work engagement: The JD–R approach. Annual Review of Organizational Psychology and Organizational Behavior, 1(1), 389–411. https://doi.org/10.1146/annurev-orgpsych-031413-091235
+
+Bakker, A. B., Hetland, J., Kjellevold-Olsen, O., & Espevik, R. (2023). Daily transformational leadership: A source of inspiration for follower performance? European Management Journal, 41, 700–708.
+
+Bakker, A. B., & Oerlemans, W. G. (2016). Momentary work happiness as a function of enduring burnout and work engagement. The Journal of Psychology, 150(6), 755–778. https://doi.org/10.1080/00223980.2016.1182888
+
+Bakker, A. B., & Sanz-Vergel, A. I. (2013). Weekly work engagement and flourishing: The role of hindrance and challenge job demands. Journal of Vocational Behavior, 83(3), 397–409. https://doi.org/10.1016/j.jvb.2013.06.008
+
+Bakker, A. B., Sanz-Vergel, A. I., & Kuntze, J. (2015). Student engagement and performance: A weekly diary study on the role of openness. Motivation and Emotion, 39(1), 49–62. https://doi.org/10.1007/s11031-014-9422-5
+
+Bakker, A. B., & Scharp, Y. S. (2024). It pays to play: Playful work design. In S. Parker, F. Klonek, C. Knight, & F. Zhang (Eds.), Transformative work design: Synthesis and new directions. SIOP Frontier Series.
+
+Bakker, A. B., & Van Wingerden, J. (2021). Do personal resources and strengths use increase work engagement? The effects of a training intervention. Journal of Occupational Health Psychology, 26, 20–30.
+
+Bakker, A. B., & Wang, Y. (2020). Self-undermining behavior at work: Evidence of construct and predictive validity. International Journal of Stress Management, 27(3), 241–251. https://doi.org/10.1037/str0000150
+
+Bakker, A. B., Xanthopoulou, D., & Demerouti, E. (2023). How does chronic burnout affect dealing with weekly job demands? A test of central propositions in JD–R and COR-theories. Applied Psychology: An International Review, 72, 389–410.
+
+Bear, G. G., Gaskins, C., Blank, J., & Chen, F. F. (2011). Delaware School Climate Survey—Student: Its factor structure, concurrent validity, and reliability. Journal of School Psychology, 49(2), 157–174. https://doi.org/10.1016/j.jsp.2011.01.001
+
+Bellini, D., Barbieri, B., Barattucci, M., Mascia, M. L., & Ramaci, T. (2022). The role of a restorative resource in the academic context in improving intrinsic and extrinsic motivation and flow within the Job Demands–Resources Model. International Journal of Environmental Research and Public Health, 19(22), 15263. https://doi.org/10.3390/ijerph192215263
+
+Bindl, U. K., & Parker, S. K. (2011). Proactive work behavior: Forward-thinking and change-oriented action in organizations. In S. Zedeck (Ed.), APA handbook of industrial and organizational psychology, Vol. 2. Selecting and developing members for the organization (pp. 567–598). American Psychological Association.
+
+Chapter
+
+Bolger, N., Davis, A., & Rafaeli, E. (2003). Diary methods: Capturing life as it is lived. Annual Review of Psychology, 54(1), 579–616. https://doi.org/10.1146/annurev.psych.54.101601.145030
+
+Brouwer, J., & Engels, M. C. (2022). The role of prosocial attitudes and academic achievement in peer networks in higher education. European Journal of Psychology of Education, 37(2), 567–584.
+
+Bücker, S., Nuraydin, S., Simonsmeier, B. A., Schneider, M., & Luhmann, M. (2018). Subjective well-being and academic achievement: A meta-analysis. Journal of Research in Personality, 74, 83–94.
+
+Bumbacco, C., & Scharfe, E. (2023). Why attachment matters: First-year post-secondary students’ experience of burnout, disengagement, and drop-out. Journal of College Student Retention: Research, Theory & Practice, 24(4), 988–1001.
+
+Calderwood, C., & Gabriel, A. S. (2017). Thriving at school and succeeding at work? A demands-resources view of spillover processes in working students. Journal of Vocational Behavior, 103, 1–13.
+
+Cao, Y., Zhou, T., & Gao, J. (2024). Heterogeneous peer effects of college roommates on academic performance. Nature Communications, 15, 4785.
+
+Chaudhry, S., Tandon, A., Shinde, S., & Bhattacharya, A. (2024). Student psychological well-being in higher education: The role of internal team environment, institutional, friends and family support and academic engagement. PLoS One, 19(1), e0297508. https://doi.org/10.1371/journal.pone.0297508
+
+Cheng, J., Zhao, Y. Y., Wang, J., & Sun, Y. H. (2020). Academic burnout and depression of Chinese medical students in the pre-clinical years: The buffering hypothesis of resilience and social support. Psychology, Health & Medicine, 25, 1094–1105.
+
+Cho, S., Lee, M., & Lee, S. M. (2023). Burned-out classroom climate, intrinsic motivation, and academic engagement: Exploring unresolved issues in the Job Demands-Resources Model. Psychological Reports, 126(4), 1954–1976. https://doi.org/10.1177/00332941211054776
+
+Christian, M. S., Garza, A. S., & Slaughter, J. E. (2011). Work engagement: A quantitative review and test of its relations with task and contextual performance. Personnel Psychology, 64, 89–136.
+
+Cilliers, J. R., Mostert, K., & Nel, J. A. (2018). Study demands, study resources and the role of personality characteristics in predicting the engagement of first-year university students. South African Journal of Higher Education, 32(1). https://doi.org/10.20853/32-1-1575
+
+Clements, A. J., & Kamau, C. (2018). Understanding students’ motivation towards proactive career behaviours through goal-setting theory and the job demands-resources model. Studies in Higher Education, 43(12), 2279–2293. https://doi.org/10.1080/03075079.2017.1326022
+
+Collie, R. J., Martin, A. J., Malmberg, L., Hall, J., & Ginns, P. (2015). Academic buoyancy, student’s achievement, and the linking role of control: A cross-lagged analysis of high school students. British Journal of Educational Psychology, 85(1), 113–130. https://doi.org/10.1111/bjep.12066
+
+Demerouti, E., & Bakker, A. B. (2023). Job demands-resources theory in times of crises: New propositions. Organizational Psychology Review, 13(3), 209–236. https://doi.org/10.1177/20413866221135022
+
+Demerouti, E., & Bakker, A. B. (2024). Job crafting: A powerful job redesign approach. In M. C. W. Peeters, J. de Jonge, & T. Taris (Eds.), An introduction to contemporary work psychology. Wiley.
+
+Demerouti, E., Bakker, A. B., Nachreiner, F., & Schaufeli, W. B. (2001). The job demands-resources model of burnout. Journal of Applied Psychology, 86(3), 499–512. https://doi.org/10.1037/0021-9010.86.3.499
+
+Demirović Bajrami, D., Petrović, M. D., Sekulić, D., Radovanović, M. M., Blešić, I., Vuksanović, N., Cimbaljević, M., & Tretiakova, T. N. (2022). Significance of the work environment and personal resources for employees’ well-being at work in the hospitality sector. International Journal of Environmental Research and Public Health, 19(23), 16165.
+
+Doerksen, S. E., Elavsky, S., Rebar, A. L., & Conroy, D. E. (2014). Weekly fluctuations in college student leisure activities and well-being. Leisure Sciences, 36, 14–34.
+
+Dollard, M. F., & Bakker, A. B. (2010). Psychosocial safety climate as a precursor to conducive work environments, psychological health problems, and employee engagement. Journal of Occupational and Organizational Psychology, 83, 579–599.
+
+Dormann, C., & Griffin, M. (2015). Optimal time lags in panel studies. Psychological Methods, 20(4), 489–505. https://doi.org/10.1037/met0000041
+
+Dweck, C. S. (2006). Mindset: The new psychology of success. Random house.
+
+Dyrbye, L. N., Thomas, M. R., Massie, F. S., Power, D. V., Eacker, A., Harper, W., Durning, S., Moutier, C., Szydlo, D. W., Novotny, P. J., Sloan, J. A., & Shanafelt, T. D. (2008). Burnout and suicidal ideation among U.S. medical students. Annals of Internal Medicine, 149, 334–341.
+
+Finn, J. D., & Zimmer, K. S. (2012). Student engagement: What is it? Why does it matter? In S. L. Christenson, A. L. Reschly, & C. Wylie (Eds.), Handbook of research on student engagement (pp. 97–131). Springer Science + Business Media. https://doi.org/10.1007/978-1-4614-2018-7_5
+
+Chapter
+
+Frenzel, A. C., Becker-Kurz, B., Pekrun, R., Goetz, T., & Lüdtke, O. (2018). Emotion transmission in the classroom revisited: A reciprocal effects model of teacher and student enjoyment. Journal of Educational Psychology, 110(5), 628–639.
+
+Gadosey, C. K., Schnettler, T., Scheunemann, A., Bäulke, L., Thies, D. O., Dresel, M., Fries, S., Leutner, D., Wirth, J., & Grunschel, C. (2023). Vicious and virtuous relationships between procrastination and emotions: An investigation of the reciprocal relationship between academic procrastination and learning-related anxiety and hope. European Journal of Psychology of Education.https://doi.org/10.1007/s10212-023-00756-8
+
+Ghielen, S. T. S., Van Woerkom, M., & Meyers, M. C. (2018). Promoting positive outcomes through strengths interventions: A literature review. The Journal of Positive Psychology, 13, 573–585.
+
+Gusy, B., Wörfel, F., & Lohmann, K. (2016). Erschöpfung und Engagement im Studium. Zeitschrift Für Gesundheitspsychologie, 24(1), 41–53. https://doi.org/10.1026/0943-8149/a000153
+
+Haverila, M. J., Haverila, K., & McLaughlin, C. (2020). Variables affecting the retention intentions of students in higher education institutions. Journal of International Students, 10(2), 358–382. https://doi.org/10.32674/jis.v10i2.1849
+
+Hobfoll, S. E., Halbesleben, J. R. B., Neveu, J., & Westman, M. (2018). Conservation of resources in the organizational context: The reality of resources and their consequences. Annual Review of Organizational Psychology and Organizational Behavior, 5(1), 103–128. https://doi.org/10.1146/annurev-orgpsych-032117-104640
+
+Hospel, V., & Galand, B. (2016). Are both classroom autonomy support and structure equally important for students’ engagement? A multilevel analysis. Learning and Instruction, 41, 1–10.
+
+Hu, S. (2010). Reconsidering the relationship between student engagement and persistence in college. Innovative Higher Education, 36(2), 97–106. https://doi.org/10.1007/s10755-010-9158-4
+
+Ilić, I., & Ilić, M. (2023). The relationship between the burnout syndrome and academic success of medical students: A cross-sectional study. Arhiv Za Higijenu Rada I Toksikologiju, 74(2), 134–141. https://doi.org/10.2478/aiht-2023-74-3719
+
+Jackson, E. R., Shanafelt, T. D., Hasan, O., Satele, D. V., & Dyrbye, L. N. (2016). Burnout and alcohol abuse/dependence among US medical students. Academic Medicine, 91(9), 1251–1256. https://doi.org/10.1097/ACM.0000000000001138
+
+Jagodics, B., & Szabó, É. (2023). Student burnout in higher education: A demand-resource model approach. Trends in Psychology, 31(4), 757–776.
+
+Jia, J., Wang, L., Xu, J., Lin, X., Zhang, B., & Jiang, Q. (2021). Self-handicapping in Chinese medical students during the COVID-19 pandemic: The role of academic anxiety, procrastination and hardiness. Frontiers in Psychology, 12, 741821.
+
+Jones, E. E., & Berglas, S. (1978). Control of attributions about the self through self-handicapping strategies: The appeal of alcohol and the role of underachievement. Personality and Social Psychology Bulletin, 4, 200–206.
+
+Junça Silva, A. J., Abreu, P., & Da Rocha Brito, S. M. (2022). The path from social and organizational resources to satisfaction: The mediating role of academic engagement and the moderating role of psychological capital. International Journal of Educational Management, 36(5), 750–765. https://doi.org/10.1108/ijem-01-2022-0041
+
+Kaggwa, M. M., Kajjimu, J., Sserunkuma, J., Najjuka, S. M., Atim, L. M., Olum, R., Tagg, A., & Bongomin, F. (2021). Prevalence of burnout among university students in low- and middle-income countries: A systematic review and meta-analysis. PLoS One, 16(8), e0256402. https://doi.org/10.1371/journal.pone.0256402
+
+Kaya, M., & Erdem, C. (2021). Students’ well-being and academic achievement: A meta-analysis study. Child Indicators Research, 14(5), 1743–1767. https://doi.org/10.1007/s12187-021-09821-4
+
+Kiuru, N., Wang, M.-T., Salmela-Aro, K., Kannas, L., Ahonen, T., & Hirvonen, R. (2020). Associations between adolescents’ interpersonal relationships, school well-being, and academic achievement during educational transitions. Journal of Youth and Adolescence, 49, 1057–1072.
+
+Knight, C., Patterson, M., & Dawson, J. (2017). Building work engagement: A systematic review and meta-analysis investigating the effectiveness of work engagement interventions. Journal of Organizational Behavior, 38, 792–812.
+
+Körner, L. S., Mülder, L. M., Bruno, L., Janneck, M., Dettmers, J., & Rigotti, T. (2023). Fostering study crafting to increase engagement and reduce exhaustion among higher education students: A randomized controlled trial of the STUDYCoach online intervention. Applied Psychology: Health and Well-Being, 15, 776–802.
+
+Körner, L. S., Rigotti, T., & Rieder, K. (2021). Study crafting and self-undermining in higher education students: A weekly diary study on the antecedents. International Journal of Environmental Research and Public Health, 18, 7090.
+
+Kulikowski, K., Potoczek, A., Antipow, E., & Król, S. (2019). How to survive in academia: Demands, resources and study satisfaction among Polish PhD students. Kuram Ve Uygulamada Egitim Bilimleri, 19(4), 65–79. https://doi.org/10.12738/estp.2019.4.005
+
+Laughman, C. A., Boyd, E. M., & Rusbasan, D. (2016). Burnout as a mediator between work–school conflict and work outcomes. Journal of Career Development, 43(5), 413–425. https://doi.org/10.1177/0894845316633523
+
+Lazazzara, A., Tims, M., & de Gennaro, D. (2020). The process of reinventing a job: A meta–synthesis of qualitative job crafting research. Journal of Vocational Behavior, 116(Part B), 103267.
+
+Lee, S. J., Srinivasan, S., Trail, T., Lewis, D. C., & Lopez, S. (2011). Examining the relationship among student perception of support, course satisfaction, and learning outcomes in online learning. The Internet and Higher Education, 14(3), 158–163. https://doi.org/10.1016/j.iheduc.2011.04.001
+
+Lee, T. R., Lee, S., Ko, H., & Lee, S. M. (2022). Self-compassion among university students as a personal resource in the Job Demand-Resources Model. Educational Psychology, 42(9), 1160–1179. https://doi.org/10.1080/01443410.2022.2120600
+
+Lesener, T., Gusy, B., & Wolter, C. (2019). The job demands-resources model: A meta-analytic review of longitudinal studies. Work & Stress, 33, 76–103.
+
+Lesener, T., Pleiss, L. S., Gusy, B., & Wolter, C. (2020). The study demands–resources framework: An empirical introduction. International Journal of Environmental Research and Public Health, 17, 5183.
+
+Liu, M., Gorgievski, M. J., Zwaga, J., & Paas, F. (2023). How entrepreneurship program characteristics foster students’ study engagement and entrepreneurial career intentions: A longitudinal study. Learning and Individual Differences, 101, 102249. https://doi.org/10.1016/j.lindif.2022.102249
+
+Liu, W., Zhang, W., van der Linden, D., & Bakker, A. B. (2023). Flow and flourishing during the pandemic: The roles of strengths use and playful design. Journal of Happiness Studies, 24(7), 2153–2175. https://doi.org/10.1007/s10902-023-00670-2
+
+Llorens, S., Schaufeli, W. B., Bakker, A. B., & Salanova, M. (2007). Does a positive gain spiral of resources, efficacy beliefs and engagement exist? Computers in Human Behavior, 23(1), 825–841. https://doi.org/10.1016/j.chb.2004.11.012
+
+Locke, E. A., & Latham, G. P. (2002). Building a practically useful theory of goal setting and task motivation: A 35-year odyssey. American Psychologist, 57(9), 705–717.
+
+Longua, J., DeHart, T., Tennen, H., & Armeli, S. (2009). Personality moderates the interaction between positive and negative daily events predicting negative affect and stress. Journal of Research in Personality, 43, 547–555.
+
+Loyens, S. M. M., Rikers, R. M. J. P., & Schmidt, H. G. (2007). The impact of students’ conceptions of constructivist assumptions on academic achievement and drop-out. Studies in Higher Education, 32, 581–602.
+
+Luthans, B. C., Luthans, K. W., & Avey, J. B. (2013). Building the leaders of tomorrow. Journal of Leadership & Organizational Studies, 21(2), 191–199. https://doi.org/10.1177/1548051813517003
+
+Luu, T. T., & Vo, T. T. (2020). Crafting study tasks among medical students: The role of authentic medical teachers. BMC Medical Education, 20, 430.
+
+Lyubomirsky, S., King, L. A., & Diener, E. (2005). The benefits of frequent positive affect: Does happiness lead to success? Psychological Bulletin, 131(6), 803–855. https://doi.org/10.1037/0033-2909.131.6.803
+
+Ma, Y., & Bennett, D. (2021). The relationship between higher education students’ perceived employability, academic engagement and stress among students in China. Education + Training, 63, 744–762.
+
+Madigan, D. J., & Curran, T. (2021). Does burnout affect academic achievement? A meta-analysis of over 100,000 students. Educational Psychology Review, 33(2), 387–405. https://doi.org/10.1007/s10648-020-09533-1
+
+Madigan, D. J., Kim, L. E., & Glandorf, H. L. (2023). Interventions to reduce burnout in students: A systematic review and meta-analysis. European Journal of Psychology of Education, 1–27.
+
+Martin, A. J., & Collie, R. J. (2022). The Academic and Cultural Demands-Resources (ACD-R) Framework: Supporting the academic development of culturally and ethnically diverse students. In A. J. Holliman & K. Sheehy (Eds.), Overcoming adversity in education (pp. 249–261). Routledge. https://doi.org/10.4324/9781003180029-22
+
+Chapter
+
+Martin, A. J., Collie, R. J., & Nagy, R. P. (2021). Adaptability and high school students’ online learning during COVID-19: A Job Demands-Resources Perspective. Frontiers in Psychology, 12, 702163. https://doi.org/10.3389/fpsyg.2021.702163
+
+Martin, A. J., Ginns, P., & Collie, R. J. (2023). University students in COVID-19 lockdown: The role of adaptability and fluid reasoning in supporting their academic motivation and engagement. Learning and Instruction, 83, 101712. https://doi.org/10.1016/j.learninstruc.2022.101712
+
+Martínez, I. G., Youssef-Morgan, C. M., Chambel, M. J., & Pinto, A. M. (2019). Antecedents of academic performance of university students: Academic engagement and psychological capital resources. Educational Psychology, 39(8), 1047–1067. https://doi.org/10.1080/01443410.2019.1623382
+
+Mokgele, K. R. F., & Rothmann, S. (2014). A structural model of student well-being. South African Journal of Psychology, 44(4), 514–527. https://doi.org/10.1177/0081246314541589
+
+Mostert, K., & Pienaar, J. (2020). The moderating effect of social support on the relationship between burnout, intention to drop out, and satisfaction with studies of first-year university students. Journal of Psychology in Africa, 30(3), 197–202. https://doi.org/10.1080/14330237.2020.1767928
+
+Mülder, L. M., Schimek, S., Werner, A. M., Reichel, J. L., Heller, S., Tibubos, A. N., Schäfer, M., Dietz, P., Letzel, S., Beutel, M. E., Stark, B., Simon, P., & Rigotti, T. (2022). Distinct patterns of university students study crafting and the relationships to exhaustion, well-being, and engagement. Frontiers in Psychology, 13, 895930.
+
+Munir, J., Faiza, M., Jamal, B., Daud, S., & Iqbal, K. (2023). The impact of socio-economic status on academic achievement. Journal of Social Sciences Review, 3(2), 695–705. https://doi.org/10.54183/jssr.v3i2.308
+
+Naylor, R. (2022). Key factors influencing psychological distress in university students: The effects of tertiary entrance scores. Studies in Higher Education, 47(3), 630–642. https://doi.org/10.1080/03075079.2020.1776245
+
+Ohly, S., Sonnentag, S., Niessen, C., & Zapf, D. (2010). Diary studies in organizational research: An introduction and some practical recommendations. Journal of Personnel Psychology, 9, 79–93.
+
+Op den Kamp, E. M., Bakker, A. B., Tims, M., & Demerouti, E. (2020). Proactive vitality management and creative work performance: The role of self-insight and social support. The Journal of Creative Behavior, 54, 323–336.
+
+Oprea, B. T., Barzin, L., Vîrgă, D., Iliescu, D., & Rusu, A. (2019). Effectiveness of job crafting interventions: A meta-analysis and utility analysis. European Journal of Work and Organizational Psychology, 28, 723–741.
+
+Öz, Y., & Boyacı, A. (2021). The role of student engagement in student outcomes in higher education: Implications from a developing country. International Journal of Educational Research, 110, 101880. https://doi.org/10.1016/j.ijer.2021.101880
+
+Pachler, D., Kuonath, A., & Frey, D. (2019). How transformational lecturers promote students’ engagement, creativity, and task performance: The mediating role of trust in lecturer and self-efficacy. Learning and Individual Differences, 69, 162–172.
+
+Pekrun, R., & Linnenbrink-Garcia, L. (2012). Academic emotions and student engagement. In S. L. Christenson, A. L. Reschly, & C. Wylie (Eds.), Handbook of research on student engagement (pp. 259–282). Springer Science + Business Media. https://doi.org/10.1007/978-1-4614-2018-7_5
+
+Chapter
+
+Postema, A., Van Mierlo, H., Bakker, A. B., & Barendse, M. T. (2022). Study-to-sports spillover among competitive athletes: A field study. International Journal of Sport and Exercise Psychology, 1–24.
+
+Robayo-Tamayo, M., Blanco-Donoso, L. M., Román, F. J., Carmona-Cobo, I., Moreno-Jiménez, B., & Garrosa, E. (2020). Academic engagement: A diary study on the mediating role of academic support. Learning and Individual Differences, 80, 101887.
+
+Robins, T. G., Roberts, R. M., & Sarris, A. (2015). Burnout and engagement in health profession students: The relationships between study demands, study resources and personal resources. Australasian Journal of Organisational Psychology, 8(e1), 1–13. https://doi.org/10.1017/orp.2014.7
+
+Roczniewska, M., & Bakker, A. B. (2021). Burnout and self-regulation failure: A diary study of self-undermining and job crafting among nurses. Journal of Advanced Nursing, 77, 3424–3435.
+
+Rudolph, C. W., Katz, I. M., Lavigne, K. N., & Zacher, H. (2017). Job crafting: A meta-analysis of relationships with individual differences, job characteristics, and work outcomes. Journal of Vocational Behavior, 102, 112–138. https://doi.org/10.1016/j.jvb.2017.05.008
+
+Saeed, K. M., Ahmed, A. S., Rahman, Z. F., & Sleman, N. A. (2023). How social support predicts academic achievement among secondary students with special needs: The mediating role of self-esteem. Middle East Current Psychiatry, 30(1), 1–9. https://doi.org/10.1186/s43045-023-00316-2
+
+Salanova, M., Schaufeli, W. B., Martínez, I. M. M., & Bresó, E. (2010). How obstacles and facilitators predict academic performance: The mediating role of study burnout and engagement. Anxiety, Stress, & Coping, 23(1), 53–70. https://doi.org/10.1080/10615800802609965
+
+Salmela-Aro, K., & Read, S. (2017). Study engagement and burnout profiles among Finnish higher education students. Burnout Research, 7, 21–28.
+
+Salmela-Aro, K., Tang, X., & Upadyaya, K. (2022). Study Demands-Resources model of student engagement and burnout. In A. L. Reschly & S. L. Christenson (Eds.), Handbook of research on student engagement (pp. 77–93). Springer. https://doi.org/10.1007/978-3-031-07853-84
+
+Chapter
+
+Salmela-Aro, K., & Upadyaya, K. (2014). School burnout and engagement in the context of demands-resources model. British Journal of Educational Psychology, 84(1), 137–151.
+
+Scharp, Y., Bakker, A. B., Breevaart, K., Kruup, K., & Uusberg, A. (2023). Playful work design: Conceptualization, measurement, and validity. Human Relations, 76, 509–550.
+
+Schaufeli, W. B., & Bakker, A. B. (2004). Job demands, job resources, and their relationship with burnout and engagement: A multi-sample study. Journal of Organizational Behavior, 25(3), 293–315. https://doi.org/10.1002/job.248
+
+Schaufeli, W. B., Salanova, M., González-Romá, V., & Bakker, A. B. (2002). The measurement of engagement and burnout: A two sample confirmatory factor analytic approach. Journal of Happiness Studies, 3(1), 71–92. https://doi.org/10.1023/A:1015630930326
+
+Schreiber, B., & Yu, D. (2016). Exploring student engagement practices at a South African university: Student engagement as a reliable predictor of academic performance. South African Journal of Higher Education, 30(5). https://doi.org/10.20853/30-5-593
+
+Seibert, G. S., Bauer, K. N., May, R. W., & Fincham, F. D. (2017). Emotion regulation and academic underperformance: The role of school burnout. Learning and Individual Differences, 60, 1–9.
+
+Simbula, S., & Guglielmi, D. (2013). I am engaged, I feel good, and I go the extra-mile: Reciprocal relationships between work engagement and consequences. Journal of Work and Organizational Psychology, 29(3), 117–125.
+
+Sirois, F. M., & Kitner, R. (2015). Less adaptive or more maladaptive? A meta–analytic investigation of procrastination and coping. European Journal of Personality, 29(4), 433–444.
+
+Theron, B. (2022). Demands and resources experienced by first-year students in a South African higher education institute: Developing and testing an integrated framework (Unpublished Doctoral thesis). North-West University.
+
+Tho, N. D. (2023). Business students’ psychological capital and quality of university life: The moderating role of study crafting. Journal of Education and Training, 65(1), 163–177. https://doi.org/10.1108/et-05-2022-0176
+
+Thun, S., & Bakker, A. B. (2018). Empowering leadership and job crafting: The role of employee optimism. Stress and Health, 34(4), 573–581. https://doi.org/10.1002/smi.2818
+
+Tice, D. M., & Baumeister, R. F. (1997). Longitudinal study of procrastination, performance, stress, and health: The costs and benefits of dawdling. Psychological Science, 8, 454–445.
+
+Tims, M., & Bakker, A. B. (2010). Job crafting: Towards a new model of individual job redesign. South African Journal of Industrial Psychology, 36(2), 841. https://doi.org/10.4102/sajip.v36i2.841
+
+Travis, J., Kaszycki, A., Geden, M., & Bunde, J. (2020). Some stress is good stress: The challenge-hindrance framework, academic self-efficacy, and academic outcomes. Journal of Educational Psychology, 112(8), 1632–1643. https://doi.org/10.1037/edu0000478
+
+Tummers, L., & Bakker, A. B. (2021). Leadership and Job Demands-Resources theory: A systematic review. Frontiers in Psychology, 12, 722080. https://doi.org/10.3389/fpsyg.2021.722080
+
+Tuominen-Soini, H., & Salmela-Aro, K. (2014). Schoolwork engagement and burnout among Finnish high school students and young adults: Profiles, progressions, and educational outcomes. Developmental Psychology, 50, 649–662.
+
+Turhan, D., Schnettler, T., Scheunemann, A., Gadosey, C. K., Kegel, L. S., Bäulke, L., Thies, D. O., Thomas, L., Buhlmann, U., Dresel, M., Fries, S., Leutner, D., Wirth, J., & Grunschel, C. (2022). University students’ profiles of burnout symptoms amid the COVID-19 pandemic in Germany and their relation to concurrent study behavior and experiences. International Journal of Educational Research, 116, 102081. https://doi.org/10.1016/j.ijer.2022.102081
+
+U.S. Department of Education, & Office of Safe and Healthy Students. (2016). Quick guide on making school climate improvements. Author.
+
+Van Zyl, A. (2016). The contours of inequality: The links between socio-economic status of students and other variables at the University of Johannesburg. Journal of Student Affairs in Africa, 4(1), 1–13. https://doi.org/10.14426/jsaa.v4i1.141
+
+Vansteenkiste, M., Sierens, E., Soenens, B., Luyckx, K., & Lens, W. (2009). Motivational profiles from a self-determination perspective: The quality of motivation matters. Journal of Educational Psychology, 101(3), 671–688.
+
+Vujčić, M. T., Garcia-Garzon, E., Gonul, B., & Gioaba, I. (2022). From teachers’ work engagement to pupils’ positive affect: A weekly diary study on the role of pupils’ autonomous motivation. Applied Research Quality Life, 17, 613–633.
+
+Wang, H., Ren, Y., & Liu, W. (2023). A weekly diary study on playful study design, study engagement, and goal attainment: The role of proactive personality. Journal of Happiness Studies, 24(1), 159–184.
+
+Widlund, A., Tuominen, H., & Korhonen, J. (2021). Development of school engagement and burnout across lower and upper secondary education: Trajectory profiles and educational outcomes. Contemporary Educational Psychology, 66, 1–13.
+
+Wigfield, A., & Eccles, J. S. (2000). Expectancy–value theory of achievement motivation. Contemporary Educational Psychology, 25(1), 68–81. https://doi.org/10.1006/ceps.1999.1015
+
+Wilson, E. V., & Sheetz, S. D. (2010). A demands-resources model of work pressure in IT student task groups. Computers & Education, 55(1), 415–426. https://doi.org/10.1016/j.compedu.2010.02.006
+
+Wolff, W., Brand, R., Baumgarten, F., Lösel, J., & Ziegler, M. (2014). Modeling students’ instrumental (mis-) use of substances to enhance cognitive performance: Neuroenhancement in the light of job-demands-resources theory. BioPsychoSocial Medicine, 8(1), 2–22. https://doi.org/10.1186/1751-0759-8-12
+
+Wrzesniewski, A., & Dutton, J. E. (2001). Crafting a job: Revisioning employees as active crafters of their work. Academy of Management Review, 26(2), 179–201. https://doi.org/10.2307/259118
+
+Xanthopoulou, D., Bakker, A. B., Demerouti, E., & Schaufeli, W. B. (2009). Reciprocal relationships between job resources, personal resources, and work engagement. Journal of Vocational Behavior, 74, 235–244.
+
+Xue, Q., Yang, J., Wang, H., & Zhang, D. (2022). How and when leisure crafting enhances college students’ well-being: A (quantitative) weekly diary study. Psychology Research and Behavior Management, 15, 273–290.
+
+Yeager, D. S., & Dweck, C. S. (2020). What can be learned from growth mindset controversies? American Psychologist, 75(9), 1269.
+
+Yeung, R., & Nguyen-Hoang, P. (2016). Endogenous peer effects: Fact or fiction? The Journal of Educational Research, 109(1), 37–49. https://doi.org/10.1080/00220671.2014.918528
+
+Zhang, J., Zheng, W., Li, H., Hua, W., & Fu, M. (2024). Meaning matters: Linking proactive vitality management to subjective well-being. Journal of General Psychology, 22, 1–24.
+
+Download references
+
+Author information
+
+Authors and Affiliations
+
+Center of Excellence for Positive Organizational Psychology, Erasmus University Rotterdam, Woudestein Campus, Mandeville Building T16-35, PO Box 1738, 3000, DR, Rotterdam, The Netherlands
+
+Arnold B. Bakker
+
+North-West University, Potchefstroom, South Africa
+
+Arnold B. Bakker & Karina Mostert
+
+Authors
+
+Arnold B. Bakker
+
+View author publications
+
+Search author on:PubMedGoogle Scholar
+
+Karina Mostert
+
+View author publications
+
+Search author on:PubMedGoogle Scholar
+
+Corresponding author
+
+Correspondence to
+Arnold B. Bakker.
+
+Ethics declarations
+
+Conflict of Interest
+
+The authors declare no competing interests.
+
+Additional information
+
+Publisher’s Note
+
+Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+
+Rights and permissions
+
+Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/.
+
+Reprints and permissions
+
+About this article
+
+Cite this article
+
+Bakker, A.B., Mostert, K. Study Demands–Resources Theory: Understanding Student Well-Being in Higher Education.
+Educ Psychol Rev36, 92 (2024). https://doi.org/10.1007/s10648-024-09940-8
+
+Download citation
+
+Accepted: 12 August 2024
+
+Published: 19 August 2024
+
+Version of record: 19 August 2024
+
+DOI: https://doi.org/10.1007/s10648-024-09940-8
+
+Anyone you share the following link with will be able to read this content:
+Get shareable link
+
+Sorry, a shareable link is not currently available for this article.
+
+Copy shareable link to clipboard
+
+Provided by the Springer Nature SharedIt content-sharing initiative
+
+Keywords
+
+Student burnout
+
+Student engagement
+
+Study crafting
+
+Study demands
+
+Study resources
+
+Profiles
+
+Arnold B. BakkerView author profile
+
+Advertisement

@@ -1,0 +1,87 @@
+Source ID: src_040
+Title: NCWIT Scorecard: The Status of Women's Participation in Computing
+
+NCWIT Scorecard: The Status of Women’s Participation in Computing – NCWIT
+
+Main Menu
+
+NCWIT Scorecard: The Status of Women’s Participation in Computing
+
+Published on 12/23/2024
+
+SKU #
+
+13016
+
+The NCWIT Scorecard is a place you can find data on trends in the participation in computing in the U.S. over time by race and gender. NCWIT supplies these data visualizations for the computing community free of charge. Feel free to use these data in reports, presentations, proposals, and other research with the appropriate citation.
+
+Suggested citation: Beldon, M., Cameron, M., Dubow, W., Hovey, C., Semczuk, P., Sundar, S. (2024) NCWIT Scorecard: The Status of Women in Technology. Boulder, CO: NCWIT.
+
+Gender, Race, and Ethnicity in Post-Secondary Degree Completions
+
+Tab 1: Introduction of NCWIT Scorecard
+
+Tab 2: Computing Degrees Awarded by Gender (2000-2023)
+
+Tab 3: Computing Degrees Awarded by Race/Ethnicity (2000-2023)
+
+Tab 4: Computing Degrees Awarded to American Indian or Alaska Native Students (2000-2023)
+
+Computing Degrees Awarded to American Indian or Alaska Native Students, Disaggregated by Gender (2000-2023)
+
+Tab 5: Computing Degrees Awarded to Asian/Native Hawaiian/Pacific Islander Students (2000-2023)
+
+Computing Degrees Awarded to Asian/Native Hawaiian/Pacific Islander Students, Disaggregated by Gender (2000-2023)
+
+Tab 6: Computing Degrees Awarded to Black or African American Students (2000-2023)
+
+Computing Degrees Awarded to Black or African American Students, Disaggregated by Gender (2000-2023)
+
+Tab 7: Computing Degrees Awarded to Hispanic or Latino/a Students (2000-2023)
+
+Computing Degrees Awarded to Hispanic or Latino/a Students, Disaggregated by Gender (2000-2023)
+
+Tab 8: Computing Degrees Awarded to Nonresident Students (2000-2023)
+
+Computing Degrees Awarded to Nonresident Students, Disaggregated by Gender (2000-2023)
+
+Tab 9: Computing Degrees Awarded to White Students (2000-2023)
+
+Computing Degrees Awarded to White Students, Disaggregated by Gender (2000-2023)
+
+Tab 10: CIP Codes Listing
+
+All datasets and charts are downloadable.
+
+Gender, Race, and Ethnicity in the Computing Workforce
+
+The following statistics can be found in this interactive data visualization:
+
+Tab 1: Introduction of NCWIT Scorecard
+
+Tab 2: Employment in Computing Occupations by Gender
+
+Tab 3: Computing Occupations by Intersection of Gender and Race/Ethnicity
+
+Tab 4: Race/Ethnic Representation in Computing Occupations
+
+Tab 5: Additional Resources for statistics relevant for understanding the participation of different populations in computing
+
+All datasets and charts are downloadable.
+
+The Status of Computing in Secondary Education (K-12)
+
+Many organizations, including NCWIT partners and members, produce useful statistics to provide insights into the K-12 computing landscape. We’re highlighting some of those here.
+
+State of Computer Science Education (code.org)
+
+Institute for Advancing Computing Education
+
+Kapor Center
+
+View Resource Online
+
+NCWIT
+Scroll to Top
+
+Search for:Search Button

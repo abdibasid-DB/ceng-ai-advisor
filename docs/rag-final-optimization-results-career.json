@@ -1,0 +1,132 @@
+{
+  "stage": "Stage 15/15B - Core RAG Pipeline Validation",
+  "generated_at": "2026-09-16T19:52:26+00:00",
+  "case_count": 1,
+  "results": [
+    {
+      "question": "What jobs can I do after graduating from Computer Engineering?",
+      "status": "answered",
+      "answer": "- [S1] Computer Hardware Engineers: 17-2061.00 - Computer Hardware Engineers\n- [S2] AI and Machine Learning Specialists\n- [S2] Digital Transformation Specialists",
+      "llm_called": true,
+      "sources": [
+        {
+          "source_id": "src_014",
+          "title": "Computer Hardware Engineers: 17-2061.00",
+          "source_name": "O*NET OnLine",
+          "source_type": "government_occupational_profile",
+          "url": "https://www.onetonline.org/link/summary/17-2061.00",
+          "category": "skills_and_technologies",
+          "supporting_chunk_ids": [
+            "src_014_chunk_001"
+          ],
+          "evidence_labels": [
+            "S1"
+          ],
+          "best_similarity_score": 0.4934086203575134
+        },
+        {
+          "source_id": "src_017",
+          "title": "The Future of Jobs Report 2025",
+          "source_name": "World Economic Forum",
+          "source_type": "recognized_international_report",
+          "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+          "category": "future_technologies",
+          "supporting_chunk_ids": [
+            "src_017_chunk_097"
+          ],
+          "evidence_labels": [
+            "S2"
+          ],
+          "best_similarity_score": 0.41968995332717896
+        },
+        {
+          "source_id": "src_016",
+          "title": "2024 State of Tech Talent Report",
+          "source_name": "The Linux Foundation",
+          "source_type": "industry_research_report",
+          "url": "https://www.linuxfoundation.org/research/open-source-jobs-report-2024",
+          "category": "skills_and_technologies",
+          "supporting_chunk_ids": [
+            "src_016_chunk_013"
+          ],
+          "evidence_labels": [
+            "S3"
+          ],
+          "best_similarity_score": 0.4164954423904419
+        }
+      ],
+      "retrieved_chunks": [
+        {
+          "label": "S1",
+          "chunk_id": "src_014_chunk_001",
+          "source_id": "src_014",
+          "title": "Computer Hardware Engineers: 17-2061.00",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.4934086203575134,
+          "url": "https://www.onetonline.org/link/summary/17-2061.00",
+          "passage_preview": "Source ID: src_014 Title: Computer Hardware Engineers: 17-2061.00 17-2061.00 - Computer Hardware Engineers Occupation keyword search Type a title or code for matches No quick matches found Search for keyword results Computer Hardware Engineers 17-2061.00 Bright Outlook Updated 2026 Research, design, develop, or test computer or computer-related equipment for commercial, industrial, military, or scientific use. May supervise the manufacturing and installation of computer or computer-related equip"
+        },
+        {
+          "label": "S2",
+          "chunk_id": "src_017_chunk_097",
+          "source_id": "src_017",
+          "title": "The Future of Jobs Report 2025",
+          "category": "future_technologies",
+          "similarity_score": 0.41968995332717896,
+          "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+          "passage_preview": "and Training sector by 2030. AI and big data skills as well as creative thinking are foreseen to grow in importance. Emerging job roles within the industry are anticipated to include AI and Machine Learning Specialists and Digital Transformation Specialists. Employers also place greater emphasis than in other industries on curiosity and lifelong learning, marketing and media skills and multilingualism. The industry is less focused than other sectors on upskilling and reskilling its own workforce"
+        },
+        {
+          "label": "S3",
+          "chunk_id": "src_016_chunk_013",
+          "source_id": "src_016",
+          "title": "2024 State of Tech Talent Report",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.4164954423904419,
+          "url": "https://www.linuxfoundation.org/research/open-source-jobs-report-2024",
+          "passage_preview": "job market where having a degree is still highly valued. In 2022, in the United States, 69% of computer programmer positions and 95% of mobile application Figure 16: It takes more time to onboard compared to 2023, and more technical staff resigned or were asked to leave than in the previous year 2024 STATE OF TECH TALENT REPORT | 20 Page 21 developer jobs still required a degree5. However, research shows that focusing on skills during hiring is five times better at predicting job performance tha"
+        }
+      ],
+      "retrieval_metadata": {
+        "top_k": 5,
+        "candidate_top_k": 12,
+        "similarity_threshold": 0.3,
+        "results_above_threshold": 5,
+        "top_similarity_score": 0.4934086203575134,
+        "evidence_sufficient": true,
+        "out_of_scope": false
+      },
+      "timing": {
+        "retrieval_seconds": 0.387,
+        "context_construction_seconds": 0.0,
+        "llm_generation_seconds": 5.44,
+        "initial_llm_generation_seconds": 5.44,
+        "retry_llm_generation_seconds": 0.0,
+        "llm_reported_total_duration_seconds": 5.407,
+        "total_seconds": 5.828
+      },
+      "error": null,
+      "answer_warnings": [],
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1",
+          "S2"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "normalized": false,
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1
+      },
+      "id": "career_supported",
+      "type": "supported"
+    }
+  ]
+}

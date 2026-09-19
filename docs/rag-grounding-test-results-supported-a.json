@@ -1,0 +1,400 @@
+{
+  "stage": "Stage 15/15B - Core RAG Pipeline Validation",
+  "generated_at": "2026-09-16T15:45:09+00:00",
+  "case_count": 3,
+  "results": [
+    {
+      "question": "What courses are taught in Computer Engineering?",
+      "status": "answered",
+      "answer": "- [S2] and [S4] provide information about courses taught in Computer Engineering.\n- [S2] covers the fourth semester, while [S4] covers the third semester.\n- [S3] provides information about an introductory course, but does not specify the semester.",
+      "llm_called": true,
+      "sources": [
+        {
+          "source_id": "src_039",
+          "title": "Which Introductory Course Should I Take?",
+          "source_name": "Brown University Department of Computer Science",
+          "source_type": "university_academic_advising_resource",
+          "url": "https://cs.brown.edu/degrees/undergrad/whatcourse/",
+          "category": "programming",
+          "supporting_chunk_ids": [
+            "src_039_chunk_001",
+            "src_039_chunk_004"
+          ],
+          "evidence_labels": [
+            "S1",
+            "S3"
+          ],
+          "best_similarity_score": 0.5630455017089844
+        },
+        {
+          "source_id": "src_004",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "source_name": "OSTIM Technical University - Department of Computer Engineering (English)",
+          "source_type": "course_descriptions",
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "category": "curriculum",
+          "supporting_chunk_ids": [
+            "src_004_chunk_004",
+            "src_004_chunk_003"
+          ],
+          "evidence_labels": [
+            "S2",
+            "S4"
+          ],
+          "best_similarity_score": 0.4731024503707886
+        }
+      ],
+      "retrieved_chunks": [
+        {
+          "label": "S1",
+          "chunk_id": "src_039_chunk_001",
+          "source_id": "src_039",
+          "title": "Which Introductory Course Should I Take?",
+          "category": "programming",
+          "similarity_score": 0.5630455017089844,
+          "url": "https://cs.brown.edu/degrees/undergrad/whatcourse/",
+          "passage_preview": "Source ID: src_039 Title: Which Introductory Course Should I Take? Brown CS: Which Introductory Course Should I Take? About Brown Academics Admission Research Campus Life Information for: Current Students Faculty Staff Families Alumni Friends & Neighbors A to Z Index People Directory Social@Brown Facebook Twitter LinkedIn Google+ Computer Science About About the Department Contact Directions Rooms Systems & Software Conduit Diversity Socially Responsible Computing Positions / Jobs Brown CS News "
+        },
+        {
+          "label": "S2",
+          "chunk_id": "src_004_chunk_004",
+          "source_id": "src_004",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "curriculum",
+          "similarity_score": 0.4731024503707886,
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "passage_preview": "during and after the Democratic Party. TUR 102 Turkish Language II This course will cover the topics of; Turkish suffixes; Turkish suffixes; Word types. Sentence knowledge; Reading and examining selected texts. THIRD SEMESTER MATH 202 Differential Equations First-order differential equations, linear equations, homogeneous and non-homogeneous, series solutions, the Laplace transform, systems of first-order linear equations, boundary value problems, Fourier series. CENG 213 Discrete Computing Stru"
+        },
+        {
+          "label": "S3",
+          "chunk_id": "src_039_chunk_004",
+          "source_id": "src_039",
+          "title": "Which Introductory Course Should I Take?",
+          "category": "programming",
+          "similarity_score": 0.5214192271232605,
+          "url": "https://cs.brown.edu/degrees/undergrad/whatcourse/",
+          "passage_preview": "the course uses games as a motivating domain, this is not a course in game design, and the techniques and skills learned are equally applicable across other domains. Even if you have programmed in Java before, you might find this a challenging course. Here is a sample lecture from CS0150. Direct questions to the professor: Andy van Dam, avd@cs.brown.edu. 0170 0170 integrates learning programming with learning the theoretical foundations of computer science. Students learn how to break problems d"
+        },
+        {
+          "label": "S4",
+          "chunk_id": "src_004_chunk_003",
+          "source_id": "src_004",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "curriculum",
+          "similarity_score": 0.4678647518157959,
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "passage_preview": "workplace experience course will provide candidates with various skills that will enable them to become an experienced employee. The students' progress in understanding the future profession and gaining the competencies constituting the profession will be evaluated by the university instructors who are in close cooperation with them and the application trainers and mentors who have gained experience in their work. SENG116 Object Oriented Programming Object-Oriented Programming introduces the fun"
+        }
+      ],
+      "retrieval_metadata": {
+        "top_k": 5,
+        "candidate_top_k": 12,
+        "similarity_threshold": 0.3,
+        "results_above_threshold": 5,
+        "top_similarity_score": 0.5630455017089844,
+        "evidence_sufficient": true,
+        "out_of_scope": false
+      },
+      "timing": {
+        "retrieval_seconds": 0.316,
+        "context_construction_seconds": 0.0,
+        "llm_generation_seconds": 27.726,
+        "initial_llm_generation_seconds": 27.726,
+        "retry_llm_generation_seconds": 0.0,
+        "llm_reported_total_duration_seconds": 27.689,
+        "total_seconds": 28.044
+      },
+      "error": null,
+      "answer_warnings": [],
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S2",
+          "S4",
+          "S3"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3",
+          "S4"
+        ],
+        "normalized": false,
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1
+      },
+      "id": "curriculum_supported",
+      "type": "curriculum"
+    },
+    {
+      "question": "What programming languages should a Computer Engineering student learn?",
+      "status": "answered",
+      "answer": "- [S1] Object-Oriented Programming introduces students to object-oriented software development, which is fundamental for any career in computer engineering.\n- [S2] Functional programming is introduced in CS0150, which is a good choice for understanding how to break problems into elegant programs.\n- [S3] Programming and Computation I provides an introduction to mathematical modeling of computational problems, which is essential for any engineering student.\n- [S4] Discrete Computing Structures covers fundamental mathematical concepts that are crucial for computer science and software engineering.",
+      "llm_called": true,
+      "sources": [
+        {
+          "source_id": "src_004",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "source_name": "OSTIM Technical University - Department of Computer Engineering (English)",
+          "source_type": "course_descriptions",
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "category": "curriculum",
+          "supporting_chunk_ids": [
+            "src_004_chunk_003",
+            "src_004_chunk_001",
+            "src_004_chunk_004"
+          ],
+          "evidence_labels": [
+            "S1",
+            "S3",
+            "S4"
+          ],
+          "best_similarity_score": 0.4525519609451294
+        },
+        {
+          "source_id": "src_039",
+          "title": "Which Introductory Course Should I Take?",
+          "source_name": "Brown University Department of Computer Science",
+          "source_type": "university_academic_advising_resource",
+          "url": "https://cs.brown.edu/degrees/undergrad/whatcourse/",
+          "category": "programming",
+          "supporting_chunk_ids": [
+            "src_039_chunk_004"
+          ],
+          "evidence_labels": [
+            "S2"
+          ],
+          "best_similarity_score": 0.4932767152786255
+        }
+      ],
+      "retrieved_chunks": [
+        {
+          "label": "S1",
+          "chunk_id": "src_004_chunk_003",
+          "source_id": "src_004",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "curriculum",
+          "similarity_score": 0.4525519609451294,
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "passage_preview": "workplace experience course will provide candidates with various skills that will enable them to become an experienced employee. The students' progress in understanding the future profession and gaining the competencies constituting the profession will be evaluated by the university instructors who are in close cooperation with them and the application trainers and mentors who have gained experience in their work. SENG116 Object Oriented Programming Object-Oriented Programming introduces the fun"
+        },
+        {
+          "label": "S2",
+          "chunk_id": "src_039_chunk_004",
+          "source_id": "src_039",
+          "title": "Which Introductory Course Should I Take?",
+          "category": "programming",
+          "similarity_score": 0.4932767152786255,
+          "url": "https://cs.brown.edu/degrees/undergrad/whatcourse/",
+          "passage_preview": "the course uses games as a motivating domain, this is not a course in game design, and the techniques and skills learned are equally applicable across other domains. Even if you have programmed in Java before, you might find this a challenging course. Here is a sample lecture from CS0150. Direct questions to the professor: Andy van Dam, avd@cs.brown.edu. 0170 0170 integrates learning programming with learning the theoretical foundations of computer science. Students learn how to break problems d"
+        },
+        {
+          "label": "S3",
+          "chunk_id": "src_004_chunk_001",
+          "source_id": "src_004",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "curriculum",
+          "similarity_score": 0.4267997741699219,
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "passage_preview": "Source ID: src_004 Course Contents | MF-Bilgisayar Mühendisliği (İngilizce) Barrier Free FIRST SEMESTER MATH 101 Engineering Mathematics I Functions, limits, continuity, differentiation and applications, integration, fundamental theorem of calculus, techniques and applications of integration, improper integrals and series, Taylor polynomials, power series, basic transcendental functions. PHYS 101 Engineering Physics I Vectors, translational kinematics and dynamics work and energy, system of part"
+        },
+        {
+          "label": "S4",
+          "chunk_id": "src_004_chunk_004",
+          "source_id": "src_004",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "curriculum",
+          "similarity_score": 0.4196889400482178,
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "passage_preview": "during and after the Democratic Party. TUR 102 Turkish Language II This course will cover the topics of; Turkish suffixes; Turkish suffixes; Word types. Sentence knowledge; Reading and examining selected texts. THIRD SEMESTER MATH 202 Differential Equations First-order differential equations, linear equations, homogeneous and non-homogeneous, series solutions, the Laplace transform, systems of first-order linear equations, boundary value problems, Fourier series. CENG 213 Discrete Computing Stru"
+        }
+      ],
+      "retrieval_metadata": {
+        "top_k": 5,
+        "candidate_top_k": 12,
+        "similarity_threshold": 0.3,
+        "results_above_threshold": 5,
+        "top_similarity_score": 0.4525519609451294,
+        "evidence_sufficient": true,
+        "out_of_scope": false
+      },
+      "timing": {
+        "retrieval_seconds": 0.067,
+        "context_construction_seconds": 0.001,
+        "llm_generation_seconds": 40.365,
+        "initial_llm_generation_seconds": 40.365,
+        "retry_llm_generation_seconds": 0.0,
+        "llm_reported_total_duration_seconds": 40.33,
+        "total_seconds": 40.433
+      },
+      "error": null,
+      "answer_warnings": [],
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1",
+          "S2",
+          "S3",
+          "S4"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3",
+          "S4"
+        ],
+        "normalized": false,
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1
+      },
+      "id": "programming_supported",
+      "type": "supported"
+    },
+    {
+      "question": "What jobs can I do after graduating from Computer Engineering?",
+      "status": "answered",
+      "answer": "- [S1] Computer Hardware Engineers can design, develop, or test computer-related equipment.\n- [S3] AI and Machine Learning Specialists and Digital Transformation Specialists are anticipated to grow in importance.\n- [S2] The Future of Jobs Report 2025 highlights the importance of curiosity, lifelong learning, and marketing skills.\n- [S4] The 2024 State of Tech Talent Report emphasizes the importance of diverse skillsets and non-technical skills in the job market.",
+      "llm_called": true,
+      "sources": [
+        {
+          "source_id": "src_014",
+          "title": "Computer Hardware Engineers: 17-2061.00",
+          "source_name": "O*NET OnLine",
+          "source_type": "government_occupational_profile",
+          "url": "https://www.onetonline.org/link/summary/17-2061.00",
+          "category": "skills_and_technologies",
+          "supporting_chunk_ids": [
+            "src_014_chunk_001"
+          ],
+          "evidence_labels": [
+            "S1"
+          ],
+          "best_similarity_score": 0.4934086203575134
+        },
+        {
+          "source_id": "src_017",
+          "title": "The Future of Jobs Report 2025",
+          "source_name": "World Economic Forum",
+          "source_type": "recognized_international_report",
+          "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+          "category": "future_technologies",
+          "supporting_chunk_ids": [
+            "src_017_chunk_097",
+            "src_017_chunk_022"
+          ],
+          "evidence_labels": [
+            "S2",
+            "S3"
+          ],
+          "best_similarity_score": 0.41968995332717896
+        },
+        {
+          "source_id": "src_016",
+          "title": "2024 State of Tech Talent Report",
+          "source_name": "The Linux Foundation",
+          "source_type": "industry_research_report",
+          "url": "https://www.linuxfoundation.org/research/open-source-jobs-report-2024",
+          "category": "skills_and_technologies",
+          "supporting_chunk_ids": [
+            "src_016_chunk_013"
+          ],
+          "evidence_labels": [
+            "S4"
+          ],
+          "best_similarity_score": 0.4164954423904419
+        }
+      ],
+      "retrieved_chunks": [
+        {
+          "label": "S1",
+          "chunk_id": "src_014_chunk_001",
+          "source_id": "src_014",
+          "title": "Computer Hardware Engineers: 17-2061.00",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.4934086203575134,
+          "url": "https://www.onetonline.org/link/summary/17-2061.00",
+          "passage_preview": "Source ID: src_014 Title: Computer Hardware Engineers: 17-2061.00 17-2061.00 - Computer Hardware Engineers Occupation keyword search Type a title or code for matches No quick matches found Search for keyword results Computer Hardware Engineers 17-2061.00 Bright Outlook Updated 2026 Research, design, develop, or test computer or computer-related equipment for commercial, industrial, military, or scientific use. May supervise the manufacturing and installation of computer or computer-related equip"
+        },
+        {
+          "label": "S2",
+          "chunk_id": "src_017_chunk_097",
+          "source_id": "src_017",
+          "title": "The Future of Jobs Report 2025",
+          "category": "future_technologies",
+          "similarity_score": 0.41968995332717896,
+          "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+          "passage_preview": "and Training sector by 2030. AI and big data skills as well as creative thinking are foreseen to grow in importance. Emerging job roles within the industry are anticipated to include AI and Machine Learning Specialists and Digital Transformation Specialists. Employers also place greater emphasis than in other industries on curiosity and lifelong learning, marketing and media skills and multilingualism. The industry is less focused than other sectors on upskilling and reskilling its own workforce"
+        },
+        {
+          "label": "S3",
+          "chunk_id": "src_017_chunk_022",
+          "source_id": "src_017",
+          "title": "The Future of Jobs Report 2025",
+          "category": "future_technologies",
+          "similarity_score": 0.41782301664352417,
+          "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+          "passage_preview": "a net employment increase of 7%, or 78 million jobs. Growing and declining jobs The Future of Jobs Survey gathered insights from employers on job roles expected to grow, decline or remain stable within their organizations over the next five years. Respondents were then asked to identify the macrotrends and technological advancements driving job growth and decline in their organizations. Page 19 According to the surveyed executives, the fastest- growing job roles by 2030, in percentage terms, ten"
+        },
+        {
+          "label": "S4",
+          "chunk_id": "src_016_chunk_013",
+          "source_id": "src_016",
+          "title": "2024 State of Tech Talent Report",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.4164954423904419,
+          "url": "https://www.linuxfoundation.org/research/open-source-jobs-report-2024",
+          "passage_preview": "job market where having a degree is still highly valued. In 2022, in the United States, 69% of computer programmer positions and 95% of mobile application Figure 16: It takes more time to onboard compared to 2023, and more technical staff resigned or were asked to leave than in the previous year 2024 STATE OF TECH TALENT REPORT | 20 Page 21 developer jobs still required a degree5. However, research shows that focusing on skills during hiring is five times better at predicting job performance tha"
+        }
+      ],
+      "retrieval_metadata": {
+        "top_k": 5,
+        "candidate_top_k": 12,
+        "similarity_threshold": 0.3,
+        "results_above_threshold": 5,
+        "top_similarity_score": 0.4934086203575134,
+        "evidence_sufficient": true,
+        "out_of_scope": false
+      },
+      "timing": {
+        "retrieval_seconds": 0.064,
+        "context_construction_seconds": 0.0,
+        "llm_generation_seconds": 41.656,
+        "initial_llm_generation_seconds": 41.656,
+        "retry_llm_generation_seconds": 0.0,
+        "llm_reported_total_duration_seconds": 41.63,
+        "total_seconds": 41.721
+      },
+      "error": null,
+      "answer_warnings": [],
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1",
+          "S3",
+          "S2",
+          "S4"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3",
+          "S4"
+        ],
+        "normalized": false,
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1
+      },
+      "id": "career_supported",
+      "type": "supported"
+    }
+  ]
+}

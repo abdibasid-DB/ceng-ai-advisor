@@ -1,0 +1,87 @@
+{
+  "stage": "Stage 15/15B - Core RAG Pipeline Validation",
+  "generated_at": "2026-09-16T20:04:20+00:00",
+  "case_count": 1,
+  "results": [
+    {
+      "question": "Should I focus more on GPA, projects, or internships when preparing for a software career?",
+      "status": "insufficient_information",
+      "answer": "I don't have enough reliable information in the current knowledge base to answer that question.",
+      "llm_called": false,
+      "sources": [],
+      "retrieved_chunks": [
+        {
+          "label": null,
+          "chunk_id": "src_036_chunk_005",
+          "source_id": "src_036",
+          "title": "Resumes",
+          "category": "employment",
+          "similarity_score": 0.4138059616088867,
+          "url": "https://career.berkeley.edu/prepare-for-success/resumes/",
+          "passage_preview": "Start Exploring\n\nCareer Essentials\n\nGain Clarity\n\nSelf Assessment\n\nDecision Making\n\nCareer Exploration\n\nDevelop Competitiveness\n\nMake Connections\n\nExplore Career Fields\n\nMajors to Career\n\nWhat Can I Do With A Major In…?\n\nInformational Interviews\n\nQuestions\n\nWhere Do Cal Grads Go?\n\nSummer Activity Dashboard\n\nEvents\n\nMeet with Us\n\nCareer Education\n\nPeer Advisors\n\nPeace Corps\n\nTeach For America\n\nPrepare for Success\n\nGet Career Ready\n\nDevelop a Plan\n\nResumes\n\nSample Resumes\n\nResume Books\n\nCover Lett"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_044_chunk_002",
+          "source_id": "src_044",
+          "title": "Prepare for graduate & professional school",
+          "category": "graduate_studies",
+          "similarity_score": 0.4607676863670349,
+          "url": "https://capd.mit.edu/channels/prepare-for-graduate-professional-school/",
+          "passage_preview": "Learn more about the fields you are interested in through informational interviews, books at the MIT Libraries or CAPD library (room 7-103), research, and internships.\n\nConsider how you make decisions and do activities to help you find your purpose.\n\nSet up a career advising appointment to help you weigh the pros and cons.\n\nWhat academic preparation do I need for graduate school?\n\nStrong undergraduate academic preparation is essential for graduate and professional school. Key skills include crit"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_039_chunk_005",
+          "source_id": "src_039",
+          "title": "Which Introductory Course Should I Take?",
+          "category": "programming",
+          "similarity_score": 0.37170982360839844,
+          "url": "https://cs.brown.edu/degrees/undergrad/whatcourse/",
+          "passage_preview": "two weeks of 0200 run as two different tracks: one to help students from 0150 learn functional programming, recursion, and run-time analysis and another to help students from 0111/0170/0190 learn object-oriented programming in Java. After the first two weeks, the two tracks merge into one course for the rest of the semester. Direct questions to the professor: Kathi Fisler (kfisler@cs.brown.edu)\n\nFrequently-Asked Questions\n\nHow do I decide which intro course to take? As the above-linked video exp"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_039_chunk_002",
+          "source_id": "src_039",
+          "title": "Which Introductory Course Should I Take?",
+          "category": "programming",
+          "similarity_score": 0.3437719941139221,
+          "url": "https://cs.brown.edu/degrees/undergrad/whatcourse/",
+          "passage_preview": "to anyone, regardless of prior programming experience. All of these options prepare students for subsequent courses in the concentration, but with different approaches and some differences in content. The descriptions below outline the differences: to help you decide between them, you might attend the first lectures of multiple courses (except for 0190, which students must place into over the summer).\n\n0111 provides the most leisurely paced introduction to programming and is ideal for students w"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_039_chunk_001",
+          "source_id": "src_039",
+          "title": "Which Introductory Course Should I Take?",
+          "category": "programming",
+          "similarity_score": 0.3433370590209961,
+          "url": "https://cs.brown.edu/degrees/undergrad/whatcourse/",
+          "passage_preview": "Source ID: src_039\nTitle: Which Introductory Course Should I Take?\n\nBrown CS: Which Introductory Course Should I Take?\n\nAbout Brown\n\nAcademics\n\nAdmission\n\nResearch\n\nCampus Life\n\nInformation for:\n\nCurrent Students\n\nFaculty\n\nStaff\n\nFamilies\n\nAlumni\n\nFriends & Neighbors\n\nA to Z Index\n\nPeople Directory\n\nSocial@Brown\n\nFacebook\n\nTwitter\n\nLinkedIn\n\nGoogle+\n\nComputer Science\n\nAbout\n\nAbout the Department\n\nContact\n\nDirections\n\nRooms\n\nSystems & Software\n\nConduit\n\nDiversity\n\nSocially Responsible\nComputing\n\n"
+        }
+      ],
+      "retrieval_metadata": {
+        "top_k": 5,
+        "candidate_top_k": 12,
+        "similarity_threshold": 0.3,
+        "results_above_threshold": 5,
+        "top_similarity_score": 0.4138059616088867,
+        "evidence_sufficient": true,
+        "out_of_scope": false,
+        "unsupported_reason": "retrieved evidence does not directly compare GPA, projects, and internships for software career preparation"
+      },
+      "timing": {
+        "retrieval_seconds": 0.617,
+        "context_construction_seconds": 0.0,
+        "llm_generation_seconds": 0.0,
+        "total_seconds": 0.618
+      },
+      "error": null,
+      "answer_warnings": [],
+      "citation_metadata": {},
+      "id": "multi_topic",
+      "type": "multi_topic"
+    }
+  ]
+}

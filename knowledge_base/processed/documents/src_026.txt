@@ -1,0 +1,251 @@
+Source ID: src_026
+
+Turkey - Information and Communication Technology
+
+An official website of the United States government Here’s how you know
+
+Official websites use .gov
+A .gov website belongs to an official government organization in the United States.
+
+Secure .gov websites use HTTPS
+A lock ( ) or https:// means you’ve safely connected to the .gov website.
+
+Search ITA
+
+Türkiye Country Commercial Guide
+
+Learn about the market conditions, opportunities, regulations, and business conditions in Türkiye, prepared by at U.S. Embassies worldwide by Commerce Department, State Department and other U.S. agencies’
+professionals.
+
+Türkiye Country Commercial Guide
+
+Doing Business in
+
+Turkey - Market Overview
+
+Turkey - Market Challenges
+
+Turkey - Market Opportunities
+
+Turkey - Market Entry Strategy
+
+Leading Sectors for US Exports & Investments
+
+Turkey - Civilian Aerospace, Technology & Equipment
+
+Turkey - Electric Power – Renewables, Smart Grid, Energy Storage, Civil Nuclear
+
+Turkey - Construction & Reconstruction
+
+Turkey - Information and Communication Technology
+
+Turkey - Medical Technologies and Health IT
+
+Turkey - Advanced Manufacturing
+
+Turkey - Transportation Technology and Equipment
+
+Turkey - Oil and Gas Equipment – LNG and LNG Terminals, Upstream, Downstream and Midstream
+
+Turkey - Agriculture
+
+Customs, Regulations & Standards
+
+Turkey - Trade Barriers
+
+Turkey - Import Tariffs
+
+Turkey - Import Requirements and Documentation
+
+Turkey - Labeling and Marketing Requirements
+
+Turkey - U.S. Export Controls
+
+Turkey - Temporary Entry
+
+Turkey - Prohibited and Restricted Imports
+
+Turkey - Customs Regulations
+
+Turkey - Standards for Trade
+
+Turkey - Trade Agreements
+
+Turkey - Licensing Requirements for Professional Services
+
+Selling US Products & Services
+
+Turkey - Distribution & Sales Channels
+
+Turkey - eCommerce
+
+Turkey - Selling Factors and Techniques
+
+Turkey - Trade Financing
+
+Turkey - Protecting Intellectual Property
+
+Turkey - Selling to the Public Sector
+
+Digital Economy
+
+Business Travel
+
+Turkey - Business Travel
+
+Investment Climate Statement
+
+Turkey - Investment Climate Statement
+
+Turkey - Information and Communication Technology
+
+Last published date:2026-01-29
+
+International companies find it increasingly difficult to operate in Türkiye due the 7.5% digital services tax (DST), local physical presence requirements, and restrictions on social media platforms. As of July 2020, Law No. 5651 requires social media platforms with more than one million daily visits from users in Türkiye to appoint a representative physically located within Türkiye and to rapidly respond to content removal requests. Social media platforms are required to store user data in Türkiye as well, which increases cost and complexity of doing business for international companies.
+
+The size of the communication technologies market showed a slight decline of 2% from $16.1 billion in 2023 to $15.9 billion in 2024, while the information technologies market reached a market size of $20.8 billion in 2024, up from $16.9 billion in the previous year. Information technologies companies in Türkiye increased employment by 5% to 194,000, while in the communication technologies sector employment stayed stable at 52,000. The Ministry of Transportation and Infrastructure announced that it will hold the 5G mobile spectrum auction on October 16, 2025. The aim is to have 5G services publicly available as of April 1, 2026. Türkiye is striving to become a regional technology leader capable of competing globally. The high capacity 5G will allow for transmission speeds of up to 1 gigabit to more than 20 billion connected devices, while significantly wider bandwidths will enable new capabilities for a variety of industries. The switch to 5G will enable the large-scale digital transformation of the country, empowering emerging technologies such as virtual reality applications, autonomous vehicles, and smart manufacturing, while enhancing cloud computing, AI, and IoT systems in Türkiye.
+
+Data Infrastructure
+
+Roughly 96.2% of households have access to broadband internet. Approximately 23.5% of households access the internet through fixed broadband and 89.5% via mobile broadband. There are 96.4 million mobile subscriptions for broadband use.
+
+Social Media Use
+
+Türkiye has 77.3 million active internet users (88.3% of the population). ). Messaging and social media applications continue to dominate online activity in Türkiye. 66.7 percent of the Turkish population uses social media actively, exceeding the global average of 63.9 percent, with Turks spending an average of two hours and 32 minutes daily on these platforms. WhatsApp remained the most widely used platform at 88.6%, followed by YouTube at 72.9% and Instagram at 68.1%.
+
+Türkiye regulates internet and social media platforms under Law No. 5651 on Regulating Publications on the Internet and related provisions overseen by the Information and Communication Technologies Authority (BTK) and the Radio and Television Supreme Council (RTÜK). These regulations enable authorities to request content removal, require a local representative in the country (for those with more than 1 million daily users in Türkiye), and, in certain circumstances, restrict access to platforms. Several U.S.-originated platforms have faced access restrictions or regulatory actions in Türkiye in recent years.
+
+As of August 2019, the Amendment to Law No. 6112 on the Establishment of Radio and Television Enterprises and Their Media Services regulation, requires online streaming and video on demand services companies to apply for a broadcasting license from RTÜK (Radio and Television Supreme Council) to legally operate in Türkiye.
+
+IT Hardware and Software
+
+Türkiye’s software market is rapidly expanding—expected to grow nearly 19% year-over-year in 2025, reaching $11.5 billion. Cloud-based software adoption, especially among businesses seeking productivity gains, is a significant driver, supported by government-backed digital transformation programs. IT services are also growing steadily, with average annual growth projected at 5.28%, particularly in high-demand areas such as AI, cybersecurity, IoT, and other emerging tech sectors.
+
+The overall ICT sector—including hardware, software, IT services, and telecom—is projected to grow at approximately 9.3% CAGR over the 2025–2030 period. Türkiye’s ICT exports—including software and hardware—total around $3.44 billion, with nearly half of ICT sector employees engaged in R&D roles and the workforce overwhelmingly under age 35. The ambitious rollout of 5G is underway, with the spectrum auction announced in October 2025 and implementation is planned in mid-2026, starting in urban centers. Financially, the Türkiye Wealth Fund has committed to advancing the tech ecosystem with its Türkiye Technology Fund, a venture capital vehicle with up to $1 billion in targeted investment aimed at accelerating domestic innovation.
+
+Key sectors and areas for IT spending include:
+
+Financial services (digital payments, blockchain, e-commerce platforms)
+
+Healthcare, mobile-health solutions
+
+Mobility solutions
+
+AI solutions and technologies
+
+Cloud and multi-cloud services
+
+Data centers
+
+Defense IT modernization and national tech infrastructure
+
+Telecommunications
+
+The Turkish telecom market is highly developed yet still has room to grow. 95.2% of the country’s 94.3 million mobile phone users use smartphones. According to 2025’s first 6 months figures, Apple took over Samsung as the top-selling smartphone in Türkiye, followed by Xiaomi in third place. The major GSM cellular operators in Türkiye are Turkcell (40.5% market share), Vodafone (36.2%) and Turk Telekom/TT Mobil (23.3%).
+
+In the mobile market there is a strong demand for high-speed data services 4.5G (LTE) technology came into use in 2016 and as a result of 4.5G deployment, e-commerce, mobile broadband, mobile banking services, and mobile television streaming services sales have increased, creating favorable business opportunities for investors. New technology investments and the transition to 5G technology in 2026 is likely to accelerate sector expansion. Localization is a major Government of Türkiye priority in 5G development and localization requirements are frequently written into tenders for 5G projects.
+
+Nokia, Ericsson, and Huawei are the main network providers in Türkiye. Cisco, Nokia, Ericsson, and Siemens are the main GSM switch and base station suppliers. ZTE, Nokia, Alcatel, Siemens, Ericsson, and NEC supply most fixed-line switches, trans-multiplexers, and other traditional telephone equipment.
+
+Leading Sub-sectors:
+
+Communication Technologies/5G technology and services/Fiber optic solutions
+
+AI solutions and technologies
+
+M2M communication/IoT
+
+Cloud services
+
+Edge Computing Systems
+
+Cybersecurity solutions
+
+Data centers
+
+Public Investments & e-Government
+
+Blockchain solutions
+
+Wireless equipment and services
+
+Opportunities
+
+The Information and Communication Technologies Authority (BTK) is the authority and main entity leading 5G efforts in Türkiye. Türkiye is poised to transition into the 5G era with the spectrum auction scheduled on October 16, 2025, dedicating 400 MHz of spectrum across two key bands of 700 MHz and 3.5 GHz. The spectrum auction is expected to raise around $ 2.1 billion. Following the auction, commercial 5G services will begin in April 2026, initially in the metropolitan hubs, with national rollout to follow.
+
+To bolster local industry, the government mandates that at least 60% of 5G network equipment be sourced from domestic producers, helping to reduce external reliance and foster Türkiye’s technology base. Meanwhile, the operators Turkcell, Turk Telekom, and Vodafone have been engaged in 5G pilot trials, including applications like network slicing and real-time ship detection using integrated sensing and communication technologies. Türkiye is expected to deploy 5G for industrial Internet of Things (IoT), private network slicing, and fixed wireless access (FWA), especially in underserved regions, such as rural or geologically challenging areas. These use cases align well with U.S. strengths in enterprise 5G, edge computing, and IIoT solutions. Additionally, 5G-enabled services offer new opportunities in digital healthcare, autonomous mobility, blockchain and fintech, education technologies, and smart city infrastructure.
+
+Fiber Optics
+
+Türkiye’s fiber infrastructure has significant room for expansion, with current fiber penetration at just 27.7%. Rising demand for data center construction will drive further investment, as new facilities require high-capacity fiber links and backhaul to connect with each other, metropolitan hubs, and international gateways. Similar global markets have seen FTTH (fiber-to-the-home) coverage accelerate in tandem with data center deployment, and Türkiye’s geography is well-suited for fiber buildout—particularly along corridors connecting the country’s largest metropolitan areas in the west and center.
+
+Türkiye’s fiber optic network expanded from approximately 425,000 km in 2020 to over 577,000 km by 2024, representing a 36% increase in four years. Türk Telekom dominates the sector, operating roughly 78% of the network—around 450,000 km—under a 25-year concession granted by the Information and Communication Technologies Authority (BTK) in 2001. In August 2025, this concession was extended again to 2050, with Türk Telekom committing to a $17 billion investment plan and agreeing to pay $2.5 billion plus VAT (approximately $3 billion total) over a 10-year period starting in 2026. The remaining 22% of the country’s fiber—about 127,000 km—is managed by Turkcell, Vodafone Türkiye, and several independent ISPs.
+
+Türkiye’s international telecom connectivity is also strengthening. Multiple submarine fiber-optic cables in the Mediterranean and Black Sea, combined with terrestrial links across Europe, the Caucasus, and the Middle East, reinforce its role as a regional hub. In the second quarter of 2025, TurkNet and SOCAR launched a 1,850 km ultra-reliable fiber corridor along the TANAP pipeline, linking Georgia to Greece via Türkiye. This east–west “digital highway” will enhance domestic backbone capacity by connecting strategic cities such as Kars, Ankara, and Bursa, while enabling high-speed cross-border data flows between Europe, Türkiye, the Caucasus, and the Gulf region. Together, these developments aim to position Türkiye as a regional internet hub, leveraging both its strategic geography and rapidly expanding fiber footprint.
+
+Satellite Communications
+
+Türkiye is expanding its satellite communications capabilities but continues to rely on international partners for several critical technologies. The successful launch of Türkiye’s first telecommunications satellite Türksat 6A in July 2024, and the planned launch of the telecommunications satellite Türksat 7A reflect the country’s efforts towards satellite sovereignty. However, despite growing domestic capabilities, Türkiye still sources key systems internationally, including high-throughput payloads, software-defined satellite platforms, advanced propulsion and power systems, optical inter-satellite links, teleport infrastructure, and end-to-end connectivity solutions.
+
+Türkiye’s plans to integrate multi-orbit satellite systems with 5G networks will require substantial investment in gateway Earth stations, teleports, LEO-GEO interoperability, direct-to-device satellite communications, and network security platforms. These are areas where U.S. companies maintain a clear technological advantage and where partnerships with Turkish operators could be strategically significant.
+
+Artificial Intelligence
+
+Türkiye’s artificial intelligence (AI) ecosystem is driven by strong consumer adoption, advanced in industrial automation, and increased government investments towards data processing infrastructure.
+Personal use of generative AI tools ranks among the highest globally, with 72% of individuals in Türkiye using generative AI tools for personal purposes compared to the global average of 42%. However, corporate adoption remains more limited- below 30 percent, due to infrastructure gaps, low trust, and legal uncertainty.
+
+The Turkish government has introduced Türkiye’s National AI Strategy (NAIS) 2021–2025 and the 2024–2025 Action Plan, setting six priorities: talent, R&D/entrepreneurship, quality data and compute, socioeconomic integration, international cooperation, and labor transition. Concrete actions include IP guidance for AI-generated content, an algorithmic accountability/supervision toolkit, a “Trusted AI” certification stamp, a central public data space, and mechanisms to attract global tech R&D.
+
+In 2024, Türkiye commissioned the ARF supercomputer, ranked among the world’s top 500 systems, providing computing power equivalent to approximately 40,000 laptops. As a member of the European High-Performance Computing Consortium (EuroHPC), Türkiye also enables its private sector, universities, and public institutions to access advanced facilities such as MareNostrum 5 in Europe.
+
+Türkiye is expanding its AI-related infrastructure through targeted investments. The combined capacity of domestic data centers is planned to increase from 250 MW to 1 GW in the next five years, supported by a $10 billion program to establish national data center hubs. In parallel, Türkiye is developing a large language model based on Turkish-language datasets to strengthen domestic capabilities and support local applications.
+
+Türkiye lacks an AI-specific legislation, creating uncertainty across liability, intellectual property, data governance, and security issues. The June 2024 draft AI law represents an initial step for the regulatory foundation. High demand for AI-enabled solutions, combined with underdeveloped domestic infrastructure and governance, creates opportunities for U.S. companies to provide cloud services, secure data platforms, MLOps frameworks, and applied AI solutions. However, regulatory ambiguity around data localization, intellectual property, and cross-border data flows may complicate U.S. market entry and limit partnerships.
+
+Cybersecurity
+
+Türkiye’s cybersecurity market is projected to reach $514.06 million in 2025. Key priority areas include network security, email and web security, cyber governance, identity and certificate management, mobile security, system security, and data and application security.
+
+Türkiye established the Cybersecurity Presidency (Siber Güvenlik Başkanlığı) under a Presidential Decree on January 8, 2024. Subsequently, the Cyber Security Law No. 7545 was adopted on March 12, 2024, creating the legal framework to strengthen Türkiye’s cybersecurity capabilities and improve detection and response to threats. The law gives the Cybersecurity Presidency a broad mandate as the regulatory authority responsible for overseeing the cybersecurity sector, setting technical standards, and acting as the certification body for cybersecurity services and service providers. Implementation procedures for the law will be detailed in secondary legislation to be issued within one year of the law’s publication. Following the entry into force of this secondary legislation, all cybersecurity companies in Türkiye will be required to complete certification and authorization procedures within one year, to continue their operations.
+
+For further information on this section or more on potential opportunities, contact:
+Perim Akgüner
+ICT, Advanced Manufacturing and Advanced Materials Sectors Leader
+U.S. Commercial Service Türkiye
+Perim.Akguner@trade.gov
+
+Global Business Navigator Chatbot Beta
+
+Welcome to the Global Business Navigator, an artificial intelligence (AI) Chatbot from the International Trade Administration (ITA). This tool, currently in beta version testing, is designed to provide general information on the exporting process and the resources available to assist new and experienced U.S. exporters. The Chatbot, developed using Microsoft’s Azure AI services, is trained on ITA’s export-related content and aims to quickly get users the information they need. The Chatbot is intended to make the benefits of exporting more accessible by understanding non-expert language, idiomatic expressions, and foreign languages.
+
+Limitations
+
+As a beta product, the Chatbot is currently being tested and its responses may occasionally produce inaccurate or incomplete information. The Chatbot is trained to decline out of scope or inappropriate requests. The Chatbot’s knowledge is limited to the public information on the Export Solutions web pages of Trade.gov, which covers a wide range of topics on exporting. While it cannot provide responses specific to a company’s product or a specific foreign market, its reference pages will guide you to other relevant government resources and market research. Always double-check the Chatbot’s responses using the provided references or by visiting the Export Solutions web pages on Trade.gov. Do not use its responses as legal or professional advice. Inaccurate advice from the Chatbot would not be a defense to violating any export rules or regulations.
+
+Privacy
+
+The Chatbot does not collect information about users and does not use the contents of users’ chat history to learn new information. All feedback is anonymous. Please do not enter personally identifiable information (PII), sensitive, or proprietary information into the Chatbot. Your conversations will not be connected to other interactions or accounts with ITA. Conversations with the Chatbot may be reviewed to help ITA improve the tool and address harmful, illegal, or otherwise inappropriate questions.
+
+Translation
+
+The Chatbot supports a wide range of languages. Because the Chatbot is trained in English and responses are translated, you should verify the translation. For example, the Chatbot may have difficulty with acronyms, abbreviations, and nuances in a language other than English.
+
+Privacy Program | Information Quality Guidelines | Accessibility
+
+Global Business Navigator Chatbot Beta
+
+Welcome to the Global Business Navigator, an artificial intelligence (AI) Chatbot from the International Trade Administration (ITA). This tool, currently in beta version testing, is designed to provide general information on the exporting process and the resources available to assist new and experienced U.S. exporters. The Chatbot, developed using Microsoft’s Azure AI services, is trained on ITA’s export-related content and aims to quickly get users the information they need. The Chatbot is intended to make the benefits of exporting more accessible by understanding non-expert language, idiomatic expressions, and foreign languages.
+
+Limitations
+
+As a beta product, the Chatbot is currently being tested and its responses may occasionally produce inaccurate or incomplete information. The Chatbot is trained to decline out of scope or inappropriate requests. The Chatbot’s knowledge is limited to the public information on the Export Solutions web pages of Trade.gov, which covers a wide range of topics on exporting. While it cannot provide responses specific to a company’s product or a specific foreign market, its reference pages will guide you to other relevant government resources and market research. Always double-check the Chatbot’s responses using the provided references or by visiting the Export Solutions web pages on Trade.gov. Do not use its responses as legal or professional advice. Inaccurate advice from the Chatbot would not be a defense to violating any export rules or regulations.
+
+Privacy
+
+The Chatbot does not collect information about users and does not use the contents of users’ chat history to learn new information. All feedback is anonymous. Please do not enter personally identifiable information (PII), sensitive, or proprietary information into the Chatbot. Your conversations will not be connected to other interactions or accounts with ITA. Conversations with the Chatbot may be reviewed to help ITA improve the tool and address harmful, illegal, or otherwise inappropriate questions.
+
+Translation
+
+The Chatbot supports a wide range of languages. Because the Chatbot is trained in English and responses are translated, you should verify the translation. For example, the Chatbot may have difficulty with acronyms, abbreviations, and nuances in a language other than English.
+
+Privacy Program | Information Quality Guidelines | Accessibility

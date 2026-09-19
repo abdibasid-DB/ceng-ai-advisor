@@ -1,0 +1,137 @@
+{
+  "stage": "Stage 14 - Local Open-Source LLM Setup and Testing",
+  "generated_at": "2026-09-16T14:46:23+00:00",
+  "ollama_version": "0.33.2",
+  "available_models": [
+    {
+      "name": "qwen2.5:3b",
+      "model": "qwen2.5:3b",
+      "modified_at": "2026-09-16T17:44:06.1957726+03:00",
+      "size": 1929912432,
+      "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen2",
+        "families": [
+          "qwen2"
+        ],
+        "parameter_size": "3.1B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 32768,
+        "embedding_length": 2048
+      },
+      "capabilities": [
+        "completion",
+        "tools"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "ready_exact",
+      "kind": "instruction_following",
+      "prompt": "Respond with exactly the word READY.",
+      "response": "READY",
+      "model": "qwen2.5:3b",
+      "wall_time_seconds": 4.145,
+      "total_duration_seconds": 4.142,
+      "load_duration_seconds": 3.397,
+      "prompt_eval_count": 36,
+      "eval_count": 2,
+      "eval_duration_seconds": 0.07,
+      "response_character_count": 5,
+      "response_word_count": 1
+    },
+    {
+      "id": "computer_engineering_short",
+      "kind": "direct_inference",
+      "prompt": "Explain what Computer Engineering is in three short sentences.",
+      "response": "Computer Engineering is a field that combines computer science with electrical engineering principles to design, develop, and test computer hardware and software systems. It focuses on the integration of hardware and software to create efficient and reliable computing systems. Computer engineers work on everything from microchips to supercomputers, ensuring they are both powerful and efficient.",
+      "model": "qwen2.5:3b",
+      "wall_time_seconds": 5.045,
+      "total_duration_seconds": 5.041,
+      "load_duration_seconds": 0.002,
+      "prompt_eval_count": 40,
+      "eval_count": 66,
+      "eval_duration_seconds": 4.74,
+      "response_character_count": 397,
+      "response_word_count": 55
+    },
+    {
+      "id": "hardware_software",
+      "kind": "direct_inference",
+      "prompt": "Explain the difference between software and hardware in simple English.",
+      "response": "Sure! Let's think of software and hardware like two different parts of a machine, much like how your body and your clothes are different but work together to make you a whole person.\n\n**Hardware** is the physical part of a machine. It's the stuff you can touch and see. For example, your computer's screen, keyboard, and mouse are all hardware. They are the physical components that make up your computer.\n\n**Software**, on the other hand, is the instructions and programs that tell the hardware what to do. It's like the software in your phone or computer that lets you use apps, browse the internet, or play games. You can't touch or see the software directly; you can only see its effects, like when you see your phone's screen showing you a game.\n\nSo, in simple terms:\n- **Hardware** is the physical stuff you can touch (like your computer's screen and keyboard).\n- **Software** is the instructions that tell the hardware what to do (like the apps and games on your phone or computer).\n\nBoth are important for your machine to work, and they work together to make your device do what you want it to do!",
+      "model": "qwen2.5:3b",
+      "wall_time_seconds": 19.503,
+      "total_duration_seconds": 19.482,
+      "load_duration_seconds": 0.003,
+      "prompt_eval_count": 41,
+      "eval_count": 238,
+      "eval_duration_seconds": 19.147,
+      "response_character_count": 1105,
+      "response_word_count": 196
+    },
+    {
+      "id": "insufficient_exact",
+      "kind": "instruction_following",
+      "prompt": "You must answer with exactly: INSUFFICIENT_INFORMATION",
+      "response": "INSUFFICIENT_INFORMATION",
+      "model": "qwen2.5:3b",
+      "wall_time_seconds": 0.762,
+      "total_duration_seconds": 0.748,
+      "load_duration_seconds": 0.004,
+      "prompt_eval_count": 39,
+      "eval_count": 5,
+      "eval_duration_seconds": 0.332,
+      "response_character_count": 24,
+      "response_word_count": 1
+    },
+    {
+      "id": "three_bullets",
+      "kind": "format_following",
+      "prompt": "Return exactly three bullet points explaining what an operating system does.",
+      "response": "- Manages computer hardware and software resources, including processing power, memory, and input/output operations.\n- Provides a platform for applications to run by abstracting hardware details and providing a user interface.\n- Ensures the stability and security of the system by managing system resources and enforcing security policies.",
+      "model": "qwen2.5:3b",
+      "wall_time_seconds": 5.494,
+      "total_duration_seconds": 5.49,
+      "load_duration_seconds": 0.003,
+      "prompt_eval_count": 41,
+      "eval_count": 59,
+      "eval_duration_seconds": 5.072,
+      "response_character_count": 339,
+      "response_word_count": 48
+    },
+    {
+      "id": "context_answer",
+      "kind": "context_following",
+      "prompt": "CONTEXT:\nThe fictional CENG laboratory closes at 17:45 on Wednesday.\n\nQUESTION:\nWhat time does the fictional CENG laboratory close on Wednesday?",
+      "response": "The fictional CENG laboratory closes at 17:45 on Wednesday.",
+      "model": "qwen2.5:3b",
+      "wall_time_seconds": 2.438,
+      "total_duration_seconds": 2.434,
+      "load_duration_seconds": 0.003,
+      "prompt_eval_count": 61,
+      "eval_count": 17,
+      "eval_duration_seconds": 1.491,
+      "response_character_count": 59,
+      "response_word_count": 9
+    },
+    {
+      "id": "context_insufficient",
+      "kind": "context_following",
+      "prompt": "CONTEXT:\nThe document only discusses laboratory opening hours.\n\nQUESTION:\nWhat salary does a Computer Engineer earn?\n\nInstruction:\nIf the context does not contain the answer, respond with INSUFFICIENT_INFORMATION.",
+      "response": "INSUFFICIENT_INFORMATION",
+      "model": "qwen2.5:3b",
+      "wall_time_seconds": 1.411,
+      "total_duration_seconds": 1.407,
+      "load_duration_seconds": 0.003,
+      "prompt_eval_count": 67,
+      "eval_count": 5,
+      "eval_duration_seconds": 0.354,
+      "response_character_count": 24,
+      "response_word_count": 1
+    }
+  ]
+}

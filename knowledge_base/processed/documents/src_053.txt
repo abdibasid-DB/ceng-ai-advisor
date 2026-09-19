@@ -1,0 +1,30 @@
+Source ID: src_053
+
+How Gen AI Affects the Value of Development Work
+
+GoogleResearch
+
+How Gen AI Affects the Value of Development Work
+
+Kevin Storer
+
+DORA, Google (2024)
+
+DownloadGoogle Scholar
+Copy Bibtex
+Listen with Illuminate
+
+Abstract
+
+This report outlines a series of 10 in-depth interviews aimed at understanding how professional developers ascribe value to their work and whether the use of generative artificial intelligence in development changes how the value of development work is assessment.
+
+Research Areas
+
+Machine intelligence
+
+Software engineering
+
+Meet the teams driving innovation
+
+Our teams advance the state of the art through research, systems engineering, and collaboration across Google.
+See our teams

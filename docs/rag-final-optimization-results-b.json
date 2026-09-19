@@ -1,0 +1,283 @@
+{
+  "stage": "Stage 15/15B - Core RAG Pipeline Validation",
+  "generated_at": "2026-09-16T19:53:29+00:00",
+  "case_count": 2,
+  "results": [
+    {
+      "question": "Will artificial intelligence replace Computer Engineers?",
+      "status": "answered",
+      "answer": "- [S1] The adoption of AI requires skills in creative and social intelligence, reasoning skills, and critical thinking, indicating that AI may augment rather than replace Computer Engineers.\n- [S3] The adoption of AI requires skills in creative and social intelligence, reasoning skills, and critical thinking, suggesting that AI may complement rather than replace Computer Engineers.",
+      "llm_called": true,
+      "sources": [
+        {
+          "source_id": "src_017",
+          "title": "The Future of Jobs Report 2025",
+          "source_name": "World Economic Forum",
+          "source_type": "recognized_international_report",
+          "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+          "category": "future_technologies",
+          "supporting_chunk_ids": [
+            "src_017_chunk_097"
+          ],
+          "evidence_labels": [
+            "S1"
+          ],
+          "best_similarity_score": 0.5765566825866699
+        },
+        {
+          "source_id": "src_053",
+          "title": "How Gen AI Affects the Value of Development Work",
+          "source_name": "DORA, Google",
+          "source_type": "software_engineering_research_report",
+          "url": "https://research.google/pubs/how-gen-ai-affects-the-value-of-development-work/",
+          "category": "artificial_intelligence",
+          "supporting_chunk_ids": [
+            "src_053_chunk_001"
+          ],
+          "evidence_labels": [
+            "S2"
+          ],
+          "best_similarity_score": 0.5522944927215576
+        },
+        {
+          "source_id": "src_045",
+          "title": "Skills for the digital age",
+          "source_name": "Organisation for Economic Co-operation and Development (OECD)",
+          "source_type": "recognized_international_report",
+          "url": "https://www.oecd.org/en/publications/2024/11/oecd-digital-economy-outlook-2024-volume-2_9b2801fc/full-report/skills-for-the-digital-age_da6162fb.html",
+          "category": "skills_and_technologies",
+          "supporting_chunk_ids": [
+            "src_045_chunk_094"
+          ],
+          "evidence_labels": [
+            "S3"
+          ],
+          "best_similarity_score": 0.5370330214500427
+        }
+      ],
+      "retrieved_chunks": [
+        {
+          "label": "S1",
+          "chunk_id": "src_017_chunk_097",
+          "source_id": "src_017",
+          "title": "The Future of Jobs Report 2025",
+          "category": "future_technologies",
+          "similarity_score": 0.5765566825866699,
+          "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+          "passage_preview": "and Training sector by 2030. AI and big data skills as well as creative thinking are foreseen to grow in importance. Emerging job roles within the industry are anticipated to include AI and Machine Learning Specialists and Digital Transformation Specialists. Employers also place greater emphasis than in other industries on curiosity and lifelong learning, marketing and media skills and multilingualism. The industry is less focused than other sectors on upskilling and reskilling its own workforce"
+        },
+        {
+          "label": "S2",
+          "chunk_id": "src_053_chunk_001",
+          "source_id": "src_053",
+          "title": "How Gen AI Affects the Value of Development Work",
+          "category": "artificial_intelligence",
+          "similarity_score": 0.5522944927215576,
+          "url": "https://research.google/pubs/how-gen-ai-affects-the-value-of-development-work/",
+          "passage_preview": "Source ID: src_053 How Gen AI Affects the Value of Development Work GoogleResearch How Gen AI Affects the Value of Development Work Kevin Storer DORA, Google (2024) DownloadGoogle Scholar Copy Bibtex Listen with Illuminate Abstract This report outlines a series of 10 in-depth interviews aimed at understanding how professional developers ascribe value to their work and whether the use of generative artificial intelligence in development changes how the value of development work is assessment. Res"
+        },
+        {
+          "label": "S3",
+          "chunk_id": "src_045_chunk_094",
+          "source_id": "src_045",
+          "title": "Skills for the digital age",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.5370330214500427,
+          "url": "https://www.oecd.org/en/publications/2024/11/oecd-digital-economy-outlook-2024-volume-2_9b2801fc/full-report/skills-for-the-digital-age_da6162fb.html",
+          "passage_preview": "also suggests the adoption of AI requires not just AI expertise but also (or rather) skills in creative and social intelligence, reasoning skills and critical thinking (OECD, 2019 [7]; Samek, Squicciarini and Cammeraat, 2021[8]; Squicciarini and Nachtigall, 2021 [46]). Finally, using alternative data sources such as online job postings, Manca (2023 [47]) explored the impact of AI on labour markets. also suggests the adoption of AI requires not just AI expertise but also (or rather) skills in cre"
+        }
+      ],
+      "retrieval_metadata": {
+        "top_k": 5,
+        "candidate_top_k": 12,
+        "similarity_threshold": 0.3,
+        "results_above_threshold": 5,
+        "top_similarity_score": 0.5765566825866699,
+        "evidence_sufficient": true,
+        "out_of_scope": false
+      },
+      "timing": {
+        "retrieval_seconds": 0.329,
+        "context_construction_seconds": 0.0,
+        "llm_generation_seconds": 19.723,
+        "initial_llm_generation_seconds": 19.723,
+        "retry_llm_generation_seconds": 0.0,
+        "llm_reported_total_duration_seconds": 19.689,
+        "total_seconds": 20.053
+      },
+      "error": null,
+      "answer_warnings": [],
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1",
+          "S3"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "normalized": false,
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1
+      },
+      "id": "ai_supported",
+      "type": "supported"
+    },
+    {
+      "question": "How important are internships for Computer Engineering students?",
+      "status": "answered",
+      "answer": "- [S1] The percent of graduating seniors who participated in an internship is the highest that NACE has recorded in the past six years, according to results of NACE’s 2024 Student Survey.\n- [S3] Hiring for internships is expected to remain stable this year, according to NACE’s 2024 Internship & Co-op Report.",
+      "llm_called": true,
+      "sources": [
+        {
+          "source_id": "src_018",
+          "title": "Students Recognize the Importance of Gaining Internship Experience",
+          "source_name": "National Association of Colleges and Employers (NACE)",
+          "source_type": "professional_career_organization_article",
+          "url": "https://naceweb.org/job-market/internships/students-recognize-the-importance-of-gaining-internship-experience",
+          "category": "internships",
+          "supporting_chunk_ids": [
+            "src_018_chunk_001"
+          ],
+          "evidence_labels": [
+            "S1"
+          ],
+          "best_similarity_score": 0.524385392665863
+        },
+        {
+          "source_id": "src_004",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "source_name": "OSTIM Technical University - Department of Computer Engineering (English)",
+          "source_type": "course_descriptions",
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "category": "curriculum",
+          "supporting_chunk_ids": [
+            "src_004_chunk_008"
+          ],
+          "evidence_labels": [
+            "S2"
+          ],
+          "best_similarity_score": 0.45075690746307373
+        },
+        {
+          "source_id": "src_037",
+          "title": "Intern Hiring Is Stable for 2024",
+          "source_name": "National Association of Colleges and Employers (NACE)",
+          "source_type": "professional_career_organization_article",
+          "url": "https://naceweb.org/job-market/trends-and-predictions/intern-hiring-is-stable-for-2024",
+          "category": "internships",
+          "supporting_chunk_ids": [
+            "src_037_chunk_001"
+          ],
+          "evidence_labels": [
+            "S3"
+          ],
+          "best_similarity_score": 0.39353108406066895
+        },
+        {
+          "source_id": "src_036",
+          "title": "Resumes",
+          "source_name": "Berkeley Career Engagement",
+          "source_type": "university_career_center_resource",
+          "url": "https://career.berkeley.edu/prepare-for-success/resumes/",
+          "category": "employment",
+          "supporting_chunk_ids": [
+            "src_036_chunk_005"
+          ],
+          "evidence_labels": [
+            "S4"
+          ],
+          "best_similarity_score": 0.37562596797943115
+        }
+      ],
+      "retrieved_chunks": [
+        {
+          "label": "S1",
+          "chunk_id": "src_018_chunk_001",
+          "source_id": "src_018",
+          "title": "Students Recognize the Importance of Gaining Internship Experience",
+          "category": "internships",
+          "similarity_score": 0.524385392665863,
+          "url": "https://naceweb.org/job-market/internships/students-recognize-the-importance-of-gaining-internship-experience",
+          "passage_preview": "Source ID: src_018 Students Recognize the Importance of Gaining Internship Experience Join/RenewSign InSign Out Your NACE membership expires soon! >> Your membership ends Why Join NACE? Learn all about NACE member benefits today Home / Job Market / Internships Internships Students Recognize the Importance of Gaining Internship Experience Date: September 23, 2024 By: Kevin Gray Share AAA co opscompensationInternshipsnace insightsstudent attitudessurveys The percent of graduating seniors who parti"
+        },
+        {
+          "label": "S2",
+          "chunk_id": "src_004_chunk_008",
+          "source_id": "src_004",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "curriculum",
+          "similarity_score": 0.45075690746307373,
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "passage_preview": "I This course is the first part of a two-semester capstone project in computer engineering. Students identify a research or design problem related to computer systems and develop a comprehensive project plan. The course includes literature review, problem definition, methodology development, and preliminary analysis or design. Emphasis is placed on independent study, technical reporting, and project planning under faculty supervision."
+        },
+        {
+          "label": "S3",
+          "chunk_id": "src_037_chunk_001",
+          "source_id": "src_037",
+          "title": "Intern Hiring Is Stable for 2024",
+          "category": "internships",
+          "similarity_score": 0.39353108406066895,
+          "url": "https://naceweb.org/job-market/trends-and-predictions/intern-hiring-is-stable-for-2024",
+          "passage_preview": "Source ID: src_037 Intern Hiring Is Stable for 2024 Join/RenewSign InSign Out Your NACE membership expires soon! >> Your membership ends Why Join NACE? Learn all about NACE member benefits today Home / Job Market / Trends & Predictions Internships Intern Hiring Is Stable for 2024 Date: April 19, 2024 By: Mimi Collins Share AAA Internshipsnace insightssurveystrends and predictions Hiring for internships is expected to remain stable this year, according to NACE’s 2024 Internship & Co-op Report. Ov"
+        },
+        {
+          "label": "S4",
+          "chunk_id": "src_036_chunk_005",
+          "source_id": "src_036",
+          "title": "Resumes",
+          "category": "employment",
+          "similarity_score": 0.37562596797943115,
+          "url": "https://career.berkeley.edu/prepare-for-success/resumes/",
+          "passage_preview": "Start Exploring Career Essentials Gain Clarity Self Assessment Decision Making Career Exploration Develop Competitiveness Make Connections Explore Career Fields Majors to Career What Can I Do With A Major In…? Informational Interviews Questions Where Do Cal Grads Go? Summer Activity Dashboard Events Meet with Us Career Education Peer Advisors Peace Corps Teach For America Prepare for Success Get Career Ready Develop a Plan Resumes Sample Resumes Resume Books Cover Letters Interview Process Overv"
+        }
+      ],
+      "retrieval_metadata": {
+        "top_k": 5,
+        "candidate_top_k": 12,
+        "similarity_threshold": 0.3,
+        "results_above_threshold": 5,
+        "top_similarity_score": 0.524385392665863,
+        "evidence_sufficient": true,
+        "out_of_scope": false
+      },
+      "timing": {
+        "retrieval_seconds": 0.044,
+        "context_construction_seconds": 0.001,
+        "llm_generation_seconds": 25.904,
+        "initial_llm_generation_seconds": 25.904,
+        "retry_llm_generation_seconds": 0.0,
+        "llm_reported_total_duration_seconds": 25.892,
+        "total_seconds": 25.948
+      },
+      "error": null,
+      "answer_warnings": [],
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1",
+          "S3"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3",
+          "S4"
+        ],
+        "normalized": false,
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1
+      },
+      "id": "internship_supported",
+      "type": "supported"
+    }
+  ]
+}

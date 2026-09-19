@@ -1,0 +1,125 @@
+{
+  "question": "What courses are taught in Computer Engineering?",
+  "results": [
+    {
+      "config": "baseline_top5_ctx4500_p900_pred180",
+      "status": "answered",
+      "answer": "- [S2] introduces fundamental concepts in discrete computing structures and differential equations.\n- [S4] covers object-oriented programming, including classes, objects, inheritance, encapsulation, polymorphism, and abstraction.\n- [S1] and [S3] provide introductory courses that cover game-related topics and programming with theoretical foundations, respectively.",
+      "llm_called": true,
+      "timing": {
+        "retrieval_seconds": 0.413,
+        "context_construction_seconds": 0.0,
+        "llm_generation_seconds": 29.021,
+        "initial_llm_generation_seconds": 29.021,
+        "retry_llm_generation_seconds": 0.0,
+        "llm_reported_total_duration_seconds": 28.969,
+        "total_seconds": 29.435
+      },
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S2",
+          "S4",
+          "S1",
+          "S3"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3",
+          "S4"
+        ],
+        "normalized": false,
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1
+      },
+      "retrieved_count": 4,
+      "context_chars": 3343,
+      "sources": [
+        "src_039",
+        "src_004"
+      ]
+    },
+    {
+      "config": "top3_ctx3000_p700_pred120",
+      "status": "answered",
+      "answer": "- [S2] introduces courses in the FOURTH SEMESTER of Computer Engineering at OSTIM Technical University.\n- [S1] provides information on which introductory course to take for potential concentrators at Brown University.",
+      "llm_called": true,
+      "timing": {
+        "retrieval_seconds": 0.273,
+        "context_construction_seconds": 0.001,
+        "llm_generation_seconds": 12.406,
+        "initial_llm_generation_seconds": 12.406,
+        "retry_llm_generation_seconds": 0.0,
+        "llm_reported_total_duration_seconds": 12.389,
+        "total_seconds": 12.68
+      },
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S2",
+          "S1"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "normalized": false,
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1
+      },
+      "retrieved_count": 3,
+      "context_chars": 1941,
+      "sources": [
+        "src_039",
+        "src_004"
+      ]
+    },
+    {
+      "config": "top3_ctx2400_p600_pred96",
+      "status": "answered",
+      "answer": "- [S2] covers the course contents for the Fourth and Third Semesters at OSTIM Technical University.\n- [S1] provides information on which introductory course to take at Brown University.",
+      "llm_called": true,
+      "timing": {
+        "retrieval_seconds": 0.261,
+        "context_construction_seconds": 0.001,
+        "llm_generation_seconds": 11.393,
+        "initial_llm_generation_seconds": 11.393,
+        "retry_llm_generation_seconds": 0.0,
+        "llm_reported_total_duration_seconds": 11.375,
+        "total_seconds": 11.654
+      },
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S2",
+          "S1"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "normalized": false,
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1
+      },
+      "retrieved_count": 3,
+      "context_chars": 1661,
+      "sources": [
+        "src_039",
+        "src_004"
+      ]
+    }
+  ]
+}

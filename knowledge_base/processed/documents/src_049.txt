@@ -1,0 +1,307 @@
+Source ID: src_049
+
+Work | 2024 Stack Overflow Developer Survey
+
+2024DeveloperSurvey
+
+Products
+
+Stack Overflow for TeamsWhere developers & technologists share private knowledge with
+coworkers
+
+Advertising & TalentReach devs & technologists worldwide about your product,
+service or employer brand
+
+OverflowAIGenAI features for Teams
+
+OverflowAPITrain & fine-tune LLMs
+
+LabsThe future of collective knowledge sharing
+
+About the companyVisit the blog
+
+4 Work
+
+Developers tell us about workplace trends and offer some transparency about salary for different roles and experience levels.
+
+4.1. Employment →
+
+4.2. Company info →
+
+4.3. Salary →
+
+4.4. Purchasing technology →
+
+4.5. Coding outside of work →
+
+4.1Employment
+
+Employment status
+
+84% of respondents are working: either part-time, freelancing, or full-time.
+
+Which of the following best describes your current employment status? Select all that apply.*
+
+All Respondents Professional Developers
+
+Download
+
+I acknowledge that the downloaded file is licensed under the Open Database License
+
+Download chart
+
+Share
+
+Twitter/XFacebookLinkedIn
+
+Responses:
+
+65,437 (100%)
+
+Download
+
+I acknowledge that the downloaded file is licensed under the Open Database License
+
+Download chart
+
+Share
+
+Twitter/XFacebookLinkedIn
+
+Responses:
+
+49,390 (75.5%)
+
+Employment status by geography
+
+Full-time employment has decreased in the U.S. since last year's survey (69% to 65%). Looking at employment in the top five countries, in the U.K. and Ukraine respondents not employed full-time are more likely to be independent contractors and in Germany and India are more likely to be a full-time student if not employed full-time.
+
+Which of the following best describes your current employment status? Select all that apply.*
+
+United States Germany India United Kingdom Ukraine
+
+Download
+
+I acknowledge that the downloaded file is licensed under the Open Database License
+
+Download chart
+
+Share
+
+Twitter/XFacebookLinkedIn
+
+Responses:
+
+12,785 (19.5%)
+
+Download
+
+I acknowledge that the downloaded file is licensed under the Open Database License
+
+Download chart
+
+Share
+
+Twitter/XFacebookLinkedIn
+
+Responses:
+
+5,858 (9%)
+
+Download
+
+I acknowledge that the downloaded file is licensed under the Open Database License
+
+Download chart
+
+Share
+
+Twitter/XFacebookLinkedIn
+
+Responses:
+
+4,867 (7.4%)
+
+Download
+
+I acknowledge that the downloaded file is licensed under the Open Database License
+
+Download chart
+
+Share
+
+Twitter/XFacebookLinkedIn
+
+Responses:
+
+3,538 (5.4%)
+
+Download
+
+I acknowledge that the downloaded file is licensed under the Open Database License
+
+Download chart
+
+Share
+
+Twitter/XFacebookLinkedIn
+
+Responses:
+
+3,392 (5.2%)
+
+Work environment
+
+The number of hybrid developers has stayed consistent this year with last year (42%), while the percentage of developers working in-person has increased (20%) for the third year in a row compared to 15% in 2022 and 16% in 2023.
+
+Which best describes your current work situation?
+
+All Respondents By Organization Size
+
+Download
+
+I acknowledge that the downloaded file is licensed under the Open Database License
+
+Download chart
+
+Share
+
+Twitter/XFacebookLinkedIn
+
+Responses:
+
+54,806 (83.8%)
+
+47,443 (72.5%)
+
+4.2Company info
+
+Company size
+
+47% of respondents work for organizations that have fewer than 100 employees.
+
+Approximately how many people are employed by the company or organization you currently work for? This should only include your primary company, and not the entire holding or parent company if that applies.
+
+42,827 (65.4%)
+
+4.3Salary
+
+Salary by developer type
+
+The highest-paid developers of all respondents are site reliability and cloud infrastructure engineers, as both roles are pivotal in keeping digital services up and running.
+
+Looking at top-responding regions, mobile developers report higher earnings in the U.S., data engineers are the highest-paid in Germany and Ukraine, and back-end developers are top earners in India and the U.K.
+
+What is your current total annual compensation (salary, bonuses, and perks, before taxes and deductions)? Please enter a whole number in the box below, without any punctuation. If you are paid hourly, please estimate an equivalent yearly salary. If you prefer not to answer, please leave the box empty.
+
+All Respondents United States Germany India United Kingdom Ukraine
+
+22,677 (34.7%)
+
+Median yearly salary in USD
+
+4,496 (6.9%)
+
+Median yearly salary in USD
+
+1,976 (3%)
+
+Median yearly salary in USD
+
+1,011 (1.5%)
+
+Median yearly salary in USD
+
+1,333 (2%)
+
+Median yearly salary in USD
+
+1,436 (2.2%)
+
+Median yearly salary in USD
+
+Salary and experience by developer type
+
+Developer experience is highly valued and this is confirmed by this year's top-earning roles that relate to the DevRel scaffolding. Senior executives are making the most with the most experience on average, followed by developer advocates, engineering managers, and developer experience professionals.
+
+What is your current total annual compensation (salary, bonuses, and perks, before taxes and deductions)? Please enter a whole number in the box below, without any punctuation. If you are paid hourly, please estimate an equivalent yearly salary. If you prefer not to answer, please leave the box empty.
+
+22,677 (34.7%)
+
+Salary and experience by language
+
+Developers that are using Erlang and Clojure are top earners in the past year, averaging more than $95K annually (USD) with about 12 years experience. Developers working with Dart and Prolog are earning the least annually (< $45K annual USD) with less experience on average (< 10 years).
+
+Most developers are reporting their salary range is averaging $10K USD less this year: $60 - $75K USD compared to $70 - $85K USD in 2023.
+
+What is your current total annual compensation (salary, bonuses, and perks, before taxes and deductions)? Please enter a whole number in the box below, without any punctuation. If you are paid hourly, please estimate an equivalent yearly salary. If you prefer not to answer, please leave the box empty.
+
+22,603 (34.5%)
+
+4.4Purchasing technology
+
+Influence on technology purchases
+
+Most respondents have influence over technology purchases (62%). Those roles with the highest levels of influence are senior executives (99%), engineering managers (87%), and product managers (77%).
+
+What level of influence do you, personally, have over new technology purchases at your organization?
+
+All Respondents By Developer Type
+
+47,406 (72.4%)
+
+45,922 (70.2%)
+
+Prefer to build and/or buy new tech
+
+60% of respondents endorse technology purchases that are build-and-buy as opposed to purely build or buy. Database administrators, developer advocates, and security professionals are less likely to endorse a build-and-buy approach possibly due to the need to document and safeguard customizations.
+
+When asked to provide a recommendation for solving a problem at work with a new tool or software, what has been your most recent choice of the following?
+
+All Respondents By Developer Type
+
+43,358 (66.3%)
+
+42,016 (64.2%)
+
+Researching new tools and technologies
+
+Starting a free trial is the most common way to evaluate new tools (75%) followed closely by asking other developers (73%).
+
+Backend developers, embedded app developers, and academic researchers prefer to ask other developers than to start a free trial.
+
+When buying a new tool or software, how do you discover and research available solutions? Select all that apply.
+
+All Respondents By Developer Type
+
+45,181 (69%)
+
+36,083 (55.1%)
+
+Tech endorsement factors
+
+APIs are pretty cool, but did you know that 75% of developers are more likely to endorse your technology if you provide access to APIs? Make sure to let back-end developers and engineering managers know about the API integrations you offer: they are even more likely to endorse your tech than the average coder.
+
+What product feature do you care about most when endorsing a technology purchase? Select all that apply.
+
+All Respondents By Developer Type
+
+43,668 (66.7%)
+
+34,541 (52.8%)
+
+4.5Coding outside of work
+
+Coding outside of work
+
+Most developers code outside of work as a hobby (68%), and almost 40% code outside of work for professional development or self-paced learning from online courses.
+
+Which of the following best describes the code you write outside of work? Select all that apply.
+
+54,466 (83.2%)
+
+Previous
+
+Next
+
+Community

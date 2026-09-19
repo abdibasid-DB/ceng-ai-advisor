@@ -1,0 +1,87 @@
+{
+  "stage": "Stage 15/15B - Core RAG Pipeline Validation",
+  "generated_at": "2026-09-16T19:55:58+00:00",
+  "case_count": 1,
+  "results": [
+    {
+      "question": "Will artificial intelligence replace Computer Engineers?",
+      "status": "insufficient_information",
+      "answer": "I don't have enough reliable information in the current knowledge base to answer that question.",
+      "llm_called": false,
+      "sources": [],
+      "retrieved_chunks": [
+        {
+          "label": null,
+          "chunk_id": "src_017_chunk_097",
+          "source_id": "src_017",
+          "title": "The Future of Jobs Report 2025",
+          "category": "future_technologies",
+          "similarity_score": 0.5765566825866699,
+          "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+          "passage_preview": "and Training sector by 2030. AI and big data skills as well as creative thinking are foreseen to grow in importance. Emerging job roles within the industry are anticipated to include AI and Machine Learning Specialists and Digital Transformation Specialists. Employers also place greater emphasis than in other industries on curiosity and lifelong learning, marketing and media skills and multilingualism. The industry is\nless focused than other sectors on upskilling and\nreskilling its own workforce"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_017_chunk_102",
+          "source_id": "src_017",
+          "title": "The Future of Jobs Report 2025",
+          "category": "future_technologies",
+          "similarity_score": 0.5541332960128784,
+          "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+          "passage_preview": "Emerging job roles in the industry are foreseen to include AI and Machine Learning Specialists and Business Development Professionals. Demand for AI and big data skills, creative thinking, and curiosity and lifelong learning is projected to grow across all industry roles. Sixty percent of employers highlight the sector’s inability to attract talent as a key barrier to transformation by 2030.\n\nEmerging job roles in the industry are foreseen to include AI and Machine Learning Specialists and Busin"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_053_chunk_001",
+          "source_id": "src_053",
+          "title": "How Gen AI Affects the Value of Development Work",
+          "category": "artificial_intelligence",
+          "similarity_score": 0.5522944927215576,
+          "url": "https://research.google/pubs/how-gen-ai-affects-the-value-of-development-work/",
+          "passage_preview": "Source ID: src_053\n\nHow Gen AI Affects the Value of Development Work\n\nGoogleResearch\n\nHow Gen AI Affects the Value of Development Work\n\nKevin Storer\n\nDORA, Google (2024)\n\nDownloadGoogle Scholar\nCopy Bibtex\nListen with Illuminate\n\nAbstract\n\nThis report outlines a series of 10 in-depth interviews aimed at understanding how professional developers ascribe value to their work and whether the use of generative artificial intelligence in development changes how the value of development work is assessm"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_017_chunk_099",
+          "source_id": "src_017",
+          "title": "The Future of Jobs Report 2025",
+          "category": "future_technologies",
+          "similarity_score": 0.548869252204895,
+          "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+          "passage_preview": "Page 87\nSpecialists. Top skills on the rise are anticipated to\nbe linked to AI and big data as well as networks\nand cybersecurity, and talent management skills\nare expected to grow in demand at a faster rate\nthan the global industry average. Twenty-seven\npercent of employees in the sector are anticipated\nto be able to upskill in their current roles, with\nan additional 17% projected to be reskilled and\nredeployed. Almost 70% of respondents expect\nreskilling and upskilling to improve talent retent"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_045_chunk_094",
+          "source_id": "src_045",
+          "title": "Skills for the digital age",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.5370330214500427,
+          "url": "https://www.oecd.org/en/publications/2024/11/oecd-digital-economy-outlook-2024-volume-2_9b2801fc/full-report/skills-for-the-digital-age_da6162fb.html",
+          "passage_preview": "also suggests the adoption of AI requires not just AI expertise but also (or rather) skills in creative and social intelligence, reasoning skills and critical thinking (OECD, 2019 [7]; Samek, Squicciarini and Cammeraat, 2021[8]; Squicciarini and Nachtigall, 2021 [46]). Finally, using alternative data sources such as online job postings, Manca (2023 [47]) explored the impact of AI on labour markets.\n\nalso suggests the adoption of AI requires not just AI expertise but also (or rather) skills in cr"
+        }
+      ],
+      "retrieval_metadata": {
+        "top_k": 5,
+        "candidate_top_k": 12,
+        "similarity_threshold": 0.3,
+        "results_above_threshold": 5,
+        "top_similarity_score": 0.5765566825866699,
+        "evidence_sufficient": true,
+        "out_of_scope": false,
+        "unsupported_reason": "retrieved evidence does not directly address whether AI replaces computer engineers"
+      },
+      "timing": {
+        "retrieval_seconds": 0.336,
+        "context_construction_seconds": 0.0,
+        "llm_generation_seconds": 0.0,
+        "total_seconds": 0.336
+      },
+      "error": null,
+      "answer_warnings": [],
+      "citation_metadata": {},
+      "id": "ai_supported",
+      "type": "supported"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "description": "Stage 15 representative RAG test cases. These validate pipeline behavior, not final product UX.",
+  "cases": [
+    {
+      "id": "department_supported",
+      "type": "supported",
+      "question": "What is Computer Engineering at OSTIM Technical University?"
+    },
+    {
+      "id": "curriculum_supported",
+      "type": "curriculum",
+      "question": "What courses are taught in Computer Engineering?"
+    },
+    {
+      "id": "programming_supported",
+      "type": "supported",
+      "question": "What programming languages should a Computer Engineering student learn?"
+    },
+    {
+      "id": "programming_paraphrase",
+      "type": "paraphrase",
+      "question": "Which coding languages are useful for someone studying Computer Engineering?"
+    },
+    {
+      "id": "career_supported",
+      "type": "supported",
+      "question": "What jobs can I do after graduating from Computer Engineering?"
+    },
+    {
+      "id": "ai_supported",
+      "type": "supported",
+      "question": "Will artificial intelligence replace Computer Engineers?"
+    },
+    {
+      "id": "cybersecurity_supported",
+      "type": "cybersecurity",
+      "question": "Can Computer Engineers work in cybersecurity?"
+    },
+    {
+      "id": "cybersecurity_careers",
+      "type": "cybersecurity",
+      "question": "What cybersecurity careers can a Computer Engineering graduate do?"
+    },
+    {
+      "id": "internship_supported",
+      "type": "supported",
+      "question": "How important are internships for Computer Engineering students?"
+    },
+    {
+      "id": "skills_supported",
+      "type": "supported",
+      "question": "What technical skills should Computer Engineering students develop?"
+    },
+    {
+      "id": "graduate_supported",
+      "type": "supported",
+      "question": "Is a master's degree necessary after Computer Engineering?"
+    },
+    {
+      "id": "future_supported",
+      "type": "supported",
+      "question": "Which future technologies are important for Computer Engineering students?"
+    },
+    {
+      "id": "multi_topic",
+      "type": "multi_topic",
+      "question": "Should I focus more on GPA, projects, or internships when preparing for a software career?"
+    },
+    {
+      "id": "unsupported_in_domain",
+      "type": "unsupported_in_domain",
+      "question": "What is the exact 2026 tuition fee for OSTIM Technical University Computer Engineering?"
+    },
+    {
+      "id": "out_of_scope_cake",
+      "type": "out_of_scope",
+      "question": "What is the best chocolate cake recipe?"
+    },
+    {
+      "id": "out_of_scope_football",
+      "type": "out_of_scope",
+      "question": "Who won the football match yesterday?"
+    },
+    {
+      "id": "out_of_scope_washing_machine",
+      "type": "out_of_scope",
+      "question": "How do I repair a washing machine?"
+    }
+  ]
+}

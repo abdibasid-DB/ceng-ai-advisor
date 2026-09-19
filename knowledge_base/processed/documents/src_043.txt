@@ -1,0 +1,61 @@
+Source ID: src_043
+
+Subdisciplines | Electrical & Computer Engineering | Illinois
+
+University of Illinois Urbana-Champaign
+
+Apply
+
+Give
+
+My.ECE
+
+The Grainger College of Engineering
+
+Electrical & Computer Engineering
+
+Subdisciplines
+
+Breadth and Depth in Electrical and Computer Engineering
+
+Both electrical and computer engineering build from a core understanding of electrical phenomena, the concepts of systems and signals, and computers. At the junior and senior level, however, they branch into a large and diverse set of rich intellectual areas, ranging from bioengineering to power systems. When EE and CompE students reach junior year, they find that, for the first time in their undergraduate career, they have to make choices among large numbers of technical elective courses. At a general level, they will need to strike a balance between the breadth and depth of what they choose to learn. Many of the 300-level electives in our curricula provide broad knowledge of utility to all EEs and CompEs, regardless of areas of specialization defined by the various 400-level elective courses offered in our curricula.
+
+The material provided within the links listed below describe the main areas of specialization or focus in CompE and EE programs. For each area, you’ll find a short description, followed with lists of suggested courses and ECE faculty members who specialize in these areas. Many ECE students select their 400-level specialization courses based this information. Many students’ career interests will combine two or more focus areas. As a result, students will likely select courses listed under multiple areas. The specialization choices of ECE students will not be recorded in the BS diploma they receive after completing their degree.
+
+Specialization areas in Electrical Engineering:
+
+Bioengineering, acoustics, and magnetic resonance engineering
+
+Circuits
+
+Communication systems
+
+Control systems
+
+Electromagnetics
+
+Microelectronics/photonics
+
+Nanotechnology
+
+Power and energy systems
+
+Signal processing
+
+Remote sensing and space science
+
+Specialization areas in Computer Engineering:
+
+Hardware systems
+
+Cyberphysical systems
+
+Foundations and theory
+
+Trust, reliability, and security
+
+Networking, mobile, and distributed computing
+
+Big Data analytics and systems
+
+Artificial intelligence, robotics, and cybernetics

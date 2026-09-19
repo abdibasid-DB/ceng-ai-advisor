@@ -1,0 +1,253 @@
+Source ID: src_039
+Title: Which Introductory Course Should I Take?
+
+Brown CS: Which Introductory Course Should I Take?
+
+About Brown
+
+Academics
+
+Admission
+
+Research
+
+Campus Life
+
+Information for:
+
+Current Students
+
+Faculty
+
+Staff
+
+Families
+
+Alumni
+
+Friends & Neighbors
+
+A to Z Index
+
+People Directory
+
+Social@Brown
+
+Facebook
+
+Twitter
+
+LinkedIn
+
+Google+
+
+Computer Science
+
+About
+
+About the Department
+
+Contact
+
+Directions
+
+Rooms
+
+Systems & Software
+
+Conduit
+
+Diversity
+
+Socially Responsible
+Computing
+
+Positions / Jobs
+
+Brown CS News
+
+Events
+
+Brown CS Blog
+
+People
+
+Our Community
+
+Faculty
+
+Staff
+
+Grad Students
+
+Ugrad Students
+
+Alums
+
+Research
+
+Research Links
+
+Areas
+
+Publications
+
+Opportunities For
+Visiting Students
+
+Degrees
+
+Degree Programs
+
+Doctoral
+
+Master's in
+
+Computer Science
+
+Cybersecurity
+
+Undergraduate
+
+Interdisciplinary
+
+Miscellaneous
+
+Courses
+
+Course List
+
+Sections
+
+TA Program
+
+Diversity
+
+Diversity & Inclusion
+Who We Are
+
+Resources
+
+Action Plan & Initiatives
+
+Student Advocates
+
+Data And Demographics
+
+Student Groups
+
+Giving
+
+Home»
+
+Degrees»
+
+Undergrad»
+
+Which Introductory Course Should I Take?
+
+[Updated 8/17/26]
+
+Brown CS offers many introductory courses in computer science. Here's a quick guide on how to choose between them. You can also watch this video that gives an overview by the faculty of 0111, 0150, 0170*, 0190, 0200, and the Director of Undergraduate Studies. A couple of courses have provided links below to sample lectures to help you decide. (*the 0170 overview is by last year's instructor, John Hughes, who retired in May)
+
+Note that the placement process for 0190, our accelerated course typically taken by students with prior programming experience, occurs between mid June and early August. If you are considering 0190, see the instructions for how to get started (follow the "next offering" link at the very top of the page); the details for each year are available starting June 1st. No exceptions are made once the placement period has finished in early August.
+
+For Potential Concentrators
+
+Those planning to concentrate (major) in computer science should take one of 0150/0200, 0170/0200, 0111/bridgework/0200, or 0190. 0111E may substitute for 0111. None of 0150, 0170, 0111, or 0111E assume prior programming background; the 0190 placement process is open to anyone, regardless of prior programming experience. All of these options prepare students for subsequent courses in the concentration, but with different approaches and some differences in content. The descriptions below outline the differences: to help you decide between them, you might attend the first lectures of multiple courses (except for 0190, which students must place into over the summer).
+
+0111 provides the most leisurely paced introduction to programming and is ideal for students who are taking other time-consuming courses at the same time. Students in 0111 or 0111E may decide to do additional work that, while increasing the load of the back half of the course (or extending into break if they choose), prepares them for 0200, which they may then take in a subsequent semester.
+
+Currently, 0111 is offered both fall and spring. 0150, 0170, and 0190 are offered only in the fall. 0200 is offered both fall and spring. 0111E is an experimental offering in Fall 2026 only (more information below).
+
+For Non-Concentrators
+
+Students who want a one-semester course on programming that’s not as time-intensive as 0150 and 0170 might consider 0111/0111E (which can lead into either a CS concentration or the Data Fluency certificate).
+
+Placement Based On Prior Background
+
+Brown CS does not offer credit or placement for AP or IB courses. 0190 is designed for students with prior experience on par with the AP-CS A exam. To take 0190, students must pass a placement process that runs in the summer (see the 0190 link for details). Many students with prior experience still take 0150 or 0170 (both cover new content; the latter uses a style of programming that is new to most students with prior experience).
+
+If you have transferred into Brown from another university, contact CS Director of Undergraduate Studies Kathi Fisler for help figuring out where to start in the Brown concentration.
+
+Summary of the Courses
+
+0111
+
+0111 focuses on data: how we program with it, error-check it, and organize it depending on the computational problem at hand. The course combines basic data science content (though not statistics) with core data structures and algorithms from CS. Students work in a combination of programming languages (Pyret and Python) to begin to learn how different programming tools are suited to different tasks. Collaboration is welcome on some assignments; collaborative discussion of concepts is always welcome.
+
+0111 serves as an entry point to both the CS concentration and the Data Fluency certificate. DATA 0200 (in the Data Fluency requirements) was designed around 0111, and hence 0111 is a better choice than 0150 or 0170 for those headed towards that certificate.
+
+Students who wish to go from 0111 into the CS concentration can do an additional 4-5 medium-size assignments to prepare for CSCI 0200. The assignments are handed out as soon as 0111 covers the corresponding material, but they are not due until sometime during the following break (winter or summer). This allows students to complete 0111 before deciding whether to bridge to 0200, while also providing the opportunity to complete the assignments during the regular semester.
+
+CS used to offer CSCI 0112 as a full course bridge between 0111 and 0200, but we stopped offering 0112 after Fall 2024 due to very low enrollments. The transition from 0111 to 0200 has gone extremely well for students, which further reduced the need from 0112.
+
+Here is a sample lecture from CS0111.
+
+Direct questions to the professor: Milda Zizyte (kfisler@brown.edu).
+
+0111E
+
+011E is an experimental variation of 0111 in which we will learn to design programs with AI-coding agents alongside learning to program by hand. The content matches that of 0111 (especially its data-centric approach), but 0111E also teaches students how to work with AI coding agents to design programs that are a bit beyond what they might be able to write by hand. The agentic portion of 0111E will emphasize creating various design-specification documents through which humans can communicate with agents. Students will learn how to write these specifications, how to audit and test agent-generated code around these specifications, and practice communicating about code design through design discussions with TAs and fellow students.
+
+We intend 0111E to be just as comfortable for beginners and non-concentrators as 0111. Admission preference will be given to students with little to no prior programming experience. 0111E will satisfy the same prereqs as regular 0111. The course will not be offered in Spring 2027.
+
+Direct questions to the professor: Kathi Fisler (kfisler@brown.edu).
+
+0150
+
+0150 emphasizes programming practice. 0150 is a challenging object-oriented programming course (using Java) in which students gain experience with object-oriented design techniques and the use of Java-FX, Java's 2D graphics library. Basic data structures (arrays, lists, stacks, queues, trees) are covered as well. Students will design and implement a sequence of moderate to fairly lengthy interactive programs, including Tetris, a fascinating computer game. All programs use graphical user interfaces. While the course uses games as a motivating domain, this is not a course in game design, and the techniques and skills learned are equally applicable across other domains. Even if you have programmed in Java before, you might find this a challenging course.
+
+Here is a sample lecture from CS0150.
+
+Direct questions to the professor: Andy van Dam, avd@cs.brown.edu.
+
+0170
+
+0170 integrates learning programming with learning the theoretical foundations of computer science. Students learn how to break problems down into elegant and concise programs using functional programming (in Racket and ReasonML). Functional languages have a gentle learning curve, while differing from the styles of programming that students typically see in high school. The course introduces both practical and theoretical techniques for assessing how well programs satisfy their requirements.
+
+Direct questions to the professor: Philip Klein, klein@brown.edu.
+
+0190
+
+0190 is offered in the fall. It compresses much of the first-year curriculum into a single semester by spending significantly less time on fundamentals of programming. Students cannot enroll directly into 0190; instead they must qualify for it by taking a placement exam administered the summer before. (The placement is self-contained, so even students with no prior computing background are welcome to try it out.) Additional information is available on the 0190 home page.
+
+Students who take 0190 can go directly to more advanced courses, without taking CSCI 0200. Taking 0190 does not, however, reduce the total number of courses that a student must take for a CS concentration. Students will take an additional course (of their choosing) to act as the second course of their introductory sequence. Some students go on to take 0200 after 0190, especially if they did not have a strong grounding in object-oriented programming prior to starting at Brown.
+
+Consult the FAQ on the 0190 website for answers to most questions (and directions for contacting the professor, Shriram Krishnamurthi).
+
+0200
+
+0200 is the second-semester intro course that follows 0150, 0170, 0111 (with additional work), and 0190 (if desired). (It merges the former 0160 and 0180 courses). The course emphasizes choosing and implementing data structures, essential graph algorithms, performance and social-impact analysis of algorithms, and strong programming practices. Students work in a combination of object-oriented and functional programming, using each of Java and Python.
+
+The first two weeks of 0200 run as two different tracks: one to help students from 0150 learn functional programming, recursion, and run-time analysis and another to help students from 0111/0170/0190 learn object-oriented programming in Java. After the first two weeks, the two tracks merge into one course for the rest of the semester.
+
+Direct questions to the professor: Kathi Fisler (kfisler@cs.brown.edu)
+
+Frequently-Asked Questions
+
+How do I decide which intro course to take? As the above-linked video explains, these courses take different approaches to introducing you to computing. 0111 teaches computing in the context of data analysis, 0150 in the context of creating 2D interactive games, and 0170 in the context of exploring how programs behave from both a coding and mathematical/theoretical perspective (while solving classical computational problems from CS). All three are designed for people with no prior computing (indeed, half of our concentrators first tried computing at Brown!). 0111 starts off a bit more slowly than the other two (which is why there is extra work later for those who want to go straight to CS200). All of them leave you equally prepared for later CS. If you are taking just one intro course, however, you might want to think about whether one of the intro approaches is a better fit with how you might use it (for example, if you want to do some data-oriented programming as part of a social sciences project, 0111 will be more directly applicable than either of the other two).
+
+How are the intro courses dealing with AI coding agents? AI coding agents have transformed how programs get built. In professional contexts, humans are still in charge of design, but agents increasingly produce the detailed code that implements the design. Both humans and agents have roles in auditing the produced code for quality and adherence to the design. This requires an understanding of how code actually works. Accordingly, we still believe (and alums and other experts agree) that one has to have some degree of old-fashioned, manual programming experience to work well with agents. The question is how we interleave teaching manual skills with agent-based software design. At Brown, 0111E and 0190 are adding significant components on designing and auditing programs in collaboration with agents (alongside conventional manual programming). 0111, 0150, and 0170 will not include agents, deferring that education to later courses. Many upper-level courses are adapting how they teach as well, leveraging agents to teach new skills that weren't approachable before, while still doing conventional exercises that build student learning. Several courses (including intro ones) have components that explore the societal impacts of AI agents. Our courses will continue to evolve as we learn from these efforts.
+
+Which is better for continuing into CS200? All are equally good. The first two weeks of CS200 run in separate tracks, depending on which intro you came from. 200 was explicitly designed to bring in students from any of the first semester courses. There is no difference in CS200 course grades based on intro course. Each of 0111, 0150, and 0170 covers something relevant for 200 that the other two do not, so everyone comes in on different but equivalent footing.
+
+I've never programmed before -- can I take a CS Intro course? Absolutely! None of 0111, 0150, or 0170 assume any prior background. Roughly half of the students in each of these courses has never programmed before. The majority of students with significant prior programming experience take 0190 (or sometimes 0170 since it uses a different style of programming than most high school courses).
+
+I've done a bit of programming, but didn't (want to) take CS0190. What should I do? Strongly consider CS0170. It uses a different style of programming than what you likely saw previously (no assignment statements, for example), so it helps build your flexibility as a programmer, even if you already know the basics.
+
+Which intro CS course is the easiest? There's no single answer to this because each course takes a different perspective and different students respond well to different perspectives. 0111 goes a bit more slowly than the others (especially at first), since it has the benefit of the bridgework to help students accelerate if and when they are ready, but all of 0111, 0150, and 0170 have been successful for students with a range of backgrounds.
+
+How isolated will I be as a female student in a CS intro course? Roughly 40% of students graduating in CS at Brown are female. In each of 0111, 0150, and 0170, females make up just about half of the class. 0190 has a smaller percentage of females due to the experience skew in high-school CS courses (since most in 0190 had prior high school experience). All of our intro courses (including 0190) include female (identifying) teaching assistants.
+
+How many hours a week does an Intro CS course take? Each of 0111, 0150, and 0170 has a 1-2 hour lab or section beyond the 3 hours of lecture. In terms of homework, 0111 takes 6-10 hours a week outside of this. 0150 and 0170 are on par with each other at around 12-15 hours per week depending on the assignment. Check the Brown Critical Review (student run course evaluations) for data from students regarding workload and the course perspective.
+
+I'm considering several concentrations. How early do I have to start CS? Think of this through the lens of required courses. An ScB in CS needs 15 courses (plus Math 100). An AB in CS needs 10 courses (and no Math 100). This typically includes a couple of math courses (like linear algebra, probablility and statistics, and perhaps multi-variable calculus). You can comfortably start an AB as late as your fourth semester. For an ScB, you can start as late as your third semester (especially if you already took at least one of the math courses), though taking at least one course (math or CSCI) in your first year can take the edge off.
+
+Computer Science at Brown University
+
+Providence, Rhode Island 02912 USA
+
+Phone: 401-863-7600
+Map & Directions /
+Contact Us

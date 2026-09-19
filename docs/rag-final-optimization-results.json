@@ -1,0 +1,916 @@
+{
+  "stage": "Stage 15C - Final RAG Grounding Quality and Latency Optimization",
+  "generated_at": "2026-09-16T20:04:35+00:00",
+  "case_count": 9,
+  "source_files": [
+    "rag-final-optimization-results-a.json",
+    "rag-final-optimization-results-b.json",
+    "rag-final-optimization-results-career.json",
+    "rag-final-optimization-results-ai.json",
+    "rag-final-optimization-results-multitopic.json",
+    "rag-final-optimization-results-safety.json"
+  ],
+  "results": [
+    {
+      "question": "What courses are taught in Computer Engineering?",
+      "status": "answered",
+      "answer": "- [S1] CENG 213 Discrete Computing Structures introduces fundamental mathematical concepts.\n- [S2] SENG116 Object Oriented Programming covers fundamental concepts of object-oriented software development.\n- [S3] SENG 204 Software Engineering provides an introduction to systematic processes in software development.",
+      "llm_called": true,
+      "sources": [
+        {
+          "source_id": "src_004",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "source_name": "OSTIM Technical University - Department of Computer Engineering (English)",
+          "source_type": "course_descriptions",
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "category": "curriculum",
+          "supporting_chunk_ids": [
+            "src_004_chunk_004",
+            "src_004_chunk_003",
+            "src_004_chunk_007"
+          ],
+          "evidence_labels": [
+            "S1",
+            "S2",
+            "S3"
+          ],
+          "best_similarity_score": 0.4731024503707886
+        }
+      ],
+      "retrieved_chunks": [
+        {
+          "label": "S1",
+          "chunk_id": "src_004_chunk_004",
+          "source_id": "src_004",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "curriculum",
+          "similarity_score": 0.4731024503707886,
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "passage_preview": "during and after the Democratic Party. TUR 102 Turkish Language II This course will cover the topics of; Turkish suffixes; Turkish suffixes; Word types. Sentence knowledge; Reading and examining selected texts. THIRD SEMESTER MATH 202 Differential Equations First-order differential equations, linear equations, homogeneous and non-homogeneous, series solutions, the Laplace transform, systems of first-order linear equations, boundary value problems, Fourier series. CENG 213 Discrete Computing Stru"
+        },
+        {
+          "label": "S2",
+          "chunk_id": "src_004_chunk_003",
+          "source_id": "src_004",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "curriculum",
+          "similarity_score": 0.4678647518157959,
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "passage_preview": "workplace experience course will provide candidates with various skills that will enable them to become an experienced employee. The students' progress in understanding the future profession and gaining the competencies constituting the profession will be evaluated by the university instructors who are in close cooperation with them and the application trainers and mentors who have gained experience in their work. SENG116 Object Oriented Programming Object-Oriented Programming introduces the fun"
+        },
+        {
+          "label": "S3",
+          "chunk_id": "src_004_chunk_007",
+          "source_id": "src_004",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "curriculum",
+          "similarity_score": 0.461620569229126,
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "passage_preview": "applications, software analytics, and emerging software quality assurance techniques. Students will analyze current research, study real-world case studies, and engage in hands-on projects to understand how these trends impact the design, development, deployment, and maintenance of modern software systems. The course aims to equip students with the awareness and adaptability needed to navigate the rapidly evolving landscape of computer engineering. ELEC-1 Technical Elective I ELEC-2 Technical El"
+        }
+      ],
+      "retrieval_metadata": {
+        "top_k": 5,
+        "candidate_top_k": 12,
+        "similarity_threshold": 0.3,
+        "results_above_threshold": 5,
+        "top_similarity_score": 0.5630455017089844,
+        "evidence_sufficient": true,
+        "out_of_scope": false
+      },
+      "timing": {
+        "retrieval_seconds": 0.366,
+        "context_construction_seconds": 0.0,
+        "llm_generation_seconds": 20.523,
+        "initial_llm_generation_seconds": 20.523,
+        "retry_llm_generation_seconds": 0.0,
+        "llm_reported_total_duration_seconds": 20.487,
+        "total_seconds": 20.89
+      },
+      "error": null,
+      "answer_warnings": [],
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "normalized": false,
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1
+      },
+      "id": "curriculum_supported",
+      "type": "curriculum"
+    },
+    {
+      "question": "Which coding languages are useful for someone studying Computer Engineering?",
+      "status": "answered",
+      "answer": "- [S1] Python is the most commonly used programming language for AI and ML.\n- [S2] Object-Oriented Programming is covered in the third semester course.\n- [S3] Data Structures and Algorithms, Formal Languages and Automata, and Introduction to Database Systems are covered in the fourth semester.",
+      "llm_called": true,
+      "sources": [
+        {
+          "source_id": "src_051",
+          "title": "State of Developer Ecosystem Report 2024",
+          "source_name": "JetBrains",
+          "source_type": "industry_developer_survey_report",
+          "url": "https://www.jetbrains.com/lp/devecosystem-2024/",
+          "category": "skills_and_technologies",
+          "supporting_chunk_ids": [
+            "src_051_chunk_003"
+          ],
+          "evidence_labels": [
+            "S1"
+          ],
+          "best_similarity_score": 0.499170184135437
+        },
+        {
+          "source_id": "src_004",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "source_name": "OSTIM Technical University - Department of Computer Engineering (English)",
+          "source_type": "course_descriptions",
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "category": "curriculum",
+          "supporting_chunk_ids": [
+            "src_004_chunk_003"
+          ],
+          "evidence_labels": [
+            "S2"
+          ],
+          "best_similarity_score": 0.456523060798645
+        },
+        {
+          "source_id": "src_003",
+          "title": "Curriculum | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "source_name": "OSTIM Technical University - Department of Computer Engineering (English)",
+          "source_type": "curriculum_document",
+          "url": "https://mfcs.ostimteknik.edu.tr/tr/curriculum",
+          "category": "curriculum",
+          "supporting_chunk_ids": [
+            "src_003_chunk_002"
+          ],
+          "evidence_labels": [
+            "S3"
+          ],
+          "best_similarity_score": 0.4379230737686157
+        }
+      ],
+      "retrieved_chunks": [
+        {
+          "label": "S1",
+          "chunk_id": "src_051_chunk_003",
+          "source_id": "src_051",
+          "title": "State of Developer Ecosystem Report 2024",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.499170184135437,
+          "url": "https://www.jetbrains.com/lp/devecosystem-2024/",
+          "passage_preview": "18%of developers are involved in building integrations with AI, indicating that AI is steadily infiltrating developed software. Code functionality by primary programming language Which programming languages are being used for artificial intelligence (AI) and machine learning (ML)? The most commonly used programming language for AI and ML is Python. Given its status as the second most popular programming language, Python boasts extensive libraries (such as TensorFlow, Keras, PyTorch, and scikit-l"
+        },
+        {
+          "label": "S2",
+          "chunk_id": "src_004_chunk_003",
+          "source_id": "src_004",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "curriculum",
+          "similarity_score": 0.456523060798645,
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "passage_preview": "workplace experience course will provide candidates with various skills that will enable them to become an experienced employee. The students' progress in understanding the future profession and gaining the competencies constituting the profession will be evaluated by the university instructors who are in close cooperation with them and the application trainers and mentors who have gained experience in their work. SENG116 Object Oriented Programming Object-Oriented Programming introduces the fun"
+        },
+        {
+          "label": "S3",
+          "chunk_id": "src_003_chunk_002",
+          "source_id": "src_003",
+          "title": "Curriculum | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "curriculum",
+          "similarity_score": 0.4379230737686157,
+          "url": "https://mfcs.ostimteknik.edu.tr/tr/curriculum",
+          "passage_preview": "TUR 102 Turkish Language II Özet 2. Yıl 3. Dönem MATH 202 Differential Equations MATH 101 2. Yıl 3. Dönem CENG 213 Discrete Computing Structures 2. Yıl 3. Dönem EEE 201 Electrical Circuits I 2. Yıl 3. Dönem Seçmeli NTE 1 Non-Technical Elective 2. Yıl 3. Dönem WAP 227 Workplace Application I 2. Yıl 3. Dönem ENG 211 Academic English III 2. Yıl 3. Dönem CENG 205 Data Structures and Algorithms CENG110 Özet 2. Yıl 4. Dönem SENG 305 Formal Languages and Automata 4. Dönem SENG 202 Introduction to Datab"
+        }
+      ],
+      "retrieval_metadata": {
+        "top_k": 5,
+        "candidate_top_k": 12,
+        "similarity_threshold": 0.3,
+        "results_above_threshold": 5,
+        "top_similarity_score": 0.499170184135437,
+        "evidence_sufficient": true,
+        "out_of_scope": false
+      },
+      "timing": {
+        "retrieval_seconds": 0.035,
+        "context_construction_seconds": 0.0,
+        "llm_generation_seconds": 25.993,
+        "initial_llm_generation_seconds": 25.993,
+        "retry_llm_generation_seconds": 0.0,
+        "llm_reported_total_duration_seconds": 25.96,
+        "total_seconds": 26.029
+      },
+      "error": null,
+      "answer_warnings": [],
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "normalized": false,
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1
+      },
+      "id": "programming_paraphrase",
+      "type": "paraphrase"
+    },
+    {
+      "question": "Will artificial intelligence replace Computer Engineers?",
+      "status": "insufficient_information",
+      "answer": "I don't have enough reliable information in the current knowledge base to answer that question.",
+      "llm_called": false,
+      "sources": [],
+      "retrieved_chunks": [
+        {
+          "label": null,
+          "chunk_id": "src_017_chunk_097",
+          "source_id": "src_017",
+          "title": "The Future of Jobs Report 2025",
+          "category": "future_technologies",
+          "similarity_score": 0.5765566825866699,
+          "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+          "passage_preview": "and Training sector by 2030. AI and big data skills as well as creative thinking are foreseen to grow in importance. Emerging job roles within the industry are anticipated to include AI and Machine Learning Specialists and Digital Transformation Specialists. Employers also place greater emphasis than in other industries on curiosity and lifelong learning, marketing and media skills and multilingualism. The industry is\nless focused than other sectors on upskilling and\nreskilling its own workforce"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_017_chunk_102",
+          "source_id": "src_017",
+          "title": "The Future of Jobs Report 2025",
+          "category": "future_technologies",
+          "similarity_score": 0.5541332960128784,
+          "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+          "passage_preview": "Emerging job roles in the industry are foreseen to include AI and Machine Learning Specialists and Business Development Professionals. Demand for AI and big data skills, creative thinking, and curiosity and lifelong learning is projected to grow across all industry roles. Sixty percent of employers highlight the sector’s inability to attract talent as a key barrier to transformation by 2030.\n\nEmerging job roles in the industry are foreseen to include AI and Machine Learning Specialists and Busin"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_053_chunk_001",
+          "source_id": "src_053",
+          "title": "How Gen AI Affects the Value of Development Work",
+          "category": "artificial_intelligence",
+          "similarity_score": 0.5522944927215576,
+          "url": "https://research.google/pubs/how-gen-ai-affects-the-value-of-development-work/",
+          "passage_preview": "Source ID: src_053\n\nHow Gen AI Affects the Value of Development Work\n\nGoogleResearch\n\nHow Gen AI Affects the Value of Development Work\n\nKevin Storer\n\nDORA, Google (2024)\n\nDownloadGoogle Scholar\nCopy Bibtex\nListen with Illuminate\n\nAbstract\n\nThis report outlines a series of 10 in-depth interviews aimed at understanding how professional developers ascribe value to their work and whether the use of generative artificial intelligence in development changes how the value of development work is assessm"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_017_chunk_099",
+          "source_id": "src_017",
+          "title": "The Future of Jobs Report 2025",
+          "category": "future_technologies",
+          "similarity_score": 0.548869252204895,
+          "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+          "passage_preview": "Page 87\nSpecialists. Top skills on the rise are anticipated to\nbe linked to AI and big data as well as networks\nand cybersecurity, and talent management skills\nare expected to grow in demand at a faster rate\nthan the global industry average. Twenty-seven\npercent of employees in the sector are anticipated\nto be able to upskill in their current roles, with\nan additional 17% projected to be reskilled and\nredeployed. Almost 70% of respondents expect\nreskilling and upskilling to improve talent retent"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_045_chunk_094",
+          "source_id": "src_045",
+          "title": "Skills for the digital age",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.5370330214500427,
+          "url": "https://www.oecd.org/en/publications/2024/11/oecd-digital-economy-outlook-2024-volume-2_9b2801fc/full-report/skills-for-the-digital-age_da6162fb.html",
+          "passage_preview": "also suggests the adoption of AI requires not just AI expertise but also (or rather) skills in creative and social intelligence, reasoning skills and critical thinking (OECD, 2019 [7]; Samek, Squicciarini and Cammeraat, 2021[8]; Squicciarini and Nachtigall, 2021 [46]). Finally, using alternative data sources such as online job postings, Manca (2023 [47]) explored the impact of AI on labour markets.\n\nalso suggests the adoption of AI requires not just AI expertise but also (or rather) skills in cr"
+        }
+      ],
+      "retrieval_metadata": {
+        "top_k": 5,
+        "candidate_top_k": 12,
+        "similarity_threshold": 0.3,
+        "results_above_threshold": 5,
+        "top_similarity_score": 0.5765566825866699,
+        "evidence_sufficient": true,
+        "out_of_scope": false,
+        "unsupported_reason": "retrieved evidence does not directly address whether AI replaces computer engineers"
+      },
+      "timing": {
+        "retrieval_seconds": 0.336,
+        "context_construction_seconds": 0.0,
+        "llm_generation_seconds": 0.0,
+        "total_seconds": 0.336
+      },
+      "error": null,
+      "answer_warnings": [],
+      "citation_metadata": {},
+      "id": "ai_supported",
+      "type": "supported"
+    },
+    {
+      "question": "How important are internships for Computer Engineering students?",
+      "status": "answered",
+      "answer": "- [S1] The percent of graduating seniors who participated in an internship is the highest that NACE has recorded in the past six years, according to results of NACE’s 2024 Student Survey.\n- [S3] Hiring for internships is expected to remain stable this year, according to NACE’s 2024 Internship & Co-op Report.",
+      "llm_called": true,
+      "sources": [
+        {
+          "source_id": "src_018",
+          "title": "Students Recognize the Importance of Gaining Internship Experience",
+          "source_name": "National Association of Colleges and Employers (NACE)",
+          "source_type": "professional_career_organization_article",
+          "url": "https://naceweb.org/job-market/internships/students-recognize-the-importance-of-gaining-internship-experience",
+          "category": "internships",
+          "supporting_chunk_ids": [
+            "src_018_chunk_001"
+          ],
+          "evidence_labels": [
+            "S1"
+          ],
+          "best_similarity_score": 0.524385392665863
+        },
+        {
+          "source_id": "src_004",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "source_name": "OSTIM Technical University - Department of Computer Engineering (English)",
+          "source_type": "course_descriptions",
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "category": "curriculum",
+          "supporting_chunk_ids": [
+            "src_004_chunk_008"
+          ],
+          "evidence_labels": [
+            "S2"
+          ],
+          "best_similarity_score": 0.45075690746307373
+        },
+        {
+          "source_id": "src_037",
+          "title": "Intern Hiring Is Stable for 2024",
+          "source_name": "National Association of Colleges and Employers (NACE)",
+          "source_type": "professional_career_organization_article",
+          "url": "https://naceweb.org/job-market/trends-and-predictions/intern-hiring-is-stable-for-2024",
+          "category": "internships",
+          "supporting_chunk_ids": [
+            "src_037_chunk_001"
+          ],
+          "evidence_labels": [
+            "S3"
+          ],
+          "best_similarity_score": 0.39353108406066895
+        },
+        {
+          "source_id": "src_036",
+          "title": "Resumes",
+          "source_name": "Berkeley Career Engagement",
+          "source_type": "university_career_center_resource",
+          "url": "https://career.berkeley.edu/prepare-for-success/resumes/",
+          "category": "employment",
+          "supporting_chunk_ids": [
+            "src_036_chunk_005"
+          ],
+          "evidence_labels": [
+            "S4"
+          ],
+          "best_similarity_score": 0.37562596797943115
+        }
+      ],
+      "retrieved_chunks": [
+        {
+          "label": "S1",
+          "chunk_id": "src_018_chunk_001",
+          "source_id": "src_018",
+          "title": "Students Recognize the Importance of Gaining Internship Experience",
+          "category": "internships",
+          "similarity_score": 0.524385392665863,
+          "url": "https://naceweb.org/job-market/internships/students-recognize-the-importance-of-gaining-internship-experience",
+          "passage_preview": "Source ID: src_018 Students Recognize the Importance of Gaining Internship Experience Join/RenewSign InSign Out Your NACE membership expires soon! >> Your membership ends Why Join NACE? Learn all about NACE member benefits today Home / Job Market / Internships Internships Students Recognize the Importance of Gaining Internship Experience Date: September 23, 2024 By: Kevin Gray Share AAA co opscompensationInternshipsnace insightsstudent attitudessurveys The percent of graduating seniors who parti"
+        },
+        {
+          "label": "S2",
+          "chunk_id": "src_004_chunk_008",
+          "source_id": "src_004",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "curriculum",
+          "similarity_score": 0.45075690746307373,
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "passage_preview": "I This course is the first part of a two-semester capstone project in computer engineering. Students identify a research or design problem related to computer systems and develop a comprehensive project plan. The course includes literature review, problem definition, methodology development, and preliminary analysis or design. Emphasis is placed on independent study, technical reporting, and project planning under faculty supervision."
+        },
+        {
+          "label": "S3",
+          "chunk_id": "src_037_chunk_001",
+          "source_id": "src_037",
+          "title": "Intern Hiring Is Stable for 2024",
+          "category": "internships",
+          "similarity_score": 0.39353108406066895,
+          "url": "https://naceweb.org/job-market/trends-and-predictions/intern-hiring-is-stable-for-2024",
+          "passage_preview": "Source ID: src_037 Intern Hiring Is Stable for 2024 Join/RenewSign InSign Out Your NACE membership expires soon! >> Your membership ends Why Join NACE? Learn all about NACE member benefits today Home / Job Market / Trends & Predictions Internships Intern Hiring Is Stable for 2024 Date: April 19, 2024 By: Mimi Collins Share AAA Internshipsnace insightssurveystrends and predictions Hiring for internships is expected to remain stable this year, according to NACE’s 2024 Internship & Co-op Report. Ov"
+        },
+        {
+          "label": "S4",
+          "chunk_id": "src_036_chunk_005",
+          "source_id": "src_036",
+          "title": "Resumes",
+          "category": "employment",
+          "similarity_score": 0.37562596797943115,
+          "url": "https://career.berkeley.edu/prepare-for-success/resumes/",
+          "passage_preview": "Start Exploring Career Essentials Gain Clarity Self Assessment Decision Making Career Exploration Develop Competitiveness Make Connections Explore Career Fields Majors to Career What Can I Do With A Major In…? Informational Interviews Questions Where Do Cal Grads Go? Summer Activity Dashboard Events Meet with Us Career Education Peer Advisors Peace Corps Teach For America Prepare for Success Get Career Ready Develop a Plan Resumes Sample Resumes Resume Books Cover Letters Interview Process Overv"
+        }
+      ],
+      "retrieval_metadata": {
+        "top_k": 5,
+        "candidate_top_k": 12,
+        "similarity_threshold": 0.3,
+        "results_above_threshold": 5,
+        "top_similarity_score": 0.524385392665863,
+        "evidence_sufficient": true,
+        "out_of_scope": false
+      },
+      "timing": {
+        "retrieval_seconds": 0.044,
+        "context_construction_seconds": 0.001,
+        "llm_generation_seconds": 25.904,
+        "initial_llm_generation_seconds": 25.904,
+        "retry_llm_generation_seconds": 0.0,
+        "llm_reported_total_duration_seconds": 25.892,
+        "total_seconds": 25.948
+      },
+      "error": null,
+      "answer_warnings": [],
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1",
+          "S3"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3",
+          "S4"
+        ],
+        "normalized": false,
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1
+      },
+      "id": "internship_supported",
+      "type": "supported"
+    },
+    {
+      "question": "What jobs can I do after graduating from Computer Engineering?",
+      "status": "answered",
+      "answer": "- [S1] Computer Hardware Engineers: 17-2061.00 - Computer Hardware Engineers\n- [S2] AI and Machine Learning Specialists\n- [S2] Digital Transformation Specialists",
+      "llm_called": true,
+      "sources": [
+        {
+          "source_id": "src_014",
+          "title": "Computer Hardware Engineers: 17-2061.00",
+          "source_name": "O*NET OnLine",
+          "source_type": "government_occupational_profile",
+          "url": "https://www.onetonline.org/link/summary/17-2061.00",
+          "category": "skills_and_technologies",
+          "supporting_chunk_ids": [
+            "src_014_chunk_001"
+          ],
+          "evidence_labels": [
+            "S1"
+          ],
+          "best_similarity_score": 0.4934086203575134
+        },
+        {
+          "source_id": "src_017",
+          "title": "The Future of Jobs Report 2025",
+          "source_name": "World Economic Forum",
+          "source_type": "recognized_international_report",
+          "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+          "category": "future_technologies",
+          "supporting_chunk_ids": [
+            "src_017_chunk_097"
+          ],
+          "evidence_labels": [
+            "S2"
+          ],
+          "best_similarity_score": 0.41968995332717896
+        },
+        {
+          "source_id": "src_016",
+          "title": "2024 State of Tech Talent Report",
+          "source_name": "The Linux Foundation",
+          "source_type": "industry_research_report",
+          "url": "https://www.linuxfoundation.org/research/open-source-jobs-report-2024",
+          "category": "skills_and_technologies",
+          "supporting_chunk_ids": [
+            "src_016_chunk_013"
+          ],
+          "evidence_labels": [
+            "S3"
+          ],
+          "best_similarity_score": 0.4164954423904419
+        }
+      ],
+      "retrieved_chunks": [
+        {
+          "label": "S1",
+          "chunk_id": "src_014_chunk_001",
+          "source_id": "src_014",
+          "title": "Computer Hardware Engineers: 17-2061.00",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.4934086203575134,
+          "url": "https://www.onetonline.org/link/summary/17-2061.00",
+          "passage_preview": "Source ID: src_014 Title: Computer Hardware Engineers: 17-2061.00 17-2061.00 - Computer Hardware Engineers Occupation keyword search Type a title or code for matches No quick matches found Search for keyword results Computer Hardware Engineers 17-2061.00 Bright Outlook Updated 2026 Research, design, develop, or test computer or computer-related equipment for commercial, industrial, military, or scientific use. May supervise the manufacturing and installation of computer or computer-related equip"
+        },
+        {
+          "label": "S2",
+          "chunk_id": "src_017_chunk_097",
+          "source_id": "src_017",
+          "title": "The Future of Jobs Report 2025",
+          "category": "future_technologies",
+          "similarity_score": 0.41968995332717896,
+          "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+          "passage_preview": "and Training sector by 2030. AI and big data skills as well as creative thinking are foreseen to grow in importance. Emerging job roles within the industry are anticipated to include AI and Machine Learning Specialists and Digital Transformation Specialists. Employers also place greater emphasis than in other industries on curiosity and lifelong learning, marketing and media skills and multilingualism. The industry is less focused than other sectors on upskilling and reskilling its own workforce"
+        },
+        {
+          "label": "S3",
+          "chunk_id": "src_016_chunk_013",
+          "source_id": "src_016",
+          "title": "2024 State of Tech Talent Report",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.4164954423904419,
+          "url": "https://www.linuxfoundation.org/research/open-source-jobs-report-2024",
+          "passage_preview": "job market where having a degree is still highly valued. In 2022, in the United States, 69% of computer programmer positions and 95% of mobile application Figure 16: It takes more time to onboard compared to 2023, and more technical staff resigned or were asked to leave than in the previous year 2024 STATE OF TECH TALENT REPORT | 20 Page 21 developer jobs still required a degree5. However, research shows that focusing on skills during hiring is five times better at predicting job performance tha"
+        }
+      ],
+      "retrieval_metadata": {
+        "top_k": 5,
+        "candidate_top_k": 12,
+        "similarity_threshold": 0.3,
+        "results_above_threshold": 5,
+        "top_similarity_score": 0.4934086203575134,
+        "evidence_sufficient": true,
+        "out_of_scope": false
+      },
+      "timing": {
+        "retrieval_seconds": 0.387,
+        "context_construction_seconds": 0.0,
+        "llm_generation_seconds": 5.44,
+        "initial_llm_generation_seconds": 5.44,
+        "retry_llm_generation_seconds": 0.0,
+        "llm_reported_total_duration_seconds": 5.407,
+        "total_seconds": 5.828
+      },
+      "error": null,
+      "answer_warnings": [],
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1",
+          "S2"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "normalized": false,
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1
+      },
+      "id": "career_supported",
+      "type": "supported"
+    },
+    {
+      "question": "Should I focus more on GPA, projects, or internships when preparing for a software career?",
+      "status": "insufficient_information",
+      "answer": "I don't have enough reliable information in the current knowledge base to answer that question.",
+      "llm_called": false,
+      "sources": [],
+      "retrieved_chunks": [
+        {
+          "label": null,
+          "chunk_id": "src_036_chunk_005",
+          "source_id": "src_036",
+          "title": "Resumes",
+          "category": "employment",
+          "similarity_score": 0.4138059616088867,
+          "url": "https://career.berkeley.edu/prepare-for-success/resumes/",
+          "passage_preview": "Start Exploring\n\nCareer Essentials\n\nGain Clarity\n\nSelf Assessment\n\nDecision Making\n\nCareer Exploration\n\nDevelop Competitiveness\n\nMake Connections\n\nExplore Career Fields\n\nMajors to Career\n\nWhat Can I Do With A Major In…?\n\nInformational Interviews\n\nQuestions\n\nWhere Do Cal Grads Go?\n\nSummer Activity Dashboard\n\nEvents\n\nMeet with Us\n\nCareer Education\n\nPeer Advisors\n\nPeace Corps\n\nTeach For America\n\nPrepare for Success\n\nGet Career Ready\n\nDevelop a Plan\n\nResumes\n\nSample Resumes\n\nResume Books\n\nCover Lett"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_044_chunk_002",
+          "source_id": "src_044",
+          "title": "Prepare for graduate & professional school",
+          "category": "graduate_studies",
+          "similarity_score": 0.4607676863670349,
+          "url": "https://capd.mit.edu/channels/prepare-for-graduate-professional-school/",
+          "passage_preview": "Learn more about the fields you are interested in through informational interviews, books at the MIT Libraries or CAPD library (room 7-103), research, and internships.\n\nConsider how you make decisions and do activities to help you find your purpose.\n\nSet up a career advising appointment to help you weigh the pros and cons.\n\nWhat academic preparation do I need for graduate school?\n\nStrong undergraduate academic preparation is essential for graduate and professional school. Key skills include crit"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_039_chunk_005",
+          "source_id": "src_039",
+          "title": "Which Introductory Course Should I Take?",
+          "category": "programming",
+          "similarity_score": 0.37170982360839844,
+          "url": "https://cs.brown.edu/degrees/undergrad/whatcourse/",
+          "passage_preview": "two weeks of 0200 run as two different tracks: one to help students from 0150 learn functional programming, recursion, and run-time analysis and another to help students from 0111/0170/0190 learn object-oriented programming in Java. After the first two weeks, the two tracks merge into one course for the rest of the semester. Direct questions to the professor: Kathi Fisler (kfisler@cs.brown.edu)\n\nFrequently-Asked Questions\n\nHow do I decide which intro course to take? As the above-linked video exp"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_039_chunk_002",
+          "source_id": "src_039",
+          "title": "Which Introductory Course Should I Take?",
+          "category": "programming",
+          "similarity_score": 0.3437719941139221,
+          "url": "https://cs.brown.edu/degrees/undergrad/whatcourse/",
+          "passage_preview": "to anyone, regardless of prior programming experience. All of these options prepare students for subsequent courses in the concentration, but with different approaches and some differences in content. The descriptions below outline the differences: to help you decide between them, you might attend the first lectures of multiple courses (except for 0190, which students must place into over the summer).\n\n0111 provides the most leisurely paced introduction to programming and is ideal for students w"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_039_chunk_001",
+          "source_id": "src_039",
+          "title": "Which Introductory Course Should I Take?",
+          "category": "programming",
+          "similarity_score": 0.3433370590209961,
+          "url": "https://cs.brown.edu/degrees/undergrad/whatcourse/",
+          "passage_preview": "Source ID: src_039\nTitle: Which Introductory Course Should I Take?\n\nBrown CS: Which Introductory Course Should I Take?\n\nAbout Brown\n\nAcademics\n\nAdmission\n\nResearch\n\nCampus Life\n\nInformation for:\n\nCurrent Students\n\nFaculty\n\nStaff\n\nFamilies\n\nAlumni\n\nFriends & Neighbors\n\nA to Z Index\n\nPeople Directory\n\nSocial@Brown\n\nFacebook\n\nTwitter\n\nLinkedIn\n\nGoogle+\n\nComputer Science\n\nAbout\n\nAbout the Department\n\nContact\n\nDirections\n\nRooms\n\nSystems & Software\n\nConduit\n\nDiversity\n\nSocially Responsible\nComputing\n\n"
+        }
+      ],
+      "retrieval_metadata": {
+        "top_k": 5,
+        "candidate_top_k": 12,
+        "similarity_threshold": 0.3,
+        "results_above_threshold": 5,
+        "top_similarity_score": 0.4138059616088867,
+        "evidence_sufficient": true,
+        "out_of_scope": false,
+        "unsupported_reason": "retrieved evidence does not directly compare GPA, projects, and internships for software career preparation"
+      },
+      "timing": {
+        "retrieval_seconds": 0.617,
+        "context_construction_seconds": 0.0,
+        "llm_generation_seconds": 0.0,
+        "total_seconds": 0.618
+      },
+      "error": null,
+      "answer_warnings": [],
+      "citation_metadata": {},
+      "id": "multi_topic",
+      "type": "multi_topic"
+    },
+    {
+      "question": "Can Computer Engineers work in cybersecurity?",
+      "status": "insufficient_information",
+      "answer": "I don't have enough reliable information in the current knowledge base to answer that question.",
+      "llm_called": false,
+      "sources": [],
+      "retrieved_chunks": [
+        {
+          "label": null,
+          "chunk_id": "src_017_chunk_119",
+          "source_id": "src_017",
+          "title": "The Future of Jobs Report 2025",
+          "category": "future_technologies",
+          "similarity_score": 0.4567452073097229,
+          "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+          "passage_preview": "Media and Communication Workers Photographers Video Game Designers Writers and Authors Business and Financial Operations Accountants and Auditors Business Intelligence Analysts Claims Adjusters, Examiners, and Investigators Compliance Officers Credit and Loans Officers Digital Marketing and Strategy Specialists Digital Transformation Specialists Job taxonomy The occupational taxonomy was modified and extended from O*NET SOC. TABLE A3 Future of Jobs Report 2025 102\n\nPage 103\nJob family Occupation"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_045_chunk_093",
+          "source_id": "src_045",
+          "title": "Skills for the digital age",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.4521854519844055,
+          "url": "https://www.oecd.org/en/publications/2024/11/oecd-digital-economy-outlook-2024-volume-2_9b2801fc/full-report/skills-for-the-digital-age_da6162fb.html",
+          "passage_preview": "Page 78\nLooking ahead, the risk of automation will increasingly fall on low-educated workers. Moreover, the COVID-19 crisis\nmay have accelerated automation, as companies reduce reliance on human labour and contact between workers, or\nre-shore some production (Georgieff and Milanez, 2021\n[43]). Importantly, these findings highlight that jobs requiring lower\nskill levels face the greatest automation risk, implying a decrease in automation vulnerability with higher educational\nattainment. Other stu"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_014_chunk_001",
+          "source_id": "src_014",
+          "title": "Computer Hardware Engineers: 17-2061.00",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.44335615634918213,
+          "url": "https://www.onetonline.org/link/summary/17-2061.00",
+          "passage_preview": "Source ID: src_014\nTitle: Computer Hardware Engineers: 17-2061.00\n\n17-2061.00 - Computer Hardware Engineers\n\nOccupation keyword search\n\nType a title or code for matches\n\nNo quick matches found\n\nSearch for keyword results\n\nComputer Hardware Engineers\n\n17-2061.00\n\nBright Outlook Updated 2026\n\nResearch, design, develop, or test computer or computer-related equipment for commercial, industrial, military, or scientific use. May supervise the manufacturing and installation of computer or computer-rela"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_017_chunk_098",
+          "source_id": "src_017",
+          "title": "The Future of Jobs Report 2025",
+          "category": "future_technologies",
+          "similarity_score": 0.4366253614425659,
+          "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+          "passage_preview": "Page 86\nBig Data Specialists, AI and Machine Learning\nSpecialists, and Security Management Specialists.\nTo improve talent availability, the industry is\nplanning on investing in reskilling and upskilling\n(71% of employers), supporting employees’ well-\nbeing (64%) and improving promotion processes\n(61%). Remote and hybrid work is also seen as a\nstrategy to stay attractive for 58% of companies\nin the industry, and one out of two respondents\nis calling for changes to labour laws that support\nremote "
+        },
+        {
+          "label": null,
+          "chunk_id": "src_014_chunk_008",
+          "source_id": "src_014",
+          "title": "Computer Hardware Engineers: 17-2061.00",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.4227863550186157,
+          "url": "https://www.onetonline.org/link/summary/17-2061.00",
+          "passage_preview": "CompTIAexternal site\n\nWas this page helpful?\nYes, it was helpfulNo, it was not helpful\n\nJob Seeker Help • Contact Us\n\nShare:\nFacebookXLinkedInRedditEmail\n\nLink to Us • Cite this Page\n\nCreative Commons CC-BY License\n17-2061.00 - Computer Hardware Engineers by U.S. Department of Labor, Employment and Training Administration is licensed under a Creative Commons Attribution 4.0 International License.\n\nAbout this Site • Privacy • Disclaimer\n\nSite updated August 25, 2026\n\nLoading..."
+        }
+      ],
+      "retrieval_metadata": {
+        "top_k": 5,
+        "candidate_top_k": 12,
+        "similarity_threshold": 0.3,
+        "results_above_threshold": 5,
+        "top_similarity_score": 0.4567452073097229,
+        "evidence_sufficient": true,
+        "out_of_scope": false,
+        "unsupported_reason": "retrieved evidence did not include a cybersecurity-category source"
+      },
+      "timing": {
+        "retrieval_seconds": 0.452,
+        "context_construction_seconds": 0.0,
+        "llm_generation_seconds": 0.0,
+        "total_seconds": 0.452
+      },
+      "error": null,
+      "answer_warnings": [],
+      "citation_metadata": {},
+      "id": "cybersecurity_supported",
+      "type": "cybersecurity"
+    },
+    {
+      "question": "What is the exact 2026 tuition fee for OSTIM Technical University Computer Engineering?",
+      "status": "insufficient_information",
+      "answer": "I don't have enough reliable information in the current knowledge base to answer that question.",
+      "llm_called": false,
+      "sources": [],
+      "retrieved_chunks": [
+        {
+          "label": null,
+          "chunk_id": "src_001_chunk_001",
+          "source_id": "src_001",
+          "title": "About the Department | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "department_information",
+          "similarity_score": 0.43396878242492676,
+          "url": "https://mfcs.ostimteknik.edu.tr/about-the-department",
+          "passage_preview": "Source ID: src_001\n\nAbout the Department | MF-Bilgisayar Mühendisliği (İngilizce)\n\nBarrier Free\n\nDepartment of Computer Engineering (English)\n\nThe aim of the Department of Computer Engineering is to educate Computer engineers who will contribute to the institution and organization in which they are participating, enabling them to gain skills for technical management; teach them analysis, synthesis and modelling in order ato solve engineering problems, ensure ability which will lead to carry out "
+        },
+        {
+          "label": null,
+          "chunk_id": "src_004_chunk_008",
+          "source_id": "src_004",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "curriculum",
+          "similarity_score": 0.3884063959121704,
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "passage_preview": "I This course is the first part of a two-semester capstone project in computer engineering. Students identify a research or design problem related to computer systems and develop a comprehensive project plan. The course includes literature review, problem definition, methodology development, and preliminary analysis or design. Emphasis is placed on independent study, technical reporting, and project planning under faculty supervision.\n\nELEC-3 Technical Elective III\n\nELEC-4 Technical Elective IV\n"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_005_chunk_001",
+          "source_id": "src_005",
+          "title": "Our Difference | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "student_life",
+          "similarity_score": 0.3431755304336548,
+          "url": "https://mfcs.ostimteknik.edu.tr/our-difference",
+          "passage_preview": "Source ID: src_005\n\nOur Difference | MF-Bilgisayar Mühendisliği (İngilizce)\n\nBarrier Free\n\n• Applied Education Model\n\nOSTIM Technical University was founded in the basin provides business has contributed to Turkey's industrialization. In this basin, a participatory training will be given to practical applications by giving importance to practical training besides theoretical knowledge in order to benefit from the knowledge and project making and product development experiences of the companies i"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_006_chunk_001",
+          "source_id": "src_006",
+          "title": "Academic Staff",
+          "category": "department_information",
+          "similarity_score": 0.3385828733444214,
+          "url": "https://mfcs.ostimteknik.edu.tr/academic-staff",
+          "passage_preview": "Source ID: src_006\nTitle: Academic Staff\n\nAkademik Kadro\n\nBarrier Free\n\nComputer Engineering (English) Academic Staff\n\nRESUME\n\nProf. Dr. Serdar MÜLDÜR (Dean)\n\nFields of Research:\nComputer Software and Software Engineering, Database, Programming Languages.\n\nE-mail: serdar.muldur@ostimteknik.edu.tr\n\nTel:+90 312 386 1092 / Internal: -\n\nOffice:Main Campus, F Block, 8th Floor, Room No: 810\n\nRESUME\n\nAssist. Prof. Dr. Ahmet ÖZDİL\n(Head of Department)\n\nFields of Research:Computer Software and Software E"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_004_chunk_006",
+          "source_id": "src_004",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "curriculum",
+          "similarity_score": 0.3202451467514038,
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "passage_preview": "explore real-world operating system implementations such as Linux or Windows. CENG 309 Introduction to Computer Architecture This course provides fundamental knowledge of the organization and architecture of computer systems. Topics include instruction set architecture, data path and control unit design, memory hierarchies, input-output systems, pipelining, and parallelism. Emphasis is placed on understanding how software interacts with hardware to perform computation.\n\nEEE 309 Signals and Syste"
+        }
+      ],
+      "retrieval_metadata": {
+        "top_k": 5,
+        "candidate_top_k": 12,
+        "similarity_threshold": 0.3,
+        "results_above_threshold": 5,
+        "top_similarity_score": 0.43396878242492676,
+        "evidence_sufficient": true,
+        "out_of_scope": false,
+        "unsupported_reason": "retrieved evidence does not contain requested specific fact terms: [['tuition', 'fee', 'fees', 'cost', 'payment']]"
+      },
+      "timing": {
+        "retrieval_seconds": 0.028,
+        "context_construction_seconds": 0.0,
+        "llm_generation_seconds": 0.0,
+        "total_seconds": 0.028
+      },
+      "error": null,
+      "answer_warnings": [],
+      "citation_metadata": {},
+      "id": "unsupported_in_domain",
+      "type": "unsupported_in_domain"
+    },
+    {
+      "question": "What is the best chocolate cake recipe?",
+      "status": "out_of_scope",
+      "answer": "I don't have enough reliable information in the current knowledge base to answer that question.",
+      "llm_called": false,
+      "sources": [],
+      "retrieved_chunks": [
+        {
+          "label": null,
+          "chunk_id": "src_048_chunk_002",
+          "source_id": "src_048",
+          "title": "Employed information and communications technology (ICT) specialists by sex",
+          "category": "common_misconceptions",
+          "similarity_score": 0.2115529179573059,
+          "url": "https://dgs-p.eige.europa.eu/data/view?code=ta_wrklab_lab_employ_selected_kwnd__isoc_sks_itsps",
+          "passage_preview": "40(b)\n\n31.8(e)\n\n27.4\n\n25.7\n\n22.4(e)\n\n19.2\n\n19.3(e)\n\n19.5(e)\n\n18.5(be)\n\n15.3\n\n16.2(e)\n\n15.3(u)\n\n17.6(u)\n\n14.4(u)\n\n15.4(bu)\n\n16.6(u)\n\n22.8\n\n21.6\n\n20.3\n\n19.1\n\n16.5(b)\n\n14.9\n\n15.2(e)\n\n14.5(e)\n\n12.5\n\n11.9(e)\n\n11.1(b)\n\n11.2\n\n10.6\n\n8.6(b)\n\n8.9(e)\n\n8.5(b)\n\n8.9(e)\n\n6.3(be)\n\n5.8(e)\n\n6.2(be)\n\n6.3(e)\n\n181.4(e)\n\n179.1(e)\n\n168.6(e)\n\n168.8(e)\n\n157.1(be)\n\n148.4(e)\n\n135\n\n151.4(b)\n\n143.6\n\n137.4\n\n134.5\n\n127.4\n\n123.1\n\n110.6(e)\n\n92.3(b)\n\n99.3(e)\n\n101.4(e)\n\n113(e)\n\n113.9(e)\n\n113.5(e)\n\n102.1(be)\n\n106.2(e)\n\n13.2\n\n14.4\n"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_045_chunk_267",
+          "source_id": "src_045",
+          "title": "Skills for the digital age",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.18495452404022217,
+          "url": "https://www.oecd.org/en/publications/2024/11/oecd-digital-economy-outlook-2024-volume-2_9b2801fc/full-report/skills-for-the-digital-age_da6162fb.html",
+          "passage_preview": "Australia Optus Optus Flex Annual 60 GB, MyData 5120 MB, 12 months 9.3 0.0 0.0 0.0 0.0 9.3 Pre-paid Austria Magenta Mobile KLAX S, Data 33280 MB 13.2 0.0 0.0 0.0 0.0 13.2 Pre-paid Belgium Proximus Mobilus Easy 5G, Data 10240 MB, 1 month 23.3 0.0 0.0 0.0 0.0 23.3 Canada Fido (Rogers) 6 Month Prepaid - Talk & Text & Data 150, Data 1024 MB, 6 months 22.4 0.0 0.0 0.0 0.0 22.4 Pre-paid Chile Entel Movil Bolsa Datos + Minutos, $5000 Top up - 30 days, Mobile Internet 10240 MB, 1 month 9.7 0.0 0.0 3.9 0"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_045_chunk_269",
+          "source_id": "src_045",
+          "title": "Skills for the digital age",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.17956280708312988,
+          "url": "https://www.oecd.org/en/publications/2024/11/oecd-digital-economy-outlook-2024-volume-2_9b2801fc/full-report/skills-for-the-digital-age_da6162fb.html",
+          "passage_preview": "Australia Optus Optus Flex Annual 60 GB, MyData 5120 MB, 12 months 9.3 0 0 0 0 9.31 Pre-paid Austria Magenta Mobile KLAX S, Data 33280 MB 13.2 0 0 0 0 13.17 Pre-paid Belgium Proximus Mobilus Easy 5G, Data 10240 MB, 1 month 23.3 0 0 0 0 23.33 Canada Fido (Rogers) 6 Month Prepaid - Talk & Text & Data 150, Data 1024 MB, 6 months 22.4 0 0 0 0 22.43 Pre-paid Chile Entel Movil Recarga Facil $8000, 4 GB + 150 mins, Mobile Internet 40 960 MB 15.5 0 0 0 0 15.48 Pre-paid Colombia Movistar Combo Mes TODO E"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_045_chunk_274",
+          "source_id": "src_045",
+          "title": "Skills for the digital age",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.1744670271873474,
+          "url": "https://www.oecd.org/en/publications/2024/11/oecd-digital-economy-outlook-2024-volume-2_9b2801fc/full-report/skills-for-the-digital-age_da6162fb.html",
+          "passage_preview": "(Magenta) Einfach, Data 15360 MB, SIM only, 1 month 14.7 0 0 0 0 14.7 Belgium Proximus Mobilus Easy 5G, Data 10240 MB, 1 month 23.3 0 0 0 0 23.3 Canada Virgin (Bell Mobility) BYOP Data, Talk & Text 10 GB, Data 10240 MB, SIM only, 12 month 36.5 0.0 0 0 0 36.5 Chile Movistar Plan 5G Libre Full, Bolsa de Internet 204800 MB, SIM only, 18 months 26.4 0 0 0 0 26.4 Colombia Movistar Combo Mes TODO EN UNO ULTRA $16000 (6 GB) promo 4x1, Datos Full 24576 MB, 1 month 10.0 0 0 0 0 10.0 Pre-paid Costa Rica K"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_045_chunk_272",
+          "source_id": "src_045",
+          "title": "Skills for the digital age",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.15921944379806519,
+          "url": "https://www.oecd.org/en/publications/2024/11/oecd-digital-economy-outlook-2024-volume-2_9b2801fc/full-report/skills-for-the-digital-age_da6162fb.html",
+          "passage_preview": "(Magenta) Einfach, Data 15360 MB, SIM only, 1 month 14.7 0 0 0 0 14.7 Belgium Proximus Mobilus Easy 5G, Data 10240 MB, 1 month 23.3 0 0 0 0 23.3 Canada Fido (Rogers) 6 Month Prepaid - Talk & Text & Data 200, Data 3072 MB, 6 months 29.9 0 0 0 0 29.9 Pre-paid Chile Movistar Plan 5G Libre Full, Bolsa de Internet 204800 MB, SIM only, 18 months 26.4 0 0 0 0 26.4 Colombia Movistar Combo Mes TODO EN UNO ULTRA $16000 (6 GB) promo 4x1, Datos Full 24576 MB, 1 month 10.0 0 0 0 0 10.0 Pre-paid Costa Rica Kö"
+        }
+      ],
+      "retrieval_metadata": {
+        "top_k": 5,
+        "candidate_top_k": 12,
+        "similarity_threshold": 0.3,
+        "results_above_threshold": 0,
+        "top_similarity_score": 0.2115529179573059,
+        "evidence_sufficient": false,
+        "out_of_scope": true
+      },
+      "timing": {
+        "retrieval_seconds": 0.014,
+        "context_construction_seconds": 0.0,
+        "llm_generation_seconds": 0.0,
+        "total_seconds": 0.014
+      },
+      "error": null,
+      "answer_warnings": [],
+      "citation_metadata": {},
+      "id": "out_of_scope_cake",
+      "type": "out_of_scope"
+    }
+  ]
+}

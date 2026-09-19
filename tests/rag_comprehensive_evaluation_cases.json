@@ -1,0 +1,706 @@
+{
+  "description": "Comprehensive WEX428 RAG evaluation set based on all 60 representative questions from ceng-questions.pdf plus paraphrased/unseen semantic-robustness cases. These are evaluation cases only, not production hard-coded answers.",
+  "case_count": 80,
+  "cases": [
+    {
+      "id": "q001",
+      "question_number": 1,
+      "question": "What is Computer Engineering?",
+      "case_kind": "original",
+      "expected_topic": "Computer Engineering definition",
+      "expected_categories": ["department_information", "curriculum"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "q002",
+      "question_number": 2,
+      "question": "What do Computer Engineering students study?",
+      "case_kind": "original",
+      "expected_topic": "Computer Engineering curriculum scope",
+      "expected_categories": ["curriculum", "department_information"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "q003",
+      "question_number": 3,
+      "question": "Is Computer Engineering the right major for me?",
+      "case_kind": "original",
+      "expected_topic": "Choosing Computer Engineering",
+      "expected_categories": ["department_information", "common_misconceptions", "employment"],
+      "expected_behavior": "answer_or_refuse_if_evidence_insufficient"
+    },
+    {
+      "id": "q004",
+      "question_number": 4,
+      "question": "What is the difference between Computer Engineering and Software Engineering?",
+      "case_kind": "original",
+      "expected_topic": "Computer Engineering versus Software Engineering",
+      "expected_categories": ["department_information", "curriculum", "employment"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "q005",
+      "question_number": 5,
+      "question": "What is the difference between Computer Engineering and Computer Science?",
+      "case_kind": "original",
+      "expected_topic": "Computer Engineering versus Computer Science",
+      "expected_categories": ["department_information", "curriculum"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "q006",
+      "question_number": 6,
+      "question": "Is Computer Engineering more focused on hardware or software?",
+      "case_kind": "original",
+      "expected_topic": "Hardware and software balance",
+      "expected_categories": ["department_information", "curriculum"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "q007",
+      "question_number": 7,
+      "question": "What kind of projects do Computer Engineering students build?",
+      "case_kind": "original",
+      "expected_topic": "Student projects",
+      "expected_categories": ["projects", "curriculum", "skills"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "q008",
+      "question_number": 8,
+      "question": "What programming languages are taught in Computer Engineering?",
+      "case_kind": "original",
+      "expected_topic": "Programming languages in curriculum",
+      "expected_categories": ["programming", "curriculum"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "q009",
+      "question_number": 9,
+      "question": "Do I need prior programming experience before starting Computer Engineering?",
+      "case_kind": "original",
+      "expected_topic": "Prior programming experience",
+      "expected_categories": ["programming", "common_misconceptions", "skills"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "q010",
+      "question_number": 10,
+      "question": "How much mathematics is required in Computer Engineering?",
+      "case_kind": "original",
+      "expected_topic": "Mathematics requirements",
+      "expected_categories": ["mathematics", "curriculum"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "q011",
+      "question_number": 11,
+      "question": "Is Computer Engineering one of the hardest engineering majors?",
+      "case_kind": "original",
+      "expected_topic": "Academic difficulty",
+      "expected_categories": ["common_misconceptions", "mathematics", "skills"],
+      "expected_behavior": "answer_or_refuse_if_evidence_insufficient"
+    },
+    {
+      "id": "q012",
+      "question_number": 12,
+      "question": "Can someone with no coding experience succeed in Computer Engineering?",
+      "case_kind": "original",
+      "expected_topic": "Succeeding without coding background",
+      "expected_categories": ["programming", "common_misconceptions", "skills"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "q013",
+      "question_number": 13,
+      "question": "How many hours do Computer Engineering students typically study each week?",
+      "case_kind": "original",
+      "expected_topic": "Student workload",
+      "expected_categories": ["skills", "common_misconceptions"],
+      "expected_behavior": "answer_or_refuse_if_evidence_insufficient"
+    },
+    {
+      "id": "q014",
+      "question_number": 14,
+      "question": "Is teamwork important in Computer Engineering?",
+      "case_kind": "original",
+      "expected_topic": "Teamwork skills",
+      "expected_categories": ["skills", "projects", "employment"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "q015",
+      "question_number": 15,
+      "question": "What skills should I develop during university to become a successful computer engineer?",
+      "case_kind": "original",
+      "expected_topic": "Student skills development",
+      "expected_categories": ["skills", "programming", "employment"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "q016",
+      "question_number": 16,
+      "question": "Is it easy to find a job after graduating from Computer Engineering in Turkey?",
+      "case_kind": "original",
+      "expected_topic": "Employment in Turkey",
+      "expected_categories": ["employment", "local_job_market"],
+      "expected_behavior": "answer_or_refuse_if_evidence_insufficient"
+    },
+    {
+      "id": "q017",
+      "question_number": 17,
+      "question": "Is Computer Engineering still a good career choice in the AI era?",
+      "case_kind": "original",
+      "expected_topic": "Career outlook in AI era",
+      "expected_categories": ["AI", "future_technologies", "employment"],
+      "expected_behavior": "answer_or_refuse_if_evidence_insufficient"
+    },
+    {
+      "id": "q018",
+      "question_number": 18,
+      "question": "Will AI replace software engineers and computer engineers?",
+      "case_kind": "original",
+      "expected_topic": "AI replacement concern",
+      "expected_categories": ["AI", "future_technologies", "common_misconceptions"],
+      "expected_behavior": "answer_or_refuse_if_evidence_insufficient"
+    },
+    {
+      "id": "q019",
+      "question_number": 19,
+      "question": "What industries hire Computer Engineering graduates?",
+      "case_kind": "original",
+      "expected_topic": "Hiring industries",
+      "expected_categories": ["employment", "department_information"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "q020",
+      "question_number": 20,
+      "question": "Can Computer Engineering graduates work abroad?",
+      "case_kind": "original",
+      "expected_topic": "Working abroad",
+      "expected_categories": ["employment", "graduate_studies", "remote_work"],
+      "expected_behavior": "answer_or_refuse_if_evidence_insufficient"
+    },
+    {
+      "id": "q021",
+      "question_number": 21,
+      "question": "Can I work remotely as a Computer Engineer?",
+      "case_kind": "original",
+      "expected_topic": "Remote work",
+      "expected_categories": ["remote_work", "employment"],
+      "expected_behavior": "answer_or_refuse_if_evidence_insufficient"
+    },
+    {
+      "id": "q022",
+      "question_number": 22,
+      "question": "What are the most in-demand Computer Engineering jobs today?",
+      "case_kind": "original",
+      "expected_topic": "In-demand jobs",
+      "expected_categories": ["employment", "AI", "cybersecurity", "future_technologies"],
+      "expected_behavior": "answer_or_refuse_if_evidence_insufficient"
+    },
+    {
+      "id": "q023",
+      "question_number": 23,
+      "question": "Which specialization has the highest demand in the job market?",
+      "case_kind": "original",
+      "expected_topic": "High-demand specializations",
+      "expected_categories": ["employment", "AI", "cybersecurity", "future_technologies"],
+      "expected_behavior": "answer_or_refuse_if_evidence_insufficient"
+    },
+    {
+      "id": "q024",
+      "question_number": 24,
+      "question": "Can Computer Engineering graduates start their own software company?",
+      "case_kind": "original",
+      "expected_topic": "Entrepreneurship",
+      "expected_categories": ["entrepreneurship", "employment", "skills"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "q025",
+      "question_number": 25,
+      "question": "Is the Computer Engineering job market becoming saturated?",
+      "case_kind": "original",
+      "expected_topic": "Job market saturation",
+      "expected_categories": ["employment", "local_job_market", "future_technologies"],
+      "expected_behavior": "answer_or_refuse_if_evidence_insufficient"
+    },
+    {
+      "id": "q026",
+      "question_number": 26,
+      "question": "Will there still be enough job opportunities in the next 10 years?",
+      "case_kind": "original",
+      "expected_topic": "Long-term job opportunities",
+      "expected_categories": ["employment", "future_technologies", "AI"],
+      "expected_behavior": "answer_or_refuse_if_evidence_insufficient"
+    },
+    {
+      "id": "q027",
+      "question_number": 27,
+      "question": "Is Computer Engineering a future-proof career?",
+      "case_kind": "original",
+      "expected_topic": "Future-proof career concern",
+      "expected_categories": ["employment", "future_technologies", "AI"],
+      "expected_behavior": "answer_or_refuse_if_evidence_insufficient"
+    },
+    {
+      "id": "q028",
+      "question_number": 28,
+      "question": "What if I graduate without internship experience?",
+      "case_kind": "original",
+      "expected_topic": "No internship experience",
+      "expected_categories": ["internships", "employment", "skills"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "q029",
+      "question_number": 29,
+      "question": "What happens if I graduate with a low GPA?",
+      "case_kind": "original",
+      "expected_topic": "Low GPA career impact",
+      "expected_categories": ["employment", "skills", "projects"],
+      "expected_behavior": "answer_or_refuse_if_evidence_insufficient"
+    },
+    {
+      "id": "q030",
+      "question_number": 30,
+      "question": "Is GPA more important than personal projects?",
+      "case_kind": "original",
+      "expected_topic": "GPA versus projects",
+      "expected_categories": ["employment", "projects", "skills"],
+      "expected_behavior": "answer_or_refuse_if_evidence_insufficient"
+    },
+    {
+      "id": "q031",
+      "question_number": 31,
+      "question": "What is the average starting salary for Computer Engineering graduates in Turkey or World?",
+      "case_kind": "original",
+      "expected_topic": "Starting salary",
+      "expected_categories": ["salary", "employment", "local_job_market"],
+      "expected_behavior": "answer_or_refuse_if_evidence_insufficient"
+    },
+    {
+      "id": "q032",
+      "question_number": 32,
+      "question": "Which Computer Engineering specialization offers the highest salaries in Turkey?",
+      "case_kind": "original",
+      "expected_topic": "Highest-paying specializations",
+      "expected_categories": ["salary", "employment", "local_job_market"],
+      "expected_behavior": "answer_or_refuse_if_evidence_insufficient"
+    },
+    {
+      "id": "q033",
+      "question_number": 33,
+      "question": "How long does it take to become a senior software engineer?",
+      "case_kind": "original",
+      "expected_topic": "Senior engineer timeline",
+      "expected_categories": ["employment", "skills"],
+      "expected_behavior": "answer_or_refuse_if_evidence_insufficient"
+    },
+    {
+      "id": "q034",
+      "question_number": 34,
+      "question": "Can I become an AI engineer after studying Computer Engineering?",
+      "case_kind": "original",
+      "expected_topic": "AI engineer pathway",
+      "expected_categories": ["AI", "employment", "skills"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "q035",
+      "question_number": 35,
+      "question": "Can I become a cybersecurity specialist with a Computer Engineering degree?",
+      "case_kind": "original",
+      "expected_topic": "Cybersecurity specialist pathway",
+      "expected_categories": ["cybersecurity", "employment", "skills"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "q036",
+      "question_number": 36,
+      "question": "Which programming language should I learn first?",
+      "case_kind": "original",
+      "expected_topic": "First programming language",
+      "expected_categories": ["programming", "skills", "curriculum"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "q037",
+      "question_number": 37,
+      "question": "Which technologies should I learn before graduation?",
+      "case_kind": "original",
+      "expected_topic": "Technologies before graduation",
+      "expected_categories": ["skills", "programming", "employment"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "q038",
+      "question_number": 38,
+      "question": "Should I focus on web development, mobile development, AI, or cybersecurity?",
+      "case_kind": "original",
+      "expected_topic": "Choosing specialization focus",
+      "expected_categories": ["skills", "AI", "cybersecurity", "employment"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "q039",
+      "question_number": 39,
+      "question": "Is learning Linux important for Computer Engineering students?",
+      "case_kind": "original",
+      "expected_topic": "Linux importance",
+      "expected_categories": ["skills", "programming", "cybersecurity"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "q040",
+      "question_number": 40,
+      "question": "Should every Computer Engineering student learn Git and GitHub?",
+      "case_kind": "original",
+      "expected_topic": "Git and GitHub importance",
+      "expected_categories": ["skills", "programming", "projects"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "q041",
+      "question_number": 41,
+      "question": "How important are internships during Computer Engineering education?",
+      "case_kind": "original",
+      "expected_topic": "Internship importance",
+      "expected_categories": ["internships", "employment", "skills"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "q042",
+      "question_number": 42,
+      "question": "How can I find my first internship?",
+      "case_kind": "original",
+      "expected_topic": "Finding first internship",
+      "expected_categories": ["internships", "employment", "skills"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "q043",
+      "question_number": 43,
+      "question": "What should I include in my CV as a Computer Engineering student?",
+      "case_kind": "original",
+      "expected_topic": "Student CV",
+      "expected_categories": ["employment", "skills", "projects", "internships"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "q044",
+      "question_number": 44,
+      "question": "How can I build an impressive portfolio before graduation?",
+      "case_kind": "original",
+      "expected_topic": "Portfolio building",
+      "expected_categories": ["projects", "skills", "employment"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "q045",
+      "question_number": 45,
+      "question": "Should I participate in hackathons and coding competitions?",
+      "case_kind": "original",
+      "expected_topic": "Hackathons and competitions",
+      "expected_categories": ["projects", "skills", "employment"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "q046",
+      "question_number": 46,
+      "question": "Do I need a master's degree to have a successful career?",
+      "case_kind": "original",
+      "expected_topic": "Master's degree necessity",
+      "expected_categories": ["graduate_studies", "employment", "skills"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "q047",
+      "question_number": 47,
+      "question": "Can I work in artificial intelligence without a master's degree?",
+      "case_kind": "original",
+      "expected_topic": "AI work without master's",
+      "expected_categories": ["AI", "graduate_studies", "employment"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "q048",
+      "question_number": 48,
+      "question": "Should I pursue graduate studies or start working immediately after graduation?",
+      "case_kind": "original",
+      "expected_topic": "Graduate study versus work",
+      "expected_categories": ["graduate_studies", "employment"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "q049",
+      "question_number": 49,
+      "question": "Which field of Computer Engineering is right for me?",
+      "case_kind": "original",
+      "expected_topic": "Choosing field",
+      "expected_categories": ["skills", "employment", "AI", "cybersecurity"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "q050",
+      "question_number": 50,
+      "question": "If I don't enjoy coding, can I still succeed in Computer Engineering?",
+      "case_kind": "original",
+      "expected_topic": "Succeeding without enjoying coding",
+      "expected_categories": ["common_misconceptions", "programming", "skills"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "q051",
+      "question_number": 51,
+      "question": "How do I discover which specialization I enjoy the most?",
+      "case_kind": "original",
+      "expected_topic": "Discovering specialization interests",
+      "expected_categories": ["skills", "projects", "employment"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "q052",
+      "question_number": 52,
+      "question": "Which specialization is expected to grow the fastest in the future?",
+      "case_kind": "original",
+      "expected_topic": "Fast-growing specialization",
+      "expected_categories": ["future_technologies", "AI", "cybersecurity", "employment"],
+      "expected_behavior": "answer_or_refuse_if_evidence_insufficient"
+    },
+    {
+      "id": "q053",
+      "question_number": 53,
+      "question": "Do Computer Engineers have a good work-life balance?",
+      "case_kind": "original",
+      "expected_topic": "Work-life balance",
+      "expected_categories": ["employment", "remote_work", "common_misconceptions"],
+      "expected_behavior": "answer_or_refuse_if_evidence_insufficient"
+    },
+    {
+      "id": "q054",
+      "question_number": 54,
+      "question": "Is Computer Engineering a stressful profession?",
+      "case_kind": "original",
+      "expected_topic": "Professional stress",
+      "expected_categories": ["employment", "common_misconceptions"],
+      "expected_behavior": "answer_or_refuse_if_evidence_insufficient"
+    },
+    {
+      "id": "q055",
+      "question_number": 55,
+      "question": "Can Computer Engineers become digital nomads?",
+      "case_kind": "original",
+      "expected_topic": "Digital nomad career",
+      "expected_categories": ["remote_work", "employment"],
+      "expected_behavior": "answer_or_refuse_if_evidence_insufficient"
+    },
+    {
+      "id": "q056",
+      "question_number": 56,
+      "question": "Do Computer Engineers spend all day writing code?",
+      "case_kind": "original",
+      "expected_topic": "Coding-only misconception",
+      "expected_categories": ["common_misconceptions", "department_information", "employment"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "q057",
+      "question_number": 57,
+      "question": "Is Computer Engineering only for people who are good at math?",
+      "case_kind": "original",
+      "expected_topic": "Math-only misconception",
+      "expected_categories": ["common_misconceptions", "mathematics", "skills"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "q058",
+      "question_number": 58,
+      "question": "Can women have successful careers in Computer Engineering?",
+      "case_kind": "original",
+      "expected_topic": "Women in Computer Engineering",
+      "expected_categories": ["common_misconceptions", "employment"],
+      "expected_behavior": "answer_or_refuse_if_evidence_insufficient"
+    },
+    {
+      "id": "q059",
+      "question_number": 59,
+      "question": "Is it too late to start learning programming at university?",
+      "case_kind": "original",
+      "expected_topic": "Starting programming at university",
+      "expected_categories": ["programming", "common_misconceptions", "skills"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "q060",
+      "question_number": 60,
+      "question": "Why should I choose Computer Engineering instead of another engineering discipline?",
+      "case_kind": "original",
+      "expected_topic": "Choosing Computer Engineering over other engineering",
+      "expected_categories": ["department_information", "employment", "future_technologies"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "p001",
+      "question": "Could you explain CENG in simple terms for a high-school student?",
+      "case_kind": "paraphrased_unseen",
+      "expected_topic": "Computer Engineering definition paraphrase",
+      "expected_categories": ["department_information", "curriculum"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "p002",
+      "question": "What will I actually learn semester by semester in OSTIM Computer Engineering?",
+      "case_kind": "paraphrased_unseen",
+      "expected_topic": "OSTIM Computer Engineering curriculum paraphrase",
+      "expected_categories": ["curriculum", "department_information"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "p003",
+      "question": "I have never coded before. Am I already behind if I choose this department?",
+      "case_kind": "paraphrased_unseen",
+      "expected_topic": "No coding background paraphrase",
+      "expected_categories": ["programming", "common_misconceptions", "skills"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "p004",
+      "question": "Is the major mostly coding, electronics, or a mixture of both?",
+      "case_kind": "paraphrased_unseen",
+      "expected_topic": "Hardware and software balance paraphrase",
+      "expected_categories": ["department_information", "curriculum"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "p005",
+      "question": "How much calculus, discrete mathematics, and statistics should I expect?",
+      "case_kind": "paraphrased_unseen",
+      "expected_topic": "Mathematics requirements paraphrase",
+      "expected_categories": ["mathematics", "curriculum"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "p006",
+      "question": "Which student projects would help me show employers that I can build real systems?",
+      "case_kind": "paraphrased_unseen",
+      "expected_topic": "Portfolio projects paraphrase",
+      "expected_categories": ["projects", "skills", "employment"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "p007",
+      "question": "Is software engineering safer than computer engineering because AI is changing programming jobs?",
+      "case_kind": "paraphrased_unseen",
+      "expected_topic": "AI-era career comparison paraphrase",
+      "expected_categories": ["AI", "employment", "future_technologies"],
+      "expected_behavior": "answer_or_refuse_if_evidence_insufficient"
+    },
+    {
+      "id": "p008",
+      "question": "What careers can combine cybersecurity with a computer engineering background?",
+      "case_kind": "paraphrased_unseen",
+      "expected_topic": "Cybersecurity career paraphrase",
+      "expected_categories": ["cybersecurity", "employment", "skills"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "p009",
+      "question": "Can I get my first internship if my CV is mostly course projects?",
+      "case_kind": "paraphrased_unseen",
+      "expected_topic": "First internship with projects paraphrase",
+      "expected_categories": ["internships", "projects", "employment", "skills"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "p010",
+      "question": "For my first year, should I start with Python, Java, C, or something else?",
+      "case_kind": "paraphrased_unseen",
+      "expected_topic": "First programming language paraphrase",
+      "expected_categories": ["programming", "curriculum", "skills"],
+      "expected_behavior": "answer_or_refuse_if_evidence_insufficient"
+    },
+    {
+      "id": "p011",
+      "question": "Do employers care more about GitHub projects than grades when hiring new graduates?",
+      "case_kind": "paraphrased_unseen",
+      "expected_topic": "Projects versus GPA paraphrase",
+      "expected_categories": ["employment", "projects", "skills"],
+      "expected_behavior": "answer_or_refuse_if_evidence_insufficient"
+    },
+    {
+      "id": "p012",
+      "question": "Can studying Computer Engineering at OSTIM help me work internationally later?",
+      "case_kind": "paraphrased_unseen",
+      "expected_topic": "International work paraphrase",
+      "expected_categories": ["employment", "graduate_studies", "remote_work"],
+      "expected_behavior": "answer_or_refuse_if_evidence_insufficient"
+    },
+    {
+      "id": "p013",
+      "question": "Which technologies are growing fastest for students to watch before graduation?",
+      "case_kind": "paraphrased_unseen",
+      "expected_topic": "Future technologies paraphrase",
+      "expected_categories": ["future_technologies", "AI", "cybersecurity", "employment"],
+      "expected_behavior": "answer_or_refuse_if_evidence_insufficient"
+    },
+    {
+      "id": "p014",
+      "question": "Are remote developer jobs common enough that I can plan my career around them?",
+      "case_kind": "paraphrased_unseen",
+      "expected_topic": "Remote career planning paraphrase",
+      "expected_categories": ["remote_work", "employment"],
+      "expected_behavior": "answer_or_refuse_if_evidence_insufficient"
+    },
+    {
+      "id": "p015",
+      "question": "What if I like hardware and embedded systems more than websites and apps?",
+      "case_kind": "paraphrased_unseen",
+      "expected_topic": "Hardware-oriented specialization paraphrase",
+      "expected_categories": ["curriculum", "skills", "employment"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "p016",
+      "question": "Is startup entrepreneurship realistic after finishing a computer engineering degree?",
+      "case_kind": "paraphrased_unseen",
+      "expected_topic": "Entrepreneurship paraphrase",
+      "expected_categories": ["entrepreneurship", "employment", "skills"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "p017",
+      "question": "How should I choose between AI, cybersecurity, embedded systems, and software development?",
+      "case_kind": "paraphrased_unseen",
+      "expected_topic": "Specialization choice paraphrase",
+      "expected_categories": ["skills", "AI", "cybersecurity", "employment"],
+      "expected_behavior": "answer"
+    },
+    {
+      "id": "p018",
+      "question": "Can I succeed in computing if math makes me anxious?",
+      "case_kind": "paraphrased_unseen",
+      "expected_topic": "Math anxiety paraphrase",
+      "expected_categories": ["mathematics", "common_misconceptions", "skills"],
+      "expected_behavior": "answer_or_refuse_if_evidence_insufficient"
+    },
+    {
+      "id": "p019",
+      "question": "Is computer engineering welcoming for women who want technical careers?",
+      "case_kind": "paraphrased_unseen",
+      "expected_topic": "Women in computing paraphrase",
+      "expected_categories": ["common_misconceptions", "employment"],
+      "expected_behavior": "answer_or_refuse_if_evidence_insufficient"
+    },
+    {
+      "id": "p020",
+      "question": "When should I choose a master's degree instead of going straight into industry?",
+      "case_kind": "paraphrased_unseen",
+      "expected_topic": "Master's versus industry paraphrase",
+      "expected_categories": ["graduate_studies", "employment"],
+      "expected_behavior": "answer"
+    }
+  ]
+}

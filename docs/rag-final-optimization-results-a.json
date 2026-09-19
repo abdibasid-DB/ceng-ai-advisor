@@ -1,0 +1,233 @@
+{
+  "stage": "Stage 15/15B - Core RAG Pipeline Validation",
+  "generated_at": "2026-09-16T19:57:02+00:00",
+  "case_count": 2,
+  "results": [
+    {
+      "question": "What courses are taught in Computer Engineering?",
+      "status": "answered",
+      "answer": "- [S1] CENG 213 Discrete Computing Structures introduces fundamental mathematical concepts.\n- [S2] SENG116 Object Oriented Programming covers fundamental concepts of object-oriented software development.\n- [S3] SENG 204 Software Engineering provides an introduction to systematic processes in software development.",
+      "llm_called": true,
+      "sources": [
+        {
+          "source_id": "src_004",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "source_name": "OSTIM Technical University - Department of Computer Engineering (English)",
+          "source_type": "course_descriptions",
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "category": "curriculum",
+          "supporting_chunk_ids": [
+            "src_004_chunk_004",
+            "src_004_chunk_003",
+            "src_004_chunk_007"
+          ],
+          "evidence_labels": [
+            "S1",
+            "S2",
+            "S3"
+          ],
+          "best_similarity_score": 0.4731024503707886
+        }
+      ],
+      "retrieved_chunks": [
+        {
+          "label": "S1",
+          "chunk_id": "src_004_chunk_004",
+          "source_id": "src_004",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "curriculum",
+          "similarity_score": 0.4731024503707886,
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "passage_preview": "during and after the Democratic Party. TUR 102 Turkish Language II This course will cover the topics of; Turkish suffixes; Turkish suffixes; Word types. Sentence knowledge; Reading and examining selected texts. THIRD SEMESTER MATH 202 Differential Equations First-order differential equations, linear equations, homogeneous and non-homogeneous, series solutions, the Laplace transform, systems of first-order linear equations, boundary value problems, Fourier series. CENG 213 Discrete Computing Stru"
+        },
+        {
+          "label": "S2",
+          "chunk_id": "src_004_chunk_003",
+          "source_id": "src_004",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "curriculum",
+          "similarity_score": 0.4678647518157959,
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "passage_preview": "workplace experience course will provide candidates with various skills that will enable them to become an experienced employee. The students' progress in understanding the future profession and gaining the competencies constituting the profession will be evaluated by the university instructors who are in close cooperation with them and the application trainers and mentors who have gained experience in their work. SENG116 Object Oriented Programming Object-Oriented Programming introduces the fun"
+        },
+        {
+          "label": "S3",
+          "chunk_id": "src_004_chunk_007",
+          "source_id": "src_004",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "curriculum",
+          "similarity_score": 0.461620569229126,
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "passage_preview": "applications, software analytics, and emerging software quality assurance techniques. Students will analyze current research, study real-world case studies, and engage in hands-on projects to understand how these trends impact the design, development, deployment, and maintenance of modern software systems. The course aims to equip students with the awareness and adaptability needed to navigate the rapidly evolving landscape of computer engineering. ELEC-1 Technical Elective I ELEC-2 Technical El"
+        }
+      ],
+      "retrieval_metadata": {
+        "top_k": 5,
+        "candidate_top_k": 12,
+        "similarity_threshold": 0.3,
+        "results_above_threshold": 5,
+        "top_similarity_score": 0.5630455017089844,
+        "evidence_sufficient": true,
+        "out_of_scope": false
+      },
+      "timing": {
+        "retrieval_seconds": 0.366,
+        "context_construction_seconds": 0.0,
+        "llm_generation_seconds": 20.523,
+        "initial_llm_generation_seconds": 20.523,
+        "retry_llm_generation_seconds": 0.0,
+        "llm_reported_total_duration_seconds": 20.487,
+        "total_seconds": 20.89
+      },
+      "error": null,
+      "answer_warnings": [],
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "normalized": false,
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1
+      },
+      "id": "curriculum_supported",
+      "type": "curriculum"
+    },
+    {
+      "question": "Which coding languages are useful for someone studying Computer Engineering?",
+      "status": "answered",
+      "answer": "- [S1] Python is the most commonly used programming language for AI and ML.\n- [S2] Object-Oriented Programming is covered in the third semester course.\n- [S3] Data Structures and Algorithms, Formal Languages and Automata, and Introduction to Database Systems are covered in the fourth semester.",
+      "llm_called": true,
+      "sources": [
+        {
+          "source_id": "src_051",
+          "title": "State of Developer Ecosystem Report 2024",
+          "source_name": "JetBrains",
+          "source_type": "industry_developer_survey_report",
+          "url": "https://www.jetbrains.com/lp/devecosystem-2024/",
+          "category": "skills_and_technologies",
+          "supporting_chunk_ids": [
+            "src_051_chunk_003"
+          ],
+          "evidence_labels": [
+            "S1"
+          ],
+          "best_similarity_score": 0.499170184135437
+        },
+        {
+          "source_id": "src_004",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "source_name": "OSTIM Technical University - Department of Computer Engineering (English)",
+          "source_type": "course_descriptions",
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "category": "curriculum",
+          "supporting_chunk_ids": [
+            "src_004_chunk_003"
+          ],
+          "evidence_labels": [
+            "S2"
+          ],
+          "best_similarity_score": 0.456523060798645
+        },
+        {
+          "source_id": "src_003",
+          "title": "Curriculum | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "source_name": "OSTIM Technical University - Department of Computer Engineering (English)",
+          "source_type": "curriculum_document",
+          "url": "https://mfcs.ostimteknik.edu.tr/tr/curriculum",
+          "category": "curriculum",
+          "supporting_chunk_ids": [
+            "src_003_chunk_002"
+          ],
+          "evidence_labels": [
+            "S3"
+          ],
+          "best_similarity_score": 0.4379230737686157
+        }
+      ],
+      "retrieved_chunks": [
+        {
+          "label": "S1",
+          "chunk_id": "src_051_chunk_003",
+          "source_id": "src_051",
+          "title": "State of Developer Ecosystem Report 2024",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.499170184135437,
+          "url": "https://www.jetbrains.com/lp/devecosystem-2024/",
+          "passage_preview": "18%of developers are involved in building integrations with AI, indicating that AI is steadily infiltrating developed software. Code functionality by primary programming language Which programming languages are being used for artificial intelligence (AI) and machine learning (ML)? The most commonly used programming language for AI and ML is Python. Given its status as the second most popular programming language, Python boasts extensive libraries (such as TensorFlow, Keras, PyTorch, and scikit-l"
+        },
+        {
+          "label": "S2",
+          "chunk_id": "src_004_chunk_003",
+          "source_id": "src_004",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "curriculum",
+          "similarity_score": 0.456523060798645,
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "passage_preview": "workplace experience course will provide candidates with various skills that will enable them to become an experienced employee. The students' progress in understanding the future profession and gaining the competencies constituting the profession will be evaluated by the university instructors who are in close cooperation with them and the application trainers and mentors who have gained experience in their work. SENG116 Object Oriented Programming Object-Oriented Programming introduces the fun"
+        },
+        {
+          "label": "S3",
+          "chunk_id": "src_003_chunk_002",
+          "source_id": "src_003",
+          "title": "Curriculum | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "curriculum",
+          "similarity_score": 0.4379230737686157,
+          "url": "https://mfcs.ostimteknik.edu.tr/tr/curriculum",
+          "passage_preview": "TUR 102 Turkish Language II Özet 2. Yıl 3. Dönem MATH 202 Differential Equations MATH 101 2. Yıl 3. Dönem CENG 213 Discrete Computing Structures 2. Yıl 3. Dönem EEE 201 Electrical Circuits I 2. Yıl 3. Dönem Seçmeli NTE 1 Non-Technical Elective 2. Yıl 3. Dönem WAP 227 Workplace Application I 2. Yıl 3. Dönem ENG 211 Academic English III 2. Yıl 3. Dönem CENG 205 Data Structures and Algorithms CENG110 Özet 2. Yıl 4. Dönem SENG 305 Formal Languages and Automata 4. Dönem SENG 202 Introduction to Datab"
+        }
+      ],
+      "retrieval_metadata": {
+        "top_k": 5,
+        "candidate_top_k": 12,
+        "similarity_threshold": 0.3,
+        "results_above_threshold": 5,
+        "top_similarity_score": 0.499170184135437,
+        "evidence_sufficient": true,
+        "out_of_scope": false
+      },
+      "timing": {
+        "retrieval_seconds": 0.035,
+        "context_construction_seconds": 0.0,
+        "llm_generation_seconds": 25.993,
+        "initial_llm_generation_seconds": 25.993,
+        "retry_llm_generation_seconds": 0.0,
+        "llm_reported_total_duration_seconds": 25.96,
+        "total_seconds": 26.029
+      },
+      "error": null,
+      "answer_warnings": [],
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "normalized": false,
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1
+      },
+      "id": "programming_paraphrase",
+      "type": "paraphrase"
+    }
+  ]
+}
