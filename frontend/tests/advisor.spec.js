@@ -1,0 +1,143 @@
+import { expect, test } from "@playwright/test";
+
+const source = {
+  source_id: "src_1", title: "Engineering Handbook", source_name: "University",
+  publication_date: "2025-09-01", category: "curriculum", source_type: "guide",
+  evidence_labels: ["S1"], best_similarity_score: 0.875,
+  supporting_passages: ["Computer engineers design hardware and software."],
+};
+
+async function mockApi(page, { delay = 0, fail = false } = {}) {
+  const requests = [];
+  await page.route("**/api/v1/**", async (route) => {
+    const path = new URL(route.request().url()).pathname;
+    if (path.endsWith("/sources")) return route.fulfill({ json: { count: 12, indexed_count: 9, sources: [source] } });
+    if (path.endsWith("/readiness")) return route.fulfill({ json: { status: "ready" } });
+    const request = route.request().postDataJSON();
+    requests.push(request);
+    if (delay) await new Promise((resolve) => setTimeout(resolve, delay));
+    if (fail) return route.fulfill({ status: 503, json: { error: "Model unavailable" } });
+    return route.fulfill({ contentType: "application/x-ndjson", body: JSON.stringify({
+      event: "final", data: { session_id: request.session_id, status: "answered",
+        answer: "## Engineering\n\nStudy **hardware** and software [S1].\n\n- Circuits\n- Programming\n\n`[S1]`",
+        sources: [{ ...source, publication_date: undefined }] },
+    }) });
+  });
+  return requests;
+}
+
+for (const width of [375, 768, 1280]) {
+  test(`home, chat, citations and history at ${width}px`, async ({ page }) => {
+    await page.setViewportSize({ width, height: 900 });
+    const requests = await mockApi(page);
+    await page.goto("/");
+    await expect(page.locator(".summary-number")).toHaveText("12");
+    await expect(page.locator(".summary-panel")).toContainText("9 indexed");
+    await page.getByRole("button", { name: "Ask in Advisor" }).first().click();
+    await expect(page.locator(".message-text h2")).toHaveText("Engineering");
+    await expect(page.locator(".message-text strong")).toHaveText("hardware");
+    await expect(page.locator(".citation-badge")).toHaveCount(1);
+    await expect(page.locator(".source-card")).toContainText("2025-09-01");
+    await expect(page.locator(".source-card")).toContainText("0.875");
+    await page.locator(".citation-badge").click();
+    await expect(page.locator(".source-card")).toBeFocused();
+    await page.evaluate(() => { window.copiedAnswer = ""; Object.defineProperty(navigator, "clipboard", {
+      value: { writeText: async (text) => { window.copiedAnswer = text; } }, configurable: true,
+    }); });
+    await page.getByRole("button", { name: "Copy answer" }).click();
+    await expect(page.getByRole("status").filter({ hasText: "Copied" })).toBeVisible();
+    expect(await page.evaluate(() => window.copiedAnswer)).toContain("**hardware**");
+    await page.getByRole("button", { name: "New Conversation", exact: true }).click();
+    await page.getByLabel("Ask a question", { exact: true }).fill("What careers are available?");
+    await page.getByRole("button", { name: "Send", exact: true }).click();
+    await expect(page.locator(".message-text h2")).toBeVisible();
+    expect(requests[0].session_id).not.toBe(requests[1].session_id);
+    await page.getByRole("complementary", { name: "Conversation history" }).getByRole("button", { name: "What is Computer Engineering?", exact: true }).click();
+    await page.getByLabel("Ask a question", { exact: true }).fill("What should I study next?");
+    await page.getByRole("button", { name: "Send", exact: true }).click();
+    await expect(page.locator(".assistant-message")).toHaveCount(2);
+    expect(requests[2].session_id).toBe(requests[0].session_id);
+    await page.reload();
+    await expect(page.locator(".assistant-message")).toHaveCount(2);
+    await page.screenshot({ path: `node_modules/.cache/advisor-${width}.png`, fullPage: true });
+    for (const id of ["home", "advisor", "computer-engineering", "sources", "about-project"]) {
+      await page.locator(`.site-nav a[href="#${id}"]`).click();
+      await expect(page.locator(".site-nav a[aria-current='page']")).toHaveAttribute("href", `#${id}`);
+      expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth), `${id} page width at ${width}px`).toBe(true);
+      const overflow = await page.evaluate(() => [...document.querySelectorAll("body *")]
+        .filter((element) => element.getBoundingClientRect().right > window.innerWidth + 1)
+        .map((element) => `${element.tagName}.${element.className}: ${element.textContent.slice(0, 90)}`));
+      expect(overflow, `${id} overflows at ${width}px`).toEqual([]);
+    }
+    expect(requests).toHaveLength(3);
+  });
+}
+
+test("theme follows system by default and remembers a manual choice", async ({ page }) => {
+  await mockApi(page);
+  await page.emulateMedia({ colorScheme: "dark" });
+  await page.goto("/");
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+  await page.emulateMedia({ colorScheme: "light" });
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "light");
+  await page.getByLabel("Theme").selectOption("dark");
+  await page.reload();
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+});
+
+test("switching conversations while a reply is pending keeps the reply in its original chat", async ({ page }) => {
+  await mockApi(page, { delay: 800 });
+  await page.goto("/#advisor");
+  await page.getByLabel("Ask a question", { exact: true }).fill("What is Computer Engineering?");
+  await page.getByRole("button", { name: "Send", exact: true }).click();
+  await expect(page.getByText("Searching the knowledge base…", { exact: true })).toBeVisible();
+  await page.getByRole("button", { name: "New Conversation", exact: true }).click();
+  await expect(page.getByRole("heading", { name: "Start with a question" })).toBeVisible();
+  await expect(page.getByRole("button", { name: "Send", exact: true })).toBeDisabled();
+  await page.locator(".history-panel").getByRole("button", { name: /What is Computer Engineering/ }).click();
+  await expect(page.locator(".message-text h2")).toBeVisible();
+});
+
+test("service errors end progress and allow another question", async ({ page }) => {
+  await mockApi(page, { fail: true });
+  await page.goto("/#advisor");
+  await page.getByLabel("Ask a question", { exact: true }).fill("What is Computer Engineering?");
+  await page.getByRole("button", { name: "Send", exact: true }).click();
+  await expect(page.locator(".status-error")).toContainText("Model unavailable");
+  await expect(page.locator(".loading-message")).toHaveCount(0);
+  await expect(page.getByLabel("Ask a question", { exact: true })).toBeEnabled();
+});
+
+test("stream metadata drives retrieval progress before the final answer", async ({ page }) => {
+  await mockApi(page);
+  await page.addInitScript(() => {
+    const originalFetch = window.fetch;
+    window.fetch = (url, options) => {
+      if (!String(url).endsWith("/chat/stream")) return originalFetch(url, options);
+      return Promise.resolve(new Response(new ReadableStream({ start(controller) {
+        const encoder = new TextEncoder();
+        window.emitAdvisorEvent = (event, data, close = false) => {
+          const line = JSON.stringify({ event, data }) + (close ? "" : "\n");
+          // Split records across chunks to exercise the NDJSON parser.
+          controller.enqueue(encoder.encode(line.slice(0, 13)));
+          controller.enqueue(encoder.encode(line.slice(13)));
+          if (close) controller.close();
+        };
+      } }), { headers: { "Content-Type": "application/x-ndjson" } }));
+    };
+  });
+  await page.goto("/#advisor");
+  await page.getByLabel("Ask a question", { exact: true }).fill("What is Computer Engineering?");
+  await page.getByRole("button", { name: "Send", exact: true }).click();
+  await expect(page.getByText("Searching the knowledge base…", { exact: true })).toBeVisible();
+  await page.evaluate(() => window.emitAdvisorEvent("metadata", {
+    retrieved_context: [{ label: "S1", title: "Engineering Handbook" }, { label: "S2", title: "Engineering Handbook" }], llm_called: true,
+  }));
+  await expect(page.getByText("Found 2 passages from: Engineering Handbook", { exact: true })).toBeVisible();
+  await expect(page.getByText("Writing the answer with the local model…", { exact: true })).toBeVisible();
+  await page.evaluate(() => window.emitAdvisorEvent("token", { text: "Unvalidated draft" }));
+  await expect(page.getByText("Unvalidated draft", { exact: true })).toHaveCount(0);
+  await page.evaluate(() => window.emitAdvisorEvent("final", { status: "answered", answer: "Verified answer", sources: [] }, true));
+  await expect(page.locator(".message-text").getByText("Verified answer", { exact: true })).toBeVisible();
+  await expect(page.locator(".loading-message")).toHaveCount(0);
+});

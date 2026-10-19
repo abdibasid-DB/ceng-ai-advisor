@@ -1,7 +1,7 @@
 const DEFAULT_API_BASE_URL = "http://127.0.0.1:8000";
 
 export const API_BASE_URL =
-  import.meta.env.VITE_API_BASE_URL?.replace(/\/$/, "") || DEFAULT_API_BASE_URL;
+  (import.meta.env.VITE_API_BASE_URL ?? DEFAULT_API_BASE_URL).replace(/\/$/, "");
 
 async function parseJsonResponse(response) {
   let data;
@@ -70,36 +70,30 @@ export async function sendQuestionStream(question, sessionId, resetSession = fal
   const reader = response.body.pipeThrough(new TextDecoderStream()).getReader();
   let buffer = "";
 
-  while (true) {
-    const { value, done } = await reader.read();
-    if (done) {
-      break;
-    }
-    buffer += value;
-    const lines = buffer.split("\n");
-    buffer = lines.pop() || "";
-    for (const line of lines) {
-      if (!line.trim()) {
-        continue;
-      }
-      const event = JSON.parse(line);
-      if (event.event === "metadata") {
-        handlers.onMetadata?.(event.data);
-      } else if (event.event === "token") {
-        handlers.onToken?.(event.data?.text || "");
-      } else if (event.event === "final") {
-        handlers.onFinal?.(event.data);
-      } else if (event.event === "error") {
-        handlers.onError?.(event.data);
-      }
+  function dispatch(line) {
+    if (!line.trim()) return;
+    const event = JSON.parse(line);
+    if (event.event === "metadata") handlers.onMetadata?.(event.data);
+    else if (event.event === "token") handlers.onToken?.(event.data?.text || "");
+    else if (event.event === "final") handlers.onFinal?.(event.data);
+    else if (event.event === "error") {
+      handlers.onError?.(event.data);
+      throw new Error(event.data?.error || event.data?.message || "The advisor stream failed.");
     }
   }
 
-  if (buffer.trim()) {
-    const event = JSON.parse(buffer);
-    if (event.event === "final") {
-      handlers.onFinal?.(event.data);
+  try {
+    while (true) {
+      const { value, done } = await reader.read();
+      if (done) break;
+      buffer += value;
+      const lines = buffer.split("\n");
+      buffer = lines.pop() || "";
+      for (const line of lines) dispatch(line);
     }
+    dispatch(buffer);
+  } finally {
+    reader.releaseLock();
   }
 }
 

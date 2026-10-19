@@ -16,6 +16,12 @@ function getPageFromHash() {
 
 function App() {
   const [currentPage, setCurrentPage] = useState(getPageFromHash);
+  const [questionRequest, setQuestionRequest] = useState(null);
+
+  function askQuestion(question) {
+    setQuestionRequest({ id: `${Date.now()}-${Math.random()}`, question });
+    navigate("advisor");
+  }
 
   useEffect(() => {
     function handleHashChange() {
@@ -37,7 +43,7 @@ function App() {
 
   let page;
   if (currentPage === "advisor") {
-    page = <AdvisorPage />;
+    page = null;
   } else if (currentPage === "computer-engineering") {
     page = <ComputerEngineeringPage />;
   } else if (currentPage === "sources") {
@@ -45,12 +51,15 @@ function App() {
   } else if (currentPage === "about-project") {
     page = <AboutProjectPage />;
   } else {
-    page = <HomePage onNavigate={navigate} />;
+    page = <HomePage onNavigate={navigate} onAskQuestion={askQuestion} />;
   }
 
   return (
     <WebsiteLayout currentPage={currentPage} onNavigate={navigate}>
       {page}
+      <div hidden={currentPage !== "advisor"}>
+        <AdvisorPage questionRequest={questionRequest} />
+      </div>
     </WebsiteLayout>
   );
 }

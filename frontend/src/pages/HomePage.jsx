@@ -1,4 +1,16 @@
-function HomePage({ onNavigate }) {
+import { useEffect, useState } from "react";
+import { getSources } from "../services/api.js";
+
+function HomePage({ onNavigate, onAskQuestion }) {
+  const [sourceCounts, setSourceCounts] = useState(null);
+  const [sourceError, setSourceError] = useState(false);
+  useEffect(() => {
+    let ignore = false;
+    getSources().then((data) => {
+      if (!ignore) setSourceCounts(data);
+    }).catch(() => { if (!ignore) setSourceError(true); });
+    return () => { ignore = true; };
+  }, []);
   const sampleQuestions = [
     "What is Computer Engineering?",
     "What courses are taught in Computer Engineering?",
@@ -26,8 +38,10 @@ function HomePage({ onNavigate }) {
           </div>
         </div>
         <div className="summary-panel" aria-label="Project summary">
-          <p className="summary-number">56</p>
-          <p>approved knowledge sources support the advisor's answers and source cards.</p>
+          <p className="summary-number">{sourceCounts?.count ?? "—"}</p>
+          <p aria-live="polite">{sourceCounts
+            ? `approved knowledge sources; ${sourceCounts.indexed_count} indexed for the advisor's answers.`
+            : sourceError ? "Source counts are currently unavailable." : "Loading knowledge source counts…"}</p>
         </div>
       </div>
 
@@ -57,7 +71,7 @@ function HomePage({ onNavigate }) {
           {sampleQuestions.map((question) => (
             <article className="feature-card" key={question}>
               <h3>{question}</h3>
-              <button type="button" className="secondary-button" onClick={() => onNavigate("advisor")}>
+              <button type="button" className="secondary-button" onClick={() => onAskQuestion(question)}>
                 Ask in Advisor
               </button>
             </article>
