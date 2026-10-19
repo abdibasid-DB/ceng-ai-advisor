@@ -3,6 +3,7 @@
         "id":  "unseen_department_itself_001",
         "topic_area":  "department_itself",
         "question":  "What does being near the OSTIM industrial zone actually change for me as a CENG student?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_005"
                                 ],
@@ -12,6 +13,7 @@
         "id":  "unseen_department_itself_002",
         "topic_area":  "department_itself",
         "question":  "Can students do research with lecturers at OSTIM\u0027s Cezeri center, or is it just for staff?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_065"
                                 ],
@@ -21,6 +23,7 @@
         "id":  "unseen_department_itself_003",
         "topic_area":  "department_itself",
         "question":  "Are there people in OSTIM CENG working on language AI, like chatbots?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_006",
                                     "src_008"
@@ -31,6 +34,7 @@
         "id":  "unseen_department_itself_004",
         "topic_area":  "department_itself",
         "question":  "Who in OSTIM CENG could I email about an interest in computer networks?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_006"
                                 ],
@@ -40,6 +44,7 @@
         "id":  "unseen_department_itself_005",
         "topic_area":  "department_itself",
         "question":  "Roughly how many students would be in my first-year CENG class at OSTIM?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
 
                                 ],
@@ -49,6 +54,7 @@
         "id":  "unseen_department_itself_006",
         "topic_area":  "department_itself",
         "question":  "Does OSTIM\u0027s English CENG degree have MUDEK or ABET accreditation?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
 
                                 ],
@@ -58,6 +64,7 @@
         "id":  "unseen_department_itself_007",
         "topic_area":  "department_itself",
         "question":  "How do I book a first appointment with OSTIM\u0027s KARPİEM career center?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
 
                                 ],
@@ -67,6 +74,7 @@
         "id":  "unseen_department_itself_008",
         "topic_area":  "department_itself",
         "question":  "What score would let me skip OSTIM\u0027s English prep school?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
 
                                 ],
@@ -76,6 +84,7 @@
         "id":  "unseen_department_itself_009",
         "topic_area":  "department_itself",
         "question":  "Where are the CENG lecturers\u0027 offices at OSTIM if I want to go ask a question?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_006"
                                 ],
@@ -85,6 +94,7 @@
         "id":  "unseen_department_itself_010",
         "topic_area":  "department_itself",
         "question":  "If I come up with a product idea at OSTIM, is there somewhere on campus to turn it into a prototype?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_005",
                                     "src_065"
@@ -95,6 +105,7 @@
         "id":  "unseen_academic_curriculum_001",
         "topic_area":  "academic_curriculum",
         "question":  "If I spend a year in English prep at OSTIM, does that use up one of the four degree years?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_058"
                                 ],
@@ -104,6 +115,7 @@
         "id":  "unseen_academic_curriculum_002",
         "topic_area":  "academic_curriculum",
         "question":  "At OSTIM, does doing a minor give me another degree like a double major does?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_058"
                                 ],
@@ -113,6 +125,7 @@
         "id":  "unseen_academic_curriculum_003",
         "topic_area":  "academic_curriculum",
         "question":  "What GPA would I need to apply for a double major alongside OSTIM CENG?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
 
                                 ],
@@ -122,6 +135,7 @@
         "id":  "unseen_academic_curriculum_004",
         "topic_area":  "academic_curriculum",
         "question":  "Which minors can an OSTIM CENG student actually choose this year?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
 
                                 ],
@@ -131,6 +145,7 @@
         "id":  "unseen_academic_curriculum_005",
         "topic_area":  "academic_curriculum",
         "question":  "Do first-year students at OSTIM get physics lab sessions, or is physics all lectures?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_004"
                                 ],
@@ -140,6 +155,7 @@
         "id":  "unseen_academic_curriculum_006",
         "topic_area":  "academic_curriculum",
         "question":  "In OSTIM\u0027s networking class, would I learn how the internet\u0027s different layers work?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_062"
                                 ],
@@ -149,6 +165,7 @@
         "id":  "unseen_academic_curriculum_007",
         "topic_area":  "academic_curriculum",
         "question":  "Would OSTIM teach us why programs freeze because of deadlocks?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_064"
                                 ],
@@ -158,6 +175,7 @@
         "id":  "unseen_academic_curriculum_008",
         "topic_area":  "academic_curriculum",
         "question":  "Will I get any practice presenting technical ideas in OSTIM\u0027s Computer Networks class?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_062"
                                 ],
@@ -167,6 +185,7 @@
         "id":  "unseen_academic_curriculum_009",
         "topic_area":  "academic_curriculum",
         "question":  "If I change a class after registering at OSTIM, do I need my advisor to approve it again?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_058"
                                 ],
@@ -176,6 +195,7 @@
         "id":  "unseen_academic_curriculum_010",
         "topic_area":  "academic_curriculum",
         "question":  "What would a normal weekly English prep timetable at OSTIM look like?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
 
                                 ],
@@ -185,6 +205,7 @@
         "id":  "unseen_student_life_001",
         "topic_area":  "student_life",
         "question":  "Is there anywhere quiet to study at OSTIM when home is too noisy?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_066"
                                 ],
@@ -194,6 +215,7 @@
         "id":  "unseen_student_life_002",
         "topic_area":  "student_life",
         "question":  "Could I use a library late at night at the Cezeri center?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_065"
                                 ],
@@ -203,6 +225,7 @@
         "id":  "unseen_student_life_003",
         "topic_area":  "student_life",
         "question":  "Are there places to play basketball or work out at OSTIM between classes?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_066"
                                 ],
@@ -212,6 +235,7 @@
         "id":  "unseen_student_life_004",
         "topic_area":  "student_life",
         "question":  "Do student clubs have their own spaces in the Cezeri center?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_065"
                                 ],
@@ -221,6 +245,7 @@
         "id":  "unseen_student_life_005",
         "topic_area":  "student_life",
         "question":  "What are the names of the coding and robotics clubs I could join at OSTIM?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
 
                                 ],
@@ -230,6 +255,7 @@
         "id":  "unseen_student_life_006",
         "topic_area":  "student_life",
         "question":  "Can a first-year CENG student use OSTIM computer labs after 7 pm?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
 
                                 ],
@@ -239,6 +265,7 @@
         "id":  "unseen_student_life_007",
         "topic_area":  "student_life",
         "question":  "How much would a student dorm near OSTIM cost me each month?",
+        "expected_behavior":  "insufficient",
         "expected_source_ids":  [
 
                                 ],
@@ -248,6 +275,7 @@
         "id":  "unseen_student_life_008",
         "topic_area":  "student_life",
         "question":  "If I get really homesick at OSTIM, how do I book a student counseling session?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
 
                                 ],
@@ -257,6 +285,7 @@
         "id":  "unseen_student_life_009",
         "topic_area":  "student_life",
         "question":  "Are there cafes or places to sit with friends on the OSTIM campus?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_065",
                                     "src_066"
@@ -267,6 +296,7 @@
         "id":  "unseen_student_life_010",
         "topic_area":  "student_life",
         "question":  "Does OSTIM have a first-year course to help us settle into university life?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_004",
                                     "src_005"
@@ -277,6 +307,7 @@
         "id":  "unseen_programming_001",
         "topic_area":  "programming",
         "question":  "If I mess up a project, can Git help me get back an earlier version?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_015"
                                 ],
@@ -286,6 +317,7 @@
         "id":  "unseen_programming_002",
         "topic_area":  "programming",
         "question":  "What could I actually use terminal commands for besides looking like a hacker?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_090"
                                 ],
@@ -295,6 +327,7 @@
         "id":  "unseen_programming_003",
         "topic_area":  "programming",
         "question":  "When I stare at a coding task and have no clue where to start, what should I try first?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_072"
                                 ],
@@ -304,6 +337,7 @@
         "id":  "unseen_programming_004",
         "topic_area":  "programming",
         "question":  "My program seems to run, so why would I still bother writing tests?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_081"
                                 ],
@@ -313,6 +347,7 @@
         "id":  "unseen_programming_005",
         "topic_area":  "programming",
         "question":  "Will I get to learn SQL and build a database in OSTIM CENG?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_004"
                                 ],
@@ -322,6 +357,7 @@
         "id":  "unseen_programming_006",
         "topic_area":  "programming",
         "question":  "Do OSTIM\u0027s object-oriented programming classes cover things like classes and inheritance?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_004"
                                 ],
@@ -331,6 +367,7 @@
         "id":  "unseen_programming_007",
         "topic_area":  "programming",
         "question":  "Could learning through a small game be a real way into programming, rather than just doing data exercises?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_039"
                                 ],
@@ -340,6 +377,7 @@
         "id":  "unseen_programming_008",
         "topic_area":  "programming",
         "question":  "Will OSTIM\u0027s first programming course look at how efficient an algorithm is, not just whether it works?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_004"
                                 ],
@@ -349,6 +387,7 @@
         "id":  "unseen_programming_009",
         "topic_area":  "programming",
         "question":  "What minimum laptop RAM does OSTIM officially recommend for first-year CENG?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
 
                                 ],
@@ -358,6 +397,7 @@
         "id":  "unseen_programming_010",
         "topic_area":  "programming",
         "question":  "Which editor or IDE does OSTIM require us to install before the first programming class?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
 
                                 ],
@@ -367,6 +407,7 @@
         "id":  "unseen_specialization_areas_001",
         "topic_area":  "specialization_areas",
         "question":  "Is working with an FPGA basically the same thing as programming an Arduino-type board?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_084"
                                 ],
@@ -376,6 +417,7 @@
         "id":  "unseen_specialization_areas_002",
         "topic_area":  "specialization_areas",
         "question":  "How would learning for cloud security differ from learning for embedded-device security?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_094"
                                 ],
@@ -385,6 +427,7 @@
         "id":  "unseen_specialization_areas_003",
         "topic_area":  "specialization_areas",
         "question":  "Is cybersecurity mostly hacking websites, or are there other sides to it?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_085",
                                     "src_094"
@@ -395,6 +438,7 @@
         "id":  "unseen_specialization_areas_004",
         "topic_area":  "specialization_areas",
         "question":  "If I like networks, does that mean I have to specialize in cybersecurity?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_083"
                                 ],
@@ -404,6 +448,7 @@
         "id":  "unseen_specialization_areas_005",
         "topic_area":  "specialization_areas",
         "question":  "What does a data scientist actually do with data before making a model?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_086"
                                 ],
@@ -413,6 +458,7 @@
         "id":  "unseen_specialization_areas_006",
         "topic_area":  "specialization_areas",
         "question":  "Would FPGA work suit someone who likes digital circuits and making things run fast?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_084"
                                 ],
@@ -422,6 +468,7 @@
         "id":  "unseen_specialization_areas_007",
         "topic_area":  "specialization_areas",
         "question":  "I keep seeing IT and information systems degrees too; are they focused on different things?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_080"
                                 ],
@@ -431,6 +478,7 @@
         "id":  "unseen_specialization_areas_008",
         "topic_area":  "specialization_areas",
         "question":  "Can I mix interests like hardware and AI instead of sticking to only one specialization?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_043",
                                     "src_084"
@@ -441,6 +489,7 @@
         "id":  "unseen_specialization_areas_009",
         "topic_area":  "specialization_areas",
         "question":  "Does OSTIM offer a hands-on FPGA elective every single year?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
 
                                 ],
@@ -450,6 +499,7 @@
         "id":  "unseen_specialization_areas_010",
         "topic_area":  "specialization_areas",
         "question":  "Will an OSTIM diploma actually say cybersecurity if I choose security electives?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
 
                                 ],
@@ -459,6 +509,7 @@
         "id":  "unseen_career_opportunities_001",
         "topic_area":  "career_opportunities",
         "question":  "What would a hardware testing engineer do on a normal project?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_014"
                                 ],
@@ -468,6 +519,7 @@
         "id":  "unseen_career_opportunities_002",
         "topic_area":  "career_opportunities",
         "question":  "Are there software jobs where figuring out what users need is a big part of the work?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_081"
                                 ],
@@ -477,6 +529,7 @@
         "id":  "unseen_career_opportunities_003",
         "topic_area":  "career_opportunities",
         "question":  "For a cloud career, what basics should I understand before learning a specific company\u0027s platform?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_082"
                                 ],
@@ -486,6 +539,7 @@
         "id":  "unseen_career_opportunities_004",
         "topic_area":  "career_opportunities",
         "question":  "Could a CENG graduate work on computers inside cars instead of desktop PCs?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_067"
                                 ],
@@ -495,6 +549,7 @@
         "id":  "unseen_career_opportunities_005",
         "topic_area":  "career_opportunities",
         "question":  "How does Cezeri support a student idea between the first sketch and starting a company?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_065"
                                 ],
@@ -504,6 +559,7 @@
         "id":  "unseen_career_opportunities_006",
         "topic_area":  "career_opportunities",
         "question":  "Could computer engineering work involve testing systems for the defense industry?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_014",
                                     "src_067"
@@ -514,6 +570,7 @@
         "id":  "unseen_career_opportunities_007",
         "topic_area":  "career_opportunities",
         "question":  "If I go into data work, would explaining results to people be part of my job too?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_086"
                                 ],
@@ -523,6 +580,7 @@
         "id":  "unseen_career_opportunities_008",
         "topic_area":  "career_opportunities",
         "question":  "Would software engineers have to keep looking after a product after it launches?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_081"
                                 ],
@@ -532,6 +590,7 @@
         "id":  "unseen_career_opportunities_009",
         "topic_area":  "career_opportunities",
         "question":  "Which companies hired OSTIM CENG\u0027s last graduating class?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
 
                                 ],
@@ -541,6 +600,7 @@
         "id":  "unseen_career_opportunities_010",
         "topic_area":  "career_opportunities",
         "question":  "Does OSTIM have a signed agreement that guarantees every CENG student a job offer?",
+        "expected_behavior":  "insufficient",
         "expected_source_ids":  [
 
                                 ],
@@ -550,6 +610,7 @@
         "id":  "unseen_internships_001",
         "topic_area":  "internships",
         "question":  "In OSTIM\u0027s published 2025-26 Erasmus internship call, how high did my GPA need to be?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_061"
                                 ],
@@ -559,6 +620,7 @@
         "id":  "unseen_internships_002",
         "topic_area":  "internships",
         "question":  "In OSTIM\u0027s 2025-26 Erasmus call, did students have to find their own internship company?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_061"
                                 ],
@@ -568,6 +630,7 @@
         "id":  "unseen_internships_003",
         "topic_area":  "internships",
         "question":  "Was a company acceptance letter compulsory when applying for OSTIM\u0027s 2025-26 Erasmus internship?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_061"
                                 ],
@@ -577,6 +640,7 @@
         "id":  "unseen_internships_004",
         "topic_area":  "internships",
         "question":  "For OSTIM\u0027s 2025-26 Erasmus internship grant, was all the money paid before students went abroad?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_061"
                                 ],
@@ -586,6 +650,7 @@
         "id":  "unseen_internships_005",
         "topic_area":  "internships",
         "question":  "Could a prep exemption exam result be used for OSTIM\u0027s 2025-26 Erasmus internship language requirement?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_061"
                                 ],
@@ -595,6 +660,7 @@
         "id":  "unseen_internships_006",
         "topic_area":  "internships",
         "question":  "What paperwork does OSTIM list for recording workplace attendance and what my mentor thinks?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_007"
                                 ],
@@ -604,6 +670,7 @@
         "id":  "unseen_internships_007",
         "topic_area":  "internships",
         "question":  "In OSTIM\u0027s final workplace experience, would I be expected to develop a project with the company?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_004"
                                 ],
@@ -613,6 +680,7 @@
         "id":  "unseen_internships_008",
         "topic_area":  "internships",
         "question":  "Exactly how many compulsory summer internship days do OSTIM CENG students have to finish?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
 
                                 ],
@@ -622,6 +690,7 @@
         "id":  "unseen_internships_009",
         "topic_area":  "internships",
         "question":  "Who pays my accident insurance during an OSTIM CENG internship?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
 
                                 ],
@@ -631,6 +700,7 @@
         "id":  "unseen_internships_010",
         "topic_area":  "internships",
         "question":  "Can a fully remote internship count toward OSTIM CENG\u0027s compulsory internship?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
 
                                 ],
@@ -640,6 +710,7 @@
         "id":  "unseen_graduate_studies_001",
         "topic_area":  "graduate_studies",
         "question":  "Does OSTIM have an English CENG master\u0027s where you write a thesis?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_088"
                                 ],
@@ -649,6 +720,7 @@
         "id":  "unseen_graduate_studies_002",
         "topic_area":  "graduate_studies",
         "question":  "What would be different about a thesis master\u0027s compared with just taking more undergraduate classes?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_088"
                                 ],
@@ -658,6 +730,7 @@
         "id":  "unseen_graduate_studies_003",
         "topic_area":  "graduate_studies",
         "question":  "What\u0027s the difference between a research master\u0027s and a professional master\u0027s?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_044"
                                 ],
@@ -667,6 +740,7 @@
         "id":  "unseen_graduate_studies_004",
         "topic_area":  "graduate_studies",
         "question":  "Who could I talk to at university to figure out what courses would prepare me for grad school?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_044"
                                 ],
@@ -676,6 +750,7 @@
         "id":  "unseen_graduate_studies_005",
         "topic_area":  "graduate_studies",
         "question":  "If I might want to do research later, should I start reading papers while I\u0027m still an undergrad?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_088"
                                 ],
@@ -685,6 +760,7 @@
         "id":  "unseen_graduate_studies_006",
         "topic_area":  "graduate_studies",
         "question":  "Would OSTIM\u0027s CENG master\u0027s go deeper into networks than the bachelor\u0027s?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_088"
                                 ],
@@ -694,6 +770,7 @@
         "id":  "unseen_graduate_studies_007",
         "topic_area":  "graduate_studies",
         "question":  "What ALES score would I need for OSTIM\u0027s CENG master\u0027s?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
 
                                 ],
@@ -703,6 +780,7 @@
         "id":  "unseen_graduate_studies_008",
         "topic_area":  "graduate_studies",
         "question":  "What IELTS or TOEFL score would OSTIM accept for its English CENG master\u0027s?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
 
                                 ],
@@ -712,6 +790,7 @@
         "id":  "unseen_graduate_studies_009",
         "topic_area":  "graduate_studies",
         "question":  "Could I get a paid research assistantship to cover an OSTIM CENG master\u0027s, and how much would it pay?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
 
                                 ],
@@ -721,6 +800,7 @@
         "id":  "unseen_graduate_studies_010",
         "topic_area":  "graduate_studies",
         "question":  "Does OSTIM currently run a separate Computer Engineering PhD program?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
 
                                 ],
@@ -730,6 +810,7 @@
         "id":  "unseen_employment_prospects_001",
         "topic_area":  "employment_prospects",
         "question":  "If I apply for a job in another European country, who can help explain whether my Turkish degree is recognized?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_028"
                                 ],
@@ -739,6 +820,7 @@
         "id":  "unseen_employment_prospects_002",
         "topic_area":  "employment_prospects",
         "question":  "Would I need to get my diploma or transcript translated before applying for work abroad?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_028"
                                 ],
@@ -748,6 +830,7 @@
         "id":  "unseen_employment_prospects_003",
         "topic_area":  "employment_prospects",
         "question":  "For the EU Blue Card, would my degree be enough or would I need a job offer too?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_029"
                                 ],
@@ -757,6 +840,7 @@
         "id":  "unseen_employment_prospects_004",
         "topic_area":  "employment_prospects",
         "question":  "How would I check if an engineering job abroad is a regulated profession before applying?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_028",
                                     "src_029"
@@ -767,6 +851,7 @@
         "id":  "unseen_employment_prospects_005",
         "topic_area":  "employment_prospects",
         "question":  "Were Turkey\u0027s IT companies actually adding more workers in 2024?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_026"
                                 ],
@@ -776,6 +861,7 @@
         "id":  "unseen_employment_prospects_006",
         "topic_area":  "employment_prospects",
         "question":  "What do NQF and EQF levels mean when I\u0027m trying to explain my degree to a European employer?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_028"
                                 ],
@@ -785,6 +871,7 @@
         "id":  "unseen_employment_prospects_007",
         "topic_area":  "employment_prospects",
         "question":  "What percentage of OSTIM CENG graduates get a job within six months?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
 
                                 ],
@@ -794,6 +881,7 @@
         "id":  "unseen_employment_prospects_008",
         "topic_area":  "employment_prospects",
         "question":  "What German-language level do employers in Germany usually ask new CENG graduates for?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
 
                                 ],
@@ -803,6 +891,7 @@
         "id":  "unseen_employment_prospects_009",
         "topic_area":  "employment_prospects",
         "question":  "If I\u0027m an international student, how much would a Turkish work permit cost after graduation?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
 
                                 ],
@@ -812,6 +901,7 @@
         "id":  "unseen_employment_prospects_010",
         "topic_area":  "employment_prospects",
         "question":  "How many junior software or hardware vacancies are there in Ankara right now?",
+        "expected_behavior":  "insufficient",
         "expected_source_ids":  [
 
                                 ],
@@ -821,6 +911,7 @@
         "id":  "unseen_future_technologies_001",
         "topic_area":  "future_technologies",
         "question":  "When people say an app runs in the cloud, what does that actually mean?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_082"
                                 ],
@@ -830,6 +921,7 @@
         "id":  "unseen_future_technologies_002",
         "topic_area":  "future_technologies",
         "question":  "Are SaaS, PaaS and IaaS three names for the same cloud thing?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_082"
                                 ],
@@ -839,6 +931,7 @@
         "id":  "unseen_future_technologies_003",
         "topic_area":  "future_technologies",
         "question":  "Why would a smart thermostat need networking knowledge, not just code inside it?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_083"
                                 ],
@@ -848,6 +941,7 @@
         "id":  "unseen_future_technologies_004",
         "topic_area":  "future_technologies",
         "question":  "Why might an engineer use an FPGA instead of just running more software on a normal processor?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_084"
                                 ],
@@ -857,6 +951,7 @@
         "id":  "unseen_future_technologies_005",
         "topic_area":  "future_technologies",
         "question":  "How could 5G help smart factories in Turkey?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_026"
                                 ],
@@ -866,6 +961,7 @@
         "id":  "unseen_future_technologies_006",
         "topic_area":  "future_technologies",
         "question":  "Is quantum computing actually on the plan for OSTIM\u0027s New Trends class?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_063"
                                 ],
@@ -875,6 +971,7 @@
         "id":  "unseen_future_technologies_007",
         "topic_area":  "future_technologies",
         "question":  "Does OSTIM\u0027s New Trends class cover microservices and CI/CD, or only futuristic ideas?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_063"
                                 ],
@@ -884,6 +981,7 @@
         "id":  "unseen_future_technologies_008",
         "topic_area":  "future_technologies",
         "question":  "In the jobs report, why is keeping on learning such a big deal for tech students?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_017"
                                 ],
@@ -893,6 +991,7 @@
         "id":  "unseen_future_technologies_009",
         "topic_area":  "future_technologies",
         "question":  "Does OSTIM have an actual quantum computer that undergrads can book time on?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
 
                                 ],
@@ -902,6 +1001,7 @@
         "id":  "unseen_future_technologies_010",
         "topic_area":  "future_technologies",
         "question":  "If I start learning now, which programming language is going to be the main one for engineers in 2035?",
+        "expected_behavior":  "insufficient",
         "expected_source_ids":  [
 
                                 ],
@@ -911,6 +1011,7 @@
         "id":  "unseen_artificial_intelligence_001",
         "topic_area":  "artificial_intelligence",
         "question":  "Why do AI courses keep talking about vectors and matrices?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_092"
                                 ],
@@ -920,6 +1021,7 @@
         "id":  "unseen_artificial_intelligence_002",
         "topic_area":  "artificial_intelligence",
         "question":  "What would probability and statistics help me understand about an AI model?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_092"
                                 ],
@@ -929,6 +1031,7 @@
         "id":  "unseen_artificial_intelligence_003",
         "topic_area":  "artificial_intelligence",
         "question":  "If an AI writes code that looks convincing, what parts still need my own judgment?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_093"
                                 ],
@@ -938,6 +1041,7 @@
         "id":  "unseen_artificial_intelligence_004",
         "topic_area":  "artificial_intelligence",
         "question":  "Could I just get really good at prompts and skip learning how programs work?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_087",
                                     "src_093"
@@ -948,6 +1052,7 @@
         "id":  "unseen_artificial_intelligence_005",
         "topic_area":  "artificial_intelligence",
         "question":  "What would an AI or data project need to show besides a model with a good-looking score?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_086"
                                 ],
@@ -957,6 +1062,7 @@
         "id":  "unseen_artificial_intelligence_006",
         "topic_area":  "artificial_intelligence",
         "question":  "Is there an AI and image-processing space at OSTIM\u0027s Cezeri center?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_065"
                                 ],
@@ -966,6 +1072,7 @@
         "id":  "unseen_artificial_intelligence_007",
         "topic_area":  "artificial_intelligence",
         "question":  "If an AI gives me code, should I trust it just because it passes one benchmark?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_093"
                                 ],
@@ -975,6 +1082,7 @@
         "id":  "unseen_artificial_intelligence_008",
         "topic_area":  "artificial_intelligence",
         "question":  "I saw Python was GitHub\u0027s biggest language in 2024; does that mean other languages stopped mattering?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_087"
                                 ],
@@ -984,6 +1092,7 @@
         "id":  "unseen_artificial_intelligence_009",
         "topic_area":  "artificial_intelligence",
         "question":  "What exactly is OSTIM\u0027s rule on using ChatGPT for programming homework?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
 
                                 ],
@@ -993,6 +1102,7 @@
         "id":  "unseen_artificial_intelligence_010",
         "topic_area":  "artificial_intelligence",
         "question":  "Do first-year OSTIM students get free GPU time for training their own models?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
 
                                 ],
@@ -1002,6 +1112,7 @@
         "id":  "unseen_common_concerns_001",
         "topic_area":  "common_concerns",
         "question":  "My family needs to budget now; what\u0027s the total tuition for OSTIM\u0027s English CENG next year?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
 
                                 ],
@@ -1011,6 +1122,7 @@
         "id":  "unseen_common_concerns_002",
         "topic_area":  "common_concerns",
         "question":  "I\u0027m scared of losing my scholarship if my grades slip; what are OSTIM\u0027s renewal rules?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
 
                                 ],
@@ -1020,6 +1132,7 @@
         "id":  "unseen_common_concerns_003",
         "topic_area":  "common_concerns",
         "question":  "If I fail OSTIM\u0027s English prep year, what exactly happens to my place on the degree?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
 
                                 ],
@@ -1029,6 +1142,7 @@
         "id":  "unseen_common_concerns_004",
         "topic_area":  "common_concerns",
         "question":  "I have dyslexia and timed exams worry me; what extra-time arrangements could I get at OSTIM?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
 
                                 ],
@@ -1038,6 +1152,7 @@
         "id":  "unseen_common_concerns_005",
         "topic_area":  "common_concerns",
         "question":  "I can\u0027t afford a laptop straight away; does OSTIM lend students one?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
 
                                 ],
@@ -1047,6 +1162,7 @@
         "id":  "unseen_common_concerns_006",
         "topic_area":  "common_concerns",
         "question":  "If I fall behind in coding lectures, is rewatching everything the best way to catch up?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_072"
                                 ],
@@ -1056,6 +1172,7 @@
         "id":  "unseen_common_concerns_007",
         "topic_area":  "common_concerns",
         "question":  "I got good school maths marks by memorizing formulas; will that approach be enough for engineering classes?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_071"
                                 ],
@@ -1065,6 +1182,7 @@
         "id":  "unseen_common_concerns_008",
         "topic_area":  "common_concerns",
         "question":  "I\u0027m shy about asking questions in a big lecture; could a tiny study group be a useful way to learn?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_072"
                                 ],
@@ -1074,6 +1192,7 @@
         "id":  "unseen_common_concerns_009",
         "topic_area":  "common_concerns",
         "question":  "If my first semester feels too much, can I ask my OSTIM advisor about taking fewer credits?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_058"
                                 ],
@@ -1083,6 +1202,7 @@
         "id":  "unseen_common_concerns_010",
         "topic_area":  "common_concerns",
         "question":  "I\u0027m nervous about speaking English; do OSTIM\u0027s Academic English classes practice speaking and listening too?",
+        "expected_behavior":  "answer",
         "expected_source_ids":  [
                                     "src_004"
                                 ],
