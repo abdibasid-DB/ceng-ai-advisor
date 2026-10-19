@@ -1,0 +1,656 @@
+{
+  "generated_at": "2026-10-17T14:38:32+00:00",
+  "complete": false,
+  "case_count": 3,
+  "selected_ids": [
+    "F001",
+    "C019",
+    "C020",
+    "M032",
+    "P056",
+    "H063",
+    "A075",
+    "Y090",
+    "R108",
+    "R120",
+    "S129",
+    "X141",
+    "T184",
+    "T187",
+    "T188",
+    "T189",
+    "U153",
+    "O166",
+    "N001",
+    "N002",
+    "N003",
+    "N004",
+    "N005",
+    "N006"
+  ],
+  "summary": {
+    "case_count": 3,
+    "evaluation_label_counts": {
+      "correct_evidence_supported": 1,
+      "incorrect_refusal_evidence_exists": 2
+    },
+    "evaluation_label_percentages": {
+      "correct_evidence_supported": 33.3,
+      "incorrect_refusal_evidence_exists": 66.7
+    },
+    "status_counts": {
+      "answered": 1,
+      "insufficient_information": 2
+    },
+    "answered_cases": 1,
+    "answered_cases_with_valid_citations": 1,
+    "answered_cases_with_valid_citations_pct": 100.0,
+    "answered_cases_evidence_supported": 1,
+    "answered_cases_evidence_supported_pct": 100.0,
+    "by_group": {
+      "curriculum": {
+        "total": 2,
+        "labels": {
+          "incorrect_refusal_evidence_exists": 2
+        },
+        "correct_evidence_supported_pct": 0.0,
+        "correct_insufficient_information_pct": 0.0,
+        "incorrect_refusal_evidence_exists_pct": 100.0,
+        "unsupported_incorrect_or_misleading_pct": 0.0,
+        "runtime_error_pct": 0.0
+      },
+      "fundamentals": {
+        "total": 1,
+        "labels": {
+          "correct_evidence_supported": 1
+        },
+        "correct_evidence_supported_pct": 100.0,
+        "correct_insufficient_information_pct": 0.0,
+        "incorrect_refusal_evidence_exists_pct": 0.0,
+        "unsupported_incorrect_or_misleading_pct": 0.0,
+        "runtime_error_pct": 0.0
+      }
+    },
+    "latency_seconds": {
+      "mean": 104.32,
+      "max": 137.7,
+      "min": 46.71
+    },
+    "systematic_failure_counts": {
+      "false_refusal: unsupported claim could not be matched to retrieved evidence": 1,
+      "false_refusal: cited passage does not support one or more answer claims": 1
+    }
+  },
+  "results": [
+    {
+      "id": "F001",
+      "question": "What is Computer Engineering?",
+      "group": "fundamentals",
+      "expected_topics": [
+        "computer_engineering"
+      ],
+      "expected_categories": [
+        "department_information",
+        "common_misconceptions"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "evaluation_label": "correct_evidence_supported",
+      "baseline_label": "unsupported_incorrect_or_misleading",
+      "elapsed_wall_seconds": 128.652,
+      "diagnostics": {
+        "query_kind": "standalone_domain_question",
+        "resolved_question": "What is Computer Engineering?",
+        "status": "answered",
+        "llm_called": true,
+        "evidence_exists_by_eval": true,
+        "citation_valid": true,
+        "citation_metadata": {
+          "valid": true,
+          "cited_labels": [
+            "S1",
+            "S2"
+          ],
+          "invalid_labels": [],
+          "available_labels": [
+            "S1",
+            "S2",
+            "S3"
+          ],
+          "normalized": true,
+          "repair_actions": [
+            "removed_trailing_source_labels",
+            "added_supported_inline_label"
+          ],
+          "reason": null,
+          "retry_attempted": false,
+          "retry_successful": false,
+          "generations_attempted": 1,
+          "retry_failure_reason": null
+        },
+        "support_check": {
+          "all_claims_cited": true,
+          "all_cited_claims_supported_by_overlap": true,
+          "unsupported_claim_count": 0,
+          "uncited_claim_count": 0,
+          "checks": [
+            {
+              "claim": "Computer Engineering is a sub-discipline of computing that involves the design and construction of processor-based systems, encompassing hardware, software, and communications components [S1].",
+              "labels": [
+                "S1"
+              ],
+              "supported": true,
+              "overlap_terms": [
+                "and",
+                "communications",
+                "components",
+                "computing",
+                "construction",
+                "design",
+                "hardware",
+                "involves",
+                "processor-based",
+                "software",
+                "sub-discipline",
+                "systems"
+              ]
+            },
+            {
+              "claim": "This field is generally closest to the boundary between computing and engineering hardware, as evidenced by the ACM's categorization of computing disciplines [S2].",
+              "labels": [
+                "S2"
+              ],
+              "supported": true,
+              "overlap_terms": [
+                "acm",
+                "and",
+                "boundary",
+                "closest",
+                "computing",
+                "disciplines",
+                "generally",
+                "hardware",
+                "the"
+              ]
+            }
+          ]
+        },
+        "unsupported_generated_answer_reason": null,
+        "retrieval_metadata": {
+          "top_k": 5,
+          "candidate_top_k": 12,
+          "similarity_threshold": 0.3,
+          "results_above_threshold": 5,
+          "top_similarity_score": 0.6821848154067993,
+          "evidence_sufficient": true,
+          "out_of_scope": false,
+          "resolved_question": "What is Computer Engineering?",
+          "query_kind": "standalone_domain_question",
+          "query_normalization": {
+            "original_question": "What is Computer Engineering?",
+            "normalized_question": "What is computer engineering?",
+            "retrieval_question": "What is Computer Engineering?",
+            "kind": "standalone_domain_question",
+            "topics": [
+              {
+                "name": "computer_engineering",
+                "matched_terms": [
+                  "computer engineering"
+                ],
+                "confidence": 1.0
+              },
+              {
+                "name": "definition",
+                "matched_terms": [
+                  "what is"
+                ],
+                "confidence": 1.0
+              }
+            ],
+            "task": "explain",
+            "constraints": [],
+            "entities": [
+              "computer_engineering"
+            ],
+            "referents": [],
+            "requires_context": false,
+            "requires_clarification": false,
+            "is_source_follow_up": false,
+            "is_persona_meta": false,
+            "is_out_of_domain": false,
+            "confidence": 0.92,
+            "debug": {
+              "token_count": 4,
+              "replacements": [],
+              "normalized_tokens": [
+                "what",
+                "is",
+                "computer",
+                "engineering"
+              ],
+              "changed": false
+            },
+            "changed": false
+          }
+        },
+        "timing": {
+          "retrieval_seconds": 121.461,
+          "context_construction_seconds": 0.008,
+          "llm_generation_seconds": 7.053,
+          "initial_llm_generation_seconds": 7.053,
+          "retry_llm_generation_seconds": 0.0,
+          "llm_reported_total_duration_seconds": 6.676,
+          "total_seconds": 128.558
+        },
+        "model": "qwen2.5:3b",
+        "error": null
+      },
+      "answer": "Computer Engineering is a sub-discipline of computing that involves the design and construction of processor-based systems, encompassing hardware, software, and communications components [S1]. This field is generally closest to the boundary between computing and engineering hardware, as evidenced by the ACM's categorization of computing disciplines [S2].",
+      "sources": [
+        {
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "source_name": "ACM Curricular Guidance",
+          "source_type": "curricular_guidance",
+          "url": "https://www.acm.org/education/curricula-recommendations",
+          "category": "common_misconceptions",
+          "supporting_chunk_ids": [
+            "src_042_computer_engineering_definition"
+          ],
+          "evidence_labels": [
+            "S1"
+          ],
+          "best_similarity_score": 0.6821848154067993
+        },
+        {
+          "source_id": "src_080",
+          "title": "Computing Curricula 2020: Paradigms for Global Computing Education",
+          "source_name": "ACM and IEEE Computer Society",
+          "source_type": "professional_curriculum_report",
+          "url": "https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf",
+          "category": "common_misconceptions",
+          "supporting_chunk_ids": [
+            "src_080_chunk_001"
+          ],
+          "evidence_labels": [
+            "S2"
+          ],
+          "best_similarity_score": 0.6089690923690796
+        }
+      ],
+      "retrieved_context": [
+        {
+          "label": "S1",
+          "chunk_id": "src_042_computer_engineering_definition",
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "category": "common_misconceptions",
+          "similarity_score": 0.6821848154067993,
+          "url": "https://www.acm.org/education/curricula-recommendations",
+          "passage": "Curricular Guidance Computer Engineering Computer Science Cybersecurity Data Science - Coming soon! Information Technology Information Technology - Applied Information Technology - Transfer Software Engineering Curricular Guidance The Sub-Disciplines of Computing The Association for Computing Machinery (ACM) currently categorizes the overarching discipline of computing into five defined sub-disciplines: computer science, computer engineering, software engineering, information systems and information technology. Computer Engineering involves the design and construction of processor-based systems comprised of hardware, software, and communications components."
+        },
+        {
+          "label": "S2",
+          "chunk_id": "src_080_chunk_001",
+          "source_id": "src_080",
+          "title": "Computing Curricula 2020: Paradigms for Global Computing Education",
+          "category": "common_misconceptions",
+          "similarity_score": 0.6089690923690796,
+          "url": "https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf",
+          "passage": "Source ID: src_080 Title: Computing Curricula 2020: Paradigms for Global Computing Education Source: ACM and IEEE Computer Society URL: https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf Date accessed: 2026-10-13 Curated source note Computing Curricula 2020 compares major computing disciplines and is useful when students ask whether Computer Engineering is the same as Computer Science, Software Engineering, Information Technology, Information Systems, or Cybersecurity. Computer Engineering is generally closest to the boundary between computing and engineering hardware."
+        },
+        {
+          "label": "S3",
+          "chunk_id": "src_042_chunk_001",
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "category": "common_misconceptions",
+          "similarity_score": 0.6044425964355469,
+          "url": "https://ccecc.acm.org/guidance",
+          "passage": "Source ID: src_042 Curricular Guidance - ACM CCECC Facebook Twitter LinkedIn YouTube ACM CCECC Celebrating 40++ years of service to computing education communities. Curricular Guidance Computer Engineering Computer Science Cybersecurity Data Science - Coming soon! Information Technology Information Technology - Applied Information Technology - Transfer Software Engineering Curricular Guidance The Sub-Disciplines of Computing The Association for Computing Machinery (ACM) currently categorizes the overarching discipline of computing into five defined sub-disciplines: computer science, computer engineering, software engineering, information systems and information technology."
+        }
+      ],
+      "previous_turn_setup": null
+    },
+    {
+      "id": "C019",
+      "question": "Do students take electronics and digital logic?",
+      "group": "curriculum",
+      "expected_topics": [
+        "hardware"
+      ],
+      "expected_categories": [
+        "curriculum",
+        "hardware"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "evaluation_label": "incorrect_refusal_evidence_exists",
+      "baseline_label": "incorrect_refusal_evidence_exists",
+      "elapsed_wall_seconds": 137.745,
+      "diagnostics": {
+        "query_kind": "standalone_domain_question",
+        "resolved_question": "Do students take electronics and digital logic? (Computer Engineering)",
+        "status": "insufficient_information",
+        "llm_called": true,
+        "evidence_exists_by_eval": true,
+        "citation_valid": true,
+        "citation_metadata": {
+          "valid": true,
+          "cited_labels": [],
+          "invalid_labels": [],
+          "available_labels": [
+            "S1",
+            "S2",
+            "S3",
+            "S4"
+          ],
+          "normalized": false,
+          "repair_actions": [],
+          "reason": "unsupported claim could not be matched to retrieved evidence",
+          "retry_attempted": true,
+          "retry_successful": false,
+          "generations_attempted": 2,
+          "retry_failure_reason": "unsupported claim could not be matched to retrieved evidence",
+          "discarded_invalid_generation": true,
+          "discarded_generation_reason": "unsupported claim could not be matched to retrieved evidence"
+        },
+        "support_check": {
+          "all_claims_cited": true,
+          "all_cited_claims_supported_by_overlap": true,
+          "unsupported_claim_count": 0,
+          "uncited_claim_count": 0,
+          "checks": []
+        },
+        "unsupported_generated_answer_reason": null,
+        "retrieval_metadata": {
+          "top_k": 5,
+          "candidate_top_k": 12,
+          "similarity_threshold": 0.3,
+          "results_above_threshold": 5,
+          "top_similarity_score": 0.6393606662750244,
+          "evidence_sufficient": true,
+          "out_of_scope": false,
+          "unsupported_reason": "unsupported claim could not be matched to retrieved evidence",
+          "resolved_question": "Do students take electronics and digital logic? (Computer Engineering)",
+          "query_kind": "standalone_domain_question",
+          "query_normalization": {
+            "original_question": "Do students take electronics and digital logic?",
+            "normalized_question": "Do students take electronics and digital logic?",
+            "retrieval_question": "Do students take electronics and digital logic? (Computer Engineering)",
+            "kind": "standalone_domain_question",
+            "topics": [
+              {
+                "name": "hardware",
+                "matched_terms": [
+                  "electronics"
+                ],
+                "confidence": 1.0
+              }
+            ],
+            "task": "assess",
+            "constraints": [],
+            "entities": [
+              "hardware"
+            ],
+            "referents": [],
+            "requires_context": false,
+            "requires_clarification": false,
+            "is_source_follow_up": false,
+            "is_persona_meta": false,
+            "is_out_of_domain": false,
+            "confidence": 0.92,
+            "debug": {
+              "token_count": 7,
+              "replacements": [],
+              "normalized_tokens": [
+                "do",
+                "students",
+                "take",
+                "electronics",
+                "and",
+                "digital",
+                "logic"
+              ],
+              "changed": false
+            },
+            "changed": false
+          }
+        },
+        "timing": {
+          "retrieval_seconds": 0.197,
+          "context_construction_seconds": 0.006,
+          "llm_generation_seconds": 137.475,
+          "initial_llm_generation_seconds": 113.083,
+          "retry_llm_generation_seconds": 24.392,
+          "llm_reported_total_duration_seconds": 113.066,
+          "total_seconds": 137.704
+        },
+        "model": "qwen2.5:3b",
+        "error": null
+      },
+      "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+      "sources": [],
+      "retrieved_context": [
+        {
+          "label": "S1",
+          "chunk_id": "src_067_chunk_013",
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.6393606662750244,
+          "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+          "passage": "Historically, the field of computer engineering has been widely viewed as “designing computers.” In fact, the design of computers themselves has been the province of relatively few highly skilled engineers whose goal was to push forward the limits of computer and microelectronics technology. The successful miniaturization of silicon devices and their increased reliability as system building blocks and complete systems on chips have created an environment in which computers have become pervasive and replaced more conventional electronic devices."
+        },
+        {
+          "label": "S2",
+          "chunk_id": "src_070_chunk_001",
+          "source_id": "src_070",
+          "title": "EECS Majors: Choosing your first computer science course",
+          "category": "programming",
+          "similarity_score": 0.5663847923278809,
+          "url": "https://engineering.berkeley.edu/students/new-students/eecs-majors-choosing-your-first-computer-science-course/",
+          "passage": "Computer Science 61Ais a rigorous and fast-paced introduction to computer science that was designed for students with some prior programming experience. Students who haven’t programmed before often get more out of CS 61A if they take it after another course, such as Computer Science 10 or Computer Science C8. Math 1A is a prerequisite or co-requisite for Computer Science 61A."
+        },
+        {
+          "label": "S3",
+          "chunk_id": "src_042_chunk_001",
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "category": "common_misconceptions",
+          "similarity_score": 0.6047117710113525,
+          "url": "https://ccecc.acm.org/guidance",
+          "passage": "Computer Engineering involves the design and construction of processor-based systems comprised of hardware, software, and communications components. This four-year curriculum focuses on the synthesis of electrical engineering and computer science as applied to the design of systems such as cellular communications, consumer electronics, medical imaging and devices, alarm systems and military technologies. Upon graduation, students initiating careers as computer engineers should be able to design and implement systems that involve the integration of software and hardware devices."
+        },
+        {
+          "label": "S4",
+          "chunk_id": "src_067_chunk_019",
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.6136788129806519,
+          "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+          "passage": "Computer-related coursework typically comes from computer organization and architecture, algorithms, programming, databases, networks, software engineering, and communications. Electrical engineering related coursework typically comes from circuits, digital logic, microelectronics, signal processing, electromagnetics, control systems, and integrated circuit design. Foundational areas typically include basic sciences, mathematics for both discrete and continuous domains, and applications of probability and statistics."
+        }
+      ],
+      "previous_turn_setup": null
+    },
+    {
+      "id": "C020",
+      "question": "How much lab work is there in computer engineering?",
+      "group": "curriculum",
+      "expected_topics": [
+        "curriculum",
+        "hardware"
+      ],
+      "expected_categories": [
+        "curriculum"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "evaluation_label": "incorrect_refusal_evidence_exists",
+      "baseline_label": "incorrect_refusal_evidence_exists",
+      "elapsed_wall_seconds": 46.717,
+      "diagnostics": {
+        "query_kind": "standalone_domain_question",
+        "resolved_question": "How much lab work is there in computer engineering?",
+        "status": "insufficient_information",
+        "llm_called": true,
+        "evidence_exists_by_eval": true,
+        "citation_valid": true,
+        "citation_metadata": {
+          "valid": true,
+          "cited_labels": [],
+          "invalid_labels": [],
+          "available_labels": [
+            "S1",
+            "S2",
+            "S3",
+            "S4"
+          ],
+          "normalized": true,
+          "repair_actions": [
+            "removed_trailing_source_labels",
+            "source_name_to_inline_label",
+            "added_supported_inline_label"
+          ],
+          "reason": "cited passage does not support one or more answer claims",
+          "retry_attempted": true,
+          "retry_successful": false,
+          "generations_attempted": 2,
+          "retry_failure_reason": "cited passage does not support one or more answer claims",
+          "discarded_invalid_generation": true,
+          "discarded_generation_reason": "cited passage does not support one or more answer claims"
+        },
+        "support_check": {
+          "all_claims_cited": true,
+          "all_cited_claims_supported_by_overlap": true,
+          "unsupported_claim_count": 0,
+          "uncited_claim_count": 0,
+          "checks": []
+        },
+        "unsupported_generated_answer_reason": null,
+        "retrieval_metadata": {
+          "top_k": 5,
+          "candidate_top_k": 12,
+          "similarity_threshold": 0.3,
+          "results_above_threshold": 5,
+          "top_similarity_score": 0.5963224768638611,
+          "evidence_sufficient": true,
+          "out_of_scope": false,
+          "unsupported_reason": "cited passage does not support one or more answer claims",
+          "resolved_question": "How much lab work is there in computer engineering?",
+          "query_kind": "standalone_domain_question",
+          "query_normalization": {
+            "original_question": "How much lab work is there in computer engineering?",
+            "normalized_question": "How much lab work is there in computer engineering?",
+            "retrieval_question": "How much lab work is there in computer engineering?",
+            "kind": "standalone_domain_question",
+            "topics": [
+              {
+                "name": "computer_engineering",
+                "matched_terms": [
+                  "computer engineering"
+                ],
+                "confidence": 1.0
+              },
+              {
+                "name": "career",
+                "matched_terms": [
+                  "work"
+                ],
+                "confidence": 1.0
+              }
+            ],
+            "task": "assess",
+            "constraints": [],
+            "entities": [
+              "computer_engineering",
+              "career"
+            ],
+            "referents": [],
+            "requires_context": false,
+            "requires_clarification": false,
+            "is_source_follow_up": false,
+            "is_persona_meta": false,
+            "is_out_of_domain": false,
+            "confidence": 0.92,
+            "debug": {
+              "token_count": 9,
+              "replacements": [],
+              "normalized_tokens": [
+                "how",
+                "much",
+                "lab",
+                "work",
+                "is",
+                "there",
+                "in",
+                "computer",
+                "engineering"
+              ],
+              "changed": false
+            },
+            "changed": false
+          }
+        },
+        "timing": {
+          "retrieval_seconds": 0.084,
+          "context_construction_seconds": 0.004,
+          "llm_generation_seconds": 46.608000000000004,
+          "initial_llm_generation_seconds": 25.695,
+          "retry_llm_generation_seconds": 20.913,
+          "llm_reported_total_duration_seconds": 25.681,
+          "total_seconds": 46.712
+        },
+        "model": "qwen2.5:3b",
+        "error": null
+      },
+      "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+      "sources": [],
+      "retrieved_context": [
+        {
+          "label": "S1",
+          "chunk_id": "src_067_chunk_158",
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.5963224768638611,
+          "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+          "passage": "use of tools; the nature and structure of teams; human computer interface as a software engineering activity; related life cycles; standards; use of relevant libraries; importance of practical activity; group activity as an important skill for these engineers Prerequisites: SWEE101, SWEE102 Credit Hours: 3; Lecture Hours: 28; Lab Hours: 28 BoK Coverage: CE-SWD 8-12 Page 144 Page 143 of 149 Appendix C Computer Engineering Laboratories This appendix to the Computing Curricula - Computer Engineering (CE2016) report describes possible laboratory configurations useful for developing modern student laboratory experiences for computer engineering programs."
+        },
+        {
+          "label": "S2",
+          "chunk_id": "src_067_chunk_003",
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.5919804573059082,
+          "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+          "passage": "48 5.4.1 Private and public sectors ........................................................................................ 48 5.4.2 Modelling local and international work environments ........................................... 49 5.4.3 Certifications ............................................................................................................"
+        },
+        {
+          "label": "S3",
+          "chunk_id": "src_067_chunk_069",
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.5866761207580566,
+          "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+          "passage": "Good laboratory experiences force students to demonstrate their understanding of basic knowledge by successfully creating a program or hardware system to meet a set of criteria. Good laboratory experiences also expose students to state-of-the-art tools and methodologies that will prepare them for real engineering work after graduation. The CE2016 steering committee recognizes that lab experience development requires significant faculty time and departmental financial support, but emphasizes that these investments are needed to produce quality computer engineering graduates."
+        },
+        {
+          "label": "S4",
+          "chunk_id": "src_067_chunk_039",
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.5732152462005615,
+          "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+          "passage": "is important that computer engineering students have many opportunities to observe, explore, and manipulate characteristics and behaviors of actual devices, systems, and processes. This includes designing, implementing, testing, and documenting hardware and software, designing experiments to acquire data, analyzing and interpreting that data, and using that data to correct or improve the design and to verify that it meets specifications. Introductory laboratories (e.g., programming laboratories) are typically somewhat directed and designed to reinforce concepts presented in lecture classes and homework."
+        }
+      ],
+      "previous_turn_setup": null
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "generated_at": "2026-10-17T18:28:36+00:00",
+  "complete": true,
+  "turn_count": 2,
+  "status_counts": {
+    "insufficient_information": 2
+  },
+  "results": [
+    {
+      "conversation": "U01",
+      "turn": 1,
+      "question": "is it ok if im bad at physics, does ceng need alot of it?",
+      "expect": "answer",
+      "status": "insufficient_information",
+      "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+      "error": null,
+      "events": [
+        "metadata",
+        "final"
+      ],
+      "seconds": 24.21,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "Is it ok if I am bad at physics does computer engineering need alot of it?",
+      "unsupported_reason": "generated answer did not address the question's distinctive topic terms",
+      "answer_warnings": [],
+      "cited_labels": [
+        "S1"
+      ],
+      "sources": [],
+      "context": [
+        {
+          "label": "S1",
+          "title": "Computer Engineering Curricula 2016",
+          "section": "6.4.3 Other Requirements",
+          "passage": "The scientific method (hypothesis formation, experimentation and data collection, analysis) represents a basis methodology for much of the discipline of computer engineering, and students should have a solid exposure to this methodology. Computer engineering students need knowledge of natural sciences, such as physics and chemistry. Basic physics concepts in electricity and magnetism form the basis for much of the underlying electrical engineering content in the body of knowledge."
+        },
+        {
+          "label": "S2",
+          "title": "Curated note: Mathematics for Machine Learning and Data Science Specialization",
+          "section": "Curated source note",
+          "passage": "For Computer Engineering students who fear math, the practical message is that math ability can be developed gradually. Students do not need to know every advanced topic before starting programming or introductory AI, but deeper AI and data science work becomes easier when the student strengthens these foundations. Student-facing guidance: review algebra and functions before calculus, learn vectors and matrices for linear algebra, practice probability/statistics with real datasets, and connect math to code through small projects."
+        },
+        {
+          "label": "S3",
+          "title": "Math Preparation for the College of Engineering",
+          "section": "Berkeley’s Summer Programs (Recommended!)",
+          "passage": "The Physics Barrier The PHYSICS 5 or 7 series (required for all engineering majors) is heavily calculus-based. PHYSICS 5A or 7A: These requirements need you to have already completed or be concurrently enrolled in the second semester of Calculus (MATH 52). This means MATH 51 (Calculus 1) needs to be completed before you even start the Physics series."
+        },
+        {
+          "label": "S4",
+          "title": "Computer Engineering Curricula 2016",
+          "section": "2.3.3 Ability to design",
+          "passage": "These relate to such matters as structure and organization, techniques, technologies, methodologies, interfaces, as well as the selection of components. The outcome needs to exhibit desirable properties and these tend to relate to simplicity and elegance. Chapter 4 presents a more detailed discussion of design and related laboratory experiences."
+        }
+      ]
+    },
+    {
+      "conversation": "U08",
+      "turn": 1,
+      "question": "does ceng have lots of coding or is it mostly theory",
+      "expect": "answer",
+      "status": "insufficient_information",
+      "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+      "error": null,
+      "events": [
+        "metadata",
+        "final"
+      ],
+      "seconds": 47.84,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "Does computer engineering have lots of coding or is it mostly theory?",
+      "unsupported_reason": "unsupported claim could not be matched to retrieved evidence",
+      "answer_warnings": [
+        "local_llm_answer_failed_citation_validation"
+      ],
+      "cited_labels": [],
+      "sources": [],
+      "context": [
+        {
+          "label": "S1",
+          "title": "Computer Engineering Curricula 2016",
+          "section": "2.3.3 Ability to design",
+          "passage": "constraints. These relate to such matters as structure and organization, techniques, technologies, methodologies, interfaces, as well as the selection of components. The outcome needs to exhibit desirable properties and these tend to relate to simplicity and elegance. Chapter 4 presents a more detailed discussion of design and related laboratory experiences. Page 20 Page 19 of 149 2.3.4 Breadth of knowledge Because of the breadth of the computer-engineering field, curricular content may vary widely among programs, or even among students in the same program."
+        },
+        {
+          "label": "S2",
+          "title": "Skills for the digital age",
+          "section": "",
+          "passage": "Page 75 Programming skills are highly versatile and applicable in a wide range of fields. They enhance problem-solving abilities, promote creativity and innovation, and offer numerous career opportunities. Additionally, in today’s technology-driven world, a basic understanding of programming is increasingly valuable for individuals in various aspects of life. The skill is useful for troubleshooting technical issues or changing the privacy settings of a personal device, building a customised website, analysing personal expenditures to make informed decisions about spending and saving, etc."
+        },
+        {
+          "label": "S3",
+          "title": "Curated note: Software Engineering Body of Knowledge (SWEBOK Guide), Version 4.0",
+          "section": "Curated source note",
+          "passage": "For Computer Engineering advising, this source helps explain why students should learn software development habits early. Useful habits include reading requirements carefully, designing before coding, using version control, testing and debugging systematically, reviewing code, documenting decisions, thinking about maintainability, and treating security and quality as part of engineering rather than as optional extras. The source also helps distinguish programming from software engineering."
+        },
+        {
+          "label": "S4",
+          "title": "Computer Engineering Curricula 2016",
+          "section": "Chapter 4",
+          "passage": "mathematics is insufficient to produce a competent computer engineer, so the knowledge units in the mathematics component focus only on the knowledge and skills that support essential components of the computer engineering content areas. It is up to each program to decide the quantity and level of mathematics for its graduates. See Chapter 6 for more discussion on this issue. 3.6 Curricular models The discussion in the previous section provides a minimal framework for generating a body of knowledge for a computer engineering program."
+        }
+      ]
+    }
+  ]
+}

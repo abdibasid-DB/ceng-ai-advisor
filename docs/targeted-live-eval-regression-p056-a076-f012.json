@@ -1,0 +1,1458 @@
+{
+  "summary": {
+    "case_count": 22,
+    "suite_counts": {
+      "regression": 3,
+      "focus-fixed": 3,
+      "safe-gap": 1,
+      "canary": 2,
+      "canary-safe-gap": 2,
+      "fresh": 5,
+      "repeat": 6
+    },
+    "status_counts": {
+      "insufficient_information": 8,
+      "answered": 14
+    },
+    "citation_invalid_cases": [],
+    "error_cases": [],
+    "answered_count": 14,
+    "insufficient_information_count": 8
+  },
+  "results": [
+    {
+      "id": "P056",
+      "suite": "regression",
+      "question": "How important is command line usage?",
+      "resolved_question": "How important is command line usage? (Computer Engineering)",
+      "status": "insufficient_information",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "normalized": false,
+        "repair_actions": [],
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1,
+        "retry_failure_reason": null
+      },
+      "sources": [],
+      "top_context": [
+        {
+          "label": "S1",
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum"
+        },
+        {
+          "label": "S2",
+          "source_id": "src_051",
+          "title": "State of Developer Ecosystem Report 2024",
+          "category": "skills_and_technologies"
+        },
+        {
+          "label": "S3",
+          "source_id": "src_015",
+          "title": "About Git",
+          "category": "skills_and_technologies"
+        }
+      ],
+      "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+      "error": null,
+      "elapsed_seconds": 34.33
+    },
+    {
+      "id": "A076",
+      "suite": "regression",
+      "question": "Which future technologies should a CENG student follow?",
+      "resolved_question": "Which future technologies should a ceng student follow?",
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "normalized": true,
+        "repair_actions": [
+          "source_name_to_inline_label"
+        ],
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1,
+        "retry_failure_reason": null
+      },
+      "sources": [
+        {
+          "source_id": "src_063",
+          "title": "CENG 316 New Trends in Computer Engineering Course Syllabus",
+          "labels": [
+            "S1"
+          ]
+        },
+        {
+          "source_id": "src_063",
+          "title": "CENG 316 New Trends in Computer Engineering Course Syllabus",
+          "labels": [
+            "S2"
+          ]
+        },
+        {
+          "source_id": "src_043",
+          "title": "Subdisciplines",
+          "labels": [
+            "S3"
+          ]
+        }
+      ],
+      "top_context": [
+        {
+          "label": "S1",
+          "source_id": "src_063",
+          "title": "CENG 316 New Trends in Computer Engineering Course Syllabus",
+          "category": "curriculum"
+        },
+        {
+          "label": "S2",
+          "source_id": "src_063",
+          "title": "CENG 316 New Trends in Computer Engineering Course Syllabus",
+          "category": "curriculum"
+        },
+        {
+          "label": "S3",
+          "source_id": "src_043",
+          "title": "Subdisciplines",
+          "category": "specializations"
+        }
+      ],
+      "answer": "Based on the provided syllabus for CENG 316 at OSTIM Technical University, the course covers topics such as the introduction to emerging trends in software and computer engineering, and advancements in artificial intelligence and machine learning. Given this syllabus, a CENG student should follow the future technologies of artificial intelligence and machine learning. These topics are explicitly mentioned in the course syllabus and are expected to be relevant and important for the student's studies and future career in computer engineering [S1].",
+      "error": null,
+      "elapsed_seconds": 44.11
+    },
+    {
+      "id": "F012",
+      "suite": "regression",
+      "question": "What is the difference between IT and Computer Engineering?",
+      "resolved_question": "What is the difference between it and computer engineering?",
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1",
+          "S2"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3",
+          "S4"
+        ],
+        "normalized": false,
+        "repair_actions": [],
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1,
+        "retry_failure_reason": null
+      },
+      "sources": [
+        {
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "labels": [
+            "S1"
+          ]
+        },
+        {
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "labels": [
+            "S2"
+          ]
+        },
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "labels": [
+            "S3",
+            "S4"
+          ]
+        }
+      ],
+      "top_context": [
+        {
+          "label": "S1",
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "category": "common_misconceptions"
+        },
+        {
+          "label": "S2",
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "category": "common_misconceptions"
+        },
+        {
+          "label": "S3",
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum"
+        },
+        {
+          "label": "S4",
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum"
+        }
+      ],
+      "answer": "Based on the provided context, Information Technology (IT) and Computer Engineering are distinct fields within the broader discipline of computing. IT focuses on the design, implementation, and maintenance of technology solutions and support for users of such systems, whereas Computer Engineering involves the design and construction of processor-based systems, encompassing hardware, software, and communications components. The context from [S1] and [S2] clearly delineates these differences, with IT being more application-oriented and Computer Engineering being more focused on the technical and engineering aspects of computing systems.",
+      "error": null,
+      "elapsed_seconds": 42.59
+    },
+    {
+      "id": "F001",
+      "suite": "focus-fixed",
+      "question": "What is Computer Engineering?",
+      "resolved_question": "What is Computer Engineering?",
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2"
+        ],
+        "normalized": false,
+        "repair_actions": [],
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1,
+        "retry_failure_reason": null
+      },
+      "sources": [
+        {
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "labels": [
+            "S1"
+          ]
+        },
+        {
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "labels": [
+            "S2"
+          ]
+        }
+      ],
+      "top_context": [
+        {
+          "label": "S1",
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "category": "common_misconceptions"
+        },
+        {
+          "label": "S2",
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "category": "common_misconceptions"
+        }
+      ],
+      "answer": "Computer Engineering involves the design and construction of processor-based systems comprised of hardware, software, and communications components. [S1]",
+      "error": null,
+      "elapsed_seconds": 16.31
+    },
+    {
+      "id": "F004",
+      "suite": "focus-fixed",
+      "question": "Explain computer engineering to a high school student.",
+      "resolved_question": "What is Computer Engineering?",
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1",
+          "S2"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2"
+        ],
+        "normalized": false,
+        "repair_actions": [],
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1,
+        "retry_failure_reason": null
+      },
+      "sources": [
+        {
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "labels": [
+            "S1"
+          ]
+        },
+        {
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "labels": [
+            "S2"
+          ]
+        }
+      ],
+      "top_context": [
+        {
+          "label": "S1",
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "category": "common_misconceptions"
+        },
+        {
+          "label": "S2",
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "category": "common_misconceptions"
+        }
+      ],
+      "answer": "Computer Engineering involves the design and construction of processor-based systems comprised of hardware, software, and communications components. This field is categorized by the Association for Computing Machinery (ACM) as one of the five defined sub-disciplines of computing, alongside computer science, software engineering, information systems, and information technology. [S1], [S2]",
+      "error": null,
+      "elapsed_seconds": 9.56
+    },
+    {
+      "id": "N005",
+      "suite": "focus-fixed",
+      "question": "How would you explain Computer Engineering to someone choosing between IT and engineering?",
+      "resolved_question": "What is Computer Engineering?",
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2"
+        ],
+        "normalized": false,
+        "repair_actions": [],
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1,
+        "retry_failure_reason": null
+      },
+      "sources": [
+        {
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "labels": [
+            "S1"
+          ]
+        },
+        {
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "labels": [
+            "S2"
+          ]
+        }
+      ],
+      "top_context": [
+        {
+          "label": "S1",
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "category": "common_misconceptions"
+        },
+        {
+          "label": "S2",
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "category": "common_misconceptions"
+        }
+      ],
+      "answer": "Computer Engineering is the design and construction of processor-based systems, which include hardware, software, and communications components. This field is distinct from Information Technology, which focuses on the design, implementation, and maintenance of technology solutions for users of such systems. [S1]",
+      "error": null,
+      "elapsed_seconds": 15.49
+    },
+    {
+      "id": "H065",
+      "suite": "safe-gap",
+      "question": "Should I learn Arduino or FPGA first?",
+      "resolved_question": "should I learn arduino or fpga first? (Computer Engineering)",
+      "status": "insufficient_information",
+      "llm_called": false,
+      "answerability_decision": "retrieved evidence does not address the requested learning alternatives",
+      "citation_valid": true,
+      "citation_metadata": {},
+      "sources": [],
+      "top_context": [
+        {
+          "label": null,
+          "source_id": "src_070",
+          "title": "EECS Majors: Choosing your first computer science course",
+          "category": "programming"
+        },
+        {
+          "label": null,
+          "source_id": "src_039",
+          "title": "Which Introductory Course Should I Take?",
+          "category": "programming"
+        },
+        {
+          "label": null,
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum"
+        },
+        {
+          "label": null,
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum"
+        }
+      ],
+      "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+      "error": null,
+      "elapsed_seconds": 0.17
+    },
+    {
+      "id": "F007",
+      "suite": "canary",
+      "question": "What fields are available in Computer Engineering?",
+      "resolved_question": "What fields are available in computer engineering?",
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1",
+          "S2"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3",
+          "S4"
+        ],
+        "normalized": false,
+        "repair_actions": [],
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1,
+        "retry_failure_reason": null
+      },
+      "sources": [
+        {
+          "source_id": "src_043",
+          "title": "Subdisciplines",
+          "labels": [
+            "S1",
+            "S2"
+          ]
+        },
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "labels": [
+            "S3",
+            "S4"
+          ]
+        }
+      ],
+      "top_context": [
+        {
+          "label": "S1",
+          "source_id": "src_043",
+          "title": "Subdisciplines",
+          "category": "specializations"
+        },
+        {
+          "label": "S2",
+          "source_id": "src_043",
+          "title": "Subdisciplines",
+          "category": "specializations"
+        },
+        {
+          "label": "S3",
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum"
+        },
+        {
+          "label": "S4",
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum"
+        }
+      ],
+      "answer": "In Computer Engineering, there are several specialized fields available, including Hardware systems, Cyberphysical systems, Foundations and theory, Trust, reliability, and security, Networking, mobile, and distributed computing, Big Data analytics and systems, and Artificial intelligence, robotics, and cybernetics. These fields offer a diverse range of opportunities for students to specialize in areas that interest them the most. [S1] and [S2] provide detailed information on these subdisciplines.",
+      "error": null,
+      "elapsed_seconds": 36.5
+    },
+    {
+      "id": "C013",
+      "suite": "canary",
+      "question": "Which programming languages are taught in CENG?",
+      "resolved_question": "Which programming languages are taught in ceng?",
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S3"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "normalized": false,
+        "repair_actions": [],
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1,
+        "retry_failure_reason": null
+      },
+      "sources": [
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "labels": [
+            "S1"
+          ]
+        },
+        {
+          "source_id": "src_070",
+          "title": "EECS Majors: Choosing your first computer science course",
+          "labels": [
+            "S2"
+          ]
+        },
+        {
+          "source_id": "src_063",
+          "title": "CENG 316 New Trends in Computer Engineering Course Syllabus",
+          "labels": [
+            "S3"
+          ]
+        }
+      ],
+      "top_context": [
+        {
+          "label": "S1",
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum"
+        },
+        {
+          "label": "S2",
+          "source_id": "src_070",
+          "title": "EECS Majors: Choosing your first computer science course",
+          "category": "programming"
+        },
+        {
+          "label": "S3",
+          "source_id": "src_063",
+          "title": "CENG 316 New Trends in Computer Engineering Course Syllabus",
+          "category": "curriculum"
+        }
+      ],
+      "answer": "Based on the information provided in [S3], the course CENG 316 New Trends in Computer Engineering is offered by the Department of Computer Engineering at OSTIM Technical University. However, the specific programming languages taught in this course are not mentioned in the given context. Therefore, I cannot determine which programming languages are taught in this course.",
+      "error": null,
+      "elapsed_seconds": 34.05
+    },
+    {
+      "id": "R104",
+      "suite": "canary-safe-gap",
+      "question": "Are hackathons useful for computer engineering students?",
+      "resolved_question": "are hackathons useful for computer engineering students? (topics: projects, student_life)",
+      "status": "insufficient_information",
+      "llm_called": false,
+      "answerability_decision": "retrieved evidence does not address required question terms: ['hackathons']",
+      "citation_valid": true,
+      "citation_metadata": {},
+      "sources": [],
+      "top_context": [
+        {
+          "label": null,
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum"
+        },
+        {
+          "label": null,
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum"
+        },
+        {
+          "label": null,
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum"
+        },
+        {
+          "label": null,
+          "source_id": "src_039",
+          "title": "Which Introductory Course Should I Take?",
+          "category": "programming"
+        }
+      ],
+      "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+      "error": null,
+      "elapsed_seconds": 0.2
+    },
+    {
+      "id": "S130",
+      "suite": "canary-safe-gap",
+      "question": "What is the attendance rule for CENG courses?",
+      "resolved_question": "What is the attendance rule for ceng courses? (topics: curriculum, academic_regulations)",
+      "status": "insufficient_information",
+      "llm_called": false,
+      "answerability_decision": "retrieved evidence does not contain attendance-rule evidence",
+      "citation_valid": true,
+      "citation_metadata": {},
+      "sources": [],
+      "top_context": [
+        {
+          "label": null,
+          "source_id": "src_064",
+          "title": "CENG 303 Operating Systems Design and Construction Course Syllabus",
+          "category": "curriculum"
+        },
+        {
+          "label": null,
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum"
+        },
+        {
+          "label": null,
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum"
+        },
+        {
+          "label": null,
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum"
+        }
+      ],
+      "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+      "error": null,
+      "elapsed_seconds": 0.12
+    },
+    {
+      "id": "U001",
+      "suite": "fresh",
+      "question": "Does the KB say command-line skills are important for CENG students?",
+      "resolved_question": "Does the kb say command line skills are important for ceng students? (topics: software, skills)",
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1",
+          "S2"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "normalized": false,
+        "repair_actions": [],
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1,
+        "retry_failure_reason": null
+      },
+      "sources": [
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "labels": [
+            "S1"
+          ]
+        },
+        {
+          "source_id": "src_063",
+          "title": "CENG 316 New Trends in Computer Engineering Course Syllabus",
+          "labels": [
+            "S2"
+          ]
+        },
+        {
+          "source_id": "src_031",
+          "title": "A Skills-First Labour Market",
+          "labels": [
+            "S3"
+          ]
+        }
+      ],
+      "top_context": [
+        {
+          "label": "S1",
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum"
+        },
+        {
+          "label": "S2",
+          "source_id": "src_063",
+          "title": "CENG 316 New Trends in Computer Engineering Course Syllabus",
+          "category": "curriculum"
+        },
+        {
+          "label": "S3",
+          "source_id": "src_031",
+          "title": "A Skills-First Labour Market",
+          "category": "skills_and_technologies"
+        }
+      ],
+      "answer": "The provided context does not directly mention command line skills or their importance for Computer Engineering (CE) students. The curricula described in [S1] focus on the core learning outcomes of the Computer Engineering Body of Knowledge (BoK) but do not specifically address command line skills. The syllabus for CENG 316 in [S2] is a course syllabus for a specific semester and does not provide information about the importance of command line skills for CE students. Therefore, based on the given information, it cannot be determined whether command line skills are important for CE students.",
+      "error": null,
+      "elapsed_seconds": 39.63
+    },
+    {
+      "id": "U002",
+      "suite": "fresh",
+      "question": "What emerging technologies does the New Trends in Computer Engineering course point students toward?",
+      "resolved_question": "What emerging technologies does the new trends in computer engineering course point students toward?",
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1",
+          "S2"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "normalized": false,
+        "repair_actions": [],
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1,
+        "retry_failure_reason": null
+      },
+      "sources": [
+        {
+          "source_id": "src_063",
+          "title": "CENG 316 New Trends in Computer Engineering Course Syllabus",
+          "labels": [
+            "S1"
+          ]
+        },
+        {
+          "source_id": "src_063",
+          "title": "CENG 316 New Trends in Computer Engineering Course Syllabus",
+          "labels": [
+            "S2"
+          ]
+        },
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "labels": [
+            "S3"
+          ]
+        }
+      ],
+      "top_context": [
+        {
+          "label": "S1",
+          "source_id": "src_063",
+          "title": "CENG 316 New Trends in Computer Engineering Course Syllabus",
+          "category": "curriculum"
+        },
+        {
+          "label": "S2",
+          "source_id": "src_063",
+          "title": "CENG 316 New Trends in Computer Engineering Course Syllabus",
+          "category": "curriculum"
+        },
+        {
+          "label": "S3",
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum"
+        }
+      ],
+      "answer": "The New Trends in Computer Engineering course at OSTIM Technical University focuses on emerging technologies in software and computer engineering. Specifically, the course covers the introduction to emerging trends in software and computer engineering, as well as advancements in artificial intelligence and machine learning. These areas are identified as key emerging technologies in the course syllabus. [S1], [S2]",
+      "error": null,
+      "elapsed_seconds": 18.95
+    },
+    {
+      "id": "U003",
+      "suite": "fresh",
+      "question": "Can you compare Information Technology and Computer Engineering in plain English?",
+      "resolved_question": "Can you compare information technology and computer engineering in plain english?",
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3",
+          "S4"
+        ],
+        "normalized": false,
+        "repair_actions": [],
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1,
+        "retry_failure_reason": null
+      },
+      "sources": [
+        {
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "labels": [
+            "S1"
+          ]
+        },
+        {
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "labels": [
+            "S2"
+          ]
+        },
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "labels": [
+            "S3",
+            "S4"
+          ]
+        }
+      ],
+      "top_context": [
+        {
+          "label": "S1",
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "category": "common_misconceptions"
+        },
+        {
+          "label": "S2",
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "category": "common_misconceptions"
+        },
+        {
+          "label": "S3",
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum"
+        },
+        {
+          "label": "S4",
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum"
+        }
+      ],
+      "answer": "Information Technology (IT) and Computer Engineering are distinct yet related fields within the broader computing discipline. IT focuses on the design, implementation, and maintenance of technology solutions and support for users of such systems. This involves understanding and managing the technology infrastructure, ensuring it meets user needs and operates efficiently. On the other hand, Computer Engineering is more about the design and construction of processor-based systems, encompassing hardware, software, and communications components. This field requires a deeper understanding of both computer science and electrical engineering, as well as foundational knowledge in mathematics and sciences. [S1] and [S1]",
+      "error": null,
+      "elapsed_seconds": 34.35
+    },
+    {
+      "id": "U004",
+      "suite": "fresh",
+      "question": "For a beginner, how is Computer Engineering different from IT?",
+      "resolved_question": "for a beginner how is computer engineering different from it? (constraints: first_year)",
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1",
+          "S2"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3",
+          "S4"
+        ],
+        "normalized": false,
+        "repair_actions": [],
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1,
+        "retry_failure_reason": null
+      },
+      "sources": [
+        {
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "labels": [
+            "S1"
+          ]
+        },
+        {
+          "source_id": "src_070",
+          "title": "EECS Majors: Choosing your first computer science course",
+          "labels": [
+            "S2"
+          ]
+        },
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "labels": [
+            "S3",
+            "S4"
+          ]
+        }
+      ],
+      "top_context": [
+        {
+          "label": "S1",
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "category": "common_misconceptions"
+        },
+        {
+          "label": "S2",
+          "source_id": "src_070",
+          "title": "EECS Majors: Choosing your first computer science course",
+          "category": "programming"
+        },
+        {
+          "label": "S3",
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum"
+        },
+        {
+          "label": "S4",
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum"
+        }
+      ],
+      "answer": "For a beginner in their first year, Computer Engineering and Information Technology (IT) differ primarily in their focus and scope. In Computer Engineering, the curriculum typically includes courses that cover the design and construction of processor-based systems, encompassing hardware, software, and communications components. This means that students in Computer Engineering often delve into subjects like computer architecture, digital design, and embedded systems, which are fundamental to understanding how computers work and how they can be designed and built. On the other hand, IT focuses on the design, implementation, and maintenance of technology solutions and support for users of such systems. This includes areas such as network administration, software development, and information security, which are more application-oriented and user-focused. [S1][S2]",
+      "error": null,
+      "elapsed_seconds": 41.4
+    },
+    {
+      "id": "U005",
+      "suite": "fresh",
+      "question": "Would Arduino or FPGA be the better first hardware topic to learn?",
+      "resolved_question": "would arduino or fpga be the better first hardware topic to learn? (Computer Engineering)",
+      "status": "insufficient_information",
+      "llm_called": false,
+      "answerability_decision": "retrieved evidence does not address the requested learning alternatives",
+      "citation_valid": true,
+      "citation_metadata": {},
+      "sources": [],
+      "top_context": [
+        {
+          "label": null,
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum"
+        },
+        {
+          "label": null,
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum"
+        },
+        {
+          "label": null,
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum"
+        },
+        {
+          "label": null,
+          "source_id": "src_070",
+          "title": "EECS Majors: Choosing your first computer science course",
+          "category": "programming"
+        }
+      ],
+      "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+      "error": null,
+      "elapsed_seconds": 0.17
+    },
+    {
+      "id": "P056_repeat2",
+      "suite": "repeat",
+      "question": "How important is command line usage?",
+      "resolved_question": "How important is command line usage? (Computer Engineering)",
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "normalized": false,
+        "repair_actions": [],
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1,
+        "retry_failure_reason": null
+      },
+      "sources": [
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "labels": [
+            "S1"
+          ]
+        },
+        {
+          "source_id": "src_051",
+          "title": "State of Developer Ecosystem Report 2024",
+          "labels": [
+            "S2"
+          ]
+        },
+        {
+          "source_id": "src_015",
+          "title": "About Git",
+          "labels": [
+            "S3"
+          ]
+        }
+      ],
+      "top_context": [
+        {
+          "label": "S1",
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum"
+        },
+        {
+          "label": "S2",
+          "source_id": "src_051",
+          "title": "State of Developer Ecosystem Report 2024",
+          "category": "skills_and_technologies"
+        },
+        {
+          "label": "S3",
+          "source_id": "src_015",
+          "title": "About Git",
+          "category": "skills_and_technologies"
+        }
+      ],
+      "answer": "Based on the provided context, there is insufficient information to determine the importance of command line usage in Computer Engineering. The curricula mentioned in [S1] do not explicitly discuss the importance of command line usage. However, they cover programming constructs and paradigms, which might involve command line interactions, but the specific emphasis on command line usage is not detailed.",
+      "error": null,
+      "elapsed_seconds": 27.39
+    },
+    {
+      "id": "P056_repeat3",
+      "suite": "repeat",
+      "question": "How important is command line usage?",
+      "resolved_question": "How important is command line usage? (Computer Engineering)",
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "normalized": true,
+        "repair_actions": [],
+        "reason": null,
+        "retry_attempted": true,
+        "retry_successful": true,
+        "generations_attempted": 2,
+        "retry_failure_reason": null
+      },
+      "sources": [
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "labels": [
+            "S1"
+          ]
+        },
+        {
+          "source_id": "src_051",
+          "title": "State of Developer Ecosystem Report 2024",
+          "labels": [
+            "S2"
+          ]
+        },
+        {
+          "source_id": "src_015",
+          "title": "About Git",
+          "labels": [
+            "S3"
+          ]
+        }
+      ],
+      "top_context": [
+        {
+          "label": "S1",
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum"
+        },
+        {
+          "label": "S2",
+          "source_id": "src_051",
+          "title": "State of Developer Ecosystem Report 2024",
+          "category": "skills_and_technologies"
+        },
+        {
+          "label": "S3",
+          "source_id": "src_015",
+          "title": "About Git",
+          "category": "skills_and_technologies"
+        }
+      ],
+      "answer": "Based on the provided context, there is insufficient information to determine the importance of command line usage in Computer Engineering. The curricula and reports do not specifically address or rate the importance of command line usage. For example, the Computer Engineering curricula [S1] focuses on programming constructs and paradigms, software development tools, and integrated development environments (IDEs), but does not mention the importance of command line usage. Similarly, the State of Developer Ecosystem Report [S2] does not provide insights into the importance of command line usage. The About Git section [S3] describes Git commands and their importance in collaboration and transparency, but does not directly address the importance of command line usage in Computer Engineering.",
+      "error": null,
+      "elapsed_seconds": 42.35
+    },
+    {
+      "id": "A076_repeat2",
+      "suite": "repeat",
+      "question": "Which future technologies should a CENG student follow?",
+      "resolved_question": "Which future technologies should a ceng student follow?",
+      "status": "insufficient_information",
+      "llm_called": true,
+      "answerability_decision": "unsupported claim could not be matched to retrieved evidence",
+      "citation_valid": true,
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "normalized": false,
+        "repair_actions": [],
+        "reason": "unsupported claim could not be matched to retrieved evidence",
+        "retry_attempted": true,
+        "retry_successful": false,
+        "generations_attempted": 2,
+        "retry_failure_reason": "unsupported claim could not be matched to retrieved evidence",
+        "discarded_invalid_generation": true,
+        "discarded_generation_reason": "unsupported claim could not be matched to retrieved evidence"
+      },
+      "sources": [],
+      "top_context": [
+        {
+          "label": "S1",
+          "source_id": "src_063",
+          "title": "CENG 316 New Trends in Computer Engineering Course Syllabus",
+          "category": "curriculum"
+        },
+        {
+          "label": "S2",
+          "source_id": "src_063",
+          "title": "CENG 316 New Trends in Computer Engineering Course Syllabus",
+          "category": "curriculum"
+        },
+        {
+          "label": "S3",
+          "source_id": "src_043",
+          "title": "Subdisciplines",
+          "category": "specializations"
+        }
+      ],
+      "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+      "error": null,
+      "elapsed_seconds": 40.86
+    },
+    {
+      "id": "A076_repeat3",
+      "suite": "repeat",
+      "question": "Which future technologies should a CENG student follow?",
+      "resolved_question": "Which future technologies should a ceng student follow?",
+      "status": "insufficient_information",
+      "llm_called": true,
+      "answerability_decision": "unsupported claim could not be matched to retrieved evidence",
+      "citation_valid": true,
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "normalized": false,
+        "repair_actions": [],
+        "reason": "unsupported claim could not be matched to retrieved evidence",
+        "retry_attempted": true,
+        "retry_successful": false,
+        "generations_attempted": 2,
+        "retry_failure_reason": "unsupported claim could not be matched to retrieved evidence",
+        "discarded_invalid_generation": true,
+        "discarded_generation_reason": "unsupported claim could not be matched to retrieved evidence"
+      },
+      "sources": [],
+      "top_context": [
+        {
+          "label": "S1",
+          "source_id": "src_063",
+          "title": "CENG 316 New Trends in Computer Engineering Course Syllabus",
+          "category": "curriculum"
+        },
+        {
+          "label": "S2",
+          "source_id": "src_063",
+          "title": "CENG 316 New Trends in Computer Engineering Course Syllabus",
+          "category": "curriculum"
+        },
+        {
+          "label": "S3",
+          "source_id": "src_043",
+          "title": "Subdisciplines",
+          "category": "specializations"
+        }
+      ],
+      "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+      "error": null,
+      "elapsed_seconds": 23.15
+    },
+    {
+      "id": "F012_repeat2",
+      "suite": "repeat",
+      "question": "What is the difference between IT and Computer Engineering?",
+      "resolved_question": "What is the difference between it and computer engineering?",
+      "status": "insufficient_information",
+      "llm_called": true,
+      "answerability_decision": "missing inline [S#] citation on one or more answer paragraphs or bullets",
+      "citation_valid": true,
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3",
+          "S4"
+        ],
+        "normalized": false,
+        "repair_actions": [],
+        "reason": "missing inline [S#] citation on one or more answer paragraphs or bullets",
+        "retry_attempted": true,
+        "retry_successful": false,
+        "generations_attempted": 2,
+        "retry_failure_reason": "missing inline [S#] citation on one or more answer paragraphs or bullets",
+        "discarded_invalid_generation": true,
+        "discarded_generation_reason": "missing inline [S#] citation on one or more answer paragraphs or bullets"
+      },
+      "sources": [],
+      "top_context": [
+        {
+          "label": "S1",
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "category": "common_misconceptions"
+        },
+        {
+          "label": "S2",
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "category": "common_misconceptions"
+        },
+        {
+          "label": "S3",
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum"
+        },
+        {
+          "label": "S4",
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum"
+        }
+      ],
+      "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+      "error": null,
+      "elapsed_seconds": 68.41
+    },
+    {
+      "id": "F012_repeat3",
+      "suite": "repeat",
+      "question": "What is the difference between IT and Computer Engineering?",
+      "resolved_question": "What is the difference between it and computer engineering?",
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1",
+          "S2"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3",
+          "S4"
+        ],
+        "normalized": false,
+        "repair_actions": [],
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1,
+        "retry_failure_reason": null
+      },
+      "sources": [
+        {
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "labels": [
+            "S1"
+          ]
+        },
+        {
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "labels": [
+            "S2"
+          ]
+        },
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "labels": [
+            "S3",
+            "S4"
+          ]
+        }
+      ],
+      "top_context": [
+        {
+          "label": "S1",
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "category": "common_misconceptions"
+        },
+        {
+          "label": "S2",
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "category": "common_misconceptions"
+        },
+        {
+          "label": "S3",
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum"
+        },
+        {
+          "label": "S4",
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum"
+        }
+      ],
+      "answer": "Based on the provided context, Information Technology (IT) and Computer Engineering are distinct computing disciplines. IT involves the design, implementation, and maintenance of technology solutions and support for users of such systems. In contrast, Computer Engineering focuses on the design and construction of processor-based systems, encompassing hardware, software, and communications components. [S1] and [S2] provide these definitions.",
+      "error": null,
+      "elapsed_seconds": 8.66
+    }
+  ]
+}

@@ -1,0 +1,2807 @@
+{
+  "case_count": 200,
+  "cases": [
+    {
+      "id": "F001",
+      "question": "What is Computer Engineering?",
+      "group": "fundamentals",
+      "expected_topics": [
+        "computer_engineering"
+      ],
+      "expected_categories": [
+        "department_information",
+        "common_misconceptions"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "F002",
+      "question": "What does a computer engineer actually study?",
+      "group": "fundamentals",
+      "expected_topics": [
+        "computer_engineering"
+      ],
+      "expected_categories": [
+        "department_information",
+        "curriculum"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "F003",
+      "question": "Is CENG mostly coding or also hardware?",
+      "group": "fundamentals",
+      "expected_topics": [
+        "hardware",
+        "software"
+      ],
+      "expected_categories": [
+        "curriculum",
+        "common_misconceptions"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "F004",
+      "question": "Explain computer engineering to a high school student.",
+      "group": "fundamentals",
+      "expected_topics": [
+        "computer_engineering"
+      ],
+      "expected_categories": [
+        "department_information",
+        "common_misconceptions"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "F005",
+      "question": "How is computer engineering different from computer science?",
+      "group": "fundamentals",
+      "expected_topics": [
+        "computer_engineering"
+      ],
+      "expected_categories": [
+        "common_misconceptions"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "F006",
+      "question": "CENG vs software engineering, which one is broader?",
+      "group": "fundamentals",
+      "expected_topics": [
+        "computer_engineering",
+        "software"
+      ],
+      "expected_categories": [
+        "common_misconceptions",
+        "curriculum"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "F007",
+      "question": "Do computer engineers build physical devices or just apps?",
+      "group": "fundamentals",
+      "expected_topics": [
+        "hardware",
+        "software"
+      ],
+      "expected_categories": [
+        "curriculum",
+        "hardware"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "F008",
+      "question": "Is computer engineering an engineering discipline or a computing major?",
+      "group": "fundamentals",
+      "expected_topics": [
+        "computer_engineering"
+      ],
+      "expected_categories": [
+        "department_information",
+        "common_misconceptions"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "F009",
+      "question": "What kind of problems do computer engineers solve?",
+      "group": "fundamentals",
+      "expected_topics": [
+        "computer_engineering"
+      ],
+      "expected_categories": [
+        "department_information",
+        "career_opportunities"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "F010",
+      "question": "computer eng ne demek basically?",
+      "group": "fundamentals",
+      "expected_topics": [
+        "computer_engineering"
+      ],
+      "expected_categories": [
+        "department_information"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "F011",
+      "question": "Is computer engineering good for someone who likes both physics and code?",
+      "group": "fundamentals",
+      "expected_topics": [
+        "computer_engineering",
+        "hardware",
+        "software"
+      ],
+      "expected_categories": [
+        "department_information",
+        "curriculum"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "F012",
+      "question": "What is the difference between IT and Computer Engineering?",
+      "group": "fundamentals",
+      "expected_topics": [
+        "computer_engineering"
+      ],
+      "expected_categories": [
+        "common_misconceptions"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "C013",
+      "question": "What courses are taught in Computer Engineering?",
+      "group": "curriculum",
+      "expected_topics": [
+        "curriculum"
+      ],
+      "expected_categories": [
+        "curriculum"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "C014",
+      "question": "Which classes will I take in the first year?",
+      "group": "curriculum",
+      "expected_topics": [
+        "curriculum"
+      ],
+      "expected_categories": [
+        "curriculum"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "C015",
+      "question": "Are there operating systems courses in the program?",
+      "group": "curriculum",
+      "expected_topics": [
+        "operating_systems"
+      ],
+      "expected_categories": [
+        "curriculum"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "C016",
+      "question": "Does the curriculum include databases and networks?",
+      "group": "curriculum",
+      "expected_topics": [
+        "networks",
+        "software"
+      ],
+      "expected_categories": [
+        "curriculum"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "C017",
+      "question": "What is in CENG 303?",
+      "group": "curriculum",
+      "expected_topics": [
+        "operating_systems"
+      ],
+      "expected_categories": [
+        "curriculum"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "C018",
+      "question": "Is there a workplace training or applied education course?",
+      "group": "curriculum",
+      "expected_topics": [
+        "internships"
+      ],
+      "expected_categories": [
+        "curriculum",
+        "internships"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "C019",
+      "question": "Do students take electronics and digital logic?",
+      "group": "curriculum",
+      "expected_topics": [
+        "hardware"
+      ],
+      "expected_categories": [
+        "curriculum",
+        "hardware"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "C020",
+      "question": "How much lab work is there in computer engineering?",
+      "group": "curriculum",
+      "expected_topics": [
+        "curriculum",
+        "hardware"
+      ],
+      "expected_categories": [
+        "curriculum"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "C021",
+      "question": "What electives can help me specialize?",
+      "group": "curriculum",
+      "expected_topics": [
+        "specializations"
+      ],
+      "expected_categories": [
+        "curriculum",
+        "specializations"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "C022",
+      "question": "what lesson r in ceng? typo but mean courses",
+      "group": "curriculum",
+      "expected_topics": [
+        "curriculum"
+      ],
+      "expected_categories": [
+        "curriculum"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "C023",
+      "question": "Which subjects connect math, programming, and circuits together?",
+      "group": "curriculum",
+      "expected_topics": [
+        "mathematics",
+        "programming",
+        "hardware"
+      ],
+      "expected_categories": [
+        "curriculum"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "C024",
+      "question": "Can I avoid hardware courses if I only like software?",
+      "group": "curriculum",
+      "expected_topics": [
+        "hardware",
+        "software"
+      ],
+      "expected_categories": [
+        "curriculum",
+        "common_misconceptions"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "C025",
+      "question": "Is the curriculum closer to EE or CS?",
+      "group": "curriculum",
+      "expected_topics": [
+        "curriculum"
+      ],
+      "expected_categories": [
+        "curriculum",
+        "common_misconceptions"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "C026",
+      "question": "Are senior design projects part of CE education?",
+      "group": "curriculum",
+      "expected_topics": [
+        "projects",
+        "curriculum"
+      ],
+      "expected_categories": [
+        "curriculum",
+        "projects"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "M027",
+      "question": "How much mathematics is required in Computer Engineering?",
+      "group": "mathematics",
+      "expected_topics": [
+        "mathematics"
+      ],
+      "expected_categories": [
+        "curriculum",
+        "mathematics"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "M028",
+      "question": "I am weak at math; can I still study computer engineering?",
+      "group": "mathematics",
+      "expected_topics": [
+        "mathematics"
+      ],
+      "expected_categories": [
+        "mathematics",
+        "common_misconceptions"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "M029",
+      "question": "Which math topics matter most for CENG?",
+      "group": "mathematics",
+      "expected_topics": [
+        "mathematics"
+      ],
+      "expected_categories": [
+        "curriculum",
+        "mathematics"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "M030",
+      "question": "Is calculus used in computer engineering?",
+      "group": "mathematics",
+      "expected_topics": [
+        "mathematics"
+      ],
+      "expected_categories": [
+        "curriculum",
+        "mathematics"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "M031",
+      "question": "Do I need discrete math for software and algorithms?",
+      "group": "mathematics",
+      "expected_topics": [
+        "mathematics",
+        "programming"
+      ],
+      "expected_categories": [
+        "curriculum",
+        "mathematics"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "M032",
+      "question": "math scary, should i quit ceng?",
+      "group": "mathematics",
+      "expected_topics": [
+        "mathematics"
+      ],
+      "expected_categories": [
+        "mathematics",
+        "common_misconceptions"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "M033",
+      "question": "Can good programming compensate for average mathematics?",
+      "group": "mathematics",
+      "expected_topics": [
+        "mathematics",
+        "programming"
+      ],
+      "expected_categories": [
+        "mathematics",
+        "programming"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "M034",
+      "question": "What should I review before starting university: algebra, calculus, or coding?",
+      "group": "mathematics",
+      "expected_topics": [
+        "mathematics",
+        "programming"
+      ],
+      "expected_categories": [
+        "mathematics",
+        "programming"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "M035",
+      "question": "mathematic requirment computr eng?",
+      "group": "mathematics",
+      "expected_topics": [
+        "mathematics"
+      ],
+      "expected_categories": [
+        "curriculum",
+        "mathematics"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "M036",
+      "question": "How theoretical is the degree compared with practical engineering?",
+      "group": "mathematics",
+      "expected_topics": [
+        "mathematics",
+        "curriculum"
+      ],
+      "expected_categories": [
+        "curriculum"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "M037",
+      "question": "Do I need statistics for AI or data science?",
+      "group": "mathematics",
+      "expected_topics": [
+        "mathematics",
+        "ai"
+      ],
+      "expected_categories": [
+        "mathematics",
+        "artificial_intelligence"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "M038",
+      "question": "Is linear algebra important for machine learning?",
+      "group": "mathematics",
+      "expected_topics": [
+        "mathematics",
+        "ai"
+      ],
+      "expected_categories": [
+        "mathematics",
+        "artificial_intelligence"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "P039",
+      "question": "What programming languages should a Computer Engineering student learn?",
+      "group": "programming_software",
+      "expected_topics": [
+        "programming"
+      ],
+      "expected_categories": [
+        "programming",
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "P040",
+      "question": "Should I start with Python, Java, or C++?",
+      "group": "programming_software",
+      "expected_topics": [
+        "programming"
+      ],
+      "expected_categories": [
+        "programming"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "P041",
+      "question": "Is C++ still useful for computer engineers?",
+      "group": "programming_software",
+      "expected_topics": [
+        "programming"
+      ],
+      "expected_categories": [
+        "programming",
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "P042",
+      "question": "Do I need web development if I study CENG?",
+      "group": "programming_software",
+      "expected_topics": [
+        "software"
+      ],
+      "expected_categories": [
+        "software",
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "P043",
+      "question": "Should every student learn Git and GitHub?",
+      "group": "programming_software",
+      "expected_topics": [
+        "projects"
+      ],
+      "expected_categories": [
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "P044",
+      "question": "linux important?",
+      "group": "programming_software",
+      "expected_topics": [
+        "operating_systems"
+      ],
+      "expected_categories": [
+        "curriculum",
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "P045",
+      "question": "Is Linux worth learning for embedded systems?",
+      "group": "programming_software",
+      "expected_topics": [
+        "operating_systems",
+        "hardware"
+      ],
+      "expected_categories": [
+        "curriculum",
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "P046",
+      "question": "I can only code simple apps; what skill next?",
+      "group": "programming_software",
+      "expected_topics": [
+        "skills",
+        "programming"
+      ],
+      "expected_categories": [
+        "programming",
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "P047",
+      "question": "How do I become better at algorithms?",
+      "group": "programming_software",
+      "expected_topics": [
+        "programming"
+      ],
+      "expected_categories": [
+        "programming",
+        "curriculum"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "P048",
+      "question": "Should I learn data structures before building projects?",
+      "group": "programming_software",
+      "expected_topics": [
+        "programming",
+        "projects"
+      ],
+      "expected_categories": [
+        "programming",
+        "projects"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "P049",
+      "question": "git hub learn necessery?",
+      "group": "programming_software",
+      "expected_topics": [
+        "projects"
+      ],
+      "expected_categories": [
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "P050",
+      "question": "What software engineering habits should I build early?",
+      "group": "programming_software",
+      "expected_topics": [
+        "software",
+        "skills"
+      ],
+      "expected_categories": [
+        "software",
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "P051",
+      "question": "Can I become a backend developer from computer engineering?",
+      "group": "programming_software",
+      "expected_topics": [
+        "software",
+        "career"
+      ],
+      "expected_categories": [
+        "software",
+        "career_opportunities"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "P052",
+      "question": "frontend vs backend for ceng student?",
+      "group": "programming_software",
+      "expected_topics": [
+        "software",
+        "career"
+      ],
+      "expected_categories": [
+        "software",
+        "career_opportunities"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "P053",
+      "question": "Are databases important for computer engineers?",
+      "group": "programming_software",
+      "expected_topics": [
+        "software"
+      ],
+      "expected_categories": [
+        "curriculum",
+        "software"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "P054",
+      "question": "Which is more useful first: SQL or React?",
+      "group": "programming_software",
+      "expected_topics": [
+        "software",
+        "skills"
+      ],
+      "expected_categories": [
+        "software",
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "P055",
+      "question": "Should I learn testing and debugging?",
+      "group": "programming_software",
+      "expected_topics": [
+        "software",
+        "skills"
+      ],
+      "expected_categories": [
+        "software",
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "P056",
+      "question": "How important is command line usage?",
+      "group": "programming_software",
+      "expected_topics": [
+        "operating_systems",
+        "skills"
+      ],
+      "expected_categories": [
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "H057",
+      "question": "What hardware topics should I understand?",
+      "group": "hardware_networks",
+      "expected_topics": [
+        "hardware"
+      ],
+      "expected_categories": [
+        "hardware",
+        "curriculum"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "H058",
+      "question": "Is embedded systems a good path for Computer Engineering?",
+      "group": "hardware_networks",
+      "expected_topics": [
+        "hardware",
+        "career"
+      ],
+      "expected_categories": [
+        "hardware",
+        "career_opportunities"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "H059",
+      "question": "Do computer engineers work with microcontrollers?",
+      "group": "hardware_networks",
+      "expected_topics": [
+        "hardware"
+      ],
+      "expected_categories": [
+        "hardware",
+        "curriculum"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "H060",
+      "question": "How important is computer architecture?",
+      "group": "hardware_networks",
+      "expected_topics": [
+        "hardware"
+      ],
+      "expected_categories": [
+        "curriculum",
+        "hardware"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "H061",
+      "question": "Are networks part of Computer Engineering?",
+      "group": "hardware_networks",
+      "expected_topics": [
+        "networks"
+      ],
+      "expected_categories": [
+        "curriculum"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "H062",
+      "question": "What network skills are useful for cybersecurity?",
+      "group": "hardware_networks",
+      "expected_topics": [
+        "networks",
+        "cybersecurity"
+      ],
+      "expected_categories": [
+        "cybersecurity",
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "H063",
+      "question": "hardware hard but software ok, can I survive?",
+      "group": "hardware_networks",
+      "expected_topics": [
+        "hardware",
+        "software"
+      ],
+      "expected_categories": [
+        "curriculum",
+        "common_misconceptions"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "H064",
+      "question": "Does CE include electronics labs?",
+      "group": "hardware_networks",
+      "expected_topics": [
+        "hardware"
+      ],
+      "expected_categories": [
+        "curriculum",
+        "hardware"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "H065",
+      "question": "Should I learn Arduino or FPGA first?",
+      "group": "hardware_networks",
+      "expected_topics": [
+        "hardware",
+        "projects"
+      ],
+      "expected_categories": [
+        "hardware",
+        "projects"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "H066",
+      "question": "What is the connection between operating systems and hardware?",
+      "group": "hardware_networks",
+      "expected_topics": [
+        "operating_systems",
+        "hardware"
+      ],
+      "expected_categories": [
+        "curriculum",
+        "hardware"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "H067",
+      "question": "Can I work on IoT after Computer Engineering?",
+      "group": "hardware_networks",
+      "expected_topics": [
+        "hardware",
+        "networks",
+        "career"
+      ],
+      "expected_categories": [
+        "hardware",
+        "career_opportunities"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "H068",
+      "question": "Are computer networks useful outside cybersecurity?",
+      "group": "hardware_networks",
+      "expected_topics": [
+        "networks",
+        "career"
+      ],
+      "expected_categories": [
+        "curriculum",
+        "career_opportunities"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "A069",
+      "question": "Will artificial intelligence replace Computer Engineers?",
+      "group": "ai_future",
+      "expected_topics": [
+        "ai",
+        "career"
+      ],
+      "expected_categories": [
+        "artificial_intelligence",
+        "future_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "A070",
+      "question": "How should I prepare for an AI-heavy software industry?",
+      "group": "ai_future",
+      "expected_topics": [
+        "ai",
+        "skills"
+      ],
+      "expected_categories": [
+        "artificial_intelligence",
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "A071",
+      "question": "Can a computer engineering student become an AI engineer?",
+      "group": "ai_future",
+      "expected_topics": [
+        "ai",
+        "career"
+      ],
+      "expected_categories": [
+        "artificial_intelligence",
+        "career_opportunities"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "A072",
+      "question": "Do I need a master's degree for AI jobs?",
+      "group": "ai_future",
+      "expected_topics": [
+        "ai",
+        "graduate_studies"
+      ],
+      "expected_categories": [
+        "artificial_intelligence",
+        "graduate_studies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "A073",
+      "question": "What AI skills are useful besides prompt engineering?",
+      "group": "ai_future",
+      "expected_topics": [
+        "ai",
+        "skills"
+      ],
+      "expected_categories": [
+        "artificial_intelligence",
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "A074",
+      "question": "Is machine learning part of computer engineering?",
+      "group": "ai_future",
+      "expected_topics": [
+        "ai",
+        "curriculum"
+      ],
+      "expected_categories": [
+        "artificial_intelligence",
+        "curriculum"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "A075",
+      "question": "AI taking jobs, should I still study CENG?",
+      "group": "ai_future",
+      "expected_topics": [
+        "ai",
+        "career"
+      ],
+      "expected_categories": [
+        "artificial_intelligence",
+        "future_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "A076",
+      "question": "Which future technologies should a CENG student follow?",
+      "group": "ai_future",
+      "expected_topics": [
+        "future_technologies"
+      ],
+      "expected_categories": [
+        "future_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "A077",
+      "question": "Will software jobs disappear because of coding agents?",
+      "group": "ai_future",
+      "expected_topics": [
+        "ai",
+        "software",
+        "career"
+      ],
+      "expected_categories": [
+        "artificial_intelligence",
+        "employment"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "A078",
+      "question": "how ai affect engineers work?",
+      "group": "ai_future",
+      "expected_topics": [
+        "ai",
+        "career"
+      ],
+      "expected_categories": [
+        "artificial_intelligence",
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "A079",
+      "question": "Can I specialize in data science after computer engineering?",
+      "group": "ai_future",
+      "expected_topics": [
+        "ai",
+        "career"
+      ],
+      "expected_categories": [
+        "artificial_intelligence",
+        "career_opportunities"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "A080",
+      "question": "Is robotics closer to computer engineering or mechanical engineering?",
+      "group": "ai_future",
+      "expected_topics": [
+        "hardware",
+        "ai"
+      ],
+      "expected_categories": [
+        "specializations",
+        "hardware"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "A081",
+      "question": "Should I learn ML math before using AI tools?",
+      "group": "ai_future",
+      "expected_topics": [
+        "ai",
+        "mathematics"
+      ],
+      "expected_categories": [
+        "artificial_intelligence",
+        "mathematics"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "A082",
+      "question": "What parts of engineering work are changed by generative AI?",
+      "group": "ai_future",
+      "expected_topics": [
+        "ai",
+        "career"
+      ],
+      "expected_categories": [
+        "artificial_intelligence",
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "Y083",
+      "question": "Can Computer Engineers work in cybersecurity?",
+      "group": "cybersecurity",
+      "expected_topics": [
+        "cybersecurity",
+        "career"
+      ],
+      "expected_categories": [
+        "cybersecurity",
+        "career_opportunities"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "Y084",
+      "question": "What skills should I build for cybersecurity?",
+      "group": "cybersecurity",
+      "expected_topics": [
+        "cybersecurity",
+        "skills"
+      ],
+      "expected_categories": [
+        "cybersecurity",
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "Y085",
+      "question": "Do I need networking before security?",
+      "group": "cybersecurity",
+      "expected_topics": [
+        "cybersecurity",
+        "networks"
+      ],
+      "expected_categories": [
+        "cybersecurity",
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "Y086",
+      "question": "Is cybersecurity more software or hardware?",
+      "group": "cybersecurity",
+      "expected_topics": [
+        "cybersecurity",
+        "software",
+        "hardware"
+      ],
+      "expected_categories": [
+        "cybersecurity",
+        "curriculum"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "Y087",
+      "question": "How can I start ethical hacking safely as a student?",
+      "group": "cybersecurity",
+      "expected_topics": [
+        "cybersecurity"
+      ],
+      "expected_categories": [
+        "cybersecurity",
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "Y088",
+      "question": "security career path from ceng?",
+      "group": "cybersecurity",
+      "expected_topics": [
+        "cybersecurity",
+        "career"
+      ],
+      "expected_categories": [
+        "cybersecurity",
+        "career_opportunities"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "Y089",
+      "question": "Should I learn Linux for cyber security?",
+      "group": "cybersecurity",
+      "expected_topics": [
+        "cybersecurity",
+        "operating_systems"
+      ],
+      "expected_categories": [
+        "cybersecurity",
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "Y090",
+      "question": "Can I work in cloud security after CENG?",
+      "group": "cybersecurity",
+      "expected_topics": [
+        "cybersecurity",
+        "career"
+      ],
+      "expected_categories": [
+        "cybersecurity",
+        "career_opportunities"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "Y091",
+      "question": "cybersec certs or degree which matters?",
+      "group": "cybersecurity",
+      "expected_topics": [
+        "cybersecurity",
+        "career"
+      ],
+      "expected_categories": [
+        "cybersecurity",
+        "employment"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "Y092",
+      "question": "Is cryptography too math-heavy for me?",
+      "group": "cybersecurity",
+      "expected_topics": [
+        "cybersecurity",
+        "mathematics"
+      ],
+      "expected_categories": [
+        "cybersecurity",
+        "mathematics"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "Y093",
+      "question": "What is the difference between cybersecurity and software engineering?",
+      "group": "cybersecurity",
+      "expected_topics": [
+        "cybersecurity",
+        "software"
+      ],
+      "expected_categories": [
+        "cybersecurity",
+        "software"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "Y094",
+      "question": "Can I learn security without doing illegal hacking?",
+      "group": "cybersecurity",
+      "expected_topics": [
+        "cybersecurity"
+      ],
+      "expected_categories": [
+        "cybersecurity",
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "R095",
+      "question": "What jobs can I do after graduating from Computer Engineering?",
+      "group": "career_employment",
+      "expected_topics": [
+        "career"
+      ],
+      "expected_categories": [
+        "career_opportunities",
+        "employment"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "R096",
+      "question": "Is it easy to find a job after CENG?",
+      "group": "career_employment",
+      "expected_topics": [
+        "employment"
+      ],
+      "expected_categories": [
+        "employment"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "R097",
+      "question": "What should I include in my CV as a CENG student?",
+      "group": "career_employment",
+      "expected_topics": [
+        "cv",
+        "career"
+      ],
+      "expected_categories": [
+        "employment"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "R098",
+      "question": "How do I build a portfolio before graduation?",
+      "group": "career_employment",
+      "expected_topics": [
+        "portfolio",
+        "projects"
+      ],
+      "expected_categories": [
+        "projects",
+        "employment"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "R099",
+      "question": "Should I focus more on GPA, projects, or internships?",
+      "group": "career_employment",
+      "expected_topics": [
+        "gpa",
+        "projects",
+        "internships"
+      ],
+      "expected_categories": [
+        "employment",
+        "internships",
+        "projects"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "R100",
+      "question": "Does low GPA ruin my software career?",
+      "group": "career_employment",
+      "expected_topics": [
+        "gpa",
+        "career"
+      ],
+      "expected_categories": [
+        "employment"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "R101",
+      "question": "How important are internships?",
+      "group": "career_employment",
+      "expected_topics": [
+        "internships"
+      ],
+      "expected_categories": [
+        "internships",
+        "employment"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "R102",
+      "question": "What if I graduate without internship experience?",
+      "group": "career_employment",
+      "expected_topics": [
+        "internships",
+        "employment"
+      ],
+      "expected_categories": [
+        "internships",
+        "employment"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "R103",
+      "question": "Can personal projects replace internship experience?",
+      "group": "career_employment",
+      "expected_topics": [
+        "projects",
+        "internships"
+      ],
+      "expected_categories": [
+        "projects",
+        "internships",
+        "employment"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "R104",
+      "question": "Are hackathons useful for computer engineering students?",
+      "group": "career_employment",
+      "expected_topics": [
+        "projects",
+        "student_life"
+      ],
+      "expected_categories": [
+        "student_life",
+        "projects"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "R105",
+      "question": "How can I get my first internship?",
+      "group": "career_employment",
+      "expected_topics": [
+        "internships"
+      ],
+      "expected_categories": [
+        "internships",
+        "employment"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "R106",
+      "question": "Where can Turkish students find internships?",
+      "group": "career_employment",
+      "expected_topics": [
+        "internships"
+      ],
+      "expected_categories": [
+        "internships",
+        "employment"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "R107",
+      "question": "Erasmus useful for computer engineering?",
+      "group": "career_employment",
+      "expected_topics": [
+        "erasmus"
+      ],
+      "expected_categories": [
+        "internships",
+        "student_life"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "R108",
+      "question": "Can CENG graduates work abroad?",
+      "group": "career_employment",
+      "expected_topics": [
+        "career",
+        "remote_work"
+      ],
+      "expected_categories": [
+        "career_opportunities",
+        "remote_work"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "R109",
+      "question": "Can I work remotely as a new graduate?",
+      "group": "career_employment",
+      "expected_topics": [
+        "remote_work",
+        "employment"
+      ],
+      "expected_categories": [
+        "remote_work",
+        "employment"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "R110",
+      "question": "Which specialization pays the most in Turkey?",
+      "group": "career_employment",
+      "expected_topics": [
+        "salary",
+        "specializations"
+      ],
+      "expected_categories": [
+        "salaries",
+        "employment"
+      ],
+      "expected_behavior": "insufficient",
+      "previous_question": null
+    },
+    {
+      "id": "R111",
+      "question": "What is starting salary for OSTIM CENG graduates?",
+      "group": "career_employment",
+      "expected_topics": [
+        "salary"
+      ],
+      "expected_categories": [
+        "salaries"
+      ],
+      "expected_behavior": "insufficient",
+      "previous_question": null
+    },
+    {
+      "id": "R112",
+      "question": "How long until I become senior engineer?",
+      "group": "career_employment",
+      "expected_topics": [
+        "career"
+      ],
+      "expected_categories": [
+        "employment"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "R113",
+      "question": "Will employers care about university name or skills?",
+      "group": "career_employment",
+      "expected_topics": [
+        "employment",
+        "skills"
+      ],
+      "expected_categories": [
+        "employment",
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "R114",
+      "question": "What kind of projects impress recruiters?",
+      "group": "career_employment",
+      "expected_topics": [
+        "projects",
+        "employment"
+      ],
+      "expected_categories": [
+        "projects",
+        "employment"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "R115",
+      "question": "Do open source contributions help?",
+      "group": "career_employment",
+      "expected_topics": [
+        "projects",
+        "skills"
+      ],
+      "expected_categories": [
+        "projects",
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "R116",
+      "question": "Can I start freelancing while studying?",
+      "group": "career_employment",
+      "expected_topics": [
+        "entrepreneurship",
+        "career"
+      ],
+      "expected_categories": [
+        "entrepreneurship",
+        "employment"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "R117",
+      "question": "Should I build mobile apps, web apps, or embedded projects?",
+      "group": "career_employment",
+      "expected_topics": [
+        "projects",
+        "software",
+        "hardware"
+      ],
+      "expected_categories": [
+        "projects",
+        "software",
+        "hardware"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "R118",
+      "question": "GPA project staj hangisi daha onemli?",
+      "group": "career_employment",
+      "expected_topics": [
+        "gpa",
+        "projects",
+        "internships"
+      ],
+      "expected_categories": [
+        "employment",
+        "internships"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "R119",
+      "question": "No experience, no internship, low GPA - what can I do?",
+      "group": "career_employment",
+      "expected_topics": [
+        "gpa",
+        "internships",
+        "career"
+      ],
+      "expected_categories": [
+        "employment",
+        "internships"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "R120",
+      "question": "What are entry-level computer engineering job titles?",
+      "group": "career_employment",
+      "expected_topics": [
+        "career",
+        "employment"
+      ],
+      "expected_categories": [
+        "employment",
+        "career_opportunities"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "R121",
+      "question": "Is LinkedIn useful for finding internships?",
+      "group": "career_employment",
+      "expected_topics": [
+        "internships",
+        "employment"
+      ],
+      "expected_categories": [
+        "internships",
+        "employment"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "R122",
+      "question": "Should I apply to jobs before graduating?",
+      "group": "career_employment",
+      "expected_topics": [
+        "employment"
+      ],
+      "expected_categories": [
+        "employment",
+        "internships"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "S123",
+      "question": "Should I do a master's after Computer Engineering?",
+      "group": "student_local",
+      "expected_topics": [
+        "graduate_studies"
+      ],
+      "expected_categories": [
+        "graduate_studies",
+        "career_opportunities"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "S124",
+      "question": "Is a master's necessary for industry jobs?",
+      "group": "student_local",
+      "expected_topics": [
+        "graduate_studies",
+        "career"
+      ],
+      "expected_categories": [
+        "graduate_studies",
+        "employment"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "S125",
+      "question": "Can I go into academia after CENG?",
+      "group": "student_local",
+      "expected_topics": [
+        "graduate_studies",
+        "career"
+      ],
+      "expected_categories": [
+        "graduate_studies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "S126",
+      "question": "What is student life like at OSTIM Technical University?",
+      "group": "student_local",
+      "expected_topics": [
+        "student_life"
+      ],
+      "expected_categories": [
+        "student_life",
+        "department_information"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "S127",
+      "question": "OSTIMTECH social clubs/student communities?",
+      "group": "student_local",
+      "expected_topics": [
+        "student_life"
+      ],
+      "expected_categories": [
+        "student_life"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "S128",
+      "question": "Does OSTIM have student clubs for engineering students?",
+      "group": "student_local",
+      "expected_topics": [
+        "student_life"
+      ],
+      "expected_categories": [
+        "student_life"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "S129",
+      "question": "Which official regulation explains exams and grading?",
+      "group": "student_local",
+      "expected_topics": [
+        "academic_regulations"
+      ],
+      "expected_categories": [
+        "academic_regulations"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "S130",
+      "question": "What is the attendance rule for CENG courses?",
+      "group": "student_local",
+      "expected_topics": [
+        "academic_regulations"
+      ],
+      "expected_categories": [
+        "academic_regulations"
+      ],
+      "expected_behavior": "insufficient",
+      "previous_question": null
+    },
+    {
+      "id": "S131",
+      "question": "What is the exact 2026 tuition fee?",
+      "group": "student_local",
+      "expected_topics": [
+        "tuition"
+      ],
+      "expected_categories": [
+        "department_information"
+      ],
+      "expected_behavior": "insufficient",
+      "previous_question": null
+    },
+    {
+      "id": "S132",
+      "question": "Can I transfer from another university to CENG?",
+      "group": "student_local",
+      "expected_topics": [
+        "academic_regulations"
+      ],
+      "expected_categories": [
+        "academic_regulations"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "S133",
+      "question": "Is the program in English?",
+      "group": "student_local",
+      "expected_topics": [
+        "department_information"
+      ],
+      "expected_categories": [
+        "department_information"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "S134",
+      "question": "Who are the academic staff in the department?",
+      "group": "student_local",
+      "expected_topics": [
+        "academic_staff"
+      ],
+      "expected_categories": [
+        "department_information"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "S135",
+      "question": "Is OSTIM connected with industry?",
+      "group": "student_local",
+      "expected_topics": [
+        "department_information",
+        "internships"
+      ],
+      "expected_categories": [
+        "department_information",
+        "internships"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "S136",
+      "question": "What makes OSTIM CENG different?",
+      "group": "student_local",
+      "expected_topics": [
+        "department_information"
+      ],
+      "expected_categories": [
+        "department_information"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "S137",
+      "question": "Are there competitions or student projects?",
+      "group": "student_local",
+      "expected_topics": [
+        "student_life",
+        "projects"
+      ],
+      "expected_categories": [
+        "student_life",
+        "projects"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "S138",
+      "question": "Can I ask about scholarship opportunities?",
+      "group": "student_local",
+      "expected_topics": [
+        "scholarship"
+      ],
+      "expected_categories": [
+        "department_information"
+      ],
+      "expected_behavior": "insufficient",
+      "previous_question": null
+    },
+    {
+      "id": "S139",
+      "question": "Does the department have Erasmus agreements?",
+      "group": "student_local",
+      "expected_topics": [
+        "erasmus"
+      ],
+      "expected_categories": [
+        "student_life",
+        "internships"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "S140",
+      "question": "Can I study abroad for one semester as a CENG student?",
+      "group": "student_local",
+      "expected_topics": [
+        "erasmus"
+      ],
+      "expected_categories": [
+        "student_life",
+        "internships"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "X141",
+      "question": "I like AI and cybersecurity but hate electronics; is CENG still a good choice and what should I learn first?",
+      "group": "complex",
+      "expected_topics": [
+        "ai",
+        "cybersecurity",
+        "hardware"
+      ],
+      "expected_categories": [
+        "artificial_intelligence",
+        "cybersecurity",
+        "curriculum"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "X142",
+      "question": "Compare focusing on GPA, internships, GitHub projects, and networking for getting a first software job.",
+      "group": "complex",
+      "expected_topics": [
+        "gpa",
+        "internships",
+        "projects",
+        "employment"
+      ],
+      "expected_categories": [
+        "employment",
+        "internships",
+        "projects"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "X143",
+      "question": "If I want remote work abroad, should I prioritize English, portfolio, cloud, or algorithms?",
+      "group": "complex",
+      "expected_topics": [
+        "remote_work",
+        "skills",
+        "projects"
+      ],
+      "expected_categories": [
+        "remote_work",
+        "employment",
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "X144",
+      "question": "What should a first-year student do each semester to become employable by graduation?",
+      "group": "complex",
+      "expected_topics": [
+        "career",
+        "skills"
+      ],
+      "expected_categories": [
+        "employment",
+        "skills_and_technologies",
+        "curriculum"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "X145",
+      "question": "I am choosing between data science, embedded systems, and cybersecurity; how do I explore them safely?",
+      "group": "complex",
+      "expected_topics": [
+        "ai",
+        "hardware",
+        "cybersecurity"
+      ],
+      "expected_categories": [
+        "specializations",
+        "projects"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "X146",
+      "question": "What are realistic expectations about salary, work-life balance, and job security?",
+      "group": "complex",
+      "expected_topics": [
+        "salary",
+        "work_life_balance",
+        "employment"
+      ],
+      "expected_categories": [
+        "salaries",
+        "work_life_balance",
+        "employment"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "X147",
+      "question": "Can you rank AI, cloud, cybersecurity, and embedded by future demand?",
+      "group": "complex",
+      "expected_topics": [
+        "ai",
+        "cybersecurity",
+        "hardware",
+        "future_technologies"
+      ],
+      "expected_categories": [
+        "future_technologies",
+        "employment"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "X148",
+      "question": "What should I learn before internship interviews: data structures, Git, Linux, or databases?",
+      "group": "complex",
+      "expected_topics": [
+        "internships",
+        "programming",
+        "projects",
+        "operating_systems"
+      ],
+      "expected_categories": [
+        "internships",
+        "programming",
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "X149",
+      "question": "I failed a course and my GPA is low; can projects and internships still help me?",
+      "group": "complex",
+      "expected_topics": [
+        "gpa",
+        "projects",
+        "internships"
+      ],
+      "expected_categories": [
+        "employment",
+        "internships",
+        "projects"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "X150",
+      "question": "How do curriculum courses connect to actual industry roles?",
+      "group": "complex",
+      "expected_topics": [
+        "curriculum",
+        "career"
+      ],
+      "expected_categories": [
+        "curriculum",
+        "career_opportunities"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "X151",
+      "question": "I want to work in AI but also need a job quickly; should I start backend or ML first?",
+      "group": "complex",
+      "expected_topics": [
+        "ai",
+        "software",
+        "employment"
+      ],
+      "expected_categories": [
+        "artificial_intelligence",
+        "software",
+        "employment"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "X152",
+      "question": "If I dislike pure theory but enjoy building things, how should I approach CENG?",
+      "group": "complex",
+      "expected_topics": [
+        "projects",
+        "curriculum"
+      ],
+      "expected_categories": [
+        "curriculum",
+        "projects"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null
+    },
+    {
+      "id": "U153",
+      "question": "What is the exact job placement rate of OSTIM CENG graduates in 2026?",
+      "group": "unsupported",
+      "expected_topics": [
+        "employment"
+      ],
+      "expected_categories": [
+        "employment"
+      ],
+      "expected_behavior": "insufficient",
+      "previous_question": null
+    },
+    {
+      "id": "U154",
+      "question": "Which professor is the easiest grader?",
+      "group": "unsupported",
+      "expected_topics": [
+        "academic_staff"
+      ],
+      "expected_categories": [
+        "department_information"
+      ],
+      "expected_behavior": "insufficient",
+      "previous_question": null
+    },
+    {
+      "id": "U155",
+      "question": "Give me the private phone number of the department chair.",
+      "group": "unsupported",
+      "expected_topics": [],
+      "expected_categories": [],
+      "expected_behavior": "out_of_scope",
+      "previous_question": null
+    },
+    {
+      "id": "U156",
+      "question": "What is the guaranteed salary if I graduate first in class?",
+      "group": "unsupported",
+      "expected_topics": [
+        "salary"
+      ],
+      "expected_categories": [
+        "salaries"
+      ],
+      "expected_behavior": "insufficient",
+      "previous_question": null
+    },
+    {
+      "id": "U157",
+      "question": "Which company will hire me after graduation?",
+      "group": "unsupported",
+      "expected_topics": [
+        "employment"
+      ],
+      "expected_categories": [
+        "employment"
+      ],
+      "expected_behavior": "insufficient",
+      "previous_question": null
+    },
+    {
+      "id": "U158",
+      "question": "Predict whether I personally will succeed in CENG.",
+      "group": "unsupported",
+      "expected_topics": [
+        "career"
+      ],
+      "expected_categories": [
+        "career_opportunities"
+      ],
+      "expected_behavior": "insufficient",
+      "previous_question": null
+    },
+    {
+      "id": "U159",
+      "question": "What exact questions will be on CENG 303 final exam?",
+      "group": "unsupported",
+      "expected_topics": [
+        "academic_regulations"
+      ],
+      "expected_categories": [
+        "curriculum"
+      ],
+      "expected_behavior": "insufficient",
+      "previous_question": null
+    },
+    {
+      "id": "U160",
+      "question": "Can you write my internship report for me?",
+      "group": "unsupported",
+      "expected_topics": [],
+      "expected_categories": [],
+      "expected_behavior": "out_of_scope",
+      "previous_question": null
+    },
+    {
+      "id": "U161",
+      "question": "Tell me the current exchange rate for tuition payment.",
+      "group": "unsupported",
+      "expected_topics": [],
+      "expected_categories": [],
+      "expected_behavior": "out_of_scope",
+      "previous_question": null
+    },
+    {
+      "id": "U162",
+      "question": "What is the best laptop deal today?",
+      "group": "unsupported",
+      "expected_topics": [],
+      "expected_categories": [],
+      "expected_behavior": "out_of_scope",
+      "previous_question": null
+    },
+    {
+      "id": "U163",
+      "question": "Give me a list of all 2027 CENG exam dates.",
+      "group": "unsupported",
+      "expected_topics": [
+        "academic_regulations"
+      ],
+      "expected_categories": [
+        "academic_regulations"
+      ],
+      "expected_behavior": "insufficient",
+      "previous_question": null
+    },
+    {
+      "id": "U164",
+      "question": "What GPA do I need to guarantee a Google internship?",
+      "group": "unsupported",
+      "expected_topics": [
+        "gpa",
+        "internships"
+      ],
+      "expected_categories": [
+        "employment",
+        "internships"
+      ],
+      "expected_behavior": "insufficient",
+      "previous_question": null
+    },
+    {
+      "id": "U165",
+      "question": "Can you promise I will get a remote job after this degree?",
+      "group": "unsupported",
+      "expected_topics": [
+        "remote_work",
+        "employment"
+      ],
+      "expected_categories": [
+        "remote_work",
+        "employment"
+      ],
+      "expected_behavior": "insufficient",
+      "previous_question": null
+    },
+    {
+      "id": "O166",
+      "question": "How do I bake sourdough bread?",
+      "group": "out_of_scope",
+      "expected_topics": [],
+      "expected_categories": [],
+      "expected_behavior": "out_of_scope",
+      "previous_question": null
+    },
+    {
+      "id": "O167",
+      "question": "Who won the football match yesterday?",
+      "group": "out_of_scope",
+      "expected_topics": [],
+      "expected_categories": [],
+      "expected_behavior": "out_of_scope",
+      "previous_question": null
+    },
+    {
+      "id": "O168",
+      "question": "Write a love poem in Spanish.",
+      "group": "out_of_scope",
+      "expected_topics": [],
+      "expected_categories": [],
+      "expected_behavior": "out_of_scope",
+      "previous_question": null
+    },
+    {
+      "id": "O169",
+      "question": "What is the capital of Australia?",
+      "group": "out_of_scope",
+      "expected_topics": [],
+      "expected_categories": [],
+      "expected_behavior": "out_of_scope",
+      "previous_question": null
+    },
+    {
+      "id": "O170",
+      "question": "Can you diagnose my chest pain?",
+      "group": "out_of_scope",
+      "expected_topics": [],
+      "expected_categories": [],
+      "expected_behavior": "out_of_scope",
+      "previous_question": null
+    },
+    {
+      "id": "O171",
+      "question": "What stocks should I buy today?",
+      "group": "out_of_scope",
+      "expected_topics": [],
+      "expected_categories": [],
+      "expected_behavior": "out_of_scope",
+      "previous_question": null
+    },
+    {
+      "id": "O172",
+      "question": "Plan a seven-day beach vacation.",
+      "group": "out_of_scope",
+      "expected_topics": [],
+      "expected_categories": [],
+      "expected_behavior": "out_of_scope",
+      "previous_question": null
+    },
+    {
+      "id": "O173",
+      "question": "Translate this legal contract.",
+      "group": "out_of_scope",
+      "expected_topics": [],
+      "expected_categories": [],
+      "expected_behavior": "out_of_scope",
+      "previous_question": null
+    },
+    {
+      "id": "O174",
+      "question": "Make a workout plan for bodybuilding.",
+      "group": "out_of_scope",
+      "expected_topics": [],
+      "expected_categories": [],
+      "expected_behavior": "out_of_scope",
+      "previous_question": null
+    },
+    {
+      "id": "O175",
+      "question": "What is the weather tomorrow?",
+      "group": "out_of_scope",
+      "expected_topics": [],
+      "expected_categories": [],
+      "expected_behavior": "out_of_scope",
+      "previous_question": null
+    },
+    {
+      "id": "O176",
+      "question": "Summarize the latest NBA game.",
+      "group": "out_of_scope",
+      "expected_topics": [],
+      "expected_categories": [],
+      "expected_behavior": "out_of_scope",
+      "previous_question": null
+    },
+    {
+      "id": "O177",
+      "question": "Find me cheap flights to Berlin.",
+      "group": "out_of_scope",
+      "expected_topics": [],
+      "expected_categories": [],
+      "expected_behavior": "out_of_scope",
+      "previous_question": null
+    },
+    {
+      "id": "O178",
+      "question": "Give me a recipe for Turkish coffee.",
+      "group": "out_of_scope",
+      "expected_topics": [],
+      "expected_categories": [],
+      "expected_behavior": "out_of_scope",
+      "previous_question": null
+    },
+    {
+      "id": "T179",
+      "question": "What skills should I build?",
+      "group": "multi_turn",
+      "expected_topics": [
+        "cybersecurity",
+        "skills"
+      ],
+      "expected_categories": [
+        "cybersecurity",
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": "Can Computer Engineers work in cybersecurity?"
+    },
+    {
+      "id": "T180",
+      "question": "Do I need a master's?",
+      "group": "multi_turn",
+      "expected_topics": [
+        "ai",
+        "graduate_studies"
+      ],
+      "expected_categories": [
+        "artificial_intelligence",
+        "graduate_studies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": "I want to become an AI engineer."
+    },
+    {
+      "id": "T181",
+      "question": "What sources did you use?",
+      "group": "multi_turn",
+      "expected_topics": [],
+      "expected_categories": [],
+      "expected_behavior": "source_follow_up",
+      "previous_question": "Should I learn Git and GitHub?"
+    },
+    {
+      "id": "T182",
+      "question": "How can I prepare before first year?",
+      "group": "multi_turn",
+      "expected_topics": [
+        "mathematics"
+      ],
+      "expected_categories": [
+        "mathematics",
+        "curriculum"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": "I am weak at math."
+    },
+    {
+      "id": "T183",
+      "question": "Where can I find one in Turkey?",
+      "group": "multi_turn",
+      "expected_topics": [
+        "internships"
+      ],
+      "expected_categories": [
+        "internships",
+        "employment"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": "I care about internships."
+    },
+    {
+      "id": "T184",
+      "question": "What projects should I build?",
+      "group": "multi_turn",
+      "expected_topics": [
+        "hardware",
+        "projects"
+      ],
+      "expected_categories": [
+        "hardware",
+        "projects"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": "I prefer hardware."
+    },
+    {
+      "id": "T185",
+      "question": "What about remote work?",
+      "group": "multi_turn",
+      "expected_topics": [
+        "remote_work",
+        "employment"
+      ],
+      "expected_categories": [
+        "remote_work",
+        "employment"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": "I asked about software jobs."
+    },
+    {
+      "id": "T186",
+      "question": "Does it include Linux?",
+      "group": "multi_turn",
+      "expected_topics": [
+        "operating_systems",
+        "curriculum"
+      ],
+      "expected_categories": [
+        "curriculum"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": "Tell me about the curriculum."
+    },
+    {
+      "id": "T187",
+      "question": "Is Linux important too?",
+      "group": "multi_turn",
+      "expected_topics": [
+        "cybersecurity",
+        "operating_systems"
+      ],
+      "expected_categories": [
+        "cybersecurity",
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": "I want cybersecurity."
+    },
+    {
+      "id": "T188",
+      "question": "Which one has more hardware?",
+      "group": "multi_turn",
+      "expected_topics": [
+        "hardware",
+        "computer_engineering"
+      ],
+      "expected_categories": [
+        "curriculum",
+        "common_misconceptions"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": "Computer Engineering vs Computer Science?"
+    },
+    {
+      "id": "T189",
+      "question": "Should they be team projects or solo?",
+      "group": "multi_turn",
+      "expected_topics": [
+        "projects"
+      ],
+      "expected_categories": [
+        "projects",
+        "employment"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": "I want to build portfolio projects."
+    },
+    {
+      "id": "T190",
+      "question": "Can internships compensate?",
+      "group": "multi_turn",
+      "expected_topics": [
+        "gpa",
+        "internships"
+      ],
+      "expected_categories": [
+        "employment",
+        "internships"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": "I have low GPA."
+    },
+    {
+      "id": "T191",
+      "question": "What makes it different?",
+      "group": "multi_turn",
+      "expected_topics": [
+        "department_information"
+      ],
+      "expected_categories": [
+        "department_information"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": "Tell me about OSTIM CENG."
+    },
+    {
+      "id": "T192",
+      "question": "Will it help my career?",
+      "group": "multi_turn",
+      "expected_topics": [
+        "erasmus",
+        "career"
+      ],
+      "expected_categories": [
+        "internships",
+        "career_opportunities"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": "Can CENG students do Erasmus?"
+    },
+    {
+      "id": "T193",
+      "question": "And salaries?",
+      "group": "multi_turn",
+      "expected_topics": [
+        "salary",
+        "career"
+      ],
+      "expected_categories": [
+        "salaries",
+        "employment"
+      ],
+      "expected_behavior": "insufficient",
+      "previous_question": "What jobs can graduates do?"
+    },
+    {
+      "id": "T194",
+      "question": "So will it replace us?",
+      "group": "multi_turn",
+      "expected_topics": [
+        "ai",
+        "career"
+      ],
+      "expected_categories": [
+        "artificial_intelligence",
+        "future_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": "Is AI changing engineering work?"
+    },
+    {
+      "id": "T195",
+      "question": "Is it hard?",
+      "group": "multi_turn",
+      "expected_topics": [
+        "operating_systems",
+        "curriculum"
+      ],
+      "expected_categories": [
+        "curriculum"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": "What is CENG 303?"
+    },
+    {
+      "id": "T196",
+      "question": "For cloud security?",
+      "group": "multi_turn",
+      "expected_topics": [
+        "networks",
+        "cybersecurity"
+      ],
+      "expected_categories": [
+        "cybersecurity",
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": "How important are networks?"
+    },
+    {
+      "id": "T197",
+      "question": "or C++?",
+      "group": "multi_turn",
+      "expected_topics": [
+        "programming"
+      ],
+      "expected_categories": [
+        "programming"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": "Should I learn Python first?"
+    },
+    {
+      "id": "T198",
+      "question": "What skills matter most?",
+      "group": "multi_turn",
+      "expected_topics": [
+        "remote_work",
+        "skills"
+      ],
+      "expected_categories": [
+        "remote_work",
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": "Can I work abroad?"
+    },
+    {
+      "id": "T199",
+      "question": "Which one should I prioritize this semester?",
+      "group": "multi_turn",
+      "expected_topics": [
+        "gpa",
+        "projects"
+      ],
+      "expected_categories": [
+        "employment",
+        "projects"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": "I asked about GPA and projects."
+    },
+    {
+      "id": "T200",
+      "question": "Where do I find them?",
+      "group": "multi_turn",
+      "expected_topics": [
+        "student_life"
+      ],
+      "expected_categories": [
+        "student_life"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": "I asked about student clubs."
+    }
+  ]
+}

@@ -1,0 +1,1741 @@
+{
+  "summary": {
+    "case_count": 25,
+    "status_counts": {
+      "answered": 15,
+      "insufficient_information": 3,
+      "error": 7
+    },
+    "error_cases": [
+      {
+        "id": "R104",
+        "question": "Are hackathons useful for computer engineering students?",
+        "group": "career_employment",
+        "expected_topics": [
+          "projects",
+          "student_life"
+        ],
+        "expected_categories": [
+          "student_life",
+          "projects"
+        ],
+        "expected_behavior": "answer_or_gap",
+        "previous_question": null,
+        "query_kind": "standalone_domain_question",
+        "resolved_question": "are hackathons useful for computer engineering students?",
+        "understanding_ok": true,
+        "query_topics": [
+          "computer_engineering"
+        ],
+        "retrieval_relevant": false,
+        "evidence_sufficient": true,
+        "retrieval_out_of_scope": false,
+        "top_similarity_score": 0.535603404045105,
+        "answerability_gate_reason": null,
+        "failure_cause": "incorrect_semantic_retrieval",
+        "top_context": [
+          {
+            "source_id": "src_067",
+            "title": "Computer Engineering Curricula 2016",
+            "category": "curriculum",
+            "similarity_score": 0.535603404045105
+          },
+          {
+            "source_id": "src_039",
+            "title": "Which Introductory Course Should I Take?",
+            "category": "programming",
+            "similarity_score": 0.4492151737213135
+          },
+          {
+            "source_id": "src_045",
+            "title": "Skills for the digital age",
+            "category": "skills_and_technologies",
+            "similarity_score": 0.4185776710510254
+          }
+        ],
+        "status": "error",
+        "llm_called": true,
+        "answerability_decision": "allowed_or_bypassed",
+        "citation_valid": false,
+        "sources": [],
+        "answer_preview": "The local RAG pipeline could not complete the request safely.",
+        "error": "missing inline [S#] citation on one or more answer paragraphs or bullets",
+        "elapsed_seconds": 82.01
+      },
+      {
+        "id": "S130",
+        "question": "What is the attendance rule for CENG courses?",
+        "group": "student_local",
+        "expected_topics": [
+          "academic_regulations"
+        ],
+        "expected_categories": [
+          "academic_regulations"
+        ],
+        "expected_behavior": "insufficient",
+        "previous_question": null,
+        "query_kind": "standalone_domain_question",
+        "resolved_question": "What is the attendance rule for ceng courses?",
+        "understanding_ok": true,
+        "query_topics": [
+          "computer_engineering",
+          "definition",
+          "curriculum"
+        ],
+        "retrieval_relevant": true,
+        "evidence_sufficient": true,
+        "retrieval_out_of_scope": false,
+        "top_similarity_score": 0.6198832988739014,
+        "answerability_gate_reason": null,
+        "failure_cause": "answerability_gap_unsupported_may_pass",
+        "top_context": [
+          {
+            "source_id": "src_064",
+            "title": "CENG 303 Operating Systems Design and Construction Course Syllabus",
+            "category": "curriculum",
+            "similarity_score": 0.5673815011978149
+          },
+          {
+            "source_id": "src_067",
+            "title": "Computer Engineering Curricula 2016",
+            "category": "curriculum",
+            "similarity_score": 0.6198832988739014
+          },
+          {
+            "source_id": "src_067",
+            "title": "Computer Engineering Curricula 2016",
+            "category": "curriculum",
+            "similarity_score": 0.6180692911148071
+          }
+        ],
+        "status": "error",
+        "llm_called": true,
+        "answerability_decision": "allowed_or_bypassed",
+        "citation_valid": false,
+        "sources": [],
+        "answer_preview": "The local RAG pipeline could not complete the request safely.",
+        "error": "unsupported claim could not be matched to retrieved evidence",
+        "elapsed_seconds": 87.25
+      },
+      {
+        "id": "S138",
+        "question": "Can I ask about scholarship opportunities?",
+        "group": "student_local",
+        "expected_topics": [
+          "scholarship"
+        ],
+        "expected_categories": [
+          "department_information"
+        ],
+        "expected_behavior": "insufficient",
+        "previous_question": null,
+        "query_kind": "standalone_domain_question",
+        "resolved_question": "Can I ask about scholarship opportunities? (Computer Engineering)",
+        "understanding_ok": true,
+        "query_topics": [
+          "scholarship"
+        ],
+        "retrieval_relevant": true,
+        "evidence_sufficient": true,
+        "retrieval_out_of_scope": false,
+        "top_similarity_score": 0.4375568628311157,
+        "answerability_gate_reason": null,
+        "failure_cause": "answerability_gap_unsupported_may_pass",
+        "top_context": [
+          {
+            "source_id": "src_067",
+            "title": "Computer Engineering Curricula 2016",
+            "category": "curriculum",
+            "similarity_score": 0.4375568628311157
+          },
+          {
+            "source_id": "src_044",
+            "title": "Prepare for graduate & professional school",
+            "category": "graduate_studies",
+            "similarity_score": 0.4187154173851013
+          },
+          {
+            "source_id": "src_035",
+            "title": "Portfolios",
+            "category": "employment",
+            "similarity_score": 0.387317419052124
+          }
+        ],
+        "status": "error",
+        "llm_called": true,
+        "answerability_decision": "allowed_or_bypassed",
+        "citation_valid": false,
+        "sources": [],
+        "answer_preview": "The local RAG pipeline could not complete the request safely.",
+        "error": "unsupported claim could not be matched to retrieved evidence",
+        "elapsed_seconds": 64.65
+      },
+      {
+        "id": "T193",
+        "question": "And salaries?",
+        "group": "multi_turn",
+        "expected_topics": [
+          "salary",
+          "career"
+        ],
+        "expected_categories": [
+          "salaries",
+          "employment"
+        ],
+        "expected_behavior": "insufficient",
+        "previous_question": "What jobs can graduates do?",
+        "query_kind": "contextual_follow_up",
+        "resolved_question": "and salaries? Regarding What jobs can graduates do in Computer Engineering.",
+        "understanding_ok": true,
+        "query_topics": [
+          "salary"
+        ],
+        "retrieval_relevant": true,
+        "evidence_sufficient": true,
+        "retrieval_out_of_scope": false,
+        "top_similarity_score": 0.6031906604766846,
+        "answerability_gate_reason": null,
+        "failure_cause": "answerability_gap_unsupported_may_pass",
+        "top_context": [
+          {
+            "source_id": "src_074",
+            "title": "Write a Resume/CV",
+            "category": "employment",
+            "similarity_score": 0.6031906604766846
+          },
+          {
+            "source_id": "src_014",
+            "title": "Computer Hardware Engineers: 17-2061.00",
+            "category": "skills_and_technologies",
+            "similarity_score": 0.5961273312568665
+          },
+          {
+            "source_id": "src_045",
+            "title": "Skills for the digital age",
+            "category": "skills_and_technologies",
+            "similarity_score": 0.5757037997245789
+          }
+        ],
+        "status": "error",
+        "llm_called": true,
+        "answerability_decision": "allowed_or_bypassed",
+        "citation_valid": false,
+        "sources": [],
+        "answer_preview": "The local RAG pipeline could not complete the request safely.",
+        "error": "unsupported claim could not be matched to retrieved evidence",
+        "elapsed_seconds": 63.28
+      },
+      {
+        "id": "F001",
+        "question": "What is Computer Engineering?",
+        "group": "fundamentals",
+        "expected_topics": [
+          "computer_engineering"
+        ],
+        "expected_categories": [
+          "department_information",
+          "common_misconceptions"
+        ],
+        "expected_behavior": "answer_or_gap",
+        "previous_question": null,
+        "query_kind": "standalone_domain_question",
+        "resolved_question": "What is Computer Engineering?",
+        "understanding_ok": true,
+        "query_topics": [
+          "computer_engineering",
+          "definition"
+        ],
+        "retrieval_relevant": true,
+        "evidence_sufficient": true,
+        "retrieval_out_of_scope": false,
+        "top_similarity_score": 0.6821848154067993,
+        "answerability_gate_reason": null,
+        "failure_cause": "ok",
+        "top_context": [
+          {
+            "source_id": "src_042",
+            "title": "Curricular Guidance",
+            "category": "common_misconceptions",
+            "similarity_score": 0.6044425964355469
+          }
+        ],
+        "status": "error",
+        "llm_called": true,
+        "answerability_decision": "allowed_or_bypassed",
+        "citation_valid": false,
+        "sources": [],
+        "answer_preview": "The local RAG pipeline could not complete the request safely.",
+        "error": "missing inline [S#] citation on one or more answer paragraphs or bullets",
+        "elapsed_seconds": 22.81
+      },
+      {
+        "id": "F004",
+        "question": "Explain computer engineering to a high school student.",
+        "group": "fundamentals",
+        "expected_topics": [
+          "computer_engineering"
+        ],
+        "expected_categories": [
+          "department_information",
+          "common_misconceptions"
+        ],
+        "expected_behavior": "answer_or_gap",
+        "previous_question": null,
+        "query_kind": "standalone_domain_question",
+        "resolved_question": "What is Computer Engineering?",
+        "understanding_ok": true,
+        "query_topics": [
+          "computer_engineering",
+          "definition"
+        ],
+        "retrieval_relevant": true,
+        "evidence_sufficient": true,
+        "retrieval_out_of_scope": false,
+        "top_similarity_score": 0.6821848154067993,
+        "answerability_gate_reason": null,
+        "failure_cause": "ok",
+        "top_context": [
+          {
+            "source_id": "src_042",
+            "title": "Curricular Guidance",
+            "category": "common_misconceptions",
+            "similarity_score": 0.6044425964355469
+          }
+        ],
+        "status": "error",
+        "llm_called": true,
+        "answerability_decision": "allowed_or_bypassed",
+        "citation_valid": false,
+        "sources": [],
+        "answer_preview": "The local RAG pipeline could not complete the request safely.",
+        "error": "missing inline [S#] citation on one or more answer paragraphs or bullets",
+        "elapsed_seconds": 15.95
+      },
+      {
+        "id": "F012",
+        "question": "What is the difference between IT and Computer Engineering?",
+        "group": "fundamentals",
+        "expected_topics": [
+          "computer_engineering"
+        ],
+        "expected_categories": [
+          "common_misconceptions"
+        ],
+        "expected_behavior": "answer_or_gap",
+        "previous_question": null,
+        "query_kind": "standalone_domain_question",
+        "resolved_question": "What is Computer Engineering?",
+        "understanding_ok": true,
+        "query_topics": [
+          "computer_engineering",
+          "definition"
+        ],
+        "retrieval_relevant": true,
+        "evidence_sufficient": true,
+        "retrieval_out_of_scope": false,
+        "top_similarity_score": 0.6821848154067993,
+        "answerability_gate_reason": null,
+        "failure_cause": "ok",
+        "top_context": [
+          {
+            "source_id": "src_042",
+            "title": "Curricular Guidance",
+            "category": "common_misconceptions",
+            "similarity_score": 0.6044425964355469
+          }
+        ],
+        "status": "error",
+        "llm_called": true,
+        "answerability_decision": "allowed_or_bypassed",
+        "citation_valid": false,
+        "sources": [],
+        "answer_preview": "The local RAG pipeline could not complete the request safely.",
+        "error": "missing inline [S#] citation on one or more answer paragraphs or bullets",
+        "elapsed_seconds": 19.82
+      }
+    ]
+  },
+  "results": [
+    {
+      "id": "P056",
+      "question": "How important is command line usage?",
+      "group": "programming_software",
+      "expected_topics": [
+        "operating_systems",
+        "skills"
+      ],
+      "expected_categories": [
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "How important is command line usage? (Computer Engineering)",
+      "understanding_ok": true,
+      "query_topics": [
+        "software"
+      ],
+      "retrieval_relevant": false,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.4823625087738037,
+      "answerability_gate_reason": "retrieved evidence has too little overlap with the question terms: ['command', 'line', 'usage']",
+      "failure_cause": "incorrect_semantic_retrieval",
+      "top_context": [
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.4823625087738037
+        },
+        {
+          "source_id": "src_051",
+          "title": "State of Developer Ecosystem Report 2024",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.34578776359558105
+        },
+        {
+          "source_id": "src_015",
+          "title": "About Git",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.3642677664756775
+        }
+      ],
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [
+        "src_067",
+        "src_051",
+        "src_015"
+      ],
+      "answer_preview": "Based on the provided context, command line usage is important in computer engineering, particularly in the understanding of Git commands. The [S3] section from the \"About Git\" document highlights the importance of Git commands in interaction with the history, cloning repositories, creating branches, committing, merging, and comparing code changes. These functionalities are essential for software development, which is a core part of a computer engineering curriculum. Therefore, proficiency in command line usage is crucial for computer engineering students. [S3]",
+      "error": null,
+      "elapsed_seconds": 60.69
+    },
+    {
+      "id": "H065",
+      "question": "Should I learn Arduino or FPGA first?",
+      "group": "hardware_networks",
+      "expected_topics": [
+        "hardware",
+        "projects"
+      ],
+      "expected_categories": [
+        "hardware",
+        "projects"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "should I learn arduino or fpga first? (Computer Engineering)",
+      "understanding_ok": true,
+      "query_topics": [
+        "hardware"
+      ],
+      "retrieval_relevant": false,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.4455142021179199,
+      "answerability_gate_reason": null,
+      "failure_cause": "incorrect_semantic_retrieval",
+      "top_context": [
+        {
+          "source_id": "src_070",
+          "title": "EECS Majors: Choosing your first computer science course",
+          "category": "programming",
+          "similarity_score": 0.4455142021179199
+        },
+        {
+          "source_id": "src_039",
+          "title": "Which Introductory Course Should I Take?",
+          "category": "programming",
+          "similarity_score": 0.3897131681442261
+        },
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.4074591398239136
+        }
+      ],
+      "status": "insufficient_information",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [],
+      "answer_preview": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+      "error": null,
+      "elapsed_seconds": 37.9
+    },
+    {
+      "id": "A076",
+      "question": "Which future technologies should a CENG student follow?",
+      "group": "ai_future",
+      "expected_topics": [
+        "future_technologies"
+      ],
+      "expected_categories": [
+        "future_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "Which future technologies should a ceng student follow?",
+      "understanding_ok": true,
+      "query_topics": [
+        "computer_engineering",
+        "future_technologies"
+      ],
+      "retrieval_relevant": false,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.6277810335159302,
+      "answerability_gate_reason": null,
+      "failure_cause": "incorrect_semantic_retrieval",
+      "top_context": [
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.6277810335159302
+        },
+        {
+          "source_id": "src_063",
+          "title": "CENG 316 New Trends in Computer Engineering Course Syllabus",
+          "category": "curriculum",
+          "similarity_score": 0.5848497152328491
+        },
+        {
+          "source_id": "src_043",
+          "title": "Subdisciplines",
+          "category": "specializations",
+          "similarity_score": 0.5380053520202637
+        }
+      ],
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [
+        "src_067",
+        "src_063",
+        "src_043"
+      ],
+      "answer_preview": "Based on the information provided, a Computer Engineering (CE) student should consider following the subdisciplines of Artificial Intelligence, Robotics, and Cybernetics. These areas are highlighted in the [S3] source, which states that at the junior and senior level, Computer Engineering branches into rich intellectual areas such as Artificial Intelligence, Robotics, and Cybernetics. These subdisciplines are crucial for understanding and contributing to the rapid evolution of computer engineering, as mentioned in the [S1] source, which emphasizes the importance of keeping up with the pace of change in the discipline.",
+      "error": null,
+      "elapsed_seconds": 40.35
+    },
+    {
+      "id": "R104",
+      "question": "Are hackathons useful for computer engineering students?",
+      "group": "career_employment",
+      "expected_topics": [
+        "projects",
+        "student_life"
+      ],
+      "expected_categories": [
+        "student_life",
+        "projects"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "are hackathons useful for computer engineering students?",
+      "understanding_ok": true,
+      "query_topics": [
+        "computer_engineering"
+      ],
+      "retrieval_relevant": false,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.535603404045105,
+      "answerability_gate_reason": null,
+      "failure_cause": "incorrect_semantic_retrieval",
+      "top_context": [
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.535603404045105
+        },
+        {
+          "source_id": "src_039",
+          "title": "Which Introductory Course Should I Take?",
+          "category": "programming",
+          "similarity_score": 0.4492151737213135
+        },
+        {
+          "source_id": "src_045",
+          "title": "Skills for the digital age",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.4185776710510254
+        }
+      ],
+      "status": "error",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": false,
+      "sources": [],
+      "answer_preview": "The local RAG pipeline could not complete the request safely.",
+      "error": "missing inline [S#] citation on one or more answer paragraphs or bullets",
+      "elapsed_seconds": 82.01
+    },
+    {
+      "id": "S129",
+      "question": "Which official regulation explains exams and grading?",
+      "group": "student_local",
+      "expected_topics": [
+        "academic_regulations"
+      ],
+      "expected_categories": [
+        "academic_regulations"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "Which official regulation explains exams and grading? (Computer Engineering)",
+      "understanding_ok": true,
+      "query_topics": [
+        "academic_regulations"
+      ],
+      "retrieval_relevant": true,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.5258029103279114,
+      "answerability_gate_reason": "retrieved evidence has too little overlap with the question terms: ['exams', 'explains', 'grading', 'official', 'regulation']",
+      "failure_cause": "answerability_gate_possible_false_reject",
+      "top_context": [
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.5258029103279114
+        },
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.5047520995140076
+        },
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.4976690411567688
+        }
+      ],
+      "status": "insufficient_information",
+      "llm_called": false,
+      "answerability_decision": "retrieved evidence has too little overlap with the question terms: ['exams', 'explains', 'grading', 'official', 'regulation']",
+      "citation_valid": true,
+      "sources": [],
+      "answer_preview": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+      "error": null,
+      "elapsed_seconds": 0.11
+    },
+    {
+      "id": "S130",
+      "question": "What is the attendance rule for CENG courses?",
+      "group": "student_local",
+      "expected_topics": [
+        "academic_regulations"
+      ],
+      "expected_categories": [
+        "academic_regulations"
+      ],
+      "expected_behavior": "insufficient",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "What is the attendance rule for ceng courses?",
+      "understanding_ok": true,
+      "query_topics": [
+        "computer_engineering",
+        "definition",
+        "curriculum"
+      ],
+      "retrieval_relevant": true,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.6198832988739014,
+      "answerability_gate_reason": null,
+      "failure_cause": "answerability_gap_unsupported_may_pass",
+      "top_context": [
+        {
+          "source_id": "src_064",
+          "title": "CENG 303 Operating Systems Design and Construction Course Syllabus",
+          "category": "curriculum",
+          "similarity_score": 0.5673815011978149
+        },
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.6198832988739014
+        },
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.6180692911148071
+        }
+      ],
+      "status": "error",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": false,
+      "sources": [],
+      "answer_preview": "The local RAG pipeline could not complete the request safely.",
+      "error": "unsupported claim could not be matched to retrieved evidence",
+      "elapsed_seconds": 87.25
+    },
+    {
+      "id": "S131",
+      "question": "What is the exact 2026 tuition fee?",
+      "group": "student_local",
+      "expected_topics": [
+        "tuition"
+      ],
+      "expected_categories": [
+        "department_information"
+      ],
+      "expected_behavior": "insufficient",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "What is the exact 2026 tuition fee?",
+      "understanding_ok": true,
+      "query_topics": [
+        "definition"
+      ],
+      "retrieval_relevant": true,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.46584248542785645,
+      "answerability_gate_reason": null,
+      "failure_cause": "answerability_gap_unsupported_may_pass",
+      "top_context": [
+        {
+          "source_id": "src_044",
+          "title": "Prepare for graduate & professional school",
+          "category": "graduate_studies",
+          "similarity_score": 0.46584248542785645
+        },
+        {
+          "source_id": "src_031",
+          "title": "A Skills-First Labour Market",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.4250493049621582
+        },
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.38146787881851196
+        }
+      ],
+      "status": "insufficient_information",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [],
+      "answer_preview": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+      "error": null,
+      "elapsed_seconds": 23.45
+    },
+    {
+      "id": "S138",
+      "question": "Can I ask about scholarship opportunities?",
+      "group": "student_local",
+      "expected_topics": [
+        "scholarship"
+      ],
+      "expected_categories": [
+        "department_information"
+      ],
+      "expected_behavior": "insufficient",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "Can I ask about scholarship opportunities? (Computer Engineering)",
+      "understanding_ok": true,
+      "query_topics": [
+        "scholarship"
+      ],
+      "retrieval_relevant": true,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.4375568628311157,
+      "answerability_gate_reason": null,
+      "failure_cause": "answerability_gap_unsupported_may_pass",
+      "top_context": [
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.4375568628311157
+        },
+        {
+          "source_id": "src_044",
+          "title": "Prepare for graduate & professional school",
+          "category": "graduate_studies",
+          "similarity_score": 0.4187154173851013
+        },
+        {
+          "source_id": "src_035",
+          "title": "Portfolios",
+          "category": "employment",
+          "similarity_score": 0.387317419052124
+        }
+      ],
+      "status": "error",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": false,
+      "sources": [],
+      "answer_preview": "The local RAG pipeline could not complete the request safely.",
+      "error": "unsupported claim could not be matched to retrieved evidence",
+      "elapsed_seconds": 64.65
+    },
+    {
+      "id": "X146",
+      "question": "What are realistic expectations about salary, work-life balance, and job security?",
+      "group": "complex",
+      "expected_topics": [
+        "salary",
+        "work_life_balance",
+        "employment"
+      ],
+      "expected_categories": [
+        "salaries",
+        "work_life_balance",
+        "employment"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "What are realistic expectations about salary work life balance and job security? (Computer Engineering; topics: cybersecurity, career, work_life_balance, salary)",
+      "understanding_ok": true,
+      "query_topics": [
+        "cybersecurity",
+        "career",
+        "work_life_balance",
+        "salary"
+      ],
+      "retrieval_relevant": false,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.5052998661994934,
+      "answerability_gate_reason": null,
+      "failure_cause": "incorrect_semantic_retrieval",
+      "top_context": [
+        {
+          "source_id": "src_068",
+          "title": "Workforce Framework for Cybersecurity (NICE Framework)",
+          "category": "cybersecurity",
+          "similarity_score": 0.5052998661994934
+        },
+        {
+          "source_id": "src_017",
+          "title": "The Future of Jobs Report 2025",
+          "category": "future_technologies",
+          "similarity_score": 0.5029427409172058
+        },
+        {
+          "source_id": "src_014",
+          "title": "Computer Hardware Engineers: 17-2061.00",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.4986557960510254
+        }
+      ],
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [
+        "src_068",
+        "src_017",
+        "src_014"
+      ],
+      "answer_preview": "Based on the provided sources, there is insufficient information to accurately predict realistic expectations about salary, work-life balance, and job security specifically for cybersecurity roles in computer engineering. The sources do not provide specific salary ranges, job security details, or detailed information about work-life balance for cybersecurity professionals. [S1], [S2]",
+      "error": null,
+      "elapsed_seconds": 30.6
+    },
+    {
+      "id": "T184",
+      "question": "What projects should I build?",
+      "group": "multi_turn",
+      "expected_topics": [
+        "hardware",
+        "projects"
+      ],
+      "expected_categories": [
+        "hardware",
+        "projects"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": "I prefer hardware.",
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "What projects should I build? (Computer Engineering)",
+      "understanding_ok": true,
+      "query_topics": [
+        "projects"
+      ],
+      "retrieval_relevant": false,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.5959855318069458,
+      "answerability_gate_reason": null,
+      "failure_cause": "incorrect_semantic_retrieval",
+      "top_context": [
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.5959855318069458
+        },
+        {
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "category": "common_misconceptions",
+          "similarity_score": 0.49535202980041504
+        },
+        {
+          "source_id": "src_051",
+          "title": "State of Developer Ecosystem Report 2024",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.4067499041557312
+        }
+      ],
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [
+        "src_067",
+        "src_042",
+        "src_051"
+      ],
+      "answer_preview": "Based on the curricula recommendations and the current state of the developer ecosystem, projects in areas such as cybersecurity, data science, and AI/ML would be beneficial for a Computer Engineering student. Given the significant involvement of developers in AI and ML, projects that integrate these technologies could provide valuable experience. For instance, developing software for cybersecurity or AI-driven applications could be particularly relevant. Additionally, exploring projects in data science could also be beneficial, as it aligns with the growing importance of data analysis and AI in modern software development. [S1], [S2]",
+      "error": null,
+      "elapsed_seconds": 21.74
+    },
+    {
+      "id": "T193",
+      "question": "And salaries?",
+      "group": "multi_turn",
+      "expected_topics": [
+        "salary",
+        "career"
+      ],
+      "expected_categories": [
+        "salaries",
+        "employment"
+      ],
+      "expected_behavior": "insufficient",
+      "previous_question": "What jobs can graduates do?",
+      "query_kind": "contextual_follow_up",
+      "resolved_question": "and salaries? Regarding What jobs can graduates do in Computer Engineering.",
+      "understanding_ok": true,
+      "query_topics": [
+        "salary"
+      ],
+      "retrieval_relevant": true,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.6031906604766846,
+      "answerability_gate_reason": null,
+      "failure_cause": "answerability_gap_unsupported_may_pass",
+      "top_context": [
+        {
+          "source_id": "src_074",
+          "title": "Write a Resume/CV",
+          "category": "employment",
+          "similarity_score": 0.6031906604766846
+        },
+        {
+          "source_id": "src_014",
+          "title": "Computer Hardware Engineers: 17-2061.00",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.5961273312568665
+        },
+        {
+          "source_id": "src_045",
+          "title": "Skills for the digital age",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.5757037997245789
+        }
+      ],
+      "status": "error",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": false,
+      "sources": [],
+      "answer_preview": "The local RAG pipeline could not complete the request safely.",
+      "error": "unsupported claim could not be matched to retrieved evidence",
+      "elapsed_seconds": 63.28
+    },
+    {
+      "id": "F001",
+      "question": "What is Computer Engineering?",
+      "group": "fundamentals",
+      "expected_topics": [
+        "computer_engineering"
+      ],
+      "expected_categories": [
+        "department_information",
+        "common_misconceptions"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "What is Computer Engineering?",
+      "understanding_ok": true,
+      "query_topics": [
+        "computer_engineering",
+        "definition"
+      ],
+      "retrieval_relevant": true,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.6821848154067993,
+      "answerability_gate_reason": null,
+      "failure_cause": "ok",
+      "top_context": [
+        {
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "category": "common_misconceptions",
+          "similarity_score": 0.6044425964355469
+        }
+      ],
+      "status": "error",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": false,
+      "sources": [],
+      "answer_preview": "The local RAG pipeline could not complete the request safely.",
+      "error": "missing inline [S#] citation on one or more answer paragraphs or bullets",
+      "elapsed_seconds": 22.81
+    },
+    {
+      "id": "F002",
+      "question": "What does a computer engineer actually study?",
+      "group": "fundamentals",
+      "expected_topics": [
+        "computer_engineering"
+      ],
+      "expected_categories": [
+        "department_information",
+        "curriculum"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "What does a computer engineer actually study?",
+      "understanding_ok": true,
+      "query_topics": [
+        "computer_engineering"
+      ],
+      "retrieval_relevant": true,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.6573482751846313,
+      "answerability_gate_reason": null,
+      "failure_cause": "ok",
+      "top_context": [
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.6573482751846313
+        },
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.6283336877822876
+        },
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.6234603524208069
+        }
+      ],
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [
+        "src_067"
+      ],
+      "answer_preview": "A computer engineer studies a broad range of topics, including the design and development of hardware and software systems. They learn about constraints such as structure and organization, techniques, technologies, methodologies, interfaces, and the selection of components. Additionally, they gain a comprehensive understanding of the breadth of knowledge within the field, which can vary among different programs and even among students in the same program. The curriculum also emphasizes the importance of design, which is a recurring theme throughout the report. This design aspect is further emphasized by the structure of the CE2016 report, which focuses on undergraduate programs in computer e",
+      "error": null,
+      "elapsed_seconds": 28.89
+    },
+    {
+      "id": "F003",
+      "question": "Is CENG mostly coding or also hardware?",
+      "group": "fundamentals",
+      "expected_topics": [
+        "hardware",
+        "software"
+      ],
+      "expected_categories": [
+        "curriculum",
+        "common_misconceptions"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "Is ceng mostly coding or also hardware? (topics: programming, hardware)",
+      "understanding_ok": true,
+      "query_topics": [
+        "computer_engineering",
+        "programming",
+        "hardware"
+      ],
+      "retrieval_relevant": true,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.654350757598877,
+      "answerability_gate_reason": null,
+      "failure_cause": "ok",
+      "top_context": [
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.654350757598877
+        },
+        {
+          "source_id": "src_043",
+          "title": "Subdisciplines",
+          "category": "specializations",
+          "similarity_score": 0.6143473386764526
+        },
+        {
+          "source_id": "src_070",
+          "title": "EECS Majors: Choosing your first computer science course",
+          "category": "programming",
+          "similarity_score": 0.5693811178207397
+        }
+      ],
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [
+        "src_067",
+        "src_043",
+        "src_070"
+      ],
+      "answer_preview": "Based on the information provided in [S2], Computer Engineering (CENG) at the University of Illinois Urbana-Champaign covers both programming and hardware topics. The section describes how CENG builds from a core understanding of electrical phenomena, systems, and signals, and extends into various subdisciplines such as bioengineering and power systems. This suggests that CENG includes both programming and hardware aspects. Therefore, CENG likely covers both programming and hardware topics.",
+      "error": null,
+      "elapsed_seconds": 21.83
+    },
+    {
+      "id": "F004",
+      "question": "Explain computer engineering to a high school student.",
+      "group": "fundamentals",
+      "expected_topics": [
+        "computer_engineering"
+      ],
+      "expected_categories": [
+        "department_information",
+        "common_misconceptions"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "What is Computer Engineering?",
+      "understanding_ok": true,
+      "query_topics": [
+        "computer_engineering",
+        "definition"
+      ],
+      "retrieval_relevant": true,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.6821848154067993,
+      "answerability_gate_reason": null,
+      "failure_cause": "ok",
+      "top_context": [
+        {
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "category": "common_misconceptions",
+          "similarity_score": 0.6044425964355469
+        }
+      ],
+      "status": "error",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": false,
+      "sources": [],
+      "answer_preview": "The local RAG pipeline could not complete the request safely.",
+      "error": "missing inline [S#] citation on one or more answer paragraphs or bullets",
+      "elapsed_seconds": 15.95
+    },
+    {
+      "id": "F005",
+      "question": "How is computer engineering different from computer science?",
+      "group": "fundamentals",
+      "expected_topics": [
+        "computer_engineering"
+      ],
+      "expected_categories": [
+        "common_misconceptions"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "How is computer engineering different from computer science?",
+      "understanding_ok": true,
+      "query_topics": [
+        "computer_engineering"
+      ],
+      "retrieval_relevant": true,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.6785670518875122,
+      "answerability_gate_reason": null,
+      "failure_cause": "ok",
+      "top_context": [
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.6785670518875122
+        },
+        {
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "category": "common_misconceptions",
+          "similarity_score": 0.5594894886016846
+        },
+        {
+          "source_id": "src_070",
+          "title": "EECS Majors: Choosing your first computer science course",
+          "category": "programming",
+          "similarity_score": 0.5393950939178467
+        }
+      ],
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [
+        "src_067",
+        "src_042",
+        "src_070"
+      ],
+      "answer_preview": "Computer engineering and computer science are distinct but related fields within the broader discipline of computing. According to [S1], computer engineering focuses on the design and development of computer hardware and software systems, emphasizing practical applications and integration with other engineering disciplines. On the other hand, computer science is more theoretical and theoretical, focusing on the study of algorithms, data structures, and computer systems. [S2] further clarifies this by categorizing computing into five sub-disciplines, with computer engineering being one of them. Therefore, while both fields are integral to the computing field, computer engineering places a gre",
+      "error": null,
+      "elapsed_seconds": 28.14
+    },
+    {
+      "id": "F006",
+      "question": "CENG vs software engineering, which one is broader?",
+      "group": "fundamentals",
+      "expected_topics": [
+        "computer_engineering",
+        "software"
+      ],
+      "expected_categories": [
+        "common_misconceptions",
+        "curriculum"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "ceng vs software engineering which one is broader?",
+      "understanding_ok": true,
+      "query_topics": [
+        "computer_engineering",
+        "software"
+      ],
+      "retrieval_relevant": true,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.583385705947876,
+      "answerability_gate_reason": null,
+      "failure_cause": "ok",
+      "top_context": [
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.583385705947876
+        },
+        {
+          "source_id": "src_043",
+          "title": "Subdisciplines",
+          "category": "specializations",
+          "similarity_score": 0.516753077507019
+        },
+        {
+          "source_id": "src_063",
+          "title": "CENG 316 New Trends in Computer Engineering Course Syllabus",
+          "category": "curriculum",
+          "similarity_score": 0.5154321193695068
+        }
+      ],
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [
+        "src_067",
+        "src_043",
+        "src_063"
+      ],
+      "answer_preview": "Based on the information provided, Computer Engineering (CE) appears to be broader than Software Engineering (SE). The context from [S1] mentions that four-year programs in CE can lead to professional practice in various sectors such as business, industry, government, services, and organizations. This suggests that CE graduates have a more diverse skill set and can work in a wider range of industries. In contrast, [S2] focuses on subdisciplines within CE, including artificial intelligence, robotics, and cybernetics, indicating that SE might have a more specialized focus within the broader field of CE. Therefore, CE can be considered more extensive in terms of career sectors and applications.",
+      "error": null,
+      "elapsed_seconds": 28.52
+    },
+    {
+      "id": "F007",
+      "question": "Do computer engineers build physical devices or just apps?",
+      "group": "fundamentals",
+      "expected_topics": [
+        "hardware",
+        "software"
+      ],
+      "expected_categories": [
+        "curriculum",
+        "hardware"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "Do computer engineers build physical devices or just apps?",
+      "understanding_ok": true,
+      "query_topics": [
+        "computer_engineering"
+      ],
+      "retrieval_relevant": true,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.6349551677703857,
+      "answerability_gate_reason": null,
+      "failure_cause": "ok",
+      "top_context": [
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.6349551677703857
+        },
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.524095892906189
+        },
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.5202431678771973
+        }
+      ],
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [
+        "src_067"
+      ],
+      "answer_preview": "Computer engineers do not solely build apps. According to [S1], they are involved in the design of computer-based systems to address highly specialized and specific application needs. This includes the design of physical devices such as embedded systems found in automobiles, control systems, major appliances, and internet of things (IoT) devices. Therefore, computer engineers are involved in both software development and the design of physical devices.",
+      "error": null,
+      "elapsed_seconds": 21.95
+    },
+    {
+      "id": "F008",
+      "question": "Is computer engineering an engineering discipline or a computing major?",
+      "group": "fundamentals",
+      "expected_topics": [
+        "computer_engineering"
+      ],
+      "expected_categories": [
+        "department_information",
+        "common_misconceptions"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "Is computer engineering an engineering discipline or a computing major?",
+      "understanding_ok": true,
+      "query_topics": [
+        "computer_engineering"
+      ],
+      "retrieval_relevant": true,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.6923321485519409,
+      "answerability_gate_reason": null,
+      "failure_cause": "ok",
+      "top_context": [
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.6923321485519409
+        },
+        {
+          "source_id": "src_043",
+          "title": "Subdisciplines",
+          "category": "specializations",
+          "similarity_score": 0.541376531124115
+        },
+        {
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "category": "common_misconceptions",
+          "similarity_score": 0.6107422113418579
+        }
+      ],
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [
+        "src_067",
+        "src_043",
+        "src_042"
+      ],
+      "answer_preview": "Computer engineering is an engineering discipline. [S1] provides background information on computer engineering as a distinct field that evolved over time, distinguishing it from other computing disciplines. [S3] further supports this by categorizing computer engineering as one of the five defined sub-disciplines of computing, alongside computer science, software engineering, information systems, and information technology. Therefore, based on these sources, computer engineering falls under the engineering category.",
+      "error": null,
+      "elapsed_seconds": 18.91
+    },
+    {
+      "id": "F009",
+      "question": "What kind of problems do computer engineers solve?",
+      "group": "fundamentals",
+      "expected_topics": [
+        "computer_engineering"
+      ],
+      "expected_categories": [
+        "department_information",
+        "career_opportunities"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "What kind of problems do computer engineers solve?",
+      "understanding_ok": true,
+      "query_topics": [
+        "computer_engineering"
+      ],
+      "retrieval_relevant": true,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.5585678219795227,
+      "answerability_gate_reason": null,
+      "failure_cause": "ok",
+      "top_context": [
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.5585678219795227
+        },
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.5371996164321899
+        },
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.5180737376213074
+        }
+      ],
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [
+        "src_067"
+      ],
+      "answer_preview": "Computer engineers solve a wide range of problems, including the design and development of computer-based systems for specialized applications. They work on projects that involve mobile devices, multimedia systems, and embedded systems in various devices such as automobiles, control systems, and appliances. They also contribute to the design of computer networks and systems that are part of the internet of things (IoT). Additionally, they address the design of networks and systems in the proliferation of mobile smart phones, tablet computers, and location-aware devices. [S1], [S3]",
+      "error": null,
+      "elapsed_seconds": 23.53
+    },
+    {
+      "id": "F010",
+      "question": "computer eng ne demek basically?",
+      "group": "fundamentals",
+      "expected_topics": [
+        "computer_engineering"
+      ],
+      "expected_categories": [
+        "department_information"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "computer engineering ne demek basically?",
+      "understanding_ok": true,
+      "query_topics": [
+        "computer_engineering"
+      ],
+      "retrieval_relevant": true,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.49070417881011963,
+      "answerability_gate_reason": null,
+      "failure_cause": "ok",
+      "top_context": [
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.49070417881011963
+        },
+        {
+          "source_id": "src_043",
+          "title": "Subdisciplines",
+          "category": "specializations",
+          "similarity_score": 0.4753112196922302
+        },
+        {
+          "source_id": "src_003",
+          "title": "Curriculum | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "curriculum",
+          "similarity_score": 0.450964093208313
+        }
+      ],
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [
+        "src_067",
+        "src_043",
+        "src_003"
+      ],
+      "answer_preview": "Computer engineering is the interdisciplinary field that combines computer science and electrical engineering principles to design, develop, and analyze computing systems. It involves understanding the fundamental concepts of electrical phenomena, systems, and signals, as well as computers. At the junior and senior levels, computer engineering branches into various subdisciplines such as artificial intelligence, robotics, and cybernetics. [S1] and [S2] provide context on the foundational knowledge and the diverse subdisciplines within computer engineering. [S3] outlines a sample curriculum for a computer engineering program, which includes courses like Differential Equations, Electrical Circ",
+      "error": null,
+      "elapsed_seconds": 29.14
+    },
+    {
+      "id": "F011",
+      "question": "Is computer engineering good for someone who likes both physics and code?",
+      "group": "fundamentals",
+      "expected_topics": [
+        "computer_engineering",
+        "hardware",
+        "software"
+      ],
+      "expected_categories": [
+        "department_information",
+        "curriculum"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "Is computer engineering good for someone who likes both physics and code?",
+      "understanding_ok": true,
+      "query_topics": [
+        "computer_engineering"
+      ],
+      "retrieval_relevant": true,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.4697571396827698,
+      "answerability_gate_reason": null,
+      "failure_cause": "ok",
+      "top_context": [
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.4697571396827698
+        },
+        {
+          "source_id": "src_071",
+          "title": "Math Preparation for the College of Engineering",
+          "category": "mathematics",
+          "similarity_score": 0.43905484676361084
+        },
+        {
+          "source_id": "src_070",
+          "title": "EECS Majors: Choosing your first computer science course",
+          "category": "programming",
+          "similarity_score": 0.43523597717285156
+        }
+      ],
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [
+        "src_067",
+        "src_071",
+        "src_070"
+      ],
+      "answer_preview": "Computer Engineering (CE) is a field that requires a strong foundation in both physics and programming. According to [S1], CE curricula emphasize the ability to design, which involves understanding structure and organization, techniques, technologies, methodologies, interfaces, and component selection. This aligns with the physics barrier mentioned in [S2], where the Physics 5 or 7 series, which are required for all engineering majors, are heavily calculus-based. This suggests that a strong background in physics is crucial for CE students. Additionally, [S3] provides advice for EECS majors, recommending Computer Science 61A as a suitable first computer science course for students with prior ",
+      "error": null,
+      "elapsed_seconds": 32.33
+    },
+    {
+      "id": "F012",
+      "question": "What is the difference between IT and Computer Engineering?",
+      "group": "fundamentals",
+      "expected_topics": [
+        "computer_engineering"
+      ],
+      "expected_categories": [
+        "common_misconceptions"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "What is Computer Engineering?",
+      "understanding_ok": true,
+      "query_topics": [
+        "computer_engineering",
+        "definition"
+      ],
+      "retrieval_relevant": true,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.6821848154067993,
+      "answerability_gate_reason": null,
+      "failure_cause": "ok",
+      "top_context": [
+        {
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "category": "common_misconceptions",
+          "similarity_score": 0.6044425964355469
+        }
+      ],
+      "status": "error",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": false,
+      "sources": [],
+      "answer_preview": "The local RAG pipeline could not complete the request safely.",
+      "error": "missing inline [S#] citation on one or more answer paragraphs or bullets",
+      "elapsed_seconds": 19.82
+    },
+    {
+      "id": "C013",
+      "question": "What courses are taught in Computer Engineering?",
+      "group": "curriculum",
+      "expected_topics": [
+        "curriculum"
+      ],
+      "expected_categories": [
+        "curriculum"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "What courses are taught in computer engineering?",
+      "understanding_ok": true,
+      "query_topics": [
+        "computer_engineering",
+        "curriculum"
+      ],
+      "retrieval_relevant": true,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.6860374212265015,
+      "answerability_gate_reason": null,
+      "failure_cause": "ok",
+      "top_context": [
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.6860374212265015
+        },
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.6812936067581177
+        },
+        {
+          "source_id": "src_070",
+          "title": "EECS Majors: Choosing your first computer science course",
+          "category": "programming",
+          "similarity_score": 0.6395115256309509
+        }
+      ],
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [
+        "src_067",
+        "src_070"
+      ],
+      "answer_preview": "Based on the information provided in [S1] and [S2], computer engineering curricula typically cover a broad range of topics including design constraints, breadth of knowledge, and characteristics distinguishing it from other computing disciplines. The curricula may vary among programs and even among students within the same program. [S1] specifically mentions design constraints, which include structure and organization, techniques, technologies, methodologies, interfaces, and component selection, as well as the need for desirable properties such as simplicity and elegance. [S2] provides background on the field of computer engineering, highlighting its evolution and characteristics that set it",
+      "error": null,
+      "elapsed_seconds": 25.85
+    },
+    {
+      "id": "C014",
+      "question": "Which classes will I take in the first year?",
+      "group": "curriculum",
+      "expected_topics": [
+        "curriculum"
+      ],
+      "expected_categories": [
+        "curriculum"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "Which classes will I take in the first year? (Computer Engineering; constraints: first_year)",
+      "understanding_ok": true,
+      "query_topics": [
+        "curriculum"
+      ],
+      "retrieval_relevant": true,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.6772505044937134,
+      "answerability_gate_reason": null,
+      "failure_cause": "ok",
+      "top_context": [
+        {
+          "source_id": "src_070",
+          "title": "EECS Majors: Choosing your first computer science course",
+          "category": "programming",
+          "similarity_score": 0.6772505044937134
+        },
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.5681272745132446
+        },
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.5636866092681885
+        }
+      ],
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [
+        "src_070",
+        "src_067"
+      ],
+      "answer_preview": "In your first year as a Computer Engineering major, you will likely take Computer Science 61A, which is a rigorous and fast-paced introduction to computer science. This course is designed for students with some prior programming experience. Additionally, the curriculum will include foundational courses in mathematics, such as calculus, and physics, which are prerequisites for various classes in the program. [S1], [S3]",
+      "error": null,
+      "elapsed_seconds": 19.76
+    }
+  ]
+}

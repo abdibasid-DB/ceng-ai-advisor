@@ -1,11 +1,11 @@
 {
   "stage": "Stage 13 - Retrieval Pipeline and Retrieval Quality",
-  "generated_at": "2026-09-16T14:30:03+00:00",
+  "generated_at": "2026-10-13T17:02:52+00:00",
   "top_k": 5,
   "test_case_count": 23,
   "label_counts": {
-    "Highly relevant": 14,
-    "Relevant": 5,
+    "Highly relevant": 18,
+    "Relevant": 1,
     "Irrelevant": 1,
     "Correctly rejected": 3
   },
@@ -36,39 +36,39 @@
         },
         {
           "rank": 2,
-          "chunk_id": "src_004_chunk_008",
-          "source_id": "src_004",
-          "category": "curriculum",
-          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
-          "similarity_score": 0.5108358263969421,
-          "rerank_score": 0.6408358263969421
+          "chunk_id": "src_088_chunk_001",
+          "source_id": "src_088",
+          "category": "graduate_studies",
+          "title": "Program Syllabus: Computer Engineering English Thesis Master's Degree Program",
+          "similarity_score": 0.7250348925590515,
+          "rerank_score": 0.7750348925590516
         },
         {
           "rank": 3,
-          "chunk_id": "src_006_chunk_001",
-          "source_id": "src_006",
-          "category": "department_information",
-          "title": "Academic Staff",
-          "similarity_score": 0.4930553436279297,
-          "rerank_score": 0.6230553436279297
+          "chunk_id": "src_064_chunk_001",
+          "source_id": "src_064",
+          "category": "curriculum",
+          "title": "CENG 303 Operating Systems Design and Construction Course Syllabus",
+          "similarity_score": 0.5620052218437195,
+          "rerank_score": 0.6920052218437195
         },
         {
           "rank": 4,
-          "chunk_id": "src_004_chunk_007",
-          "source_id": "src_004",
-          "category": "curriculum",
-          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
-          "similarity_score": 0.48841196298599243,
-          "rerank_score": 0.6184119629859924
+          "chunk_id": "src_089_chunk_001",
+          "source_id": "src_089",
+          "category": "department_information",
+          "title": "International Student Admission Directive",
+          "similarity_score": 0.5398537516593933,
+          "rerank_score": 0.6698537516593933
         },
         {
           "rank": 5,
-          "chunk_id": "src_005_chunk_001",
-          "source_id": "src_005",
-          "category": "student_life",
-          "title": "Our Difference | MF-Bilgisayar Mühendisliği (İngilizce)",
-          "similarity_score": 0.4876657724380493,
-          "rerank_score": 0.6176657724380493
+          "chunk_id": "src_067_chunk_006",
+          "source_id": "src_067",
+          "category": "curriculum",
+          "title": "Computer Engineering Curricula 2016",
+          "similarity_score": 0.5867840051651001,
+          "rerank_score": 0.6667840051651001
         }
       ]
     },
@@ -85,53 +85,53 @@
       "label": "Highly relevant",
       "evidence_sufficient": true,
       "out_of_scope": false,
-      "top_similarity_score": 0.5630455017089844,
+      "top_similarity_score": 0.6860374212265015,
       "results_above_threshold": 5,
       "top_results": [
         {
           "rank": 1,
+          "chunk_id": "src_067_chunk_019",
+          "source_id": "src_067",
+          "category": "curriculum",
+          "title": "Computer Engineering Curricula 2016",
+          "similarity_score": 0.6860374212265015,
+          "rerank_score": 0.7660374212265014
+        },
+        {
+          "rank": 2,
+          "chunk_id": "src_067_chunk_013",
+          "source_id": "src_067",
+          "category": "curriculum",
+          "title": "Computer Engineering Curricula 2016",
+          "similarity_score": 0.6812936067581177,
+          "rerank_score": 0.7612936067581176
+        },
+        {
+          "rank": 3,
+          "chunk_id": "src_070_chunk_001",
+          "source_id": "src_070",
+          "category": "programming",
+          "title": "EECS Majors: Choosing your first computer science course",
+          "similarity_score": 0.6395115256309509,
+          "rerank_score": 0.7395115256309509
+        },
+        {
+          "rank": 4,
+          "chunk_id": "src_067_chunk_131",
+          "source_id": "src_067",
+          "category": "curriculum",
+          "title": "Computer Engineering Curricula 2016",
+          "similarity_score": 0.6556860208511353,
+          "rerank_score": 0.7356860208511352
+        },
+        {
+          "rank": 5,
           "chunk_id": "src_039_chunk_001",
           "source_id": "src_039",
           "category": "programming",
           "title": "Which Introductory Course Should I Take?",
           "similarity_score": 0.5630455017089844,
           "rerank_score": 0.6630455017089844
-        },
-        {
-          "rank": 2,
-          "chunk_id": "src_004_chunk_004",
-          "source_id": "src_004",
-          "category": "curriculum",
-          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
-          "similarity_score": 0.4731024503707886,
-          "rerank_score": 0.6231024503707886
-        },
-        {
-          "rank": 3,
-          "chunk_id": "src_039_chunk_004",
-          "source_id": "src_039",
-          "category": "programming",
-          "title": "Which Introductory Course Should I Take?",
-          "similarity_score": 0.5214192271232605,
-          "rerank_score": 0.6214192271232605
-        },
-        {
-          "rank": 4,
-          "chunk_id": "src_004_chunk_003",
-          "source_id": "src_004",
-          "category": "curriculum",
-          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
-          "similarity_score": 0.4678647518157959,
-          "rerank_score": 0.6178647518157959
-        },
-        {
-          "rank": 5,
-          "chunk_id": "src_004_chunk_007",
-          "source_id": "src_004",
-          "category": "curriculum",
-          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
-          "similarity_score": 0.461620569229126,
-          "rerank_score": 0.611620569229126
         }
       ]
     },
@@ -148,53 +148,53 @@
       "label": "Highly relevant",
       "evidence_sufficient": true,
       "out_of_scope": false,
-      "top_similarity_score": 0.4525519609451294,
+      "top_similarity_score": 0.5689241886138916,
       "results_above_threshold": 5,
       "top_results": [
         {
           "rank": 1,
-          "chunk_id": "src_004_chunk_003",
-          "source_id": "src_004",
-          "category": "curriculum",
-          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
-          "similarity_score": 0.4525519609451294,
-          "rerank_score": 0.5825519609451294
+          "chunk_id": "src_070_chunk_001",
+          "source_id": "src_070",
+          "category": "programming",
+          "title": "EECS Majors: Choosing your first computer science course",
+          "similarity_score": 0.5689241886138916,
+          "rerank_score": 0.6489241886138916
         },
         {
           "rank": 2,
-          "chunk_id": "src_039_chunk_004",
-          "source_id": "src_039",
-          "category": "programming",
-          "title": "Which Introductory Course Should I Take?",
-          "similarity_score": 0.4932767152786255,
-          "rerank_score": 0.5732767152786254
+          "chunk_id": "src_067_chunk_144",
+          "source_id": "src_067",
+          "category": "curriculum",
+          "title": "Computer Engineering Curricula 2016",
+          "similarity_score": 0.5147507190704346,
+          "rerank_score": 0.5947507190704345
         },
         {
           "rank": 3,
-          "chunk_id": "src_004_chunk_001",
-          "source_id": "src_004",
+          "chunk_id": "src_067_chunk_070",
+          "source_id": "src_067",
           "category": "curriculum",
-          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
-          "similarity_score": 0.4267997741699219,
-          "rerank_score": 0.5567997741699219
+          "title": "Computer Engineering Curricula 2016",
+          "similarity_score": 0.5107036828994751,
+          "rerank_score": 0.5907036828994751
         },
         {
           "rank": 4,
-          "chunk_id": "src_004_chunk_004",
-          "source_id": "src_004",
+          "chunk_id": "src_067_chunk_130",
+          "source_id": "src_067",
           "category": "curriculum",
-          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
-          "similarity_score": 0.4196889400482178,
-          "rerank_score": 0.5496889400482178
+          "title": "Computer Engineering Curricula 2016",
+          "similarity_score": 0.5046484470367432,
+          "rerank_score": 0.5846484470367431
         },
         {
           "rank": 5,
-          "chunk_id": "src_051_chunk_003",
-          "source_id": "src_051",
-          "category": "skills_and_technologies",
-          "title": "State of Developer Ecosystem Report 2024",
-          "similarity_score": 0.4495711326599121,
-          "rerank_score": 0.5495711326599121
+          "chunk_id": "src_081_chunk_001",
+          "source_id": "src_081",
+          "category": "programming",
+          "title": "Software Engineering Body of Knowledge (SWEBOK Guide), Version 4.0",
+          "similarity_score": 0.4947420358657837,
+          "rerank_score": 0.5747420358657837
         }
       ]
     },
@@ -225,39 +225,39 @@
         },
         {
           "rank": 2,
-          "chunk_id": "src_004_chunk_003",
-          "source_id": "src_004",
-          "category": "curriculum",
-          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
-          "similarity_score": 0.4375550150871277,
-          "rerank_score": 0.5175550150871276
+          "chunk_id": "src_070_chunk_001",
+          "source_id": "src_070",
+          "category": "programming",
+          "title": "EECS Majors: Choosing your first computer science course",
+          "similarity_score": 0.48589181900024414,
+          "rerank_score": 0.5658918190002441
         },
         {
           "rank": 3,
-          "chunk_id": "src_003_chunk_002",
-          "source_id": "src_003",
-          "category": "curriculum",
-          "title": "Curriculum | MF-Bilgisayar Mühendisliği (İngilizce)",
-          "similarity_score": 0.43579423427581787,
-          "rerank_score": 0.5157942342758178
+          "chunk_id": "src_087_chunk_001",
+          "source_id": "src_087",
+          "category": "future_technologies",
+          "title": "Octoverse 2024: AI leads Python to top language as the number of global developers surges",
+          "similarity_score": 0.5320730209350586,
+          "rerank_score": 0.5520730209350586
         },
         {
           "rank": 4,
-          "chunk_id": "src_051_chunk_002",
-          "source_id": "src_051",
-          "category": "skills_and_technologies",
-          "title": "State of Developer Ecosystem Report 2024",
-          "similarity_score": 0.3943357467651367,
-          "rerank_score": 0.49433574676513675
+          "chunk_id": "src_067_chunk_019",
+          "source_id": "src_067",
+          "category": "curriculum",
+          "title": "Computer Engineering Curricula 2016",
+          "similarity_score": 0.45080190896987915,
+          "rerank_score": 0.5308019089698791
         },
         {
           "rank": 5,
-          "chunk_id": "src_045_chunk_087",
-          "source_id": "src_045",
-          "category": "skills_and_technologies",
-          "title": "Skills for the digital age",
-          "similarity_score": 0.4086783528327942,
-          "rerank_score": 0.4886783528327942
+          "chunk_id": "src_067_chunk_155",
+          "source_id": "src_067",
+          "category": "curriculum",
+          "title": "Computer Engineering Curricula 2016",
+          "similarity_score": 0.45007258653640747,
+          "rerank_score": 0.5300725865364074
         }
       ]
     },
@@ -273,53 +273,53 @@
       "label": "Highly relevant",
       "evidence_sufficient": true,
       "out_of_scope": false,
-      "top_similarity_score": 0.4661726951599121,
+      "top_similarity_score": 0.7262049913406372,
       "results_above_threshold": 5,
       "top_results": [
         {
           "rank": 1,
-          "chunk_id": "src_004_chunk_004",
-          "source_id": "src_004",
+          "chunk_id": "src_067_chunk_070",
+          "source_id": "src_067",
           "category": "curriculum",
-          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
-          "similarity_score": 0.4661726951599121,
-          "rerank_score": 0.6161726951599121
+          "title": "Computer Engineering Curricula 2016",
+          "similarity_score": 0.7262049913406372,
+          "rerank_score": 0.8062049913406372
         },
         {
           "rank": 2,
-          "chunk_id": "src_039_chunk_004",
-          "source_id": "src_039",
-          "category": "programming",
-          "title": "Which Introductory Course Should I Take?",
-          "similarity_score": 0.47627580165863037,
-          "rerank_score": 0.5762758016586303
+          "chunk_id": "src_092_chunk_001",
+          "source_id": "src_092",
+          "category": "mathematics",
+          "title": "Mathematics for Machine Learning and Data Science Specialization",
+          "similarity_score": 0.6238391399383545,
+          "rerank_score": 0.7038391399383545
         },
         {
           "rank": 3,
-          "chunk_id": "src_004_chunk_001",
-          "source_id": "src_004",
+          "chunk_id": "src_067_chunk_033",
+          "source_id": "src_067",
           "category": "curriculum",
-          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
-          "similarity_score": 0.42149102687835693,
-          "rerank_score": 0.571491026878357
+          "title": "Computer Engineering Curricula 2016",
+          "similarity_score": 0.6222297549247742,
+          "rerank_score": 0.7022297549247741
         },
         {
           "rank": 4,
-          "chunk_id": "src_003_chunk_002",
-          "source_id": "src_003",
+          "chunk_id": "src_067_chunk_019",
+          "source_id": "src_067",
           "category": "curriculum",
-          "title": "Curriculum | MF-Bilgisayar Mühendisliği (İngilizce)",
-          "similarity_score": 0.3975166082382202,
-          "rerank_score": 0.5475166082382202
+          "title": "Computer Engineering Curricula 2016",
+          "similarity_score": 0.5788419842720032,
+          "rerank_score": 0.6588419842720031
         },
         {
           "rank": 5,
-          "chunk_id": "src_004_chunk_007",
-          "source_id": "src_004",
-          "category": "curriculum",
-          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
-          "similarity_score": 0.37141525745391846,
-          "rerank_score": 0.5214152574539185
+          "chunk_id": "src_070_chunk_001",
+          "source_id": "src_070",
+          "category": "programming",
+          "title": "EECS Majors: Choosing your first computer science course",
+          "similarity_score": 0.5351749658584595,
+          "rerank_score": 0.6351749658584595
         }
       ]
     },
@@ -351,12 +351,12 @@
         },
         {
           "rank": 2,
-          "chunk_id": "src_017_chunk_097",
-          "source_id": "src_017",
-          "category": "future_technologies",
-          "title": "The Future of Jobs Report 2025",
-          "similarity_score": 0.41968995332717896,
-          "rerank_score": 0.49968995332717897
+          "chunk_id": "src_086_chunk_001",
+          "source_id": "src_086",
+          "category": "career_opportunities",
+          "title": "Data Scientists",
+          "similarity_score": 0.4647454023361206,
+          "rerank_score": 0.5447454023361206
         },
         {
           "rank": 3,
@@ -364,26 +364,26 @@
           "source_id": "src_017",
           "category": "future_technologies",
           "title": "The Future of Jobs Report 2025",
-          "similarity_score": 0.41782301664352417,
-          "rerank_score": 0.4978230166435242
+          "similarity_score": 0.43257832527160645,
+          "rerank_score": 0.5125783252716064
         },
         {
           "rank": 4,
-          "chunk_id": "src_016_chunk_013",
-          "source_id": "src_016",
-          "category": "skills_and_technologies",
-          "title": "2024 State of Tech Talent Report",
-          "similarity_score": 0.4164954423904419,
-          "rerank_score": 0.4964954423904419
+          "chunk_id": "src_042_chunk_001",
+          "source_id": "src_042",
+          "category": "common_misconceptions",
+          "title": "Curricular Guidance",
+          "similarity_score": 0.5048547983169556,
+          "rerank_score": 0.5048547983169556
         },
         {
           "rank": 5,
-          "chunk_id": "src_017_chunk_119",
+          "chunk_id": "src_017_chunk_097",
           "source_id": "src_017",
           "category": "future_technologies",
           "title": "The Future of Jobs Report 2025",
-          "similarity_score": 0.4116728901863098,
-          "rerank_score": 0.49167289018630983
+          "similarity_score": 0.41968995332717896,
+          "rerank_score": 0.49968995332717897
         }
       ]
     },
@@ -423,30 +423,30 @@
         },
         {
           "rank": 3,
+          "chunk_id": "src_086_chunk_001",
+          "source_id": "src_086",
+          "category": "career_opportunities",
+          "title": "Data Scientists",
+          "similarity_score": 0.46754002571105957,
+          "rerank_score": 0.5475400257110595
+        },
+        {
+          "rank": 4,
+          "chunk_id": "src_067_chunk_034",
+          "source_id": "src_067",
+          "category": "curriculum",
+          "title": "Computer Engineering Curricula 2016",
+          "similarity_score": 0.6254934668540955,
+          "rerank_score": 0.5454934668540955
+        },
+        {
+          "rank": 5,
           "chunk_id": "src_017_chunk_099",
           "source_id": "src_017",
           "category": "future_technologies",
           "title": "The Future of Jobs Report 2025",
           "similarity_score": 0.4552077054977417,
           "rerank_score": 0.5352077054977417
-        },
-        {
-          "rank": 4,
-          "chunk_id": "src_017_chunk_098",
-          "source_id": "src_017",
-          "category": "future_technologies",
-          "title": "The Future of Jobs Report 2025",
-          "similarity_score": 0.4405360221862793,
-          "rerank_score": 0.5205360221862793
-        },
-        {
-          "rank": 5,
-          "chunk_id": "src_045_chunk_087",
-          "source_id": "src_045",
-          "category": "skills_and_technologies",
-          "title": "Skills for the digital age",
-          "similarity_score": 0.39488136768341064,
-          "rerank_score": 0.47488136768341066
         }
       ]
     },
@@ -477,6 +477,15 @@
         },
         {
           "rank": 2,
+          "chunk_id": "src_093_chunk_001",
+          "source_id": "src_093",
+          "category": "artificial_intelligence",
+          "title": "Computing Machinery and Intelligence",
+          "similarity_score": 0.5814394950866699,
+          "rerank_score": 0.6614394950866699
+        },
+        {
+          "rank": 3,
           "chunk_id": "src_017_chunk_102",
           "source_id": "src_017",
           "category": "future_technologies",
@@ -485,7 +494,7 @@
           "rerank_score": 0.6541332960128784
         },
         {
-          "rank": 3,
+          "rank": 4,
           "chunk_id": "src_053_chunk_001",
           "source_id": "src_053",
           "category": "artificial_intelligence",
@@ -494,22 +503,13 @@
           "rerank_score": 0.6522944927215576
         },
         {
-          "rank": 4,
+          "rank": 5,
           "chunk_id": "src_017_chunk_099",
           "source_id": "src_017",
           "category": "future_technologies",
           "title": "The Future of Jobs Report 2025",
           "similarity_score": 0.548869252204895,
           "rerank_score": 0.648869252204895
-        },
-        {
-          "rank": 5,
-          "chunk_id": "src_045_chunk_094",
-          "source_id": "src_045",
-          "category": "skills_and_technologies",
-          "title": "Skills for the digital age",
-          "similarity_score": 0.5370330214500427,
-          "rerank_score": 0.6170330214500427
         }
       ]
     },
@@ -527,53 +527,53 @@
       "label": "Highly relevant",
       "evidence_sufficient": true,
       "out_of_scope": false,
-      "top_similarity_score": 0.4567452073097229,
+      "top_similarity_score": 0.6457151770591736,
       "results_above_threshold": 5,
       "top_results": [
         {
           "rank": 1,
+          "chunk_id": "src_094_chunk_001",
+          "source_id": "src_094",
+          "category": "cybersecurity",
+          "title": "Cyber Career Pathways Tool",
+          "similarity_score": 0.6457151770591736,
+          "rerank_score": 0.7457151770591736
+        },
+        {
+          "rank": 2,
+          "chunk_id": "src_085_chunk_001",
+          "source_id": "src_085",
+          "category": "cybersecurity",
+          "title": "Cybersecurity Curricular Guidelines CSEC 2017",
+          "similarity_score": 0.6008301973342896,
+          "rerank_score": 0.7008301973342895
+        },
+        {
+          "rank": 3,
+          "chunk_id": "src_017_chunk_092",
+          "source_id": "src_017",
+          "category": "future_technologies",
+          "title": "The Future of Jobs Report 2025",
+          "similarity_score": 0.5629790425300598,
+          "rerank_score": 0.6429790425300598
+        },
+        {
+          "rank": 4,
+          "chunk_id": "src_068_chunk_001",
+          "source_id": "src_068",
+          "category": "cybersecurity",
+          "title": "Workforce Framework for Cybersecurity (NICE Framework)",
+          "similarity_score": 0.4999666213989258,
+          "rerank_score": 0.5999666213989258
+        },
+        {
+          "rank": 5,
           "chunk_id": "src_017_chunk_119",
           "source_id": "src_017",
           "category": "future_technologies",
           "title": "The Future of Jobs Report 2025",
-          "similarity_score": 0.4567452073097229,
-          "rerank_score": 0.5367452073097229
-        },
-        {
-          "rank": 2,
-          "chunk_id": "src_045_chunk_093",
-          "source_id": "src_045",
-          "category": "skills_and_technologies",
-          "title": "Skills for the digital age",
-          "similarity_score": 0.4521854519844055,
-          "rerank_score": 0.5321854519844055
-        },
-        {
-          "rank": 3,
-          "chunk_id": "src_014_chunk_001",
-          "source_id": "src_014",
-          "category": "skills_and_technologies",
-          "title": "Computer Hardware Engineers: 17-2061.00",
-          "similarity_score": 0.44335615634918213,
-          "rerank_score": 0.5233561563491821
-        },
-        {
-          "rank": 4,
-          "chunk_id": "src_017_chunk_098",
-          "source_id": "src_017",
-          "category": "future_technologies",
-          "title": "The Future of Jobs Report 2025",
-          "similarity_score": 0.4366253614425659,
-          "rerank_score": 0.5166253614425659
-        },
-        {
-          "rank": 5,
-          "chunk_id": "src_014_chunk_008",
-          "source_id": "src_014",
-          "category": "skills_and_technologies",
-          "title": "Computer Hardware Engineers: 17-2061.00",
-          "similarity_score": 0.4227863550186157,
-          "rerank_score": 0.5027863550186157
+          "similarity_score": 0.5171427130699158,
+          "rerank_score": 0.5971427130699157
         }
       ]
     },
@@ -591,53 +591,53 @@
       "label": "Highly relevant",
       "evidence_sufficient": true,
       "out_of_scope": false,
-      "top_similarity_score": 0.47101926803588867,
+      "top_similarity_score": 0.7456123232841492,
       "results_above_threshold": 5,
       "top_results": [
         {
           "rank": 1,
-          "chunk_id": "src_017_chunk_043",
-          "source_id": "src_017",
-          "category": "future_technologies",
-          "title": "The Future of Jobs Report 2025",
-          "similarity_score": 0.47101926803588867,
-          "rerank_score": 0.5510192680358886
+          "chunk_id": "src_094_chunk_001",
+          "source_id": "src_094",
+          "category": "cybersecurity",
+          "title": "Cyber Career Pathways Tool",
+          "similarity_score": 0.7456123232841492,
+          "rerank_score": 0.8456123232841491
         },
         {
           "rank": 2,
-          "chunk_id": "src_017_chunk_005",
-          "source_id": "src_017",
-          "category": "future_technologies",
-          "title": "The Future of Jobs Report 2025",
-          "similarity_score": 0.4424436688423157,
-          "rerank_score": 0.5224436688423156
+          "chunk_id": "src_085_chunk_001",
+          "source_id": "src_085",
+          "category": "cybersecurity",
+          "title": "Cybersecurity Curricular Guidelines CSEC 2017",
+          "similarity_score": 0.6851259469985962,
+          "rerank_score": 0.7851259469985962
         },
         {
           "rank": 3,
-          "chunk_id": "src_017_chunk_023",
+          "chunk_id": "src_017_chunk_092",
           "source_id": "src_017",
           "category": "future_technologies",
           "title": "The Future of Jobs Report 2025",
-          "similarity_score": 0.4407942295074463,
-          "rerank_score": 0.5207942295074462
+          "similarity_score": 0.5616568326950073,
+          "rerank_score": 0.6416568326950073
         },
         {
           "rank": 4,
-          "chunk_id": "src_045_chunk_192",
-          "source_id": "src_045",
-          "category": "skills_and_technologies",
-          "title": "Skills for the digital age",
-          "similarity_score": 0.42209547758102417,
-          "rerank_score": 0.5020954775810241
+          "chunk_id": "src_068_chunk_001",
+          "source_id": "src_068",
+          "category": "cybersecurity",
+          "title": "Workforce Framework for Cybersecurity (NICE Framework)",
+          "similarity_score": 0.532360851764679,
+          "rerank_score": 0.6323608517646789
         },
         {
           "rank": 5,
-          "chunk_id": "src_014_chunk_001",
-          "source_id": "src_014",
-          "category": "skills_and_technologies",
-          "title": "Computer Hardware Engineers: 17-2061.00",
-          "similarity_score": 0.411467969417572,
-          "rerank_score": 0.49146796941757204
+          "chunk_id": "src_069_chunk_019",
+          "source_id": "src_069",
+          "category": "specializations",
+          "title": "Computing Competencies for Undergraduate Data Science Curricula",
+          "similarity_score": 0.5501995086669922,
+          "rerank_score": 0.6301995086669921
         }
       ]
     },
@@ -668,39 +668,39 @@
         },
         {
           "rank": 2,
+          "chunk_id": "src_067_chunk_048",
+          "source_id": "src_067",
+          "category": "curriculum",
+          "title": "Computer Engineering Curricula 2016",
+          "similarity_score": 0.5167651176452637,
+          "rerank_score": 0.5967651176452636
+        },
+        {
+          "rank": 3,
+          "chunk_id": "src_067_chunk_051",
+          "source_id": "src_067",
+          "category": "curriculum",
+          "title": "Computer Engineering Curricula 2016",
+          "similarity_score": 0.5002130270004272,
+          "rerank_score": 0.5802130270004272
+        },
+        {
+          "rank": 4,
+          "chunk_id": "src_067_chunk_069",
+          "source_id": "src_067",
+          "category": "curriculum",
+          "title": "Computer Engineering Curricula 2016",
+          "similarity_score": 0.49041813611984253,
+          "rerank_score": 0.5704181361198425
+        },
+        {
+          "rank": 5,
           "chunk_id": "src_004_chunk_008",
           "source_id": "src_004",
           "category": "curriculum",
           "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
           "similarity_score": 0.45075690746307373,
           "rerank_score": 0.5307569074630737
-        },
-        {
-          "rank": 3,
-          "chunk_id": "src_004_chunk_007",
-          "source_id": "src_004",
-          "category": "curriculum",
-          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
-          "similarity_score": 0.3950306177139282,
-          "rerank_score": 0.47503061771392824
-        },
-        {
-          "rank": 4,
-          "chunk_id": "src_037_chunk_001",
-          "source_id": "src_037",
-          "category": "internships",
-          "title": "Intern Hiring Is Stable for 2024",
-          "similarity_score": 0.39353108406066895,
-          "rerank_score": 0.47353108406066896
-        },
-        {
-          "rank": 5,
-          "chunk_id": "src_036_chunk_005",
-          "source_id": "src_036",
-          "category": "employment",
-          "title": "Resumes",
-          "similarity_score": 0.37562596797943115,
-          "rerank_score": 0.45562596797943117
         }
       ]
     },
@@ -717,53 +717,53 @@
       "label": "Highly relevant",
       "evidence_sufficient": true,
       "out_of_scope": false,
-      "top_similarity_score": 0.500313401222229,
+      "top_similarity_score": 0.6761234998703003,
       "results_above_threshold": 5,
       "top_results": [
         {
           "rank": 1,
-          "chunk_id": "src_045_chunk_087",
-          "source_id": "src_045",
-          "category": "skills_and_technologies",
-          "title": "Skills for the digital age",
-          "similarity_score": 0.500313401222229,
-          "rerank_score": 0.500313401222229
+          "chunk_id": "src_067_chunk_046",
+          "source_id": "src_067",
+          "category": "curriculum",
+          "title": "Computer Engineering Curricula 2016",
+          "similarity_score": 0.6761234998703003,
+          "rerank_score": 0.6761234998703003
         },
         {
           "rank": 2,
-          "chunk_id": "src_041_chunk_001",
-          "source_id": "src_041",
-          "category": "common_misconceptions",
-          "title": "Engagement Practices Framework: Address Misconceptions About the Field of CS",
-          "similarity_score": 0.49869048595428467,
-          "rerank_score": 0.49869048595428467
+          "chunk_id": "src_067_chunk_010",
+          "source_id": "src_067",
+          "category": "curriculum",
+          "title": "Computer Engineering Curricula 2016",
+          "similarity_score": 0.6246529817581177,
+          "rerank_score": 0.6246529817581177
         },
         {
           "rank": 3,
-          "chunk_id": "src_004_chunk_007",
-          "source_id": "src_004",
+          "chunk_id": "src_067_chunk_012",
+          "source_id": "src_067",
           "category": "curriculum",
-          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
-          "similarity_score": 0.49745792150497437,
-          "rerank_score": 0.49745792150497437
+          "title": "Computer Engineering Curricula 2016",
+          "similarity_score": 0.6215770244598389,
+          "rerank_score": 0.6215770244598389
         },
         {
           "rank": 4,
-          "chunk_id": "src_016_chunk_013",
-          "source_id": "src_016",
-          "category": "skills_and_technologies",
-          "title": "2024 State of Tech Talent Report",
-          "similarity_score": 0.4954238533973694,
-          "rerank_score": 0.4954238533973694
+          "chunk_id": "src_067_chunk_067",
+          "source_id": "src_067",
+          "category": "curriculum",
+          "title": "Computer Engineering Curricula 2016",
+          "similarity_score": 0.6056533455848694,
+          "rerank_score": 0.6056533455848694
         },
         {
           "rank": 5,
-          "chunk_id": "src_017_chunk_045",
-          "source_id": "src_017",
-          "category": "future_technologies",
-          "title": "The Future of Jobs Report 2025",
-          "similarity_score": 0.46284598112106323,
-          "rerank_score": 0.46284598112106323
+          "chunk_id": "src_067_chunk_051",
+          "source_id": "src_067",
+          "category": "curriculum",
+          "title": "Computer Engineering Curricula 2016",
+          "similarity_score": 0.6034700870513916,
+          "rerank_score": 0.6034700870513916
         }
       ]
     },
@@ -777,47 +777,47 @@
         "career_opportunities",
         "employment"
       ],
-      "label": "Relevant",
+      "label": "Highly relevant",
       "evidence_sufficient": true,
       "out_of_scope": false,
-      "top_similarity_score": 0.30889052152633667,
+      "top_similarity_score": 0.5875825881958008,
       "results_above_threshold": 5,
       "top_results": [
         {
           "rank": 1,
-          "chunk_id": "src_044_chunk_002",
-          "source_id": "src_044",
+          "chunk_id": "src_088_chunk_001",
+          "source_id": "src_088",
           "category": "graduate_studies",
-          "title": "Prepare for graduate & professional school",
-          "similarity_score": 0.30889052152633667,
-          "rerank_score": 0.3888905215263367
+          "title": "Program Syllabus: Computer Engineering English Thesis Master's Degree Program",
+          "similarity_score": 0.5875825881958008,
+          "rerank_score": 0.6675825881958007
         },
         {
           "rank": 2,
-          "chunk_id": "src_001_chunk_001",
-          "source_id": "src_001",
-          "category": "department_information",
-          "title": "About the Department | MF-Bilgisayar Mühendisliği (İngilizce)",
-          "similarity_score": 0.3875269889831543,
-          "rerank_score": 0.3875269889831543
+          "chunk_id": "src_086_chunk_001",
+          "source_id": "src_086",
+          "category": "career_opportunities",
+          "title": "Data Scientists",
+          "similarity_score": 0.5367656350135803,
+          "rerank_score": 0.6167656350135803
         },
         {
           "rank": 3,
-          "chunk_id": "src_014_chunk_001",
-          "source_id": "src_014",
-          "category": "skills_and_technologies",
-          "title": "Computer Hardware Engineers: 17-2061.00",
-          "similarity_score": 0.38408195972442627,
-          "rerank_score": 0.38408195972442627
+          "chunk_id": "src_053_chunk_001",
+          "source_id": "src_053",
+          "category": "artificial_intelligence",
+          "title": "How Gen AI Affects the Value of Development Work",
+          "similarity_score": 0.4936347007751465,
+          "rerank_score": 0.5936347007751465
         },
         {
           "rank": 4,
-          "chunk_id": "src_031_chunk_098",
-          "source_id": "src_031",
-          "category": "skills_and_technologies",
-          "title": "A Skills-First Labour Market",
-          "similarity_score": 0.3736525774002075,
-          "rerank_score": 0.3736525774002075
+          "chunk_id": "src_075_chunk_001",
+          "source_id": "src_075",
+          "category": "artificial_intelligence",
+          "title": "Education | The 2025 AI Index Report",
+          "similarity_score": 0.4801182746887207,
+          "rerank_score": 0.5801182746887207
         },
         {
           "rank": 5,
@@ -825,8 +825,8 @@
           "source_id": "src_016",
           "category": "skills_and_technologies",
           "title": "2024 State of Tech Talent Report",
-          "similarity_score": 0.35777270793914795,
-          "rerank_score": 0.35777270793914795
+          "similarity_score": 0.47529661655426025,
+          "rerank_score": 0.5552966165542602
         }
       ]
     },
@@ -843,53 +843,53 @@
       "label": "Highly relevant",
       "evidence_sufficient": true,
       "out_of_scope": false,
-      "top_similarity_score": 0.49542200565338135,
+      "top_similarity_score": 0.6994616389274597,
       "results_above_threshold": 5,
       "top_results": [
         {
           "rank": 1,
-          "chunk_id": "src_014_chunk_001",
-          "source_id": "src_014",
-          "category": "skills_and_technologies",
-          "title": "Computer Hardware Engineers: 17-2061.00",
-          "similarity_score": 0.49542200565338135,
-          "rerank_score": 0.49542200565338135
+          "chunk_id": "src_067_chunk_066",
+          "source_id": "src_067",
+          "category": "curriculum",
+          "title": "Computer Engineering Curricula 2016",
+          "similarity_score": 0.6994616389274597,
+          "rerank_score": 0.7794616389274597
         },
         {
           "rank": 2,
-          "chunk_id": "src_016_chunk_013",
-          "source_id": "src_016",
-          "category": "skills_and_technologies",
-          "title": "2024 State of Tech Talent Report",
-          "similarity_score": 0.48066842555999756,
-          "rerank_score": 0.48066842555999756
+          "chunk_id": "src_067_chunk_019",
+          "source_id": "src_067",
+          "category": "curriculum",
+          "title": "Computer Engineering Curricula 2016",
+          "similarity_score": 0.6253663301467896,
+          "rerank_score": 0.7053663301467895
         },
         {
           "rank": 3,
-          "chunk_id": "src_003_chunk_002",
-          "source_id": "src_003",
+          "chunk_id": "src_067_chunk_017",
+          "source_id": "src_067",
           "category": "curriculum",
-          "title": "Curriculum | MF-Bilgisayar Mühendisliği (İngilizce)",
-          "similarity_score": 0.46406543254852295,
-          "rerank_score": 0.46406543254852295
+          "title": "Computer Engineering Curricula 2016",
+          "similarity_score": 0.6150194406509399,
+          "rerank_score": 0.6950194406509399
         },
         {
           "rank": 4,
-          "chunk_id": "src_045_chunk_121",
-          "source_id": "src_045",
-          "category": "skills_and_technologies",
-          "title": "Skills for the digital age",
-          "similarity_score": 0.4600541591644287,
-          "rerank_score": 0.4600541591644287
+          "chunk_id": "src_043_chunk_001",
+          "source_id": "src_043",
+          "category": "specializations",
+          "title": "Subdisciplines",
+          "similarity_score": 0.5691048502922058,
+          "rerank_score": 0.6691048502922058
         },
         {
           "rank": 5,
-          "chunk_id": "src_045_chunk_087",
-          "source_id": "src_045",
-          "category": "skills_and_technologies",
-          "title": "Skills for the digital age",
-          "similarity_score": 0.4553478956222534,
-          "rerank_score": 0.4553478956222534
+          "chunk_id": "src_042_chunk_001",
+          "source_id": "src_042",
+          "category": "common_misconceptions",
+          "title": "Curricular Guidance",
+          "similarity_score": 0.5242576003074646,
+          "rerank_score": 0.6042576003074646
         }
       ]
     },
@@ -916,25 +916,25 @@
           "category": "future_technologies",
           "title": "The Future of Jobs Report 2025",
           "similarity_score": 0.5030397772789001,
-          "rerank_score": 0.5030397772789001
+          "rerank_score": 0.6030397772789001
         },
         {
           "rank": 2,
+          "chunk_id": "src_080_chunk_001",
+          "source_id": "src_080",
+          "category": "common_misconceptions",
+          "title": "Computing Curricula 2020: Paradigms for Global Computing Education",
+          "similarity_score": 0.5804688930511475,
+          "rerank_score": 0.5804688930511475
+        },
+        {
+          "rank": 3,
           "chunk_id": "src_017_chunk_097",
           "source_id": "src_017",
           "category": "future_technologies",
           "title": "The Future of Jobs Report 2025",
           "similarity_score": 0.48017460107803345,
-          "rerank_score": 0.48017460107803345
-        },
-        {
-          "rank": 3,
-          "chunk_id": "src_016_chunk_013",
-          "source_id": "src_016",
-          "category": "skills_and_technologies",
-          "title": "2024 State of Tech Talent Report",
-          "similarity_score": 0.4789009690284729,
-          "rerank_score": 0.4789009690284729
+          "rerank_score": 0.5801746010780334
         },
         {
           "rank": 4,
@@ -943,16 +943,16 @@
           "category": "future_technologies",
           "title": "The Future of Jobs Report 2025",
           "similarity_score": 0.47881144285202026,
-          "rerank_score": 0.47881144285202026
+          "rerank_score": 0.5788114428520202
         },
         {
           "rank": 5,
-          "chunk_id": "src_001_chunk_001",
-          "source_id": "src_001",
-          "category": "department_information",
-          "title": "About the Department | MF-Bilgisayar Mühendisliği (İngilizce)",
-          "similarity_score": 0.4747087359428406,
-          "rerank_score": 0.4747087359428406
+          "chunk_id": "src_067_chunk_006",
+          "source_id": "src_067",
+          "category": "curriculum",
+          "title": "Computer Engineering Curricula 2016",
+          "similarity_score": 0.6543283462524414,
+          "rerank_score": 0.5743283462524414
         }
       ]
     },
@@ -968,53 +968,53 @@
       "label": "Relevant",
       "evidence_sufficient": true,
       "out_of_scope": false,
-      "top_similarity_score": 0.4047946333885193,
+      "top_similarity_score": 0.43310821056365967,
       "results_above_threshold": 5,
       "top_results": [
         {
           "rank": 1,
-          "chunk_id": "src_014_chunk_001",
-          "source_id": "src_014",
-          "category": "skills_and_technologies",
-          "title": "Computer Hardware Engineers: 17-2061.00",
-          "similarity_score": 0.4047946333885193,
-          "rerank_score": 0.4047946333885193
-        },
-        {
-          "rank": 2,
-          "chunk_id": "src_049_chunk_002",
+          "chunk_id": "src_049_chunk_001",
           "source_id": "src_049",
           "category": "remote_work",
           "title": "Work | 2024 Stack Overflow Developer Survey",
-          "similarity_score": 0.30095160007476807,
-          "rerank_score": 0.3809516000747681
+          "similarity_score": 0.43310821056365967,
+          "rerank_score": 0.5131082105636596
+        },
+        {
+          "rank": 2,
+          "chunk_id": "src_050_chunk_001",
+          "source_id": "src_050",
+          "category": "work_life_balance",
+          "title": "Professional Developers | 2024 Stack Overflow Developer Survey",
+          "similarity_score": 0.44403207302093506,
+          "rerank_score": 0.44403207302093506
         },
         {
           "rank": 3,
-          "chunk_id": "src_045_chunk_093",
-          "source_id": "src_045",
-          "category": "skills_and_technologies",
-          "title": "Skills for the digital age",
-          "similarity_score": 0.3805476427078247,
-          "rerank_score": 0.3805476427078247
-        },
-        {
-          "rank": 4,
           "chunk_id": "src_017_chunk_098",
           "source_id": "src_017",
           "category": "future_technologies",
           "title": "The Future of Jobs Report 2025",
-          "similarity_score": 0.37243950366973877,
-          "rerank_score": 0.37243950366973877
+          "similarity_score": 0.43811190128326416,
+          "rerank_score": 0.43811190128326416
+        },
+        {
+          "rank": 4,
+          "chunk_id": "src_049_chunk_002",
+          "source_id": "src_049",
+          "category": "remote_work",
+          "title": "Work | 2024 Stack Overflow Developer Survey",
+          "similarity_score": 0.34800779819488525,
+          "rerank_score": 0.42800779819488527
         },
         {
           "rank": 5,
-          "chunk_id": "src_014_chunk_008",
-          "source_id": "src_014",
-          "category": "skills_and_technologies",
-          "title": "Computer Hardware Engineers: 17-2061.00",
-          "similarity_score": 0.36878013610839844,
-          "rerank_score": 0.36878013610839844
+          "chunk_id": "src_017_chunk_180",
+          "source_id": "src_017",
+          "category": "future_technologies",
+          "title": "The Future of Jobs Report 2025",
+          "similarity_score": 0.42565858364105225,
+          "rerank_score": 0.42565858364105225
         }
       ]
     },
@@ -1062,21 +1062,21 @@
         },
         {
           "rank": 4,
-          "chunk_id": "src_014_chunk_001",
-          "source_id": "src_014",
-          "category": "skills_and_technologies",
-          "title": "Computer Hardware Engineers: 17-2061.00",
-          "similarity_score": 0.4077552556991577,
-          "rerank_score": 0.48775525569915773
-        },
-        {
-          "rank": 5,
           "chunk_id": "src_017_chunk_097",
           "source_id": "src_017",
           "category": "future_technologies",
           "title": "The Future of Jobs Report 2025",
           "similarity_score": 0.40337324142456055,
           "rerank_score": 0.48337324142456056
+        },
+        {
+          "rank": 5,
+          "chunk_id": "src_017_chunk_005",
+          "source_id": "src_017",
+          "category": "future_technologies",
+          "title": "The Future of Jobs Report 2025",
+          "similarity_score": 0.3802267909049988,
+          "rerank_score": 0.4602267909049988
         }
       ]
     },
@@ -1089,10 +1089,10 @@
         "work_life_balance",
         "employment"
       ],
-      "label": "Relevant",
+      "label": "Highly relevant",
       "evidence_sufficient": true,
       "out_of_scope": false,
-      "top_similarity_score": 0.515925943851471,
+      "top_similarity_score": 0.5010706186294556,
       "results_above_threshold": 5,
       "top_results": [
         {
@@ -1101,26 +1101,26 @@
           "source_id": "src_014",
           "category": "skills_and_technologies",
           "title": "Computer Hardware Engineers: 17-2061.00",
-          "similarity_score": 0.515925943851471,
-          "rerank_score": 0.5959259438514709
+          "similarity_score": 0.5010706186294556,
+          "rerank_score": 0.5810706186294555
         },
         {
           "rank": 2,
+          "chunk_id": "src_067_chunk_034",
+          "source_id": "src_067",
+          "category": "curriculum",
+          "title": "Computer Engineering Curricula 2016",
+          "similarity_score": 0.4571748375892639,
+          "rerank_score": 0.5371748375892639
+        },
+        {
+          "rank": 3,
           "chunk_id": "src_016_chunk_013",
           "source_id": "src_016",
           "category": "skills_and_technologies",
           "title": "2024 State of Tech Talent Report",
-          "similarity_score": 0.476898729801178,
-          "rerank_score": 0.5568987298011779
-        },
-        {
-          "rank": 3,
-          "chunk_id": "src_051_chunk_001",
-          "source_id": "src_051",
-          "category": "skills_and_technologies",
-          "title": "State of Developer Ecosystem Report 2024",
-          "similarity_score": 0.4424945116043091,
-          "rerank_score": 0.5424945116043091
+          "similarity_score": 0.4507543444633484,
+          "rerank_score": 0.5307543444633483
         },
         {
           "rank": 4,
@@ -1128,17 +1128,17 @@
           "source_id": "src_050",
           "category": "work_life_balance",
           "title": "Professional Developers | 2024 Stack Overflow Developer Survey",
-          "similarity_score": 0.4361388683319092,
-          "rerank_score": 0.5361388683319092
+          "similarity_score": 0.4287065267562866,
+          "rerank_score": 0.5287065267562866
         },
         {
           "rank": 5,
-          "chunk_id": "src_051_chunk_005",
-          "source_id": "src_051",
-          "category": "skills_and_technologies",
-          "title": "State of Developer Ecosystem Report 2024",
-          "similarity_score": 0.41112804412841797,
-          "rerank_score": 0.511128044128418
+          "chunk_id": "src_050_chunk_003",
+          "source_id": "src_050",
+          "category": "work_life_balance",
+          "title": "Professional Developers | 2024 Stack Overflow Developer Survey",
+          "similarity_score": 0.39916664361953735,
+          "rerank_score": 0.4991666436195374
         }
       ]
     },
@@ -1152,56 +1152,56 @@
         "curriculum",
         "mathematics"
       ],
-      "label": "Relevant",
+      "label": "Highly relevant",
       "evidence_sufficient": true,
       "out_of_scope": false,
-      "top_similarity_score": 0.3900355100631714,
+      "top_similarity_score": 0.5913876891136169,
       "results_above_threshold": 5,
       "top_results": [
         {
           "rank": 1,
-          "chunk_id": "src_004_chunk_004",
-          "source_id": "src_004",
+          "chunk_id": "src_067_chunk_070",
+          "source_id": "src_067",
           "category": "curriculum",
-          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
-          "similarity_score": 0.3900355100631714,
-          "rerank_score": 0.3900355100631714
+          "title": "Computer Engineering Curricula 2016",
+          "similarity_score": 0.5913876891136169,
+          "rerank_score": 0.5913876891136169
         },
         {
           "rank": 2,
-          "chunk_id": "src_004_chunk_001",
-          "source_id": "src_004",
+          "chunk_id": "src_067_chunk_033",
+          "source_id": "src_067",
           "category": "curriculum",
-          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
-          "similarity_score": 0.3852158188819885,
-          "rerank_score": 0.3852158188819885
+          "title": "Computer Engineering Curricula 2016",
+          "similarity_score": 0.5610886216163635,
+          "rerank_score": 0.5610886216163635
         },
         {
           "rank": 3,
-          "chunk_id": "src_003_chunk_002",
-          "source_id": "src_003",
-          "category": "curriculum",
-          "title": "Curriculum | MF-Bilgisayar Mühendisliği (İngilizce)",
-          "similarity_score": 0.37686657905578613,
-          "rerank_score": 0.37686657905578613
+          "chunk_id": "src_092_chunk_001",
+          "source_id": "src_092",
+          "category": "mathematics",
+          "title": "Mathematics for Machine Learning and Data Science Specialization",
+          "similarity_score": 0.5393637418746948,
+          "rerank_score": 0.5393637418746948
         },
         {
           "rank": 4,
-          "chunk_id": "src_039_chunk_004",
-          "source_id": "src_039",
-          "category": "programming",
-          "title": "Which Introductory Course Should I Take?",
-          "similarity_score": 0.3382583260536194,
-          "rerank_score": 0.3382583260536194
+          "chunk_id": "src_042_chunk_010",
+          "source_id": "src_042",
+          "category": "common_misconceptions",
+          "title": "Curricular Guidance",
+          "similarity_score": 0.5162393450737,
+          "rerank_score": 0.5162393450737
         },
         {
           "rank": 5,
-          "chunk_id": "src_045_chunk_087",
-          "source_id": "src_045",
-          "category": "skills_and_technologies",
-          "title": "Skills for the digital age",
-          "similarity_score": 0.3327024579048157,
-          "rerank_score": 0.3327024579048157
+          "chunk_id": "src_070_chunk_001",
+          "source_id": "src_070",
+          "category": "programming",
+          "title": "EECS Majors: Choosing your first computer science course",
+          "similarity_score": 0.493579626083374,
+          "rerank_score": 0.493579626083374
         }
       ]
     },
@@ -1216,56 +1216,56 @@
         "skills_and_technologies",
         "career_opportunities"
       ],
-      "label": "Relevant",
+      "label": "Highly relevant",
       "evidence_sufficient": true,
       "out_of_scope": false,
-      "top_similarity_score": 0.4138059616088867,
+      "top_similarity_score": 0.5330203175544739,
       "results_above_threshold": 5,
       "top_results": [
         {
           "rank": 1,
+          "chunk_id": "src_091_chunk_001",
+          "source_id": "src_091",
+          "category": "skills_and_technologies",
+          "title": "Career Readiness Competencies",
+          "similarity_score": 0.5330203175544739,
+          "rerank_score": 0.6330203175544739
+        },
+        {
+          "rank": 2,
           "chunk_id": "src_036_chunk_005",
           "source_id": "src_036",
           "category": "employment",
           "title": "Resumes",
-          "similarity_score": 0.4138059616088867,
-          "rerank_score": 0.49380596160888673
-        },
-        {
-          "rank": 2,
-          "chunk_id": "src_044_chunk_002",
-          "source_id": "src_044",
-          "category": "graduate_studies",
-          "title": "Prepare for graduate & professional school",
-          "similarity_score": 0.4607676863670349,
-          "rerank_score": 0.4607676863670349
+          "similarity_score": 0.44016480445861816,
+          "rerank_score": 0.5401648044586181
         },
         {
           "rank": 3,
-          "chunk_id": "src_039_chunk_005",
-          "source_id": "src_039",
-          "category": "programming",
-          "title": "Which Introductory Course Should I Take?",
-          "similarity_score": 0.37170982360839844,
-          "rerank_score": 0.45170982360839845
+          "chunk_id": "src_067_chunk_051",
+          "source_id": "src_067",
+          "category": "curriculum",
+          "title": "Computer Engineering Curricula 2016",
+          "similarity_score": 0.4553676247596741,
+          "rerank_score": 0.535367624759674
         },
         {
           "rank": 4,
-          "chunk_id": "src_039_chunk_002",
-          "source_id": "src_039",
-          "category": "programming",
-          "title": "Which Introductory Course Should I Take?",
-          "similarity_score": 0.3437719941139221,
-          "rerank_score": 0.42377199411392213
+          "chunk_id": "src_031_chunk_091",
+          "source_id": "src_031",
+          "category": "skills_and_technologies",
+          "title": "A Skills-First Labour Market",
+          "similarity_score": 0.41912633180618286,
+          "rerank_score": 0.5191263318061828
         },
         {
           "rank": 5,
-          "chunk_id": "src_039_chunk_001",
-          "source_id": "src_039",
-          "category": "programming",
-          "title": "Which Introductory Course Should I Take?",
-          "similarity_score": 0.3433370590209961,
-          "rerank_score": 0.4233370590209961
+          "chunk_id": "src_067_chunk_050",
+          "source_id": "src_067",
+          "category": "curriculum",
+          "title": "Computer Engineering Curricula 2016",
+          "similarity_score": 0.43815791606903076,
+          "rerank_score": 0.5181579160690307
         }
       ]
     },
@@ -1292,7 +1292,7 @@
         },
         {
           "rank": 2,
-          "chunk_id": "src_045_chunk_267",
+          "chunk_id": "src_045_chunk_266",
           "source_id": "src_045",
           "category": "skills_and_technologies",
           "title": "Skills for the digital age",
@@ -1301,7 +1301,7 @@
         },
         {
           "rank": 3,
-          "chunk_id": "src_045_chunk_269",
+          "chunk_id": "src_045_chunk_268",
           "source_id": "src_045",
           "category": "skills_and_technologies",
           "title": "Skills for the digital age",
@@ -1310,16 +1310,16 @@
         },
         {
           "rank": 4,
-          "chunk_id": "src_045_chunk_274",
+          "chunk_id": "src_045_chunk_273",
           "source_id": "src_045",
           "category": "skills_and_technologies",
           "title": "Skills for the digital age",
-          "similarity_score": 0.16492539644241333,
-          "rerank_score": 0.16492539644241333
+          "similarity_score": 0.16456878185272217,
+          "rerank_score": 0.16456878185272217
         },
         {
           "rank": 5,
-          "chunk_id": "src_045_chunk_284",
+          "chunk_id": "src_045_chunk_283",
           "source_id": "src_045",
           "category": "skills_and_technologies",
           "title": "Skills for the digital age",
@@ -1342,7 +1342,7 @@
       "top_results": [
         {
           "rank": 1,
-          "chunk_id": "src_045_chunk_287",
+          "chunk_id": "src_045_chunk_286",
           "source_id": "src_045",
           "category": "skills_and_technologies",
           "title": "Skills for the digital age",
@@ -1351,7 +1351,7 @@
         },
         {
           "rank": 2,
-          "chunk_id": "src_045_chunk_283",
+          "chunk_id": "src_045_chunk_282",
           "source_id": "src_045",
           "category": "skills_and_technologies",
           "title": "Skills for the digital age",
@@ -1360,7 +1360,7 @@
         },
         {
           "rank": 3,
-          "chunk_id": "src_045_chunk_289",
+          "chunk_id": "src_045_chunk_288",
           "source_id": "src_045",
           "category": "skills_and_technologies",
           "title": "Skills for the digital age",
@@ -1369,7 +1369,7 @@
         },
         {
           "rank": 4,
-          "chunk_id": "src_045_chunk_295",
+          "chunk_id": "src_045_chunk_294",
           "source_id": "src_045",
           "category": "skills_and_technologies",
           "title": "Skills for the digital age",
@@ -1378,7 +1378,7 @@
         },
         {
           "rank": 5,
-          "chunk_id": "src_045_chunk_259",
+          "chunk_id": "src_045_chunk_258",
           "source_id": "src_045",
           "category": "skills_and_technologies",
           "title": "Skills for the digital age",
@@ -1396,53 +1396,53 @@
       "label": "Correctly rejected",
       "evidence_sufficient": false,
       "out_of_scope": true,
-      "top_similarity_score": 0.10495448112487793,
+      "top_similarity_score": 0.16466468572616577,
       "results_above_threshold": 0,
       "top_results": [
         {
           "rank": 1,
-          "chunk_id": "src_017_chunk_174",
-          "source_id": "src_017",
-          "category": "future_technologies",
-          "title": "The Future of Jobs Report 2025",
-          "similarity_score": 0.10495448112487793,
-          "rerank_score": 0.10495448112487793
+          "chunk_id": "src_069_chunk_068",
+          "source_id": "src_069",
+          "category": "specializations",
+          "title": "Computing Competencies for Undergraduate Data Science Curricula",
+          "similarity_score": 0.16466468572616577,
+          "rerank_score": 0.16466468572616577
         },
         {
           "rank": 2,
-          "chunk_id": "src_051_chunk_008",
-          "source_id": "src_051",
-          "category": "skills_and_technologies",
-          "title": "State of Developer Ecosystem Report 2024",
-          "similarity_score": 0.10381108522415161,
-          "rerank_score": 0.10381108522415161
+          "chunk_id": "src_067_chunk_097",
+          "source_id": "src_067",
+          "category": "curriculum",
+          "title": "Computer Engineering Curricula 2016",
+          "similarity_score": 0.1371452808380127,
+          "rerank_score": 0.1371452808380127
         },
         {
           "rank": 3,
-          "chunk_id": "src_017_chunk_173",
-          "source_id": "src_017",
-          "category": "future_technologies",
-          "title": "The Future of Jobs Report 2025",
-          "similarity_score": 0.10096138715744019,
-          "rerank_score": 0.10096138715744019
+          "chunk_id": "src_067_chunk_090",
+          "source_id": "src_067",
+          "category": "curriculum",
+          "title": "Computer Engineering Curricula 2016",
+          "similarity_score": 0.13352465629577637,
+          "rerank_score": 0.13352465629577637
         },
         {
           "rank": 4,
-          "chunk_id": "src_017_chunk_048",
-          "source_id": "src_017",
-          "category": "future_technologies",
-          "title": "The Future of Jobs Report 2025",
-          "similarity_score": 0.09951871633529663,
-          "rerank_score": 0.09951871633529663
+          "chunk_id": "src_067_chunk_006",
+          "source_id": "src_067",
+          "category": "curriculum",
+          "title": "Computer Engineering Curricula 2016",
+          "similarity_score": 0.1310511827468872,
+          "rerank_score": 0.1310511827468872
         },
         {
           "rank": 5,
-          "chunk_id": "src_026_chunk_007",
-          "source_id": "src_026",
-          "category": "employment",
-          "title": "Turkey - Information and Communication Technology",
-          "similarity_score": 0.08883386850357056,
-          "rerank_score": 0.08883386850357056
+          "chunk_id": "src_069_chunk_041",
+          "source_id": "src_069",
+          "category": "specializations",
+          "title": "Computing Competencies for Undergraduate Data Science Curricula",
+          "similarity_score": 0.11489635705947876,
+          "rerank_score": 0.11489635705947876
         }
       ]
     }

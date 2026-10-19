@@ -1,0 +1,1271 @@
+{
+  "summary": {
+    "case_count": 25,
+    "status_counts": {
+      "insufficient_information": 3,
+      "out_of_scope": 10,
+      "answered": 11,
+      "error": 1
+    },
+    "error_cases": [
+      {
+        "id": "R097",
+        "question": "What should I include in my CV as a CENG student?",
+        "group": "career_employment",
+        "expected_topics": [
+          "cv",
+          "career"
+        ],
+        "expected_categories": [
+          "employment"
+        ],
+        "expected_behavior": "answer_or_gap",
+        "previous_question": null,
+        "query_kind": "standalone_domain_question",
+        "resolved_question": "What should I include in my CV as a ceng student?",
+        "understanding_ok": true,
+        "query_topics": [
+          "computer_engineering",
+          "cv"
+        ],
+        "retrieval_relevant": false,
+        "evidence_sufficient": true,
+        "retrieval_out_of_scope": false,
+        "top_similarity_score": 0.6389526128768921,
+        "answerability_gate_reason": null,
+        "failure_cause": "incorrect_semantic_retrieval",
+        "top_context": [
+          {
+            "source_id": "src_067",
+            "title": "Computer Engineering Curricula 2016",
+            "category": "curriculum",
+            "similarity_score": 0.6389526128768921
+          },
+          {
+            "source_id": "src_070",
+            "title": "EECS Majors: Choosing your first computer science course",
+            "category": "programming",
+            "similarity_score": 0.5203924179077148
+          },
+          {
+            "source_id": "src_001",
+            "title": "About the Department | MF-Bilgisayar Mühendisliği (İngilizce)",
+            "category": "department_information",
+            "similarity_score": 0.42934560775756836
+          }
+        ],
+        "status": "error",
+        "llm_called": true,
+        "answerability_decision": "allowed_or_bypassed",
+        "citation_valid": false,
+        "sources": [],
+        "answer_preview": "The local RAG pipeline could not complete the request safely.",
+        "error": "unsupported claim could not be matched to retrieved evidence",
+        "elapsed_seconds": 82.57
+      }
+    ]
+  },
+  "results": [
+    {
+      "id": "F010",
+      "question": "computer eng ne demek basically?",
+      "group": "fundamentals",
+      "expected_topics": [
+        "computer_engineering"
+      ],
+      "expected_categories": [
+        "department_information"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "computer engineering ne demek basically?",
+      "understanding_ok": true,
+      "query_topics": [
+        "computer_engineering"
+      ],
+      "retrieval_relevant": true,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.49070417881011963,
+      "answerability_gate_reason": "retrieved evidence has too little overlap with the question terms: ['basically', 'demek', 'ne']",
+      "failure_cause": "answerability_gate_possible_false_reject",
+      "top_context": [
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.49070417881011963
+        },
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.48448115587234497
+        },
+        {
+          "source_id": "src_043",
+          "title": "Subdisciplines",
+          "category": "specializations",
+          "similarity_score": 0.4753112196922302
+        }
+      ],
+      "status": "insufficient_information",
+      "llm_called": false,
+      "answerability_decision": "retrieved evidence has too little overlap with the question terms: ['basically', 'demek', 'ne']",
+      "citation_valid": true,
+      "sources": [],
+      "answer_preview": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+      "error": null,
+      "elapsed_seconds": 1.5
+    },
+    {
+      "id": "M036",
+      "question": "How theoretical is the degree compared with practical engineering?",
+      "group": "mathematics",
+      "expected_topics": [
+        "mathematics",
+        "curriculum"
+      ],
+      "expected_categories": [
+        "curriculum"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "out_of_scope_persona_meta",
+      "resolved_question": null,
+      "understanding_ok": false,
+      "query_topics": [],
+      "retrieval_relevant": false,
+      "evidence_sufficient": null,
+      "retrieval_out_of_scope": null,
+      "top_similarity_score": null,
+      "answerability_gate_reason": null,
+      "failure_cause": "query_misunderstanding",
+      "top_context": [],
+      "status": "out_of_scope",
+      "llm_called": false,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [],
+      "answer_preview": "I am a Computer Engineering student advisor. I can help with Computer Engineering education, curriculum, courses, skills, careers, internships, AI, cybersecurity, programming, and related study paths.",
+      "error": null,
+      "elapsed_seconds": 0.05
+    },
+    {
+      "id": "P042",
+      "question": "Do I need web development if I study CENG?",
+      "group": "programming_software",
+      "expected_topics": [
+        "software"
+      ],
+      "expected_categories": [
+        "software",
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "Do I need web development if I study ceng?",
+      "understanding_ok": true,
+      "query_topics": [
+        "computer_engineering",
+        "software"
+      ],
+      "retrieval_relevant": false,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.5039154291152954,
+      "answerability_gate_reason": null,
+      "failure_cause": "incorrect_semantic_retrieval",
+      "top_context": [
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.5039154291152954
+        },
+        {
+          "source_id": "src_070",
+          "title": "EECS Majors: Choosing your first computer science course",
+          "category": "programming",
+          "similarity_score": 0.4714575409889221
+        },
+        {
+          "source_id": "src_001",
+          "title": "About the Department | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "department_information",
+          "similarity_score": 0.42535555362701416
+        }
+      ],
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [
+        "src_067",
+        "src_070",
+        "src_001"
+      ],
+      "answer_preview": "Based on the information provided, studying Computer Engineering (CENG) does not specifically require web development skills. The curricula and career prospects for CENG graduates suggest a broad range of career sectors, including business, industry, government, and services, where computer engineering professionals apply their skills. While web development is a specific area within computer science, the curriculum for CENG majors at UC Berkeley does not mention web development as a required course for the first semester. Therefore, web development is not a prerequisite for studying CENG. [S1], [S2]",
+      "error": null,
+      "elapsed_seconds": 39.82
+    },
+    {
+      "id": "P047",
+      "question": "How do I become better at algorithms?",
+      "group": "programming_software",
+      "expected_topics": [
+        "programming"
+      ],
+      "expected_categories": [
+        "programming",
+        "curriculum"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "out_of_scope_persona_meta",
+      "resolved_question": null,
+      "understanding_ok": false,
+      "query_topics": [],
+      "retrieval_relevant": false,
+      "evidence_sufficient": null,
+      "retrieval_out_of_scope": null,
+      "top_similarity_score": null,
+      "answerability_gate_reason": null,
+      "failure_cause": "query_misunderstanding",
+      "top_context": [],
+      "status": "out_of_scope",
+      "llm_called": false,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [],
+      "answer_preview": "I am a Computer Engineering student advisor. I can help with Computer Engineering education, curriculum, courses, skills, careers, internships, AI, cybersecurity, programming, and related study paths.",
+      "error": null,
+      "elapsed_seconds": 0.01
+    },
+    {
+      "id": "P049",
+      "question": "git hub learn necessery?",
+      "group": "programming_software",
+      "expected_topics": [
+        "projects"
+      ],
+      "expected_categories": [
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "out_of_scope_persona_meta",
+      "resolved_question": null,
+      "understanding_ok": false,
+      "query_topics": [],
+      "retrieval_relevant": false,
+      "evidence_sufficient": null,
+      "retrieval_out_of_scope": null,
+      "top_similarity_score": null,
+      "answerability_gate_reason": null,
+      "failure_cause": "query_misunderstanding",
+      "top_context": [],
+      "status": "out_of_scope",
+      "llm_called": false,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [],
+      "answer_preview": "I am a Computer Engineering student advisor. I can help with Computer Engineering education, curriculum, courses, skills, careers, internships, AI, cybersecurity, programming, and related study paths.",
+      "error": null,
+      "elapsed_seconds": 0.01
+    },
+    {
+      "id": "P052",
+      "question": "frontend vs backend for ceng student?",
+      "group": "programming_software",
+      "expected_topics": [
+        "software",
+        "career"
+      ],
+      "expected_categories": [
+        "software",
+        "career_opportunities"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "frontend vs backend for ceng student?",
+      "understanding_ok": true,
+      "query_topics": [
+        "computer_engineering"
+      ],
+      "retrieval_relevant": false,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.5619924068450928,
+      "answerability_gate_reason": "retrieved evidence has too little overlap with the question terms: ['backend', 'frontend', 'vs']",
+      "failure_cause": "incorrect_semantic_retrieval",
+      "top_context": [
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.5619924068450928
+        },
+        {
+          "source_id": "src_064",
+          "title": "CENG 303 Operating Systems Design and Construction Course Syllabus",
+          "category": "curriculum",
+          "similarity_score": 0.49034708738327026
+        },
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.5471234321594238
+        }
+      ],
+      "status": "insufficient_information",
+      "llm_called": false,
+      "answerability_decision": "retrieved evidence has too little overlap with the question terms: ['backend', 'frontend', 'vs']",
+      "citation_valid": true,
+      "sources": [],
+      "answer_preview": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+      "error": null,
+      "elapsed_seconds": 0.09
+    },
+    {
+      "id": "P054",
+      "question": "Which is more useful first: SQL or React?",
+      "group": "programming_software",
+      "expected_topics": [
+        "software",
+        "skills"
+      ],
+      "expected_categories": [
+        "software",
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "out_of_scope_persona_meta",
+      "resolved_question": null,
+      "understanding_ok": false,
+      "query_topics": [],
+      "retrieval_relevant": false,
+      "evidence_sufficient": null,
+      "retrieval_out_of_scope": null,
+      "top_similarity_score": null,
+      "answerability_gate_reason": null,
+      "failure_cause": "query_misunderstanding",
+      "top_context": [],
+      "status": "out_of_scope",
+      "llm_called": false,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [],
+      "answer_preview": "I am a Computer Engineering student advisor. I can help with Computer Engineering education, curriculum, courses, skills, careers, internships, AI, cybersecurity, programming, and related study paths.",
+      "error": null,
+      "elapsed_seconds": 0.0
+    },
+    {
+      "id": "P055",
+      "question": "Should I learn testing and debugging?",
+      "group": "programming_software",
+      "expected_topics": [
+        "software",
+        "skills"
+      ],
+      "expected_categories": [
+        "software",
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "out_of_scope_persona_meta",
+      "resolved_question": null,
+      "understanding_ok": false,
+      "query_topics": [],
+      "retrieval_relevant": false,
+      "evidence_sufficient": null,
+      "retrieval_out_of_scope": null,
+      "top_similarity_score": null,
+      "answerability_gate_reason": null,
+      "failure_cause": "query_misunderstanding",
+      "top_context": [],
+      "status": "out_of_scope",
+      "llm_called": false,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [],
+      "answer_preview": "I am a Computer Engineering student advisor. I can help with Computer Engineering education, curriculum, courses, skills, careers, internships, AI, cybersecurity, programming, and related study paths.",
+      "error": null,
+      "elapsed_seconds": 0.01
+    },
+    {
+      "id": "P056",
+      "question": "How important is command line usage?",
+      "group": "programming_software",
+      "expected_topics": [
+        "operating_systems",
+        "skills"
+      ],
+      "expected_categories": [
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "out_of_scope_persona_meta",
+      "resolved_question": null,
+      "understanding_ok": false,
+      "query_topics": [],
+      "retrieval_relevant": false,
+      "evidence_sufficient": null,
+      "retrieval_out_of_scope": null,
+      "top_similarity_score": null,
+      "answerability_gate_reason": null,
+      "failure_cause": "query_misunderstanding",
+      "top_context": [],
+      "status": "out_of_scope",
+      "llm_called": false,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [],
+      "answer_preview": "I am a Computer Engineering student advisor. I can help with Computer Engineering education, curriculum, courses, skills, careers, internships, AI, cybersecurity, programming, and related study paths.",
+      "error": null,
+      "elapsed_seconds": 0.01
+    },
+    {
+      "id": "H060",
+      "question": "How important is computer architecture?",
+      "group": "hardware_networks",
+      "expected_topics": [
+        "hardware"
+      ],
+      "expected_categories": [
+        "curriculum",
+        "hardware"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "out_of_scope_persona_meta",
+      "resolved_question": null,
+      "understanding_ok": false,
+      "query_topics": [],
+      "retrieval_relevant": false,
+      "evidence_sufficient": null,
+      "retrieval_out_of_scope": null,
+      "top_similarity_score": null,
+      "answerability_gate_reason": null,
+      "failure_cause": "query_misunderstanding",
+      "top_context": [],
+      "status": "out_of_scope",
+      "llm_called": false,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [],
+      "answer_preview": "I am a Computer Engineering student advisor. I can help with Computer Engineering education, curriculum, courses, skills, careers, internships, AI, cybersecurity, programming, and related study paths.",
+      "error": null,
+      "elapsed_seconds": 0.01
+    },
+    {
+      "id": "H065",
+      "question": "Should I learn Arduino or FPGA first?",
+      "group": "hardware_networks",
+      "expected_topics": [
+        "hardware",
+        "projects"
+      ],
+      "expected_categories": [
+        "hardware",
+        "projects"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "out_of_scope_persona_meta",
+      "resolved_question": null,
+      "understanding_ok": false,
+      "query_topics": [],
+      "retrieval_relevant": false,
+      "evidence_sufficient": null,
+      "retrieval_out_of_scope": null,
+      "top_similarity_score": null,
+      "answerability_gate_reason": null,
+      "failure_cause": "query_misunderstanding",
+      "top_context": [],
+      "status": "out_of_scope",
+      "llm_called": false,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [],
+      "answer_preview": "I am a Computer Engineering student advisor. I can help with Computer Engineering education, curriculum, courses, skills, careers, internships, AI, cybersecurity, programming, and related study paths.",
+      "error": null,
+      "elapsed_seconds": 0.01
+    },
+    {
+      "id": "H068",
+      "question": "Are computer networks useful outside cybersecurity?",
+      "group": "hardware_networks",
+      "expected_topics": [
+        "networks",
+        "career"
+      ],
+      "expected_categories": [
+        "curriculum",
+        "career_opportunities"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "are computer networks useful outside cybersecurity? (Computer Engineering)",
+      "understanding_ok": true,
+      "query_topics": [
+        "cybersecurity"
+      ],
+      "retrieval_relevant": true,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.4552803635597229,
+      "answerability_gate_reason": "retrieved evidence has too little overlap with the question terms: ['computer engineering', 'networks', 'outside', 'useful']",
+      "failure_cause": "answerability_gate_possible_false_reject",
+      "top_context": [
+        {
+          "source_id": "src_045",
+          "title": "Skills for the digital age",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.4552803635597229
+        },
+        {
+          "source_id": "src_068",
+          "title": "Workforce Framework for Cybersecurity (NICE Framework)",
+          "category": "cybersecurity",
+          "similarity_score": 0.39370405673980713
+        },
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.4584153890609741
+        }
+      ],
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [
+        "src_045",
+        "src_068",
+        "src_067"
+      ],
+      "answer_preview": "Based on the provided context, computer networks are indeed useful outside the realm of cybersecurity. The document [S3] mentions that computer engineering reveals itself in the myriad of applications involving embedded systems, such as those found in automobiles, control systems, major appliances, and the internet of things. This indicates that computer networks are integral to these applications, which are not limited to cybersecurity. Therefore, the answer to the question \"are computer networks useful outside cybersecurity?\" is yes, they are useful in various applications including those in the automotive, control systems, major appliances, and IoT sectors.",
+      "error": null,
+      "elapsed_seconds": 21.7
+    },
+    {
+      "id": "A071",
+      "question": "Can a computer engineering student become an AI engineer?",
+      "group": "ai_future",
+      "expected_topics": [
+        "ai",
+        "career"
+      ],
+      "expected_categories": [
+        "artificial_intelligence",
+        "career_opportunities"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "Can a computer engineering student become an AI engineer?",
+      "understanding_ok": true,
+      "query_topics": [
+        "computer_engineering",
+        "ai"
+      ],
+      "retrieval_relevant": true,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.5157237648963928,
+      "answerability_gate_reason": "retrieved evidence has too little overlap with the question terms: ['become', 'computer engineering', 'engineer']",
+      "failure_cause": "answerability_gate_possible_false_reject",
+      "top_context": [
+        {
+          "source_id": "src_075",
+          "title": "Education | The 2025 AI Index Report",
+          "category": "artificial_intelligence",
+          "similarity_score": 0.5157237648963928
+        },
+        {
+          "source_id": "src_017",
+          "title": "The Future of Jobs Report 2025",
+          "category": "future_technologies",
+          "similarity_score": 0.46438735723495483
+        },
+        {
+          "source_id": "src_053",
+          "title": "How Gen AI Affects the Value of Development Work",
+          "category": "artificial_intelligence",
+          "similarity_score": 0.4433629512786865
+        }
+      ],
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [
+        "src_075",
+        "src_017",
+        "src_053"
+      ],
+      "answer_preview": "Based on the information provided, a computer engineering student can become an AI engineer. The context from [S1] mentions the importance of high school computer science (CS) courses, which is foundational for pursuing a career in AI engineering. Additionally, [S2] from the Future of Jobs Report highlights the need for reskilling and upskilling in existing workforces to work alongside AI, indicating that AI engineers are in demand. [S3] from DORA, Google, discusses how the use of generative artificial intelligence affects the value of development work, suggesting that AI engineers are involved in developing and utilizing AI technologies. Therefore, a student with a strong foundation in comp",
+      "error": null,
+      "elapsed_seconds": 30.46
+    },
+    {
+      "id": "A076",
+      "question": "Which future technologies should a CENG student follow?",
+      "group": "ai_future",
+      "expected_topics": [
+        "future_technologies"
+      ],
+      "expected_categories": [
+        "future_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "Which future technologies should a ceng student follow?",
+      "understanding_ok": true,
+      "query_topics": [
+        "computer_engineering"
+      ],
+      "retrieval_relevant": false,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.6530600190162659,
+      "answerability_gate_reason": null,
+      "failure_cause": "incorrect_semantic_retrieval",
+      "top_context": [
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.6530600190162659
+        },
+        {
+          "source_id": "src_070",
+          "title": "EECS Majors: Choosing your first computer science course",
+          "category": "programming",
+          "similarity_score": 0.5607245564460754
+        },
+        {
+          "source_id": "src_001",
+          "title": "About the Department | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "department_information",
+          "similarity_score": 0.5123564600944519
+        }
+      ],
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [
+        "src_067",
+        "src_070",
+        "src_001"
+      ],
+      "answer_preview": "Based on the information provided in [S1], Computer Engineering students should explore new technologies such as augmented reality, virtual worlds, and big data analytics. This exploration can help them understand how these emerging areas like computational biology and bioinformatics might affect their work as computer engineers. [S1] emphasizes the importance of designing environments involving these technologies, which will prepare students for the future of computer engineering.",
+      "error": null,
+      "elapsed_seconds": 19.31
+    },
+    {
+      "id": "A080",
+      "question": "Is robotics closer to computer engineering or mechanical engineering?",
+      "group": "ai_future",
+      "expected_topics": [
+        "hardware",
+        "ai"
+      ],
+      "expected_categories": [
+        "specializations",
+        "hardware"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "Is robotics closer to computer engineering or mechanical engineering?",
+      "understanding_ok": true,
+      "query_topics": [
+        "computer_engineering"
+      ],
+      "retrieval_relevant": true,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.48988229036331177,
+      "answerability_gate_reason": "retrieved evidence has too little overlap with the question terms: ['closer', 'mechanical', 'robotics']",
+      "failure_cause": "answerability_gate_possible_false_reject",
+      "top_context": [
+        {
+          "source_id": "src_017",
+          "title": "The Future of Jobs Report 2025",
+          "category": "future_technologies",
+          "similarity_score": 0.48988229036331177
+        },
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.42667698860168457
+        },
+        {
+          "source_id": "src_017",
+          "title": "The Future of Jobs Report 2025",
+          "category": "future_technologies",
+          "similarity_score": 0.41532403230667114
+        }
+      ],
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [
+        "src_017",
+        "src_067"
+      ],
+      "answer_preview": "Based on the information provided in [S1], robotics and autonomous systems have seen steady growth of around 5-7% annually since 2020, with a global average robot density reaching 162 units per 10,000 employees in 2023. This indicates that robotics is closely related to computer engineering, as it involves the integration of computer systems and technologies. In contrast, [S2] discusses the distinctions between computer engineers, electrical engineers, and other professionals, but does not provide specific information on the relationship between robotics and these fields. Therefore, robotics is more closely aligned with computer engineering rather than mechanical engineering.",
+      "error": null,
+      "elapsed_seconds": 35.76
+    },
+    {
+      "id": "Y083",
+      "question": "Can Computer Engineers work in cybersecurity?",
+      "group": "cybersecurity",
+      "expected_topics": [
+        "cybersecurity",
+        "career"
+      ],
+      "expected_categories": [
+        "cybersecurity",
+        "career_opportunities"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "Can computer engineers work in cybersecurity? (topics: cybersecurity, career)",
+      "understanding_ok": true,
+      "query_topics": [
+        "computer_engineering",
+        "cybersecurity",
+        "career"
+      ],
+      "retrieval_relevant": true,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.6096368432044983,
+      "answerability_gate_reason": "retrieved evidence does not contain requested specific fact terms: [['cybersecurity']]",
+      "failure_cause": "answerability_gate_possible_false_reject",
+      "top_context": [
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.6096368432044983
+        },
+        {
+          "source_id": "src_017",
+          "title": "The Future of Jobs Report 2025",
+          "category": "future_technologies",
+          "similarity_score": 0.4751240015029907
+        },
+        {
+          "source_id": "src_014",
+          "title": "Computer Hardware Engineers: 17-2061.00",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.4721248149871826
+        }
+      ],
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [
+        "src_067",
+        "src_017",
+        "src_014",
+        "src_042"
+      ],
+      "answer_preview": "Based on the information provided, computer engineers can work in cybersecurity. The [S1] passage indicates that computer engineering professionals apply their skills in diverse career sectors, which includes business, industry, government, services, organizations, and other entities that use computers. The [S4] passage from the ACM Committee for Computing Education in Community Colleges mentions cybersecurity as a sub-discipline of computing, which suggests that computer engineers can work in cybersecurity roles. Additionally, the [S3] source, which is about computer hardware engineers, does not exclude them from working in cybersecurity, as their responsibilities can involve designing or t",
+      "error": null,
+      "elapsed_seconds": 30.77
+    },
+    {
+      "id": "Y087",
+      "question": "How can I start ethical hacking safely as a student?",
+      "group": "cybersecurity",
+      "expected_topics": [
+        "cybersecurity"
+      ],
+      "expected_categories": [
+        "cybersecurity",
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "out_of_scope_persona_meta",
+      "resolved_question": null,
+      "understanding_ok": false,
+      "query_topics": [],
+      "retrieval_relevant": false,
+      "evidence_sufficient": null,
+      "retrieval_out_of_scope": null,
+      "top_similarity_score": null,
+      "answerability_gate_reason": null,
+      "failure_cause": "query_misunderstanding",
+      "top_context": [],
+      "status": "out_of_scope",
+      "llm_called": false,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [],
+      "answer_preview": "I am a Computer Engineering student advisor. I can help with Computer Engineering education, curriculum, courses, skills, careers, internships, AI, cybersecurity, programming, and related study paths.",
+      "error": null,
+      "elapsed_seconds": 0.02
+    },
+    {
+      "id": "Y091",
+      "question": "cybersec certs or degree which matters?",
+      "group": "cybersecurity",
+      "expected_topics": [
+        "cybersecurity",
+        "career"
+      ],
+      "expected_categories": [
+        "cybersecurity",
+        "employment"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "out_of_scope_persona_meta",
+      "resolved_question": null,
+      "understanding_ok": false,
+      "query_topics": [],
+      "retrieval_relevant": false,
+      "evidence_sufficient": null,
+      "retrieval_out_of_scope": null,
+      "top_similarity_score": null,
+      "answerability_gate_reason": null,
+      "failure_cause": "query_misunderstanding",
+      "top_context": [],
+      "status": "out_of_scope",
+      "llm_called": false,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [],
+      "answer_preview": "I am a Computer Engineering student advisor. I can help with Computer Engineering education, curriculum, courses, skills, careers, internships, AI, cybersecurity, programming, and related study paths.",
+      "error": null,
+      "elapsed_seconds": 0.01
+    },
+    {
+      "id": "Y093",
+      "question": "What is the difference between cybersecurity and software engineering?",
+      "group": "cybersecurity",
+      "expected_topics": [
+        "cybersecurity",
+        "software"
+      ],
+      "expected_categories": [
+        "cybersecurity",
+        "software"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "What is the difference between cybersecurity and software engineering? (Computer Engineering; topics: software, cybersecurity)",
+      "understanding_ok": true,
+      "query_topics": [
+        "definition",
+        "software",
+        "cybersecurity"
+      ],
+      "retrieval_relevant": false,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.47801315784454346,
+      "answerability_gate_reason": null,
+      "failure_cause": "incorrect_semantic_retrieval",
+      "top_context": [
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.47801315784454346
+        },
+        {
+          "source_id": "src_068",
+          "title": "Workforce Framework for Cybersecurity (NICE Framework)",
+          "category": "cybersecurity",
+          "similarity_score": 0.43675661087036133
+        },
+        {
+          "source_id": "src_045",
+          "title": "Skills for the digital age",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.448627233505249
+        }
+      ],
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [
+        "src_067",
+        "src_068",
+        "src_045"
+      ],
+      "answer_preview": "The difference between cybersecurity and software engineering lies in their primary focus areas. In software engineering, the emphasis is on the design, development, and maintenance of software systems. This includes understanding programming languages, algorithms, and software development methodologies. On the other hand, cybersecurity is concerned with protecting systems, networks, and data from malicious activities such as hacking, data breaches, and digital attacks. It involves the implementation of security measures, the development of security protocols, and the detection and response to security breaches. [S2], [S3]",
+      "error": null,
+      "elapsed_seconds": 22.9
+    },
+    {
+      "id": "Y094",
+      "question": "Can I learn security without doing illegal hacking?",
+      "group": "cybersecurity",
+      "expected_topics": [
+        "cybersecurity"
+      ],
+      "expected_categories": [
+        "cybersecurity",
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "Can I learn security without doing illegal hacking? (Computer Engineering)",
+      "understanding_ok": true,
+      "query_topics": [
+        "cybersecurity"
+      ],
+      "retrieval_relevant": true,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.42115581035614014,
+      "answerability_gate_reason": "retrieved evidence has too little overlap with the question terms: ['computer engineering', 'doing', 'hacking', 'illegal', 'without']",
+      "failure_cause": "answerability_gate_possible_false_reject",
+      "top_context": [
+        {
+          "source_id": "src_069",
+          "title": "Computing Competencies for Undergraduate Data Science Curricula",
+          "category": "specializations",
+          "similarity_score": 0.42115581035614014
+        },
+        {
+          "source_id": "src_045",
+          "title": "Skills for the digital age",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.38667774200439453
+        },
+        {
+          "source_id": "src_068",
+          "title": "Workforce Framework for Cybersecurity (NICE Framework)",
+          "category": "cybersecurity",
+          "similarity_score": 0.363492488861084
+        }
+      ],
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [
+        "src_069",
+        "src_045",
+        "src_068"
+      ],
+      "answer_preview": "Based on the provided context, learning security does not necessarily require engaging in illegal hacking. The sources emphasize the importance of understanding security concepts, certifications, and practices, but they do not specify whether hacking is a necessary component of security education. [S1] discusses various security-related competencies, including data privacy, security, integrity, and analysis for security, which can be learned without engaging in illegal activities. [S2] highlights the importance of technical expertise and understanding certifications, but it does not mention hacking. [S3] focuses on the NICE Framework for Cybersecurity, which outlines a structured approach to",
+      "error": null,
+      "elapsed_seconds": 27.53
+    },
+    {
+      "id": "R097",
+      "question": "What should I include in my CV as a CENG student?",
+      "group": "career_employment",
+      "expected_topics": [
+        "cv",
+        "career"
+      ],
+      "expected_categories": [
+        "employment"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "What should I include in my CV as a ceng student?",
+      "understanding_ok": true,
+      "query_topics": [
+        "computer_engineering",
+        "cv"
+      ],
+      "retrieval_relevant": false,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.6389526128768921,
+      "answerability_gate_reason": null,
+      "failure_cause": "incorrect_semantic_retrieval",
+      "top_context": [
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.6389526128768921
+        },
+        {
+          "source_id": "src_070",
+          "title": "EECS Majors: Choosing your first computer science course",
+          "category": "programming",
+          "similarity_score": 0.5203924179077148
+        },
+        {
+          "source_id": "src_001",
+          "title": "About the Department | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "department_information",
+          "similarity_score": 0.42934560775756836
+        }
+      ],
+      "status": "error",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": false,
+      "sources": [],
+      "answer_preview": "The local RAG pipeline could not complete the request safely.",
+      "error": "unsupported claim could not be matched to retrieved evidence",
+      "elapsed_seconds": 82.57
+    },
+    {
+      "id": "R103",
+      "question": "Can personal projects replace internship experience?",
+      "group": "career_employment",
+      "expected_topics": [
+        "projects",
+        "internships"
+      ],
+      "expected_categories": [
+        "projects",
+        "internships",
+        "employment"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "Can personal projects replace internship experience? (Computer Engineering; topics: internships, projects)",
+      "understanding_ok": true,
+      "query_topics": [
+        "internships",
+        "projects"
+      ],
+      "retrieval_relevant": true,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.4453616142272949,
+      "answerability_gate_reason": "retrieved evidence does not contain requested specific fact terms: [['project', 'projects', 'portfolio']]",
+      "failure_cause": "answerability_gate_possible_false_reject",
+      "top_context": [
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.4453616142272949
+        },
+        {
+          "source_id": "src_074",
+          "title": "Write a Resume/CV",
+          "category": "employment",
+          "similarity_score": 0.4056156873703003
+        },
+        {
+          "source_id": "src_018",
+          "title": "Students Recognize the Importance of Gaining Internship Experience",
+          "category": "internships",
+          "similarity_score": 0.3952348232269287
+        }
+      ],
+      "status": "insufficient_information",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [],
+      "answer_preview": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+      "error": null,
+      "elapsed_seconds": 37.16
+    },
+    {
+      "id": "R104",
+      "question": "Are hackathons useful for computer engineering students?",
+      "group": "career_employment",
+      "expected_topics": [
+        "projects",
+        "student_life"
+      ],
+      "expected_categories": [
+        "student_life",
+        "projects"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "are hackathons useful for computer engineering students?",
+      "understanding_ok": true,
+      "query_topics": [
+        "computer_engineering"
+      ],
+      "retrieval_relevant": false,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.535603404045105,
+      "answerability_gate_reason": null,
+      "failure_cause": "incorrect_semantic_retrieval",
+      "top_context": [
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.535603404045105
+        },
+        {
+          "source_id": "src_039",
+          "title": "Which Introductory Course Should I Take?",
+          "category": "programming",
+          "similarity_score": 0.4492151737213135
+        },
+        {
+          "source_id": "src_045",
+          "title": "Skills for the digital age",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.4185776710510254
+        }
+      ],
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [
+        "src_067",
+        "src_039",
+        "src_045"
+      ],
+      "answer_preview": "Based on the information provided, there is insufficient evidence to definitively state whether hackathons are useful for computer engineering students. The context does not specifically address the benefits or utility of hackathons in the context of computer engineering education. However, it is clear that programming skills are versatile and applicable across various fields, including those related to computer engineering. Hackathons often involve problem-solving and creative coding, which can be beneficial for developing these skills. [S1], [S3]",
+      "error": null,
+      "elapsed_seconds": 28.05
+    },
+    {
+      "id": "R105",
+      "question": "How can I get my first internship?",
+      "group": "career_employment",
+      "expected_topics": [
+        "internships"
+      ],
+      "expected_categories": [
+        "internships",
+        "employment"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "How can I get my first internship? (Computer Engineering)",
+      "understanding_ok": true,
+      "query_topics": [
+        "internships"
+      ],
+      "retrieval_relevant": false,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.4653528928756714,
+      "answerability_gate_reason": null,
+      "failure_cause": "incorrect_semantic_retrieval",
+      "top_context": [
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.4653528928756714
+        },
+        {
+          "source_id": "src_004",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "curriculum",
+          "similarity_score": 0.42249858379364014
+        },
+        {
+          "source_id": "src_036",
+          "title": "Resumes",
+          "category": "employment",
+          "similarity_score": 0.3758484721183777
+        }
+      ],
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [
+        "src_067",
+        "src_004",
+        "src_036"
+      ],
+      "answer_preview": "To get your first internship in computer engineering, you can start by exploring career essentials and gaining clarity on your career path. Begin with self-assessment and decision-making processes to understand your interests and strengths. Use resources like the Berkeley Career Engagement's \"What Can I Do With A Major In...?\" to explore career fields related to computer engineering. Informational interviews can also provide insights into different industries and roles. Additionally, participating in summer activities and networking events can help you connect with professionals in the field. Creating a strong resume and preparing for interviews are crucial steps in your internship applicati",
+      "error": null,
+      "elapsed_seconds": 82.94
+    },
+    {
+      "id": "R110",
+      "question": "Which specialization pays the most in Turkey?",
+      "group": "career_employment",
+      "expected_topics": [
+        "salary",
+        "specializations"
+      ],
+      "expected_categories": [
+        "salaries",
+        "employment"
+      ],
+      "expected_behavior": "insufficient",
+      "previous_question": null,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "Which specialization pays the most in turkey? (constraints: turkey)",
+      "understanding_ok": true,
+      "query_topics": [],
+      "retrieval_relevant": true,
+      "evidence_sufficient": true,
+      "retrieval_out_of_scope": false,
+      "top_similarity_score": 0.6496277451515198,
+      "answerability_gate_reason": null,
+      "failure_cause": "answerability_gap_unsupported_may_pass",
+      "top_context": [
+        {
+          "source_id": "src_025",
+          "title": "ICT",
+          "category": "employment",
+          "similarity_score": 0.6496277451515198
+        },
+        {
+          "source_id": "src_026",
+          "title": "Turkey - Information and Communication Technology",
+          "category": "employment",
+          "similarity_score": 0.6046655178070068
+        },
+        {
+          "source_id": "src_045",
+          "title": "Skills for the digital age",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.5857142806053162
+        }
+      ],
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_valid": true,
+      "sources": [
+        "src_025",
+        "src_026",
+        "src_045"
+      ],
+      "answer_preview": "Based on the information provided in [S1], the Turkish ICT sector had an average growth of 59% on a TRY basis in the past 5 years. Additionally, the sector grew by 8% on a USD basis, indicating a significant contribution to the economy. However, to determine which specialization pays the most in Turkey, we would need more specific data on salaries or wages within the ICT sector. [S3] mentions that wages in ICT services grew more than in the total business sector, but it does not provide salary figures. Therefore, based on the given information, we cannot definitively state which specialization pays the most in Turkey.",
+      "error": null,
+      "elapsed_seconds": 44.92
+    }
+  ]
+}

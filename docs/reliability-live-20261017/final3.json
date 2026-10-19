@@ -1,0 +1,234 @@
+{
+  "generated_at": "2026-10-17T17:07:17+00:00",
+  "complete": false,
+  "turn_count": 5,
+  "status_counts": {
+    "answered": 3,
+    "insufficient_information": 2
+  },
+  "results": [
+    {
+      "conversation": "MT1",
+      "turn": 1,
+      "question": "What skills do I need for a career in embedded systems?",
+      "expect": "answer",
+      "status": "answered",
+      "answer": "For a career in embedded systems within Computer Engineering, you need skills in using an integrated development environment (IDE) to write, compile, and debug programs for embedded systems [S1]. You should also be able to contrast instrumentation choices for diagnosing hardware aspects of embedded systems and list several standards applicable to embedded systems, such as signaling levels and serial communication protocols [S1].",
+      "error": null,
+      "events": [
+        "metadata",
+        "token",
+        "final"
+      ],
+      "seconds": 13.68,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "What skills do I need for a career in embedded systems? (Computer Engineering; topics: hardware, skills, career)",
+      "unsupported_reason": null,
+      "answer_warnings": [],
+      "cited_labels": [
+        "S1"
+      ],
+      "sources": [
+        "Computer Engineering Curricula 2016"
+      ],
+      "context": [
+        {
+          "label": "S1",
+          "title": "Computer Engineering Curricula 2016",
+          "section": "CE-ESY-5 Parallel input and output",
+          "passage": "CE-ESY-2 Relevant tools, standards, and/or engineering constraints Minimum core coverage time: 2 hours  Use an integrated development environment (IDE) to write, compile and/or assemble, and debug a program (high -level or assembly language) for a target embedded system.  Contrast instrumentation choices for diagnosing/understanding hardware aspects of embedded systems behavior.  List several standards applicable to embedded such as signaling levels and serial communication protocols."
+        },
+        {
+          "label": "S2",
+          "title": "Computer Hardware Engineers: 17-2061.00",
+          "section": "5 ofAll 28 displayed (Show allShow top 5)",
+          "passage": "Related occupations Design and develop computer hardware and support peripherals, including central processing units (CPUs), support logic, microprocessors, custom integrated circuits, and printers and disk drives. Related occupations Confer with engineering staff and consult specifications to evaluate interface between hardware and software and operational and performance requirements of overall system. Related occupations Build, test, and modify product prototypes, using working models or theoretical models constructed with computer simulation."
+        },
+        {
+          "label": "S3",
+          "title": "Subdisciplines",
+          "section": "Artificial intelligence, robotics, and cybernetics",
+          "passage": "Source ID: src_043 Subdisciplines | Electrical & Computer Engineering | Illinois University of Illinois Urbana-Champaign Apply Give My.ECE The Grainger College of Engineering Electrical & Computer Engineering Subdisciplines Breadth and Depth in Electrical and Computer Engineering Both electrical and computer engineering build from a core understanding of electrical phenomena, the concepts of systems and signals, and computers. At the junior and senior level, however, they branch into a large and diverse set of rich intellectual areas, ranging from bioengineering to power systems."
+        },
+        {
+          "label": "S4",
+          "title": "Computer Engineering Curricula 2016",
+          "section": "2.3.2 Professionalism",
+          "passage": "and networks in the world today, computer engineers must be versatile in the knowledge drawn from standard study areas in computer science and electrical engineering as well as the foundations in mathematics and sciences. The rapid pace of change in the computing field requires that computer engineers be lifelong learners to maintain their knowledge and skills within their chosen discipline. 2.3.1 Distinctions An important distinction should be made between computer engineers, electrical engineers, other computer professionals, and engineering technologists."
+        }
+      ]
+    },
+    {
+      "conversation": "MT1",
+      "turn": 2,
+      "question": "can you explain the first one in more detail?",
+      "expect": "answer",
+      "status": "answered",
+      "answer": "Using an integrated development environment (IDE) to write, compile, and debug programs is a fundamental skill in Computer Engineering, particularly for embedded systems [S2]. In the context provided by the source [S2], it states that Computer Engineering students should be able to \"Use an integrated development environment (IDE) to write, compile and/or assemble, and debug a program (high-level or assembly language) for a target embedded system.\" This means that when working with embedded systems, which are processor-based systems that include hardware, software, and communications components, students need to use an IDE to write code, which is then compiled into a form that the embedded system can understand.",
+      "error": null,
+      "events": [
+        "metadata",
+        "token",
+        "final"
+      ],
+      "seconds": 32.68,
+      "query_kind": "contextual_follow_up",
+      "resolved_question": "Explain using an integrated development environment (IDE) to write, compile in more detail (follow-up to: What skills do I need for a career in embedded systems) in Computer Engineering?",
+      "unsupported_reason": null,
+      "answer_warnings": [],
+      "cited_labels": [
+        "S2"
+      ],
+      "sources": [
+        "Computer Engineering Curricula 2016"
+      ],
+      "context": [
+        {
+          "label": "S1",
+          "title": "Curricular Guidance",
+          "section": "Computing disciplines",
+          "passage": "Curricular Guidance Computer Engineering Computer Science Cybersecurity Data Science - Coming soon! Information Technology Information Technology - Applied Information Technology - Transfer Software Engineering Curricular Guidance The Sub-Disciplines of Computing The Association for Computing Machinery (ACM) currently categorizes the overarching discipline of computing into five defined sub-disciplines: computer science, computer engineering, software engineering, information systems and information technology. Computer Engineering involves the design and construction of processor-based systems comprised of hardware, software, and communications components."
+        },
+        {
+          "label": "S2",
+          "title": "Computer Engineering Curricula 2016",
+          "section": "CE-ESY-5 Parallel input and output",
+          "passage": " Describe how computer engineering uses or benefits from embedded systems. CE-ESY-2 Relevant tools, standards, and/or engineering constraints Minimum core coverage time: 2 hours  Use an integrated development environment (IDE) to write, compile and/or assemble, and debug a program (high -level or assembly language) for a target embedded system.  Contrast instrumentation choices for diagnosing/understanding hardware aspects of embedded systems behavior."
+        },
+        {
+          "label": "S3",
+          "title": "Computing Competencies for Undergraduate Data Science Curricula",
+          "section": "PDA-Programming",
+          "passage": "solutions in some formalism. PDA-Programming In order to collect, analyze, and present data, a data scientist needs to develop programming skills and should be well-versed in fundamental programming constructs. Because the data scientist will interface with many systems, they should be able to develop programs that can either stand alone or integrate with existing software and/or tools."
+        },
+        {
+          "label": "S4",
+          "title": "Computer Engineering Curricula 2016",
+          "section": "CE-SWD-6 Recursion",
+          "passage": "the roles of software development tools, such as compilers, assemblers, linkers, and debuggers.  Identify the expected functionality of a typical modern integrated development environment (IDE).  Use an IDE to develop a simple application."
+        }
+      ]
+    },
+    {
+      "conversation": "MT1",
+      "turn": 3,
+      "question": "what sources did you use for that?",
+      "expect": "answer",
+      "status": "answered",
+      "answer": "The previous answer cited Computer Engineering Curricula 2016.",
+      "error": null,
+      "events": [
+        "final"
+      ],
+      "seconds": 0.01,
+      "query_kind": "source_follow_up",
+      "resolved_question": null,
+      "unsupported_reason": null,
+      "answer_warnings": [],
+      "cited_labels": [
+        "S2"
+      ],
+      "sources": [
+        "Computer Engineering Curricula 2016"
+      ],
+      "context": [
+        {
+          "label": "S2",
+          "title": "Computer Engineering Curricula 2016",
+          "section": "CE-ESY-5 Parallel input and output",
+          "passage": " Describe how computer engineering uses or benefits from embedded systems. CE-ESY-2 Relevant tools, standards, and/or engineering constraints Minimum core coverage time: 2 hours  Use an integrated development environment (IDE) to write, compile and/or assemble, and debug a program (high -level or assembly language) for a target embedded system.  Contrast instrumentation choices for diagnosing/understanding hardware aspects of embedded systems behavior."
+        }
+      ]
+    },
+    {
+      "conversation": "U08",
+      "turn": 1,
+      "question": "does ceng have lots of coding or is it mostly theory",
+      "expect": "answer",
+      "status": "insufficient_information",
+      "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+      "error": null,
+      "events": [
+        "metadata",
+        "final"
+      ],
+      "seconds": 55.39,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "Does computer engineering have lots of coding or is it mostly theory?",
+      "unsupported_reason": "unsupported claim could not be matched to retrieved evidence",
+      "answer_warnings": [
+        "local_llm_answer_failed_citation_validation"
+      ],
+      "cited_labels": [],
+      "sources": [],
+      "context": [
+        {
+          "label": "S1",
+          "title": "Computer Engineering Curricula 2016",
+          "section": "2.3.3 Ability to design",
+          "passage": "constraints. These relate to such matters as structure and organization, techniques, technologies, methodologies, interfaces, as well as the selection of components. The outcome needs to exhibit desirable properties and these tend to relate to simplicity and elegance. Chapter 4 presents a more detailed discussion of design and related laboratory experiences. Page 20 Page 19 of 149 2.3.4 Breadth of knowledge Because of the breadth of the computer-engineering field, curricular content may vary widely among programs, or even among students in the same program."
+        },
+        {
+          "label": "S2",
+          "title": "Skills for the digital age",
+          "section": "",
+          "passage": "Page 75 Programming skills are highly versatile and applicable in a wide range of fields. They enhance problem-solving abilities, promote creativity and innovation, and offer numerous career opportunities. Additionally, in today’s technology-driven world, a basic understanding of programming is increasingly valuable for individuals in various aspects of life. The skill is useful for troubleshooting technical issues or changing the privacy settings of a personal device, building a customised website, analysing personal expenditures to make informed decisions about spending and saving, etc."
+        },
+        {
+          "label": "S3",
+          "title": "Curated note: Software Engineering Body of Knowledge (SWEBOK Guide), Version 4.0",
+          "section": "Curated source note",
+          "passage": "For Computer Engineering advising, this source helps explain why students should learn software development habits early. Useful habits include reading requirements carefully, designing before coding, using version control, testing and debugging systematically, reviewing code, documenting decisions, thinking about maintainability, and treating security and quality as part of engineering rather than as optional extras. The source also helps distinguish programming from software engineering."
+        },
+        {
+          "label": "S4",
+          "title": "Computer Engineering Curricula 2016",
+          "section": "Chapter 4",
+          "passage": "mathematics is insufficient to produce a competent computer engineer, so the knowledge units in the mathematics component focus only on the knowledge and skills that support essential components of the computer engineering content areas. It is up to each program to decide the quantity and level of mathematics for its graduates. See Chapter 6 for more discussion on this issue. 3.6 Curricular models The discussion in the previous section provides a minimal framework for generating a body of knowledge for a computer engineering program."
+        }
+      ]
+    },
+    {
+      "conversation": "U09",
+      "turn": 1,
+      "question": "Do I need a powerful laptop for computer engineering?",
+      "expect": "answer",
+      "status": "insufficient_information",
+      "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+      "error": null,
+      "events": [
+        "metadata",
+        "final"
+      ],
+      "seconds": 46.58,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "Do I need a powerful laptop for computer engineering?",
+      "unsupported_reason": "unsupported claim could not be matched to retrieved evidence",
+      "answer_warnings": [
+        "local_llm_answer_failed_citation_validation"
+      ],
+      "cited_labels": [],
+      "sources": [],
+      "context": [
+        {
+          "label": "S1",
+          "title": "Computer Engineering Curricula 2016",
+          "section": "1.4 Structure of the CE2016 Report",
+          "passage": "Chapters 3 and 4 present overviews of the computer engineering body of knowledge and describe curriculum recommendations. These chapters also articulate learning outcomes, the differences between core and elective or supplementary knowledge units, the number of core hours in the program, the importance of design and laboratory experiences, and various skills individuals need to become effective computer engineers. Chapter 5 highlights the importance of professionalism in the practice of computer engineering."
+        },
+        {
+          "label": "S2",
+          "title": "Computer Engineering Curricula 2016",
+          "section": "6.3.6 Communication Skills",
+          "passage": "Computer engineering curriculums should also have at least one or two technical elective courses that allow students some choice in shaping their educational experience. To emphasize individual choice, options for technical elective courses should not be overly restrictive, for example, by allowing any upper level course from computer science or electrical and computer engineering to serve as a technical elective. 6.3.3 Laboratory Experiences Laboratory experiences are crucial to developing skills required to practice the art of computer engineering."
+        },
+        {
+          "label": "S3",
+          "title": "Computer Engineering Curricula 2016",
+          "section": "1.3 Underlying Principles",
+          "passage": "Page 14 Page 13 of 149 5. Computer engineering must include appropriate and necessary design and laboratory experiences. A computer engineering program should include “hands-on” experiences in designing, building, and testing both hardware and software systems. 6. Computer engineering curricula are often subject to accreditation, licensure, or governmental constraints. This report recognizes these existing external constraints and provides guidance for their evolution. 7. A computer engineering curriculum must include preparation for professional practice as an integral component."
+        }
+      ]
+    }
+  ]
+}

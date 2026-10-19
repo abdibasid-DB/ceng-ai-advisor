@@ -1,0 +1,71 @@
+{
+  "summary": {
+    "case_count": 1,
+    "status": "answered",
+    "citation_format_valid": true
+  },
+  "results": [
+    {
+      "id": "CAR1_SINGLE",
+      "question": "What jobs can Computer Engineering graduates do?",
+      "resolved_question": "What jobs can computer engineering graduates do?",
+      "status": "answered",
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_format_valid": true,
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S4",
+          "S1"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3",
+          "S4"
+        ],
+        "normalized": false,
+        "repair_actions": [],
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1,
+        "retry_failure_reason": null
+      },
+      "sources": [
+        {
+          "source_id": "src_014",
+          "title": "Computer Hardware Engineers: 17-2061.00",
+          "labels": [
+            "S1"
+          ]
+        },
+        {
+          "source_id": "src_016",
+          "title": "2024 State of Tech Talent Report",
+          "labels": [
+            "S2"
+          ]
+        },
+        {
+          "source_id": "src_017",
+          "title": "The Future of Jobs Report 2025",
+          "labels": [
+            "S3"
+          ]
+        },
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "labels": [
+            "S4"
+          ]
+        }
+      ],
+      "answer": "Computer Engineering graduates can pursue a variety of career paths. They can apply their skills in diverse sectors such as business, industry, government, and services. The field of computer engineering has expanded and matured, allowing graduates to engage in professional practice directly from four-year programs in many parts of the world. Graduates can work in various career sectors that utilize computers to automate or enhance their products or services. Additionally, the Bureau of Labor Statistics predicts a significant increase in computer occupations, with information security seeing the highest growth. [S4] and [S1] provide relevant insights into the career opportunities available to Computer Engineering graduates.",
+      "error": null,
+      "elapsed_seconds": 43.61
+    }
+  ]
+}

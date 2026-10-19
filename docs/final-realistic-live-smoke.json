@@ -1,0 +1,1533 @@
+{
+  "summary": {
+    "case_count": 21,
+    "status_counts": {
+      "answered": 14,
+      "insufficient_information": 7
+    },
+    "suite_counts": {
+      "definition": 1,
+      "comparison": 1,
+      "curriculum": 1,
+      "programming": 2,
+      "math": 1,
+      "ai": 1,
+      "cybersecurity": 1,
+      "hardware": 1,
+      "internships": 1,
+      "careers": 1,
+      "projects": 1,
+      "skills": 1,
+      "future": 2,
+      "specializations": 1,
+      "safe_gap": 5
+    },
+    "citation_format_invalid_cases": [],
+    "error_cases": []
+  },
+  "results": [
+    {
+      "id": "DEF1",
+      "suite": "definition",
+      "question": "What is Computer Engineering?",
+      "resolved_question": "What is Computer Engineering?",
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_format_valid": true,
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1",
+          "S2"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2"
+        ],
+        "normalized": false,
+        "repair_actions": [],
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1,
+        "retry_failure_reason": null
+      },
+      "sources": [
+        {
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "labels": [
+            "S1"
+          ]
+        },
+        {
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "labels": [
+            "S2"
+          ]
+        }
+      ],
+      "top_context": [
+        {
+          "label": "S1",
+          "source_id": "src_042",
+          "chunk_id": "src_042_computer_engineering_definition",
+          "title": "Curricular Guidance",
+          "category": "common_misconceptions",
+          "passage": "Curricular Guidance Computer Engineering Computer Science Cybersecurity Data Science - Coming soon! Information Technology Information Technology - Applied Information Technology - Transfer Software Engineering Curricular Guidance The Sub-Disciplines of Computing The Association for Computing Machinery (ACM) currently categorizes the overarching discipline of computing into five defined sub-disciplines: computer science, computer engineering, software engineering, information systems and information technology. Computer Engineering involves the design and construction of processor-based systems comprised of hardware, software, and communications components."
+        },
+        {
+          "label": "S2",
+          "source_id": "src_042",
+          "chunk_id": "src_042_chunk_001",
+          "title": "Curricular Guidance",
+          "category": "common_misconceptions",
+          "passage": "Source ID: src_042 Curricular Guidance - ACM CCECC Facebook Twitter LinkedIn YouTube ACM CCECC Celebrating 40++ years of service to computing education communities. Curricular Guidance Computer Engineering Computer Science Cybersecurity Data Science - Coming soon! Information Technology Information Technology - Applied Information Technology - Transfer Software Engineering Curricular Guidance The Sub-Disciplines of Computing The Association for Computing Machinery (ACM) currently categorizes the overarching discipline of computing into five defined sub-disciplines: computer science, computer engineering, software engineering, information systems and information technology."
+        }
+      ],
+      "answer": "Computer Engineering involves the design and construction of processor-based systems, which include hardware, software, and communications components. This field is categorized by the Association for Computing Machinery (ACM) as one of the five defined sub-disciplines of computing alongside computer science, software engineering, information systems, and information technology. [S1], [S2]",
+      "error": null,
+      "elapsed_seconds": 30.59
+    },
+    {
+      "id": "CMP1",
+      "suite": "comparison",
+      "question": "What is the difference between IT and Computer Engineering?",
+      "resolved_question": "What is the difference between it and computer engineering?",
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_format_valid": true,
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1",
+          "S2"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3",
+          "S4"
+        ],
+        "normalized": false,
+        "repair_actions": [],
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1,
+        "retry_failure_reason": null
+      },
+      "sources": [
+        {
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "labels": [
+            "S1"
+          ]
+        },
+        {
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "labels": [
+            "S2"
+          ]
+        },
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "labels": [
+            "S3",
+            "S4"
+          ]
+        }
+      ],
+      "top_context": [
+        {
+          "label": "S1",
+          "source_id": "src_042",
+          "chunk_id": "src_042_computer_engineering_definition",
+          "title": "Curricular Guidance",
+          "category": "common_misconceptions",
+          "passage": "Computer Engineering involves the design and construction of processor-based systems comprised of hardware, software, and communications components. Information Technology involves the design, implementation and maintenance of technology solutions and support for users of such systems."
+        },
+        {
+          "label": "S2",
+          "source_id": "src_042",
+          "chunk_id": "src_042_chunk_001",
+          "title": "Curricular Guidance",
+          "category": "common_misconceptions",
+          "passage": "Source ID: src_042 Curricular Guidance - ACM CCECC Facebook Twitter LinkedIn YouTube ACM CCECC Celebrating 40++ years of service to computing education communities. Curricular Guidance Computer Engineering Computer Science Cybersecurity Data Science - Coming soon! Information Technology Information Technology - Applied Information Technology - Transfer Software Engineering Curricular Guidance The Sub-Disciplines of Computing The Association for Computing Machinery (ACM) currently categorizes the overarching discipline of computing into five defined sub-disciplines: computer science, computer engineering, software engineering, information systems and information technology."
+        },
+        {
+          "label": "S3",
+          "source_id": "src_067",
+          "chunk_id": "src_067_chunk_013",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "passage": "sample curricula, and course descriptions will help departments create effective curricula or help them improve the curricula they already have. Appendix C provides guidance in developing laboratories associated with a computer engineering program. Appendix D acknowledges external reviewers from throughout the world who have made significant contributions or have commented on improving this report. Page 16 Page 15 of 149 Chapter 2 Computer Engineering as a Discipline This chapter presents some of the characteristics that distinguish computer engineering from other computing disciplines. It provides some background of the field, showing how it evolved over time."
+        },
+        {
+          "label": "S4",
+          "source_id": "src_067",
+          "chunk_id": "src_067_chunk_006",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "passage": "by the Association for Computing Machinery (ACM), the IEEE Computer Society, and the Association for Information Systems (AIS). These efforts resulted in published curricula recommendations in computer science [ACM/IEEECS, 2013],1 information systems [ACM/AIS, 2010], information technology [ACM/IEEECS, 2008], and software engineering [ACM/IEEECS, 2015]. New curricula recommendations for information technology, as of this writing, are expected to be published in 2017. Computer engineering as an academic field encompasses the broad areas of electrical or electronics engineering and computer science. We define computer engineering in this report as follows."
+        }
+      ],
+      "answer": "Computer Engineering involves the design and construction of processor-based systems, encompassing hardware, software, and communications components. In contrast, Information Technology focuses on the design, implementation, and maintenance of technology solutions and support for users of such systems. [S1] and [S2]",
+      "error": null,
+      "elapsed_seconds": 24.38
+    },
+    {
+      "id": "CUR1",
+      "suite": "curriculum",
+      "question": "What do Computer Engineering students study?",
+      "resolved_question": "What do computer engineering students study?",
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_format_valid": true,
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "normalized": false,
+        "repair_actions": [],
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1,
+        "retry_failure_reason": null
+      },
+      "sources": [
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "labels": [
+            "S1",
+            "S2",
+            "S3"
+          ]
+        }
+      ],
+      "top_context": [
+        {
+          "label": "S1",
+          "source_id": "src_067",
+          "chunk_id": "src_067_chunk_019",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "passage": "constraints. These relate to such matters as structure and organization, techniques, technologies, methodologies, interfaces, as well as the selection of components. The outcome needs to exhibit desirable properties and these tend to relate to simplicity and elegance. Chapter 4 presents a more detailed discussion of design and related laboratory experiences. Page 20 Page 19 of 149 2.3.4 Breadth of knowledge Because of the breadth of the computer-engineering field, curricular content may vary widely among programs, or even among students in the same program."
+        },
+        {
+          "label": "S2",
+          "source_id": "src_067",
+          "chunk_id": "src_067_chunk_013",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "passage": "sample curricula, and course descriptions will help departments create effective curricula or help them improve the curricula they already have. Appendix C provides guidance in developing laboratories associated with a computer engineering program. Appendix D acknowledges external reviewers from throughout the world who have made significant contributions or have commented on improving this report. Page 16 Page 15 of 149 Chapter 2 Computer Engineering as a Discipline This chapter presents some of the characteristics that distinguish computer engineering from other computing disciplines. It provides some background of the field, showing how it evolved over time."
+        },
+        {
+          "label": "S3",
+          "source_id": "src_067",
+          "chunk_id": "src_067_chunk_051",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "passage": "an appropriate selection of tools and techniques as well as a disciplined approach in arriving at a solution of the problem Beyond these characteristics, this chapter has sought to address the range of basic ingredients that institutions must assemble and carefully integrate into a computer engineering program to ensure that graduates are aware of the best traditions of engineering practice. 4.10 Graduate and continuing professional education Because of the rapidly changing field of computing, the steering committee strongly encourages graduates from computer engineering programs to pursue advanced studies in graduate school."
+        }
+      ],
+      "answer": "Computer Engineering students study a curriculum that emphasizes the design and development of computer systems and software. They learn about the structure and organization of systems, as well as the selection of components and technologies. The curriculum also covers breadth of knowledge in the field, which can vary among different programs. Students are expected to develop a broad understanding of the field, including its evolution over time. Additionally, they are taught professional practices, such as the appropriate selection of tools and techniques and a disciplined approach to problem-solving. The curriculum also encourages students to pursue further studies in graduate school to stay updated with the rapidly changing field of computing. [S1], [S2], [S3]",
+      "error": null,
+      "elapsed_seconds": 24.18
+    },
+    {
+      "id": "PROG1",
+      "suite": "programming",
+      "question": "Which programming languages are taught in CENG?",
+      "resolved_question": "Which programming language are taught in ceng?",
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_format_valid": true,
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "normalized": true,
+        "repair_actions": [
+          "added_supported_inline_label"
+        ],
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1,
+        "retry_failure_reason": null
+      },
+      "sources": [
+        {
+          "source_id": "src_004",
+          "title": "Course Contents",
+          "labels": [
+            "S1"
+          ]
+        },
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "labels": [
+            "S2"
+          ]
+        },
+        {
+          "source_id": "src_070",
+          "title": "EECS Majors: Choosing your first computer science course",
+          "labels": [
+            "S3"
+          ]
+        }
+      ],
+      "top_context": [
+        {
+          "label": "S1",
+          "source_id": "src_004",
+          "chunk_id": "src_004_programming_languages",
+          "title": "Course Contents",
+          "category": "curriculum",
+          "passage": "OSTIM course contents list CENG109 Programming and Computation I, which covers algorithms, data structures, typed functions, conditional expressions, and repetition/recursion. CENG110 Programming and Computation II builds on Programming and Computation I with advanced data structures, algorithmic techniques, modular programming, higher-order functions, and abstract data types. SENG116 Object Oriented Programming says students gain practical experience using object-oriented languages such as Python or C++."
+        },
+        {
+          "label": "S2",
+          "source_id": "src_067",
+          "chunk_id": "src_067_chunk_130",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "passage": "aspects of a general education common in the US. The remaining sample curricula (Curricula D and E) illustrate typical programs in computer engineering that one might find in China, the United Kingdom, Europe, Asia, and other parts of the world. Curriculum E is consistent with the Bologna Declaration, with the three-year program leading to a typical bachelor of engineering degree. The common requirements are spread widely across a range of courses and allow revisiting the subject matter with spiral learning taking place. Each curriculum contains sufficient flexibility to support various areas of specialization."
+        },
+        {
+          "label": "S3",
+          "source_id": "src_070",
+          "chunk_id": "src_070_chunk_001",
+          "title": "EECS Majors: Choosing your first computer science course",
+          "category": "programming",
+          "passage": "Source ID: src_070 Title: EECS Majors: Choosing your first computer science course First computer science course - Berkeley Engineering Skip to primary navigation Educating leaders. Creating knowledge. Serving society. Home > Students > New students > First computer science course EECS Majors: Choosing your first computer science course As an EECS major, which computer programming course is the right one for you your first semester? Here’s some advice from the Computer Sciences faculty about your options for your first semester. Computer Science 61Ais a rigorous and fast-paced introduction to computer science that was designed for students with some prior programming experience."
+        }
+      ],
+      "answer": "In CENG109 Programming and Computation I, students are introduced to algorithms, data structures, typed functions, conditional expressions, and repetition/recursion. CENG110 Programming and Computation II, which builds on the foundations laid in CENG109, covers advanced data structures, algorithmic techniques, modular programming, higher-order functions, and abstract data types. The course SENG116 Object Oriented Programming provides practical experience using object-oriented languages such as Python or C++. Therefore, students in CENG109 and CENG110 are likely to be exposed to object-oriented languages like Python or C++ [S1].",
+      "error": null,
+      "elapsed_seconds": 25.22
+    },
+    {
+      "id": "PROG2",
+      "suite": "programming",
+      "question": "Do I need prior programming experience before starting Computer Engineering?",
+      "resolved_question": "Do I need prior programming experience before starting computer engineering? (constraints: before_starting)",
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_format_valid": true,
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1",
+          "S2"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "normalized": false,
+        "repair_actions": [],
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1,
+        "retry_failure_reason": null
+      },
+      "sources": [
+        {
+          "source_id": "src_070",
+          "title": "EECS Majors: Choosing your first computer science course",
+          "labels": [
+            "S1"
+          ]
+        },
+        {
+          "source_id": "src_039",
+          "title": "Which Introductory Course Should I Take?",
+          "labels": [
+            "S2"
+          ]
+        },
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "labels": [
+            "S3"
+          ]
+        }
+      ],
+      "top_context": [
+        {
+          "label": "S1",
+          "source_id": "src_070",
+          "chunk_id": "src_070_chunk_001",
+          "title": "EECS Majors: Choosing your first computer science course",
+          "category": "programming",
+          "passage": "Source ID: src_070 Title: EECS Majors: Choosing your first computer science course First computer science course - Berkeley Engineering Skip to primary navigation Educating leaders. Creating knowledge. Serving society. Home > Students > New students > First computer science course EECS Majors: Choosing your first computer science course As an EECS major, which computer programming course is the right one for you your first semester? Here’s some advice from the Computer Sciences faculty about your options for your first semester. Computer Science 61Ais a rigorous and fast-paced introduction to computer science that was designed for students with some prior programming experience."
+        },
+        {
+          "label": "S2",
+          "source_id": "src_039",
+          "chunk_id": "src_039_chunk_006",
+          "title": "Which Introductory Course Should I Take?",
+          "category": "programming",
+          "passage": "education to later courses. Many upper-level courses are adapting how they teach as well, leveraging agents to teach new skills that weren't approachable before, while still doing conventional exercises that build student learning. Several courses (including intro ones) have components that explore the societal impacts of AI agents. Our courses will continue to evolve as we learn from these efforts. Which is better for continuing into CS200? All are equally good. The first two weeks of CS200 run in separate tracks, depending on which intro you came from. 200 was explicitly designed to bring in students from any of the first semester courses."
+        },
+        {
+          "label": "S3",
+          "source_id": "src_067",
+          "chunk_id": "src_067_chunk_130",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "passage": "aspects of a general education common in the US. The remaining sample curricula (Curricula D and E) illustrate typical programs in computer engineering that one might find in China, the United Kingdom, Europe, Asia, and other parts of the world. Curriculum E is consistent with the Bologna Declaration, with the three-year program leading to a typical bachelor of engineering degree. The common requirements are spread widely across a range of courses and allow revisiting the subject matter with spiral learning taking place. Each curriculum contains sufficient flexibility to support various areas of specialization."
+        }
+      ],
+      "answer": "Based on the information provided in [S1], which discusses the first computer science course for EECS majors at UC Berkeley, it is recommended that students have some prior programming experience for the rigorous and fast-paced Computer Science 61A course. This suggests that prior programming experience may be beneficial before starting a computer engineering program. However, [S2] does not provide specific information about prior programming experience requirements for computer engineering. Therefore, while prior programming experience is mentioned, it is not explicitly stated as a requirement for starting a computer engineering program.",
+      "error": null,
+      "elapsed_seconds": 23.23
+    },
+    {
+      "id": "MATH1",
+      "suite": "math",
+      "question": "How much mathematics is required in Computer Engineering?",
+      "resolved_question": "How much mathematics is required in Computer Engineering?",
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_format_valid": true,
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1",
+          "S2"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "normalized": false,
+        "repair_actions": [],
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1,
+        "retry_failure_reason": null
+      },
+      "sources": [
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "labels": [
+            "S1"
+          ]
+        },
+        {
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "labels": [
+            "S2"
+          ]
+        },
+        {
+          "source_id": "src_070",
+          "title": "EECS Majors: Choosing your first computer science course",
+          "labels": [
+            "S3"
+          ]
+        }
+      ],
+      "top_context": [
+        {
+          "label": "S1",
+          "source_id": "src_067",
+          "chunk_id": "src_067_chunk_033",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "passage": "mathematics is insufficient to produce a competent computer engineer, so the knowledge units in the mathematics component focus only on the knowledge and skills that support essential components of the computer engineering content areas. It is up to each program to decide the quantity and level of mathematics for its graduates. See Chapter 6 for more discussion on this issue. 3.6 Curricular models The discussion in the previous section provides a minimal framework for generating a body of knowledge for a computer engineering program."
+        },
+        {
+          "label": "S2",
+          "source_id": "src_042",
+          "chunk_id": "src_042_chunk_010",
+          "title": "Curricular Guidance",
+          "category": "common_misconceptions",
+          "passage": "include the courses appropriate to fulfill all general education and related requirements arising from institutional and state mandates, as well as regional institutional accreditation guidelines. Categories of general education courses typically include: mathematics and quantitative reasoning; natural sciences; English and oral communication; cultural and diversity studies, humanities and the arts; world languages; social and behavioral sciences; health and physical education. Mathematics A strong foundation in mathematics provides the necessary basis for associate-degree transfer programs in computing."
+        },
+        {
+          "label": "S3",
+          "source_id": "src_070",
+          "chunk_id": "src_070_chunk_001",
+          "title": "EECS Majors: Choosing your first computer science course",
+          "category": "programming",
+          "passage": "Source ID: src_070 Title: EECS Majors: Choosing your first computer science course First computer science course - Berkeley Engineering Skip to primary navigation Educating leaders. Creating knowledge. Serving society. Home > Students > New students > First computer science course EECS Majors: Choosing your first computer science course As an EECS major, which computer programming course is the right one for you your first semester? Here’s some advice from the Computer Sciences faculty about your options for your first semester. Computer Science 61Ais a rigorous and fast-paced introduction to computer science that was designed for students with some prior programming experience."
+        }
+      ],
+      "answer": "Based on the information provided in [S1] and [S2], mathematics is considered essential for a competent computer engineer, but the specific quantity and level of mathematics required varies among programs. [S1] states that mathematics knowledge units focus on supporting essential components of computer engineering content areas, and it leaves the decision to each program. On the other hand, [S2] emphasizes the importance of a strong foundation in mathematics for associate-degree transfer programs in computing, indicating that mathematics is a significant component of a computer engineering curriculum. Therefore, while mathematics is crucial, the exact amount required can differ based on the specific program's requirements.",
+      "error": null,
+      "elapsed_seconds": 25.72
+    },
+    {
+      "id": "AI1",
+      "suite": "ai",
+      "question": "Will artificial intelligence replace Computer Engineers?",
+      "resolved_question": "will artificial intelligence replace computer engineers?",
+      "status": "insufficient_information",
+      "llm_called": true,
+      "answerability_decision": "unsupported claim could not be matched to retrieved evidence",
+      "citation_format_valid": true,
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "normalized": false,
+        "repair_actions": [],
+        "reason": "unsupported claim could not be matched to retrieved evidence",
+        "retry_attempted": true,
+        "retry_successful": false,
+        "generations_attempted": 2,
+        "retry_failure_reason": "unsupported claim could not be matched to retrieved evidence",
+        "discarded_invalid_generation": true,
+        "discarded_generation_reason": "unsupported claim could not be matched to retrieved evidence"
+      },
+      "sources": [],
+      "top_context": [
+        {
+          "label": "S1",
+          "source_id": "src_017",
+          "chunk_id": "src_017_chunk_097",
+          "title": "The Future of Jobs Report 2025",
+          "category": "future_technologies",
+          "passage": "and Training sector by 2030. AI and big data skills as well as creative thinking are foreseen to grow in importance. Emerging job roles within the industry are anticipated to include AI and Machine Learning Specialists and Digital Transformation Specialists. Employers also place greater emphasis than in other industries on curiosity and lifelong learning, marketing and media skills and multilingualism. The industry is less focused than other sectors on upskilling and reskilling its own workforce (73%, compared to the 85% global industry average), while employers aim to improve attractiveness through better talent progression and promotion processes, higher wages, and supporting employee..."
+        },
+        {
+          "label": "S2",
+          "source_id": "src_053",
+          "chunk_id": "src_053_chunk_001",
+          "title": "How Gen AI Affects the Value of Development Work",
+          "category": "artificial_intelligence",
+          "passage": "Source ID: src_053 How Gen AI Affects the Value of Development Work GoogleResearch How Gen AI Affects the Value of Development Work Kevin Storer DORA, Google (2024) DownloadGoogle Scholar Copy Bibtex Listen with Illuminate Abstract This report outlines a series of 10 in-depth interviews aimed at understanding how professional developers ascribe value to their work and whether the use of generative artificial intelligence in development changes how the value of development work is assessment. Research Areas Machine intelligence Software engineering Meet the teams driving innovation Our teams advance the state of the art through research, systems engineering, and collaboration across Google."
+        },
+        {
+          "label": "S3",
+          "source_id": "src_045",
+          "chunk_id": "src_045_chunk_098",
+          "title": "Skills for the digital age",
+          "category": "skills_and_technologies",
+          "passage": "rapid technological development calls for closely monitoring how AI systems evolve. Anticipating shifts in skill demand caused by technology will be key for education and training systems to respond to the changing needs of individuals and businesses. Robust measurements of AI capabilities will hence be increasingly helpful to inform responsive social policies in the years to come (OECD, 2023 [22]). rapid technological development calls for closely monitoring how AI systems evolve. Anticipating shifts in skill demand caused by technology will be key for education and training systems to respond to the changing needs of individuals and businesses."
+        }
+      ],
+      "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+      "error": null,
+      "elapsed_seconds": 61.15
+    },
+    {
+      "id": "CYB1",
+      "suite": "cybersecurity",
+      "question": "How can I become a cybersecurity specialist?",
+      "resolved_question": "How can I become a cybersecurity specialist? (Computer Engineering)",
+      "status": "insufficient_information",
+      "llm_called": false,
+      "answerability_decision": "retrieved evidence has too little overlap with the question terms: ['computer engineering', 'specialist']",
+      "citation_format_valid": true,
+      "citation_metadata": {},
+      "sources": [],
+      "top_context": [
+        {
+          "label": null,
+          "source_id": "src_017",
+          "chunk_id": "src_017_chunk_092",
+          "title": "The Future of Jobs Report 2025",
+          "category": "future_technologies",
+          "passage": "Design and user experience Networks and cybersecurity Programming Technological literacy Self-efﬁcacyTechnology skills Working with others Ethics Management skills Cognitive skills Engagement skills Physical abilities Skills, knowledge and abilities Attitudes Skill importance in 2025, by regionTABLE 5.3 0 10050 Share of employers which consider skills to be core skills for their workers (%), by region. Future of Jobs Report 2025 79\n\nPage 80\nSkill evolution, 2025-2030, by regionTABLE 5.4\nNet difference between the share of employers which consider skills to be increasing and decreasing in importance to their workers from\n2025 to 2030 (%), by region. The share of employers predicting skill stability is not used in the calculation.\n0 10050-50-100\nNet difference\nEnvironmental stewardship\nGloba"
+        },
+        {
+          "label": null,
+          "source_id": "src_068",
+          "chunk_id": "src_068_chunk_001",
+          "title": "Workforce Framework for Cybersecurity (NICE Framework)",
+          "category": "cybersecurity",
+          "passage": "Source ID: src_068\n\nWorkforce Framework for Cybersecurity (NICE Framework) | NIST\n\nAn official website of the United States government\n\nHere’s how you know\n\nOfficial websites use .gov\n\nA .gov website belongs to an official government organization in the United States.\n\nSecure .gov websites use HTTPS\n\nA lock (\n) or https:// means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.\n\nhttps://www.nist.gov/publications/workforce-framework-cybersecurity-nice-framework\n\nSearch NIST\n\nPUBLICATIONS\n\nWorkforce Framework for Cybersecurity (NICE Framework)\n\nPublished\n\nNovember 16, 2020\n\nAuthor(s)\n\nRodney Petersen, Danielle Santos, Karen Wetzel, Matthew Smith, Greg Witte\n\nAbstract\n\nThis publication from the National Initiative for Cybersecurity Edu"
+        },
+        {
+          "label": null,
+          "source_id": "src_017",
+          "chunk_id": "src_017_chunk_043",
+          "title": "The Future of Jobs Report 2025",
+          "category": "future_technologies",
+          "passage": "Page 41\nOn the other hand, skills that are core today, but\nexpected to remain stable over the next five years\nwithout significant increase in use, displayed in the\nlower right quadrant, include empathy and active\nlistening, service orientation and customer service\nand resource management and operations. Finally,\nthe bottom left quadrant of Figure 3.6 highlights\nskills that are neither critical now nor expected\nto increase significantly in use over the next five\nyears. While most of these skills remain important,\nthey may represent areas where less investment is\nrequired, allowing employers to prioritize resources\ntoward more rapidly evolving skill sets. Working with others\nEngagement skillsCognitive skills\nTechnology skillsSelf-efﬁcacyPhysical abilities\nManagement skillsEthics\nAI and big d"
+        },
+        {
+          "label": null,
+          "source_id": "src_069",
+          "chunk_id": "src_069_chunk_019",
+          "title": "Computing Competencies for Undergraduate Data Science Curricula",
+          "category": "specializations",
+          "passage": "Data Privacy, Security, Integrity, and Analysis for\nSecurity\n● Data privacy\n● Data security\n● Data integrity\n● Analysis for security\n\nMachine learning\n● General\n● Supervised learning\n● Unsupervised learning\n● Mixed methods\n● Deep learning\n\nProfessionalism\n● Continuing professional development\n● Communication\n● Teamwork\n● Economic considerations\n● Privacy and confidentiality\n● Ethical considerations\n● Legal considerations\n● Intellectual property\n● On automation\n\nProgramming, data structures and algorithms\n● Algorithmic thinking and problem solving\n● Programming\n● Data structures\n● Algorithms\n● Basic complexity analysis\n● Numerical computing\n\nSoftware development and maintenance\n● Software design and development\n● Software testing\nFigure 3-2 The (Computing) Data Science Knowledge Areas (with"
+        }
+      ],
+      "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+      "error": null,
+      "elapsed_seconds": 0.06
+    },
+    {
+      "id": "HW1",
+      "suite": "hardware",
+      "question": "Is Computer Engineering more focused on hardware or software?",
+      "resolved_question": "Is computer engineering more focused on hardware or software? (topics: hardware, software)",
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_format_valid": true,
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1",
+          "S2"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "normalized": false,
+        "repair_actions": [],
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1,
+        "retry_failure_reason": null
+      },
+      "sources": [
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "labels": [
+            "S1"
+          ]
+        },
+        {
+          "source_id": "src_070",
+          "title": "EECS Majors: Choosing your first computer science course",
+          "labels": [
+            "S2"
+          ]
+        },
+        {
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "labels": [
+            "S3"
+          ]
+        }
+      ],
+      "top_context": [
+        {
+          "label": "S1",
+          "source_id": "src_067",
+          "chunk_id": "src_067_chunk_019",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "passage": "constraints. These relate to such matters as structure and organization, techniques, technologies, methodologies, interfaces, as well as the selection of components. The outcome needs to exhibit desirable properties and these tend to relate to simplicity and elegance. Chapter 4 presents a more detailed discussion of design and related laboratory experiences. Page 20 Page 19 of 149 2.3.4 Breadth of knowledge Because of the breadth of the computer-engineering field, curricular content may vary widely among programs, or even among students in the same program."
+        },
+        {
+          "label": "S2",
+          "source_id": "src_070",
+          "chunk_id": "src_070_chunk_001",
+          "title": "EECS Majors: Choosing your first computer science course",
+          "category": "programming",
+          "passage": "Source ID: src_070 Title: EECS Majors: Choosing your first computer science course First computer science course - Berkeley Engineering Skip to primary navigation Educating leaders. Creating knowledge. Serving society. Home > Students > New students > First computer science course EECS Majors: Choosing your first computer science course As an EECS major, which computer programming course is the right one for you your first semester? Here’s some advice from the Computer Sciences faculty about your options for your first semester. Computer Science 61Ais a rigorous and fast-paced introduction to computer science that was designed for students with some prior programming experience."
+        },
+        {
+          "label": "S3",
+          "source_id": "src_042",
+          "chunk_id": "src_042_chunk_001",
+          "title": "Curricular Guidance",
+          "category": "common_misconceptions",
+          "passage": "Source ID: src_042 Curricular Guidance - ACM CCECC Facebook Twitter LinkedIn YouTube ACM CCECC Celebrating 40++ years of service to computing education communities. Curricular Guidance Computer Engineering Computer Science Cybersecurity Data Science - Coming soon! Information Technology Information Technology - Applied Information Technology - Transfer Software Engineering Curricular Guidance The Sub-Disciplines of Computing The Association for Computing Machinery (ACM) currently categorizes the overarching discipline of computing into five defined sub-disciplines: computer science, computer engineering, software engineering, information systems and information technology."
+        }
+      ],
+      "answer": "Based on the information provided in [S1] and [S2], computer engineering (CE) appears to be more focused on hardware rather than software. [S1] discusses the design aspect of computer engineering, which often involves hardware considerations such as structure and organization, techniques, technologies, methodologies, interfaces, and component selection. On the other hand, [S2] focuses on the first computer science course for EECS majors, which is Computer Science 61A, a course that is described as a rigorous and fast-paced introduction to computer science designed for students with some prior programming experience. This suggests that the first computer science course is more software-oriented, further supporting the idea that computer engineering is more hardware-focused.",
+      "error": null,
+      "elapsed_seconds": 24.3
+    },
+    {
+      "id": "INT1",
+      "suite": "internships",
+      "question": "How important are internships for Computer Engineering students?",
+      "resolved_question": "How important are internships for computer engineering students?",
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_format_valid": true,
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1",
+          "S2"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "normalized": false,
+        "repair_actions": [],
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1,
+        "retry_failure_reason": null
+      },
+      "sources": [
+        {
+          "source_id": "src_018",
+          "title": "Students Recognize the Importance of Gaining Internship Experience",
+          "labels": [
+            "S1"
+          ]
+        },
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "labels": [
+            "S2"
+          ]
+        },
+        {
+          "source_id": "src_004",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "labels": [
+            "S3"
+          ]
+        }
+      ],
+      "top_context": [
+        {
+          "label": "S1",
+          "source_id": "src_018",
+          "chunk_id": "src_018_chunk_001",
+          "title": "Students Recognize the Importance of Gaining Internship Experience",
+          "category": "internships",
+          "passage": "Source ID: src_018 Students Recognize the Importance of Gaining Internship Experience Join/RenewSign InSign Out Your NACE membership expires soon! >> Your membership ends Why Join NACE? Learn all about NACE member benefits today Home / Job Market / Internships Internships Students Recognize the Importance of Gaining Internship Experience Date: September 23, 2024 By: Kevin Gray Share AAA co opscompensationInternshipsnace insightsstudent attitudessurveys The percent of graduating seniors who participated in an internship is the highest that NACE has recorded in the past six years, according to results of NACE’s 2024 Student Survey."
+        },
+        {
+          "label": "S2",
+          "source_id": "src_067",
+          "chunk_id": "src_067_chunk_048",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "passage": "but it might also allow them to gain academic credit and, in many cases, to receive pay for their work. Often, this experience does not allow students to take courses, so the focus is on the practicum and not on passing exams. Any constructive industry experience a student acquires is a definite plus for those seeking permanent employment upon graduation. Often students work part-time while studying at a university. This blending of real world experience and academic endeavors provides a necessary component to help them decide on future career goals. Academia needs to embrace this experience since this is what helps differentiate one candidate from another."
+        },
+        {
+          "label": "S3",
+          "source_id": "src_004",
+          "chunk_id": "src_004_chunk_008",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "curriculum",
+          "passage": "I This course is the first part of a two-semester capstone project in computer engineering. Students identify a research or design problem related to computer systems and develop a comprehensive project plan. The course includes literature review, problem definition, methodology development, and preliminary analysis or design. Emphasis is placed on independent study, technical reporting, and project planning under faculty supervision."
+        }
+      ],
+      "answer": "Based on the information provided in [S1], the percentage of graduating seniors who participated in an internship is the highest that NACE has recorded in the past six years. This indicates that internships are highly valued by Computer Engineering students and are considered important for their career development. [S2] also supports this by mentioning that internships provide valuable real-world experience, which is beneficial for students seeking permanent employment after graduation. Therefore, internships are crucial for Computer Engineering students as they offer practical experience that complements their academic studies.",
+      "error": null,
+      "elapsed_seconds": 23.66
+    },
+    {
+      "id": "CAREER1",
+      "suite": "careers",
+      "question": "What industries hire Computer Engineering graduates?",
+      "resolved_question": "What industries hire computer engineering graduates?",
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_format_valid": true,
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3",
+          "S4"
+        ],
+        "normalized": false,
+        "repair_actions": [],
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1,
+        "retry_failure_reason": null
+      },
+      "sources": [
+        {
+          "source_id": "src_045",
+          "title": "Skills for the digital age",
+          "labels": [
+            "S1"
+          ]
+        },
+        {
+          "source_id": "src_016",
+          "title": "2024 State of Tech Talent Report",
+          "labels": [
+            "S2"
+          ]
+        },
+        {
+          "source_id": "src_025",
+          "title": "ICT",
+          "labels": [
+            "S3"
+          ]
+        },
+        {
+          "source_id": "src_017",
+          "title": "The Future of Jobs Report 2025",
+          "labels": [
+            "S4"
+          ]
+        }
+      ],
+      "top_context": [
+        {
+          "label": "S1",
+          "source_id": "src_045",
+          "chunk_id": "src_045_chunk_087",
+          "title": "Skills for the digital age",
+          "category": "skills_and_technologies",
+          "passage": "Page 76 dynamic occupations in recent years. Yet shortages of ICT specialists also persist in several sectors (Censorii, 2021 [31]). In 2021, more than 60% of EU enterprises that recruited or tried to recruit ICT specialists struggled to fill vacancies. In response, the European Commission announced an ambitious target for 20 million IT specialists within the European workforce by 2030 (European Commission, 2023 [32]). Spiezia, Koksal-Oudot and Montagnier (2016 [33]) propose several proxy indicators based on occupations, job vacancies, vacancy duration and wages to assess potential shortages in a given occupation on the demand for ICT specialists."
+        },
+        {
+          "label": "S2",
+          "source_id": "src_016",
+          "chunk_id": "src_016_chunk_013",
+          "title": "2024 State of Tech Talent Report",
+          "category": "skills_and_technologies",
+          "passage": "job market where having a degree is still highly valued. In 2022, in the United States, 69% of computer programmer positions and 95% of mobile application Figure 16: It takes more time to onboard compared to 2023, and more technical staff resigned or were asked to leave than in the previous year 2024 STATE OF TECH TALENT REPORT | 20 Page 21 developer jobs still required a degree5. However, research shows that focusing on skills during hiring is five times better at predicting job performance than hiring for education6."
+        },
+        {
+          "label": "S3",
+          "source_id": "src_025",
+          "chunk_id": "src_025_chunk_001",
+          "title": "ICT",
+          "category": "employment",
+          "passage": "Source ID: src_025 ICT - Invest in Türkiye Turn on more accessible mode Turn off more accessible mode This is a test version of invest.gov.tr/en. Who We Are How We Help Message From The President FDI Strategy Contact Us Our Global Locations ICT InvestHome PageSectorsICT Invest Sector Detail USD 36.7 billion Total value of the Turkish ICT market in 2024. 59% Average growth of the Turkish ICT sector on a TRY basis in the past 5 years. On a USD basis, the sector grew by 8%. 11,700+ Number of active companies in the Turkish ICT sector. 246,000+ Number of employees in the Turkish ICT sector. (70% are younger than age 35) 70% Smartphone possession rate in Türkiye in 2024."
+        },
+        {
+          "label": "S4",
+          "source_id": "src_017",
+          "chunk_id": "src_017_chunk_119",
+          "title": "The Future of Jobs Report 2025",
+          "category": "future_technologies",
+          "passage": "Media and Communication Workers Photographers Video Game Designers Writers and Authors Business and Financial Operations Accountants and Auditors Business Intelligence Analysts Claims Adjusters, Examiners, and Investigators Compliance Officers Credit and Loans Officers Digital Marketing and Strategy Specialists Digital Transformation Specialists Job taxonomy The occupational taxonomy was modified and extended from O*NET SOC."
+        }
+      ],
+      "answer": "Based on the information provided in the sources, Computer Engineering graduates are in demand across various industries. The OECD's Skills for the digital age report highlights the persistent demand for ICT specialists, particularly in dynamic occupations. The 2024 State of Tech Talent Report from The Linux Foundation also indicates that having a degree is still highly valued in the job market, with 69% of computer programmer positions and 95% of mobile application developer jobs requiring a degree. Additionally, the ICT report from the Presidency of the Republic of Türkiye Investment Office suggests that the Turkish ICT sector, which includes Computer Engineering, is a significant part of the economy, with a total value of USD 36.7 billion in 2024. This indicates that Computer Engineering graduates are likely to be in demand in the tech and telecommunications sectors, as well as in related industries such as media and communications, business and financial operations, and digital marketing. [S1], [S2], [S3]",
+      "error": null,
+      "elapsed_seconds": 33.47
+    },
+    {
+      "id": "PROJ1",
+      "suite": "projects",
+      "question": "How can I build an impressive project portfolio before graduation?",
+      "resolved_question": "How can I build an impressive projects portfolio before graduation? (Computer Engineering)",
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_format_valid": true,
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "normalized": false,
+        "repair_actions": [],
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1,
+        "retry_failure_reason": null
+      },
+      "sources": [
+        {
+          "source_id": "src_073",
+          "title": "What is Career Readiness?",
+          "labels": [
+            "S1",
+            "S3"
+          ]
+        },
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "labels": [
+            "S2"
+          ]
+        }
+      ],
+      "top_context": [
+        {
+          "label": "S1",
+          "source_id": "src_073",
+          "chunk_id": "src_073_chunk_003",
+          "title": "What is Career Readiness?",
+          "category": "employment",
+          "passage": "Effectively manage conflict, interact with and respect diverse personalities, and meet ambiguity with resilience. Be accountable for individual and team responsibilities and deliverables. Employ personal strengths, knowledge, and talents to complement those of others. Exercise the ability to compromise and be agile. Collaborate with others to achieve common goals. Build strong, positive working relationships with supervisor and team members/coworkers. Download definitionDownload icon setAssessment tool Technology Understand and leverage technologies ethically to enhance efficiencies, complete tasks, and accomplish goals."
+        },
+        {
+          "label": "S2",
+          "source_id": "src_067",
+          "chunk_id": "src_067_chunk_051",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "passage": "an appropriate selection of tools and techniques as well as a disciplined approach in arriving at a solution of the problem Beyond these characteristics, this chapter has sought to address the range of basic ingredients that institutions must assemble and carefully integrate into a computer engineering program to ensure that graduates are aware of the best traditions of engineering practice. 4.10 Graduate and continuing professional education Because of the rapidly changing field of computing, the steering committee strongly encourages graduates from computer engineering programs to pursue advanced studies in graduate school."
+        },
+        {
+          "label": "S3",
+          "source_id": "src_073",
+          "chunk_id": "src_073_chunk_004",
+          "title": "What is Career Readiness?",
+          "category": "employment",
+          "passage": "When reviewing the resumes of Class of 2026 candidates for entry-level positions, employers are seeking graduates who provide evidence of polished teamwork, problem-solving, and communication skills, according to results of NACE’s Job Outlook 2026 Spring Update survey. Read more The Gap in Perceptions of New Grads’ Competency Proficiency and Resources to Shrink It There is a clear and persistent disconnect between how students and employers perceive students’ development of the competencies they need to be career ready as they enter the workforce."
+        }
+      ],
+      "answer": "To build an impressive projects portfolio before graduation in Computer Engineering, you should focus on projects that demonstrate your technical skills, problem-solving abilities, and teamwork. According to [S1], one of the key competencies for career readiness is the ability to collaborate with others to achieve common goals. Engaging in group projects or internships can provide you with opportunities to work on real-world problems and collaborate with peers and mentors. Additionally, [S2] highlights the importance of understanding and leveraging technologies ethically to enhance efficiencies and complete tasks. You can showcase your proficiency in these areas by working on projects that require the use of various technologies. Lastly, [S3] emphasizes the need for graduates to provide evidence of polished teamwork, problem-solving, and communication skills. By participating in group projects and internships, you can develop these essential skills and create a strong portfolio that will impress potential employers.",
+      "error": null,
+      "elapsed_seconds": 26.06
+    },
+    {
+      "id": "GIT1",
+      "suite": "skills",
+      "question": "Should I learn Git and GitHub for Computer Engineering projects?",
+      "resolved_question": "should I learn git and github for computer engineering projects?",
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_format_valid": true,
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "normalized": true,
+        "repair_actions": [
+          "added_supported_inline_label"
+        ],
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1,
+        "retry_failure_reason": null
+      },
+      "sources": [
+        {
+          "source_id": "src_015",
+          "title": "About Git",
+          "labels": [
+            "S1"
+          ]
+        },
+        {
+          "source_id": "src_039",
+          "title": "Which Introductory Course Should I Take?",
+          "labels": [
+            "S2"
+          ]
+        },
+        {
+          "source_id": "src_070",
+          "title": "EECS Majors: Choosing your first computer science course",
+          "labels": [
+            "S3"
+          ]
+        }
+      ],
+      "top_context": [
+        {
+          "label": "S1",
+          "source_id": "src_015",
+          "chunk_id": "src_015_chunk_002",
+          "title": "About Git",
+          "category": "skills_and_technologies",
+          "passage": "Using the command line or other ease-of-use interfaces, a Git repository also allows for: interaction with the history, cloning the repository, creating branches, committing, merging, comparing changes across versions of code, and more. Through platforms like GitHub, Git also provides more opportunities for project transparency and collaboration. Public repositories help teams work together to build the best possible final product."
+        },
+        {
+          "label": "S2",
+          "source_id": "src_039",
+          "chunk_id": "src_039_chunk_001",
+          "title": "Which Introductory Course Should I Take?",
+          "category": "programming",
+          "passage": "Source ID: src_039 Title: Which Introductory Course Should I Take? Brown CS: Which Introductory Course Should I Take? About Brown Academics Admission Research Campus Life Information for: Current Students Faculty Staff Families Alumni Friends & Neighbors A to Z Index People Directory Social@Brown Facebook Twitter LinkedIn Google+ Computer Science About About the Department Contact Directions Rooms Systems & Software Conduit Diversity Socially Responsible Computing Positions / Jobs Brown CS News Events Brown CS Blog People Our Community Faculty Staff Grad Students Ugrad Students Alums Research Research Links Areas Publications Opportunities For Visiting Students Degrees Degree Programs..."
+        },
+        {
+          "label": "S3",
+          "source_id": "src_070",
+          "chunk_id": "src_070_chunk_001",
+          "title": "EECS Majors: Choosing your first computer science course",
+          "category": "programming",
+          "passage": "Source ID: src_070 Title: EECS Majors: Choosing your first computer science course First computer science course - Berkeley Engineering Skip to primary navigation Educating leaders. Creating knowledge. Serving society. Home > Students > New students > First computer science course EECS Majors: Choosing your first computer science course As an EECS major, which computer programming course is the right one for you your first semester? Here’s some advice from the Computer Sciences faculty about your options for your first semester. Computer Science 61Ais a rigorous and fast-paced introduction to computer science that was designed for students with some prior programming experience."
+        }
+      ],
+      "answer": "Based on the information provided, learning Git and GitHub is beneficial for Computer Engineering projects. Git allows for interaction with the history of projects, cloning repositories, creating branches, committing, merging, and comparing changes across different versions of code. GitHub provides additional transparency and collaboration opportunities, which are valuable for team projects. These tools are essential for managing code versions and facilitating teamwork, which are crucial aspects of Computer Engineering projects [S1].",
+      "error": null,
+      "elapsed_seconds": 18.26
+    },
+    {
+      "id": "FUT1",
+      "suite": "future",
+      "question": "Which future technologies should a CENG student follow?",
+      "resolved_question": "Which future technologies should a ceng student follow?",
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_format_valid": true,
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "normalized": false,
+        "repair_actions": [],
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1,
+        "retry_failure_reason": null
+      },
+      "sources": [
+        {
+          "source_id": "src_063",
+          "title": "CENG 316 New Trends in Computer Engineering Course Syllabus",
+          "labels": [
+            "S1"
+          ]
+        },
+        {
+          "source_id": "src_063",
+          "title": "CENG 316 New Trends in Computer Engineering Course Syllabus",
+          "labels": [
+            "S2"
+          ]
+        },
+        {
+          "source_id": "src_043",
+          "title": "Subdisciplines",
+          "labels": [
+            "S3"
+          ]
+        }
+      ],
+      "top_context": [
+        {
+          "label": "S1",
+          "source_id": "src_063",
+          "chunk_id": "src_063_future_technologies",
+          "title": "CENG 316 New Trends in Computer Engineering Course Syllabus",
+          "category": "curriculum",
+          "passage": "CENG 316 New Trends in Computer Engineering is an OSTIM Computer Engineering syllabus. Its weekly schedule names these emerging or new-trends topics: Artificial Intelligence and Machine Learning; Cloud Computing; Internet of Things (IoT), Embedded Systems, and Autonomous Technologies; Quantum Computing; Microservices Architecture; DevOps and CI/CD; Blockchain Technology and Smart Contracts; Data Science and Big Data; HCI, UX Design, and AR/VR Applications; Cybersecurity and DevSecOps; Advances in Test Automation; Green Computing and Sustainable Software Engineering. The syllabus does not rank these topics or say which one is most important."
+        },
+        {
+          "label": "S2",
+          "source_id": "src_063",
+          "chunk_id": "src_063_chunk_001",
+          "title": "CENG 316 New Trends in Computer Engineering Course Syllabus",
+          "category": "curriculum",
+          "passage": "Source ID: src_063 Title: CENG 316 New Trends in Computer Engineering Course Syllabus Page 1 OTU Form No: YS.FR.001 Rev.00 Not: Kullanılacak Kontrollü dokümanların güncel haline Doküman Yönetim Sisteminden ulaşılır. İlk Yayın Tarihi/Issue Date: 01.10.2024 Revizyon Tarihi/Revision Date: 01.10.2024 FACULTY OF ENGINEERING COURSE SYLLABUS FORM Doküman No MF.FR.003 Revizyon Tarihi 3.12.2024 Revizyon No 01 Sayfa No 1 / 5 CENG 316 - NEW TRENDS IN COMPUTER ENGINEERING Course Code Course Name Semester CENG 316 New Trends in Computer Engineering Fall ☒ Spring ☐ Summer ☐ Hours Credit ECTS Theory Practice Lab 3 5 3 0 0 Course Details Department Computer Engineering Course Language English Course Level..."
+        },
+        {
+          "label": "S3",
+          "source_id": "src_043",
+          "chunk_id": "src_043_chunk_001",
+          "title": "Subdisciplines",
+          "category": "specializations",
+          "passage": "Source ID: src_043 Subdisciplines | Electrical & Computer Engineering | Illinois University of Illinois Urbana-Champaign Apply Give My.ECE The Grainger College of Engineering Electrical & Computer Engineering Subdisciplines Breadth and Depth in Electrical and Computer Engineering Both electrical and computer engineering build from a core understanding of electrical phenomena, the concepts of systems and signals, and computers. At the junior and senior level, however, they branch into a large and diverse set of rich intellectual areas, ranging from bioengineering to power systems."
+        }
+      ],
+      "answer": "Based on the syllabus provided in [S1], a CENG student should follow the following future technologies: Artificial Intelligence and Machine Learning, Cloud Computing, Internet of Things (IoT), Embedded Systems, and Autonomous Technologies, Quantum Computing, Microservices Architecture, DevOps and CI/CD, Blockchain Technology and Smart Contracts, Data Science and Big Data, HCI, UX Design, and AR/VR Applications, Cybersecurity and DevSecOps, Advances in Test Automation, and Green Computing and Sustainable Software Engineering. These topics are named as emerging or new trends in the syllabus and are not ranked in importance.",
+      "error": null,
+      "elapsed_seconds": 29.8
+    },
+    {
+      "id": "FUT2",
+      "suite": "future",
+      "question": "Which modern tech topics are covered for CENG students?",
+      "resolved_question": "Which modern tech topics are covered for ceng students?",
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_format_valid": true,
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "normalized": true,
+        "repair_actions": [
+          "source_name_to_inline_label"
+        ],
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1,
+        "retry_failure_reason": null
+      },
+      "sources": [
+        {
+          "source_id": "src_063",
+          "title": "CENG 316 New Trends in Computer Engineering Course Syllabus",
+          "labels": [
+            "S1"
+          ]
+        },
+        {
+          "source_id": "src_063",
+          "title": "CENG 316 New Trends in Computer Engineering Course Syllabus",
+          "labels": [
+            "S2"
+          ]
+        },
+        {
+          "source_id": "src_043",
+          "title": "Subdisciplines",
+          "labels": [
+            "S3"
+          ]
+        }
+      ],
+      "top_context": [
+        {
+          "label": "S1",
+          "source_id": "src_063",
+          "chunk_id": "src_063_future_technologies",
+          "title": "CENG 316 New Trends in Computer Engineering Course Syllabus",
+          "category": "curriculum",
+          "passage": "CENG 316 New Trends in Computer Engineering is an OSTIM Computer Engineering syllabus. Its weekly schedule names these emerging or new-trends topics: Artificial Intelligence and Machine Learning; Cloud Computing; Internet of Things (IoT), Embedded Systems, and Autonomous Technologies; Quantum Computing; Microservices Architecture; DevOps and CI/CD; Blockchain Technology and Smart Contracts; Data Science and Big Data; HCI, UX Design, and AR/VR Applications; Cybersecurity and DevSecOps; Advances in Test Automation; Green Computing and Sustainable Software Engineering. The syllabus does not rank these topics or say which one is most important."
+        },
+        {
+          "label": "S2",
+          "source_id": "src_063",
+          "chunk_id": "src_063_chunk_001",
+          "title": "CENG 316 New Trends in Computer Engineering Course Syllabus",
+          "category": "curriculum",
+          "passage": "Source ID: src_063 Title: CENG 316 New Trends in Computer Engineering Course Syllabus Page 1 OTU Form No: YS.FR.001 Rev.00 Not: Kullanılacak Kontrollü dokümanların güncel haline Doküman Yönetim Sisteminden ulaşılır. İlk Yayın Tarihi/Issue Date: 01.10.2024 Revizyon Tarihi/Revision Date: 01.10.2024 FACULTY OF ENGINEERING COURSE SYLLABUS FORM Doküman No MF.FR.003 Revizyon Tarihi 3.12.2024 Revizyon No 01 Sayfa No 1 / 5 CENG 316 - NEW TRENDS IN COMPUTER ENGINEERING Course Code Course Name Semester CENG 316 New Trends in Computer Engineering Fall ☒ Spring ☐ Summer ☐ Hours Credit ECTS Theory Practice Lab 3 5 3 0 0 Course Details Department Computer Engineering Course Language English Course Level..."
+        },
+        {
+          "label": "S3",
+          "source_id": "src_043",
+          "chunk_id": "src_043_chunk_001",
+          "title": "Subdisciplines",
+          "category": "specializations",
+          "passage": "Source ID: src_043 Subdisciplines | Electrical & Computer Engineering | Illinois University of Illinois Urbana-Champaign Apply Give My.ECE The Grainger College of Engineering Electrical & Computer Engineering Subdisciplines Breadth and Depth in Electrical and Computer Engineering Both electrical and computer engineering build from a core understanding of electrical phenomena, the concepts of systems and signals, and computers. At the junior and senior level, however, they branch into a large and diverse set of rich intellectual areas, ranging from bioengineering to power systems."
+        }
+      ],
+      "answer": "CENG 316 New Trends in Computer Engineering at OSTIM Technical University covers several modern tech topics, including Artificial Intelligence and Machine Learning, Cloud Computing, Internet of Things (IoT), Embedded Systems, and Autonomous Technologies, Quantum Computing, Microservices Architecture, DevOps and CI/CD, Blockchain Technology and Smart Contracts, Data Science and Big Data, Human-Computer Interaction (HCI), User Experience (UX) Design, and AR/VR Applications, as well as Cybersecurity and DevSecOps. These topics are part of the course syllabus and are designed to provide students with a comprehensive understanding of current and emerging trends in computer engineering [S1].",
+      "error": null,
+      "elapsed_seconds": 14.16
+    },
+    {
+      "id": "SPEC1",
+      "suite": "specializations",
+      "question": "What fields are available in Computer Engineering?",
+      "resolved_question": "What fields are available in computer engineering?",
+      "status": "answered",
+      "llm_called": true,
+      "answerability_decision": "allowed_or_bypassed",
+      "citation_format_valid": true,
+      "citation_metadata": {
+        "valid": true,
+        "cited_labels": [
+          "S1"
+        ],
+        "invalid_labels": [],
+        "available_labels": [
+          "S1",
+          "S2",
+          "S3",
+          "S4"
+        ],
+        "normalized": true,
+        "repair_actions": [
+          "added_supported_inline_label"
+        ],
+        "reason": null,
+        "retry_attempted": false,
+        "retry_successful": false,
+        "generations_attempted": 1,
+        "retry_failure_reason": null
+      },
+      "sources": [
+        {
+          "source_id": "src_043",
+          "title": "Subdisciplines",
+          "labels": [
+            "S1",
+            "S2"
+          ]
+        },
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "labels": [
+            "S3",
+            "S4"
+          ]
+        }
+      ],
+      "top_context": [
+        {
+          "label": "S1",
+          "source_id": "src_043",
+          "chunk_id": "src_043_specialization_areas",
+          "title": "Subdisciplines",
+          "category": "specializations",
+          "passage": "Specialization areas in Computer Engineering include: Hardware systems; Cyberphysical systems; Foundations and theory; Trust, reliability, and security; Networking, mobile, and distributed computing; Big Data analytics and systems; Artificial intelligence, robotics, and cybernetics."
+        },
+        {
+          "label": "S2",
+          "source_id": "src_043",
+          "chunk_id": "src_043_chunk_001",
+          "title": "Subdisciplines",
+          "category": "specializations",
+          "passage": "Source ID: src_043 Subdisciplines | Electrical & Computer Engineering | Illinois University of Illinois Urbana-Champaign Apply Give My.ECE The Grainger College of Engineering Electrical & Computer Engineering Subdisciplines Breadth and Depth in Electrical and Computer Engineering Both electrical and computer engineering build from a core understanding of electrical phenomena, the concepts of systems and signals, and computers. At the junior and senior level, however, they branch into a large and diverse set of rich intellectual areas, ranging from bioengineering to power systems."
+        },
+        {
+          "label": "S3",
+          "source_id": "src_067",
+          "chunk_id": "src_067_chunk_019",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "passage": "constraints. These relate to such matters as structure and organization, techniques, technologies, methodologies, interfaces, as well as the selection of components. The outcome needs to exhibit desirable properties and these tend to relate to simplicity and elegance. Chapter 4 presents a more detailed discussion of design and related laboratory experiences. Page 20 Page 19 of 149 2.3.4 Breadth of knowledge Because of the breadth of the computer-engineering field, curricular content may vary widely among programs, or even among students in the same program."
+        },
+        {
+          "label": "S4",
+          "source_id": "src_067",
+          "chunk_id": "src_067_chunk_066",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "passage": "programs by not prescribing how to package core material into courses and leaving room for elective and innovative courses. The core of the body of knowledge provides breadth across the discipline with more in-depth knowledge in key areas. This provides opportunities for students to specialize, while ensuring that graduates are prepared for professional practice in a dynamic and rapidly-evolving field. Page 54 Page 53 of 149 In some cases, an institution may want to design a computer engineering degree program that focuses on one specific area of computer engineering or perhaps gives students a choice among a few such areas."
+        }
+      ],
+      "answer": "In Computer Engineering, there are several specialization areas available, including Hardware systems, Cyberphysical systems, Foundations and theory, Trust, reliability, and security, Networking, mobile, and distributed computing, Big Data analytics and systems, and Artificial intelligence, robotics, and cybernetics. These fields offer a diverse range of opportunities for students to specialize and tailor their education to their interests and career goals [S1].",
+      "error": null,
+      "elapsed_seconds": 22.43
+    },
+    {
+      "id": "SAL1",
+      "suite": "safe_gap",
+      "question": "What salary can Computer Engineering graduates expect in Turkey?",
+      "resolved_question": "What salary can computer engineering graduates expect in turkey? (constraints: turkey)",
+      "status": "insufficient_information",
+      "llm_called": false,
+      "answerability_decision": "retrieved evidence does not contain salary evidence for Computer Engineering graduates or job outcomes",
+      "citation_format_valid": true,
+      "citation_metadata": {},
+      "sources": [],
+      "top_context": [
+        {
+          "label": null,
+          "source_id": "src_025",
+          "chunk_id": "src_025_chunk_001",
+          "title": "ICT",
+          "category": "employment",
+          "passage": "Source ID: src_025\n\nICT - Invest in Türkiye\n\nTurn on more accessible mode\n\nTurn off more accessible mode\n\nThis is a test version of invest.gov.tr/en.\n\nWho We Are\n\nHow We Help\n\nMessage From The President\n\nFDI Strategy\n\nContact Us\n\nOur Global Locations\n\nICT\n\nInvestHome PageSectorsICT\n\nInvest Sector Detail\n\nUSD 36.7 billion\n\nTotal value of the Turkish ICT market in 2024.\n\n59%\n\nAverage growth of the Turkish ICT sector on a TRY basis in the past 5 years. On a USD basis, the sector grew by 8%.\n\n11,700+\n\nNumber of active companies in the Turkish ICT sector.\n\n246,000+\n\nNumber of employees in the Turkish ICT sector.\n(70% are younger than age 35)\n\n70%\n\nSmartphone possession rate in Türkiye in 2024.\n\n1,350+\n\nNumber of R&D centers in Türkiye.\n\n89,000+\n\nNumber of employees in R&D centers in Türkiye.\n\nT"
+        },
+        {
+          "label": null,
+          "source_id": "src_045",
+          "chunk_id": "src_045_chunk_089",
+          "title": "Skills for the digital age",
+          "category": "skills_and_technologies",
+          "passage": "Page 77\nFigure 1.S.2. Wages in ICT services grew more than in the total business sector\nChanges in wages relative to labour productivity 2013-22, annual averages\n-0.2\n0.2\n0.4\n0.6\n0.8\n1.2\nICT services Total busine ss\nROU BGR EST LVA ISL LTU HRV IRL CZE POL DEU CHE SVK EU\n27 FIN AUT NLD DNK PRT FRA GRC SVN LUX BEL ITA ESP SWE HUN NOR\nSource: Authors’ calculations based on (Eurostat, 2023 [40]) Annual National Accounts Statistics, https://ec.europa.eu/eurostat/web/national-accounts\n(accessed on 5 March 2024). 12 https://stat.link/4ls2pk\nFor SMEs in particular, investments in ICT skills are a longstanding challenge (OECD, 2021[41]). In Europe, the percentage\nof large enterprises employing ICT specialists (76%) was more than five times higher in 2020 than that of SMEs employing\nICT specialists "
+        },
+        {
+          "label": null,
+          "source_id": "src_026",
+          "chunk_id": "src_026_chunk_003",
+          "title": "Turkey - Information and Communication Technology",
+          "category": "employment",
+          "passage": "access restrictions or regulatory actions in Türkiye in recent years. As of August 2019, the Amendment to Law No. 6112 on the Establishment of Radio and Television Enterprises and Their Media Services regulation, requires online streaming and video on demand services companies to apply for a broadcasting license from RTÜK (Radio and Television Supreme Council) to legally operate in Türkiye.\n\nIT Hardware and Software\n\nTürkiye’s software market is rapidly expanding—expected to grow nearly 19% year-over-year in 2025, reaching $11.5 billion. Cloud-based software adoption, especially among businesses seeking productivity gains, is a significant driver, supported by government-backed digital transformation programs. IT services are also growing steadily, with average annual growth projected at 5"
+        },
+        {
+          "label": null,
+          "source_id": "src_045",
+          "chunk_id": "src_045_chunk_087",
+          "title": "Skills for the digital age",
+          "category": "skills_and_technologies",
+          "passage": "Page 76\ndynamic occupations in recent years. Yet shortages of ICT specialists also persist in several sectors (Censorii, 2021 [31]). In 2021, more than 60% of EU enterprises that recruited or tried to recruit ICT specialists struggled to fill vacancies. In\nresponse, the European Commission announced an ambitious target for 20 million IT specialists within the European\nworkforce by 2030 (European Commission, 2023 [32]). Spiezia, Koksal-Oudot and Montagnier (2016 [33]) propose several proxy indicators based on occupations, job vacancies,\nvacancy duration and wages to assess potential shortages in a given occupation on the demand for ICT specialists. Based on labour force statistics, the OECD’s Going Digital Toolkit shows that ICT specialists in 2021-22 accounted for\n8% of all jobs in Sweden "
+        }
+      ],
+      "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+      "error": null,
+      "elapsed_seconds": 0.08
+    },
+    {
+      "id": "P056",
+      "suite": "safe_gap",
+      "question": "How important is command line usage?",
+      "resolved_question": "How important is command line usage? (Computer Engineering)",
+      "status": "insufficient_information",
+      "llm_called": false,
+      "answerability_decision": "retrieved evidence does not directly rate command-line or terminal-skill importance for Computer Engineering",
+      "citation_format_valid": true,
+      "citation_metadata": {},
+      "sources": [],
+      "top_context": [
+        {
+          "label": null,
+          "source_id": "src_067",
+          "chunk_id": "src_067_chunk_124",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "passage": "the roles of software development tools, such as compilers, assemblers, linkers, and debuggers.  Identify the expected functionality of a typical modern integrated development environment (IDE).  Use an IDE to develop a simple application.  Effectively use a debugger to trace code execution and identify defects in code. CE-SWD-3 Programming constructs and paradigms Minimum core coverage time: 12 hours\n\n Explain the execution of a simple program.\n Write simple and secure programs that accomplish the intended task.\n Write simple functions and explain the roles of parameters and arguments.\n Design, implement, test, and debug a program that uses fundamental programming constructs in nontrivial ways.\n Choose appropriate iteration and conditional constructs to accomplish a given programm"
+        },
+        {
+          "label": null,
+          "source_id": "src_067",
+          "chunk_id": "src_067_chunk_043",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "passage": "conduct laboratory experiments outside the formal laboratory environment. Examples of student purchases include: x personal instrumentation (e.g., oscilloscope, multimeter, logic analyzer, waveform generator) connected to a laptop computer that hosts soft instrument front panels x breadboard, with integrated power supply, for circuit construction x low-cost microcontroller and FPGA development boards x student versions of modeling, simulation, and software development tools\n\n4.5 The role of engineering tools\n\nThe use of tools is fundamental to engineering to effectively organize information and manage design complexity.\nFamiliarity with commonly used tools, the ability to deploy them in appropriate situations, and the ability to use\nthem effectively are important skills. In the rapidly cha"
+        },
+        {
+          "label": null,
+          "source_id": "src_067",
+          "chunk_id": "src_067_chunk_158",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "passage": "use of tools; the nature and structure of teams; human computer interface as a software engineering activity; related life cycles; standards; use of relevant libraries; importance of practical activity; group activity as an important skill for these engineers Prerequisites: SWEE101, SWEE102 Credit Hours: 3; Lecture Hours: 28; Lab Hours: 28 BoK Coverage: CE-SWD 8-12 Page 144 Page 143 of 149\n\nAppendix C\n\nComputer Engineering Laboratories\n\nThis appendix to the Computing Curricula - Computer Engineering (CE2016) report describes possible laboratory\nconfigurations useful for developing modern student laboratory experiences for computer engineering programs.\nThis appendix reflects the discussion presented in sections 4.4 and 6.3.3 of this report. The steering committee\ndoes not endorse any produ"
+        },
+        {
+          "label": null,
+          "source_id": "src_051",
+          "chunk_id": "src_051_chunk_003",
+          "title": "State of Developer Ecosystem Report 2024",
+          "category": "skills_and_technologies",
+          "passage": "18%of developers are involved in building integrations with AI, indicating that AI is steadily infiltrating developed software.\n\nCode functionality by primary programming language\n\nWhich programming languages are being used for artificial intelligence (AI) and machine learning (ML)?\n\nThe most commonly used programming language for AI and ML is Python. Given its status as the second most popular programming language, Python boasts extensive libraries (such as TensorFlow, Keras, PyTorch, and scikit-learn) and strong community support.\n\nA substantial percentage of C++ developers reported that they are actively involved in AI and ML.\n\nWhich kinds of software, products, or services do you develop?\n\nSoftware type by primary programming language\n\nWhich kinds of websites do you develop?\n\nComplex t"
+        }
+      ],
+      "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+      "error": null,
+      "elapsed_seconds": 0.06
+    },
+    {
+      "id": "H065",
+      "suite": "safe_gap",
+      "question": "Should I learn Arduino or FPGA first?",
+      "resolved_question": "should I learn arduino or fpga first? (Computer Engineering)",
+      "status": "insufficient_information",
+      "llm_called": false,
+      "answerability_decision": "retrieved evidence does not address the requested learning alternatives",
+      "citation_format_valid": true,
+      "citation_metadata": {},
+      "sources": [],
+      "top_context": [
+        {
+          "label": null,
+          "source_id": "src_070",
+          "chunk_id": "src_070_chunk_001",
+          "title": "EECS Majors: Choosing your first computer science course",
+          "category": "programming",
+          "passage": "Source ID: src_070\nTitle: EECS Majors: Choosing your first computer science course\n\nFirst computer science course - Berkeley Engineering\n\nSkip to primary navigation\n\nEducating leaders. Creating knowledge. Serving society.\n\nHome > Students > New students > First computer science course\n\nEECS Majors: Choosing your first computer science course\n\nAs an EECS major, which computer programming course is the right one for you your first semester? Here’s some advice from the Computer Sciences faculty about your options for your first semester.\n\nComputer Science 61Ais a rigorous and fast-paced introduction to computer science that was designed for students with some prior programming experience. Students who haven’t programmed before often get more out of CS 61A if they take it after another course,"
+        },
+        {
+          "label": null,
+          "source_id": "src_039",
+          "chunk_id": "src_039_chunk_005",
+          "title": "Which Introductory Course Should I Take?",
+          "category": "programming",
+          "passage": "two weeks of 0200 run as two different tracks: one to help students from 0150 learn functional programming, recursion, and run-time analysis and another to help students from 0111/0170/0190 learn object-oriented programming in Java. After the first two weeks, the two tracks merge into one course for the rest of the semester. Direct questions to the professor: Kathi Fisler (kfisler@cs.brown.edu)\n\nFrequently-Asked Questions\n\nHow do I decide which intro course to take? As the above-linked video explains, these courses take different approaches to introducing you to computing. 0111 teaches computing in the context of data analysis, 0150 in the context of creating 2D interactive games, and 0170 in the context of exploring how programs behave from both a coding and mathematical/theoretical persp"
+        },
+        {
+          "label": null,
+          "source_id": "src_067",
+          "chunk_id": "src_067_chunk_006",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "passage": "by the Association for Computing Machinery (ACM), the IEEE Computer Society, and the Association for Information Systems (AIS). These efforts resulted in published curricula recommendations in computer science [ACM/IEEECS, 2013],1 information systems [ACM/AIS, 2010], information technology [ACM/IEEECS, 2008], and software engineering [ACM/IEEECS, 2015]. New curricula recommendations for information technology, as of this writing, are expected to be published in 2017.\n\nComputer engineering as an academic field encompasses the broad areas of electrical or electronics engineering\nand computer science. We define computer engineering in this report as follows.\nComputer engineering is a discipline that embodies the science and technology of design,\nconstruction, implementation, and maintenance o"
+        },
+        {
+          "label": null,
+          "source_id": "src_067",
+          "chunk_id": "src_067_chunk_019",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "passage": "constraints. These relate to such matters as structure and organization, techniques, technologies, methodologies, interfaces, as well as the selection of components. The outcome needs to exhibit desirable properties and these tend to relate to simplicity and elegance. Chapter 4 presents a more detailed discussion of design and related laboratory experiences. Page 20 Page 19 of 149 2.3.4 Breadth of knowledge\n\nBecause of the breadth of the computer-engineering field, curricular content may vary widely among programs, or\neven among students in the same program. Computer-related coursework typically comes from computer\norganization and architecture, algorithms, programming, databases, networks, software engineering, and\ncommunications. Electrical engineering related coursework typically comes "
+        }
+      ],
+      "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+      "error": null,
+      "elapsed_seconds": 0.08
+    },
+    {
+      "id": "R104",
+      "suite": "safe_gap",
+      "question": "Are hackathons useful for computer engineering students?",
+      "resolved_question": "are hackathons useful for computer engineering students? (topics: projects, student_life)",
+      "status": "insufficient_information",
+      "llm_called": false,
+      "answerability_decision": "retrieved evidence does not address required question terms: ['hackathons']",
+      "citation_format_valid": true,
+      "citation_metadata": {},
+      "sources": [],
+      "top_context": [
+        {
+          "label": null,
+          "source_id": "src_067",
+          "chunk_id": "src_067_chunk_044",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "passage": "objectives. Understanding the limitation of tools and identifying the scope for the development of tools and components generally is yet another role for the computer engineer. A natural subsequent activity is engaging in the design and development of these items. Such activities need to be guided by concerns for quality in its many guises—safety, usability, reliability, security, and so on.\n\n4.6 Applications of computer engineering principles\n\nGiven the nature of computer engineering and the expectations of students entering such courses, applications\nplay a fundamental role. Instructors can use applications as a means for:\nx motivating students in their studies\nx guiding students’ thinking and ambition\nx providing justification for the inclusion and prominence of certain material\nx demon"
+        },
+        {
+          "label": null,
+          "source_id": "src_067",
+          "chunk_id": "src_067_chunk_034",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "passage": "four-year programs directly begin professional practice in much of the world. The field of computer engineering (CE) has developed, matured, and expanded throughout industry. CE professionals apply their skills in a broad range of diverse career sectors that include business, industry, government, services, organizations, and other structured entities that use computers to automate or drive their products or services efficiently.\n\nPeople seeking CE careers have a great potential for success. A recent study by the Bureau of Labor Statistics (BLS)\nshows that computer occupations are expected to increase 17.7% by 2022, with information security leading by\n36.5% [BLS]. Unfortunately, although jobs are and will be available, finding qualified people to fill them is often\ndifficult. Students gra"
+        },
+        {
+          "label": null,
+          "source_id": "src_067",
+          "chunk_id": "src_067_chunk_129",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "passage": "in their emphasis and in the institutional constraints but do not represent all likely program structures. For example, many programs include a first-year course to introduce students to the discipline, provide hands-on engineering experiences, and engage the students. The absence of such a course in any of the example curricula is not a judgment on the value of such courses.\n\nThe CE2016 steering committee designed these curricula to ensure appropriate coverage of the core learning\noutcomes of the computer engineering BoK as defined in this report. However, as also discussed in the main\nreport, there are many other elements in the creation of a program that will effectively prepare graduates for the\nprofessional practice of computer engineering, such as design and laboratory experience, or"
+        },
+        {
+          "label": null,
+          "source_id": "src_039",
+          "chunk_id": "src_039_chunk_004",
+          "title": "Which Introductory Course Should I Take?",
+          "category": "programming",
+          "passage": "the course uses games as a motivating domain, this is not a course in game design, and the techniques and skills learned are equally applicable across other domains. Even if you have programmed in Java before, you might find this a challenging course. Here is a sample lecture from CS0150. Direct questions to the professor: Andy van Dam, avd@cs.brown.edu. 0170\n\n0170 integrates learning programming with learning the theoretical foundations of computer science. Students learn how to break problems down into elegant and concise programs using functional programming (in Racket and ReasonML). Functional languages have a gentle learning curve, while differing from the styles of programming that students typically see in high school. The course introduces both practical and theoretical techniques "
+        }
+      ],
+      "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+      "error": null,
+      "elapsed_seconds": 0.06
+    },
+    {
+      "id": "S130",
+      "suite": "safe_gap",
+      "question": "What is the attendance rule for CENG courses?",
+      "resolved_question": "What is the attendance rule for ceng courses? (topics: curriculum, academic_regulations)",
+      "status": "insufficient_information",
+      "llm_called": false,
+      "answerability_decision": "retrieved evidence does not contain attendance-rule evidence",
+      "citation_format_valid": true,
+      "citation_metadata": {},
+      "sources": [],
+      "top_context": [
+        {
+          "label": null,
+          "source_id": "src_064",
+          "chunk_id": "src_064_chunk_001",
+          "title": "CENG 303 Operating Systems Design and Construction Course Syllabus",
+          "category": "curriculum",
+          "passage": "Source ID: src_064\nTitle: CENG 303 Operating Systems Design and Construction Course Syllabus\n\nPage 1\n\nFACULTY OF ENGINEERING\nCOURSE SYLLABUS FORM\nDoküman Kodu MF.FR.003\nYayın Tarihi 06.09.2024\nRevizyon No 0\nRevizyon Tarihi 0\nGizlilik Sınıfı Hizmet içi\n\nCENG 303 – OPERATING SYSTEMS DESIGN AND CONSTRUCTION\nCourse Code Course Name Semester\nCENG 303 Operating Systems Design and Construction Fall ☒ Spring ☐ Summer ☐\nHours Credit ECTS\nTheory Practice Lab\n3 8\n3 - -\n\nCourse Details\nDepartment Computer Engineering\nCourse Language English\nCourse Level Undergraduate ☒ Graduate ☐\nMode of Delivery Face to Face ☒ Online ☐ Hybrid ☐\nCourse Type Compulsory ☒ Elective ☐\nCourse Objectives\nThe information in CENG 303 helps students comprehend the fundamentals\nof operating systems (OS), which serve as the foun"
+        },
+        {
+          "label": null,
+          "source_id": "src_067",
+          "chunk_id": "src_067_chunk_139",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "passage": "CE: can be offered in computer engineering department\nECE: offered in the electrical and computer engineering department\nCSC: offered in the computer science department\n*CE Technical Electives: elective course offered in either department\n\nCourse Description Credit Course Description Credit\n\nSemester 1 Semester 2\nMTH 101 Calculus I 4 MTH 102 Calculus II 4\nCHM 101 Chemistry I + Lab 4 PHY 101 Physics I + Lab 4\nHumanities / Social Science 3 CSCC101 Programming Fundamentals I 3\nHumanities / Social Science 3 CHM 102 Chemistry II or Biological Science 4\nTotal Credit Hours 14 Total Credit Hours 15\n\nSemester 3 Semester 4\nMTH 201 Calculus III 4 MTH 202 Differential Equations 3\nPHY 201 Physics II + Lab 4 ECEC202 Circuits & Electronics 4\nCSCC201 Programming Fundamentals II 3 CEC201 Intro to Computer "
+        },
+        {
+          "label": null,
+          "source_id": "src_067",
+          "chunk_id": "src_067_chunk_135",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "passage": "B.5.1 Program Goals and Features\n\nA computer science department sponsors this bachelor of science program in computer engineering. Programs of\nthis kind often develop through evolution from a computer science program, and therefore this model might be\nof interest to schools that have a computer science department and either a general engineering program or a\nphysics department that teaches introductory engineering courses. As is typical of many computer science\nprograms, this model has a significantly larger general education component than the other curricula presented\nin this appendix, and therefore fewer hours devoted to computer engineering. For this reason, the CE2016\nsteering committee designed several courses specifically to provide coverage of the core learning outcomes of\nthe CE B"
+        },
+        {
+          "label": null,
+          "source_id": "src_067",
+          "chunk_id": "src_067_chunk_078",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "passage": "articulation agreement. Since student enrollment at community colleges is approximately equal to the undergraduate student enrollment at universities, this vehicle of study is very popular around the country. It is Page 62 Page 61 of 149 common for a community college to have articulation agreements with several universities to which student transfer is likely. Page 63 Page 62 of 149\n\nAppendix A\n\nComputer Engineering Body of Knowledge\n\nThis appendix to the Computing Curricula - Computer Engineering (CE2016) report defines the knowledge domain\nthat is likely to appear in an undergraduate curriculum in computer engineering. The underlying rationale for this\ncategorization scheme and additional details about its history, structure, and application are included in Chapter 3\nof the report. Incl"
+        }
+      ],
+      "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+      "error": null,
+      "elapsed_seconds": 0.06
+    }
+  ]
+}

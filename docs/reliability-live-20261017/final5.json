@@ -1,0 +1,257 @@
+{
+  "generated_at": "2026-10-17T17:55:47+00:00",
+  "complete": true,
+  "turn_count": 5,
+  "status_counts": {
+    "answered": 4,
+    "insufficient_information": 1
+  },
+  "results": [
+    {
+      "conversation": "F001",
+      "turn": 1,
+      "question": "What is Computer Engineering?",
+      "expect": "answer",
+      "status": "answered",
+      "answer": "Computer Engineering is a discipline that involves the design and construction of processor-based systems, encompassing hardware, software, and communications components [S1] [S2]. This field is generally closest to the boundary between computing and engineering hardware, as indicated by the ACM's categorization of computing into five sub-disciplines, including Computer Engineering [S1] [S2].",
+      "error": null,
+      "events": [
+        "metadata",
+        "token",
+        "final"
+      ],
+      "seconds": 24.92,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "What is Computer Engineering?",
+      "unsupported_reason": null,
+      "answer_warnings": [],
+      "cited_labels": [
+        "S1",
+        "S2"
+      ],
+      "sources": [
+        "Curricular Guidance",
+        "Curated note: Computing Curricula 2020: Paradigms for Global Computing Education"
+      ],
+      "context": [
+        {
+          "label": "S1",
+          "title": "Curricular Guidance",
+          "section": "Computing disciplines",
+          "passage": "Curricular Guidance Computer Engineering Computer Science Cybersecurity Data Science - Coming soon! Information Technology Information Technology - Applied Information Technology - Transfer Software Engineering Curricular Guidance The Sub-Disciplines of Computing The Association for Computing Machinery (ACM) currently categorizes the overarching discipline of computing into five defined sub-disciplines: computer science, computer engineering, software engineering, information systems and information technology. Computer Engineering involves the design and construction of processor-based systems comprised of hardware, software, and communications components."
+        },
+        {
+          "label": "S2",
+          "title": "Curated note: Computing Curricula 2020: Paradigms for Global Computing Education",
+          "section": "Curated source note",
+          "passage": "Source ID: src_080 Title: Computing Curricula 2020: Paradigms for Global Computing Education Source: ACM and IEEE Computer Society URL: https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf Date accessed: 2026-10-13 Curated source note Computing Curricula 2020 compares major computing disciplines and is useful when students ask whether Computer Engineering is the same as Computer Science, Software Engineering, Information Technology, Information Systems, or Cybersecurity. Computer Engineering is generally closest to the boundary between computing and engineering hardware."
+        },
+        {
+          "label": "S3",
+          "title": "Curricular Guidance",
+          "section": "The Sub-Disciplines of Computing",
+          "passage": "Source ID: src_042 Curricular Guidance - ACM CCECC Facebook Twitter LinkedIn YouTube ACM CCECC Celebrating 40++ years of service to computing education communities. Curricular Guidance Computer Engineering Computer Science Cybersecurity Data Science - Coming soon! Information Technology Information Technology - Applied Information Technology - Transfer Software Engineering Curricular Guidance The Sub-Disciplines of Computing The Association for Computing Machinery (ACM) currently categorizes the overarching discipline of computing into five defined sub-disciplines: computer science, computer engineering, software engineering, information systems and information technology."
+        }
+      ]
+    },
+    {
+      "conversation": "A075",
+      "turn": 1,
+      "question": "AI taking jobs, should I still study CENG?",
+      "expect": "answer",
+      "status": "insufficient_information",
+      "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+      "error": null,
+      "events": [
+        "metadata",
+        "final"
+      ],
+      "seconds": 39.35,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "AI taking jobs should I still study computer engineering? (topics: ai, career)",
+      "unsupported_reason": "unsupported claim could not be matched to retrieved evidence",
+      "answer_warnings": [
+        "local_llm_answer_failed_citation_validation"
+      ],
+      "cited_labels": [],
+      "sources": [],
+      "context": [
+        {
+          "label": "S1",
+          "title": "The Future of Jobs Report 2025",
+          "section": "",
+          "passage": "Page 62 expanding roles could exacerbate talent shortages. Adopting a skills-first approach can broaden talent pools and strengthen talent pipelines for these future roles.46 Moreover, the diverse requirements of the largest-growing jobs highlight the critical role of occupations that are often accessible through vocational training, apprenticeships, on-the-job experience, or associate degrees. However, the expected use of apprenticeships, short courses and online certificates in skills assessment has seen a slight decline since the report’s 2023 edition: 17% of employers anticipate prioritizing apprenticeships while 14% plan to consider online certificates in their hiring decisions."
+        },
+        {
+          "label": "S2",
+          "title": "Skills for the digital age",
+          "section": "",
+          "passage": "which also suggests the adoption of AI requires not just AI expertise but also (or rather) skills in creative and social intelligence, reasoning skills and critical thinking (OECD, 2019[7]; Samek, Squicciarini and Cammeraat, 2021[8]; Squicciarini and Nachtigall, 2021 [46]). Finally, using alternative data sources such as online job postings, Manca (2023 [47]) explored the impact of AI on labour markets. which also suggests the adoption of AI requires not just AI expertise but also (or rather) skills in creative and social intelligence, reasoning skills and critical thinking (OECD, 2019[7]; Samek, Squicciarini and Cammeraat, 2021[8]; Squicciarini and Nachtigall, 2021 [46])."
+        },
+        {
+          "label": "S3",
+          "title": "Curated note: Computing Machinery and Intelligence",
+          "section": "Curated source note",
+          "passage": "Passing a benchmark, producing fluent text, or generating code does not automatically mean a system has human understanding, professional responsibility, or the ability to own an engineering project. AI tools can assist with coding, explanation, search, testing ideas, and prototyping, but engineers still need to understand requirements, constraints, correctness, security, maintainability, users, and ethical consequences. This source should be combined with labor-market and developer-trend sources when answering career questions."
+        },
+        {
+          "label": "S4",
+          "title": "The Future of Jobs Report 2025",
+          "section": "",
+          "passage": "AI and big data skills as well as creative thinking are foreseen to grow in importance. Emerging job roles within the industry are anticipated to include AI and Machine Learning Specialists and Digital Transformation Specialists. Employers also place greater emphasis than in other industries on curiosity and lifelong learning, marketing and media skills and multilingualism."
+        }
+      ]
+    },
+    {
+      "conversation": "Q01",
+      "turn": 1,
+      "question": "wats the diffrence between computer enginering and software enginering?",
+      "expect": "answer",
+      "status": "answered",
+      "answer": "Computer engineering encompasses the design and construction of processor-based systems, which include hardware, software, and communications components [S2] [S3]. In contrast, software engineering is more focused on the development and management of software applications [S3]. Computer engineering is traditionally a combination of both electrical engineering and computer science, while software engineering is a distinct discipline within the broader field of computing [S2].",
+      "error": null,
+      "events": [
+        "metadata",
+        "token",
+        "final"
+      ],
+      "seconds": 18.65,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "What is the difference between computer engineering and software engineering?",
+      "unsupported_reason": null,
+      "answer_warnings": [],
+      "cited_labels": [
+        "S2",
+        "S3"
+      ],
+      "sources": [
+        "Computer Engineering Curricula 2016",
+        "Curated note: Software Engineering Body of Knowledge (SWEBOK Guide), Version 4.0"
+      ],
+      "context": [
+        {
+          "label": "S1",
+          "title": "Curricular Guidance",
+          "section": "Computing disciplines",
+          "passage": "Curricular Guidance Computer Engineering Computer Science Cybersecurity Data Science - Coming soon! Information Technology Information Technology - Applied Information Technology - Transfer Software Engineering Curricular Guidance The Sub-Disciplines of Computing The Association for Computing Machinery (ACM) currently categorizes the overarching discipline of computing into five defined sub-disciplines: computer science, computer engineering, software engineering, information systems and information technology. Computer Engineering involves the design and construction of processor-based systems comprised of hardware, software, and communications components."
+        },
+        {
+          "label": "S2",
+          "title": "Computer Engineering Curricula 2016",
+          "section": "2.1 Background",
+          "passage": "The chapter also highlights for graduates the importance of having a proper sense of professionalism to ensure a proper perspective in the practice of computer engineering. 2.1 Background Computer engineering is a discipline that embodies the science and technology of design, construction, implementation, and maintenance of software and hardware components of modern computing systems, computer-controlled equipment, and networks of intelligent devices. Traditionally, computer engineering is some combination of both electrical engineering (EE) and computer science (CS)."
+        },
+        {
+          "label": "S3",
+          "title": "Curated note: Software Engineering Body of Knowledge (SWEBOK Guide), Version 4.0",
+          "section": "Curated source note",
+          "passage": "Source ID: src_081 Title: Software Engineering Body of Knowledge (SWEBOK Guide), Version 4.0 Source: IEEE Computer Society URL: https://www.computer.org/education/bodies-of-knowledge/software-engineering Date accessed: 2026-10-13 Curated source note The IEEE Computer Society's SWEBOK Guide describes software engineering as more than writing code. It organizes professional software work into knowledge areas that include requirements, architecture, design, construction, testing, maintenance, configuration management, engineering process, models and methods, quality, security, professional practice, economics, and computing foundations."
+        }
+      ]
+    },
+    {
+      "conversation": "T188",
+      "turn": 1,
+      "question": "Computer Engineering vs Computer Science?",
+      "expect": "answer",
+      "status": "answered",
+      "answer": "Computer Engineering focuses on the design and construction of hardware and software systems, often involving both electrical engineering and computer science principles [S1].\nMy sources do not cover the rest of your question.",
+      "error": null,
+      "events": [
+        "metadata",
+        "token",
+        "final"
+      ],
+      "seconds": 14.93,
+      "query_kind": "standalone_domain_question",
+      "resolved_question": "computer engineering vs computer science?",
+      "unsupported_reason": null,
+      "answer_warnings": [],
+      "cited_labels": [
+        "S1"
+      ],
+      "sources": [
+        "Curricular Guidance"
+      ],
+      "context": [
+        {
+          "label": "S1",
+          "title": "Curricular Guidance",
+          "section": "Computing disciplines",
+          "passage": "Curricular Guidance Computer Engineering Computer Science Cybersecurity Data Science - Coming soon! Information Technology Information Technology - Applied Information Technology - Transfer Software Engineering Curricular Guidance The Sub-Disciplines of Computing The Association for Computing Machinery (ACM) currently categorizes the overarching discipline of computing into five defined sub-disciplines: computer science, computer engineering, software engineering, information systems and information technology. Computer Engineering involves the design and construction of processor-based systems comprised of hardware, software, and communications components."
+        },
+        {
+          "label": "S2",
+          "title": "Computer Engineering Curricula 2016",
+          "section": "2.1 Background",
+          "passage": "The chapter also highlights for graduates the importance of having a proper sense of professionalism to ensure a proper perspective in the practice of computer engineering. 2.1 Background Computer engineering is a discipline that embodies the science and technology of design, construction, implementation, and maintenance of software and hardware components of modern computing systems, computer-controlled equipment, and networks of intelligent devices. Traditionally, computer engineering is some combination of both electrical engineering (EE) and computer science (CS)."
+        },
+        {
+          "label": "S3",
+          "title": "EECS Majors: Choosing your first computer science course",
+          "section": "Skip to primary navigation",
+          "passage": "Source ID: src_070 Title: EECS Majors: Choosing your first computer science course First computer science course - Berkeley Engineering Skip to primary navigation Educating leaders. Creating knowledge."
+        },
+        {
+          "label": "S4",
+          "title": "Curated note: Computing Curricula 2020: Paradigms for Global Computing Education",
+          "section": "Curated source note",
+          "passage": "Source ID: src_080 Title: Computing Curricula 2020: Paradigms for Global Computing Education Source: ACM and IEEE Computer Society URL: https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf Date accessed: 2026-10-13 Curated source note Computing Curricula 2020 compares major computing disciplines and is useful when students ask whether Computer Engineering is the same as Computer Science, Software Engineering, Information Technology, Information Systems, or Cybersecurity. Computer Engineering is generally closest to the boundary between computing and engineering hardware."
+        }
+      ]
+    },
+    {
+      "conversation": "T188",
+      "turn": 2,
+      "question": "Which one has more hardware?",
+      "expect": "answer",
+      "status": "answered",
+      "answer": "Computer Engineering explicitly includes hardware alongside software and communications; the retrieved excerpt does not quantify the hardware content of Computer Science [S1].",
+      "error": null,
+      "events": [
+        "metadata",
+        "token",
+        "final"
+      ],
+      "seconds": 26.63,
+      "query_kind": "contextual_follow_up",
+      "resolved_question": "Which one has more hardware? Regarding Computer Engineering vs Computer Science in Computer Engineering.",
+      "unsupported_reason": null,
+      "answer_warnings": [
+        "local_llm_answer_replaced_with_bounded_fallback"
+      ],
+      "cited_labels": [
+        "S1"
+      ],
+      "sources": [
+        "Curricular Guidance"
+      ],
+      "context": [
+        {
+          "label": "S1",
+          "title": "Curricular Guidance",
+          "section": "Computing disciplines",
+          "passage": "Curricular Guidance Computer Engineering Computer Science Cybersecurity Data Science - Coming soon! Information Technology Information Technology - Applied Information Technology - Transfer Software Engineering Curricular Guidance The Sub-Disciplines of Computing The Association for Computing Machinery (ACM) currently categorizes the overarching discipline of computing into five defined sub-disciplines: computer science, computer engineering, software engineering, information systems and information technology. Computer Engineering involves the design and construction of processor-based systems comprised of hardware, software, and communications components."
+        },
+        {
+          "label": "S2",
+          "title": "Computer Engineering Curricula 2016",
+          "section": "2.3.2 Professionalism",
+          "passage": "and networks in the world today, computer engineers must be versatile in the knowledge drawn from standard study areas in computer science and electrical engineering as well as the foundations in mathematics and sciences. The rapid pace of change in the computing field requires that computer engineers be lifelong learners to maintain their knowledge and skills within their chosen discipline."
+        },
+        {
+          "label": "S3",
+          "title": "Curated note: Computing Curricula 2020: Paradigms for Global Computing Education",
+          "section": "Curated source note",
+          "passage": "Source ID: src_080 Title: Computing Curricula 2020: Paradigms for Global Computing Education Source: ACM and IEEE Computer Society URL: https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf Date accessed: 2026-10-13 Curated source note Computing Curricula 2020 compares major computing disciplines and is useful when students ask whether Computer Engineering is the same as Computer Science, Software Engineering, Information Technology, Information Systems, or Cybersecurity. Computer Engineering is generally closest to the boundary between computing and engineering hardware."
+        },
+        {
+          "label": "S4",
+          "title": "Computer Engineering Curricula 2016",
+          "section": "2.1 Background",
+          "passage": "The chapter also highlights for graduates the importance of having a proper sense of professionalism to ensure a proper perspective in the practice of computer engineering. 2.1 Background Computer engineering is a discipline that embodies the science and technology of design, construction, implementation, and maintenance of software and hardware components of modern computing systems, computer-controlled equipment, and networks of intelligent devices. Traditionally, computer engineering is some combination of both electrical engineering (EE) and computer science (CS)."
+        }
+      ]
+    }
+  ]
+}

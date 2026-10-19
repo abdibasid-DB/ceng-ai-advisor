@@ -1,0 +1,868 @@
+{
+  "stage": "WEX428 Comprehensive RAG Evaluation",
+  "generated_at": "2026-10-07T17:06:29+00:00",
+  "case_source": "tests\\rag_comprehensive_evaluation_cases.json",
+  "case_count": 6,
+  "summary": {
+    "total_cases": 6,
+    "original_questions_tested": 5,
+    "paraphrased_unseen_questions_tested": 1,
+    "retrieval_label_counts": {
+      "Highly relevant": 2,
+      "Irrelevant": 1,
+      "Relevant": 3
+    },
+    "answer_status_counts": {
+      "answered": 4,
+      "error": 1,
+      "insufficient_information": 1
+    },
+    "answer_quality_counts": {
+      "Appropriate refusal / insufficient information": 1,
+      "Correct / well-supported": 3,
+      "Unsupported or incorrect": 2
+    },
+    "answered_cases_with_valid_citations": 4,
+    "answered_cases": 4,
+    "appropriate_refusal_count": 1,
+    "weak_or_failing_topics": [
+      {
+        "topic": "Future-proof career concern",
+        "case_count": 1,
+        "case_ids": [
+          "q027"
+        ]
+      },
+      {
+        "topic": "Student CV",
+        "case_count": 1,
+        "case_ids": [
+          "q043"
+        ]
+      }
+    ]
+  },
+  "rubric": {
+    "answer_quality_values": [
+      "Correct / well-supported",
+      "Partially correct / partially supported",
+      "Unsupported or incorrect",
+      "Appropriate refusal / insufficient information"
+    ],
+    "note": "Automated preliminary rubric; manual factual review still required for final defense claims."
+  },
+  "cases": [
+    {
+      "id": "q002",
+      "question_number": 2,
+      "question": "What do Computer Engineering students study?",
+      "case_kind": "original",
+      "expected_topic": "Computer Engineering curriculum scope",
+      "expected_categories": [
+        "curriculum",
+        "department_information"
+      ],
+      "expected_behavior": "answer",
+      "retrieval": {
+        "label": "Highly relevant",
+        "evidence_sufficient": true,
+        "out_of_scope": false,
+        "top_similarity_score": 0.6873692870140076,
+        "results_above_threshold": 5,
+        "retrieved_sources": [
+          {
+            "source_id": "src_067",
+            "title": "Computer Engineering Curricula 2016",
+            "category": "curriculum",
+            "similarity_score": 0.6873692870140076
+          },
+          {
+            "source_id": "src_067",
+            "title": "Computer Engineering Curricula 2016",
+            "category": "curriculum",
+            "similarity_score": 0.6854174137115479
+          },
+          {
+            "source_id": "src_067",
+            "title": "Computer Engineering Curricula 2016",
+            "category": "curriculum",
+            "similarity_score": 0.675785481929779
+          }
+        ],
+        "retrieved_passages": [
+          {
+            "label": "S1",
+            "chunk_id": "src_067_chunk_019",
+            "source_id": "src_067",
+            "title": "Computer Engineering Curricula 2016",
+            "category": "curriculum",
+            "similarity_score": 0.6873692870140076,
+            "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+            "passage_preview": "constraints. These relate to such matters as structure and organization, techniques, technologies, methodologies, interfaces, as well as the selection of components. The outcome needs to exhibit desirable properties and these tend to relate to simplicity and elegance. Chapter 4 presents a more detailed discussion of design and related laboratory experiences. Page 20 Page 19 of 149 2.3.4 Breadth of knowledge Because of the breadth of the computer-engineering field, curricular content may vary widely among programs, or even among students in the same program."
+          },
+          {
+            "label": "S2",
+            "chunk_id": "src_067_chunk_013",
+            "source_id": "src_067",
+            "title": "Computer Engineering Curricula 2016",
+            "category": "curriculum",
+            "similarity_score": 0.6854174137115479,
+            "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+            "passage_preview": "sample curricula, and course descriptions will help departments create effective curricula or help them improve the curricula they already have. Appendix C provides guidance in developing laboratories associated with a computer engineering program. Appendix D acknowledges external reviewers from throughout the world who have made significant contributions or have commented on improving this report. Page 16 Page 15 of 149 Chapter 2 Computer Engineering as a Discipline This chapter presents some of the characteristics that distinguish computer engineering from other computing disciplines. It provides some background of the field, showing how it evolved over time."
+          },
+          {
+            "label": "S3",
+            "chunk_id": "src_067_chunk_051",
+            "source_id": "src_067",
+            "title": "Computer Engineering Curricula 2016",
+            "category": "curriculum",
+            "similarity_score": 0.675785481929779,
+            "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+            "passage_preview": "an appropriate selection of tools and techniques as well as a disciplined approach in arriving at a solution of the problem Beyond these characteristics, this chapter has sought to address the range of basic ingredients that institutions must assemble and carefully integrate into a computer engineering program to ensure that graduates are aware of the best traditions of engineering practice. 4.10 Graduate and continuing professional education Because of the rapidly changing field of computing, the steering committee strongly encourages graduates from computer engineering programs to pursue advanced studies in graduate school."
+          }
+        ]
+      },
+      "generation": {
+        "status": "answered",
+        "answer": "Computer Engineering students study a curriculum that emphasizes design and breadth of knowledge. They learn about constraints in design, such as structure and organization, techniques, technologies, methodologies, interfaces, and component selection, aiming for desirable properties like simplicity and elegance. The curriculum also covers a broad range of knowledge, as the field of computer engineering is extensive and varies among different programs. Additionally, students are taught how to apply appropriate tools and techniques for problem-solving and are encouraged to pursue further education in graduate school due to the rapid changes in computing. [S1], [S2], [S3]",
+        "llm_called": true,
+        "sources": [
+          {
+            "source_id": "src_067",
+            "title": "Computer Engineering Curricula 2016",
+            "source_name": "Association for Computing Machinery and IEEE Computer Society",
+            "source_type": "professional_curriculum_report",
+            "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+            "category": "curriculum",
+            "supporting_chunk_ids": [
+              "src_067_chunk_019",
+              "src_067_chunk_013",
+              "src_067_chunk_051"
+            ],
+            "evidence_labels": [
+              "S1",
+              "S2",
+              "S3"
+            ],
+            "best_similarity_score": 0.6873692870140076
+          }
+        ],
+        "citations": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "citation_valid": true,
+        "citation_metadata": {
+          "valid": true,
+          "cited_labels": [
+            "S1",
+            "S2",
+            "S3"
+          ],
+          "invalid_labels": [],
+          "available_labels": [
+            "S1",
+            "S2",
+            "S3"
+          ],
+          "normalized": false,
+          "repair_actions": [],
+          "reason": null,
+          "retry_attempted": false,
+          "retry_successful": false,
+          "generations_attempted": 1,
+          "retry_failure_reason": null
+        },
+        "answer_quality_assessment": "Correct / well-supported",
+        "assessment_method": "automatic rubric based on retrieval relevance, answer status, and citation validation; manual factual review is still required",
+        "notes": "Automated proxy: relevant retrieval plus valid citations; manual claim-level review still required.",
+        "error": null
+      },
+      "timing": {
+        "retrieval_seconds": 0.499,
+        "context_construction_seconds": 0.0,
+        "llm_generation_seconds": 38.205,
+        "initial_llm_generation_seconds": 38.205,
+        "retry_llm_generation_seconds": 0.0,
+        "llm_reported_total_duration_seconds": 37.969,
+        "total_seconds": 38.71
+      }
+    },
+    {
+      "id": "q015",
+      "question_number": 15,
+      "question": "What skills should I develop during university to become a successful computer engineer?",
+      "case_kind": "original",
+      "expected_topic": "Student skills development",
+      "expected_categories": [
+        "skills",
+        "programming",
+        "employment"
+      ],
+      "expected_behavior": "answer",
+      "retrieval": {
+        "label": "Relevant",
+        "evidence_sufficient": true,
+        "out_of_scope": false,
+        "top_similarity_score": 0.619188129901886,
+        "results_above_threshold": 5,
+        "retrieved_sources": [
+          {
+            "source_id": "src_067",
+            "title": "Computer Engineering Curricula 2016",
+            "category": "curriculum",
+            "similarity_score": 0.619188129901886
+          },
+          {
+            "source_id": "src_016",
+            "title": "2024 State of Tech Talent Report",
+            "category": "skills_and_technologies",
+            "similarity_score": 0.5728971362113953
+          },
+          {
+            "source_id": "src_017",
+            "title": "The Future of Jobs Report 2025",
+            "category": "future_technologies",
+            "similarity_score": 0.5379681587219238
+          }
+        ],
+        "retrieved_passages": [
+          {
+            "label": "S1",
+            "chunk_id": "src_067_chunk_046",
+            "source_id": "src_067",
+            "title": "Computer Engineering Curricula 2016",
+            "category": "curriculum",
+            "similarity_score": 0.619188129901886,
+            "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+            "passage_preview": "a position; x extract requirements from a customer by careful and penetrating questions using a disciplined and structured approach; x demonstrate the capabilities of a product. Although institutions might adopt different strategies to accomplish these goals, each computer engineering student’s program must include numerous occasions for improving these skills in a way that emphasizes writing, speaking, and active listening skills."
+          },
+          {
+            "label": "S2",
+            "chunk_id": "src_016_chunk_013",
+            "source_id": "src_016",
+            "title": "2024 State of Tech Talent Report",
+            "category": "skills_and_technologies",
+            "similarity_score": 0.5728971362113953,
+            "url": "https://www.linuxfoundation.org/research/open-source-jobs-report-2024",
+            "passage_preview": "job market where having a degree is still highly valued. In 2022, in the United States, 69% of computer programmer positions and 95% of mobile application Figure 16: It takes more time to onboard compared to 2023, and more technical staff resigned or were asked to leave than in the previous year 2024 STATE OF TECH TALENT REPORT | 20 Page 21 developer jobs still required a degree5. However, research shows that focusing on skills during hiring is five times better at predicting job performance than hiring for education6."
+          },
+          {
+            "label": "S3",
+            "chunk_id": "src_017_chunk_043",
+            "source_id": "src_017",
+            "title": "The Future of Jobs Report 2025",
+            "category": "future_technologies",
+            "similarity_score": 0.5379681587219238,
+            "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+            "passage_preview": "Page 41 On the other hand, skills that are core today, but expected to remain stable over the next five years without significant increase in use, displayed in the lower right quadrant, include empathy and active listening, service orientation and customer service and resource management and operations. Finally, the bottom left quadrant of Figure 3.6 highlights skills that are neither critical now nor expected to increase significantly in use over the next five years. While most of these skills remain important, they may represent areas where less investment is required, allowing employers to prioritize resources toward more rapidly evolving skill sets."
+          }
+        ]
+      },
+      "generation": {
+        "status": "answered",
+        "answer": "Based on the information provided in [S1] and [S3], computer engineering students should focus on developing teamwork skills, such as the ability to extract requirements from customers and demonstrate product capabilities. These skills are emphasized in the curriculum and are crucial for success in the field. Additionally, [S3] suggests that skills like empathy, active listening, service orientation, and resource management are important and stable over the next five years, which are also worth developing. These skills are highlighted in the lower right quadrant of the report, indicating their significance and stability. Therefore, a well-rounded education that includes these skills will be beneficial for a successful career in computer engineering.",
+        "llm_called": true,
+        "sources": [
+          {
+            "source_id": "src_067",
+            "title": "Computer Engineering Curricula 2016",
+            "source_name": "Association for Computing Machinery and IEEE Computer Society",
+            "source_type": "professional_curriculum_report",
+            "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+            "category": "curriculum",
+            "supporting_chunk_ids": [
+              "src_067_chunk_046"
+            ],
+            "evidence_labels": [
+              "S1"
+            ],
+            "best_similarity_score": 0.619188129901886
+          },
+          {
+            "source_id": "src_016",
+            "title": "2024 State of Tech Talent Report",
+            "source_name": "The Linux Foundation",
+            "source_type": "industry_research_report",
+            "url": "https://www.linuxfoundation.org/research/open-source-jobs-report-2024",
+            "category": "skills_and_technologies",
+            "supporting_chunk_ids": [
+              "src_016_chunk_013"
+            ],
+            "evidence_labels": [
+              "S2"
+            ],
+            "best_similarity_score": 0.5728971362113953
+          },
+          {
+            "source_id": "src_017",
+            "title": "The Future of Jobs Report 2025",
+            "source_name": "World Economic Forum",
+            "source_type": "recognized_international_report",
+            "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+            "category": "future_technologies",
+            "supporting_chunk_ids": [
+              "src_017_chunk_043"
+            ],
+            "evidence_labels": [
+              "S3"
+            ],
+            "best_similarity_score": 0.5379681587219238
+          }
+        ],
+        "citations": [
+          "S1",
+          "S3"
+        ],
+        "citation_valid": true,
+        "citation_metadata": {
+          "valid": true,
+          "cited_labels": [
+            "S1",
+            "S3"
+          ],
+          "invalid_labels": [],
+          "available_labels": [
+            "S1",
+            "S2",
+            "S3"
+          ],
+          "normalized": false,
+          "repair_actions": [],
+          "reason": null,
+          "retry_attempted": false,
+          "retry_successful": false,
+          "generations_attempted": 1,
+          "retry_failure_reason": null
+        },
+        "answer_quality_assessment": "Correct / well-supported",
+        "assessment_method": "automatic rubric based on retrieval relevance, answer status, and citation validation; manual factual review is still required",
+        "notes": "Automated proxy: relevant retrieval plus valid citations; manual claim-level review still required.",
+        "error": null
+      },
+      "timing": {
+        "retrieval_seconds": 0.096,
+        "context_construction_seconds": 0.0,
+        "llm_generation_seconds": 24.588,
+        "initial_llm_generation_seconds": 24.588,
+        "retry_llm_generation_seconds": 0.0,
+        "llm_reported_total_duration_seconds": 24.571,
+        "total_seconds": 24.69
+      }
+    },
+    {
+      "id": "q027",
+      "question_number": 27,
+      "question": "Is Computer Engineering a future-proof career?",
+      "case_kind": "original",
+      "expected_topic": "Future-proof career concern",
+      "expected_categories": [
+        "employment",
+        "future_technologies",
+        "AI"
+      ],
+      "expected_behavior": "answer_or_refuse_if_evidence_insufficient",
+      "retrieval": {
+        "label": "Relevant",
+        "evidence_sufficient": true,
+        "out_of_scope": false,
+        "top_similarity_score": 0.6615225076675415,
+        "results_above_threshold": 5,
+        "retrieved_sources": [
+          {
+            "source_id": "src_016",
+            "title": "2024 State of Tech Talent Report",
+            "category": "skills_and_technologies",
+            "similarity_score": 0.6615225076675415
+          },
+          {
+            "source_id": "src_017",
+            "title": "The Future of Jobs Report 2025",
+            "category": "future_technologies",
+            "similarity_score": 0.617121696472168
+          },
+          {
+            "source_id": "src_067",
+            "title": "Computer Engineering Curricula 2016",
+            "category": "curriculum",
+            "similarity_score": 0.678960382938385
+          }
+        ],
+        "retrieved_passages": [
+          {
+            "label": "S1",
+            "chunk_id": "src_016_chunk_013",
+            "source_id": "src_016",
+            "title": "2024 State of Tech Talent Report",
+            "category": "skills_and_technologies",
+            "similarity_score": 0.6615225076675415,
+            "url": "https://www.linuxfoundation.org/research/open-source-jobs-report-2024",
+            "passage_preview": "job market where having a degree is still highly valued. In 2022, in the United States, 69% of computer programmer positions and 95% of mobile application Figure 16: It takes more time to onboard compared to 2023, and more technical staff resigned or were asked to leave than in the previous year 2024 STATE OF TECH TALENT REPORT | 20 Page 21 developer jobs still required a degree5. However, research shows that focusing on skills during hiring is five times better at predicting job performance than hiring for education6."
+          },
+          {
+            "label": "S2",
+            "chunk_id": "src_017_chunk_097",
+            "source_id": "src_017",
+            "title": "The Future of Jobs Report 2025",
+            "category": "future_technologies",
+            "similarity_score": 0.617121696472168,
+            "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+            "passage_preview": "and Training sector by 2030. AI and big data skills as well as creative thinking are foreseen to grow in importance. Emerging job roles within the industry are anticipated to include AI and Machine Learning Specialists and Digital Transformation Specialists. Employers also place greater emphasis than in other industries on curiosity and lifelong learning, marketing and media skills and multilingualism. The industry is less focused than other sectors on upskilling and reskilling its own workforce (73%, compared to the 85% global industry average), while employers aim to improve attractiveness through better talent progression and promotion processes, higher wages, and supporting employee..."
+          },
+          {
+            "label": "S3",
+            "chunk_id": "src_067_chunk_034",
+            "source_id": "src_067",
+            "title": "Computer Engineering Curricula 2016",
+            "category": "curriculum",
+            "similarity_score": 0.678960382938385,
+            "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+            "passage_preview": "four-year programs directly begin professional practice in much of the world. The field of computer engineering (CE) has developed, matured, and expanded throughout industry. CE professionals apply their skills in a broad range of diverse career sectors that include business, industry, government, services, organizations, and other structured entities that use computers to automate or drive their products or services efficiently. People seeking CE careers have a great potential for success. A recent study by the Bureau of Labor Statistics (BLS) shows that computer occupations are expected to increase 17.7% by 2022, with information security leading by 36.5% [BLS]."
+          }
+        ]
+      },
+      "generation": {
+        "status": "error",
+        "answer": "The local RAG pipeline could not complete the request safely.",
+        "llm_called": true,
+        "sources": [],
+        "citations": [],
+        "citation_valid": false,
+        "citation_metadata": {
+          "valid": false,
+          "cited_labels": [],
+          "invalid_labels": [],
+          "available_labels": [
+            "S1",
+            "S2",
+            "S3"
+          ],
+          "normalized": false,
+          "repair_actions": [],
+          "reason": "unsupported claim could not be matched to retrieved evidence",
+          "retry_attempted": true,
+          "retry_successful": false,
+          "generations_attempted": 2,
+          "retry_failure_reason": "unsupported claim could not be matched to retrieved evidence"
+        },
+        "answer_quality_assessment": "Unsupported or incorrect",
+        "assessment_method": "automatic rubric based on retrieval relevance, answer status, and citation validation; manual factual review is still required",
+        "notes": "unsupported claim could not be matched to retrieved evidence",
+        "error": "unsupported claim could not be matched to retrieved evidence"
+      },
+      "timing": {
+        "retrieval_seconds": null,
+        "context_construction_seconds": null,
+        "llm_generation_seconds": null,
+        "total_seconds": 64.634
+      }
+    },
+    {
+      "id": "q031",
+      "question_number": 31,
+      "question": "What is the average starting salary for Computer Engineering graduates in Turkey or World?",
+      "case_kind": "original",
+      "expected_topic": "Starting salary",
+      "expected_categories": [
+        "salary",
+        "employment",
+        "local_job_market"
+      ],
+      "expected_behavior": "answer_or_refuse_if_evidence_insufficient",
+      "retrieval": {
+        "label": "Relevant",
+        "evidence_sufficient": true,
+        "out_of_scope": false,
+        "top_similarity_score": 0.654267430305481,
+        "results_above_threshold": 5,
+        "retrieved_sources": [
+          {
+            "source_id": "src_049",
+            "title": "Work | 2024 Stack Overflow Developer Survey",
+            "category": "remote_work",
+            "similarity_score": 0.654267430305481
+          },
+          {
+            "source_id": "src_045",
+            "title": "Skills for the digital age",
+            "category": "skills_and_technologies",
+            "similarity_score": 0.5617033839225769
+          },
+          {
+            "source_id": "src_025",
+            "title": "ICT",
+            "category": "employment",
+            "similarity_score": 0.5441135168075562
+          }
+        ],
+        "retrieved_passages": [
+          {
+            "label": "S1",
+            "chunk_id": "src_049_chunk_002",
+            "source_id": "src_049",
+            "title": "Work | 2024 Stack Overflow Developer Survey",
+            "category": "remote_work",
+            "similarity_score": 0.654267430305481,
+            "url": "https://survey.stackoverflow.co/2024/work",
+            "passage_preview": "4.3Salary Salary by developer type The highest-paid developers of all respondents are site reliability and cloud infrastructure engineers, as both roles are pivotal in keeping digital services up and running. Looking at top-responding regions, mobile developers report higher earnings in the U.S., data engineers are the highest-paid in Germany and Ukraine, and back-end developers are top earners in India and the U.K. What is your current total annual compensation (salary, bonuses, and perks, before taxes and deductions)? Please enter a whole number in the box below, without any punctuation. If you are paid hourly, please estimate an equivalent yearly salary."
+          },
+          {
+            "label": "S2",
+            "chunk_id": "src_045_chunk_089",
+            "source_id": "src_045",
+            "title": "Skills for the digital age",
+            "category": "skills_and_technologies",
+            "similarity_score": 0.5617033839225769,
+            "url": "https://www.oecd.org/en/publications/2024/11/oecd-digital-economy-outlook-2024-volume-2_9b2801fc/full-report/skills-for-the-digital-age_da6162fb.html",
+            "passage_preview": "Page 77 Figure 1.S.2. Wages in ICT services grew more than in the total business sector Changes in wages relative to labour productivity 2013-22, annual averages -0.2 0.2 0.4 0.6 0.8 1.2 ICT services Total busine ss ROU BGR EST LVA ISL LTU HRV IRL CZE POL DEU CHE SVK EU 27 FIN AUT NLD DNK PRT FRA GRC SVN LUX BEL ITA ESP SWE HUN NOR Source: Authors’ calculations based on (Eurostat, 2023 [40]) Annual National Accounts Statistics, https://ec.europa.eu/eurostat/web/national-accounts (accessed on 5 March 2024). 12 https://stat.link/4ls2pk For SMEs in particular, investments in ICT skills are a longstanding challenge (OECD, 2021[41])."
+          },
+          {
+            "label": "S3",
+            "chunk_id": "src_025_chunk_001",
+            "source_id": "src_025",
+            "title": "ICT",
+            "category": "employment",
+            "similarity_score": 0.5441135168075562,
+            "url": "https://www.invest.gov.tr/en/sectors/pages/ict.aspx",
+            "passage_preview": "Source ID: src_025 ICT - Invest in Türkiye Turn on more accessible mode Turn off more accessible mode This is a test version of invest.gov.tr/en. Who We Are How We Help Message From The President FDI Strategy Contact Us Our Global Locations ICT InvestHome PageSectorsICT Invest Sector Detail USD 36.7 billion Total value of the Turkish ICT market in 2024. 59% Average growth of the Turkish ICT sector on a TRY basis in the past 5 years. On a USD basis, the sector grew by 8%. 11,700+ Number of active companies in the Turkish ICT sector. 246,000+ Number of employees in the Turkish ICT sector. (70% are younger than age 35) 70% Smartphone possession rate in Türkiye in 2024."
+          }
+        ]
+      },
+      "generation": {
+        "status": "insufficient_information",
+        "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+        "llm_called": true,
+        "sources": [],
+        "citations": [],
+        "citation_valid": true,
+        "citation_metadata": {
+          "valid": true,
+          "cited_labels": [],
+          "invalid_labels": [],
+          "available_labels": [
+            "S1",
+            "S2",
+            "S3"
+          ],
+          "normalized": false,
+          "repair_actions": [],
+          "reason": null,
+          "retry_attempted": false,
+          "retry_successful": false,
+          "generations_attempted": 1,
+          "retry_failure_reason": null
+        },
+        "answer_quality_assessment": "Appropriate refusal / insufficient information",
+        "assessment_method": "automatic rubric based on retrieval relevance, answer status, and citation validation; manual factual review is still required",
+        "notes": "Pipeline refused because retrieved evidence was insufficient.",
+        "error": null
+      },
+      "timing": {
+        "retrieval_seconds": 0.139,
+        "context_construction_seconds": 0.001,
+        "llm_generation_seconds": 17.722,
+        "initial_llm_generation_seconds": 17.722,
+        "retry_llm_generation_seconds": 0.0,
+        "llm_reported_total_duration_seconds": 17.698,
+        "total_seconds": 17.869
+      }
+    },
+    {
+      "id": "q043",
+      "question_number": 43,
+      "question": "What should I include in my CV as a Computer Engineering student?",
+      "case_kind": "original",
+      "expected_topic": "Student CV",
+      "expected_categories": [
+        "employment",
+        "skills",
+        "projects",
+        "internships"
+      ],
+      "expected_behavior": "answer",
+      "retrieval": {
+        "label": "Irrelevant",
+        "evidence_sufficient": true,
+        "out_of_scope": false,
+        "top_similarity_score": 0.6568923592567444,
+        "results_above_threshold": 5,
+        "retrieved_sources": [
+          {
+            "source_id": "src_067",
+            "title": "Computer Engineering Curricula 2016",
+            "category": "curriculum",
+            "similarity_score": 0.6568923592567444
+          },
+          {
+            "source_id": "src_067",
+            "title": "Computer Engineering Curricula 2016",
+            "category": "curriculum",
+            "similarity_score": 0.6466116309165955
+          },
+          {
+            "source_id": "src_067",
+            "title": "Computer Engineering Curricula 2016",
+            "category": "curriculum",
+            "similarity_score": 0.6024613976478577
+          }
+        ],
+        "retrieved_passages": [
+          {
+            "label": "S1",
+            "chunk_id": "src_067_chunk_011",
+            "source_id": "src_067",
+            "title": "Computer Engineering Curricula 2016",
+            "category": "curriculum",
+            "similarity_score": 0.6568923592567444,
+            "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+            "passage_preview": "Page 14 Page 13 of 149 5. Computer engineering must include appropriate and necessary design and laboratory experiences. A computer engineering program should include “hands-on” experiences in designing, building, and testing both hardware and software systems. 6. Computer engineering curricula are often subject to accreditation, licensure, or governmental constraints. This report recognizes these existing external constraints and provides guidance for their evolution. 7. A computer engineering curriculum must include preparation for professional practice as an integral component."
+          },
+          {
+            "label": "S2",
+            "chunk_id": "src_067_chunk_012",
+            "source_id": "src_067",
+            "title": "Computer Engineering Curricula 2016",
+            "category": "curriculum",
+            "similarity_score": 0.6466116309165955,
+            "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+            "passage_preview": "work of computer engineering. Since computer systems include integrated hardware and software components, this report should emphasize the development of a “whole computer” or a “complete computer” in the laboratory experiences that include exposure to hardware, operating systems, and software systems in the context of relevant applications. 14. The concept of design must be a recurring theme throughout the report. 1.4 Structure of the CE2016 Report This CE2016 report addresses undergraduate programs in computer engineering. The main body of the report consists of six chapters in addition to this one. Chapter 2 illustrates how computer engineering has evolved as a discipline."
+          },
+          {
+            "label": "S3",
+            "chunk_id": "src_067_chunk_007",
+            "source_id": "src_067",
+            "title": "Computer Engineering Curricula 2016",
+            "category": "curriculum",
+            "similarity_score": 0.6024613976478577,
+            "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+            "passage_preview": "set of learning outcomes defines each knowledge unit. The report further identifies some knowledge units as “core” that should appear in every implemented curriculum; the remaining knowledge units are supplementary. Core units represent the minimal knowledge or depth a program should cover in each knowledge area. A curriculum in computer engineering that contains only core units would be very incomplete. A computer engineering program should contain sufficient coursework at the introductory, intermediate, and advanced levels based on the body of knowledge for computer engineering."
+          }
+        ]
+      },
+      "generation": {
+        "status": "answered",
+        "answer": "As a Computer Engineering student, you should include coursework that aligns with the core knowledge units identified in the Computer Engineering Curricula 2016 report. This includes a strong foundation in both hardware and software systems, as well as preparation for professional practice. You should also highlight your hands-on experiences in designing, building, and testing both hardware and software systems, as these are essential components of a computer engineering curriculum. Additionally, you can mention your understanding of the design theme, which is a recurring theme throughout the report. [S1], [S3]",
+        "llm_called": true,
+        "sources": [
+          {
+            "source_id": "src_067",
+            "title": "Computer Engineering Curricula 2016",
+            "source_name": "Association for Computing Machinery and IEEE Computer Society",
+            "source_type": "professional_curriculum_report",
+            "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+            "category": "curriculum",
+            "supporting_chunk_ids": [
+              "src_067_chunk_011",
+              "src_067_chunk_012",
+              "src_067_chunk_007"
+            ],
+            "evidence_labels": [
+              "S1",
+              "S2",
+              "S3"
+            ],
+            "best_similarity_score": 0.6568923592567444
+          }
+        ],
+        "citations": [
+          "S1",
+          "S3"
+        ],
+        "citation_valid": true,
+        "citation_metadata": {
+          "valid": true,
+          "cited_labels": [
+            "S1",
+            "S3"
+          ],
+          "invalid_labels": [],
+          "available_labels": [
+            "S1",
+            "S2",
+            "S3"
+          ],
+          "normalized": false,
+          "repair_actions": [],
+          "reason": null,
+          "retry_attempted": false,
+          "retry_successful": false,
+          "generations_attempted": 1,
+          "retry_failure_reason": null
+        },
+        "answer_quality_assessment": "Unsupported or incorrect",
+        "assessment_method": "automatic rubric based on retrieval relevance, answer status, and citation validation; manual factual review is still required",
+        "notes": "Answered with valid citation format, but retrieved categories did not match expectations.",
+        "error": null
+      },
+      "timing": {
+        "retrieval_seconds": 0.087,
+        "context_construction_seconds": 0.0,
+        "llm_generation_seconds": 23.235,
+        "initial_llm_generation_seconds": 23.235,
+        "retry_llm_generation_seconds": 0.0,
+        "llm_reported_total_duration_seconds": 23.178,
+        "total_seconds": 23.327
+      }
+    },
+    {
+      "id": "p002",
+      "question_number": null,
+      "question": "What will I actually learn semester by semester in OSTIM Computer Engineering?",
+      "case_kind": "paraphrased_unseen",
+      "expected_topic": "OSTIM Computer Engineering curriculum paraphrase",
+      "expected_categories": [
+        "curriculum",
+        "department_information"
+      ],
+      "expected_behavior": "answer",
+      "retrieval": {
+        "label": "Highly relevant",
+        "evidence_sufficient": true,
+        "out_of_scope": false,
+        "top_similarity_score": 0.5945123434066772,
+        "results_above_threshold": 5,
+        "retrieved_sources": [
+          {
+            "source_id": "src_001",
+            "title": "About the Department | MF-Bilgisayar Mühendisliği (İngilizce)",
+            "category": "department_information",
+            "similarity_score": 0.5945123434066772
+          },
+          {
+            "source_id": "src_004",
+            "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+            "category": "curriculum",
+            "similarity_score": 0.5459861755371094
+          },
+          {
+            "source_id": "src_067",
+            "title": "Computer Engineering Curricula 2016",
+            "category": "curriculum",
+            "similarity_score": 0.5787773132324219
+          }
+        ],
+        "retrieved_passages": [
+          {
+            "label": "S1",
+            "chunk_id": "src_001_chunk_001",
+            "source_id": "src_001",
+            "title": "About the Department | MF-Bilgisayar Mühendisliği (İngilizce)",
+            "category": "department_information",
+            "similarity_score": 0.5945123434066772,
+            "url": "https://mfcs.ostimteknik.edu.tr/about-the-department",
+            "passage_preview": "Source ID: src_001 About the Department | MF-Bilgisayar Mühendisliği (İngilizce) Barrier Free Department of Computer Engineering (English) The aim of the Department of Computer Engineering is to educate Computer engineers who will contribute to the institution and organization in which they are participating, enabling them to gain skills for technical management; teach them analysis, synthesis and modelling in order ato solve engineering problems, ensure ability which will lead to carry out personal research, produce information based on a universal perspective, be able to transfer this technology into industry and share knowledge and experience with society and industry and also be..."
+          },
+          {
+            "label": "S2",
+            "chunk_id": "src_004_chunk_008",
+            "source_id": "src_004",
+            "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+            "category": "curriculum",
+            "similarity_score": 0.5459861755371094,
+            "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+            "passage_preview": "I This course is the first part of a two-semester capstone project in computer engineering. Students identify a research or design problem related to computer systems and develop a comprehensive project plan. The course includes literature review, problem definition, methodology development, and preliminary analysis or design. Emphasis is placed on independent study, technical reporting, and project planning under faculty supervision."
+          },
+          {
+            "label": "S3",
+            "chunk_id": "src_067_chunk_073",
+            "source_id": "src_067",
+            "title": "Computer Engineering Curricula 2016",
+            "category": "curriculum",
+            "similarity_score": 0.5787773132324219,
+            "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+            "passage_preview": "and other factors. Courses to satisfy these requirements often include subjects drawn from the humanities, social sciences, languages, and the liberal arts. In designing a computer engineering program, attention should be given to utilizing these course requirements to contribute to the students’ understanding of the social context of engineering and the potential impact of engineering solutions in a global environment. 6.5 Sample Curricula Appendix B provides sample curricula implementations of complete computer engineering programs. To provide a framework for the curriculum that illustrates the ideas presented in this report, the first three examples assume the following."
+          }
+        ]
+      },
+      "generation": {
+        "status": "answered",
+        "answer": "In semester eight of the Computer Engineering program at OSTIM, students will engage in the first part of a two-semester capstone project. This course involves identifying a research or design problem related to computer systems and developing a comprehensive project plan. The curriculum includes elements such as literature review, problem definition, methodology development, and preliminary analysis or design. Students will also focus on independent study, technical reporting, and project planning, all under faculty supervision. [S2]",
+        "llm_called": true,
+        "sources": [
+          {
+            "source_id": "src_001",
+            "title": "About the Department | MF-Bilgisayar Mühendisliği (İngilizce)",
+            "source_name": "OSTIM Technical University - Department of Computer Engineering (English)",
+            "source_type": "official_department_page",
+            "url": "https://mfcs.ostimteknik.edu.tr/about-the-department",
+            "category": "department_information",
+            "supporting_chunk_ids": [
+              "src_001_chunk_001"
+            ],
+            "evidence_labels": [
+              "S1"
+            ],
+            "best_similarity_score": 0.5945123434066772
+          },
+          {
+            "source_id": "src_004",
+            "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+            "source_name": "OSTIM Technical University - Department of Computer Engineering (English)",
+            "source_type": "course_descriptions",
+            "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+            "category": "curriculum",
+            "supporting_chunk_ids": [
+              "src_004_chunk_008"
+            ],
+            "evidence_labels": [
+              "S2"
+            ],
+            "best_similarity_score": 0.5459861755371094
+          },
+          {
+            "source_id": "src_067",
+            "title": "Computer Engineering Curricula 2016",
+            "source_name": "Association for Computing Machinery and IEEE Computer Society",
+            "source_type": "professional_curriculum_report",
+            "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+            "category": "curriculum",
+            "supporting_chunk_ids": [
+              "src_067_chunk_073"
+            ],
+            "evidence_labels": [
+              "S3"
+            ],
+            "best_similarity_score": 0.5787773132324219
+          }
+        ],
+        "citations": [
+          "S2"
+        ],
+        "citation_valid": true,
+        "citation_metadata": {
+          "valid": true,
+          "cited_labels": [
+            "S2"
+          ],
+          "invalid_labels": [],
+          "available_labels": [
+            "S1",
+            "S2",
+            "S3"
+          ],
+          "normalized": false,
+          "repair_actions": [],
+          "reason": null,
+          "retry_attempted": false,
+          "retry_successful": false,
+          "generations_attempted": 1,
+          "retry_failure_reason": null
+        },
+        "answer_quality_assessment": "Correct / well-supported",
+        "assessment_method": "automatic rubric based on retrieval relevance, answer status, and citation validation; manual factual review is still required",
+        "notes": "Automated proxy: relevant retrieval plus valid citations; manual claim-level review still required.",
+        "error": null
+      },
+      "timing": {
+        "retrieval_seconds": 0.058,
+        "context_construction_seconds": 0.0,
+        "llm_generation_seconds": 22.291,
+        "initial_llm_generation_seconds": 22.291,
+        "retry_llm_generation_seconds": 0.0,
+        "llm_reported_total_duration_seconds": 22.275,
+        "total_seconds": 22.352
+      }
+    }
+  ]
+}

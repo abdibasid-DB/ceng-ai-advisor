@@ -1,0 +1,265 @@
+{
+  "generated_at": "2026-10-16T15:45:16+00:00",
+  "complete": true,
+  "case_count": 1,
+  "selected_ids": [
+    "P056"
+  ],
+  "summary": {
+    "case_count": 1,
+    "evaluation_label_counts": {
+      "correct_evidence_supported": 1
+    },
+    "evaluation_label_percentages": {
+      "correct_evidence_supported": 100.0
+    },
+    "status_counts": {
+      "answered": 1
+    },
+    "answered_cases": 1,
+    "answered_cases_with_valid_citations": 1,
+    "answered_cases_with_valid_citations_pct": 100.0,
+    "answered_cases_evidence_supported": 1,
+    "answered_cases_evidence_supported_pct": 100.0,
+    "by_group": {
+      "programming_software": {
+        "total": 1,
+        "labels": {
+          "correct_evidence_supported": 1
+        },
+        "correct_evidence_supported_pct": 100.0,
+        "correct_insufficient_information_pct": 0.0,
+        "incorrect_refusal_evidence_exists_pct": 0.0,
+        "unsupported_incorrect_or_misleading_pct": 0.0,
+        "runtime_error_pct": 0.0
+      }
+    },
+    "latency_seconds": {
+      "mean": 39.89,
+      "max": 39.89,
+      "min": 39.89
+    },
+    "systematic_failure_counts": {}
+  },
+  "results": [
+    {
+      "id": "P056",
+      "question": "How important is command line usage?",
+      "group": "programming_software",
+      "expected_topics": [
+        "operating_systems",
+        "skills"
+      ],
+      "expected_categories": [
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "evaluation_label": "correct_evidence_supported",
+      "baseline_label": "incorrect_refusal_evidence_exists",
+      "baseline_status": "insufficient_information",
+      "elapsed_wall_seconds": 39.9,
+      "diagnostics": {
+        "query_kind": "standalone_domain_question",
+        "resolved_question": "How important is command line usage? (Computer Engineering)",
+        "status": "answered",
+        "llm_called": true,
+        "evidence_exists_by_eval": true,
+        "citation_valid": true,
+        "citation_metadata": {
+          "valid": true,
+          "cited_labels": [
+            "S1"
+          ],
+          "invalid_labels": [],
+          "available_labels": [
+            "S1",
+            "S2",
+            "S3"
+          ],
+          "normalized": false,
+          "repair_actions": [],
+          "reason": null,
+          "retry_attempted": true,
+          "retry_successful": false,
+          "generations_attempted": 2,
+          "retry_failure_reason": "unsupported claim could not be matched to retrieved evidence"
+        },
+        "support_check": {
+          "all_claims_cited": true,
+          "all_cited_claims_supported_by_overlap": true,
+          "unsupported_claim_count": 0,
+          "uncited_claim_count": 0,
+          "checks": [
+            {
+              "claim": "Command-line tools help students navigate files, run programs, automate tasks, inspect logs, and work on remote machines; this source does not say they are mandatory for every CENG path [S1].",
+              "labels": [
+                "S1"
+              ],
+              "supported": true,
+              "overlap_terms": [
+                "and",
+                "automate",
+                "command-line",
+                "files",
+                "for",
+                "inspect",
+                "logs",
+                "machines",
+                "navigate",
+                "not",
+                "programs",
+                "remote"
+              ]
+            }
+          ]
+        },
+        "unsupported_generated_answer_reason": null,
+        "retrieval_metadata": {
+          "top_k": 5,
+          "candidate_top_k": 12,
+          "similarity_threshold": 0.3,
+          "results_above_threshold": 5,
+          "top_similarity_score": 0.5573256015777588,
+          "evidence_sufficient": true,
+          "out_of_scope": false,
+          "resolved_question": "How important is command line usage? (Computer Engineering)",
+          "query_kind": "standalone_domain_question",
+          "query_normalization": {
+            "original_question": "How important is command line usage?",
+            "normalized_question": "How important is command line usage?",
+            "retrieval_question": "How important is command line usage? (Computer Engineering)",
+            "kind": "standalone_domain_question",
+            "topics": [
+              {
+                "name": "software",
+                "matched_terms": [
+                  "command line"
+                ],
+                "confidence": 1.0
+              }
+            ],
+            "task": "assess",
+            "constraints": [],
+            "entities": [
+              "software"
+            ],
+            "referents": [],
+            "requires_context": false,
+            "requires_clarification": false,
+            "is_source_follow_up": false,
+            "is_persona_meta": false,
+            "is_out_of_domain": false,
+            "confidence": 0.92,
+            "debug": {
+              "token_count": 6,
+              "replacements": [],
+              "normalized_tokens": [
+                "how",
+                "important",
+                "is",
+                "command",
+                "line",
+                "usage"
+              ],
+              "changed": false
+            },
+            "changed": false
+          }
+        },
+        "timing": {
+          "retrieval_seconds": 0.501,
+          "context_construction_seconds": 0.001,
+          "llm_generation_seconds": 39.364000000000004,
+          "initial_llm_generation_seconds": 18.911,
+          "retry_llm_generation_seconds": 20.453,
+          "llm_reported_total_duration_seconds": 18.832,
+          "total_seconds": 39.886
+        },
+        "model": "qwen2.5:3b",
+        "error": null
+      },
+      "answer": "Command-line tools help students navigate files, run programs, automate tasks, inspect logs, and work on remote machines; this source does not say they are mandatory for every CENG path [S1].",
+      "sources": [
+        {
+          "source_id": "src_090",
+          "title": "Missing Semester: The Shell",
+          "source_name": "MIT CSAIL Missing Semester",
+          "source_type": "university_course_study_guidance",
+          "url": "https://missing.csail.mit.edu/2020/course-shell/",
+          "category": "skills_and_technologies",
+          "supporting_chunk_ids": [
+            "src_090_chunk_001"
+          ],
+          "evidence_labels": [
+            "S1"
+          ],
+          "best_similarity_score": 0.5573256015777588
+        },
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "source_name": "Association for Computing Machinery and IEEE Computer Society",
+          "source_type": "professional_curriculum_report",
+          "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+          "category": "curriculum",
+          "supporting_chunk_ids": [
+            "src_067_chunk_124"
+          ],
+          "evidence_labels": [
+            "S2"
+          ],
+          "best_similarity_score": 0.4823625087738037
+        },
+        {
+          "source_id": "src_081",
+          "title": "Software Engineering Body of Knowledge (SWEBOK Guide), Version 4.0",
+          "source_name": "IEEE Computer Society",
+          "source_type": "professional_body_of_knowledge",
+          "url": "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+          "category": "programming",
+          "supporting_chunk_ids": [
+            "src_081_chunk_001"
+          ],
+          "evidence_labels": [
+            "S3"
+          ],
+          "best_similarity_score": 0.4408373236656189
+        }
+      ],
+      "retrieved_context": [
+        {
+          "label": "S1",
+          "chunk_id": "src_090_chunk_001",
+          "source_id": "src_090",
+          "title": "Missing Semester: The Shell",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.5573256015777588,
+          "url": "https://missing.csail.mit.edu/2020/course-shell/",
+          "passage": "Source ID: src_090 Title: Missing Semester: The Shell Source: MIT CSAIL Missing Semester URL: https://missing.csail.mit.edu/2020/course-shell/ Date accessed: 2026-10-13 Curated source note MIT's Missing Semester course explains practical computing tools that many students need but do not always learn formally. The shell lesson is useful for answering why command-line skills matter. The shell lets students navigate files, run programs, combine tools, automate repeated tasks, inspect logs, manage development environments, and work on remote machines."
+        },
+        {
+          "label": "S2",
+          "chunk_id": "src_067_chunk_124",
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.4823625087738037,
+          "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+          "passage": "the roles of software development tools, such as compilers, assemblers, linkers, and debuggers.  Identify the expected functionality of a typical modern integrated development environment (IDE).  Use an IDE to develop a simple application.  Effectively use a debugger to trace code execution and identify defects in code. CE-SWD-3 Programming constructs and paradigms Minimum core coverage time: 12 hours  Explain the execution of a simple program.  Write simple and secure programs that accomplish the intended task.  Write simple functions and explain the roles of parameters and arguments."
+        },
+        {
+          "label": "S3",
+          "chunk_id": "src_081_chunk_001",
+          "source_id": "src_081",
+          "title": "Software Engineering Body of Knowledge (SWEBOK Guide), Version 4.0",
+          "category": "programming",
+          "similarity_score": 0.4408373236656189,
+          "url": "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+          "passage": "Source ID: src_081 Title: Software Engineering Body of Knowledge (SWEBOK Guide), Version 4.0 Source: IEEE Computer Society URL: https://www.computer.org/education/bodies-of-knowledge/software-engineering Date accessed: 2026-10-13 Curated source note The IEEE Computer Society's SWEBOK Guide describes software engineering as more than writing code. It organizes professional software work into knowledge areas that include requirements, architecture, design, construction, testing, maintenance, configuration management, engineering process, models and methods, quality, security, professional practice, economics, and computing foundations."
+        }
+      ],
+      "previous_turn_setup": null
+    }
+  ]
+}

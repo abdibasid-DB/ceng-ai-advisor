@@ -1,0 +1,255 @@
+{
+  "case_count": 10,
+  "results": [
+    {
+      "question": "How is computer engineering different from CS, software engineering, IT, and electrical engineering?",
+      "top_similarity_score": 0.6874959468841553,
+      "evidence_sufficient": true,
+      "top_results": [
+        {
+          "source_id": "src_067",
+          "category": "curriculum",
+          "similarity_score": 0.6874959468841553,
+          "title": "Computer Engineering Curricula 2016"
+        },
+        {
+          "source_id": "src_067",
+          "category": "curriculum",
+          "similarity_score": 0.6717003583908081,
+          "title": "Computer Engineering Curricula 2016"
+        },
+        {
+          "source_id": "src_067",
+          "category": "curriculum",
+          "similarity_score": 0.6283676624298096,
+          "title": "Computer Engineering Curricula 2016"
+        }
+      ]
+    },
+    {
+      "question": "Why do computer engineering students need calculus and linear algebra for AI?",
+      "top_similarity_score": 0.6880984306335449,
+      "evidence_sufficient": true,
+      "top_results": [
+        {
+          "source_id": "src_092",
+          "category": "mathematics",
+          "similarity_score": 0.6880984306335449,
+          "title": "Mathematics for Machine Learning and Data Science Specialization"
+        },
+        {
+          "source_id": "src_067",
+          "category": "curriculum",
+          "similarity_score": 0.5052496790885925,
+          "title": "Computer Engineering Curricula 2016"
+        },
+        {
+          "source_id": "src_093",
+          "category": "artificial_intelligence",
+          "similarity_score": 0.4831528663635254,
+          "title": "Computing Machinery and Intelligence"
+        }
+      ]
+    },
+    {
+      "question": "Should I learn SQL or React first as a computer engineering student?",
+      "top_similarity_score": 0.4275444746017456,
+      "evidence_sufficient": true,
+      "top_results": [
+        {
+          "source_id": "src_051",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.4275444746017456,
+          "title": "State of Developer Ecosystem Report 2024"
+        },
+        {
+          "source_id": "src_070",
+          "category": "programming",
+          "similarity_score": 0.4403325319290161,
+          "title": "EECS Majors: Choosing your first computer science course"
+        },
+        {
+          "source_id": "src_004",
+          "category": "curriculum",
+          "similarity_score": 0.40102458000183105,
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)"
+        }
+      ]
+    },
+    {
+      "question": "What is an FPGA and is it useful for embedded systems?",
+      "top_similarity_score": 0.7950720191001892,
+      "evidence_sufficient": true,
+      "top_results": [
+        {
+          "source_id": "src_084",
+          "category": "specializations",
+          "similarity_score": 0.7950720191001892,
+          "title": "What Is an FPGA?"
+        },
+        {
+          "source_id": "src_067",
+          "category": "curriculum",
+          "similarity_score": 0.5055575370788574,
+          "title": "Computer Engineering Curricula 2016"
+        },
+        {
+          "source_id": "src_067",
+          "category": "curriculum",
+          "similarity_score": 0.4891202449798584,
+          "title": "Computer Engineering Curricula 2016"
+        }
+      ]
+    },
+    {
+      "question": "What cloud computing foundations should a CENG student learn?",
+      "top_similarity_score": 0.5910766124725342,
+      "evidence_sufficient": true,
+      "top_results": [
+        {
+          "source_id": "src_082",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.5910766124725342,
+          "title": "The NIST Definition of Cloud Computing"
+        },
+        {
+          "source_id": "src_067",
+          "category": "curriculum",
+          "similarity_score": 0.5506511330604553,
+          "title": "Computer Engineering Curricula 2016"
+        },
+        {
+          "source_id": "src_069",
+          "category": "specializations",
+          "similarity_score": 0.5448682308197021,
+          "title": "Computing Competencies for Undergraduate Data Science Curricula"
+        }
+      ]
+    },
+    {
+      "question": "How can I start cybersecurity legally and safely?",
+      "top_similarity_score": 0.6147145628929138,
+      "evidence_sufficient": true,
+      "top_results": [
+        {
+          "source_id": "src_085",
+          "category": "cybersecurity",
+          "similarity_score": 0.6147145628929138,
+          "title": "Cybersecurity Curricular Guidelines CSEC 2017"
+        },
+        {
+          "source_id": "src_094",
+          "category": "cybersecurity",
+          "similarity_score": 0.5848158597946167,
+          "title": "Cyber Career Pathways Tool"
+        },
+        {
+          "source_id": "src_068",
+          "category": "cybersecurity",
+          "similarity_score": 0.5541868805885315,
+          "title": "Workforce Framework for Cybersecurity (NICE Framework)"
+        }
+      ]
+    },
+    {
+      "question": "Does OSTIM have a thesis masters path in Computer Engineering?",
+      "top_similarity_score": 0.742476224899292,
+      "evidence_sufficient": true,
+      "top_results": [
+        {
+          "source_id": "src_088",
+          "category": "graduate_studies",
+          "similarity_score": 0.742476224899292,
+          "title": "Program Syllabus: Computer Engineering English Thesis Master's Degree Program"
+        },
+        {
+          "source_id": "src_001",
+          "category": "department_information",
+          "similarity_score": 0.5773529410362244,
+          "title": "About the Department | MF-Bilgisayar Mühendisliği (İngilizce)"
+        },
+        {
+          "source_id": "src_089",
+          "category": "department_information",
+          "similarity_score": 0.4843173623085022,
+          "title": "International Student Admission Directive"
+        }
+      ]
+    },
+    {
+      "question": "What should international applicants verify before applying to OSTIM Computer Engineering?",
+      "top_similarity_score": 0.6679374575614929,
+      "evidence_sufficient": true,
+      "top_results": [
+        {
+          "source_id": "src_089",
+          "category": "department_information",
+          "similarity_score": 0.6679374575614929,
+          "title": "International Student Admission Directive"
+        },
+        {
+          "source_id": "src_001",
+          "category": "department_information",
+          "similarity_score": 0.5430499911308289,
+          "title": "About the Department | MF-Bilgisayar Mühendisliği (İngilizce)"
+        },
+        {
+          "source_id": "src_005",
+          "category": "student_life",
+          "similarity_score": 0.5162603259086609,
+          "title": "Our Difference | MF-Bilgisayar Mühendisliği (İngilizce)"
+        }
+      ]
+    },
+    {
+      "question": "Will AI replace programmers or should I still study CENG?",
+      "top_similarity_score": 0.5481046438217163,
+      "evidence_sufficient": true,
+      "top_results": [
+        {
+          "source_id": "src_017",
+          "category": "future_technologies",
+          "similarity_score": 0.5481046438217163,
+          "title": "The Future of Jobs Report 2025"
+        },
+        {
+          "source_id": "src_075",
+          "category": "artificial_intelligence",
+          "similarity_score": 0.5421052575111389,
+          "title": "Education | The 2025 AI Index Report"
+        },
+        {
+          "source_id": "src_093",
+          "category": "artificial_intelligence",
+          "similarity_score": 0.5577848553657532,
+          "title": "Computing Machinery and Intelligence"
+        }
+      ]
+    },
+    {
+      "question": "How important is command line usage for CENG students?",
+      "top_similarity_score": 0.6334801912307739,
+      "evidence_sufficient": true,
+      "top_results": [
+        {
+          "source_id": "src_090",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.6334801912307739,
+          "title": "Missing Semester: The Shell"
+        },
+        {
+          "source_id": "src_081",
+          "category": "programming",
+          "similarity_score": 0.5295398831367493,
+          "title": "Software Engineering Body of Knowledge (SWEBOK Guide), Version 4.0"
+        },
+        {
+          "source_id": "src_067",
+          "category": "curriculum",
+          "similarity_score": 0.505794107913971,
+          "title": "Computer Engineering Curricula 2016"
+        }
+      ]
+    }
+  ]
+}

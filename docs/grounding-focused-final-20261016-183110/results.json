@@ -1,0 +1,2487 @@
+{
+  "generated_at": "2026-10-16T15:40:03+00:00",
+  "complete": true,
+  "case_count": 11,
+  "selected_ids": [
+    "F001",
+    "C020",
+    "R120",
+    "X141",
+    "T187",
+    "T188",
+    "N001",
+    "N002",
+    "N003",
+    "Y090",
+    "U153"
+  ],
+  "summary": {
+    "case_count": 11,
+    "evaluation_label_counts": {
+      "correct_evidence_supported": 8,
+      "incorrect_refusal_evidence_exists": 2,
+      "correct_insufficient_information": 1
+    },
+    "evaluation_label_percentages": {
+      "correct_evidence_supported": 72.7,
+      "correct_insufficient_information": 9.1,
+      "incorrect_refusal_evidence_exists": 18.2
+    },
+    "status_counts": {
+      "answered": 8,
+      "insufficient_information": 3
+    },
+    "answered_cases": 8,
+    "answered_cases_with_valid_citations": 8,
+    "answered_cases_with_valid_citations_pct": 100.0,
+    "answered_cases_evidence_supported": 8,
+    "answered_cases_evidence_supported_pct": 100.0,
+    "by_group": {
+      "ai_future": {
+        "total": 1,
+        "labels": {
+          "correct_evidence_supported": 1
+        },
+        "correct_evidence_supported_pct": 100.0,
+        "correct_insufficient_information_pct": 0.0,
+        "incorrect_refusal_evidence_exists_pct": 0.0,
+        "unsupported_incorrect_or_misleading_pct": 0.0,
+        "runtime_error_pct": 0.0
+      },
+      "career_employment": {
+        "total": 1,
+        "labels": {
+          "incorrect_refusal_evidence_exists": 1
+        },
+        "correct_evidence_supported_pct": 0.0,
+        "correct_insufficient_information_pct": 0.0,
+        "incorrect_refusal_evidence_exists_pct": 100.0,
+        "unsupported_incorrect_or_misleading_pct": 0.0,
+        "runtime_error_pct": 0.0
+      },
+      "complex": {
+        "total": 1,
+        "labels": {
+          "incorrect_refusal_evidence_exists": 1
+        },
+        "correct_evidence_supported_pct": 0.0,
+        "correct_insufficient_information_pct": 0.0,
+        "incorrect_refusal_evidence_exists_pct": 100.0,
+        "unsupported_incorrect_or_misleading_pct": 0.0,
+        "runtime_error_pct": 0.0
+      },
+      "curriculum": {
+        "total": 1,
+        "labels": {
+          "correct_evidence_supported": 1
+        },
+        "correct_evidence_supported_pct": 100.0,
+        "correct_insufficient_information_pct": 0.0,
+        "incorrect_refusal_evidence_exists_pct": 0.0,
+        "unsupported_incorrect_or_misleading_pct": 0.0,
+        "runtime_error_pct": 0.0
+      },
+      "cybersecurity": {
+        "total": 1,
+        "labels": {
+          "correct_evidence_supported": 1
+        },
+        "correct_evidence_supported_pct": 100.0,
+        "correct_insufficient_information_pct": 0.0,
+        "incorrect_refusal_evidence_exists_pct": 0.0,
+        "unsupported_incorrect_or_misleading_pct": 0.0,
+        "runtime_error_pct": 0.0
+      },
+      "fundamentals": {
+        "total": 1,
+        "labels": {
+          "correct_evidence_supported": 1
+        },
+        "correct_evidence_supported_pct": 100.0,
+        "correct_insufficient_information_pct": 0.0,
+        "incorrect_refusal_evidence_exists_pct": 0.0,
+        "unsupported_incorrect_or_misleading_pct": 0.0,
+        "runtime_error_pct": 0.0
+      },
+      "hardware_networks": {
+        "total": 1,
+        "labels": {
+          "correct_evidence_supported": 1
+        },
+        "correct_evidence_supported_pct": 100.0,
+        "correct_insufficient_information_pct": 0.0,
+        "incorrect_refusal_evidence_exists_pct": 0.0,
+        "unsupported_incorrect_or_misleading_pct": 0.0,
+        "runtime_error_pct": 0.0
+      },
+      "multi_turn": {
+        "total": 2,
+        "labels": {
+          "correct_evidence_supported": 2
+        },
+        "correct_evidence_supported_pct": 100.0,
+        "correct_insufficient_information_pct": 0.0,
+        "incorrect_refusal_evidence_exists_pct": 0.0,
+        "unsupported_incorrect_or_misleading_pct": 0.0,
+        "runtime_error_pct": 0.0
+      },
+      "programming_software": {
+        "total": 1,
+        "labels": {
+          "correct_evidence_supported": 1
+        },
+        "correct_evidence_supported_pct": 100.0,
+        "correct_insufficient_information_pct": 0.0,
+        "incorrect_refusal_evidence_exists_pct": 0.0,
+        "unsupported_incorrect_or_misleading_pct": 0.0,
+        "runtime_error_pct": 0.0
+      },
+      "unsupported": {
+        "total": 1,
+        "labels": {
+          "correct_insufficient_information": 1
+        },
+        "correct_evidence_supported_pct": 0.0,
+        "correct_insufficient_information_pct": 100.0,
+        "incorrect_refusal_evidence_exists_pct": 0.0,
+        "unsupported_incorrect_or_misleading_pct": 0.0,
+        "runtime_error_pct": 0.0
+      }
+    },
+    "latency_seconds": {
+      "mean": 36.2,
+      "max": 58.33,
+      "min": 0.08
+    },
+    "systematic_failure_counts": {
+      "false_refusal: unsupported claim could not be matched to retrieved evidence": 2
+    }
+  },
+  "results": [
+    {
+      "id": "F001",
+      "question": "What is Computer Engineering?",
+      "group": "fundamentals",
+      "expected_topics": [
+        "computer_engineering"
+      ],
+      "expected_categories": [
+        "department_information",
+        "common_misconceptions"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "evaluation_label": "correct_evidence_supported",
+      "baseline_label": "unsupported_incorrect_or_misleading",
+      "baseline_status": "answered",
+      "elapsed_wall_seconds": 14.322,
+      "diagnostics": {
+        "query_kind": "standalone_domain_question",
+        "resolved_question": "What is Computer Engineering?",
+        "status": "answered",
+        "llm_called": true,
+        "evidence_exists_by_eval": true,
+        "citation_valid": true,
+        "citation_metadata": {
+          "valid": true,
+          "cited_labels": [
+            "S1",
+            "S2"
+          ],
+          "invalid_labels": [],
+          "available_labels": [
+            "S1",
+            "S2",
+            "S3"
+          ],
+          "normalized": true,
+          "repair_actions": [
+            "added_supported_inline_label"
+          ],
+          "reason": null,
+          "retry_attempted": false,
+          "retry_successful": false,
+          "generations_attempted": 1,
+          "retry_failure_reason": null
+        },
+        "support_check": {
+          "all_claims_cited": true,
+          "all_cited_claims_supported_by_overlap": true,
+          "unsupported_claim_count": 0,
+          "uncited_claim_count": 0,
+          "checks": [
+            {
+              "claim": "Computer Engineering is the design and construction of processor-based systems, comprising hardware, software, and communications components [S1].",
+              "labels": [
+                "S1"
+              ],
+              "supported": true,
+              "overlap_terms": [
+                "and",
+                "communications",
+                "components",
+                "construction",
+                "design",
+                "hardware",
+                "processor-based",
+                "software",
+                "systems",
+                "the"
+              ]
+            },
+            {
+              "claim": "This field is generally closest to the boundary between computing and engineering hardware, as detailed in the ACM Curricular Guidance and Computing Curricula 2020 [S2].",
+              "labels": [
+                "S2"
+              ],
+              "supported": true,
+              "overlap_terms": [
+                "acm",
+                "and",
+                "boundary",
+                "closest",
+                "computing",
+                "curricula",
+                "generally",
+                "hardware",
+                "the"
+              ]
+            },
+            {
+              "claim": "[S1] and [S2]",
+              "labels": [
+                "S1",
+                "S2"
+              ],
+              "supported": true,
+              "overlap_terms": [
+                "and"
+              ]
+            }
+          ]
+        },
+        "unsupported_generated_answer_reason": null,
+        "retrieval_metadata": {
+          "top_k": 5,
+          "candidate_top_k": 12,
+          "similarity_threshold": 0.3,
+          "results_above_threshold": 5,
+          "top_similarity_score": 0.6821848154067993,
+          "evidence_sufficient": true,
+          "out_of_scope": false,
+          "resolved_question": "What is Computer Engineering?",
+          "query_kind": "standalone_domain_question",
+          "query_normalization": {
+            "original_question": "What is Computer Engineering?",
+            "normalized_question": "What is computer engineering?",
+            "retrieval_question": "What is Computer Engineering?",
+            "kind": "standalone_domain_question",
+            "topics": [
+              {
+                "name": "computer_engineering",
+                "matched_terms": [
+                  "computer engineering"
+                ],
+                "confidence": 1.0
+              },
+              {
+                "name": "definition",
+                "matched_terms": [
+                  "what is"
+                ],
+                "confidence": 1.0
+              }
+            ],
+            "task": "explain",
+            "constraints": [],
+            "entities": [
+              "computer_engineering"
+            ],
+            "referents": [],
+            "requires_context": false,
+            "requires_clarification": false,
+            "is_source_follow_up": false,
+            "is_persona_meta": false,
+            "is_out_of_domain": false,
+            "confidence": 0.92,
+            "debug": {
+              "token_count": 4,
+              "replacements": [],
+              "normalized_tokens": [
+                "what",
+                "is",
+                "computer",
+                "engineering"
+              ],
+              "changed": false
+            },
+            "changed": false
+          }
+        },
+        "timing": {
+          "retrieval_seconds": 0.476,
+          "context_construction_seconds": 0.002,
+          "llm_generation_seconds": 13.821,
+          "initial_llm_generation_seconds": 13.821,
+          "retry_llm_generation_seconds": 0.0,
+          "llm_reported_total_duration_seconds": 13.774,
+          "total_seconds": 14.312
+        },
+        "model": "qwen2.5:3b",
+        "error": null
+      },
+      "answer": "Computer Engineering is the design and construction of processor-based systems, comprising hardware, software, and communications components [S1]. This field is generally closest to the boundary between computing and engineering hardware, as detailed in the ACM Curricular Guidance and Computing Curricula 2020 [S2]. [S1] and [S2]",
+      "sources": [
+        {
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "source_name": "ACM Curricular Guidance",
+          "source_type": "curricular_guidance",
+          "url": "https://www.acm.org/education/curricula-recommendations",
+          "category": "common_misconceptions",
+          "supporting_chunk_ids": [
+            "src_042_computer_engineering_definition"
+          ],
+          "evidence_labels": [
+            "S1"
+          ],
+          "best_similarity_score": 0.6821848154067993
+        },
+        {
+          "source_id": "src_080",
+          "title": "Computing Curricula 2020: Paradigms for Global Computing Education",
+          "source_name": "ACM and IEEE Computer Society",
+          "source_type": "professional_curriculum_report",
+          "url": "https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf",
+          "category": "common_misconceptions",
+          "supporting_chunk_ids": [
+            "src_080_chunk_001"
+          ],
+          "evidence_labels": [
+            "S2"
+          ],
+          "best_similarity_score": 0.6089690923690796
+        },
+        {
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "source_name": "ACM Committee for Computing Education in Community Colleges",
+          "source_type": "professional_curricular_guidance",
+          "url": "https://ccecc.acm.org/guidance",
+          "category": "common_misconceptions",
+          "supporting_chunk_ids": [
+            "src_042_chunk_001"
+          ],
+          "evidence_labels": [
+            "S3"
+          ],
+          "best_similarity_score": 0.6044425964355469
+        }
+      ],
+      "retrieved_context": [
+        {
+          "label": "S1",
+          "chunk_id": "src_042_computer_engineering_definition",
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "category": "common_misconceptions",
+          "similarity_score": 0.6821848154067993,
+          "url": "https://www.acm.org/education/curricula-recommendations",
+          "passage": "Curricular Guidance Computer Engineering Computer Science Cybersecurity Data Science - Coming soon! Information Technology Information Technology - Applied Information Technology - Transfer Software Engineering Curricular Guidance The Sub-Disciplines of Computing The Association for Computing Machinery (ACM) currently categorizes the overarching discipline of computing into five defined sub-disciplines: computer science, computer engineering, software engineering, information systems and information technology. Computer Engineering involves the design and construction of processor-based systems comprised of hardware, software, and communications components."
+        },
+        {
+          "label": "S2",
+          "chunk_id": "src_080_chunk_001",
+          "source_id": "src_080",
+          "title": "Computing Curricula 2020: Paradigms for Global Computing Education",
+          "category": "common_misconceptions",
+          "similarity_score": 0.6089690923690796,
+          "url": "https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf",
+          "passage": "Source ID: src_080 Title: Computing Curricula 2020: Paradigms for Global Computing Education Source: ACM and IEEE Computer Society URL: https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf Date accessed: 2026-10-13 Curated source note Computing Curricula 2020 compares major computing disciplines and is useful when students ask whether Computer Engineering is the same as Computer Science, Software Engineering, Information Technology, Information Systems, or Cybersecurity. Computer Engineering is generally closest to the boundary between computing and engineering hardware."
+        },
+        {
+          "label": "S3",
+          "chunk_id": "src_042_chunk_001",
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "category": "common_misconceptions",
+          "similarity_score": 0.6044425964355469,
+          "url": "https://ccecc.acm.org/guidance",
+          "passage": "Source ID: src_042 Curricular Guidance - ACM CCECC Facebook Twitter LinkedIn YouTube ACM CCECC Celebrating 40++ years of service to computing education communities. Curricular Guidance Computer Engineering Computer Science Cybersecurity Data Science - Coming soon! Information Technology Information Technology - Applied Information Technology - Transfer Software Engineering Curricular Guidance The Sub-Disciplines of Computing The Association for Computing Machinery (ACM) currently categorizes the overarching discipline of computing into five defined sub-disciplines: computer science, computer engineering, software engineering, information systems and information technology."
+        }
+      ],
+      "previous_turn_setup": null
+    },
+    {
+      "id": "C020",
+      "question": "How much lab work is there in computer engineering?",
+      "group": "curriculum",
+      "expected_topics": [
+        "curriculum",
+        "hardware"
+      ],
+      "expected_categories": [
+        "curriculum"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "evaluation_label": "correct_evidence_supported",
+      "baseline_label": "incorrect_refusal_evidence_exists",
+      "baseline_status": "insufficient_information",
+      "elapsed_wall_seconds": 43.866,
+      "diagnostics": {
+        "query_kind": "standalone_domain_question",
+        "resolved_question": "How much lab work is there in computer engineering?",
+        "status": "answered",
+        "llm_called": true,
+        "evidence_exists_by_eval": true,
+        "citation_valid": true,
+        "citation_metadata": {
+          "valid": true,
+          "cited_labels": [
+            "S3"
+          ],
+          "invalid_labels": [],
+          "available_labels": [
+            "S1",
+            "S2",
+            "S3"
+          ],
+          "normalized": false,
+          "repair_actions": [],
+          "reason": null,
+          "retry_attempted": true,
+          "retry_successful": true,
+          "generations_attempted": 2,
+          "retry_failure_reason": null
+        },
+        "support_check": {
+          "all_claims_cited": true,
+          "all_cited_claims_supported_by_overlap": true,
+          "unsupported_claim_count": 0,
+          "uncited_claim_count": 0,
+          "checks": [
+            {
+              "claim": "Computer Engineering curricula describe laboratory experiences as crucial, but this excerpt does not give a program-wide lab-hour total [S3].",
+              "labels": [
+                "S3"
+              ],
+              "supported": true,
+              "overlap_terms": [
+                "crucial",
+                "experiences",
+                "laboratory",
+                "not"
+              ]
+            }
+          ]
+        },
+        "unsupported_generated_answer_reason": null,
+        "retrieval_metadata": {
+          "top_k": 5,
+          "candidate_top_k": 12,
+          "similarity_threshold": 0.3,
+          "results_above_threshold": 5,
+          "top_similarity_score": 0.5963224768638611,
+          "evidence_sufficient": true,
+          "out_of_scope": false,
+          "resolved_question": "How much lab work is there in computer engineering?",
+          "query_kind": "standalone_domain_question",
+          "query_normalization": {
+            "original_question": "How much lab work is there in computer engineering?",
+            "normalized_question": "How much lab work is there in computer engineering?",
+            "retrieval_question": "How much lab work is there in computer engineering?",
+            "kind": "standalone_domain_question",
+            "topics": [
+              {
+                "name": "computer_engineering",
+                "matched_terms": [
+                  "computer engineering"
+                ],
+                "confidence": 1.0
+              },
+              {
+                "name": "career",
+                "matched_terms": [
+                  "work"
+                ],
+                "confidence": 1.0
+              }
+            ],
+            "task": "assess",
+            "constraints": [],
+            "entities": [
+              "computer_engineering",
+              "career"
+            ],
+            "referents": [],
+            "requires_context": false,
+            "requires_clarification": false,
+            "is_source_follow_up": false,
+            "is_persona_meta": false,
+            "is_out_of_domain": false,
+            "confidence": 0.92,
+            "debug": {
+              "token_count": 9,
+              "replacements": [],
+              "normalized_tokens": [
+                "how",
+                "much",
+                "lab",
+                "work",
+                "is",
+                "there",
+                "in",
+                "computer",
+                "engineering"
+              ],
+              "changed": false
+            },
+            "changed": false
+          }
+        },
+        "timing": {
+          "retrieval_seconds": 0.028,
+          "context_construction_seconds": 0.001,
+          "llm_generation_seconds": 43.801,
+          "initial_llm_generation_seconds": 22.004,
+          "retry_llm_generation_seconds": 21.797,
+          "llm_reported_total_duration_seconds": 21.979,
+          "total_seconds": 43.845
+        },
+        "model": "qwen2.5:3b",
+        "error": null
+      },
+      "answer": "Computer Engineering curricula describe laboratory experiences as crucial, but this excerpt does not give a program-wide lab-hour total [S3].",
+      "sources": [
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "source_name": "Association for Computing Machinery and IEEE Computer Society",
+          "source_type": "professional_curriculum_report",
+          "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+          "category": "curriculum",
+          "supporting_chunk_ids": [
+            "src_067_chunk_158",
+            "src_067_chunk_003",
+            "src_067_chunk_069"
+          ],
+          "evidence_labels": [
+            "S1",
+            "S2",
+            "S3"
+          ],
+          "best_similarity_score": 0.5963224768638611
+        }
+      ],
+      "retrieved_context": [
+        {
+          "label": "S1",
+          "chunk_id": "src_067_chunk_158",
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.5963224768638611,
+          "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+          "passage": "use of tools; the nature and structure of teams; human computer interface as a software engineering activity; related life cycles; standards; use of relevant libraries; importance of practical activity; group activity as an important skill for these engineers Prerequisites: SWEE101, SWEE102 Credit Hours: 3; Lecture Hours: 28; Lab Hours: 28 BoK Coverage: CE-SWD 8-12 Page 144 Page 143 of 149 Appendix C Computer Engineering Laboratories This appendix to the Computing Curricula - Computer Engineering (CE2016) report describes possible laboratory configurations useful for developing modern student laboratory experiences for computer engineering programs."
+        },
+        {
+          "label": "S2",
+          "chunk_id": "src_067_chunk_003",
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.5919804573059082,
+          "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+          "passage": "Page 7 Computer Engineering 2016 Final Curriculum Report CE2016 2016 December 15 Page 6 of 149 4.4.1 Computer engineering laboratories ........................................................................ 33 4.4.2 Software considerations .......................................................................................... 35 4.4.3 Open-ended laboratories ......................................................................................... 35 4.4.4 Embedded laboratories ........................................................................................... 36 4.4.5 Technical support ..............................................................................................."
+        },
+        {
+          "label": "S3",
+          "chunk_id": "src_067_chunk_069",
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.5866761207580566,
+          "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+          "passage": "Computer engineering curriculums should also have at least one or two technical elective courses that allow students some choice in shaping their educational experience. To emphasize individual choice, options for technical elective courses should not be overly restrictive, for example, by allowing any upper level course from computer science or electrical and computer engineering to serve as a technical elective. 6.3.3 Laboratory Experiences Laboratory experiences are crucial to developing skills required to practice the art of computer engineering."
+        }
+      ],
+      "previous_turn_setup": null
+    },
+    {
+      "id": "R120",
+      "question": "What are entry-level computer engineering job titles?",
+      "group": "career_employment",
+      "expected_topics": [
+        "career",
+        "employment"
+      ],
+      "expected_categories": [
+        "employment",
+        "career_opportunities"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "evaluation_label": "incorrect_refusal_evidence_exists",
+      "baseline_label": "unsupported_incorrect_or_misleading",
+      "baseline_status": "answered",
+      "elapsed_wall_seconds": 45.094,
+      "diagnostics": {
+        "query_kind": "standalone_domain_question",
+        "resolved_question": "What are entry level computer engineering job titles?",
+        "status": "insufficient_information",
+        "llm_called": true,
+        "evidence_exists_by_eval": true,
+        "citation_valid": true,
+        "citation_metadata": {
+          "valid": true,
+          "cited_labels": [],
+          "invalid_labels": [],
+          "available_labels": [
+            "S1",
+            "S2",
+            "S3"
+          ],
+          "normalized": true,
+          "repair_actions": [],
+          "reason": "unsupported claim could not be matched to retrieved evidence",
+          "retry_attempted": true,
+          "retry_successful": false,
+          "generations_attempted": 2,
+          "retry_failure_reason": "unsupported claim could not be matched to retrieved evidence",
+          "discarded_invalid_generation": true,
+          "discarded_generation_reason": "unsupported claim could not be matched to retrieved evidence"
+        },
+        "support_check": {
+          "all_claims_cited": true,
+          "all_cited_claims_supported_by_overlap": true,
+          "unsupported_claim_count": 0,
+          "uncited_claim_count": 0,
+          "checks": []
+        },
+        "unsupported_generated_answer_reason": null,
+        "retrieval_metadata": {
+          "top_k": 5,
+          "candidate_top_k": 12,
+          "similarity_threshold": 0.3,
+          "results_above_threshold": 5,
+          "top_similarity_score": 0.5672178268432617,
+          "evidence_sufficient": true,
+          "out_of_scope": false,
+          "unsupported_reason": "unsupported claim could not be matched to retrieved evidence",
+          "resolved_question": "What are entry level computer engineering job titles?",
+          "query_kind": "standalone_domain_question",
+          "query_normalization": {
+            "original_question": "What are entry-level computer engineering job titles?",
+            "normalized_question": "What are entry level computer engineering job titles?",
+            "retrieval_question": "What are entry level computer engineering job titles?",
+            "kind": "standalone_domain_question",
+            "topics": [
+              {
+                "name": "computer_engineering",
+                "matched_terms": [
+                  "computer engineering"
+                ],
+                "confidence": 1.0
+              },
+              {
+                "name": "career",
+                "matched_terms": [
+                  "job"
+                ],
+                "confidence": 1.0
+              }
+            ],
+            "task": "explain",
+            "constraints": [],
+            "entities": [
+              "computer_engineering",
+              "career"
+            ],
+            "referents": [],
+            "requires_context": false,
+            "requires_clarification": false,
+            "is_source_follow_up": false,
+            "is_persona_meta": false,
+            "is_out_of_domain": false,
+            "confidence": 0.92,
+            "debug": {
+              "token_count": 8,
+              "replacements": [],
+              "normalized_tokens": [
+                "what",
+                "are",
+                "entry",
+                "level",
+                "computer",
+                "engineering",
+                "job",
+                "titles"
+              ],
+              "changed": true
+            },
+            "changed": true
+          }
+        },
+        "timing": {
+          "retrieval_seconds": 0.074,
+          "context_construction_seconds": 0.001,
+          "llm_generation_seconds": 45.008,
+          "initial_llm_generation_seconds": 22.004,
+          "retry_llm_generation_seconds": 23.004,
+          "llm_reported_total_duration_seconds": 21.972,
+          "total_seconds": 45.089
+        },
+        "model": "qwen2.5:3b",
+        "error": null
+      },
+      "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+      "sources": [],
+      "retrieved_context": [
+        {
+          "label": "S1",
+          "chunk_id": "src_014_chunk_001",
+          "source_id": "src_014",
+          "title": "Computer Hardware Engineers: 17-2061.00",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.5672178268432617,
+          "url": "https://www.onetonline.org/link/summary/17-2061.00",
+          "passage": "Source ID: src_014 Title: Computer Hardware Engineers: 17-2061.00 17-2061.00 - Computer Hardware Engineers Occupation keyword search Type a title or code for matches No quick matches found Search for keyword results Computer Hardware Engineers 17-2061.00 Bright Outlook Updated 2026 Research, design, develop, or test computer or computer-related equipment for commercial, industrial, military, or scientific use. May supervise the manufacturing and installation of computer or computer-related equipment and components."
+        },
+        {
+          "label": "S2",
+          "chunk_id": "src_086_chunk_001",
+          "source_id": "src_086",
+          "title": "Data Scientists",
+          "category": "career_opportunities",
+          "similarity_score": 0.5041486620903015,
+          "url": "https://www.bls.gov/ooh/math/data-scientists.htm",
+          "passage": "Source ID: src_086 Title: Data Scientists Source: U.S. Bureau of Labor Statistics, Occupational Outlook Handbook URL: https://www.bls.gov/ooh/math/data-scientists.htm Date accessed: 2026-10-13 Curated source note The U.S. Bureau of Labor Statistics describes data scientists as workers who use analytical tools and techniques to extract meaningful insights from data. The profile is U.S.-specific and should not be used as Turkey-specific salary or employment evidence. The BLS profile supports several advising points for Computer Engineering students. Data science commonly draws on computer science, statistics, mathematics, and domain knowledge."
+        },
+        {
+          "label": "S3",
+          "chunk_id": "src_031_chunk_098",
+          "source_id": "src_031",
+          "title": "A Skills-First Labour Market",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.49792224168777466,
+          "url": "https://www.oecd.org/en/publications/a-skills-first-labour-market_2e1b85f0-en.html",
+          "passage": "(Levels 2 to 3) and high level (Levels 4 to 5), to mastery level (Levels 6 to 7). A range of national qualifications obtained through the Japan Information Technology Engineers Examination are mapped to Levels 1 to 4*. Individuals can take examinations up to Level 3 without prior work experience, while examinations aligned with Level 4 require relevant professional experience. (Levels 2 to 3) and high level (Levels 4 to 5), to mastery level (Levels 6 to 7). A range of national qualifications obtained through the Japan Information Technology Engineers Examination are mapped to Levels 1 to 4*."
+        }
+      ],
+      "previous_turn_setup": null
+    },
+    {
+      "id": "X141",
+      "question": "I like AI and cybersecurity but hate electronics; is CENG still a good choice and what should I learn first?",
+      "group": "complex",
+      "expected_topics": [
+        "ai",
+        "cybersecurity",
+        "hardware"
+      ],
+      "expected_categories": [
+        "artificial_intelligence",
+        "cybersecurity",
+        "curriculum"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "evaluation_label": "incorrect_refusal_evidence_exists",
+      "baseline_label": "unsupported_incorrect_or_misleading",
+      "baseline_status": "answered",
+      "elapsed_wall_seconds": 51.892,
+      "diagnostics": {
+        "query_kind": "standalone_domain_question",
+        "resolved_question": "I like AI and cybersecurity but hate electronics is ceng still a good choice and what should I learn first? (topics: hardware, ai, cybersecurity)",
+        "status": "insufficient_information",
+        "llm_called": true,
+        "evidence_exists_by_eval": true,
+        "citation_valid": true,
+        "citation_metadata": {
+          "valid": true,
+          "cited_labels": [],
+          "invalid_labels": [],
+          "available_labels": [
+            "S1",
+            "S2",
+            "S3"
+          ],
+          "normalized": true,
+          "repair_actions": [
+            "removed_trailing_source_labels"
+          ],
+          "reason": "unsupported claim could not be matched to retrieved evidence",
+          "retry_attempted": true,
+          "retry_successful": false,
+          "generations_attempted": 2,
+          "retry_failure_reason": "unsupported claim could not be matched to retrieved evidence",
+          "discarded_invalid_generation": true,
+          "discarded_generation_reason": "unsupported claim could not be matched to retrieved evidence"
+        },
+        "support_check": {
+          "all_claims_cited": true,
+          "all_cited_claims_supported_by_overlap": true,
+          "unsupported_claim_count": 0,
+          "uncited_claim_count": 0,
+          "checks": []
+        },
+        "unsupported_generated_answer_reason": null,
+        "retrieval_metadata": {
+          "top_k": 5,
+          "candidate_top_k": 12,
+          "similarity_threshold": 0.3,
+          "results_above_threshold": 5,
+          "top_similarity_score": 0.5949739813804626,
+          "evidence_sufficient": true,
+          "out_of_scope": false,
+          "unsupported_reason": "unsupported claim could not be matched to retrieved evidence",
+          "resolved_question": "I like AI and cybersecurity but hate electronics is ceng still a good choice and what should I learn first? (topics: hardware, ai, cybersecurity)",
+          "query_kind": "standalone_domain_question",
+          "query_normalization": {
+            "original_question": "I like AI and cybersecurity but hate electronics; is CENG still a good choice and what should I learn first?",
+            "normalized_question": "I like AI and cybersecurity but hate electronics is ceng still a good choice and what should I learn first?",
+            "retrieval_question": "I like AI and cybersecurity but hate electronics is ceng still a good choice and what should I learn first? (topics: hardware, ai, cybersecurity)",
+            "kind": "standalone_domain_question",
+            "topics": [
+              {
+                "name": "computer_engineering",
+                "matched_terms": [
+                  "ceng"
+                ],
+                "confidence": 1.0
+              },
+              {
+                "name": "hardware",
+                "matched_terms": [
+                  "electronics"
+                ],
+                "confidence": 1.0
+              },
+              {
+                "name": "ai",
+                "matched_terms": [
+                  "ai"
+                ],
+                "confidence": 1.0
+              },
+              {
+                "name": "cybersecurity",
+                "matched_terms": [
+                  "cybersecurity"
+                ],
+                "confidence": 1.0
+              }
+            ],
+            "task": "explain",
+            "constraints": [],
+            "entities": [
+              "computer_engineering",
+              "hardware",
+              "ai",
+              "cybersecurity"
+            ],
+            "referents": [],
+            "requires_context": false,
+            "requires_clarification": false,
+            "is_source_follow_up": false,
+            "is_persona_meta": false,
+            "is_out_of_domain": false,
+            "confidence": 0.92,
+            "debug": {
+              "token_count": 20,
+              "replacements": [],
+              "normalized_tokens": [
+                "i",
+                "like",
+                "ai",
+                "and",
+                "cybersecurity",
+                "but",
+                "hate",
+                "electronics",
+                "is",
+                "ceng",
+                "still",
+                "a",
+                "good",
+                "choice",
+                "and",
+                "what",
+                "should",
+                "i",
+                "learn",
+                "first"
+              ],
+              "changed": true
+            },
+            "changed": true
+          }
+        },
+        "timing": {
+          "retrieval_seconds": 0.105,
+          "context_construction_seconds": 0.001,
+          "llm_generation_seconds": 51.760000000000005,
+          "initial_llm_generation_seconds": 24.34,
+          "retry_llm_generation_seconds": 27.42,
+          "llm_reported_total_duration_seconds": 24.314,
+          "total_seconds": 51.884
+        },
+        "model": "qwen2.5:3b",
+        "error": null
+      },
+      "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+      "sources": [],
+      "retrieved_context": [
+        {
+          "label": "S1",
+          "chunk_id": "src_085_chunk_001",
+          "source_id": "src_085",
+          "title": "Cybersecurity Curricular Guidelines CSEC 2017",
+          "category": "cybersecurity",
+          "similarity_score": 0.5949739813804626,
+          "url": "https://cybered.acm.org/",
+          "passage": "Source ID: src_085 Title: Cybersecurity Curricular Guidelines CSEC 2017 Source: ACM, IEEE Computer Society, AIS SIGSEC, and IFIP WG 11.8 URL: https://cybered.acm.org/ Date accessed: 2026-10-13 Curated source note CSEC2017 is a professional curricular guideline for post-secondary cybersecurity education. It is useful for explaining cybersecurity as a broad field rather than only ethical hacking or penetration testing. Cybersecurity education includes technical and nontechnical dimensions. Important areas include data security, software security, component and connection security, system security, human security, organizational security, societal security, risk, policy, and ethics."
+        },
+        {
+          "label": "S2",
+          "chunk_id": "src_094_chunk_001",
+          "source_id": "src_094",
+          "title": "Cyber Career Pathways Tool",
+          "category": "cybersecurity",
+          "similarity_score": 0.5746713876724243,
+          "url": "https://niccs.cisa.gov/workforce-development/cyber-career-pathways-tool",
+          "passage": "Source ID: src_094 Title: Cyber Career Pathways Tool Source: Cybersecurity and Infrastructure Security Agency / NICCS URL: https://niccs.cisa.gov/workforce-development/cyber-career-pathways-tool Date accessed: 2026-10-13 Curated source note NICCS/CISA provides cybersecurity career pathway resources aligned with the NICE Framework. The tool is useful for role exploration and for showing students that cybersecurity is not a single job. Cybersecurity roles can involve secure software, systems defense, incident response, digital forensics, risk management, security architecture, vulnerability assessment, cloud security, governance, education, and operations."
+        },
+        {
+          "label": "S3",
+          "chunk_id": "src_043_chunk_001",
+          "source_id": "src_043",
+          "title": "Subdisciplines",
+          "category": "specializations",
+          "similarity_score": 0.533915638923645,
+          "url": "https://ece.illinois.edu/academics/ugrad/subdisciplines",
+          "passage": "Source ID: src_043 Subdisciplines | Electrical & Computer Engineering | Illinois University of Illinois Urbana-Champaign Apply Give My.ECE The Grainger College of Engineering Electrical & Computer Engineering Subdisciplines Breadth and Depth in Electrical and Computer Engineering Both electrical and computer engineering build from a core understanding of electrical phenomena, the concepts of systems and signals, and computers. At the junior and senior level, however, they branch into a large and diverse set of rich intellectual areas, ranging from bioengineering to power systems."
+        }
+      ],
+      "previous_turn_setup": null
+    },
+    {
+      "id": "T187",
+      "question": "Is Linux important too?",
+      "group": "multi_turn",
+      "expected_topics": [
+        "cybersecurity",
+        "operating_systems"
+      ],
+      "expected_categories": [
+        "cybersecurity",
+        "skills_and_technologies"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": "I want cybersecurity.",
+      "evaluation_label": "correct_evidence_supported",
+      "baseline_label": "runtime_error",
+      "baseline_status": "error",
+      "elapsed_wall_seconds": 96.766,
+      "diagnostics": {
+        "query_kind": "standalone_domain_question",
+        "resolved_question": "Is linux important too? (Computer Engineering)",
+        "status": "answered",
+        "llm_called": true,
+        "evidence_exists_by_eval": true,
+        "citation_valid": true,
+        "citation_metadata": {
+          "valid": true,
+          "cited_labels": [
+            "S1"
+          ],
+          "invalid_labels": [],
+          "available_labels": [
+            "S1",
+            "S2"
+          ],
+          "normalized": false,
+          "repair_actions": [],
+          "reason": null,
+          "retry_attempted": true,
+          "retry_successful": false,
+          "generations_attempted": 2,
+          "retry_failure_reason": "unsupported claim could not be matched to retrieved evidence"
+        },
+        "support_check": {
+          "all_claims_cited": true,
+          "all_cited_claims_supported_by_overlap": true,
+          "unsupported_claim_count": 0,
+          "uncited_claim_count": 0,
+          "checks": [
+            {
+              "claim": "OSTIM's CENG 303 includes practical work with Linux or Windows; the excerpt does not establish that Linux is required for every Computer Engineering or cybersecurity path [S1].",
+              "labels": [
+                "S1"
+              ],
+              "supported": true,
+              "overlap_terms": [
+                "ceng",
+                "linux",
+                "practical",
+                "that",
+                "the",
+                "windows"
+              ]
+            }
+          ]
+        },
+        "unsupported_generated_answer_reason": null,
+        "retrieval_metadata": {
+          "top_k": 5,
+          "candidate_top_k": 12,
+          "similarity_threshold": 0.3,
+          "results_above_threshold": 5,
+          "top_similarity_score": 0.4027085304260254,
+          "evidence_sufficient": true,
+          "out_of_scope": false,
+          "resolved_question": "Is linux important too? (Computer Engineering)",
+          "query_kind": "standalone_domain_question",
+          "query_normalization": {
+            "original_question": "Is Linux important too?",
+            "normalized_question": "Is linux important too?",
+            "retrieval_question": "Is linux important too? (Computer Engineering)",
+            "kind": "standalone_domain_question",
+            "topics": [
+              {
+                "name": "operating_systems",
+                "matched_terms": [
+                  "linux"
+                ],
+                "confidence": 1.0
+              }
+            ],
+            "task": "assess",
+            "constraints": [],
+            "entities": [
+              "operating_systems"
+            ],
+            "referents": [],
+            "requires_context": false,
+            "requires_clarification": false,
+            "is_source_follow_up": false,
+            "is_persona_meta": false,
+            "is_out_of_domain": false,
+            "confidence": 0.92,
+            "debug": {
+              "token_count": 4,
+              "replacements": [],
+              "normalized_tokens": [
+                "is",
+                "linux",
+                "important",
+                "too"
+              ],
+              "changed": false
+            },
+            "changed": false
+          }
+        },
+        "timing": {
+          "retrieval_seconds": 0.036,
+          "context_construction_seconds": 0.005,
+          "llm_generation_seconds": 31.064999999999998,
+          "initial_llm_generation_seconds": 15.872,
+          "retry_llm_generation_seconds": 15.193,
+          "llm_reported_total_duration_seconds": 15.827,
+          "total_seconds": 31.122
+        },
+        "model": "qwen2.5:3b",
+        "error": null
+      },
+      "answer": "OSTIM's CENG 303 includes practical work with Linux or Windows; the excerpt does not establish that Linux is required for every Computer Engineering or cybersecurity path [S1].",
+      "sources": [
+        {
+          "source_id": "src_004",
+          "title": "Course Contents",
+          "source_name": "OSTIM Technical University - Department of Computer Engineering",
+          "source_type": "course_descriptions",
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "category": "curriculum",
+          "supporting_chunk_ids": [
+            "src_004_linux_operating_systems"
+          ],
+          "evidence_labels": [
+            "S1"
+          ],
+          "best_similarity_score": 0.4027085304260254
+        },
+        {
+          "source_id": "src_090",
+          "title": "Missing Semester: The Shell",
+          "source_name": "MIT CSAIL Missing Semester",
+          "source_type": "university_course_study_guidance",
+          "url": "https://missing.csail.mit.edu/2020/course-shell/",
+          "category": "skills_and_technologies",
+          "supporting_chunk_ids": [
+            "src_090_chunk_001"
+          ],
+          "evidence_labels": [
+            "S2"
+          ],
+          "best_similarity_score": 0.4027085304260254
+        }
+      ],
+      "retrieved_context": [
+        {
+          "label": "S1",
+          "chunk_id": "src_004_linux_operating_systems",
+          "source_id": "src_004",
+          "title": "Course Contents",
+          "category": "curriculum",
+          "similarity_score": 0.4027085304260254,
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "passage": "CENG 303 Operating Systems Design & Construction. The course combines theoretical foundations with hands-on experience, including practical exercises and projects that explore real-world operating system implementations such as Linux or Windows."
+        },
+        {
+          "label": "S2",
+          "chunk_id": "src_090_chunk_001",
+          "source_id": "src_090",
+          "title": "Missing Semester: The Shell",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.4027085304260254,
+          "url": "https://missing.csail.mit.edu/2020/course-shell/",
+          "passage": "Source ID: src_090 Title: Missing Semester: The Shell Source: MIT CSAIL Missing Semester URL: https://missing.csail.mit.edu/2020/course-shell/ Date accessed: 2026-10-13 Curated source note MIT's Missing Semester course explains practical computing tools that many students need but do not always learn formally. The shell lesson is useful for answering why command-line skills matter. The shell lets students navigate files, run programs, combine tools, automate repeated tasks, inspect logs, manage development environments, and work on remote machines."
+        }
+      ],
+      "previous_turn_setup": {
+        "question": "I want cybersecurity.",
+        "status": "insufficient_information",
+        "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+        "sources": []
+      }
+    },
+    {
+      "id": "T188",
+      "question": "Which one has more hardware?",
+      "group": "multi_turn",
+      "expected_topics": [
+        "hardware",
+        "computer_engineering"
+      ],
+      "expected_categories": [
+        "curriculum",
+        "common_misconceptions"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": "Computer Engineering vs Computer Science?",
+      "evaluation_label": "correct_evidence_supported",
+      "baseline_label": "incorrect_refusal_evidence_exists",
+      "baseline_status": "insufficient_information",
+      "elapsed_wall_seconds": 80.533,
+      "diagnostics": {
+        "query_kind": "contextual_follow_up",
+        "resolved_question": "Which one has more hardware? Regarding Computer Engineering vs Computer Science in Computer Engineering.",
+        "status": "answered",
+        "llm_called": true,
+        "evidence_exists_by_eval": true,
+        "citation_valid": true,
+        "citation_metadata": {
+          "valid": true,
+          "cited_labels": [
+            "S1"
+          ],
+          "invalid_labels": [],
+          "available_labels": [
+            "S1",
+            "S2",
+            "S3"
+          ],
+          "normalized": false,
+          "repair_actions": [],
+          "reason": null,
+          "retry_attempted": true,
+          "retry_successful": false,
+          "generations_attempted": 2,
+          "retry_failure_reason": "unsupported claim could not be matched to retrieved evidence"
+        },
+        "support_check": {
+          "all_claims_cited": true,
+          "all_cited_claims_supported_by_overlap": true,
+          "unsupported_claim_count": 0,
+          "uncited_claim_count": 0,
+          "checks": [
+            {
+              "claim": "Computer Engineering explicitly includes hardware alongside software and communications; the retrieved excerpt does not quantify the hardware content of Computer Science [S1].",
+              "labels": [
+                "S1"
+              ],
+              "supported": true,
+              "overlap_terms": [
+                "and",
+                "communications",
+                "hardware",
+                "science",
+                "software",
+                "the"
+              ]
+            }
+          ]
+        },
+        "unsupported_generated_answer_reason": null,
+        "retrieval_metadata": {
+          "top_k": 5,
+          "candidate_top_k": 12,
+          "similarity_threshold": 0.3,
+          "results_above_threshold": 5,
+          "top_similarity_score": 0.6285251975059509,
+          "evidence_sufficient": true,
+          "out_of_scope": false,
+          "resolved_question": "Which one has more hardware? Regarding Computer Engineering vs Computer Science in Computer Engineering.",
+          "query_kind": "contextual_follow_up",
+          "query_normalization": {
+            "original_question": "Which one has more hardware?",
+            "normalized_question": "Which one has more hardware?",
+            "retrieval_question": null,
+            "kind": "contextual_follow_up",
+            "topics": [
+              {
+                "name": "hardware",
+                "matched_terms": [
+                  "hardware"
+                ],
+                "confidence": 1.0
+              }
+            ],
+            "task": "recommend",
+            "constraints": [],
+            "entities": [
+              "hardware"
+            ],
+            "referents": [
+              "one"
+            ],
+            "requires_context": true,
+            "requires_clarification": false,
+            "is_source_follow_up": false,
+            "is_persona_meta": false,
+            "is_out_of_domain": false,
+            "confidence": 0.85,
+            "debug": {
+              "token_count": 5,
+              "replacements": [],
+              "normalized_tokens": [
+                "which",
+                "one",
+                "has",
+                "more",
+                "hardware"
+              ],
+              "changed": false
+            },
+            "changed": false
+          }
+        },
+        "timing": {
+          "retrieval_seconds": 0.024,
+          "context_construction_seconds": 0.001,
+          "llm_generation_seconds": 39.452,
+          "initial_llm_generation_seconds": 21.36,
+          "retry_llm_generation_seconds": 18.092,
+          "llm_reported_total_duration_seconds": 21.331,
+          "total_seconds": 39.489
+        },
+        "model": "qwen2.5:3b",
+        "error": null
+      },
+      "answer": "Computer Engineering explicitly includes hardware alongside software and communications; the retrieved excerpt does not quantify the hardware content of Computer Science [S1].",
+      "sources": [
+        {
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "source_name": "ACM Curricular Guidance",
+          "source_type": "curricular_guidance",
+          "url": "https://www.acm.org/education/curricula-recommendations",
+          "category": "common_misconceptions",
+          "supporting_chunk_ids": [
+            "src_042_computer_engineering_definition"
+          ],
+          "evidence_labels": [
+            "S1"
+          ],
+          "best_similarity_score": 0.6285251975059509
+        },
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "source_name": "Association for Computing Machinery and IEEE Computer Society",
+          "source_type": "professional_curriculum_report",
+          "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+          "category": "curriculum",
+          "supporting_chunk_ids": [
+            "src_067_chunk_017"
+          ],
+          "evidence_labels": [
+            "S2"
+          ],
+          "best_similarity_score": 0.6285251975059509
+        },
+        {
+          "source_id": "src_080",
+          "title": "Computing Curricula 2020: Paradigms for Global Computing Education",
+          "source_name": "ACM and IEEE Computer Society",
+          "source_type": "professional_curriculum_report",
+          "url": "https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf",
+          "category": "common_misconceptions",
+          "supporting_chunk_ids": [
+            "src_080_chunk_001"
+          ],
+          "evidence_labels": [
+            "S3"
+          ],
+          "best_similarity_score": 0.5940578579902649
+        }
+      ],
+      "retrieved_context": [
+        {
+          "label": "S1",
+          "chunk_id": "src_042_computer_engineering_definition",
+          "source_id": "src_042",
+          "title": "Curricular Guidance",
+          "category": "common_misconceptions",
+          "similarity_score": 0.6285251975059509,
+          "url": "https://www.acm.org/education/curricula-recommendations",
+          "passage": "Curricular Guidance Computer Engineering Computer Science Cybersecurity Data Science - Coming soon! Information Technology Information Technology - Applied Information Technology - Transfer Software Engineering Curricular Guidance The Sub-Disciplines of Computing The Association for Computing Machinery (ACM) currently categorizes the overarching discipline of computing into five defined sub-disciplines: computer science, computer engineering, software engineering, information systems and information technology. Computer Engineering involves the design and construction of processor-based systems comprised of hardware, software, and communications components."
+        },
+        {
+          "label": "S2",
+          "chunk_id": "src_067_chunk_017",
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.6285251975059509,
+          "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+          "passage": "and networks in the world today, computer engineers must be versatile in the knowledge drawn from standard study areas in computer science and electrical engineering as well as the foundations in mathematics and sciences. The rapid pace of change in the computing field requires that computer engineers be lifelong learners to maintain their knowledge and skills within their chosen discipline. 2.3.1 Distinctions An important distinction should be made between computer engineers, electrical engineers, other computer professionals, and engineering technologists."
+        },
+        {
+          "label": "S3",
+          "chunk_id": "src_080_chunk_001",
+          "source_id": "src_080",
+          "title": "Computing Curricula 2020: Paradigms for Global Computing Education",
+          "category": "common_misconceptions",
+          "similarity_score": 0.5940578579902649,
+          "url": "https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf",
+          "passage": "Source ID: src_080 Title: Computing Curricula 2020: Paradigms for Global Computing Education Source: ACM and IEEE Computer Society URL: https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf Date accessed: 2026-10-13 Curated source note Computing Curricula 2020 compares major computing disciplines and is useful when students ask whether Computer Engineering is the same as Computer Science, Software Engineering, Information Technology, Information Systems, or Cybersecurity. Computer Engineering is generally closest to the boundary between computing and engineering hardware."
+        }
+      ],
+      "previous_turn_setup": {
+        "question": "Computer Engineering vs Computer Science?",
+        "status": "insufficient_information",
+        "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+        "sources": []
+      }
+    },
+    {
+      "id": "N001",
+      "question": "How do databases and operating systems fit into Computer Engineering?",
+      "group": "programming_software",
+      "expected_topics": [
+        "software",
+        "operating_systems"
+      ],
+      "expected_categories": [
+        "software_development",
+        "curriculum"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "unseen": true,
+      "evaluation_label": "correct_evidence_supported",
+      "baseline_label": null,
+      "baseline_status": null,
+      "elapsed_wall_seconds": 58.337,
+      "diagnostics": {
+        "query_kind": "standalone_domain_question",
+        "resolved_question": "How do databases and operating systems fit into computer engineering? (topics: operating_systems, hardware, software)",
+        "status": "answered",
+        "llm_called": true,
+        "evidence_exists_by_eval": true,
+        "citation_valid": true,
+        "citation_metadata": {
+          "valid": true,
+          "cited_labels": [
+            "S1"
+          ],
+          "invalid_labels": [],
+          "available_labels": [
+            "S1",
+            "S2",
+            "S3"
+          ],
+          "normalized": false,
+          "repair_actions": [],
+          "reason": null,
+          "retry_attempted": true,
+          "retry_successful": false,
+          "generations_attempted": 2,
+          "retry_failure_reason": "unsupported claim could not be matched to retrieved evidence"
+        },
+        "support_check": {
+          "all_claims_cited": true,
+          "all_cited_claims_supported_by_overlap": true,
+          "unsupported_claim_count": 0,
+          "uncited_claim_count": 0,
+          "checks": [
+            {
+              "claim": "OSTIM's CENG 303 covers operating-system foundations and practical work with Linux or Windows; this excerpt does not establish how databases fit into the program [S1].",
+              "labels": [
+                "S1"
+              ],
+              "supported": true,
+              "overlap_terms": [
+                "and",
+                "ceng",
+                "foundations",
+                "linux",
+                "practical",
+                "the",
+                "windows"
+              ]
+            }
+          ]
+        },
+        "unsupported_generated_answer_reason": null,
+        "retrieval_metadata": {
+          "top_k": 5,
+          "candidate_top_k": 12,
+          "similarity_threshold": 0.3,
+          "results_above_threshold": 5,
+          "top_similarity_score": 0.5523942112922668,
+          "evidence_sufficient": true,
+          "out_of_scope": false,
+          "resolved_question": "How do databases and operating systems fit into computer engineering? (topics: operating_systems, hardware, software)",
+          "query_kind": "standalone_domain_question",
+          "query_normalization": {
+            "original_question": "How do databases and operating systems fit into Computer Engineering?",
+            "normalized_question": "How do databases and operating systems fit into computer engineering?",
+            "retrieval_question": "How do databases and operating systems fit into computer engineering? (topics: operating_systems, hardware, software)",
+            "kind": "standalone_domain_question",
+            "topics": [
+              {
+                "name": "computer_engineering",
+                "matched_terms": [
+                  "computer engineering"
+                ],
+                "confidence": 1.0
+              },
+              {
+                "name": "operating_systems",
+                "matched_terms": [
+                  "operating systems"
+                ],
+                "confidence": 1.0
+              },
+              {
+                "name": "hardware",
+                "matched_terms": [
+                  "systems"
+                ],
+                "confidence": 1.0
+              },
+              {
+                "name": "software",
+                "matched_terms": [
+                  "databases"
+                ],
+                "confidence": 1.0
+              }
+            ],
+            "task": "assess",
+            "constraints": [],
+            "entities": [
+              "computer_engineering",
+              "operating_systems",
+              "hardware",
+              "software"
+            ],
+            "referents": [],
+            "requires_context": false,
+            "requires_clarification": false,
+            "is_source_follow_up": false,
+            "is_persona_meta": false,
+            "is_out_of_domain": false,
+            "confidence": 0.92,
+            "debug": {
+              "token_count": 10,
+              "replacements": [],
+              "normalized_tokens": [
+                "how",
+                "do",
+                "databases",
+                "and",
+                "operating",
+                "systems",
+                "fit",
+                "into",
+                "computer",
+                "engineering"
+              ],
+              "changed": false
+            },
+            "changed": false
+          }
+        },
+        "timing": {
+          "retrieval_seconds": 0.057,
+          "context_construction_seconds": 0.004,
+          "llm_generation_seconds": 58.254000000000005,
+          "initial_llm_generation_seconds": 28.978,
+          "retry_llm_generation_seconds": 29.276,
+          "llm_reported_total_duration_seconds": 28.947,
+          "total_seconds": 58.332
+        },
+        "model": "qwen2.5:3b",
+        "error": null
+      },
+      "answer": "OSTIM's CENG 303 covers operating-system foundations and practical work with Linux or Windows; this excerpt does not establish how databases fit into the program [S1].",
+      "sources": [
+        {
+          "source_id": "src_004",
+          "title": "Course Contents",
+          "source_name": "OSTIM Technical University - Department of Computer Engineering",
+          "source_type": "course_descriptions",
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "category": "curriculum",
+          "supporting_chunk_ids": [
+            "src_004_linux_operating_systems",
+            "src_004_chunk_005"
+          ],
+          "evidence_labels": [
+            "S1",
+            "S3"
+          ],
+          "best_similarity_score": 0.5523942112922668
+        },
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "source_name": "Association for Computing Machinery and IEEE Computer Society",
+          "source_type": "professional_curriculum_report",
+          "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+          "category": "curriculum",
+          "supporting_chunk_ids": [
+            "src_067_chunk_041"
+          ],
+          "evidence_labels": [
+            "S2"
+          ],
+          "best_similarity_score": 0.529965877532959
+        }
+      ],
+      "retrieved_context": [
+        {
+          "label": "S1",
+          "chunk_id": "src_004_linux_operating_systems",
+          "source_id": "src_004",
+          "title": "Course Contents",
+          "category": "curriculum",
+          "similarity_score": 0.5523942112922668,
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "passage": "CENG 303 Operating Systems Design & Construction. The course combines theoretical foundations with hands-on experience, including practical exercises and projects that explore real-world operating system implementations such as Linux or Windows."
+        },
+        {
+          "label": "S2",
+          "chunk_id": "src_067_chunk_041",
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.529965877532959,
+          "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+          "passage": "Table 4.3: Suggestions for possible software applications Design modeling and simulation x Circuit-level (e.g., SPICE) x Gate-level (schematic entry) x Digital systems (e.g., VHDL, Verilog) x Analog/mixed-signal circuits (e.g., VHDL-AMS, Verilog-AMS) x System-level design (e.g., System Verilog, System C) Digital hardware prototyping x FPGA/CPLD development suite x Design file entry and management x Component/IP library support x Device programming x Interactive debugging Microcontroller system design x Integrated development environment (IDE)  Design entry/management  Library support x Compilers, assemblers, linkers x Processor simulators/emulators x Device programming x In-circuit..."
+        },
+        {
+          "label": "S3",
+          "chunk_id": "src_004_chunk_005",
+          "source_id": "src_004",
+          "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "curriculum",
+          "similarity_score": 0.513279139995575,
+          "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+          "passage": "context-free grammars, pushdown automata, Turing machines, and undecidability. Students learn how to model and analyze computational problems, understand the limits of what can be computed, and explore the connections between language theory and practical applications such as compiler design, lexical analysis, and pattern matching. Emphasis is placed on developing rigorous reasoning and problem-solving skills through proofs, constructions, and algorithmic analysis. SENG 202 Introduction to Database Systems This course introduces the fundamental concepts, principles, and architectures of modern database systems."
+        }
+      ],
+      "previous_turn_setup": null
+    },
+    {
+      "id": "N002",
+      "question": "Can I build an FPGA project before taking digital logic?",
+      "group": "hardware_networks",
+      "expected_topics": [
+        "hardware",
+        "projects"
+      ],
+      "expected_categories": [
+        "hardware_and_embedded_systems"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "unseen": true,
+      "evaluation_label": "correct_evidence_supported",
+      "baseline_label": null,
+      "baseline_status": null,
+      "elapsed_wall_seconds": 47.273,
+      "diagnostics": {
+        "query_kind": "standalone_domain_question",
+        "resolved_question": "Can I build an fpga projects before taking digital logic? (Computer Engineering; topics: hardware, projects)",
+        "status": "answered",
+        "llm_called": true,
+        "evidence_exists_by_eval": true,
+        "citation_valid": true,
+        "citation_metadata": {
+          "valid": true,
+          "cited_labels": [
+            "S1"
+          ],
+          "invalid_labels": [],
+          "available_labels": [
+            "S1",
+            "S2",
+            "S3"
+          ],
+          "normalized": false,
+          "repair_actions": [],
+          "reason": null,
+          "retry_attempted": true,
+          "retry_successful": false,
+          "generations_attempted": 2,
+          "retry_failure_reason": "unsupported claim could not be matched to retrieved evidence"
+        },
+        "support_check": {
+          "all_claims_cited": true,
+          "all_cited_claims_supported_by_overlap": true,
+          "unsupported_claim_count": 0,
+          "uncited_claim_count": 0,
+          "checks": [
+            {
+              "claim": "An FPGA is a reconfigurable integrated circuit used to implement digital hardware; this source does not state that completing a digital-logic course is a prerequisite for a project [S1].",
+              "labels": [
+                "S1"
+              ],
+              "supported": true,
+              "overlap_terms": [
+                "circuit",
+                "digital",
+                "for",
+                "fpga",
+                "hardware",
+                "implement",
+                "integrated",
+                "not",
+                "reconfigurable",
+                "source",
+                "that",
+                "this"
+              ]
+            }
+          ]
+        },
+        "unsupported_generated_answer_reason": null,
+        "retrieval_metadata": {
+          "top_k": 5,
+          "candidate_top_k": 12,
+          "similarity_threshold": 0.3,
+          "results_above_threshold": 5,
+          "top_similarity_score": 0.5826939940452576,
+          "evidence_sufficient": true,
+          "out_of_scope": false,
+          "resolved_question": "Can I build an fpga projects before taking digital logic? (Computer Engineering; topics: hardware, projects)",
+          "query_kind": "standalone_domain_question",
+          "query_normalization": {
+            "original_question": "Can I build an FPGA project before taking digital logic?",
+            "normalized_question": "Can I build an fpga projects before taking digital logic?",
+            "retrieval_question": "Can I build an fpga projects before taking digital logic? (Computer Engineering; topics: hardware, projects)",
+            "kind": "standalone_domain_question",
+            "topics": [
+              {
+                "name": "hardware",
+                "matched_terms": [
+                  "fpga"
+                ],
+                "confidence": 1.0
+              },
+              {
+                "name": "projects",
+                "matched_terms": [
+                  "projects"
+                ],
+                "confidence": 1.0
+              }
+            ],
+            "task": "assess",
+            "constraints": [],
+            "entities": [
+              "hardware",
+              "projects"
+            ],
+            "referents": [],
+            "requires_context": false,
+            "requires_clarification": false,
+            "is_source_follow_up": false,
+            "is_persona_meta": false,
+            "is_out_of_domain": false,
+            "confidence": 0.92,
+            "debug": {
+              "token_count": 10,
+              "replacements": [],
+              "normalized_tokens": [
+                "can",
+                "i",
+                "build",
+                "an",
+                "fpga",
+                "projects",
+                "before",
+                "taking",
+                "digital",
+                "logic"
+              ],
+              "changed": true
+            },
+            "changed": true
+          }
+        },
+        "timing": {
+          "retrieval_seconds": 0.076,
+          "context_construction_seconds": 0.001,
+          "llm_generation_seconds": 47.172,
+          "initial_llm_generation_seconds": 23.113,
+          "retry_llm_generation_seconds": 24.059,
+          "llm_reported_total_duration_seconds": 23.085,
+          "total_seconds": 47.263
+        },
+        "model": "qwen2.5:3b",
+        "error": null
+      },
+      "answer": "An FPGA is a reconfigurable integrated circuit used to implement digital hardware; this source does not state that completing a digital-logic course is a prerequisite for a project [S1].",
+      "sources": [
+        {
+          "source_id": "src_084",
+          "title": "What Is an FPGA?",
+          "source_name": "Altera",
+          "source_type": "industry_technical_education_resource",
+          "url": "https://www.altera.com/what-is-an-fpga",
+          "category": "specializations",
+          "supporting_chunk_ids": [
+            "src_084_chunk_001"
+          ],
+          "evidence_labels": [
+            "S1"
+          ],
+          "best_similarity_score": 0.5826939940452576
+        },
+        {
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "source_name": "Association for Computing Machinery and IEEE Computer Society",
+          "source_type": "professional_curriculum_report",
+          "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+          "category": "curriculum",
+          "supporting_chunk_ids": [
+            "src_067_chunk_040"
+          ],
+          "evidence_labels": [
+            "S2"
+          ],
+          "best_similarity_score": 0.4758182764053345
+        },
+        {
+          "source_id": "src_045",
+          "title": "Skills for the digital age",
+          "source_name": "Organisation for Economic Co-operation and Development (OECD)",
+          "source_type": "recognized_international_report",
+          "url": "https://www.oecd.org/en/publications/2024/11/oecd-digital-economy-outlook-2024-volume-2_9b2801fc/full-report/skills-for-the-digital-age_da6162fb.html",
+          "category": "skills_and_technologies",
+          "supporting_chunk_ids": [
+            "src_045_chunk_119"
+          ],
+          "evidence_labels": [
+            "S3"
+          ],
+          "best_similarity_score": 0.36713147163391113
+        }
+      ],
+      "retrieved_context": [
+        {
+          "label": "S1",
+          "chunk_id": "src_084_chunk_001",
+          "source_id": "src_084",
+          "title": "What Is an FPGA?",
+          "category": "specializations",
+          "similarity_score": 0.5826939940452576,
+          "url": "https://www.altera.com/what-is-an-fpga",
+          "passage": "Source ID: src_084 Title: What Is an FPGA? Source: Altera URL: https://www.altera.com/what-is-an-fpga Date accessed: 2026-10-13 Curated source note An FPGA, or field-programmable gate array, is a reconfigurable integrated circuit. Unlike a normal processor that runs software instructions, an FPGA can be configured to implement application-specific digital hardware after manufacturing. This makes it useful when engineers need custom parallel hardware behavior, real-time performance, or the ability to update hardware logic after deployment."
+        },
+        {
+          "label": "S2",
+          "chunk_id": "src_067_chunk_040",
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.4758182764053345,
+          "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+          "passage": "Digital Logic and System Design ●●●● Embedded Systems ●●●● Introduction to Engineering ● Networking ●● Software Design ●● Senior Project Design ●●●● Table 4.2 shows additional laboratory options that programs could consider. Table 4.2: Suggested Additional Computer Engineering Laboratories Audio Engineering Computers in Manufacturing Electrical Energy Systems Graphics Mechatronics Microwave Measurements Operating Systems Robotics Specialized Electronics Lab Teaching Enhancement Telecommunications Laboratories should include some physical implementation of designs such as electronic and digital circuits, bread- boarding, FPGAs/CPLDs, microcontroller-based systems, prototyping, and..."
+        },
+        {
+          "label": "S3",
+          "chunk_id": "src_045_chunk_119",
+          "source_id": "src_045",
+          "title": "Skills for the digital age",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.36713147163391113,
+          "url": "https://www.oecd.org/en/publications/2024/11/oecd-digital-economy-outlook-2024-volume-2_9b2801fc/full-report/skills-for-the-digital-age_da6162fb.html",
+          "passage": "Page 96 94 OECD DIGITAL ECONOMY OUTLOOK 2024 (VOLUME 2) © OECD 2024 3. DIGITAL TECHNOLOGIES AND THE ENVIRONMENT 3. DIGITAL TECHNOLOGIES AND THE ENVIRONMENT The IEA expects AI to significantly increase the electricity demand of dedicated AI data centres, which could consume “at least ten times its demand in 2023” by 2026 (IEA, 2024 [48]). Satisfying the demand for larger models was partially enabled by transitioning from general-purpose processors, such as Central Processing Units. More specialised processors support more efficient compute execution for certain operations (i.e. requiring less energy, less water for cooling and more computations per unit time)."
+        }
+      ],
+      "previous_turn_setup": null
+    },
+    {
+      "id": "N003",
+      "question": "Does studying AI in CENG require linear algebra and probability?",
+      "group": "ai_future",
+      "expected_topics": [
+        "ai",
+        "mathematics"
+      ],
+      "expected_categories": [
+        "ai_and_data_science",
+        "curriculum"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "unseen": true,
+      "evaluation_label": "correct_evidence_supported",
+      "baseline_label": null,
+      "baseline_status": null,
+      "elapsed_wall_seconds": 21.122,
+      "diagnostics": {
+        "query_kind": "standalone_domain_question",
+        "resolved_question": "Does studying AI in ceng require linear algebra and probability?",
+        "status": "answered",
+        "llm_called": true,
+        "evidence_exists_by_eval": true,
+        "citation_valid": true,
+        "citation_metadata": {
+          "valid": true,
+          "cited_labels": [
+            "S1"
+          ],
+          "invalid_labels": [],
+          "available_labels": [
+            "S1",
+            "S2",
+            "S3"
+          ],
+          "normalized": false,
+          "repair_actions": [],
+          "reason": null,
+          "retry_attempted": false,
+          "retry_successful": false,
+          "generations_attempted": 1,
+          "retry_failure_reason": null
+        },
+        "support_check": {
+          "all_claims_cited": true,
+          "all_cited_claims_supported_by_overlap": true,
+          "unsupported_claim_count": 0,
+          "uncited_claim_count": 0,
+          "checks": [
+            {
+              "claim": "Linear algebra and probability are described as foundations for machine learning, but this source does not establish an OSTIM CENG course requirement for studying AI [S1].",
+              "labels": [
+                "S1"
+              ],
+              "supported": true,
+              "overlap_terms": [
+                "algebra",
+                "and",
+                "are",
+                "course",
+                "for",
+                "foundations",
+                "learning",
+                "linear",
+                "machine",
+                "not",
+                "ostim",
+                "probability"
+              ]
+            }
+          ]
+        },
+        "unsupported_generated_answer_reason": null,
+        "retrieval_metadata": {
+          "top_k": 5,
+          "candidate_top_k": 12,
+          "similarity_threshold": 0.3,
+          "results_above_threshold": 5,
+          "top_similarity_score": 0.6076503992080688,
+          "evidence_sufficient": true,
+          "out_of_scope": false,
+          "resolved_question": "Does studying AI in ceng require linear algebra and probability?",
+          "query_kind": "standalone_domain_question",
+          "query_normalization": {
+            "original_question": "Does studying AI in CENG require linear algebra and probability?",
+            "normalized_question": "Does studying AI in ceng require linear algebra and probability?",
+            "retrieval_question": "Does studying AI in ceng require linear algebra and probability?",
+            "kind": "standalone_domain_question",
+            "topics": [
+              {
+                "name": "computer_engineering",
+                "matched_terms": [
+                  "ceng"
+                ],
+                "confidence": 1.0
+              },
+              {
+                "name": "ai",
+                "matched_terms": [
+                  "ai"
+                ],
+                "confidence": 1.0
+              }
+            ],
+            "task": "assess",
+            "constraints": [],
+            "entities": [
+              "computer_engineering",
+              "ai"
+            ],
+            "referents": [],
+            "requires_context": false,
+            "requires_clarification": false,
+            "is_source_follow_up": false,
+            "is_persona_meta": false,
+            "is_out_of_domain": false,
+            "confidence": 0.92,
+            "debug": {
+              "token_count": 10,
+              "replacements": [],
+              "normalized_tokens": [
+                "does",
+                "studying",
+                "ai",
+                "in",
+                "ceng",
+                "require",
+                "linear",
+                "algebra",
+                "and",
+                "probability"
+              ],
+              "changed": false
+            },
+            "changed": false
+          }
+        },
+        "timing": {
+          "retrieval_seconds": 0.061,
+          "context_construction_seconds": 0.001,
+          "llm_generation_seconds": 21.042,
+          "initial_llm_generation_seconds": 21.042,
+          "retry_llm_generation_seconds": 0.0,
+          "llm_reported_total_duration_seconds": 21.014,
+          "total_seconds": 21.113
+        },
+        "model": "qwen2.5:3b",
+        "error": null
+      },
+      "answer": "Linear algebra and probability are described as foundations for machine learning, but this source does not establish an OSTIM CENG course requirement for studying AI [S1].",
+      "sources": [
+        {
+          "source_id": "src_092",
+          "title": "Mathematics for Machine Learning and Data Science Specialization",
+          "source_name": "DeepLearning.AI",
+          "source_type": "industry_education_resource",
+          "url": "https://www.deeplearning.ai/courses/mathematics-for-machine-learning-and-data-science-specialization/",
+          "category": "mathematics",
+          "supporting_chunk_ids": [
+            "src_092_chunk_001"
+          ],
+          "evidence_labels": [
+            "S1"
+          ],
+          "best_similarity_score": 0.6076503992080688
+        },
+        {
+          "source_id": "src_075",
+          "title": "Education | The 2025 AI Index Report",
+          "source_name": "Stanford Institute for Human-Centered Artificial Intelligence",
+          "source_type": "recognized_ai_report_page",
+          "url": "https://hai.stanford.edu/ai-index/2025-ai-index-report/education",
+          "category": "artificial_intelligence",
+          "supporting_chunk_ids": [
+            "src_075_chunk_001"
+          ],
+          "evidence_labels": [
+            "S2"
+          ],
+          "best_similarity_score": 0.5159303545951843
+        },
+        {
+          "source_id": "src_093",
+          "title": "Computing Machinery and Intelligence",
+          "source_name": "Stanford Encyclopedia of Philosophy",
+          "source_type": "academic_reference_article",
+          "url": "https://plato.stanford.edu/entries/turing-test/",
+          "category": "artificial_intelligence",
+          "supporting_chunk_ids": [
+            "src_093_chunk_001"
+          ],
+          "evidence_labels": [
+            "S3"
+          ],
+          "best_similarity_score": 0.5267007350921631
+        }
+      ],
+      "retrieved_context": [
+        {
+          "label": "S1",
+          "chunk_id": "src_092_chunk_001",
+          "source_id": "src_092",
+          "title": "Mathematics for Machine Learning and Data Science Specialization",
+          "category": "mathematics",
+          "similarity_score": 0.6076503992080688,
+          "url": "https://www.deeplearning.ai/courses/mathematics-for-machine-learning-and-data-science-specialization/",
+          "passage": "Source ID: src_092 Title: Mathematics for Machine Learning and Data Science Specialization Source: DeepLearning.AI URL: https://www.deeplearning.ai/courses/mathematics-for-machine-learning-and-data-science-specialization/ Date accessed: 2026-10-13 Curated source note DeepLearning.AI's mathematics-for-ML course sequence is useful for identifying math areas that support machine learning and data science. It should not be treated as an OSTIM degree requirement; official curriculum pages remain the source for required courses. The source highlights linear algebra, calculus, probability, and statistics as important foundations for machine learning and data science."
+        },
+        {
+          "label": "S2",
+          "chunk_id": "src_075_chunk_001",
+          "source_id": "src_075",
+          "title": "Education | The 2025 AI Index Report",
+          "category": "artificial_intelligence",
+          "similarity_score": 0.5159303545951843,
+          "url": "https://hai.stanford.edu/ai-index/2025-ai-index-report/education",
+          "passage": "Source ID: src_075 Education | The 2025 AI Index Report | Stanford HAI Navigate About Events AI Glossary Careers Participate Get Involved Support HAI Contact Us Stay Up To Date Get the latest news, advances in research, policy work, and education program updates from HAI in your inbox weekly. Sign Up For Latest News Education Download Full Chapter See Chapter 8 All Chapters Back to Overview 01Research and Development 02Technical Performance 03Responsible AI 04Economy 05Science and Medicine 06Policy and Governance 07Education 08Public Opinion 1. Access to and enrollment in high school computer science (CS) courses in the U.S."
+        },
+        {
+          "label": "S3",
+          "chunk_id": "src_093_chunk_001",
+          "source_id": "src_093",
+          "title": "Computing Machinery and Intelligence",
+          "category": "artificial_intelligence",
+          "similarity_score": 0.5267007350921631,
+          "url": "https://plato.stanford.edu/entries/turing-test/",
+          "passage": "Source ID: src_093 Title: Computing Machinery and Intelligence Source: Stanford Encyclopedia of Philosophy URL: https://plato.stanford.edu/entries/turing-test/ Date accessed: 2026-10-13 Curated source note The Stanford Encyclopedia of Philosophy article on computing machinery and intelligence provides conceptual background for AI questions. It is useful for cautious reasoning about claims such as \"AI will replace programmers\" or \"AI can think like humans.\" For advising, the important point is that AI capability claims require careful definitions."
+        }
+      ],
+      "previous_turn_setup": null
+    },
+    {
+      "id": "Y090",
+      "question": "Can I work in cloud security after CENG?",
+      "group": "cybersecurity",
+      "expected_topics": [
+        "cybersecurity",
+        "career"
+      ],
+      "expected_categories": [
+        "cybersecurity",
+        "career_opportunities"
+      ],
+      "expected_behavior": "answer_or_gap",
+      "previous_question": null,
+      "evaluation_label": "correct_evidence_supported",
+      "baseline_label": "incorrect_refusal_evidence_exists",
+      "baseline_status": "insufficient_information",
+      "elapsed_wall_seconds": 45.732,
+      "diagnostics": {
+        "query_kind": "standalone_domain_question",
+        "resolved_question": "Can I work in cloud security after ceng? (topics: cybersecurity, career)",
+        "status": "answered",
+        "llm_called": true,
+        "evidence_exists_by_eval": true,
+        "citation_valid": true,
+        "citation_metadata": {
+          "valid": true,
+          "cited_labels": [
+            "S1"
+          ],
+          "invalid_labels": [],
+          "available_labels": [
+            "S1",
+            "S2",
+            "S3"
+          ],
+          "normalized": false,
+          "repair_actions": [],
+          "reason": null,
+          "retry_attempted": true,
+          "retry_successful": false,
+          "generations_attempted": 2,
+          "retry_failure_reason": "unsupported claim could not be matched to retrieved evidence"
+        },
+        "support_check": {
+          "all_claims_cited": true,
+          "all_cited_claims_supported_by_overlap": true,
+          "unsupported_claim_count": 0,
+          "uncited_claim_count": 0,
+          "checks": [
+            {
+              "claim": "Cloud security appears among the cybersecurity roles in this pathway resource; it does not guarantee a particular job outcome after CENG [S1].",
+              "labels": [
+                "S1"
+              ],
+              "supported": true,
+              "overlap_terms": [
+                "cloud",
+                "cybersecurity",
+                "job",
+                "not",
+                "pathway",
+                "resource",
+                "roles",
+                "security",
+                "the"
+              ]
+            }
+          ]
+        },
+        "unsupported_generated_answer_reason": null,
+        "retrieval_metadata": {
+          "top_k": 5,
+          "candidate_top_k": 12,
+          "similarity_threshold": 0.3,
+          "results_above_threshold": 5,
+          "top_similarity_score": 0.6317233443260193,
+          "evidence_sufficient": true,
+          "out_of_scope": false,
+          "resolved_question": "Can I work in cloud security after ceng? (topics: cybersecurity, career)",
+          "query_kind": "standalone_domain_question",
+          "query_normalization": {
+            "original_question": "Can I work in cloud security after CENG?",
+            "normalized_question": "Can I work in cloud security after ceng?",
+            "retrieval_question": "Can I work in cloud security after ceng? (topics: cybersecurity, career)",
+            "kind": "standalone_domain_question",
+            "topics": [
+              {
+                "name": "computer_engineering",
+                "matched_terms": [
+                  "ceng"
+                ],
+                "confidence": 1.0
+              },
+              {
+                "name": "cybersecurity",
+                "matched_terms": [
+                  "security"
+                ],
+                "confidence": 1.0
+              },
+              {
+                "name": "career",
+                "matched_terms": [
+                  "work"
+                ],
+                "confidence": 1.0
+              }
+            ],
+            "task": "assess",
+            "constraints": [],
+            "entities": [
+              "computer_engineering",
+              "cybersecurity",
+              "career"
+            ],
+            "referents": [],
+            "requires_context": false,
+            "requires_clarification": false,
+            "is_source_follow_up": false,
+            "is_persona_meta": false,
+            "is_out_of_domain": false,
+            "confidence": 0.92,
+            "debug": {
+              "token_count": 8,
+              "replacements": [],
+              "normalized_tokens": [
+                "can",
+                "i",
+                "work",
+                "in",
+                "cloud",
+                "security",
+                "after",
+                "ceng"
+              ],
+              "changed": false
+            },
+            "changed": false
+          }
+        },
+        "timing": {
+          "retrieval_seconds": 0.08,
+          "context_construction_seconds": 0.001,
+          "llm_generation_seconds": 45.634,
+          "initial_llm_generation_seconds": 27.228,
+          "retry_llm_generation_seconds": 18.406,
+          "llm_reported_total_duration_seconds": 27.202,
+          "total_seconds": 45.726
+        },
+        "model": "qwen2.5:3b",
+        "error": null
+      },
+      "answer": "Cloud security appears among the cybersecurity roles in this pathway resource; it does not guarantee a particular job outcome after CENG [S1].",
+      "sources": [
+        {
+          "source_id": "src_094",
+          "title": "Cyber Career Pathways Tool",
+          "source_name": "Cybersecurity and Infrastructure Security Agency / NICCS",
+          "source_type": "government_cybersecurity_career_resource",
+          "url": "https://niccs.cisa.gov/workforce-development/cyber-career-pathways-tool",
+          "category": "cybersecurity",
+          "supporting_chunk_ids": [
+            "src_094_chunk_001"
+          ],
+          "evidence_labels": [
+            "S1"
+          ],
+          "best_similarity_score": 0.6317233443260193
+        },
+        {
+          "source_id": "src_085",
+          "title": "Cybersecurity Curricular Guidelines CSEC 2017",
+          "source_name": "ACM, IEEE Computer Society, AIS SIGSEC, and IFIP WG 11.8",
+          "source_type": "professional_curriculum_report",
+          "url": "https://cybered.acm.org/",
+          "category": "cybersecurity",
+          "supporting_chunk_ids": [
+            "src_085_chunk_001"
+          ],
+          "evidence_labels": [
+            "S2"
+          ],
+          "best_similarity_score": 0.5216500163078308
+        },
+        {
+          "source_id": "src_017",
+          "title": "The Future of Jobs Report 2025",
+          "source_name": "World Economic Forum",
+          "source_type": "recognized_international_report",
+          "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+          "category": "future_technologies",
+          "supporting_chunk_ids": [
+            "src_017_chunk_092"
+          ],
+          "evidence_labels": [
+            "S3"
+          ],
+          "best_similarity_score": 0.5314370393753052
+        }
+      ],
+      "retrieved_context": [
+        {
+          "label": "S1",
+          "chunk_id": "src_094_chunk_001",
+          "source_id": "src_094",
+          "title": "Cyber Career Pathways Tool",
+          "category": "cybersecurity",
+          "similarity_score": 0.6317233443260193,
+          "url": "https://niccs.cisa.gov/workforce-development/cyber-career-pathways-tool",
+          "passage": "Source ID: src_094 Title: Cyber Career Pathways Tool Source: Cybersecurity and Infrastructure Security Agency / NICCS URL: https://niccs.cisa.gov/workforce-development/cyber-career-pathways-tool Date accessed: 2026-10-13 Curated source note NICCS/CISA provides cybersecurity career pathway resources aligned with the NICE Framework. The tool is useful for role exploration and for showing students that cybersecurity is not a single job. Cybersecurity roles can involve secure software, systems defense, incident response, digital forensics, risk management, security architecture, vulnerability assessment, cloud security, governance, education, and operations."
+        },
+        {
+          "label": "S2",
+          "chunk_id": "src_085_chunk_001",
+          "source_id": "src_085",
+          "title": "Cybersecurity Curricular Guidelines CSEC 2017",
+          "category": "cybersecurity",
+          "similarity_score": 0.5216500163078308,
+          "url": "https://cybered.acm.org/",
+          "passage": "Source ID: src_085 Title: Cybersecurity Curricular Guidelines CSEC 2017 Source: ACM, IEEE Computer Society, AIS SIGSEC, and IFIP WG 11.8 URL: https://cybered.acm.org/ Date accessed: 2026-10-13 Curated source note CSEC2017 is a professional curricular guideline for post-secondary cybersecurity education. It is useful for explaining cybersecurity as a broad field rather than only ethical hacking or penetration testing. Cybersecurity education includes technical and nontechnical dimensions. Important areas include data security, software security, component and connection security, system security, human security, organizational security, societal security, risk, policy, and ethics."
+        },
+        {
+          "label": "S3",
+          "chunk_id": "src_017_chunk_092",
+          "source_id": "src_017",
+          "title": "The Future of Jobs Report 2025",
+          "category": "future_technologies",
+          "similarity_score": 0.5314370393753052,
+          "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+          "passage": "Design and user experience Networks and cybersecurity Programming Technological literacy Self-efﬁcacyTechnology skills Working with others Ethics Management skills Cognitive skills Engagement skills Physical abilities Skills, knowledge and abilities Attitudes Skill importance in 2025, by regionTABLE 5.3 0 10050 Share of employers which consider skills to be core skills for their workers (%), by region. Future of Jobs Report 2025 79 Page 80 Skill evolution, 2025-2030, by regionTABLE 5.4 Net difference between the share of employers which consider skills to be increasing and decreasing in importance to their workers from 2025 to 2030 (%), by region."
+        }
+      ],
+      "previous_turn_setup": null
+    },
+    {
+      "id": "U153",
+      "question": "What is the exact job placement rate of OSTIM CENG graduates in 2026?",
+      "group": "unsupported",
+      "expected_topics": [
+        "employment"
+      ],
+      "expected_categories": [
+        "employment"
+      ],
+      "expected_behavior": "insufficient",
+      "previous_question": null,
+      "evaluation_label": "correct_insufficient_information",
+      "baseline_label": "correct_insufficient_information",
+      "baseline_status": "insufficient_information",
+      "elapsed_wall_seconds": 0.083,
+      "diagnostics": {
+        "query_kind": "standalone_domain_question",
+        "resolved_question": "What is the exact job placement rate of ostim ceng graduates in 2026? (constraints: ostim)",
+        "status": "insufficient_information",
+        "llm_called": false,
+        "evidence_exists_by_eval": true,
+        "citation_valid": true,
+        "citation_metadata": {},
+        "support_check": {
+          "all_claims_cited": true,
+          "all_cited_claims_supported_by_overlap": true,
+          "unsupported_claim_count": 0,
+          "uncited_claim_count": 0,
+          "checks": []
+        },
+        "unsupported_generated_answer_reason": null,
+        "retrieval_metadata": {
+          "top_k": 5,
+          "candidate_top_k": 12,
+          "similarity_threshold": 0.3,
+          "results_above_threshold": 5,
+          "top_similarity_score": 0.5267201066017151,
+          "evidence_sufficient": true,
+          "out_of_scope": false,
+          "unsupported_reason": "retrieved evidence does not contain exact Computer Engineering graduate placement-rate evidence",
+          "resolved_question": "What is the exact job placement rate of ostim ceng graduates in 2026? (constraints: ostim)",
+          "query_kind": "standalone_domain_question",
+          "query_normalization": {
+            "original_question": "What is the exact job placement rate of OSTIM CENG graduates in 2026?",
+            "normalized_question": "What is the exact job placement rate of ostim ceng graduates in 2026?",
+            "retrieval_question": "What is the exact job placement rate of ostim ceng graduates in 2026? (constraints: ostim)",
+            "kind": "standalone_domain_question",
+            "topics": [
+              {
+                "name": "computer_engineering",
+                "matched_terms": [
+                  "ceng"
+                ],
+                "confidence": 1.0
+              },
+              {
+                "name": "definition",
+                "matched_terms": [
+                  "what is"
+                ],
+                "confidence": 1.0
+              },
+              {
+                "name": "career",
+                "matched_terms": [
+                  "job"
+                ],
+                "confidence": 1.0
+              }
+            ],
+            "task": "explain",
+            "constraints": [
+              "ostim"
+            ],
+            "entities": [
+              "computer_engineering",
+              "career",
+              "OSTIM Technical University"
+            ],
+            "referents": [],
+            "requires_context": false,
+            "requires_clarification": false,
+            "is_source_follow_up": false,
+            "is_persona_meta": false,
+            "is_out_of_domain": false,
+            "confidence": 0.92,
+            "debug": {
+              "token_count": 13,
+              "replacements": [],
+              "normalized_tokens": [
+                "what",
+                "is",
+                "the",
+                "exact",
+                "job",
+                "placement",
+                "rate",
+                "of",
+                "ostim",
+                "ceng",
+                "graduates",
+                "in",
+                "2026"
+              ],
+              "changed": false
+            },
+            "changed": false
+          }
+        },
+        "timing": {
+          "retrieval_seconds": 0.069,
+          "context_construction_seconds": 0.0,
+          "llm_generation_seconds": 0.0,
+          "total_seconds": 0.077
+        },
+        "model": null,
+        "error": null
+      },
+      "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+      "sources": [],
+      "retrieved_context": [
+        {
+          "label": null,
+          "chunk_id": "src_001_chunk_001",
+          "source_id": "src_001",
+          "title": "About the Department | MF-Bilgisayar Mühendisliği (İngilizce)",
+          "category": "department_information",
+          "similarity_score": 0.5267201066017151,
+          "url": "https://mfcs.ostimteknik.edu.tr/about-the-department",
+          "passage": "Source ID: src_001\n\nAbout the Department | MF-Bilgisayar Mühendisliği (İngilizce)\n\nBarrier Free\n\nDepartment of Computer Engineering (English)\n\nThe aim of the Department of Computer Engineering is to educate Computer engineers who will contribute to the institution and organization in which they are participating, enabling them to gain skills for technical management; teach them analysis, synthesis and modelling in order ato solve engineering problems, ensure ability which will lead to carry out personal research, produce information based on a universal perspective, be able to transfer this technology into industry and share knowledge and experience with society and industry and also be successful in carrying out and assimilating the mission and vision of OSTİM Technical University.The program is designed to provide students with the knowledge and skills to design, develop and implement computer / information systems in the field of hardware, software and systems including both components. In the program, students are introduced to their professions by obtaining information about engineering and computer engineering from the first year.\n\npersonalize content. Strictly necessary cookies are always active\nfor the site to work. You can change your choice at any time via\nthe “Cookie Settings” link in the footer."
+        },
+        {
+          "label": null,
+          "chunk_id": "src_016_chunk_013",
+          "source_id": "src_016",
+          "title": "2024 State of Tech Talent Report",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.5639684200286865,
+          "url": "https://www.linuxfoundation.org/research/open-source-jobs-report-2024",
+          "passage": "job market where having a degree is still highly valued. In 2022, in the United States, 69% of computer programmer positions and 95% of mobile application Figure 16: It takes more time to onboard compared to 2023, and more technical staff resigned or were asked to leave than in the previous year 2024 STATE OF TECH TALENT REPORT | 20\n\nPage 21\ndeveloper jobs still required a degree5. However, research shows that focusing on skills during hiring is five times better at predicting job performance than hiring\nfor education6. The situation becomes more intricate when managers aim to hire candidates with strong non-technical skills, particularly problem-solving, which are\nalso highly valued (TABLE A4 ).\nBased on the most commonly cited benefits of hiring in FIGURE 18 , organizations have reached a stage where they prioritize candidates with diverse skillsets that\ncan be utilized effectively. Rather than focusing solely on specific skills, organizations seek individuals capable of handling a variety of tasks. More than half of the\nhiring managers are keen on hiring new perspectives and innovative approaches, which are often challenging to obtain from existing employees. This need for fresh\nperspectives is particularly pronounced in the IT industry, where companies must stay abreast of the latest advancements.\n5 BCG (2023), Competence over Credentials: The Rise of Skills-Based Hiring. Available at: https://www.bcg.com/publications/2023/rise-of-skills-based-hiring\n6 John E. Hunter and Rhonda F. Hunter, “Validity and utility of alternative predictors of job performance.” Psychology Bulletin, 1984, Volume 96, Issue 1; “Skills-based sourcing & hiring playbook”, Rework\nAmerica Alliance, April 2022.\nFigure 17: When assessing technical skills, certifcations rank above a college or university degree in terms of importance\n2024 STATE OF TECH TALENT REPORT | 21\n\nPage 22\nFigure 18: Fresh perspectives and innovative approaches are the most cited benefits of hiring technical staff\n2024 STATE OF TECH TALENT REPORT | 22"
+        },
+        {
+          "label": null,
+          "chunk_id": "src_088_chunk_001",
+          "source_id": "src_088",
+          "title": "Program Syllabus: Computer Engineering English Thesis Master's Degree Program",
+          "category": "graduate_studies",
+          "similarity_score": 0.5862371325492859,
+          "url": "https://fbebilgisayar.ostimteknik.edu.tr/program-syllabus",
+          "passage": "Source ID: src_088\nTitle: Program Syllabus: Computer Engineering English Thesis Master's Degree Program\nSource: OSTIM Technical University Institute of Science\nURL: https://fbebilgisayar.ostimteknik.edu.tr/program-syllabus\nDate accessed: 2026-10-13\n\nCurated source note\n\nOSTIM Technical University lists an English thesis-based master's program in Computer Engineering through the Institute of Science. This is an OSTIM-specific graduate-study source and should be used for local MSc questions, while current admissions, fees, and application dates should be checked on official university pages.\n\nThe program syllabus page identifies graduate-level Computer Engineering coursework, including advanced technical subjects such as Advanced Computer Networks and other graduate electives. The thesis-based structure indicates a research-oriented path, which is different from only taking undergraduate courses or doing short professional training.\n\nFor prospective undergraduate students, this source helps explain that Computer Engineering can continue into graduate study. A master's degree can support deeper specialization, research preparation, academic careers, and advanced technical roles. It is not necessary for every software job, but it may matter more for research-heavy AI, advanced systems, academic work, or specialized engineering roles.\n\nStudent-facing guidance: students considering MSc or PhD study should build strong undergraduate foundations, maintain good academic habits, seek projects with faculty supervision when possible, read technical papers gradually, and choose electives/projects that point toward a research area."
+        },
+        {
+          "label": null,
+          "chunk_id": "src_067_chunk_034",
+          "source_id": "src_067",
+          "title": "Computer Engineering Curricula 2016",
+          "category": "curriculum",
+          "similarity_score": 0.5511510968208313,
+          "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+          "passage": "four-year programs directly begin professional practice in much of the world. The field of computer engineering (CE) has developed, matured, and expanded throughout industry. CE professionals apply their skills in a broad range of diverse career sectors that include business, industry, government, services, organizations, and other structured entities that use computers to automate or drive their products or services efficiently.\n\nPeople seeking CE careers have a great potential for success. A recent study by the Bureau of Labor Statistics (BLS)\nshows that computer occupations are expected to increase 17.7% by 2022, with information security leading by\n36.5% [BLS]. Unfortunately, although jobs are and will be available, finding qualified people to fill them is often\ndifficult. Students graduating from engineering programs such as computer engineering often do not have all the\nattributes to fill the needs of industry. They may have technical skills acquired from their studies, but they lack\nother skills needed “to fit” within an industry or government environment.\n\nStudents who graduate from a four-year university program assume that the baccalaureate degree is a sufficient\nqualification to attain a position. This understanding may be true in some fields, but not in computer engineering.\nBelief in this myth has stymied many a job hunter worldwide. The degree credential is likely to be necessary, but it\nis not sufficient for a position. A general understanding exists in engineering and other fields that a successful\nprofessional must be a good communicator, a strong team player, and a person with passion to succeed. Hence,\nhaving a degree is not sufficient to secure employment.\n\nSome people even believe that a graduate of a CE program who has a high grade-point-average (GPA) is more\nlikely to attain a position than one who has a lower GPA. This is another mythical belief. A graduate having a high\nGPA is commendable. However, if s/he does not have the passion and drive, does not work well with others, does\nnot communicate effectively, and does not have the requisite personal skills, chances are that the person will not\npass the first interview.\n\nThe role of this chapter is to go beyond the body of knowledge introduced in Chapter 3 and examine the basic skills\nnecessary to enable the computer engineering graduate to apply this body of knowledge to real-world problems\nand situations. Chapter 5 will then address the important matter of professionalism, and Chapter 6 will consider\noverall curriculum design, along with introducing sample curricula implementations available in Appendix B."
+        },
+        {
+          "label": null,
+          "chunk_id": "src_016_chunk_012",
+          "source_id": "src_016",
+          "title": "2024 State of Tech Talent Report",
+          "category": "skills_and_technologies",
+          "similarity_score": 0.5408177375793457,
+          "url": "https://www.linuxfoundation.org/research/open-source-jobs-report-2024",
+          "passage": "Engineer 6.1 SRE / Platform Engineer 6.0 Project Manager 5.9 Data Analyst / Scientist 5.9 Systems Administrator 5.9 IT Management 5.9 Data Management 5.8 Role Average time to hire (months) DevOps / DevSecOps / GitOps 5.8 Cloud Architect / Engineer 5.8 Security Professional 5.6 Front-end / Back-end developer 5.5 Network Administrator 5.3 2024 STATE OF TECH TALENT REPORT | 19\n\nPage 20\nRegarding onboarding (FIGURE 16 ), the average time is 4.8 months, with 58% of\norganizations requiring more than four months to onboard new hires to achieve\nnormal productivity. Additionally, the process to take on a new hire typically\nspans at least eight months for most organizations. In 2024, a significant rate of\nresignation or layoff among new hires can be observed from the sample in the\nright-hand panel of FIGURE 16 . On average, two out of five new technical hires\nexperience turnover within the first six months, which is a higher rate compared\nto the rate observed in 2023 (29%).\nThe combined duration for hiring and onboarding stands at 10.2 months and\nshows an increase of 34% from 7.6 months in 2023. In addition to the high\nturnover rates, the hiring process has become significantly more expensive. This\ntrend is possibly aggravated by the impact of GenAI automation, which is reducing\nthe need for lower-level positions and leading to a higher demand for senior\ntechnical staff. This highlights the importance of prioritizing upskilling and cross-\nskilling as a key strategy for resource management.\nCertifications are key criteria\nin the hiring process\nEmployers utilize various methods to evaluate candidates’ skills during the hiring\nprocess. FIGURE 17 shows that the most crucial aspect they seek is relevant\nhands-on experience from previous employment, deemed extremely or very\nimportant by 71% of respondents. Additionally, the importance of showcasing\na portfolio of past achievements to demonstrate skills is increasing. However,\ncandidates who might not have relevant experience in the roles advertised\ncan demonstrate their capabilities through university degrees or certificates.\nCertificates rank higher than university degrees in importance, but all factors\nlisted above are very influential for hiring managers.\nThe findings above reveal the dilemmas hiring managers encounter in a job\nmarket where having a degree is still highly valued. In 2022, in the United\nStates, 69% of computer programmer positions and 95% of mobile application\nFigure 16: It takes more time to onboard compared to 2023, and\nmore technical staff resigned or were asked to leave than in the\nprevious year\n2024 STATE OF TECH TALENT REPORT | 20"
+        }
+      ],
+      "previous_turn_setup": null
+    }
+  ]
+}
