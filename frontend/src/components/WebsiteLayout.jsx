@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 const NAV_ITEMS = [
   { id: "home", label: "Home" },
   { id: "advisor", label: "AI Advisor" },
@@ -7,6 +9,20 @@ const NAV_ITEMS = [
 ];
 
 function WebsiteLayout({ currentPage, onNavigate, children }) {
+  const [theme, setTheme] = useState(() => {
+    try { return localStorage.getItem("advisor-theme") || "system"; }
+    catch { return "system"; }
+  });
+  useEffect(() => {
+    const system = window.matchMedia("(prefers-color-scheme: dark)");
+    function applyTheme() {
+      document.documentElement.dataset.theme = theme === "system" ? (system.matches ? "dark" : "light") : theme;
+    }
+    applyTheme();
+    system.addEventListener("change", applyTheme);
+    try { localStorage.setItem("advisor-theme", theme); } catch { /* Storage may be disabled. */ }
+    return () => system.removeEventListener("change", applyTheme);
+  }, [theme]);
   return (
     <div className="site-shell">
       <header className="site-header">
@@ -40,6 +56,14 @@ function WebsiteLayout({ currentPage, onNavigate, children }) {
             </a>
           ))}
         </nav>
+        <label className="theme-control">
+          Theme
+          <select value={theme} onChange={(event) => setTheme(event.target.value)}>
+            <option value="system">System</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+          </select>
+        </label>
       </header>
 
       <main className="site-main">{children}</main>

@@ -63,7 +63,7 @@ function AboutProjectPage() {
             <li>Unsupported questions may return insufficient information or out-of-scope responses.</li>
             <li>The advisor focuses on Computer Engineering topics.</li>
             <li>Local model responses may take several seconds.</li>
-            <li>Visible frontend history is not backend conversational memory.</li>
+            <li>The backend keeps the last 8 turns of each session to understand follow-up questions.</li>
           </ul>
         </article>
       </div>

@@ -1,10 +1,11 @@
-function SourceCard({ source, index }) {
+function SourceCard({ source, index, id }) {
+  const score = source.best_similarity_score ?? source.similarity_score;
   const labels = source.evidence_labels?.filter(Boolean).join(", ");
   const passages = source.supporting_passages?.filter(Boolean) || [];
   const chunkIds = source.supporting_chunk_ids?.filter(Boolean) || [];
 
   return (
-    <article className="source-card">
+    <article className="source-card" id={id} tabIndex={-1}>
       <div className="source-card-header">
         <div>
           <span className="source-label">{labels || `Source ${index + 1}`}</span>
@@ -18,6 +19,9 @@ function SourceCard({ source, index }) {
       </div>
 
       <dl className="source-meta">
+        {source.publication_date ? <><dt>Published</dt><dd>{source.publication_date}</dd></> : null}
+        <dt>Similarity score</dt>
+        <dd>{typeof score === "number" && Number.isFinite(score) ? score.toFixed(3) : "Not available"}</dd>
         {source.source_name ? (
           <>
             <dt>Organization</dt>
