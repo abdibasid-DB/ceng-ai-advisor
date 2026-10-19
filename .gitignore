@@ -39,3 +39,9 @@ Thumbs.db
 .vscode/
 *.tmp
 *.temp
+
+# Regenerable evaluation data when no D: data drive exists
+.local-data/
+
+# Local Chroma index backups
+knowledge_base/vector_store/chroma_backup_*/

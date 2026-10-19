@@ -10,13 +10,15 @@ import json
 import os
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any
+from typing import TYPE_CHECKING, Any
 
 os.environ.setdefault("HF_HUB_OFFLINE", "1")
 os.environ.setdefault("TRANSFORMERS_OFFLINE", "1")
 
 import chromadb
-from sentence_transformers import SentenceTransformer
+
+if TYPE_CHECKING:
+    from sentence_transformers import SentenceTransformer
 
 from ..core.retrieval_config import (
     CANDIDATE_TOP_K,
@@ -41,7 +43,7 @@ EXCLUDED_SOURCE_IDS = {"src_019", "src_021", "src_022", "src_023", "src_024", "s
 QUERY_EXPANSION_RULES: tuple[tuple[tuple[str, ...], str], ...] = (
     (
         ("ceng",),
-        "Computer Engineering department program curriculum",
+        "Computer Engineering discipline career skills",
     ),
     (
         ("high-school", "high school", "simple terms"),
@@ -60,6 +62,50 @@ QUERY_EXPANSION_RULES: tuple[tuple[tuple[str, ...], str], ...] = (
         "skills technologies programming career readiness professional skills",
     ),
     (
+        ("algorithm", "algorithms", "data structures"),
+        "algorithms data structures programming curriculum problem solving software engineering",
+    ),
+    (
+        ("testing", "debugging", "debug", "command line", "cli"),
+        "software development testing debugging command line developer tools programming skills",
+    ),
+    (
+        ("frontend", "backend", "react", "sql", "database", "databases"),
+        "software development web backend frontend databases programming developer skills",
+    ),
+    (
+        ("teamwork", "team work", "collaboration", "work in teams"),
+        "teamwork collaboration communication professional skills employer career readiness",
+    ),
+    (
+        ("future-proof", "future proof"),
+        "future skills technology demand career adaptability reskilling",
+    ),
+    (
+        ("low gpa", "gpa", "grade point"),
+        "GPA candidate screening skills-based hiring major internship experience resume portfolio projects employer hiring career readiness",
+    ),
+    (
+        ("personal projects", "portfolio", "impressive portfolio"),
+        "portfolio projects resume GitHub skills career readiness",
+    ),
+    (
+        ("cv", "resume", "curriculum vitae"),
+        "resume CV portfolio projects skills experience career readiness job application",
+    ),
+    (
+        ("hackathon", "hackathons", "coding competition", "coding competitions"),
+        "hackathons coding competitions projects skills portfolio career readiness",
+    ),
+    (
+        ("web development", "mobile development"),
+        "software development programming mobile web applications career skills specialization",
+    ),
+    (
+        ("computer architecture", "arduino", "fpga", "microcontroller", "microcontrollers", "iot"),
+        "computer architecture embedded systems hardware microcontrollers FPGA IoT computer engineering curriculum projects",
+    ),
+    (
         ("industries hire", "what industries", "hiring industries"),
         "Turkey information communication technology ICT employment market industry organizations",
     ),
@@ -76,12 +122,24 @@ QUERY_EXPANSION_RULES: tuple[tuple[tuple[str, ...], str], ...] = (
         "remote work hybrid work professional developers survey work from home",
     ),
     (
+        ("remote", "remotely", "work from home"),
+        "remote work hybrid work professional developers survey work from home",
+    ),
+    (
+        ("right major", "choose computer engineering", "instead of another engineering", "right field", "which field"),
+        "computer engineering subdisciplines specializations hardware software systems career sectors professional practice",
+    ),
+    (
         ("startup", "software company", "own company", "entrepreneur"),
         "entrepreneurship business startup company software career",
     ),
     (
         ("without a master's", "without a masters", "master's degree", "masters degree"),
         "graduate studies artificial intelligence career research applied roles",
+    ),
+    (
+        ("academia", "academic career", "professor", "research career"),
+        "graduate studies research academia computer science computer engineering career",
     ),
     (
         ("stressful", "stress", "work-life", "work life"),
@@ -95,6 +153,18 @@ QUERY_EXPANSION_RULES: tuple[tuple[tuple[str, ...], str], ...] = (
         ("women", "welcoming for women"),
         "women in computing diversity participation technical careers misconceptions employment",
     ),
+    (
+        ("ethical hacking", "hacking", "cybersec", "certs", "certification", "certifications"),
+        "cybersecurity workforce framework security skills knowledge certifications ethical practice",
+    ),
+    (
+        ("student clubs", "student communities", "social clubs", "competitions", "study abroad", "erasmus"),
+        "OSTIM Technical University student life social clubs communities Erasmus competitions student affairs",
+    ),
+    (
+        ("first internship", "get my first internship", "find internships", "apply to jobs"),
+        "internship career center job application resume skills workplace experience",
+    ),
 )
 
 
@@ -103,6 +173,7 @@ class QueryProfile:
     preferred_categories: tuple[str, ...] = ()
     official_source_preferred: bool = False
     title_keywords: tuple[str, ...] = ()
+    focused_non_curriculum: bool = False
 
 
 class Retriever:
@@ -132,6 +203,8 @@ class Retriever:
 
     def get_model(self) -> SentenceTransformer:
         if self._model is None:
+            from sentence_transformers import SentenceTransformer
+
             self._model = SentenceTransformer(self.model_name)
         return self._model
 
@@ -269,39 +342,120 @@ def infer_query_profile(query: str) -> QueryProfile:
     preferred_categories: list[str] = []
     official_source_preferred = False
     title_keywords: list[str] = []
+    focused_non_curriculum = False
 
     if any(term in q for term in ["course", "courses", "curriculum", "semester", "class", "classes"]):
         preferred_categories.extend(["curriculum", "programming", "mathematics"])
         official_source_preferred = True
         title_keywords.extend(["course", "curriculum"])
 
-    if any(term in q for term in ["department", "program", "university", "ostim", "technical university"]):
+    if any(term in q for term in ["department", "university", "ostim", "technical university", "program in english", "english program"]):
         preferred_categories.extend(["department_information", "curriculum", "student_life"])
         official_source_preferred = True
 
-    if any(term in q for term in ["programming", "coding", "language", "python", "java", "software"]):
+    if any(term in q for term in ["programming", "coding", "language", "python", "java", "software", "algorithm", "algorithms", "data structures"]):
         preferred_categories.extend(["programming", "skills_and_technologies", "curriculum"])
         title_keywords.extend(["programming", "developer"])
 
-    if any(term in q for term in ["career", "job", "employment", "graduate", "work abroad", "salary"]):
+    if any(term in q for term in ["frontend", "backend", "react", "sql", "database", "databases", "testing", "debugging", "command line", "cli"]):
+        preferred_categories.extend(["skills_and_technologies", "programming", "employment"])
+        title_keywords.extend(["developer", "skills", "software"])
+        focused_non_curriculum = True
+
+    if any(term in q for term in ["cv", "resume", "curriculum vitae"]):
+        preferred_categories.extend(["employment", "skills_and_technologies"])
+        title_keywords.extend(["resume", "cv", "career"])
+        focused_non_curriculum = True
+
+    if any(term in q for term in ["career", "job", "employment", "graduate", "work abroad", "salary", "senior engineer", "freelance", "freelancing"]):
         preferred_categories.extend(["career_opportunities", "employment", "skills_and_technologies", "future_technologies"])
+        focused_non_curriculum = True
+
+    if any(term in q for term in ["teamwork", "team work", "collaboration", "communication"]):
+        preferred_categories.extend(["skills_and_technologies", "employment", "student_life"])
+
+    if any(term in q for term in ["future-proof", "future proof", "future", "next 10 years"]):
+        preferred_categories.extend(["future_technologies", "employment", "skills_and_technologies"])
+        title_keywords.extend(["future", "jobs"])
+        focused_non_curriculum = True
+
+    if any(term in q for term in ["gpa", "grade point", "grade", "portfolio", "personal project", "projects", "github", "open source"]):
+        preferred_categories.extend(["employment", "skills_and_technologies", "student_life"])
+        title_keywords.extend(["resume", "portfolio", "skills"])
+        focused_non_curriculum = True
+
+    if any(term in q for term in ["hackathon", "hackathons", "coding competition", "coding competitions"]):
+        preferred_categories.extend(["skills_and_technologies", "student_life", "employment"])
+        focused_non_curriculum = True
+
+    if any(
+        term in q
+        for term in [
+            "specialization",
+            "specializations",
+            "field",
+            "fields",
+            "subdiscipline",
+            "subdisciplines",
+            "discipline",
+            "disciplines",
+            "web development",
+            "mobile development",
+            "computer architecture",
+            "embedded",
+            "arduino",
+            "fpga",
+            "microcontroller",
+            "iot",
+        ]
+    ):
+        preferred_categories.extend(["specializations", "skills_and_technologies", "career_opportunities", "curriculum"])
+        title_keywords.extend(["subdiscipline", "specialization"])
+
+    if any(term in q for term in ["right major", "choose", "instead of another engineering"]):
+        preferred_categories.extend(
+            [
+                "department_information",
+                "common_misconceptions",
+                "specializations",
+                "career_opportunities",
+                "employment",
+                "future_technologies",
+                "curriculum",
+            ]
+        )
+        official_source_preferred = True
+        title_keywords.extend(["curriculum", "career", "jobs", "subdiscipline"])
 
     if any(term in q for term in ["artificial intelligence", " ai ", " gen ai", "automation", "replace"]):
         preferred_categories.extend(["artificial_intelligence", "future_technologies", "skills_and_technologies"])
         title_keywords.extend(["ai", "future", "jobs"])
 
-    if any(term in q for term in ["cybersecurity", "cyber security", "security"]):
+    if any(term in q for term in ["cybersecurity", "cyber security", "cybersec", "security", "ethical hacking", "hacking", "certification", "certifications"]):
         preferred_categories.extend(["cybersecurity", "specializations", "skills_and_technologies", "future_technologies"])
         title_keywords.extend(["security", "cyber"])
 
     if any(term in q for term in ["internship", "internships", "co-op", "workplace"]):
-        preferred_categories.extend(["internships", "curriculum", "employment"])
+        preferred_categories.extend(["internships", "employment", "curriculum"])
         official_source_preferred = "ostim" in q or "university" in q
 
     if any(term in q for term in ["master", "graduate school", "phd", "postgraduate"]):
         preferred_categories.extend(["graduate_studies", "career_opportunities"])
 
-    if any(term in q for term in ["remote", "hybrid", "digital nomad", "international work", "working internationally"]):
+    if any(term in q for term in ["academia", "academic career", "research career"]):
+        preferred_categories.extend(["graduate_studies", "career_opportunities", "skills_and_technologies"])
+
+    if any(term in q for term in ["club", "clubs", "community", "communities", "competition", "competitions", "erasmus", "study abroad"]):
+        preferred_categories.extend(["student_life", "internships", "department_information"])
+        official_source_preferred = True
+        focused_non_curriculum = True
+
+    if any(term in q for term in ["academic staff", "faculty", "professor", "professors"]):
+        preferred_categories.extend(["department_information"])
+        official_source_preferred = True
+        title_keywords.extend(["academic staff"])
+
+    if any(term in q for term in ["remote", "remotely", "hybrid", "digital nomad", "work from home", "international work", "working internationally"]):
         preferred_categories.extend(["remote_work", "employment"])
 
     if any(term in q for term in ["startup", "entrepreneur", "business", "start a", "start my", "company"]):
@@ -320,6 +474,7 @@ def infer_query_profile(query: str) -> QueryProfile:
         preferred_categories=tuple(dict.fromkeys(preferred_categories)),
         official_source_preferred=official_source_preferred,
         title_keywords=tuple(dict.fromkeys(title_keywords)),
+        focused_non_curriculum=focused_non_curriculum,
     )
 
 
@@ -334,6 +489,8 @@ def rerank_candidates(candidates: list[dict[str, Any]], profile: QueryProfile) -
 
         if category in profile.preferred_categories:
             score += CATEGORY_BOOST
+        elif profile.focused_non_curriculum and category == "curriculum":
+            score -= CATEGORY_BOOST
         if profile.official_source_preferred and (
             "ostim" in source_name
             or source_type in {"official_department_page", "curriculum_document", "course_descriptions"}
