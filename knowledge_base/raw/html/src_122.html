@@ -1,0 +1,2610 @@
+<!DOCTYPE html>
+     <xpath expr="//div[@id=&#39;wrapwrap&#39;]" position="before">
+    
+</xpath>
+
+        
+        
+        
+<html lang="en-US" data-website-id="72" data-main-object="website.page(963,)" data-add2cart-redirect="1">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <xpath expr="//head/meta[last()]" position="after">
+           
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script>
+    // 2nd preloader + lazy loader using the data-original-src attribute
+document.addEventListener("DOMContentLoaded", function () {
+
+    /* PART 1 — Preload FIRST carousel slide using reliable URL */
+    const firstSlide = document.querySelector('.carousel-item.active');
+    if (firstSlide) {
+        const preloadUrl = firstSlide.getAttribute("data-original-src");
+        if (preloadUrl) {
+            const link = document.createElement("link");
+            link.rel = "preload";
+            link.as = "image";
+            link.href = preloadUrl;
+            document.head.appendChild(link);
+        }
+    }
+
+    /* PART 2 — Lazy-load OTHER slides using data-original-src */
+    document.querySelectorAll('.carousel-item:not(.active)').forEach(function (slide) {
+        const lazyUrl = slide.getAttribute("data-original-src");
+        if (!lazyUrl) return;
+
+        slide.dataset.lazyBg = lazyUrl;
+        slide.style.backgroundImage = "none";
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    slide.style.backgroundImage = `url('${slide.dataset.lazyBg}')`;
+                    observer.unobserve(slide);
+                }
+            });
+        });
+
+        observer.observe(slide);
+    });
+
+});
+</script>
+
+</xpath>
+        
+        <meta name="generator" content="Odoo"/>
+        <meta name="keywords" content="fintech topluluğu,siber güvenlik kulübü,elektrikli araçlar kulübü,havacılık ve uzay kulübü,üniversite kulüp faaliyetleri"/>
+            
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Öğrenci Topluluklarımız | Sağlık Kültür ve Spor Müdürlüğünd Sports"/>
+        <meta property="og:site_name" content="Sağlık Kültür ve Spor Müdürlüğünd Sports"/>
+        <meta property="og:url" content="https://sks.ostimteknik.edu.tr/en/ogrenci-topluluklarimiz"/>
+        <meta property="og:image" content="https://sks.ostimteknik.edu.tr/web/image/website/72/logo?unique=2328666"/>
+            
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:title" content="Öğrenci Topluluklarımız | Sağlık Kültür ve Spor Müdürlüğünd Sports"/>
+        <meta name="twitter:image" content="https://sks.ostimteknik.edu.tr/web/image/website/72/logo?unique=2328666"/>
+        
+        <link rel="alternate" hreflang="en" href="https://sks.ostimteknik.edu.tr/en/ogrenci-topluluklarimiz"/>
+        <link rel="alternate" hreflang="tr" href="https://sks.ostimteknik.edu.tr/ogrenci-topluluklarimiz"/>
+        <link rel="alternate" hreflang="x-default" href="https://sks.ostimteknik.edu.tr/ogrenci-topluluklarimiz"/>
+        <link rel="canonical" href="https://sks.ostimteknik.edu.tr/en/ogrenci-topluluklarimiz"/>
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""/>
+        <title> Öğrenci Topluluklarımız | Sağlık Kültür ve Spor Müdürlüğünd Sports </title>
+        <link type="image/x-icon" rel="shortcut icon" href="/web/image/website/72/favicon?unique=165602c"/>
+		<link rel="preload" href="/theme_nextbiz/static/lib/RemixIcon/remixicon.woff2?t=1580819880586" as="font" crossorigin=""/>
+		<link rel="preload" href="/theme_nextbiz/static/lib/linearicons/fonts/Linearicons-Free.woff2?w118d" as="font" crossorigin=""/>
+		<link rel="preload" href="/theme_nextbiz/static/lib/themify-icons/fonts/themify.woff?-fvbane" as="font" crossorigin=""/>
+		<link rel="preload" href="/theme_nextbiz/static/lib/icofont/fonts/icofont.woff2" as="font" crossorigin=""/>
+        <link rel="preload" href="/web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" crossorigin=""/>
+        <link type="text/css" rel="stylesheet" href="/web/assets/675711-53b8408/72/web.assets_frontend.min.css" data-asset-bundle="web.assets_frontend" data-asset-version="53b8408"/>
+        <script id="web.layout.odooscript" type="text/javascript">
+            var odoo = {
+                csrf_token: "1d7c421cfbb21e08154a984a6519481346b790b9o1823972393",
+                debug: "",
+            };
+        </script>
+        <script type="text/javascript">
+            odoo.__session_info__ = {"is_admin": false, "is_system": false, "is_website_user": true, "user_id": false, "is_frontend": true, "profile_session": null, "profile_collectors": null, "profile_params": null, "show_effect": true, "bundle_params": {"lang": "en_US", "website_id": 72}, "translationURL": "/website/translations", "cache_hashes": {"translations": "de74ed308019b83a299edcd75054ef2d1ca4d444"}, "geoip_country_code": null, "geoip_phone_code": null, "lang_url_code": "en"};
+            if (!/(^|;\s)tz=/.test(document.cookie)) {
+                const userTZ = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                document.cookie = `tz=${userTZ}; path=/`;
+            }
+        </script>
+        <script defer="defer" type="text/javascript" src="/web/assets/668381-8b7938f/72/web.assets_frontend_minimal.min.js" data-asset-bundle="web.assets_frontend_minimal" data-asset-version="8b7938f"></script>
+        <script defer="defer" type="text/javascript" data-src="/web/assets/668382-42b6674/72/web.assets_frontend_lazy.min.js" data-asset-bundle="web.assets_frontend_lazy" data-asset-version="42b6674"></script>
+        
+                
+                
+                <script>
+                    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                    })(window,document,'script','dataLayer','GTM-WTWPNVZ');
+                </script>
+                
+
+            
+
+                
+                
+
+                
+                <script type="text/javascript">
+                    window.OSTIM_A11Y = {
+                        position: 'bottom_right',
+                        color:    '#005f73',
+                        iconSize: 'large',
+                        lang:     'en',
+                        autoLang: true,
+                    };
+                </script>
+
+                
+                <link rel="stylesheet" href="/ostim_accessibility/static/src/css/accessibility_widget.css?v=12"/>
+
+                
+                <script type="text/javascript" src="/ostim_accessibility/static/src/js/aria_fixes.js?v=12"></script>
+
+                
+                <script type="text/javascript" src="/ostim_accessibility/static/src/js/accessibility_widget.js?v=12"></script>
+
+        
+    </head>
+    <body>
+                <noscript><iframe height="0" width="0" style="display:none;visibility:hidden" src="https://www.googletagmanager.com/ns.html?id=GTM-WTWPNVZ"></iframe></noscript>
+        <div id="wrapwrap" class="   ">
+                <header id="top" data-anchor="true" data-name="Header" role="banner" class=" ">
+                    
+                <div class="oe_structure oe_structure_solo" id="oe_structure_header_contact_1"><section class="s_text_block o_colored_level d-none o_snippet_mobile_invisible pb0 pt8 d-lg-block" data-snippet="s_text_block" data-name="Metin" style="background-color: rgb(16, 22, 76); background-image: none;" data-invisible="1">
+        <div class="s_allow_columns container-fluid"><div class="row o_grid_mode" data-row-count="2">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<div class="o_colored_level o_grid_item g-col-lg-4 g-height-2 col-lg-4" style="grid-area: 1 / 2 / 3 / 6; z-index: 1;">﻿<a title="" data-bs-original-title="" style="border-width: 1px; border-style: solid;" class="btn btn-custom btn-sm" href="https://ostimteknik.edu.tr/"><font class="text-white"><span style="font-size: 11px;"><span class="icofont icofont-university fa-2x"></span><br/></span><span style="font-size: 14px;">Ana Sayfa</span></font></a>﻿﻿<a class="btn btn-custom btn-sm" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;" href="https://obs.ostimteknik.edu.tr/" target="_blank">﻿<span class="fa fa-user-circle-o fa-2x text-white" data-bs-original-title="" title="" aria-describedby="tooltip595664">​</span><br/><strong><font class="text-white"><span style="font-size: 14px; font-weight: normal;">O​​BS</span></font></strong>﻿</a>﻿<span style="font-size: 11px;"></span><a target="_blank" class="btn btn-custom btn-sm" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;" href="https://eob.ostimteknik.edu.tr/en"><img src="/web/image/271091-14d722c3/engelsiz1.png" alt="" class="img img-fluid o_we_custom_image" data-original-id="271090" data-original-src="/web/image/271090-2b48ea47/engelsiz1.png" data-mimetype="image/png" data-resize-width="75" style="width: 50% !important;" data-bs-original-title="" title="" aria-describedby="tooltip609263" loading="lazy"/><span style="font-size: 14px;"><strong><br/></strong></span><font class="text-white"><span style="font-size: 14px;">Engelsiz</span></font></a><span style="font-size: 12px;"></span>﻿<a href="http://ebys.ostimteknik.edu.tr" target="_blank" class="btn btn-custom btn-sm" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;">﻿<span class="fa fa-file-o fa-2x text-white" data-bs-original-title="" title="" aria-describedby="tooltip343315">​</span><span style="font-size: 14px;"><strong><br/></strong></span><font class="text-white"><span style="font-size: 14px;">EBYS</span></font>﻿</a>﻿<span style="font-size: 12px;"></span>﻿<a href="https://kutuphane.ostimteknik.edu.tr/our-services-library" target="_blank" class="btn btn-custom btn-sm" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;"><span class="icofont icofont-library fa-2x text-white"></span><span style="font-size: 12px;"><strong><br/></strong></span><font class="text-white"><span style="font-size: 14px;">Kütüphane</span></font></a>﻿<span style="font-size: 12px;"></span>﻿<a href="https://lmsclus.ostimteknik.edu.tr" target="_blank" class="btn btn-custom btn-sm" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;"><span class="lni lni-network fa-2x text-white"></span><font class="text-white"><span style="font-size: 12px;"><strong>​​</strong></span></font><span style="font-size: 12px;"><strong><br/></strong></span><font class="text-white"><span style="font-size: 14px;">LMS</span></font></a>﻿</div><div class="o_colored_level o_grid_item g-height-2 g-col-lg-4 col-lg-4" style="grid-area: 1 / 8 / 3 / 12; z-index: 2;">
+            <div class="s_social_media o_not_editable text-center no_icon_color" data-snippet="s_social_media" data-name="Sosyal Medya">
+        <h4 class="s_social_media_title o_default_snippet_text d-none">Sosyal Medya</h4>
+<a target="_blank" href="/en/website/social/facebook" class="s_social_media_facebook" aria-label="Facebook"><i class="fa o_editable_media fa-facebook text-white" style="padding: 5px;">​</i></a>
+<a target="_blank" href="/en/website/social/linkedin" class="s_social_media_linkedin" aria-label="LinkedIn"><i class="fa o_editable_media fa-linkedin text-white" style="padding: 5px;">​</i></a>
+<a target="_blank" href="/en/website/social/youtube" class="s_social_media_youtube" aria-label="YouTube"><i class="fa o_editable_media fa-youtube text-white" style="padding: 5px;">​</i></a>
+<a target="_blank" href="/en/website/social/instagram" class="s_social_media_instagram" aria-label="Instagram"><i class="fa o_editable_media fa-instagram text-white" style="padding: 5px;">​</i></a>
+<a target="_blank" href="/en/website/social/twitter" class="s_social_media_twitter" aria-label="Twitter"><i class="fa o_editable_media fa-twitter text-white" style="padding: 5px;">​</i></a>
+<a target="_blank" href="/en/iletisim" aria-label="Iletisim"><i class="fa fa-envelope-o o_editable_media text-o-color-3 rounded" style="padding: 5px;">​</i></a>
+<a target="_blank" href="/en/iletisim" aria-label="Telefon"><i class="fa fa-phone o_editable_media text-o-color-3 rounded">​</i></a>
+</div><p class="o_default_snippet_text"><br/></p>
+        </div></div></div>
+    </section><section class="s_text_block o_colored_level pt0 pb0 d-lg-none o_snippet_desktop_invisible" data-snippet="s_text_block" data-name="Metin" style="background-color: rgb(16, 22, 76); background-image: none;" data-invisible="1">
+        <div class="s_allow_columns container-fluid"><div class="row o_grid_mode" data-row-count="1">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<div class="o_colored_level o_grid_item g-col-lg-5 g-height-1 col-lg-5" style="grid-area: 1 / 3 / 2 / 8; z-index: 1; text-align: center;">﻿<a class="btn btn-custom btn-sm" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;" href="https://obs.ostimteknik.edu.tr/" target="_blank">﻿<span class="fa fa-user fa-2x text-white" data-bs-original-title="" title="" aria-describedby="tooltip595664">​</span><br/><strong><font class="text-white"><span style="font-weight: normal; font-size: 12px;">O​​BS</span></font></strong>﻿</a>﻿<span style="font-size: 11px;"></span><a target="_blank" class="btn btn-custom btn-sm" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;" href="https://lmsclus.ostimteknik.edu.tr/"><img src="/web/image/228003-72cf5ea8/engelsiz%20last.png" alt="" class="img img-fluid o_we_custom_image" data-original-id="222229" data-original-src="/web/image/222229-7dcb782a/engelsiz%20last.png" data-mimetype="image/png" data-resize-width="30" loading="lazy" data-bs-original-title="" title="" aria-describedby="tooltip205851"/><span style="font-size: 14px;"><br/></span><font class="text-white"><span style="font-size: 14px;">Engelsiz</span></font></a><span style="font-size: 12px;"></span>﻿<a href="#" target="_blank" class="btn btn-custom btn-sm" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;">﻿<span class="fa fa-file-o fa-2x text-white" data-bs-original-title="" title="" aria-describedby="tooltip343315">​</span><br/><font class="text-white"><span style="font-size: 12px;">EBYS</span></font>﻿</a>﻿<span style="font-size: 12px;"></span>﻿<a href="https://outlook.office.com/" target="_blank" class="btn btn-custom btn-sm" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;"><span class="icofont icofont-library fa-2x text-white"></span><span style="font-size: 12px;"><br/></span><font class="text-white"><span style="font-size: 14px;">Kütüphane</span></font></a>﻿<span style="font-size: 12px;"></span>﻿<a href="https://ird.ostimtech.net/" target="_blank" class="btn btn-custom text-o-color-4 btn-sm" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;"><span class="lni lni-network fa-2x text-white"></span><font class="text-white"><span style="font-size: 12px;">​​</span></font><span style="font-size: 12px;"><br/></span><font class="text-white"><span style="font-size: 14px;">LMS</span></font></a>﻿</div><div class="o_colored_level o_grid_item g-col-lg-4 g-height-1 col-lg-4" style="grid-area: 1 / 8 / 2 / 12; z-index: 2;">
+            <div class="s_social_media o_not_editable text-center no_icon_color" data-snippet="s_social_media" data-name="Sosyal Medya">
+        <h4 class="s_social_media_title o_default_snippet_text d-none">Sosyal Medya</h4>
+<a target="_blank" href="/en/website/social/facebook" class="s_social_media_facebook" aria-label="Facebook"><i class="fa o_editable_media fa-facebook text-white">​</i></a>
+<a target="_blank" href="/en/website/social/linkedin" class="s_social_media_linkedin" aria-label="LinkedIn"><i class="fa o_editable_media fa-linkedin text-white">​</i></a>
+<a target="_blank" href="/en/website/social/youtube" class="s_social_media_youtube" aria-label="YouTube"><i class="fa o_editable_media fa-youtube text-white">​</i></a>
+<a target="_blank" href="/en/website/social/instagram" class="s_social_media_instagram" aria-label="Instagram"><i class="fa o_editable_media fa-instagram text-white">​</i></a>
+<a target="_blank" href="/en/website/social/twitter" class="s_social_media_twitter" aria-label="Twitter"><i class="fa o_editable_media fa-twitter text-white">​</i></a>
+<a target="_blank" href="https://www.example.com"><i class="fa fa-envelope-o o_editable_media text-o-color-3 rounded">​</i></a>
+<a target="_blank" href="https://www.example.com" aria-label="Telefon"><i class="fa fa-phone o_editable_media text-o-color-3 rounded">​</i></a>
+</div><p class="o_default_snippet_text"><br/></p>
+        </div></div></div>
+    </section></div>
+    <nav data-name="Navbar" class="navbar navbar-expand-lg navbar-light o_colored_level o_cc shadow-sm">
+        
+            <div id="top_menu_container" class="container">
+                
+    <a href="/en/" class="navbar-brand logo ">
+            
+            <span role="img" aria-label="Logo of Sağlık Kültür ve Spor Müdürlüğünd Sports" title="Sağlık Kültür ve Spor Müdürlüğünd Sports"><img src="/web/image/website/72/logo/Sa%C4%9Fl%C4%B1k%20K%C3%BClt%C3%BCr%20ve%20Spor%20M%C3%BCd%C3%BCrl%C3%BC%C4%9F%C3%BCnd%20Sports?unique=165602c" class="img img-fluid" width="95" height="40" alt="Sağlık Kültür ve Spor Müdürlüğünd Sports" loading="lazy"/></span>
+        </a>
+    
+                
+    <button type="button" data-bs-toggle="collapse" data-bs-target="#top_menu_collapse" aria-label="Menu" aria-expanded="false" aria-controls="top_menu_collapse" class="navbar-toggler ">
+        <span class="navbar-toggler-icon o_not_editable"></span>
+    </button>
+                
+                
+                <div id="top_menu_collapse" class="collapse navbar-collapse ms-lg-3">
+    <ul id="top_menu" role="menu" class="nav navbar-nav o_menu_loading flex-grow-1">
+        
+                        
+    <li class="nav-item dropdown  ">
+        <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle ">
+            <span>About Us</span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+    <li role="presentation" class="">
+        <a role="menuitem" href="https://sks.ostimteknik.edu.tr/birim-ici-degerlendirme-raporlari" class="dropdown-item ">
+            <span>Unit Self-Evaluation Report</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/en/vizyon-misyon" class="dropdown-item ">
+            <span>Mission and Vision</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/en/is-akisi" class="dropdown-item ">
+            <span>Workflow​</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/en/mevzuat-belgeler" class="dropdown-item ">
+            <span>Regulations and Documents</span>
+        </a>
+    </li>
+        </ul>
+    </li>
+    <li class="nav-item dropdown  ">
+        <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle ">
+            <span>Health Services</span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+    <li role="presentation" class="">
+        <a role="menuitem" href="/en/saglik-hizmetleri" class="dropdown-item ">
+            <span>Health Services Coordination Office​</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/en/psikoloji" class="dropdown-item ">
+            <span>Psychological Counseling Services​</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/en/bagmlilikla-mucadele" class="dropdown-item ">
+            <span>Addiction Prevention and Support</span>
+        </a>
+    </li>
+        </ul>
+    </li>
+    <li class="nav-item dropdown active ">
+        <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle ">
+            <span>Culture and Social Affairs​</span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+    <li role="presentation" class="">
+        <a role="menuitem" href="/en/kultur-ve-sosyal-isler" class="dropdown-item ">
+            <span>Coordination Office</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/en/yurt-imkanlar" class="dropdown-item ">
+            <span>Dormitory Facilities​</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/en/ogrenci-topluluklarimiz" class="dropdown-item active">
+            <span>Student Societies​</span>
+        </a>
+    </li>
+        </ul>
+    </li>
+    <li class="nav-item dropdown  ">
+        <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle ">
+            <span>Sports Services</span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+    <li role="presentation" class="">
+        <a role="menuitem" href="/en/spor" class="dropdown-item ">
+            <span>Coordination Office</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/en/sporda-basarlarmz" class="dropdown-item ">
+            <span>Achievements in Sports​</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/en/spor-tesisleri" class="dropdown-item ">
+            <span>Sports Facilities​</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/en/nasil-yapilir" class="dropdown-item ">
+            <span>How to Get Started?</span>
+        </a>
+    </li>
+        </ul>
+    </li>
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="https://sks.ostimtech.net/gorus-istek-ve-sikayet" class="nav-link ">
+            <span>Görüş İstek ve Şikayet</span>
+        </a>
+    </li>
+        
+            <li class="nav-item ms-lg-3 divider d-none"></li> 
+            <li class="o_wsale_my_cart align-self-md-start d-none nav-item ms-lg-3">
+                <a href="/en/shop/cart" class="nav-link">
+                    <span>My Cart</span>
+                    <sup class="my_cart_quantity badge text-bg-primary" data-order-id="">0</sup>
+                </a>
+            </li>
+        
+                        
+                        
+        
+        
+                    
+    </ul>
+                    
+        
+            <div class="js_language_selector my-auto ms-lg-2 align-self-lg-center dropdown d-print-none">
+                <button type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="btn btn-sm btn-outline-secondary border-0 dropdown-toggle ">
+    <img class="o_lang_flag" src="/base/static/img/country_flags/us.png?height=25" loading="lazy"/>
+                    <span class="align-middle">English (US)</span>
+                </button>
+                <div role="menu" class="dropdown-menu ">
+                        <a href="/en/ogrenci-topluluklarimiz" class="dropdown-item js_change_lang active" data-url_code="en">
+    <img class="o_lang_flag" src="/base/static/img/country_flags/us.png?height=25" loading="lazy"/>
+                            <span>English (US)</span>
+                        </a>
+                        <a href="/ogrenci-topluluklarimiz" class="dropdown-item js_change_lang " data-url_code="tr">
+    <img class="o_lang_flag" src="/base/static/img/country_flags/tr.png?height=25" loading="lazy"/>
+                            <span> Türkçe</span>
+                        </a>
+                </div>
+            </div>
+        
+                    
+                </div>
+            </div>
+        
+    </nav>
+    
+        </header>
+                <main role="main">
+                    
+        <div id="wrap" class="oe_structure oe_empty"><section class="s_text_block o_colored_level o_background_video pb256 pt80" data-snippet="s_text_block" data-name="Metin" style="background-image: none;" data-bg-video-src="//www.youtube.com/embed/WReEwpEh6Eo?rel=0&amp;autoplay=1&amp;mute=1&amp;enablejsapi=1&amp;controls=0&amp;loop=1&amp;playlist=WReEwpEh6Eo&amp;fs=0">
+        <div class="s_allow_columns container">
+            <p><br/></p>
+        </div>
+    </section><section class="s_embed_code o_colored_level pb0 pt0 text-start" data-snippet="s_embed_code" data-name="Yerleştirme Kodu" style="background-image: none;"><template class="s_embed_code_saved">
+<div class="thw" data-lang="tr" dir="ltr">
+
+<style>
+  .thw{
+    --wine:#5B1B39;--wine-2:#7A2B4E;--wine-soft:#F1E6EC;--gold:#C89B3C;--gold-soft:#FBF3E1;
+    --paper:#F3F5F8;--card:#FFFFFF;--line:#DEE3EA;--ink:#16233B;--ink-soft:#5B6B84;--radius:14px;
+    font-family:'Inter',Arial,sans-serif;color:var(--ink);line-height:1.55;background:var(--paper);padding:0 0 50px;
+  }
+  .thw *{box-sizing:border-box;}
+
+  .thw .thw-mast{background:linear-gradient(135deg,var(--wine) 0%,var(--wine-2) 100%);padding:30px 24px 40px;position:relative;overflow:hidden;border-radius:0 0 18px 18px;}
+  .thw .thw-mast::after{content:"";position:absolute;inset-inline-end:-60px;top:-70px;width:230px;height:230px;border-radius:50%;background:var(--gold);opacity:.15;}
+  .thw .thw-mast-inner{max-width:1000px;margin:0 auto;position:relative;}
+  .thw .thw-topbar{display:flex;justify-content:flex-end;margin-bottom:14px;direction:ltr;}
+  .thw .thw-lang{display:inline-flex;background:rgba(0,0,0,.20);border-radius:999px;padding:4px;gap:2px;}
+  .thw .thw-lang button{border:0;cursor:pointer;background:transparent;color:rgba(255,255,255,.75);font:600 12.5px/1 'Inter',Arial,sans-serif;letter-spacing:.05em;padding:6px 13px;border-radius:999px;transition:.15s;}
+  .thw .thw-lang button.active{background:#fff;color:var(--wine);}
+  .thw .thw-eyebrow{display:inline-flex;align-items:center;gap:8px;text-transform:uppercase;letter-spacing:.10em;font-size:11.5px;font-weight:700;color:var(--wine);background:var(--gold);padding:5px 12px;border-radius:999px;margin:0 0 14px;}
+  .thw h1.thw-title{font-family:Arial,sans-serif;font-weight:800;font-size:clamp(26px,4.6vw,42px);line-height:1.06;margin:0 0 10px;color:#fff;letter-spacing:-.02em;}
+  .thw .thw-sub{color:#EAD9E2;font-size:15px;max-width:62ch;margin:0;}
+
+  .thw .thw-main{max-width:1000px;margin:0 auto;padding:0 24px;}
+
+  /* Filtre + arama */
+  .thw .thw-tools{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin-top:22px;}
+  .thw .thw-search{flex:1;min-width:220px;position:relative;}
+  .thw .thw-search svg{position:absolute;inset-inline-start:14px;top:50%;transform:translateY(-50%);width:17px;height:17px;color:var(--ink-soft);}
+  .thw .thw-search input{width:100%;border:1px solid var(--line);background:#fff;border-radius:999px;padding:11px 16px;padding-inline-start:40px;font:14px 'Inter',Arial,sans-serif;color:var(--ink);outline:none;}
+  .thw .thw-search input:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(200,155,60,.15);}
+  .thw .thw-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
+  .thw .thw-chip{border:1px solid var(--line);background:#fff;cursor:pointer;font:700 12.5px 'Inter',Arial,sans-serif;color:var(--ink-soft);padding:8px 14px;border-radius:999px;transition:.15s;}
+  .thw .thw-chip.active{background:var(--wine);color:#fff;border-color:var(--wine);}
+
+  /* Topluluk kartları */
+  .thw .thw-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px;}
+  @media(max-width:720px){ .thw .thw-grid{grid-template-columns:repeat(2,1fr);} }
+  @media(max-width:460px){ .thw .thw-grid{grid-template-columns:1fr;} }
+  .thw .thw-c{display:flex;flex-direction:column;align-items:stretch;background:var(--card);border:1px solid var(--line);border-radius:14px;text-decoration:none;box-shadow:0 6px 16px rgba(36,31,31,.05);transition:transform .16s,box-shadow .16s;border-inline-start:3px solid var(--cc,#888);overflow:hidden;}
+  .thw .thw-c:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(91,27,57,.12);}
+  .thw .thw-head{display:flex;align-items:center;gap:12px;padding:13px 14px;}
+  .thw .thw-head img{width:42px;height:42px;object-fit:contain;border-radius:9px;background:#fff;flex:none;}
+  .thw .thw-head .ph{width:42px;height:42px;border-radius:9px;flex:none;display:flex;align-items:center;justify-content:center;font:800 16px Arial;color:#fff;background:var(--cc,#888);}
+  .thw .thw-head b{font-family:Arial,sans-serif;font-size:13.5px;color:var(--wine);font-weight:800;line-height:1.2;display:block;}
+  .thw .thw-head span{font-size:11px;color:var(--ink-soft);}
+  .thw .thw-cover{position:relative;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;background:var(--cc,#888);overflow:hidden;}
+  .thw .thw-cover::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.18),rgba(0,0,0,.30));}
+  .thw .thw-cover::after{content:"";position:absolute;width:130px;height:130px;border-radius:50%;background:rgba(255,255,255,.08);top:-46px;inset-inline-end:-34px;}
+  .thw .thw-motif{position:relative;width:36%;height:auto;max-width:130px;fill:none;stroke:#fff;stroke-width:1.5;opacity:.92;stroke-linecap:round;stroke-linejoin:round;}
+  .thw .thw-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+  .thw .thw-hint{display:block;margin-top:6px;font-size:11.5px;line-height:1.45;color:var(--ink-soft);}
+  .thw .thw-hint b{color:var(--wine);}
+  .thw .thw-empty{display:none;text-align:center;color:var(--ink-soft);font-size:14px;padding:30px;}
+  .thw .thw-empty.show{display:block;}
+
+  /* Bölüm başlığı */
+  .thw .thw-h2{font-family:Arial,sans-serif;font-weight:800;font-size:20px;color:var(--wine);margin:34px 0 4px;letter-spacing:-.01em;display:flex;align-items:center;gap:10px;}
+  .thw .thw-h2::before{content:"";width:4px;height:21px;border-radius:3px;background:var(--gold);}
+
+  /* Etkinlikler */
+  .thw .thw-etabs{display:inline-flex;background:#EAE1E6;border-radius:999px;padding:4px;gap:2px;margin:14px 0 4px;}
+  .thw .thw-etab{border:0;cursor:pointer;background:transparent;color:var(--wine);font:700 13px 'Inter',Arial,sans-serif;padding:8px 16px;border-radius:999px;}
+  .thw .thw-etab.active{background:var(--wine);color:#fff;}
+  .thw .thw-epanel[hidden]{display:none;}
+  .thw .thw-egrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;margin-top:14px;}
+  .thw .thw-ec{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:0 8px 22px rgba(36,31,31,.06);cursor:pointer;transition:transform .16s,box-shadow .16s;}
+  .thw .thw-ec:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(91,27,57,.13);}
+  .thw .thw-ep{aspect-ratio:16/10;background:linear-gradient(135deg,var(--wine),var(--wine-2));display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;}
+  .thw .thw-ep img{width:100%;height:100%;object-fit:cover;}
+  .thw .thw-ep .ph{font:800 26px Arial;color:rgba(255,255,255,.4);}
+  .thw .thw-etype{position:absolute;top:9px;inset-inline-start:9px;background:var(--gold);color:var(--wine);font:800 10px 'Inter';text-transform:uppercase;letter-spacing:.04em;padding:3px 8px;border-radius:999px;}
+  .thw .thw-past .thw-ep{filter:grayscale(.3);}
+  .thw .thw-eb{padding:13px 14px;display:flex;gap:11px;}
+  .thw .thw-ed{flex:none;width:48px;text-align:center;background:var(--wine-soft);color:var(--wine);border-radius:9px;padding:6px 3px;height:fit-content;}
+  .thw .thw-ed b{display:block;font:800 17px Arial;line-height:1;}
+  .thw .thw-ed span{display:block;font-size:9.5px;text-transform:uppercase;margin-top:2px;}
+  .thw .thw-ei h3{font:800 13.5px Arial;color:var(--wine);margin:0 0 3px;line-height:1.25;}
+  .thw .thw-ei .m{font-size:11.5px;color:var(--ink-soft);display:block;}
+  .thw .thw-ei .cm{font-size:10.5px;color:var(--gold);font-weight:700;margin-top:4px;display:block;}
+  .thw .thw-eempty{display:none;text-align:center;color:var(--ink-soft);font-size:14px;padding:30px;background:var(--card);border:1px dashed var(--line);border-radius:var(--radius);margin-top:14px;}
+  .thw .thw-eempty.show{display:block;}
+
+  /* Yönetici paneli */
+  .thw .thw-admin{margin-top:36px;background:#2A1520;border-radius:var(--radius);padding:20px 22px;color:#EAD9E2;}
+  .thw .thw-admin h3{font-family:Arial,sans-serif;font-size:15px;font-weight:800;color:#fff;margin:0 0 4px;display:flex;align-items:center;gap:8px;}
+  .thw .thw-admin h3 svg{width:16px;height:16px;color:var(--gold);}
+  .thw .thw-admin p{font-size:12.5px;color:#C9AEBC;margin:0 0 14px;}
+  .thw .thw-arow{display:flex;flex-wrap:wrap;gap:10px;align-items:center;}
+  .thw .thw-admin input.pw{border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.08);border-radius:10px;padding:10px 13px;font:13.5px 'Inter';color:#fff;outline:none;min-width:180px;}
+  .thw .thw-admin input.pw:focus{border-color:var(--gold);}
+  .thw .thw-abtn{border:0;cursor:pointer;background:var(--gold);color:var(--wine);font:800 13px 'Inter';padding:11px 20px;border-radius:999px;transition:.15s;}
+  .thw .thw-abtn:hover{background:#fff;}
+  .thw .thw-abtn.ghost{background:rgba(255,255,255,.12);color:#fff;}
+  .thw .thw-abtn:disabled{opacity:.4;cursor:not-allowed;}
+  .thw .thw-astat{font-size:12.5px;font-weight:600;margin-inline-start:4px;}
+
+  /* Modal (form + detay) */
+  .thw .thw-modal{position:fixed;inset:0;background:rgba(22,13,20,.6);display:none;align-items:center;justify-content:center;padding:18px;z-index:9999;}
+  .thw .thw-modal.open{display:flex;}
+  .thw .thw-mbox{background:#fff;border-radius:16px;max-width:560px;width:100%;max-height:88vh;overflow:auto;box-shadow:0 30px 70px rgba(0,0,0,.3);}
+  .thw .thw-mhead{display:flex;align-items:center;justify-content:space-between;padding:18px 22px 0;}
+  .thw .thw-mhead h3{font-family:Arial,sans-serif;font-weight:800;color:var(--wine);margin:0;font-size:18px;}
+  .thw .thw-close{border:0;background:var(--wine-soft);color:var(--wine);width:34px;height:34px;border-radius:10px;cursor:pointer;font-size:19px;line-height:1;}
+  .thw .thw-form{padding:16px 22px 22px;}
+  .thw .thw-frow{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px;}
+  .thw .thw-f label{display:block;font-size:12px;font-weight:700;color:var(--ink);margin-bottom:5px;}
+  .thw .thw-f input,.thw .thw-f select,.thw .thw-f textarea{width:100%;border:1px solid var(--line);background:#fff;border-radius:10px;padding:10px 12px;font:13.5px 'Inter';color:var(--ink);outline:none;}
+  .thw .thw-f input:focus,.thw .thw-f select:focus,.thw .thw-f textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(200,155,60,.14);}
+  .thw .thw-f.full{grid-column:1/-1;}
+  .thw .thw-submit{display:inline-flex;align-items:center;gap:8px;background:var(--wine);color:#fff;border:0;cursor:pointer;font:800 14px 'Inter';padding:12px 24px;border-radius:999px;transition:.15s;}
+  .thw .thw-submit:hover{background:var(--wine-2);}
+  .thw .thw-submit:disabled{opacity:.5;cursor:progress;}
+  .thw .thw-fmsg{margin-top:12px;font-size:13px;font-weight:600;display:none;}
+  .thw .thw-fmsg.show{display:block;}
+  .thw .thw-fmsg.ok{color:#1E8E6A;}
+  .thw .thw-fmsg.err{color:#C0392B;}
+
+  /* Detay modal gövde */
+  .thw .thw-dposter{aspect-ratio:16/9;background:linear-gradient(135deg,var(--wine),var(--wine-2));display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;border-radius:16px 16px 0 0;}
+  .thw .thw-dposter img{width:100%;height:100%;object-fit:cover;}
+  .thw .thw-dposter .ph{font:800 40px Arial;color:rgba(255,255,255,.4);}
+  .thw .thw-dclose{position:absolute;top:12px;inset-inline-end:12px;border:0;background:rgba(0,0,0,.4);color:#fff;width:34px;height:34px;border-radius:10px;cursor:pointer;font-size:19px;}
+  .thw .thw-dbody{padding:20px 22px 22px;}
+  .thw .thw-dtype{display:inline-block;background:var(--gold);color:var(--wine);font:800 11px 'Inter';text-transform:uppercase;padding:3px 10px;border-radius:999px;margin-bottom:10px;}
+  .thw .thw-dbody h3{font:800 20px Arial;color:var(--wine);margin:0 0 12px;}
+  .thw .thw-dmeta div{font-size:13.5px;color:var(--ink);display:flex;gap:9px;align-items:center;margin-bottom:6px;}
+  .thw .thw-dmeta svg{width:16px;height:16px;color:var(--wine);flex:none;}
+  .thw .thw-ddesc{font-size:13.5px;color:var(--ink-soft);margin:12px 0 0;}
+
+  .thw[dir="rtl"]{text-align:right;}
+
+  @media (max-width:600px){ .thw .thw-frow{grid-template-columns:1fr;} .thw .thw-mast{padding:22px 18px 32px;} }
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="thw-i-search" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></symbol>
+  <symbol id="thw-i-lock" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></symbol>
+  <symbol id="thw-i-cal" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="M16 2v4M8 2v4M3 10h18"></path></symbol>
+  <symbol id="thw-i-clock" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></symbol>
+  <symbol id="thw-i-pin" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></symbol>
+  <symbol id="thw-i-user" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></symbol>
+</defs></svg>
+
+<div class="thw-mast">
+  <div class="thw-mast-inner">
+    <div class="thw-topbar">
+      <div class="thw-lang" role="group" aria-label="Dil / Language">
+        <button type="button" data-lang="tr" class="active">TR</button>
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="ar">AR</button>
+        <button type="button" data-lang="it">IT</button>
+        <button type="button" data-lang="fr">FR</button>
+      </div>
+    </div>
+    <p class="thw-eyebrow" data-tr="🎓 Sağlık, Kültür ve Spor · Öğrenci Toplulukları" data-en="🎓 Health, Culture &amp; Sports · Student Communities" data-ar="🎓 الصحة والثقافة والرياضة · المجتمعات الطلابية" data-it="🎓 Salute, Cultura e Sport · Comunità Studentesche" data-fr="🎓 Santé, Culture et Sport · Communautés Étudiantes">🎓 Sağlık, Kültür ve Spor · Öğrenci Toplulukları</p>
+    <h1 class="thw-title" data-tr="Öğrenci Topluluklarımız" data-en="Our Student Communities" data-ar="مجتمعاتنا الطلابية" data-it="Le Nostre Comunità Studentesche" data-fr="Nos Communautés Étudiantes">Öğrenci Topluluklarımız</h1>
+    <p class="thw-sub" data-tr="45 topluluk, sayısız etkinlik. İlgi alanına göre keşfet, katıl, üret." data-en="45 communities, countless events. Explore by interest, join, and create." data-ar="45 مجتمعاً وفعاليات لا تُحصى. اكتشف حسب اهتمامك، انضمّ، وأنتج." data-it="45 comunità, infiniti eventi. Esplora per interesse, unisciti e crea." data-fr="45 communautés, d&#39;innombrables événements. Explorez, rejoignez et créez.">45 topluluk, sayısız etkinlik. İlgi alanına göre keşfet, katıl, üret.</p>
+  </div>
+</div>
+
+<div class="thw-main">
+
+  
+  <div class="thw-tools">
+    <div class="thw-search">
+      <svg><use href="#thw-i-search"></use></svg>
+      <input type="text" class="thw-q" data-tr="Topluluk ara..." data-en="Search communities..." data-ar="ابحث عن مجتمع..." data-it="Cerca comunità..." data-fr="Rechercher..." placeholder="Topluluk ara..."/>
+    </div>
+  </div>
+  <div class="thw-chips" data-chips=""></div>
+
+  <div class="thw-grid" data-grid=""></div>
+  <div class="thw-empty" data-empty="" data-tr="Aramanıza uygun topluluk bulunamadı." data-en="No communities match your search." data-ar="لا توجد مجتمعات مطابقة." data-it="Nessuna comunità trovata." data-fr="Aucune communauté trouvée.">Aramanıza uygun topluluk bulunamadı.</div>
+
+  
+  <h2 class="thw-h2" data-tr="Etkinlik Takvimi" data-en="Event Calendar" data-ar="تقويم الفعاليات" data-it="Calendario Eventi" data-fr="Calendrier des Événements">Etkinlik Takvimi</h2>
+  <div class="thw-etabs">
+    <button type="button" class="thw-etab active" data-etab="up" data-tr="Yaklaşan" data-en="Upcoming" data-ar="القادمة" data-it="In Arrivo" data-fr="À Venir">Yaklaşan</button>
+    <button type="button" class="thw-etab" data-etab="past" data-tr="Geçmiş" data-en="Past" data-ar="السابقة" data-it="Passati" data-fr="Passés">Geçmiş</button>
+  </div>
+  <div class="thw-epanel" data-epanel="up"><div class="thw-egrid" data-egrid="up"></div><div class="thw-eempty" data-eempty="up" data-tr="Yaklaşan etkinlik yok." data-en="No upcoming events." data-ar="لا توجد فعاليات قادمة." data-it="Nessun evento in arrivo." data-fr="Aucun événement à venir.">Yaklaşan etkinlik yok.</div></div>
+  <div class="thw-epanel" data-epanel="past" hidden=""><div class="thw-egrid" data-egrid="past"></div><div class="thw-eempty" data-eempty="past" data-tr="Geçmiş etkinlik kaydı yok." data-en="No past events." data-ar="لا توجد فعاليات سابقة." data-it="Nessun evento passato." data-fr="Aucun événement passé.">Geçmiş etkinlik kaydı yok.</div></div>
+
+  
+  <div class="thw-admin">
+    <h3><svg><use href="#thw-i-lock"></use></svg><span data-tr="Yönetici Paneli" data-en="Admin Panel" data-ar="لوحة المشرف" data-it="Pannello Admin" data-fr="Panneau Admin">Yönetici Paneli</span></h3>
+    <p data-tr="Etkinlik eklemek için yönetici şifresiyle giriş yapın." data-en="Enter the admin password to add an event." data-ar="أدخل كلمة مرور المشرف لإضافة فعالية." data-it="Inserisci la password admin per aggiungere un evento." data-fr="Entrez le mot de passe admin pour ajouter un événement.">Etkinlik eklemek için yönetici şifresiyle giriş yapın.</p>
+    <div class="thw-arow">
+      <input type="password" class="pw" data-pw="" autocomplete="new-password" autocorrect="off" autocapitalize="off" spellcheck="false" data-tr="Yönetici şifresi" data-en="Admin password" data-ar="كلمة مرور المشرف" data-it="Password admin" data-fr="Mot de passe" placeholder="Yönetici şifresi"/>
+      <button type="button" class="thw-abtn ghost" data-login="" data-tr="Giriş" data-en="Log in" data-ar="دخول" data-it="Accedi" data-fr="Connexion">Giriş</button>
+      <button type="button" class="thw-abtn" data-addbtn="" disabled="" data-tr="+ Etkinlik Oluştur" data-en="+ Create Event" data-ar="+ إنشاء فعالية" data-it="+ Crea Evento" data-fr="+ Créer un Événement">+ Etkinlik Oluştur</button>
+      <button type="button" class="thw-abtn ghost" data-editbtn="" disabled="" data-tr="Topluluk Bilgilerini Düzenle" data-en="Edit Community Info" data-ar="تعديل معلومات المجتمع" data-it="Modifica Info Comunità" data-fr="Modifier les Infos">Topluluk Bilgilerini Düzenle</button>
+      <span class="thw-astat" data-astat=""></span>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="thw-modal" data-formmodal="">
+  <div class="thw-mbox">
+    <div class="thw-mhead">
+      <h3 data-tr="Yeni Etkinlik" data-en="New Event" data-ar="فعالية جديدة" data-it="Nuovo Evento" data-fr="Nouvel Événement">Yeni Etkinlik</h3>
+      <button type="button" class="thw-close" data-close="" aria-label="Kapat">×</button>
+    </div>
+    <form class="thw-form" data-eventform="">
+      <div class="thw-frow">
+        <div class="thw-f full"><label data-tr="Topluluk" data-en="Community" data-ar="المجتمع" data-it="Comunità" data-fr="Communauté">Topluluk</label><select name="community" data-commselect="" required=""></select></div>
+      </div>
+      <div class="thw-frow">
+        <div class="thw-f full"><label data-tr="Etkinlik Adı" data-en="Event Name" data-ar="اسم الفعالية" data-it="Nome Evento" data-fr="Nom de l&#39;Événement">Etkinlik Adı</label><input type="text" name="name" required=""/></div>
+      </div>
+      <div class="thw-frow">
+        <div class="thw-f"><label data-tr="Tür" data-en="Type" data-ar="النوع" data-it="Tipo" data-fr="Type">Tür</label><input type="text" name="type" data-tr="" placeholder="Atölye / Seminer / Gezi"/></div>
+        <div class="thw-f"><label data-tr="Yer" data-en="Place" data-ar="المكان" data-it="Luogo" data-fr="Lieu">Yer</label><input type="text" name="place"/></div>
+      </div>
+      <div class="thw-frow">
+        <div class="thw-f"><label data-tr="Tarih" data-en="Date" data-ar="التاريخ" data-it="Data" data-fr="Date">Tarih</label><input type="date" name="date" required=""/></div>
+        <div class="thw-f"><label data-tr="Saat" data-en="Time" data-ar="الوقت" data-it="Ora" data-fr="Heure">Saat</label><input type="time" name="time"/></div>
+      </div>
+      <div class="thw-frow">
+        <div class="thw-f full"><label data-tr="Açıklama" data-en="Description" data-ar="الوصف" data-it="Descrizione" data-fr="Description">Açıklama</label><textarea name="desc" rows="2"></textarea></div>
+      </div>
+      <div class="thw-frow">
+        <div class="thw-f"><label data-tr="Etkinlik Sorumlusu" data-en="Event Manager" data-ar="مسؤول الفعالية" data-it="Responsabile" data-fr="Responsable">Etkinlik Sorumlusu</label><input type="text" name="manager"/></div>
+        <div class="thw-f"><label data-tr="Sorumlu İletişim" data-en="Contact" data-ar="التواصل" data-it="Contatto" data-fr="Contact">Sorumlu İletişim</label><input type="text" name="contact"/></div>
+      </div>
+      <div class="thw-frow">
+        <div class="thw-f full"><label data-tr="Afiş (opsiyonel, en fazla 500 KB)" data-en="Poster (optional, max 500 KB)" data-ar="ملصق (اختياري، 500 كيلوبايت كحد أقصى)" data-it="Locandina (opzionale, max 500 KB)" data-fr="Affiche (facultatif, max 500 Ko)">Afiş (opsiyonel, en fazla 500 KB)</label><input type="file" name="poster" accept="image/*"/></div>
+      </div>
+      <button type="submit" class="thw-submit" data-tr="Etkinliği Kaydet" data-en="Save Event" data-ar="حفظ الفعالية" data-it="Salva Evento" data-fr="Enregistrer">Etkinliği Kaydet</button>
+      <p class="thw-fmsg" data-fmsg=""></p>
+    </form>
+  </div>
+</div>
+
+
+<div class="thw-modal" data-detailmodal="">
+  <div class="thw-mbox">
+    <div class="thw-dposter" data-dposter=""><button type="button" class="thw-dclose" data-close="" aria-label="Kapat">×</button></div>
+    <div class="thw-dbody">
+      <span class="thw-dtype" data-dtype=""></span>
+      <h3 data-dtitle=""></h3>
+      <div class="thw-dmeta">
+        <div><svg><use href="#thw-i-cal"></use></svg><span data-ddate=""></span></div>
+        <div><svg><use href="#thw-i-clock"></use></svg><span data-dtime=""></span></div>
+        <div><svg><use href="#thw-i-pin"></use></svg><span data-dplace=""></span></div>
+        <div><svg><use href="#thw-i-user"></use></svg><span data-dmanager=""></span></div>
+      </div>
+      <p class="thw-ddesc" data-ddesc=""></p>
+    </div>
+  </div>
+</div>
+
+
+<div class="thw-modal" data-editmodal="">
+  <div class="thw-mbox">
+    <div class="thw-mhead">
+      <h3 data-tr="Topluluk Bilgileri" data-en="Community Info" data-ar="معلومات المجتمع" data-it="Info Comunità" data-fr="Infos Communauté">Topluluk Bilgileri</h3>
+      <button type="button" class="thw-close" data-close="" aria-label="Kapat">×</button>
+    </div>
+    <form class="thw-form" data-editform="">
+      <div class="thw-frow">
+        <div class="thw-f full"><label data-tr="Topluluk seç" data-en="Select community" data-ar="اختر المجتمع" data-it="Seleziona comunità" data-fr="Choisir">Topluluk seç</label><select data-editselect="" required=""></select></div>
+      </div>
+      <div class="thw-frow">
+        <div class="thw-f"><label data-tr="Danışman" data-en="Advisor" data-ar="المستشار" data-it="Referente" data-fr="Conseiller">Danışman</label><input type="text" name="Danışman"/></div>
+        <div class="thw-f"><label>Danışman E-posta</label><input type="text" name="Danışman E-posta"/></div>
+      </div>
+      <div class="thw-frow">
+        <div class="thw-f"><label data-tr="Başkan" data-en="President" data-ar="الرئيس" data-it="Presidente" data-fr="Président">Başkan</label><input type="text" name="Başkan"/></div>
+        <div class="thw-f"><label>Başkan E-posta</label><input type="text" name="Başkan E-posta"/></div>
+      </div>
+      <div class="thw-frow">
+        <div class="thw-f full"><label data-tr="Slogan" data-en="Slogan" data-ar="الشعار" data-it="Slogan" data-fr="Slogan">Slogan</label><input type="text" name="Slogan"/></div>
+      </div>
+      <div class="thw-frow">
+        <div class="thw-f full"><label data-tr="Foto (URL) — ana sayfada topluluğun altında görünür" data-en="Photo (URL) — shown under the community on the home page" data-ar="الصورة (رابط) — تظهر أسفل المجتمع في الصفحة الرئيسية" data-it="Foto (URL) — mostrata sotto la comunità in home" data-fr="Photo (URL) — affichée sous la communauté sur l&#39;accueil">Foto (URL) — ana sayfada topluluğun altında görünür</label><input type="url" name="Foto URL" placeholder="https://sks.ostimteknik.edu.tr/web/image/..."/><small class="thw-hint" data-tr="İpucu: Kapak kare (1:1) gösterilir. En az &lt;b&gt;600×600 px&lt;/b&gt;, ideal &lt;b&gt;800×800 px&lt;/b&gt; kare bir görsel yükleyin; konuyu ortada tutun (kenarlar kırpılır)." data-en="Tip: the cover is shown square (1:1). Upload at least &lt;b&gt;600×600 px&lt;/b&gt;, ideally &lt;b&gt;800×800 px&lt;/b&gt;, square; keep the subject centered (edges are cropped)." data-ar="نصيحة: يظهر الغلاف مربعًا (1:1). ارفع صورة لا تقل عن &lt;b&gt;600×600 بكسل&lt;/b&gt;، ويُفضّل &lt;b&gt;800×800 بكسل&lt;/b&gt;، مربعة؛ واجعل الموضوع في المنتصف (تُقتطع الحواف)." data-it="Suggerimento: la copertina è quadrata (1:1). Carica almeno &lt;b&gt;600×600 px&lt;/b&gt;, idealmente &lt;b&gt;800×800 px&lt;/b&gt;, quadrata; mantieni il soggetto al centro (i bordi vengono ritagliati)." data-fr="Astuce : la couverture est carrée (1:1). Importez au moins &lt;b&gt;600×600 px&lt;/b&gt;, idéalement &lt;b&gt;800×800 px&lt;/b&gt;, carré ; gardez le sujet centré (les bords sont rognés).">İpucu: Kapak kare (1:1) gösterilir. En az <b>600×600 px</b>, ideal <b>800×800 px</b> kare bir görsel yükleyin; konuyu ortada tutun (kenarlar kırpılır).</small></div>
+      </div>
+      <div class="thw-frow">
+        <div class="thw-f"><label>Instagram</label><input type="url" name="Instagram" placeholder="https://"/></div>
+        <div class="thw-f"><label>X</label><input type="url" name="X" placeholder="https://"/></div>
+      </div>
+      <div class="thw-frow">
+        <div class="thw-f"><label>YouTube</label><input type="url" name="YouTube" placeholder="https://"/></div>
+        <div class="thw-f"><label>LinkedIn</label><input type="url" name="LinkedIn" placeholder="https://"/></div>
+      </div>
+      <div class="thw-frow">
+        <div class="thw-f"><label>Facebook</label><input type="url" name="Facebook" placeholder="https://"/></div>
+        <div class="thw-f"><label>TikTok</label><input type="url" name="TikTok" placeholder="https://"/></div>
+      </div>
+      <div class="thw-frow">
+        <div class="thw-f"><label>Discord</label><input type="url" name="Discord" placeholder="https://"/></div>
+        <div class="thw-f"><label>GitHub</label><input type="url" name="GitHub" placeholder="https://"/></div>
+      </div>
+      <div class="thw-frow">
+        <div class="thw-f full"><label data-tr="Web sitesi" data-en="Website" data-ar="الموقع" data-it="Sito web" data-fr="Site web">Web sitesi</label><input type="url" name="Web" placeholder="https://"/></div>
+      </div>
+      <button type="submit" class="thw-submit" data-tr="Kaydet" data-en="Save" data-ar="حفظ" data-it="Salva" data-fr="Enregistrer">Kaydet</button>
+      <p class="thw-fmsg" data-editmsg=""></p>
+    </form>
+  </div>
+</div>
+
+<script>
+(function(){
+  var root = document.currentScript ? document.currentScript.closest('.thw') : null;
+  if(!root) root = document.querySelector('.thw');
+  if(!root) return;
+
+  /* ============ CONFIG ============ */
+  var CONFIG = {
+    scriptUrl: 'https://script.google.com/macros/s/AKfycbxfa9_s4PC_XOI0WyFEUc04wOW-bwN6qWvl9Au76SdVtbxhNGtFWsEOHcB64IgJnMqb/exec',  // Apps Script /exec
+    base: 'https://sks.ostimteknik.edu.tr/'          // topluluk kart linkleri (slug bununla birleşir)
+  };
+
+  var lang='tr';
+  var CATS = {
+    1:{tr:'Yazılım, YZ & Teknoloji',en:'Software, AI & Tech',ar:'البرمجيات والذكاء الاصطناعي',it:'Software, IA & Tech',fr:'Logiciel, IA & Tech',c:'#5A4AE0'},
+    2:{tr:'Mühendislik, Havacılık & Savunma',en:'Engineering, Aviation & Defence',ar:'الهندسة والطيران والدفاع',it:'Ingegneria, Aviazione & Difesa',fr:'Ingénierie, Aviation & Défense',c:'#15628F'},
+    3:{tr:'Girişimcilik, İş & Yönetim',en:'Entrepreneurship & Business',ar:'ريادة الأعمال والإدارة',it:'Imprenditoria & Business',fr:'Entrepreneuriat & Business',c:'#1E8E6A'},
+    4:{tr:'Tasarım, Sanat & Kültür',en:'Design, Art & Culture',ar:'التصميم والفن والثقافة',it:'Design, Arte & Cultura',fr:'Design, Art & Culture',c:'#E0672E'},
+    5:{tr:'Uluslararası, Dil & Diplomasi',en:'International, Language & Diplomacy',ar:'الدولية واللغة والدبلوماسية',it:'Internazionale, Lingua & Diplomazia',fr:'International, Langue & Diplomatie',c:'#0E8C8C'},
+    6:{tr:'Sosyal Sorumluluk & Toplum',en:'Social Responsibility',ar:'المسؤولية الاجتماعية',it:'Responsabilità Sociale',fr:'Responsabilité Sociale',c:'#5AA02C'},
+    7:{tr:'Spor & Rekreasyon',en:'Sports & Recreation',ar:'الرياضة والترفيه',it:'Sport & Ricreazione',fr:'Sport & Loisirs',c:'#D64533'}
+  };
+  var UI = {
+    all:{tr:'Tümü',en:'All',ar:'الكل',it:'Tutti',fr:'Tous'},
+    months:{tr:['Oca','Şub','Mar','Nis','May','Haz','Tem','Ağu','Eyl','Eki','Kas','Ara'],en:['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],ar:['ينا','فبر','مار','أبر','ماي','يون','يول','أغس','سبت','أكت','نوف','ديس'],it:['Gen','Feb','Mar','Apr','Mag','Giu','Lug','Ago','Set','Ott','Nov','Dic'],fr:['Jan','Fév','Mar','Avr','Mai','Juin','Juil','Aoû','Sep','Oct','Nov','Déc']}
+  };
+  // Topluluklar: n=ad, c=kategori, g=logo id, s=slug (link)
+  var COMM = [
+    {n:'Yapay Zeka',c:1,g:'396228-db88ee06',s:'yapay-zeka-ogrenci-toplulugu'},
+    {n:'Pandora AI',c:1,g:'396224-8d5117b8',s:'pandora-ai-ogrenci-toplulugu'},
+    {n:'Siber Güvenlik',c:1,g:'396233-45db5b83',s:'siber-guvenlik-ogrenci-toplulugu'},
+    {n:'Software Club',c:1,g:'396215-aea738b4',s:'software-club-ogrenci-toplulugu'},
+    {n:'Google Developer Student Clubs',c:1,g:'396231-040356b1',s:'google-developer-student-clubs'},
+    {n:'Huawei Student Developers',c:1,g:'396204-91025048',s:'huawei-student-developers-ogrenci-toplulugu'},
+    {n:'IEEE',c:1,g:'396205-d2b2a13f',s:'ieee-ogrenci-toplulugu'},
+    {n:'Yönetim Bilişim Sistemleri',c:1,g:'396217-c7806a76',s:'yonetim-bilisim-sistemleri-ogrenci-toplulugu'},
+    {n:'Sosyal Teknoloji',c:1,g:'396227-62d71fe9',s:'sosyal-teknoloji-ogrenci-toplulugu'},
+    {n:'Elektrikli Araçlar',c:2,g:'396199-33f10370',s:'elektrikli-araclar-ogrenci-toplulugu'},
+    {n:'Elektro Optik',c:2,g:'396193-71a0f635',s:'elektro-optik-ogrenci-toplulugu'},
+    {n:'Elektronik Harp ve Hava Savunma',c:2,g:'396196-bc27f1d4',s:'elektronik-harp-ve-hava-savunma-sanayi-ogrenci-toplulugu'},
+    {n:'Havacılık ve Uzay',c:2,g:'396203-ef7c3a40',s:'havaclk-ve-uzay-ogrenci-toplulugu'},
+    {n:'Hava Araçları Teknolojileri Geliştirme',c:2,g:'396212-ec2596c3',s:'hava-araclar-teknolojileri-gelistirme-ogrenci-toplulugu'},
+    {n:'İHA',c:2,g:'396208-a5799b0e',s:'iha-ogrenci-toplulugu'},
+    {n:'Savunma Sanayi',c:2,g:'396214-f74a26a0',s:'savunma-sanayi-ogrenci-toplulugu'},
+    {n:'Kalite, Mühendislik ve İnovasyon',c:2,g:'396218-95c6692a',s:'kalite-muhendislik-yonetimi-ve-inovasyon-ogrenci-toplulugu'},
+    {n:'Teknofest',c:2,g:'396229-64f41b07',s:'teknofest-ogrenci-toplulugu'},
+    {n:'Motor Sporları',c:2,g:'396597-d1d1f409',s:'motor-sporlar-ogrenci-toplulugu'},
+    {n:'İşletme',c:3,g:'396209-1e680230',s:'isletme-ogrenci-toplulugu'},
+    {n:'İş-Biz',c:3,g:'396216-6c89c50a',s:'is-biz-ogranci-toplulugu'},
+    {n:'Ekonomik ve Sosyal Araştırmalar',c:3,g:'396192-ee698d64',s:'ekonomik-ve-sosyal-arastrmalar-ogrenci-toplulugu'},
+    {n:'Fintech',c:3,g:'396197-da2a77d1',s:'fintech-ogrenci-toplulugu'},
+    {n:'Fikridea',c:3,g:'396587-6a3391f3',s:'fikridea-ogrenci-toplulugu'},
+    {n:'PMI Türkiye',c:3,g:'421497-c4c94d53',s:'pmi-turkey-ogrenci-toplulugu'},
+    {n:'Endüstriyel Tasarım',c:4,g:'396195-afa38af9',s:'endustriyel-tasarm-ogrenci-toplulugu'},
+    {n:'İç Mimarlık, Mesleki Gelişim ve İnovasyon',c:4,g:'396207-78baf3ab',s:'ic-mimarlik-mesleki-gelisim-ve-inovasyon-ogrenci-toplulugu'},
+    {n:'Evrensel Müzik',c:4,g:'396226-48fa0183',s:'evrensel-muzik-ogrenci-toplulugu'},
+    {n:'Fotoğrafçılık ve Çağdaş Sanatlar',c:4,g:'396200-72634379',s:'fotografclk-ve-cagdas-sanatlar-ogrenci-toplulugu'},
+    {n:'Tiyatro',c:4,g:'396223-151e83fa',s:'tiyatro-ogrenci-toplulugu'},
+    {n:'Halk Dansları',c:4,g:'396234-aaf543d1',s:'halk-danslar-ogrenci-toplulugu'},
+    {n:'Rus Kültür ve Edebiyat',c:4,g:'396210-5b52d211',s:'rus-kultur-ve-edebiyat-ogrenci-toplulugu'},
+    {n:'Akıl ve Zeka Oyunları',c:4,g:'396191-46344316',s:'akl-ve-zeka-ogrenci-toplulugu'},
+    {n:'English Speaking Club',c:5,g:'396211-e2f4719d',s:'englishspeakingclub'},
+    {n:'ERASMUS+',c:5,g:'396194-d4353011',s:'erasmus-ogrenci-toplulugu'},
+    {n:'Türk Dünyası Araştırmaları',c:5,g:'396221-7e77c22b',s:'turk-dunyas-arastrmalar-ogrenci-toplulugu'},
+    {n:'Türkiye-Azerbaycan Dostluk',c:5,g:'396230-55f433fe',s:'turkiye-azerbaycan-ogrenci-toplulugu'},
+    {n:'Münazara ve Hitabet',c:5,g:'396213-4dc24df0',s:'munazara-ve-hitabet-ogrenci-toplulugu'},
+    {n:'LÖSEV Fayda',c:6,g:'396222-bd0a3e80',s:'losev-fayda-ogrenci-toplulugu'},
+    {n:'Genç TEMA',c:6,g:'396206-1fc777f9',s:'genc-tema-ogrenci-toplulugu'},
+    {n:'Toplumsal Kültür ve Yardımlaşma',c:6,g:'396220-68d9c016',s:'toplumsal-kultur-ve-yardmlasma-ogrenci-toplulugu'},
+    {n:'E-Spor',c:7,g:'396202-1debc534',s:'e-spor-ogrenci-toplulugu'},
+    {n:'Voleybol',c:7,g:'396237-2691a902',s:'voleybol-ogrenci-toplulugu-1'},
+    {n:'UNIGFB',c:7,g:'396225-5b1b86ca',s:'unigfb-ogrenci-toplulugu'},
+    {n:'Gezi',c:7,g:'396198-26e18ba7',s:'gezi-ogrenci-toplulugu'}
+  ];
+
+  // Topluluk adlarının çok dilli GÖRÜNEN karşılıkları (n = sabit anahtar; burada yoksa Türkçe kalır).
+  // Marka/özel adlar (IEEE, GDSC, Huawei, PMI, ERASMUS+, LÖSEV, Genç TEMA, E-Spor, UNIGFB, İş-Biz, Pandora AI, Software Club, Fintech, Fikridea, Teknofest, English Speaking Club) bilerek çevrilmedi.
+  var NAMEI18N = {
+    "Yapay Zeka":{en:"Artificial Intelligence",ar:"الذكاء الاصطناعي",it:"Intelligenza Artificiale",fr:"Intelligence Artificielle"},
+    "Siber Güvenlik":{en:"Cybersecurity",ar:"الأمن السيبراني",it:"Cybersicurezza",fr:"Cybersécurité"},
+    "Yönetim Bilişim Sistemleri":{en:"Management Information Systems",ar:"نظم المعلومات الإدارية",it:"Sistemi Informativi Gestionali",fr:"Systèmes d'Information de Gestion"},
+    "Sosyal Teknoloji":{en:"Social Technology",ar:"التكنولوجيا الاجتماعية",it:"Tecnologia Sociale",fr:"Technologie Sociale"},
+    "Elektrikli Araçlar":{en:"Electric Vehicles",ar:"المركبات الكهربائية",it:"Veicoli Elettrici",fr:"Véhicules Électriques"},
+    "Elektro Optik":{en:"Electro-Optics",ar:"الإلكترو بصريات",it:"Elettro-ottica",fr:"Électro-optique"},
+    "Elektronik Harp ve Hava Savunma":{en:"Electronic Warfare & Air Defence",ar:"الحرب الإلكترونية والدفاع الجوي",it:"Guerra Elettronica e Difesa Aerea",fr:"Guerre Électronique et Défense Aérienne"},
+    "Havacılık ve Uzay":{en:"Aviation & Space",ar:"الطيران والفضاء",it:"Aviazione e Spazio",fr:"Aviation et Espace"},
+    "Hava Araçları Teknolojileri Geliştirme":{en:"Aircraft Technologies Development",ar:"تطوير تقنيات الطائرات",it:"Sviluppo Tecnologie Aeromobili",fr:"Développement des Technologies Aéronautiques"},
+    "İHA":{en:"UAV",ar:"الطائرات المسيّرة",it:"UAV (Droni)",fr:"Drones (UAV)"},
+    "Savunma Sanayi":{en:"Defence Industry",ar:"الصناعات الدفاعية",it:"Industria della Difesa",fr:"Industrie de la Défense"},
+    "Kalite, Mühendislik ve İnovasyon":{en:"Quality, Engineering & Innovation",ar:"الجودة والهندسة والابتكار",it:"Qualità, Ingegneria e Innovazione",fr:"Qualité, Ingénierie et Innovation"},
+    "Motor Sporları":{en:"Motorsports",ar:"رياضة المحركات",it:"Sport Motoristici",fr:"Sports Mécaniques"},
+    "İşletme":{en:"Business Administration",ar:"إدارة الأعمال",it:"Economia Aziendale",fr:"Gestion d'Entreprise"},
+    "Ekonomik ve Sosyal Araştırmalar":{en:"Economic & Social Research",ar:"الأبحاث الاقتصادية والاجتماعية",it:"Ricerca Economica e Sociale",fr:"Recherche Économique et Sociale"},
+    "Endüstriyel Tasarım":{en:"Industrial Design",ar:"التصميم الصناعي",it:"Design Industriale",fr:"Design Industriel"},
+    "İç Mimarlık, Mesleki Gelişim ve İnovasyon":{en:"Interior Architecture, Professional Development & Innovation",ar:"العمارة الداخلية والتطوير المهني والابتكار",it:"Architettura d'Interni, Sviluppo Professionale e Innovazione",fr:"Architecture d'Intérieur, Développement Professionnel et Innovation"},
+    "Evrensel Müzik":{en:"Universal Music",ar:"الموسيقى العالمية",it:"Musica Universale",fr:"Musique Universelle"},
+    "Fotoğrafçılık ve Çağdaş Sanatlar":{en:"Photography & Contemporary Arts",ar:"التصوير والفنون المعاصرة",it:"Fotografia e Arti Contemporanee",fr:"Photographie et Arts Contemporains"},
+    "Tiyatro":{en:"Theatre",ar:"المسرح",it:"Teatro",fr:"Théâtre"},
+    "Halk Dansları":{en:"Folk Dances",ar:"الرقص الشعبي",it:"Danze Popolari",fr:"Danses Folkloriques"},
+    "Rus Kültür ve Edebiyat":{en:"Russian Culture & Literature",ar:"الثقافة والأدب الروسي",it:"Cultura e Letteratura Russa",fr:"Culture et Littérature Russes"},
+    "Akıl ve Zeka Oyunları":{en:"Mind & Intelligence Games",ar:"ألعاب العقل والذكاء",it:"Giochi di Logica e Intelligenza",fr:"Jeux de Logique et d'Intelligence"},
+    "Türk Dünyası Araştırmaları":{en:"Turkic World Studies",ar:"دراسات العالم التركي",it:"Studi sul Mondo Turco",fr:"Études du Monde Turc"},
+    "Türkiye-Azerbaycan Dostluk":{en:"Türkiye-Azerbaijan Friendship",ar:"الصداقة التركية الأذربيجانية",it:"Amicizia Türkiye-Azerbaigian",fr:"Amitié Türkiye-Azerbaïdjan"},
+    "Münazara ve Hitabet":{en:"Debate & Oratory",ar:"المناظرة والخطابة",it:"Dibattito e Oratoria",fr:"Débat et Éloquence"},
+    "Toplumsal Kültür ve Yardımlaşma":{en:"Social Culture & Solidarity",ar:"الثقافة المجتمعية والتكافل",it:"Cultura Sociale e Solidarietà",fr:"Culture Sociale et Solidarité"},
+    "Voleybol":{en:"Volleyball",ar:"الكرة الطائرة",it:"Pallavolo",fr:"Volley-ball"},
+    "Gezi":{en:"Travel",ar:"الرحلات",it:"Viaggi",fr:"Voyages"}
+  };
+  function nameFor(t){ var m=NAMEI18N[t.n]; return (m && m[lang]) ? m[lang] : t.n; }
+
+  var activeCat = 0;
+  function esc(s){return String(s||'').replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+
+  /* Kategori chip'leri */
+  function renderChips(){
+    var box = root.querySelector('[data-chips]'); box.innerHTML='';
+    var all = document.createElement('button'); all.className='thw-chip'+(activeCat===0?' active':''); all.textContent=UI.all[lang];
+    all.onclick=function(){activeCat=0;renderChips();renderCards();}; box.appendChild(all);
+    Object.keys(CATS).forEach(function(k){
+      var b=document.createElement('button'); b.className='thw-chip'+(activeCat==k?' active':''); b.textContent=CATS[k][lang];
+      b.style.borderColor=activeCat==k?CATS[k].c:''; if(activeCat==k){b.style.background=CATS[k].c;b.style.color='#fff';}
+      b.onclick=function(){activeCat=+k;renderChips();renderCards();}; box.appendChild(b);
+    });
+  }
+  /* Topluluk kartları */
+  // Kategori kapak motifleri (topluluğa özel foto yoksa gösterilir)
+  var MOTIF = {
+    1:'<rect x="6" y="6" width="12" height="12" rx="2"/><rect x="9.5" y="9.5" width="5" height="5" rx="1"/><path d="M9 3v3M15 3v3M9 18v3M15 18v3M3 9h3M3 15h3M18 9h3M18 15h3"/>',
+    2:'<path d="M21 3L3 10.5l6.5 2.2L12 19l3.2-5.5z"/><path d="M9.5 12.7l4.2-3.9"/>',
+    3:'<path d="M4 20h16"/><path d="M7 20v-5M12 20v-9M17 20v-13"/><path d="M6 10.5l4-3 3 2 5.5-5"/><path d="M17 4h2.5v2.5"/>',
+    4:'<path d="M12 3a9 9 0 1 0 1 17.95c1.3-.15 1.3-1.55.4-2.3-.9-.75-.5-2.15.7-2.15H17a4 4 0 0 0 4-4c0-4.7-4-8.3-9-8.5z"/><circle cx="8" cy="11" r="1"/><circle cx="12" cy="8" r="1"/><circle cx="16" cy="11" r="1"/>',
+    5:'<circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18z"/><path d="M5 7c4.5 2.2 9.5 2.2 14 0M5 17c4.5-2.2 9.5-2.2 14 0"/>',
+    6:'<path d="M12 20.3l-1.4-1.3C6 14.9 3 12.2 3 8.9 3 6.2 5.1 4 7.8 4c1.6 0 3.1.8 4 2 .9-1.2 2.4-2 4-2C18.9 4 21 6.2 21 8.9c0 3.3-3 6-7.6 10.1z"/>',
+    7:'<path d="M8 4h8v4a4 4 0 0 1-8 0z"/><path d="M8 5H5.4A1.4 1.4 0 0 0 4 6.4C4 8.3 5.6 9.6 8 9.9"/><path d="M16 5h2.6A1.4 1.4 0 0 1 20 6.4C20 8.3 18.4 9.6 16 9.9"/><path d="M12 12v3M9 20h6M10 20l.5-2.6h3l.5 2.6"/>'
+  };
+
+  function renderCards(){
+    var grid=root.querySelector('[data-grid]'), q=(root.querySelector('.thw-q').value||'').toLowerCase().trim();
+    grid.innerHTML=''; var shown=0;
+    COMM.forEach(function(t){
+      if(activeCat && t.c!==activeCat) return;
+      if(q && (t.n+' '+nameFor(t)).toLowerCase().indexOf(q)<0) return;
+      shown++;
+      var a=document.createElement('a'); a.className='thw-c'; a.href=CONFIG.base+t.s; a.target='_blank'; a.rel='noopener';
+      a.style.setProperty('--cc',CATS[t.c].c);
+      var nm=nameFor(t);
+      var head='<div class="thw-head"><img src="https://sks.ostimteknik.edu.tr/web/image/'+t.g+'" alt="" loading="lazy" onerror="this.outerHTML=\'<span class=&quot;ph&quot;>'+esc(nm.charAt(0))+'</span>\'">'+
+        '<span><b>'+esc(nm)+'</b><span>'+esc(CATS[t.c][lang])+'</span></span></div>';
+      var cover='<div class="thw-cover"><svg class="thw-motif" viewBox="0 0 24 24">'+(MOTIF[t.c]||'')+'</svg>'+
+        (t.photo?'<img class="thw-photo" src="'+esc(t.photo)+'" alt="" loading="lazy" onerror="this.remove()">':'')+'</div>';
+      a.innerHTML=head+cover;
+      grid.appendChild(a);
+    });
+    root.querySelector('[data-empty]').classList.toggle('show',shown===0);
+  }
+
+  /* ===== Etkinlikler ===== */
+  var EVENTS=[];
+  var DEMO=[
+    {community:'Yapay Zeka',name:'YZ ile Görüntü İşleme Atölyesi',type:'Atölye',date:'2026-09-18',time:'14:00',place:'Merkez Kampüs F Blok',desc:'Uygulamalı atölye.',poster:'',manager:'',contact:''},
+    {community:'Fintech',name:'Sektörde Finansal Teknolojiler',type:'Seminer',date:'2026-10-02',time:'16:00',place:'Konferans Salonu 1',desc:'Konuk konuşmacılar.',poster:'',manager:'',contact:''},
+    {community:'Havacılık ve Uzay',name:'Model Roket Fırlatma Günü',type:'Etkinlik',date:'2026-05-12',time:'11:00',place:'Açık Alan',desc:'Bahar etkinliği.',poster:'',manager:'',contact:''},
+    {community:'Fotoğrafçılık ve Çağdaş Sanatlar',name:'Şehir Fotoğrafçılığı Gezisi',type:'Gezi',date:'2026-04-06',time:'10:00',place:'Ankara Kalesi',desc:'Saha çalışması.',poster:'',manager:'',contact:''}
+  ];
+  function poster(v){if(!v)return '';v=String(v).trim();var m=v.match(/[-\w]{25,}/);if(v.indexOf('drive.google')>-1&&m)return 'https://drive.google.com/thumbnail?id='+m[0]+'&sz=w800';return v;}
+  function pdate(s){if(!s)return null;if(s instanceof Date)return s;var m=String(s).match(/^(\d{4})-(\d{1,2})-(\d{1,2})/);if(m)return new Date(+m[1],+m[2]-1,+m[3]);var d=new Date(s);return isNaN(d)?null:d;}
+  function renderEvents(){
+    var today=new Date();today.setHours(0,0,0,0);
+    ['up','past'].forEach(function(kind){
+      var grid=root.querySelector('[data-egrid="'+kind+'"]'),empty=root.querySelector('[data-eempty="'+kind+'"]');
+      var list=EVENTS.filter(function(e){var d=e._d;if(!d)return kind==='up';return kind==='up'?d>=today:d<today;});
+      list.sort(function(a,b){return kind==='up'?a._d-b._d:b._d-a._d;});
+      grid.innerHTML='';
+      list.forEach(function(e){
+        var d=e._d,pu=poster(e.poster);
+        var c=document.createElement('div');c.className='thw-ec'+(kind==='past'?' thw-past':'');
+        c.innerHTML='<div class="thw-ep">'+(e.type?'<span class="thw-etype">'+esc(e.type)+'</span>':'')+(pu?'<img src="'+esc(pu)+'" onerror="this.remove()">':'<span class="ph">'+esc((e.community||'?').charAt(0))+'</span>')+'</div>'+
+          '<div class="thw-eb"><div class="thw-ed"><b>'+(d?d.getDate():'')+'</b><span>'+(d?UI.months[lang][d.getMonth()]:'')+'</span></div>'+
+          '<div class="thw-ei"><h3>'+esc(e.name)+'</h3><span class="m">'+esc(e.time||'')+(e.place?' · '+esc(e.place):'')+'</span>'+(e.community?'<span class="cm">'+esc(e.community)+'</span>':'')+'</div></div>';
+        c.onclick=function(){openDetail(e);};grid.appendChild(c);
+      });
+      if(empty)empty.classList.toggle('show',list.length===0);
+    });
+  }
+  function loadEvents(){
+    if(!CONFIG.scriptUrl){EVENTS=DEMO.map(function(e){var o={};for(var k in e)o[k]=e[k];o._d=pdate(e.date);return o;});renderEvents();return;}
+    fetch(CONFIG.scriptUrl).then(function(r){return r.json();}).then(function(j){
+      if(j&&j.ok&&j.events){EVENTS=j.events.map(function(e){e._d=pdate(e.date);return e;});renderEvents();}
+    }).catch(function(){EVENTS=DEMO.map(function(e){var o={};for(var k in e)o[k]=e[k];o._d=pdate(e.date);return o;});renderEvents();});
+  }
+  function loadCommunityPhotos(){
+    // Panelden E-Tablo'ya girilen "Foto URL" değerlerini toplu çekip kartlara basar.
+    // Backend bu ucu desteklemiyorsa sessizce hiçbir şey yapmaz (temalı motifler kalır).
+    if(!CONFIG.scriptUrl) return;
+    fetch(CONFIG.scriptUrl+'?action=communities&t='+Date.now()).then(function(r){return r.json();}).then(function(j){
+      var list=(j&&(j.communities||j.data||j.rows))||[];
+      if(!list.length) return;
+      var by={};
+      list.forEach(function(c){
+        var nm=c.Topluluk||c.name||c.n||c.ad;
+        var ph=c['Foto URL']||c.foto||c.photo||c.fotoUrl||c.Foto;
+        if(nm&&ph) by[String(nm).trim()]=String(ph).trim();
+      });
+      var changed=false;
+      COMM.forEach(function(t){ if(by[t.n]){ t.photo=by[t.n]; changed=true; } });
+      if(changed) renderCards();
+    }).catch(function(){});
+  }
+  function openDetail(e){
+    var m=root.querySelector('[data-detailmodal]'),dp=root.querySelector('[data-dposter]'),pu=poster(e.poster),d=e._d;
+    dp.querySelectorAll('img,.ph').forEach(function(x){x.remove();});
+    if(pu){var i=document.createElement('img');i.src=pu;i.onerror=function(){this.remove();};dp.appendChild(i);}else{var p=document.createElement('span');p.className='ph';p.textContent=(e.community||'?').charAt(0);dp.appendChild(p);}
+    root.querySelector('[data-dtype]').textContent=e.type||'';
+    root.querySelector('[data-dtitle]').textContent=e.name||'';
+    root.querySelector('[data-ddate]').textContent=d?(d.getDate()+' '+UI.months[lang][d.getMonth()]+' '+d.getFullYear()):(e.date||'');
+    root.querySelector('[data-dtime]').textContent=e.time||'—';
+    root.querySelector('[data-dplace]').textContent=e.place||'—';
+    root.querySelector('[data-dmanager]').textContent=(e.manager||'—')+(e.contact?' · '+e.contact:'');
+    root.querySelector('[data-ddesc]').textContent=e.desc||'';
+    m.classList.add('open');
+  }
+
+  /* ===== Yönetici paneli ===== */
+  var adminPass='';
+  function fillCommSelect(){
+    var sel=root.querySelector('[data-commselect]');if(!sel)return;sel.innerHTML='';
+    Object.keys(CATS).forEach(function(k){
+      var og=document.createElement('optgroup');og.label=CATS[k][lang];
+      COMM.filter(function(t){return t.c==k;}).forEach(function(t){var o=document.createElement('option');o.value=t.n;o.textContent=t.n;og.appendChild(o);});
+      sel.appendChild(og);
+    });
+  }
+  root.querySelector('[data-login]').addEventListener('click',function(){
+    var pass=root.querySelector('[data-pw]').value, st=root.querySelector('[data-astat]'), addbtn=root.querySelector('[data-addbtn]'), editbtn=root.querySelector('[data-editbtn]');
+    function setEnabled(on){ addbtn.disabled=!on; editbtn.disabled=!on; }
+    if(!pass){ st.textContent=''; return; }
+    if(!CONFIG.scriptUrl){ adminPass=pass; setEnabled(true); st.textContent=(lang==='tr'?'Giriş yapıldı (demo)':'Ready (demo)'); st.style.color='#7ED0A8'; return; }
+    st.textContent=(lang==='tr'?'Kontrol ediliyor…':'Checking…'); st.style.color='#C9AEBC'; setEnabled(false);
+    fetch(CONFIG.scriptUrl+'?action=auth&pass='+encodeURIComponent(pass)).then(function(r){return r.json();}).then(function(j){
+      if(j&&j.ok){ adminPass=pass; setEnabled(true); st.textContent=(lang==='tr'?'✓ Giriş yapıldı':'✓ Logged in'); st.style.color='#7ED0A8'; }
+      else { adminPass=''; setEnabled(false); st.textContent=(lang==='tr'?'⚠ Şifre hatalı':'⚠ Wrong password'); st.style.color='#F0A0A0'; }
+    }).catch(function(){ setEnabled(false); st.textContent=(lang==='tr'?'⚠ Bağlantı hatası':'⚠ Connection error'); st.style.color='#F0A0A0'; });
+  });
+  root.querySelector('[data-addbtn]').addEventListener('click',function(){
+    if(this.disabled)return; fillCommSelect(); root.querySelector('[data-formmodal]').classList.add('open');
+  });
+  root.querySelector('[data-eventform]').addEventListener('submit',function(e){
+    e.preventDefault();
+    var form=this,btn=form.querySelector('.thw-submit'),msg=form.querySelector('[data-fmsg]');
+    var fd=new FormData(form);
+    var payload={password:adminPass,community:fd.get('community'),name:fd.get('name'),type:fd.get('type'),date:fd.get('date'),time:fd.get('time'),place:fd.get('place'),desc:fd.get('desc'),manager:fd.get('manager'),contact:fd.get('contact')};
+    function send(){
+      btn.disabled=true;msg.className='thw-fmsg';
+      if(!CONFIG.scriptUrl){ msg.textContent=(lang==='tr'?'⚠ Önce CONFIG.scriptUrl ayarlanmalı (demo).':'⚠ Set CONFIG.scriptUrl first (demo).'); msg.classList.add('show','err'); btn.disabled=false; return; }
+      fetch(CONFIG.scriptUrl,{method:'POST',body:JSON.stringify(payload)}).then(function(r){return r.json();}).then(function(j){
+        if(j&&j.ok){ msg.textContent=(lang==='tr'?'✓ Etkinlik eklendi.':'✓ Event added.'); msg.className='thw-fmsg show ok'; form.reset(); loadEvents(); }
+        else { msg.textContent='⚠ '+((j&&j.error)||'Hata'); msg.className='thw-fmsg show err'; }
+        btn.disabled=false;
+      }).catch(function(err){ msg.textContent='⚠ '+err; msg.className='thw-fmsg show err'; btn.disabled=false; });
+    }
+    var file=form.querySelector('input[name=poster]').files[0];
+    if(file){
+      if(file.size>500*1024){ msg.textContent=(lang==='tr'?'⚠ Afiş 500 KB\u0027den büyük olamaz ('+Math.round(file.size/1024)+' KB seçildi).':'⚠ Poster must be under 500 KB ('+Math.round(file.size/1024)+' KB selected).'); msg.className='thw-fmsg show err'; return; }
+      var rd=new FileReader();rd.onload=function(){payload.posterData=rd.result;payload.posterName=file.name;send();};rd.readAsDataURL(file);
+    }
+    else send();
+  });
+
+  /* Etkinlik sekmeleri + modal kapat */
+  root.querySelectorAll('.thw-etab').forEach(function(t){t.addEventListener('click',function(){
+    root.querySelectorAll('.thw-etab').forEach(function(x){x.classList.toggle('active',x===t);});
+    var k=t.getAttribute('data-etab');root.querySelectorAll('.thw-epanel').forEach(function(p){p.hidden=p.getAttribute('data-epanel')!==k;});
+  });});
+  root.querySelectorAll('[data-formmodal],[data-detailmodal],[data-editmodal]').forEach(function(m){m.addEventListener('click',function(e){if(e.target===m||e.target.hasAttribute('data-close'))m.classList.remove('open');});});
+
+  /* Topluluk bilgileri düzenleme */
+  var editModal=root.querySelector('[data-editmodal]'), editForm=root.querySelector('[data-editform]'), editSelect=root.querySelector('[data-editselect]');
+  function fillEditSelect(){
+    if(!editSelect)return; editSelect.innerHTML='<option value="">— '+(lang==='tr'?'Topluluk seç':'Select')+' —</option>';
+    Object.keys(CATS).forEach(function(k){
+      var og=document.createElement('optgroup'); og.label=CATS[k][lang];
+      COMM.filter(function(t){return t.c==k;}).forEach(function(t){var o=document.createElement('option');o.value=t.n;o.textContent=t.n;og.appendChild(o);});
+      editSelect.appendChild(og);
+    });
+  }
+  root.querySelector('[data-editbtn]').addEventListener('click',function(){
+    if(this.disabled)return; fillEditSelect(); editForm.reset();
+    root.querySelector('[data-editmsg]').className='thw-fmsg'; editModal.classList.add('open');
+  });
+  if(editSelect)editSelect.addEventListener('change',function(){
+    var name=this.value, msg=root.querySelector('[data-editmsg]');
+    editForm.querySelectorAll('input[name]').forEach(function(inp){inp.value='';});
+    if(!name){return;}
+    msg.className='thw-fmsg show'; msg.textContent=(lang==='tr'?'Yükleniyor…':'Loading…'); msg.style.color='#5B6B84';
+    fetch(CONFIG.scriptUrl+'?action=community&name='+encodeURIComponent(name)).then(function(r){return r.json();}).then(function(j){
+      var c=(j&&j.community)||{};
+      editForm.querySelectorAll('input[name]').forEach(function(inp){ inp.value=(c[inp.name]!=null?c[inp.name]:''); });
+      msg.className='thw-fmsg';
+    }).catch(function(){ msg.className='thw-fmsg'; });
+  });
+  if(editForm)editForm.addEventListener('submit',function(e){
+    e.preventDefault();
+    var msg=root.querySelector('[data-editmsg]'), btn=editForm.querySelector('.thw-submit');
+    if(!editSelect.value){ msg.className='thw-fmsg show err'; msg.textContent=(lang==='tr'?'⚠ Önce topluluk seçin.':'⚠ Select a community.'); return; }
+    var data={ 'Topluluk': editSelect.value };
+    editForm.querySelectorAll('input[name]').forEach(function(inp){ data[inp.name]=inp.value; });
+    btn.disabled=true; msg.className='thw-fmsg';
+    fetch(CONFIG.scriptUrl,{method:'POST',body:JSON.stringify({action:'savecommunity',password:adminPass,data:data})}).then(function(r){return r.json();}).then(function(j){
+      if(j&&j.ok){ msg.textContent=(lang==='tr'?'✓ Kaydedildi.':'✓ Saved.'); msg.className='thw-fmsg show ok'; }
+      else { msg.textContent='⚠ '+((j&&j.error)||'Hata'); msg.className='thw-fmsg show err'; }
+      btn.disabled=false;
+    }).catch(function(err){ msg.textContent='⚠ '+err; msg.className='thw-fmsg show err'; btn.disabled=false; });
+  });
+
+  /* Arama + dil */
+  root.querySelector('.thw-q').addEventListener('input',renderCards);
+  root.querySelectorAll('.thw-lang button').forEach(function(b){b.addEventListener('click',function(){
+    lang=b.getAttribute('data-lang');
+    root.querySelectorAll('[data-tr]').forEach(function(el){var v=el.getAttribute('data-'+lang);if(v===null)return;if(el.tagName==='INPUT')el.setAttribute('placeholder',v);else el.innerHTML=v;});
+    root.setAttribute('data-lang',lang);root.setAttribute('dir',lang==='ar'?'rtl':'ltr');
+    root.querySelectorAll('.thw-lang button').forEach(function(x){x.classList.toggle('active',x===b);});
+    renderChips();renderCards();renderEvents();fillCommSelect();
+  });});
+
+  renderChips();renderCards();loadEvents();loadCommunityPhotos();
+})();
+</script>
+</div>
+</template>
+        <div class="s_embed_code_embedded o_not_editable container"><div class="thw" data-lang="tr" dir="ltr">
+
+<style>
+  .thw{
+    --wine:#5B1B39;--wine-2:#7A2B4E;--wine-soft:#F1E6EC;--gold:#C89B3C;--gold-soft:#FBF3E1;
+    --paper:#F3F5F8;--card:#FFFFFF;--line:#DEE3EA;--ink:#16233B;--ink-soft:#5B6B84;--radius:14px;
+    font-family:'Inter',Arial,sans-serif;color:var(--ink);line-height:1.55;background:var(--paper);padding:0 0 50px;
+  }
+  .thw *{box-sizing:border-box;}
+
+  .thw .thw-mast{background:linear-gradient(135deg,var(--wine) 0%,var(--wine-2) 100%);padding:30px 24px 40px;position:relative;overflow:hidden;border-radius:0 0 18px 18px;}
+  .thw .thw-mast::after{content:"";position:absolute;inset-inline-end:-60px;top:-70px;width:230px;height:230px;border-radius:50%;background:var(--gold);opacity:.15;}
+  .thw .thw-mast-inner{max-width:1000px;margin:0 auto;position:relative;}
+  .thw .thw-topbar{display:flex;justify-content:flex-end;margin-bottom:14px;direction:ltr;}
+  .thw .thw-lang{display:inline-flex;background:rgba(0,0,0,.20);border-radius:999px;padding:4px;gap:2px;}
+  .thw .thw-lang button{border:0;cursor:pointer;background:transparent;color:rgba(255,255,255,.75);font:600 12.5px/1 'Inter',Arial,sans-serif;letter-spacing:.05em;padding:6px 13px;border-radius:999px;transition:.15s;}
+  .thw .thw-lang button.active{background:#fff;color:var(--wine);}
+  .thw .thw-eyebrow{display:inline-flex;align-items:center;gap:8px;text-transform:uppercase;letter-spacing:.10em;font-size:11.5px;font-weight:700;color:var(--wine);background:var(--gold);padding:5px 12px;border-radius:999px;margin:0 0 14px;}
+  .thw h1.thw-title{font-family:Arial,sans-serif;font-weight:800;font-size:clamp(26px,4.6vw,42px);line-height:1.06;margin:0 0 10px;color:#fff;letter-spacing:-.02em;}
+  .thw .thw-sub{color:#EAD9E2;font-size:15px;max-width:62ch;margin:0;}
+
+  .thw .thw-main{max-width:1000px;margin:0 auto;padding:0 24px;}
+
+  /* Filtre + arama */
+  .thw .thw-tools{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin-top:22px;}
+  .thw .thw-search{flex:1;min-width:220px;position:relative;}
+  .thw .thw-search svg{position:absolute;inset-inline-start:14px;top:50%;transform:translateY(-50%);width:17px;height:17px;color:var(--ink-soft);}
+  .thw .thw-search input{width:100%;border:1px solid var(--line);background:#fff;border-radius:999px;padding:11px 16px;padding-inline-start:40px;font:14px 'Inter',Arial,sans-serif;color:var(--ink);outline:none;}
+  .thw .thw-search input:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(200,155,60,.15);}
+  .thw .thw-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
+  .thw .thw-chip{border:1px solid var(--line);background:#fff;cursor:pointer;font:700 12.5px 'Inter',Arial,sans-serif;color:var(--ink-soft);padding:8px 14px;border-radius:999px;transition:.15s;}
+  .thw .thw-chip.active{background:var(--wine);color:#fff;border-color:var(--wine);}
+
+  /* Topluluk kartları */
+  .thw .thw-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px;}
+  @media(max-width:720px){ .thw .thw-grid{grid-template-columns:repeat(2,1fr);} }
+  @media(max-width:460px){ .thw .thw-grid{grid-template-columns:1fr;} }
+  .thw .thw-c{display:flex;flex-direction:column;align-items:stretch;background:var(--card);border:1px solid var(--line);border-radius:14px;text-decoration:none;box-shadow:0 6px 16px rgba(36,31,31,.05);transition:transform .16s,box-shadow .16s;border-inline-start:3px solid var(--cc,#888);overflow:hidden;}
+  .thw .thw-c:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(91,27,57,.12);}
+  .thw .thw-head{display:flex;align-items:center;gap:12px;padding:13px 14px;}
+  .thw .thw-head img{width:42px;height:42px;object-fit:contain;border-radius:9px;background:#fff;flex:none;}
+  .thw .thw-head .ph{width:42px;height:42px;border-radius:9px;flex:none;display:flex;align-items:center;justify-content:center;font:800 16px Arial;color:#fff;background:var(--cc,#888);}
+  .thw .thw-head b{font-family:Arial,sans-serif;font-size:13.5px;color:var(--wine);font-weight:800;line-height:1.2;display:block;}
+  .thw .thw-head span{font-size:11px;color:var(--ink-soft);}
+  .thw .thw-cover{position:relative;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;background:var(--cc,#888);overflow:hidden;}
+  .thw .thw-cover::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.18),rgba(0,0,0,.30));}
+  .thw .thw-cover::after{content:"";position:absolute;width:130px;height:130px;border-radius:50%;background:rgba(255,255,255,.08);top:-46px;inset-inline-end:-34px;}
+  .thw .thw-motif{position:relative;width:36%;height:auto;max-width:130px;fill:none;stroke:#fff;stroke-width:1.5;opacity:.92;stroke-linecap:round;stroke-linejoin:round;}
+  .thw .thw-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+  .thw .thw-hint{display:block;margin-top:6px;font-size:11.5px;line-height:1.45;color:var(--ink-soft);}
+  .thw .thw-hint b{color:var(--wine);}
+  .thw .thw-empty{display:none;text-align:center;color:var(--ink-soft);font-size:14px;padding:30px;}
+  .thw .thw-empty.show{display:block;}
+
+  /* Bölüm başlığı */
+  .thw .thw-h2{font-family:Arial,sans-serif;font-weight:800;font-size:20px;color:var(--wine);margin:34px 0 4px;letter-spacing:-.01em;display:flex;align-items:center;gap:10px;}
+  .thw .thw-h2::before{content:"";width:4px;height:21px;border-radius:3px;background:var(--gold);}
+
+  /* Etkinlikler */
+  .thw .thw-etabs{display:inline-flex;background:#EAE1E6;border-radius:999px;padding:4px;gap:2px;margin:14px 0 4px;}
+  .thw .thw-etab{border:0;cursor:pointer;background:transparent;color:var(--wine);font:700 13px 'Inter',Arial,sans-serif;padding:8px 16px;border-radius:999px;}
+  .thw .thw-etab.active{background:var(--wine);color:#fff;}
+  .thw .thw-epanel[hidden]{display:none;}
+  .thw .thw-egrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;margin-top:14px;}
+  .thw .thw-ec{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:0 8px 22px rgba(36,31,31,.06);cursor:pointer;transition:transform .16s,box-shadow .16s;}
+  .thw .thw-ec:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(91,27,57,.13);}
+  .thw .thw-ep{aspect-ratio:16/10;background:linear-gradient(135deg,var(--wine),var(--wine-2));display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;}
+  .thw .thw-ep img{width:100%;height:100%;object-fit:cover;}
+  .thw .thw-ep .ph{font:800 26px Arial;color:rgba(255,255,255,.4);}
+  .thw .thw-etype{position:absolute;top:9px;inset-inline-start:9px;background:var(--gold);color:var(--wine);font:800 10px 'Inter';text-transform:uppercase;letter-spacing:.04em;padding:3px 8px;border-radius:999px;}
+  .thw .thw-past .thw-ep{filter:grayscale(.3);}
+  .thw .thw-eb{padding:13px 14px;display:flex;gap:11px;}
+  .thw .thw-ed{flex:none;width:48px;text-align:center;background:var(--wine-soft);color:var(--wine);border-radius:9px;padding:6px 3px;height:fit-content;}
+  .thw .thw-ed b{display:block;font:800 17px Arial;line-height:1;}
+  .thw .thw-ed span{display:block;font-size:9.5px;text-transform:uppercase;margin-top:2px;}
+  .thw .thw-ei h3{font:800 13.5px Arial;color:var(--wine);margin:0 0 3px;line-height:1.25;}
+  .thw .thw-ei .m{font-size:11.5px;color:var(--ink-soft);display:block;}
+  .thw .thw-ei .cm{font-size:10.5px;color:var(--gold);font-weight:700;margin-top:4px;display:block;}
+  .thw .thw-eempty{display:none;text-align:center;color:var(--ink-soft);font-size:14px;padding:30px;background:var(--card);border:1px dashed var(--line);border-radius:var(--radius);margin-top:14px;}
+  .thw .thw-eempty.show{display:block;}
+
+  /* Yönetici paneli */
+  .thw .thw-admin{margin-top:36px;background:#2A1520;border-radius:var(--radius);padding:20px 22px;color:#EAD9E2;}
+  .thw .thw-admin h3{font-family:Arial,sans-serif;font-size:15px;font-weight:800;color:#fff;margin:0 0 4px;display:flex;align-items:center;gap:8px;}
+  .thw .thw-admin h3 svg{width:16px;height:16px;color:var(--gold);}
+  .thw .thw-admin p{font-size:12.5px;color:#C9AEBC;margin:0 0 14px;}
+  .thw .thw-arow{display:flex;flex-wrap:wrap;gap:10px;align-items:center;}
+  .thw .thw-admin input.pw{border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.08);border-radius:10px;padding:10px 13px;font:13.5px 'Inter';color:#fff;outline:none;min-width:180px;}
+  .thw .thw-admin input.pw:focus{border-color:var(--gold);}
+  .thw .thw-abtn{border:0;cursor:pointer;background:var(--gold);color:var(--wine);font:800 13px 'Inter';padding:11px 20px;border-radius:999px;transition:.15s;}
+  .thw .thw-abtn:hover{background:#fff;}
+  .thw .thw-abtn.ghost{background:rgba(255,255,255,.12);color:#fff;}
+  .thw .thw-abtn:disabled{opacity:.4;cursor:not-allowed;}
+  .thw .thw-astat{font-size:12.5px;font-weight:600;margin-inline-start:4px;}
+
+  /* Modal (form + detay) */
+  .thw .thw-modal{position:fixed;inset:0;background:rgba(22,13,20,.6);display:none;align-items:center;justify-content:center;padding:18px;z-index:9999;}
+  .thw .thw-modal.open{display:flex;}
+  .thw .thw-mbox{background:#fff;border-radius:16px;max-width:560px;width:100%;max-height:88vh;overflow:auto;box-shadow:0 30px 70px rgba(0,0,0,.3);}
+  .thw .thw-mhead{display:flex;align-items:center;justify-content:space-between;padding:18px 22px 0;}
+  .thw .thw-mhead h3{font-family:Arial,sans-serif;font-weight:800;color:var(--wine);margin:0;font-size:18px;}
+  .thw .thw-close{border:0;background:var(--wine-soft);color:var(--wine);width:34px;height:34px;border-radius:10px;cursor:pointer;font-size:19px;line-height:1;}
+  .thw .thw-form{padding:16px 22px 22px;}
+  .thw .thw-frow{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px;}
+  .thw .thw-f label{display:block;font-size:12px;font-weight:700;color:var(--ink);margin-bottom:5px;}
+  .thw .thw-f input,.thw .thw-f select,.thw .thw-f textarea{width:100%;border:1px solid var(--line);background:#fff;border-radius:10px;padding:10px 12px;font:13.5px 'Inter';color:var(--ink);outline:none;}
+  .thw .thw-f input:focus,.thw .thw-f select:focus,.thw .thw-f textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(200,155,60,.14);}
+  .thw .thw-f.full{grid-column:1/-1;}
+  .thw .thw-submit{display:inline-flex;align-items:center;gap:8px;background:var(--wine);color:#fff;border:0;cursor:pointer;font:800 14px 'Inter';padding:12px 24px;border-radius:999px;transition:.15s;}
+  .thw .thw-submit:hover{background:var(--wine-2);}
+  .thw .thw-submit:disabled{opacity:.5;cursor:progress;}
+  .thw .thw-fmsg{margin-top:12px;font-size:13px;font-weight:600;display:none;}
+  .thw .thw-fmsg.show{display:block;}
+  .thw .thw-fmsg.ok{color:#1E8E6A;}
+  .thw .thw-fmsg.err{color:#C0392B;}
+
+  /* Detay modal gövde */
+  .thw .thw-dposter{aspect-ratio:16/9;background:linear-gradient(135deg,var(--wine),var(--wine-2));display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;border-radius:16px 16px 0 0;}
+  .thw .thw-dposter img{width:100%;height:100%;object-fit:cover;}
+  .thw .thw-dposter .ph{font:800 40px Arial;color:rgba(255,255,255,.4);}
+  .thw .thw-dclose{position:absolute;top:12px;inset-inline-end:12px;border:0;background:rgba(0,0,0,.4);color:#fff;width:34px;height:34px;border-radius:10px;cursor:pointer;font-size:19px;}
+  .thw .thw-dbody{padding:20px 22px 22px;}
+  .thw .thw-dtype{display:inline-block;background:var(--gold);color:var(--wine);font:800 11px 'Inter';text-transform:uppercase;padding:3px 10px;border-radius:999px;margin-bottom:10px;}
+  .thw .thw-dbody h3{font:800 20px Arial;color:var(--wine);margin:0 0 12px;}
+  .thw .thw-dmeta div{font-size:13.5px;color:var(--ink);display:flex;gap:9px;align-items:center;margin-bottom:6px;}
+  .thw .thw-dmeta svg{width:16px;height:16px;color:var(--wine);flex:none;}
+  .thw .thw-ddesc{font-size:13.5px;color:var(--ink-soft);margin:12px 0 0;}
+
+  .thw[dir="rtl"]{text-align:right;}
+
+  @media (max-width:600px){ .thw .thw-frow{grid-template-columns:1fr;} .thw .thw-mast{padding:22px 18px 32px;} }
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="thw-i-search" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></symbol>
+  <symbol id="thw-i-lock" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></symbol>
+  <symbol id="thw-i-cal" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="M16 2v4M8 2v4M3 10h18"></path></symbol>
+  <symbol id="thw-i-clock" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></symbol>
+  <symbol id="thw-i-pin" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></symbol>
+  <symbol id="thw-i-user" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></symbol>
+</defs></svg>
+
+<div class="thw-mast">
+  <div class="thw-mast-inner">
+    <div class="thw-topbar">
+      <div class="thw-lang" role="group" aria-label="Dil / Language">
+        <button type="button" data-lang="tr" class="active">TR</button>
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="ar">AR</button>
+        <button type="button" data-lang="it">IT</button>
+        <button type="button" data-lang="fr">FR</button>
+      </div>
+    </div>
+    <p class="thw-eyebrow" data-tr="🎓 Sağlık, Kültür ve Spor · Öğrenci Toplulukları" data-en="🎓 Health, Culture &amp; Sports · Student Communities" data-ar="🎓 الصحة والثقافة والرياضة · المجتمعات الطلابية" data-it="🎓 Salute, Cultura e Sport · Comunità Studentesche" data-fr="🎓 Santé, Culture et Sport · Communautés Étudiantes">🎓 Sağlık, Kültür ve Spor · Öğrenci Toplulukları</p>
+    <h1 class="thw-title" data-tr="Öğrenci Topluluklarımız" data-en="Our Student Communities" data-ar="مجتمعاتنا الطلابية" data-it="Le Nostre Comunità Studentesche" data-fr="Nos Communautés Étudiantes">Öğrenci Topluluklarımız</h1>
+    <p class="thw-sub" data-tr="45 topluluk, sayısız etkinlik. İlgi alanına göre keşfet, katıl, üret." data-en="45 communities, countless events. Explore by interest, join, and create." data-ar="45 مجتمعاً وفعاليات لا تُحصى. اكتشف حسب اهتمامك، انضمّ، وأنتج." data-it="45 comunità, infiniti eventi. Esplora per interesse, unisciti e crea." data-fr="45 communautés, d&#39;innombrables événements. Explorez, rejoignez et créez.">45 topluluk, sayısız etkinlik. İlgi alanına göre keşfet, katıl, üret.</p>
+  </div>
+</div>
+
+<div class="thw-main">
+
+  
+  <div class="thw-tools">
+    <div class="thw-search">
+      <svg><use href="#thw-i-search"></use></svg>
+      <input type="text" class="thw-q" data-tr="Topluluk ara..." data-en="Search communities..." data-ar="ابحث عن مجتمع..." data-it="Cerca comunità..." data-fr="Rechercher..." placeholder="Topluluk ara..."/>
+    </div>
+  </div>
+  <div class="thw-chips" data-chips=""></div>
+
+  <div class="thw-grid" data-grid=""></div>
+  <div class="thw-empty" data-empty="" data-tr="Aramanıza uygun topluluk bulunamadı." data-en="No communities match your search." data-ar="لا توجد مجتمعات مطابقة." data-it="Nessuna comunità trovata." data-fr="Aucune communauté trouvée.">Aramanıza uygun topluluk bulunamadı.</div>
+
+  
+  <h2 class="thw-h2" data-tr="Etkinlik Takvimi" data-en="Event Calendar" data-ar="تقويم الفعاليات" data-it="Calendario Eventi" data-fr="Calendrier des Événements">Etkinlik Takvimi</h2>
+  <div class="thw-etabs">
+    <button type="button" class="thw-etab active" data-etab="up" data-tr="Yaklaşan" data-en="Upcoming" data-ar="القادمة" data-it="In Arrivo" data-fr="À Venir">Yaklaşan</button>
+    <button type="button" class="thw-etab" data-etab="past" data-tr="Geçmiş" data-en="Past" data-ar="السابقة" data-it="Passati" data-fr="Passés">Geçmiş</button>
+  </div>
+  <div class="thw-epanel" data-epanel="up"><div class="thw-egrid" data-egrid="up"></div><div class="thw-eempty" data-eempty="up" data-tr="Yaklaşan etkinlik yok." data-en="No upcoming events." data-ar="لا توجد فعاليات قادمة." data-it="Nessun evento in arrivo." data-fr="Aucun événement à venir.">Yaklaşan etkinlik yok.</div></div>
+  <div class="thw-epanel" data-epanel="past" hidden=""><div class="thw-egrid" data-egrid="past"></div><div class="thw-eempty" data-eempty="past" data-tr="Geçmiş etkinlik kaydı yok." data-en="No past events." data-ar="لا توجد فعاليات سابقة." data-it="Nessun evento passato." data-fr="Aucun événement passé.">Geçmiş etkinlik kaydı yok.</div></div>
+
+  
+  <div class="thw-admin">
+    <h3><svg><use href="#thw-i-lock"></use></svg><span data-tr="Yönetici Paneli" data-en="Admin Panel" data-ar="لوحة المشرف" data-it="Pannello Admin" data-fr="Panneau Admin">Yönetici Paneli</span></h3>
+    <p data-tr="Etkinlik eklemek için yönetici şifresiyle giriş yapın." data-en="Enter the admin password to add an event." data-ar="أدخل كلمة مرور المشرف لإضافة فعالية." data-it="Inserisci la password admin per aggiungere un evento." data-fr="Entrez le mot de passe admin pour ajouter un événement.">Etkinlik eklemek için yönetici şifresiyle giriş yapın.</p>
+    <div class="thw-arow">
+      <input type="password" class="pw" data-pw="" autocomplete="new-password" autocorrect="off" autocapitalize="off" spellcheck="false" data-tr="Yönetici şifresi" data-en="Admin password" data-ar="كلمة مرور المشرف" data-it="Password admin" data-fr="Mot de passe" placeholder="Yönetici şifresi"/>
+      <button type="button" class="thw-abtn ghost" data-login="" data-tr="Giriş" data-en="Log in" data-ar="دخول" data-it="Accedi" data-fr="Connexion">Giriş</button>
+      <button type="button" class="thw-abtn" data-addbtn="" disabled="" data-tr="+ Etkinlik Oluştur" data-en="+ Create Event" data-ar="+ إنشاء فعالية" data-it="+ Crea Evento" data-fr="+ Créer un Événement">+ Etkinlik Oluştur</button>
+      <button type="button" class="thw-abtn ghost" data-editbtn="" disabled="" data-tr="Topluluk Bilgilerini Düzenle" data-en="Edit Community Info" data-ar="تعديل معلومات المجتمع" data-it="Modifica Info Comunità" data-fr="Modifier les Infos">Topluluk Bilgilerini Düzenle</button>
+      <span class="thw-astat" data-astat=""></span>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="thw-modal" data-formmodal="">
+  <div class="thw-mbox">
+    <div class="thw-mhead">
+      <h3 data-tr="Yeni Etkinlik" data-en="New Event" data-ar="فعالية جديدة" data-it="Nuovo Evento" data-fr="Nouvel Événement">Yeni Etkinlik</h3>
+      <button type="button" class="thw-close" data-close="" aria-label="Kapat">×</button>
+    </div>
+    <form class="thw-form" data-eventform="">
+      <div class="thw-frow">
+        <div class="thw-f full"><label data-tr="Topluluk" data-en="Community" data-ar="المجتمع" data-it="Comunità" data-fr="Communauté">Topluluk</label><select name="community" data-commselect="" required=""></select></div>
+      </div>
+      <div class="thw-frow">
+        <div class="thw-f full"><label data-tr="Etkinlik Adı" data-en="Event Name" data-ar="اسم الفعالية" data-it="Nome Evento" data-fr="Nom de l&#39;Événement">Etkinlik Adı</label><input type="text" name="name" required=""/></div>
+      </div>
+      <div class="thw-frow">
+        <div class="thw-f"><label data-tr="Tür" data-en="Type" data-ar="النوع" data-it="Tipo" data-fr="Type">Tür</label><input type="text" name="type" data-tr="" placeholder="Atölye / Seminer / Gezi"/></div>
+        <div class="thw-f"><label data-tr="Yer" data-en="Place" data-ar="المكان" data-it="Luogo" data-fr="Lieu">Yer</label><input type="text" name="place"/></div>
+      </div>
+      <div class="thw-frow">
+        <div class="thw-f"><label data-tr="Tarih" data-en="Date" data-ar="التاريخ" data-it="Data" data-fr="Date">Tarih</label><input type="date" name="date" required=""/></div>
+        <div class="thw-f"><label data-tr="Saat" data-en="Time" data-ar="الوقت" data-it="Ora" data-fr="Heure">Saat</label><input type="time" name="time"/></div>
+      </div>
+      <div class="thw-frow">
+        <div class="thw-f full"><label data-tr="Açıklama" data-en="Description" data-ar="الوصف" data-it="Descrizione" data-fr="Description">Açıklama</label><textarea name="desc" rows="2"></textarea></div>
+      </div>
+      <div class="thw-frow">
+        <div class="thw-f"><label data-tr="Etkinlik Sorumlusu" data-en="Event Manager" data-ar="مسؤول الفعالية" data-it="Responsabile" data-fr="Responsable">Etkinlik Sorumlusu</label><input type="text" name="manager"/></div>
+        <div class="thw-f"><label data-tr="Sorumlu İletişim" data-en="Contact" data-ar="التواصل" data-it="Contatto" data-fr="Contact">Sorumlu İletişim</label><input type="text" name="contact"/></div>
+      </div>
+      <div class="thw-frow">
+        <div class="thw-f full"><label data-tr="Afiş (opsiyonel, en fazla 500 KB)" data-en="Poster (optional, max 500 KB)" data-ar="ملصق (اختياري، 500 كيلوبايت كحد أقصى)" data-it="Locandina (opzionale, max 500 KB)" data-fr="Affiche (facultatif, max 500 Ko)">Afiş (opsiyonel, en fazla 500 KB)</label><input type="file" name="poster" accept="image/*"/></div>
+      </div>
+      <button type="submit" class="thw-submit" data-tr="Etkinliği Kaydet" data-en="Save Event" data-ar="حفظ الفعالية" data-it="Salva Evento" data-fr="Enregistrer">Etkinliği Kaydet</button>
+      <p class="thw-fmsg" data-fmsg=""></p>
+    </form>
+  </div>
+</div>
+
+
+<div class="thw-modal" data-detailmodal="">
+  <div class="thw-mbox">
+    <div class="thw-dposter" data-dposter=""><button type="button" class="thw-dclose" data-close="" aria-label="Kapat">×</button></div>
+    <div class="thw-dbody">
+      <span class="thw-dtype" data-dtype=""></span>
+      <h3 data-dtitle=""></h3>
+      <div class="thw-dmeta">
+        <div><svg><use href="#thw-i-cal"></use></svg><span data-ddate=""></span></div>
+        <div><svg><use href="#thw-i-clock"></use></svg><span data-dtime=""></span></div>
+        <div><svg><use href="#thw-i-pin"></use></svg><span data-dplace=""></span></div>
+        <div><svg><use href="#thw-i-user"></use></svg><span data-dmanager=""></span></div>
+      </div>
+      <p class="thw-ddesc" data-ddesc=""></p>
+    </div>
+  </div>
+</div>
+
+
+<div class="thw-modal" data-editmodal="">
+  <div class="thw-mbox">
+    <div class="thw-mhead">
+      <h3 data-tr="Topluluk Bilgileri" data-en="Community Info" data-ar="معلومات المجتمع" data-it="Info Comunità" data-fr="Infos Communauté">Topluluk Bilgileri</h3>
+      <button type="button" class="thw-close" data-close="" aria-label="Kapat">×</button>
+    </div>
+    <form class="thw-form" data-editform="">
+      <div class="thw-frow">
+        <div class="thw-f full"><label data-tr="Topluluk seç" data-en="Select community" data-ar="اختر المجتمع" data-it="Seleziona comunità" data-fr="Choisir">Topluluk seç</label><select data-editselect="" required=""></select></div>
+      </div>
+      <div class="thw-frow">
+        <div class="thw-f"><label data-tr="Danışman" data-en="Advisor" data-ar="المستشار" data-it="Referente" data-fr="Conseiller">Danışman</label><input type="text" name="Danışman"/></div>
+        <div class="thw-f"><label>Danışman E-posta</label><input type="text" name="Danışman E-posta"/></div>
+      </div>
+      <div class="thw-frow">
+        <div class="thw-f"><label data-tr="Başkan" data-en="President" data-ar="الرئيس" data-it="Presidente" data-fr="Président">Başkan</label><input type="text" name="Başkan"/></div>
+        <div class="thw-f"><label>Başkan E-posta</label><input type="text" name="Başkan E-posta"/></div>
+      </div>
+      <div class="thw-frow">
+        <div class="thw-f full"><label data-tr="Slogan" data-en="Slogan" data-ar="الشعار" data-it="Slogan" data-fr="Slogan">Slogan</label><input type="text" name="Slogan"/></div>
+      </div>
+      <div class="thw-frow">
+        <div class="thw-f full"><label data-tr="Foto (URL) — ana sayfada topluluğun altında görünür" data-en="Photo (URL) — shown under the community on the home page" data-ar="الصورة (رابط) — تظهر أسفل المجتمع في الصفحة الرئيسية" data-it="Foto (URL) — mostrata sotto la comunità in home" data-fr="Photo (URL) — affichée sous la communauté sur l&#39;accueil">Foto (URL) — ana sayfada topluluğun altında görünür</label><input type="url" name="Foto URL" placeholder="https://sks.ostimteknik.edu.tr/web/image/..."/><small class="thw-hint" data-tr="İpucu: Kapak kare (1:1) gösterilir. En az &lt;b&gt;600×600 px&lt;/b&gt;, ideal &lt;b&gt;800×800 px&lt;/b&gt; kare bir görsel yükleyin; konuyu ortada tutun (kenarlar kırpılır)." data-en="Tip: the cover is shown square (1:1). Upload at least &lt;b&gt;600×600 px&lt;/b&gt;, ideally &lt;b&gt;800×800 px&lt;/b&gt;, square; keep the subject centered (edges are cropped)." data-ar="نصيحة: يظهر الغلاف مربعًا (1:1). ارفع صورة لا تقل عن &lt;b&gt;600×600 بكسل&lt;/b&gt;، ويُفضّل &lt;b&gt;800×800 بكسل&lt;/b&gt;، مربعة؛ واجعل الموضوع في المنتصف (تُقتطع الحواف)." data-it="Suggerimento: la copertina è quadrata (1:1). Carica almeno &lt;b&gt;600×600 px&lt;/b&gt;, idealmente &lt;b&gt;800×800 px&lt;/b&gt;, quadrata; mantieni il soggetto al centro (i bordi vengono ritagliati)." data-fr="Astuce : la couverture est carrée (1:1). Importez au moins &lt;b&gt;600×600 px&lt;/b&gt;, idéalement &lt;b&gt;800×800 px&lt;/b&gt;, carré ; gardez le sujet centré (les bords sont rognés).">İpucu: Kapak kare (1:1) gösterilir. En az <b>600×600 px</b>, ideal <b>800×800 px</b> kare bir görsel yükleyin; konuyu ortada tutun (kenarlar kırpılır).</small></div>
+      </div>
+      <div class="thw-frow">
+        <div class="thw-f"><label>Instagram</label><input type="url" name="Instagram" placeholder="https://"/></div>
+        <div class="thw-f"><label>X</label><input type="url" name="X" placeholder="https://"/></div>
+      </div>
+      <div class="thw-frow">
+        <div class="thw-f"><label>YouTube</label><input type="url" name="YouTube" placeholder="https://"/></div>
+        <div class="thw-f"><label>LinkedIn</label><input type="url" name="LinkedIn" placeholder="https://"/></div>
+      </div>
+      <div class="thw-frow">
+        <div class="thw-f"><label>Facebook</label><input type="url" name="Facebook" placeholder="https://"/></div>
+        <div class="thw-f"><label>TikTok</label><input type="url" name="TikTok" placeholder="https://"/></div>
+      </div>
+      <div class="thw-frow">
+        <div class="thw-f"><label>Discord</label><input type="url" name="Discord" placeholder="https://"/></div>
+        <div class="thw-f"><label>GitHub</label><input type="url" name="GitHub" placeholder="https://"/></div>
+      </div>
+      <div class="thw-frow">
+        <div class="thw-f full"><label data-tr="Web sitesi" data-en="Website" data-ar="الموقع" data-it="Sito web" data-fr="Site web">Web sitesi</label><input type="url" name="Web" placeholder="https://"/></div>
+      </div>
+      <button type="submit" class="thw-submit" data-tr="Kaydet" data-en="Save" data-ar="حفظ" data-it="Salva" data-fr="Enregistrer">Kaydet</button>
+      <p class="thw-fmsg" data-editmsg=""></p>
+    </form>
+  </div>
+</div>
+
+<script>
+(function(){
+  var root = document.currentScript ? document.currentScript.closest('.thw') : null;
+  if(!root) root = document.querySelector('.thw');
+  if(!root) return;
+
+  /* ============ CONFIG ============ */
+  var CONFIG = {
+    scriptUrl: 'https://script.google.com/macros/s/AKfycbxfa9_s4PC_XOI0WyFEUc04wOW-bwN6qWvl9Au76SdVtbxhNGtFWsEOHcB64IgJnMqb/exec',  // Apps Script /exec
+    base: 'https://sks.ostimteknik.edu.tr/'          // topluluk kart linkleri (slug bununla birleşir)
+  };
+
+  var lang='tr';
+  var CATS = {
+    1:{tr:'Yazılım, YZ & Teknoloji',en:'Software, AI & Tech',ar:'البرمجيات والذكاء الاصطناعي',it:'Software, IA & Tech',fr:'Logiciel, IA & Tech',c:'#5A4AE0'},
+    2:{tr:'Mühendislik, Havacılık & Savunma',en:'Engineering, Aviation & Defence',ar:'الهندسة والطيران والدفاع',it:'Ingegneria, Aviazione & Difesa',fr:'Ingénierie, Aviation & Défense',c:'#15628F'},
+    3:{tr:'Girişimcilik, İş & Yönetim',en:'Entrepreneurship & Business',ar:'ريادة الأعمال والإدارة',it:'Imprenditoria & Business',fr:'Entrepreneuriat & Business',c:'#1E8E6A'},
+    4:{tr:'Tasarım, Sanat & Kültür',en:'Design, Art & Culture',ar:'التصميم والفن والثقافة',it:'Design, Arte & Cultura',fr:'Design, Art & Culture',c:'#E0672E'},
+    5:{tr:'Uluslararası, Dil & Diplomasi',en:'International, Language & Diplomacy',ar:'الدولية واللغة والدبلوماسية',it:'Internazionale, Lingua & Diplomazia',fr:'International, Langue & Diplomatie',c:'#0E8C8C'},
+    6:{tr:'Sosyal Sorumluluk & Toplum',en:'Social Responsibility',ar:'المسؤولية الاجتماعية',it:'Responsabilità Sociale',fr:'Responsabilité Sociale',c:'#5AA02C'},
+    7:{tr:'Spor & Rekreasyon',en:'Sports & Recreation',ar:'الرياضة والترفيه',it:'Sport & Ricreazione',fr:'Sport & Loisirs',c:'#D64533'}
+  };
+  var UI = {
+    all:{tr:'Tümü',en:'All',ar:'الكل',it:'Tutti',fr:'Tous'},
+    months:{tr:['Oca','Şub','Mar','Nis','May','Haz','Tem','Ağu','Eyl','Eki','Kas','Ara'],en:['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],ar:['ينا','فبر','مار','أبر','ماي','يون','يول','أغس','سبت','أكت','نوف','ديس'],it:['Gen','Feb','Mar','Apr','Mag','Giu','Lug','Ago','Set','Ott','Nov','Dic'],fr:['Jan','Fév','Mar','Avr','Mai','Juin','Juil','Aoû','Sep','Oct','Nov','Déc']}
+  };
+  // Topluluklar: n=ad, c=kategori, g=logo id, s=slug (link)
+  var COMM = [
+    {n:'Yapay Zeka',c:1,g:'396228-db88ee06',s:'yapay-zeka-ogrenci-toplulugu'},
+    {n:'Pandora AI',c:1,g:'396224-8d5117b8',s:'pandora-ai-ogrenci-toplulugu'},
+    {n:'Siber Güvenlik',c:1,g:'396233-45db5b83',s:'siber-guvenlik-ogrenci-toplulugu'},
+    {n:'Software Club',c:1,g:'396215-aea738b4',s:'software-club-ogrenci-toplulugu'},
+    {n:'Google Developer Student Clubs',c:1,g:'396231-040356b1',s:'google-developer-student-clubs'},
+    {n:'Huawei Student Developers',c:1,g:'396204-91025048',s:'huawei-student-developers-ogrenci-toplulugu'},
+    {n:'IEEE',c:1,g:'396205-d2b2a13f',s:'ieee-ogrenci-toplulugu'},
+    {n:'Yönetim Bilişim Sistemleri',c:1,g:'396217-c7806a76',s:'yonetim-bilisim-sistemleri-ogrenci-toplulugu'},
+    {n:'Sosyal Teknoloji',c:1,g:'396227-62d71fe9',s:'sosyal-teknoloji-ogrenci-toplulugu'},
+    {n:'Elektrikli Araçlar',c:2,g:'396199-33f10370',s:'elektrikli-araclar-ogrenci-toplulugu'},
+    {n:'Elektro Optik',c:2,g:'396193-71a0f635',s:'elektro-optik-ogrenci-toplulugu'},
+    {n:'Elektronik Harp ve Hava Savunma',c:2,g:'396196-bc27f1d4',s:'elektronik-harp-ve-hava-savunma-sanayi-ogrenci-toplulugu'},
+    {n:'Havacılık ve Uzay',c:2,g:'396203-ef7c3a40',s:'havaclk-ve-uzay-ogrenci-toplulugu'},
+    {n:'Hava Araçları Teknolojileri Geliştirme',c:2,g:'396212-ec2596c3',s:'hava-araclar-teknolojileri-gelistirme-ogrenci-toplulugu'},
+    {n:'İHA',c:2,g:'396208-a5799b0e',s:'iha-ogrenci-toplulugu'},
+    {n:'Savunma Sanayi',c:2,g:'396214-f74a26a0',s:'savunma-sanayi-ogrenci-toplulugu'},
+    {n:'Kalite, Mühendislik ve İnovasyon',c:2,g:'396218-95c6692a',s:'kalite-muhendislik-yonetimi-ve-inovasyon-ogrenci-toplulugu'},
+    {n:'Teknofest',c:2,g:'396229-64f41b07',s:'teknofest-ogrenci-toplulugu'},
+    {n:'Motor Sporları',c:2,g:'396597-d1d1f409',s:'motor-sporlar-ogrenci-toplulugu'},
+    {n:'İşletme',c:3,g:'396209-1e680230',s:'isletme-ogrenci-toplulugu'},
+    {n:'İş-Biz',c:3,g:'396216-6c89c50a',s:'is-biz-ogranci-toplulugu'},
+    {n:'Ekonomik ve Sosyal Araştırmalar',c:3,g:'396192-ee698d64',s:'ekonomik-ve-sosyal-arastrmalar-ogrenci-toplulugu'},
+    {n:'Fintech',c:3,g:'396197-da2a77d1',s:'fintech-ogrenci-toplulugu'},
+    {n:'Fikridea',c:3,g:'396587-6a3391f3',s:'fikridea-ogrenci-toplulugu'},
+    {n:'PMI Türkiye',c:3,g:'421497-c4c94d53',s:'pmi-turkey-ogrenci-toplulugu'},
+    {n:'Endüstriyel Tasarım',c:4,g:'396195-afa38af9',s:'endustriyel-tasarm-ogrenci-toplulugu'},
+    {n:'İç Mimarlık, Mesleki Gelişim ve İnovasyon',c:4,g:'396207-78baf3ab',s:'ic-mimarlik-mesleki-gelisim-ve-inovasyon-ogrenci-toplulugu'},
+    {n:'Evrensel Müzik',c:4,g:'396226-48fa0183',s:'evrensel-muzik-ogrenci-toplulugu'},
+    {n:'Fotoğrafçılık ve Çağdaş Sanatlar',c:4,g:'396200-72634379',s:'fotografclk-ve-cagdas-sanatlar-ogrenci-toplulugu'},
+    {n:'Tiyatro',c:4,g:'396223-151e83fa',s:'tiyatro-ogrenci-toplulugu'},
+    {n:'Halk Dansları',c:4,g:'396234-aaf543d1',s:'halk-danslar-ogrenci-toplulugu'},
+    {n:'Rus Kültür ve Edebiyat',c:4,g:'396210-5b52d211',s:'rus-kultur-ve-edebiyat-ogrenci-toplulugu'},
+    {n:'Akıl ve Zeka Oyunları',c:4,g:'396191-46344316',s:'akl-ve-zeka-ogrenci-toplulugu'},
+    {n:'English Speaking Club',c:5,g:'396211-e2f4719d',s:'englishspeakingclub'},
+    {n:'ERASMUS+',c:5,g:'396194-d4353011',s:'erasmus-ogrenci-toplulugu'},
+    {n:'Türk Dünyası Araştırmaları',c:5,g:'396221-7e77c22b',s:'turk-dunyas-arastrmalar-ogrenci-toplulugu'},
+    {n:'Türkiye-Azerbaycan Dostluk',c:5,g:'396230-55f433fe',s:'turkiye-azerbaycan-ogrenci-toplulugu'},
+    {n:'Münazara ve Hitabet',c:5,g:'396213-4dc24df0',s:'munazara-ve-hitabet-ogrenci-toplulugu'},
+    {n:'LÖSEV Fayda',c:6,g:'396222-bd0a3e80',s:'losev-fayda-ogrenci-toplulugu'},
+    {n:'Genç TEMA',c:6,g:'396206-1fc777f9',s:'genc-tema-ogrenci-toplulugu'},
+    {n:'Toplumsal Kültür ve Yardımlaşma',c:6,g:'396220-68d9c016',s:'toplumsal-kultur-ve-yardmlasma-ogrenci-toplulugu'},
+    {n:'E-Spor',c:7,g:'396202-1debc534',s:'e-spor-ogrenci-toplulugu'},
+    {n:'Voleybol',c:7,g:'396237-2691a902',s:'voleybol-ogrenci-toplulugu-1'},
+    {n:'UNIGFB',c:7,g:'396225-5b1b86ca',s:'unigfb-ogrenci-toplulugu'},
+    {n:'Gezi',c:7,g:'396198-26e18ba7',s:'gezi-ogrenci-toplulugu'}
+  ];
+
+  // Topluluk adlarının çok dilli GÖRÜNEN karşılıkları (n = sabit anahtar; burada yoksa Türkçe kalır).
+  // Marka/özel adlar (IEEE, GDSC, Huawei, PMI, ERASMUS+, LÖSEV, Genç TEMA, E-Spor, UNIGFB, İş-Biz, Pandora AI, Software Club, Fintech, Fikridea, Teknofest, English Speaking Club) bilerek çevrilmedi.
+  var NAMEI18N = {
+    "Yapay Zeka":{en:"Artificial Intelligence",ar:"الذكاء الاصطناعي",it:"Intelligenza Artificiale",fr:"Intelligence Artificielle"},
+    "Siber Güvenlik":{en:"Cybersecurity",ar:"الأمن السيبراني",it:"Cybersicurezza",fr:"Cybersécurité"},
+    "Yönetim Bilişim Sistemleri":{en:"Management Information Systems",ar:"نظم المعلومات الإدارية",it:"Sistemi Informativi Gestionali",fr:"Systèmes d'Information de Gestion"},
+    "Sosyal Teknoloji":{en:"Social Technology",ar:"التكنولوجيا الاجتماعية",it:"Tecnologia Sociale",fr:"Technologie Sociale"},
+    "Elektrikli Araçlar":{en:"Electric Vehicles",ar:"المركبات الكهربائية",it:"Veicoli Elettrici",fr:"Véhicules Électriques"},
+    "Elektro Optik":{en:"Electro-Optics",ar:"الإلكترو بصريات",it:"Elettro-ottica",fr:"Électro-optique"},
+    "Elektronik Harp ve Hava Savunma":{en:"Electronic Warfare & Air Defence",ar:"الحرب الإلكترونية والدفاع الجوي",it:"Guerra Elettronica e Difesa Aerea",fr:"Guerre Électronique et Défense Aérienne"},
+    "Havacılık ve Uzay":{en:"Aviation & Space",ar:"الطيران والفضاء",it:"Aviazione e Spazio",fr:"Aviation et Espace"},
+    "Hava Araçları Teknolojileri Geliştirme":{en:"Aircraft Technologies Development",ar:"تطوير تقنيات الطائرات",it:"Sviluppo Tecnologie Aeromobili",fr:"Développement des Technologies Aéronautiques"},
+    "İHA":{en:"UAV",ar:"الطائرات المسيّرة",it:"UAV (Droni)",fr:"Drones (UAV)"},
+    "Savunma Sanayi":{en:"Defence Industry",ar:"الصناعات الدفاعية",it:"Industria della Difesa",fr:"Industrie de la Défense"},
+    "Kalite, Mühendislik ve İnovasyon":{en:"Quality, Engineering & Innovation",ar:"الجودة والهندسة والابتكار",it:"Qualità, Ingegneria e Innovazione",fr:"Qualité, Ingénierie et Innovation"},
+    "Motor Sporları":{en:"Motorsports",ar:"رياضة المحركات",it:"Sport Motoristici",fr:"Sports Mécaniques"},
+    "İşletme":{en:"Business Administration",ar:"إدارة الأعمال",it:"Economia Aziendale",fr:"Gestion d'Entreprise"},
+    "Ekonomik ve Sosyal Araştırmalar":{en:"Economic & Social Research",ar:"الأبحاث الاقتصادية والاجتماعية",it:"Ricerca Economica e Sociale",fr:"Recherche Économique et Sociale"},
+    "Endüstriyel Tasarım":{en:"Industrial Design",ar:"التصميم الصناعي",it:"Design Industriale",fr:"Design Industriel"},
+    "İç Mimarlık, Mesleki Gelişim ve İnovasyon":{en:"Interior Architecture, Professional Development & Innovation",ar:"العمارة الداخلية والتطوير المهني والابتكار",it:"Architettura d'Interni, Sviluppo Professionale e Innovazione",fr:"Architecture d'Intérieur, Développement Professionnel et Innovation"},
+    "Evrensel Müzik":{en:"Universal Music",ar:"الموسيقى العالمية",it:"Musica Universale",fr:"Musique Universelle"},
+    "Fotoğrafçılık ve Çağdaş Sanatlar":{en:"Photography & Contemporary Arts",ar:"التصوير والفنون المعاصرة",it:"Fotografia e Arti Contemporanee",fr:"Photographie et Arts Contemporains"},
+    "Tiyatro":{en:"Theatre",ar:"المسرح",it:"Teatro",fr:"Théâtre"},
+    "Halk Dansları":{en:"Folk Dances",ar:"الرقص الشعبي",it:"Danze Popolari",fr:"Danses Folkloriques"},
+    "Rus Kültür ve Edebiyat":{en:"Russian Culture & Literature",ar:"الثقافة والأدب الروسي",it:"Cultura e Letteratura Russa",fr:"Culture et Littérature Russes"},
+    "Akıl ve Zeka Oyunları":{en:"Mind & Intelligence Games",ar:"ألعاب العقل والذكاء",it:"Giochi di Logica e Intelligenza",fr:"Jeux de Logique et d'Intelligence"},
+    "Türk Dünyası Araştırmaları":{en:"Turkic World Studies",ar:"دراسات العالم التركي",it:"Studi sul Mondo Turco",fr:"Études du Monde Turc"},
+    "Türkiye-Azerbaycan Dostluk":{en:"Türkiye-Azerbaijan Friendship",ar:"الصداقة التركية الأذربيجانية",it:"Amicizia Türkiye-Azerbaigian",fr:"Amitié Türkiye-Azerbaïdjan"},
+    "Münazara ve Hitabet":{en:"Debate & Oratory",ar:"المناظرة والخطابة",it:"Dibattito e Oratoria",fr:"Débat et Éloquence"},
+    "Toplumsal Kültür ve Yardımlaşma":{en:"Social Culture & Solidarity",ar:"الثقافة المجتمعية والتكافل",it:"Cultura Sociale e Solidarietà",fr:"Culture Sociale et Solidarité"},
+    "Voleybol":{en:"Volleyball",ar:"الكرة الطائرة",it:"Pallavolo",fr:"Volley-ball"},
+    "Gezi":{en:"Travel",ar:"الرحلات",it:"Viaggi",fr:"Voyages"}
+  };
+  function nameFor(t){ var m=NAMEI18N[t.n]; return (m && m[lang]) ? m[lang] : t.n; }
+
+  var activeCat = 0;
+  function esc(s){return String(s||'').replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+
+  /* Kategori chip'leri */
+  function renderChips(){
+    var box = root.querySelector('[data-chips]'); box.innerHTML='';
+    var all = document.createElement('button'); all.className='thw-chip'+(activeCat===0?' active':''); all.textContent=UI.all[lang];
+    all.onclick=function(){activeCat=0;renderChips();renderCards();}; box.appendChild(all);
+    Object.keys(CATS).forEach(function(k){
+      var b=document.createElement('button'); b.className='thw-chip'+(activeCat==k?' active':''); b.textContent=CATS[k][lang];
+      b.style.borderColor=activeCat==k?CATS[k].c:''; if(activeCat==k){b.style.background=CATS[k].c;b.style.color='#fff';}
+      b.onclick=function(){activeCat=+k;renderChips();renderCards();}; box.appendChild(b);
+    });
+  }
+  /* Topluluk kartları */
+  // Kategori kapak motifleri (topluluğa özel foto yoksa gösterilir)
+  var MOTIF = {
+    1:'<rect x="6" y="6" width="12" height="12" rx="2"/><rect x="9.5" y="9.5" width="5" height="5" rx="1"/><path d="M9 3v3M15 3v3M9 18v3M15 18v3M3 9h3M3 15h3M18 9h3M18 15h3"/>',
+    2:'<path d="M21 3L3 10.5l6.5 2.2L12 19l3.2-5.5z"/><path d="M9.5 12.7l4.2-3.9"/>',
+    3:'<path d="M4 20h16"/><path d="M7 20v-5M12 20v-9M17 20v-13"/><path d="M6 10.5l4-3 3 2 5.5-5"/><path d="M17 4h2.5v2.5"/>',
+    4:'<path d="M12 3a9 9 0 1 0 1 17.95c1.3-.15 1.3-1.55.4-2.3-.9-.75-.5-2.15.7-2.15H17a4 4 0 0 0 4-4c0-4.7-4-8.3-9-8.5z"/><circle cx="8" cy="11" r="1"/><circle cx="12" cy="8" r="1"/><circle cx="16" cy="11" r="1"/>',
+    5:'<circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18z"/><path d="M5 7c4.5 2.2 9.5 2.2 14 0M5 17c4.5-2.2 9.5-2.2 14 0"/>',
+    6:'<path d="M12 20.3l-1.4-1.3C6 14.9 3 12.2 3 8.9 3 6.2 5.1 4 7.8 4c1.6 0 3.1.8 4 2 .9-1.2 2.4-2 4-2C18.9 4 21 6.2 21 8.9c0 3.3-3 6-7.6 10.1z"/>',
+    7:'<path d="M8 4h8v4a4 4 0 0 1-8 0z"/><path d="M8 5H5.4A1.4 1.4 0 0 0 4 6.4C4 8.3 5.6 9.6 8 9.9"/><path d="M16 5h2.6A1.4 1.4 0 0 1 20 6.4C20 8.3 18.4 9.6 16 9.9"/><path d="M12 12v3M9 20h6M10 20l.5-2.6h3l.5 2.6"/>'
+  };
+
+  function renderCards(){
+    var grid=root.querySelector('[data-grid]'), q=(root.querySelector('.thw-q').value||'').toLowerCase().trim();
+    grid.innerHTML=''; var shown=0;
+    COMM.forEach(function(t){
+      if(activeCat && t.c!==activeCat) return;
+      if(q && (t.n+' '+nameFor(t)).toLowerCase().indexOf(q)<0) return;
+      shown++;
+      var a=document.createElement('a'); a.className='thw-c'; a.href=CONFIG.base+t.s; a.target='_blank'; a.rel='noopener';
+      a.style.setProperty('--cc',CATS[t.c].c);
+      var nm=nameFor(t);
+      var head='<div class="thw-head"><img src="https://sks.ostimteknik.edu.tr/web/image/'+t.g+'" alt="" loading="lazy" onerror="this.outerHTML=\'<span class=&quot;ph&quot;>'+esc(nm.charAt(0))+'</span>\'">'+
+        '<span><b>'+esc(nm)+'</b><span>'+esc(CATS[t.c][lang])+'</span></span></div>';
+      var cover='<div class="thw-cover"><svg class="thw-motif" viewBox="0 0 24 24">'+(MOTIF[t.c]||'')+'</svg>'+
+        (t.photo?'<img class="thw-photo" src="'+esc(t.photo)+'" alt="" loading="lazy" onerror="this.remove()">':'')+'</div>';
+      a.innerHTML=head+cover;
+      grid.appendChild(a);
+    });
+    root.querySelector('[data-empty]').classList.toggle('show',shown===0);
+  }
+
+  /* ===== Etkinlikler ===== */
+  var EVENTS=[];
+  var DEMO=[
+    {community:'Yapay Zeka',name:'YZ ile Görüntü İşleme Atölyesi',type:'Atölye',date:'2026-09-18',time:'14:00',place:'Merkez Kampüs F Blok',desc:'Uygulamalı atölye.',poster:'',manager:'',contact:''},
+    {community:'Fintech',name:'Sektörde Finansal Teknolojiler',type:'Seminer',date:'2026-10-02',time:'16:00',place:'Konferans Salonu 1',desc:'Konuk konuşmacılar.',poster:'',manager:'',contact:''},
+    {community:'Havacılık ve Uzay',name:'Model Roket Fırlatma Günü',type:'Etkinlik',date:'2026-05-12',time:'11:00',place:'Açık Alan',desc:'Bahar etkinliği.',poster:'',manager:'',contact:''},
+    {community:'Fotoğrafçılık ve Çağdaş Sanatlar',name:'Şehir Fotoğrafçılığı Gezisi',type:'Gezi',date:'2026-04-06',time:'10:00',place:'Ankara Kalesi',desc:'Saha çalışması.',poster:'',manager:'',contact:''}
+  ];
+  function poster(v){if(!v)return '';v=String(v).trim();var m=v.match(/[-\w]{25,}/);if(v.indexOf('drive.google')>-1&&m)return 'https://drive.google.com/thumbnail?id='+m[0]+'&sz=w800';return v;}
+  function pdate(s){if(!s)return null;if(s instanceof Date)return s;var m=String(s).match(/^(\d{4})-(\d{1,2})-(\d{1,2})/);if(m)return new Date(+m[1],+m[2]-1,+m[3]);var d=new Date(s);return isNaN(d)?null:d;}
+  function renderEvents(){
+    var today=new Date();today.setHours(0,0,0,0);
+    ['up','past'].forEach(function(kind){
+      var grid=root.querySelector('[data-egrid="'+kind+'"]'),empty=root.querySelector('[data-eempty="'+kind+'"]');
+      var list=EVENTS.filter(function(e){var d=e._d;if(!d)return kind==='up';return kind==='up'?d>=today:d<today;});
+      list.sort(function(a,b){return kind==='up'?a._d-b._d:b._d-a._d;});
+      grid.innerHTML='';
+      list.forEach(function(e){
+        var d=e._d,pu=poster(e.poster);
+        var c=document.createElement('div');c.className='thw-ec'+(kind==='past'?' thw-past':'');
+        c.innerHTML='<div class="thw-ep">'+(e.type?'<span class="thw-etype">'+esc(e.type)+'</span>':'')+(pu?'<img src="'+esc(pu)+'" onerror="this.remove()">':'<span class="ph">'+esc((e.community||'?').charAt(0))+'</span>')+'</div>'+
+          '<div class="thw-eb"><div class="thw-ed"><b>'+(d?d.getDate():'')+'</b><span>'+(d?UI.months[lang][d.getMonth()]:'')+'</span></div>'+
+          '<div class="thw-ei"><h3>'+esc(e.name)+'</h3><span class="m">'+esc(e.time||'')+(e.place?' · '+esc(e.place):'')+'</span>'+(e.community?'<span class="cm">'+esc(e.community)+'</span>':'')+'</div></div>';
+        c.onclick=function(){openDetail(e);};grid.appendChild(c);
+      });
+      if(empty)empty.classList.toggle('show',list.length===0);
+    });
+  }
+  function loadEvents(){
+    if(!CONFIG.scriptUrl){EVENTS=DEMO.map(function(e){var o={};for(var k in e)o[k]=e[k];o._d=pdate(e.date);return o;});renderEvents();return;}
+    fetch(CONFIG.scriptUrl).then(function(r){return r.json();}).then(function(j){
+      if(j&&j.ok&&j.events){EVENTS=j.events.map(function(e){e._d=pdate(e.date);return e;});renderEvents();}
+    }).catch(function(){EVENTS=DEMO.map(function(e){var o={};for(var k in e)o[k]=e[k];o._d=pdate(e.date);return o;});renderEvents();});
+  }
+  function loadCommunityPhotos(){
+    // Panelden E-Tablo'ya girilen "Foto URL" değerlerini toplu çekip kartlara basar.
+    // Backend bu ucu desteklemiyorsa sessizce hiçbir şey yapmaz (temalı motifler kalır).
+    if(!CONFIG.scriptUrl) return;
+    fetch(CONFIG.scriptUrl+'?action=communities&t='+Date.now()).then(function(r){return r.json();}).then(function(j){
+      var list=(j&&(j.communities||j.data||j.rows))||[];
+      if(!list.length) return;
+      var by={};
+      list.forEach(function(c){
+        var nm=c.Topluluk||c.name||c.n||c.ad;
+        var ph=c['Foto URL']||c.foto||c.photo||c.fotoUrl||c.Foto;
+        if(nm&&ph) by[String(nm).trim()]=String(ph).trim();
+      });
+      var changed=false;
+      COMM.forEach(function(t){ if(by[t.n]){ t.photo=by[t.n]; changed=true; } });
+      if(changed) renderCards();
+    }).catch(function(){});
+  }
+  function openDetail(e){
+    var m=root.querySelector('[data-detailmodal]'),dp=root.querySelector('[data-dposter]'),pu=poster(e.poster),d=e._d;
+    dp.querySelectorAll('img,.ph').forEach(function(x){x.remove();});
+    if(pu){var i=document.createElement('img');i.src=pu;i.onerror=function(){this.remove();};dp.appendChild(i);}else{var p=document.createElement('span');p.className='ph';p.textContent=(e.community||'?').charAt(0);dp.appendChild(p);}
+    root.querySelector('[data-dtype]').textContent=e.type||'';
+    root.querySelector('[data-dtitle]').textContent=e.name||'';
+    root.querySelector('[data-ddate]').textContent=d?(d.getDate()+' '+UI.months[lang][d.getMonth()]+' '+d.getFullYear()):(e.date||'');
+    root.querySelector('[data-dtime]').textContent=e.time||'—';
+    root.querySelector('[data-dplace]').textContent=e.place||'—';
+    root.querySelector('[data-dmanager]').textContent=(e.manager||'—')+(e.contact?' · '+e.contact:'');
+    root.querySelector('[data-ddesc]').textContent=e.desc||'';
+    m.classList.add('open');
+  }
+
+  /* ===== Yönetici paneli ===== */
+  var adminPass='';
+  function fillCommSelect(){
+    var sel=root.querySelector('[data-commselect]');if(!sel)return;sel.innerHTML='';
+    Object.keys(CATS).forEach(function(k){
+      var og=document.createElement('optgroup');og.label=CATS[k][lang];
+      COMM.filter(function(t){return t.c==k;}).forEach(function(t){var o=document.createElement('option');o.value=t.n;o.textContent=t.n;og.appendChild(o);});
+      sel.appendChild(og);
+    });
+  }
+  root.querySelector('[data-login]').addEventListener('click',function(){
+    var pass=root.querySelector('[data-pw]').value, st=root.querySelector('[data-astat]'), addbtn=root.querySelector('[data-addbtn]'), editbtn=root.querySelector('[data-editbtn]');
+    function setEnabled(on){ addbtn.disabled=!on; editbtn.disabled=!on; }
+    if(!pass){ st.textContent=''; return; }
+    if(!CONFIG.scriptUrl){ adminPass=pass; setEnabled(true); st.textContent=(lang==='tr'?'Giriş yapıldı (demo)':'Ready (demo)'); st.style.color='#7ED0A8'; return; }
+    st.textContent=(lang==='tr'?'Kontrol ediliyor…':'Checking…'); st.style.color='#C9AEBC'; setEnabled(false);
+    fetch(CONFIG.scriptUrl+'?action=auth&pass='+encodeURIComponent(pass)).then(function(r){return r.json();}).then(function(j){
+      if(j&&j.ok){ adminPass=pass; setEnabled(true); st.textContent=(lang==='tr'?'✓ Giriş yapıldı':'✓ Logged in'); st.style.color='#7ED0A8'; }
+      else { adminPass=''; setEnabled(false); st.textContent=(lang==='tr'?'⚠ Şifre hatalı':'⚠ Wrong password'); st.style.color='#F0A0A0'; }
+    }).catch(function(){ setEnabled(false); st.textContent=(lang==='tr'?'⚠ Bağlantı hatası':'⚠ Connection error'); st.style.color='#F0A0A0'; });
+  });
+  root.querySelector('[data-addbtn]').addEventListener('click',function(){
+    if(this.disabled)return; fillCommSelect(); root.querySelector('[data-formmodal]').classList.add('open');
+  });
+  root.querySelector('[data-eventform]').addEventListener('submit',function(e){
+    e.preventDefault();
+    var form=this,btn=form.querySelector('.thw-submit'),msg=form.querySelector('[data-fmsg]');
+    var fd=new FormData(form);
+    var payload={password:adminPass,community:fd.get('community'),name:fd.get('name'),type:fd.get('type'),date:fd.get('date'),time:fd.get('time'),place:fd.get('place'),desc:fd.get('desc'),manager:fd.get('manager'),contact:fd.get('contact')};
+    function send(){
+      btn.disabled=true;msg.className='thw-fmsg';
+      if(!CONFIG.scriptUrl){ msg.textContent=(lang==='tr'?'⚠ Önce CONFIG.scriptUrl ayarlanmalı (demo).':'⚠ Set CONFIG.scriptUrl first (demo).'); msg.classList.add('show','err'); btn.disabled=false; return; }
+      fetch(CONFIG.scriptUrl,{method:'POST',body:JSON.stringify(payload)}).then(function(r){return r.json();}).then(function(j){
+        if(j&&j.ok){ msg.textContent=(lang==='tr'?'✓ Etkinlik eklendi.':'✓ Event added.'); msg.className='thw-fmsg show ok'; form.reset(); loadEvents(); }
+        else { msg.textContent='⚠ '+((j&&j.error)||'Hata'); msg.className='thw-fmsg show err'; }
+        btn.disabled=false;
+      }).catch(function(err){ msg.textContent='⚠ '+err; msg.className='thw-fmsg show err'; btn.disabled=false; });
+    }
+    var file=form.querySelector('input[name=poster]').files[0];
+    if(file){
+      if(file.size>500*1024){ msg.textContent=(lang==='tr'?'⚠ Afiş 500 KB\u0027den büyük olamaz ('+Math.round(file.size/1024)+' KB seçildi).':'⚠ Poster must be under 500 KB ('+Math.round(file.size/1024)+' KB selected).'); msg.className='thw-fmsg show err'; return; }
+      var rd=new FileReader();rd.onload=function(){payload.posterData=rd.result;payload.posterName=file.name;send();};rd.readAsDataURL(file);
+    }
+    else send();
+  });
+
+  /* Etkinlik sekmeleri + modal kapat */
+  root.querySelectorAll('.thw-etab').forEach(function(t){t.addEventListener('click',function(){
+    root.querySelectorAll('.thw-etab').forEach(function(x){x.classList.toggle('active',x===t);});
+    var k=t.getAttribute('data-etab');root.querySelectorAll('.thw-epanel').forEach(function(p){p.hidden=p.getAttribute('data-epanel')!==k;});
+  });});
+  root.querySelectorAll('[data-formmodal],[data-detailmodal],[data-editmodal]').forEach(function(m){m.addEventListener('click',function(e){if(e.target===m||e.target.hasAttribute('data-close'))m.classList.remove('open');});});
+
+  /* Topluluk bilgileri düzenleme */
+  var editModal=root.querySelector('[data-editmodal]'), editForm=root.querySelector('[data-editform]'), editSelect=root.querySelector('[data-editselect]');
+  function fillEditSelect(){
+    if(!editSelect)return; editSelect.innerHTML='<option value="">— '+(lang==='tr'?'Topluluk seç':'Select')+' —</option>';
+    Object.keys(CATS).forEach(function(k){
+      var og=document.createElement('optgroup'); og.label=CATS[k][lang];
+      COMM.filter(function(t){return t.c==k;}).forEach(function(t){var o=document.createElement('option');o.value=t.n;o.textContent=t.n;og.appendChild(o);});
+      editSelect.appendChild(og);
+    });
+  }
+  root.querySelector('[data-editbtn]').addEventListener('click',function(){
+    if(this.disabled)return; fillEditSelect(); editForm.reset();
+    root.querySelector('[data-editmsg]').className='thw-fmsg'; editModal.classList.add('open');
+  });
+  if(editSelect)editSelect.addEventListener('change',function(){
+    var name=this.value, msg=root.querySelector('[data-editmsg]');
+    editForm.querySelectorAll('input[name]').forEach(function(inp){inp.value='';});
+    if(!name){return;}
+    msg.className='thw-fmsg show'; msg.textContent=(lang==='tr'?'Yükleniyor…':'Loading…'); msg.style.color='#5B6B84';
+    fetch(CONFIG.scriptUrl+'?action=community&name='+encodeURIComponent(name)).then(function(r){return r.json();}).then(function(j){
+      var c=(j&&j.community)||{};
+      editForm.querySelectorAll('input[name]').forEach(function(inp){ inp.value=(c[inp.name]!=null?c[inp.name]:''); });
+      msg.className='thw-fmsg';
+    }).catch(function(){ msg.className='thw-fmsg'; });
+  });
+  if(editForm)editForm.addEventListener('submit',function(e){
+    e.preventDefault();
+    var msg=root.querySelector('[data-editmsg]'), btn=editForm.querySelector('.thw-submit');
+    if(!editSelect.value){ msg.className='thw-fmsg show err'; msg.textContent=(lang==='tr'?'⚠ Önce topluluk seçin.':'⚠ Select a community.'); return; }
+    var data={ 'Topluluk': editSelect.value };
+    editForm.querySelectorAll('input[name]').forEach(function(inp){ data[inp.name]=inp.value; });
+    btn.disabled=true; msg.className='thw-fmsg';
+    fetch(CONFIG.scriptUrl,{method:'POST',body:JSON.stringify({action:'savecommunity',password:adminPass,data:data})}).then(function(r){return r.json();}).then(function(j){
+      if(j&&j.ok){ msg.textContent=(lang==='tr'?'✓ Kaydedildi.':'✓ Saved.'); msg.className='thw-fmsg show ok'; }
+      else { msg.textContent='⚠ '+((j&&j.error)||'Hata'); msg.className='thw-fmsg show err'; }
+      btn.disabled=false;
+    }).catch(function(err){ msg.textContent='⚠ '+err; msg.className='thw-fmsg show err'; btn.disabled=false; });
+  });
+
+  /* Arama + dil */
+  root.querySelector('.thw-q').addEventListener('input',renderCards);
+  root.querySelectorAll('.thw-lang button').forEach(function(b){b.addEventListener('click',function(){
+    lang=b.getAttribute('data-lang');
+    root.querySelectorAll('[data-tr]').forEach(function(el){var v=el.getAttribute('data-'+lang);if(v===null)return;if(el.tagName==='INPUT')el.setAttribute('placeholder',v);else el.innerHTML=v;});
+    root.setAttribute('data-lang',lang);root.setAttribute('dir',lang==='ar'?'rtl':'ltr');
+    root.querySelectorAll('.thw-lang button').forEach(function(x){x.classList.toggle('active',x===b);});
+    renderChips();renderCards();renderEvents();fillCommSelect();
+  });});
+
+  renderChips();renderCards();loadEvents();loadCommunityPhotos();
+})();
+</script>
+</div></div>
+    </section><section class="s_company_team o_colored_level pt0 pb0" data-oe-shape-data="{&#34;shape&#34;:&#34;web_editor/Bold/05_001&#34;,&#34;flip&#34;:[]}" data-snippet="s_company_team" data-name="Ekip" style="background-image: none; position: relative;"><div class="o_we_shape o_web_editor_Bold_05_001"></div>
+        
+        <div class="container">
+            <div class="row s_nb_column_fixed o_grid_mode" data-row-count="-Infinity">
+    
+
+    
+
+    
+
+    
+
+    
+
+                
+                
+                
+                
+            </div>
+        </div>
+    </section><section class="s_company_team o_colored_level pt0 pb0" data-oe-shape-data="{&#34;shape&#34;:&#34;web_editor/Bold/05_001&#34;,&#34;flip&#34;:[]}" data-snippet="s_company_team" data-name="Ekip" style="background-image: none; position: relative;"><div class="o_we_shape o_web_editor_Bold_05_001"></div>
+        
+        <div class="container">
+            <div class="row s_nb_column_fixed o_grid_mode" data-row-count="-Infinity">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+                
+                
+                
+                
+            </div>
+        </div>
+    </section><section class="s_company_team o_colored_level pt0 pb0" data-oe-shape-data="{&#34;shape&#34;:&#34;web_editor/Bold/05_001&#34;,&#34;flip&#34;:[]}" data-snippet="s_company_team" data-name="Ekip" style="background-image: none; position: relative;"><div class="o_we_shape o_web_editor_Bold_05_001"></div>
+        
+        <div class="container">
+            <div class="row s_nb_column_fixed o_grid_mode" data-row-count="-Infinity">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+                
+                
+                
+                
+            </div>
+        </div>
+    </section><section class="s_company_team o_colored_level pt0 pb0" data-oe-shape-data="{&#34;shape&#34;:&#34;web_editor/Bold/05_001&#34;,&#34;flip&#34;:[]}" data-snippet="s_company_team" data-name="Ekip" style="background-image: none; position: relative;"><div class="o_we_shape o_web_editor_Bold_05_001"></div>
+        
+        <div class="container">
+            <div class="row s_nb_column_fixed o_grid_mode" data-row-count="-Infinity">
+    
+
+                
+                
+                
+                
+            </div>
+        </div>
+    </section><section class="s_company_team o_colored_level pb0 pt0" data-oe-shape-data="{&#34;shape&#34;:&#34;web_editor/Blobs/09&#34;,&#34;flip&#34;:[]}" data-snippet="s_company_team" data-name="Ekip" style="background-image: none;">
+        <div class="o_we_shape o_web_editor_Blobs_09"></div>
+        <div class="container">
+            <div class="row s_nb_column_fixed o_grid_mode" data-row-count="-Infinity">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+                
+                
+                
+                
+            </div>
+        </div>
+    </section></div>
+    
+                </main>
+                <footer id="bottom" data-anchor="true" data-name="Footer" role="contentinfo" class="o_footer o_colored_level o_cc ">
+                    <div id="footer" class="oe_structure oe_structure_solo">
+            <section class="s_text_block pt32" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+                <div class="s_allow_columns container">
+                    <div class="s_social_media mb-4 o_not_editable text-center" data-snippet="s_social_media" data-name="Social Media">
+                        <h5 class="s_social_media_title d-none">Follow us</h5>
+<a href="/en/website/social/instagram" class="s_social_media_instagram" target="_blank" aria-label="Instagram">
+                            <i class="fa rounded-circle rounded shadow-sm o_editable_media fa-instagram text-o-color-3"></i>
+                        </a>
+<a href="/en/website/social/linkedin" class="s_social_media_linkedin" target="_blank" aria-label="LinkedIn">
+                            <i class="fa rounded-circle rounded shadow-sm o_editable_media fa-linkedin text-o-color-3"></i>
+                        </a>
+<a href="/en/website/social/facebook" class="s_social_media_facebook" target="_blank" aria-label="Facebook">
+                            <i class="fa rounded-circle rounded shadow-sm o_editable_media fa-facebook text-o-color-3"></i>
+                        </a>
+<a href="/en/website/social/twitter" class="s_social_media_twitter" target="_blank" aria-label="Twitter">
+                            <i class="fa rounded-circle rounded shadow-sm o_editable_media fa-twitter text-o-color-3"></i>
+                        </a>
+<a href="/en/website/social/youtube" class="s_social_media_youtube" target="_blank" aria-label="YouTube">
+                            <i class="fa rounded-circle rounded shadow-sm o_editable_media fa-youtube text-o-color-3"></i>
+                        </a>
+</div>
+                    <p class="text-center mb-1">OSTİM Teknik Üniversitesi, OSTİM 06374 Ankara</p>
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item mx-3"><i class="fa fa-1x fa-fw fa-phone me-2"></i><span class="o_force_ltr"><a href="tel:1 (650) 555-0111" data-bs-original-title="" title=""><font class="text-white">​</font></a></span></li>+90 312 386 10 92&nbsp;<li class="list-inline-item mx-3"><i class="fa fa-1x fa-fw fa-envelope me-2"></i><a href="mailto:sks@ostimteknik.edu.tr" data-bs-original-title="" title="" aria-describedby="popover496537"><font class="text-white">sks@ostimteknik.edu.tr</font></a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="s_text_block pt0 pb0" data-snippet="s_text_block" data-name="Logo" style="background-image: none;">
+                <div class="o_container_small">
+                    <div class="row">
+    
+
+    
+
+                        <div class="o_colored_level col-lg-12">
+                                <img src="/web/image/271249-6149ed9d/ostim%20beyaz%20logo.png" alt="Ostim Technical University white logo" class="img-fluid mx-auto img o_we_custom_image" data-original-id="195778" data-original-src="/web/image/195778-59ca6729/ostim%20beyaz%20logo.png" data-mimetype="image/png" data-resize-width="256" data-bs-original-title="" title="" aria-describedby="tooltip860834" loading="lazy"/>
+                            </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+                <div class="ostim-consent-reopen-wrap container">
+                    <a href="#" class="ostim-consent-reopen" role="button">
+                        Cookie Settings
+                    </a>
+                </div>
+                </footer>
+    	<nav id="sidebar" class="sidebar-wrapper bg-white d-block d-md-none">
+	    	<div class="sidebar-content">
+				
+				<div class="card bg-white">
+	                <div class="card-header d-flex align-items-center justify-content-between">
+	                  	<div class="header-brand mt16 mb16 text-start">
+	    					<a href="/en/" class="navbar-brand logo ">
+					            <span role="img" aria-label="Logo of Sağlık Kültür ve Spor Müdürlüğünd Sports" title="Sağlık Kültür ve Spor Müdürlüğünd Sports"><img src="/web/image/website/72/sidebar_logo/Sa%C4%9Fl%C4%B1k%20K%C3%BClt%C3%BCr%20ve%20Spor%20M%C3%BCd%C3%BCrl%C3%BC%C4%9F%C3%BCnd%20Sports?unique=165602c" class="img img-fluid" alt="Sağlık Kültür ve Spor Müdürlüğünd Sports" loading="lazy"/></span>
+					        </a>
+	            		</div>
+						<div class="search">
+							<div class="close-mbl-sidebar  text-center">
+								<a href="#" class="text-decoration-none"><span class="lnr lnr-cross text-black" id="close_mbl_sidebar"></span></a>							
+							</div>
+						</div>
+	                </div>
+	                <div class="card-body tab-content">
+	                  	<div class="tab-pane fade active show" id="nav_tabs_content_1595584408392_2" role="tabpanel" aria-labelledby="nav_tabs_link_1595584408392_2">
+	                    	<ul class="nav navbar-nav align-items-md-center" id="top_menu">
+    <li class="nav-item dropdown  ">
+        <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle ">
+            <span>About Us</span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+    <li role="presentation" class="">
+        <a role="menuitem" href="https://sks.ostimteknik.edu.tr/birim-ici-degerlendirme-raporlari" class="dropdown-item ">
+            <span>Unit Self-Evaluation Report</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/en/vizyon-misyon" class="dropdown-item ">
+            <span>Mission and Vision</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/en/is-akisi" class="dropdown-item ">
+            <span>Workflow​</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/en/mevzuat-belgeler" class="dropdown-item ">
+            <span>Regulations and Documents</span>
+        </a>
+    </li>
+        </ul>
+    </li>
+    <li class="nav-item dropdown  ">
+        <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle ">
+            <span>Health Services</span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+    <li role="presentation" class="">
+        <a role="menuitem" href="/en/saglik-hizmetleri" class="dropdown-item ">
+            <span>Health Services Coordination Office​</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/en/psikoloji" class="dropdown-item ">
+            <span>Psychological Counseling Services​</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/en/bagmlilikla-mucadele" class="dropdown-item ">
+            <span>Addiction Prevention and Support</span>
+        </a>
+    </li>
+        </ul>
+    </li>
+    <li class="nav-item dropdown active ">
+        <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle ">
+            <span>Culture and Social Affairs​</span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+    <li role="presentation" class="">
+        <a role="menuitem" href="/en/kultur-ve-sosyal-isler" class="dropdown-item ">
+            <span>Coordination Office</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/en/yurt-imkanlar" class="dropdown-item ">
+            <span>Dormitory Facilities​</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/en/ogrenci-topluluklarimiz" class="dropdown-item active">
+            <span>Student Societies​</span>
+        </a>
+    </li>
+        </ul>
+    </li>
+    <li class="nav-item dropdown  ">
+        <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle ">
+            <span>Sports Services</span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+    <li role="presentation" class="">
+        <a role="menuitem" href="/en/spor" class="dropdown-item ">
+            <span>Coordination Office</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/en/sporda-basarlarmz" class="dropdown-item ">
+            <span>Achievements in Sports​</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/en/spor-tesisleri" class="dropdown-item ">
+            <span>Sports Facilities​</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="/en/nasil-yapilir" class="dropdown-item ">
+            <span>How to Get Started?</span>
+        </a>
+    </li>
+        </ul>
+    </li>
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="https://sks.ostimtech.net/gorus-istek-ve-sikayet" class="nav-link ">
+            <span>Görüş İstek ve Şikayet</span>
+        </a>
+    </li>
+							</ul>
+	                  	</div>
+	                </div>
+	          	</div>
+	    	</div>
+	    </nav>
+            </div>
+                
+                <div id="ostim_consent_banner" class="ostim-consent" role="dialog" aria-modal="true" aria-labelledby="ostim_consent_title" aria-describedby="ostim_consent_desc" hidden="hidden" data-has-consent="0">
+                    <div class="ostim-consent__panel" role="document">
+                        <h2 id="ostim_consent_title" class="ostim-consent__title">
+                            Cookie Preferences
+                        </h2>
+                        <p id="ostim_consent_desc" class="ostim-consent__desc">
+                                We use cookies to improve your experience, analyze traffic and
+                                personalize content. Strictly necessary cookies are always active
+                                for the site to work. You can change your choice at any time via
+                                the “Cookie Settings” link in the footer.
+                                For details, see <a class="ostim-consent__policy" href="https://ostimteknik.edu.tr/cookie-policy">Cookie Policy</a>.
+                        </p>
+                        <div class="ostim-consent__actions">
+                            <button type="button" class="ostim-consent__btn ostim-consent__btn--reject" data-consent="reject">
+                                Reject All
+                            </button>
+                            <button type="button" class="ostim-consent__btn ostim-consent__btn--analytics" data-consent="analytics">
+                                Analytics Only
+                            </button>
+                            <button type="button" class="ostim-consent__btn ostim-consent__btn--accept" data-consent="accept">
+                                Accept All
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+        
+        </body>
+</html>

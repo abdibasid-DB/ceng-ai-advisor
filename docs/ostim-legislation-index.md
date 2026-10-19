@@ -16,7 +16,7 @@ The **In knowledge base** column gives the source ID when the document is regist
 | 6 | LİSANSÜSTÜ EĞİTİM-ÖĞRETİM YÖNETMELİĞİ | src_111 | [link](https://www.ostimteknik.edu.tr/web/content/247200?unique=2cb5939fec4d8fcf21aeb84a47afdd45f1b7fda4) |
 | 7 | OSTİM TEKNİK ÜNİVERSİTESİ ANA YÖNETMELİĞİ |  | [link](https://www.ostimteknik.edu.tr/web/content/247391?unique=8a75b59c6e50c566a5e6575c23ecd2912e14cc33) |
 | 8 | OSTİM TEKNİK ÜNİVERSİTESİ TEKNOLOJİ TRANSFER OFİSİ UYGULAMA VE ARAŞTIRMA MERKEZİ YÖNETMELİĞİ |  | [link](https://www.ostimteknik.edu.tr/web/content/520545?unique=084e64fcc7fcaccf1d76a8decf9fef5bad1f2073&download=false) |
-| 9 | ÖN LİSANS VE LİSANS EĞİTİM-ÖĞRETİM VE SINAV YÖNETMELİĞİ |  | [link](https://www.ostimteknik.edu.tr/web/content/628669?unique=c224a2ee01c9ee0f3d81db5183e19371e2fe5cac&download=false) |
+| 9 | ÖN LİSANS VE LİSANS EĞİTİM-ÖĞRETİM VE SINAV YÖNETMELİĞİ | src_058 | [link](https://www.ostimteknik.edu.tr/web/content/628669?unique=c224a2ee01c9ee0f3d81db5183e19371e2fe5cac&download=false) |
 | 10 | UZAKTAN EĞİTİM UYGULAMA VE ARAŞTIRMA MERKEZİ YÖNETMELİĞİ |  | [link](https://www.ostimteknik.edu.tr/web/content/247392?unique=1acfe33d3c7b8995f5cfb6c8f96a5aad1580958b) |
 | 11 | YABANCI DİLLER YÜKSEKOKULU EĞİTİM ÖĞRETİM VE SINAV YÖNETMELİĞİ |  | [link](https://www.ostimteknik.edu.tr/web/content/341733?unique=ea28160ad80432af6cf6a78de462d3ae9d20316e&download=false) |
 | 12 | YAZ ÖĞRETİMİ YÖNETMELİĞİ |  | [link](https://www.ostimteknik.edu.tr/web/content/520698?unique=5987c8282fac9379bfc327606c9b7606fe8450ae&download=false) |
@@ -133,7 +133,7 @@ The **In knowledge base** column gives the source ID when the document is regist
 | 1 | BİLGİ GÜVENLİĞİ POLİTİKASI |  | [link](https://www.ostimteknik.edu.tr/web/content/108645?unique=7a77a7a935e80e79f9c5a8bd2d49dbdbc95baea5) |
 | 2 | EĞİTİM POLİTİKASI |  | [link](https://www.ostimteknik.edu.tr/web/content/247389?unique=aeb88cbe3b4908703101d6e1bb2b0b22bf998f34) |
 | 3 | ERASMUS POLİTİKASI |  | [link](https://www.ostimteknik.edu.tr/web/content/520587?unique=222b3a43627e9909293815469a512d2ca372de20&download=false) |
-| 4 | İSTİHDAM POLİTİKASI |  | [link](https://www.ostimteknik.edu.tr/web/content/398095?unique=344602142faf7d8749e9b543a14e4888ca1a664e&download=false) |
+| 4 | İSTİHDAM POLİTİKASI | src_125 | [link](https://www.ostimteknik.edu.tr/web/content/398095?unique=344602142faf7d8749e9b543a14e4888ca1a664e&download=false) |
 | 5 | KALİTE POLİTİKASI |  | [link](https://www.ostimteknik.edu.tr/web/content/108642?unique=edf775c29863abdcff57c0af18a9cece26c38c28) |
 | 6 | TOPLUMSAL KATKI POLİTİKASI |  | [link](https://www.ostimteknik.edu.tr/web/content/520588?unique=7cd318f89f4c570246fceb968704f6f0c94d0df2&download=false) |
 | 7 | AKADEMİK PERSONEL DİSİPLİN SORUŞTURMA REHBERİ |  | [link](https://www.ostimteknik.edu.tr/web/content/661224?unique=92c15d34e1b5a23e02c10199e4413a5b3e2b7f9c&download=false) |
@@ -143,6 +143,6 @@ The **In knowledge base** column gives the source ID when the document is regist
 
 ## Notes
 
-- The live page links the undergraduate education and examination regulation at `/web/content/628669`. src_058 holds an earlier upload (`/web/content/458590`). The new version changes the make-up exam rule for missed final exams (no separate make-up exam; the student takes the resit exam).
+- src_058 was updated on 2026-10-19 from an earlier upload (`/web/content/458590`) to the version linked here (`/web/content/628669`), which includes the 9/2/2026 amendment to the make-up exam rule for missed final exams (no separate make-up exam; the student takes the resit exam).
 - Two copies are linked for some documents (for example YANDAL YÖNERGESİ at `/338004` and `/520575`). The knowledge base uses the copy the user selected (`/520575`).
 - KAYSİS links (`kms.kaysis.gov.tr`) point to the government legislation information system rather than the university site.
