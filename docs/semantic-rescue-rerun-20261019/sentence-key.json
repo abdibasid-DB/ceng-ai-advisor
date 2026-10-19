@@ -1,0 +1,26 @@
+{
+  "description": "Sentence-level answer key for the 21 answers in results.json, derived from manual-review.md. Sentence indices follow the pipeline splitter used by prune_unverified_sentences. Tags: ok = supported claim that should be kept; bad = wrong or unsupported claim that should be removed; harmless = removal acceptable either way (meta remark, mild inference, or literally supported but irrelevant); exempt = pipeline's 'retrieved evidence does not establish' sentence, always kept. Untagged sentences are ok.",
+  "verdicts": {
+    "P046": "good", "R103": "good", "R106": "good", "R118": "good", "S135": "good", "S136": "good", "T183": "good", "T191": "good",
+    "H066": "unhelpful", "M035": "unhelpful",
+    "F007": "flawed", "C021": "flawed", "M031": "flawed", "M034": "flawed", "H059": "flawed", "A082": "flawed",
+    "Y092": "flawed", "S132": "flawed", "S139": "flawed", "X150": "flawed", "T182": "flawed"
+  },
+  "sentences": {
+    "F007": {"bad": [0, 2, 3]},
+    "C021": {"bad": [1, 3], "harmless": [2]},
+    "M031": {"bad": [0]},
+    "M034": {"bad": [0], "harmless": [1]},
+    "M035": {"harmless": [0]},
+    "H059": {"bad": [0]},
+    "H066": {"harmless": [0]},
+    "A082": {"bad": [1]},
+    "Y092": {"bad": [2], "harmless": [0, 1, 3]},
+    "R103": {"exempt": [1]},
+    "S132": {"bad": [0]},
+    "S139": {"bad": [0, 1]},
+    "X150": {"bad": [0]},
+    "T182": {"bad": [0], "harmless": [1, 4, 6]},
+    "T191": {"harmless": [2]}
+  }
+}
