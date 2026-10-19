@@ -40,6 +40,69 @@ export async function sendQuestion(question, sessionId, resetSession = false) {
   return parseJsonResponse(response);
 }
 
+export async function sendQuestionStream(question, sessionId, resetSession = false, handlers = {}) {
+  const response = await fetch(`${API_BASE_URL}/api/v1/chat/stream`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/x-ndjson",
+    },
+    body: JSON.stringify({
+      question,
+      session_id: sessionId || undefined,
+      reset_session: resetSession,
+    }),
+  });
+
+  if (!response.ok) {
+    let data = null;
+    try {
+      data = await response.json();
+    } catch {
+      // Fall through to generic error.
+    }
+    throw new Error(data?.error || "The advisor service could not start a streaming response.");
+  }
+  if (!response.body) {
+    throw new Error("The advisor service did not return a readable stream.");
+  }
+
+  const reader = response.body.pipeThrough(new TextDecoderStream()).getReader();
+  let buffer = "";
+
+  while (true) {
+    const { value, done } = await reader.read();
+    if (done) {
+      break;
+    }
+    buffer += value;
+    const lines = buffer.split("\n");
+    buffer = lines.pop() || "";
+    for (const line of lines) {
+      if (!line.trim()) {
+        continue;
+      }
+      const event = JSON.parse(line);
+      if (event.event === "metadata") {
+        handlers.onMetadata?.(event.data);
+      } else if (event.event === "token") {
+        handlers.onToken?.(event.data?.text || "");
+      } else if (event.event === "final") {
+        handlers.onFinal?.(event.data);
+      } else if (event.event === "error") {
+        handlers.onError?.(event.data);
+      }
+    }
+  }
+
+  if (buffer.trim()) {
+    const event = JSON.parse(buffer);
+    if (event.event === "final") {
+      handlers.onFinal?.(event.data);
+    }
+  }
+}
+
 export async function getReadiness() {
   const response = await fetch(`${API_BASE_URL}/api/v1/readiness`);
   return parseJsonResponse(response);

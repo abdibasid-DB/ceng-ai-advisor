@@ -4,7 +4,7 @@ import ChatMessage from "../components/ChatMessage.jsx";
 import LoadingMessage from "../components/LoadingMessage.jsx";
 import StatusIndicator from "../components/StatusIndicator.jsx";
 import { EXAMPLE_QUESTIONS } from "../constants.js";
-import { API_BASE_URL, getReadiness, sendQuestion } from "../services/api.js";
+import { API_BASE_URL, getReadiness, sendQuestionStream } from "../services/api.js";
 
 function createMessage(role, content, extra = {}) {
   return {
@@ -87,30 +87,85 @@ function AdvisorPage() {
     }
 
     const userMessage = createMessage("user", question);
-    setMessages((current) => [...current, userMessage]);
+    const assistantMessage = createMessage("assistant", "", {
+      status: "streaming",
+      sources: [],
+      retrievedContext: [],
+      timing: {},
+      error: null,
+      isStreaming: true,
+    });
+    setMessages((current) => [...current, userMessage, assistantMessage]);
     setInput("");
     setIsLoading(true);
 
     try {
-      const response = await sendQuestion(question, sessionId);
-      if (response.session_id && response.session_id !== sessionId) {
-        setSessionId(response.session_id);
+      let receivedFinal = false;
+      await sendQuestionStream(question, sessionId, false, {
+        onMetadata: (metadata) => {
+          if (metadata.session_id && metadata.session_id !== sessionId) {
+            setSessionId(metadata.session_id);
+          }
+          setMessages((current) =>
+            current.map((message) =>
+              message.id === assistantMessage.id
+                ? {
+                    ...message,
+                    retrievalMetadata: metadata.retrieval_metadata || {},
+                    retrievedContext: metadata.retrieved_context || [],
+                  }
+                : message,
+            ),
+          );
+        },
+        // Raw model tokens are an unvalidated draft. They only signal progress;
+        // the visible answer is the validated text delivered by the final event.
+        onToken: () => {},
+        onFinal: (response) => {
+          receivedFinal = true;
+          if (response.session_id && response.session_id !== sessionId) {
+            setSessionId(response.session_id);
+          }
+          setMessages((current) =>
+            current.map((message) =>
+              message.id === assistantMessage.id
+                ? {
+                    ...message,
+                    content: response.answer || "",
+                    status: response.status,
+                    sources: response.sources || [],
+                    retrievedContext: response.retrieved_context || [],
+                    retrievalMetadata: response.retrieval_metadata || {},
+                    citationMetadata: response.citation_metadata || {},
+                    answerWarnings: response.answer_warnings || [],
+                    timing: response.timing || {},
+                    model: response.model || null,
+                    error: response.error || null,
+                    isStreaming: false,
+                  }
+                : message,
+            ),
+          );
+        },
+      });
+      if (!receivedFinal) {
+        throw new Error("The advisor stream ended before a verified answer was produced.");
       }
-      const assistantMessage = createMessage("assistant", response.answer, {
-        status: response.status,
-        sources: response.sources || [],
-        retrievedContext: response.retrieved_context || [],
-        timing: response.timing || {},
-        error: response.error || null,
-      });
-      setMessages((current) => [...current, assistantMessage]);
     } catch (error) {
-      const assistantMessage = createMessage("assistant", normalizeError(error), {
-        status: "error",
-        sources: [],
-        error: null,
-      });
-      setMessages((current) => [...current, assistantMessage]);
+      setMessages((current) =>
+        current.map((message) =>
+          message.id === assistantMessage.id
+            ? {
+                ...message,
+                content: normalizeError(error),
+                status: "error",
+                sources: [],
+                error: null,
+                isStreaming: false,
+              }
+            : message,
+        ),
+      );
     } finally {
       setIsLoading(false);
     }
@@ -171,7 +226,9 @@ function AdvisorPage() {
               </div>
             </section>
           ) : (
-            messages.map((message) => <ChatMessage key={message.id} message={message} />)
+            messages
+              .filter((message) => !message.isStreaming)
+              .map((message) => <ChatMessage key={message.id} message={message} />)
           )}
           {isLoading ? <LoadingMessage /> : null}
         </div>

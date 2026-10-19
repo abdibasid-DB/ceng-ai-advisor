@@ -27,6 +27,9 @@ function ChatMessage({ message }) {
             <p key={`${message.id}-line-${index}`}>{line || "\u00a0"}</p>
           ))}
         </div>
+        {!isUser && message.status === "answered" && message.answerWarnings?.includes("partial_answer") ? (
+          <p className="message-status">My sources only cover part of your question.</p>
+        ) : null}
         {!isUser && message.error ? <p className="message-error">{message.error}</p> : null}
         {showSources ? (
           <section className="sources-panel" aria-label="Supporting sources">
