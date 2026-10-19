@@ -1,0 +1,15 @@
+Source ID: src_083
+Title: What Is Computer Networking?
+Source: Cisco
+URL: https://www.cisco.com/site/us/en/learn/topics/networking/what-is-computer-networking.html
+Date accessed: 2026-10-13
+
+Curated source note
+
+Cisco explains computer networking as the connection of computing devices so that they can communicate. Devices can include laptops, desktops, servers, phones, tablets, cameras, sensors, door locks, thermostats, and other IoT devices.
+
+The source is useful for explaining basic network components. Switches connect devices inside a network. Routers connect networks to other networks and direct traffic. Access points allow wireless devices to connect. These concepts matter for home networks, enterprise networks, cloud systems, cybersecurity, embedded systems, and IoT.
+
+For Computer Engineering students, networking is not only a cybersecurity topic. It supports distributed applications, cloud computing, data centers, remote work infrastructure, robotics/IoT systems, and operating systems. A student who understands IP addressing, routing, protocols, latency, reliability, and security can reason better about why software behaves differently across machines.
+
+Student-facing guidance: networks are useful even if a student becomes a software developer. Backend systems, APIs, cloud deployment, databases, authentication, monitoring, and security all depend on networked communication. Networking also pairs naturally with cybersecurity and embedded/IoT specializations.

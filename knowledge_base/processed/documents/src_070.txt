@@ -1,0 +1,24 @@
+Source ID: src_070
+Title: EECS Majors: Choosing your first computer science course
+
+First computer science course - Berkeley Engineering
+
+Skip to primary navigation
+
+Educating leaders. Creating knowledge. Serving society.
+
+Home > Students > New students > First computer science course
+
+EECS Majors: Choosing your first computer science course
+
+As an EECS major, which computer programming course is the right one for you your first semester? Here’s some advice from the Computer Sciences faculty about your options for your first semester.
+
+Computer Science 61Ais a rigorous and fast-paced introduction to computer science that was designed for students with some prior programming experience. Students who haven’t programmed before often get more out of CS 61A if they take it after another course, such as Computer Science 10 or Computer Science C8. Math 1A is a prerequisite or co-requisite for Computer Science 61A.
+
+Computer Science 10 is an introduction to computer science designed specifically for students who have not programmed before. The course covers many of the same topics as CS 61A, but using different examples, smaller-scale projects, and a beginner-friendly computing environment. Students do not take this course after or concurrent with CS 61A. CS 10 will fulfill the Technical Elective requirement for the EECS major if taken before CS 61A.
+
+Computer Science C8is an introduction to programming and statistics. By taking this course, students gain programming experience and practice, which is certainly helpful for taking CS 61A later or concurrently. The overlap in topics between CS 61A and CS C8 is small — perhaps 25%. It is recommended that students take CS C8 before CS 61A, but many students take it after or concurrent with CS 61A or CS 10. Computer Science C8 is the introductory course for the Data Sciences major in the College of Letters and Science. CS C8 will fulfill the Technical Elective requirement for the EECS major.
+
+If you have no prior programming experience and you decide to take CS 61A, we encourage you to study Python over the summer through online sources like Khan Academy. Students without programming experience can struggle in CS 61A, and all of them report spending a great deal of time trying to keep up with their more experienced peers.
+
+In general, most EECS students will take CS 61A their first semester. However, we want you to start where you are most comfortable. There is definitely enough flexibility in the EECS curriculum for you to take an introductory course in programming, such as CS 10 or CS C8, your first semester and wait until your second semester to take CS 61A. You will still be able to graduate in eight semesters.

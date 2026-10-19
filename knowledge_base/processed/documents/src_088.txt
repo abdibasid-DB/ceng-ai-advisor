@@ -1,0 +1,15 @@
+Source ID: src_088
+Title: Program Syllabus: Computer Engineering English Thesis Master's Degree Program
+Source: OSTIM Technical University Institute of Science
+URL: https://fbebilgisayar.ostimteknik.edu.tr/program-syllabus
+Date accessed: 2026-10-13
+
+Curated source note
+
+OSTIM Technical University lists an English thesis-based master's program in Computer Engineering through the Institute of Science. This is an OSTIM-specific graduate-study source and should be used for local MSc questions, while current admissions, fees, and application dates should be checked on official university pages.
+
+The program syllabus page identifies graduate-level Computer Engineering coursework, including advanced technical subjects such as Advanced Computer Networks and other graduate electives. The thesis-based structure indicates a research-oriented path, which is different from only taking undergraduate courses or doing short professional training.
+
+For prospective undergraduate students, this source helps explain that Computer Engineering can continue into graduate study. A master's degree can support deeper specialization, research preparation, academic careers, and advanced technical roles. It is not necessary for every software job, but it may matter more for research-heavy AI, advanced systems, academic work, or specialized engineering roles.
+
+Student-facing guidance: students considering MSc or PhD study should build strong undergraduate foundations, maintain good academic habits, seek projects with faculty supervision when possible, read technical papers gradually, and choose electives/projects that point toward a research area.

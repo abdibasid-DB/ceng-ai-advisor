@@ -1,0 +1,15 @@
+Source ID: src_086
+Title: Data Scientists
+Source: U.S. Bureau of Labor Statistics, Occupational Outlook Handbook
+URL: https://www.bls.gov/ooh/math/data-scientists.htm
+Date accessed: 2026-10-13
+
+Curated source note
+
+The U.S. Bureau of Labor Statistics describes data scientists as workers who use analytical tools and techniques to extract meaningful insights from data. The profile is U.S.-specific and should not be used as Turkey-specific salary or employment evidence.
+
+The BLS profile supports several advising points for Computer Engineering students. Data science commonly draws on computer science, statistics, mathematics, and domain knowledge. Students interested in data science should build programming ability, data handling, statistics, probability, databases, machine learning foundations, communication, and the ability to explain results clearly.
+
+The profile also helps answer graduate-study questions. Many entry-level data science roles can be approached from a bachelor's background in a related field, but advanced research-heavy, specialized machine learning, or scientific roles may benefit from graduate study. A master's or PhD is more relevant when the student wants deeper research, advanced modeling, or academic work.
+
+Student-facing guidance: Computer Engineering can be a route into data science if the student intentionally adds statistics, linear algebra, machine learning, database, Python, data visualization, and project experience. Portfolio projects should show the full workflow: data cleaning, analysis, model choice, evaluation, communication, and ethical handling of data.

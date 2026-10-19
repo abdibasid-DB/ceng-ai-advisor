@@ -1,0 +1,248 @@
+Source ID: src_063
+Title: CENG 316 New Trends in Computer Engineering Course Syllabus
+
+Page 1
+OTU Form No: YS.FR.001 Rev.00
+Not: Kullanılacak Kontrollü dokümanların güncel haline Doküman Yönetim Sisteminden ulaşılır.
+İlk Yayın Tarihi/Issue Date: 01.10.2024
+Revizyon Tarihi/Revision Date: 01.10.2024
+
+FACULTY OF ENGINEERING
+COURSE SYLLABUS FORM
+Doküman No MF.FR.003
+Revizyon Tarihi 3.12.2024
+Revizyon No 01
+Sayfa No 1 / 5
+
+CENG 316 - NEW TRENDS IN COMPUTER ENGINEERING
+Course Code Course Name Semester
+CENG 316 New Trends in Computer Engineering Fall ☒ Spring ☐ Summer ☐
+Hours Credit ECTS
+Theory Practice Lab
+3 5
+3 0 0
+
+Course Details
+Department Computer Engineering
+Course Language English
+Course Level Undergraduate ☒ Graduate ☐
+Mode of Delivery Face to Face ☒ Online ☐ Hybrid ☐
+Course Type Compulsory ☒ Elective ☐
+
+Course Objectives
+This course aims to provide a comprehensive understanding of the evolution and
+latest trends in software engineering disciplines while introducing students to the
+tools, frameworks, and technologies shaping modern software development.
+Through assignments and projects, students will develop practical skills and foster
+analytical thinking by comparing traditional and modern approaches within various
+domains. The course enhances problem-solving abilities using cutting-edge
+technologies such as AI, Blockchain, and Cloud Computing and equips students
+with the knowledge to identify and implement best practices in software
+development, testing, and deployment. By exploring future trends and innovations,
+students will be prepared for emerging roles in the software industry
+
+Course Content
+This syllabus is designed to cover each branch of software engineering and the
+latest trends. The course content spans various domains including frontend and
+backend development, DevOps, software testing, embedded systems, data
+engineering, artificial intelligence, cybersecurity, cloud computing, mobile app
+development, blockchain, and game development. It highlights practical
+applications and emerging trends like microservices, serverless computing, AI-
+powered tools, and decentralized systems. Students will engage with tools,
+frameworks, and methodologies relevant to each discipline while exploring
+advanced topics such as quantum computing, low-code platforms, and the future
+of software engineering. The syllabus integrates assignments and resources to
+foster a hands-on and analytical learning experience.
+Course Method/
+Techniques Lecture ☒ Question & Answer ☒ Presentation ☒ Discussion ☒
+Prerequisites/
+Corequisites
+Corequisites : CENG 205 Data Structures and Algorithms, CENG 109
+Programming and Computation I, CENG 110 Programming and Computation II,
+SENG 202 Introduction to Database Systems, SENG 312 Data Mining
+Work Placement(s) No work placement is required for this course
+
+Page 2
+OTU Form No: YS.FR.001 Rev.00
+Not: Kullanılacak Kontrollü dokümanların güncel haline Doküman Yönetim Sisteminden ulaşılır.
+İlk Yayın Tarihi/Issue Date: 01.10.2024
+Revizyon Tarihi/Revision Date: 01.10.2024
+
+FACULTY OF ENGINEERING
+COURSE SYLLABUS FORM
+Doküman No MF.FR.003
+Revizyon Tarihi 3.12.2024
+Revizyon No 01
+Sayfa No 2 / 5
+
+Textbook/References/Materials
+
+1. Primary Textbook:
+a. "Software Engineering: A Practitioner's Approach" by Roger S. Pressman and Bruce
+R. Maxim.
+2. References:
+a. "Clean Code: A Handbook of Agile Software Craftsmanship" by Robert C. Martin.
+b. "Designing Data-Intensive Applications" by Martin Kleppmann.
+c. "The DevOps Handbook" by Gene Kim, Jez Humble, Patrick Debois, and John Willis.
+d. "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow" by Aurélien
+Géron.
+e. "Mastering Blockchain" by Imran Bashir.
+f. Braude, E. J., & Bernstein, M. E. (2016). Software engineering: Modern approaches
+(2nd ed.). Waveland Press. ISBN-13.978-1478632306
+h. Valente, M. T. (2024). Software engineering: A modern approach. Self-published.
+3. Online Resources:
+a. Coursera and edX courses on software engineering trends and technologies.
+b. Documentation for tools and frameworks such as React, Node.js, Docker, Kubernetes,
+and TensorFlow.
+c. Websites like Medium, Dev.to, and freeCodeCamp for articles and tutorials.
+4. Additional Materials:
+a. Videos and tutorials from YouTube channels like Traversy Media, The Net Ninja, and
+Fireship.
+b. Research papers on software engineering trends from IEEE and ACM digital libraries.
+
+Course Category
+Mathematics and Basic Sciences ☐ Education ☐
+Engineering ☒ Science ☐
+Engineering Design ☐ Health ☐
+Social Sciences ☐ Profession ☐
+
+Weekly Schedule
+No Topics Materials/Notes
+1 Introduction to Emerging Trends in Software and Computer
+Engineering
+
+2 Advancements in Artificial Intelligence and Machine
+Learning
+
+Page 3
+OTU Form No: YS.FR.001 Rev.00
+Not: Kullanılacak Kontrollü dokümanların güncel haline Doküman Yönetim Sisteminden ulaşılır.
+İlk Yayın Tarihi/Issue Date: 01.10.2024
+Revizyon Tarihi/Revision Date: 01.10.2024
+
+FACULTY OF ENGINEERING
+COURSE SYLLABUS FORM
+Doküman No MF.FR.003
+Revizyon Tarihi 3.12.2024
+Revizyon No 01
+Sayfa No 3 / 5
+
+3 Cloud Computing: Modern Software Development and
+Deployment
+
+4 The Internet of Things (IoT), Embedded Systems, and
+Autonomous Technologies
+
+5 Quantum Computing: The Future of Computation
+6 Microservices Architecture: Scalable and Resilient Systems
+7 DevOps Practices and Continuous Integration/Continuous
+Deployment (CI/CD)
+
+8 Blockchain Technology and Smart Contracts: Decentralized
+Innovation
+
+9 Midterm Exam
+10 Data Science and Big Data: Extracting Value from
+Information
+
+11 Human-Computer Interaction (HCI) and UX Design: AR/VR
+Applications
+
+12 Cybersecurity and DevSecOps: Securing the Software
+Ecosystem
+
+13 Agile Software Development, Project Management, and
+Advances in Test Automation
+
+14 Green Computing and Sustainable Software Engineering
+15 Final exam
+
+Page 4
+OTU Form No: YS.FR.001 Rev.00
+Not: Kullanılacak Kontrollü dokümanların güncel haline Doküman Yönetim Sisteminden ulaşılır.
+İlk Yayın Tarihi/Issue Date: 01.10.2024
+Revizyon Tarihi/Revision Date: 01.10.2024
+
+FACULTY OF ENGINEERING
+COURSE SYLLABUS FORM
+Doküman No MF.FR.003
+Revizyon Tarihi 3.12.2024
+Revizyon No 01
+Sayfa No 4 / 5
+
+Assessment Methods and Criteria
+In-term studies Quantity Percentage
+Attendance
+Lab
+Practice
+Fieldwork
+Course-specific internship
+Quiz/Studio/Criticize
+Homework 6 50
+Presentation / Seminar
+Project
+Report 7 50
+Seminar
+Midterm Exam
+Final Exam
+Total 100%
+Contribution of Midterm Studies to
+Success Grade
+Contribution of End of Semester Studies
+to Success Grade
+Total 100%
+
+ECTS Allocated Based on Student Workload
+Activities Quantity Duration (Hrs) Total Workload
+Course Hours 14 3 42
+Lab
+Practice
+Fieldwork
+Course-specific Work Placement
+Out-of-class study time 14 3 42
+Quiz/Studio/Criticize
+Homework 10 20 20
+Presentation / Seminar 1 6 6
+Project
+Report
+Midterm Exam and Preparation for Midterm 1 20 20
+Final Exam and Preparation for Final Exam 1 20 20
+Total Workload 150
+Total Workload / 25 6
+ECTS Credit 6
+
+Page 5
+OTU Form No: YS.FR.001 Rev.00
+Not: Kullanılacak Kontrollü dokümanların güncel haline Doküman Yönetim Sisteminden ulaşılır.
+İlk Yayın Tarihi/Issue Date: 01.10.2024
+Revizyon Tarihi/Revision Date: 01.10.2024
+
+FACULTY OF ENGINEERING
+COURSE SYLLABUS FORM
+Doküman No MF.FR.003
+Revizyon Tarihi 3.12.2024
+Revizyon No 01
+Sayfa No 5 / 5
+
+Course Learning Outcomes
+No Outcome
+L1 Students will understand the evolution of software engineering and the impact of emerging
+technologies on software development processes.
+L2 Students will learn how to integrate modern technologies such as artificial intelligence, machine
+learning, and cloud computing into software projects.
+L3 Students will comprehend the contributions of the Internet of Things (IoT), embedded systems,
+and autonomous technologies to software engineering.
+L4 Students will explore the advantages and challenges of approaches such as microservices
+architecture, DevOps, and CI/CD in software development.
+L5 Students will gain in-depth knowledge of agile software development methodologies, software
+test automation, and sustainable software development.
+
+Contribution of Course Learning Outcomes to Program Competencies/Outcomes
+Contribution Level: 1: Very Slight, 2: Slight, 3: Moderate, 4: Significant, 5: Very Significant
+P1 P2 P3 P4 P5 P6 P7 P8 P9 P10 P11 Total
+L1 5 5 5 5 0 0 0 5 4 0 0 39 %71
+L2 5 5 5 5 0 0 0 5 4 0 0 43 %78
+L3 5 5 5 5 0 0 0 5 4 0 0 38 %69
+L4 5 0 5 5 0 0 0 0 0 0 0 45 %82
+L5 5 5 5 5 5 0 0 0 0 0 0 45 %82
+Total 127

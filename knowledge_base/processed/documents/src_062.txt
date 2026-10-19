@@ -1,0 +1,229 @@
+Source ID: src_062
+Title: CENG 314 Computer Networks Course Syllabus
+
+Page 1
+OTU Form No: YS.FR.001 Rev.00
+Not: Kullanılacak Kontrollü dokümanların güncel haline Doküman Yönetim Sisteminden ulaşılır.
+İlk Yayın Tarihi/Issue Date: 01.10.2024
+Revizyon Tarihi/Revision Date: 01.10.2024
+
+FACULTY OF ENGINEERING
+COURSE SYLLABUS FORM
+Doküman No MF.FR.003
+Revizyon Tarihi 13.11.2024
+Revizyon No 01
+Sayfa No 1 / 6
+
+CENG 314 Computer Networks
+Course Code Course Name Semester
+CENG 314 Computer Netwoks Fall ☐ Spring ☒ Summer ☐
+Hours Credit ECTS
+Theory Practice Lab
+
+3 0 0
+
+Course Details
+Department Computer Engineering
+Course Language English
+Course Level Undergraduate ☒ Graduate ☐
+Mode of Delivery Face to Face ☒ Online ☐ Hybrid ☐
+Course Type Compulsory ☒ Elective ☐
+
+Course Objectives
+The aim of this course is to introduce key concepts and principles of computer
+networks. The course will use a top -down approach to study the Internet and its
+protocol stack. Instances of architecture, protocol, application-examples will include
+email, web and media -streaming. We will cover communications services (e.g.,
+TCP/IP) required to support such network applications. The implementation and
+deployment of communications services in practical networks: including wired and
+wireless LAN environments, will be followed by a discussion of issues of network -
+management. Throughout the course, the Internet’s architecture and protocols will
+be used as the primary examples to illustrate the fundamental principles of
+computer networking.
+
+Course Content
+Chapter 1 Computer Networks and the Internet
+Chapter 2 Application Layer
+Chapter 3 Transport Layer
+Chapter 4 The Network Layer
+Chapter 5 The Link Layer: Links, Access Networks, and LANs
+Chapter 6 Wireless and Mobile Networks
+Chapter 7 Multimedia Networking
+Chapter 8 Security in Computer Networks
+Chapter 9 Network Management
+
+Page 2
+OTU Form No: YS.FR.001 Rev.00
+Not: Kullanılacak Kontrollü dokümanların güncel haline Doküman Yönetim Sisteminden ulaşılır.
+İlk Yayın Tarihi/Issue Date: 01.10.2024
+Revizyon Tarihi/Revision Date: 01.10.2024
+
+FACULTY OF ENGINEERING
+COURSE SYLLABUS FORM
+Doküman No MF.FR.003
+Revizyon Tarihi 13.11.2024
+Revizyon No 01
+Sayfa No 2 / 6
+
+Advanced Topics on Computer Networks
+Course Method/
+Techniques Lecture ☒ Question & Answer ☒ Presentation ☒ Discussion ☒
+Prerequisites/
+Corequisites
+
+Work Placement(s)
+Textbook/References/Materials
+
+Computer networking : a top-down approach / James F. Kurose, Keith W. Ross.—6th ed.
+ISBN-13: 978-0-13-285620-1
+
+Course Category
+Mathematics and Basic Sciences ☐ Education ☐
+Engineering x Science ☐
+Engineering Design x Health ☐
+Social Sciences ☐ Profession x
+
+Weekly Schedule
+No Topics Materials/Notes
+1 Chapter 1 Computer Networks and the Internet
+2 Chapter 1 Computer Networks and the Internet
+3 Chapter 2 Application Layer
+4 Chapter 3 Transport Layer
+5 Chapter 4 The Network Layer
+
+Page 3
+OTU Form No: YS.FR.001 Rev.00
+Not: Kullanılacak Kontrollü dokümanların güncel haline Doküman Yönetim Sisteminden ulaşılır.
+İlk Yayın Tarihi/Issue Date: 01.10.2024
+Revizyon Tarihi/Revision Date: 01.10.2024
+
+FACULTY OF ENGINEERING
+COURSE SYLLABUS FORM
+Doküman No MF.FR.003
+Revizyon Tarihi 13.11.2024
+Revizyon No 01
+Sayfa No 3 / 6
+
+6 Chapter 5 The Link Layer: Links, Access Networks, and LANs
+7 Exercises, Assignments, Review
+8 Midterm Exam
+9 Chapter 6 Wireless and Mobile Networks
+10 Chapter 7 Multimedia Networking
+11 Chapter 8 Security in Computer Networks
+12 Chapter 9 Network Management
+13 Advanced Topics on Computer Networks
+14 Exercises, Assignments, Review
+15 Final Exam
+
+Page 4
+OTU Form No: YS.FR.001 Rev.00
+Not: Kullanılacak Kontrollü dokümanların güncel haline Doküman Yönetim Sisteminden ulaşılır.
+İlk Yayın Tarihi/Issue Date: 01.10.2024
+Revizyon Tarihi/Revision Date: 01.10.2024
+
+FACULTY OF ENGINEERING
+COURSE SYLLABUS FORM
+Doküman No MF.FR.003
+Revizyon Tarihi 13.11.2024
+Revizyon No 01
+Sayfa No 4 / 6
+
+Assessment Methods and Criteria
+In-term studies Quantity Percentage
+Attendance Max. 13 hours of absence P/F
+Lab
+Practice
+Fieldwork
+Course-specific internship
+Quiz/Studio/Criticize
+Homework 4 15
+Presentation / Seminar 1 10
+Project
+Report
+Seminar
+Midterm Exam 1 % 25
+Final Exam 1 % 50
+Total 100%
+Contribution of Midterm Studies to
+Success Grade
+32,5
+Contribution of End of Semester Studies
+to Success Grade
+67,5
+Total 100%
+
+ECTS Allocated Based on Student Workload
+Activities Quantity Duration (Hrs) Total Workload
+Course Hours 13 3 39
+Lab
+Practice
+Fieldwork
+Course-specific Work Placement
+Out-of-class study time 13 2 26
+Quiz/Studio/Criticize
+
+Page 5
+OTU Form No: YS.FR.001 Rev.00
+Not: Kullanılacak Kontrollü dokümanların güncel haline Doküman Yönetim Sisteminden ulaşılır.
+İlk Yayın Tarihi/Issue Date: 01.10.2024
+Revizyon Tarihi/Revision Date: 01.10.2024
+
+FACULTY OF ENGINEERING
+COURSE SYLLABUS FORM
+Doküman No MF.FR.003
+Revizyon Tarihi 13.11.2024
+Revizyon No 01
+Sayfa No 5 / 6
+
+Homework 4 6 24
+Presentation / Seminar 1 9 9
+Project
+
+Report
+
+Midterm Exam and Preparation for Midterm 1 12 12
+Final Exam and Preparation for Final Exam 1 15 15
+Total Workload 125
+Total Workload / 25 5
+ECTS Credit 5
+
+Page 6
+OTU Form No: YS.FR.001 Rev.00
+Not: Kullanılacak Kontrollü dokümanların güncel haline Doküman Yönetim Sisteminden ulaşılır.
+İlk Yayın Tarihi/Issue Date: 01.10.2024
+Revizyon Tarihi/Revision Date: 01.10.2024
+
+FACULTY OF ENGINEERING
+COURSE SYLLABUS FORM
+Doküman No MF.FR.003
+Revizyon Tarihi 13.11.2024
+Revizyon No 01
+Sayfa No 6 / 6
+
+Course Learning Outcomes
+No Outcome
+P1 Be able to analyse a communication system by separating out the different functions provided by the
+network;
+P2 Understand that there are fundamental limits to any communications system;
+Understand the general principles behind multiplexing, addressing, routing, reliable transmission and
+other stateful protocols as well as specific examples of each;
+P4 Understand what Forward Error Correction is;
+P5 Be able to compare communications systems in how they solve similar problems;
+Have an informed view of both the internal workings of the Internet and of a number of common Internet
+applications and protocols.
+P7 Have hands on experience on network monitoring and analysing
+
+Contribution of Course Learning Outcomes to Program Competencies/Outcomes
+Contribution Level: 1: Very Slight, 2: Slight, 3: Moderate, 4: Significant, 5: Very Significant
+P1 P2 P3 P4 P5 P6 P7 P8 P9 P10 P11 P12 P13 P14 P15 Total
+L1 5 5 5 5 5 5 5 5 40
+L2 4 4 4 4 4 4 4 4 32
+L3 4 4 4 4 4 4 4 4 32
+L4 3 3 3 3 3 3 3 3 24
+L5 4 4 4 4 4 4 4 4 32
+L6 3 3 3 3 3 3 3 3 24
+L7 2 2 2 2 2 2 2 2 16
+L8 4 4 4 4 4 4 4 4 32
+L9 3 3 3 3 3 3 3 3 24
+L10 2 2 2 2 2 2 2 2 16
+Total 397

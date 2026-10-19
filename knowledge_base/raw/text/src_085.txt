@@ -1,0 +1,15 @@
+Source ID: src_085
+Title: Cybersecurity Curricular Guidelines CSEC 2017
+Source: ACM, IEEE Computer Society, AIS SIGSEC, and IFIP WG 11.8
+URL: https://cybered.acm.org/
+Date accessed: 2026-10-13
+
+Curated source note
+
+CSEC2017 is a professional curricular guideline for post-secondary cybersecurity education. It is useful for explaining cybersecurity as a broad field rather than only ethical hacking or penetration testing.
+
+Cybersecurity education includes technical and nontechnical dimensions. Important areas include data security, software security, component and connection security, system security, human security, organizational security, societal security, risk, policy, and ethics. This breadth matters because many security failures involve people, process, software design, configuration, networks, or organizational decisions, not only code vulnerabilities.
+
+For Computer Engineering students, cybersecurity connects naturally with networks, operating systems, programming, databases, cloud computing, cryptography, embedded systems, and hardware security. Students interested in security should build legal and ethical habits from the beginning. Safe learning means using authorized labs, capture-the-flag platforms, intentionally vulnerable practice systems, or university-approved environments instead of attacking real systems.
+
+Student-facing guidance: a good beginner path is programming fundamentals, Linux/command line, networking basics, web basics, operating systems, secure coding, and then specialized security labs. Certifications can help signal motivation, but they do not replace hands-on projects, fundamentals, ethics, and communication skills.

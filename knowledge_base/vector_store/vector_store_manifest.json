@@ -8,8 +8,8 @@
   "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
   "embedding_dimension": 384,
   "distance_metric": "cosine",
-  "expected_chunk_count": 803,
-  "indexed_record_count": 803,
+  "expected_chunk_count": 1132,
+  "indexed_record_count": 1132,
   "metadata_fields": [
     "source_id",
     "chunk_index",
@@ -25,7 +25,7 @@
     "word_count",
     "character_count"
   ],
-  "build_timestamp": "2026-09-18T19:13:36+00:00",
+  "build_timestamp": "2026-10-13T16:56:52+00:00",
   "rebuild_strategy": "Upsert deterministic chunk IDs and precomputed embeddings into the existing persistent Chroma collection.",
   "input_files": {
     "chunks": "knowledge_base/chunks/chunks.jsonl",
@@ -34,10 +34,10 @@
     "embedding_manifest": "knowledge_base/embeddings/embedding_manifest.json"
   },
   "validation_results": {
-    "chunk_count": 803,
-    "embedding_count": 803,
+    "chunk_count": 1132,
+    "embedding_count": 1132,
     "embedding_dimension": 384,
-    "metadata_count": 803,
+    "metadata_count": 1132,
     "chunk_id_duplicates": 0,
     "mapping_order_matches": true,
     "all_sources_approved": true,
@@ -45,9 +45,9 @@
     "nan_value_count": 0,
     "infinite_value_count": 0,
     "collection_exists": true,
-    "collection_count_before_indexing": 792,
-    "indexed_record_count": 803,
-    "persistent_reload_record_count": 803,
+    "collection_count_before_indexing": 0,
+    "indexed_record_count": 1132,
+    "persistent_reload_record_count": 1132,
     "indexed_count_matches_expected": true,
     "persistent_reload_ok": true,
     "sample_documents_present": true,

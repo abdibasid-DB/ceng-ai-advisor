@@ -1,0 +1,15 @@
+Source ID: src_084
+Title: What Is an FPGA?
+Source: Altera
+URL: https://www.altera.com/what-is-an-fpga
+Date accessed: 2026-10-13
+
+Curated source note
+
+An FPGA, or field-programmable gate array, is a reconfigurable integrated circuit. Unlike a normal processor that runs software instructions, an FPGA can be configured to implement application-specific digital hardware after manufacturing. This makes it useful when engineers need custom parallel hardware behavior, real-time performance, or the ability to update hardware logic after deployment.
+
+For Computer Engineering students, FPGAs connect digital logic, computer architecture, electronics, hardware description languages, embedded systems, signal processing, and performance tradeoffs. They are different from microcontrollers. A microcontroller is a small processor-based system that runs firmware. An FPGA is configured as hardware logic, although modern systems can combine FPGA fabric with processors.
+
+Common application areas include networking, signal processing, industrial automation, AI acceleration, real-time control, prototyping, and specialized embedded systems. Students do not need to start with FPGA if they are beginners; microcontroller projects may be more approachable first. FPGA study becomes more useful after digital logic and computer architecture foundations.
+
+Student-facing guidance: FPGA is a strong specialization for students who enjoy low-level systems, digital design, timing, hardware/software tradeoffs, and performance-sensitive applications. It is not required for every software career, but it is valuable for hardware-oriented CE paths.

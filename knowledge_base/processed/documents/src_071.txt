@@ -1,0 +1,83 @@
+Source ID: src_071
+
+Math Preparation for the College of Engineering - Berkeley Engineering
+
+Skip to primary navigation
+
+Educating leaders. Creating knowledge. Serving society.
+
+Home > Students > Undergraduate Guide > Policies & procedures > Math Preparation for the College of Engineering
+
+Math Preparation for the College of Engineering
+
+Congratulations on your admission to the College of Engineering at UC Berkeley!
+
+As you finalize your plans for the Fall, we want to share critical information regarding our curriculum and the level of mathematical preparation required to thrive here. In the College of Engineering, math is more than just a prerequisite—it is the foundational language for every course you will take.
+
+The “Berkeley Pace”
+
+High school math performance is not always an indicator of success in Berkeley’s math series for engineers.
+
+The Reality: Many students who earned straight As in high school find themselves struggling with the rigor of Berkeley math. Our courses are notoriously fast paced and conceptual, meaning that, unlike in high school, our courses require you to really understand the ideas at a deeper level, and memorizing facts/equations will not be enough to succeed. You can see some of the subject matters you will be tested on in Calculus I here.
+
+The Sequential Trap: Our classes build on each other and should be taken in order. A shaky foundation can create a chain reaction that impacts your GPA and mental health well into your engineering education.
+
+PreCalc for Cal
+
+What is Taught in Precalculus?
+
+A list of topics taught in Precalculus can be found here and some sample exams can be found here. If you are not familiar with any of these topics do not rely on self-study; consider our recommendations below.
+
+If You Haven’t Taken Precalculus, We Recommend Taking It This Summer
+
+If you haven’t completed a course in Precalculus such as the one offered at Berkeley, or if you did not master the material, we strongly urge you to take a Precalculus course the summer before you start because it unlocks certain advantages for you:
+
+Protect Your Summers – Building your math foundation now means you won’t have to “catch up” later, freeing future summers for internships, research, or other opportunities;
+
+Faster Access to Major-Specific Courses – Arriving ready for MATH 51 (Calculus I) ensures you can stay on track with your major-specific classes and labs without delays;
+
+Reduce First-Year Stress – College is a big transition. Starting with a strong math foundation can make your first semester feel more manageable and less overwhelming;
+
+Lower the Risk of Academic Notice (in some places this is known as Academic Probation) – Students who come in with a strong Precalculus background have higher GPAs and are less likely to be on Academic Notice in future semesters.
+
+Please note that if you are a PREP-mandated student (meaning participating in PREP is a condition of your admission), you will not be able to take a summer course beyond July 14th
+
+The Chain Reaction: Why Math Controls Your Schedule
+
+Math is the “key” that unlocks your other core requirements. If you are delayed in Calculus, you are effectively “locked out” of the foundational Physics and programming courses that define your first two years.
+
+1. The Physics Barrier
+
+The PHYSICS 5 or 7 series (required for all engineering majors) is heavily calculus-based.
+
+PHYSICS 5A or 7A: These requirements need you to have already completed or be concurrently enrolled in the second semester of Calculus (MATH 52). This means MATH 51 (Calculus 1) needs to be completed before you even start the Physics series.
+
+The Risk: Starting in MATH 3 (Precalculus) can delay your first Physics course by a full semester. Since the Physics 7 series is also sequential (7A → 7B → 7C), this delay ripples through your entire sophomore year.
+
+Here’s a handy visual:
+
+2. The Programming & Logic Gap
+
+Introductory programming courses like COMPSCI 61A or ENGIN 7 aren’t just about learning to type in a new language; they are about mastering logical models. Think of a logical model as a mental blueprint of how a system works—like how a complex equation in Calculus models the movement of a car.
+
+If you haven’t yet mastered the ‘mental maps’ used in Precalculus and Calculus, the deep logic required in Berkeley’s programming courses can feel overwhelming. This is why the university requires MATH 51 (Calculus I) as a prerequisite. They want to ensure you’ve practiced building and navigating these invisible models in math before you apply them to software engineering.
+
+Your Summer Options
+
+California Community Colleges (CCC) – This is a flexible, cost-effective way to build your skills.
+
+Find a Course: Current equivalent CCC courses can be found here. There are always at least a few options that are offered online.
+
+Focus: Even if the units don’t “transfer” as a major requirement, the knowledge is what will save your semester in the Fall.
+
+Berkeley’s Summer Programs (Recommended!)
+
+Freshman Edge: Enroll in Berkeley Summer Sessions early. You can take MATH 3 (Precalculus) on campus to get a feel for the environment before the rush of Fall.
+
+Regular Enrollment: Outside of the structure of Freshman Edge, students can take advantage of UC Berkeley Summer Sessions to get a head start in non-STEM related courses. MATH 3 (Precalculus) is the recommended course.
+
+Refresher Option: For those who took Precalculus before Spring 2026, you may want to consider MATH 1 (Foundations of Lower Division Mathematics) as a refresher.
+
+Invest in Your Future Success
+
+Taking Precalculus is a strategic decision made by successful engineers who understand the value of a solid foundation that will carry them throughout college. Our goal is to ensure that your transition to UC Berkeley is defined by the excitement of your labs and design projects, rather than the stress of playing catch-up with prerequisites. By taking action now, you are protecting your GPA, your future internship opportunities, and your overall well-being. We are thrilled to have you join the College of Engineering, and we look forward to supporting you as you begin your journey this Fall. Go Bears!

@@ -1,0 +1,97 @@
+Source ID: src_068
+
+Workforce Framework for Cybersecurity (NICE Framework) | NIST
+
+An official website of the United States government
+
+Here’s how you know
+
+Official websites use .gov
+
+A .gov website belongs to an official government organization in the United States.
+
+Secure .gov websites use HTTPS
+
+A lock (
+) or https:// means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.
+
+https://www.nist.gov/publications/workforce-framework-cybersecurity-nice-framework
+
+Search NIST
+
+PUBLICATIONS
+
+Workforce Framework for Cybersecurity (NICE Framework)
+
+Published
+
+November 16, 2020
+
+Author(s)
+
+Rodney Petersen, Danielle Santos, Karen Wetzel, Matthew Smith, Greg Witte
+
+Abstract
+
+This publication from the National Initiative for Cybersecurity Education (NICE) describes the Workforce Framework for Cybersecurity (NICE Framework), a fundamental reference for describing and sharing information about cybersecurity work. It expresses that work as Task statements and describes Knowledge and Skill statements that provide a foundation for learners including students, job seekers, and employees. The use of these statements helps students to develop skills, job seekers to demonstrate competencies, and employees to accomplish tasks. As a common, consistent lexicon that categorizes and describes cybersecurity work, the NICE Framework improves communication about how to identify, recruit, develop, and retain cybersecurity talent. The NICE Framework is a reference source from which organizations or sectors can develop additional publications or tools that meet their needs to define or provide guidance on different aspects of cybersecurity education, training, and workforce development.
+
+Citation
+
+Special Publication (NIST SP) - 800-181 Rev. 1
+
+Report Number
+
+800-181 Rev. 1
+
+NIST Pub Series
+
+Special Publication (NIST SP)
+
+Pub Type
+
+NIST Pubs
+
+Supercedes Publication
+
+NICE Cybersecurity Workforce Framework: National Initiative for Cybersecurity Education
+
+Download Paper
+
+https://doi.org/10.6028/NIST.SP.800-181r1
+
+Local Download
+
+Keywords
+
+competency, cybersecurity, cyberspace, education, knowledge, role, security, skill, task, team, training, workforce, work role.
+
+Standards education and Cybersecurity and privacy
+
+Citation
+
+Petersen, R.
+, Santos, D.
+, Wetzel, K.
+, Smith, M.
+and Witte, G.
+
+(2020),
+Workforce Framework for Cybersecurity (NICE Framework), Special Publication (NIST SP), National Institute of Standards and Technology, Gaithersburg, MD, [online], https://doi.org/10.6028/NIST.SP.800-181r1, https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=931370 (Accessed September 29, 2026)
+
+Additional citation formats
+
+Google Scholar
+
+DOI
+
+BibTeX
+
+RIS
+
+Issues
+
+If you have any questions about this publication or are having problems accessing it, please contact [email protected].
+
+Created November 15, 2020, Updated October 12, 2021
+
+Was this page helpful?

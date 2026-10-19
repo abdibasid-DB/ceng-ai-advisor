@@ -1,0 +1,15 @@
+Source ID: src_091
+Title: Career Readiness Competencies
+Source: National Association of Colleges and Employers
+URL: https://naceweb.org/career-readiness/competencies/career-readiness-defined
+Date accessed: 2026-10-13
+
+Curated source note
+
+NACE defines career readiness through competencies that employers and career centers use to discuss employability. This framework is useful because Computer Engineering students often overfocus on technical tools and underprepare communication, teamwork, and professional habits.
+
+Career readiness includes communication, critical thinking, equity and inclusion, leadership, professionalism, teamwork, technology, and career/self-development. For CENG students, these competencies can be demonstrated through projects, internships, labs, hackathons, student clubs, open-source work, presentations, documentation, and responsible teamwork.
+
+The source supports balanced advice about GPA, projects, and internships. GPA can matter for some academic, scholarship, or screening contexts, but employability also depends on evidence that a student can learn, communicate, solve problems, work with others, and complete technical work. Projects and internships are valuable when they show real responsibilities and reflection, not only a list of tools.
+
+Student-facing guidance: a strong portfolio should combine technical artifacts with explanation. Students should describe the problem, their role, tools used, tradeoffs, testing, what they learned, and what they would improve. Communication turns projects into credible career evidence.

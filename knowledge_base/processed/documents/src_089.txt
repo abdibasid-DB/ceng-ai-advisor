@@ -1,0 +1,15 @@
+Source ID: src_089
+Title: International Student Admission Directive
+Source: OSTIM Technical University International Student and Academic Relations Office
+URL: https://ird.ostimteknik.edu.tr/web/content/198099?download=true&unique=97234f0c84b6ad847cb59728a89f51636f3c7768
+Date accessed: 2026-10-13
+
+Curated source note
+
+OSTIM Technical University's International Student Admission Directive is an official university document about admission of international students to associate, undergraduate, and graduate programs. It is reliable for procedure context, but applicants must verify current quotas, dates, accepted exams, fees, language rules, and document requirements with the university's current admissions pages.
+
+For Computer Engineering advising, this source supports cautious answers to admission questions. The advisor can explain that admission requirements are university-specific and may depend on applicant status, program availability, language of instruction, official documents, and annual application announcements.
+
+The source should not be used to invent a student's chance of admission or to guarantee acceptance. It should also not substitute for the current application portal or official admissions office.
+
+Student-facing guidance: an international applicant should check the official OSTIM international admissions page, prepare translated/notarized documents if required, verify language requirements for English programs, watch application dates, and contact the university for edge cases. For academic preparation, the student should separately review the Computer Engineering curriculum, especially mathematics, physics, programming, and English-medium study expectations.

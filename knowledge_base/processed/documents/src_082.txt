@@ -1,0 +1,15 @@
+Source ID: src_082
+Title: The NIST Definition of Cloud Computing
+Source: National Institute of Standards and Technology
+URL: https://csrc.nist.gov/pubs/sp/800/145/final
+Date accessed: 2026-10-13
+
+Curated source note
+
+NIST SP 800-145 defines cloud computing as on-demand network access to a shared pool of configurable computing resources such as networks, servers, storage, applications, and services. The definition is useful because it explains cloud computing in neutral terms rather than as a vendor advertisement.
+
+The source identifies five essential characteristics: on-demand self-service, broad network access, resource pooling, rapid elasticity, and measured service. It also distinguishes three service models: Software as a Service, Platform as a Service, and Infrastructure as a Service. Deployment models include private, community, public, and hybrid cloud.
+
+For Computer Engineering students, cloud computing connects several core subjects: networking, operating systems, databases, distributed systems, security, software engineering, automation, and cost/performance tradeoffs. Cloud careers do not require every student to become a hardware engineer, but understanding hardware, virtualization, operating systems, and networks helps students reason about what cloud services are abstracting.
+
+Student-facing guidance: a student interested in cloud should first build fundamentals in Linux or command-line usage, networking basics, databases, backend development, security basics, and version control. Cloud platforms are tools layered on top of those foundations.

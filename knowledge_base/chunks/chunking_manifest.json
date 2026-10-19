@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "stage": "Stage 10 - Document Chunking",
-  "processing_timestamp": "2026-09-18T18:49:29+00:00",
+  "processing_timestamp": "2026-10-13T16:38:57+00:00",
   "sample_run": false,
   "chunking_configuration": {
     "unit": "words",
@@ -19,9 +19,9 @@
   },
   "input_manifest": "knowledge_base/processed/processing_manifest.json",
   "source_registry": "knowledge_base/sources.json",
-  "eligible_source_count": 40,
-  "processed_source_count": 40,
-  "excluded_source_count": 7,
+  "eligible_source_count": 75,
+  "processed_source_count": 75,
+  "excluded_source_count": 8,
   "excluded_source_ids": [
     "src_019",
     "src_021",
@@ -29,15 +29,16 @@
     "src_023",
     "src_024",
     "src_027",
-    "src_046"
+    "src_046",
+    "src_076"
   ],
-  "total_chunk_count": 803,
+  "total_chunk_count": 1132,
   "minimum_chunk_word_count": 5,
   "maximum_chunk_word_count": 500,
-  "average_chunk_word_count": 395.01,
-  "median_chunk_word_count": 433,
-  "documents_producing_one_chunk": 12,
-  "documents_producing_multiple_chunks": 28,
+  "average_chunk_word_count": 399.47,
+  "median_chunk_word_count": 434.0,
+  "documents_producing_one_chunk": 33,
+  "documents_producing_multiple_chunks": 42,
   "validation": {
     "empty_chunk_count": 0,
     "oversized_chunk_count": 0,
@@ -143,7 +144,7 @@
       "source_id": "src_017",
       "processed_file_path": "knowledge_base/processed/documents/src_017.txt",
       "number_of_chunks": 189,
-      "total_source_words": 66532,
+      "total_source_words": 66405,
       "chunking_status": "success",
       "warnings": [
         "chunk 1 below 40 words"
@@ -312,12 +313,12 @@
     {
       "source_id": "src_045",
       "processed_file_path": "knowledge_base/processed/documents/src_045.txt",
-      "number_of_chunks": 315,
-      "total_source_words": 107632,
+      "number_of_chunks": 314,
+      "total_source_words": 107474,
       "chunking_status": "success",
       "warnings": [
         "chunk 1 below 40 words",
-        "chunk 300 below 40 words"
+        "chunk 299 below 40 words"
       ]
     },
     {
@@ -375,6 +376,286 @@
       "processed_file_path": "knowledge_base/processed/documents/src_054.txt",
       "number_of_chunks": 36,
       "total_source_words": 14627,
+      "chunking_status": "success",
+      "warnings": []
+    },
+    {
+      "source_id": "src_057",
+      "processed_file_path": "knowledge_base/processed/documents/src_057.txt",
+      "number_of_chunks": 3,
+      "total_source_words": 966,
+      "chunking_status": "success",
+      "warnings": []
+    },
+    {
+      "source_id": "src_058",
+      "processed_file_path": "knowledge_base/processed/documents/src_058.txt",
+      "number_of_chunks": 20,
+      "total_source_words": 6446,
+      "chunking_status": "success",
+      "warnings": []
+    },
+    {
+      "source_id": "src_059",
+      "processed_file_path": "knowledge_base/processed/documents/src_059.txt",
+      "number_of_chunks": 1,
+      "total_source_words": 121,
+      "chunking_status": "success",
+      "warnings": []
+    },
+    {
+      "source_id": "src_060",
+      "processed_file_path": "knowledge_base/processed/documents/src_060.txt",
+      "number_of_chunks": 3,
+      "total_source_words": 1430,
+      "chunking_status": "success",
+      "warnings": []
+    },
+    {
+      "source_id": "src_061",
+      "processed_file_path": "knowledge_base/processed/documents/src_061.txt",
+      "number_of_chunks": 3,
+      "total_source_words": 984,
+      "chunking_status": "success",
+      "warnings": []
+    },
+    {
+      "source_id": "src_062",
+      "processed_file_path": "knowledge_base/processed/documents/src_062.txt",
+      "number_of_chunks": 3,
+      "total_source_words": 1043,
+      "chunking_status": "success",
+      "warnings": []
+    },
+    {
+      "source_id": "src_063",
+      "processed_file_path": "knowledge_base/processed/documents/src_063.txt",
+      "number_of_chunks": 3,
+      "total_source_words": 1225,
+      "chunking_status": "success",
+      "warnings": []
+    },
+    {
+      "source_id": "src_064",
+      "processed_file_path": "knowledge_base/processed/documents/src_064.txt",
+      "number_of_chunks": 2,
+      "total_source_words": 872,
+      "chunking_status": "success",
+      "warnings": []
+    },
+    {
+      "source_id": "src_065",
+      "processed_file_path": "knowledge_base/processed/documents/src_065.txt",
+      "number_of_chunks": 1,
+      "total_source_words": 433,
+      "chunking_status": "success",
+      "warnings": []
+    },
+    {
+      "source_id": "src_066",
+      "processed_file_path": "knowledge_base/processed/documents/src_066.txt",
+      "number_of_chunks": 2,
+      "total_source_words": 589,
+      "chunking_status": "success",
+      "warnings": []
+    },
+    {
+      "source_id": "src_067",
+      "processed_file_path": "knowledge_base/processed/documents/src_067.txt",
+      "number_of_chunks": 162,
+      "total_source_words": 61785,
+      "chunking_status": "success",
+      "warnings": []
+    },
+    {
+      "source_id": "src_068",
+      "processed_file_path": "knowledge_base/processed/documents/src_068.txt",
+      "number_of_chunks": 1,
+      "total_source_words": 372,
+      "chunking_status": "success",
+      "warnings": []
+    },
+    {
+      "source_id": "src_069",
+      "processed_file_path": "knowledge_base/processed/documents/src_069.txt",
+      "number_of_chunks": 90,
+      "total_source_words": 35379,
+      "chunking_status": "success",
+      "warnings": []
+    },
+    {
+      "source_id": "src_070",
+      "processed_file_path": "knowledge_base/processed/documents/src_070.txt",
+      "number_of_chunks": 1,
+      "total_source_words": 439,
+      "chunking_status": "success",
+      "warnings": []
+    },
+    {
+      "source_id": "src_071",
+      "processed_file_path": "knowledge_base/processed/documents/src_071.txt",
+      "number_of_chunks": 3,
+      "total_source_words": 1005,
+      "chunking_status": "success",
+      "warnings": []
+    },
+    {
+      "source_id": "src_072",
+      "processed_file_path": "knowledge_base/processed/documents/src_072.txt",
+      "number_of_chunks": 3,
+      "total_source_words": 1194,
+      "chunking_status": "success",
+      "warnings": []
+    },
+    {
+      "source_id": "src_073",
+      "processed_file_path": "knowledge_base/processed/documents/src_073.txt",
+      "number_of_chunks": 4,
+      "total_source_words": 1922,
+      "chunking_status": "success",
+      "warnings": []
+    },
+    {
+      "source_id": "src_074",
+      "processed_file_path": "knowledge_base/processed/documents/src_074.txt",
+      "number_of_chunks": 8,
+      "total_source_words": 3309,
+      "chunking_status": "success",
+      "warnings": []
+    },
+    {
+      "source_id": "src_075",
+      "processed_file_path": "knowledge_base/processed/documents/src_075.txt",
+      "number_of_chunks": 1,
+      "total_source_words": 316,
+      "chunking_status": "success",
+      "warnings": []
+    },
+    {
+      "source_id": "src_079",
+      "processed_file_path": "knowledge_base/processed/documents/src_079.txt",
+      "number_of_chunks": 1,
+      "total_source_words": 227,
+      "chunking_status": "success",
+      "warnings": []
+    },
+    {
+      "source_id": "src_080",
+      "processed_file_path": "knowledge_base/processed/documents/src_080.txt",
+      "number_of_chunks": 1,
+      "total_source_words": 248,
+      "chunking_status": "success",
+      "warnings": []
+    },
+    {
+      "source_id": "src_081",
+      "processed_file_path": "knowledge_base/processed/documents/src_081.txt",
+      "number_of_chunks": 1,
+      "total_source_words": 211,
+      "chunking_status": "success",
+      "warnings": []
+    },
+    {
+      "source_id": "src_082",
+      "processed_file_path": "knowledge_base/processed/documents/src_082.txt",
+      "number_of_chunks": 1,
+      "total_source_words": 203,
+      "chunking_status": "success",
+      "warnings": []
+    },
+    {
+      "source_id": "src_083",
+      "processed_file_path": "knowledge_base/processed/documents/src_083.txt",
+      "number_of_chunks": 1,
+      "total_source_words": 182,
+      "chunking_status": "success",
+      "warnings": []
+    },
+    {
+      "source_id": "src_084",
+      "processed_file_path": "knowledge_base/processed/documents/src_084.txt",
+      "number_of_chunks": 1,
+      "total_source_words": 209,
+      "chunking_status": "success",
+      "warnings": []
+    },
+    {
+      "source_id": "src_085",
+      "processed_file_path": "knowledge_base/processed/documents/src_085.txt",
+      "number_of_chunks": 1,
+      "total_source_words": 202,
+      "chunking_status": "success",
+      "warnings": []
+    },
+    {
+      "source_id": "src_086",
+      "processed_file_path": "knowledge_base/processed/documents/src_086.txt",
+      "number_of_chunks": 1,
+      "total_source_words": 211,
+      "chunking_status": "success",
+      "warnings": []
+    },
+    {
+      "source_id": "src_087",
+      "processed_file_path": "knowledge_base/processed/documents/src_087.txt",
+      "number_of_chunks": 1,
+      "total_source_words": 218,
+      "chunking_status": "success",
+      "warnings": []
+    },
+    {
+      "source_id": "src_088",
+      "processed_file_path": "knowledge_base/processed/documents/src_088.txt",
+      "number_of_chunks": 1,
+      "total_source_words": 207,
+      "chunking_status": "success",
+      "warnings": []
+    },
+    {
+      "source_id": "src_089",
+      "processed_file_path": "knowledge_base/processed/documents/src_089.txt",
+      "number_of_chunks": 1,
+      "total_source_words": 199,
+      "chunking_status": "success",
+      "warnings": []
+    },
+    {
+      "source_id": "src_090",
+      "processed_file_path": "knowledge_base/processed/documents/src_090.txt",
+      "number_of_chunks": 1,
+      "total_source_words": 189,
+      "chunking_status": "success",
+      "warnings": []
+    },
+    {
+      "source_id": "src_091",
+      "processed_file_path": "knowledge_base/processed/documents/src_091.txt",
+      "number_of_chunks": 1,
+      "total_source_words": 190,
+      "chunking_status": "success",
+      "warnings": []
+    },
+    {
+      "source_id": "src_092",
+      "processed_file_path": "knowledge_base/processed/documents/src_092.txt",
+      "number_of_chunks": 1,
+      "total_source_words": 196,
+      "chunking_status": "success",
+      "warnings": []
+    },
+    {
+      "source_id": "src_093",
+      "processed_file_path": "knowledge_base/processed/documents/src_093.txt",
+      "number_of_chunks": 1,
+      "total_source_words": 204,
+      "chunking_status": "success",
+      "warnings": []
+    },
+    {
+      "source_id": "src_094",
+      "processed_file_path": "knowledge_base/processed/documents/src_094.txt",
+      "number_of_chunks": 1,
+      "total_source_words": 194,
       "chunking_status": "success",
       "warnings": []
     }

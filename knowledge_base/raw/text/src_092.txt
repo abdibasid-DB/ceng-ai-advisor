@@ -1,0 +1,15 @@
+Source ID: src_092
+Title: Mathematics for Machine Learning and Data Science Specialization
+Source: DeepLearning.AI
+URL: https://www.deeplearning.ai/courses/mathematics-for-machine-learning-and-data-science-specialization/
+Date accessed: 2026-10-13
+
+Curated source note
+
+DeepLearning.AI's mathematics-for-ML course sequence is useful for identifying math areas that support machine learning and data science. It should not be treated as an OSTIM degree requirement; official curriculum pages remain the source for required courses.
+
+The source highlights linear algebra, calculus, probability, and statistics as important foundations for machine learning and data science. Linear algebra helps students understand vectors, matrices, transformations, embeddings, and model parameters. Calculus helps with optimization and gradients. Probability and statistics help with uncertainty, distributions, inference, model evaluation, and data interpretation.
+
+For Computer Engineering students who fear math, the practical message is that math ability can be developed gradually. Students do not need to know every advanced topic before starting programming or introductory AI, but deeper AI and data science work becomes easier when the student strengthens these foundations.
+
+Student-facing guidance: review algebra and functions before calculus, learn vectors and matrices for linear algebra, practice probability/statistics with real datasets, and connect math to code through small projects. For ML careers, combine math with Python, data handling, model evaluation, and communication.

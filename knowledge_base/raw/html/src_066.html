@@ -1,0 +1,1764 @@
+<!DOCTYPE html>
+     <xpath expr="//div[@id=&#39;wrapwrap&#39;]" position="before">
+    
+</xpath>
+
+        
+        
+        
+<html lang="en-US" data-website-id="95" data-main-object="website.page(2630,)" data-add2cart-redirect="1">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <xpath expr="//head/meta[last()]" position="after">
+           
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script>
+    // 2nd preloader + lazy loader using the data-original-src attribute
+document.addEventListener("DOMContentLoaded", function () {
+
+    /* PART 1 — Preload FIRST carousel slide using reliable URL */
+    const firstSlide = document.querySelector('.carousel-item.active');
+    if (firstSlide) {
+        const preloadUrl = firstSlide.getAttribute("data-original-src");
+        if (preloadUrl) {
+            const link = document.createElement("link");
+            link.rel = "preload";
+            link.as = "image";
+            link.href = preloadUrl;
+            document.head.appendChild(link);
+        }
+    }
+
+    /* PART 2 — Lazy-load OTHER slides using data-original-src */
+    document.querySelectorAll('.carousel-item:not(.active)').forEach(function (slide) {
+        const lazyUrl = slide.getAttribute("data-original-src");
+        if (!lazyUrl) return;
+
+        slide.dataset.lazyBg = lazyUrl;
+        slide.style.backgroundImage = "none";
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    slide.style.backgroundImage = `url('${slide.dataset.lazyBg}')`;
+                    observer.unobserve(slide);
+                }
+            });
+        });
+
+        observer.observe(slide);
+    });
+
+});
+</script>
+
+</xpath>
+        
+        <meta name="generator" content="Odoo"/>
+            
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="ostimtech-sosyal | OSTİMTECH Aday Öğrenci Sayfası"/>
+        <meta property="og:site_name" content="OSTİMTECH Aday Öğrenci Sayfası"/>
+        <meta property="og:url" content="https://adayogrenci.ostimteknik.edu.tr/en/ostimtech-sosyal"/>
+        <meta property="og:image" content="https://adayogrenci.ostimteknik.edu.tr/web/image/website/95/logo?unique=3f7c630"/>
+            
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:title" content="ostimtech-sosyal | OSTİMTECH Aday Öğrenci Sayfası"/>
+        <meta name="twitter:image" content="https://adayogrenci.ostimteknik.edu.tr/web/image/website/95/logo/300x300?unique=3f7c630"/>
+        
+        <link rel="alternate" hreflang="en" href="https://adayogrenci.ostimteknik.edu.tr/en/ostimtech-sosyal"/>
+        <link rel="alternate" hreflang="tr" href="https://adayogrenci.ostimteknik.edu.tr/ostimtech-sosyal"/>
+        <link rel="alternate" hreflang="x-default" href="https://adayogrenci.ostimteknik.edu.tr/ostimtech-sosyal"/>
+        <link rel="canonical" href="https://adayogrenci.ostimteknik.edu.tr/en/ostimtech-sosyal"/>
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""/>
+        <title> ostimtech-sosyal | OSTİMTECH Aday Öğrenci Sayfası </title>
+        <link type="image/x-icon" rel="shortcut icon" href="/web/image/website/95/favicon?unique=3f7c630"/>
+		<link rel="preload" href="/theme_nextbiz/static/lib/RemixIcon/remixicon.woff2?t=1580819880586" as="font" crossorigin=""/>
+		<link rel="preload" href="/theme_nextbiz/static/lib/linearicons/fonts/Linearicons-Free.woff2?w118d" as="font" crossorigin=""/>
+		<link rel="preload" href="/theme_nextbiz/static/lib/themify-icons/fonts/themify.woff?-fvbane" as="font" crossorigin=""/>
+		<link rel="preload" href="/theme_nextbiz/static/lib/icofont/fonts/icofont.woff2" as="font" crossorigin=""/>
+        <link rel="preload" href="/web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" crossorigin=""/>
+        <link type="text/css" rel="stylesheet" href="/web/assets/650925-6ada74c/95/web.assets_frontend.min.css" data-asset-bundle="web.assets_frontend" data-asset-version="6ada74c"/>
+        <script id="web.layout.odooscript" type="text/javascript">
+            var odoo = {
+                csrf_token: "d4987cd743157fb40302003b7efcb6364ecae66co1822232998",
+                debug: "",
+            };
+        </script>
+        <script type="text/javascript">
+            odoo.__session_info__ = {"is_admin": false, "is_system": false, "is_website_user": true, "user_id": false, "is_frontend": true, "profile_session": null, "profile_collectors": null, "profile_params": null, "show_effect": true, "bundle_params": {"lang": "en_US", "website_id": 95}, "translationURL": "/website/translations", "cache_hashes": {"translations": "de74ed308019b83a299edcd75054ef2d1ca4d444"}, "geoip_country_code": null, "geoip_phone_code": null, "lang_url_code": "en"};
+            if (!/(^|;\s)tz=/.test(document.cookie)) {
+                const userTZ = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                document.cookie = `tz=${userTZ}; path=/`;
+            }
+        </script>
+        <script defer="defer" type="text/javascript" src="/web/assets/588991-8b7938f/95/web.assets_frontend_minimal.min.js" data-asset-bundle="web.assets_frontend_minimal" data-asset-version="8b7938f"></script>
+        <script defer="defer" type="text/javascript" data-src="/web/assets/642946-aaa9961/95/web.assets_frontend_lazy.min.js" data-asset-bundle="web.assets_frontend_lazy" data-asset-version="aaa9961"></script>
+        
+                
+                
+                <script>
+                    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                    })(window,document,'script','dataLayer','GTM-WTWPNVZ');
+                </script>
+                
+
+            
+
+                
+                
+
+                
+                <script type="text/javascript">
+                    window.OSTIM_A11Y = {
+                        position: 'bottom_right',
+                        color:    '#005f73',
+                        iconSize: 'large',
+                        lang:     'en',
+                        autoLang: true,
+                    };
+                </script>
+
+                
+                <link rel="stylesheet" href="/ostim_accessibility/static/src/css/accessibility_widget.css?v=12"/>
+
+                
+                <script type="text/javascript" src="/ostim_accessibility/static/src/js/aria_fixes.js?v=12"></script>
+
+                
+                <script type="text/javascript" src="/ostim_accessibility/static/src/js/accessibility_widget.js?v=12"></script>
+
+        
+    </head>
+    <body>
+                <noscript><iframe height="0" width="0" style="display:none;visibility:hidden" src="https://www.googletagmanager.com/ns.html?id=GTM-WTWPNVZ"></iframe></noscript>
+        <div id="wrapwrap" class="   ">
+                <header id="top" data-anchor="true" data-name="Header" role="banner" class=" ">
+                    
+    <nav data-name="Navbar" class="navbar navbar-expand-lg navbar-light o_colored_level o_cc flex-lg-column shadow-sm py-0">
+        
+            <div id="top_menu_container" class="container align-items-center flex-lg-column flex-wrap">
+                <div class="d-flex flex-lg-row justify-content-between w-100 align-items-center flex-wrap flex-lg-nowrap">
+                    
+                    <div class="o_header_centered_logo">
+                        <div class="oe_structure oe_structure_solo" id="oe_structure_header_vertical_1">
+            <section class="s_text_block o_colored_level" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+                <div class="container">
+                    <div class="s_social_media no_icon_color o_not_editable" data-snippet="s_social_media" data-name="Social Media" contenteditable="false">
+                        <h6 class="s_social_media_title d-none">Follow us</h6>
+                        <a href="/en/website/social/facebook" class="s_social_media_facebook" target="_blank">
+                            <i class="fa fa-facebook m-1 o_editable_media" contenteditable="false">​</i>
+                        </a>
+                        <a href="/en/website/social/twitter" class="s_social_media_twitter" target="_blank">
+                            <i class="fa fa-twitter m-1 o_editable_media" contenteditable="false">​</i>
+                        </a>
+                        <a href="/en/website/social/linkedin" class="s_social_media_linkedin" target="_blank">
+                            <i class="fa fa-linkedin m-1 o_editable_media" contenteditable="false">​</i>
+                        </a>
+                        <a href="/en/website/social/instagram" class="s_social_media_instagram" target="_blank">
+                            <i class="fa fa-instagram m-1 o_editable_media" contenteditable="false">​</i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+                    
+    <a href="/en/" class="navbar-brand logo m-0">
+            
+            <span role="img" aria-label="Logo of OSTİMTECH Aday Öğrenci Sayfası" title="OSTİMTECH Aday Öğrenci Sayfası"><img src="/web/image/website/95/logo/OST%C4%B0MTECH%20Aday%20%C3%96%C4%9Frenci%20Sayfas%C4%B1?unique=3f7c630" class="img img-fluid" width="95" height="40" alt="OSTİMTECH Aday Öğrenci Sayfası" loading="lazy"/></span>
+        </a>
+    
+                    
+                    <div class="o_header_centered_logo text-end">
+                        <div class="oe_structure oe_structure_solo" id="oe_structure_header_vertical_2">
+            <section class="s_text_block o_colored_level" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+                <div class="container">
+                    <small><i class="fa fa-1x fa-fw fa-phone me-2"></i><a href="tel:+1 (650) 555-0111" data-bs-original-title="" title="">+</a>90 312 386 20 92</small></div>
+            </section>
+        </div>
+    </div>
+                    
+                    
+    <button type="button" data-bs-toggle="collapse" data-bs-target="#top_menu_collapse" aria-label="Menu" aria-expanded="false" aria-controls="top_menu_collapse" class="navbar-toggler my-3">
+        <span class="navbar-toggler-icon o_not_editable"></span>
+    </button>
+                </div>
+                <div class="d-lg-flex flex-lg-row align-items-center w-100">
+                    
+                    <div id="top_menu_collapse" class="collapse navbar-collapse flex-wrap">
+                        <div class="oe_structure oe_structure_solo w-100" id="oe_structure_header_vertical_3">
+            <section class="s_text_block o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="container">
+                    <div class="s_hr w-100 text-start pt0 pb0" data-name="Separator">
+                        <hr class="w-100 mx-auto" style="border-top-width: 1px; border-top-style: solid; border-color: var(--300);"/>
+                    </div>
+                </div>
+            </section>
+        </div>
+    
+        
+            <div class="js_language_selector d-none d-lg-block dropdown d-print-none">
+                <button type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="btn btn-sm btn-outline-secondary border-0 dropdown-toggle px-2">
+    <img class="o_lang_flag" src="/base/static/img/country_flags/us.png?height=25" loading="lazy"/>
+                    <span class="align-middle">English (US)</span>
+                </button>
+                <div role="menu" class="dropdown-menu ">
+                        <a href="/en/ostimtech-sosyal" class="dropdown-item js_change_lang active" data-url_code="en">
+    <img class="o_lang_flag" src="/base/static/img/country_flags/us.png?height=25" loading="lazy"/>
+                            <span>English (US)</span>
+                        </a>
+                        <a href="/ostimtech-sosyal" class="dropdown-item js_change_lang " data-url_code="tr">
+    <img class="o_lang_flag" src="/base/static/img/country_flags/tr.png?height=25" loading="lazy"/>
+                            <span> Türkçe</span>
+                        </a>
+                </div>
+            </div>
+        
+                        
+        <div class="o_offcanvas_menu_backdrop" data-bs-toggle="collapse" data-bs-target="#top_menu_collapse" aria-label="Toggle navigation"></div>
+    <ul id="top_menu" role="menu" class="nav navbar-nav o_menu_loading mx-auto order-first order-lg-5 nav-pills">
+        <li class="o_offcanvas_menu_toggler order-first navbar-toggler text-end border-0 o_not_editable">
+            <a href="#top_menu_collapse" class="nav-link px-3" data-bs-toggle="collapse">
+                <span class="fa-2x">×</span>
+            </a>
+        </li>
+        
+                            
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="/en/ek-kontenjan" class="nav-link ">
+            <span>Ek Yerleştirme</span>
+        </a>
+    </li>
+    <li class="nav-item dropdown  position-static">
+        <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle o_mega_menu_toggle">
+            <span>Associate and Bachelor&#39;s Degree Candidates</span>
+        </a>
+        <div data-name="Mega Menu" class="dropdown-menu o_mega_menu o_no_parent_editor dropdown-menu-start"><section class="s_mega_menu_odoo_menu o_colored_level pt16 pb96 o_cc o_cc1" style="background-image: none;">
+        <div class="container">
+            <div class="row o_grid_mode" data-row-count="7">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+                
+                
+                
+                <div class="o_colored_level o_grid_item g-height-3 g-col-lg-4 col-lg-4" style="grid-area: 1 / 5 / 4 / 9; z-index: 4;">
+                    <h4 class="text-uppercase h5 fw-bold mt-0">scholarshıps and fees</h4>
+                    <div class="s_hr text-start pt4 pb16 text-o-color-5" data-name="Separator">
+                        <hr class="w-100 mx-auto" style="border-top: 2px solid rgb(0, 0, 0);">
+                    </div>
+                    <nav class="nav flex-column">
+                        <a href="/en/burs-ve-indirim-yonergesi" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="" target="_blank"><font class="text-black">Scholarships and Discounts</font></a>
+                        <a href="/en/ucretler-burslar" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="" aria-describedby="popover879051">Fees</a>
+                        
+                        
+                    </nav>
+                </div>
+            <div class="o_colored_level o_grid_item g-col-lg-4 g-height-6 col-lg-4" style="z-index: 4; grid-area: 1 / 9 / 7 / 13;">
+                    <h4 class="text-uppercase h5 fw-bold mt-0">life at ostımtech</h4>
+                    <div class="s_hr text-start pt4 pb16 text-o-color-5" data-name="Separator">
+                        <hr class="w-100 mx-auto" style="border-top: 2px solid rgb(0, 0, 0);">
+                    </div>
+                    <nav class="nav flex-column">
+                        <a href="/en/ostimtech-saglik" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-black">Health</font><br></a><a href="/en/ostimtech-sosyal" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-black">Social Areas</font></a><a href="/en/ostimtech-spor" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-900">Sport</font><br></a><a href="/en/ostimtech-ulasim" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-black">Transpotation</font></a><a href="/en/ostimtech-yerleske" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="" aria-describedby="popover431786"><font class="text-black">Campus (preparation - Main and new Campus)​</font><br></a><a href="/en/yurt-olanaklari" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-black">Domitories</font></a>
+                        
+                        
+                        
+                    </nav>
+                </div><div class="o_colored_level o_grid_item g-height-1 g-col-lg-4 col-lg-4" style="z-index: 2; grid-area: 1 / 1 / 2 / 5;">
+                    <h4 class="text-uppercase fw-bold mt-0"><a href="/en/rektorun-mesaj" data-bs-original-title="" title=""><font class="text-black">tHE rector's message</font></a></h4><div class="s_hr text-start pb0 pt4" data-snippet="s_hr" data-name="Separator">
+        <hr class="w-100 mx-auto" style="border-top-width: 2px;">
+    </div>
+                    
+                    
+                </div><div class="o_colored_level o_grid_item g-height-1 g-col-lg-4 col-lg-4" style="z-index: 1; grid-area: 2 / 1 / 3 / 5;">
+                    <p class="text-uppercase fw-bold mt-0"><a href="/en/neden-ostimtech" data-bs-original-title="" title="">why ostımtech?</a></p>
+                    
+                    <nav class="nav flex-column"><div class="s_hr text-start pt4 text-o-color-5 pb8" data-name="Separator">
+                        <hr class="w-100 mx-auto" style="border-top: 2px solid rgb(0, 0, 0);">
+                    </div>
+                        
+                        
+                        
+                    </nav>
+                </div><div class="o_colored_level o_grid_item g-height-5 g-col-lg-4 col-lg-4" style="z-index: 3; grid-area: 3 / 1 / 8 / 5;">
+                    <p class="text-uppercase fw-bold mt-0">faculties and departments</p>
+                    <div class="s_hr text-start pt4 pb16 text-o-color-2" data-name="Separator">
+                        <hr class="w-100 mx-auto" style="border-top-width: 2px; border-top-style: solid;">
+                    </div>
+                    <nav class="nav flex-column">
+                        <a href="https://iibf.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="" target="_blank"><font class="text-black">Faculty of Economics and Administrative Scineces</font></a>
+                        <a href="https://mimarlik.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="" target="_blank"><font class="text-black">Faculty of Architecture</font></a>
+                        <a href="https://mf.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="" target="_blank"><font class="text-black">Faculty of Engineering</font></a>
+                        <a href="https://myo.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="" target="_blank"><font class="text-black">Vocational School</font></a><a href="https://btmyo.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="" target="_blank"><font class="text-black">Vocational School of Information Technologies</font></a>
+                        <a href="https://sfl.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="" target="_blank"><font class="text-black">School of Foreign Language</font></a>
+                    </nav>
+                </div><div class="o_colored_level o_grid_item g-height-3 g-col-lg-4 col-lg-4" style="z-index: 4; grid-area: 4 / 5 / 7 / 9;">
+                    <p class="text-uppercase fw-bold mt-0">quotas and points</p>
+                    <div class="s_hr text-start pt4 pb16 text-o-color-5" data-name="Separator">
+                        <hr class="w-100 mx-auto" style="border-top: 2px solid rgb(0, 0, 0);">
+                    </div>
+                    <nav class="nav flex-column">
+                        <a href="/en/kontenjan-puan-bilgileri-1" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-black">Quotas and Points</font><br></a>
+                        
+                        
+                        
+                    </nav>
+                </div></div>
+        </div>
+        
+    </section>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    </li>
+    <li class="nav-item dropdown  position-static">
+        <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle o_mega_menu_toggle">
+            <span>Graduate Candidates</span>
+        </a>
+        <div data-name="Mega Menu" class="dropdown-menu o_mega_menu o_no_parent_editor dropdown-menu-start">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="s_mega_menu_odoo_menu o_colored_level o_cc o_cc1 pt16 pb152" style="background-image: none;">
+        <div class="container">
+            <div class="row o_grid_mode" data-row-count="5">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+                
+                <div class="o_colored_level o_grid_item g-height-4 g-col-lg-4 col-lg-4" style="grid-area: 1 / 7 / 5 / 11; z-index: 2;">
+                    <h4 class="text-uppercase h5 fw-bold mt-0"><a href="https://sbe.ostimteknik.edu.tr/" data-bs-original-title="" title="" target="_blank">Graduate School of Business</a></h4>
+                    <div class="s_hr text-start pt4 pb16 text-o-color-1" data-name="Separator">
+                        <hr class="w-100 mx-auto" style="border-top: 2px solid rgb(0, 0, 0);">
+                    </div>
+                    <nav class="nav flex-column">
+                        <a href="https://sbe.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-black">About us</font></a>
+                        <a href="https://sbe.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-black">Academic Stafo</font></a>
+                        <a href="https://sbe.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-black">Acceptances</font></a><a href="https://sbe.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-black">Registration Procedures</font></a><a href="https://sbe.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-black">Scholarships and Fees</font></a><a href="https://sbe.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-black">Contact</font></a>
+                    </nav>
+                </div>
+                
+                
+            <div class="o_colored_level o_grid_item g-height-5 g-col-lg-5 col-lg-5" style="z-index: 2; grid-area: 1 / 2 / 6 / 7;">
+                    <h4 class="text-uppercase h5 fw-bold mt-0"><a href="http://fbe.ostimteknik.edu.tr/en" data-bs-original-title="" title="" target="_blank">graduate school of engıneerıng sciences</a></h4>
+                    <div class="s_hr text-start pt4 pb16 text-o-color-1" data-name="Separator">
+                        <hr class="w-100 mx-auto" style="border-top: 2px solid rgb(0, 0, 0);">
+                    </div>
+                    <nav class="nav flex-column">
+                        <a href="https://fbe.ostimteknik.edu.tr/about-gses" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-black">About us</font></a><a href="https://fbe.ostimteknik.edu.tr/partners/grade/fen-bilimleri-enstitusu-8" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-black">Academic Stafo</font></a><a href="http://fbe.ostimteknik.edu.tr/en" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-black">Acceptances</font></a><a href="http://fbe.ostimteknik.edu.tr/en" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-black">Registration Procedures</font></a><a href="http://fbe.ostimteknik.edu.tr/en" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-black">Scholarships and Fees</font></a><a href="https://fbe.ostimteknik.edu.tr/contact" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-black">Contact</font></a>
+                        
+                    </nav>
+                </div></div>
+        </div>
+        
+    </section></div>
+    </li>
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="https://ird.ostimteknik.edu.tr" class="nav-link ">
+            <span>International Prospective Students</span>
+        </a>
+    </li>
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="/en/s-s-s" class="nav-link ">
+            <span>F.A.Q</span>
+        </a>
+    </li>
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="/en/contactus" class="nav-link ">
+            <span>Contact us</span>
+        </a>
+    </li>
+        
+            <li class="nav-item ms-lg-3 divider d-none"></li> 
+            <li class="o_wsale_my_cart align-self-md-start d-none nav-item ms-lg-3">
+                <a href="/en/shop/cart" class="nav-link">
+                    <i class="fa fa-shopping-cart o_editable_media"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></i>
+                    <sup class="my_cart_quantity badge text-bg-primary" data-order-id="">0</sup>
+                </a>
+            </li>
+        
+                            
+                            
+        
+        
+                        
+        <li class="o_offcanvas_logo_container order-last navbar-toggler py-4 order-1 mt-auto text-center border-0">
+            <a href="/en/" class="o_offcanvas_logo logo">
+            <span role="img" aria-label="Logo of OSTİMTECH Aday Öğrenci Sayfası" title="OSTİMTECH Aday Öğrenci Sayfası"><img src="/web/image/website/95/logo/OST%C4%B0MTECH%20Aday%20%C3%96%C4%9Frenci%20Sayfas%C4%B1?unique=3f7c630" class="img img-fluid" style="max-width: 200px" alt="OSTİMTECH Aday Öğrenci Sayfası" loading="lazy"/></span>
+        </a>
+    </li>
+    </ul>
+                        
+        
+            <div class="js_language_selector d-block d-lg-none mb-2 dropdown d-print-none">
+                <button type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="btn btn-sm btn-outline-secondary border-0 dropdown-toggle ">
+    <img class="o_lang_flag" src="/base/static/img/country_flags/us.png?height=25" loading="lazy"/>
+                    <span class="align-middle">English (US)</span>
+                </button>
+                <div role="menu" class="dropdown-menu dropdown-menu-end position-static float-none">
+                        <a href="/en/ostimtech-sosyal" class="dropdown-item js_change_lang active" data-url_code="en">
+    <img class="o_lang_flag" src="/base/static/img/country_flags/us.png?height=25" loading="lazy"/>
+                            <span>English (US)</span>
+                        </a>
+                        <a href="/ostimtech-sosyal" class="dropdown-item js_change_lang " data-url_code="tr">
+    <img class="o_lang_flag" src="/base/static/img/country_flags/tr.png?height=25" loading="lazy"/>
+                            <span> Türkçe</span>
+                        </a>
+                </div>
+            </div>
+        
+                        
+                    </div>
+                </div>
+            </div>
+        
+    </nav>
+    
+        </header>
+                <main role="main">
+                    
+        <div id="wrap" class="oe_structure oe_empty"><section class="s_embed_code pb64 o_colored_level pt0 text-start" data-snippet="s_embed_code" data-name="Yerleştirme Kodu" style="background-image: none;"><template class="s_embed_code_saved">
+<div class="osw" data-lang="tr">
+
+<style>
+  .osw{
+    --wine:#5B1B39;
+    --wine-2:#7A2B4E;
+    --wine-soft:#F1E6EC;
+    --gold:#C89B3C;
+    --gold-soft:#FBF3E1;
+    --paper:#F3F5F8;
+    --card:#FFFFFF;
+    --line:#DEE3EA;
+    --ink:#16233B;
+    --ink-soft:#5B6B84;
+    --radius:12px;
+
+    font-family:'Inter',Arial,sans-serif;
+    color:var(--ink);
+    line-height:1.55;
+    background:var(--paper);
+    padding:0 0 52px;
+  }
+  .osw *{box-sizing:border-box;}
+
+  /* ---- Masthead ---- */
+  .osw .osw-masthead{
+    background:linear-gradient(135deg,var(--wine) 0%,var(--wine-2) 100%);
+    padding:32px 24px 40px;position:relative;overflow:hidden;
+    border-radius:0 0 18px 18px;
+  }
+  .osw .osw-masthead::after{
+    content:"";position:absolute;right:-60px;top:-60px;
+    width:220px;height:220px;border-radius:50%;background:var(--gold);opacity:.15;
+  }
+  .osw .osw-masthead-inner{max-width:880px;margin:0 auto;position:relative;}
+  .osw .osw-topbar{display:flex;justify-content:flex-end;margin-bottom:16px;}
+  .osw .osw-lang{display:inline-flex;background:rgba(0,0,0,.20);border-radius:999px;padding:4px;gap:2px;}
+  .osw .osw-lang button{
+    border:0;cursor:pointer;background:transparent;color:rgba(255,255,255,.75);
+    font-family:'Inter',Arial,sans-serif;font-size:12.5px;font-weight:600;letter-spacing:.05em;
+    padding:6px 14px;border-radius:999px;transition:.15s ease;
+  }
+  .osw .osw-lang button.active{background:#fff;color:var(--wine);}
+  .osw .osw-eyebrow{
+    display:inline-flex;align-items:center;gap:8px;text-transform:uppercase;letter-spacing:.14em;
+    font-size:11.5px;font-weight:700;color:var(--wine);background:var(--gold);
+    padding:5px 12px;border-radius:999px;margin:0 0 16px;
+  }
+  .osw h1.osw-title{
+    font-family:Arial,sans-serif;font-weight:800;font-size:clamp(28px,4.2vw,40px);
+    line-height:1.1;margin:0 0 14px;color:#fff;letter-spacing:-.01em;
+  }
+  .osw .osw-sub{color:#EAD9E2;font-size:15px;max-width:70ch;margin:0;}
+
+  /* ---- Layout ---- */
+  .osw .osw-main{max-width:880px;margin:0 auto;padding:0 24px;}
+  .osw .osw-section{margin-top:46px;}
+  .osw .osw-sec-head{display:flex;align-items:center;gap:12px;margin-bottom:6px;}
+  .osw .osw-sec-icon{
+    flex:none;width:38px;height:38px;border-radius:10px;background:var(--wine-soft);
+    display:flex;align-items:center;justify-content:center;color:var(--wine);
+  }
+  .osw .osw-sec-icon svg{width:20px;height:20px;}
+  .osw .osw-sec-head h2{
+    font-family:Arial,sans-serif;font-size:20px;font-weight:800;margin:0;
+    letter-spacing:-.01em;color:var(--wine);
+  }
+
+  /* ---- Card grid ---- */
+  .osw .osw-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:16px;}
+  .osw .osw-card{
+    background:var(--card);border:1px solid var(--line);border-left:3px solid var(--gold);
+    border-radius:var(--radius);padding:18px;display:flex;gap:14px;transition:box-shadow .2s ease;
+  }
+  .osw .osw-card:hover{box-shadow:0 6px 18px rgba(91,27,57,.1);}
+  .osw .osw-badge{
+    flex:none;width:38px;height:38px;border-radius:10px;background:var(--wine-soft);color:var(--wine);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .osw .osw-badge svg{width:19px;height:19px;}
+  .osw .osw-card h3{font-family:Arial,sans-serif;font-size:15px;font-weight:700;margin:0 0 5px;color:var(--ink);letter-spacing:-.005em;}
+  .osw .osw-card p{font-size:13.6px;color:var(--ink-soft);margin:0;}
+
+  /* ---- Closing CTA ---- */
+  .osw .osw-cta{
+    margin:44px auto 0;max-width:880px;
+    background:linear-gradient(135deg,var(--wine) 0%,var(--wine-2) 100%);
+    color:#fff;border-radius:16px;padding:28px 30px;text-align:center;
+  }
+  .osw .osw-cta-lead{font-family:Arial,sans-serif;font-weight:800;font-size:18px;margin:0 0 10px;line-height:1.35;}
+  .osw .osw-cta-text{font-size:14.5px;color:#EAD9E2;margin:0;max-width:60ch;margin-left:auto;margin-right:auto;line-height:1.6;}
+  .osw .osw-cta-text a{color:#F0D488;font-weight:700;text-decoration:underline;}
+
+  @media (max-width:640px){
+    .osw .osw-grid{grid-template-columns:1fr;}
+    .osw .osw-masthead{padding:24px 18px 30px;}
+  }
+</style>
+
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+  <symbol id="osw-i-activity" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></symbol>
+  <symbol id="osw-i-dumbbell" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="9" width="3" height="6" rx="1"></rect><rect x="19" y="9" width="3" height="6" rx="1"></rect><rect x="5" y="10.5" width="14" height="3" rx="1"></rect></symbol>
+  <symbol id="osw-i-trophy" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></symbol>
+  <symbol id="osw-i-book" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></symbol>
+  <symbol id="osw-i-armchair" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3"></path><path d="M3 11v5a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v2H7v-2a2 2 0 0 0-4 0Z"></path><path d="M5 18v2M19 18v2"></path></symbol>
+  <symbol id="osw-i-wifi" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h.01"></path><path d="M2 8.82a15 15 0 0 1 20 0"></path><path d="M5 12.86a10 10 0 0 1 14 0"></path><path d="M8.5 16.43a5 5 0 0 1 7 0"></path></symbol>
+  <symbol id="osw-i-coffee" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"></path><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path><line x1="6" x2="6" y1="2" y2="4"></line><line x1="10" x2="10" y1="2" y2="4"></line><line x1="14" x2="14" y1="2" y2="4"></line></symbol>
+  <symbol id="osw-i-tree" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m17 14 3 3.3a1 1 0 0 1-.7 1.7H4.7a1 1 0 0 1-.7-1.7L7 14h-.3a1 1 0 0 1-.7-1.7L9 9h-.2A1 1 0 0 1 8 7.3L12 3l4 4.3a1 1 0 0 1-.8 1.7H15l3 3.3a1 1 0 0 1-.7 1.7H17Z"></path><path d="M12 22v-3"></path></symbol>
+  <symbol id="osw-i-users" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></symbol>
+  <symbol id="osw-i-mic" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" x2="12" y1="19" y2="22"></line></symbol>
+  <symbol id="osw-i-ticket" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"></path><path d="M13 5v2M13 17v2M13 11v2"></path></symbol>
+  <symbol id="osw-i-music" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></symbol>
+  <symbol id="osw-i-rocket" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></symbol>
+  <symbol id="osw-i-flask" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2h6M10 2v6.5L4.5 19a2 2 0 0 0 1.8 3h11.4a2 2 0 0 0 1.8-3L14 8.5V2"></path></symbol>
+  <symbol id="osw-i-cap" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"></path><path d="M6 12v5c0 2 3 3.5 6 3.5s6-1.5 6-3.5v-5"></path></symbol>
+  <symbol id="osw-i-sparkle" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"></path></symbol>
+</defs>
+</svg>
+
+<div class="osw-masthead">
+  <div class="osw-masthead-inner">
+    <div class="osw-topbar">
+      <div class="osw-lang" role="group" aria-label="Dil / Language">
+        <button type="button" data-lang="tr" class="active" aria-pressed="true">TR</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+    <p class="osw-eyebrow" data-tr="🎓 Öğrenci Yaşamı · Sosyal Alanlar" data-en="🎓 Student Life · Social Spaces">🎓 Öğrenci Yaşamı · Sosyal Alanlar</p>
+    <h1 class="osw-title" data-tr="Sosyal Alanlarımız" data-en="Our Social Spaces">Sosyal Alanlarımız</h1>
+    <p class="osw-sub" data-tr="OSTİM Teknik Üniversitesi, öğrencilerinin akademik başarılarının yanı sıra sosyal, kültürel ve sportif gelişimlerini desteklemek amacıyla modern ve çeşitli sosyal alanlar sunar. Kampüs yaşamını daha verimli ve keyifli hale getirmek için birçok etkinlik ve olanak sağlıyoruz." data-en="Beyond academic success, OSTİM Technical University offers modern and varied social spaces to support students&#39; social, cultural and sporting development. We provide many activities and facilities to make campus life more productive and enjoyable.">OSTİM Teknik Üniversitesi, öğrencilerinin akademik başarılarının yanı sıra sosyal, kültürel ve sportif gelişimlerini desteklemek amacıyla modern ve çeşitli sosyal alanlar sunar. Kampüs yaşamını daha verimli ve keyifli hale getirmek için birçok etkinlik ve olanak sağlıyoruz.</p>
+  </div>
+</div>
+
+<div class="osw-main">
+
+  
+  <section class="osw-section">
+    <div class="osw-sec-head">
+      <span class="osw-sec-icon"><svg><use href="#osw-i-activity"></use></svg></span>
+      <h2 data-tr="Spor ve Rekreasyon Alanları" data-en="Sports &amp; Recreation Areas">Spor ve Rekreasyon Alanları</h2>
+    </div>
+    <div class="osw-grid">
+      <div class="osw-card">
+        <span class="osw-badge"><svg><use href="#osw-i-activity"></use></svg></span>
+        <div>
+          <h3 data-tr="Açık ve Kapalı Spor Alanları" data-en="Indoor &amp; Outdoor Sports Areas">Açık ve Kapalı Spor Alanları</h3>
+          <p data-tr="Basketbol, voleybol ve futbol sahalarıyla öğrencilerimize spor yapma imkânı." data-en="Basketball, volleyball and football courts giving students the chance to do sports.">Basketbol, voleybol ve futbol sahalarıyla öğrencilerimize spor yapma imkânı.</p>
+        </div>
+      </div>
+      <div class="osw-card">
+        <span class="osw-badge"><svg><use href="#osw-i-dumbbell"></use></svg></span>
+        <div>
+          <h3 data-tr="Fitness Salonu" data-en="Fitness Centre">Fitness Salonu</h3>
+          <p data-tr="Sağlıklı yaşamı destekleyen spor olanakları." data-en="Sports facilities that support a healthy lifestyle.">Sağlıklı yaşamı destekleyen spor olanakları.</p>
+        </div>
+      </div>
+      <div class="osw-card">
+        <span class="osw-badge"><svg><use href="#osw-i-trophy"></use></svg></span>
+        <div>
+          <h3 data-tr="Öğrenci Turnuvaları" data-en="Student Tournaments">Öğrenci Turnuvaları</h3>
+          <p data-tr="Üniversite içi ve üniversiteler arası spor müsabakaları." data-en="Intramural and inter-university sports competitions.">Üniversite içi ve üniversiteler arası spor müsabakaları.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="osw-section">
+    <div class="osw-sec-head">
+      <span class="osw-sec-icon"><svg><use href="#osw-i-book"></use></svg></span>
+      <h2 data-tr="Kütüphane ve Çalışma Alanları" data-en="Library &amp; Study Areas">Kütüphane ve Çalışma Alanları</h2>
+    </div>
+    <div class="osw-grid">
+      <div class="osw-card">
+        <span class="osw-badge"><svg><use href="#osw-i-book"></use></svg></span>
+        <div>
+          <h3 data-tr="Geniş Kütüphane Koleksiyonu" data-en="Extensive Library Collection">Geniş Kütüphane Koleksiyonu</h3>
+          <p data-tr="Güncel akademik kaynaklara ve dijital kütüphaneye erişim." data-en="Access to up-to-date academic resources and the digital library.">Güncel akademik kaynaklara ve dijital kütüphaneye erişim.</p>
+        </div>
+      </div>
+      <div class="osw-card">
+        <span class="osw-badge"><svg><use href="#osw-i-armchair"></use></svg></span>
+        <div>
+          <h3 data-tr="Sessiz Çalışma Alanları" data-en="Quiet Study Areas">Sessiz Çalışma Alanları</h3>
+          <p data-tr="Bireysel ve grup çalışmalarına uygun rahat ortamlar." data-en="Comfortable spaces suited to individual and group study.">Bireysel ve grup çalışmalarına uygun rahat ortamlar.</p>
+        </div>
+      </div>
+      <div class="osw-card">
+        <span class="osw-badge"><svg><use href="#osw-i-wifi"></use></svg></span>
+        <div>
+          <h3 data-tr="Teknolojik Alt Yapı" data-en="Technological Infrastructure">Teknolojik Alt Yapı</h3>
+          <p data-tr="Hızlı internet ve modern donanımlarla donatılmış çalışma salonları." data-en="Study halls equipped with fast internet and modern hardware.">Hızlı internet ve modern donanımlarla donatılmış çalışma salonları.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="osw-section">
+    <div class="osw-sec-head">
+      <span class="osw-sec-icon"><svg><use href="#osw-i-coffee"></use></svg></span>
+      <h2 data-tr="Kafeterya ve Dinlenme Alanları" data-en="Cafeterias &amp; Lounge Areas">Kafeterya ve Dinlenme Alanları</h2>
+    </div>
+    <div class="osw-grid">
+      <div class="osw-card">
+        <span class="osw-badge"><svg><use href="#osw-i-coffee"></use></svg></span>
+        <div>
+          <h3 data-tr="Kampüs İçinde Çeşitli Kafeteryalar" data-en="Various Cafeterias on Campus">Kampüs İçinde Çeşitli Kafeteryalar</h3>
+          <p data-tr="Arkadaşlarınızla sosyalleşebileceğiniz ve keyifli vakit geçirebileceğiniz mekânlar." data-en="Places to socialise with friends and enjoy your time.">Arkadaşlarınızla sosyalleşebileceğiniz ve keyifli vakit geçirebileceğiniz mekânlar.</p>
+        </div>
+      </div>
+      <div class="osw-card">
+        <span class="osw-badge"><svg><use href="#osw-i-tree"></use></svg></span>
+        <div>
+          <h3 data-tr="Açık Alan Dinlenme Noktaları" data-en="Outdoor Rest Areas">Açık Alan Dinlenme Noktaları</h3>
+          <p data-tr="Yeşil alanlar ve kampüs içinde serbest oturma alanları." data-en="Green areas and free seating spaces across the campus.">Yeşil alanlar ve kampüs içinde serbest oturma alanları.</p>
+        </div>
+      </div>
+      <div class="osw-card">
+        <span class="osw-badge"><svg><use href="#osw-i-users"></use></svg></span>
+        <div>
+          <h3 data-tr="Öğrenci Toplantı Noktaları" data-en="Student Meeting Points">Öğrenci Toplantı Noktaları</h3>
+          <p data-tr="Çalışma ve sosyal buluşmalar için özel alanlar." data-en="Dedicated spaces for study and social gatherings.">Çalışma ve sosyal buluşmalar için özel alanlar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="osw-section">
+    <div class="osw-sec-head">
+      <span class="osw-sec-icon"><svg><use href="#osw-i-mic"></use></svg></span>
+      <h2 data-tr="Kültürel ve Sosyal Etkinlikler" data-en="Cultural &amp; Social Activities">Kültürel ve Sosyal Etkinlikler</h2>
+    </div>
+    <div class="osw-grid">
+      <div class="osw-card">
+        <span class="osw-badge"><svg><use href="#osw-i-users"></use></svg></span>
+        <div>
+          <h3 data-tr="Öğrenci Kulüpleri" data-en="Student Clubs">Öğrenci Kulüpleri</h3>
+          <p data-tr="İlgi alanlarınıza uygun birçok farklı öğrenci topluluğu." data-en="Many different student communities matching your interests.">İlgi alanlarınıza uygun birçok farklı öğrenci topluluğu.</p>
+        </div>
+      </div>
+      <div class="osw-card">
+        <span class="osw-badge"><svg><use href="#osw-i-mic"></use></svg></span>
+        <div>
+          <h3 data-tr="Seminerler ve Konferanslar" data-en="Seminars &amp; Conferences">Seminerler ve Konferanslar</h3>
+          <p data-tr="Alanında uzman konuşmacılarla düzenlenen akademik etkinlikler." data-en="Academic events held with expert speakers in their fields.">Alanında uzman konuşmacılarla düzenlenen akademik etkinlikler.</p>
+        </div>
+      </div>
+      <div class="osw-card">
+        <span class="osw-badge"><svg><use href="#osw-i-ticket"></use></svg></span>
+        <div>
+          <h3 data-tr="Kültürel Geziler ve Festivaller" data-en="Cultural Trips &amp; Festivals">Kültürel Geziler ve Festivaller</h3>
+          <p data-tr="Öğrencilerimizin sosyalleşmesine katkı sağlayan etkinlikler." data-en="Events that help students socialise.">Öğrencilerimizin sosyalleşmesine katkı sağlayan etkinlikler.</p>
+        </div>
+      </div>
+      <div class="osw-card">
+        <span class="osw-badge"><svg><use href="#osw-i-music"></use></svg></span>
+        <div>
+          <h3 data-tr="Sanat ve Müzik Atölyeleri" data-en="Art &amp; Music Workshops">Sanat ve Müzik Atölyeleri</h3>
+          <p data-tr="Tiyatro, resim, müzik gibi sanatsal faaliyetler için destekleyici programlar." data-en="Supportive programmes for artistic activities such as theatre, painting and music.">Tiyatro, resim, müzik gibi sanatsal faaliyetler için destekleyici programlar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="osw-section">
+    <div class="osw-sec-head">
+      <span class="osw-sec-icon"><svg><use href="#osw-i-rocket"></use></svg></span>
+      <h2 data-tr="Teknoloji, Girişimcilik ve Ar-Ge Alanları" data-en="Technology, Entrepreneurship &amp; R&amp;D Areas">Teknoloji, Girişimcilik ve Ar-Ge Alanları</h2>
+    </div>
+    <div class="osw-grid">
+      <div class="osw-card">
+        <span class="osw-badge"><svg><use href="#osw-i-rocket"></use></svg></span>
+        <div>
+          <h3 data-tr="OSTİM Teknopark &amp; Kuluçka Merkezi" data-en="OSTİM Technopark &amp; Incubation Centre">OSTİM Teknopark & Kuluçka Merkezi</h3>
+          <p data-tr="Girişimci öğrenciler için projelerini geliştirme fırsatı." data-en="An opportunity for entrepreneurial students to develop their projects.">Girişimci öğrenciler için projelerini geliştirme fırsatı.</p>
+        </div>
+      </div>
+      <div class="osw-card">
+        <span class="osw-badge"><svg><use href="#osw-i-flask"></use></svg></span>
+        <div>
+          <h3 data-tr="Laboratuvarlar &amp; Atölyeler" data-en="Laboratories &amp; Workshops">Laboratuvarlar & Atölyeler</h3>
+          <p data-tr="Uygulamalı eğitim alanları ve teknik çalışmalar için donatılmış ortamlar." data-en="Environments equipped for hands-on learning and technical work.">Uygulamalı eğitim alanları ve teknik çalışmalar için donatılmış ortamlar.</p>
+        </div>
+      </div>
+      <div class="osw-card">
+        <span class="osw-badge"><svg><use href="#osw-i-cap"></use></svg></span>
+        <div>
+          <h3 data-tr="Sürekli Eğitim Merkezi (OTÜSEM)" data-en="Continuing Education Centre (OTÜSEM)">Sürekli Eğitim Merkezi (OTÜSEM)</h3>
+          <p data-tr="Kişisel ve mesleki gelişim için sertifika programları ve kurslar." data-en="Certificate programmes and courses for personal and professional development.">Kişisel ve mesleki gelişim için sertifika programları ve kurslar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<div class="osw-cta">
+  <p class="osw-cta-lead" data-tr="💡 OSTİM Teknik Üniversitesi&#39;nde eğitim almak sadece derslerle sınırlı değil!" data-en="💡 Studying at OSTİM Technical University isn&#39;t limited to classes!">💡 OSTİM Teknik Üniversitesi'nde eğitim almak sadece derslerle sınırlı değil!</p>
+  <p class="osw-cta-text" data-tr="Öğrencilerimize akademik başarılarının yanı sıra sosyal, kültürel ve sportif gelişimlerine katkı sağlayacak bir kampüs yaşamı sunuyoruz. Daha fazla bilgi için üniversitemizin &lt;a href=&#39;https://oidb.ostimteknik.edu.tr/&#39; target=&#39;_blank&#39; rel=&#39;noopener&#39;&gt;Öğrenci İşleri&lt;/a&gt; veya &lt;a href=&#39;https://sks.ostimteknik.edu.tr/&#39; target=&#39;_blank&#39; rel=&#39;noopener&#39;&gt;SKS&lt;/a&gt; birimiyle iletişime geçebilirsiniz. 🎓✨" data-en="Beyond academic success, we offer a campus life that contributes to students&#39; social, cultural and sporting development. For more information, contact our university&#39;s &lt;a href=&#39;https://oidb.ostimteknik.edu.tr/&#39; target=&#39;_blank&#39; rel=&#39;noopener&#39;&gt;Student Affairs&lt;/a&gt; or &lt;a href=&#39;https://sks.ostimteknik.edu.tr/&#39; target=&#39;_blank&#39; rel=&#39;noopener&#39;&gt;SKS&lt;/a&gt; unit. 🎓✨">Öğrencilerimize akademik başarılarının yanı sıra sosyal, kültürel ve sportif gelişimlerine katkı sağlayacak bir kampüs yaşamı sunuyoruz. Daha fazla bilgi için üniversitemizin <a href="https://oidb.ostimteknik.edu.tr/" target="_blank" rel="noopener">Öğrenci İşleri</a> veya <a href="https://sks.ostimteknik.edu.tr/" target="_blank" rel="noopener">SKS</a> birimiyle iletişime geçebilirsiniz. 🎓✨</p>
+</div>
+
+</div>
+
+<script>
+(function(){
+  var root = document.currentScript ? document.currentScript.closest('.osw') : null;
+  if(!root) root = document.querySelector('.osw');
+  if(!root) return;
+  var btns = root.querySelectorAll('.osw-lang button');
+  function setLang(lang){
+    root.querySelectorAll('[data-tr]').forEach(function(el){
+      var v = el.getAttribute('data-' + lang);
+      if(v !== null) el.innerHTML = v;
+    });
+    root.setAttribute('data-lang', lang);
+    btns.forEach(function(b){
+      var on = b.getAttribute('data-lang') === lang;
+      b.classList.toggle('active', on);
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+  }
+  btns.forEach(function(b){
+    b.addEventListener('click', function(){ setLang(b.getAttribute('data-lang')); });
+  });
+})();
+</script>
+</template>
+        <div class="s_embed_code_embedded o_not_editable container"><div class="osw" data-lang="tr">
+
+<style>
+  .osw{
+    --wine:#5B1B39;
+    --wine-2:#7A2B4E;
+    --wine-soft:#F1E6EC;
+    --gold:#C89B3C;
+    --gold-soft:#FBF3E1;
+    --paper:#F3F5F8;
+    --card:#FFFFFF;
+    --line:#DEE3EA;
+    --ink:#16233B;
+    --ink-soft:#5B6B84;
+    --radius:12px;
+
+    font-family:'Inter',Arial,sans-serif;
+    color:var(--ink);
+    line-height:1.55;
+    background:var(--paper);
+    padding:0 0 52px;
+  }
+  .osw *{box-sizing:border-box;}
+
+  /* ---- Masthead ---- */
+  .osw .osw-masthead{
+    background:linear-gradient(135deg,var(--wine) 0%,var(--wine-2) 100%);
+    padding:32px 24px 40px;position:relative;overflow:hidden;
+    border-radius:0 0 18px 18px;
+  }
+  .osw .osw-masthead::after{
+    content:"";position:absolute;right:-60px;top:-60px;
+    width:220px;height:220px;border-radius:50%;background:var(--gold);opacity:.15;
+  }
+  .osw .osw-masthead-inner{max-width:880px;margin:0 auto;position:relative;}
+  .osw .osw-topbar{display:flex;justify-content:flex-end;margin-bottom:16px;}
+  .osw .osw-lang{display:inline-flex;background:rgba(0,0,0,.20);border-radius:999px;padding:4px;gap:2px;}
+  .osw .osw-lang button{
+    border:0;cursor:pointer;background:transparent;color:rgba(255,255,255,.75);
+    font-family:'Inter',Arial,sans-serif;font-size:12.5px;font-weight:600;letter-spacing:.05em;
+    padding:6px 14px;border-radius:999px;transition:.15s ease;
+  }
+  .osw .osw-lang button.active{background:#fff;color:var(--wine);}
+  .osw .osw-eyebrow{
+    display:inline-flex;align-items:center;gap:8px;text-transform:uppercase;letter-spacing:.14em;
+    font-size:11.5px;font-weight:700;color:var(--wine);background:var(--gold);
+    padding:5px 12px;border-radius:999px;margin:0 0 16px;
+  }
+  .osw h1.osw-title{
+    font-family:Arial,sans-serif;font-weight:800;font-size:clamp(28px,4.2vw,40px);
+    line-height:1.1;margin:0 0 14px;color:#fff;letter-spacing:-.01em;
+  }
+  .osw .osw-sub{color:#EAD9E2;font-size:15px;max-width:70ch;margin:0;}
+
+  /* ---- Layout ---- */
+  .osw .osw-main{max-width:880px;margin:0 auto;padding:0 24px;}
+  .osw .osw-section{margin-top:46px;}
+  .osw .osw-sec-head{display:flex;align-items:center;gap:12px;margin-bottom:6px;}
+  .osw .osw-sec-icon{
+    flex:none;width:38px;height:38px;border-radius:10px;background:var(--wine-soft);
+    display:flex;align-items:center;justify-content:center;color:var(--wine);
+  }
+  .osw .osw-sec-icon svg{width:20px;height:20px;}
+  .osw .osw-sec-head h2{
+    font-family:Arial,sans-serif;font-size:20px;font-weight:800;margin:0;
+    letter-spacing:-.01em;color:var(--wine);
+  }
+
+  /* ---- Card grid ---- */
+  .osw .osw-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:16px;}
+  .osw .osw-card{
+    background:var(--card);border:1px solid var(--line);border-left:3px solid var(--gold);
+    border-radius:var(--radius);padding:18px;display:flex;gap:14px;transition:box-shadow .2s ease;
+  }
+  .osw .osw-card:hover{box-shadow:0 6px 18px rgba(91,27,57,.1);}
+  .osw .osw-badge{
+    flex:none;width:38px;height:38px;border-radius:10px;background:var(--wine-soft);color:var(--wine);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .osw .osw-badge svg{width:19px;height:19px;}
+  .osw .osw-card h3{font-family:Arial,sans-serif;font-size:15px;font-weight:700;margin:0 0 5px;color:var(--ink);letter-spacing:-.005em;}
+  .osw .osw-card p{font-size:13.6px;color:var(--ink-soft);margin:0;}
+
+  /* ---- Closing CTA ---- */
+  .osw .osw-cta{
+    margin:44px auto 0;max-width:880px;
+    background:linear-gradient(135deg,var(--wine) 0%,var(--wine-2) 100%);
+    color:#fff;border-radius:16px;padding:28px 30px;text-align:center;
+  }
+  .osw .osw-cta-lead{font-family:Arial,sans-serif;font-weight:800;font-size:18px;margin:0 0 10px;line-height:1.35;}
+  .osw .osw-cta-text{font-size:14.5px;color:#EAD9E2;margin:0;max-width:60ch;margin-left:auto;margin-right:auto;line-height:1.6;}
+  .osw .osw-cta-text a{color:#F0D488;font-weight:700;text-decoration:underline;}
+
+  @media (max-width:640px){
+    .osw .osw-grid{grid-template-columns:1fr;}
+    .osw .osw-masthead{padding:24px 18px 30px;}
+  }
+</style>
+
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+  <symbol id="osw-i-activity" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></symbol>
+  <symbol id="osw-i-dumbbell" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="9" width="3" height="6" rx="1"></rect><rect x="19" y="9" width="3" height="6" rx="1"></rect><rect x="5" y="10.5" width="14" height="3" rx="1"></rect></symbol>
+  <symbol id="osw-i-trophy" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></symbol>
+  <symbol id="osw-i-book" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></symbol>
+  <symbol id="osw-i-armchair" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3"></path><path d="M3 11v5a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v2H7v-2a2 2 0 0 0-4 0Z"></path><path d="M5 18v2M19 18v2"></path></symbol>
+  <symbol id="osw-i-wifi" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h.01"></path><path d="M2 8.82a15 15 0 0 1 20 0"></path><path d="M5 12.86a10 10 0 0 1 14 0"></path><path d="M8.5 16.43a5 5 0 0 1 7 0"></path></symbol>
+  <symbol id="osw-i-coffee" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"></path><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path><line x1="6" x2="6" y1="2" y2="4"></line><line x1="10" x2="10" y1="2" y2="4"></line><line x1="14" x2="14" y1="2" y2="4"></line></symbol>
+  <symbol id="osw-i-tree" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m17 14 3 3.3a1 1 0 0 1-.7 1.7H4.7a1 1 0 0 1-.7-1.7L7 14h-.3a1 1 0 0 1-.7-1.7L9 9h-.2A1 1 0 0 1 8 7.3L12 3l4 4.3a1 1 0 0 1-.8 1.7H15l3 3.3a1 1 0 0 1-.7 1.7H17Z"></path><path d="M12 22v-3"></path></symbol>
+  <symbol id="osw-i-users" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></symbol>
+  <symbol id="osw-i-mic" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" x2="12" y1="19" y2="22"></line></symbol>
+  <symbol id="osw-i-ticket" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"></path><path d="M13 5v2M13 17v2M13 11v2"></path></symbol>
+  <symbol id="osw-i-music" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></symbol>
+  <symbol id="osw-i-rocket" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></symbol>
+  <symbol id="osw-i-flask" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2h6M10 2v6.5L4.5 19a2 2 0 0 0 1.8 3h11.4a2 2 0 0 0 1.8-3L14 8.5V2"></path></symbol>
+  <symbol id="osw-i-cap" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"></path><path d="M6 12v5c0 2 3 3.5 6 3.5s6-1.5 6-3.5v-5"></path></symbol>
+  <symbol id="osw-i-sparkle" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"></path></symbol>
+</defs>
+</svg>
+
+<div class="osw-masthead">
+  <div class="osw-masthead-inner">
+    <div class="osw-topbar">
+      <div class="osw-lang" role="group" aria-label="Dil / Language">
+        <button type="button" data-lang="tr" class="active" aria-pressed="true">TR</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+    <p class="osw-eyebrow" data-tr="🎓 Öğrenci Yaşamı · Sosyal Alanlar" data-en="🎓 Student Life · Social Spaces">🎓 Öğrenci Yaşamı · Sosyal Alanlar</p>
+    <h1 class="osw-title" data-tr="Sosyal Alanlarımız" data-en="Our Social Spaces">Sosyal Alanlarımız</h1>
+    <p class="osw-sub" data-tr="OSTİM Teknik Üniversitesi, öğrencilerinin akademik başarılarının yanı sıra sosyal, kültürel ve sportif gelişimlerini desteklemek amacıyla modern ve çeşitli sosyal alanlar sunar. Kampüs yaşamını daha verimli ve keyifli hale getirmek için birçok etkinlik ve olanak sağlıyoruz." data-en="Beyond academic success, OSTİM Technical University offers modern and varied social spaces to support students&#39; social, cultural and sporting development. We provide many activities and facilities to make campus life more productive and enjoyable.">OSTİM Teknik Üniversitesi, öğrencilerinin akademik başarılarının yanı sıra sosyal, kültürel ve sportif gelişimlerini desteklemek amacıyla modern ve çeşitli sosyal alanlar sunar. Kampüs yaşamını daha verimli ve keyifli hale getirmek için birçok etkinlik ve olanak sağlıyoruz.</p>
+  </div>
+</div>
+
+<div class="osw-main">
+
+  
+  <section class="osw-section">
+    <div class="osw-sec-head">
+      <span class="osw-sec-icon"><svg><use href="#osw-i-activity"></use></svg></span>
+      <h2 data-tr="Spor ve Rekreasyon Alanları" data-en="Sports &amp; Recreation Areas">Spor ve Rekreasyon Alanları</h2>
+    </div>
+    <div class="osw-grid">
+      <div class="osw-card">
+        <span class="osw-badge"><svg><use href="#osw-i-activity"></use></svg></span>
+        <div>
+          <h3 data-tr="Açık ve Kapalı Spor Alanları" data-en="Indoor &amp; Outdoor Sports Areas">Açık ve Kapalı Spor Alanları</h3>
+          <p data-tr="Basketbol, voleybol ve futbol sahalarıyla öğrencilerimize spor yapma imkânı." data-en="Basketball, volleyball and football courts giving students the chance to do sports.">Basketbol, voleybol ve futbol sahalarıyla öğrencilerimize spor yapma imkânı.</p>
+        </div>
+      </div>
+      <div class="osw-card">
+        <span class="osw-badge"><svg><use href="#osw-i-dumbbell"></use></svg></span>
+        <div>
+          <h3 data-tr="Fitness Salonu" data-en="Fitness Centre">Fitness Salonu</h3>
+          <p data-tr="Sağlıklı yaşamı destekleyen spor olanakları." data-en="Sports facilities that support a healthy lifestyle.">Sağlıklı yaşamı destekleyen spor olanakları.</p>
+        </div>
+      </div>
+      <div class="osw-card">
+        <span class="osw-badge"><svg><use href="#osw-i-trophy"></use></svg></span>
+        <div>
+          <h3 data-tr="Öğrenci Turnuvaları" data-en="Student Tournaments">Öğrenci Turnuvaları</h3>
+          <p data-tr="Üniversite içi ve üniversiteler arası spor müsabakaları." data-en="Intramural and inter-university sports competitions.">Üniversite içi ve üniversiteler arası spor müsabakaları.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="osw-section">
+    <div class="osw-sec-head">
+      <span class="osw-sec-icon"><svg><use href="#osw-i-book"></use></svg></span>
+      <h2 data-tr="Kütüphane ve Çalışma Alanları" data-en="Library &amp; Study Areas">Kütüphane ve Çalışma Alanları</h2>
+    </div>
+    <div class="osw-grid">
+      <div class="osw-card">
+        <span class="osw-badge"><svg><use href="#osw-i-book"></use></svg></span>
+        <div>
+          <h3 data-tr="Geniş Kütüphane Koleksiyonu" data-en="Extensive Library Collection">Geniş Kütüphane Koleksiyonu</h3>
+          <p data-tr="Güncel akademik kaynaklara ve dijital kütüphaneye erişim." data-en="Access to up-to-date academic resources and the digital library.">Güncel akademik kaynaklara ve dijital kütüphaneye erişim.</p>
+        </div>
+      </div>
+      <div class="osw-card">
+        <span class="osw-badge"><svg><use href="#osw-i-armchair"></use></svg></span>
+        <div>
+          <h3 data-tr="Sessiz Çalışma Alanları" data-en="Quiet Study Areas">Sessiz Çalışma Alanları</h3>
+          <p data-tr="Bireysel ve grup çalışmalarına uygun rahat ortamlar." data-en="Comfortable spaces suited to individual and group study.">Bireysel ve grup çalışmalarına uygun rahat ortamlar.</p>
+        </div>
+      </div>
+      <div class="osw-card">
+        <span class="osw-badge"><svg><use href="#osw-i-wifi"></use></svg></span>
+        <div>
+          <h3 data-tr="Teknolojik Alt Yapı" data-en="Technological Infrastructure">Teknolojik Alt Yapı</h3>
+          <p data-tr="Hızlı internet ve modern donanımlarla donatılmış çalışma salonları." data-en="Study halls equipped with fast internet and modern hardware.">Hızlı internet ve modern donanımlarla donatılmış çalışma salonları.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="osw-section">
+    <div class="osw-sec-head">
+      <span class="osw-sec-icon"><svg><use href="#osw-i-coffee"></use></svg></span>
+      <h2 data-tr="Kafeterya ve Dinlenme Alanları" data-en="Cafeterias &amp; Lounge Areas">Kafeterya ve Dinlenme Alanları</h2>
+    </div>
+    <div class="osw-grid">
+      <div class="osw-card">
+        <span class="osw-badge"><svg><use href="#osw-i-coffee"></use></svg></span>
+        <div>
+          <h3 data-tr="Kampüs İçinde Çeşitli Kafeteryalar" data-en="Various Cafeterias on Campus">Kampüs İçinde Çeşitli Kafeteryalar</h3>
+          <p data-tr="Arkadaşlarınızla sosyalleşebileceğiniz ve keyifli vakit geçirebileceğiniz mekânlar." data-en="Places to socialise with friends and enjoy your time.">Arkadaşlarınızla sosyalleşebileceğiniz ve keyifli vakit geçirebileceğiniz mekânlar.</p>
+        </div>
+      </div>
+      <div class="osw-card">
+        <span class="osw-badge"><svg><use href="#osw-i-tree"></use></svg></span>
+        <div>
+          <h3 data-tr="Açık Alan Dinlenme Noktaları" data-en="Outdoor Rest Areas">Açık Alan Dinlenme Noktaları</h3>
+          <p data-tr="Yeşil alanlar ve kampüs içinde serbest oturma alanları." data-en="Green areas and free seating spaces across the campus.">Yeşil alanlar ve kampüs içinde serbest oturma alanları.</p>
+        </div>
+      </div>
+      <div class="osw-card">
+        <span class="osw-badge"><svg><use href="#osw-i-users"></use></svg></span>
+        <div>
+          <h3 data-tr="Öğrenci Toplantı Noktaları" data-en="Student Meeting Points">Öğrenci Toplantı Noktaları</h3>
+          <p data-tr="Çalışma ve sosyal buluşmalar için özel alanlar." data-en="Dedicated spaces for study and social gatherings.">Çalışma ve sosyal buluşmalar için özel alanlar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="osw-section">
+    <div class="osw-sec-head">
+      <span class="osw-sec-icon"><svg><use href="#osw-i-mic"></use></svg></span>
+      <h2 data-tr="Kültürel ve Sosyal Etkinlikler" data-en="Cultural &amp; Social Activities">Kültürel ve Sosyal Etkinlikler</h2>
+    </div>
+    <div class="osw-grid">
+      <div class="osw-card">
+        <span class="osw-badge"><svg><use href="#osw-i-users"></use></svg></span>
+        <div>
+          <h3 data-tr="Öğrenci Kulüpleri" data-en="Student Clubs">Öğrenci Kulüpleri</h3>
+          <p data-tr="İlgi alanlarınıza uygun birçok farklı öğrenci topluluğu." data-en="Many different student communities matching your interests.">İlgi alanlarınıza uygun birçok farklı öğrenci topluluğu.</p>
+        </div>
+      </div>
+      <div class="osw-card">
+        <span class="osw-badge"><svg><use href="#osw-i-mic"></use></svg></span>
+        <div>
+          <h3 data-tr="Seminerler ve Konferanslar" data-en="Seminars &amp; Conferences">Seminerler ve Konferanslar</h3>
+          <p data-tr="Alanında uzman konuşmacılarla düzenlenen akademik etkinlikler." data-en="Academic events held with expert speakers in their fields.">Alanında uzman konuşmacılarla düzenlenen akademik etkinlikler.</p>
+        </div>
+      </div>
+      <div class="osw-card">
+        <span class="osw-badge"><svg><use href="#osw-i-ticket"></use></svg></span>
+        <div>
+          <h3 data-tr="Kültürel Geziler ve Festivaller" data-en="Cultural Trips &amp; Festivals">Kültürel Geziler ve Festivaller</h3>
+          <p data-tr="Öğrencilerimizin sosyalleşmesine katkı sağlayan etkinlikler." data-en="Events that help students socialise.">Öğrencilerimizin sosyalleşmesine katkı sağlayan etkinlikler.</p>
+        </div>
+      </div>
+      <div class="osw-card">
+        <span class="osw-badge"><svg><use href="#osw-i-music"></use></svg></span>
+        <div>
+          <h3 data-tr="Sanat ve Müzik Atölyeleri" data-en="Art &amp; Music Workshops">Sanat ve Müzik Atölyeleri</h3>
+          <p data-tr="Tiyatro, resim, müzik gibi sanatsal faaliyetler için destekleyici programlar." data-en="Supportive programmes for artistic activities such as theatre, painting and music.">Tiyatro, resim, müzik gibi sanatsal faaliyetler için destekleyici programlar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="osw-section">
+    <div class="osw-sec-head">
+      <span class="osw-sec-icon"><svg><use href="#osw-i-rocket"></use></svg></span>
+      <h2 data-tr="Teknoloji, Girişimcilik ve Ar-Ge Alanları" data-en="Technology, Entrepreneurship &amp; R&amp;D Areas">Teknoloji, Girişimcilik ve Ar-Ge Alanları</h2>
+    </div>
+    <div class="osw-grid">
+      <div class="osw-card">
+        <span class="osw-badge"><svg><use href="#osw-i-rocket"></use></svg></span>
+        <div>
+          <h3 data-tr="OSTİM Teknopark &amp; Kuluçka Merkezi" data-en="OSTİM Technopark &amp; Incubation Centre">OSTİM Teknopark &amp; Kuluçka Merkezi</h3>
+          <p data-tr="Girişimci öğrenciler için projelerini geliştirme fırsatı." data-en="An opportunity for entrepreneurial students to develop their projects.">Girişimci öğrenciler için projelerini geliştirme fırsatı.</p>
+        </div>
+      </div>
+      <div class="osw-card">
+        <span class="osw-badge"><svg><use href="#osw-i-flask"></use></svg></span>
+        <div>
+          <h3 data-tr="Laboratuvarlar &amp; Atölyeler" data-en="Laboratories &amp; Workshops">Laboratuvarlar &amp; Atölyeler</h3>
+          <p data-tr="Uygulamalı eğitim alanları ve teknik çalışmalar için donatılmış ortamlar." data-en="Environments equipped for hands-on learning and technical work.">Uygulamalı eğitim alanları ve teknik çalışmalar için donatılmış ortamlar.</p>
+        </div>
+      </div>
+      <div class="osw-card">
+        <span class="osw-badge"><svg><use href="#osw-i-cap"></use></svg></span>
+        <div>
+          <h3 data-tr="Sürekli Eğitim Merkezi (OTÜSEM)" data-en="Continuing Education Centre (OTÜSEM)">Sürekli Eğitim Merkezi (OTÜSEM)</h3>
+          <p data-tr="Kişisel ve mesleki gelişim için sertifika programları ve kurslar." data-en="Certificate programmes and courses for personal and professional development.">Kişisel ve mesleki gelişim için sertifika programları ve kurslar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<div class="osw-cta">
+  <p class="osw-cta-lead" data-tr="💡 OSTİM Teknik Üniversitesi&#39;nde eğitim almak sadece derslerle sınırlı değil!" data-en="💡 Studying at OSTİM Technical University isn&#39;t limited to classes!">💡 OSTİM Teknik Üniversitesi'nde eğitim almak sadece derslerle sınırlı değil!</p>
+  <p class="osw-cta-text" data-tr="Öğrencilerimize akademik başarılarının yanı sıra sosyal, kültürel ve sportif gelişimlerine katkı sağlayacak bir kampüs yaşamı sunuyoruz. Daha fazla bilgi için üniversitemizin &lt;a href=&#39;https://oidb.ostimteknik.edu.tr/&#39; target=&#39;_blank&#39; rel=&#39;noopener&#39;&gt;Öğrenci İşleri&lt;/a&gt; veya &lt;a href=&#39;https://sks.ostimteknik.edu.tr/&#39; target=&#39;_blank&#39; rel=&#39;noopener&#39;&gt;SKS&lt;/a&gt; birimiyle iletişime geçebilirsiniz. 🎓✨" data-en="Beyond academic success, we offer a campus life that contributes to students&#39; social, cultural and sporting development. For more information, contact our university&#39;s &lt;a href=&#39;https://oidb.ostimteknik.edu.tr/&#39; target=&#39;_blank&#39; rel=&#39;noopener&#39;&gt;Student Affairs&lt;/a&gt; or &lt;a href=&#39;https://sks.ostimteknik.edu.tr/&#39; target=&#39;_blank&#39; rel=&#39;noopener&#39;&gt;SKS&lt;/a&gt; unit. 🎓✨">Öğrencilerimize akademik başarılarının yanı sıra sosyal, kültürel ve sportif gelişimlerine katkı sağlayacak bir kampüs yaşamı sunuyoruz. Daha fazla bilgi için üniversitemizin <a href="https://oidb.ostimteknik.edu.tr/" target="_blank" rel="noopener">Öğrenci İşleri</a> veya <a href="https://sks.ostimteknik.edu.tr/" target="_blank" rel="noopener">SKS</a> birimiyle iletişime geçebilirsiniz. 🎓✨</p>
+</div>
+
+</div><script>
+(function(){
+  var root = document.currentScript ? document.currentScript.closest('.osw') : null;
+  if(!root) root = document.querySelector('.osw');
+  if(!root) return;
+  var btns = root.querySelectorAll('.osw-lang button');
+  function setLang(lang){
+    root.querySelectorAll('[data-tr]').forEach(function(el){
+      var v = el.getAttribute('data-' + lang);
+      if(v !== null) el.innerHTML = v;
+    });
+    root.setAttribute('data-lang', lang);
+    btns.forEach(function(b){
+      var on = b.getAttribute('data-lang') === lang;
+      b.classList.toggle('active', on);
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+  }
+  btns.forEach(function(b){
+    b.addEventListener('click', function(){ setLang(b.getAttribute('data-lang')); });
+  });
+})();
+</script></div>
+    </section></div>
+    
+                </main>
+                <footer id="bottom" data-anchor="true" data-name="Footer" role="contentinfo" class="o_footer o_colored_level o_cc  o_footer_slideout">
+                    <div id="footer" class="oe_structure oe_structure_solo">
+            <section class="s_text_block pt32" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+                <div class="s_allow_columns container">
+                    <div class="s_social_media mb-4 o_not_editable text-center" data-snippet="s_social_media" data-name="Social Media">
+                        <h5 class="s_social_media_title d-none">Follow us</h5>
+<a href="/en/website/social/facebook" class="s_social_media_facebook" target="_blank">
+                            <i class="fa fa-facebook shadow-sm o_editable_media text-o-color-2 rounded-circle rounded"></i>
+                        </a>
+<a href="/en/website/social/twitter" class="s_social_media_twitter" target="_blank">
+                            <i class="fa fa-twitter rounded-circle rounded shadow-sm o_editable_media text-o-color-2"></i>
+                        </a>
+<a href="/en/website/social/linkedin" class="s_social_media_linkedin" target="_blank">
+                            <i class="fa fa-linkedin rounded-circle rounded shadow-sm o_editable_media text-o-color-2"></i>
+                        </a>
+<a href="/en/website/social/youtube" class="s_social_media_youtube" target="_blank">
+                            <i class="fa rounded-circle rounded shadow-sm o_editable_media fa-youtube text-o-color-2"></i>
+                        </a>
+<a href="/en/website/social/instagram" class="s_social_media_instagram" target="_blank">
+                            <i class="fa rounded-circle rounded shadow-sm o_editable_media fa-instagram text-o-color-2"></i>
+                        </a>
+</div>
+                    <p class="text-center mb-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">100.Yıl Bulvarı 55/F&nbsp; •<font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> OSTİM 06374 Ankara
+</font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font>•&nbsp;<font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OSTİM Teknik Üniversitesi</font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></p>
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item mx-3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">+90 312 386 10 92</font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></li>
+                        <li class="list-inline-item mx-3"><i class="fa fa-1x fa-fw fa-envelope me-2"></i><a href="mailto:info@ostimteknik.edu.tr" data-bs-original-title="" title=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;" class="text-white">info@ostimteknik.edu.tr&nbsp;</font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="s_text_block pt16 pb16" data-snippet="s_text_block" data-name="Logo" style="background-image: none;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2 offset-lg-5 o_colored_level">
+                            <a href="/en/" class="o_footer_logo logo" data-bs-original-title="" title="">
+                                <img src="/web/image/196504-84f2e484/ostim%20beyaz%20logo.png" alt="" class="img-fluid mx-auto img o_we_custom_image" data-original-id="195778" data-original-src="/web/image/195778-59ca6729/ostim%20beyaz%20logo.png" data-mimetype="image/png" data-resize-width="690" loading="lazy" data-bs-original-title="" title="" aria-describedby="tooltip353420"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+                <div class="ostim-consent-reopen-wrap container">
+                    <a href="#" class="ostim-consent-reopen" role="button">
+                        Cookie Settings
+                    </a>
+                </div>
+                </footer>
+    	<nav id="sidebar" class="sidebar-wrapper bg-white d-block d-md-none">
+	    	<div class="sidebar-content">
+				
+				<div class="card bg-white">
+	                <div class="card-header d-flex align-items-center justify-content-between">
+	                  	<div class="header-brand mt16 mb16 text-start">
+	    					<a href="/en/" class="navbar-brand logo ">
+					            <span role="img" aria-label="Logo of OSTİMTECH Aday Öğrenci Sayfası" title="OSTİMTECH Aday Öğrenci Sayfası"><img src="/web/image/website/95/sidebar_logo/OST%C4%B0MTECH%20Aday%20%C3%96%C4%9Frenci%20Sayfas%C4%B1?unique=3f7c630" class="img img-fluid" alt="OSTİMTECH Aday Öğrenci Sayfası" loading="lazy"/></span>
+					        </a>
+	            		</div>
+						<div class="search">
+							<div class="close-mbl-sidebar  text-center">
+								<a href="#" class="text-decoration-none"><span class="lnr lnr-cross text-black" id="close_mbl_sidebar"></span></a>							
+							</div>
+						</div>
+	                </div>
+	                <div class="card-body tab-content">
+	                  	<div class="tab-pane fade active show" id="nav_tabs_content_1595584408392_2" role="tabpanel" aria-labelledby="nav_tabs_link_1595584408392_2">
+	                    	<ul class="nav navbar-nav align-items-md-center" id="top_menu">
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="/en/ek-kontenjan" class="nav-link ">
+            <span>Ek Yerleştirme</span>
+        </a>
+    </li>
+    <li class="nav-item dropdown  position-static">
+        <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle o_mega_menu_toggle">
+            <span>Associate and Bachelor&#39;s Degree Candidates</span>
+        </a>
+        <div data-name="Mega Menu" class="dropdown-menu o_mega_menu o_no_parent_editor dropdown-menu-start"><section class="s_mega_menu_odoo_menu o_colored_level pt16 pb96 o_cc o_cc1" style="background-image: none;">
+        <div class="container">
+            <div class="row o_grid_mode" data-row-count="7">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+                
+                
+                
+                <div class="o_colored_level o_grid_item g-height-3 g-col-lg-4 col-lg-4" style="grid-area: 1 / 5 / 4 / 9; z-index: 4;">
+                    <h4 class="text-uppercase h5 fw-bold mt-0">scholarshıps and fees</h4>
+                    <div class="s_hr text-start pt4 pb16 text-o-color-5" data-name="Separator">
+                        <hr class="w-100 mx-auto" style="border-top: 2px solid rgb(0, 0, 0);">
+                    </div>
+                    <nav class="nav flex-column">
+                        <a href="/en/burs-ve-indirim-yonergesi" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="" target="_blank"><font class="text-black">Scholarships and Discounts</font></a>
+                        <a href="/en/ucretler-burslar" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="" aria-describedby="popover879051">Fees</a>
+                        
+                        
+                    </nav>
+                </div>
+            <div class="o_colored_level o_grid_item g-col-lg-4 g-height-6 col-lg-4" style="z-index: 4; grid-area: 1 / 9 / 7 / 13;">
+                    <h4 class="text-uppercase h5 fw-bold mt-0">life at ostımtech</h4>
+                    <div class="s_hr text-start pt4 pb16 text-o-color-5" data-name="Separator">
+                        <hr class="w-100 mx-auto" style="border-top: 2px solid rgb(0, 0, 0);">
+                    </div>
+                    <nav class="nav flex-column">
+                        <a href="/en/ostimtech-saglik" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-black">Health</font><br></a><a href="/en/ostimtech-sosyal" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-black">Social Areas</font></a><a href="/en/ostimtech-spor" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-900">Sport</font><br></a><a href="/en/ostimtech-ulasim" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-black">Transpotation</font></a><a href="/en/ostimtech-yerleske" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="" aria-describedby="popover431786"><font class="text-black">Campus (preparation - Main and new Campus)​</font><br></a><a href="/en/yurt-olanaklari" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-black">Domitories</font></a>
+                        
+                        
+                        
+                    </nav>
+                </div><div class="o_colored_level o_grid_item g-height-1 g-col-lg-4 col-lg-4" style="z-index: 2; grid-area: 1 / 1 / 2 / 5;">
+                    <h4 class="text-uppercase fw-bold mt-0"><a href="/en/rektorun-mesaj" data-bs-original-title="" title=""><font class="text-black">tHE rector's message</font></a></h4><div class="s_hr text-start pb0 pt4" data-snippet="s_hr" data-name="Separator">
+        <hr class="w-100 mx-auto" style="border-top-width: 2px;">
+    </div>
+                    
+                    
+                </div><div class="o_colored_level o_grid_item g-height-1 g-col-lg-4 col-lg-4" style="z-index: 1; grid-area: 2 / 1 / 3 / 5;">
+                    <p class="text-uppercase fw-bold mt-0"><a href="/en/neden-ostimtech" data-bs-original-title="" title="">why ostımtech?</a></p>
+                    
+                    <nav class="nav flex-column"><div class="s_hr text-start pt4 text-o-color-5 pb8" data-name="Separator">
+                        <hr class="w-100 mx-auto" style="border-top: 2px solid rgb(0, 0, 0);">
+                    </div>
+                        
+                        
+                        
+                    </nav>
+                </div><div class="o_colored_level o_grid_item g-height-5 g-col-lg-4 col-lg-4" style="z-index: 3; grid-area: 3 / 1 / 8 / 5;">
+                    <p class="text-uppercase fw-bold mt-0">faculties and departments</p>
+                    <div class="s_hr text-start pt4 pb16 text-o-color-2" data-name="Separator">
+                        <hr class="w-100 mx-auto" style="border-top-width: 2px; border-top-style: solid;">
+                    </div>
+                    <nav class="nav flex-column">
+                        <a href="https://iibf.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="" target="_blank"><font class="text-black">Faculty of Economics and Administrative Scineces</font></a>
+                        <a href="https://mimarlik.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="" target="_blank"><font class="text-black">Faculty of Architecture</font></a>
+                        <a href="https://mf.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="" target="_blank"><font class="text-black">Faculty of Engineering</font></a>
+                        <a href="https://myo.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="" target="_blank"><font class="text-black">Vocational School</font></a><a href="https://btmyo.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="" target="_blank"><font class="text-black">Vocational School of Information Technologies</font></a>
+                        <a href="https://sfl.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="" target="_blank"><font class="text-black">School of Foreign Language</font></a>
+                    </nav>
+                </div><div class="o_colored_level o_grid_item g-height-3 g-col-lg-4 col-lg-4" style="z-index: 4; grid-area: 4 / 5 / 7 / 9;">
+                    <p class="text-uppercase fw-bold mt-0">quotas and points</p>
+                    <div class="s_hr text-start pt4 pb16 text-o-color-5" data-name="Separator">
+                        <hr class="w-100 mx-auto" style="border-top: 2px solid rgb(0, 0, 0);">
+                    </div>
+                    <nav class="nav flex-column">
+                        <a href="/en/kontenjan-puan-bilgileri-1" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-black">Quotas and Points</font><br></a>
+                        
+                        
+                        
+                    </nav>
+                </div></div>
+        </div>
+        
+    </section>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    </li>
+    <li class="nav-item dropdown  position-static">
+        <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle o_mega_menu_toggle">
+            <span>Graduate Candidates</span>
+        </a>
+        <div data-name="Mega Menu" class="dropdown-menu o_mega_menu o_no_parent_editor dropdown-menu-start">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="s_mega_menu_odoo_menu o_colored_level o_cc o_cc1 pt16 pb152" style="background-image: none;">
+        <div class="container">
+            <div class="row o_grid_mode" data-row-count="5">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+                
+                <div class="o_colored_level o_grid_item g-height-4 g-col-lg-4 col-lg-4" style="grid-area: 1 / 7 / 5 / 11; z-index: 2;">
+                    <h4 class="text-uppercase h5 fw-bold mt-0"><a href="https://sbe.ostimteknik.edu.tr/" data-bs-original-title="" title="" target="_blank">Graduate School of Business</a></h4>
+                    <div class="s_hr text-start pt4 pb16 text-o-color-1" data-name="Separator">
+                        <hr class="w-100 mx-auto" style="border-top: 2px solid rgb(0, 0, 0);">
+                    </div>
+                    <nav class="nav flex-column">
+                        <a href="https://sbe.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-black">About us</font></a>
+                        <a href="https://sbe.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-black">Academic Stafo</font></a>
+                        <a href="https://sbe.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-black">Acceptances</font></a><a href="https://sbe.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-black">Registration Procedures</font></a><a href="https://sbe.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-black">Scholarships and Fees</font></a><a href="https://sbe.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-black">Contact</font></a>
+                    </nav>
+                </div>
+                
+                
+            <div class="o_colored_level o_grid_item g-height-5 g-col-lg-5 col-lg-5" style="z-index: 2; grid-area: 1 / 2 / 6 / 7;">
+                    <h4 class="text-uppercase h5 fw-bold mt-0"><a href="http://fbe.ostimteknik.edu.tr/en" data-bs-original-title="" title="" target="_blank">graduate school of engıneerıng sciences</a></h4>
+                    <div class="s_hr text-start pt4 pb16 text-o-color-1" data-name="Separator">
+                        <hr class="w-100 mx-auto" style="border-top: 2px solid rgb(0, 0, 0);">
+                    </div>
+                    <nav class="nav flex-column">
+                        <a href="https://fbe.ostimteknik.edu.tr/about-gses" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-black">About us</font></a><a href="https://fbe.ostimteknik.edu.tr/partners/grade/fen-bilimleri-enstitusu-8" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-black">Academic Stafo</font></a><a href="http://fbe.ostimteknik.edu.tr/en" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-black">Acceptances</font></a><a href="http://fbe.ostimteknik.edu.tr/en" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-black">Registration Procedures</font></a><a href="http://fbe.ostimteknik.edu.tr/en" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-black">Scholarships and Fees</font></a><a href="https://fbe.ostimteknik.edu.tr/contact" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-black">Contact</font></a>
+                        
+                    </nav>
+                </div></div>
+        </div>
+        
+    </section></div>
+    </li>
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="https://ird.ostimteknik.edu.tr" class="nav-link ">
+            <span>International Prospective Students</span>
+        </a>
+    </li>
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="/en/s-s-s" class="nav-link ">
+            <span>F.A.Q</span>
+        </a>
+    </li>
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="/en/contactus" class="nav-link ">
+            <span>Contact us</span>
+        </a>
+    </li>
+							</ul>
+	                  	</div>
+	                </div>
+	          	</div>
+	    	</div>
+	    </nav>
+            </div>
+                
+                <div id="ostim_consent_banner" class="ostim-consent" role="dialog" aria-modal="true" aria-labelledby="ostim_consent_title" aria-describedby="ostim_consent_desc" hidden="hidden" data-has-consent="0">
+                    <div class="ostim-consent__panel" role="document">
+                        <h2 id="ostim_consent_title" class="ostim-consent__title">
+                            Cookie Preferences
+                        </h2>
+                        <p id="ostim_consent_desc" class="ostim-consent__desc">
+                                We use cookies to improve your experience, analyze traffic and
+                                personalize content. Strictly necessary cookies are always active
+                                for the site to work. You can change your choice at any time via
+                                the “Cookie Settings” link in the footer.
+                                For details, see <a class="ostim-consent__policy" href="https://ostimteknik.edu.tr/cookie-policy">Cookie Policy</a>.
+                        </p>
+                        <div class="ostim-consent__actions">
+                            <button type="button" class="ostim-consent__btn ostim-consent__btn--reject" data-consent="reject">
+                                Reject All
+                            </button>
+                            <button type="button" class="ostim-consent__btn ostim-consent__btn--analytics" data-consent="analytics">
+                                Analytics Only
+                            </button>
+                            <button type="button" class="ostim-consent__btn ostim-consent__btn--accept" data-consent="accept">
+                                Accept All
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            <script id="tracking_code" async="1" src="https://www.googletagmanager.com/gtag/js?id=G-TK5TPZGV5X"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-TK5TPZGV5X');
+            </script>
+
+        
+        </body>
+</html>

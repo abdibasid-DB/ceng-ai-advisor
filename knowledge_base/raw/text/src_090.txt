@@ -1,0 +1,15 @@
+Source ID: src_090
+Title: Missing Semester: The Shell
+Source: MIT CSAIL Missing Semester
+URL: https://missing.csail.mit.edu/2020/course-shell/
+Date accessed: 2026-10-13
+
+Curated source note
+
+MIT's Missing Semester course explains practical computing tools that many students need but do not always learn formally. The shell lesson is useful for answering why command-line skills matter.
+
+The shell lets students navigate files, run programs, combine tools, automate repeated tasks, inspect logs, manage development environments, and work on remote machines. These skills are useful in programming, operating systems, cybersecurity labs, cloud deployment, data processing, embedded development, and debugging.
+
+For Computer Engineering students, terminal skills are not a replacement for programming or operating systems theory. They are a practical layer that makes those subjects easier to use. Students who know basic shell commands, paths, processes, environment variables, package tools, Git, SSH, and scripting can work more comfortably with development servers, Linux systems, and engineering workflows.
+
+Student-facing guidance: beginners do not need to master every shell feature immediately. A good starting path is file navigation, running commands, reading command help, redirecting input/output, using Git from the terminal, connecting with SSH, and writing small scripts to automate repetitive tasks.

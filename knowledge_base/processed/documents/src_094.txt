@@ -1,0 +1,15 @@
+Source ID: src_094
+Title: Cyber Career Pathways Tool
+Source: Cybersecurity and Infrastructure Security Agency / NICCS
+URL: https://niccs.cisa.gov/workforce-development/cyber-career-pathways-tool
+Date accessed: 2026-10-13
+
+Curated source note
+
+NICCS/CISA provides cybersecurity career pathway resources aligned with the NICE Framework. The tool is useful for role exploration and for showing students that cybersecurity is not a single job.
+
+Cybersecurity roles can involve secure software, systems defense, incident response, digital forensics, risk management, security architecture, vulnerability assessment, cloud security, governance, education, and operations. Different roles require different mixes of programming, networking, operating systems, communication, documentation, risk thinking, and hands-on tools.
+
+For Computer Engineering students, this source supports a practical pathway: first build computing fundamentals, then choose a security direction. A student interested in cloud security should emphasize networking, Linux, cloud services, IAM, logging, and secure deployment. A student interested in embedded or hardware security should emphasize digital systems, firmware, electronics, protocols, and low-level debugging. A student interested in secure software should emphasize programming, code review, testing, threat modeling, and web/application security.
+
+Student-facing guidance: explore roles before choosing certifications. Use legal practice labs, university projects, CTFs, internships, and documented learning plans to show capability. Never test real systems without explicit authorization.

@@ -1,0 +1,15 @@
+Source ID: src_087
+Title: Octoverse 2024: AI leads Python to top language as the number of global developers surges
+Source: GitHub
+URL: https://github.blog/news-insights/octoverse/octoverse-2024/
+Date accessed: 2026-10-13
+
+Curated source note
+
+GitHub's Octoverse 2024 report describes public and open-source activity on GitHub. It is useful for developer ecosystem trends, but it should not be treated as a complete employment report because it measures activity on one major platform.
+
+The report highlights rapid growth in AI-related projects and developer activity. It also reports that Python became the most-used language on GitHub in 2024, while JavaScript, TypeScript, Java, and systems languages such as Rust remained important. Generative AI projects and security-related tooling were major themes.
+
+For Computer Engineering students, this source supports balanced advice about AI and programming languages. AI is changing workflows and creating new kinds of projects, but it also increases the value of fundamentals: understanding code, debugging, security, data, systems, architecture, and collaboration. Students should not learn only prompt use; they should learn how software works well enough to evaluate, test, and maintain AI-assisted output.
+
+Student-facing guidance: GitHub can be more than a file dump. Good student portfolios show readable code, commit history, documentation, tests when appropriate, issue tracking or project notes, and projects that connect to a real interest such as web, data, embedded, robotics, cybersecurity, or AI.

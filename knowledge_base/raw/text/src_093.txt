@@ -1,0 +1,15 @@
+Source ID: src_093
+Title: Computing Machinery and Intelligence
+Source: Stanford Encyclopedia of Philosophy
+URL: https://plato.stanford.edu/entries/turing-test/
+Date accessed: 2026-10-13
+
+Curated source note
+
+The Stanford Encyclopedia of Philosophy article on computing machinery and intelligence provides conceptual background for AI questions. It is useful for cautious reasoning about claims such as "AI will replace programmers" or "AI can think like humans."
+
+For advising, the important point is that AI capability claims require careful definitions. Passing a benchmark, producing fluent text, or generating code does not automatically mean a system has human understanding, professional responsibility, or the ability to own an engineering project. AI tools can assist with coding, explanation, search, testing ideas, and prototyping, but engineers still need to understand requirements, constraints, correctness, security, maintainability, users, and ethical consequences.
+
+This source should be combined with labor-market and developer-trend sources when answering career questions. It should not be used alone to predict employment. Its value is in making answers less simplistic and less sensational.
+
+Student-facing guidance: learn to use AI tools critically. Ask what the tool is good at, what it may fabricate, how to verify its output, and what engineering judgment remains the student's responsibility. Future-ready students combine AI fluency with fundamentals, projects, collaboration, and domain understanding.

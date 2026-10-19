@@ -1,0 +1,15 @@
+Source ID: src_081
+Title: Software Engineering Body of Knowledge (SWEBOK Guide), Version 4.0
+Source: IEEE Computer Society
+URL: https://www.computer.org/education/bodies-of-knowledge/software-engineering
+Date accessed: 2026-10-13
+
+Curated source note
+
+The IEEE Computer Society's SWEBOK Guide describes software engineering as more than writing code. It organizes professional software work into knowledge areas that include requirements, architecture, design, construction, testing, maintenance, configuration management, engineering process, models and methods, quality, security, professional practice, economics, and computing foundations.
+
+For Computer Engineering advising, this source helps explain why students should learn software development habits early. Useful habits include reading requirements carefully, designing before coding, using version control, testing and debugging systematically, reviewing code, documenting decisions, thinking about maintainability, and treating security and quality as part of engineering rather than as optional extras.
+
+The source also helps distinguish programming from software engineering. Programming is essential, but professional software engineering also includes working with stakeholders, understanding constraints, selecting designs, managing change, validating behavior, and maintaining systems after initial implementation.
+
+Student-facing guidance: a CENG student who wants backend, frontend, mobile, cloud, AI, or embedded software work should build not only language knowledge but also project structure, testing, Git/GitHub, debugging, design, communication, and teamwork skills. These practices make portfolio projects more credible because they show the student can build software in a professional way.

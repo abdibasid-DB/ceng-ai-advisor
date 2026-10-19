@@ -10,10 +10,14 @@ from __future__ import annotations
 import argparse
 import json
 import math
+import os
 import time
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+
+os.environ.setdefault("HF_HUB_OFFLINE", "1")
+os.environ.setdefault("TRANSFORMERS_OFFLINE", "1")
 
 import numpy as np
 from sentence_transformers import SentenceTransformer

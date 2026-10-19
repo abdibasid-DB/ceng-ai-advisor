@@ -1,0 +1,73 @@
+Source ID: src_075
+
+Education | The 2025 AI Index Report | Stanford HAI
+
+Navigate
+
+About
+
+Events
+
+AI Glossary
+
+Careers
+
+Participate
+
+Get Involved
+
+Support HAI
+
+Contact Us
+
+Stay Up To Date
+
+Get the latest news, advances in research, policy work, and education program updates from HAI in your inbox weekly.
+
+Sign Up For Latest News
+
+Education
+
+Download Full Chapter
+
+See Chapter 8
+
+All Chapters
+
+Back to Overview
+
+01Research and Development
+
+02Technical Performance
+
+03Responsible AI
+
+04Economy
+
+05Science and Medicine
+
+06Policy and Governance
+
+07Education
+
+08Public Opinion
+
+1. Access to and enrollment in high school computer science (CS) courses in the U.S. has increased slightly from the previous school year, but gaps remain.
+
+Student participation varies by state, race and ethnicity, school size, geography, income, gender, and disability.
+
+2. CS teachers in the U.S. want to teach AI but do not feel equipped to do so.
+
+Despite 81% of CS teachers agreeing that using AI and learning about AI should be included in a foundational CS learning experience, less than half of high school CS teachers felt equipped to teach AI.
+
+3. Two-thirds of countries worldwide offer or plan to offer K-12 CS education.
+
+This fraction has doubled since 2019, with African and Latin American countries progressing the most. However, students in African countries have the least access to CS education due to schools’ lack of electricity.
+
+4. Graduates who earned their master’s degree in AI in the U.S. nearly doubled between 2022 and 2023.
+
+While increased attention on AI will be slower to emerge in the number of bachelor’s and PhD degrees, the surge in master’s degrees could indicate a future trend for all degree levels.
+
+5. The U.S. continues to be a global leader in producing information, technology, and communications (ICT) graduates at all levels.
+
+Spain, Brazil, and the United Kingdom follow the U.S. as the top producers at various levels, while Turkey boasts the best gender parity.

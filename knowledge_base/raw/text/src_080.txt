@@ -1,0 +1,15 @@
+Source ID: src_080
+Title: Computing Curricula 2020: Paradigms for Global Computing Education
+Source: ACM and IEEE Computer Society
+URL: https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf
+Date accessed: 2026-10-13
+
+Curated source note
+
+Computing Curricula 2020 compares major computing disciplines and is useful when students ask whether Computer Engineering is the same as Computer Science, Software Engineering, Information Technology, Information Systems, or Cybersecurity.
+
+Computer Engineering is generally closest to the boundary between computing and engineering hardware. It emphasizes computer systems, embedded systems, digital logic, computer architecture, electronics-related foundations, and the integration of hardware and software. Computer Science emphasizes computation, algorithms, theory, programming languages, systems, AI, and software foundations. Software Engineering emphasizes building and maintaining software systems using disciplined engineering practices such as requirements, design, testing, quality, process, and project constraints.
+
+Information Technology is more focused on selecting, deploying, integrating, administering, and securing computing infrastructure for organizations and users. Information Systems emphasizes the relationship between computing, organizations, business processes, data, and decision making. Cybersecurity can be studied as its own computing discipline or as a specialization across computing fields; it centers on protecting data, systems, networks, software, people, and organizations from security risks.
+
+Student-facing guidance: CE is a good fit for students who want both hardware and software perspectives. CS may fit students who want deeper theory and software/computation foundations. SE may fit students who specifically want disciplined software product development. IT may fit students who prefer practical administration and infrastructure support. These boundaries vary by university, so official local curricula must be checked before choosing.

@@ -1,0 +1,15 @@
+Source ID: src_079
+Title: Criteria for Accrediting Engineering Programs, 2026-2027
+Source: ABET
+URL: https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-programs-2026-2027/
+Date accessed: 2026-10-13
+
+Curated source note
+
+ABET's engineering accreditation criteria are useful for general questions about what an engineering degree is expected to develop. They are not an OSTIM-specific curriculum document and should not be used to claim that a particular program is ABET-accredited unless the university separately states that.
+
+For prospective Computer Engineering students, the ABET criteria support a broad view of engineering education. A strong engineering program is expected to develop technical problem solving, engineering design, experimentation and data analysis, teamwork, communication, ethical and professional responsibility, and continued learning. This means Computer Engineering should not be framed as only learning programming syntax. It should also involve design decisions, constraints, evidence, communication with teammates, and responsibility for the systems being built.
+
+The criteria also help explain why students encounter mathematics, science, engineering fundamentals, laboratories, computing resources, and general education. Engineering curricula are meant to prepare students for professional practice, further study, and lifelong learning, not merely for one current tool or programming language.
+
+Student-facing guidance: if a student asks why they must study math, physics, circuits, communication, ethics, teamwork, or labs, the answer can explain that engineering education is intentionally broader than job-task training. These areas support the ability to design reliable systems, evaluate tradeoffs, communicate decisions, and adapt as technology changes.

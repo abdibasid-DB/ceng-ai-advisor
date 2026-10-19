@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-18T18:49:04+00:00",
-  "document_count": 47,
+  "generated_at": "2026-10-13T16:38:42+00:00",
+  "document_count": 83,
   "records": [
     {
       "source_id": "src_001",
@@ -20,7 +20,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:48:18+00:00"
+      "processing_timestamp": "2026-09-29T16:02:48+00:00"
     },
     {
       "source_id": "src_002",
@@ -39,7 +39,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:48:18+00:00"
+      "processing_timestamp": "2026-09-29T16:02:48+00:00"
     },
     {
       "source_id": "src_003",
@@ -58,7 +58,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:48:18+00:00"
+      "processing_timestamp": "2026-09-29T16:02:49+00:00"
     },
     {
       "source_id": "src_004",
@@ -77,7 +77,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:48:18+00:00"
+      "processing_timestamp": "2026-09-29T16:02:49+00:00"
     },
     {
       "source_id": "src_005",
@@ -96,7 +96,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:48:18+00:00"
+      "processing_timestamp": "2026-09-29T16:02:49+00:00"
     },
     {
       "source_id": "src_006",
@@ -115,7 +115,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:48:18+00:00"
+      "processing_timestamp": "2026-09-29T16:02:49+00:00"
     },
     {
       "source_id": "src_007",
@@ -138,7 +138,7 @@
         "extracted word count is very low",
         "Stage 9B review: accepted as a valid short document"
       ],
-      "processing_timestamp": "2026-09-18T18:48:18+00:00"
+      "processing_timestamp": "2026-09-29T16:02:49+00:00"
     },
     {
       "source_id": "src_008",
@@ -157,7 +157,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:48:19+00:00"
+      "processing_timestamp": "2026-09-29T16:02:49+00:00"
     },
     {
       "source_id": "src_014",
@@ -176,7 +176,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:48:19+00:00"
+      "processing_timestamp": "2026-09-29T16:02:49+00:00"
     },
     {
       "source_id": "src_015",
@@ -195,7 +195,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:48:19+00:00"
+      "processing_timestamp": "2026-09-29T16:02:49+00:00"
     },
     {
       "source_id": "src_016",
@@ -214,7 +214,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:48:19+00:00"
+      "processing_timestamp": "2026-09-29T16:02:50+00:00"
     },
     {
       "source_id": "src_017",
@@ -224,8 +224,8 @@
       "processing_status": "success",
       "extraction_method": "pypdf_extract_text",
       "raw_size": 18604420,
-      "extracted_character_count": 439085,
-      "extracted_word_count": 67183,
+      "extracted_character_count": 438556,
+      "extracted_word_count": 67061,
       "title": "The Future of Jobs Report 2025",
       "category": "future_technologies",
       "language": "English",
@@ -233,7 +233,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:48:24+00:00"
+      "processing_timestamp": "2026-09-29T16:02:55+00:00"
     },
     {
       "source_id": "src_018",
@@ -252,7 +252,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:48:44+00:00"
+      "processing_timestamp": "2026-09-29T16:03:15+00:00"
     },
     {
       "source_id": "src_019",
@@ -275,7 +275,7 @@
         "extracted word count is very low",
         "Stage 9B review: excluded from chunking because local raw content is not substantively usable"
       ],
-      "processing_timestamp": "2026-09-18T18:48:44+00:00"
+      "processing_timestamp": "2026-09-29T16:03:16+00:00"
     },
     {
       "source_id": "src_020",
@@ -294,7 +294,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:48:44+00:00"
+      "processing_timestamp": "2026-09-29T16:03:16+00:00"
     },
     {
       "source_id": "src_021",
@@ -317,7 +317,7 @@
         "extracted word count is very low",
         "Stage 9B review: excluded from chunking because local raw content is not substantively usable"
       ],
-      "processing_timestamp": "2026-09-18T18:48:44+00:00"
+      "processing_timestamp": "2026-09-29T16:03:16+00:00"
     },
     {
       "source_id": "src_022",
@@ -340,7 +340,7 @@
         "extracted word count is very low",
         "Stage 9B review: excluded from chunking because local raw content is not substantively usable"
       ],
-      "processing_timestamp": "2026-09-18T18:48:44+00:00"
+      "processing_timestamp": "2026-09-29T16:03:16+00:00"
     },
     {
       "source_id": "src_023",
@@ -363,7 +363,7 @@
         "extracted word count is very low",
         "Stage 9B review: excluded from chunking because local raw content is not substantively usable"
       ],
-      "processing_timestamp": "2026-09-18T18:48:45+00:00"
+      "processing_timestamp": "2026-09-29T16:03:16+00:00"
     },
     {
       "source_id": "src_024",
@@ -386,7 +386,7 @@
         "extracted word count is very low",
         "Stage 9B review: excluded from chunking because local raw content is not substantively usable"
       ],
-      "processing_timestamp": "2026-09-18T18:48:45+00:00"
+      "processing_timestamp": "2026-09-29T16:03:16+00:00"
     },
     {
       "source_id": "src_025",
@@ -405,7 +405,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:48:45+00:00"
+      "processing_timestamp": "2026-09-29T16:03:16+00:00"
     },
     {
       "source_id": "src_026",
@@ -424,7 +424,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:48:46+00:00"
+      "processing_timestamp": "2026-09-29T16:03:17+00:00"
     },
     {
       "source_id": "src_027",
@@ -445,7 +445,7 @@
       "warnings": [
         "Stage 9B review: excluded from chunking because local raw content is not substantively usable"
       ],
-      "processing_timestamp": "2026-09-18T18:48:46+00:00"
+      "processing_timestamp": "2026-09-29T16:03:17+00:00"
     },
     {
       "source_id": "src_028",
@@ -464,7 +464,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:48:46+00:00"
+      "processing_timestamp": "2026-09-29T16:03:18+00:00"
     },
     {
       "source_id": "src_029",
@@ -483,7 +483,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:48:46+00:00"
+      "processing_timestamp": "2026-09-29T16:03:18+00:00"
     },
     {
       "source_id": "src_030",
@@ -502,7 +502,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:48:46+00:00"
+      "processing_timestamp": "2026-09-29T16:03:18+00:00"
     },
     {
       "source_id": "src_031",
@@ -521,7 +521,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:48:47+00:00"
+      "processing_timestamp": "2026-09-29T16:03:18+00:00"
     },
     {
       "source_id": "src_033",
@@ -540,7 +540,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:48:53+00:00"
+      "processing_timestamp": "2026-09-29T16:03:26+00:00"
     },
     {
       "source_id": "src_034",
@@ -559,7 +559,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:48:53+00:00"
+      "processing_timestamp": "2026-09-29T16:03:26+00:00"
     },
     {
       "source_id": "src_035",
@@ -578,7 +578,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:48:54+00:00"
+      "processing_timestamp": "2026-09-29T16:03:26+00:00"
     },
     {
       "source_id": "src_036",
@@ -597,7 +597,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:48:54+00:00"
+      "processing_timestamp": "2026-09-29T16:03:27+00:00"
     },
     {
       "source_id": "src_037",
@@ -616,7 +616,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:48:54+00:00"
+      "processing_timestamp": "2026-09-29T16:03:27+00:00"
     },
     {
       "source_id": "src_038",
@@ -635,7 +635,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:48:55+00:00"
+      "processing_timestamp": "2026-09-29T16:03:27+00:00"
     },
     {
       "source_id": "src_039",
@@ -654,7 +654,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:48:55+00:00"
+      "processing_timestamp": "2026-09-29T16:03:27+00:00"
     },
     {
       "source_id": "src_040",
@@ -673,7 +673,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:48:55+00:00"
+      "processing_timestamp": "2026-09-29T16:03:27+00:00"
     },
     {
       "source_id": "src_041",
@@ -692,7 +692,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:48:55+00:00"
+      "processing_timestamp": "2026-09-29T16:03:28+00:00"
     },
     {
       "source_id": "src_042",
@@ -711,7 +711,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:48:56+00:00"
+      "processing_timestamp": "2026-09-29T16:03:29+00:00"
     },
     {
       "source_id": "src_043",
@@ -730,7 +730,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:48:56+00:00"
+      "processing_timestamp": "2026-09-29T16:03:29+00:00"
     },
     {
       "source_id": "src_044",
@@ -749,7 +749,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:48:56+00:00"
+      "processing_timestamp": "2026-09-29T16:03:29+00:00"
     },
     {
       "source_id": "src_045",
@@ -759,8 +759,8 @@
       "processing_status": "success",
       "extraction_method": "pypdf_extract_text",
       "raw_size": 3290134,
-      "extracted_character_count": 742822,
-      "extracted_word_count": 117355,
+      "extracted_character_count": 742750,
+      "extracted_word_count": 117392,
       "title": "Skills for the digital age",
       "category": "skills_and_technologies",
       "language": "English",
@@ -768,7 +768,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:48:57+00:00"
+      "processing_timestamp": "2026-09-29T16:03:29+00:00"
     },
     {
       "source_id": "src_046",
@@ -789,7 +789,7 @@
       "warnings": [
         "PdfStreamError: Stream has ended unexpectedly"
       ],
-      "processing_timestamp": "2026-09-18T18:49:02+00:00"
+      "processing_timestamp": "2026-09-29T16:03:38+00:00"
     },
     {
       "source_id": "src_048",
@@ -808,7 +808,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:49:02+00:00"
+      "processing_timestamp": "2026-09-29T16:03:39+00:00"
     },
     {
       "source_id": "src_049",
@@ -827,7 +827,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:49:02+00:00"
+      "processing_timestamp": "2026-09-29T16:03:39+00:00"
     },
     {
       "source_id": "src_050",
@@ -846,7 +846,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:49:02+00:00"
+      "processing_timestamp": "2026-09-29T16:03:39+00:00"
     },
     {
       "source_id": "src_051",
@@ -865,7 +865,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:49:02+00:00"
+      "processing_timestamp": "2026-09-29T16:03:39+00:00"
     },
     {
       "source_id": "src_052",
@@ -884,7 +884,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:49:03+00:00"
+      "processing_timestamp": "2026-09-29T16:03:40+00:00"
     },
     {
       "source_id": "src_053",
@@ -903,7 +903,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:49:03+00:00"
+      "processing_timestamp": "2026-09-29T16:03:40+00:00"
     },
     {
       "source_id": "src_054",
@@ -922,7 +922,726 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-09-18T18:49:03+00:00"
+      "processing_timestamp": "2026-09-29T16:03:40+00:00"
+    },
+    {
+      "source_id": "src_057",
+      "raw_file_path": "knowledge_base/raw/html/src_057.html",
+      "processed_file_path": "knowledge_base/processed/documents/src_057.txt",
+      "input_file_type": "html",
+      "processing_status": "success",
+      "extraction_method": "html_parser_conservative",
+      "raw_size": 309686,
+      "extracted_character_count": 7635,
+      "extracted_word_count": 962,
+      "title": "Legislation | Ostim Teknik Üniversitesi Web sitesi",
+      "category": "department_information",
+      "language": "Turkish",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": true,
+      "warnings": [],
+      "processing_timestamp": "2026-09-29T16:03:40+00:00"
+    },
+    {
+      "source_id": "src_058",
+      "raw_file_path": "knowledge_base/raw/pdf/src_058.pdf",
+      "processed_file_path": "knowledge_base/processed/documents/src_058.txt",
+      "input_file_type": "pdf",
+      "processing_status": "success",
+      "extraction_method": "pypdf_extract_text",
+      "raw_size": 243423,
+      "extracted_character_count": 49210,
+      "extracted_word_count": 6581,
+      "title": "OSTIM Technical University Undergraduate Education and Examination Regulation",
+      "category": "student_life",
+      "language": "Turkish",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": true,
+      "warnings": [],
+      "processing_timestamp": "2026-09-29T16:03:41+00:00"
+    },
+    {
+      "source_id": "src_059",
+      "raw_file_path": "knowledge_base/raw/html/src_059.html",
+      "processed_file_path": "knowledge_base/processed/documents/src_059.txt",
+      "input_file_type": "html",
+      "processing_status": "success",
+      "extraction_method": "html_parser_conservative",
+      "raw_size": 80679,
+      "extracted_character_count": 886,
+      "extracted_word_count": 118,
+      "title": "Student Affairs Main Page",
+      "category": "student_life",
+      "language": "Turkish",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": true,
+      "warnings": [],
+      "processing_timestamp": "2026-09-29T16:03:42+00:00"
+    },
+    {
+      "source_id": "src_060",
+      "raw_file_path": "knowledge_base/raw/html/src_060.html",
+      "processed_file_path": "knowledge_base/processed/documents/src_060.txt",
+      "input_file_type": "html",
+      "processing_status": "success",
+      "extraction_method": "html_parser_conservative",
+      "raw_size": 115958,
+      "extracted_character_count": 12367,
+      "extracted_word_count": 1428,
+      "title": "Our Bilateral Agreements | Erasmus",
+      "category": "student_life",
+      "language": "Turkish",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": true,
+      "warnings": [],
+      "processing_timestamp": "2026-09-29T16:03:42+00:00"
+    },
+    {
+      "source_id": "src_061",
+      "raw_file_path": "knowledge_base/raw/pdf/src_061.pdf",
+      "processed_file_path": "knowledge_base/processed/documents/src_061.txt",
+      "input_file_type": "pdf",
+      "processing_status": "success",
+      "extraction_method": "pypdf_extract_text",
+      "raw_size": 263756,
+      "extracted_character_count": 7870,
+      "extracted_word_count": 1022,
+      "title": "Erasmus Student Internship Mobility Call",
+      "category": "internships",
+      "language": "Turkish",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": true,
+      "warnings": [],
+      "processing_timestamp": "2026-09-29T16:03:42+00:00"
+    },
+    {
+      "source_id": "src_062",
+      "raw_file_path": "knowledge_base/raw/pdf/src_062.pdf",
+      "processed_file_path": "knowledge_base/processed/documents/src_062.txt",
+      "input_file_type": "pdf",
+      "processing_status": "success",
+      "extraction_method": "pypdf_extract_text",
+      "raw_size": 438504,
+      "extracted_character_count": 6614,
+      "extracted_word_count": 1103,
+      "title": "CENG 314 Computer Networks Course Syllabus",
+      "category": "curriculum",
+      "language": "English",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": true,
+      "warnings": [],
+      "processing_timestamp": "2026-09-29T16:03:42+00:00"
+    },
+    {
+      "source_id": "src_063",
+      "raw_file_path": "knowledge_base/raw/pdf/src_063.pdf",
+      "processed_file_path": "knowledge_base/processed/documents/src_063.txt",
+      "input_file_type": "pdf",
+      "processing_status": "success",
+      "extraction_method": "pypdf_extract_text",
+      "raw_size": 426515,
+      "extracted_character_count": 8454,
+      "extracted_word_count": 1272,
+      "title": "CENG 316 New Trends in Computer Engineering Course Syllabus",
+      "category": "curriculum",
+      "language": "English",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": true,
+      "warnings": [],
+      "processing_timestamp": "2026-09-29T16:03:43+00:00"
+    },
+    {
+      "source_id": "src_064",
+      "raw_file_path": "knowledge_base/raw/pdf/src_064.pdf",
+      "processed_file_path": "knowledge_base/processed/documents/src_064.txt",
+      "input_file_type": "pdf",
+      "processing_status": "success",
+      "extraction_method": "pypdf_extract_text",
+      "raw_size": 192484,
+      "extracted_character_count": 6274,
+      "extracted_word_count": 864,
+      "title": "CENG 303 Operating Systems Design and Construction Course Syllabus",
+      "category": "curriculum",
+      "language": "English",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": true,
+      "warnings": [],
+      "processing_timestamp": "2026-09-29T16:03:44+00:00"
+    },
+    {
+      "source_id": "src_065",
+      "raw_file_path": "knowledge_base/raw/html/src_065.html",
+      "processed_file_path": "knowledge_base/processed/documents/src_065.txt",
+      "input_file_type": "html",
+      "processing_status": "success",
+      "extraction_method": "html_parser_conservative",
+      "raw_size": 257737,
+      "extracted_character_count": 3702,
+      "extracted_word_count": 439,
+      "title": "Cezeri Technology and Research Center",
+      "category": "student_life",
+      "language": "Turkish",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": true,
+      "warnings": [],
+      "processing_timestamp": "2026-09-29T16:03:44+00:00"
+    },
+    {
+      "source_id": "src_066",
+      "raw_file_path": "knowledge_base/raw/html/src_066.html",
+      "processed_file_path": "knowledge_base/processed/documents/src_066.txt",
+      "input_file_type": "html",
+      "processing_status": "success",
+      "extraction_method": "html_parser_conservative",
+      "raw_size": 104847,
+      "extracted_character_count": 4826,
+      "extracted_word_count": 576,
+      "title": "OSTIMTECH Social",
+      "category": "student_life",
+      "language": "Turkish",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": true,
+      "warnings": [],
+      "processing_timestamp": "2026-09-29T16:03:44+00:00"
+    },
+    {
+      "source_id": "src_067",
+      "raw_file_path": "knowledge_base/raw/pdf/src_067.pdf",
+      "processed_file_path": "knowledge_base/processed/documents/src_067.txt",
+      "input_file_type": "pdf",
+      "processing_status": "success",
+      "extraction_method": "pypdf_extract_text",
+      "raw_size": 2592940,
+      "extracted_character_count": 447854,
+      "extracted_word_count": 61792,
+      "title": "Computer Engineering Curricula 2016",
+      "category": "curriculum",
+      "language": "English",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": true,
+      "warnings": [],
+      "processing_timestamp": "2026-09-29T16:03:44+00:00"
+    },
+    {
+      "source_id": "src_068",
+      "raw_file_path": "knowledge_base/raw/html/src_068.html",
+      "processed_file_path": "knowledge_base/processed/documents/src_068.txt",
+      "input_file_type": "html",
+      "processing_status": "success",
+      "extraction_method": "html_parser_conservative",
+      "raw_size": 84165,
+      "extracted_character_count": 2932,
+      "extracted_word_count": 395,
+      "title": "Workforce Framework for Cybersecurity (NICE Framework)",
+      "category": "cybersecurity",
+      "language": "English",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": true,
+      "warnings": [],
+      "processing_timestamp": "2026-09-29T16:03:54+00:00"
+    },
+    {
+      "source_id": "src_069",
+      "raw_file_path": "knowledge_base/raw/pdf/src_069.pdf",
+      "processed_file_path": "knowledge_base/processed/documents/src_069.txt",
+      "input_file_type": "pdf",
+      "processing_status": "success",
+      "extraction_method": "pypdf_extract_text",
+      "raw_size": 2559322,
+      "extracted_character_count": 238556,
+      "extracted_word_count": 34210,
+      "title": "Computing Competencies for Undergraduate Data Science Curricula",
+      "category": "specializations",
+      "language": "English",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": true,
+      "warnings": [],
+      "processing_timestamp": "2026-09-29T16:03:54+00:00"
+    },
+    {
+      "source_id": "src_070",
+      "raw_file_path": "knowledge_base/raw/html/src_070.html",
+      "processed_file_path": "knowledge_base/processed/documents/src_070.txt",
+      "input_file_type": "html",
+      "processing_status": "success",
+      "extraction_method": "html_parser_conservative",
+      "raw_size": 91279,
+      "extracted_character_count": 2700,
+      "extracted_word_count": 436,
+      "title": "EECS Majors: Choosing your first computer science course",
+      "category": "programming",
+      "language": "English",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": true,
+      "warnings": [],
+      "processing_timestamp": "2026-09-29T16:04:00+00:00"
+    },
+    {
+      "source_id": "src_071",
+      "raw_file_path": "knowledge_base/raw/html/src_071.html",
+      "processed_file_path": "knowledge_base/processed/documents/src_071.txt",
+      "input_file_type": "html",
+      "processing_status": "success",
+      "extraction_method": "html_parser_conservative",
+      "raw_size": 107586,
+      "extracted_character_count": 6181,
+      "extracted_word_count": 1005,
+      "title": "Math Preparation for the College of Engineering",
+      "category": "mathematics",
+      "language": "English",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": true,
+      "warnings": [],
+      "processing_timestamp": "2026-09-29T16:04:00+00:00"
+    },
+    {
+      "source_id": "src_072",
+      "raw_file_path": "knowledge_base/raw/html/src_072.html",
+      "processed_file_path": "knowledge_base/processed/documents/src_072.txt",
+      "input_file_type": "html",
+      "processing_status": "success",
+      "extraction_method": "html_parser_conservative",
+      "raw_size": 19997,
+      "extracted_character_count": 7251,
+      "extracted_word_count": 1194,
+      "title": "Studying Guide | CS 61A Fall 2025",
+      "category": "student_life",
+      "language": "English",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": true,
+      "warnings": [],
+      "processing_timestamp": "2026-09-29T16:04:00+00:00"
+    },
+    {
+      "source_id": "src_073",
+      "raw_file_path": "knowledge_base/raw/html/src_073.html",
+      "processed_file_path": "knowledge_base/processed/documents/src_073.txt",
+      "input_file_type": "html",
+      "processing_status": "success",
+      "extraction_method": "html_parser_conservative",
+      "raw_size": 76398,
+      "extracted_character_count": 14088,
+      "extracted_word_count": 1933,
+      "title": "What is Career Readiness?",
+      "category": "employment",
+      "language": "English",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": true,
+      "warnings": [],
+      "processing_timestamp": "2026-09-29T16:04:00+00:00"
+    },
+    {
+      "source_id": "src_074",
+      "raw_file_path": "knowledge_base/raw/html/src_074.html",
+      "processed_file_path": "knowledge_base/processed/documents/src_074.txt",
+      "input_file_type": "html",
+      "processing_status": "success",
+      "extraction_method": "html_parser_conservative",
+      "raw_size": 762758,
+      "extracted_character_count": 23878,
+      "extracted_word_count": 3306,
+      "title": "Write a Resume/CV",
+      "category": "employment",
+      "language": "English",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": true,
+      "warnings": [],
+      "processing_timestamp": "2026-09-29T16:04:00+00:00"
+    },
+    {
+      "source_id": "src_075",
+      "raw_file_path": "knowledge_base/raw/html/src_075.html",
+      "processed_file_path": "knowledge_base/processed/documents/src_075.txt",
+      "input_file_type": "html",
+      "processing_status": "success",
+      "extraction_method": "html_parser_conservative",
+      "raw_size": 208036,
+      "extracted_character_count": 1988,
+      "extracted_word_count": 322,
+      "title": "Education | The 2025 AI Index Report",
+      "category": "artificial_intelligence",
+      "language": "English",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": true,
+      "warnings": [],
+      "processing_timestamp": "2026-09-29T16:04:01+00:00"
+    },
+    {
+      "source_id": "src_076",
+      "raw_file_path": "knowledge_base/raw/html/src_076.html",
+      "processed_file_path": "knowledge_base/processed/documents/src_076.txt",
+      "input_file_type": "html",
+      "processing_status": "manual_review_required",
+      "extraction_method": "html_parser_conservative",
+      "raw_size": 3692,
+      "extracted_character_count": 61,
+      "extracted_word_count": 9,
+      "title": "Enterprise ICT Usage Survey 2026",
+      "category": "employment",
+      "language": "Turkish",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": false,
+      "warnings": [
+        "extracted text is very short",
+        "extracted word count is very low"
+      ],
+      "processing_timestamp": "2026-09-29T16:04:02+00:00"
+    },
+    {
+      "source_id": "src_079",
+      "raw_file_path": "knowledge_base/raw/text/src_079.txt",
+      "processed_file_path": "knowledge_base/processed/documents/src_079.txt",
+      "input_file_type": "text",
+      "processing_status": "success",
+      "extraction_method": "plain_text_read_curated_note",
+      "raw_size": 1840,
+      "extracted_character_count": 1840,
+      "extracted_word_count": 233,
+      "title": "Criteria for Accrediting Engineering Programs, 2026-2027",
+      "category": "curriculum",
+      "language": "English",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": true,
+      "warnings": [
+        "Manual focused processing after full preprocessing was interrupted during unrelated large-PDF extraction."
+      ],
+      "processing_timestamp": "2026-10-13T16:38:42+00:00"
+    },
+    {
+      "source_id": "src_080",
+      "raw_file_path": "knowledge_base/raw/text/src_080.txt",
+      "processed_file_path": "knowledge_base/processed/documents/src_080.txt",
+      "input_file_type": "text",
+      "processing_status": "success",
+      "extraction_method": "plain_text_read_curated_note",
+      "raw_size": 2063,
+      "extracted_character_count": 2063,
+      "extracted_word_count": 259,
+      "title": "Computing Curricula 2020: Paradigms for Global Computing Education",
+      "category": "common_misconceptions",
+      "language": "English",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": true,
+      "warnings": [
+        "Manual focused processing after full preprocessing was interrupted during unrelated large-PDF extraction."
+      ],
+      "processing_timestamp": "2026-10-13T16:38:42+00:00"
+    },
+    {
+      "source_id": "src_081",
+      "raw_file_path": "knowledge_base/raw/text/src_081.txt",
+      "processed_file_path": "knowledge_base/processed/documents/src_081.txt",
+      "input_file_type": "text",
+      "processing_status": "success",
+      "extraction_method": "plain_text_read_curated_note",
+      "raw_size": 1770,
+      "extracted_character_count": 1770,
+      "extracted_word_count": 219,
+      "title": "Software Engineering Body of Knowledge (SWEBOK Guide), Version 4.0",
+      "category": "programming",
+      "language": "English",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": true,
+      "warnings": [
+        "Manual focused processing after full preprocessing was interrupted during unrelated large-PDF extraction."
+      ],
+      "processing_timestamp": "2026-10-13T16:38:42+00:00"
+    },
+    {
+      "source_id": "src_082",
+      "raw_file_path": "knowledge_base/raw/text/src_082.txt",
+      "processed_file_path": "knowledge_base/processed/documents/src_082.txt",
+      "input_file_type": "text",
+      "processing_status": "success",
+      "extraction_method": "plain_text_read_curated_note",
+      "raw_size": 1583,
+      "extracted_character_count": 1583,
+      "extracted_word_count": 212,
+      "title": "The NIST Definition of Cloud Computing",
+      "category": "skills_and_technologies",
+      "language": "English",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": true,
+      "warnings": [
+        "Manual focused processing after full preprocessing was interrupted during unrelated large-PDF extraction."
+      ],
+      "processing_timestamp": "2026-10-13T16:38:42+00:00"
+    },
+    {
+      "source_id": "src_083",
+      "raw_file_path": "knowledge_base/raw/text/src_083.txt",
+      "processed_file_path": "knowledge_base/processed/documents/src_083.txt",
+      "input_file_type": "text",
+      "processing_status": "success",
+      "extraction_method": "plain_text_read_curated_note",
+      "raw_size": 1489,
+      "extracted_character_count": 1489,
+      "extracted_word_count": 195,
+      "title": "What Is Computer Networking?",
+      "category": "skills_and_technologies",
+      "language": "English",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": true,
+      "warnings": [
+        "Manual focused processing after full preprocessing was interrupted during unrelated large-PDF extraction."
+      ],
+      "processing_timestamp": "2026-10-13T16:38:42+00:00"
+    },
+    {
+      "source_id": "src_084",
+      "raw_file_path": "knowledge_base/raw/text/src_084.txt",
+      "processed_file_path": "knowledge_base/processed/documents/src_084.txt",
+      "input_file_type": "text",
+      "processing_status": "success",
+      "extraction_method": "plain_text_read_curated_note",
+      "raw_size": 1635,
+      "extracted_character_count": 1635,
+      "extracted_word_count": 214,
+      "title": "What Is an FPGA?",
+      "category": "specializations",
+      "language": "English",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": true,
+      "warnings": [
+        "Manual focused processing after full preprocessing was interrupted during unrelated large-PDF extraction."
+      ],
+      "processing_timestamp": "2026-10-13T16:38:42+00:00"
+    },
+    {
+      "source_id": "src_085",
+      "raw_file_path": "knowledge_base/raw/text/src_085.txt",
+      "processed_file_path": "knowledge_base/processed/documents/src_085.txt",
+      "input_file_type": "text",
+      "processing_status": "success",
+      "extraction_method": "plain_text_read_curated_note",
+      "raw_size": 1676,
+      "extracted_character_count": 1676,
+      "extracted_word_count": 207,
+      "title": "Cybersecurity Curricular Guidelines CSEC 2017",
+      "category": "cybersecurity",
+      "language": "English",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": true,
+      "warnings": [
+        "Manual focused processing after full preprocessing was interrupted during unrelated large-PDF extraction."
+      ],
+      "processing_timestamp": "2026-10-13T16:38:42+00:00"
+    },
+    {
+      "source_id": "src_086",
+      "raw_file_path": "knowledge_base/raw/text/src_086.txt",
+      "processed_file_path": "knowledge_base/processed/documents/src_086.txt",
+      "input_file_type": "text",
+      "processing_status": "success",
+      "extraction_method": "plain_text_read_curated_note",
+      "raw_size": 1615,
+      "extracted_character_count": 1615,
+      "extracted_word_count": 222,
+      "title": "Data Scientists",
+      "category": "career_opportunities",
+      "language": "English",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": true,
+      "warnings": [
+        "Manual focused processing after full preprocessing was interrupted during unrelated large-PDF extraction."
+      ],
+      "processing_timestamp": "2026-10-13T16:38:42+00:00"
+    },
+    {
+      "source_id": "src_087",
+      "raw_file_path": "knowledge_base/raw/text/src_087.txt",
+      "processed_file_path": "knowledge_base/processed/documents/src_087.txt",
+      "input_file_type": "text",
+      "processing_status": "success",
+      "extraction_method": "plain_text_read_curated_note",
+      "raw_size": 1561,
+      "extracted_character_count": 1561,
+      "extracted_word_count": 223,
+      "title": "Octoverse 2024: AI leads Python to top language as the number of global developers surges",
+      "category": "future_technologies",
+      "language": "English",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": true,
+      "warnings": [
+        "Manual focused processing after full preprocessing was interrupted during unrelated large-PDF extraction."
+      ],
+      "processing_timestamp": "2026-10-13T16:38:42+00:00"
+    },
+    {
+      "source_id": "src_088",
+      "raw_file_path": "knowledge_base/raw/text/src_088.txt",
+      "processed_file_path": "knowledge_base/processed/documents/src_088.txt",
+      "input_file_type": "text",
+      "processing_status": "success",
+      "extraction_method": "plain_text_read_curated_note",
+      "raw_size": 1646,
+      "extracted_character_count": 1646,
+      "extracted_word_count": 213,
+      "title": "Program Syllabus: Computer Engineering English Thesis Master's Degree Program",
+      "category": "graduate_studies",
+      "language": "English",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": true,
+      "warnings": [
+        "Manual focused processing after full preprocessing was interrupted during unrelated large-PDF extraction."
+      ],
+      "processing_timestamp": "2026-10-13T16:38:42+00:00"
+    },
+    {
+      "source_id": "src_089",
+      "raw_file_path": "knowledge_base/raw/text/src_089.txt",
+      "processed_file_path": "knowledge_base/processed/documents/src_089.txt",
+      "input_file_type": "text",
+      "processing_status": "success",
+      "extraction_method": "plain_text_read_curated_note",
+      "raw_size": 1704,
+      "extracted_character_count": 1704,
+      "extracted_word_count": 211,
+      "title": "International Student Admission Directive",
+      "category": "department_information",
+      "language": "English",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": true,
+      "warnings": [
+        "Manual focused processing after full preprocessing was interrupted during unrelated large-PDF extraction."
+      ],
+      "processing_timestamp": "2026-10-13T16:38:42+00:00"
+    },
+    {
+      "source_id": "src_090",
+      "raw_file_path": "knowledge_base/raw/text/src_090.txt",
+      "processed_file_path": "knowledge_base/processed/documents/src_090.txt",
+      "input_file_type": "text",
+      "processing_status": "success",
+      "extraction_method": "plain_text_read_curated_note",
+      "raw_size": 1414,
+      "extracted_character_count": 1414,
+      "extracted_word_count": 196,
+      "title": "Missing Semester: The Shell",
+      "category": "skills_and_technologies",
+      "language": "English",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": true,
+      "warnings": [
+        "Manual focused processing after full preprocessing was interrupted during unrelated large-PDF extraction."
+      ],
+      "processing_timestamp": "2026-10-13T16:38:42+00:00"
+    },
+    {
+      "source_id": "src_091",
+      "raw_file_path": "knowledge_base/raw/text/src_091.txt",
+      "processed_file_path": "knowledge_base/processed/documents/src_091.txt",
+      "input_file_type": "text",
+      "processing_status": "success",
+      "extraction_method": "plain_text_read_curated_note",
+      "raw_size": 1573,
+      "extracted_character_count": 1573,
+      "extracted_word_count": 196,
+      "title": "Career Readiness Competencies",
+      "category": "skills_and_technologies",
+      "language": "English",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": true,
+      "warnings": [
+        "Manual focused processing after full preprocessing was interrupted during unrelated large-PDF extraction."
+      ],
+      "processing_timestamp": "2026-10-13T16:38:42+00:00"
+    },
+    {
+      "source_id": "src_092",
+      "raw_file_path": "knowledge_base/raw/text/src_092.txt",
+      "processed_file_path": "knowledge_base/processed/documents/src_092.txt",
+      "input_file_type": "text",
+      "processing_status": "success",
+      "extraction_method": "plain_text_read_curated_note",
+      "raw_size": 1582,
+      "extracted_character_count": 1582,
+      "extracted_word_count": 204,
+      "title": "Mathematics for Machine Learning and Data Science Specialization",
+      "category": "mathematics",
+      "language": "English",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": true,
+      "warnings": [
+        "Manual focused processing after full preprocessing was interrupted during unrelated large-PDF extraction."
+      ],
+      "processing_timestamp": "2026-10-13T16:38:42+00:00"
+    },
+    {
+      "source_id": "src_093",
+      "raw_file_path": "knowledge_base/raw/text/src_093.txt",
+      "processed_file_path": "knowledge_base/processed/documents/src_093.txt",
+      "input_file_type": "text",
+      "processing_status": "success",
+      "extraction_method": "plain_text_read_curated_note",
+      "raw_size": 1530,
+      "extracted_character_count": 1530,
+      "extracted_word_count": 209,
+      "title": "Computing Machinery and Intelligence",
+      "category": "artificial_intelligence",
+      "language": "English",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": true,
+      "warnings": [
+        "Manual focused processing after full preprocessing was interrupted during unrelated large-PDF extraction."
+      ],
+      "processing_timestamp": "2026-10-13T16:38:42+00:00"
+    },
+    {
+      "source_id": "src_094",
+      "raw_file_path": "knowledge_base/raw/text/src_094.txt",
+      "processed_file_path": "knowledge_base/processed/documents/src_094.txt",
+      "input_file_type": "text",
+      "processing_status": "success",
+      "extraction_method": "plain_text_read_curated_note",
+      "raw_size": 1623,
+      "extracted_character_count": 1623,
+      "extracted_word_count": 200,
+      "title": "Cyber Career Pathways Tool",
+      "category": "cybersecurity",
+      "language": "English",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": true,
+      "warnings": [
+        "Manual focused processing after full preprocessing was interrupted during unrelated large-PDF extraction."
+      ],
+      "processing_timestamp": "2026-10-13T16:38:42+00:00"
     }
   ]
 }

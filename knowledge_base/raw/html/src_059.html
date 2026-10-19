@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+     <xpath expr="//div[@id=&#39;wrapwrap&#39;]" position="before">
+    
+</xpath>
+
+        
+        
+        
+<html lang="en-US" data-website-id="11" data-main-object="website.page(108,)" data-add2cart-redirect="1">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <xpath expr="//head/meta[last()]" position="after">
+           
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script>
+    // 2nd preloader + lazy loader using the data-original-src attribute
+document.addEventListener("DOMContentLoaded", function () {
+
+    /* PART 1 — Preload FIRST carousel slide using reliable URL */
+    const firstSlide = document.querySelector('.carousel-item.active');
+    if (firstSlide) {
+        const preloadUrl = firstSlide.getAttribute("data-original-src");
+        if (preloadUrl) {
+            const link = document.createElement("link");
+            link.rel = "preload";
+            link.as = "image";
+            link.href = preloadUrl;
+            document.head.appendChild(link);
+        }
+    }
+
+    /* PART 2 — Lazy-load OTHER slides using data-original-src */
+    document.querySelectorAll('.carousel-item:not(.active)').forEach(function (slide) {
+        const lazyUrl = slide.getAttribute("data-original-src");
+        if (!lazyUrl) return;
+
+        slide.dataset.lazyBg = lazyUrl;
+        slide.style.backgroundImage = "none";
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    slide.style.backgroundImage = `url('${slide.dataset.lazyBg}')`;
+                    observer.unobserve(slide);
+                }
+            });
+        });
+
+        observer.observe(slide);
+    });
+
+});
+</script>
+
+</xpath>
+        
+        <meta name="generator" content="Odoo"/>
+            
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Ana Sayfa | Öğrenci İşleri Daire Başkanlığı | Ostim Teknik University Student Affairs"/>
+        <meta property="og:site_name" content="Ostim Teknik University Student Affairs"/>
+        <meta property="og:url" content="https://oidb.ostimteknik.edu.tr/en/"/>
+        <meta property="og:image" content="https://oidb.ostimteknik.edu.tr/web/image/website/11/logo?unique=165602c"/>
+            
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:title" content="Ana Sayfa | Öğrenci İşleri Daire Başkanlığı | Ostim Teknik University Student Affairs"/>
+        <meta name="twitter:image" content="https://oidb.ostimteknik.edu.tr/web/image/website/11/logo/300x300?unique=165602c"/>
+        
+        <link rel="alternate" hreflang="en" href="https://oidb.ostimteknik.edu.tr/en"/>
+        <link rel="alternate" hreflang="tr" href="https://oidb.ostimteknik.edu.tr/"/>
+        <link rel="alternate" hreflang="x-default" href="https://oidb.ostimteknik.edu.tr/"/>
+        <link rel="canonical" href="https://oidb.ostimteknik.edu.tr/en"/>
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""/>
+        <title> Ana Sayfa | Öğrenci İşleri Daire Başkanlığı | Ostim Teknik University Student Affairs </title>
+        <link type="image/x-icon" rel="shortcut icon" href="/web/image/website/11/favicon?unique=165602c"/>
+		<link rel="preload" href="/theme_nextbiz/static/lib/RemixIcon/remixicon.woff2?t=1580819880586" as="font" crossorigin=""/>
+		<link rel="preload" href="/theme_nextbiz/static/lib/linearicons/fonts/Linearicons-Free.woff2?w118d" as="font" crossorigin=""/>
+		<link rel="preload" href="/theme_nextbiz/static/lib/themify-icons/fonts/themify.woff?-fvbane" as="font" crossorigin=""/>
+		<link rel="preload" href="/theme_nextbiz/static/lib/icofont/fonts/icofont.woff2" as="font" crossorigin=""/>
+        <link rel="preload" href="/web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" crossorigin=""/>
+        <link type="text/css" rel="stylesheet" href="/web/assets/650905-6dd01dd/11/web.assets_frontend.min.css" data-asset-bundle="web.assets_frontend" data-asset-version="6dd01dd"/>
+        <script id="web.layout.odooscript" type="text/javascript">
+            var odoo = {
+                csrf_token: "408ae926e9b7f9885e862b80a30c0c0f90f0fcc6o1822232997",
+                debug: "",
+            };
+        </script>
+        <script type="text/javascript">
+            odoo.__session_info__ = {"is_admin": false, "is_system": false, "is_website_user": true, "user_id": false, "is_frontend": true, "profile_session": null, "profile_collectors": null, "profile_params": null, "show_effect": true, "bundle_params": {"lang": "en_US", "website_id": 11}, "translationURL": "/website/translations", "cache_hashes": {"translations": "de74ed308019b83a299edcd75054ef2d1ca4d444"}, "geoip_country_code": null, "geoip_phone_code": null, "lang_url_code": "en"};
+            if (!/(^|;\s)tz=/.test(document.cookie)) {
+                const userTZ = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                document.cookie = `tz=${userTZ}; path=/`;
+            }
+        </script>
+        <script defer="defer" type="text/javascript" src="/web/assets/588999-8b7938f/11/web.assets_frontend_minimal.min.js" data-asset-bundle="web.assets_frontend_minimal" data-asset-version="8b7938f"></script>
+        <script defer="defer" type="text/javascript" data-src="/web/assets/642928-675891f/11/web.assets_frontend_lazy.min.js" data-asset-bundle="web.assets_frontend_lazy" data-asset-version="675891f"></script>
+        
+                
+                
+                <script>
+                    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                    })(window,document,'script','dataLayer','GTM-WTWPNVZ');
+                </script>
+                
+                    <link rel="stylesheet" href="/web/static/src/libs/fontawesome/css/font-awesome.css?v=16.0.1.0"/>
+
+            
+
+                
+                
+
+                
+                <script type="text/javascript">
+                    window.OSTIM_A11Y = {
+                        position: 'bottom_right',
+                        color:    '#005f73',
+                        iconSize: 'large',
+                        lang:     'en',
+                        autoLang: true,
+                    };
+                </script>
+
+                
+                <link rel="stylesheet" href="/ostim_accessibility/static/src/css/accessibility_widget.css?v=12"/>
+
+                
+                <script type="text/javascript" src="/ostim_accessibility/static/src/js/aria_fixes.js?v=12"></script>
+
+                
+                <script type="text/javascript" src="/ostim_accessibility/static/src/js/accessibility_widget.js?v=12"></script>
+
+        
+    </head>
+    <body>
+                <noscript><iframe height="0" width="0" style="display:none;visibility:hidden" src="https://www.googletagmanager.com/ns.html?id=GTM-WTWPNVZ"></iframe></noscript>
+        <div id="wrapwrap" class="homepage   ">
+                <header id="top" data-anchor="true" data-name="Header" role="banner" class=" ">
+                    
+                <div class="oe_structure oe_structure_solo" id="oe_structure_header_image_1">
+            
+            
+        <section class="s_text_block o_colored_level o_cc o_cc2 d-none o_snippet_mobile_invisible pb8 d-lg-block pt0" data-snippet="s_text_block" data-name="Text" style="background-image: none; --darkreader-inline-bgimage: none;" data-invisible="1" data-darkreader-inline-bgimage="">
+        <div class="s_allow_columns container">
+            
+            <div class="container s_allow_columns">
+                    <div class="s_allow_columns container">
+                    
+                <div class="row o_grid_mode" data-row-count="1">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<div class="o_grid_item g-col-lg-12 o_colored_level g-height-1 col-lg-12" style="grid-area: 1 / 1 / 2 / 13; z-index: 1;"><div class="o_text_columns"><div class="row"><div class="o_colored_level col-lg-6 pt0"><p class="mb-0" data-quillbot-parent="I3zCowp7cZDbYzprjEDnK"><a title="" data-bs-original-title="" style="border-width: 1px; border-style: solid;" class="btn btn-custom btn-sm" href="https://ostimteknik.edu.tr/" target="_blank"><font class="text-white"><span style="font-size: 11px;"><span class="fa fa-institution fa-2x"></span><br/></span><span style="font-size: 14px;"><strong>Ana ​Sayfa</strong></span></font></a><a href="https://obs.ostimteknik.edu.tr" class="btn btn-custom btn-sm" data-gramm="false" data-quillbot-element="S0vobBK8ry_2-dg3GVkZG" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;" target="_blank"><span class="fa fa-user-circle fa-2x text-o-color-3" data-bs-original-title="" title="" aria-describedby="tooltip799460"></span><strong><br/></strong><span style="font-size: 14px;"><strong><font class="text-o-color-3">OB​S</font></strong></span></a>﻿<strong>&nbsp;</strong>﻿<a href="https://eob.ostimteknik.edu.tr/tr" class="btn btn-custom btn-sm" data-gramm="false" data-quillbot-element="PQZmJdYFjf9w8Pl3Bibzo" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;" target="_blank"><span class="fa fa-wheelchair text-o-color-3 fa-2x" style="width: 50% !important;"></span><strong><br/><font class="text-o-color-3"><span style="font-size: 14px;">Engelsiz</span></font></strong></a>﻿<span style="font-size: 14px;">&nbsp;</span>﻿<a href="http://ebys.ostimteknik.edu.tr/Giris.aspx" class="btn btn-custom btn-sm" data-gramm="false" data-quillbot-element="l2rS8NgILyuW8orQ0IIMk" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;" target="_blank"><span class="fa fa-file-o fa-2x text-o-color-3" data-bs-original-title="" title="" aria-describedby="tooltip891532"></span><span style="font-size: 14px;"><br/></span><strong><font class="text-o-color-3"><span style="font-size: 14px;">EBYS</span></font></strong></a>﻿<strong>&nbsp;</strong>﻿<a href="https://kutuphane.ostimteknik.edu.tr/our-services-library" class="btn btn-custom btn-sm" data-gramm="false" data-quillbot-element="BjzP3utqReHo19hirNKvs" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;" target="_blank"><span class="icofont icofont-library fa-2x text-o-color-3"></span><br/><font class="text-o-color-3"><span style="font-size: 14px;"><strong>Kütüphane</strong></span></font></a>﻿<strong>&nbsp;</strong>﻿<a href="https://lmsclus.ostimteknik.edu.tr/" class="btn btn-custom btn-sm" data-gramm="false" data-quillbot-element="I3zCowp7cZDbYzprjEDnK" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;" target="_blank"><span class="lni lni-network fa-2x text-o-color-3"></span><br/><strong><font class="text-o-color-3"><span style="font-size: 14px;">LMS</span></font></strong></a>﻿&nbsp;﻿<a href="/en/devam-eden-ogrencilerimizin-2025-2026-ogrenim-ucretleri" class="btn btn-custom" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;" target="_blank"><span class="fa fa-bullhorn text-o-color-4 fa-2x" data-bs-original-title="" title="" aria-describedby="tooltip766597"></span><br/><font class="text-white"><strong>Ücretler</strong></font></a></p></div><div class="col-lg-6 o_colored_level"><div class="s_social_media o_not_editable text-end" data-snippet="s_social_media" data-name="Social Media" data-quillbot-parent="2tIRgFEWcO4CCeASZhxTT">
+        <h6 class="s_social_media_title d-none" data-gramm="false" data-quillbot-element="2tIRgFEWcO4CCeASZhxTT">Sosyal Medya</h6>
+<a href="/en/website/social/facebook" class="s_social_media_facebook" aria-label="Facebook"><i class="fa o_editable_media m-1 text-o-color-3 fa-facebook"></i></a>
+<a href="/en/website/social/twitter" class="s_social_media_twitter" aria-label="Twitter"><i class="fa o_editable_media fa-twitter m-1 text-o-color-3"></i></a>
+<a href="/en/website/social/linkedin" class="s_social_media_linkedin" aria-label="LinkedIn"><i class="fa o_editable_media fa-linkedin m-1 text-o-color-3"></i></a>
+<a href="/en/website/social/youtube" class="s_social_media_youtube" aria-label="YouTube"><i class="fa o_editable_media fa-youtube m-1 text-o-color-3"></i></a>
+<a href="/en/website/social/instagram" class="s_social_media_instagram" aria-label="Instagram"><i class="fa o_editable_media fa-instagram m-1 text-o-color-3"></i></a>
+<a href="/en/iletisim" aria-label="Iletisim"><i class="fa fa-envelope-o o_editable_media m-1 rounded text-o-color-2"></i></a>
+<a href="/en/website/social/github" class="s_social_media_github" aria-label="GitHub"><i class="fa fa-phone o_editable_media m-1 rounded text-o-color-2"></i></a>
+</div><p><br/></p></div></div></div></div></div></div></div><p><br/></p>
+        </div>
+    </section><section class="s_text_block o_colored_level o_cc o_cc2 pb0 pt16 d-lg-none o_snippet_desktop_invisible" data-snippet="s_text_block" data-name="Text" style="background-image: none; --darkreader-inline-bgimage: none;" data-invisible="1" data-darkreader-inline-bgimage="">
+        <div class="s_allow_columns container">
+            
+            <div class="container s_allow_columns">
+                    <div class="s_allow_columns container">
+                    
+                <div class="row o_grid_mode" data-row-count="1">
+    
+<div class="o_grid_item g-col-lg-12 o_colored_level g-height-1 col-lg-12" style="grid-area: 1 / 1 / 2 / 13; z-index: 1;"><div class="o_text_columns"><div class="row"><div class="col-lg-6 o_colored_level"><p class="mb-0" data-quillbot-parent="I3zCowp7cZDbYzprjEDnK"><a title="" data-bs-original-title="" style="border-width: 1px; border-style: solid;" class="btn btn-custom btn-sm" href="https://ostimteknik.edu.tr/"><font class="text-white"><span style="font-size: 11px;"><span class="icofont icofont-university fa-2x"></span><br/>Ana Sayfa</span></font></a><span style="font-size: 11px;"></span><a href="https://obs.ostimteknik.edu.tr" class="btn btn-custom btn-sm" data-gramm="false" data-quillbot-element="S0vobBK8ry_2-dg3GVkZG" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;" target="_blank"><span class="fa fa-user-circle fa-2x text-o-color-3" data-bs-original-title="" title="" aria-describedby="tooltip799460"></span><span style="font-size: 11px;"><br/></span><span style="font-size: 14px;"><strong><font class="text-o-color-3"><span style="font-weight: normal; font-size: 11px;">OB​S</span></font></strong></span></a>﻿<span style="font-size: 11px;">&nbsp;</span>﻿<a href="https://eob.ostimtech.net/" class="btn btn-custom btn-sm" data-gramm="false" data-quillbot-element="PQZmJdYFjf9w8Pl3Bibzo" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;"><img src="/web/image/222230-4bad1344/engelsiz%20last.png" alt="" class="img img-fluid o_we_custom_image" data-original-id="222229" data-original-src="/web/image/222229-7dcb782a/engelsiz%20last.png" data-mimetype="image/png" data-resize-width="30" loading="lazy" data-bs-original-title="" title="" aria-describedby="tooltip456975"/><span class="fa fa-wheelchair text-o-color-3 fa-2x" style="width: 50% !important;"></span><strong><br/><font class="text-o-color-3"><span style="font-size: 14px;">Engelsiz</span></font></strong></a>﻿<span style="font-size: 11px;">&nbsp;</span>﻿<a href="https://ebys.ostimteknik.edu.tr/Giris.aspx" class="btn btn-custom btn-sm" data-gramm="false" data-quillbot-element="l2rS8NgILyuW8orQ0IIMk" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;"><span class="fa fa-file-o fa-2x text-o-color-3" data-bs-original-title="" title="" aria-describedby="tooltip891532"></span><span style="font-size: 14px;"><br/></span><strong><font class="text-o-color-3"><span style="font-weight: normal; font-size: 11px;">EBYS</span></font></strong></a>﻿<span style="font-size: 11px;">&nbsp;</span>﻿<a href="https://library.ostimtech.net/our-services-library" class="btn btn-custom btn-sm" data-gramm="false" data-quillbot-element="BjzP3utqReHo19hirNKvs" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;"><span class="icofont icofont-library fa-2x text-o-color-3"></span><span style="font-size: 11px;"><br/></span><font class="text-o-color-3"><span style="font-size: 11px;">Kütüphane</span></font></a>﻿<span style="font-size: 11px;">&nbsp;</span>﻿<a href="https://lmsclus.ostimteknik.edu.tr/" class="btn btn-custom btn-sm" data-gramm="false" data-quillbot-element="I3zCowp7cZDbYzprjEDnK" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;"><span class="lni lni-network fa-2x text-o-color-3"></span><span style="font-size: 11px;"><br/></span><strong><font class="text-o-color-3"><span style="font-size: 14px; font-weight: normal;">LMS</span></font></strong></a><br/></p></div><div class="col-lg-6 o_colored_level"><div class="s_social_media o_not_editable text-end" data-snippet="s_social_media" data-name="Social Media" data-quillbot-parent="2tIRgFEWcO4CCeASZhxTT">
+        <h6 class="s_social_media_title d-none" data-gramm="false" data-quillbot-element="2tIRgFEWcO4CCeASZhxTT">Sosyal Medya</h6>
+<a href="/en/website/social/facebook" class="s_social_media_facebook" aria-label="Facebook"><i class="fa o_editable_media m-1 text-o-color-3 fa-facebook"></i></a>
+<a href="/en/website/social/twitter" class="s_social_media_twitter" aria-label="Twitter"><i class="fa o_editable_media fa-twitter m-1 text-o-color-3"></i></a>
+<a href="/en/website/social/linkedin" class="s_social_media_linkedin" aria-label="LinkedIn"><i class="fa o_editable_media fa-linkedin m-1 text-o-color-3"></i></a>
+<a href="/en/website/social/youtube" class="s_social_media_youtube" aria-label="YouTube"><i class="fa o_editable_media fa-youtube m-1 text-o-color-3"></i></a>
+<a href="/en/website/social/instagram" class="s_social_media_instagram" aria-label="Instagram"><i class="fa o_editable_media fa-instagram m-1 text-o-color-3"></i></a>
+<a href="/en/iletisim" aria-label="Iletisim"><i class="fa fa-envelope-o o_editable_media m-1 rounded text-o-color-2"></i></a>
+<a href="/en/website/social/github" class="s_social_media_github" aria-label="GitHub"><i class="fa fa-phone o_editable_media m-1 rounded text-o-color-2"></i></a>
+</div><p><br/></p></div></div></div></div></div></div></div>
+        </div>
+    </section></div>
+    <nav data-name="Navbar" class="navbar navbar-expand-lg navbar-light o_colored_level o_cc shadow-sm">
+        
+            <div id="top_menu_container" class="container">
+                
+    <a href="/en/" class="navbar-brand logo ">
+            
+            <span role="img" aria-label="Logo of Ostim Teknik University Student Affairs" title="Ostim Teknik University Student Affairs"><img src="/web/image/website/11/logo/Ostim%20Teknik%20University%20Student%20Affairs?unique=165602c" class="img img-fluid" width="95" height="40" alt="Ostim Teknik University Student Affairs" loading="lazy"/></span>
+        </a>
+    
+                
+        <div class="oe_structure oe_structure_solo d-lg-none me-3"><br/></div>
+                
+    <button type="button" data-bs-toggle="collapse" data-bs-target="#top_menu_collapse" class="navbar-toggler " aria-label="Menu" aria-expanded="false" aria-controls="top_menu_collapse">
+        <span class="navbar-toggler-icon o_not_editable" contenteditable="false"></span>
+    </button>
+                
+                <div id="top_menu_collapse" class="collapse navbar-collapse">
+    <ul id="top_menu" role="menu" class="nav navbar-nav o_menu_loading ms-lg-3 flex-grow-1">
+        
+                        
+    <li class="nav-item dropdown  ">
+        <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle ">
+            <span>About Us</span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+    <li role="presentation" class="">
+        <a role="menuitem" href="https://oidb.ostimteknik.edu.tr/kadromuz" class="dropdown-item ">
+            <span>Kadromuz</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="https://oidb.ostimteknik.edu.tr/web/content/455424?unique=36496988d30492878a4c97a9b235fc1200092742" class="dropdown-item ">
+            <span>Birim İç Değerlendirme Raporu</span>
+        </a>
+    </li>
+        </ul>
+    </li>
+    <li class="nav-item dropdown  position-static">
+        <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle o_mega_menu_toggle">
+            <span>Academic Information </span>
+        </a>
+        <div data-name="Mega Menu" class="dropdown-menu o_mega_menu o_no_parent_editor dropdown-menu-start">
+    
+
+
+
+
+
+
+
+
+
+
+<section class="s_mega_menu_odoo_menu o_colored_level o_cc o_cc1 pt0" style="background-image: none;">
+        <div class="container">
+            <div class="row o_grid_mode" data-row-count="6">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+                <div class="o_colored_level o_grid_item g-height-1 g-col-lg-3 col-lg-3" style="grid-area: 1 / 3 / 2 / 6; z-index: 1;">
+                    <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0"><a href="#" data-bs-original-title="" title="" aria-describedby="popover500225"><font class="text-black"><span style="font-size: 16px;">COURSE REGISTERATION &amp; ADD / DROP</span></font></a></h4>
+                    
+                    
+                </div>
+                
+                <div class="o_colored_level o_grid_item g-height-1 g-col-lg-3 col-lg-3" style="grid-area: 6 / 3 / 7 / 6; z-index: 3;">
+                    <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0"><a href="#" data-bs-original-title="" title=""><strong>Regulations and Directives</strong></a><br></h4>
+                    
+                    
+                </div>
+                <div class="o_colored_level o_grid_item g-height-1 g-col-lg-3 col-lg-3" style="grid-area: 3 / 3 / 4 / 6; z-index: 4;">
+                    <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0"><a href="https://ird.ostimteknik.edu.tr/tr" data-bs-original-title="" title="" target="_blank"><strong>International Students</strong></a></h4></div><div class="o_colored_level o_grid_item g-height-1 g-col-lg-3 col-lg-3" style="grid-area: 4 / 3 / 5 / 6; z-index: 5;"><h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0"><a href="/en/yaz-ogretimi" data-bs-original-title="" title=""><strong>Summer School</strong></a></h4>
+                    
+                    
+                </div><div class="o_colored_level o_grid_item g-height-1 g-col-lg-3 col-lg-3" style="grid-area: 5 / 3 / 6 / 6; z-index: 6;"><h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0"><a href="#" data-bs-original-title="" title=""><strong>New Registrations</strong></a></h4>
+                    
+                    
+                </div>
+            <div class="o_colored_level o_grid_item g-col-lg-3 g-height-1 col-lg-3" style="z-index: 2; grid-area: 2 / 3 / 3 / 6;">
+                    <h4 class="text-uppercase h5 fw-bold mt-0"><span style="font-size: 16px;"><font class="text-900"><span style="font-size: 14px;"></span></font></span><a href="/en/puantablosu" data-bs-original-title="" title=""><span style="font-size: 16px;"><font class="text-900"><span style="font-size: 14px;">Puan tablosu</span></font></span></a></h4>
+                    
+                    
+                </div></div>
+        </div>
+        
+    </section></div>
+    </li>
+    <li class="nav-item dropdown  position-static">
+        <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle o_mega_menu_toggle">
+            <span>Legislation</span>
+        </a>
+        <div data-name="Mega Menu" class="dropdown-menu o_mega_menu o_no_parent_editor dropdown-menu-start">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="s_mega_menu_odoo_menu o_colored_level o_cc o_cc1 pt0" style="background-image: none;">
+        <div class="container">
+            <div class="row o_grid_mode" data-row-count="6">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+                <div class="o_colored_level o_grid_item g-height-1 g-col-lg-4 col-lg-4" style="grid-area: 5 / 8 / 6 / 12; z-index: 1;">
+                    <h4 class="text-uppercase h5 fw-bold mt-0"><a href="https://www.yok.gov.tr/kurumsal/mevzuat" target="_blank" data-bs-original-title="" title="">YÖK Mevzuatı</a><span style="font-size: 14px;"><br></span></h4>
+                    
+                    
+                </div>
+                <div class="o_colored_level o_grid_item g-height-1 g-col-lg-3 col-lg-3" style="grid-area: 6 / 8 / 7 / 11; z-index: 2;">
+                    <h4 class="text-uppercase h5 fw-bold mt-0"><a href="/en/yonergeler" data-bs-original-title="" title="">Yönetmelik ve Yönergeler</a></h4>
+                    
+                    
+                </div>
+                <div class="o_colored_level o_grid_item g-height-1 g-col-lg-4 col-lg-4" style="grid-area: 4 / 8 / 5 / 12; z-index: 3;">
+                    <h4 class="text-uppercase h5 fw-bold mt-0"><a href="https://kms.kaysis.gov.tr/Home/Goster/198693?AspxAutoDetectCookieSupport=1" data-bs-original-title="" title="">Yatay Geçiş Esas ve Usulleri</a></h4>
+                    
+                    
+                </div>
+                <div class="o_colored_level o_grid_item g-height-1 g-col-lg-5 col-lg-5" style="grid-area: 1 / 8 / 2 / 13; z-index: 4;">
+                    <h4 class="text-uppercase h5 fw-bold mt-0"><a href="https://www.ostimteknik.edu.tr/web/content/337991?unique=fdd2cbe330899acc850352bf00b6f3a5a99fd4f7" data-bs-original-title="" title="" target="_blank">Çap Esas ve Usulleri</a></h4>
+                    
+                    
+                </div><div class="o_colored_level o_grid_item g-height-1 g-col-lg-5 col-lg-5" style="grid-area: 2 / 8 / 3 / 13; z-index: 6;">
+                    <h4 class="text-uppercase h5 fw-bold mt-0"><span style="font-size: 14px;"><a href="#" data-bs-original-title="" title="">Erasmus Programı Yönerges</a></span></h4>
+                    
+                    
+                </div>
+            <div class="o_colored_level o_grid_item g-height-1 g-col-lg-5 col-lg-5" style="z-index: 5; grid-area: 3 / 8 / 4 / 13;">
+                    <h4 class="text-uppercase h5 fw-bold mt-0"><font class="text-900"></font><a href="/en/yan-dal" data-bs-original-title="" title=""><font class="text-black">YAN DAL ESAS VE USULLERİ</font></a><font class="text-900">​</font><br></h4>
+                    
+                    
+                </div></div>
+        </div>
+        
+    </section></div>
+    </li>
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="/en/kilavuzlar" class="nav-link ">
+            <span>Guides</span>
+        </a>
+    </li>
+    <li class="nav-item dropdown  position-static">
+        <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle o_mega_menu_toggle">
+            <span>Faculty and Programs</span>
+        </a>
+        <div data-name="Mega Menu" class="dropdown-menu o_mega_menu o_no_parent_editor dropdown-menu-start"><section class="s_mega_menu_odoo_menu pt16 o_colored_level o_cc o_cc1" style="background-image: none;">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-6 pt16 pb24 o_colored_level col-lg-2">
+                    <h4 class="text-uppercase h5 fw-bold mt-0"><span style="font-size: 14px;"><a href="https://iibf.ostimteknik.edu.tr/tr" data-bs-original-title="" title=""><span style="font-size: 14px;">FACULTY OF ECONOMICS AND ADMINISTRATIVE SCIENCEİ</span></a></span></h4>
+                    <div class="s_hr text-start pt4 pb16 text-o-color-1" data-name="Separator">
+                        <hr class="w-100 mx-auto" style="border-top-width: 2px; border-top-style: solid;">
+                    </div>
+                    <nav class="nav flex-column">
+                        <a href="https://economy.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""></a><a href="https://economy.ostimteknik.edu.tr/" data-bs-original-title="" title=""><font class="text-900">Economics (English)</font></a><a href="https://iibfbusiness.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""></a><a href="https://iibfbusiness.ostimteknik.edu.tr/" data-bs-original-title="" title=""><font class="text-900">Business Administration (English)</font></a><a href="https://iibfmarketing.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-900">Marketing (English)</font></a><a href="https://iibfybs.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-900"></font></a><a title="" data-bs-original-title="" href="https://iibfybs.ostimteknik.edu.tr/tr">International Trade and Finance (Turkish)<font class="text-black"><br>​</font></a><font class="text-900"><font class="text-black"><font class="text-900"><font class="text-black"></font></font></font></font><a href="https://iibfybs.ostimteknik.edu.tr/" data-bs-original-title="" title="">Management Information Systems
+(Turkish)<font class="text-black">​</font></a><font class="text-900"><font class="text-black"><font class="text-900"><font class="text-black"><br></font></font></font></font><font class="text-900"><font class="text-black"></font></font><a href="https://iibfmis.ostimteknik.edu.tr/" data-bs-original-title="" title=""><font class="text-900">Management Information Systems (English)</font></a><font class="text-900"><font class="text-black"></font></font></nav>
+                </div>
+                <div class="col-md-6 pt16 pb24 o_colored_level col-lg-2">
+                    <h4 class="text-uppercase h5 fw-bold mt-0"><span style="font-size: 14px;"><a href="https://mf.ostimteknik.edu.tr/tr" data-bs-original-title="" title=""><span style="font-size: 14px;">FACULTY OF ENGINEERING</span></a><br><br></span></h4>
+                    <div class="s_hr text-start pt4 pb16 text-o-color-2" data-name="Separator">
+                        <hr class="w-100 mx-auto" style="border-top: 2px solid rgb(137, 22, 53);">
+                    </div>
+                    <nav class="nav flex-column">
+                        <a href="https://mfbilgisayar.ostimteknik.edu.tr/en/arastrma" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font color="#470b1c">Computer Engineering
+(<br>Turkish)</font></a><a href="https://mfcs.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font color="#470b1c">Computer Engineering<br>(English)<font class="text-900">​</font>)</font></a>
+                        <a href="https://mfelektrik.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Electrical-Electronics <br>Engineering (Turkish)</a><a href="https://mfeee.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Electric Electronic Engineering (English)</a>
+                        <a href="https://mfendustri.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Industrial Engineering<br>(Turkish)</a><a href="https://mfindustrial.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Industrial Design<br>(English)</a>
+                        <a href="https://aerospace.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Aerospace Engineering (English)</a>
+                        <a href="https://mfmm.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Machine Engineering<br>(English)</a><a href="https://mfnanoteknoloji.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Nanotechnology Engineering<br>(İngilizce)</a><a href="https://mfyapayzeka.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Artificial Intelligence Engineering<br>(Turkish)</a><a href="https://mfyazilim.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Software Engineering <br>(Turkish)</a><a href="https://mfsoftware.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Software Engineering <br>(English)</a>
+                    </nav>
+                </div>
+                <div class="col-md-6 pt16 pb24 o_colored_level col-lg-2">
+                    <h4 style="text-align: left;" class="text-uppercase h5 fw-bold mt-0"><span style="font-size: 14px;"><a href="https://mimarlik.ostimteknik.edu.tr/tr"><span style="font-size: 14px;">FACULTY OF ARCHITECTURE AND DESIGN</span></a></span></h4>
+                    <div data-name="Separator" class="s_hr text-start text-o-color-1 pb0 pt4">
+                        </div>
+                    <div class="s_hr text-start pt4 pb16 text-o-color-5" data-name="Separator">
+                        <hr class="w-100 mx-auto" style="border-top: 2px solid rgb(137, 22, 53);">
+                    </div>
+                    <nav class="nav flex-column">
+                        <a href="https://mtfet.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Industrial Design</a>
+                        <a href="https://mtficmimarlik.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Intrerior Architecture</a>
+                        
+                        
+                    </nav>
+                </div><div class="col-md-6 pt16 pb24 o_colored_level col-lg-2">
+                    <h4 class="text-uppercase h5 fw-bold mt-0"><span style="font-size: 14px;"><a href="https://myo.ostimteknik.edu.tr/tr" data-bs-original-title="" title=""><span style="font-size: 14px;">VOCATIONAL SCHOOL</span></a><br></span></h4>
+                    <div class="s_hr text-start pt4 pb16 text-o-color-5" data-name="Separator">
+                        <hr class="w-100 mx-auto" style="border-top: 2px solid rgb(137, 22, 53);">
+                    </div>
+                    <nav class="nav flex-column">
+                        <a href="https://myobilgisayar.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Computer Programming</a>
+                        <a href="https://myobilisim.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">informatics Security <br>Engineering </a>
+                        <a href="https://myobct.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Biomedical Device<br>Technology </a>
+                        <a href="https://myodt.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Dış Ticaret</a><a href="https://myodot.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Dijital Oyun Teknolojileri</a><a href="https://myoelektrik.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Elektrik </a><a href="https://myoet.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Elektronik Teknolojisi</a><a href="https://myoeticaret.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">E-Ticaret ve Pazarlama</a><a href="https://myohett.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Hibrid ve Elektrikli Taşıtlar <br>Teknolojisi</a><a href="https://myoimo.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">İş Makineleri Operatörlüğü</a><a href="https://myologistik.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Lojistik</a><a href="https://myomakine.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Makine </a><a href="https://myomekatronik.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Mekatronik  </a><a href="https://myosst.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Silah Sanayi Teknikerliği</a><a href="https://myokk.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Üretimde Kalite Kontrol</a>
+                    </nav>
+                </div><div class="col-md-6 pt16 pb24 o_colored_level col-lg-2">
+                    <h4 class="text-uppercase h5 fw-bold mt-0"><span style="font-size: 14px;"><a href="https://fbe.ostimteknik.edu.tr/tr"><span style="font-size: 14px;">INSTITUTE OF SCIENCE</span></a><br></span></h4>
+                    <div class="s_hr text-start pt4 pb16 text-o-color-5" data-name="Separator">
+                        <hr class="w-100 mx-auto" style="border-top: 2px solid rgb(137, 22, 53);">
+                    </div>
+                    <nav class="nav flex-column">
+                        <a href="https://fbeyazilim.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Yazılım Mühendisliği Tezli<br>(Türkçe) <br>Yüksek Lisans Programı</a>
+                        <a href="https://fbebilgisayar.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Bilgisayar Mühendisliği Tezli<br>(İngilizce)<br>Yüksek Lisans Programı</a>
+                        <a href="https://eeemaster.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Elektrik Elektronik Mühendisliği<br>Tezli (İngilizce)<br>Yüksek Lisans Programı</a><a href="https://mechanicalmaster.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Makine Mühendisliği Tezli <br>(İngilizce) <br>Yüksek Lisans Programı</a>
+                        <a href="https://fbemakine.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Makine Mühendisliği Tezli<br>(Türkçe)<br>Yüksek Lisans Programı</a><a href="https://fbemimarlik.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Mimarlık Tezli<br>(Türkçe)<br>Yüksek Lisans Programı</a>
+                    </nav>
+                </div><div class="col-md-6 pt16 pb24 o_colored_level col-lg-2">
+                    <h4 class="text-uppercase h5 fw-bold mt-0"><span style="font-size: 14px;"><a href="https://sbe.ostimteknik.edu.tr/"><font class="text-black">Graduate School of Business<span style="font-size: 14px;"><a href="https://sbe.ostimteknik.edu.tr/"><font class="text-black">​</font></a></span></font></a></span></h4><div class="s_hr text-start pt4 pb16 text-o-color-5" data-name="Separator">
+                        <hr class="w-100 mx-auto" style="border-top: 2px solid rgb(137, 22, 53);">
+                    </div>
+                    <nav class="nav flex-column">
+                        <a href="https://sbeisletme.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">İşletme Tezli Yüksek Lisans<br>programı (Türkçe)</a>
+                        <a href="https://sbeuiy.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Uluslararası İşletme Yönetimi<br>Tezli Yüksek Lisans Programı<br>(İngilizce)</a>
+                        <a href="https://sbespty.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Sanayi Politikaları ve Teknoloji<br>Yönetimi Tezli Yüksek Lisans <br>Programı (İngilizce)</a>
+                        <a href="https://sbeibm.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Uluslararası İşletme Yönetimi<br>Uzaktan Eğitim Tezsiz Yüksek<br>Lisans Programı (İngilizce)</a><a href="https://sbegirisimcilik.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Girişimcilik Tezsiz Yüksek<br>Lisans Programı (Türkçe)</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    </li>
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="/en/iletisim" class="nav-link ">
+            <span>Contact Us</span>
+        </a>
+    </li>
+        
+            <li class="nav-item ms-lg-3 divider d-none"></li> 
+            <li class="o_wsale_my_cart align-self-md-start d-none nav-item ms-lg-3">
+                <a href="/en/shop/cart" class="nav-link">
+                    <i class="fa fa-shopping-cart"></i>
+                    <sup class="my_cart_quantity badge text-bg-primary" data-order-id="">0</sup>
+                </a>
+            </li>
+        
+                        
+                        
+        
+        
+                    
+    </ul>
+                    
+        
+            <div class="js_language_selector ms-lg-2 dropdown d-print-none">
+                <button type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="btn btn-sm btn-outline-secondary border-0 dropdown-toggle ">
+    <img class="o_lang_flag" style="" src="/base/static/img/country_flags/us.png?height=25" loading="lazy"/>
+                    <span class="align-middle">English (US)</span>
+                </button>
+                <div role="menu" class="dropdown-menu ">
+                        <a href="/en/" class="dropdown-item js_change_lang active" data-url_code="en">
+    <img class="o_lang_flag" style="" src="/base/static/img/country_flags/us.png?height=25" loading="lazy"/>
+                            <span>English (US)</span>
+                        </a>
+                        <a href="/" class="dropdown-item js_change_lang " data-url_code="tr">
+    <img class="o_lang_flag" style="" src="/base/static/img/country_flags/tr.png?height=25" loading="lazy"/>
+                            <span> Türkçe</span>
+                        </a>
+                </div>
+            </div>
+        
+                    
+        <div class="oe_structure oe_structure_solo d-none d-lg-block ms-3"><br/></div>
+                </div>
+            </div>
+        
+    </nav>
+    
+        </header>
+                <main role="main">
+                    
+        <div id="wrap" class="oe_structure oe_empty"><section class="s_banner pt96 pb96 o_colored_level s_parallax_no_overflow_hidden oe_img_bg o_bg_img_center o_bg_img_origin_border_box o_half_screen_height" data-scroll-background-ratio="0" data-snippet="s_banner" data-name="Banner" style="background-image: url(&#34;/web/image/483701-26e2a186/Student%20Handbook.jpg&#34;);" data-original-id="252736" data-original-src="/web/image/252736-9996cc2c/Student%20Handbook.jpg" data-mimetype="image/jpeg" data-resize-width="1914">
+        
+        <div class="container">
+            <div class="row s_nb_column_fixed">
+                <div class="jumbotron rounded o_colored_level offset-lg-2 col-lg-8 o_cc o_cc1 bg-black-50 pb40 pt32" data-name="Box">
+                    <h1 style="text-align: center;"><span style="font-size: 36px;"><strong><font class="text-white">Department of Student Affairs
+
+</font></strong></span></h1></div>
+            </div>
+        </div>
+    </section><section class="s_text_block pt40 o_colored_level o_cc o_cc2 pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container"><div class="row"><div class="o_colored_level col-lg-11 offset-lg-1">
+            <p><span class="oe-tabs" style="width: 25.8px;">	</span>​<a href="/en/akademik-takvim" target="_blank" class="btn btn-custom" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;"><span class="fa fa-calendar text-o-color-4 fa-3x" data-bs-original-title="" title="" aria-describedby="tooltip183087"></span><font class="text-white"><br/><span style="font-size: 14px;"><strong>ACADEMIC CALENDER</strong></span></font></a><a href="/en/ogrenci" target="_blank" class="btn btn-custom" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;"><span class="icofont icofont-group-students text-white fa-3x"></span><span style="font-size: 14px;"><strong><font class="text-100"><br/>STUDENT<br/></font></strong></span></a><a href="/en/international-students" target="_blank" class="btn btn-custom" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;"><span class="icofont icofont-world fa-3x text-white"></span><font class="text-white"><span style="font-size: 14px;"><strong><br/>INTERNATİONAL&nbsp;<br/>STUDENT<br/></strong></span></font></a><a href="/en/formlar" target="_blank" class="btn btn-custom" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;"><span class="icofont icofont-certificate-alt-1 text-white fa-3x"></span><span style="font-size: 14px;"><strong><font class="text-100"><br/>GUİDES AND FORMS<br/></font></strong></span></a><a href="https://karpiem.ostimteknik.edu.tr" target="_blank" class="btn btn-custom" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;"><span class="icofont icofont-contact-add text-white fa-3x"></span><font class="text-white"><span style="font-size: 14px;"><strong><br/>KARPİEM</strong></span></font></a><a href="https://sks.ostimteknik.edu.tr" target="_blank" class="btn btn-custom" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;"><span class="icofont icofont-result-sport fa-3x text-white"></span><br/><font class="text-o-color-4"><span style="font-size: 14px;"><strong>SKS</strong></span></font><font class="text-900"><span style="font-size: 24px;"><strong></strong></span></font></a><span style="font-size: 14px;"></span><a href="/en/devam-eden-ogrencilerimizin-2025-2026-ogrenim-ucretleri" target="_blank" class="btn btn-custom" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;" aria-describedby="popover911544"><span class="fa fa-bullhorn text-o-color-4 fa-3x" data-bs-original-title="" title="" aria-describedby="tooltip631861"></span><span style="font-size: 14px;"><strong><font class="text-white"><br/>TUITION FEES</font></strong></span></a><a href="/en/aydinlatma-metni" target="_blank" class="btn btn-custom" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid;" aria-describedby="popover827150"><span class="fa fa-file-text-o text-white fa-3x" data-bs-original-title="" title="" aria-describedby="tooltip245711"></span><strong><font class="text-white"><span style="font-size: 14px;"><br/>INFORMATION TEXT</span></font></strong></a><strong><br/></strong></p></div><div class="o_colored_level col-lg-6">
+            <p>​</p></div></div></div></section><section class="s_title o_colored_level pb16 pt16" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;">
+        <div class="s_allow_columns container">
+            <h2 style="text-align: center;"><font style="font-size: 62px;" class="text-o-color-2"><span style="font-size: 36px;"><strong>ANNOUNCEMENTS</strong></span></font><br/></h2>
+        </div>
+    </section><section data-snippet="s_blog_posts" class="s_blog_posts s_dynamic_snippet_blog_posts s_dynamic o_colored_level s_blog_posts_effect_marley s_blog_post_list pt0 pb0 o_cc o_cc1 o_dynamic_empty" data-name="Blog Posts" data-filter-by-blog-id="-1" data-number-of-records="4" data-filter-id="1" data-template-key="website_blog.dynamic_filter_template_blog_post_list" data-number-of-elements="2" style="--darkreader-inline-bgimage: none; background-image: none;" data-force-minimum-max-limit-to16="1" data-darkreader-inline-bgimage="">
+            <div class="o_not_editable container">
+                <div class="css_non_editable_mode_hidden">
+                    <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text">
+                        Dinamik Snippet'iniz burada görüntülenir... Bu ileti, kullanılacak bir filtre ve şablon sağlamadığınız için görüntülenir.<br/>
+                    </div>
+                </div>
+                <div class="dynamic_snippet_template"></div>
+            </div>
+        </section><section class="s_text_block o_colored_level pt0 pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none; --darkreader-inline-bgimage: none;" data-darkreader-inline-bgimage="">
+        <div class="s_allow_columns container">
+            <p style="text-align: right;"><a title="" data-bs-original-title="" class="btn btn-outline-primary btn-bizople_button_8" href="/en/blog"><span style="font-size: 14px;">VİEW ALL ENOUNCEMENTS</span></a><br/></p>
+        </div>
+    </section><section class="s_title o_colored_level pb16 pt16" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;">
+        <div class="container s_allow_columns">
+            <h2 style="text-align: center;"><font style="font-size: 62px;" class="text-o-color-2"><span style="font-size: 36px;"><strong>EVENTS</strong></span></font><font style="font-size: 62px;" class="text-o-color-5"></font></h2>
+        </div>
+    </section><section data-snippet="s_events" class="s_events s_event_upcoming_snippet s_dynamic o_colored_level pt0 s_event_event_card pb0 o_dynamic_empty" data-name="Events" style="background-image: none; --darkreader-inline-bgimage: none;" data-number-of-records="3" data-filter-id="11" data-template-key="website_event.dynamic_filter_template_event_event_card" data-force-minimum-max-limit-to16="1" data-darkreader-inline-bgimage="">
+            <div class="o_not_editable container">
+                <div class="css_non_editable_mode_hidden">
+                    <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text">
+                        Dinamik Snippet'iniz burada görüntülenir... Bu ileti, kullanılacak bir filtre ve şablon sağlamadığınız için görüntülenir.<br/>
+                    </div>
+                </div>
+                <div class="dynamic_snippet_template"></div>
+            </div>
+        </section><section class="s_text_block o_colored_level pt0 pb32" data-snippet="s_text_block" data-name="Text" style="background-image: none; --darkreader-inline-bgimage: none;" data-darkreader-inline-bgimage="">
+        <div class="s_allow_columns container" style="text-align: right;">
+            <p class="o_default_snippet_text" style="text-align: right;"></p><a title="" data-bs-original-title="" class="btn btn-outline-primary btn-bizople_button_8" href="/en/events"><span style="font-size: 14px;">VİEW ALL EVENTS</span></a><p style="text-align: right;"></p>
+        </div>
+    </section></div>
+    
+                </main>
+                <footer id="bottom" data-anchor="true" data-name="Footer" role="contentinfo" class="o_footer o_colored_level o_cc ">
+                    <div id="footer" class="oe_structure oe_structure_solo">
+				<section id="footer_theme_common" class="footer_theme_common1 o_footer" style="background-image: none;">
+					<section class="top-footer font-14 o_colored_level o_cc o_cc2 pb0 pt32" style="background-color: rgb(16, 22, 76); background-image: none;">
+						<div class="f2-middle">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-6 o_colored_level col-lg-12">
+										<div class="block-footer">
+											<div class="title-block-footer">
+												<div class="s_allow_columns container">
+                    <div data-name="Social Media" data-snippet="s_social_media" class="s_social_media mb-4 o_not_editable text-center">
+                        <h5 class="s_social_media_title d-none">Bizi takip et</h5>
+<a class="s_social_media_facebook" href="/en/website/social/facebook">
+                            <i class="fa fa-facebook o_editable_media text-o-color-2 bg-o-color-3 rounded-circle shadow-sm"></i>
+                        </a>
+<a class="s_social_media_twitter" href="/en/website/social/twitter">
+                            <i class="fa fa-twitter o_editable_media text-o-color-2 rounded-circle shadow-sm"></i>
+                        </a>
+<a class="s_social_media_linkedin" href="/en/website/social/linkedin">
+                            <i class="fa fa-linkedin o_editable_media text-o-color-2 rounded-circle shadow-sm"></i>
+                        </a>
+<a class="s_social_media_youtube" href="/en/website/social/youtube">
+                            <i class="fa o_editable_media fa-youtube text-o-color-2 rounded-circle shadow-sm"></i>
+                        </a>
+<a class="s_social_media_instagram" href="/en/website/social/instagram">
+                            <i class="fa o_editable_media fa-instagram text-o-color-2 rounded-circle shadow-sm"></i>
+                        </a>
+</div>
+                    <p class="text-center mb-1">
+<a title="" data-bs-original-title="" href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x14d349a85971269f:0xebe064ffd651704?sa=X&amp;ved=1t:8290&amp;ictx=111"><font class="text-o-color-4">Ostim, 100. Yıl Blv 55/F, 06374 Yenimahalle/Ankara</font></a>&nbsp;<br/></p>
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item mx-3"><span class="m-0"><span class="lnr lnr-phone-handset me-3"></span></span>
+														<span class="m-0">+90 312 386 10 92</span></li><li class="list-inline-item mx-3"><i aria-describedby="tooltip247554" title="" data-bs-original-title="" class="fa fa-1x fa-fw fa-envelope me-2"></i>&nbsp;<a href="mailto:oidb@ostimteknik.edu.tr"><font class="text-white">oidb@ostimteknik.edu.tr</font></a><font class="text-o-color-4"></font></li><br/><a><img src="/web/image/283026-aeb8c258/ostim%20beyaz%20logo.png" alt="Ostim Teknik Beyaz Logo" class="img img-fluid o_we_custom_image" data-original-id="195778" data-original-src="/web/image/195778-59ca6729/ostim%20beyaz%20logo.png" data-mimetype="image/png" data-bs-original-title="" title="Ostim Teknik Beyaz Logo" aria-describedby="tooltip355780" style="width: 25% !important;" data-resize-width="1017" loading="lazy"/></a></ul>
+                </div>
+            <h4 class="text-dark"><br/></h4></div></div></div>
+								</div>
+							</div>
+						</div>
+					</section>
+					
+				</section>
+			</div>
+                <div class="ostim-consent-reopen-wrap container">
+                    <a href="#" class="ostim-consent-reopen" role="button">
+                        Cookie Settings
+                    </a>
+                </div>
+		</footer>
+    	<nav id="sidebar" class="sidebar-wrapper bg-white d-block d-md-none">
+	    	<div class="sidebar-content">
+				
+				<div class="card bg-white">
+	                <div class="card-header d-flex align-items-center justify-content-between">
+	                  	<div class="header-brand mt16 mb16 text-start">
+	    					<a href="/en/" class="navbar-brand logo ">
+					            <span role="img" aria-label="Logo of Ostim Teknik University Student Affairs" title="Ostim Teknik University Student Affairs"><img src="/web/image/website/11/sidebar_logo/Ostim%20Teknik%20University%20Student%20Affairs?unique=165602c" class="img img-fluid" alt="Ostim Teknik University Student Affairs" loading="lazy"/></span>
+					        </a>
+	            		</div>
+						<div class="search">
+							<div class="close-mbl-sidebar  text-center">
+								<a href="#" class="text-decoration-none"><span class="lnr lnr-cross text-black" id="close_mbl_sidebar"></span></a>							
+							</div>
+						</div>
+	                </div>
+	                <div class="card-body tab-content">
+	                  	<div class="tab-pane fade active show" id="nav_tabs_content_1595584408392_2" role="tabpanel" aria-labelledby="nav_tabs_link_1595584408392_2">
+	                    	<ul class="nav navbar-nav align-items-md-center" id="top_menu">
+    <li class="nav-item dropdown  ">
+        <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle ">
+            <span>About Us</span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+    <li role="presentation" class="">
+        <a role="menuitem" href="https://oidb.ostimteknik.edu.tr/kadromuz" class="dropdown-item ">
+            <span>Kadromuz</span>
+        </a>
+    </li>
+    <li role="presentation" class="">
+        <a role="menuitem" href="https://oidb.ostimteknik.edu.tr/web/content/455424?unique=36496988d30492878a4c97a9b235fc1200092742" class="dropdown-item ">
+            <span>Birim İç Değerlendirme Raporu</span>
+        </a>
+    </li>
+        </ul>
+    </li>
+    <li class="nav-item dropdown  position-static">
+        <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle o_mega_menu_toggle">
+            <span>Academic Information </span>
+        </a>
+        <div data-name="Mega Menu" class="dropdown-menu o_mega_menu o_no_parent_editor dropdown-menu-start">
+    
+
+
+
+
+
+
+
+
+
+
+<section class="s_mega_menu_odoo_menu o_colored_level o_cc o_cc1 pt0" style="background-image: none;">
+        <div class="container">
+            <div class="row o_grid_mode" data-row-count="6">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+                <div class="o_colored_level o_grid_item g-height-1 g-col-lg-3 col-lg-3" style="grid-area: 1 / 3 / 2 / 6; z-index: 1;">
+                    <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0"><a href="#" data-bs-original-title="" title="" aria-describedby="popover500225"><font class="text-black"><span style="font-size: 16px;">COURSE REGISTERATION &amp; ADD / DROP</span></font></a></h4>
+                    
+                    
+                </div>
+                
+                <div class="o_colored_level o_grid_item g-height-1 g-col-lg-3 col-lg-3" style="grid-area: 6 / 3 / 7 / 6; z-index: 3;">
+                    <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0"><a href="#" data-bs-original-title="" title=""><strong>Regulations and Directives</strong></a><br></h4>
+                    
+                    
+                </div>
+                <div class="o_colored_level o_grid_item g-height-1 g-col-lg-3 col-lg-3" style="grid-area: 3 / 3 / 4 / 6; z-index: 4;">
+                    <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0"><a href="https://ird.ostimteknik.edu.tr/tr" data-bs-original-title="" title="" target="_blank"><strong>International Students</strong></a></h4></div><div class="o_colored_level o_grid_item g-height-1 g-col-lg-3 col-lg-3" style="grid-area: 4 / 3 / 5 / 6; z-index: 5;"><h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0"><a href="/en/yaz-ogretimi" data-bs-original-title="" title=""><strong>Summer School</strong></a></h4>
+                    
+                    
+                </div><div class="o_colored_level o_grid_item g-height-1 g-col-lg-3 col-lg-3" style="grid-area: 5 / 3 / 6 / 6; z-index: 6;"><h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0"><a href="#" data-bs-original-title="" title=""><strong>New Registrations</strong></a></h4>
+                    
+                    
+                </div>
+            <div class="o_colored_level o_grid_item g-col-lg-3 g-height-1 col-lg-3" style="z-index: 2; grid-area: 2 / 3 / 3 / 6;">
+                    <h4 class="text-uppercase h5 fw-bold mt-0"><span style="font-size: 16px;"><font class="text-900"><span style="font-size: 14px;"></span></font></span><a href="/en/puantablosu" data-bs-original-title="" title=""><span style="font-size: 16px;"><font class="text-900"><span style="font-size: 14px;">Puan tablosu</span></font></span></a></h4>
+                    
+                    
+                </div></div>
+        </div>
+        
+    </section></div>
+    </li>
+    <li class="nav-item dropdown  position-static">
+        <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle o_mega_menu_toggle">
+            <span>Legislation</span>
+        </a>
+        <div data-name="Mega Menu" class="dropdown-menu o_mega_menu o_no_parent_editor dropdown-menu-start">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="s_mega_menu_odoo_menu o_colored_level o_cc o_cc1 pt0" style="background-image: none;">
+        <div class="container">
+            <div class="row o_grid_mode" data-row-count="6">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+                <div class="o_colored_level o_grid_item g-height-1 g-col-lg-4 col-lg-4" style="grid-area: 5 / 8 / 6 / 12; z-index: 1;">
+                    <h4 class="text-uppercase h5 fw-bold mt-0"><a href="https://www.yok.gov.tr/kurumsal/mevzuat" target="_blank" data-bs-original-title="" title="">YÖK Mevzuatı</a><span style="font-size: 14px;"><br></span></h4>
+                    
+                    
+                </div>
+                <div class="o_colored_level o_grid_item g-height-1 g-col-lg-3 col-lg-3" style="grid-area: 6 / 8 / 7 / 11; z-index: 2;">
+                    <h4 class="text-uppercase h5 fw-bold mt-0"><a href="/en/yonergeler" data-bs-original-title="" title="">Yönetmelik ve Yönergeler</a></h4>
+                    
+                    
+                </div>
+                <div class="o_colored_level o_grid_item g-height-1 g-col-lg-4 col-lg-4" style="grid-area: 4 / 8 / 5 / 12; z-index: 3;">
+                    <h4 class="text-uppercase h5 fw-bold mt-0"><a href="https://kms.kaysis.gov.tr/Home/Goster/198693?AspxAutoDetectCookieSupport=1" data-bs-original-title="" title="">Yatay Geçiş Esas ve Usulleri</a></h4>
+                    
+                    
+                </div>
+                <div class="o_colored_level o_grid_item g-height-1 g-col-lg-5 col-lg-5" style="grid-area: 1 / 8 / 2 / 13; z-index: 4;">
+                    <h4 class="text-uppercase h5 fw-bold mt-0"><a href="https://www.ostimteknik.edu.tr/web/content/337991?unique=fdd2cbe330899acc850352bf00b6f3a5a99fd4f7" data-bs-original-title="" title="" target="_blank">Çap Esas ve Usulleri</a></h4>
+                    
+                    
+                </div><div class="o_colored_level o_grid_item g-height-1 g-col-lg-5 col-lg-5" style="grid-area: 2 / 8 / 3 / 13; z-index: 6;">
+                    <h4 class="text-uppercase h5 fw-bold mt-0"><span style="font-size: 14px;"><a href="#" data-bs-original-title="" title="">Erasmus Programı Yönerges</a></span></h4>
+                    
+                    
+                </div>
+            <div class="o_colored_level o_grid_item g-height-1 g-col-lg-5 col-lg-5" style="z-index: 5; grid-area: 3 / 8 / 4 / 13;">
+                    <h4 class="text-uppercase h5 fw-bold mt-0"><font class="text-900"></font><a href="/en/yan-dal" data-bs-original-title="" title=""><font class="text-black">YAN DAL ESAS VE USULLERİ</font></a><font class="text-900">​</font><br></h4>
+                    
+                    
+                </div></div>
+        </div>
+        
+    </section></div>
+    </li>
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="/en/kilavuzlar" class="nav-link ">
+            <span>Guides</span>
+        </a>
+    </li>
+    <li class="nav-item dropdown  position-static">
+        <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle o_mega_menu_toggle">
+            <span>Faculty and Programs</span>
+        </a>
+        <div data-name="Mega Menu" class="dropdown-menu o_mega_menu o_no_parent_editor dropdown-menu-start"><section class="s_mega_menu_odoo_menu pt16 o_colored_level o_cc o_cc1" style="background-image: none;">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-6 pt16 pb24 o_colored_level col-lg-2">
+                    <h4 class="text-uppercase h5 fw-bold mt-0"><span style="font-size: 14px;"><a href="https://iibf.ostimteknik.edu.tr/tr" data-bs-original-title="" title=""><span style="font-size: 14px;">FACULTY OF ECONOMICS AND ADMINISTRATIVE SCIENCEİ</span></a></span></h4>
+                    <div class="s_hr text-start pt4 pb16 text-o-color-1" data-name="Separator">
+                        <hr class="w-100 mx-auto" style="border-top-width: 2px; border-top-style: solid;">
+                    </div>
+                    <nav class="nav flex-column">
+                        <a href="https://economy.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""></a><a href="https://economy.ostimteknik.edu.tr/" data-bs-original-title="" title=""><font class="text-900">Economics (English)</font></a><a href="https://iibfbusiness.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""></a><a href="https://iibfbusiness.ostimteknik.edu.tr/" data-bs-original-title="" title=""><font class="text-900">Business Administration (English)</font></a><a href="https://iibfmarketing.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-900">Marketing (English)</font></a><a href="https://iibfybs.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font class="text-900"></font></a><a title="" data-bs-original-title="" href="https://iibfybs.ostimteknik.edu.tr/tr">International Trade and Finance (Turkish)<font class="text-black"><br>​</font></a><font class="text-900"><font class="text-black"><font class="text-900"><font class="text-black"></font></font></font></font><a href="https://iibfybs.ostimteknik.edu.tr/" data-bs-original-title="" title="">Management Information Systems
+(Turkish)<font class="text-black">​</font></a><font class="text-900"><font class="text-black"><font class="text-900"><font class="text-black"><br></font></font></font></font><font class="text-900"><font class="text-black"></font></font><a href="https://iibfmis.ostimteknik.edu.tr/" data-bs-original-title="" title=""><font class="text-900">Management Information Systems (English)</font></a><font class="text-900"><font class="text-black"></font></font></nav>
+                </div>
+                <div class="col-md-6 pt16 pb24 o_colored_level col-lg-2">
+                    <h4 class="text-uppercase h5 fw-bold mt-0"><span style="font-size: 14px;"><a href="https://mf.ostimteknik.edu.tr/tr" data-bs-original-title="" title=""><span style="font-size: 14px;">FACULTY OF ENGINEERING</span></a><br><br></span></h4>
+                    <div class="s_hr text-start pt4 pb16 text-o-color-2" data-name="Separator">
+                        <hr class="w-100 mx-auto" style="border-top: 2px solid rgb(137, 22, 53);">
+                    </div>
+                    <nav class="nav flex-column">
+                        <a href="https://mfbilgisayar.ostimteknik.edu.tr/en/arastrma" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font color="#470b1c">Computer Engineering
+(<br>Turkish)</font></a><a href="https://mfcs.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title=""><font color="#470b1c">Computer Engineering<br>(English)<font class="text-900">​</font>)</font></a>
+                        <a href="https://mfelektrik.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Electrical-Electronics <br>Engineering (Turkish)</a><a href="https://mfeee.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Electric Electronic Engineering (English)</a>
+                        <a href="https://mfendustri.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Industrial Engineering<br>(Turkish)</a><a href="https://mfindustrial.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Industrial Design<br>(English)</a>
+                        <a href="https://aerospace.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Aerospace Engineering (English)</a>
+                        <a href="https://mfmm.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Machine Engineering<br>(English)</a><a href="https://mfnanoteknoloji.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Nanotechnology Engineering<br>(İngilizce)</a><a href="https://mfyapayzeka.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Artificial Intelligence Engineering<br>(Turkish)</a><a href="https://mfyazilim.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Software Engineering <br>(Turkish)</a><a href="https://mfsoftware.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Software Engineering <br>(English)</a>
+                    </nav>
+                </div>
+                <div class="col-md-6 pt16 pb24 o_colored_level col-lg-2">
+                    <h4 style="text-align: left;" class="text-uppercase h5 fw-bold mt-0"><span style="font-size: 14px;"><a href="https://mimarlik.ostimteknik.edu.tr/tr"><span style="font-size: 14px;">FACULTY OF ARCHITECTURE AND DESIGN</span></a></span></h4>
+                    <div data-name="Separator" class="s_hr text-start text-o-color-1 pb0 pt4">
+                        </div>
+                    <div class="s_hr text-start pt4 pb16 text-o-color-5" data-name="Separator">
+                        <hr class="w-100 mx-auto" style="border-top: 2px solid rgb(137, 22, 53);">
+                    </div>
+                    <nav class="nav flex-column">
+                        <a href="https://mtfet.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Industrial Design</a>
+                        <a href="https://mtficmimarlik.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Intrerior Architecture</a>
+                        
+                        
+                    </nav>
+                </div><div class="col-md-6 pt16 pb24 o_colored_level col-lg-2">
+                    <h4 class="text-uppercase h5 fw-bold mt-0"><span style="font-size: 14px;"><a href="https://myo.ostimteknik.edu.tr/tr" data-bs-original-title="" title=""><span style="font-size: 14px;">VOCATIONAL SCHOOL</span></a><br></span></h4>
+                    <div class="s_hr text-start pt4 pb16 text-o-color-5" data-name="Separator">
+                        <hr class="w-100 mx-auto" style="border-top: 2px solid rgb(137, 22, 53);">
+                    </div>
+                    <nav class="nav flex-column">
+                        <a href="https://myobilgisayar.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Computer Programming</a>
+                        <a href="https://myobilisim.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">informatics Security <br>Engineering </a>
+                        <a href="https://myobct.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Biomedical Device<br>Technology </a>
+                        <a href="https://myodt.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Dış Ticaret</a><a href="https://myodot.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Dijital Oyun Teknolojileri</a><a href="https://myoelektrik.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Elektrik </a><a href="https://myoet.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Elektronik Teknolojisi</a><a href="https://myoeticaret.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">E-Ticaret ve Pazarlama</a><a href="https://myohett.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Hibrid ve Elektrikli Taşıtlar <br>Teknolojisi</a><a href="https://myoimo.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">İş Makineleri Operatörlüğü</a><a href="https://myologistik.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Lojistik</a><a href="https://myomakine.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Makine </a><a href="https://myomekatronik.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Mekatronik  </a><a href="https://myosst.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Silah Sanayi Teknikerliği</a><a href="https://myokk.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Üretimde Kalite Kontrol</a>
+                    </nav>
+                </div><div class="col-md-6 pt16 pb24 o_colored_level col-lg-2">
+                    <h4 class="text-uppercase h5 fw-bold mt-0"><span style="font-size: 14px;"><a href="https://fbe.ostimteknik.edu.tr/tr"><span style="font-size: 14px;">INSTITUTE OF SCIENCE</span></a><br></span></h4>
+                    <div class="s_hr text-start pt4 pb16 text-o-color-5" data-name="Separator">
+                        <hr class="w-100 mx-auto" style="border-top: 2px solid rgb(137, 22, 53);">
+                    </div>
+                    <nav class="nav flex-column">
+                        <a href="https://fbeyazilim.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Yazılım Mühendisliği Tezli<br>(Türkçe) <br>Yüksek Lisans Programı</a>
+                        <a href="https://fbebilgisayar.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Bilgisayar Mühendisliği Tezli<br>(İngilizce)<br>Yüksek Lisans Programı</a>
+                        <a href="https://eeemaster.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Elektrik Elektronik Mühendisliği<br>Tezli (İngilizce)<br>Yüksek Lisans Programı</a><a href="https://mechanicalmaster.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Makine Mühendisliği Tezli <br>(İngilizce) <br>Yüksek Lisans Programı</a>
+                        <a href="https://fbemakine.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Makine Mühendisliği Tezli<br>(Türkçe)<br>Yüksek Lisans Programı</a><a href="https://fbemimarlik.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Mimarlık Tezli<br>(Türkçe)<br>Yüksek Lisans Programı</a>
+                    </nav>
+                </div><div class="col-md-6 pt16 pb24 o_colored_level col-lg-2">
+                    <h4 class="text-uppercase h5 fw-bold mt-0"><span style="font-size: 14px;"><a href="https://sbe.ostimteknik.edu.tr/"><font class="text-black">Graduate School of Business<span style="font-size: 14px;"><a href="https://sbe.ostimteknik.edu.tr/"><font class="text-black">​</font></a></span></font></a></span></h4><div class="s_hr text-start pt4 pb16 text-o-color-5" data-name="Separator">
+                        <hr class="w-100 mx-auto" style="border-top: 2px solid rgb(137, 22, 53);">
+                    </div>
+                    <nav class="nav flex-column">
+                        <a href="https://sbeisletme.ostimteknik.edu.tr/tr" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">İşletme Tezli Yüksek Lisans<br>programı (Türkçe)</a>
+                        <a href="https://sbeuiy.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Uluslararası İşletme Yönetimi<br>Tezli Yüksek Lisans Programı<br>(İngilizce)</a>
+                        <a href="https://sbespty.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Sanayi Politikaları ve Teknoloji<br>Yönetimi Tezli Yüksek Lisans <br>Programı (İngilizce)</a>
+                        <a href="https://sbeibm.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Uluslararası İşletme Yönetimi<br>Uzaktan Eğitim Tezsiz Yüksek<br>Lisans Programı (İngilizce)</a><a href="https://sbegirisimcilik.ostimteknik.edu.tr/" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">Girişimcilik Tezsiz Yüksek<br>Lisans Programı (Türkçe)</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    </li>
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="/en/iletisim" class="nav-link ">
+            <span>Contact Us</span>
+        </a>
+    </li>
+							</ul>
+	                  	</div>
+	                </div>
+	          	</div>
+	    	</div>
+	    </nav>
+            </div>
+                
+                <div id="ostim_consent_banner" class="ostim-consent" role="dialog" aria-modal="true" aria-labelledby="ostim_consent_title" aria-describedby="ostim_consent_desc" hidden="hidden" data-has-consent="0">
+                    <div class="ostim-consent__panel" role="document">
+                        <h2 id="ostim_consent_title" class="ostim-consent__title">
+                            Cookie Preferences
+                        </h2>
+                        <p id="ostim_consent_desc" class="ostim-consent__desc">
+                                We use cookies to improve your experience, analyze traffic and
+                                personalize content. Strictly necessary cookies are always active
+                                for the site to work. You can change your choice at any time via
+                                the “Cookie Settings” link in the footer.
+                                For details, see <a class="ostim-consent__policy" href="https://ostimteknik.edu.tr/cookie-policy">Cookie Policy</a>.
+                        </p>
+                        <div class="ostim-consent__actions">
+                            <button type="button" class="ostim-consent__btn ostim-consent__btn--reject" data-consent="reject">
+                                Reject All
+                            </button>
+                            <button type="button" class="ostim-consent__btn ostim-consent__btn--analytics" data-consent="analytics">
+                                Analytics Only
+                            </button>
+                            <button type="button" class="ostim-consent__btn ostim-consent__btn--accept" data-consent="accept">
+                                Accept All
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+        
+        </body>
+</html>

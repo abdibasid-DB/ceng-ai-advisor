@@ -604,7 +604,7 @@ Increased restrictions to global trade and investment
 Increased government subsidies and industrial policy/uni00A0
 Stricter anti-trust and competition regulations
 Geoeconomic fragmentationDemographic shifts Economic uncertainty
-Societal issues T echnology changeGreen transition
+Societal issues Technology changeGreen transition
 60%
 50%
 47%
@@ -631,7 +631,7 @@ advances in nine key technologies are transforming
 Page 11
 Share of employers surveyed (%)
 0 40 60 80 10020
-T echnology trends driving business transformation, 2025-2030FIGURE 1.2
+Technology trends driving business transformation, 2025-2030FIGURE 1.2
 Source
 World Economic Forum, Future of Jobs Survey 2024.
 AI and information processing technologies
@@ -768,7 +768,7 @@ Source
 Coursera analysis.
 Demand for generative AI skillsFIGURE B1.1
 Generative AI enrolment trend 2022-2024.
-T otal consumer enrolments T otal enterprise enrolments
+Total consumer enrolments Total enterprise enrolments
 Enrolment month
 Demand for generative AI skillsBOX 1.1
 Coursera data generated for the Future of Jobs
@@ -1271,16 +1271,16 @@ Data Specialist, FinTech Engineers, AI and Machine
 Learning Specialists and Software and Applications
 Developers (Figure 2.2).
 Data Entry Clerks
-Bank T ellers and Related Clerks
+Bank Tellers and Related Clerks
 Material-Recording and Stock-Keeping Clerks
-Door-T o-Door Sales Workers, News and
+Door-To-Door Sales Workers, News and
 Street Vendors, and Related Workers
 Administrative Assistants and Executive Secretaries
 Legal Secretaries
 Printing and Related Trades Workers
 Legal Ofﬁcials
 Postal Service Clerks
-T elemarketers
+Telemarketers
 Accounting, Bookkeeping and Payroll Clerks
 Transportation Attendants and Conductors
 Cashiers and Ticket Clerks
@@ -1288,7 +1288,7 @@ Graphic Designers
 Claims Adjusters, Examiners, and Investigators
 -40 -20
 Big Data Specialists
-FinT ech Engineers
+FinTech Engineers
 AI and Machine Learning Specialists
 Software and Applications Developers
 Security Management Specialists
@@ -1313,7 +1313,7 @@ Top fastest declining jobs
 Fastest-growing and fastest-declining jobs, 2025-2030FIGURE 2.2
 Source
 World Economic Forum, Future of Jobs Survey 2024.
-T op jobs by fastest net growth and net decline, projected by surveyed employers
+Top jobs by fastest net growth and net decline, projected by surveyed employers
 
 Page 20
 While technology trends partly contribute to the
@@ -1362,13 +1362,13 @@ subtracting total job displacement from total job creation.
 World Economic Forum, Future of Jobs Survey 2024.
 Note
 1 Drafters, Engineering Technicians, and Mapping Technicians; 2 Farmworkers, Labourers, and Other Agricultural
-Workers; 3Water Transportation Workers, including Ship and Marine Cargo Workers, Controllers, and
-Technicians; 4Sheet and Structural Metal Workers, Moulders and Welders; 5 Sales Representatives, Wholesale
-and Manufacturing, Technical and Scientiﬁc Products; 6Manufacturing, Mining, Construction, and Distribution
-Managers; 7Door-To-Door Sales Workers, News and Street Vendors, and Related Workers
+Workers; 3 Water Transportation Workers, including Ship and Marine Cargo Workers, Controllers, and
+Technicians; 4 Sheet and Structural Metal Workers, Moulders and Welders; 5 Sales Representatives, Wholesale
+and Manufacturing, Technical and Scientiﬁc Products; 6 Manufacturing, Mining, Construction, and Distribution
+Managers; 7 Door-To-Door Sales Workers, News and Street Vendors, and Related Workers
 Job growth and decline (%), 2025-2030FIGURE 2.3
 Big Data Specialists
-FinT ech Engineers
+FinTech Engineers
 AI and Machine Learning Specialists
 Software and Applications Developers
 Security Management Specialists
@@ -1388,7 +1388,7 @@ Data Engineers
 Digital Transformation Specialists
 Process Automation Specialists
 Sustainability Specialists
-Renewable Energy T echnicians
+Renewable Energy Technicians
 System Engineers
 Organisational Development Specialists
 Online Learning Managers
@@ -1398,9 +1398,9 @@ Solar Energy Installation and System Engineers
 Database and Network Professionals
 Car, Van and Motorcycle Drivers
 Full Stack Engineers
-Food Scientists and T echnologists
-ICT Operations and User Support T echnicians
-1Drafters, Engineering T echnicians...
+Food Scientists and Technologists
+ICT Operations and User Support Technicians
+1 Drafters, Engineering Technicians...
 E-commerce Specialists
 Strategic Advisors
 Social Media Strategist
@@ -1412,7 +1412,7 @@ Business Intelligence Analysts
 Energy Engineers
 Advertising and Public Relations Professionals
 Database Architects
-2Farmworkers, Labourers,...
+2 Farmworkers, Labourers,...
 Risk Management Specialists
 Project Managers
 Sales and Marketing Professionals
@@ -1420,8 +1420,8 @@ Social Scientists and Related Workers
 Supply Chain and Logistics Specialists
 Economists
 Management and Organisation Analysts
-University and Higher Education T eachers
-3Water Transportation Workers
+University and Higher Education Teachers
+3 Water Transportation Workers
 Industrial and Production Engineers
 Chefs and Cooks
 Electrotechnology Engineers
@@ -1433,26 +1433,26 @@ Training and Development Specialists
 Chemists and Chemical Laboratory Scientists
 Mechanical Engineers
 Architects and Surveyors
-Secondary Education T eachers
+Secondary Education Teachers
 Garment and Related Trades Workers
 Food Processing and Related Trades Workers
 Compliance Ofﬁcers
 Financial and Investment Advisers
 Health and Education Services Managers
-4Sheet and Structural Metal Workers...
+4 Sheet and Structural Metal Workers...
 Arbitrators, Mediators, and Conciliators
 Relationship Managers
-Special Education T eachers
+Special Education Teachers
 Electrical Equipment Installers and Repairers
 Construction Laborers
 5 Sales Representatives, Wholesale...
 Building Framers, Finishers, and Related Trades Workers
 Sales and Purchasing Agents and Brokers
 Chemical Processing Plant Operators
-Vocational Education T eachers
+Vocational Education Teachers
 Social Work and Counselling Professionals
-Primary School and Early Childhood T eachers
-6Manufacturing, Mining, Construction...
+Primary School and Early Childhood Teachers
+6 Manufacturing, Mining, Construction...
 Food and Beverage Serving Workers
 Shop Salespersons
 Power Production Plant Operators
@@ -1469,7 +1469,7 @@ Assembly and Factory Workers
 Chemical Engineers
 Client Information and Customer Service Workers
 Security Guards
-Recruiters and T echnical Recruiters
+Recruiters and Technical Recruiters
 Insurance Underwriters, Valuers, and Loss Assessors
 Building Caretakers, Cleaners and Housekeepers
 Paralegals and Legal Assistants
@@ -1478,12 +1478,12 @@ Statistical, Finance and Insurance Clerks
 Accountants and Auditors
 Concierges and Hotel Desk Clerks
 Credit and Loans Ofﬁcers
-T elemarketers
+Telemarketers
 Legal Secretaries
 Legal ofﬁcials
 Claims Adjusters, Examiners, and Investigators
 Graphic Designers
-7Door-T o-Door Sales Workers...
+7 Door-To-Door Sales Workers...
 Transportation Attendants and Conductors
 Material-Recording and Stock-Keeping Clerks
 Accounting, Bookkeeping and Payroll Clerks
@@ -1491,7 +1491,7 @@ Printing and Related Trades Workers
 Administrative Assistants and Executive Secretaries
 Cashiers and Ticket Clerks
 Data Entry Clerks
-Bank T ellers and Related Clerks
+Bank Tellers and Related Clerks
 Postal Service Clerks
 
 Page 22
@@ -1571,7 +1571,7 @@ Page 23
 Building Caretakers, Cleaners and Housekeepers
 Administrative Assistants and Executive Secretaries
 Transportation Attendants and Conductors
-Bank T ellers and Related Clerks
+Bank Tellers and Related Clerks
 Printing and Related Trades Workers
 Business Services and Administration Managers
 Accounting, Bookkeeping and Payroll Clerks
@@ -1596,8 +1596,8 @@ Food and Beverage Serving Workers
 General and Operations Managers
 Social Work and Counselling Professionals
 Project Managers
-University and Higher Education T eachers
-Secondary Education T eachers
+University and Higher Education Teachers
+Secondary Education Teachers
 Personal Care Aides
 Millions of jobs
 15 20 25 30 35105-5-10 0
@@ -1606,8 +1606,8 @@ Top largest declining jobs
 -15 15 20 25 30 35105-5-10 0
 Largest growing and declining jobs, 2025-2030FIGURE 2.4
 World Economic Forum, Future of Jobs Survey 2024;
-International Labour Organization, ILOSTAT .
-T op jobs, ordered by largest net job growth and decline, in absolute terms, calculated based on ILO occupation employment statistics and
+International Labour Organization, ILOSTAT.
+Top jobs, ordered by largest net job growth and decline, in absolute terms, calculated based on ILO occupation employment statistics and
 expected net growth reported by employers surveyed.
 
 Page 24
@@ -1615,7 +1615,7 @@ Page 24
 15 largest declining jobs
 Millions of jobs
 World Economic Forum, Future of Jobs Survey 2024;
-International Labour Organization, ILOSTAT .
+International Labour Organization, ILOSTAT.
 Job growth and decline (number of employees), 2025-2030FIGURE 2.5
 Projected job creation (blue) and displacement (purple) between 2025 and 2030, in absolute number of jobs, estimated by surveyed
 employers and calculated based on ILO occupational employment statistics. Projected net number of jobs created or displaced for each
@@ -1651,7 +1651,7 @@ of the fastest growing and declining jobs. In fact,
 2.2
 Expected impact of macrotrends and technology trends on jobs, 2025-2030FIGURE 2.6
 World Economic Forum, Future of Jobs Survey 2024;
-International Labour Organization, ILOSTAT .
+International Labour Organization, ILOSTAT.
 Jobs displaced Net effectJobs created
 9.9M
 9.1M
@@ -1765,7 +1765,7 @@ of total work tasks delivered by humans in
 advancing automation, while 19% is projected
 to derive from expanded human-machine
 collaboration (Figure 2.8).
-People Combination T echnology
+People Combination Technology
 30%
 22%
 47%
@@ -1855,7 +1855,7 @@ Change in proportion of human-performed tasks attributable to increasing automat
 Page 28
 Agriculture, forestry, and
 ﬁshing
-T elecommunications Insurance and pensions
+Telecommunications Insurance and pensions
 management
 93% 96% 97%
 Expected shift in the human share of work task delivery in total ﬁrm output driven by
@@ -2286,7 +2286,7 @@ Working with others
 Engagement skillsCognitive skills
 Physical abilities
 Ethics
-T echnology skillsSelf-efﬁcacy
+Technology skillsSelf-efﬁcacy
 Management skills
 0 20 10040 60 80
 Note
@@ -2316,17 +2316,17 @@ Resilience, ﬂexibility and agility
 Leadership and social inﬂuence
 Creative thinking
 Motivation and self-awareness
-T echnological literacy
+Technological literacy
 Empathy and active listening
 Curiosity and lifelong learning
-T alent management
+Talent management
 Service orientation and customer service
 AI and big data
 Systems thinking
 Resource management and operations
 Dependability and attention to detail
 Quality control
-T eaching and mentoring
+Teaching and mentoring
 Networks and cybersecurity
 Design and user experience
 Multi-lingualism
@@ -2409,12 +2409,12 @@ Decreasing use Increasing useStable use
 Net increase
 AI and big data
 Networks and cybersecurity
-T echnological literacy
+Technological literacy
 Creative thinking
 Resilience, ﬂexibility and agility
 Curiosity and lifelong learning
 Leadership and social inﬂuence
-T alent management
+Talent management
 Analytical thinking
 Environmental stewardship
 Systems thinking
@@ -2422,7 +2422,7 @@ Motivation and self-awareness
 Empathy and active listening
 Design and user experience
 Service orientation and customer service
-T eaching and mentoring
+Teaching and mentoring
 Programming
 Marketing and media
 Resource management and operations
@@ -2531,7 +2531,7 @@ Creative thinking
 2. Education and training
 3. Medical and healthcare services
 4. Advanced manufacturing
-5. T elecommunications
+5. Telecommunications
 6. Information and technology services
 7. Real estate
 8. Professional services
@@ -2546,7 +2546,7 @@ Creative thinking
 Curiosity and lifelong learning
 1. Education and training
 2. Insurance and pensions management
-3. T elecommunications
+3. Telecommunications
 4. Real estate
 5. Information and technology services
 6. Automotive and aerospace
@@ -2569,7 +2569,7 @@ Networks and cybersecurity
 5. Automotive and aerospace
 6. Government and public sector
 7. Supply chain and transportation
-8. T elecommunications
+8. Telecommunications
 9. Advanced manufacturing
 10. Information and technology services
 83%
@@ -2582,7 +2582,7 @@ Networks and cybersecurity
 68%
 Resilience, ﬂexibility and agility
 1. Agriculture, forestry, and ﬁshing
-2. T elecommunications
+2. Telecommunications
 3. Information and technology services
 4. Production of consumer goods
 5. Insurance and pensions management
@@ -2591,7 +2591,7 @@ Resilience, ﬂexibility and agility
 8. Retail and wholesale of consumer goods
 9. Financial services and capital markets
 10. Electronics
-T op 10 industries for increasing skill requirements, 2025-2030
+Top 10 industries for increasing skill requirements, 2025-2030
 100%
 98%
 97%
@@ -2601,7 +2601,7 @@ T op 10 industries for increasing skill requirements, 2025-2030
 90%
 AI and big data
 1. Automotive and aerospace
-2. T elecommunications
+2. Telecommunications
 3. Professional services
 4. Information and technology services
 5. Insurance and pensions management
@@ -2617,7 +2617,7 @@ AI and big data
 75%
 73%
 72%
-T echnological literacy
+Technological literacy
 1. Automotive and aerospace
 2. Financial services and capital markets
 3. Medical and healthcare services
@@ -2635,7 +2635,7 @@ Page 40
 3. Mining and metals
 4. Chemical and advanced materials
 5. Supply chain and transportation
-6. T elecommunications
+6. Telecommunications
 7. Production of consumer goods
 8. Oil and gas
 9. Education and training
@@ -2673,7 +2673,7 @@ Environmental stewardship
 61%
 Leadership and social inﬂuence
 1. Automotive and aerospace
-2. T elecommunications
+2. Telecommunications
 3. Education and training
 4. Information and technology services
 5. Medical and healthcare services
@@ -2690,8 +2690,8 @@ Leadership and social inﬂuence
 62%
 60%
 59%
-T alent management
-Working with othersCognitive skills T echnology skillsSelf-efﬁcacyEthics Management skills
+Talent management
+Working with othersCognitive skills Technology skillsSelf-efﬁcacyEthics Management skills
 70%
 67%
 65%
@@ -2702,7 +2702,7 @@ Analytical thinking
 1. Education and training
 2. Supply chain and transportation
 3. Automotive and aerospace
-4. T elecommunications
+4. Telecommunications
 5. Production of consumer goods
 6. Insurance and pensions management
 7. Advanced manufacturing
@@ -2754,7 +2754,7 @@ required, allowing employers to prioritize resources
 toward more rapidly evolving skill sets.
 Working with others
 Engagement skillsCognitive skills
-T echnology skillsSelf-efﬁcacyPhysical abilities
+Technology skillsSelf-efﬁcacyPhysical abilities
 Management skillsEthics
 AI and big data
 Networks and cybersecurity
@@ -2921,7 +2921,7 @@ Proﬁciency gap
 0.95 1.05 1.15 1.20 1.301.251.101.00
 Working with others
 Engagement skillsCognitive skills
-T echnology skillsSelf-efﬁcacy
+Technology skillsSelf-efﬁcacy
 Management skills Physical abilities
 When growing and declining job roles attach the same level of importance and proﬁciency to a skill, the index equals one. The bigger the
 value, the bigger the gap between growing and declining jobs.
@@ -3117,7 +3117,7 @@ Current capacity for substitution by Generative AI, by skill groupFIGURE B3.1
 Indeed analysis; World Economic Forum, Global Skills Taxonomy.
 No skills have been rated with “very high capacity” for substitution.
 Capacity of GenAI substituting a human in performing a given skill as a percentage share of all granular skills within each skill group.
-Analysis based on GPT -4o, with over 2800 granular skills from the Indeed database as of August 2024.
+Analysis based on GPT-4o, with over 2800 granular skills from the Indeed database as of August 2024.
 Artiﬁcial intelligence and big data
 Reading, writing and mathematics
 Marketing and media
@@ -3127,18 +3127,18 @@ Programming
 Financial management
 Dependability and attention to detail
 Curiosity and lifelong learning
-T echnology literacy
+Technology literacy
 Design and user experience
 Quality management
 Operations and logistics
 Networks and cybersecurity
 Leadership and social inﬂuence
-T alent management
+Talent management
 Analytical thinking
 Service orientation and customer service
 Global citizenship
 Resilience, ﬂexibility and agility
-T eaching, mentoring, and coaching
+Teaching, mentoring, and coaching
 Creative thinking
 Environmental stewardship
 Manual dexterity, endurance and precision
@@ -3290,7 +3290,7 @@ Retail and wholesale of
 consumer goods
 Supply chain and
 transportation
-T elecommunications
+Telecommunications
 +2% +3% -8% +1% +4%
 +7% +8% +4% +11% +4%
 +8% +1% +22% +13% +4%
@@ -3524,7 +3524,7 @@ similarly less positive than in the report’s previous
 edition: Only 44% of surveyed organizations expect
 improvements in their ability to retain talent, a
 decline from 53% two years ago.
-T alent availability when hiring
+Talent availability when hiring
 Talent development of existing workforce
 Talent retention of existing workforce
 -100
@@ -3660,7 +3660,7 @@ Supporting employee health and well-being
 Providing effective reskilling and upskilling
 Improving talent progression and promotion processes
 Offering higher wages
-T apping into diverse talent pools
+Tapping into diverse talent pools
 Offering remote and hybrid work opportunities within countries
 Offering diversity, equity and inclusion policies and programmes
 Improving working hours and overtime policies
@@ -3892,7 +3892,7 @@ less commonly mentioned, adopted by 15% and
 
 Page 56
 Comprehensive diversity, equity and inclusion training for managers and staff
-T argeted recruitment, retention and progression initiatives
+Targeted recruitment, retention and progression initiatives
 Set diversity, equity and inclusion goals, targets or quotas
 Pay equity reviews and salary audits
 Anti-harrasment protocols
@@ -3981,7 +3981,7 @@ Planned implementation of diversity, equity and inclusion measures, 2025-2030, b
 Share of employers surveyed headquartered in each region planning to implement the measure.
 Compr ehensive diversity, equity and inclusion training
 for managers and staf f
-T a rge ted r ecr uit men t , r e t e n tio n and p r o gr e s s i o n i nitia tives
+T a rge ted r ecr uit men t , r e t e n tio n and p r o g r e s s i o n i nitia tives
 Set diversity, equity and inclusion goals, targets or quotas
 Pay equity r eviews and salary audits
 Anti-harrasment pr otocols
@@ -4053,11 +4053,11 @@ Hong Kong SAR,
 China
 Lithuania
 Share of employers surveyed expecting to focus diversity, equity and inclusion measures on the stated demographic group over the 2025
-to 2030 period. T op three economies with the highest share of employer responses for each group.
+to 2030 period. Top three economies with the highest share of employer responses for each group.
 52% 41% 7%
 Wage outlook, 2025-2030FIGURE 4.10
 Share of employers surveyed projecting the share of wages and other forms of workers’ compensation as a percentage of the
-company’ s total revenue to increase, remain stable or decline.
+company’s total revenue to increase, remain stable or decline.
 Similar share as todayGrowing share compared to today Declining share compared to today
 Smaller companies exhibit higher expectations
 regarding growth of wages as a share of total
@@ -4362,7 +4362,7 @@ Re-orienting organization to target new
 business opportunities created by AI
 Transitioning people from jobs that AI will cause
 to decline, to other roles within organization
-Downsizing workforce where AI can replicate people’ s work
+Downsizing workforce where AI can replicate people’s work
 Organization has low exposure to AI
 Barriers to AI adoptionFIGURE 4.13
 World Economic Forum, Executive Opinion Survey 2024.
@@ -4428,7 +4428,7 @@ Hospitals and Health Care
 Manufacturing
 Oil, Gas, and Mining
 Professional Services
-T echnology, Information
+Technology, Information
 and Media
 Transportation, Logistics,
 Supply Chain and Storage
@@ -5544,7 +5544,7 @@ Motivation and self-awareness
 Resilience, ﬂexibility and agility
 Empathy and active listening
 Leadership and social inﬂuence
-T eaching and mentoring
+Teaching and mentoring
 Analytical thinking
 Creative thinking
 Multi-lingualism
@@ -5554,15 +5554,15 @@ Marketing and media
 Service orientation and customer service
 Quality control
 Resource management and operations
-T alent management
+Talent management
 Manual dexterity, endurance and precision
 Sensory-processing abilities
 AI and big data
 Design and user experience
 Networks and cybersecurity
 Programming
-T echnological literacy
-Self-efﬁcacyT echnology skills Working
+Technological literacy
+Self-efﬁcacyTechnology skills Working
 with others Ethics
 Management
 skills
@@ -5592,7 +5592,7 @@ Motivation and self-awareness
 Resilience, ﬂexibility and agility
 Empathy and active listening
 Leadership and social inﬂuence
-T eaching and mentoring
+Teaching and mentoring
 Creative thinking
 Multi-lingualism
 Reading, writing and mathematics
@@ -5601,15 +5601,14 @@ Marketing and media
 Service orientation and customer service
 Quality control
 Resource management and operations
-T alent management
 Manual dexterity, endurance and precision
 Sensory-processing abilities
 AI and big data
 Design and user experience
 Networks and cybersecurity
 Programming
-T echnological literacy
-Self-efﬁcacyT echnology skills Working
+Technological literacy
+Self-efﬁcacyTechnology skills Working
 with others Ethics
 Management
 skills
@@ -5673,10 +5672,10 @@ Automotive and Aerospace
 Chemical and Advanced Materials
 Education and Training
 Electronics
-Energy T echnology and Utilities
+Energy Technology and Utilities
 Financial Services and Capital Markets
 Government and Public Sector
-Information and T echnology Services
+Information and Technology Services
 Infrastructure
 Insurance and Pensions Management
 Medical and Healthcare Services
@@ -5687,7 +5686,7 @@ Professional Services
 Real Estate
 Retail and Wholesale of Consumer Goods
 Supply Chain and Transportation
-T elecommunications
+Telecommunications
 
 Page 83
 The fact that Future of Jobs Survey respondents
@@ -5745,7 +5744,7 @@ Chemical and
 Advanced Materials
 Accommodation,
 Food, and Leisure
-Energy T echnology
+Energy Technology
 and Utilities
 Medical and
 Healthcare Services
@@ -5759,12 +5758,12 @@ Gas
 Government and Public Sector
 Automotive and Aerospace
 Information and
-T echnology Services
+Technology Services
 Retail and Wholesale
 of Consumer Goods
 Mining and Metals
 Production of Consumer Goods
-T elecommunications
+Telecommunications
 Financial Services and
 Capital Markets
 Electronics
@@ -6312,7 +6311,7 @@ Professional services
 Real estate
 Retail and wholesale of consumer goods
 Supply chain and transportation
-T elecommunications
+Telecommunications
 Future of Jobs Report 2025 90
 
 Page 91
@@ -6349,7 +6348,7 @@ Professional services
 Real estate
 Retail and wholesale of consumer goods
 Supply chain and transportation
-T elecommunications
+Telecommunications
 Future of Jobs Report 2025 91
 
 Page 92
@@ -6371,14 +6370,14 @@ Professional services
 Real estate
 Retail and wholesale of consumer goods
 Supply chain and transportation
-T elecommunications
+Telecommunications
 Global citizenship
 Dependability and attention to detail
 Motivation and self-awareness
 Resilience, ﬂexibility and agility
 Empathy and active listening
 Leadership and social inﬂuence
-T eaching and mentoring
+Teaching and mentoring
 Multi-lingualism
 Reading, writing and mathematics
 Systems thinking
@@ -6386,12 +6385,11 @@ Marketing and media
 Service orientation and customer service
 Quality control
 Resource management and operations
-T alent management
 Sensory-processing abilities
 AI and big data
 Design and user experience
-T echnological literacy
-Self-efﬁcacyT echnology skills Working
+Technological literacy
+Self-efﬁcacyTechnology skills Working
 with others Ethics
 Management
 skills
@@ -6424,23 +6422,21 @@ Professional services
 Real estate
 Retail and wholesale of consumer goods
 Supply chain and transportation
-T elecommunications
+Telecommunications
 Skill evolution, 2025-2030TABLE 5.8
 Net difference between the share of employers which consider skills to be increasing and decreasing in importance to their workers from
 2025 to 2030 (%). The share of employers predicting skill stability is not used in the calculation.
 Net difference
 Motivation and self-awareness
 Resilience, ﬂexibility and agility
-T eaching and mentoring
+Teaching and mentoring
 Reading, writing and mathematics
 Marketing and media
 Service orientation and customer service
 Resource management and operations
-T alent management
 Sensory-processing abilities
 Design and user experience
-T echnological literacy
-Self-efﬁcacyT echnology skills Working
+Self-efﬁcacyTechnology skills Working
 with others Ethics
 Management
 Cognitive
@@ -6998,12 +6994,10 @@ Engagement skills Marketing and media
 Service orientation and customer service
 Management skills Quality control
 Resource management and operations
-Talent management
 Physical abilities Manual dexterity, endurance and precision
 Sensory-processing abilities
 Technology skills AI and big data
 Design and user experience
-Technological literacy
 To limit the potential impact of randomisation
 inherent in survey data, two techniques were
 employed: capping the maximum impact of a
@@ -7733,7 +7727,6 @@ CORE SKILLS OF 2025
 SKILLS OF INCREASING USE BY 2030
 100%
 94%
-Technological literacy
 88%
 81%
 1 / 2Economy Proﬁle
@@ -7987,7 +7980,6 @@ CORE SKILLS OF 2025
 58%
 SKILLS OF INCREASING USE BY 2030
 91%
-Technological literacy
 79%
 76%
 75%
@@ -8224,14 +8216,10 @@ CORE SKILLS OF 2025
 86%
 73%
 64%
-Technological literacy
-64%
 SKILLS OF INCREASING USE BY 2030
 96%
 82%
 77%
-73%
-Technological literacy
 73%
 1 / 2Economy Proﬁle
 Austria
@@ -8452,10 +8440,8 @@ Skills of the most increase in use by 2030
 CORE SKILLS OF 2025
 58%
 SKILLS OF INCREASING USE BY 2030
-Technological literacy
 71%
 67%
-Talent management
 65%
 1 / 2Economy Proﬁle
 Bahrain
@@ -8675,7 +8661,6 @@ CORE SKILLS OF 2025
 57%
 93%
 79%
-Talent management
 72%
 1 / 2Economy Proﬁle
 Belgium
@@ -9341,7 +9326,6 @@ Growing Global Similar Global Declining Global
 Talent trend
 Share of respondents who expect their talent availability to improve or worsen in ﬁve years
 Improving Global average Worsening Global average
-Talent availability when hiring
 45% -100% +100% 26%
 3% -100% +100% 68%
 19% -100% +100% 34%
@@ -9408,7 +9392,6 @@ Executive Secretaries
 88%
 81%
 94%
-Talent management
 88%
 Colombia
 31.5
@@ -10109,7 +10092,6 @@ Payroll Clerks
 -31 -18 31
 57%
 93%
-Talent management
 Hungary
 7.1
 146
@@ -13515,7 +13497,6 @@ Offering remote and hybrid work opportunities within countries
 74 Global 77
 61 Global 62
 2 / 2Industry Proﬁle
-Energy Technology and Utilities
 255
 
 Page 256
@@ -13773,7 +13754,6 @@ Page 265
 Offering remote and hybrid work opportunities within countries
 74% 43%
 74% 63%
-Tapping into diverse talent pools
 74% 47%
 69% 63%
 49% 46%
@@ -14221,7 +14201,6 @@ Data Engineers 35 36 35
 70% 70%
 37 Global 41
 24 Global 19
-Telecommunications
 282
 
 Page 283
@@ -14247,7 +14226,6 @@ Page 283
 89 Global 69
 74 Global 77
 67 Global 62
-Telecommunications
 283
 
 Page 284

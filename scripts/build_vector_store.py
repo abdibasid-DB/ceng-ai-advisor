@@ -9,6 +9,8 @@ from __future__ import annotations
 
 import json
 import shutil
+import os
+import stat
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -29,7 +31,6 @@ MANIFEST_PATH = VECTOR_STORE_ROOT / "vector_store_manifest.json"
 
 COLLECTION_NAME = "ceng_advisor_chunks"
 DISTANCE_METRIC = "cosine"
-EXPECTED_CHUNKS = 803
 EXPECTED_DIMENSION = 384
 BATCH_SIZE = 200
 
@@ -81,6 +82,8 @@ def validate_inputs(
     embeddings: np.ndarray,
     embedding_metadata: list[dict[str, Any]],
     approved_source_ids: set[str],
+    expected_chunks: int,
+    expected_dimension: int,
 ) -> dict[str, Any]:
     sorted_chunks = sorted(chunks, key=lambda item: (item["source_id"], item["chunk_index"], item["chunk_id"]))
     chunk_ids = [chunk["chunk_id"] for chunk in sorted_chunks]
@@ -101,14 +104,14 @@ def validate_inputs(
     }
 
     problems = []
-    if validation["chunk_count"] != EXPECTED_CHUNKS:
-        problems.append(f"expected {EXPECTED_CHUNKS} chunks, found {validation['chunk_count']}")
-    if validation["embedding_count"] != EXPECTED_CHUNKS:
-        problems.append(f"expected {EXPECTED_CHUNKS} embeddings, found {validation['embedding_count']}")
-    if validation["metadata_count"] != EXPECTED_CHUNKS:
-        problems.append(f"expected {EXPECTED_CHUNKS} metadata records, found {validation['metadata_count']}")
-    if validation["embedding_dimension"] != EXPECTED_DIMENSION:
-        problems.append(f"expected embedding dimension {EXPECTED_DIMENSION}, found {validation['embedding_dimension']}")
+    if validation["chunk_count"] != expected_chunks:
+        problems.append(f"expected {expected_chunks} chunks, found {validation['chunk_count']}")
+    if validation["embedding_count"] != expected_chunks:
+        problems.append(f"expected {expected_chunks} embeddings, found {validation['embedding_count']}")
+    if validation["metadata_count"] != expected_chunks:
+        problems.append(f"expected {expected_chunks} metadata records, found {validation['metadata_count']}")
+    if validation["embedding_dimension"] != expected_dimension:
+        problems.append(f"expected embedding dimension {expected_dimension}, found {validation['embedding_dimension']}")
     if validation["chunk_id_duplicates"]:
         problems.append("duplicate chunk IDs found")
     if not validation["mapping_order_matches"]:
@@ -127,8 +130,12 @@ def validate_inputs(
 
 
 def reset_chroma_storage(path: Path) -> None:
+    def clear_readonly_and_retry(function: Any, item_path: str, _exc_info: Any) -> None:
+        os.chmod(item_path, stat.S_IWRITE)
+        function(item_path)
+
     if path.exists():
-        shutil.rmtree(path)
+        shutil.rmtree(path, onexc=clear_readonly_and_retry)
     path.mkdir(parents=True, exist_ok=True)
 
 
@@ -139,11 +146,20 @@ def build_vector_store() -> dict[str, Any]:
     embedding_manifest = load_json(EMBEDDING_MANIFEST_PATH)
     sources = load_json(SOURCES_PATH)
     approved_source_ids = {source["source_id"] for source in sources["sources"]}
+    expected_chunks = int(embedding_manifest["total_chunks"])
+    expected_dimension = int(embedding_manifest["embedding_dimension"])
 
-    input_validation = validate_inputs(chunks, embeddings, embedding_metadata, approved_source_ids)
+    input_validation = validate_inputs(
+        chunks,
+        embeddings,
+        embedding_metadata,
+        approved_source_ids,
+        expected_chunks,
+        expected_dimension,
+    )
     sorted_chunks = sorted(chunks, key=lambda item: (item["source_id"], item["chunk_index"], item["chunk_id"]))
 
-    CHROMA_PATH.mkdir(parents=True, exist_ok=True)
+    reset_chroma_storage(CHROMA_PATH)
     client = chromadb.PersistentClient(path=str(CHROMA_PATH))
     collection = client.get_or_create_collection(
         name=COLLECTION_NAME,
@@ -175,8 +191,8 @@ def build_vector_store() -> dict[str, Any]:
         "collection_count_before_indexing": collection_count_before,
         "indexed_record_count": indexed_count,
         "persistent_reload_record_count": reloaded_count,
-        "indexed_count_matches_expected": indexed_count == EXPECTED_CHUNKS,
-        "persistent_reload_ok": reloaded_count == EXPECTED_CHUNKS,
+        "indexed_count_matches_expected": indexed_count == expected_chunks,
+        "persistent_reload_ok": reloaded_count == expected_chunks,
         "sample_documents_present": all(bool(document) for document in peek.get("documents", [])),
         "sample_metadata_present": all(bool(metadata) for metadata in peek.get("metadatas", [])),
     }
@@ -189,9 +205,9 @@ def build_vector_store() -> dict[str, Any]:
         "persistence_path": str(CHROMA_PATH.relative_to(PROJECT_ROOT)).replace("\\", "/"),
         "collection_name": COLLECTION_NAME,
         "embedding_model": embedding_manifest["model_name"],
-        "embedding_dimension": EXPECTED_DIMENSION,
+        "embedding_dimension": expected_dimension,
         "distance_metric": DISTANCE_METRIC,
-        "expected_chunk_count": EXPECTED_CHUNKS,
+        "expected_chunk_count": expected_chunks,
         "indexed_record_count": indexed_count,
         "metadata_fields": METADATA_FIELDS,
         "build_timestamp": utc_now(),
@@ -206,9 +222,11 @@ def build_vector_store() -> dict[str, Any]:
     }
 
     VECTOR_STORE_ROOT.mkdir(parents=True, exist_ok=True)
-    with MANIFEST_PATH.open("w", encoding="utf-8", newline="\n") as file:
+    tmp_manifest_path = MANIFEST_PATH.with_suffix(".json.tmp")
+    with tmp_manifest_path.open("w", encoding="utf-8") as file:
         json.dump(manifest, file, ensure_ascii=False, indent=2)
         file.write("\n")
+    os.replace(tmp_manifest_path, MANIFEST_PATH)
 
     return manifest
 

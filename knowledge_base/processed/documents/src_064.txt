@@ -1,0 +1,214 @@
+Source ID: src_064
+Title: CENG 303 Operating Systems Design and Construction Course Syllabus
+
+Page 1
+
+FACULTY OF ENGINEERING
+COURSE SYLLABUS FORM
+Doküman Kodu MF.FR.003
+Yayın Tarihi 06.09.2024
+Revizyon No 0
+Revizyon Tarihi 0
+Gizlilik Sınıfı Hizmet içi
+
+CENG 303 – OPERATING SYSTEMS DESIGN AND CONSTRUCTION
+Course Code Course Name Semester
+CENG 303 Operating Systems Design and Construction Fall ☒ Spring ☐ Summer ☐
+Hours Credit ECTS
+Theory Practice Lab
+3 8
+3 - -
+
+Course Details
+Department Computer Engineering
+Course Language English
+Course Level Undergraduate ☒ Graduate ☐
+Mode of Delivery Face to Face ☒ Online ☐ Hybrid ☐
+Course Type Compulsory ☒ Elective ☐
+Course Objectives
+The information in CENG 303 helps students comprehend the fundamentals
+of operating systems (OS), which serve as the foundational computing
+framework for a wide range of computer applications. The course bridges the
+gap that exists between user applications th at require OS services and
+computer architecture. Students can design and manage computing
+infrastructures, create high performance and concurrent software
+applications, and create systems applications and libraries.
+Course Content
+
+Introduction, Operating-System Structures , Processes, Threads &
+Concurrency, CPU Scheduling , Synchronization Tools and Examples,
+Deadlocks
+Course Method/
+Techniques Lecture ☒ Question & Answer ☒ Presentation ☐ Discussion ☒
+Prerequisites/
+Corequisites
+Work Placement(s)
+Textbook/References/Materials
+
+• Operating System Concepts by Abraham Silberschatz, Peter Baer Galvin, Greg Gagne, 10 th Ed.
+Wiley
+
+Page 2
+
+FACULTY OF ENGINEERING
+COURSE SYLLABUS FORM
+Doküman Kodu MF.FR.003
+Yayın Tarihi 06.09.2024
+Revizyon No 0
+Revizyon Tarihi 0
+Gizlilik Sınıfı Hizmet içi
+
+Course Category
+Mathematics and Basic Sciences ☐
+
+Education ☐
+Engineering ☒ Science ☐
+Engineering Design ☐ Health ☐
+Social Sciences ☐ Profession ☐
+
+Weekly Schedule
+No Topics Materials/Notes
+1 Introduction: What Operating Systems Do, Computer-System
+Organization, Computer-System Architecture, Operating-System
+Operations, Resource Management
+
+2 Security and Protection, Virtualization, Distributed Systems, Kernel Data
+Structures, Computing Environments, Free and Open-Source Operating
+Systems
+
+3 Operating-System Structures: Operating-System Services, User and
+Operating-System Interface, System Calls, System Services, Linkers and
+Loaders, Why Applications Are Operating-System Specific
+
+4 Operating-System Design and Implementation, Operating-System
+Structure, Building and Booting an Operating System, Operating-System
+Debugging
+
+5 Processes: Process Concept, Process Scheduling, Operations on
+Processes
+
+6 Interprocess Communication, IPC in Shared-Memory Systems, IPC in
+Message-Passing Systems, Examples of IPC Systems, Communication in
+Client– Server Systems
+
+7 Threads & Concurrency: Overview, Multicore Programming,
+Multithreading Models, Thread Libraries
+
+8 Midterm Exam
+9 Implicit Threading, Threading Issues, Operating-System Examples
+10 CPU Scheduling: Basic Concepts, Scheduling Criteria, Scheduling
+Algorithms, Thread Scheduling
+
+11 Multi-Processor Scheduling, Real-Time CPU Scheduling, Operating-System
+Examples, Algorithm Evaluation
+
+12 Synchronization Tools: Background, The Critical-Section Problem,
+Peterson’s Solution
+
+13 Hardware Support for Synchronization, Mutex Locks, Semaphores,
+Monitors, Liveness, Evaluation
+
+14 Synchronization Examples: Classic Problems of Synchronization,
+Synchronization within the Kernel, POSIX Synchronization, Synchronization
+in Java, Alternative Approaches
+
+15 Deadlocks: System Model, Deadlock in Multithreaded Applications,
+Deadlock Characterization, Methods of Handling Deadlocks, Deadlock
+Prevention, Deadlock Avoidance, Deadlock Detection, Recovery from
+Deadlock
+
+16 Final Exam
+
+Page 3
+
+FACULTY OF ENGINEERING
+COURSE SYLLABUS FORM
+Doküman Kodu MF.FR.003
+Yayın Tarihi 06.09.2024
+Revizyon No 0
+Revizyon Tarihi 0
+Gizlilik Sınıfı Hizmet içi
+
+Assessment Methods and Criteria
+In-term studies Quantity Percentage
+Attendance 12 6
+Lab
+Practice
+Fieldwork
+Course-specific internship
+Quiz/Studio/Criticize
+Homework 4 24
+Presentation / Seminar
+Project
+Report
+Seminar
+Midterm Exam 1 30
+Final Exam 1 40
+Total 100%
+Contribution of Midterm Studies
+to Success Grade
+Contribution of End of Semester
+Studies to Success Grade
+Total 100%
+
+ECTS Allocated Based on Student Workload
+Activities Quantity Duration (Hrs) Total Workload
+Course Hours 14 3 42
+Lab
+Practice
+Fieldwork
+Course-specific Work Placement
+Out-of-class study time 15 4 60
+Quiz/Studio/Criticize
+Homework 4 15 60
+Presentation / Seminar
+Project
+Report
+Midterm Exam and Preparation for Midterm 1 19 19
+Final Exam and Preparation for Final Exam 1 19 19
+Total Workload 200
+Total Workload / 25 8
+ECTS Credit 8
+
+Page 4
+
+FACULTY OF ENGINEERING
+COURSE SYLLABUS FORM
+Doküman Kodu MF.FR.003
+Yayın Tarihi 06.09.2024
+Revizyon No 0
+Revizyon Tarihi 0
+Gizlilik Sınıfı Hizmet içi
+
+Course Learning Outcomes
+No Outcome
+L1 Recognize operating system design and implementation
+L2 Recognize how complicated software systems organize their memory and data structures
+L3 Recognize how a sophisticated software system shares resources
+L4 Recognize how a complicated software system exchanges data concurrently
+L5 Check the integrity of the data in concurrent systems
+L6 Create and put into practice algorithms for issues involving synchronization and concurrency
+
+Program Competencies
+No Outcome
+P1 An ability to apply knowledge of science, mathematics, and engineering
+P2 An ability to design programs and algorithms
+P3 An ability to work with multi-disciplinary teams
+P4 An ability to identify, formulate, and solve engineering problems
+P5 Take responsibility to solve unpredictable and complex problems encountered in applications as
+an individual and as a member of a team
+P6 Plan and manage activities in teamwork
+P7 An ability to use the techniques, skills, and modern engineering tools necessary for engineering
+practice
+P8 Can do research on interdisciplinary fields
+
+Contribution of Course Learning Outcomes to Program Competencies/Outcomes
+Contribution Level: 1: Very Slight, 2: Slight, 3: Moderate, 4: Significant, 5: Very Significant
+P1 P2 P3 P4 P5 P6 P7 P8 P9 P10 P11 P12 P13 P14 P15 Total
+L1 3 4 7
+L2 2 3 5
+L3 3 2 5
+L4 2 2 4
+L5 4 4
+L6 5 4 9
+Total 34
