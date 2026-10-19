@@ -184,11 +184,43 @@ class QueryUnderstandingTests(unittest.TestCase):
         self.assertTrue(understanding.requires_clarification)
 
     def test_out_of_domain_negatives_do_not_become_domain_questions(self):
-        for question in ("football transfer news", "make me a cake", "what is the weather today", "which social clubs are best in London"):
+        for question in ("football transfer news", "make me a cake", "what is the weather today", "which social clubs are best in London", "Can you help me with pizza?"):
             with self.subTest(question=question):
                 understanding = understand_query(question)
                 self.assertEqual(understanding.kind, "out_of_scope_persona_meta")
                 self.assertTrue(understanding.is_out_of_domain)
+
+    def test_assistant_orientation_is_help_with_or_without_domain_history(self):
+        questions = (
+            "what can I ask you?",
+            "what should students ask you?",
+            "who are you?",
+            "what are you?",
+            "what can you help with?",
+            "what can you help me with?",
+            "how do you work?",
+            "what can you do?",
+            "what topics do you cover?",
+            "how does this chatbot work?",
+            "hey what can i ask u about?",
+        )
+        for previous in (None, PreviousTurn("Who are the academic staff at OSTIM?")):
+            for question in questions:
+                with self.subTest(question=question, previous=previous):
+                    result = resolve_query(question, previous)
+                    self.assertEqual(result.kind, "assistant_help")
+                    self.assertIsNone(result.resolved_question)
+                    self.assertFalse(result.understanding.is_out_of_domain)
+                    self.assertFalse(result.understanding.requires_clarification)
+
+    def test_help_wording_does_not_capture_domain_questions(self):
+        for question in (
+            "What can you tell me about internships?",
+            "How do computer networks work?",
+            "What should students ask you about programming?",
+        ):
+            with self.subTest(question=question):
+                self.assertEqual(understand_query(question).kind, "standalone_domain_question")
 
     def test_external_tasks_with_domain_words_stay_out_of_scope(self):
         for question in (

@@ -10,7 +10,7 @@ from pydantic import BaseModel, Field, field_validator
 MAX_QUESTION_LENGTH = 500
 MAX_SESSION_ID_LENGTH = 80
 
-AnswerStatus = Literal["answered", "insufficient_information", "out_of_scope", "error"]
+AnswerStatus = Literal["answered", "help", "insufficient_information", "out_of_scope", "error"]
 
 
 class ChatRequest(BaseModel):
@@ -87,6 +87,7 @@ class ChatResponse(BaseModel):
     status: AnswerStatus
     answer: str
     llm_called: bool = False
+    example_questions: list[str] = Field(default_factory=list)
     sources: list[SourceResponse] = Field(default_factory=list)
     retrieved_context: list[RetrievedContextResponse] = Field(default_factory=list)
     retrieval_metadata: dict[str, Any] = Field(default_factory=dict)
