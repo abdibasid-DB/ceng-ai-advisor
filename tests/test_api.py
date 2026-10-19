@@ -1,4 +1,5 @@
 import sys
+import json
 import unittest
 from pathlib import Path
 
@@ -68,8 +69,8 @@ class FakePipeline:
         self.error = error
         self.calls = []
 
-    def answer(self, question, conversation_context=None):
-        self.calls.append({"question": question, "conversation_context": conversation_context})
+    def answer(self, question, conversation_context=None, resolved_question=None):
+        self.calls.append({"question": question, "conversation_context": conversation_context, "resolved_question": resolved_question})
         if self.error:
             raise self.error
         return self.result
@@ -79,9 +80,36 @@ class EchoPipeline:
     def __init__(self):
         self.calls = []
 
-    def answer(self, question, conversation_context=None):
-        self.calls.append({"question": question, "conversation_context": conversation_context})
+    def answer(self, question, conversation_context=None, resolved_question=None):
+        self.calls.append({"question": question, "conversation_context": conversation_context, "resolved_question": resolved_question})
         return {**rag_result("answered"), "question": question}
+
+
+class FakeStreamPipeline(FakePipeline):
+    def __init__(self, result=None, events=None, error=None):
+        super().__init__(result=result, error=error)
+        self.events = events
+
+    def answer_stream(self, question, conversation_context=None, resolved_question=None):
+        self.calls.append({"question": question, "conversation_context": conversation_context, "resolved_question": resolved_question})
+        if self.error:
+            raise self.error
+        if self.events is not None:
+            yield from self.events
+            return
+        yield {
+            "event": "metadata",
+            "retrieval_metadata": {"top_k": 5, "evidence_sufficient": True},
+            "retrieved_context": rag_result("answered")["retrieved_context"],
+            "llm_called": True,
+        }
+        yield {"event": "token", "text": "Computer Engineering "}
+        yield {"event": "token", "text": "combines software and hardware [S1]."}
+        yield {"event": "final", "result": {**rag_result("answered"), "question": question}}
+
+
+def decode_stream_response(response):
+    return [json.loads(line) for line in response.text.splitlines() if line.strip()]
 
 
 class ApiTests(unittest.TestCase):
@@ -124,14 +152,260 @@ class ApiTests(unittest.TestCase):
         self.assertEqual(data["session_id"], "session-a")
         self.assertIsNone(pipeline.calls[0]["conversation_context"])
 
-    def test_follow_up_question_receives_recent_session_context(self):
+    def test_contextual_follow_up_receives_resolved_question_not_full_history_query(self):
         pipeline = self.override_pipeline(EchoPipeline())
         self.client.post("/api/v1/chat", json={"question": "What programming languages are taught?", "session_id": "session-a"})
         response = self.client.post("/api/v1/chat", json={"question": "What about internships?", "session_id": "session-a"})
         self.assertEqual(response.status_code, 200)
         self.assertEqual(pipeline.calls[1]["question"], "What about internships?")
         self.assertIn("What programming languages are taught?", pipeline.calls[1]["conversation_context"])
+        self.assertIn("Resolved current question", pipeline.calls[1]["conversation_context"])
+        self.assertNotIn("Previous assistant answer", pipeline.calls[1]["conversation_context"])
         self.assertNotIn("Computer Engineering combines software and hardware", pipeline.calls[1]["conversation_context"])
+        self.assertIn("internships", pipeline.calls[1]["resolved_question"].lower())
+
+    def test_ordinal_follow_up_passes_previous_answer_without_citation_labels(self):
+        pipeline = self.override_pipeline(
+            FakePipeline(
+                result={
+                    **rag_result("answered"),
+                    "answer": "Useful skills include C programming, microcontroller interfacing, and digital logic [S1].",
+                }
+            )
+        )
+        self.client.post("/api/v1/chat", json={"question": "What skills do I need for embedded systems?", "session_id": "session-a"})
+        response = self.client.post(
+            "/api/v1/chat", json={"question": "can you explain the first one in more detail?", "session_id": "session-a"}
+        )
+        self.assertEqual(response.status_code, 200)
+        context = pipeline.calls[1]["conversation_context"]
+        self.assertIn("Previous assistant answer (not evidence)", context)
+        self.assertIn("C programming", context)
+        self.assertNotIn("[S1]", context)
+        self.assertIn("c programming", pipeline.calls[1]["resolved_question"].lower())
+
+    def test_streaming_ordinal_follow_up_uses_previous_answer(self):
+        pipeline = self.override_pipeline(
+            FakeStreamPipeline(
+                result={
+                    **rag_result("answered"),
+                    "answer": "Useful skills include C programming, microcontroller interfacing, and digital logic [S1].",
+                },
+                events=[{"event": "final", "result": {
+                    **rag_result("answered"),
+                    "answer": "Useful skills include C programming, microcontroller interfacing, and digital logic [S1].",
+                }}],
+            )
+        )
+        self.client.post("/api/v1/chat/stream", json={"question": "What skills do I need for embedded systems?", "session_id": "s-stream"})
+        self.client.post("/api/v1/chat/stream", json={"question": "what about the second one?", "session_id": "s-stream"})
+        self.assertIn("microcontroller interfacing", pipeline.calls[1]["resolved_question"].lower())
+
+    def test_source_follow_up_after_refusal_does_not_cite_older_answer(self):
+        pipeline = self.override_pipeline(FakePipeline())
+        self.client.post("/api/v1/chat", json={"question": "What is Computer Engineering?", "session_id": "s-ref"})
+        pipeline.result = {**rag_result("insufficient_information"), "sources": [], "retrieved_context": []}
+        self.client.post("/api/v1/chat", json={"question": "What is the exact OSTIM CENG placement rate?", "session_id": "s-ref"})
+        for endpoint in ("/api/v1/chat", "/api/v1/chat/stream"):
+            with self.subTest(endpoint=endpoint):
+                response = self.client.post(endpoint, json={"question": "what sources did you use for that?", "session_id": "s-ref"})
+                data = response.json() if endpoint.endswith("/chat") else decode_stream_response(response)[-1]["data"]
+                self.assertEqual(data["sources"], [])
+                self.assertIn("did not use any sources", data["answer"])
+
+    def test_source_follow_up_uses_previous_answer_sources(self):
+        pipeline = self.override_pipeline(EchoPipeline())
+        self.client.post(
+            "/api/v1/chat",
+            json={"question": "How much mathematics is required in Computer Engineering?", "session_id": "session-a"},
+        )
+        response = self.client.post(
+            "/api/v1/chat",
+            json={"question": "Where did you get this information from?", "session_id": "session-a"},
+        )
+        data = response.json()
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(data["status"], "answered")
+        self.assertEqual(len(pipeline.calls), 1)
+        self.assertTrue(data["retrieval_metadata"]["used_previous_answer_sources"])
+        self.assertEqual(data["sources"][0]["source_id"], "src_001")
+        self.assertEqual(data["sources"][0]["supporting_passages"], ["Computer Engineering combines software, hardware, and systems topics."])
+        self.assertIn("About the Department", data["answer"])
+
+    def test_project_follow_up_keeps_preference_even_after_insufficient_turn(self):
+        pipeline = self.override_pipeline(EchoPipeline())
+        self.client.post("/api/v1/chat", json={"question": "I prefer hardware.", "session_id": "session-a"})
+        self.client.post("/api/v1/chat", json={"question": "What projects should I build?", "session_id": "session-a"})
+        self.assertIn("hardware", pipeline.calls[-1]["resolved_question"].lower())
+
+    def test_source_request_without_answer_does_not_retrieve(self):
+        pipeline = self.override_pipeline(EchoPipeline())
+        response = self.client.post("/api/v1/chat", json={"question": "Where did you get that information?", "session_id": "session-a"})
+        self.assertEqual(response.json()["status"], "insufficient_information")
+        self.assertEqual(pipeline.calls, [])
+        self.assertIn("About the Department", data["answer"])
+
+    def test_project_follow_up_keeps_preference_even_after_insufficient_turn(self):
+        pipeline = self.override_pipeline(EchoPipeline())
+        self.client.post("/api/v1/chat", json={"question": "I prefer hardware.", "session_id": "session-a"})
+        self.client.post("/api/v1/chat", json={"question": "What projects should I build?", "session_id": "session-a"})
+        self.assertIn("hardware", pipeline.calls[-1]["resolved_question"].lower())
+
+    def test_source_request_without_answer_does_not_retrieve(self):
+        pipeline = self.override_pipeline(EchoPipeline())
+        response = self.client.post("/api/v1/chat", json={"question": "Where did you get that information?", "session_id": "session-a"})
+        self.assertEqual(response.json()["status"], "insufficient_information")
+        self.assertEqual(pipeline.calls, [])
+
+    def test_standalone_question_uses_rag_without_previous_context(self):
+        pipeline = self.override_pipeline(EchoPipeline())
+        response = self.client.post(
+            "/api/v1/chat",
+            json={"question": "What programming languages should I learn?", "session_id": "session-a"},
+        )
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json()["status"], "answered")
+        self.assertEqual(len(pipeline.calls), 1)
+        self.assertIsNone(pipeline.calls[0]["conversation_context"])
+        self.assertEqual(pipeline.calls[0]["resolved_question"], "What programming languages should I learn?")
+
+    def test_typo_in_computer_engineering_resolves_before_classification(self):
+        pipeline = self.override_pipeline(EchoPipeline())
+        response = self.client.post(
+            "/api/v1/chat",
+            json={"question": "what is computer engneering?", "session_id": "session-a"},
+        )
+        data = response.json()
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(data["question"], "what is computer engneering?")
+        self.assertEqual(data["status"], "answered")
+        self.assertEqual(len(pipeline.calls), 1)
+        self.assertEqual(pipeline.calls[0]["resolved_question"], "What is Computer Engineering?")
+        self.assertEqual(data["retrieval_metadata"]["resolved_question"], "What is Computer Engineering?")
+        self.assertTrue(data["retrieval_metadata"]["query_normalization"]["changed"])
+
+    def test_informal_domain_questions_resolve_to_retrieval_queries(self):
+        examples = {
+            "what computer enginer do": "What does a Computer Engineer do?",
+            "is computer eng hard": "Is Computer Engineering difficult?",
+            "which programing language should i lern first": "Which programming language should I learn first?",
+            "can i work ai after computer eng": "Can I work in AI after studying Computer Engineering?",
+            "how much math i need": "How much mathematics is required in Computer Engineering?",
+        }
+        for question, expected in examples.items():
+            with self.subTest(question=question):
+                pipeline = self.override_pipeline(EchoPipeline())
+                response = self.client.post(
+                    "/api/v1/chat",
+                    json={"question": question, "session_id": f"session-{question}"},
+                )
+                self.assertEqual(response.status_code, 200)
+                self.assertEqual(response.json()["status"], "answered")
+                self.assertEqual(len(pipeline.calls), 1)
+                self.assertEqual(pipeline.calls[0]["resolved_question"], expected)
+
+    def test_fuzzy_normalization_does_not_turn_unrelated_words_into_domain_questions(self):
+        negatives = ["football", "cooking", "weather", "who won the match", "make me a cake"]
+        for question in negatives:
+            with self.subTest(question=question):
+                pipeline = self.override_pipeline(EchoPipeline())
+                response = self.client.post(
+                    "/api/v1/chat",
+                    json={"question": question, "session_id": f"negative-{question}"},
+                )
+                self.assertEqual(response.status_code, 200)
+                self.assertEqual(response.json()["status"], "out_of_scope")
+                self.assertEqual(len(pipeline.calls), 0)
+
+    def test_persona_question_returns_helpful_advisor_scope_without_retrieval(self):
+        pipeline = self.override_pipeline(EchoPipeline())
+        response = self.client.post(
+            "/api/v1/chat",
+            json={"question": "what can you do?", "session_id": "session-a"},
+        )
+        data = response.json()
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(data["status"], "out_of_scope")
+        self.assertIn("Computer Engineering student advisor", data["answer"])
+        self.assertEqual(len(pipeline.calls), 0)
+
+    def test_domain_anchored_source_question_is_not_treated_as_vague_follow_up(self):
+        pipeline = self.override_pipeline(EchoPipeline())
+        response = self.client.post(
+            "/api/v1/chat",
+            json={"question": "What sources explain programming languages?", "session_id": "session-a"},
+        )
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json()["status"], "answered")
+        self.assertEqual(len(pipeline.calls), 1)
+
+    def test_vague_follow_up_without_referent_does_not_retrieve(self):
+        pipeline = self.override_pipeline(EchoPipeline())
+        response = self.client.post(
+            "/api/v1/chat",
+            json={"question": "Where did you get this information from?", "session_id": "session-a"},
+        )
+        data = response.json()
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(data["status"], "insufficient_information")
+        self.assertEqual(len(pipeline.calls), 0)
+        self.assertTrue(data["retrieval_metadata"]["unresolved_follow_up"])
+        self.assertIn("not sure which previous topic or information", data["answer"])
+
+    def test_unrelated_question_preserves_out_of_scope_fallback(self):
+        pipeline = self.override_pipeline(FakePipeline(rag_result("out_of_scope")))
+        response = self.client.post(
+            "/api/v1/chat",
+            json={"question": "How do I cook spaghetti?", "session_id": "session-a"},
+        )
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json()["status"], "out_of_scope")
+        self.assertEqual(len(pipeline.calls), 0)
+
+    def test_session_contamination_does_not_turn_meta_question_into_staff_answer(self):
+        pipeline = self.override_pipeline(EchoPipeline())
+        self.client.post("/api/v1/chat", json={"question": "Who are the academic staff?", "session_id": "session-a"})
+        response = self.client.post("/api/v1/chat", json={"question": "who made u", "session_id": "session-a"})
+        data = response.json()
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(data["status"], "out_of_scope")
+        self.assertEqual(len(pipeline.calls), 1)
+        self.assertTrue(data["retrieval_metadata"]["classified_out_of_scope"])
+
+    def test_contextual_ai_difficulty_follow_up_is_resolved(self):
+        pipeline = self.override_pipeline(EchoPipeline())
+        self.client.post("/api/v1/chat", json={"question": "Tell me about AI in Computer Engineering.", "session_id": "session-a"})
+        response = self.client.post("/api/v1/chat", json={"question": "Is it difficult?", "session_id": "session-a"})
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json()["status"], "answered")
+        self.assertEqual(len(pipeline.calls), 2)
+        self.assertIn("AI in Computer Engineering", pipeline.calls[1]["resolved_question"])
+        self.assertIn("difficult", pipeline.calls[1]["resolved_question"].lower())
+
+    def test_correction_follow_up_extracts_actual_definition_request(self):
+        pipeline = self.override_pipeline(EchoPipeline())
+        self.client.post("/api/v1/chat", json={"question": "What is Computer Engineering?", "session_id": "session-a"})
+        response = self.client.post(
+            "/api/v1/chat",
+            json={
+                "question": "i did not ask you department i asked you the definition of computer engineering",
+                "session_id": "session-a",
+            },
+        )
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json()["status"], "answered")
+        self.assertEqual(len(pipeline.calls), 2)
+        self.assertEqual(pipeline.calls[1]["resolved_question"], "What is the definition of Computer Engineering?")
+
+    def test_advisor_development_question_is_not_answered_from_kb_retrieval(self):
+        pipeline = self.override_pipeline(EchoPipeline())
+        response = self.client.post(
+            "/api/v1/chat",
+            json={"question": "who developed this advisor", "session_id": "session-a"},
+        )
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json()["status"], "out_of_scope")
+        self.assertEqual(len(pipeline.calls), 0)
 
     def test_session_histories_are_isolated(self):
         pipeline = self.override_pipeline(EchoPipeline())
@@ -227,8 +501,8 @@ class ApiTests(unittest.TestCase):
         response = self.client.get("/api/v1/sources")
         data = response.json()
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(data["count"], 56)
-        self.assertEqual(len(data["sources"]), 56)
+        self.assertEqual(data["count"], 94)
+        self.assertEqual(len(data["sources"]), data["count"])
         sources_by_id = {source["source_id"]: source for source in data["sources"]}
         expected_indexed_count = sum(1 for source in data["sources"] if source["indexed_in_rag"])
         self.assertEqual(data["indexed_count"], expected_indexed_count)
@@ -271,6 +545,79 @@ class ApiTests(unittest.TestCase):
         self.assertNotIn("knowledge_base/raw", serialized)
         self.assertNotIn("date_accessed", data["sources"][0])
         self.assertNotIn("notes", data["sources"][0])
+
+    def test_stream_chat_emits_incremental_tokens_before_final_metadata(self):
+        pipeline = self.override_pipeline(FakeStreamPipeline())
+        response = self.client.post("/api/v1/chat/stream", json={"question": "What is Computer Engineering?", "session_id": "session-a"})
+        self.assertEqual(response.status_code, 200)
+        events = decode_stream_response(response)
+        self.assertEqual([event["event"] for event in events], ["metadata", "token", "token", "final"])
+        self.assertEqual(events[1]["data"]["text"], "Computer Engineering ")
+        self.assertEqual(events[2]["data"]["text"], "combines software and hardware [S1].")
+        final = events[-1]["data"]
+        self.assertEqual(final["status"], "answered")
+        self.assertEqual(final["answer"], "Computer Engineering combines software and hardware [S1].")
+        self.assertEqual(final["sources"][0]["source_id"], "src_001")
+        self.assertEqual(final["citation_metadata"]["cited_labels"], ["S1"])
+        self.assertEqual(len(pipeline.calls), 1)
+
+    def test_stream_chat_stores_complete_turn_for_source_follow_up(self):
+        pipeline = self.override_pipeline(FakeStreamPipeline())
+        response = self.client.post("/api/v1/chat/stream", json={"question": "How much mathematics is required?", "session_id": "session-a"})
+        events = decode_stream_response(response)
+        self.assertEqual(events[-1]["data"]["status"], "answered")
+
+        follow_up = self.client.post(
+            "/api/v1/chat/stream",
+            json={"question": "Where did you get this information from?", "session_id": "session-a"},
+        )
+        follow_events = decode_stream_response(follow_up)
+        self.assertEqual([event["event"] for event in follow_events], ["final"])
+        final = follow_events[-1]["data"]
+        self.assertEqual(final["status"], "answered")
+        self.assertTrue(final["retrieval_metadata"]["used_previous_answer_sources"])
+        self.assertEqual(final["sources"][0]["source_id"], "src_001")
+
+    def test_stream_chat_insufficient_information_final_without_tokens(self):
+        pipeline = self.override_pipeline(
+            FakeStreamPipeline(events=[{"event": "final", "result": rag_result("insufficient_information")}])
+        )
+        response = self.client.post("/api/v1/chat/stream", json={"question": "What is the tuition fee?", "session_id": "session-a"})
+        events = decode_stream_response(response)
+        self.assertEqual([event["event"] for event in events], ["final"])
+        self.assertEqual(events[-1]["data"]["status"], "insufficient_information")
+        self.assertFalse(events[-1]["data"]["sources"])
+        self.assertEqual(len(pipeline.calls), 1)
+
+    def test_stream_chat_out_of_scope_classification_without_pipeline_call(self):
+        pipeline = self.override_pipeline(FakeStreamPipeline())
+        response = self.client.post("/api/v1/chat/stream", json={"question": "who made u", "session_id": "session-a"})
+        events = decode_stream_response(response)
+        self.assertEqual([event["event"] for event in events], ["final"])
+        self.assertEqual(events[-1]["data"]["status"], "out_of_scope")
+        self.assertEqual(len(pipeline.calls), 0)
+
+    def test_stream_chat_failure_is_not_stored_as_answered_turn(self):
+        pipeline = self.override_pipeline(
+            FakeStreamPipeline(
+                events=[
+                    {"event": "metadata", "retrieval_metadata": {}, "retrieved_context": [], "llm_called": True},
+                    {"event": "token", "text": "Partial"},
+                    {"event": "final", "result": rag_result("error")},
+                ]
+            )
+        )
+        response = self.client.post("/api/v1/chat/stream", json={"question": "What is Computer Engineering?", "session_id": "session-a"})
+        events = decode_stream_response(response)
+        self.assertEqual(events[-1]["data"]["status"], "error")
+
+        follow_up = self.client.post(
+            "/api/v1/chat/stream",
+            json={"question": "Where did you get this information from?", "session_id": "session-a"},
+        )
+        follow_events = decode_stream_response(follow_up)
+        self.assertEqual(follow_events[-1]["data"]["status"], "insufficient_information")
+        self.assertEqual(len(pipeline.calls), 1)
 
     def test_sources_endpoint_missing_registry_is_controlled(self):
         original_path = sources_api.SOURCES_REGISTRY_PATH

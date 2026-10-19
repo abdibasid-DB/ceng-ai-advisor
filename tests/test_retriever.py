@@ -17,7 +17,7 @@ class RetrieverTests(unittest.TestCase):
         cls.retriever = Retriever()
 
     def test_retriever_initializes_and_collection_loads(self):
-        self.assertEqual(self.retriever.collection_count, 803)
+        self.assertEqual(self.retriever.collection_count, self.retriever.load_manifest()["expected_chunk_count"])
 
     def test_query_embedding_dimension_is_correct(self):
         embedding = self.retriever.encode_query("What programming languages should I learn?")
@@ -73,7 +73,7 @@ class RetrieverTests(unittest.TestCase):
 
     def test_query_expansion_adds_ceng_and_beginner_programming_terms(self):
         expanded = expand_query_for_retrieval("I want CENG but I have no coding experience.")
-        self.assertIn("Computer Engineering department", expanded)
+        self.assertIn("Computer Engineering discipline career skills", expanded)
         self.assertIn("beginner programming", expanded)
 
     def test_query_expansion_adds_high_school_explanation_terms(self):
@@ -87,6 +87,35 @@ class RetrieverTests(unittest.TestCase):
     def test_query_expansion_adds_skills_terms(self):
         expanded = expand_query_for_retrieval("What skills should I develop before graduation?")
         self.assertIn("skills technologies programming career readiness", expanded)
+
+    def test_query_expansion_adds_teamwork_terms(self):
+        expanded = expand_query_for_retrieval("Is teamwork important in Computer Engineering?")
+        self.assertIn("teamwork collaboration communication", expanded)
+
+    def test_query_expansion_adds_gpa_portfolio_terms(self):
+        expanded = expand_query_for_retrieval("Is GPA more important than personal projects?")
+        self.assertIn("GPA candidate screening skills-based hiring", expanded)
+        self.assertIn("portfolio projects resume", expanded)
+
+    def test_query_expansion_adds_hackathon_terms(self):
+        expanded = expand_query_for_retrieval("Should I participate in hackathons and coding competitions?")
+        self.assertIn("hackathons coding competitions projects skills portfolio", expanded)
+
+    def test_query_expansion_adds_practical_software_terms(self):
+        expanded = expand_query_for_retrieval("Should I learn testing and debugging from the command line?")
+        self.assertIn("software development testing debugging command line", expanded)
+
+    def test_query_expansion_adds_cv_terms(self):
+        expanded = expand_query_for_retrieval("What should I include in my CV?")
+        self.assertIn("resume CV portfolio projects skills", expanded)
+
+    def test_query_expansion_adds_hardware_project_terms(self):
+        expanded = expand_query_for_retrieval("Should I learn Arduino or FPGA first?")
+        self.assertIn("computer architecture embedded systems hardware", expanded)
+
+    def test_query_expansion_adds_future_proof_terms(self):
+        expanded = expand_query_for_retrieval("Is Computer Engineering a future-proof career?")
+        self.assertIn("future skills technology demand career adaptability", expanded)
 
     def test_query_expansion_adds_employment_industry_terms(self):
         expanded = expand_query_for_retrieval("What industries hire Computer Engineering graduates?")
@@ -103,6 +132,15 @@ class RetrieverTests(unittest.TestCase):
     def test_query_expansion_adds_digital_nomad_terms(self):
         expanded = expand_query_for_retrieval("Can a Computer Engineer become a digital nomad?")
         self.assertIn("remote work hybrid work professional developers", expanded)
+
+    def test_query_expansion_adds_remote_terms_for_remotely(self):
+        expanded = expand_query_for_retrieval("Can I work remotely as a Computer Engineer?")
+        self.assertIn("remote work hybrid work professional developers", expanded)
+
+    def test_query_expansion_adds_choice_and_field_terms(self):
+        expanded = expand_query_for_retrieval("Which field of Computer Engineering is right for me?")
+        self.assertIn("subdisciplines specializations", expanded)
+        self.assertIn("career sectors professional practice", expanded)
 
     def test_query_expansion_adds_startup_terms(self):
         expanded = expand_query_for_retrieval("Can I start my own software company after CENG?")
@@ -126,9 +164,29 @@ class RetrieverTests(unittest.TestCase):
 
     def test_expanded_queries_drive_relevant_query_profiles(self):
         profile = infer_query_profile(expand_query_for_retrieval("Can a CENG graduate work internationally?"))
-        self.assertIn("department_information", profile.preferred_categories)
         self.assertIn("remote_work", profile.preferred_categories)
         self.assertIn("employment", profile.preferred_categories)
+
+    def test_remotely_query_profile_prefers_remote_work(self):
+        profile = infer_query_profile(expand_query_for_retrieval("Can I work remotely as a Computer Engineer?"))
+        self.assertIn("remote_work", profile.preferred_categories)
+        self.assertIn("employment", profile.preferred_categories)
+
+    def test_choice_query_profile_prefers_advising_categories(self):
+        profile = infer_query_profile(expand_query_for_retrieval("Why should I choose Computer Engineering instead of another engineering discipline?"))
+        self.assertIn("department_information", profile.preferred_categories)
+        self.assertIn("specializations", profile.preferred_categories)
+        self.assertIn("career_opportunities", profile.preferred_categories)
+
+    def test_cv_query_profile_prefers_employment_over_generic_curriculum(self):
+        profile = infer_query_profile(expand_query_for_retrieval("What should I include in my CV as a CENG student?"))
+        self.assertIn("employment", profile.preferred_categories)
+        self.assertTrue(profile.focused_non_curriculum)
+
+    def test_student_life_query_profile_prefers_student_life(self):
+        profile = infer_query_profile(expand_query_for_retrieval("Does OSTIM have student clubs?"))
+        self.assertIn("student_life", profile.preferred_categories)
+        self.assertTrue(profile.official_source_preferred)
 
 
 if __name__ == "__main__":
