@@ -17,6 +17,12 @@ MIN_SIMILARITY_THRESHOLD = 0.30
 MIN_RESULTS_ABOVE_THRESHOLD = 2
 MAX_RESULTS_PER_SOURCE = 3
 
+# Semantic grounding checks (cosine similarity with the retrieval embedding
+# model). Chosen by replaying the 2026-10-18 full-200 run offline; see
+# scripts/evaluate_semantic_thresholds.py.
+QUESTION_ANSWER_SIMILARITY_THRESHOLD = 0.65
+SENTENCE_PASSAGE_SIMILARITY_THRESHOLD = 0.70
+
 CATEGORY_BOOST = 0.08
 OFFICIAL_SOURCE_BOOST = 0.05
 TITLE_KEYWORD_BOOST = 0.02

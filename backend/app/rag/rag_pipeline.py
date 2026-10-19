@@ -8,14 +8,19 @@ frontend chatbot.
 from __future__ import annotations
 
 import time
-from collections.abc import Iterator
-from dataclasses import dataclass
+from collections.abc import Callable, Iterator
+from dataclasses import dataclass, field
 from functools import lru_cache
 from pathlib import Path
 import re
 from typing import Any
 
-from ..core.retrieval_config import CANDIDATE_TOP_K, DEFAULT_TOP_K
+from ..core.retrieval_config import (
+    CANDIDATE_TOP_K,
+    DEFAULT_TOP_K,
+    QUESTION_ANSWER_SIMILARITY_THRESHOLD,
+    SENTENCE_PASSAGE_SIMILARITY_THRESHOLD,
+)
 from ..services.llm_service import (
     LocalLLMError,
     LocalLLMService,
@@ -62,6 +67,14 @@ class CitationValidation:
     repair_actions: tuple[str, ...] = ()
 
 
+@dataclass
+class GenerationLog:
+    """Raw model output for one answer, and whether a fallback replaced it."""
+
+    raw: list[str] = field(default_factory=list)
+    replaced: bool = False
+
+
 @dataclass(frozen=True)
 class PreparedAnswer:
     cleaned: str
@@ -86,6 +99,9 @@ class RAGPipeline:
         self.retriever = retriever or Retriever()
         self.llm_service = llm_service or LocalLLMService()
         self.config = config or RAGPipelineConfig()
+        # Semantic grounding checks reuse the retriever's embedding model.
+        # Retrievers without one (test fakes) leave only the lexical checks.
+        configure_semantic_encoder(getattr(self.retriever, "encode_texts", None))
 
     def answer(
         self,
@@ -279,7 +295,23 @@ class RAGPipeline:
         )
 
     def _generate_validated_answer(self, prepared: "PreparedAnswer") -> dict[str, Any]:
-        """Generate with the local LLM and keep only citation-validated, grounded output."""
+        """Generate with the local LLM and keep only citation-validated, grounded output.
+
+        When the model's text is not what the student receives, the raw
+        generation is kept in retrieval_metadata so evaluations can be replayed
+        offline without calling the model again.
+        """
+        log = GenerationLog()
+        result = self._generate_and_validate(prepared, log)
+        if log.raw and (result.get("status") != ANSWERED or log.replaced):
+            metadata = dict(result.get("retrieval_metadata") or {})
+            metadata["discarded_generation"] = log.raw[0]
+            if len(log.raw) > 1:
+                metadata["discarded_retry_generation"] = log.raw[1]
+            result = {**result, "retrieval_metadata": metadata}
+        return result
+
+    def _generate_and_validate(self, prepared: "PreparedAnswer", log: "GenerationLog") -> dict[str, Any]:
         cleaned = prepared.cleaned
         gate_question = prepared.gate_question
         retrieval = prepared.retrieval
@@ -293,6 +325,7 @@ class RAGPipeline:
         try:
             llm_start = time.perf_counter()
             llm_response = self.llm_service.generate(prompt, num_predict=RAG_NUM_PREDICT)
+            log.raw.append(llm_response.text or "")
             llm_latency = elapsed(llm_start)
             initial_llm_latency = llm_latency
             retry_llm_latency = 0.0
@@ -348,6 +381,7 @@ class RAGPipeline:
                 retry_prompt = build_citation_retry_prompt(cleaned, context_text, answer_text, citation_validation.reason)
                 retry_start = time.perf_counter()
                 retry_response = self.llm_service.generate(retry_prompt, num_predict=RAG_NUM_PREDICT)
+                log.raw.append(retry_response.text or "")
                 retry_llm_latency = elapsed(retry_start)
                 llm_latency += retry_llm_latency
                 generations_attempted += 1
@@ -377,6 +411,7 @@ class RAGPipeline:
                 if fallback_validation.valid and not unsupported_generated_answer_reason(gate_question, fallback_validation.answer, context_items):
                     answer_text = fallback_validation.answer
                     answer_is_insufficient = is_insufficient_answer(answer_text)
+                    log.replaced = True
                     return {
                         "question": cleaned,
                         "status": INSUFFICIENT_INFORMATION if answer_is_insufficient else ANSWERED,
@@ -455,6 +490,7 @@ class RAGPipeline:
                     citation_validation = fallback_validation
                     answer_text = citation_validation.answer
                     generated_answer_reason = None
+                    log.replaced = True
             if not generated_answer_reason:
                 pass
             else:
@@ -496,6 +532,7 @@ class RAGPipeline:
                     citation_validation = fallback_validation
                     answer_text = citation_validation.answer
                     answer_is_insufficient = False
+                    log.replaced = True
 
         return {
             "question": cleaned,
@@ -1882,6 +1919,8 @@ def repair_missing_inline_citations(
             )
             if not supported_labels:
                 supported_labels = best_supported_labels(sentence, context_items)
+            if not supported_labels:
+                supported_labels = semantic_supported_labels(sentence, context_items)
 
             if supported_labels:
                 repaired_sentences.append(append_citation_labels(sentence, supported_labels))
@@ -1946,6 +1985,27 @@ def best_supported_labels(line: str, context_items: list[dict[str, Any]]) -> tup
     return tuple(label for _, label in scored[:2])
 
 
+def semantic_supported_labels(line: str, context_items: list[dict[str, Any]]) -> tuple[str, ...]:
+    """Label of the passage an uncited sentence paraphrases closely.
+
+    The labeled sentence must still pass cited_claim_supported, so the
+    number, negation, speculation and must/required guards apply.
+    """
+    scored: list[tuple[float, str]] = []
+    for item in context_items:
+        label = item.get("label")
+        if not label:
+            continue
+        score = semantic_sentence_support(line, item)
+        if score is not None and score >= SENTENCE_PASSAGE_SIMILARITY_THRESHOLD:
+            scored.append((score, label))
+    for _, label in sorted(scored, reverse=True):
+        item = next(item for item in context_items if item.get("label") == label)
+        if cited_claim_supported(append_citation_labels(line, (label,)), item):
+            return (label,)
+    return ()
+
+
 def claim_supported_by_context(line: str, context_item: dict[str, Any]) -> bool:
     return claim_support_score(line, context_item) >= 0.5
 
@@ -1979,7 +2039,9 @@ def cited_claim_supported(line: str, context_item: dict[str, Any]) -> bool:
         relation = re.search(RELATION_CLAIM, lowered_claim)
         if relation and not re.search(RELATION_CLAIM, lowered_passage):
             return False
-    return claim_support_score(claim, context_item) >= 0.25
+    # Paraphrases share few words with the passage; a close sentence-level
+    # embedding match counts as support once the guards above have passed.
+    return claim_support_score(claim, context_item) >= 0.25 or semantically_supported(claim, context_item)
 
 
 def claim_support_score(line: str, context_item: dict[str, Any]) -> float:
@@ -2000,6 +2062,54 @@ def claim_support_score(line: str, context_item: dict[str, Any]) -> float:
     if len(claim_terms) <= 4 and matched < len(claim_terms):
         coverage *= 0.75
     return coverage
+
+
+_semantic_encoder: Callable[[list[str]], Any] | None = None
+
+
+def configure_semantic_encoder(encoder: Callable[[list[str]], Any] | None) -> None:
+    """Set the function returning normalized embeddings for a list of texts (None disables)."""
+    global _semantic_encoder
+    _semantic_encoder = encoder
+    _embed_text.cache_clear()
+
+
+@lru_cache(maxsize=4096)
+def _embed_text(text: str) -> Any:
+    return _semantic_encoder([text])[0]
+
+
+def semantic_similarity(first: str, second: str) -> float | None:
+    """Cosine similarity of two texts, or None when no encoder is configured."""
+    if _semantic_encoder is None or not first.strip() or not second.strip():
+        return None
+    try:
+        return float(_embed_text(first) @ _embed_text(second))
+    except Exception:
+        return None
+
+
+def passage_sentences(passage: str) -> list[str]:
+    sentences = [part.strip() for part in re.split(r"(?<=[.!?])\s+|\n+", passage or "") if len(part.split()) >= 4]
+    return sentences or ([passage.strip()] if (passage or "").strip() else [])
+
+
+def semantic_sentence_support(claim: str, context_item: dict[str, Any]) -> float | None:
+    """Best similarity between a claim and any sentence of the cited passage."""
+    text = " ".join(strip_citation_text(claim).split())
+    scores = [semantic_similarity(text, sentence) for sentence in passage_sentences(str(context_item.get("passage") or ""))]
+    scores = [score for score in scores if score is not None]
+    return max(scores) if scores else None
+
+
+def semantically_supported(claim: str, context_item: dict[str, Any]) -> bool:
+    score = semantic_sentence_support(claim, context_item)
+    return score is not None and score >= SENTENCE_PASSAGE_SIMILARITY_THRESHOLD
+
+
+def answer_addresses_question(question: str, answer: str) -> bool:
+    score = semantic_similarity(strip_retrieval_annotations(question), " ".join(strip_citation_text(answer).split()))
+    return score is not None and score >= QUESTION_ANSWER_SIMILARITY_THRESHOLD
 
 
 def significant_terms(text: str) -> set[str]:
@@ -2767,7 +2877,9 @@ def unsupported_generated_answer_reason(question: str, answer: str, context_item
         for term in focus
         if term_supported_by_evidence(term, normalized_answer) or (" " not in term and word_stem(term) in answer_stems)
     }
-    if focus and len(covered) < (2 if len(focus) >= 3 else 1):
+    if focus and len(covered) < (2 if len(focus) >= 3 else 1) and not answer_addresses_question(question, answer):
+        # Word coverage misses paraphrased answers; the embedding check accepts
+        # an answer that is clearly about the question.
         return "generated answer did not address the question's distinctive topic terms"
 
     if contains_any_term(q, ("what is computer engineering", "what is ceng")):

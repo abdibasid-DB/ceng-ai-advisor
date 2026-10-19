@@ -220,6 +220,15 @@ class Retriever:
             raise ValueError(f"Expected query embedding dimension {EMBEDDING_DIMENSION}, got {embedding.shape[0]}.")
         return embedding.astype(float).tolist()
 
+    def encode_texts(self, texts: list[str]) -> Any:
+        """Normalized embeddings for answer-grounding checks, using the already loaded model."""
+        return self.get_model().encode(
+            list(texts),
+            normalize_embeddings=True,
+            convert_to_numpy=True,
+            show_progress_bar=False,
+        )
+
     def retrieve(
         self,
         query: str,
