@@ -1,0 +1,63 @@
+services:
+  ollama:
+    image: ollama/ollama:latest
+    restart: unless-stopped
+    environment:
+      OLLAMA_HOST: 0.0.0.0:11434
+    volumes:
+      - ollama_models:/root/.ollama
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - |
+        set -eu
+        ollama serve &
+        server_pid=$$!
+        trap 'kill "$$server_pid" 2>/dev/null || true; wait "$$server_pid" || true' TERM INT EXIT
+        until ollama list >/dev/null 2>&1; do
+          kill -0 "$$server_pid" 2>/dev/null || exit 1
+          sleep 1
+        done
+        if ! ollama show qwen2.5:3b >/dev/null 2>&1; then
+          ollama pull qwen2.5:3b
+        fi
+        wait "$$server_pid"
+    healthcheck:
+      test: ["CMD", "ollama", "show", "qwen2.5:3b"]
+      interval: 10s
+      timeout: 10s
+      start_period: 30m
+      retries: 6
+
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    restart: unless-stopped
+    environment:
+      OLLAMA_BASE_URL: http://ollama:11434
+      OLLAMA_MODEL: qwen2.5:3b
+    ports:
+      - "127.0.0.1:8000:8000"
+    depends_on:
+      ollama:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=5)"]
+      interval: 10s
+      timeout: 10s
+      start_period: 30s
+      retries: 6
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+
+volumes:
+  ollama_models:

@@ -20,8 +20,12 @@ React + Vite
 The frontend communicates with FastAPI only:
 
 - Chat: `POST /api/v1/chat`
+- Streaming chat (NDJSON metadata, token, and final events): `POST /api/v1/chat/stream`
 - Readiness: `GET /api/v1/readiness`
 - Source registry metadata: `GET /api/v1/sources`
+- Health: `GET /health`
+- API information: `GET /`
+- OpenAPI schema: `GET /openapi.json`; interactive docs: `GET /docs` and `GET /redoc`
 
 ## Website Sections
 
@@ -31,7 +35,9 @@ The frontend communicates with FastAPI only:
 - Sources
 - About Project
 
-The AI Advisor page contains the working chatbot with current-session visible history, example questions, readiness status, loading feedback, citations, source cards, supporting passages, New Conversation, insufficient-information handling, out-of-scope handling, and controlled backend/network errors.
+The AI Advisor keeps conversations in this browser tab's session storage, listed by their first question. New Conversation preserves earlier chats, and reopening one reuses its backend session ID. History survives a page reload and is limited to this browser session. The backend keeps the last 8 turns per session in process memory to understand follow-up questions; restarting the backend clears that memory.
+
+Answers render as Markdown with clickable citation badges, supporting passages, publication dates when available from the source registry, similarity scores, and a copy button. Retrieval progress comes from streaming metadata. Home sample questions open a new Advisor conversation and send the selected question. Source counts come from the live registry. The theme follows the system by default, with Light and Dark overrides remembered in this browser.
 
 ## Technology Stack
 
@@ -57,7 +63,7 @@ The AI Advisor page contains the working chatbot with current-session visible hi
 Install these before running the project:
 
 - Python 3.12 recommended. The current project has been verified with Python 3.12.
-- Node.js 18 or newer. The current frontend lockfile supports Node.js `>=18.0.0`.
+- Node.js 22.12 or newer (Node.js 24 recommended for the Vite 7 frontend).
 - pnpm, for frontend dependency installation and Vite commands.
 - Ollama, running locally.
 - The Ollama model `qwen2.5:3b`.
@@ -86,7 +92,7 @@ The frontend supports one Vite environment variable:
 VITE_API_BASE_URL=http://127.0.0.1:8000
 ```
 
-If this variable is not set, the frontend uses `http://127.0.0.1:8000`.
+If this variable is not set, the frontend uses `http://127.0.0.1:8000`. Set it to `/` for a same-origin reverse proxy, as used by the frontend Docker image. Vite embeds this value at build time.
 
 An example file is provided at:
 
@@ -105,10 +111,21 @@ Then edit `frontend/.env.local`.
 
 ### Backend
 
-The current backend does not read runtime `.env` variables. Its local AI and retrieval settings are defined in code:
+The backend reads these process environment variables at startup, with local defaults:
 
-- Ollama base URL: `http://127.0.0.1:11434`
-- Ollama model: `qwen2.5:3b`
+- `OLLAMA_BASE_URL`: default `http://127.0.0.1:11434`
+- `OLLAMA_MODEL`: default `qwen2.5:3b`
+
+For example, in PowerShell before starting the backend:
+
+```powershell
+$env:OLLAMA_BASE_URL = "http://127.0.0.1:11434"
+$env:OLLAMA_MODEL = "qwen2.5:3b"
+```
+
+On macOS/Linux, use `export OLLAMA_BASE_URL=http://127.0.0.1:11434` and `export OLLAMA_MODEL=qwen2.5:3b`.
+The backend does not automatically load `.env` files. Retrieval settings remain defined in code:
+
 - Embedding model: `sentence-transformers/all-MiniLM-L6-v2`
 - ChromaDB path: `knowledge_base/vector_store/chroma/`
 - Collection name: `ceng_advisor_chunks`
@@ -118,7 +135,34 @@ Relevant files:
 - `backend/app/core/llm_config.py`
 - `backend/app/core/retrieval_config.py`
 
-Do not document or add fake backend environment variables unless the code is updated to support them.
+## Run With Docker Compose
+
+Install Docker Engine with Compose v2 or Docker Desktop using Linux containers. Run these commands from the project root. The prepared knowledge-base files listed above must be present before building.
+
+```bash
+docker compose config --quiet
+docker compose build
+docker compose up -d
+docker compose logs -f ollama backend
+```
+
+Open `http://localhost:8080` for the website and `http://127.0.0.1:8000/docs` for API documentation. Check `http://127.0.0.1:8000/api/v1/readiness` before asking a question.
+
+Compose runs three services:
+
+- `ollama`: the `ollama/ollama` image, with models persisted in the `ollama_models` volume. It starts the server, pulls `qwen2.5:3b` when missing, and becomes healthy once the model is available. Later starts reuse the downloaded model.
+- `backend`: Python 3.12, CPU PyTorch, and `requirements.txt`, with the prepared `knowledge_base` copied into the image. The embedding model `sentence-transformers/all-MiniLM-L6-v2` downloads at build time and loads from the image cache at runtime. It uses `OLLAMA_BASE_URL=http://ollama:11434` and `OLLAMA_MODEL=qwen2.5:3b`.
+- `frontend`: a pnpm build served by nginx on port 8080. nginx proxies `/api/` to the backend with response buffering disabled for streaming answers.
+
+The first build and model pull require internet access and several GB of free disk space; CPU inference can take time. Compose waits for the Ollama model health check before starting the backend, and for backend health before starting the frontend. Ollama is reachable within the Compose network; the backend's direct port is bound to loopback.
+
+To stop the services while preserving the model download:
+
+```bash
+docker compose down
+```
+
+Rebuild after source or knowledge-base changes with `docker compose build`, then recreate services with `docker compose up -d`. The source tree is copied into the images; the containers do not modify the workspace knowledge base.
 
 ## Installation
 
@@ -133,6 +177,7 @@ python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
+python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')"
 ```
 
 On macOS/Linux:
@@ -142,9 +187,12 @@ python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
+python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')"
 ```
 
 ### 2. Frontend dependencies
+
+The embedding download above is a one-time setup step; runtime retrieval uses the cached model offline.
 
 ```powershell
 cd frontend
@@ -253,6 +301,16 @@ pnpm run preview
 
 The preview command serves the built frontend only. The FastAPI backend and Ollama service must still be running for chat functionality.
 
+Frontend browser checks use mocked API responses and do not run the RAG pipeline:
+
+```bash
+cd frontend
+pnpm exec playwright install chromium
+pnpm exec playwright test
+```
+
+To use installed Microsoft Edge on Windows instead, set `$env:PLAYWRIGHT_CHANNEL = "msedge"` before running `pnpm exec playwright test`. Checks cover 375, 768, and 1280 px widths, browser-session history and session IDs, Markdown citations, copying, theme preferences, metadata progress, and service errors.
+
 ## Deployment Readiness Guidance
 
 The final application should be deployable on a machine that can run all required local services:
@@ -267,17 +325,17 @@ For a production-like deployment:
 1. Install Python, Node.js, pnpm, and Ollama on the target machine.
 2. Copy or clone the project repository, including required knowledge-base artifacts.
 3. Install backend dependencies with `python -m pip install -r requirements.txt`.
-4. Install frontend dependencies with `pnpm install --frozen-lockfile`.
+4. Run `pnpm install --frozen-lockfile` from `frontend/`.
 5. Pull the local model with `ollama pull qwen2.5:3b`.
 6. Start Ollama on the target machine.
 7. Start FastAPI with a production process manager or a supervised `uvicorn` command.
-8. Build the frontend with `pnpm run build`.
+8. Run `pnpm run build` from `frontend/`.
 9. Serve `frontend/dist/` using a static web server.
 10. Set `VITE_API_BASE_URL` before building the frontend if the backend URL is not `http://127.0.0.1:8000`.
 
 The deployed application must continue to use the locally hosted open-source Ollama model integrated with the RAG pipeline. Do not replace the local model with a commercial LLM API.
 
-Docker and Docker Compose are encouraged by the WEX428 guideline, but they are optional for this project and are not required to run the current implementation.
+For deployment with Docker, use the Compose workflow above. For other deployments, serve API requests through the same origin or use an origin already allowed by the backend.
 
 ## Useful Test Commands
 
@@ -315,7 +373,7 @@ Make sure the backend can reach Ollama at `http://127.0.0.1:11434`.
 
 ### Backend cannot connect to Ollama
 
-Confirm Ollama is installed, running, and listening locally. The backend currently expects Ollama at `http://127.0.0.1:11434`; this is defined in `backend/app/core/llm_config.py`.
+Confirm Ollama is installed, running, and listening locally. The backend defaults to `http://127.0.0.1:11434`; override it with `OLLAMA_BASE_URL` before starting the backend. In Compose it must use the service address `http://ollama:11434`.
 
 ### Missing vector store or knowledge-base artifacts
 

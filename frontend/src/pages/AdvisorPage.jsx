@@ -89,7 +89,7 @@ function AdvisorPage({ questionRequest }) {
 
   const statusHint = useMemo(() => {
     if (readiness === "ready") {
-      return `Connected to ${API_BASE_URL}`;
+      return `Connected to ${API_BASE_URL || window.location.origin}`;
     }
     if (readiness === "checking") {
       return "Checking local backend readiness...";
