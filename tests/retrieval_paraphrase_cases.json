@@ -1,0 +1,2742 @@
+[
+    {
+        "id":  "q001_original",
+        "original_id":  "q001",
+        "variant":  "original",
+        "question":  "What is Computer Engineering?",
+        "expected_source_ids":  [
+                                    "src_001",
+                                    "src_067",
+                                    "src_080"
+                                ],
+        "note":  "src_001 describes designing hardware, software and combined computer systems; src_067 explains CE foundations; src_080 defines the hardware/software boundary."
+    },
+    {
+        "id":  "q001_reworded",
+        "original_id":  "q001",
+        "variant":  "reworded",
+        "question":  "How would you explain the field of Computer Engineering?",
+        "expected_source_ids":  [
+                                    "src_001",
+                                    "src_067",
+                                    "src_080"
+                                ],
+        "note":  "src_001 describes designing hardware, software and combined computer systems; src_067 explains CE foundations; src_080 defines the hardware/software boundary."
+    },
+    {
+        "id":  "q001_informal",
+        "original_id":  "q001",
+        "variant":  "informal",
+        "question":  "comp eng what is it",
+        "expected_source_ids":  [
+                                    "src_001",
+                                    "src_067",
+                                    "src_080"
+                                ],
+        "note":  "src_001 describes designing hardware, software and combined computer systems; src_067 explains CE foundations; src_080 defines the hardware/software boundary."
+    },
+    {
+        "id":  "q001_typo",
+        "original_id":  "q001",
+        "variant":  "typo",
+        "question":  "What is Compter Engineering?",
+        "expected_source_ids":  [
+                                    "src_001",
+                                    "src_067",
+                                    "src_080"
+                                ],
+        "note":  "src_001 describes designing hardware, software and combined computer systems; src_067 explains CE foundations; src_080 defines the hardware/software boundary."
+    },
+    {
+        "id":  "q002_original",
+        "original_id":  "q002",
+        "variant":  "original",
+        "question":  "What do Computer Engineering students study?",
+        "expected_source_ids":  [
+                                    "src_003",
+                                    "src_004",
+                                    "src_067"
+                                ],
+        "note":  "src_003 lists the OSTIM curriculum; src_004 describes its courses; src_067 gives the broader CE curriculum foundations."
+    },
+    {
+        "id":  "q002_reworded",
+        "original_id":  "q002",
+        "variant":  "reworded",
+        "question":  "What subjects would I cover in a Computer Engineering degree?",
+        "expected_source_ids":  [
+                                    "src_003",
+                                    "src_004",
+                                    "src_067"
+                                ],
+        "note":  "src_003 lists the OSTIM curriculum; src_004 describes its courses; src_067 gives the broader CE curriculum foundations."
+    },
+    {
+        "id":  "q002_informal",
+        "original_id":  "q002",
+        "variant":  "informal",
+        "question":  "what do comp eng students learn",
+        "expected_source_ids":  [
+                                    "src_003",
+                                    "src_004",
+                                    "src_067"
+                                ],
+        "note":  "src_003 lists the OSTIM curriculum; src_004 describes its courses; src_067 gives the broader CE curriculum foundations."
+    },
+    {
+        "id":  "q002_typo",
+        "original_id":  "q002",
+        "variant":  "typo",
+        "question":  "What do Compter Engineering students study?",
+        "expected_source_ids":  [
+                                    "src_003",
+                                    "src_004",
+                                    "src_067"
+                                ],
+        "note":  "src_003 lists the OSTIM curriculum; src_004 describes its courses; src_067 gives the broader CE curriculum foundations."
+    },
+    {
+        "id":  "q003_original",
+        "original_id":  "q003",
+        "variant":  "original",
+        "question":  "Is Computer Engineering the right major for me?",
+        "expected_source_ids":  [
+                                    "src_080",
+                                    "src_073"
+                                ],
+        "note":  "src_080 describes the interests suited to CE versus other computing degrees; src_073 gives self-assessment of strengths and career goals. These support choosing criteria, not a personal verdict."
+    },
+    {
+        "id":  "q003_reworded",
+        "original_id":  "q003",
+        "variant":  "reworded",
+        "question":  "How can I tell whether studying Computer Engineering would suit my interests?",
+        "expected_source_ids":  [
+                                    "src_080",
+                                    "src_073"
+                                ],
+        "note":  "src_080 describes the interests suited to CE versus other computing degrees; src_073 gives self-assessment of strengths and career goals. These support choosing criteria, not a personal verdict."
+    },
+    {
+        "id":  "q003_informal",
+        "original_id":  "q003",
+        "variant":  "informal",
+        "question":  "is comp eng a good fit for me",
+        "expected_source_ids":  [
+                                    "src_080",
+                                    "src_073"
+                                ],
+        "note":  "src_080 describes the interests suited to CE versus other computing degrees; src_073 gives self-assessment of strengths and career goals. These support choosing criteria, not a personal verdict."
+    },
+    {
+        "id":  "q003_typo",
+        "original_id":  "q003",
+        "variant":  "typo",
+        "question":  "Is Compter Engineering the right major for me?",
+        "expected_source_ids":  [
+                                    "src_080",
+                                    "src_073"
+                                ],
+        "note":  "src_080 describes the interests suited to CE versus other computing degrees; src_073 gives self-assessment of strengths and career goals. These support choosing criteria, not a personal verdict."
+    },
+    {
+        "id":  "q004_original",
+        "original_id":  "q004",
+        "variant":  "original",
+        "question":  "What is the difference between Computer Engineering and Software Engineering?",
+        "expected_source_ids":  [
+                                    "src_080"
+                                ],
+        "note":  "src_080 explicitly contrasts CE hardware/software integration with SE requirements, design, testing, quality and process."
+    },
+    {
+        "id":  "q004_reworded",
+        "original_id":  "q004",
+        "variant":  "reworded",
+        "question":  "How does a Computer Engineering degree differ from a Software Engineering degree?",
+        "expected_source_ids":  [
+                                    "src_080"
+                                ],
+        "note":  "src_080 explicitly contrasts CE hardware/software integration with SE requirements, design, testing, quality and process."
+    },
+    {
+        "id":  "q004_informal",
+        "original_id":  "q004",
+        "variant":  "informal",
+        "question":  "comp eng vs software eng difference",
+        "expected_source_ids":  [
+                                    "src_080"
+                                ],
+        "note":  "src_080 explicitly contrasts CE hardware/software integration with SE requirements, design, testing, quality and process."
+    },
+    {
+        "id":  "q004_typo",
+        "original_id":  "q004",
+        "variant":  "typo",
+        "question":  "What is the diffeence between Computer Engineering and Software Engineering?",
+        "expected_source_ids":  [
+                                    "src_080"
+                                ],
+        "note":  "src_080 explicitly contrasts CE hardware/software integration with SE requirements, design, testing, quality and process."
+    },
+    {
+        "id":  "q005_original",
+        "original_id":  "q005",
+        "variant":  "original",
+        "question":  "What is the difference between Computer Engineering and Computer Science?",
+        "expected_source_ids":  [
+                                    "src_080",
+                                    "src_067"
+                                ],
+        "note":  "src_080 explicitly contrasts hardware/software integration in CE with computation, algorithms and theory in CS; src_067 discusses the scope of CE."
+    },
+    {
+        "id":  "q005_reworded",
+        "original_id":  "q005",
+        "variant":  "reworded",
+        "question":  "How are Computer Engineering and Computer Science different subjects?",
+        "expected_source_ids":  [
+                                    "src_080",
+                                    "src_067"
+                                ],
+        "note":  "src_080 explicitly contrasts hardware/software integration in CE with computation, algorithms and theory in CS; src_067 discusses the scope of CE."
+    },
+    {
+        "id":  "q005_informal",
+        "original_id":  "q005",
+        "variant":  "informal",
+        "question":  "comp eng vs cs whats different",
+        "expected_source_ids":  [
+                                    "src_080",
+                                    "src_067"
+                                ],
+        "note":  "src_080 explicitly contrasts hardware/software integration in CE with computation, algorithms and theory in CS; src_067 discusses the scope of CE."
+    },
+    {
+        "id":  "q005_typo",
+        "original_id":  "q005",
+        "variant":  "typo",
+        "question":  "What is the diffeence between Computer Engineering and Computer Science?",
+        "expected_source_ids":  [
+                                    "src_080",
+                                    "src_067"
+                                ],
+        "note":  "src_080 explicitly contrasts hardware/software integration in CE with computation, algorithms and theory in CS; src_067 discusses the scope of CE."
+    },
+    {
+        "id":  "q006_original",
+        "original_id":  "q006",
+        "variant":  "original",
+        "question":  "Is Computer Engineering more focused on hardware or software?",
+        "expected_source_ids":  [
+                                    "src_001",
+                                    "src_004",
+                                    "src_067",
+                                    "src_080"
+                                ],
+        "note":  "src_001 explicitly includes hardware and software; src_004 covers both digital systems and software; src_067 and src_080 explain their integration. The exact balance varies by program."
+    },
+    {
+        "id":  "q006_reworded",
+        "original_id":  "q006",
+        "variant":  "reworded",
+        "question":  "Does Computer Engineering concentrate more on physical computer systems or on programs?",
+        "expected_source_ids":  [
+                                    "src_001",
+                                    "src_004",
+                                    "src_067",
+                                    "src_080"
+                                ],
+        "note":  "src_001 explicitly includes hardware and software; src_004 covers both digital systems and software; src_067 and src_080 explain their integration. The exact balance varies by program."
+    },
+    {
+        "id":  "q006_informal",
+        "original_id":  "q006",
+        "variant":  "informal",
+        "question":  "comp eng more hardware or software",
+        "expected_source_ids":  [
+                                    "src_001",
+                                    "src_004",
+                                    "src_067",
+                                    "src_080"
+                                ],
+        "note":  "src_001 explicitly includes hardware and software; src_004 covers both digital systems and software; src_067 and src_080 explain their integration. The exact balance varies by program."
+    },
+    {
+        "id":  "q006_typo",
+        "original_id":  "q006",
+        "variant":  "typo",
+        "question":  "Is Compter Engineering more focused on hardware or software?",
+        "expected_source_ids":  [
+                                    "src_001",
+                                    "src_004",
+                                    "src_067",
+                                    "src_080"
+                                ],
+        "note":  "src_001 explicitly includes hardware and software; src_004 covers both digital systems and software; src_067 and src_080 explain their integration. The exact balance varies by program."
+    },
+    {
+        "id":  "q007_original",
+        "original_id":  "q007",
+        "variant":  "original",
+        "question":  "What kind of projects do Computer Engineering students build?",
+        "expected_source_ids":  [
+                                    "src_004",
+                                    "src_067"
+                                ],
+        "note":  "src_004 describes database applications, team software projects, network projects and capstone design/prototyping; src_067 describes integrated hardware/software design experiences."
+    },
+    {
+        "id":  "q007_reworded",
+        "original_id":  "q007",
+        "variant":  "reworded",
+        "question":  "What sorts of things would I make for projects as a Computer Engineering student?",
+        "expected_source_ids":  [
+                                    "src_004",
+                                    "src_067"
+                                ],
+        "note":  "src_004 describes database applications, team software projects, network projects and capstone design/prototyping; src_067 describes integrated hardware/software design experiences."
+    },
+    {
+        "id":  "q007_informal",
+        "original_id":  "q007",
+        "variant":  "informal",
+        "question":  "what projects do comp eng students make",
+        "expected_source_ids":  [
+                                    "src_004",
+                                    "src_067"
+                                ],
+        "note":  "src_004 describes database applications, team software projects, network projects and capstone design/prototyping; src_067 describes integrated hardware/software design experiences."
+    },
+    {
+        "id":  "q007_typo",
+        "original_id":  "q007",
+        "variant":  "typo",
+        "question":  "What kind of projcts do Computer Engineering students build?",
+        "expected_source_ids":  [
+                                    "src_004",
+                                    "src_067"
+                                ],
+        "note":  "src_004 describes database applications, team software projects, network projects and capstone design/prototyping; src_067 describes integrated hardware/software design experiences."
+    },
+    {
+        "id":  "q008_original",
+        "original_id":  "q008",
+        "variant":  "original",
+        "question":  "What programming languages are taught in Computer Engineering?",
+        "expected_source_ids":  [
+                                    "src_003",
+                                    "src_004"
+                                ],
+        "note":  "src_003 lists a Python programming elective; src_004 explicitly names Python or C++ for object-oriented programming. Do not infer other languages from generic course names."
+    },
+    {
+        "id":  "q008_reworded",
+        "original_id":  "q008",
+        "variant":  "reworded",
+        "question":  "Which coding languages would I be taught in a Computer Engineering program?",
+        "expected_source_ids":  [
+                                    "src_003",
+                                    "src_004"
+                                ],
+        "note":  "src_003 lists a Python programming elective; src_004 explicitly names Python or C++ for object-oriented programming. Do not infer other languages from generic course names."
+    },
+    {
+        "id":  "q008_informal",
+        "original_id":  "q008",
+        "variant":  "informal",
+        "question":  "what languages do they teach in comp eng",
+        "expected_source_ids":  [
+                                    "src_003",
+                                    "src_004"
+                                ],
+        "note":  "src_003 lists a Python programming elective; src_004 explicitly names Python or C++ for object-oriented programming. Do not infer other languages from generic course names."
+    },
+    {
+        "id":  "q008_typo",
+        "original_id":  "q008",
+        "variant":  "typo",
+        "question":  "What progrmming languages are taught in Computer Engineering?",
+        "expected_source_ids":  [
+                                    "src_003",
+                                    "src_004"
+                                ],
+        "note":  "src_003 lists a Python programming elective; src_004 explicitly names Python or C++ for object-oriented programming. Do not infer other languages from generic course names."
+    },
+    {
+        "id":  "q009_original",
+        "original_id":  "q009",
+        "variant":  "original",
+        "question":  "Do I need prior programming experience before starting Computer Engineering?",
+        "expected_source_ids":  [
+                                    "src_039",
+                                    "src_070"
+                                ],
+        "note":  "src_039 explicitly accepts students with no prior programming; src_070 describes beginner routes for EECS students. These are Brown/Berkeley examples, not an OSTIM admission prerequisite statement."
+    },
+    {
+        "id":  "q009_reworded",
+        "original_id":  "q009",
+        "variant":  "reworded",
+        "question":  "Must I already know how to code before I begin a Computer Engineering degree?",
+        "expected_source_ids":  [
+                                    "src_039",
+                                    "src_070"
+                                ],
+        "note":  "src_039 explicitly accepts students with no prior programming; src_070 describes beginner routes for EECS students. These are Brown/Berkeley examples, not an OSTIM admission prerequisite statement."
+    },
+    {
+        "id":  "q009_informal",
+        "original_id":  "q009",
+        "variant":  "informal",
+        "question":  "need coding before starting comp eng",
+        "expected_source_ids":  [
+                                    "src_039",
+                                    "src_070"
+                                ],
+        "note":  "src_039 explicitly accepts students with no prior programming; src_070 describes beginner routes for EECS students. These are Brown/Berkeley examples, not an OSTIM admission prerequisite statement."
+    },
+    {
+        "id":  "q009_typo",
+        "original_id":  "q009",
+        "variant":  "typo",
+        "question":  "Do I need pror programming experience before starting Computer Engineering?",
+        "expected_source_ids":  [
+                                    "src_039",
+                                    "src_070"
+                                ],
+        "note":  "src_039 explicitly accepts students with no prior programming; src_070 describes beginner routes for EECS students. These are Brown/Berkeley examples, not an OSTIM admission prerequisite statement."
+    },
+    {
+        "id":  "q010_original",
+        "original_id":  "q010",
+        "variant":  "original",
+        "question":  "How much mathematics is required in Computer Engineering?",
+        "expected_source_ids":  [
+                                    "src_003",
+                                    "src_004",
+                                    "src_067"
+                                ],
+        "note":  "src_003 and src_004 list and describe required mathematics; src_067 explains mathematics foundations for CE. Use the local curriculum for actual requirements."
+    },
+    {
+        "id":  "q010_reworded",
+        "original_id":  "q010",
+        "variant":  "reworded",
+        "question":  "What level and range of math does a Computer Engineering degree involve?",
+        "expected_source_ids":  [
+                                    "src_003",
+                                    "src_004",
+                                    "src_067"
+                                ],
+        "note":  "src_003 and src_004 list and describe required mathematics; src_067 explains mathematics foundations for CE. Use the local curriculum for actual requirements."
+    },
+    {
+        "id":  "q010_informal",
+        "original_id":  "q010",
+        "variant":  "informal",
+        "question":  "how much math in comp eng",
+        "expected_source_ids":  [
+                                    "src_003",
+                                    "src_004",
+                                    "src_067"
+                                ],
+        "note":  "src_003 and src_004 list and describe required mathematics; src_067 explains mathematics foundations for CE. Use the local curriculum for actual requirements."
+    },
+    {
+        "id":  "q010_typo",
+        "original_id":  "q010",
+        "variant":  "typo",
+        "question":  "How much matheatics is required in Computer Engineering?",
+        "expected_source_ids":  [
+                                    "src_003",
+                                    "src_004",
+                                    "src_067"
+                                ],
+        "note":  "src_003 and src_004 list and describe required mathematics; src_067 explains mathematics foundations for CE. Use the local curriculum for actual requirements."
+    },
+    {
+        "id":  "q011_original",
+        "original_id":  "q011",
+        "variant":  "original",
+        "question":  "Is Computer Engineering one of the hardest engineering majors?",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: curricula show technical rigor, but the processed text does not rank difficulty against other engineering majors."
+    },
+    {
+        "id":  "q011_reworded",
+        "original_id":  "q011",
+        "variant":  "reworded",
+        "question":  "Compared with other engineering degrees, is Computer Engineering among the most difficult?",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: curricula show technical rigor, but the processed text does not rank difficulty against other engineering majors."
+    },
+    {
+        "id":  "q011_informal",
+        "original_id":  "q011",
+        "variant":  "informal",
+        "question":  "is comp eng one of the hardest majors",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: curricula show technical rigor, but the processed text does not rank difficulty against other engineering majors."
+    },
+    {
+        "id":  "q011_typo",
+        "original_id":  "q011",
+        "variant":  "typo",
+        "question":  "Is Compter Engineering one of the hardest engineering majors?",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: curricula show technical rigor, but the processed text does not rank difficulty against other engineering majors."
+    },
+    {
+        "id":  "q012_original",
+        "original_id":  "q012",
+        "variant":  "original",
+        "question":  "Can someone with no coding experience succeed in Computer Engineering?",
+        "expected_source_ids":  [
+                                    "src_039",
+                                    "src_070"
+                                ],
+        "note":  "src_039 says beginner courses assume no background and equally prepare students for later CS; src_070 gives a beginner EECS course path. This supports a learning route, not guaranteed success."
+    },
+    {
+        "id":  "q012_reworded",
+        "original_id":  "q012",
+        "variant":  "reworded",
+        "question":  "Could I do well in Computer Engineering if I have never written a program?",
+        "expected_source_ids":  [
+                                    "src_039",
+                                    "src_070"
+                                ],
+        "note":  "src_039 says beginner courses assume no background and equally prepare students for later CS; src_070 gives a beginner EECS course path. This supports a learning route, not guaranteed success."
+    },
+    {
+        "id":  "q012_informal",
+        "original_id":  "q012",
+        "variant":  "informal",
+        "question":  "can i pass comp eng with zero coding",
+        "expected_source_ids":  [
+                                    "src_039",
+                                    "src_070"
+                                ],
+        "note":  "src_039 says beginner courses assume no background and equally prepare students for later CS; src_070 gives a beginner EECS course path. This supports a learning route, not guaranteed success."
+    },
+    {
+        "id":  "q012_typo",
+        "original_id":  "q012",
+        "variant":  "typo",
+        "question":  "Can somone with no coding experience succeed in Computer Engineering?",
+        "expected_source_ids":  [
+                                    "src_039",
+                                    "src_070"
+                                ],
+        "note":  "src_039 says beginner courses assume no background and equally prepare students for later CS; src_070 gives a beginner EECS course path. This supports a learning route, not guaranteed success."
+    },
+    {
+        "id":  "q013_original",
+        "original_id":  "q013",
+        "variant":  "original",
+        "question":  "How many hours do Computer Engineering students typically study each week?",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: src_039 gives hours for individual Brown introductory CS courses and src_067 gives credit/workload conventions; neither gives typical total weekly CE student study hours."
+    },
+    {
+        "id":  "q013_reworded",
+        "original_id":  "q013",
+        "variant":  "reworded",
+        "question":  "On average, how much time per week do Computer Engineering students spend studying?",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: src_039 gives hours for individual Brown introductory CS courses and src_067 gives credit/workload conventions; neither gives typical total weekly CE student study hours."
+    },
+    {
+        "id":  "q013_informal",
+        "original_id":  "q013",
+        "variant":  "informal",
+        "question":  "comp eng study hours per week",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: src_039 gives hours for individual Brown introductory CS courses and src_067 gives credit/workload conventions; neither gives typical total weekly CE student study hours."
+    },
+    {
+        "id":  "q013_typo",
+        "original_id":  "q013",
+        "variant":  "typo",
+        "question":  "How many hors do Computer Engineering students typically study each week?",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: src_039 gives hours for individual Brown introductory CS courses and src_067 gives credit/workload conventions; neither gives typical total weekly CE student study hours."
+    },
+    {
+        "id":  "q014_original",
+        "original_id":  "q014",
+        "variant":  "original",
+        "question":  "Is teamwork important in Computer Engineering?",
+        "expected_source_ids":  [
+                                    "src_004",
+                                    "src_014",
+                                    "src_034",
+                                    "src_079",
+                                    "src_091"
+                                ],
+        "note":  "src_004 includes team software and capstone projects; src_014 describes hardware engineers working with teams; src_034, src_079 and src_091 identify teamwork as an engineering/career competency."
+    },
+    {
+        "id":  "q014_reworded",
+        "original_id":  "q014",
+        "variant":  "reworded",
+        "question":  "How much does working with other people matter in Computer Engineering?",
+        "expected_source_ids":  [
+                                    "src_004",
+                                    "src_014",
+                                    "src_034",
+                                    "src_079",
+                                    "src_091"
+                                ],
+        "note":  "src_004 includes team software and capstone projects; src_014 describes hardware engineers working with teams; src_034, src_079 and src_091 identify teamwork as an engineering/career competency."
+    },
+    {
+        "id":  "q014_informal",
+        "original_id":  "q014",
+        "variant":  "informal",
+        "question":  "does teamwork matter in comp eng",
+        "expected_source_ids":  [
+                                    "src_004",
+                                    "src_014",
+                                    "src_034",
+                                    "src_079",
+                                    "src_091"
+                                ],
+        "note":  "src_004 includes team software and capstone projects; src_014 describes hardware engineers working with teams; src_034, src_079 and src_091 identify teamwork as an engineering/career competency."
+    },
+    {
+        "id":  "q014_typo",
+        "original_id":  "q014",
+        "variant":  "typo",
+        "question":  "Is teamork important in Computer Engineering?",
+        "expected_source_ids":  [
+                                    "src_004",
+                                    "src_014",
+                                    "src_034",
+                                    "src_079",
+                                    "src_091"
+                                ],
+        "note":  "src_004 includes team software and capstone projects; src_014 describes hardware engineers working with teams; src_034, src_079 and src_091 identify teamwork as an engineering/career competency."
+    },
+    {
+        "id":  "q015_original",
+        "original_id":  "q015",
+        "variant":  "original",
+        "question":  "What skills should I develop during university to become a successful computer engineer?",
+        "expected_source_ids":  [
+                                    "src_014",
+                                    "src_034",
+                                    "src_067",
+                                    "src_079",
+                                    "src_081",
+                                    "src_091"
+                                ],
+        "note":  "src_014 describes professional tasks and skills; src_034 and src_091 cover employability skills; src_067 and src_079 cover engineering outcomes; src_081 covers practical software engineering habits."
+    },
+    {
+        "id":  "q015_reworded",
+        "original_id":  "q015",
+        "variant":  "reworded",
+        "question":  "What abilities should I build as an undergraduate to do well as a computer engineer?",
+        "expected_source_ids":  [
+                                    "src_014",
+                                    "src_034",
+                                    "src_067",
+                                    "src_079",
+                                    "src_081",
+                                    "src_091"
+                                ],
+        "note":  "src_014 describes professional tasks and skills; src_034 and src_091 cover employability skills; src_067 and src_079 cover engineering outcomes; src_081 covers practical software engineering habits."
+    },
+    {
+        "id":  "q015_informal",
+        "original_id":  "q015",
+        "variant":  "informal",
+        "question":  "skills to build at uni for comp eng",
+        "expected_source_ids":  [
+                                    "src_014",
+                                    "src_034",
+                                    "src_067",
+                                    "src_079",
+                                    "src_081",
+                                    "src_091"
+                                ],
+        "note":  "src_014 describes professional tasks and skills; src_034 and src_091 cover employability skills; src_067 and src_079 cover engineering outcomes; src_081 covers practical software engineering habits."
+    },
+    {
+        "id":  "q015_typo",
+        "original_id":  "q015",
+        "variant":  "typo",
+        "question":  "What skils should I develop during university to become a successful computer engineer?",
+        "expected_source_ids":  [
+                                    "src_014",
+                                    "src_034",
+                                    "src_067",
+                                    "src_079",
+                                    "src_081",
+                                    "src_091"
+                                ],
+        "note":  "src_014 describes professional tasks and skills; src_034 and src_091 cover employability skills; src_067 and src_079 cover engineering outcomes; src_081 covers practical software engineering habits."
+    },
+    {
+        "id":  "q016_original",
+        "original_id":  "q016",
+        "variant":  "original",
+        "question":  "Is it easy to find a job after graduating from Computer Engineering in Turkey?",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: src_026 reports Turkish ICT sector employment and growth, but does not establish how easily CE graduates find jobs; src_021 and src_022 contain no usable outcome statistics."
+    },
+    {
+        "id":  "q016_reworded",
+        "original_id":  "q016",
+        "variant":  "reworded",
+        "question":  "How difficult is it for a new Computer Engineering graduate to get hired in Turkey?",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: src_026 reports Turkish ICT sector employment and growth, but does not establish how easily CE graduates find jobs; src_021 and src_022 contain no usable outcome statistics."
+    },
+    {
+        "id":  "q016_informal",
+        "original_id":  "q016",
+        "variant":  "informal",
+        "question":  "easy to get comp eng job in turkey",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: src_026 reports Turkish ICT sector employment and growth, but does not establish how easily CE graduates find jobs; src_021 and src_022 contain no usable outcome statistics."
+    },
+    {
+        "id":  "q016_typo",
+        "original_id":  "q016",
+        "variant":  "typo",
+        "question":  "Is it easy to find a job afer graduating from Computer Engineering in Turkey?",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: src_026 reports Turkish ICT sector employment and growth, but does not establish how easily CE graduates find jobs; src_021 and src_022 contain no usable outcome statistics."
+    },
+    {
+        "id":  "q017_original",
+        "original_id":  "q017",
+        "variant":  "original",
+        "question":  "Is Computer Engineering still a good career choice in the AI era?",
+        "expected_source_ids":  [
+                                    "src_017",
+                                    "src_087",
+                                    "src_093"
+                                ],
+        "note":  "src_017 forecasts growth in technology roles and changing skill needs through 2030; src_087 discusses AI developer trends and fundamentals; src_093 explains critical AI use. No career guarantee is supported."
+    },
+    {
+        "id":  "q017_reworded",
+        "original_id":  "q017",
+        "variant":  "reworded",
+        "question":  "With artificial intelligence advancing, is Computer Engineering still worth pursuing as a career?",
+        "expected_source_ids":  [
+                                    "src_017",
+                                    "src_087",
+                                    "src_093"
+                                ],
+        "note":  "src_017 forecasts growth in technology roles and changing skill needs through 2030; src_087 discusses AI developer trends and fundamentals; src_093 explains critical AI use. No career guarantee is supported."
+    },
+    {
+        "id":  "q017_informal",
+        "original_id":  "q017",
+        "variant":  "informal",
+        "question":  "comp eng still worth it with ai",
+        "expected_source_ids":  [
+                                    "src_017",
+                                    "src_087",
+                                    "src_093"
+                                ],
+        "note":  "src_017 forecasts growth in technology roles and changing skill needs through 2030; src_087 discusses AI developer trends and fundamentals; src_093 explains critical AI use. No career guarantee is supported."
+    },
+    {
+        "id":  "q017_typo",
+        "original_id":  "q017",
+        "variant":  "typo",
+        "question":  "Is Compter Engineering still a good career choice in the AI era?",
+        "expected_source_ids":  [
+                                    "src_017",
+                                    "src_087",
+                                    "src_093"
+                                ],
+        "note":  "src_017 forecasts growth in technology roles and changing skill needs through 2030; src_087 discusses AI developer trends and fundamentals; src_093 explains critical AI use. No career guarantee is supported."
+    },
+    {
+        "id":  "q018_original",
+        "original_id":  "q018",
+        "variant":  "original",
+        "question":  "Will AI replace software engineers and computer engineers?",
+        "expected_source_ids":  [
+                                    "src_017",
+                                    "src_039",
+                                    "src_093"
+                                ],
+        "note":  "src_017 discusses automation, job change and reskilling; src_039 describes humans designing and auditing AI-produced code; src_093 explains engineering responsibilities beyond generated code. These support a qualified answer, not a definite replacement prediction."
+    },
+    {
+        "id":  "q018_reworded",
+        "original_id":  "q018",
+        "variant":  "reworded",
+        "question":  "Are AI tools going to take over the jobs of software and computer engineers?",
+        "expected_source_ids":  [
+                                    "src_017",
+                                    "src_039",
+                                    "src_093"
+                                ],
+        "note":  "src_017 discusses automation, job change and reskilling; src_039 describes humans designing and auditing AI-produced code; src_093 explains engineering responsibilities beyond generated code. These support a qualified answer, not a definite replacement prediction."
+    },
+    {
+        "id":  "q018_informal",
+        "original_id":  "q018",
+        "variant":  "informal",
+        "question":  "will ai take software and comp eng jobs",
+        "expected_source_ids":  [
+                                    "src_017",
+                                    "src_039",
+                                    "src_093"
+                                ],
+        "note":  "src_017 discusses automation, job change and reskilling; src_039 describes humans designing and auditing AI-produced code; src_093 explains engineering responsibilities beyond generated code. These support a qualified answer, not a definite replacement prediction."
+    },
+    {
+        "id":  "q018_typo",
+        "original_id":  "q018",
+        "variant":  "typo",
+        "question":  "Will AI repace software engineers and computer engineers?",
+        "expected_source_ids":  [
+                                    "src_017",
+                                    "src_039",
+                                    "src_093"
+                                ],
+        "note":  "src_017 discusses automation, job change and reskilling; src_039 describes humans designing and auditing AI-produced code; src_093 explains engineering responsibilities beyond generated code. These support a qualified answer, not a definite replacement prediction."
+    },
+    {
+        "id":  "q019_original",
+        "original_id":  "q019",
+        "variant":  "original",
+        "question":  "What industries hire Computer Engineering graduates?",
+        "expected_source_ids":  [
+                                    "src_014",
+                                    "src_067"
+                                ],
+        "note":  "src_014 describes hardware engineering for commercial, industrial, military and scientific use; src_067 explicitly lists computer, automobile, aerospace, telecommunications, power, manufacturing, defense and electronics industries employing computer engineers."
+    },
+    {
+        "id":  "q019_reworded",
+        "original_id":  "q019",
+        "variant":  "reworded",
+        "question":  "Which sectors employ people with Computer Engineering degrees?",
+        "expected_source_ids":  [
+                                    "src_014",
+                                    "src_067"
+                                ],
+        "note":  "src_014 describes hardware engineering for commercial, industrial, military and scientific use; src_067 explicitly lists computer, automobile, aerospace, telecommunications, power, manufacturing, defense and electronics industries employing computer engineers."
+    },
+    {
+        "id":  "q019_informal",
+        "original_id":  "q019",
+        "variant":  "informal",
+        "question":  "what industries hire comp eng grads",
+        "expected_source_ids":  [
+                                    "src_014",
+                                    "src_067"
+                                ],
+        "note":  "src_014 describes hardware engineering for commercial, industrial, military and scientific use; src_067 explicitly lists computer, automobile, aerospace, telecommunications, power, manufacturing, defense and electronics industries employing computer engineers."
+    },
+    {
+        "id":  "q019_typo",
+        "original_id":  "q019",
+        "variant":  "typo",
+        "question":  "What indusries hire Computer Engineering graduates?",
+        "expected_source_ids":  [
+                                    "src_014",
+                                    "src_067"
+                                ],
+        "note":  "src_014 describes hardware engineering for commercial, industrial, military and scientific use; src_067 explicitly lists computer, automobile, aerospace, telecommunications, power, manufacturing, defense and electronics industries employing computer engineers."
+    },
+    {
+        "id":  "q020_original",
+        "original_id":  "q020",
+        "variant":  "original",
+        "question":  "Can Computer Engineering graduates work abroad?",
+        "expected_source_ids":  [
+                                    "src_028",
+                                    "src_029"
+                                ],
+        "note":  "src_028 explains presenting qualifications, recognition and documents for working abroad; src_029 sets out the EU Blue Card route for qualified workers. Eligibility depends on destination and applicant conditions."
+    },
+    {
+        "id":  "q020_reworded",
+        "original_id":  "q020",
+        "variant":  "reworded",
+        "question":  "Does a Computer Engineering degree allow graduates to seek employment in other countries?",
+        "expected_source_ids":  [
+                                    "src_028",
+                                    "src_029"
+                                ],
+        "note":  "src_028 explains presenting qualifications, recognition and documents for working abroad; src_029 sets out the EU Blue Card route for qualified workers. Eligibility depends on destination and applicant conditions."
+    },
+    {
+        "id":  "q020_informal",
+        "original_id":  "q020",
+        "variant":  "informal",
+        "question":  "can comp eng grads get jobs abroad",
+        "expected_source_ids":  [
+                                    "src_028",
+                                    "src_029"
+                                ],
+        "note":  "src_028 explains presenting qualifications, recognition and documents for working abroad; src_029 sets out the EU Blue Card route for qualified workers. Eligibility depends on destination and applicant conditions."
+    },
+    {
+        "id":  "q020_typo",
+        "original_id":  "q020",
+        "variant":  "typo",
+        "question":  "Can Compter Engineering graduates work abroad?",
+        "expected_source_ids":  [
+                                    "src_028",
+                                    "src_029"
+                                ],
+        "note":  "src_028 explains presenting qualifications, recognition and documents for working abroad; src_029 sets out the EU Blue Card route for qualified workers. Eligibility depends on destination and applicant conditions."
+    },
+    {
+        "id":  "q021_original",
+        "original_id":  "q021",
+        "variant":  "original",
+        "question":  "Can I work remotely as a Computer Engineer?",
+        "expected_source_ids":  [
+                                    "src_049",
+                                    "src_037"
+                                ],
+        "note":  "src_049 reports hybrid developer work; src_037 explicitly reports internships combining in-person and virtual work. These support working remotely for part of a software-related role, not universal fully remote CE employment."
+    },
+    {
+        "id":  "q021_reworded",
+        "original_id":  "q021",
+        "variant":  "reworded",
+        "question":  "Are there opportunities to do Computer Engineering work from home?",
+        "expected_source_ids":  [
+                                    "src_049",
+                                    "src_037"
+                                ],
+        "note":  "src_049 reports hybrid developer work; src_037 explicitly reports internships combining in-person and virtual work. These support working remotely for part of a software-related role, not universal fully remote CE employment."
+    },
+    {
+        "id":  "q021_informal",
+        "original_id":  "q021",
+        "variant":  "informal",
+        "question":  "can a comp engineer work remote",
+        "expected_source_ids":  [
+                                    "src_049",
+                                    "src_037"
+                                ],
+        "note":  "src_049 reports hybrid developer work; src_037 explicitly reports internships combining in-person and virtual work. These support working remotely for part of a software-related role, not universal fully remote CE employment."
+    },
+    {
+        "id":  "q021_typo",
+        "original_id":  "q021",
+        "variant":  "typo",
+        "question":  "Can I work remoely as a Computer Engineer?",
+        "expected_source_ids":  [
+                                    "src_049",
+                                    "src_037"
+                                ],
+        "note":  "src_049 reports hybrid developer work; src_037 explicitly reports internships combining in-person and virtual work. These support working remotely for part of a software-related role, not universal fully remote CE employment."
+    },
+    {
+        "id":  "q022_original",
+        "original_id":  "q022",
+        "variant":  "original",
+        "question":  "What are the most in-demand Computer Engineering jobs today?",
+        "expected_source_ids":  [
+                                    "src_017",
+                                    "src_026"
+                                ],
+        "note":  "src_017 identifies growth in big data, AI/ML, fintech and software roles; src_026 identifies Turkish demand in AI, cybersecurity and IoT. These are dated 2025-era market evidence, not a live vacancy ranking."
+    },
+    {
+        "id":  "q022_reworded",
+        "original_id":  "q022",
+        "variant":  "reworded",
+        "question":  "Which jobs available to Computer Engineering graduates are employers especially looking for?",
+        "expected_source_ids":  [
+                                    "src_017",
+                                    "src_026"
+                                ],
+        "note":  "src_017 identifies growth in big data, AI/ML, fintech and software roles; src_026 identifies Turkish demand in AI, cybersecurity and IoT. These are dated 2025-era market evidence, not a live vacancy ranking."
+    },
+    {
+        "id":  "q022_informal",
+        "original_id":  "q022",
+        "variant":  "informal",
+        "question":  "what comp eng jobs are in demand now",
+        "expected_source_ids":  [
+                                    "src_017",
+                                    "src_026"
+                                ],
+        "note":  "src_017 identifies growth in big data, AI/ML, fintech and software roles; src_026 identifies Turkish demand in AI, cybersecurity and IoT. These are dated 2025-era market evidence, not a live vacancy ranking."
+    },
+    {
+        "id":  "q022_typo",
+        "original_id":  "q022",
+        "variant":  "typo",
+        "question":  "What are the most in-demnd Computer Engineering jobs today?",
+        "expected_source_ids":  [
+                                    "src_017",
+                                    "src_026"
+                                ],
+        "note":  "src_017 identifies growth in big data, AI/ML, fintech and software roles; src_026 identifies Turkish demand in AI, cybersecurity and IoT. These are dated 2025-era market evidence, not a live vacancy ranking."
+    },
+    {
+        "id":  "q023_original",
+        "original_id":  "q023",
+        "variant":  "original",
+        "question":  "Which specialization has the highest demand in the job market?",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: src_017 ranks projected job growth and src_026 names high-demand areas, but neither establishes the single specialization with the highest current job-market demand."
+    },
+    {
+        "id":  "q023_reworded",
+        "original_id":  "q023",
+        "variant":  "reworded",
+        "question":  "Which Computer Engineering specialty do employers need the most?",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: src_017 ranks projected job growth and src_026 names high-demand areas, but neither establishes the single specialization with the highest current job-market demand."
+    },
+    {
+        "id":  "q023_informal",
+        "original_id":  "q023",
+        "variant":  "informal",
+        "question":  "which comp eng specialty has most demand",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: src_017 ranks projected job growth and src_026 names high-demand areas, but neither establishes the single specialization with the highest current job-market demand."
+    },
+    {
+        "id":  "q023_typo",
+        "original_id":  "q023",
+        "variant":  "typo",
+        "question":  "Whch specialization has the highest demand in the job market?",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: src_017 ranks projected job growth and src_026 names high-demand areas, but neither establishes the single specialization with the highest current job-market demand."
+    },
+    {
+        "id":  "q024_original",
+        "original_id":  "q024",
+        "variant":  "original",
+        "question":  "Can Computer Engineering graduates start their own software company?",
+        "expected_source_ids":  [
+                                    "src_005",
+                                    "src_020"
+                                ],
+        "note":  "src_005 explicitly describes student entrepreneurship, startup capital and technopark support; src_020 covers planning, funding, launching and managing a business. Neither guarantees commercial success."
+    },
+    {
+        "id":  "q024_reworded",
+        "original_id":  "q024",
+        "variant":  "reworded",
+        "question":  "Could I set up a software business after a Computer Engineering degree?",
+        "expected_source_ids":  [
+                                    "src_005",
+                                    "src_020"
+                                ],
+        "note":  "src_005 explicitly describes student entrepreneurship, startup capital and technopark support; src_020 covers planning, funding, launching and managing a business. Neither guarantees commercial success."
+    },
+    {
+        "id":  "q024_informal",
+        "original_id":  "q024",
+        "variant":  "informal",
+        "question":  "can comp eng grads start a software company",
+        "expected_source_ids":  [
+                                    "src_005",
+                                    "src_020"
+                                ],
+        "note":  "src_005 explicitly describes student entrepreneurship, startup capital and technopark support; src_020 covers planning, funding, launching and managing a business. Neither guarantees commercial success."
+    },
+    {
+        "id":  "q024_typo",
+        "original_id":  "q024",
+        "variant":  "typo",
+        "question":  "Can Compter Engineering graduates start their own software company?",
+        "expected_source_ids":  [
+                                    "src_005",
+                                    "src_020"
+                                ],
+        "note":  "src_005 explicitly describes student entrepreneurship, startup capital and technopark support; src_020 covers planning, funding, launching and managing a business. Neither guarantees commercial success."
+    },
+    {
+        "id":  "q025_original",
+        "original_id":  "q025",
+        "variant":  "original",
+        "question":  "Is the Computer Engineering job market becoming saturated?",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: sector growth and hiring projections in src_017 and src_026 do not measure CE graduate supply against vacancies or establish saturation."
+    },
+    {
+        "id":  "q025_reworded",
+        "original_id":  "q025",
+        "variant":  "reworded",
+        "question":  "Are there now too many Computer Engineering graduates for the available jobs?",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: sector growth and hiring projections in src_017 and src_026 do not measure CE graduate supply against vacancies or establish saturation."
+    },
+    {
+        "id":  "q025_informal",
+        "original_id":  "q025",
+        "variant":  "informal",
+        "question":  "is the comp eng job market overcrowded",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: sector growth and hiring projections in src_017 and src_026 do not measure CE graduate supply against vacancies or establish saturation."
+    },
+    {
+        "id":  "q025_typo",
+        "original_id":  "q025",
+        "variant":  "typo",
+        "question":  "Is the Compter Engineering job market becoming saturated?",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: sector growth and hiring projections in src_017 and src_026 do not measure CE graduate supply against vacancies or establish saturation."
+    },
+    {
+        "id":  "q026_original",
+        "original_id":  "q026",
+        "variant":  "original",
+        "question":  "Will there still be enough job opportunities in the next 10 years?",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: src_017 and src_026 forecast through 2030, not a full ten years from the present, and do not establish whether opportunities will be enough relative to graduate supply."
+    },
+    {
+        "id":  "q026_reworded",
+        "original_id":  "q026",
+        "variant":  "reworded",
+        "question":  "Will the job market still offer enough opportunities for computer engineers a decade from now?",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: src_017 and src_026 forecast through 2030, not a full ten years from the present, and do not establish whether opportunities will be enough relative to graduate supply."
+    },
+    {
+        "id":  "q026_informal",
+        "original_id":  "q026",
+        "variant":  "informal",
+        "question":  "enough comp eng jobs in 10 years",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: src_017 and src_026 forecast through 2030, not a full ten years from the present, and do not establish whether opportunities will be enough relative to graduate supply."
+    },
+    {
+        "id":  "q026_typo",
+        "original_id":  "q026",
+        "variant":  "typo",
+        "question":  "Will thre still be enough job opportunities in the next 10 years?",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: src_017 and src_026 forecast through 2030, not a full ten years from the present, and do not establish whether opportunities will be enough relative to graduate supply."
+    },
+    {
+        "id":  "q027_original",
+        "original_id":  "q027",
+        "variant":  "original",
+        "question":  "Is Computer Engineering a future-proof career?",
+        "expected_source_ids":  [
+                                    "src_017",
+                                    "src_087",
+                                    "src_093"
+                                ],
+        "note":  "src_017 explicitly discusses changing skills and reskilling; src_087 and src_093 recommend fundamentals plus critical AI use. These support adaptability advice, not a promise of permanent job security."
+    },
+    {
+        "id":  "q027_reworded",
+        "original_id":  "q027",
+        "variant":  "reworded",
+        "question":  "How secure is Computer Engineering as a career as technology changes?",
+        "expected_source_ids":  [
+                                    "src_017",
+                                    "src_087",
+                                    "src_093"
+                                ],
+        "note":  "src_017 explicitly discusses changing skills and reskilling; src_087 and src_093 recommend fundamentals plus critical AI use. These support adaptability advice, not a promise of permanent job security."
+    },
+    {
+        "id":  "q027_informal",
+        "original_id":  "q027",
+        "variant":  "informal",
+        "question":  "is comp eng future proof",
+        "expected_source_ids":  [
+                                    "src_017",
+                                    "src_087",
+                                    "src_093"
+                                ],
+        "note":  "src_017 explicitly discusses changing skills and reskilling; src_087 and src_093 recommend fundamentals plus critical AI use. These support adaptability advice, not a promise of permanent job security."
+    },
+    {
+        "id":  "q027_typo",
+        "original_id":  "q027",
+        "variant":  "typo",
+        "question":  "Is Compter Engineering a future-proof career?",
+        "expected_source_ids":  [
+                                    "src_017",
+                                    "src_087",
+                                    "src_093"
+                                ],
+        "note":  "src_017 explicitly discusses changing skills and reskilling; src_087 and src_093 recommend fundamentals plus critical AI use. These support adaptability advice, not a promise of permanent job security."
+    },
+    {
+        "id":  "q028_original",
+        "original_id":  "q028",
+        "variant":  "original",
+        "question":  "What if I graduate without internship experience?",
+        "expected_source_ids":  [
+                                    "src_018",
+                                    "src_074",
+                                    "src_091"
+                                ],
+        "note":  "src_018 directly compares interns and non-interns on offers and starting pay; src_074 explains presenting transferable academic/extracurricular skills without job experience; src_091 covers alternative evidence of employability. Survey findings are not individual predictions."
+    },
+    {
+        "id":  "q028_reworded",
+        "original_id":  "q028",
+        "variant":  "reworded",
+        "question":  "How might finishing my degree without an internship affect my job prospects?",
+        "expected_source_ids":  [
+                                    "src_018",
+                                    "src_074",
+                                    "src_091"
+                                ],
+        "note":  "src_018 directly compares interns and non-interns on offers and starting pay; src_074 explains presenting transferable academic/extracurricular skills without job experience; src_091 covers alternative evidence of employability. Survey findings are not individual predictions."
+    },
+    {
+        "id":  "q028_informal",
+        "original_id":  "q028",
+        "variant":  "informal",
+        "question":  "graduating with no internship what then",
+        "expected_source_ids":  [
+                                    "src_018",
+                                    "src_074",
+                                    "src_091"
+                                ],
+        "note":  "src_018 directly compares interns and non-interns on offers and starting pay; src_074 explains presenting transferable academic/extracurricular skills without job experience; src_091 covers alternative evidence of employability. Survey findings are not individual predictions."
+    },
+    {
+        "id":  "q028_typo",
+        "original_id":  "q028",
+        "variant":  "typo",
+        "question":  "What if I gradate without internship experience?",
+        "expected_source_ids":  [
+                                    "src_018",
+                                    "src_074",
+                                    "src_091"
+                                ],
+        "note":  "src_018 directly compares interns and non-interns on offers and starting pay; src_074 explains presenting transferable academic/extracurricular skills without job experience; src_091 covers alternative evidence of employability. Survey findings are not individual predictions."
+    },
+    {
+        "id":  "q029_original",
+        "original_id":  "q029",
+        "variant":  "original",
+        "question":  "What happens if I graduate with a low GPA?",
+        "expected_source_ids":  [
+                                    "src_033",
+                                    "src_044",
+                                    "src_091"
+                                ],
+        "note":  "src_033 reports reduced employer GPA screening; src_044 says graduate schools require strong undergraduate GPA; src_091 explains skills and projects alongside GPA. No exact outcome or cutoff is established."
+    },
+    {
+        "id":  "q029_reworded",
+        "original_id":  "q029",
+        "variant":  "reworded",
+        "question":  "How could poor university grades affect me once I graduate?",
+        "expected_source_ids":  [
+                                    "src_033",
+                                    "src_044",
+                                    "src_091"
+                                ],
+        "note":  "src_033 reports reduced employer GPA screening; src_044 says graduate schools require strong undergraduate GPA; src_091 explains skills and projects alongside GPA. No exact outcome or cutoff is established."
+    },
+    {
+        "id":  "q029_informal",
+        "original_id":  "q029",
+        "variant":  "informal",
+        "question":  "low gpa after graduation am i stuck",
+        "expected_source_ids":  [
+                                    "src_033",
+                                    "src_044",
+                                    "src_091"
+                                ],
+        "note":  "src_033 reports reduced employer GPA screening; src_044 says graduate schools require strong undergraduate GPA; src_091 explains skills and projects alongside GPA. No exact outcome or cutoff is established."
+    },
+    {
+        "id":  "q029_typo",
+        "original_id":  "q029",
+        "variant":  "typo",
+        "question":  "What hapens if I graduate with a low GPA?",
+        "expected_source_ids":  [
+                                    "src_033",
+                                    "src_044",
+                                    "src_091"
+                                ],
+        "note":  "src_033 reports reduced employer GPA screening; src_044 says graduate schools require strong undergraduate GPA; src_091 explains skills and projects alongside GPA. No exact outcome or cutoff is established."
+    },
+    {
+        "id":  "q030_original",
+        "original_id":  "q030",
+        "variant":  "original",
+        "question":  "Is GPA more important than personal projects?",
+        "expected_source_ids":  [
+                                    "src_033",
+                                    "src_074",
+                                    "src_091"
+                                ],
+        "note":  "src_033 discusses skills-based hiring versus GPA screening; src_074 explicitly recommends projects on software resumes; src_091 balances GPA with demonstrated skills. No universal GPA-versus-project ranking is supported."
+    },
+    {
+        "id":  "q030_reworded",
+        "original_id":  "q030",
+        "variant":  "reworded",
+        "question":  "When applying for jobs, do grades matter more than the projects I build myself?",
+        "expected_source_ids":  [
+                                    "src_033",
+                                    "src_074",
+                                    "src_091"
+                                ],
+        "note":  "src_033 discusses skills-based hiring versus GPA screening; src_074 explicitly recommends projects on software resumes; src_091 balances GPA with demonstrated skills. No universal GPA-versus-project ranking is supported."
+    },
+    {
+        "id":  "q030_informal",
+        "original_id":  "q030",
+        "variant":  "informal",
+        "question":  "gpa or side projects which matters more",
+        "expected_source_ids":  [
+                                    "src_033",
+                                    "src_074",
+                                    "src_091"
+                                ],
+        "note":  "src_033 discusses skills-based hiring versus GPA screening; src_074 explicitly recommends projects on software resumes; src_091 balances GPA with demonstrated skills. No universal GPA-versus-project ranking is supported."
+    },
+    {
+        "id":  "q030_typo",
+        "original_id":  "q030",
+        "variant":  "typo",
+        "question":  "Is GPA more impotant than personal projects?",
+        "expected_source_ids":  [
+                                    "src_033",
+                                    "src_074",
+                                    "src_091"
+                                ],
+        "note":  "src_033 discusses skills-based hiring versus GPA screening; src_074 explicitly recommends projects on software resumes; src_091 balances GPA with demonstrated skills. No universal GPA-versus-project ranking is supported."
+    },
+    {
+        "id":  "q031_original",
+        "original_id":  "q031",
+        "variant":  "original",
+        "question":  "What is the average starting salary for Computer Engineering graduates in Turkey or World?",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: the processed texts contain no average entry-level CE salary for Turkey or the world; src_049 and src_051 discuss other compensation populations, and title-only wage sources do not provide the requested figures."
+    },
+    {
+        "id":  "q031_reworded",
+        "original_id":  "q031",
+        "variant":  "reworded",
+        "question":  "How much do newly qualified computer engineers earn on average in Turkey or internationally?",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: the processed texts contain no average entry-level CE salary for Turkey or the world; src_049 and src_051 discuss other compensation populations, and title-only wage sources do not provide the requested figures."
+    },
+    {
+        "id":  "q031_informal",
+        "original_id":  "q031",
+        "variant":  "informal",
+        "question":  "starting comp eng salary turkey or worldwide",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: the processed texts contain no average entry-level CE salary for Turkey or the world; src_049 and src_051 discuss other compensation populations, and title-only wage sources do not provide the requested figures."
+    },
+    {
+        "id":  "q031_typo",
+        "original_id":  "q031",
+        "variant":  "typo",
+        "question":  "What is the aveage starting salary for Computer Engineering graduates in Turkey or World?",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: the processed texts contain no average entry-level CE salary for Turkey or the world; src_049 and src_051 discuss other compensation populations, and title-only wage sources do not provide the requested figures."
+    },
+    {
+        "id":  "q032_original",
+        "original_id":  "q032",
+        "variant":  "original",
+        "question":  "Which Computer Engineering specialization offers the highest salaries in Turkey?",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: src_049 discusses global developer role pay and src_051 discusses language pay, but neither ranks CE specializations by salary in Turkey."
+    },
+    {
+        "id":  "q032_reworded",
+        "original_id":  "q032",
+        "variant":  "reworded",
+        "question":  "Which Computer Engineering specialty pays the most in Turkey?",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: src_049 discusses global developer role pay and src_051 discusses language pay, but neither ranks CE specializations by salary in Turkey."
+    },
+    {
+        "id":  "q032_informal",
+        "original_id":  "q032",
+        "variant":  "informal",
+        "question":  "best paid comp eng specialty in turkey",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: src_049 discusses global developer role pay and src_051 discusses language pay, but neither ranks CE specializations by salary in Turkey."
+    },
+    {
+        "id":  "q032_typo",
+        "original_id":  "q032",
+        "variant":  "typo",
+        "question":  "Whch Computer Engineering specialization offers the highest salaries in Turkey?",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: src_049 discusses global developer role pay and src_051 discusses language pay, but neither ranks CE specializations by salary in Turkey."
+    },
+    {
+        "id":  "q033_original",
+        "original_id":  "q033",
+        "variant":  "original",
+        "question":  "How long does it take to become a senior software engineer?",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: experience and role descriptions do not establish a typical promotion timeline to senior software engineer."
+    },
+    {
+        "id":  "q033_reworded",
+        "original_id":  "q033",
+        "variant":  "reworded",
+        "question":  "After starting in software, how many years does it usually take to reach senior engineer level?",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: experience and role descriptions do not establish a typical promotion timeline to senior software engineer."
+    },
+    {
+        "id":  "q033_informal",
+        "original_id":  "q033",
+        "variant":  "informal",
+        "question":  "how many years to senior software engineer",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: experience and role descriptions do not establish a typical promotion timeline to senior software engineer."
+    },
+    {
+        "id":  "q033_typo",
+        "original_id":  "q033",
+        "variant":  "typo",
+        "question":  "How long does it take to becme a senior software engineer?",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: experience and role descriptions do not establish a typical promotion timeline to senior software engineer."
+    },
+    {
+        "id":  "q034_original",
+        "original_id":  "q034",
+        "variant":  "original",
+        "question":  "Can I become an AI engineer after studying Computer Engineering?",
+        "expected_source_ids":  [
+                                    "src_043",
+                                    "src_086",
+                                    "src_092"
+                                ],
+        "note":  "src_043 lists AI as a CE specialization; src_086 explains a CE route into data science/ML; src_092 gives mathematical and programming foundations for ML careers. This is preparation guidance, not automatic qualification for every AI role."
+    },
+    {
+        "id":  "q034_reworded",
+        "original_id":  "q034",
+        "variant":  "reworded",
+        "question":  "Would a Computer Engineering degree be a route into an AI engineering career?",
+        "expected_source_ids":  [
+                                    "src_043",
+                                    "src_086",
+                                    "src_092"
+                                ],
+        "note":  "src_043 lists AI as a CE specialization; src_086 explains a CE route into data science/ML; src_092 gives mathematical and programming foundations for ML careers. This is preparation guidance, not automatic qualification for every AI role."
+    },
+    {
+        "id":  "q034_informal",
+        "original_id":  "q034",
+        "variant":  "informal",
+        "question":  "can comp eng lead to ai engineer",
+        "expected_source_ids":  [
+                                    "src_043",
+                                    "src_086",
+                                    "src_092"
+                                ],
+        "note":  "src_043 lists AI as a CE specialization; src_086 explains a CE route into data science/ML; src_092 gives mathematical and programming foundations for ML careers. This is preparation guidance, not automatic qualification for every AI role."
+    },
+    {
+        "id":  "q034_typo",
+        "original_id":  "q034",
+        "variant":  "typo",
+        "question":  "Can I becme an AI engineer after studying Computer Engineering?",
+        "expected_source_ids":  [
+                                    "src_043",
+                                    "src_086",
+                                    "src_092"
+                                ],
+        "note":  "src_043 lists AI as a CE specialization; src_086 explains a CE route into data science/ML; src_092 gives mathematical and programming foundations for ML careers. This is preparation guidance, not automatic qualification for every AI role."
+    },
+    {
+        "id":  "q035_original",
+        "original_id":  "q035",
+        "variant":  "original",
+        "question":  "Can I become a cybersecurity specialist with a Computer Engineering degree?",
+        "expected_source_ids":  [
+                                    "src_043",
+                                    "src_085",
+                                    "src_094"
+                                ],
+        "note":  "src_043 lists security as a CE specialization; src_085 explicitly connects CE foundations with cybersecurity; src_094 gives role-specific preparation paths for CE students."
+    },
+    {
+        "id":  "q035_reworded",
+        "original_id":  "q035",
+        "variant":  "reworded",
+        "question":  "Could I enter cybersecurity after completing a Computer Engineering degree?",
+        "expected_source_ids":  [
+                                    "src_043",
+                                    "src_085",
+                                    "src_094"
+                                ],
+        "note":  "src_043 lists security as a CE specialization; src_085 explicitly connects CE foundations with cybersecurity; src_094 gives role-specific preparation paths for CE students."
+    },
+    {
+        "id":  "q035_informal",
+        "original_id":  "q035",
+        "variant":  "informal",
+        "question":  "can i do cybersecurity with comp eng",
+        "expected_source_ids":  [
+                                    "src_043",
+                                    "src_085",
+                                    "src_094"
+                                ],
+        "note":  "src_043 lists security as a CE specialization; src_085 explicitly connects CE foundations with cybersecurity; src_094 gives role-specific preparation paths for CE students."
+    },
+    {
+        "id":  "q035_typo",
+        "original_id":  "q035",
+        "variant":  "typo",
+        "question":  "Can I becme a cybersecurity specialist with a Computer Engineering degree?",
+        "expected_source_ids":  [
+                                    "src_043",
+                                    "src_085",
+                                    "src_094"
+                                ],
+        "note":  "src_043 lists security as a CE specialization; src_085 explicitly connects CE foundations with cybersecurity; src_094 gives role-specific preparation paths for CE students."
+    },
+    {
+        "id":  "q036_original",
+        "original_id":  "q036",
+        "variant":  "original",
+        "question":  "Which programming language should I learn first?",
+        "expected_source_ids":  [
+                                    "src_039"
+                                ],
+        "note":  "src_039 describes beginner options using Python/Pyret or Java and choosing by interests such as data or interactive programs. It supports language options rather than one universally best first language."
+    },
+    {
+        "id":  "q036_reworded",
+        "original_id":  "q036",
+        "variant":  "reworded",
+        "question":  "What would be a sensible coding language for me to start with?",
+        "expected_source_ids":  [
+                                    "src_039"
+                                ],
+        "note":  "src_039 describes beginner options using Python/Pyret or Java and choosing by interests such as data or interactive programs. It supports language options rather than one universally best first language."
+    },
+    {
+        "id":  "q036_informal",
+        "original_id":  "q036",
+        "variant":  "informal",
+        "question":  "what coding language first",
+        "expected_source_ids":  [
+                                    "src_039"
+                                ],
+        "note":  "src_039 describes beginner options using Python/Pyret or Java and choosing by interests such as data or interactive programs. It supports language options rather than one universally best first language."
+    },
+    {
+        "id":  "q036_typo",
+        "original_id":  "q036",
+        "variant":  "typo",
+        "question":  "Whch programming language should I learn first?",
+        "expected_source_ids":  [
+                                    "src_039"
+                                ],
+        "note":  "src_039 describes beginner options using Python/Pyret or Java and choosing by interests such as data or interactive programs. It supports language options rather than one universally best first language."
+    },
+    {
+        "id":  "q037_original",
+        "original_id":  "q037",
+        "variant":  "original",
+        "question":  "Which technologies should I learn before graduation?",
+        "expected_source_ids":  [
+                                    "src_081",
+                                    "src_082",
+                                    "src_085",
+                                    "src_087",
+                                    "src_090"
+                                ],
+        "note":  "src_081 recommends testing, debugging, Git and design; src_082 recommends Linux, networking, databases and backend/cloud foundations; src_085 covers security foundations; src_087 covers portfolio practices; src_090 explains shell tools."
+    },
+    {
+        "id":  "q037_reworded",
+        "original_id":  "q037",
+        "variant":  "reworded",
+        "question":  "What tools and technical areas should I know by the time I finish university?",
+        "expected_source_ids":  [
+                                    "src_081",
+                                    "src_082",
+                                    "src_085",
+                                    "src_087",
+                                    "src_090"
+                                ],
+        "note":  "src_081 recommends testing, debugging, Git and design; src_082 recommends Linux, networking, databases and backend/cloud foundations; src_085 covers security foundations; src_087 covers portfolio practices; src_090 explains shell tools."
+    },
+    {
+        "id":  "q037_informal",
+        "original_id":  "q037",
+        "variant":  "informal",
+        "question":  "tech to learn before graduating",
+        "expected_source_ids":  [
+                                    "src_081",
+                                    "src_082",
+                                    "src_085",
+                                    "src_087",
+                                    "src_090"
+                                ],
+        "note":  "src_081 recommends testing, debugging, Git and design; src_082 recommends Linux, networking, databases and backend/cloud foundations; src_085 covers security foundations; src_087 covers portfolio practices; src_090 explains shell tools."
+    },
+    {
+        "id":  "q037_typo",
+        "original_id":  "q037",
+        "variant":  "typo",
+        "question":  "Whch technologies should I learn before graduation?",
+        "expected_source_ids":  [
+                                    "src_081",
+                                    "src_082",
+                                    "src_085",
+                                    "src_087",
+                                    "src_090"
+                                ],
+        "note":  "src_081 recommends testing, debugging, Git and design; src_082 recommends Linux, networking, databases and backend/cloud foundations; src_085 covers security foundations; src_087 covers portfolio practices; src_090 explains shell tools."
+    },
+    {
+        "id":  "q038_original",
+        "original_id":  "q038",
+        "variant":  "original",
+        "question":  "Should I focus on web development, mobile development, AI, or cybersecurity?",
+        "expected_source_ids":  [
+                                    "src_043",
+                                    "src_073",
+                                    "src_081",
+                                    "src_085",
+                                    "src_086"
+                                ],
+        "note":  "src_043 describes CE focus areas; src_073 gives career self-assessment; src_081 covers common foundations for web/mobile/AI software; src_085 and src_086 describe security and data/ML preparation. These provide selection criteria rather than a personal verdict."
+    },
+    {
+        "id":  "q038_reworded",
+        "original_id":  "q038",
+        "variant":  "reworded",
+        "question":  "How should I choose between web, mobile, artificial intelligence and security as my main focus?",
+        "expected_source_ids":  [
+                                    "src_043",
+                                    "src_073",
+                                    "src_081",
+                                    "src_085",
+                                    "src_086"
+                                ],
+        "note":  "src_043 describes CE focus areas; src_073 gives career self-assessment; src_081 covers common foundations for web/mobile/AI software; src_085 and src_086 describe security and data/ML preparation. These provide selection criteria rather than a personal verdict."
+    },
+    {
+        "id":  "q038_informal",
+        "original_id":  "q038",
+        "variant":  "informal",
+        "question":  "web mobile ai or cyber what should i pick",
+        "expected_source_ids":  [
+                                    "src_043",
+                                    "src_073",
+                                    "src_081",
+                                    "src_085",
+                                    "src_086"
+                                ],
+        "note":  "src_043 describes CE focus areas; src_073 gives career self-assessment; src_081 covers common foundations for web/mobile/AI software; src_085 and src_086 describe security and data/ML preparation. These provide selection criteria rather than a personal verdict."
+    },
+    {
+        "id":  "q038_typo",
+        "original_id":  "q038",
+        "variant":  "typo",
+        "question":  "Shold I focus on web development, mobile development, AI, or cybersecurity?",
+        "expected_source_ids":  [
+                                    "src_043",
+                                    "src_073",
+                                    "src_081",
+                                    "src_085",
+                                    "src_086"
+                                ],
+        "note":  "src_043 describes CE focus areas; src_073 gives career self-assessment; src_081 covers common foundations for web/mobile/AI software; src_085 and src_086 describe security and data/ML preparation. These provide selection criteria rather than a personal verdict."
+    },
+    {
+        "id":  "q039_original",
+        "original_id":  "q039",
+        "variant":  "original",
+        "question":  "Is learning Linux important for Computer Engineering students?",
+        "expected_source_ids":  [
+                                    "src_004",
+                                    "src_082",
+                                    "src_085",
+                                    "src_090"
+                                ],
+        "note":  "src_004 includes Linux in operating-systems projects; src_082 and src_085 recommend Linux/command-line foundations for cloud and security; src_090 explains terminal skills for Linux engineering workflows."
+    },
+    {
+        "id":  "q039_reworded",
+        "original_id":  "q039",
+        "variant":  "reworded",
+        "question":  "How useful is Linux knowledge for someone studying Computer Engineering?",
+        "expected_source_ids":  [
+                                    "src_004",
+                                    "src_082",
+                                    "src_085",
+                                    "src_090"
+                                ],
+        "note":  "src_004 includes Linux in operating-systems projects; src_082 and src_085 recommend Linux/command-line foundations for cloud and security; src_090 explains terminal skills for Linux engineering workflows."
+    },
+    {
+        "id":  "q039_informal",
+        "original_id":  "q039",
+        "variant":  "informal",
+        "question":  "do comp eng students need linux",
+        "expected_source_ids":  [
+                                    "src_004",
+                                    "src_082",
+                                    "src_085",
+                                    "src_090"
+                                ],
+        "note":  "src_004 includes Linux in operating-systems projects; src_082 and src_085 recommend Linux/command-line foundations for cloud and security; src_090 explains terminal skills for Linux engineering workflows."
+    },
+    {
+        "id":  "q039_typo",
+        "original_id":  "q039",
+        "variant":  "typo",
+        "question":  "Is learing Linux important for Computer Engineering students?",
+        "expected_source_ids":  [
+                                    "src_004",
+                                    "src_082",
+                                    "src_085",
+                                    "src_090"
+                                ],
+        "note":  "src_004 includes Linux in operating-systems projects; src_082 and src_085 recommend Linux/command-line foundations for cloud and security; src_090 explains terminal skills for Linux engineering workflows."
+    },
+    {
+        "id":  "q040_original",
+        "original_id":  "q040",
+        "variant":  "original",
+        "question":  "Should every Computer Engineering student learn Git and GitHub?",
+        "expected_source_ids":  [
+                                    "src_015",
+                                    "src_081",
+                                    "src_087"
+                                ],
+        "note":  "src_015 explains Git version history and GitHub collaboration; src_081 explicitly recommends Git/GitHub for CENG software paths; src_087 explains credible GitHub portfolios. This supports usefulness rather than a formal universal degree requirement."
+    },
+    {
+        "id":  "q040_reworded",
+        "original_id":  "q040",
+        "variant":  "reworded",
+        "question":  "Is it worth learning version control with Git and using GitHub during my Computer Engineering degree?",
+        "expected_source_ids":  [
+                                    "src_015",
+                                    "src_081",
+                                    "src_087"
+                                ],
+        "note":  "src_015 explains Git version history and GitHub collaboration; src_081 explicitly recommends Git/GitHub for CENG software paths; src_087 explains credible GitHub portfolios. This supports usefulness rather than a formal universal degree requirement."
+    },
+    {
+        "id":  "q040_informal",
+        "original_id":  "q040",
+        "variant":  "informal",
+        "question":  "should comp eng students learn git github",
+        "expected_source_ids":  [
+                                    "src_015",
+                                    "src_081",
+                                    "src_087"
+                                ],
+        "note":  "src_015 explains Git version history and GitHub collaboration; src_081 explicitly recommends Git/GitHub for CENG software paths; src_087 explains credible GitHub portfolios. This supports usefulness rather than a formal universal degree requirement."
+    },
+    {
+        "id":  "q040_typo",
+        "original_id":  "q040",
+        "variant":  "typo",
+        "question":  "Shold every Computer Engineering student learn Git and GitHub?",
+        "expected_source_ids":  [
+                                    "src_015",
+                                    "src_081",
+                                    "src_087"
+                                ],
+        "note":  "src_015 explains Git version history and GitHub collaboration; src_081 explicitly recommends Git/GitHub for CENG software paths; src_087 explains credible GitHub portfolios. This supports usefulness rather than a formal universal degree requirement."
+    },
+    {
+        "id":  "q041_original",
+        "original_id":  "q041",
+        "variant":  "original",
+        "question":  "How important are internships during Computer Engineering education?",
+        "expected_source_ids":  [
+                                    "src_004",
+                                    "src_018",
+                                    "src_037",
+                                    "src_091"
+                                ],
+        "note":  "src_004 describes OSTIM workplace learning; src_018 compares internship outcomes and employer preference; src_037 discusses intern selection; src_091 explains experiential evidence of career readiness."
+    },
+    {
+        "id":  "q041_reworded",
+        "original_id":  "q041",
+        "variant":  "reworded",
+        "question":  "What value do internships add to a Computer Engineering degree?",
+        "expected_source_ids":  [
+                                    "src_004",
+                                    "src_018",
+                                    "src_037",
+                                    "src_091"
+                                ],
+        "note":  "src_004 describes OSTIM workplace learning; src_018 compares internship outcomes and employer preference; src_037 discusses intern selection; src_091 explains experiential evidence of career readiness."
+    },
+    {
+        "id":  "q041_informal",
+        "original_id":  "q041",
+        "variant":  "informal",
+        "question":  "how much do comp eng internships matter",
+        "expected_source_ids":  [
+                                    "src_004",
+                                    "src_018",
+                                    "src_037",
+                                    "src_091"
+                                ],
+        "note":  "src_004 describes OSTIM workplace learning; src_018 compares internship outcomes and employer preference; src_037 discusses intern selection; src_091 explains experiential evidence of career readiness."
+    },
+    {
+        "id":  "q041_typo",
+        "original_id":  "q041",
+        "variant":  "typo",
+        "question":  "How impotant are internships during Computer Engineering education?",
+        "expected_source_ids":  [
+                                    "src_004",
+                                    "src_018",
+                                    "src_037",
+                                    "src_091"
+                                ],
+        "note":  "src_004 describes OSTIM workplace learning; src_018 compares internship outcomes and employer preference; src_037 discusses intern selection; src_091 explains experiential evidence of career readiness."
+    },
+    {
+        "id":  "q042_original",
+        "original_id":  "q042",
+        "variant":  "original",
+        "question":  "How can I find my first internship?",
+        "expected_source_ids":  [
+                                    "src_037",
+                                    "src_074"
+                                ],
+        "note":  "src_037 identifies open applications, career centers, referrals, faculty contacts and in-person career fairs as recruiting channels; src_074 explains applying without prior experience and highlighting transferable skills."
+    },
+    {
+        "id":  "q042_reworded",
+        "original_id":  "q042",
+        "variant":  "reworded",
+        "question":  "Where should I start looking to secure my first internship?",
+        "expected_source_ids":  [
+                                    "src_037",
+                                    "src_074"
+                                ],
+        "note":  "src_037 identifies open applications, career centers, referrals, faculty contacts and in-person career fairs as recruiting channels; src_074 explains applying without prior experience and highlighting transferable skills."
+    },
+    {
+        "id":  "q042_informal",
+        "original_id":  "q042",
+        "variant":  "informal",
+        "question":  "how do i land my first internship",
+        "expected_source_ids":  [
+                                    "src_037",
+                                    "src_074"
+                                ],
+        "note":  "src_037 identifies open applications, career centers, referrals, faculty contacts and in-person career fairs as recruiting channels; src_074 explains applying without prior experience and highlighting transferable skills."
+    },
+    {
+        "id":  "q042_typo",
+        "original_id":  "q042",
+        "variant":  "typo",
+        "question":  "How can I find my fist internship?",
+        "expected_source_ids":  [
+                                    "src_037",
+                                    "src_074"
+                                ],
+        "note":  "src_037 identifies open applications, career centers, referrals, faculty contacts and in-person career fairs as recruiting channels; src_074 explains applying without prior experience and highlighting transferable skills."
+    },
+    {
+        "id":  "q043_original",
+        "original_id":  "q043",
+        "variant":  "original",
+        "question":  "What should I include in my CV as a Computer Engineering student?",
+        "expected_source_ids":  [
+                                    "src_036",
+                                    "src_074"
+                                ],
+        "note":  "src_036 explains resume purpose and content; src_074 explicitly lists education, experience, projects, skills, GitHub links and impact descriptions, including software/CS projects."
+    },
+    {
+        "id":  "q043_reworded",
+        "original_id":  "q043",
+        "variant":  "reworded",
+        "question":  "As a Computer Engineering student, what information belongs on my resume?",
+        "expected_source_ids":  [
+                                    "src_036",
+                                    "src_074"
+                                ],
+        "note":  "src_036 explains resume purpose and content; src_074 explicitly lists education, experience, projects, skills, GitHub links and impact descriptions, including software/CS projects."
+    },
+    {
+        "id":  "q043_informal",
+        "original_id":  "q043",
+        "variant":  "informal",
+        "question":  "what goes on a comp eng student cv",
+        "expected_source_ids":  [
+                                    "src_036",
+                                    "src_074"
+                                ],
+        "note":  "src_036 explains resume purpose and content; src_074 explicitly lists education, experience, projects, skills, GitHub links and impact descriptions, including software/CS projects."
+    },
+    {
+        "id":  "q043_typo",
+        "original_id":  "q043",
+        "variant":  "typo",
+        "question":  "What shold I include in my CV as a Computer Engineering student?",
+        "expected_source_ids":  [
+                                    "src_036",
+                                    "src_074"
+                                ],
+        "note":  "src_036 explains resume purpose and content; src_074 explicitly lists education, experience, projects, skills, GitHub links and impact descriptions, including software/CS projects."
+    },
+    {
+        "id":  "q044_original",
+        "original_id":  "q044",
+        "variant":  "original",
+        "question":  "How can I build an impressive portfolio before graduation?",
+        "expected_source_ids":  [
+                                    "src_035",
+                                    "src_081",
+                                    "src_087",
+                                    "src_091"
+                                ],
+        "note":  "src_035 explains showcasing skills and tailoring a portfolio; src_081 recommends professional engineering habits; src_087 recommends readable code, history, documentation and tests; src_091 recommends explaining role, tradeoffs and learning."
+    },
+    {
+        "id":  "q044_reworded",
+        "original_id":  "q044",
+        "variant":  "reworded",
+        "question":  "How can I put together a strong collection of projects before I finish university?",
+        "expected_source_ids":  [
+                                    "src_035",
+                                    "src_081",
+                                    "src_087",
+                                    "src_091"
+                                ],
+        "note":  "src_035 explains showcasing skills and tailoring a portfolio; src_081 recommends professional engineering habits; src_087 recommends readable code, history, documentation and tests; src_091 recommends explaining role, tradeoffs and learning."
+    },
+    {
+        "id":  "q044_informal",
+        "original_id":  "q044",
+        "variant":  "informal",
+        "question":  "how to build a good portfolio before graduation",
+        "expected_source_ids":  [
+                                    "src_035",
+                                    "src_081",
+                                    "src_087",
+                                    "src_091"
+                                ],
+        "note":  "src_035 explains showcasing skills and tailoring a portfolio; src_081 recommends professional engineering habits; src_087 recommends readable code, history, documentation and tests; src_091 recommends explaining role, tradeoffs and learning."
+    },
+    {
+        "id":  "q044_typo",
+        "original_id":  "q044",
+        "variant":  "typo",
+        "question":  "How can I buld an impressive portfolio before graduation?",
+        "expected_source_ids":  [
+                                    "src_035",
+                                    "src_081",
+                                    "src_087",
+                                    "src_091"
+                                ],
+        "note":  "src_035 explains showcasing skills and tailoring a portfolio; src_081 recommends professional engineering habits; src_087 recommends readable code, history, documentation and tests; src_091 recommends explaining role, tradeoffs and learning."
+    },
+    {
+        "id":  "q045_original",
+        "original_id":  "q045",
+        "variant":  "original",
+        "question":  "Should I participate in hackathons and coding competitions?",
+        "expected_source_ids":  [
+                                    "src_034",
+                                    "src_091"
+                                ],
+        "note":  "src_034 explicitly recommends skills-focused activities such as hackathons; src_091 lists hackathons as a way to demonstrate career competencies. These support participation benefits, not guaranteed contest or hiring outcomes."
+    },
+    {
+        "id":  "q045_reworded",
+        "original_id":  "q045",
+        "variant":  "reworded",
+        "question":  "Would hackathons and programming contests be useful activities for me as a student?",
+        "expected_source_ids":  [
+                                    "src_034",
+                                    "src_091"
+                                ],
+        "note":  "src_034 explicitly recommends skills-focused activities such as hackathons; src_091 lists hackathons as a way to demonstrate career competencies. These support participation benefits, not guaranteed contest or hiring outcomes."
+    },
+    {
+        "id":  "q045_informal",
+        "original_id":  "q045",
+        "variant":  "informal",
+        "question":  "are hackathons and coding contests worth it",
+        "expected_source_ids":  [
+                                    "src_034",
+                                    "src_091"
+                                ],
+        "note":  "src_034 explicitly recommends skills-focused activities such as hackathons; src_091 lists hackathons as a way to demonstrate career competencies. These support participation benefits, not guaranteed contest or hiring outcomes."
+    },
+    {
+        "id":  "q045_typo",
+        "original_id":  "q045",
+        "variant":  "typo",
+        "question":  "Shold I participate in hackathons and coding competitions?",
+        "expected_source_ids":  [
+                                    "src_034",
+                                    "src_091"
+                                ],
+        "note":  "src_034 explicitly recommends skills-focused activities such as hackathons; src_091 lists hackathons as a way to demonstrate career competencies. These support participation benefits, not guaranteed contest or hiring outcomes."
+    },
+    {
+        "id":  "q046_original",
+        "original_id":  "q046",
+        "variant":  "original",
+        "question":  "Do I need a master\u0027s degree to have a successful career?",
+        "expected_source_ids":  [
+                                    "src_044",
+                                    "src_086",
+                                    "src_088"
+                                ],
+        "note":  "src_044 advises deciding by career goals; src_086 describes bachelor-level entry and graduate study for research-heavy roles; src_088 explicitly says a master\u0027s is not necessary for every software job."
+    },
+    {
+        "id":  "q046_reworded",
+        "original_id":  "q046",
+        "variant":  "reworded",
+        "question":  "Is postgraduate study essential for a successful engineering career?",
+        "expected_source_ids":  [
+                                    "src_044",
+                                    "src_086",
+                                    "src_088"
+                                ],
+        "note":  "src_044 advises deciding by career goals; src_086 describes bachelor-level entry and graduate study for research-heavy roles; src_088 explicitly says a master\u0027s is not necessary for every software job."
+    },
+    {
+        "id":  "q046_informal",
+        "original_id":  "q046",
+        "variant":  "informal",
+        "question":  "need a masters to have a good career",
+        "expected_source_ids":  [
+                                    "src_044",
+                                    "src_086",
+                                    "src_088"
+                                ],
+        "note":  "src_044 advises deciding by career goals; src_086 describes bachelor-level entry and graduate study for research-heavy roles; src_088 explicitly says a master\u0027s is not necessary for every software job."
+    },
+    {
+        "id":  "q046_typo",
+        "original_id":  "q046",
+        "variant":  "typo",
+        "question":  "Do I need a maser\u0027s degree to have a successful career?",
+        "expected_source_ids":  [
+                                    "src_044",
+                                    "src_086",
+                                    "src_088"
+                                ],
+        "note":  "src_044 advises deciding by career goals; src_086 describes bachelor-level entry and graduate study for research-heavy roles; src_088 explicitly says a master\u0027s is not necessary for every software job."
+    },
+    {
+        "id":  "q047_original",
+        "original_id":  "q047",
+        "variant":  "original",
+        "question":  "Can I work in artificial intelligence without a master\u0027s degree?",
+        "expected_source_ids":  [
+                                    "src_086",
+                                    "src_088"
+                                ],
+        "note":  "src_086 describes bachelor-level entry to related data/ML work and graduate study for advanced research; src_088 says research-heavy AI may need deeper graduate specialization. Neither supports all AI roles being accessible without a master\u0027s."
+    },
+    {
+        "id":  "q047_reworded",
+        "original_id":  "q047",
+        "variant":  "reworded",
+        "question":  "Can I get an artificial intelligence job with only an undergraduate degree?",
+        "expected_source_ids":  [
+                                    "src_086",
+                                    "src_088"
+                                ],
+        "note":  "src_086 describes bachelor-level entry to related data/ML work and graduate study for advanced research; src_088 says research-heavy AI may need deeper graduate specialization. Neither supports all AI roles being accessible without a master\u0027s."
+    },
+    {
+        "id":  "q047_informal",
+        "original_id":  "q047",
+        "variant":  "informal",
+        "question":  "ai job without a masters possible",
+        "expected_source_ids":  [
+                                    "src_086",
+                                    "src_088"
+                                ],
+        "note":  "src_086 describes bachelor-level entry to related data/ML work and graduate study for advanced research; src_088 says research-heavy AI may need deeper graduate specialization. Neither supports all AI roles being accessible without a master\u0027s."
+    },
+    {
+        "id":  "q047_typo",
+        "original_id":  "q047",
+        "variant":  "typo",
+        "question":  "Can I work in artifcial intelligence without a master\u0027s degree?",
+        "expected_source_ids":  [
+                                    "src_086",
+                                    "src_088"
+                                ],
+        "note":  "src_086 describes bachelor-level entry to related data/ML work and graduate study for advanced research; src_088 says research-heavy AI may need deeper graduate specialization. Neither supports all AI roles being accessible without a master\u0027s."
+    },
+    {
+        "id":  "q048_original",
+        "original_id":  "q048",
+        "variant":  "original",
+        "question":  "Should I pursue graduate studies or start working immediately after graduation?",
+        "expected_source_ids":  [
+                                    "src_044",
+                                    "src_088"
+                                ],
+        "note":  "src_044 gives self-assessment questions about career paths, timing and reasons for graduate school; src_088 distinguishes research-oriented CE graduate study from paths where a master\u0027s is unnecessary."
+    },
+    {
+        "id":  "q048_reworded",
+        "original_id":  "q048",
+        "variant":  "reworded",
+        "question":  "How do I decide between getting a job and doing a postgraduate degree straight after university?",
+        "expected_source_ids":  [
+                                    "src_044",
+                                    "src_088"
+                                ],
+        "note":  "src_044 gives self-assessment questions about career paths, timing and reasons for graduate school; src_088 distinguishes research-oriented CE graduate study from paths where a master\u0027s is unnecessary."
+    },
+    {
+        "id":  "q048_informal",
+        "original_id":  "q048",
+        "variant":  "informal",
+        "question":  "work or grad school right after graduating",
+        "expected_source_ids":  [
+                                    "src_044",
+                                    "src_088"
+                                ],
+        "note":  "src_044 gives self-assessment questions about career paths, timing and reasons for graduate school; src_088 distinguishes research-oriented CE graduate study from paths where a master\u0027s is unnecessary."
+    },
+    {
+        "id":  "q048_typo",
+        "original_id":  "q048",
+        "variant":  "typo",
+        "question":  "Shold I pursue graduate studies or start working immediately after graduation?",
+        "expected_source_ids":  [
+                                    "src_044",
+                                    "src_088"
+                                ],
+        "note":  "src_044 gives self-assessment questions about career paths, timing and reasons for graduate school; src_088 distinguishes research-oriented CE graduate study from paths where a master\u0027s is unnecessary."
+    },
+    {
+        "id":  "q049_original",
+        "original_id":  "q049",
+        "variant":  "original",
+        "question":  "Which field of Computer Engineering is right for me?",
+        "expected_source_ids":  [
+                                    "src_043",
+                                    "src_073",
+                                    "src_080",
+                                    "src_094"
+                                ],
+        "note":  "src_043 describes CE specializations; src_073 gives strengths/career self-assessment; src_080 describes computing interests and fit; src_094 recommends exploring security roles before choosing a pathway. These support exploration, not an individualized verdict."
+    },
+    {
+        "id":  "q049_reworded",
+        "original_id":  "q049",
+        "variant":  "reworded",
+        "question":  "How can I choose the Computer Engineering area that best matches my interests and strengths?",
+        "expected_source_ids":  [
+                                    "src_043",
+                                    "src_073",
+                                    "src_080",
+                                    "src_094"
+                                ],
+        "note":  "src_043 describes CE specializations; src_073 gives strengths/career self-assessment; src_080 describes computing interests and fit; src_094 recommends exploring security roles before choosing a pathway. These support exploration, not an individualized verdict."
+    },
+    {
+        "id":  "q049_informal",
+        "original_id":  "q049",
+        "variant":  "informal",
+        "question":  "which comp eng field suits me",
+        "expected_source_ids":  [
+                                    "src_043",
+                                    "src_073",
+                                    "src_080",
+                                    "src_094"
+                                ],
+        "note":  "src_043 describes CE specializations; src_073 gives strengths/career self-assessment; src_080 describes computing interests and fit; src_094 recommends exploring security roles before choosing a pathway. These support exploration, not an individualized verdict."
+    },
+    {
+        "id":  "q049_typo",
+        "original_id":  "q049",
+        "variant":  "typo",
+        "question":  "Whch field of Computer Engineering is right for me?",
+        "expected_source_ids":  [
+                                    "src_043",
+                                    "src_073",
+                                    "src_080",
+                                    "src_094"
+                                ],
+        "note":  "src_043 describes CE specializations; src_073 gives strengths/career self-assessment; src_080 describes computing interests and fit; src_094 recommends exploring security roles before choosing a pathway. These support exploration, not an individualized verdict."
+    },
+    {
+        "id":  "q050_original",
+        "original_id":  "q050",
+        "variant":  "original",
+        "question":  "If I don\u0027t enjoy coding, can I still succeed in Computer Engineering?",
+        "expected_source_ids":  [
+                                    "src_014",
+                                    "src_080",
+                                    "src_081"
+                                ],
+        "note":  "src_014 describes hardware design, testing and integration tasks; src_080 explains CE hardware/software breadth; src_081 describes work beyond code construction. These support exploring role fit, not avoiding programming entirely or guaranteeing success."
+    },
+    {
+        "id":  "q050_reworded",
+        "original_id":  "q050",
+        "variant":  "reworded",
+        "question":  "Could Computer Engineering still suit me if I dislike writing programs?",
+        "expected_source_ids":  [
+                                    "src_014",
+                                    "src_080",
+                                    "src_081"
+                                ],
+        "note":  "src_014 describes hardware design, testing and integration tasks; src_080 explains CE hardware/software breadth; src_081 describes work beyond code construction. These support exploring role fit, not avoiding programming entirely or guaranteeing success."
+    },
+    {
+        "id":  "q050_informal",
+        "original_id":  "q050",
+        "variant":  "informal",
+        "question":  "dont like coding can i still do comp eng",
+        "expected_source_ids":  [
+                                    "src_014",
+                                    "src_080",
+                                    "src_081"
+                                ],
+        "note":  "src_014 describes hardware design, testing and integration tasks; src_080 explains CE hardware/software breadth; src_081 describes work beyond code construction. These support exploring role fit, not avoiding programming entirely or guaranteeing success."
+    },
+    {
+        "id":  "q050_typo",
+        "original_id":  "q050",
+        "variant":  "typo",
+        "question":  "If I don\u0027t enoy coding, can I still succeed in Computer Engineering?",
+        "expected_source_ids":  [
+                                    "src_014",
+                                    "src_080",
+                                    "src_081"
+                                ],
+        "note":  "src_014 describes hardware design, testing and integration tasks; src_080 explains CE hardware/software breadth; src_081 describes work beyond code construction. These support exploring role fit, not avoiding programming entirely or guaranteeing success."
+    },
+    {
+        "id":  "q051_original",
+        "original_id":  "q051",
+        "variant":  "original",
+        "question":  "How do I discover which specialization I enjoy the most?",
+        "expected_source_ids":  [
+                                    "src_043",
+                                    "src_044",
+                                    "src_073",
+                                    "src_094"
+                                ],
+        "note":  "src_043 maps focus areas; src_044 recommends learning about interests through interviews, research and internships; src_073 recommends self-assessment and feedback; src_094 recommends role exploration and practice labs for security interests."
+    },
+    {
+        "id":  "q051_reworded",
+        "original_id":  "q051",
+        "variant":  "reworded",
+        "question":  "What can I do to find out which Computer Engineering specialty I like best?",
+        "expected_source_ids":  [
+                                    "src_043",
+                                    "src_044",
+                                    "src_073",
+                                    "src_094"
+                                ],
+        "note":  "src_043 maps focus areas; src_044 recommends learning about interests through interviews, research and internships; src_073 recommends self-assessment and feedback; src_094 recommends role exploration and practice labs for security interests."
+    },
+    {
+        "id":  "q051_informal",
+        "original_id":  "q051",
+        "variant":  "informal",
+        "question":  "how do i find my favorite comp eng specialty",
+        "expected_source_ids":  [
+                                    "src_043",
+                                    "src_044",
+                                    "src_073",
+                                    "src_094"
+                                ],
+        "note":  "src_043 maps focus areas; src_044 recommends learning about interests through interviews, research and internships; src_073 recommends self-assessment and feedback; src_094 recommends role exploration and practice labs for security interests."
+    },
+    {
+        "id":  "q051_typo",
+        "original_id":  "q051",
+        "variant":  "typo",
+        "question":  "How do I discver which specialization I enjoy the most?",
+        "expected_source_ids":  [
+                                    "src_043",
+                                    "src_044",
+                                    "src_073",
+                                    "src_094"
+                                ],
+        "note":  "src_043 maps focus areas; src_044 recommends learning about interests through interviews, research and internships; src_073 recommends self-assessment and feedback; src_094 recommends role exploration and practice labs for security interests."
+    },
+    {
+        "id":  "q052_original",
+        "original_id":  "q052",
+        "variant":  "original",
+        "question":  "Which specialization is expected to grow the fastest in the future?",
+        "expected_source_ids":  [
+                                    "src_017"
+                                ],
+        "note":  "src_017 explicitly ranks projected growth through 2030, with big data, fintech, AI/ML and software/application roles among the fastest. Distinguish percentage growth from total vacancies and forecasts from guarantees."
+    },
+    {
+        "id":  "q052_reworded",
+        "original_id":  "q052",
+        "variant":  "reworded",
+        "question":  "Which Computer Engineering area is forecast to expand most rapidly?",
+        "expected_source_ids":  [
+                                    "src_017"
+                                ],
+        "note":  "src_017 explicitly ranks projected growth through 2030, with big data, fintech, AI/ML and software/application roles among the fastest. Distinguish percentage growth from total vacancies and forecasts from guarantees."
+    },
+    {
+        "id":  "q052_informal",
+        "original_id":  "q052",
+        "variant":  "informal",
+        "question":  "which comp eng specialty will grow fastest",
+        "expected_source_ids":  [
+                                    "src_017"
+                                ],
+        "note":  "src_017 explicitly ranks projected growth through 2030, with big data, fintech, AI/ML and software/application roles among the fastest. Distinguish percentage growth from total vacancies and forecasts from guarantees."
+    },
+    {
+        "id":  "q052_typo",
+        "original_id":  "q052",
+        "variant":  "typo",
+        "question":  "Whch specialization is expected to grow the fastest in the future?",
+        "expected_source_ids":  [
+                                    "src_017"
+                                ],
+        "note":  "src_017 explicitly ranks projected growth through 2030, with big data, fintech, AI/ML and software/application roles among the fastest. Distinguish percentage growth from total vacancies and forecasts from guarantees."
+    },
+    {
+        "id":  "q053_original",
+        "original_id":  "q053",
+        "variant":  "original",
+        "question":  "Do Computer Engineers have a good work-life balance?",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: src_014 reports hardware-engineer work hours and src_049 reports hybrid work, but neither establishes whether computer engineers have good work-life balance. src_019 contains only a title and portal text."
+    },
+    {
+        "id":  "q053_reworded",
+        "original_id":  "q053",
+        "variant":  "reworded",
+        "question":  "How much room do computer engineers usually have for life outside work?",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: src_014 reports hardware-engineer work hours and src_049 reports hybrid work, but neither establishes whether computer engineers have good work-life balance. src_019 contains only a title and portal text."
+    },
+    {
+        "id":  "q053_informal",
+        "original_id":  "q053",
+        "variant":  "informal",
+        "question":  "comp eng good work life balance",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: src_014 reports hardware-engineer work hours and src_049 reports hybrid work, but neither establishes whether computer engineers have good work-life balance. src_019 contains only a title and portal text."
+    },
+    {
+        "id":  "q053_typo",
+        "original_id":  "q053",
+        "variant":  "typo",
+        "question":  "Do Compter Engineers have a good work-life balance?",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: src_014 reports hardware-engineer work hours and src_049 reports hybrid work, but neither establishes whether computer engineers have good work-life balance. src_019 contains only a title and portal text."
+    },
+    {
+        "id":  "q054_original",
+        "original_id":  "q054",
+        "variant":  "original",
+        "question":  "Is Computer Engineering a stressful profession?",
+        "expected_source_ids":  [
+                                    "src_014"
+                                ],
+        "note":  "src_014 reports hardware engineers experiencing time pressure and high competition. This supports concrete possible stressors in that occupation, not a clinical stress measure or a claim about every CE job."
+    },
+    {
+        "id":  "q054_reworded",
+        "original_id":  "q054",
+        "variant":  "reworded",
+        "question":  "How much pressure do people experience when working as computer engineers?",
+        "expected_source_ids":  [
+                                    "src_014"
+                                ],
+        "note":  "src_014 reports hardware engineers experiencing time pressure and high competition. This supports concrete possible stressors in that occupation, not a clinical stress measure or a claim about every CE job."
+    },
+    {
+        "id":  "q054_informal",
+        "original_id":  "q054",
+        "variant":  "informal",
+        "question":  "is working as a comp engineer stressful",
+        "expected_source_ids":  [
+                                    "src_014"
+                                ],
+        "note":  "src_014 reports hardware engineers experiencing time pressure and high competition. This supports concrete possible stressors in that occupation, not a clinical stress measure or a claim about every CE job."
+    },
+    {
+        "id":  "q054_typo",
+        "original_id":  "q054",
+        "variant":  "typo",
+        "question":  "Is Compter Engineering a stressful profession?",
+        "expected_source_ids":  [
+                                    "src_014"
+                                ],
+        "note":  "src_014 reports hardware engineers experiencing time pressure and high competition. This supports concrete possible stressors in that occupation, not a clinical stress measure or a claim about every CE job."
+    },
+    {
+        "id":  "q055_original",
+        "original_id":  "q055",
+        "variant":  "original",
+        "question":  "Can Computer Engineers become digital nomads?",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: src_049 supports remote/hybrid developer work and src_028 discusses working abroad, but neither addresses working while moving between countries, employer location restrictions or digital-nomad arrangements."
+    },
+    {
+        "id":  "q055_reworded",
+        "original_id":  "q055",
+        "variant":  "reworded",
+        "question":  "Could a computer engineer work while regularly moving between countries?",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: src_049 supports remote/hybrid developer work and src_028 discusses working abroad, but neither addresses working while moving between countries, employer location restrictions or digital-nomad arrangements."
+    },
+    {
+        "id":  "q055_informal",
+        "original_id":  "q055",
+        "variant":  "informal",
+        "question":  "can comp engineers be digital nomads",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: src_049 supports remote/hybrid developer work and src_028 discusses working abroad, but neither addresses working while moving between countries, employer location restrictions or digital-nomad arrangements."
+    },
+    {
+        "id":  "q055_typo",
+        "original_id":  "q055",
+        "variant":  "typo",
+        "question":  "Can Compter Engineers become digital nomads?",
+        "expected_source_ids":  [
+
+                                ],
+        "note":  "No answering source: src_049 supports remote/hybrid developer work and src_028 discusses working abroad, but neither addresses working while moving between countries, employer location restrictions or digital-nomad arrangements."
+    },
+    {
+        "id":  "q056_original",
+        "original_id":  "q056",
+        "variant":  "original",
+        "question":  "Do Computer Engineers spend all day writing code?",
+        "expected_source_ids":  [
+                                    "src_014",
+                                    "src_080",
+                                    "src_081"
+                                ],
+        "note":  "src_014 lists hardware research, design, testing, support and teamwork; src_080 includes hardware/software integration; src_081 includes requirements, design, testing and stakeholder work beyond coding."
+    },
+    {
+        "id":  "q056_reworded",
+        "original_id":  "q056",
+        "variant":  "reworded",
+        "question":  "Is a computer engineer\u0027s working day entirely spent programming?",
+        "expected_source_ids":  [
+                                    "src_014",
+                                    "src_080",
+                                    "src_081"
+                                ],
+        "note":  "src_014 lists hardware research, design, testing, support and teamwork; src_080 includes hardware/software integration; src_081 includes requirements, design, testing and stakeholder work beyond coding."
+    },
+    {
+        "id":  "q056_informal",
+        "original_id":  "q056",
+        "variant":  "informal",
+        "question":  "do comp engineers just code all day",
+        "expected_source_ids":  [
+                                    "src_014",
+                                    "src_080",
+                                    "src_081"
+                                ],
+        "note":  "src_014 lists hardware research, design, testing, support and teamwork; src_080 includes hardware/software integration; src_081 includes requirements, design, testing and stakeholder work beyond coding."
+    },
+    {
+        "id":  "q056_typo",
+        "original_id":  "q056",
+        "variant":  "typo",
+        "question":  "Do Compter Engineers spend all day writing code?",
+        "expected_source_ids":  [
+                                    "src_014",
+                                    "src_080",
+                                    "src_081"
+                                ],
+        "note":  "src_014 lists hardware research, design, testing, support and teamwork; src_080 includes hardware/software integration; src_081 includes requirements, design, testing and stakeholder work beyond coding."
+    },
+    {
+        "id":  "q057_original",
+        "original_id":  "q057",
+        "variant":  "original",
+        "question":  "Is Computer Engineering only for people who are good at math?",
+        "expected_source_ids":  [
+                                    "src_071",
+                                    "src_092"
+                                ],
+        "note":  "src_071 recommends preparatory math courses and strengthening foundations; src_092 explicitly says math ability develops gradually. Math remains necessary; neither source supports an innate-math-talent requirement."
+    },
+    {
+        "id":  "q057_reworded",
+        "original_id":  "q057",
+        "variant":  "reworded",
+        "question":  "Must I already be excellent at mathematics to study Computer Engineering?",
+        "expected_source_ids":  [
+                                    "src_071",
+                                    "src_092"
+                                ],
+        "note":  "src_071 recommends preparatory math courses and strengthening foundations; src_092 explicitly says math ability develops gradually. Math remains necessary; neither source supports an innate-math-talent requirement."
+    },
+    {
+        "id":  "q057_informal",
+        "original_id":  "q057",
+        "variant":  "informal",
+        "question":  "comp eng only for math geniuses",
+        "expected_source_ids":  [
+                                    "src_071",
+                                    "src_092"
+                                ],
+        "note":  "src_071 recommends preparatory math courses and strengthening foundations; src_092 explicitly says math ability develops gradually. Math remains necessary; neither source supports an innate-math-talent requirement."
+    },
+    {
+        "id":  "q057_typo",
+        "original_id":  "q057",
+        "variant":  "typo",
+        "question":  "Is Compter Engineering only for people who are good at math?",
+        "expected_source_ids":  [
+                                    "src_071",
+                                    "src_092"
+                                ],
+        "note":  "src_071 recommends preparatory math courses and strengthening foundations; src_092 explicitly says math ability develops gradually. Math remains necessary; neither source supports an innate-math-talent requirement."
+    },
+    {
+        "id":  "q058_original",
+        "original_id":  "q058",
+        "variant":  "original",
+        "question":  "Can women have successful careers in Computer Engineering?",
+        "expected_source_ids":  [
+                                    "src_041"
+                                ],
+        "note":  "src_041 explicitly challenges stereotypes about who can work in computing and says computing is for everyone. This supports inclusive career guidance; src_040 only lists charts and does not supply career-success statistics in its processed text."
+    },
+    {
+        "id":  "q058_reworded",
+        "original_id":  "q058",
+        "variant":  "reworded",
+        "question":  "Are successful Computer Engineering careers open to women?",
+        "expected_source_ids":  [
+                                    "src_041"
+                                ],
+        "note":  "src_041 explicitly challenges stereotypes about who can work in computing and says computing is for everyone. This supports inclusive career guidance; src_040 only lists charts and does not supply career-success statistics in its processed text."
+    },
+    {
+        "id":  "q058_informal",
+        "original_id":  "q058",
+        "variant":  "informal",
+        "question":  "can women do well in comp eng",
+        "expected_source_ids":  [
+                                    "src_041"
+                                ],
+        "note":  "src_041 explicitly challenges stereotypes about who can work in computing and says computing is for everyone. This supports inclusive career guidance; src_040 only lists charts and does not supply career-success statistics in its processed text."
+    },
+    {
+        "id":  "q058_typo",
+        "original_id":  "q058",
+        "variant":  "typo",
+        "question":  "Can woen have successful careers in Computer Engineering?",
+        "expected_source_ids":  [
+                                    "src_041"
+                                ],
+        "note":  "src_041 explicitly challenges stereotypes about who can work in computing and says computing is for everyone. This supports inclusive career guidance; src_040 only lists charts and does not supply career-success statistics in its processed text."
+    },
+    {
+        "id":  "q059_original",
+        "original_id":  "q059",
+        "variant":  "original",
+        "question":  "Is it too late to start learning programming at university?",
+        "expected_source_ids":  [
+                                    "src_039",
+                                    "src_070"
+                                ],
+        "note":  "src_039 says roughly half of beginner students have never programmed and describes starting CS at university; src_070 gives a beginner EECS course sequence. These directly support beginning at university."
+    },
+    {
+        "id":  "q059_reworded",
+        "original_id":  "q059",
+        "variant":  "reworded",
+        "question":  "Can I begin coding at university rather than learning it earlier?",
+        "expected_source_ids":  [
+                                    "src_039",
+                                    "src_070"
+                                ],
+        "note":  "src_039 says roughly half of beginner students have never programmed and describes starting CS at university; src_070 gives a beginner EECS course sequence. These directly support beginning at university."
+    },
+    {
+        "id":  "q059_informal",
+        "original_id":  "q059",
+        "variant":  "informal",
+        "question":  "too late to learn coding at uni",
+        "expected_source_ids":  [
+                                    "src_039",
+                                    "src_070"
+                                ],
+        "note":  "src_039 says roughly half of beginner students have never programmed and describes starting CS at university; src_070 gives a beginner EECS course sequence. These directly support beginning at university."
+    },
+    {
+        "id":  "q059_typo",
+        "original_id":  "q059",
+        "variant":  "typo",
+        "question":  "Is it too late to strt learning programming at university?",
+        "expected_source_ids":  [
+                                    "src_039",
+                                    "src_070"
+                                ],
+        "note":  "src_039 says roughly half of beginner students have never programmed and describes starting CS at university; src_070 gives a beginner EECS course sequence. These directly support beginning at university."
+    },
+    {
+        "id":  "q060_original",
+        "original_id":  "q060",
+        "variant":  "original",
+        "question":  "Why should I choose Computer Engineering instead of another engineering discipline?",
+        "expected_source_ids":  [
+                                    "src_043",
+                                    "src_067",
+                                    "src_080"
+                                ],
+        "note":  "src_043 compares shared EE/CE foundations and differing focus areas; src_067 explains CE design and integrated systems; src_080 explains hardware/software interests suited to CE. These support reasons based on interests, not universal superiority."
+    },
+    {
+        "id":  "q060_reworded",
+        "original_id":  "q060",
+        "variant":  "reworded",
+        "question":  "What reasons might make Computer Engineering a better fit for me than a different engineering degree?",
+        "expected_source_ids":  [
+                                    "src_043",
+                                    "src_067",
+                                    "src_080"
+                                ],
+        "note":  "src_043 compares shared EE/CE foundations and differing focus areas; src_067 explains CE design and integrated systems; src_080 explains hardware/software interests suited to CE. These support reasons based on interests, not universal superiority."
+    },
+    {
+        "id":  "q060_informal",
+        "original_id":  "q060",
+        "variant":  "informal",
+        "question":  "why choose comp eng over other engineering",
+        "expected_source_ids":  [
+                                    "src_043",
+                                    "src_067",
+                                    "src_080"
+                                ],
+        "note":  "src_043 compares shared EE/CE foundations and differing focus areas; src_067 explains CE design and integrated systems; src_080 explains hardware/software interests suited to CE. These support reasons based on interests, not universal superiority."
+    },
+    {
+        "id":  "q060_typo",
+        "original_id":  "q060",
+        "variant":  "typo",
+        "question":  "Why shold I choose Computer Engineering instead of another engineering discipline?",
+        "expected_source_ids":  [
+                                    "src_043",
+                                    "src_067",
+                                    "src_080"
+                                ],
+        "note":  "src_043 compares shared EE/CE foundations and differing focus areas; src_067 explains CE design and integrated systems; src_080 explains hardware/software interests suited to CE. These support reasons based on interests, not universal superiority."
+    }
+]
