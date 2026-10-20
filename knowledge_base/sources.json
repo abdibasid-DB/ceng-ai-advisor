@@ -1770,7 +1770,7 @@
       "language": "Turkish",
       "reliability_note": "Official OSTİM Technical University web page.",
       "raw_file_path": "knowledge_base/raw/html/src_122.html",
-      "notes": "List of student clubs and societies. Complements the student clubs directive (src_112). Content limitation: the club list is loaded by JavaScript, so the automatically saved page contains only the page frame (\"45 topluluk\") and no club names; a browser save of the rendered page is needed for useful content."
+      "notes": "List of student clubs and societies. Complements the student clubs directive (src_112). Content limitation: the club list is loaded by JavaScript, so the automatically saved page contains only the page frame (\"45 topluluk\") and no club names; a browser save of the rendered page is needed for useful content. Excluded from chunking after preprocessing review on 2026-10-20."
     },
     {
       "source_id": "src_123",
@@ -1798,7 +1798,7 @@
       "language": "Turkish",
       "reliability_note": "Official OSTİM Technical University web page.",
       "raw_file_path": "knowledge_base/raw/html/src_124.html",
-      "notes": "Career planning, on-the-job training (işbaşı eğitimi) and alumni relations office. Secondary categories: internships, employment. Content limitation: the home page has little text (announcements load dynamically) and was served in English; the substantive content is on subpages such as workplace experience, FAQ, documents and career days."
+      "notes": "Career planning, on-the-job training (işbaşı eğitimi) and alumni relations office. Secondary categories: internships, employment. Content limitation: the home page has little text (announcements load dynamically) and was served in English; the substantive content is on subpages such as workplace experience, FAQ, documents and career days. Excluded from chunking after preprocessing review on 2026-10-20: the processed text holds only section headings and an unfilled CMS placeholder."
     },
     {
       "source_id": "src_125",

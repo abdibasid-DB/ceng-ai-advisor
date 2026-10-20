@@ -171,7 +171,7 @@ class ProcessingRecord:
 
 
 ACCEPT_VALID_SHORT_DOCUMENTS = {"src_007"}
-EXCLUDE_FROM_CHUNKING_AFTER_REVIEW = {"src_019", "src_021", "src_022", "src_023", "src_024", "src_027", "src_046"}
+EXCLUDE_FROM_CHUNKING_AFTER_REVIEW = {"src_019", "src_021", "src_022", "src_023", "src_024", "src_027", "src_046", "src_122", "src_124"}
 
 
 class ConservativeHTMLTextExtractor(HTMLParser):

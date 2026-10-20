@@ -1,0 +1,235 @@
+Source ID: src_117
+Title: Ön Lisans ve Lisans Sınav, Ölçme ve Değerlendirme Esasları Yönergesi
+
+Page 1
+OSTİM TEKNİK ÜNİVERSİTESİ
+ÖN LİSANS VE LİSANS SINAV, ÖLÇME VE DEĞERLENDİRME
+ESASLARI YÖNERGESİ
+Amaç
+MADDE 1- (1) Bu Yönergenin amacı, OSTİM Teknik Üniversitesi fakülteleri ile meslek
+yüksekokulunda yürütülen sınavlar ve ölçme ve değerlendirme sistemi ile ilgili esasları
+düzenlemektir.
+Kapsam
+MADDE 2- (1) Bu Yönerge, OSTİM Teknik Üniversitesine bağlı akademik birimlerde
+(enstitüler hariç) yürütülen sınavlar ile ölçme ve değerlendirme ile ilgili esaslara ilişkin
+hükümleri kapsar.
+Dayanak
+MADDE 3 - (1) Bu yönerge, 28.07.2019 tarih ve 30845 sayılı Resmî Gazetede
+yayımlanan “OSTİM Teknik Üniversitesi Lisans Eğitim -Öğretim ve Sınav Yönetmeliği’nin
+42 nci Maddesinin 1 inci fıkrasına dayanılarak hazırlanmıştır.
+Tanımlar
+MADDE 4- (1) Bu Yönergede geçen;
+a) AGNO: Öğrencinin öğrenime başladığı andan itibaren, tamamlamış olduğu yarıyıl da
+dahil olmak üzere almış olduğu tüm derslerin katılımıyla elde edilen ve başarısını belirleyen
+ağırlıklı not ortalamasını,
+b) BDS: Bağıl Değerlendirme Sistemini,
+c) MDS: Mutlak Değerlendirme Sistemini,
+ç) YSSN: Yarıyıl Sonu Sınavı Notunu,
+d) HBN: Ham Başarı Notunu,
+e) YIN: Yarıyıl İçi / Yıl İçi Notunu,
+f) YINKY: Yarıyıl İçi / Yıl İçi Notu Katkı Yüzdesini,
+g) YSNKY: Yarıyıl Sonu / Yılsonu Notu Katkı Yüzdesini ifade eder.
+Ham Başarı Notu (HBN)
+MADDE 5- (1) Öğrencilerin yarıyıl/ yıl içi etkinlikleri ile yarıyıl sonu/yıl sonu
+sınavından aldığı puanın belirlenen ağırlık katsayısına göre ortalamasının alınması ile
+hesaplanan puandır. Bir ders için HBN, o dersin ara sınav ve varsa diğer yarıyıl/yıl içi eğitim -
+öğretim etkinliklerinden almış olduğu notların ağırlıklı ortalaması ile yarıyıl sonu sınavı veya
+varsa bütünleme notu dikkate alınarak hesaplanır.
+(2) Öğrencinin yarıyıl/yıl içi eğitim -öğretim etkinlikleri ve final sınav notunun HBN’ye
+katkı yüzdesi ilgili dersin öğretim elemanı tarafından derse yazılma ve kayıt haftasından önce
+belirlenir ve hazırlanacak ders izlencesi ile en geç yarıyıl derslerinin ilk haftası içinde
+öğrencilere (web sitesi, sosyal medya vb. tüm araçlarla) duyurulur.
+(3) Yarıyıl sonu veya varsa bütünleme sınav notunun HBN’a katkısı %50’den az olamaz.
+(4) Hesaplanan HBN ondalık kısmı 0,50 ve üzeri olursa bir üst tamsayıya, 0,50` den
+küçük olursa bir alt tamsayıya yuvarlanır.
+Mutlak Değerlendirme Sistemi (MDS)
+MADDE 6 - (1) OSTİM Teknik Üniversitesine bağlı fakülteler ile meslek yüksek
+okulunda MDS’nde esas alınan HBN’ye karşılık gelen harf notları ve bu harf notlarının dörtlü
+not ve 100’lük not sistemindeki karşılıkları Tablo 1’de gösterilmiştir.
+
+Page 2
+Tablo 1: Mutlak Değerlendirme Sisteminde Ham başarı notunun harfli not, dörtlü not ve
+100’lük not karşılıkları
+
+Harf Notu Başarı Notu
+(4’lü Not)
+Ham Başarı Notu (100’lü not) Açıklama
+AA 4,00 89,50 ≤ HBN ≤ 100
+Geçer
+BA 3,50 79,50 ≤ HBN ≤ 89,49
+BB 3,00 74,50 ≤ HBN ≤ 79,49
+CB 2,50 69,50 ≤ HBN ≤ 74,49
+CC 2,00 59,50 ≤ HBN ≤ 69,49
+DC 1,50 54,50 ≤ HBN ≤ 59,49 Koşullu
+Geçer DD 1,00 49,50 ≤ HBN ≤ 54,49
+FD 0,50 39,50 ≤ HBN ≤ 49,49 Başarısız FF 0,00 0 ≤ HBN≤ 39,49
+Ağırlıklı Genel Not Ortalaması (AGNO)
+MADDE 7- (1) AGNO`nun hesabında, bir öğrencinin ilk yarıyıldan itibaren aldığı tüm
+derslere ait harf notlarının 4`lük not sistemindeki karşılıkları (Tablo 1 -Mutlak Değerlendirme
+Sistemi) bu derslere ait AKTS değerleri ile ayrı ayrı çarpılır; elde edilen sonuçlar toplanır ve
+alınan tüm derslerin AKTS kredileri toplamına bölünür. Sonuç, virgülden sonra iki basamak
+duyarlılıkla verilir. Bu sonuç Ağırlıklı Genel Not Ortalaması (AGNO) olarak tanımlanır. Birinci
+ve ikinci yarıyıl derslerini tamamlayan bir öğrenci için örnek AGNO hesaplaması Tablo 2’de
+gösterilmiştir.
+Tablo 2: 1. ve 2. yarıyıl derslerini tamamlayan bir öğrenci için AGNO hesaplaması
+
+Ders Adı AKTS Harf
+Not
+Ağırlıklı Not
+İşletme Matematiği I 5 BB 3,00 x 5 = 15,00
+İşletmede Bilgisayar Uygulamaları I 5 FD 0,50 x 5 = 2,50
+Mühendislik Fiziği I 4 CC 2,00 x 4 = 8,00
+Bilgisayar Programlama I 5 CB 2,50 x 5 = 12,50
+Tasarımcılar İçin Matematik 3 BA 3,50 x 3 = 10,50
+İç Mimarlık ve Çevre Tasarımına Giriş 4 CC 2,00 x 4 = 8,00
+Fizik 2 DD 1,00 x 2 = 2,00
+Temel Girişimcilik 2 CC 2,00 x 2 = 4,00
+Çağdaş Yönetim Yaklaşımları 5 BA 3,50 x 5 = 17,50
+Mühendislik Fiziği II 4 CC 2,00 x 4 = 8,00
+İşletme Matematiği II 5 CB 2,50 x 5 = 12,50
+İşletmede Bilgisayar Uygulamaları II 5 DD 1,00 x 5 = 5,00
+Sanat ve Tasarım Tarihi 3 BB 3,00 x 3 = 9,00
+Bilgisayar Destekli Tasarım I 4 BB 3,00 x 4 = 12,00
+Bilgisayar Destekli Devre Tasarımı 2 CB 2,50 x 2 = 5,00
+Uygulamalı Girişimcilik 2 BB 3,00 x 2 = 6,00
+Toplam 60 137,50
+
+Yukarıda verilen örnek tablodaki değerlere göre, AGNO = 137,50 / 60 = 2,29` dur.
+Bağıl değerlendirme sistemi
+MADDE 8 - (1) (Ek:MH-14/11/2024-79) Dersin öğretim elamanı ve koordinatörlüğü
+tarafından bağıl değerlendirme uygulanmasına karar verilmesi halinde; öğrencilerin ham başarı
+puanları sınıf ortalaması dikkate alınarak Tablo-3’e göre nota dönüştürülür.
+a) Bağıl değerlendirme sonucunda, dersin ağırlıklı not ortalaması 30’un altında olan
+öğrencilere doğrudan FF notu verilir.
+b) Dersin değerlendirmesinin bağıl ya da mutlak değerlendirmeden hangisi ile yapılacağı
+
+Page 3
+dersin öğretim elemanı tarafından belirlenir.
+c) Öğretim elemanının bağıl değerlendirme kararı verebilmesi için dersi alan öğrenci
+sayısının 30 ve üzerinde olması gereklidir.
+ç) Özellik arz eden durumlarda dersi alan öğrenci sayısı 15 ilâ 29 aralığında olması
+durumunda dersin değerlendirmesinin bağıl ya da mutlak değerlendirmeden hangisi ile
+yapılacağı öğretim elemanı veya ilgili akademik birimin kurulu tarafından belirlenir.
+d) Özellik arz eden durumun ne olduğuna ilişkin gereken genel/özel değerlendirme ilgili
+akademik birimin akademik kurulu tarafından yapılır.
+
+Tablo-3, aşağıdaki adımlar izlenerek hazırlanmıştır.
+
+I. Adım: Bağıl değerlendirmeye hak kazanan öğrencilerin sınıf ortalaması bulunur:
+
+𝑋̅ =
+∑ 𝑥𝑖
+𝑖=1
+𝑋̅= Sınıf puanlarının ortalaması
+𝑥𝑖 = Öğrenci ham başarı puanı
+𝑁 = Sınıf mevcudu (bağıl değerlendirmeye katılacak öğrenci sayısı)
+
+II. Adım: Sınıfın Standart Sapması bulunur:
+
+𝑆 = √ 1
+𝑁 ∑(𝑥𝑖 − 𝑥̅)2
+𝑖=1
+
+𝑆= Standart sapma
+x𝑖= Bağıl değerlendirmeye katılan her bir öğrencinin puanı
+
+III. Adım: Önce her bir öğrencinin 𝑍𝑖 puanı hesaplanır. Z puanının hesaplanmasında aşağıdaki
+formül kullanılır:
+
+𝑍𝑖 = 𝑥𝑖 − 𝑥̅
+𝑍𝑖= Bir öğrencinin Z puanı
+
+IV. Adım: Z puanları aşağıdaki formül yardımı ile T puanına dönüştürülür.
+
+𝑇𝑖 = 50 + 10(𝑍𝑖)
+
+V. Adım: Her bir öğrencinin T puanı hesaplandıktan sonra Tablo 3’e göre harf notu belirlenir.
+
+Tablo 3: Bağıl Değerlendirme Tablosu
+Sınıfın Ortalama
+Notu
+Öğrencinin T Puanı ve Sınıfın Ortalama Notuna Göre Alınacak Harf
+AA (4.0) BA (3.5) BB (3.0) CB (2.5) CC (2.0) DC (1.5) DD (1.0) FD (0.5) FF (0)
+80.00<x̄ ≤100 𝑇𝑖≥57 52-56.99 47-51.99 42-46.99 37-41.99 32-36.99 27-31.99 22-26.99 21.99≤𝑇𝑖
+70.00<x̄ ≤79.99 𝑇𝑖≥59 54-58.99 49-53.99 44-48.99 39-43.99 34-38.99 29-33.99 24-28.99 23.99≤𝑇𝑖
+62.5<x̄ ≤69.99 𝑇𝑖≥61 56-60.99 51-55.99 46-50.99 41-45.99 36-40.99 31-35.99 26-30.99 25.99≤𝑇𝑖
+57.5<x̄ ≤62.49 𝑇𝑖≥63 58-62.99 53-57.99 48-52.99 43-47.99 38-42.99 33-37.99 28-32.99 27.99≤𝑇𝑖
+52.5<x̄ ≤57.49 𝑇𝑖≥65 60-64.99 55-59.99 50-54.99 45-49.99 40-44.99 35-39.99 30-34.99 29.99≤𝑇𝑖
+47.5<x̄ ≤52.49 𝑇𝑖≥67 62-66.99 57-61.99 52-56.99 47-51.99 42-46.99 37-41.99 32-36.99 31.99≤𝑇𝑖
+42.5<x̄ ≤47.49 𝑇𝑖≥69 64-68.99 59- 63.99 54-58.99 49-53.99 44-48.99 39-43.99 34-38.99 33.99≤𝑇𝑖
+0.00<x̄ ≤42.49 𝑇𝑖≥71 66-70.99 61-65.99 56-60.99 51-55.99 46-50.99 41-45.99 36-40.99 35.99≤𝑇𝑖
+
+Page 4
+Uygulamadaki İstisnalar
+MADDE 9 - (1) Uygulama, bitirme tezi ve staj derslerinde alınan notlar bağıl
+değerlendirme yapılmaksızın değerlendirilir. Hangi derslerin uygulama ve staj dersi olduğu
+Fakülte/Meslek Yüksekokul Yönetim Kurullarında karara bağlanır.
+(2) Müfredat değişikliği ve benzeri nedenlerle sistemden kaldırılan derslerin ve özel af
+kanunları veya mahkeme kararları ile öğretim hakları iade edilen öğrencilerin sınavlarının
+nasıl yapılacağı ve değerlendirileceği Fakülte/Meslek Yüksekokul Yönetim Kurulları
+tarafından düzenlenir.
+(3) Aynı dönemde alınan aynı kodlu derslerin değerlendirmeleri, mutlak veya bağıl (tüm
+ders grupları için aynı olmak şartıyla) değerlendirme esaslarına göre öğretim elemanı
+tarafından belirlenerek uygulanır. Öğrenci derse hangi grupta fiili olarak katılmış ise katıldığı
+şube içerisinde belirlenen bağıl/mutlak değerlendirmeye katılır.
+(4) Ek ders sınavları Tablo 1’e (mutlak değerlendirme esaslarına) göre
+değerlendirilecektir.
+(5) Bağıl değerlendirme esaslarına göre icra edilen bütünleme sınavına giren
+öğrencilerin harf notunun belirlenmesinde final sınavı notları esas alınarak hesaplanmış olan
+aritmetik ortalama ve standart sapma değerleri kullanılır.
+Bütünleme/Not Yükseltme ve Başarı Tamamlama Sınavı (Değişiklik: MHK-92)
+MADDE 10- (1) Öğrencilerin yarıyıl sonu bütünleme sınavına katılabilmesi için devam
+koşulunu yerine getirmiş ve yarıyıl sonu sınavı neticesinde DC, DD, FD ve FF harf notuna
+sahip olması gerekmektedir. Öğrencilerin not yükseltme sınavına katılabilmesi için devam
+koşulunu yerine getirmiş ve yarıyıl sonu sınavı neticesinde CC, DC ve DD harf notuna sahip
+olması gerekmektedir. Notlar, yarıyıl sonu sınav notu olarak bütünleme sınavına katılanlar
+arasında gerekli koşulların sağlanması durumunda, öğrenci sayısına göre mutlak veya bağıl
+olacak şekilde sınavın icrasından sorumlu öğretim elemanı tarafından alınacak karara göre
+değerlendirilir. (Bu şekilde kalması)
+(2) Fakülte/MYO kurulları tarafından belirlenen bütünlemeye girilebilecek derslerde
+dersin devam şartını sağlayan, ancak tekrar almak zorunda kalan veya harf notunu yükseltmek
+amacı ile dersi tekrarlamak isteyen öğrenciler, derse devam etmek zorunda değildir. Bu
+öğrenciler için, AGNO hesaplamalarında alınan en son harf notu geçerlidir. Öğrenci, harf
+notunu yükseltmek amacıyla bir derse tekrar kayıt olduğunda, kesin kayıttan sonra ilgili dersi
+başarısız olarak işaretlenir ve yarıyıl sonunda bu ders için aldığı en son harf notu geçerli olur.
+Derslerin devam şartı dönem başlamadan ilgili Fakülte/MYO kurul kararı ile belirlenir.
+(3) Bütünleme sınavı ile not yükseltme sınavı tek bir sınav olarak birlikte yapılır.
+Bütünleme/Not Yükseltme sınavının mazeret sınavı yapılmaz. Bütünleme/Not yükseltme
+sınavında alınan not dersin yarıyıl sonu sınav notu olarak kabul edilir.
+(4) Mezun olabilmek için tüm derslerden geçer not almalarına rağmen, genel not
+ortalamaları 2.00’dan düşük olan öğrenciler için “başarı tamamlama sınavı” yapılır. Başarı
+Tamamlama Sınavı, Ön Lisans ve Lisans Eğitim -Öğretim ve Sınav Yönetmeliği Madde32/2
+gereğince (DD), (DC) veya (CC) notu aldıkları ders/dersler için uygulanır. Öğrenciler
+tarafından yapılan başvurular doğrultusunda belirlenen sınav yapılacak dersler, ilgili Fakülte
+veya MYO Kurulları tarafından onaylandıktan sonra sınav süreci başlatılır. Öğrencinin başarı
+durumu, bu sınavdan alınan not ile belirlenir. Bu durumda olan öğrenciler sınava girdiği ders
+başına yetkili kurullarca belirlenen sınav ücretini öderler.
+Sınav sonuçlarına itiraz
+MADDE 11 - (1) İlan edilen başarı notlarına itiraz, OSTİM Teknik Üniversitesi Ön
+Lisans ve Lisans Eğitim -Öğretim ve Sınav Yönetmeliği hükümlerine göre sonuçlandırılır.
+İtiraz sonucunda ağırlıklı başarı puanının değişmesi halinde, ilgili öğrencinin yeni başarı
+puanı, ilgili dersin ilan edilen başarı puanları ile karşılaştırılarak öğretim elemanınca yeniden
+belirlenir ve ilan edilir.
+Hüküm bulunmayan haller
+MADDE 12 - (1) Bu yönergede hüküm bulunmayan hallerde; ilgili diğer mevzuat
+
+Page 5
+hükümleri, Yükseköğretim Kurulu, Senato ve ilgili birim yönetim kurulları kararları
+uygulanır.
+Yürürlük
+MADDE 13- (1) Bu Yönerge, Ostim Teknik Üniversitesi Mütevelli Heyeti tarafından
+onaylandığı tarihte yürürlüğe girer.
+Yürütme
+MADDE 14- (1) Bu yönerge hükümlerini OSTİM Teknik Üniversitesi Rektörü yürütür.
+
+Kabul Edildiği Senato Toplantısının
+Tarihi Sayısı
+16.08.2024 133
+Kabul Edildiği Mütevelli Heyeti Toplantısının
+Tarihi Sayısı
+05.09.2024 77
+Değişiklik Yapıldığı
+Senato Toplantısının Senato Toplantısının
+Tarihi Tarihi Tarihi Tarihi
+1 04.11.2024 138 14.11.2024 79
+2 29.12.2025 162 22.04.2026 92

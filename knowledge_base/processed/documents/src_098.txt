@@ -1,0 +1,898 @@
+Source ID: src_098
+
+Developer Profile | 2024 Stack Overflow Developer Survey
+
+2024DeveloperSurvey
+
+Products
+
+Stack Overflow for TeamsWhere developers & technologists share private knowledge with
+coworkers
+
+Advertising & TalentReach devs & technologists worldwide about your product,
+service or employer brand
+
+OverflowAIGenAI features for Teams
+
+OverflowAPITrain & fine-tune LLMs
+
+LabsThe future of collective knowledge sharing
+
+About the companyVisit the blog
+
+1 Developer Profile
+
+What we know about the global community of developers.
+
+1.1. Education →
+
+1.2. Learning to code →
+
+1.3. Experience →
+
+1.4. Developer roles →
+
+1.5. Key territories →
+
+1.6. Demographics →
+
+1.1Education
+
+Educational attainment
+
+66% of developers have a BA/BS or MA/MS degree despite only 49% of developers learning to code at school.
+
+Which of the following best describes the highest level of formal education that you’ve completed? *
+
+All Respondents Professional Developers Learning to Code Other Coders
+
+Download
+
+I acknowledge that the downloaded file is licensed under the Open Database License
+
+Download chart
+
+Share
+
+Twitter/XFacebookLinkedIn
+
+Responses:
+
+60,192 (92%)
+
+Download
+
+I acknowledge that the downloaded file is licensed under the Open Database License
+
+Download chart
+
+Share
+
+Twitter/XFacebookLinkedIn
+
+Responses:
+
+45,655 (69.8%)
+
+Download
+
+I acknowledge that the downloaded file is licensed under the Open Database License
+
+Download chart
+
+Share
+
+Twitter/XFacebookLinkedIn
+
+Responses:
+
+6,625 (10.1%)
+
+Download
+
+I acknowledge that the downloaded file is licensed under the Open Database License
+
+Download chart
+
+Share
+
+Twitter/XFacebookLinkedIn
+
+Responses:
+
+6,625 (10.1%)
+
+1.2Learning to code
+
+Learning to code
+
+Online resources are the top choice for developers to learn code according to 82% of responses.
+
+Respondents 18 - 24 years old are most likely to learn code at traditional schools of all the age groups, and consistently so for the last three years.
+
+How do you learn to code? Select all that apply.
+
+All Respondents Learning to Code By Age
+
+Download
+
+I acknowledge that the downloaded file is licensed under the Open Database License
+
+Download chart
+
+Share
+
+Twitter/XFacebookLinkedIn
+
+Responses:
+
+59,912 (91.6%)
+
+Download
+
+I acknowledge that the downloaded file is licensed under the Open Database License
+
+Download chart
+
+Share
+
+Twitter/XFacebookLinkedIn
+
+Responses:
+
+6,590 (10.1%)
+
+Download
+
+I acknowledge that the downloaded file is licensed under the Open Database License
+
+Download chart
+
+Share
+
+Twitter/XFacebookLinkedIn
+
+Responses:
+
+59,221 (90.5%)
+
+Online resources to learn how to code
+
+Technical documentation (84%) and Stack Overflow (80%) continue to be the top online resources to learn code. 37% of responses indicate AI is helping them learn, too.
+
+What online resources do you use to learn to code? Select all that apply.
+
+Download
+
+I acknowledge that the downloaded file is licensed under the Open Database License
+
+Download chart
+
+Share
+
+Twitter/XFacebookLinkedIn
+
+Responses:
+
+48,822 (74.6%)
+
+Technical documentation preferences to learn how to code
+
+API and SDK documents are the documentation source of choice for 90% of developers.
+
+What is the source of the technical documentation you use most often to learn to code? Select all that apply.
+
+40,602 (62%)
+
+1.3Experience
+
+Years coding
+
+More than 1 in 3 developers that took the survey this year have been coding as long as or longer than Stack Overflow existed. 38% of respondents have been coding for 15 years or more.
+
+Including any education, how many years have you been coding in total?
+
+All Respondents Average by Top 10 Countries
+
+59,349 (90.7%)
+
+34,374 (52.5%)
+
+Years coding professionally
+
+1 in 3 developers have been coding professionally for four years or less.
+
+NOT including education, how many years have you coded professionally (as a part of your work)?
+
+51,159 (78.2%)
+
+Years of professional coding experience by developer type
+
+People managers such as executives and engineering managers are reporting the highest average years of coding this year with more than 15 years of experience, while popular developer roles such as back-end and full-stack developers are reporting 10-11 years experience on average.
+
+NOT including education, how many years have you coded professionally (as a part of your work)?
+
+51,159 (78.2%)
+
+1.4Developer roles
+
+Developer type
+
+Full-stack, back-end, and front-end developers were the top three roles reported by developers for the last three years; however, front-end developers have decreased from 6.6% to 5.6% since last year.
+This year, more developers identify as students than as front-end employees and we saw a slight increase in developers who have an embedded applications role or are academic researchers.
+
+Which of the following describes your current job, the one you do most of the time? Please select only one.
+
+58,950 (90.1%)
+
+1.5Key territories
+
+Geography
+
+52% of respondents shared their country in this year's survey. The top 10 countries account for 60% of those that were given, and Europe accounts for most of the top-responding countries.
+
+Where do you live? *
+
+Top 10 Countries All Countries
+
+34,554 (52.8%)
+
+Response
+
+Percentage
+
+Responses
+
+United States of America
+
+18.9%
+
+11,027
+
+Germany
+
+8.4%
+
+4,928
+
+India
+
+7.2%
+
+4,194
+
+United Kingdom of Great Britain and Northern Ireland
+
+5.5%
+
+3,214
+
+Ukraine
+
+4.6%
+
+2,668
+
+Canada
+
+3.6%
+
+2,097
+
+France
+
+3.6%
+
+2,094
+
+Poland
+
+2.6%
+
+1,528
+
+Netherlands
+
+2.5%
+
+1,441
+
+Brazil
+
+2.3%
+
+1,363
+
+Italy
+
+2.3%
+
+1,333
+
+Australia
+
+2.1%
+
+1,255
+
+Spain
+
+1.9%
+
+1,112
+
+Sweden
+
+1.7%
+
+1,010
+
+Russian Federation
+
+1.6%
+
+920
+
+Switzerland
+
+1.5%
+
+873
+
+Austria
+
+1.4%
+
+787
+
+Czech Republic
+
+1.2%
+
+710
+
+Israel
+
+600
+
+Turkey
+
+0.9%
+
+539
+
+Belgium
+
+0.9%
+
+522
+
+Denmark
+
+0.9%
+
+502
+
+Portugal
+
+0.8%
+
+468
+
+Norway
+
+0.8%
+
+444
+
+Romania
+
+0.8%
+
+436
+
+Iran, Islamic Republic of...
+
+0.7%
+
+409
+
+Pakistan
+
+0.7%
+
+408
+
+China
+
+0.7%
+
+402
+
+Mexico
+
+0.7%
+
+397
+
+New Zealand
+
+0.7%
+
+396
+
+Hungary
+
+0.7%
+
+395
+
+Greece
+
+0.7%
+
+389
+
+Finland
+
+0.7%
+
+382
+
+South Africa
+
+0.6%
+
+358
+
+Indonesia
+
+0.6%
+
+351
+
+Argentina
+
+0.6%
+
+343
+
+Bangladesh
+
+0.6%
+
+325
+
+Bulgaria
+
+0.5%
+
+318
+
+Nigeria
+
+0.5%
+
+304
+
+Viet Nam
+
+0.5%
+
+293
+
+Japan
+
+0.5%
+
+286
+
+Ireland
+
+0.5%
+
+269
+
+Taiwan
+
+0.5%
+
+268
+
+Egypt
+
+0.4%
+
+261
+
+Slovakia
+
+0.4%
+
+246
+
+Serbia
+
+0.4%
+
+243
+
+Colombia
+
+0.4%
+
+216
+
+Philippines
+
+0.3%
+
+196
+
+Croatia
+
+0.3%
+
+186
+
+Lithuania
+
+0.3%
+
+181
+
+Kenya
+
+0.3%
+
+179
+
+Singapore
+
+0.3%
+
+175
+
+Sri Lanka
+
+0.3%
+
+163
+
+Malaysia
+
+0.3%
+
+160
+
+Thailand
+
+0.3%
+
+146
+
+South Korea
+
+144
+
+Hong Kong (S.A.R.)
+
+0.2%
+
+142
+
+Slovenia
+
+0.2%
+
+141
+
+Nepal
+
+0.2%
+
+139
+
+Chile
+
+0.2%
+
+133
+
+United Arab Emirates
+
+0.2%
+
+129
+
+Latvia
+
+0.2%
+
+127
+
+Estonia
+
+0.2%
+
+109
+
+Morocco
+
+0.2%
+
+Belarus
+
+Georgia
+
+Uruguay
+
+Kazakhstan
+
+0.1%
+
+Algeria
+
+0.1%
+
+Peru
+
+0.1%
+
+Tunisia
+
+0.1%
+
+Ghana
+
+0.1%
+
+Venezuela, Bolivarian Republic of...
+
+0.1%
+
+Cyprus
+
+0.1%
+
+Bosnia and Herzegovina
+
+0.1%
+
+Uzbekistan
+
+Ethiopia
+
+Armenia
+
+Saudi Arabia
+
+Republic of Korea
+
+Costa Rica
+
+Ecuador
+
+Afghanistan
+
+Albania
+
+Dominican Republic
+
+Lebanon
+
+Kyrgyzstan
+
+Iraq
+
+Guatemala
+
+Luxembourg
+
+Jordan
+
+Paraguay
+
+Republic of Moldova
+
+Uganda
+
+Bolivia
+
+Cameroon
+
+Iceland
+
+Syrian Arab Republic
+
+Malta
+
+United Republic of Tanzania
+
+Azerbaijan
+
+Montenegro
+
+Zimbabwe
+
+Cuba
+
+Cambodia
+
+Rwanda
+
+Nicaragua
+
+Angola
+
+Myanmar
+
+El Salvador
+
+Kosovo
+
+Panama
+
+Yemen
+
+Honduras
+
+Maldives
+
+Mauritius
+
+Palestine
+
+Qatar
+
+Zambia
+
+Côte d'Ivoire
+
+Madagascar
+
+Andorra
+
+Isle of Man
+
+Malawi
+
+Bahrain
+
+Jamaica
+
+Turkmenistan
+
+Benin
+
+Mongolia
+
+Somalia
+
+Togo
+
+Congo, Republic of the...
+
+Kuwait
+
+Senegal
+
+Trinidad and Tobago
+
+Mozambique
+
+Oman
+
+Sudan
+
+Tajikistan
+
+Barbados
+
+Antigua and Barbuda
+
+Botswana
+
+Cape Verde
+
+Mauritania
+
+Namibia
+
+Suriname
+
+Bahamas
+
+Burkina Faso
+
+Fiji
+
+Gabon
+
+Lao People's Democratic Republic
+
+Liberia
+
+Libyan Arab Jamahiriya
+
+Liechtenstein
+
+Swaziland
+
+Bhutan
+
+Brunei Darussalam
+
+Burundi
+
+Democratic Republic of the Congo
+
+Guyana
+
+Monaco
+
+North Korea
+
+San Marino
+
+Sierra Leone
+
+Belize
+
+Guinea-Bissau
+
+Mali
+
+Central African Republic
+
+Chad
+
+Djibouti
+
+Dominica
+
+Equatorial Guinea
+
+Guinea
+
+Haiti
+
+Lesotho
+
+Micronesia, Federated States of...
+
+Nauru
+
+Niger
+
+Papua New Guinea
+
+Saint Kitts and Nevis
+
+Samoa
+
+Solomon Islands
+
+58,578 (89.5%)
+
+1.6Demographics
+
+Age
+
+Most developers in the survey this year report being 25 - 34 years old (37%). That number increases for professional developers to 42% and has steadily decreased in the last three years for those learning to code from 17% in 2022 to 12% this year.
+
+What is your age?*
+
+All Respondents Professional Developers Learning to Code Other Coders
+
+64,287 (98.2%)
+
+48,552 (74.2%)
+
+7,105 (10.9%)
+
+8,630 (13.2%)
+
+Next
+
+Technology

@@ -1,0 +1,127 @@
+Source ID: src_114
+Title: Bilgisayar Laboratuvarları Kullanım Usul ve Esasları
+
+Page 1
+
+OSTİM TEKNİK ÜNİVERSİTESİ
+BİLGİSAYAR LABORATUV ARLARI KULLANIM USUL VE ESASLARI
+
+Amaç
+MADDE 1- (1) Bu Usul ve Esasların amacı; Üniversite bünyesinde bulunan bilgisayar
+laboratuvarlarının eğitim -öğretim, araştırma ve akademik faaliyetler kapsamında güvenli,
+düzenli, disiplinli ve sürdürülebilir bir şekilde kullanılmasına ilişkin idari ve teknik çerçeveyi
+belirlemek; görev, yetki ve sorumlulukları açık biçimde tanımlamak ve uygulama birliğini
+sağlamaktır.
+(2) Bu metin, laboratuvarların günlük işletimine ilişkin uygulama esaslarını düzenler ve
+ilgili birimlerin sorumluluk alanlarını netleştirir.
+Kapsam
+MADDE 2 - (1) Bu Usul ve Esaslar, Üniversiteye bağlı fakülte, yüksekokul, meslek
+yüksekokulu ve enstitüler bünyesinde yer alan tüm bilgisayar laboratuvarlarını kapsar.
+(2) Laboratuvarların planlanması, kullanımı, gözetimi, teslim-tesellüm süreçleri ile teknik
+destek mekanizmaları bu metin hükümlerine tabidir.
+Tanımlar
+MADDE 3- (1) Bu Usul ve Esaslarda geçen;
+a) Üniversite: OSTİM Teknik Üniversitesini,
+b) BYDB : Bilgi Yönetimi Daire Başkanlığını,
+c) Birim: Laboratuvarın bağlı bulunduğu fakülte, yüksekokul, meslek yüksekokulu veya
+enstitüyü,
+ç) Fakülte Temsilcisi: Birim amiri tarafından laboratuvar işletim süreçlerini koordine
+etmek üzere görevlendirilen (araştırma görevlisi veya idari) personeli,
+d) Asistan Öğrenci: Laboratuvarların günlük işletimi amacıyla birimler tarafından
+görevlendirilen stajyer veya asistan öğrencileri,
+e) Laboratuvar Teknisyeni: Laboratuvar işletim süreçlerinde teknik koordinasyon
+sağlamak üzere görevlendirilecek personeli ifade eder.
+Temel ilkeler
+MADDE 4 - (1) Bilgisayar laboratuvarları yalnızca eğitim -öğretim ve akademik
+faaliyetler kapsamında kullanılır.
+(2) Laboratuvarların kullanımında kamu malının korunması, disiplin, düzen ve
+sorumluluk ilkeleri esastır.
+(3) Laboratuvarların kullanım planlaması ilgili birimler tarafından yapılır; plan dışı
+kullanım talepleri birim amirinin onayına tabidir.
+(4) Laboratuvarlar, kullanım dışında kapalı ve kilitli tutulur; yetkisiz erişime müsaade
+edilmez.
+Görev, yetki ve sorumluluklar
+Bilgi Yönetimi Daire Başkanlığının görevleri
+MADDE 5 - (1) B YDB, laboratuvarların teknik altyapısının kurulumu ve işletim
+standartlarının oluşturulmasından sorumludur.
+(2) BYDB’nin görevleri aşağıda sunulmuştur:
+a) Standart sistem imajlarının hazırlanması ve güncellenmesi,
+b) Lisanslı yazılımların merkezi yönetimi,
+c) Güvenlik güncellemelerinin ve altyapı hizmetlerinin yürütülmesi,
+ç) Arıza ve olay bildirimleri kapsamında teknik destek sağlanması.
+(3) Kurulum ve hazırlık süreçlerinin tamamlanmasını müteakip, laboratuvarların günlük
+idari işletimi birimlere devredecektir.
+Birimlerin görev ve sorumlulukları
+MADDE 6- (1) Her birim, sorumluluğunda bulunan bilgisayar laboratuvarlarının düzenli,
+disiplinli ve amacına uygun şekilde işletilmesinden sorumludur.
+(2) Birimler;
+
+Page 2
+
+a) Fakülte temsilcisini görevlendirir,
+b) Asistan öğrencileri belirler ve görevlendirir,
+c) Laboratuvar teknisyenlerinin koordinasyonunu sağlar,
+ç) Laboratuvarların ders dışı kullanım planlamasını yürütür.
+Asistan öğrencilerin yetki ve sorumlulukları
+MADDE 7 - (1) Asistan öğrenciler, sorumlu oldukları laboratuvarlarda aşağıdaki
+hususlarda yetkili ve sorumludur:
+a) Ders öncesinde laboratuvarın fiziki ve teknik kontrolünü yapmak,
+b) Ders öncesinde ve sonrasında laboratuvarı kontrol ederek teslim almak,
+c) Bilgisayar ve çevre birimlerine ilişkin eksiklik veya hasarları tespit etmek,
+ç) Tespit edilen hususları kayıt altına almak ve ilgili birime bildirmek,
+d) Kullanım kurallarının uygulanmasını sağlamak,
+e) Arıza ve teknik sorunları BYDB destek sistemi üzerinden bildirmek.
+2) Asistan öğrenciler, görevlerini fakülte temsilcisinin gözetim ve koordinasyonunda
+yerine getirir.
+Laboratuvar teknisyenleri
+MADDE 8 - (1) Laboratuvar teknisyenleri, sorumlu oldukları bilgisayar
+laboratuvarlarının teknik sürekliliğinin, düzeninin ve operasyonel işlerliğinin sağlanmasından
+birinci derecede sorumludur.
+(2) Laboratuvar teknisyenlerinin görev ve sorumlulukları şunlardır:
+a) Asistan öğrencilerin görevlerini usulüne uygun şekilde yerine getirmelerini sağlamak
+ve çalışmalarını koordine etmek,
+b) Laboratuvarların günlük açılış ve kapanış süreçlerinin prosedürlere uygun
+yürütülmesini sağlamak,
+c) Laboratuvarlarda kullanılan donanım ve çevre birimlerinin periyodik kontrolünü
+yapmak, envanter takibini yürütmek ve kayıt altına almak,
+ç) İşletim standartları ile bilgi güvenliği kurallarının uygulanmasını denetlemek ve
+uygunsuzlukları raporlamak,
+d) Basit donanım arızalarını gidermek, sarf malzeme ihtiyaçlarını tespit etmek ve ilgili
+birime bildirmek,
+e) Tespit edilen teknik arıza, güvenlik zafiyeti veya olağan dışı durumları gecikmeksizin
+BYDB destek sistemi üzerinden bildirmek ve sürecin takibini yapmak,
+f) Laboratuvarların ders ve sınav öncesi teknik hazır bulunuşluğunu sağlamak,
+g) Fakülte temsilcisine aylık faaliyet ve durum raporu sunmak,
+ğ) BYDB tarafından belirlenen standart imaj, yazılım ve güvenlik politikalarının sahada
+uygulanmasını sağlamak ve denetlemek,
+h) Laboratuvarlarda meydana gelen hasar, kayıp veya usulsüz kullanımlara ilişkin tutanak
+sürecini başlatmak ve kayıt altına almak,
+ı) Olağanüstü durumlarda (elektrik kesintisi, sistem arızası, güvenlik ihlali vb.) ilk teknik
+müdahaleyi gerçekleştirmek ve ilgili birimleri bilgilendirmek.
+Teslim-Tesellüm ve kayıt süreci
+MADDE 9 - (1) Laboratuvarların teslim ve tesellüm işlemleri dijital kayıt sistemi
+üzerinden yürütülür.
+(2) Ders öncesi ve ders sonrası kontroller düzenli olarak gerçekleştirilir ve kayıt altına
+alınır.
+(3) Tespit edilen eksiklik ve hasarlar ilgili birim tarafından değerlendirilir ve gerekli
+hallerde BYDB’ye iletilir.
+Yazılım ve sistem düzeni
+MADDE 10- (1) Laboratuvar bilgisayarlarına bireysel veya yetkisiz yazılım kurulumu
+yapılamaz.
+(2) Yazılım talepleri B YDB üzerinden yürütülür ve lisans ile güvenlik uygunluğu
+sağlanmadan kurulum gerçekleştirilmez.
+
+Page 3
+
+Yürürlük
+MADDE 11- (1) Bu Usul ve Esaslar, Mütevelli Heyet tarafından onaylandığı tarihte
+yürürlüğe girer.
+Yürütme
+MADDE 12- (1) Bu Usul ve Esasları OSTİM Teknik Üniversitesi Rektörü yürütür.
+
+Kabul Edildiği Senato Toplantısının
+Tarihi Sayısı
+23.02.2026 165
+Yürürlüğe Konulduğu Mütevelli Heyeti Toplantısının
+Tarihi Sayısı
+22.04.2026 92

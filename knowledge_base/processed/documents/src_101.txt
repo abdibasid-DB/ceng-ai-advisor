@@ -1,0 +1,271 @@
+Source ID: src_101
+
+How tech workers really feel about work right now
+
+Results from our first-ever large-scale tech worker sentiment survey
+
+Noam SegalandLenny Rachitsky
+
+May 27, 2025
+
+∙ Paid
+
+349
+
+Share
+
+👋 Welcome to a 🔒 subscriber-only edition 🔒 of my weekly newsletter. Each week I tackle reader questions about building product, driving growth, and accelerating your career. For more: Lenny’s Podcast |How I AI| Lennybot | Courses | Swag
+
+Annual subscribers now get a free year of Bolt, Perplexity Pro, Notion, Superhuman, Linear, Granola, and more. Subscribe now.
+
+Today, with insights from over 8,200 of you (thank you to everyone who participated!), we’re excited to share the results of our first-ever large-scale tech worker sentiment survey.
+
+It’s hard to imagine a more intense time to be working in technology, so Noam and I wanted to capture a rich picture of tech workers’ sentiment—at this moment, and going forward.
+
+Our analysis examines several dimensions of tech worker sentiment, including career outlook, role satisfaction, burnout, quitting intentions, career path clarity, leadership effectiveness, work setup preferences, and more.
+
+What we discovered is that tech professionals are experiencing a fascinating mix of emotions about their careers in 2025.
+
+Our biggest takeaways
+
+Burnout is at critical levels: Almost half of our respondents are experiencing significant burnout.
+
+Tech workers are more optimistic than we expected—but optimism is declining: 58.5% of tech workers remain optimistic about their roles, and 54.8% remain optimistic about their careers. However, there has been a significant negative sentiment shift over the past year.
+
+Startup founders are the happiest people in tech: They’re the only group growing more optimistic while consistently outranking everyone else in workplace well-being.
+
+Managers need help: Only 26% of tech workers consider their managers highly effective, while over 40% view them as ineffective.
+
+Where people work makes little difference in how they feel about work—on the surface. But dig deeper, and hybrid workers are the happiest, remote workers are doing well, and in-office workers are experiencing hidden frustrations.
+
+Small-company employees are doing the best: They outperform their large-company counterparts on nearly every work sentiment measure, from job enjoyment to sense of belonging.
+
+The mid-career slump: Mid-career workers are struggling the most with burnout, lower job enjoyment, and the most pessimism about the future.
+
+A widespread gap in career clarity: Many tech workers don’t know what they should be doing to continue developing in their careers.
+
+How we ran the survey and who responded
+
+We started by asking about people’s optimism (or pessimism) regarding the future of their role and career. We also asked people to reflect on the past year in tech and how their feelings had changed.
+
+We then dug into people’s work experiences, including enjoyment, burnout, quitting intentions, career development thoughts, and manager effectiveness.
+
+Finally, we explored how people feel about their work environments, how engaged they are at work, and how much belonging they feel in their organization.
+
+Takeaway 1: Burnout is a critical issue facing the tech workforce
+
+44.67% of all respondents are currently experiencing significant burnout (meaning they said they’re “moderately,” “very,” or “completely” burned-out).
+
+Burnout doesn’t just affect tech workers’ experience in their current job—it’s also correlated with people’s optimism or pessimism about the future of their career. 60% of extremely pessimistic respondents reported high burnout. Only 8% of extremely optimistic respondents reported that they’re highly burned-out.
+
+Interestingly, workers at smaller companies report significantly lower burnout levels than those at larger companies. However, there’s a dramatic spike in burnout within midsize companies (500 to 1,000 employees), perhaps because they’re large enough to have corporate bureaucracy but not large enough to have well-developed employee support systems.
+
+Full-time employees experience nearly twice the burnout rate of self-employed workers and contractors. More autonomy and control over work arrangements equals significantly lower burnout rates.
+
+Hardware is indeed hard. Tech workers in hardware and infra roles show the highest burnout rates, whereas people are (moderately) less burned-out working on emerging technology (e.g. AI) and specialized sectors (e.g. fintech, healthtech).
+
+Burnout varies by role, and there's a clear split - founders and engineers are dealing with way less burnout compared to everyone else.
+
+Not surprisingly, there’s a clear business impact of burnout:
+
+Burnout strongly correlates with quitting intentions—67.8% of workers who are actively exploring new opportunities or considering quitting are highly burned-out.
+
+Burnout also strongly correlates with worker engagement. High burnout dominates among workers with low engagement, with close to 30% (!) of not-engaged workers saying they’re completely burned-out.
+
+Takeaway 2: Tech workers are more optimistic than we expected—but optimism is declining
+
+We asked tech workers how optimistic or pessimistic they are about:
+
+The future of their career
+
+The future of their job function, in light of the rise of AI
+
+Broadly speaking, tech professionals maintain a positive outlook, with 54.8% expressing optimistic career sentiments, versus 33.3% expressing pessimistic views. Job function sentiment is even rosier, with 58.5% reporting optimistic feelings and only 25.1% pessimism about their specific role. In both cases, the rest of the respondents selected “neutral.”
+
+We were curious to understand how each respondent views the future of their career compared with the future of their role. So we dug deeper into the comparison between current roles vs. long-term career prospects:
+
+45.2% of respondents have aligned career and role sentiment, meaning they’re equally optimistic (or pessimistic) about their career and specific role.
+
+32.0% are more optimistic about their current role than their overall career.
+
+22.8% are more optimistic about their career than their current role.
+
+This means that while many tech workers feel good about their immediate job situation, they have more concerns about long-term industry trends and career progression.
+
+But optimism seems to be declining. We asked tech workers how their feelings have changed over the past year, and there’s been a significant negative shift in sentiment:
+
+This could be due to the economic climate, the rise of AI, or other factors we’re still investigating.
+
+Only two segments have become more optimistic over the past year: founders and new college grads.
+
+Conversely, designers and researchers had the largest negative sentiment change. Employees at large companies feel more pessimistic, as do fully remote workers.
+
+Takeaway 3: Startup founders are the happiest people in tech
+
+One of the most striking patterns is that founders have the most positive sentiments across nearly all metrics compared with other tech roles:
+
+The highest career optimism
+
+The highest job function optimism
+
+More optimism compared with last year (which means they’re way more optimistic about the future than everyone else in this sample)
+
+The highest job enjoyment
+
+The lowest burnout levels
+
+Perhaps less surprisingly, founders are the most committed to their roles, with the lowest quitting intentions
+
+Finally, founders feel much more engaged and have a significantly stronger sense of belonging than all other roles
+
+This remarkable pattern suggests that ownership, autonomy, and purpose are potent drivers of work satisfaction and well-being.
+
+Takeaway 4: Managers need help
+
+Fewer than 1 in 3 tech workers (26.6%) rate their managers as highly effective, while more than 4 in 10 (42.3%) rate their managers as ineffective.
+
+But the mind-boggling insights are the correlations (which don’t imply causation!) between direct-manager effectiveness and worker sentiment.
+
+Leadership impacts virtually all worker sentiment dimensions. For most sentiment metrics, there’s a massive gap between those who rated their managers as ineffective and those who rated them as extremely effective.
+
+People with great managers are 48% more engaged than those with poor managers.
+
+People with great managers also feel 63% (!) more belonging, 31% less burnout, and 62% (!!!) more job enjoyment compared to those with ineffective managers.
+
+Retention is also deeply impacted by manager ratings:
+
+Workers with ineffective leadership are 4.3 times as likely to be at risk of leaving (72.6% vs. 16.9%).
+
+Workers with extremely effective leadership are 8.2 times as likely to be committed to their role (61.6% vs. 7.5%).
+
+The most dramatic difference is in workers “actively looking” for new opportunities, who are 5 times as likely to rate their manager poorly.
+
+Leadership quality may be the single most important lever for retention. It’s tied to substantial increases in engagement, belonging, and enjoyment, and notable decreases in burnout.
+
+Interestingly, remote leadership was rated slightly more effective than in-office leadership, challenging assumptions about remote management challenges.
+
+Leadership effectiveness ratings gradually decline as company size increases, with small companies showing modestly better leadership perception than large enterprises.
+
+People in product and design roles have the most negative leadership perceptions.
+
+The leadership effectiveness gap represents a major opportunity. With only 26.6% of workers rating their manager as highly effective, improving leadership quality represents one of the highest-leverage investments organizations can make.
+
+Takeaway 5: Hybrid workers feel better about their job; in-office workers feel better about their career
+
+Over 50% of tech workers in this sample are primarily working remotely (37.7% fully remote, 16.9% mostly remote). Only about 5% of respondents are in an office every day (a ratio that’s in line with current industry data).
+
+At first glance, the data seemed to suggest that tech workers are feeling just about the same, no matter where they work:
+
+Job enjoyment is the same for everyone. Apparently, on-site restaurants, free dry-cleaning, and video games don’t drive higher job enjoyment.
+
+Burnout is also the same across work setups. Remote workers aren’t experiencing more burnout because they are physically separated from their teams.
+
+Work setup isn’t related to quitting intentions.
+
+Engagement levels are remarkably consistent across work arrangements. Tech workers’ interest, involvement, and connection to their work aren’t related to where they do it.
+
+And contrary to common assumptions, remote workers feel just as much belonging as in-office workers do.
+
+But when we dove deeper, we revealed some unexpected patterns:
+
+We asked respondents directly how their work setup has impacted their feelings about their job. People working hybrid (mostly from home) felt much better about their job than those who work in-office, a 21% difference in sentiment.
+
+However, when it comes to feelings about the future:
+
+In-office workers were slightly more optimistic about the future of their career compared with fully remote or even hybrid workers.
+
+In-office workers were also slightly more optimistic about the future of their job function in light of the rise of AI.
+
+In other words, hybrid workers are feeling a lot better about their job, but in-office workers feel better about their career prospects.
+
+What this all means:
+
+Hybrid workers are the happiest, but remote workers are surprisingly happy as well. These findings challenge the standard narrative that in-office work inherently creates stronger engagement, belonging, or job enjoyment.
+
+In-office workers are doing OK on the surface, but when asked directly, they share struggles that are likely to manifest later on.
+
+Flexible work arrangements that prioritize remote work with some in-person interaction may provide the optimal balance for most tech workers.
+
+It’s also important to note that several confounding variables may be in play regarding work location. Age, company size, and role distribution are all related to work setup. It’s possible that some differences are due to those factors rather than the work location itself. For example, remote workers skew older (45.1% ages 35 to 44, vs. 30.8% for in-office). Or hybrid arrangements are more common in larger companies (30% at 1-to-50-employee companies, compared with 46.6% at 1,000-plus-employee companies).
+
+Takeaway 6: Small-company employees are doing the best
+
+Company size emerges as one of the strongest predictors of positive sentiment, with statistically significant differences across organization sizes for 9 out of 11 sentiment metrics.
+
+People in smaller companies are:
+
+More optimistic about their career
+
+More satisfied in their role
+
+Experiencing less-pronounced negative sentiment change
+
+Enjoying their job more
+
+Less burned-out
+
+Less eager to quit
+
+Rating their managers more highly
+
+More engaged
+
+And we saved the strongest correlation for last: They feel more belonging.
+
+These findings reinforce the importance of creating tight-knit teams and smaller communities within large organizations.
+
+Big companies must foster a sense of connection and purpose that’s clearly lost when they grow beyond their first 50 to 100 employees.
+
+Takeaway 7: The mid-career slump is real
+
+Career optimism declines with experience, and the decline is substantial, with early-career workers scoring 15% higher than their later-career counterparts.
+
+But across multiple other sentiment variables, we observed a U-shaped pattern with age and experience:
+
+Early-career professionals (0 to 6 years) generally report high optimism (about 62% optimistic), low burnout (47% not or only slightly burned-out), and high job enjoyment (71% enjoying their work).
+
+Mid-career professionals (7 to 14 years) report the most negative sentiment patterns, with higher burnout (41% not or only slightly burned-out), higher quitting intentions (28% committed to their roles), and lower job enjoyment (66% enjoying their work).
+
+Late-career professionals (15-plus years) report higher job enjoyment (75% enjoying their work) and lower quitting intentions (34% committed to their roles) than mid-career professionals.
+
+Engagement and belonging remain fairly consistent from early to mid-career stages. Late-career professionals report the highest levels of engagement and belonging, and also enjoyment, clarity, and commitment. Apparently, if you make it through the mid-career slump and find your niche, you become more content compared with earlier-career workers.
+
+This pattern suggests that organizations should pay special attention to mid-career professionals, who may be experiencing a “career crisis” when early enthusiasm has waned but long-term career resilience and clarity haven’t yet developed.
+
+Takeaway 8: There’s a widespread gap in career clarity
+
+We asked tech workers how clear they are about the skills and career development paths they should pursue to reach their professional goals. What we found is widespread uncertainty:
+
+Career clarity was strongly related to our other key sentiment metrics, particularly engagement and leadership perception. It’s hard to be an engaged worker when you’re not sure what to engage in. And managers play a critical role in setting expectations and guiding workers along their career path to secure their future.
+
+This uncertainty around career development likely contributes to career anxiety and the negative shifts in future outlook we’ve observed, and it may partly explain the high percentage of professionals considering quitting (about 40%).
+
+Bonus takeaway #1: Women are more burned-out (but more engaged) than men
+
+In this sample, more women reported being burned-out—or burned-out to a greater degree—than the male respondents did. We’re not talking about massive gaps but, rather, consistent patterns that show up across large samples:
+
+Women’s burnout scores are roughly 3% higher than men’s.
+
+Women’s role and career optimism are about 3.3% lower.
+
+Women also reported slightly lower enjoyment and more negative emotional impacts from their work setup.
+
+Now, these might seem like small differences (and statistically speaking, they are small effect sizes), but they’re significant. Small sentiment gaps can have outsized impacts on retention and performance over time.
+
+But interestingly, women respondents said that they’re also more engaged and have a stronger sense of belonging than the men we studied.
+
+What does this tell us? Women in tech are feeling more connected and committed to their work (and work communities), while simultaneously feeling more strained and less optimistic about their future in the industry. The differences may be small, but it’s important to be mindful of trends like these that can hurt women’s equity and inclusion in the industry.
+
+Bonus takeaway #2: AI is keeping tech workers up at night
+
+This post is for paid subscribers
+
+Already a paid subscriber?Sign in
+
+PreviousNext
+
+© 2026Substack Inc · Privacy ∙ Terms ∙ Collection notice
+
+Start your SubstackGet the app
+
+Substackis the home for great culture

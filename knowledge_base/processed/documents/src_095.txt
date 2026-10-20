@@ -1,0 +1,503 @@
+Source ID: src_095
+Title: Occupations with the most job growth, 2025 and projected 2035
+
+Occupations with the most job growth : U.S. Bureau of Labor Statistics
+
+An official website of the United States government
+
+Here is how you know
+
+United States Department of Labor
+
+The .gov means it's official.
+Federal government websites often end in .gov or .mil. Before sharing sensitive information,
+make sure you're on a federal government site.
+
+The site is secure.
+The
+https:// ensures that you are connecting to the official website and that any
+information you provide is encrypted and transmitted securely.
+
+U.S. Bureau of Labor Statistics
+
+Release Calendar | Subscribe
+
+Search buttonSearch:
+
+Employment Projections
+
+SHARE ON:
+Search Employment Projections
+
+Bureau of Labor Statistics >
+Employment Projections >
+
+Data
+
+Employment Projections
+
+Data
+
+Top
+
+Occupations with the most job growth
+
+Other available formats (XLSX)
+
+Table 1.4 Occupations with the most job growth, 2025 and projected 2035 (Employment in thousands)
+
+2025 National Employment Matrix title
+
+2025 National Employment Matrix code
+
+Employment, 2025
+
+Employment, 2035
+
+Employment change, numeric, 2025–35
+
+Employment change, percent, 2025–35
+
+Median annual wage, dollars, 2025
+
+Total, all occupations
+
+00-0000
+
+170,280.8
+
+176,198.5
+
+5,917.6
+
+3.5
+
+50,980
+
+Home health and personal care aides
+
+31-1120
+
+4,677.1
+
+5,524.4
+
+847.3
+
+18.1
+
+35,800
+
+Stockers and order fillers
+
+53-7065
+
+2,804.3
+
+3,055.0
+
+250.7
+
+8.9
+
+37,330
+
+Fast food and counter workers
+
+35-3023
+
+3,855.9
+
+4,079.1
+
+223.3
+
+5.8
+
+31,200
+
+Registered nurses
+
+29-1141
+
+3,465.4
+
+3,660.1
+
+194.7
+
+5.6
+
+97,550
+
+General and operations managers
+
+11-1021
+
+3,599.0
+
+3,780.3
+
+181.3
+
+5.0
+
+105,770
+
+Software developers
+
+15-1252
+
+1,717.8
+
+1,892.6
+
+174.7
+
+10.2
+
+135,980
+
+Cooks, restaurant
+
+35-2014
+
+1,417.5
+
+1,588.8
+
+171.4
+
+12.1
+
+37,390
+
+Medical and health services managers
+
+11-9111
+
+640.4
+
+795.5
+
+155.1
+
+24.2
+
+123,860
+
+Nurse practitioners
+
+29-1171
+
+336.3
+
+474.1
+
+137.8
+
+41.0
+
+132,300
+
+Construction laborers
+
+47-2061
+
+1,489.3
+
+1,598.6
+
+109.3
+
+7.3
+
+47,120
+
+Management analysts
+
+13-1111
+
+1,077.1
+
+1,186.3
+
+109.2
+
+10.1
+
+101,860
+
+Computer and information systems managers
+
+11-3021
+
+685.8
+
+793.9
+
+108.1
+
+15.8
+
+175,140
+
+Medical assistants
+
+31-9092
+
+833.9
+
+941.5
+
+107.6
+
+12.9
+
+45,690
+
+Substance abuse, behavioral disorder, and mental health counselors
+
+21-1018
+
+533.4
+
+631.4
+
+98.0
+
+18.4
+
+59,350
+
+Data scientists
+
+15-2051
+
+275.6
+
+371.0
+
+95.4
+
+34.6
+
+120,230
+
+Financial managers
+
+11-3031
+
+879.7
+
+964.6
+
+84.9
+
+9.7
+
+166,570
+
+Heavy and tractor-trailer truck drivers
+
+53-3032
+
+2,221.2
+
+2,305.0
+
+83.8
+
+3.8
+
+58,640
+
+Industrial machinery mechanics
+
+49-9041
+
+446.9
+
+526.6
+
+79.7
+
+17.8
+
+64,520
+
+Accountants and auditors
+
+13-2011
+
+1,595.2
+
+1,674.6
+
+79.4
+
+5.0
+
+83,680
+
+Electricians
+
+47-2111
+
+821.0
+
+896.9
+
+75.9
+
+9.2
+
+63,190
+
+Project management specialists
+
+13-1082
+
+1,094.3
+
+1,167.4
+
+73.2
+
+6.7
+
+102,320
+
+Maintenance and repair workers, general
+
+49-9071
+
+1,621.8
+
+1,690.5
+
+68.6
+
+4.2
+
+49,590
+
+Light truck drivers
+
+53-3033
+
+1,068.5
+
+1,136.4
+
+67.8
+
+6.3
+
+44,860
+
+First-line supervisors of food preparation and serving workers
+
+35-1012
+
+1,236.4
+
+1,303.5
+
+67.1
+
+5.4
+
+44,080
+
+Market research analysts and marketing specialists
+
+13-1161
+
+952.7
+
+1,019.0
+
+66.3
+
+7.0
+
+78,760
+
+Managers, all other
+
+11-9199
+
+1,338.8
+
+1,404.4
+
+65.6
+
+4.9
+
+141,900
+
+Human resources specialists
+
+13-1071
+
+939.7
+
+999.7
+
+60.1
+
+6.4
+
+75,940
+
+Landscaping and groundskeeping workers
+
+37-3011
+
+1,188.6
+
+1,244.2
+
+55.6
+
+4.7
+
+39,150
+
+Construction managers
+
+11-9021
+
+609.1
+
+664.3
+
+55.2
+
+9.1
+
+114,990
+
+Janitors and cleaners, except maids and housekeeping cleaners
+
+37-2011
+
+2,432.6
+
+2,486.2
+
+53.6
+
+2.2
+
+36,840
+
+Note:
+
+Wage data are from the Occupational Employment and Wage Statistics program. The wage data cover non-farm wage and salary workers and do not cover the self-employed, owners and partners in unincorporated firms, or household workers.
+
+Source: U.S. Bureau of Labor Statistics.
+
+Last modified date: August 27, 2026

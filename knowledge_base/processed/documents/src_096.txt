@@ -1,0 +1,79 @@
+Source ID: src_096
+
+Türkiye'deki 2025 yılı yazılımcı maaşları ortaya çıktı! - SDN
+
+Teknoloji Haberleri
+
+AI ile Özetle
+
+Türkiye’deki 2025 yılı yazılımcı maaşları ortaya çıktı!
+
+Türkiye'deki 2025 yılı yazılımcı maaşları bir araştırma sonucunda belli oldu. Ortaya ise oldukça şaşırtıcı rakamlar çıktı.
+
+Alperen Esin
+3 Mayıs 2025
+
+Türkiye’de 2025 yılı yazılımcı maaşlarına yönelik yapılan anketin sonuçları açıklandı. Binlerce yazılımcının katıldığı araştırmaya göre, sektördeki maaşlar deneyim seviyesine ve uzmanlık alanına göre büyük farklılıklar gösteriyor.
+
+Türkiye’deki 2025 yılı yazılımcı maaşları belli oldu
+
+Önceki Yazılımcı tarafından her yıl düzenlenen ankete 9.056 kişi katıldı. Katılımcıların yüzde 55,3’ü İstanbul’da, yüzde 16,7’si Ankara’da, yüzde 7,1’i İzmir’de yaşıyor.
+
+Çalışma modeline bakıldığında, yüzde 39,79’u tamamen uzaktan çalışırken, yüzde 41,86’sı hibrit modeli tercih ediyor. Yüzde 16,38’lik bir kesim ise hala ofis ortamında çalışmaya devam ediyor.
+
+Full Stack Developer pozisyonunda junior seviyede çalışanlar ortalama 50 bin 500 TL maaş alırken, middle seviyede bu rakam 73 bin 500 TL’ye yükseliyor. Senior seviyede ise maaş ortalaması 122 bin 500 TL’ye ulaşıyor. Front-end geliştiricilerde juniorlar 46 bin 500 TL, middle seviyede çalışanlar 70 bin 500 TL, seniorlar ise 112 bin 500 TL ortalamasında maaş alıyor.
+
+Teknik liderlik ve yöneticilik pozisyonlarında maaşlar daha yüksek seyrediyor. Team/Tech Lead seviyesindeki çalışanlar ortalama 152 bin 500 TL kazanırken, Software Development Manager ve Software Architect rollerinde maaşlar 182 bin 500 TL’ye kadar çıkıyor.
+
+Mobil geliştiricilerde Android tarafında junior seviyede maaşlar 45 bin 500 TL’den başlıyor, senior seviyede 137 bin 500 TL’ye ulaşıyor. iOS geliştiricilerde ise junior maaşları 51 bin TL iken, senior seviyede ortalama maaş 152 bin 500 TL’ye çıkıyor.
+
+Flutter veya React Native gibi cross-platform teknolojilerinde çalışan mobil geliştiricilerin maaşları biraz daha düşük seyrediyor. Junior seviyede ortalama maaş 40 bin 500 TL, senior seviyede ise 117 bin 500 TL olarak belirtiliyor.
+
+Gömülü sistem yazılımcıları için junior seviyesinde maaşlar 55 bin 500 TL, senior seviyesinde ise 122 bin 500 TL seviyesinde. QA ve otomasyon alanında çalışanların maaşları junior seviyede 52 bin 500 TL civarından başlıyor, senior seviyede ise 102 bin 500 TL’ye kadar çıkıyor.
+
+İş analistleri ise junior seviyede 57 bin TL, middle seviyede 73 bin 500 TL, senior seviyede ise 117 bin 500 TL ortalamasında maaş alıyor.
+
+Paylaş:
+
+Yorumunuz gönderildi,
+onaylandıktan sonra yayımlanacak.
+
+2 Yorum
+
+iş analistleri asla bu kadar değil
+
+Yanıtla
+
+Gerçekte ne kadar peki biliyorsan söylermisin
+
+Yanıtla
+
+Diğer yorumları gör (1)
+
+Yorum Yap
+
+Yorum Yazİptal
+
+Popüler Haberler
+
+Epic Games Cadılar Bayramı için İki Oyunu Ücretsiz Veriyor
+
+Yavaşlayan Android TV’ler Yapay Zeka ile Hızlanıyor
+
+HUAWEI Pura 90s Serisinde Dev Kampanya
+
+OpenAI İnsansı Robot Dünyasına Giriyor
+
+Samsung’un Yeni Arayüzü One UI 10 Nasıl Olacak? İşte Detaylar
+
+Son Haberler
+
+Apple Pro and Tell Etkinliğinde Dokunmatik Ekranlı MacBook Tanıtılacak
+
+iOS 27.2 RC Yayınladı
+
+Türk Savunma Sanayii 2026’da 15 Milyar Dolarlık Yeni Sözleşme İmzaladı
+
+Uncharted Üçlemesi PC Portu ile 120 FPS’e Ulaştı
+
+Microsoft’tan PlayStation’a Cevap: Yeni Xbox Fiziksel Diskle Gelebilir
