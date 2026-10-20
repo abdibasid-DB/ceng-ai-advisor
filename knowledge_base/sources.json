@@ -1485,12 +1485,12 @@
       "source_type": "industry_research_report",
       "url": "https://www.mbopartners.com/state-of-independence/digital-nomads/",
       "publication_date": "2025",
-      "date_accessed": "2026-10-19",
+      "date_accessed": "2026-10-20",
       "category": "remote_work",
       "language": "English",
       "reliability_note": "Annual research by an independent-workforce services company; long-running series but commercially produced.",
-      "raw_file_path": null,
-      "notes": "Number and characteristics of U.S. digital nomads, including those in technology occupations. Geographic scope: United States. Acquisition: manual_required (2026-10-19 download was rejected by the integrity check for a login/bot-block marker)."
+      "raw_file_path": "knowledge_base/raw/html/src_102.html",
+      "notes": "Number and characteristics of U.S. digital nomads, including those in technology occupations. Geographic scope: United States. Acquisition: saved manually by the project team on 2026-10-20 after the 2026-10-19 download was rejected by the integrity check for a login/bot-block marker. The saved page contains the full report text through the methodology section. acquire_sources.py still flags this file because a cdnjs.cloudflare.com stylesheet link appears in the first 4 KB; this is a false positive."
     },
     {
       "source_id": "src_103",
@@ -1504,7 +1504,7 @@
       "language": "Turkish",
       "reliability_note": "Official TÜİK statistics release. Turkish-language edition of the same release registered in English as src_021.",
       "raw_file_path": null,
-      "notes": "Turkey-specific graduate employment, first-job duration and earnings indicators by higher-education field. Saved manually by the project team; see src_021 for the English edition, which was excluded after review because its saved page was not usable. Index only one of src_021 / src_103. Acquisition: manual_required (saved manually by the project team)."
+      "notes": "Turkey-specific graduate employment, first-job duration and earnings indicators by higher-education field. Saved manually by the project team; see src_021 for the English edition, which was excluded after review because its saved page was not usable. Index only one of src_021 / src_103. Acquisition: manual_required. A 2026-10-20 manual save was not used because it contained only the TÜİK site's empty JavaScript shell (\"JavaScript Gerekli\" notice, no bulletin content); save the rendered page or the bulletin PDF instead."
     },
     {
       "source_id": "src_104",
