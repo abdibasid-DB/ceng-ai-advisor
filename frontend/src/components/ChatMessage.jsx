@@ -39,7 +39,7 @@ function statusTitle(status) {
   return null;
 }
 
-function ChatMessage({ message, sourceRegistry = [] }) {
+function ChatMessage({ message, sourceRegistry = [], onExampleQuestion, isLoading = false }) {
   const [copyStatus, setCopyStatus] = useState("");
   const isUser = message.role === "user";
   const title = !isUser ? statusTitle(message.status) : null;
@@ -80,6 +80,16 @@ function ChatMessage({ message, sourceRegistry = [] }) {
             }}>{message.content || ""}</ReactMarkdown>
           )}
         </div>
+        {!isUser && message.status === "help" && message.exampleQuestions?.length > 0 ? (
+          <div className="example-grid" aria-label="Help example questions">
+            {message.exampleQuestions.map((question) => (
+              <button key={question} type="button" className="example-question"
+                disabled={isLoading || !onExampleQuestion} onClick={() => onExampleQuestion(question)}>
+                {question}
+              </button>
+            ))}
+          </div>
+        ) : null}
         {!isUser ? <div className="answer-actions">
           <button type="button" className="secondary-button" onClick={copyAnswer}>Copy answer</button>
           <span role="status">{copyStatus}</span>

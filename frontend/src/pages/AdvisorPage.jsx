@@ -192,6 +192,7 @@ function AdvisorPage({ questionRequest }) {
                     ...message,
                     content: response.answer || "",
                     status: response.status,
+                    exampleQuestions: response.example_questions || [],
                     sources: response.sources || [],
                     retrievedContext: response.retrieved_context || [],
                     retrievalMetadata: response.retrieval_metadata || {},
@@ -306,7 +307,8 @@ function AdvisorPage({ questionRequest }) {
           ) : (
             messages.map((message) => message.isStreaming
               ? <LoadingMessage key={message.id} metadata={message.progressMetadata} />
-              : <ChatMessage key={message.id} message={message} sourceRegistry={sourceRegistry} />)
+              : <ChatMessage key={message.id} message={message} sourceRegistry={sourceRegistry}
+                  onExampleQuestion={(question) => submitQuestion(question)} isLoading={isLoading} />)
           )}
         </div>
 

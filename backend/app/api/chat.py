@@ -32,6 +32,14 @@ _session_lock = Lock()
 _sessions: dict[str, deque["ConversationTurn"]] = {}
 MAX_SESSION_TURNS = 8
 CONTEXT_TURNS = 3
+HELP = "help"
+HELP_EXAMPLE_QUESTIONS = (
+    "What is Computer Engineering at OSTIM Technical University?",
+    "What courses are taught in Computer Engineering?",
+    "Do I need programming experience before starting Computer Engineering?",
+    "How do internships work at OSTIM Technical University?",
+    "What careers can Computer Engineering graduates pursue?",
+)
 
 
 @dataclass(frozen=True)
@@ -88,8 +96,8 @@ def chat(request: ChatRequest, pipeline: RAGPipeline = Depends(get_rag_pipeline)
         record_turn(session_id, result)
         return response
 
-    if resolution.kind == "out_of_scope_persona_meta":
-        result = out_of_scope_response(request.question)
+    if resolution.kind in {"assistant_help", "out_of_scope_persona_meta"}:
+        result = assistant_help_response(request.question) if resolution.kind == "assistant_help" else out_of_scope_response(request.question)
         result = attach_resolution_metadata(result, resolution)
         response = build_chat_response(result, session_id=session_id)
         record_turn(session_id, result)
@@ -156,8 +164,8 @@ def chat_stream(request: ChatRequest, pipeline: RAGPipeline = Depends(get_rag_pi
             yield encode_stream_event("final", response.model_dump(mode="json"))
             return
 
-        if resolution.kind == "out_of_scope_persona_meta":
-            result = out_of_scope_response(request.question)
+        if resolution.kind in {"assistant_help", "out_of_scope_persona_meta"}:
+            result = assistant_help_response(request.question) if resolution.kind == "assistant_help" else out_of_scope_response(request.question)
             result = attach_resolution_metadata(result, resolution)
             response = build_chat_response(result, session_id=session_id)
             record_turn(session_id, result)
@@ -314,21 +322,21 @@ def last_answered_turn(session_id: str) -> ConversationTurn | None:
 
 
 def latest_turn_was_unsourced(session_id: str) -> bool:
-    """True when the most recent reply was a refusal, so "that" has no sources.
+    """True when the most recent reply was help or a refusal without sources.
 
     Without this check a source request after a refusal would report the
     sources of an older, unrelated answer.
     """
     with _session_lock:
         turns = [turn for turn in _sessions.get(session_id, ()) if turn.status != ERROR]
-    return bool(turns) and turns[-1].status in {INSUFFICIENT_INFORMATION, OUT_OF_SCOPE}
+    return bool(turns) and turns[-1].status in {INSUFFICIENT_INFORMATION, OUT_OF_SCOPE, HELP}
 
 
 def unsourced_previous_turn_response(question: str) -> dict[str, Any]:
     return unresolved_follow_up_response(
         question,
-        "My previous reply did not use any sources, because I did not have enough reliable information in my "
-        "knowledge base to answer that question.",
+        "My previous reply did not use any sources. Ask a complete Computer Engineering question and I can "
+        "look for supporting information in my knowledge base.",
     )
 
 
@@ -336,7 +344,7 @@ def last_context_turn(session_id: str) -> ConversationTurn | None:
     with _session_lock:
         turns = list(_sessions.get(session_id, ()))
     for turn in reversed(turns):
-        if previous_turn_has_domain_context(turn):
+        if turn.status != HELP and previous_turn_has_domain_context(turn):
             return turn
     return None
 
@@ -350,6 +358,34 @@ def unresolved_follow_up_response(question: str, answer: str) -> dict[str, Any]:
         "sources": [],
         "retrieved_context": [],
         "retrieval_metadata": {"unresolved_follow_up": True, "evidence_sufficient": False},
+        "timing": {},
+        "citation_metadata": {},
+        "answer_warnings": [],
+        "model": None,
+        "error": None,
+    }
+
+
+def assistant_help_response(question: str) -> dict[str, Any]:
+    return {
+        "question": " ".join((question or "").split()),
+        "status": HELP,
+        "answer": (
+            "Hi! I'm a local RAG (retrieval-augmented generation) assistant for prospective "
+            "OSTİM Technical University Computer Engineering students.\n\n"
+            "You can ask me about the department, curriculum, student life, programming, specializations, "
+            "careers, internships, graduate studies, employment in Türkiye and abroad, future technologies, "
+            "AI, and common concerns about choosing Computer Engineering.\n\n"
+            "I search a local knowledge base and use its passages to answer your questions. "
+            "Factual answers come with supporting sources so you can check them. "
+            "If my sources don't contain enough information, I'll tell you.\n\n"
+            "Try one of these example questions:"
+        ),
+        "example_questions": list(HELP_EXAMPLE_QUESTIONS),
+        "llm_called": False,
+        "sources": [],
+        "retrieved_context": [],
+        "retrieval_metadata": {"assistant_help": True},
         "timing": {},
         "citation_metadata": {},
         "answer_warnings": [],
@@ -430,6 +466,7 @@ def build_chat_response(result: dict[str, Any], session_id: str | None = None) -
         status=result.get("status") or ERROR,
         answer=result.get("answer") or "",
         llm_called=bool(result.get("llm_called")),
+        example_questions=result.get("example_questions") or [],
         sources=sources,
         retrieved_context=[RetrievedContextResponse(**item) for item in context_items],
         retrieval_metadata=result.get("retrieval_metadata") or {},

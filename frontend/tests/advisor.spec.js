@@ -108,6 +108,61 @@ test("service errors end progress and allow another question", async ({ page }) 
   await expect(page.getByLabel("Ask a question", { exact: true })).toBeEnabled();
 });
 
+test("help is friendly and all five examples send questions in the same chat", async ({ page }) => {
+  await mockApi(page);
+  const examples = [
+    "What is Computer Engineering at OSTIM Technical University?",
+    "What courses are taught in Computer Engineering?",
+    "Do I need programming experience before starting Computer Engineering?",
+    "How do internships work at OSTIM Technical University?",
+    "What careers can Computer Engineering graduates pursue?",
+  ];
+  const requests = [];
+  await page.route("**/api/v1/chat/stream", async (route) => {
+    const request = route.request().postDataJSON();
+    requests.push(request);
+    const isHelp = requests.length === 1;
+    await route.fulfill({ contentType: "application/x-ndjson", body: JSON.stringify({
+      event: "final", data: {
+        session_id: request.session_id, status: isHelp ? "help" : "answered",
+        answer: isHelp ? "Hi! I'm a local advisor for prospective OSTİM Computer Engineering students. Try an example:" : "A sourced answer.",
+        example_questions: isHelp ? examples : [], sources: [], llm_called: !isHelp,
+      },
+    }) });
+  });
+  await page.goto("/#advisor");
+  await page.getByLabel("Ask a question", { exact: true }).fill("What can I ask you?");
+  await page.getByRole("button", { name: "Send", exact: true }).click();
+  const help = page.locator(".status-help");
+  await expect(help).toContainText("prospective OSTİM");
+  await expect(help.locator(".message-status")).toHaveCount(0);
+  await expect(page.locator(".status-out_of_scope")).toHaveCount(0);
+  await expect(help.getByRole("button", { name: /\?$/ })).toHaveCount(5);
+  await page.reload();
+  for (const [index, question] of examples.entries()) {
+    await help.getByRole("button", { name: question, exact: true }).click();
+    await expect(page.locator(".user-message").last()).toHaveText(question);
+    await expect(page.locator(".status-answered")).toHaveCount(index + 1);
+    await expect(help.getByRole("button", { name: examples[0], exact: true })).toBeEnabled();
+    expect(requests[index + 1].question).toBe(question);
+    expect(requests[index + 1].session_id).toBe(requests[0].session_id);
+  }
+});
+
+test("unrelated questions still display the out-of-scope warning", async ({ page }) => {
+  await mockApi(page);
+  await page.route("**/api/v1/chat/stream", (route) => route.fulfill({
+    contentType: "application/x-ndjson", body: JSON.stringify({ event: "final", data: {
+      status: "out_of_scope", answer: "Please ask about Computer Engineering.", sources: [], example_questions: [],
+    } }),
+  }));
+  await page.goto("/#advisor");
+  await page.getByLabel("Ask a question", { exact: true }).fill("pizza");
+  await page.getByRole("button", { name: "Send", exact: true }).click();
+  await expect(page.locator(".status-out_of_scope .message-status")).toHaveText("Out of scope");
+  await expect(page.getByLabel("Help example questions")).toHaveCount(0);
+});
+
 test("stream metadata drives retrieval progress before the final answer", async ({ page }) => {
   await mockApi(page);
   await page.addInitScript(() => {

@@ -325,9 +325,66 @@ class ApiTests(unittest.TestCase):
         )
         data = response.json()
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(data["status"], "out_of_scope")
-        self.assertIn("Computer Engineering student advisor", data["answer"])
+        self.assertEqual(data["status"], "help")
+        self.assertIn("prospective OSTİM Technical University Computer Engineering students", data["answer"])
         self.assertEqual(len(pipeline.calls), 0)
+
+    def test_help_and_unrelated_questions_on_both_chat_endpoints(self):
+        help_questions = (
+            "what can I ask you?", "what should students ask you?", "who are you?",
+            "what can you help with?", "how do you work?",
+        )
+        for endpoint in ("/api/v1/chat", "/api/v1/chat/stream"):
+            for question in help_questions + ("pizza", "weather", "football", "Can you help me with pizza?"):
+                with self.subTest(endpoint=endpoint, question=question):
+                    pipeline = self.override_pipeline(FakeStreamPipeline())
+                    response = self.client.post(endpoint, json={"question": question})
+                    self.assertEqual(response.status_code, 200)
+                    if endpoint.endswith("/stream"):
+                        events = decode_stream_response(response)
+                        self.assertEqual([event["event"] for event in events], ["final"])
+                        data = events[0]["data"]
+                    else:
+                        data = response.json()
+                    self.assertEqual(pipeline.calls, [])
+                    self.assertFalse(data["llm_called"])
+                    self.assertEqual(data["sources"], [])
+                    self.assertEqual(data["retrieved_context"], [])
+                    self.assertIsNone(data["model"])
+                    self.assertEqual(data["answer_warnings"], [])
+                    if question in help_questions:
+                        self.assertEqual(data["status"], "help")
+                        self.assertEqual(data["retrieval_metadata"]["query_kind"], "assistant_help")
+                        self.assertNotIn("classified_out_of_scope", data["retrieval_metadata"])
+                        self.assertIn("local RAG", data["answer"])
+                        self.assertIn("OSTİM", data["answer"])
+                        self.assertIn("supporting sources", data["answer"])
+                        self.assertEqual(len(set(data["example_questions"])), 5)
+                        for example in data["example_questions"]:
+                            self.assertTrue(example.endswith("?"))
+                    else:
+                        self.assertEqual(data["status"], "out_of_scope")
+                        self.assertEqual(data["example_questions"], [])
+
+    def test_source_request_after_help_does_not_cite_an_older_answer(self):
+        for endpoint in ("/api/v1/chat", "/api/v1/chat/stream"):
+            with self.subTest(endpoint=endpoint):
+                pipeline = self.override_pipeline(FakeStreamPipeline())
+                session_id = endpoint
+                self.client.post(endpoint, json={"question": "What is Computer Engineering?", "session_id": session_id})
+                self.client.post(endpoint, json={"question": "how do you work?", "session_id": session_id})
+                response = self.client.post(endpoint, json={"question": "what sources did you use for that?", "session_id": session_id})
+                data = decode_stream_response(response)[-1]["data"] if endpoint.endswith("/stream") else response.json()
+                self.assertEqual(data["sources"], [])
+                self.assertIn("did not use any sources", data["answer"])
+                self.assertEqual(len(pipeline.calls), 1)
+
+    def test_help_does_not_replace_the_domain_topic_for_follow_ups(self):
+        pipeline = self.override_pipeline(EchoPipeline())
+        for question in ("Can Computer Engineers work in cybersecurity?", "how do you work?", "What skills should I build?"):
+            self.client.post("/api/v1/chat", json={"question": question, "session_id": "help-context"})
+        self.assertEqual(len(pipeline.calls), 2)
+        self.assertIn("cybersecurity", pipeline.calls[-1]["resolved_question"].lower())
 
     def test_domain_anchored_source_question_is_not_treated_as_vague_follow_up(self):
         pipeline = self.override_pipeline(EchoPipeline())
@@ -501,7 +558,8 @@ class ApiTests(unittest.TestCase):
         response = self.client.get("/api/v1/sources")
         data = response.json()
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(data["count"], 94)
+        registry = json.loads((PROJECT_ROOT / "knowledge_base" / "sources.json").read_text(encoding="utf-8"))["sources"]
+        self.assertEqual(data["count"], len(registry))
         self.assertEqual(len(data["sources"]), data["count"])
         sources_by_id = {source["source_id"]: source for source in data["sources"]}
         expected_indexed_count = sum(1 for source in data["sources"] if source["indexed_in_rag"])

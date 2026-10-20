@@ -18,6 +18,7 @@ QueryKind = Literal[
     "contextual_follow_up",
     "source_follow_up",
     "vague_no_referent",
+    "assistant_help",
     "out_of_scope_persona_meta",
 ]
 
@@ -516,6 +517,18 @@ def understand_query(question: str, previous_turn: Any | None = None) -> QueryUn
             debug=debug,
         )
 
+    if is_assistant_help_text(tokens):
+        return QueryUnderstanding(
+            original_question=cleaned,
+            normalized_question=normalized,
+            retrieval_question=None,
+            kind="assistant_help",
+            task="assistant_help",
+            is_persona_meta=True,
+            confidence=0.98,
+            debug=debug,
+        )
+
     persona_meta = is_persona_or_meta_text(text, tokens)
     if persona_meta:
         return QueryUnderstanding(
@@ -960,6 +973,27 @@ def is_source_follow_up_text(text: str, tokens: list[str]) -> bool:
     return (asks_origin and refers_to_previous) or (asks_for_sources and refers_to_previous) or (
         asks_for_sources and len(tokens) <= 5 and not has_domain_anchor(text)
     )
+
+
+def is_assistant_help_text(tokens: list[str]) -> bool:
+    """Recognize requests for orientation, without matching unrelated tasks.
+
+    Full matches keep "can you help me with pizza" and domain questions such
+    as "what can you tell me about internships" out of this shortcut.
+    """
+    text = " ".join(tokens)
+    assistant = r"(?:you|this (?:advisor|assistant|chatbot)|the (?:advisor|assistant|chatbot))"
+    patterns = (
+        rf"(?:who|what) (?:are|is) {assistant}",
+        r"what (?:is|s) your (?:name|role|purpose)",
+        r"what (?:can|could|do) you (?:do|help(?: me| us| students)? with|answer)",
+        r"what (?:questions |topics )?(?:can|could|should|do) (?:i|we|students|prospective students) ask you(?: about)?",
+        r"what (?:questions|topics) (?:can|do) you (?:answer|cover|help with)",
+        rf"how (?:do|does) {assistant} work",
+        r"tell me about yourself",
+        r"can you help(?: me| us)?",
+    )
+    return any(re.fullmatch(pattern, text) for pattern in patterns)
 
 
 def is_persona_or_meta_text(text: str, tokens: list[str]) -> bool:
