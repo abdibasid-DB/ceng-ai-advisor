@@ -76,9 +76,9 @@
         "question":  "What score would let me skip OSTIM\u0027s English prep school?",
         "expected_behavior":  "answer",
         "expected_source_ids":  [
-
+                                    "src_107"
                                 ],
-        "note":  "No answering source: src_057 lists a foreign-language regulation and src_058 mentions prep duration, but neither provides the prep exemption test or accepted-score thresholds. Erasmus language scores in src_061 are a different requirement."
+        "note":  "src_107 Article 6(3) sets at least 60/100 on the university English proficiency exam; Article 6(6)-(9) gives alternative exemption routes. Do not confuse proficiency with the placement test."
     },
     {
         "id":  "unseen_department_itself_009",
@@ -117,9 +117,11 @@
         "question":  "At OSTIM, does doing a minor give me another degree like a double major does?",
         "expected_behavior":  "answer",
         "expected_source_ids":  [
-                                    "src_058"
+                                    "src_058",
+                                    "src_105",
+                                    "src_106"
                                 ],
-        "note":  "Articles 9 and 10 in src_058 distinguish a double-major bachelor\u0027s diploma from a minor certificate and say the Senate sets the detailed rules."
+        "note":  "Articles 9 and 10 in src_058 distinguish a double-major bachelor's diploma from a minor certificate and say the Senate sets the detailed rules. src_105 Article 14(ğ) refers to the second-major diploma; src_106 Article 14(l)-(m) explicitly says a minor gives only a certificate, not a diploma or degree rights."
     },
     {
         "id":  "unseen_academic_curriculum_003",
@@ -127,9 +129,9 @@
         "question":  "What GPA would I need to apply for a double major alongside OSTIM CENG?",
         "expected_behavior":  "answer",
         "expected_source_ids":  [
-
+                                    "src_105"
                                 ],
-        "note":  "No answering source: src_058 defines double majors but leaves detailed conditions to Senate rules; src_057 lists the double-major directive without its eligibility thresholds."
+        "note":  "src_105 Article 8(b)-(c) requires at least 70/100 (2.72/4.00), successful completion of prior courses and top-20% standing or the stated entry-score alternative. Other eligibility restrictions also apply; GPA alone is insufficient."
     },
     {
         "id":  "unseen_academic_curriculum_004",
@@ -139,7 +141,7 @@
         "expected_source_ids":  [
 
                                 ],
-        "note":  "No answering source: the processed text defines minors but does not list current minor combinations available to CENG students."
+        "note":  "No answering source: src_106 sets minor rules and annual quota announcements but does not list the minors currently open to CENG students."
     },
     {
         "id":  "unseen_academic_curriculum_005",
@@ -187,9 +189,10 @@
         "question":  "If I change a class after registering at OSTIM, do I need my advisor to approve it again?",
         "expected_behavior":  "answer",
         "expected_source_ids":  [
-                                    "src_058"
+                                    "src_058",
+                                    "src_116"
                                 ],
-        "note":  "Article 22 in src_058 says add/drop changes require renewed academic-advisor approval within the academic-calendar process."
+        "note":  "Article 22 in src_058 says add/drop changes require renewed academic-advisor approval within the academic-calendar process. src_116 Article 7(3)-(5) explicitly requires advisor approval in both initial registration and add/drop periods; unapproved registration is invalid even if paid."
     },
     {
         "id":  "unseen_academic_curriculum_010",
@@ -199,7 +202,7 @@
         "expected_source_ids":  [
 
                                 ],
-        "note":  "No answering source: no processed document provides the English prep weekly timetable or contact-hour distribution."
+        "note":  "No answering source for an actual weekly timetable: src_107 Article 8 specifies at least 20 class hours weekly, determined by level, but no normal day-by-day prep schedule is present."
     },
     {
         "id":  "unseen_student_life_001",
@@ -249,7 +252,7 @@
         "expected_source_ids":  [
 
                                 ],
-        "note":  "No answering source: src_066 mentions student clubs and src_065 describes club rooms, but neither names active coding or robotics societies or their contacts."
+        "note":  "No answering source: src_112 governs how clubs are formed and run but does not name current coding or robotics clubs."
     },
     {
         "id":  "unseen_student_life_006",
@@ -259,7 +262,7 @@
         "expected_source_ids":  [
 
                                 ],
-        "note":  "No answering source: the processed sources do not provide computer-lab opening hours, first-year access permissions or after-hours supervision rules. The 24/7 library statement is not a lab-access rule."
+        "note":  "No answering source for first-year access after 19:00: src_114 requires unit planning, approval for unplanned use and locked labs outside use; it supplies no evening opening schedule or first-year access entitlement."
     },
     {
         "id":  "unseen_student_life_007",
@@ -269,7 +272,7 @@
         "expected_source_ids":  [
 
                                 ],
-        "note":  "No answering source: no processed source supplies nearby student accommodation prices or a dated dorm fee schedule."
+        "note":  "No answering source for monthly dorm prices: src_123 lists partner dormitories and free viewing/information services, not accommodation charges."
     },
     {
         "id":  "unseen_student_life_008",
@@ -277,9 +280,9 @@
         "question":  "If I get really homesick at OSTIM, how do I book a student counseling session?",
         "expected_behavior":  "answer",
         "expected_source_ids":  [
-
+                                    "src_120"
                                 ],
-        "note":  "No answering source: the processed texts do not give an OSTIM student counseling booking procedure or contact. General wellbeing research is not a local service directory."
+        "note":  "src_120 says to complete the provided form for face-to-face or online counseling, gives weekday 08:30-17:30 availability, the F Block fifth-floor PDR office and email contacts for requests."
     },
     {
         "id":  "unseen_student_life_009",
@@ -662,9 +665,10 @@
         "question":  "What paperwork does OSTIM list for recording workplace attendance and what my mentor thinks?",
         "expected_behavior":  "answer",
         "expected_source_ids":  [
-                                    "src_007"
+                                    "src_007",
+                                    "src_109"
                                 ],
-        "note":  "src_007 explicitly lists a Daily Attendance Sheet, End-of-Term Mentor Evaluation Report, End-of-Term Evaluation Report and Report Book. It supplies names, not form contents or submission instructions."
+        "note":  "src_007 explicitly lists a Daily Attendance Sheet, End-of-Term Mentor Evaluation Report, End-of-Term Evaluation Report and Report Book. It supplies names, not form contents or submission instructions. src_109 defines the applied-training file and evaluation form; Articles 9 and 11 describe mentor approval, daily records, signed attendance documentation and the closed-envelope evaluation."
     },
     {
         "id":  "unseen_internships_007",
@@ -682,9 +686,9 @@
         "question":  "Exactly how many compulsory summer internship days do OSTIM CENG students have to finish?",
         "expected_behavior":  "answer",
         "expected_source_ids":  [
-
+                                    "src_110"
                                 ],
-        "note":  "No answering source: src_004 describes workplace courses and src_061 a separate Erasmus call, but neither establishes the compulsory CENG summer-internship day requirement."
+        "note":  "src_110 clause 1 explicitly states that the university has no compulsory internship process; clauses 2 and 6 describe an optional 20-working-day Career Experience Program. Correct the premise rather than presenting 20 as compulsory summer internship days; applied Workplace Experience is a separate requirement."
     },
     {
         "id":  "unseen_internships_009",
@@ -692,9 +696,9 @@
         "question":  "Who pays my accident insurance during an OSTIM CENG internship?",
         "expected_behavior":  "answer",
         "expected_source_ids":  [
-
+                                    "src_110"
                                 ],
-        "note":  "No answering source: the processed workplace pages and Erasmus call do not specify internship insurance coverage or the responsible payer."
+        "note":  "src_110 clause 11 assigns 20-working-day insurance registration to university Human Resources; clause 16 describes SGK processing. The appended student undertaking requires reimbursement of university expenses connected with voluntary internship, so registration must not be represented as an unconditional promise that the university bears every cost."
     },
     {
         "id":  "unseen_internships_010",
@@ -702,9 +706,9 @@
         "question":  "Can a fully remote internship count toward OSTIM CENG\u0027s compulsory internship?",
         "expected_behavior":  "answer",
         "expected_source_ids":  [
-
+                                    "src_110"
                                 ],
-        "note":  "No answering source: general remote-work evidence and the stored workplace course descriptions do not specify whether OSTIM accepts remote placements for compulsory internship credit."
+        "note":  "src_110 clause 1 corrects the compulsory-internship premise; clause 14 leaves online/remote Career Experience to the faculty, and clause 8 gives conditional recognition toward the following Workplace Experience. There is no blanket remote-internship approval."
     },
     {
         "id":  "unseen_graduate_studies_001",
@@ -722,9 +726,10 @@
         "question":  "What would be different about a thesis master\u0027s compared with just taking more undergraduate classes?",
         "expected_behavior":  "answer",
         "expected_source_ids":  [
-                                    "src_088"
+                                    "src_088",
+                                    "src_111"
                                 ],
-        "note":  "src_088 explicitly describes a thesis-based structure as a research-oriented path, distinct from only undergraduate courses or short training."
+        "note":  "src_088 explicitly describes a thesis-based structure as a research-oriented path, distinct from only undergraduate courses or short training. src_111 Articles 23-25 describe scientific research, graduate coursework, seminar, thesis and oral defense, rather than merely more undergraduate classes."
     },
     {
         "id":  "unseen_graduate_studies_003",
@@ -732,9 +737,10 @@
         "question":  "What\u0027s the difference between a research master\u0027s and a professional master\u0027s?",
         "expected_behavior":  "answer",
         "expected_source_ids":  [
-                                    "src_044"
+                                    "src_044",
+                                    "src_111"
                                 ],
-        "note":  "src_044 explicitly distinguishes research-focused preparation, often toward a PhD, from a professional master\u0027s preparing for work in a specific field."
+        "note":  "src_044 explicitly distinguishes research-focused preparation, often toward a PhD, from a professional master's preparing for work in a specific field. src_111 Articles 23-27 distinguish research-oriented thesis study from professional-depth non-thesis study with a term project."
     },
     {
         "id":  "unseen_graduate_studies_004",
@@ -742,9 +748,10 @@
         "question":  "Who could I talk to at university to figure out what courses would prepare me for grad school?",
         "expected_behavior":  "answer",
         "expected_source_ids":  [
-                                    "src_044"
+                                    "src_044",
+                                    "src_116"
                                 ],
-        "note":  "src_044 recommends departmental academic advisors for planning and faculty in the intended field for advice. This is general MIT career guidance, not an OSTIM advisor directory."
+        "note":  "src_044 recommends departmental academic advisors for planning and faculty in the intended field for advice. This is general MIT career guidance, not an OSTIM advisor directory. src_116 Articles 4(i), 5(a)(2) and 10(2)(a),(c) assign academic advisors course-selection, study-planning and career guidance duties; it identifies whom an OSTIM undergraduate can approach, not a guaranteed graduate-admission course list."
     },
     {
         "id":  "unseen_graduate_studies_005",
@@ -772,9 +779,9 @@
         "question":  "What ALES score would I need for OSTIM\u0027s CENG master\u0027s?",
         "expected_behavior":  "answer",
         "expected_source_ids":  [
-
+                                    "src_111"
                                 ],
-        "note":  "No answering source: src_088 describes the program but does not give ALES eligibility thresholds or application-round requirements."
+        "note":  "src_111 Article 5(1) sets a thesis-master admission ALES floor of 55 in the relevant score type and allows the Senate to set the actual threshold. This is a university-wide minimum, not confirmation of the current CENG intake cutoff."
     },
     {
         "id":  "unseen_graduate_studies_008",
@@ -784,7 +791,7 @@
         "expected_source_ids":  [
 
                                 ],
-        "note":  "No answering source: no processed graduate-admissions text gives the master\u0027s accepted English tests or thresholds. The Erasmus language rules in src_061 do not answer master\u0027s admission."
+        "note":  "No answering source for an IELTS or TOEFL score: src_111 Article 5(4) mentions accepted equivalents and a YDS/IYS minimum, while src_107 delegates equivalent exam scores; neither gives IELTS/TOEFL conversion thresholds."
     },
     {
         "id":  "unseen_graduate_studies_009",
@@ -794,7 +801,7 @@
         "expected_source_ids":  [
 
                                 ],
-        "note":  "No answering source: the processed graduate material gives neither assistantship availability, funding eligibility nor stipend amounts."
+        "note":  "No answering source for an available paid CENG assistantship and its stipend: src_104 Article 4(3)(c) waives tuition for university research assistants, src_118 regulates separate part-time student jobs, and src_125 sets general staff pay principles; none publishes the requested vacancy or amount."
     },
     {
         "id":  "unseen_graduate_studies_010",
@@ -804,7 +811,7 @@
         "expected_source_ids":  [
 
                                 ],
-        "note":  "No answering source: src_088 confirms a thesis master\u0027s and discusses PhD preparation generally, but no processed source confirms an OSTIM CENG doctoral program."
+        "note":  "No answering source: src_111 contains general doctoral regulations, not a current list establishing that a separate CENG PhD is running."
     },
     {
         "id":  "unseen_employment_prospects_001",
@@ -1116,7 +1123,7 @@
         "expected_source_ids":  [
 
                                 ],
-        "note":  "No answering source: src_059 contains a tuition navigation item and src_058 discusses payment obligations, but neither provides next year\u0027s English CENG fee schedule or total costs."
+        "note":  "No answering source for next-year tuition as of this review (2026-10-20): src_108 gives 2026-2027 annual English CENG fees (1,250,000 TL full, 625,000 TL at 50%), not 2027-2028 fees or a guaranteed full-degree total. A dated price must not be relabeled as a future fee."
     },
     {
         "id":  "unseen_common_concerns_002",
@@ -1124,9 +1131,9 @@
         "question":  "I\u0027m scared of losing my scholarship if my grades slip; what are OSTIM\u0027s renewal rules?",
         "expected_behavior":  "answer",
         "expected_source_ids":  [
-
+                                    "src_104"
                                 ],
-        "note":  "No answering source: src_057 lists a scholarship/discount directive without its conditions; no processed text establishes scholarship renewal GPA rules or exceptions."
+        "note":  "src_104 Article 5(1)(a)-(d) sets scholarship durations and says awards remain valid during those periods regardless of achievement or registration; extra prep time counts, justified frozen registration does not. Article 4(14) separately imposes GPA and other conditions for the annual academic-achievement discount; Article 7 separately addresses international awards."
     },
     {
         "id":  "unseen_common_concerns_003",
@@ -1134,9 +1141,10 @@
         "question":  "If I fail OSTIM\u0027s English prep year, what exactly happens to my place on the degree?",
         "expected_behavior":  "answer",
         "expected_source_ids":  [
-
+                                    "src_104",
+                                    "src_107"
                                 ],
-        "note":  "No answering source: src_058 excludes prep from degree duration but does not supply prep progression, repeat-year or dismissal rules; the language-school regulation itself is not processed here."
+        "note":  "src_107 Articles 5 and 10 allow up to two prep years, describe the repeat-year/proficiency route after one unsuccessful year, and termination after two unsuccessful years with three later exam rights on request. src_104 Article 5 says extra unsuccessful prep time consumes scholarship duration."
     },
     {
         "id":  "unseen_common_concerns_004",
@@ -1144,9 +1152,9 @@
         "question":  "I have dyslexia and timed exams worry me; what extra-time arrangements could I get at OSTIM?",
         "expected_behavior":  "answer",
         "expected_source_ids":  [
-
+                                    "src_115"
                                 ],
-        "note":  "No answering source: disability-related directive titles in src_057 do not provide OSTIM\u0027s accommodation eligibility, application procedure or extra-time rules."
+        "note":  "src_115 Articles 6(f), 7(a) and 8 provide necessary extra time, accessible/separate exam arrangements and a decision route for needs not explicitly listed. Dyslexia-specific minutes or automatic entitlement are not specified; individual arrangements require the relevant unit."
     },
     {
         "id":  "unseen_common_concerns_005",
@@ -1156,7 +1164,7 @@
         "expected_source_ids":  [
 
                                 ],
-        "note":  "No answering source: campus facilities descriptions do not state a laptop-loan scheme, eligibility or borrowing process."
+        "note":  "No answering source for a laptop-loan scheme: src_119 offers means-tested financial/social assistance and src_114 regulates on-campus labs, but neither states that students can borrow a laptop."
     },
     {
         "id":  "unseen_common_concerns_006",
@@ -1194,9 +1202,10 @@
         "question":  "If my first semester feels too much, can I ask my OSTIM advisor about taking fewer credits?",
         "expected_behavior":  "answer",
         "expected_source_ids":  [
-                                    "src_058"
+                                    "src_058",
+                                    "src_116"
                                 ],
-        "note":  "Article 19 in src_058 permits reducing normal course load at the student\u0027s request with advisor approval, with a minimum 12 ECTS. The stored regulation does not establish scholarship consequences."
+        "note":  "Article 19 in src_058 permits reducing normal course load at the student's request with advisor approval, with a minimum 12 ECTS. The stored regulation does not establish scholarship consequences. src_116 Articles 7 and 10(2)(a) identify advisor course-selection and study-planning duties; the explicit reduced-load permission and 12-ECTS minimum remain in src_058 Article 19."
     },
     {
         "id":  "unseen_common_concerns_010",

@@ -545,9 +545,9 @@
         "variant":  "original",
         "question":  "How many hours do Computer Engineering students typically study each week?",
         "expected_source_ids":  [
-
+                                    "src_099"
                                 ],
-        "note":  "No answering source: src_039 gives hours for individual Brown introductory CS courses and src_067 gives credit/workload conventions; neither gives typical total weekly CE student study hours."
+        "note":  "src_099 reports a 2011 US NSSE survey: engineering seniors studied about 19 hours weekly, versus 15 for all full-time students. This is a dated engineering-wide benchmark, not a measured Computer Engineering or OSTIM average."
     },
     {
         "id":  "q013_reworded",
@@ -555,9 +555,9 @@
         "variant":  "reworded",
         "question":  "On average, how much time per week do Computer Engineering students spend studying?",
         "expected_source_ids":  [
-
+                                    "src_099"
                                 ],
-        "note":  "No answering source: src_039 gives hours for individual Brown introductory CS courses and src_067 gives credit/workload conventions; neither gives typical total weekly CE student study hours."
+        "note":  "src_099 reports a 2011 US NSSE survey: engineering seniors studied about 19 hours weekly, versus 15 for all full-time students. This is a dated engineering-wide benchmark, not a measured Computer Engineering or OSTIM average."
     },
     {
         "id":  "q013_informal",
@@ -565,9 +565,9 @@
         "variant":  "informal",
         "question":  "comp eng study hours per week",
         "expected_source_ids":  [
-
+                                    "src_099"
                                 ],
-        "note":  "No answering source: src_039 gives hours for individual Brown introductory CS courses and src_067 gives credit/workload conventions; neither gives typical total weekly CE student study hours."
+        "note":  "src_099 reports a 2011 US NSSE survey: engineering seniors studied about 19 hours weekly, versus 15 for all full-time students. This is a dated engineering-wide benchmark, not a measured Computer Engineering or OSTIM average."
     },
     {
         "id":  "q013_typo",
@@ -575,9 +575,9 @@
         "variant":  "typo",
         "question":  "How many hors do Computer Engineering students typically study each week?",
         "expected_source_ids":  [
-
+                                    "src_099"
                                 ],
-        "note":  "No answering source: src_039 gives hours for individual Brown introductory CS courses and src_067 gives credit/workload conventions; neither gives typical total weekly CE student study hours."
+        "note":  "src_099 reports a 2011 US NSSE survey: engineering seniors studied about 19 hours weekly, versus 15 for all full-time students. This is a dated engineering-wide benchmark, not a measured Computer Engineering or OSTIM average."
     },
     {
         "id":  "q014_original",
@@ -701,9 +701,9 @@
         "variant":  "original",
         "question":  "Is it easy to find a job after graduating from Computer Engineering in Turkey?",
         "expected_source_ids":  [
-
+                                    "src_103"
                                 ],
-        "note":  "No answering source: src_026 reports Turkish ICT sector employment and growth, but does not establish how easily CE graduates find jobs; src_021 and src_022 contain no usable outcome statistics."
+        "note":  "src_103 reports Turkish 2025 ICT graduate registered employment of 76.7% and mean time to first job of 11.4 months. These broader-field statistics support a qualified employment-prospects answer, not a claim that hiring is easy or a CENG-specific placement rate."
     },
     {
         "id":  "q016_reworded",
@@ -711,9 +711,9 @@
         "variant":  "reworded",
         "question":  "How difficult is it for a new Computer Engineering graduate to get hired in Turkey?",
         "expected_source_ids":  [
-
+                                    "src_103"
                                 ],
-        "note":  "No answering source: src_026 reports Turkish ICT sector employment and growth, but does not establish how easily CE graduates find jobs; src_021 and src_022 contain no usable outcome statistics."
+        "note":  "src_103 reports Turkish 2025 ICT graduate registered employment of 76.7% and mean time to first job of 11.4 months. These broader-field statistics support a qualified employment-prospects answer, not a claim that hiring is easy or a CENG-specific placement rate."
     },
     {
         "id":  "q016_informal",
@@ -721,9 +721,9 @@
         "variant":  "informal",
         "question":  "easy to get comp eng job in turkey",
         "expected_source_ids":  [
-
+                                    "src_103"
                                 ],
-        "note":  "No answering source: src_026 reports Turkish ICT sector employment and growth, but does not establish how easily CE graduates find jobs; src_021 and src_022 contain no usable outcome statistics."
+        "note":  "src_103 reports Turkish 2025 ICT graduate registered employment of 76.7% and mean time to first job of 11.4 months. These broader-field statistics support a qualified employment-prospects answer, not a claim that hiring is easy or a CENG-specific placement rate."
     },
     {
         "id":  "q016_typo",
@@ -731,9 +731,9 @@
         "variant":  "typo",
         "question":  "Is it easy to find a job afer graduating from Computer Engineering in Turkey?",
         "expected_source_ids":  [
-
+                                    "src_103"
                                 ],
-        "note":  "No answering source: src_026 reports Turkish ICT sector employment and growth, but does not establish how easily CE graduates find jobs; src_021 and src_022 contain no usable outcome statistics."
+        "note":  "src_103 reports Turkish 2025 ICT graduate registered employment of 76.7% and mean time to first job of 11.4 months. These broader-field statistics support a qualified employment-prospects answer, not a claim that hiring is easy or a CENG-specific placement rate."
     },
     {
         "id":  "q017_original",
@@ -743,9 +743,10 @@
         "expected_source_ids":  [
                                     "src_017",
                                     "src_087",
-                                    "src_093"
+                                    "src_093",
+                                    "src_095"
                                 ],
-        "note":  "src_017 forecasts growth in technology roles and changing skill needs through 2030; src_087 discusses AI developer trends and fundamentals; src_093 explains critical AI use. No career guarantee is supported."
+        "note":  "src_017 forecasts growth in technology roles and changing skill needs through 2030; src_087 discusses AI developer trends and fundamentals; src_093 explains critical AI use. No career guarantee is supported. src_095 projects US software-developer employment growth of 10.2% and data-scientist growth of 34.6% over 2025-2035; this supports a qualified outlook, not an AI-proof career guarantee."
     },
     {
         "id":  "q017_reworded",
@@ -755,9 +756,10 @@
         "expected_source_ids":  [
                                     "src_017",
                                     "src_087",
-                                    "src_093"
+                                    "src_093",
+                                    "src_095"
                                 ],
-        "note":  "src_017 forecasts growth in technology roles and changing skill needs through 2030; src_087 discusses AI developer trends and fundamentals; src_093 explains critical AI use. No career guarantee is supported."
+        "note":  "src_017 forecasts growth in technology roles and changing skill needs through 2030; src_087 discusses AI developer trends and fundamentals; src_093 explains critical AI use. No career guarantee is supported. src_095 projects US software-developer employment growth of 10.2% and data-scientist growth of 34.6% over 2025-2035; this supports a qualified outlook, not an AI-proof career guarantee."
     },
     {
         "id":  "q017_informal",
@@ -767,9 +769,10 @@
         "expected_source_ids":  [
                                     "src_017",
                                     "src_087",
-                                    "src_093"
+                                    "src_093",
+                                    "src_095"
                                 ],
-        "note":  "src_017 forecasts growth in technology roles and changing skill needs through 2030; src_087 discusses AI developer trends and fundamentals; src_093 explains critical AI use. No career guarantee is supported."
+        "note":  "src_017 forecasts growth in technology roles and changing skill needs through 2030; src_087 discusses AI developer trends and fundamentals; src_093 explains critical AI use. No career guarantee is supported. src_095 projects US software-developer employment growth of 10.2% and data-scientist growth of 34.6% over 2025-2035; this supports a qualified outlook, not an AI-proof career guarantee."
     },
     {
         "id":  "q017_typo",
@@ -779,9 +782,10 @@
         "expected_source_ids":  [
                                     "src_017",
                                     "src_087",
-                                    "src_093"
+                                    "src_093",
+                                    "src_095"
                                 ],
-        "note":  "src_017 forecasts growth in technology roles and changing skill needs through 2030; src_087 discusses AI developer trends and fundamentals; src_093 explains critical AI use. No career guarantee is supported."
+        "note":  "src_017 forecasts growth in technology roles and changing skill needs through 2030; src_087 discusses AI developer trends and fundamentals; src_093 explains critical AI use. No career guarantee is supported. src_095 projects US software-developer employment growth of 10.2% and data-scientist growth of 34.6% over 2025-2035; this supports a qualified outlook, not an AI-proof career guarantee."
     },
     {
         "id":  "q018_original",
@@ -838,9 +842,10 @@
         "question":  "What industries hire Computer Engineering graduates?",
         "expected_source_ids":  [
                                     "src_014",
-                                    "src_067"
+                                    "src_067",
+                                    "src_097"
                                 ],
-        "note":  "src_014 describes hardware engineering for commercial, industrial, military and scientific use; src_067 explicitly lists computer, automobile, aerospace, telecommunications, power, manufacturing, defense and electronics industries employing computer engineers."
+        "note":  "src_014 describes hardware engineering for commercial, industrial, military and scientific use; src_067 explicitly lists computer, automobile, aerospace, telecommunications, power, manufacturing, defense and electronics industries employing computer engineers. src_097 names software, energy, electrical/electronic materials and IT consulting as sectors employing software engineers; these are examples for the software career route, not an exhaustive list for all CENG graduates."
     },
     {
         "id":  "q019_reworded",
@@ -849,9 +854,10 @@
         "question":  "Which sectors employ people with Computer Engineering degrees?",
         "expected_source_ids":  [
                                     "src_014",
-                                    "src_067"
+                                    "src_067",
+                                    "src_097"
                                 ],
-        "note":  "src_014 describes hardware engineering for commercial, industrial, military and scientific use; src_067 explicitly lists computer, automobile, aerospace, telecommunications, power, manufacturing, defense and electronics industries employing computer engineers."
+        "note":  "src_014 describes hardware engineering for commercial, industrial, military and scientific use; src_067 explicitly lists computer, automobile, aerospace, telecommunications, power, manufacturing, defense and electronics industries employing computer engineers. src_097 names software, energy, electrical/electronic materials and IT consulting as sectors employing software engineers; these are examples for the software career route, not an exhaustive list for all CENG graduates."
     },
     {
         "id":  "q019_informal",
@@ -860,9 +866,10 @@
         "question":  "what industries hire comp eng grads",
         "expected_source_ids":  [
                                     "src_014",
-                                    "src_067"
+                                    "src_067",
+                                    "src_097"
                                 ],
-        "note":  "src_014 describes hardware engineering for commercial, industrial, military and scientific use; src_067 explicitly lists computer, automobile, aerospace, telecommunications, power, manufacturing, defense and electronics industries employing computer engineers."
+        "note":  "src_014 describes hardware engineering for commercial, industrial, military and scientific use; src_067 explicitly lists computer, automobile, aerospace, telecommunications, power, manufacturing, defense and electronics industries employing computer engineers. src_097 names software, energy, electrical/electronic materials and IT consulting as sectors employing software engineers; these are examples for the software career route, not an exhaustive list for all CENG graduates."
     },
     {
         "id":  "q019_typo",
@@ -871,9 +878,10 @@
         "question":  "What indusries hire Computer Engineering graduates?",
         "expected_source_ids":  [
                                     "src_014",
-                                    "src_067"
+                                    "src_067",
+                                    "src_097"
                                 ],
-        "note":  "src_014 describes hardware engineering for commercial, industrial, military and scientific use; src_067 explicitly lists computer, automobile, aerospace, telecommunications, power, manufacturing, defense and electronics industries employing computer engineers."
+        "note":  "src_014 describes hardware engineering for commercial, industrial, military and scientific use; src_067 explicitly lists computer, automobile, aerospace, telecommunications, power, manufacturing, defense and electronics industries employing computer engineers. src_097 names software, energy, electrical/electronic materials and IT consulting as sectors employing software engineers; these are examples for the software career route, not an exhaustive list for all CENG graduates."
     },
     {
         "id":  "q020_original",
@@ -926,9 +934,12 @@
         "question":  "Can I work remotely as a Computer Engineer?",
         "expected_source_ids":  [
                                     "src_049",
-                                    "src_037"
+                                    "src_037",
+                                    "src_096",
+                                    "src_101",
+                                    "src_102"
                                 ],
-        "note":  "src_049 reports hybrid developer work; src_037 explicitly reports internships combining in-person and virtual work. These support working remotely for part of a software-related role, not universal fully remote CE employment."
+        "note":  "src_049 reports hybrid developer work; src_037 explicitly reports internships combining in-person and virtual work. These support working remotely for part of a software-related role, not universal fully remote CE employment. src_096 reports fully remote and hybrid Turkish developer survey respondents; src_101 reports remote tech workers; src_102 identifies IT among digital-nomad professions. These establish remote software/IT routes, not remote eligibility for every hardware role."
     },
     {
         "id":  "q021_reworded",
@@ -937,9 +948,12 @@
         "question":  "Are there opportunities to do Computer Engineering work from home?",
         "expected_source_ids":  [
                                     "src_049",
-                                    "src_037"
+                                    "src_037",
+                                    "src_096",
+                                    "src_101",
+                                    "src_102"
                                 ],
-        "note":  "src_049 reports hybrid developer work; src_037 explicitly reports internships combining in-person and virtual work. These support working remotely for part of a software-related role, not universal fully remote CE employment."
+        "note":  "src_049 reports hybrid developer work; src_037 explicitly reports internships combining in-person and virtual work. These support working remotely for part of a software-related role, not universal fully remote CE employment. src_096 reports fully remote and hybrid Turkish developer survey respondents; src_101 reports remote tech workers; src_102 identifies IT among digital-nomad professions. These establish remote software/IT routes, not remote eligibility for every hardware role."
     },
     {
         "id":  "q021_informal",
@@ -948,9 +962,12 @@
         "question":  "can a comp engineer work remote",
         "expected_source_ids":  [
                                     "src_049",
-                                    "src_037"
+                                    "src_037",
+                                    "src_096",
+                                    "src_101",
+                                    "src_102"
                                 ],
-        "note":  "src_049 reports hybrid developer work; src_037 explicitly reports internships combining in-person and virtual work. These support working remotely for part of a software-related role, not universal fully remote CE employment."
+        "note":  "src_049 reports hybrid developer work; src_037 explicitly reports internships combining in-person and virtual work. These support working remotely for part of a software-related role, not universal fully remote CE employment. src_096 reports fully remote and hybrid Turkish developer survey respondents; src_101 reports remote tech workers; src_102 identifies IT among digital-nomad professions. These establish remote software/IT routes, not remote eligibility for every hardware role."
     },
     {
         "id":  "q021_typo",
@@ -959,9 +976,12 @@
         "question":  "Can I work remoely as a Computer Engineer?",
         "expected_source_ids":  [
                                     "src_049",
-                                    "src_037"
+                                    "src_037",
+                                    "src_096",
+                                    "src_101",
+                                    "src_102"
                                 ],
-        "note":  "src_049 reports hybrid developer work; src_037 explicitly reports internships combining in-person and virtual work. These support working remotely for part of a software-related role, not universal fully remote CE employment."
+        "note":  "src_049 reports hybrid developer work; src_037 explicitly reports internships combining in-person and virtual work. These support working remotely for part of a software-related role, not universal fully remote CE employment. src_096 reports fully remote and hybrid Turkish developer survey respondents; src_101 reports remote tech workers; src_102 identifies IT among digital-nomad professions. These establish remote software/IT routes, not remote eligibility for every hardware role."
     },
     {
         "id":  "q022_original",
@@ -1015,7 +1035,7 @@
         "expected_source_ids":  [
 
                                 ],
-        "note":  "No answering source: src_017 ranks projected job growth and src_026 names high-demand areas, but neither establishes the single specialization with the highest current job-market demand."
+        "note":  "No answering source: src_095 ranks projected US job growth, not current demand across all CENG specializations; salary and workforce-profile surveys do not establish the highest-demand specialty."
     },
     {
         "id":  "q023_reworded",
@@ -1025,7 +1045,7 @@
         "expected_source_ids":  [
 
                                 ],
-        "note":  "No answering source: src_017 ranks projected job growth and src_026 names high-demand areas, but neither establishes the single specialization with the highest current job-market demand."
+        "note":  "No answering source: src_095 ranks projected US job growth, not current demand across all CENG specializations; salary and workforce-profile surveys do not establish the highest-demand specialty."
     },
     {
         "id":  "q023_informal",
@@ -1035,7 +1055,7 @@
         "expected_source_ids":  [
 
                                 ],
-        "note":  "No answering source: src_017 ranks projected job growth and src_026 names high-demand areas, but neither establishes the single specialization with the highest current job-market demand."
+        "note":  "No answering source: src_095 ranks projected US job growth, not current demand across all CENG specializations; salary and workforce-profile surveys do not establish the highest-demand specialty."
     },
     {
         "id":  "q023_typo",
@@ -1045,7 +1065,7 @@
         "expected_source_ids":  [
 
                                 ],
-        "note":  "No answering source: src_017 ranks projected job growth and src_026 names high-demand areas, but neither establishes the single specialization with the highest current job-market demand."
+        "note":  "No answering source: src_095 ranks projected US job growth, not current demand across all CENG specializations; salary and workforce-profile surveys do not establish the highest-demand specialty."
     },
     {
         "id":  "q024_original",
@@ -1054,9 +1074,10 @@
         "question":  "Can Computer Engineering graduates start their own software company?",
         "expected_source_ids":  [
                                     "src_005",
-                                    "src_020"
+                                    "src_020",
+                                    "src_116"
                                 ],
-        "note":  "src_005 explicitly describes student entrepreneurship, startup capital and technopark support; src_020 covers planning, funding, launching and managing a business. Neither guarantees commercial success."
+        "note":  "src_005 explicitly describes student entrepreneurship, startup capital and technopark support; src_020 covers planning, funding, launching and managing a business. Neither guarantees commercial success. src_116 Article 5(b)(2) describes entrepreneurship guidance for becoming an entrepreneur; Article 10(7) describes mentoring, funding connections and free pre-incubation space. This supports the OSTIM student entrepreneurship route, without guaranteeing business success."
     },
     {
         "id":  "q024_reworded",
@@ -1065,9 +1086,10 @@
         "question":  "Could I set up a software business after a Computer Engineering degree?",
         "expected_source_ids":  [
                                     "src_005",
-                                    "src_020"
+                                    "src_020",
+                                    "src_116"
                                 ],
-        "note":  "src_005 explicitly describes student entrepreneurship, startup capital and technopark support; src_020 covers planning, funding, launching and managing a business. Neither guarantees commercial success."
+        "note":  "src_005 explicitly describes student entrepreneurship, startup capital and technopark support; src_020 covers planning, funding, launching and managing a business. Neither guarantees commercial success. src_116 Article 5(b)(2) describes entrepreneurship guidance for becoming an entrepreneur; Article 10(7) describes mentoring, funding connections and free pre-incubation space. This supports the OSTIM student entrepreneurship route, without guaranteeing business success."
     },
     {
         "id":  "q024_informal",
@@ -1076,9 +1098,10 @@
         "question":  "can comp eng grads start a software company",
         "expected_source_ids":  [
                                     "src_005",
-                                    "src_020"
+                                    "src_020",
+                                    "src_116"
                                 ],
-        "note":  "src_005 explicitly describes student entrepreneurship, startup capital and technopark support; src_020 covers planning, funding, launching and managing a business. Neither guarantees commercial success."
+        "note":  "src_005 explicitly describes student entrepreneurship, startup capital and technopark support; src_020 covers planning, funding, launching and managing a business. Neither guarantees commercial success. src_116 Article 5(b)(2) describes entrepreneurship guidance for becoming an entrepreneur; Article 10(7) describes mentoring, funding connections and free pre-incubation space. This supports the OSTIM student entrepreneurship route, without guaranteeing business success."
     },
     {
         "id":  "q024_typo",
@@ -1087,9 +1110,10 @@
         "question":  "Can Compter Engineering graduates start their own software company?",
         "expected_source_ids":  [
                                     "src_005",
-                                    "src_020"
+                                    "src_020",
+                                    "src_116"
                                 ],
-        "note":  "src_005 explicitly describes student entrepreneurship, startup capital and technopark support; src_020 covers planning, funding, launching and managing a business. Neither guarantees commercial success."
+        "note":  "src_005 explicitly describes student entrepreneurship, startup capital and technopark support; src_020 covers planning, funding, launching and managing a business. Neither guarantees commercial success. src_116 Article 5(b)(2) describes entrepreneurship guidance for becoming an entrepreneur; Article 10(7) describes mentoring, funding connections and free pre-incubation space. This supports the OSTIM student entrepreneurship route, without guaranteeing business success."
     },
     {
         "id":  "q025_original",
@@ -1099,7 +1123,7 @@
         "expected_source_ids":  [
 
                                 ],
-        "note":  "No answering source: sector growth and hiring projections in src_017 and src_026 do not measure CE graduate supply against vacancies or establish saturation."
+        "note":  "No answering source: src_100 describes layoffs and src_103 gives broader Turkish graduate employment indicators, but neither compares CENG graduate supply with vacancies to establish market saturation."
     },
     {
         "id":  "q025_reworded",
@@ -1109,7 +1133,7 @@
         "expected_source_ids":  [
 
                                 ],
-        "note":  "No answering source: sector growth and hiring projections in src_017 and src_026 do not measure CE graduate supply against vacancies or establish saturation."
+        "note":  "No answering source: src_100 describes layoffs and src_103 gives broader Turkish graduate employment indicators, but neither compares CENG graduate supply with vacancies to establish market saturation."
     },
     {
         "id":  "q025_informal",
@@ -1119,7 +1143,7 @@
         "expected_source_ids":  [
 
                                 ],
-        "note":  "No answering source: sector growth and hiring projections in src_017 and src_026 do not measure CE graduate supply against vacancies or establish saturation."
+        "note":  "No answering source: src_100 describes layoffs and src_103 gives broader Turkish graduate employment indicators, but neither compares CENG graduate supply with vacancies to establish market saturation."
     },
     {
         "id":  "q025_typo",
@@ -1129,7 +1153,7 @@
         "expected_source_ids":  [
 
                                 ],
-        "note":  "No answering source: sector growth and hiring projections in src_017 and src_026 do not measure CE graduate supply against vacancies or establish saturation."
+        "note":  "No answering source: src_100 describes layoffs and src_103 gives broader Turkish graduate employment indicators, but neither compares CENG graduate supply with vacancies to establish market saturation."
     },
     {
         "id":  "q026_original",
@@ -1137,9 +1161,9 @@
         "variant":  "original",
         "question":  "Will there still be enough job opportunities in the next 10 years?",
         "expected_source_ids":  [
-
+                                    "src_095"
                                 ],
-        "note":  "No answering source: src_017 and src_026 forecast through 2030, not a full ten years from the present, and do not establish whether opportunities will be enough relative to graduate supply."
+        "note":  "src_095 projects US software developers from 1,717.8 thousand jobs in 2025 to 1,892.6 thousand in 2035, and data scientists from 275.6 to 371.0 thousand. These are occupation-specific US forecasts, not a guarantee of sufficient jobs for every graduate or a Turkish forecast."
     },
     {
         "id":  "q026_reworded",
@@ -1147,9 +1171,9 @@
         "variant":  "reworded",
         "question":  "Will the job market still offer enough opportunities for computer engineers a decade from now?",
         "expected_source_ids":  [
-
+                                    "src_095"
                                 ],
-        "note":  "No answering source: src_017 and src_026 forecast through 2030, not a full ten years from the present, and do not establish whether opportunities will be enough relative to graduate supply."
+        "note":  "src_095 projects US software developers from 1,717.8 thousand jobs in 2025 to 1,892.6 thousand in 2035, and data scientists from 275.6 to 371.0 thousand. These are occupation-specific US forecasts, not a guarantee of sufficient jobs for every graduate or a Turkish forecast."
     },
     {
         "id":  "q026_informal",
@@ -1157,9 +1181,9 @@
         "variant":  "informal",
         "question":  "enough comp eng jobs in 10 years",
         "expected_source_ids":  [
-
+                                    "src_095"
                                 ],
-        "note":  "No answering source: src_017 and src_026 forecast through 2030, not a full ten years from the present, and do not establish whether opportunities will be enough relative to graduate supply."
+        "note":  "src_095 projects US software developers from 1,717.8 thousand jobs in 2025 to 1,892.6 thousand in 2035, and data scientists from 275.6 to 371.0 thousand. These are occupation-specific US forecasts, not a guarantee of sufficient jobs for every graduate or a Turkish forecast."
     },
     {
         "id":  "q026_typo",
@@ -1167,9 +1191,9 @@
         "variant":  "typo",
         "question":  "Will thre still be enough job opportunities in the next 10 years?",
         "expected_source_ids":  [
-
+                                    "src_095"
                                 ],
-        "note":  "No answering source: src_017 and src_026 forecast through 2030, not a full ten years from the present, and do not establish whether opportunities will be enough relative to graduate supply."
+        "note":  "src_095 projects US software developers from 1,717.8 thousand jobs in 2025 to 1,892.6 thousand in 2035, and data scientists from 275.6 to 371.0 thousand. These are occupation-specific US forecasts, not a guarantee of sufficient jobs for every graduate or a Turkish forecast."
     },
     {
         "id":  "q027_original",
@@ -1275,9 +1299,12 @@
         "expected_source_ids":  [
                                     "src_033",
                                     "src_044",
-                                    "src_091"
+                                    "src_091",
+                                    "src_058",
+                                    "src_111",
+                                    "src_117"
                                 ],
-        "note":  "src_033 reports reduced employer GPA screening; src_044 says graduate schools require strong undergraduate GPA; src_091 explains skills and projects alongside GPA. No exact outcome or cutoff is established."
+        "note":  "src_033 reports reduced employer GPA screening; src_044 says graduate schools require strong undergraduate GPA; src_091 explains skills and projects alongside GPA. No exact outcome or cutoff is established. src_058 Article 32 requires at least 2.00 GPA to graduate and provides completion exams below that threshold; src_117 Article 10 describes those exams. src_111 Article 5 allows undergraduate GPA to enter graduate admission assessment and requires 3.00 for direct-entry doctoral applicants. These are OSTIM academic consequences, not employer rejection guarantees."
     },
     {
         "id":  "q029_reworded",
@@ -1287,9 +1314,12 @@
         "expected_source_ids":  [
                                     "src_033",
                                     "src_044",
-                                    "src_091"
+                                    "src_091",
+                                    "src_058",
+                                    "src_111",
+                                    "src_117"
                                 ],
-        "note":  "src_033 reports reduced employer GPA screening; src_044 says graduate schools require strong undergraduate GPA; src_091 explains skills and projects alongside GPA. No exact outcome or cutoff is established."
+        "note":  "src_033 reports reduced employer GPA screening; src_044 says graduate schools require strong undergraduate GPA; src_091 explains skills and projects alongside GPA. No exact outcome or cutoff is established. src_058 Article 32 requires at least 2.00 GPA to graduate and provides completion exams below that threshold; src_117 Article 10 describes those exams. src_111 Article 5 allows undergraduate GPA to enter graduate admission assessment and requires 3.00 for direct-entry doctoral applicants. These are OSTIM academic consequences, not employer rejection guarantees."
     },
     {
         "id":  "q029_informal",
@@ -1299,9 +1329,12 @@
         "expected_source_ids":  [
                                     "src_033",
                                     "src_044",
-                                    "src_091"
+                                    "src_091",
+                                    "src_058",
+                                    "src_111",
+                                    "src_117"
                                 ],
-        "note":  "src_033 reports reduced employer GPA screening; src_044 says graduate schools require strong undergraduate GPA; src_091 explains skills and projects alongside GPA. No exact outcome or cutoff is established."
+        "note":  "src_033 reports reduced employer GPA screening; src_044 says graduate schools require strong undergraduate GPA; src_091 explains skills and projects alongside GPA. No exact outcome or cutoff is established. src_058 Article 32 requires at least 2.00 GPA to graduate and provides completion exams below that threshold; src_117 Article 10 describes those exams. src_111 Article 5 allows undergraduate GPA to enter graduate admission assessment and requires 3.00 for direct-entry doctoral applicants. These are OSTIM academic consequences, not employer rejection guarantees."
     },
     {
         "id":  "q029_typo",
@@ -1311,9 +1344,12 @@
         "expected_source_ids":  [
                                     "src_033",
                                     "src_044",
-                                    "src_091"
+                                    "src_091",
+                                    "src_058",
+                                    "src_111",
+                                    "src_117"
                                 ],
-        "note":  "src_033 reports reduced employer GPA screening; src_044 says graduate schools require strong undergraduate GPA; src_091 explains skills and projects alongside GPA. No exact outcome or cutoff is established."
+        "note":  "src_033 reports reduced employer GPA screening; src_044 says graduate schools require strong undergraduate GPA; src_091 explains skills and projects alongside GPA. No exact outcome or cutoff is established. src_058 Article 32 requires at least 2.00 GPA to graduate and provides completion exams below that threshold; src_117 Article 10 describes those exams. src_111 Article 5 allows undergraduate GPA to enter graduate admission assessment and requires 3.00 for direct-entry doctoral applicants. These are OSTIM academic consequences, not employer rejection guarantees."
     },
     {
         "id":  "q030_original",
@@ -1369,9 +1405,10 @@
         "variant":  "original",
         "question":  "What is the average starting salary for Computer Engineering graduates in Turkey or World?",
         "expected_source_ids":  [
-
+                                    "src_096",
+                                    "src_097"
                                 ],
-        "note":  "No answering source: the processed texts contain no average entry-level CE salary for Turkey or the world; src_049 and src_051 discuss other compensation populations, and title-only wage sources do not provide the requested figures."
+        "note":  "src_096 gives 2025 Turkish junior software-role salary averages, including full-stack 50,500 TL and front-end 46,500 TL monthly. src_097 gives a 0-1-year software-engineer average of 39,000 TL, explicitly based on applicant net salary expectations. These answer the Turkey/software route only: neither is a worldwide or all-CENG-graduate starting-salary average."
     },
     {
         "id":  "q031_reworded",
@@ -1379,9 +1416,10 @@
         "variant":  "reworded",
         "question":  "How much do newly qualified computer engineers earn on average in Turkey or internationally?",
         "expected_source_ids":  [
-
+                                    "src_096",
+                                    "src_097"
                                 ],
-        "note":  "No answering source: the processed texts contain no average entry-level CE salary for Turkey or the world; src_049 and src_051 discuss other compensation populations, and title-only wage sources do not provide the requested figures."
+        "note":  "src_096 gives 2025 Turkish junior software-role salary averages, including full-stack 50,500 TL and front-end 46,500 TL monthly. src_097 gives a 0-1-year software-engineer average of 39,000 TL, explicitly based on applicant net salary expectations. These answer the Turkey/software route only: neither is a worldwide or all-CENG-graduate starting-salary average."
     },
     {
         "id":  "q031_informal",
@@ -1389,9 +1427,10 @@
         "variant":  "informal",
         "question":  "starting comp eng salary turkey or worldwide",
         "expected_source_ids":  [
-
+                                    "src_096",
+                                    "src_097"
                                 ],
-        "note":  "No answering source: the processed texts contain no average entry-level CE salary for Turkey or the world; src_049 and src_051 discuss other compensation populations, and title-only wage sources do not provide the requested figures."
+        "note":  "src_096 gives 2025 Turkish junior software-role salary averages, including full-stack 50,500 TL and front-end 46,500 TL monthly. src_097 gives a 0-1-year software-engineer average of 39,000 TL, explicitly based on applicant net salary expectations. These answer the Turkey/software route only: neither is a worldwide or all-CENG-graduate starting-salary average."
     },
     {
         "id":  "q031_typo",
@@ -1399,9 +1438,10 @@
         "variant":  "typo",
         "question":  "What is the aveage starting salary for Computer Engineering graduates in Turkey or World?",
         "expected_source_ids":  [
-
+                                    "src_096",
+                                    "src_097"
                                 ],
-        "note":  "No answering source: the processed texts contain no average entry-level CE salary for Turkey or the world; src_049 and src_051 discuss other compensation populations, and title-only wage sources do not provide the requested figures."
+        "note":  "src_096 gives 2025 Turkish junior software-role salary averages, including full-stack 50,500 TL and front-end 46,500 TL monthly. src_097 gives a 0-1-year software-engineer average of 39,000 TL, explicitly based on applicant net salary expectations. These answer the Turkey/software route only: neither is a worldwide or all-CENG-graduate starting-salary average."
     },
     {
         "id":  "q032_original",
@@ -1411,7 +1451,7 @@
         "expected_source_ids":  [
 
                                 ],
-        "note":  "No answering source: src_049 discusses global developer role pay and src_051 discusses language pay, but neither ranks CE specializations by salary in Turkey."
+        "note":  "No answering source: src_096 compares selected Turkish software roles and src_097 compares software-sector salaries, but neither establishes the highest-paid specialization across Computer Engineering in Turkey."
     },
     {
         "id":  "q032_reworded",
@@ -1421,7 +1461,7 @@
         "expected_source_ids":  [
 
                                 ],
-        "note":  "No answering source: src_049 discusses global developer role pay and src_051 discusses language pay, but neither ranks CE specializations by salary in Turkey."
+        "note":  "No answering source: src_096 compares selected Turkish software roles and src_097 compares software-sector salaries, but neither establishes the highest-paid specialization across Computer Engineering in Turkey."
     },
     {
         "id":  "q032_informal",
@@ -1431,7 +1471,7 @@
         "expected_source_ids":  [
 
                                 ],
-        "note":  "No answering source: src_049 discusses global developer role pay and src_051 discusses language pay, but neither ranks CE specializations by salary in Turkey."
+        "note":  "No answering source: src_096 compares selected Turkish software roles and src_097 compares software-sector salaries, but neither establishes the highest-paid specialization across Computer Engineering in Turkey."
     },
     {
         "id":  "q032_typo",
@@ -1441,7 +1481,7 @@
         "expected_source_ids":  [
 
                                 ],
-        "note":  "No answering source: src_049 discusses global developer role pay and src_051 discusses language pay, but neither ranks CE specializations by salary in Turkey."
+        "note":  "No answering source: src_096 compares selected Turkish software roles and src_097 compares software-sector salaries, but neither establishes the highest-paid specialization across Computer Engineering in Turkey."
     },
     {
         "id":  "q033_original",
@@ -1451,7 +1491,7 @@
         "expected_source_ids":  [
 
                                 ],
-        "note":  "No answering source: experience and role descriptions do not establish a typical promotion timeline to senior software engineer."
+        "note":  "No answering source: src_098 gives average coding experience by developer role and src_097 gives salaries by experience band; neither states the time required to reach senior software engineer."
     },
     {
         "id":  "q033_reworded",
@@ -1461,7 +1501,7 @@
         "expected_source_ids":  [
 
                                 ],
-        "note":  "No answering source: experience and role descriptions do not establish a typical promotion timeline to senior software engineer."
+        "note":  "No answering source: src_098 gives average coding experience by developer role and src_097 gives salaries by experience band; neither states the time required to reach senior software engineer."
     },
     {
         "id":  "q033_informal",
@@ -1471,7 +1511,7 @@
         "expected_source_ids":  [
 
                                 ],
-        "note":  "No answering source: experience and role descriptions do not establish a typical promotion timeline to senior software engineer."
+        "note":  "No answering source: src_098 gives average coding experience by developer role and src_097 gives salaries by experience band; neither states the time required to reach senior software engineer."
     },
     {
         "id":  "q033_typo",
@@ -1481,7 +1521,7 @@
         "expected_source_ids":  [
 
                                 ],
-        "note":  "No answering source: experience and role descriptions do not establish a typical promotion timeline to senior software engineer."
+        "note":  "No answering source: src_098 gives average coding experience by developer role and src_097 gives salaries by experience band; neither states the time required to reach senior software engineer."
     },
     {
         "id":  "q034_original",
@@ -1840,9 +1880,10 @@
                                     "src_004",
                                     "src_018",
                                     "src_037",
-                                    "src_091"
+                                    "src_091",
+                                    "src_109"
                                 ],
-        "note":  "src_004 describes OSTIM workplace learning; src_018 compares internship outcomes and employer preference; src_037 discusses intern selection; src_091 explains experiential evidence of career readiness."
+        "note":  "src_004 describes OSTIM workplace learning; src_018 compares internship outcomes and employer preference; src_037 discusses intern selection; src_091 explains experiential evidence of career readiness. src_109 Article 1 explains workplace learning benefits: applying theory, understanding production/service processes, work discipline and professional experience. Its applied courses are explicitly distinct from statutory internships."
     },
     {
         "id":  "q041_reworded",
@@ -1853,9 +1894,10 @@
                                     "src_004",
                                     "src_018",
                                     "src_037",
-                                    "src_091"
+                                    "src_091",
+                                    "src_109"
                                 ],
-        "note":  "src_004 describes OSTIM workplace learning; src_018 compares internship outcomes and employer preference; src_037 discusses intern selection; src_091 explains experiential evidence of career readiness."
+        "note":  "src_004 describes OSTIM workplace learning; src_018 compares internship outcomes and employer preference; src_037 discusses intern selection; src_091 explains experiential evidence of career readiness. src_109 Article 1 explains workplace learning benefits: applying theory, understanding production/service processes, work discipline and professional experience. Its applied courses are explicitly distinct from statutory internships."
     },
     {
         "id":  "q041_informal",
@@ -1866,9 +1908,10 @@
                                     "src_004",
                                     "src_018",
                                     "src_037",
-                                    "src_091"
+                                    "src_091",
+                                    "src_109"
                                 ],
-        "note":  "src_004 describes OSTIM workplace learning; src_018 compares internship outcomes and employer preference; src_037 discusses intern selection; src_091 explains experiential evidence of career readiness."
+        "note":  "src_004 describes OSTIM workplace learning; src_018 compares internship outcomes and employer preference; src_037 discusses intern selection; src_091 explains experiential evidence of career readiness. src_109 Article 1 explains workplace learning benefits: applying theory, understanding production/service processes, work discipline and professional experience. Its applied courses are explicitly distinct from statutory internships."
     },
     {
         "id":  "q041_typo",
@@ -1879,9 +1922,10 @@
                                     "src_004",
                                     "src_018",
                                     "src_037",
-                                    "src_091"
+                                    "src_091",
+                                    "src_109"
                                 ],
-        "note":  "src_004 describes OSTIM workplace learning; src_018 compares internship outcomes and employer preference; src_037 discusses intern selection; src_091 explains experiential evidence of career readiness."
+        "note":  "src_004 describes OSTIM workplace learning; src_018 compares internship outcomes and employer preference; src_037 discusses intern selection; src_091 explains experiential evidence of career readiness. src_109 Article 1 explains workplace learning benefits: applying theory, understanding production/service processes, work discipline and professional experience. Its applied courses are explicitly distinct from statutory internships."
     },
     {
         "id":  "q042_original",
@@ -1890,9 +1934,12 @@
         "question":  "How can I find my first internship?",
         "expected_source_ids":  [
                                     "src_037",
-                                    "src_074"
+                                    "src_074",
+                                    "src_109",
+                                    "src_110",
+                                    "src_116"
                                 ],
-        "note":  "src_037 identifies open applications, career centers, referrals, faculty contacts and in-person career fairs as recruiting channels; src_074 explains applying without prior experience and highlighting transferable skills."
+        "note":  "src_037 identifies open applications, career centers, referrals, faculty contacts and in-person career fairs as recruiting channels; src_074 explains applying without prior experience and highlighting transferable skills. src_109 Article 11(4) describes university-found workplaces and approval of student-found alternatives; src_110 clause 5 requires students to find companies for the optional Career Experience Program. src_116 Article 10(6) describes KARPİEM internship information, application/interview training and career fairs."
     },
     {
         "id":  "q042_reworded",
@@ -1901,9 +1948,12 @@
         "question":  "Where should I start looking to secure my first internship?",
         "expected_source_ids":  [
                                     "src_037",
-                                    "src_074"
+                                    "src_074",
+                                    "src_109",
+                                    "src_110",
+                                    "src_116"
                                 ],
-        "note":  "src_037 identifies open applications, career centers, referrals, faculty contacts and in-person career fairs as recruiting channels; src_074 explains applying without prior experience and highlighting transferable skills."
+        "note":  "src_037 identifies open applications, career centers, referrals, faculty contacts and in-person career fairs as recruiting channels; src_074 explains applying without prior experience and highlighting transferable skills. src_109 Article 11(4) describes university-found workplaces and approval of student-found alternatives; src_110 clause 5 requires students to find companies for the optional Career Experience Program. src_116 Article 10(6) describes KARPİEM internship information, application/interview training and career fairs."
     },
     {
         "id":  "q042_informal",
@@ -1912,9 +1962,12 @@
         "question":  "how do i land my first internship",
         "expected_source_ids":  [
                                     "src_037",
-                                    "src_074"
+                                    "src_074",
+                                    "src_109",
+                                    "src_110",
+                                    "src_116"
                                 ],
-        "note":  "src_037 identifies open applications, career centers, referrals, faculty contacts and in-person career fairs as recruiting channels; src_074 explains applying without prior experience and highlighting transferable skills."
+        "note":  "src_037 identifies open applications, career centers, referrals, faculty contacts and in-person career fairs as recruiting channels; src_074 explains applying without prior experience and highlighting transferable skills. src_109 Article 11(4) describes university-found workplaces and approval of student-found alternatives; src_110 clause 5 requires students to find companies for the optional Career Experience Program. src_116 Article 10(6) describes KARPİEM internship information, application/interview training and career fairs."
     },
     {
         "id":  "q042_typo",
@@ -1923,9 +1976,12 @@
         "question":  "How can I find my fist internship?",
         "expected_source_ids":  [
                                     "src_037",
-                                    "src_074"
+                                    "src_074",
+                                    "src_109",
+                                    "src_110",
+                                    "src_116"
                                 ],
-        "note":  "src_037 identifies open applications, career centers, referrals, faculty contacts and in-person career fairs as recruiting channels; src_074 explains applying without prior experience and highlighting transferable skills."
+        "note":  "src_037 identifies open applications, career centers, referrals, faculty contacts and in-person career fairs as recruiting channels; src_074 explains applying without prior experience and highlighting transferable skills. src_109 Article 11(4) describes university-found workplaces and approval of student-found alternatives; src_110 clause 5 requires students to find companies for the optional Career Experience Program. src_116 Article 10(6) describes KARPİEM internship information, application/interview training and career fairs."
     },
     {
         "id":  "q043_original",
@@ -2030,9 +2086,10 @@
         "question":  "Should I participate in hackathons and coding competitions?",
         "expected_source_ids":  [
                                     "src_034",
-                                    "src_091"
+                                    "src_091",
+                                    "src_104"
                                 ],
-        "note":  "src_034 explicitly recommends skills-focused activities such as hackathons; src_091 lists hackathons as a way to demonstrate career competencies. These support participation benefits, not guaranteed contest or hiring outcomes."
+        "note":  "src_034 explicitly recommends skills-focused activities such as hackathons; src_091 lists hackathons as a way to demonstrate career competencies. These support participation benefits, not guaranteed contest or hiring outcomes. src_104 Article 9 provides project-idea competition support for eligible national/international scientific or social entrepreneurship competitions. This gives an OSTIM-specific benefit of eligible competitions, not a promise that every hackathon qualifies."
     },
     {
         "id":  "q045_reworded",
@@ -2041,9 +2098,10 @@
         "question":  "Would hackathons and programming contests be useful activities for me as a student?",
         "expected_source_ids":  [
                                     "src_034",
-                                    "src_091"
+                                    "src_091",
+                                    "src_104"
                                 ],
-        "note":  "src_034 explicitly recommends skills-focused activities such as hackathons; src_091 lists hackathons as a way to demonstrate career competencies. These support participation benefits, not guaranteed contest or hiring outcomes."
+        "note":  "src_034 explicitly recommends skills-focused activities such as hackathons; src_091 lists hackathons as a way to demonstrate career competencies. These support participation benefits, not guaranteed contest or hiring outcomes. src_104 Article 9 provides project-idea competition support for eligible national/international scientific or social entrepreneurship competitions. This gives an OSTIM-specific benefit of eligible competitions, not a promise that every hackathon qualifies."
     },
     {
         "id":  "q045_informal",
@@ -2052,9 +2110,10 @@
         "question":  "are hackathons and coding contests worth it",
         "expected_source_ids":  [
                                     "src_034",
-                                    "src_091"
+                                    "src_091",
+                                    "src_104"
                                 ],
-        "note":  "src_034 explicitly recommends skills-focused activities such as hackathons; src_091 lists hackathons as a way to demonstrate career competencies. These support participation benefits, not guaranteed contest or hiring outcomes."
+        "note":  "src_034 explicitly recommends skills-focused activities such as hackathons; src_091 lists hackathons as a way to demonstrate career competencies. These support participation benefits, not guaranteed contest or hiring outcomes. src_104 Article 9 provides project-idea competition support for eligible national/international scientific or social entrepreneurship competitions. This gives an OSTIM-specific benefit of eligible competitions, not a promise that every hackathon qualifies."
     },
     {
         "id":  "q045_typo",
@@ -2063,9 +2122,10 @@
         "question":  "Shold I participate in hackathons and coding competitions?",
         "expected_source_ids":  [
                                     "src_034",
-                                    "src_091"
+                                    "src_091",
+                                    "src_104"
                                 ],
-        "note":  "src_034 explicitly recommends skills-focused activities such as hackathons; src_091 lists hackathons as a way to demonstrate career competencies. These support participation benefits, not guaranteed contest or hiring outcomes."
+        "note":  "src_034 explicitly recommends skills-focused activities such as hackathons; src_091 lists hackathons as a way to demonstrate career competencies. These support participation benefits, not guaranteed contest or hiring outcomes. src_104 Article 9 provides project-idea competition support for eligible national/international scientific or social entrepreneurship competitions. This gives an OSTIM-specific benefit of eligible competitions, not a promise that every hackathon qualifies."
     },
     {
         "id":  "q046_original",
@@ -2361,9 +2421,10 @@
         "variant":  "original",
         "question":  "Which specialization is expected to grow the fastest in the future?",
         "expected_source_ids":  [
-                                    "src_017"
+                                    "src_017",
+                                    "src_095"
                                 ],
-        "note":  "src_017 explicitly ranks projected growth through 2030, with big data, fintech, AI/ML and software/application roles among the fastest. Distinguish percentage growth from total vacancies and forecasts from guarantees."
+        "note":  "src_017 explicitly ranks projected growth through 2030, with big data, fintech, AI/ML and software/application roles among the fastest. Distinguish percentage growth from total vacancies and forecasts from guarantees. src_095 gives comparable US 2025-2035 growth forecasts: data scientists 34.6%, computer/information systems managers 15.8%, software developers 10.2%. It supports comparison of these listed routes, not a comprehensive ranking of every CENG specialization."
     },
     {
         "id":  "q052_reworded",
@@ -2371,9 +2432,10 @@
         "variant":  "reworded",
         "question":  "Which Computer Engineering area is forecast to expand most rapidly?",
         "expected_source_ids":  [
-                                    "src_017"
+                                    "src_017",
+                                    "src_095"
                                 ],
-        "note":  "src_017 explicitly ranks projected growth through 2030, with big data, fintech, AI/ML and software/application roles among the fastest. Distinguish percentage growth from total vacancies and forecasts from guarantees."
+        "note":  "src_017 explicitly ranks projected growth through 2030, with big data, fintech, AI/ML and software/application roles among the fastest. Distinguish percentage growth from total vacancies and forecasts from guarantees. src_095 gives comparable US 2025-2035 growth forecasts: data scientists 34.6%, computer/information systems managers 15.8%, software developers 10.2%. It supports comparison of these listed routes, not a comprehensive ranking of every CENG specialization."
     },
     {
         "id":  "q052_informal",
@@ -2381,9 +2443,10 @@
         "variant":  "informal",
         "question":  "which comp eng specialty will grow fastest",
         "expected_source_ids":  [
-                                    "src_017"
+                                    "src_017",
+                                    "src_095"
                                 ],
-        "note":  "src_017 explicitly ranks projected growth through 2030, with big data, fintech, AI/ML and software/application roles among the fastest. Distinguish percentage growth from total vacancies and forecasts from guarantees."
+        "note":  "src_017 explicitly ranks projected growth through 2030, with big data, fintech, AI/ML and software/application roles among the fastest. Distinguish percentage growth from total vacancies and forecasts from guarantees. src_095 gives comparable US 2025-2035 growth forecasts: data scientists 34.6%, computer/information systems managers 15.8%, software developers 10.2%. It supports comparison of these listed routes, not a comprehensive ranking of every CENG specialization."
     },
     {
         "id":  "q052_typo",
@@ -2391,9 +2454,10 @@
         "variant":  "typo",
         "question":  "Whch specialization is expected to grow the fastest in the future?",
         "expected_source_ids":  [
-                                    "src_017"
+                                    "src_017",
+                                    "src_095"
                                 ],
-        "note":  "src_017 explicitly ranks projected growth through 2030, with big data, fintech, AI/ML and software/application roles among the fastest. Distinguish percentage growth from total vacancies and forecasts from guarantees."
+        "note":  "src_017 explicitly ranks projected growth through 2030, with big data, fintech, AI/ML and software/application roles among the fastest. Distinguish percentage growth from total vacancies and forecasts from guarantees. src_095 gives comparable US 2025-2035 growth forecasts: data scientists 34.6%, computer/information systems managers 15.8%, software developers 10.2%. It supports comparison of these listed routes, not a comprehensive ranking of every CENG specialization."
     },
     {
         "id":  "q053_original",
@@ -2401,9 +2465,10 @@
         "variant":  "original",
         "question":  "Do Computer Engineers have a good work-life balance?",
         "expected_source_ids":  [
-
+                                    "src_100",
+                                    "src_101"
                                 ],
-        "note":  "No answering source: src_014 reports hardware-engineer work hours and src_049 reports hybrid work, but neither establishes whether computer engineers have good work-life balance. src_019 contains only a title and portal text."
+        "note":  "src_100 reports 38% of surveyed engineering leaders working longer hours and work encroaching on personal time; src_101 reports burnout differences by role, company size and work setup. These support a variable, qualified work-life-balance answer rather than a universal good/bad rating."
     },
     {
         "id":  "q053_reworded",
@@ -2411,9 +2476,10 @@
         "variant":  "reworded",
         "question":  "How much room do computer engineers usually have for life outside work?",
         "expected_source_ids":  [
-
+                                    "src_100",
+                                    "src_101"
                                 ],
-        "note":  "No answering source: src_014 reports hardware-engineer work hours and src_049 reports hybrid work, but neither establishes whether computer engineers have good work-life balance. src_019 contains only a title and portal text."
+        "note":  "src_100 reports 38% of surveyed engineering leaders working longer hours and work encroaching on personal time; src_101 reports burnout differences by role, company size and work setup. These support a variable, qualified work-life-balance answer rather than a universal good/bad rating."
     },
     {
         "id":  "q053_informal",
@@ -2421,9 +2487,10 @@
         "variant":  "informal",
         "question":  "comp eng good work life balance",
         "expected_source_ids":  [
-
+                                    "src_100",
+                                    "src_101"
                                 ],
-        "note":  "No answering source: src_014 reports hardware-engineer work hours and src_049 reports hybrid work, but neither establishes whether computer engineers have good work-life balance. src_019 contains only a title and portal text."
+        "note":  "src_100 reports 38% of surveyed engineering leaders working longer hours and work encroaching on personal time; src_101 reports burnout differences by role, company size and work setup. These support a variable, qualified work-life-balance answer rather than a universal good/bad rating."
     },
     {
         "id":  "q053_typo",
@@ -2431,9 +2498,10 @@
         "variant":  "typo",
         "question":  "Do Compter Engineers have a good work-life balance?",
         "expected_source_ids":  [
-
+                                    "src_100",
+                                    "src_101"
                                 ],
-        "note":  "No answering source: src_014 reports hardware-engineer work hours and src_049 reports hybrid work, but neither establishes whether computer engineers have good work-life balance. src_019 contains only a title and portal text."
+        "note":  "src_100 reports 38% of surveyed engineering leaders working longer hours and work encroaching on personal time; src_101 reports burnout differences by role, company size and work setup. These support a variable, qualified work-life-balance answer rather than a universal good/bad rating."
     },
     {
         "id":  "q054_original",
@@ -2441,9 +2509,11 @@
         "variant":  "original",
         "question":  "Is Computer Engineering a stressful profession?",
         "expected_source_ids":  [
-                                    "src_014"
+                                    "src_014",
+                                    "src_100",
+                                    "src_101"
                                 ],
-        "note":  "src_014 reports hardware engineers experiencing time pressure and high competition. This supports concrete possible stressors in that occupation, not a clinical stress measure or a claim about every CE job."
+        "note":  "src_014 reports hardware engineers experiencing time pressure and high competition. This supports concrete possible stressors in that occupation, not a clinical stress measure or a claim about every CE job. src_100 reports burnout among 617 engineering leaders/developers and workload after layoffs; src_101 reports 44.67% significant burnout and high burnout in hardware/infrastructure roles. These are survey findings, not a claim that every engineer is stressed."
     },
     {
         "id":  "q054_reworded",
@@ -2451,9 +2521,11 @@
         "variant":  "reworded",
         "question":  "How much pressure do people experience when working as computer engineers?",
         "expected_source_ids":  [
-                                    "src_014"
+                                    "src_014",
+                                    "src_100",
+                                    "src_101"
                                 ],
-        "note":  "src_014 reports hardware engineers experiencing time pressure and high competition. This supports concrete possible stressors in that occupation, not a clinical stress measure or a claim about every CE job."
+        "note":  "src_014 reports hardware engineers experiencing time pressure and high competition. This supports concrete possible stressors in that occupation, not a clinical stress measure or a claim about every CE job. src_100 reports burnout among 617 engineering leaders/developers and workload after layoffs; src_101 reports 44.67% significant burnout and high burnout in hardware/infrastructure roles. These are survey findings, not a claim that every engineer is stressed."
     },
     {
         "id":  "q054_informal",
@@ -2461,9 +2533,11 @@
         "variant":  "informal",
         "question":  "is working as a comp engineer stressful",
         "expected_source_ids":  [
-                                    "src_014"
+                                    "src_014",
+                                    "src_100",
+                                    "src_101"
                                 ],
-        "note":  "src_014 reports hardware engineers experiencing time pressure and high competition. This supports concrete possible stressors in that occupation, not a clinical stress measure or a claim about every CE job."
+        "note":  "src_014 reports hardware engineers experiencing time pressure and high competition. This supports concrete possible stressors in that occupation, not a clinical stress measure or a claim about every CE job. src_100 reports burnout among 617 engineering leaders/developers and workload after layoffs; src_101 reports 44.67% significant burnout and high burnout in hardware/infrastructure roles. These are survey findings, not a claim that every engineer is stressed."
     },
     {
         "id":  "q054_typo",
@@ -2471,9 +2545,11 @@
         "variant":  "typo",
         "question":  "Is Compter Engineering a stressful profession?",
         "expected_source_ids":  [
-                                    "src_014"
+                                    "src_014",
+                                    "src_100",
+                                    "src_101"
                                 ],
-        "note":  "src_014 reports hardware engineers experiencing time pressure and high competition. This supports concrete possible stressors in that occupation, not a clinical stress measure or a claim about every CE job."
+        "note":  "src_014 reports hardware engineers experiencing time pressure and high competition. This supports concrete possible stressors in that occupation, not a clinical stress measure or a claim about every CE job. src_100 reports burnout among 617 engineering leaders/developers and workload after layoffs; src_101 reports 44.67% significant burnout and high burnout in hardware/infrastructure roles. These are survey findings, not a claim that every engineer is stressed."
     },
     {
         "id":  "q055_original",
@@ -2481,9 +2557,9 @@
         "variant":  "original",
         "question":  "Can Computer Engineers become digital nomads?",
         "expected_source_ids":  [
-
+                                    "src_102"
                                 ],
-        "note":  "No answering source: src_049 supports remote/hybrid developer work and src_028 discusses working abroad, but neither addresses working while moving between countries, employer location restrictions or digital-nomad arrangements."
+        "note":  "src_102 explicitly describes combining remote work with travel across countries and lists information technology among main digital-nomad professions. Employer policies, legal/tax compliance and location-independent duties remain constraints."
     },
     {
         "id":  "q055_reworded",
@@ -2491,9 +2567,9 @@
         "variant":  "reworded",
         "question":  "Could a computer engineer work while regularly moving between countries?",
         "expected_source_ids":  [
-
+                                    "src_102"
                                 ],
-        "note":  "No answering source: src_049 supports remote/hybrid developer work and src_028 discusses working abroad, but neither addresses working while moving between countries, employer location restrictions or digital-nomad arrangements."
+        "note":  "src_102 explicitly describes combining remote work with travel across countries and lists information technology among main digital-nomad professions. Employer policies, legal/tax compliance and location-independent duties remain constraints."
     },
     {
         "id":  "q055_informal",
@@ -2501,9 +2577,9 @@
         "variant":  "informal",
         "question":  "can comp engineers be digital nomads",
         "expected_source_ids":  [
-
+                                    "src_102"
                                 ],
-        "note":  "No answering source: src_049 supports remote/hybrid developer work and src_028 discusses working abroad, but neither addresses working while moving between countries, employer location restrictions or digital-nomad arrangements."
+        "note":  "src_102 explicitly describes combining remote work with travel across countries and lists information technology among main digital-nomad professions. Employer policies, legal/tax compliance and location-independent duties remain constraints."
     },
     {
         "id":  "q055_typo",
@@ -2511,9 +2587,9 @@
         "variant":  "typo",
         "question":  "Can Compter Engineers become digital nomads?",
         "expected_source_ids":  [
-
+                                    "src_102"
                                 ],
-        "note":  "No answering source: src_049 supports remote/hybrid developer work and src_028 discusses working abroad, but neither addresses working while moving between countries, employer location restrictions or digital-nomad arrangements."
+        "note":  "src_102 explicitly describes combining remote work with travel across countries and lists information technology among main digital-nomad professions. Employer policies, legal/tax compliance and location-independent duties remain constraints."
     },
     {
         "id":  "q056_original",
