@@ -1495,16 +1495,16 @@
     {
       "source_id": "src_103",
       "title": "Yükseköğretim İstihdam Göstergeleri, 2025",
-      "source_name": "Türkiye İstatistik Kurumu (TÜİK)",
-      "source_type": "government_employment_statistics",
-      "url": null,
+      "source_name": "Ekonomi Gazetesi (report of TÜİK Yükseköğretim İstihdam Göstergeleri 2025)",
+      "source_type": "news_report_of_employment_statistics",
+      "url": "https://www.ekonomigazetesi.com/ekonomi/lisans-mezunlarinin-istihdam-orani-gecen-yil-yuzde-739a-indi-83776",
       "publication_date": "2026-07-23",
-      "date_accessed": "2026-10-19",
+      "date_accessed": "2026-10-20",
       "category": "employment",
       "language": "Turkish",
-      "reliability_note": "Official TÜİK statistics release. Turkish-language edition of the same release registered in English as src_021.",
-      "raw_file_path": null,
-      "notes": "Turkey-specific graduate employment, first-job duration and earnings indicators by higher-education field. Saved manually by the project team; see src_021 for the English edition, which was excluded after review because its saved page was not usable. Index only one of src_021 / src_103. Acquisition: manual_required. A 2026-10-20 manual save was not used because it contained only the TÜİK site's empty JavaScript shell (\"JavaScript Gerekli\" notice, no bulletin content); save the rendered page or the bulletin PDF instead."
+      "reliability_note": "Secondary news report of the official TÜİK bulletin \"Yükseköğretim İstihdam Göstergeleri, 2025\", published on 23 July 2026. Figures are as reported by Ekonomi Gazetesi, not taken directly from TÜİK.",
+      "raw_file_path": "knowledge_base/raw/html/src_103.html",
+      "notes": "Turkey-specific graduate employment, first-job duration, earnings rankings and field-match indicators by higher-education field and programme, 2025 vs 2024 (e.g. undergraduate registered employment rate 73.9%, ICT field 76.7%). The article ranks programmes by earnings but gives no earnings amounts. See src_021 for the English edition of the TÜİK bulletin, which was excluded after review because its saved page was not usable. Index only one of src_021 / src_103. Acquisition: the TÜİK site serves only a JavaScript shell, so this news report is used instead (downloaded 2026-10-20)."
     },
     {
       "source_id": "src_104",
