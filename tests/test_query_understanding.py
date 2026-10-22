@@ -203,6 +203,8 @@ class QueryUnderstandingTests(unittest.TestCase):
             "what topics do you cover?",
             "how does this chatbot work?",
             "hey what can i ask u about?",
+            "help",
+            "Help me!",
         )
         for previous in (None, PreviousTurn("Who are the academic staff at OSTIM?")):
             for question in questions:
