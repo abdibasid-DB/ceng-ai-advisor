@@ -8,7 +8,7 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 from backend.app.core.retrieval_config import EMBEDDING_DIMENSION
-from backend.app.rag.retriever import EXCLUDED_SOURCE_IDS, Retriever, expand_query_for_retrieval, infer_query_profile
+from backend.app.rag.retriever import EXCLUDED_SOURCE_IDS, Retriever, bm25_tokens, expand_query_for_retrieval, infer_query_profile
 
 
 class RetrieverTests(unittest.TestCase):
@@ -66,6 +66,23 @@ class RetrieverTests(unittest.TestCase):
         self.assertIn(question, result["retrieval_query"])
         self.assertIn("Computer Engineering", result["retrieval_query"])
         self.assertIn("beginner programming", result["retrieval_query"])
+
+    def test_bm25_tokens_fold_case_and_turkish_diacritics(self):
+        self.assertEqual(bm25_tokens("OSTİM Üniversitesi ve the ŞİRKET"), ["ostim", "universitesi", "ve", "sirket"])
+
+    def test_hybrid_search_fuses_bm25_and_vector_ranks(self):
+        result = self.retriever.retrieve("What is the internship rule at OSTIM Technical University?", top_k=5)
+        self.assertTrue(result["hybrid_search"])
+        self.assertTrue(any(item.get("bm25_rank") for item in result["results"]))
+        for item in result["results"]:
+            self.assertTrue(item.get("bm25_rank") or item.get("vector_rank"))
+
+    def test_bm25_only_results_keep_citation_fields(self):
+        result = self.retriever.retrieve("CENG 303 Operating Systems course description", top_k=8)
+        for item in result["results"]:
+            for field in ["chunk_id", "source_id", "title", "url", "category", "text"]:
+                self.assertTrue(item[field], field)
+            self.assertIn("source_type", item["metadata"])
 
     def test_query_expansion_leaves_unmatched_questions_unchanged(self):
         question = "What mathematics courses are in the curriculum?"

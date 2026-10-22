@@ -4,3 +4,4 @@ pypdf
 numpy
 sentence-transformers
 chromadb
+rank_bm25

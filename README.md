@@ -12,7 +12,7 @@ The system uses Retrieval-Augmented Generation (RAG) with a locally deployed ope
 React + Vite
   -> FastAPI
   -> RAG pipeline
-  -> ChromaDB vector store
+  -> hybrid retrieval: ChromaDB (bge-m3 vectors) + BM25, reciprocal rank fusion
   -> Ollama
   -> qwen2.5:3b
 ```
@@ -43,8 +43,8 @@ Answers render as Markdown with clickable citation badges, supporting passages, 
 
 - Frontend: React + Vite
 - Backend: FastAPI
-- Embeddings: `sentence-transformers/all-MiniLM-L6-v2`
-- Vector database: ChromaDB
+- Embeddings: `BAAI/bge-m3` (dense, 1024 dimensions, 512-token input) on ~180-word chunks
+- Vector database: ChromaDB, fused with BM25 keyword search (`rank_bm25`) by reciprocal rank fusion
 - Local LLM runtime: Ollama
 - Local LLM: `qwen2.5:3b`
 - Package manager: pnpm
@@ -126,7 +126,8 @@ $env:OLLAMA_MODEL = "qwen2.5:3b"
 On macOS/Linux, use `export OLLAMA_BASE_URL=http://127.0.0.1:11434` and `export OLLAMA_MODEL=qwen2.5:3b`.
 The backend does not automatically load `.env` files. Retrieval settings remain defined in code:
 
-- Embedding model: `sentence-transformers/all-MiniLM-L6-v2`
+- Embedding model: `BAAI/bge-m3` (`max_seq_length` 512)
+- Hybrid search: BM25 over `knowledge_base/chunks/chunks.jsonl`, fused by reciprocal rank fusion (`HYBRID_SEARCH_ENABLED`)
 - ChromaDB path: `knowledge_base/vector_store/chroma/`
 - Collection name: `ceng_advisor_chunks`
 
@@ -151,7 +152,7 @@ Open `http://localhost:8080` for the website and `http://127.0.0.1:8000/docs` fo
 Compose runs three services:
 
 - `ollama`: the `ollama/ollama` image, with models persisted in the `ollama_models` volume. It starts the server, pulls `qwen2.5:3b` when missing, and becomes healthy once the model is available. Later starts reuse the downloaded model.
-- `backend`: Python 3.12, CPU PyTorch, and `requirements.txt`, with the prepared `knowledge_base` copied into the image. The embedding model `sentence-transformers/all-MiniLM-L6-v2` downloads at build time and loads from the image cache at runtime. It uses `OLLAMA_BASE_URL=http://ollama:11434` and `OLLAMA_MODEL=qwen2.5:3b`.
+- `backend`: Python 3.12, CPU PyTorch, and `requirements.txt`, with the prepared `knowledge_base` copied into the image. The embedding model `BAAI/bge-m3` (about 2.3 GB) downloads at build time and loads from the image cache at runtime; the backend container needs roughly 3 GB of RAM for it. It uses `OLLAMA_BASE_URL=http://ollama:11434` and `OLLAMA_MODEL=qwen2.5:3b`.
 - `frontend`: a pnpm build served by nginx on port 8080. nginx proxies `/api/` to the backend with response buffering disabled for streaming answers.
 
 The first build and model pull require internet access and several GB of free disk space; CPU inference can take time. Compose waits for the Ollama model health check before starting the backend, and for backend health before starting the frontend. Ollama is reachable within the Compose network; the backend's direct port is bound to loopback.
@@ -177,7 +178,7 @@ python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
-python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')"
+python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('BAAI/bge-m3')"
 ```
 
 On macOS/Linux:
@@ -187,12 +188,12 @@ python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
-python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')"
+python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('BAAI/bge-m3')"
 ```
 
 ### 2. Frontend dependencies
 
-The embedding download above is a one-time setup step; runtime retrieval uses the cached model offline.
+The embedding download above (about 2.3 GB) is a one-time setup step; runtime retrieval uses the cached model offline.
 
 ```powershell
 cd frontend

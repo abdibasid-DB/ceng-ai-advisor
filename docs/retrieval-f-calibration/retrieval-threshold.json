@@ -1,0 +1,7449 @@
+{
+ "previous": {
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "threshold": 0.3,
+  "in_scope_pass_rate": 0.983,
+  "refuse_set_blocked": 16
+ },
+ "refuse_set_size": 39,
+ "table": [
+  {
+   "threshold": 0.3,
+   "in_scope_pass_rate": 1.0,
+   "refuse_set_blocked": 0
+  },
+  {
+   "threshold": 0.31,
+   "in_scope_pass_rate": 1.0,
+   "refuse_set_blocked": 0
+  },
+  {
+   "threshold": 0.32,
+   "in_scope_pass_rate": 1.0,
+   "refuse_set_blocked": 0
+  },
+  {
+   "threshold": 0.33,
+   "in_scope_pass_rate": 1.0,
+   "refuse_set_blocked": 0
+  },
+  {
+   "threshold": 0.34,
+   "in_scope_pass_rate": 1.0,
+   "refuse_set_blocked": 0
+  },
+  {
+   "threshold": 0.35,
+   "in_scope_pass_rate": 1.0,
+   "refuse_set_blocked": 0
+  },
+  {
+   "threshold": 0.36,
+   "in_scope_pass_rate": 1.0,
+   "refuse_set_blocked": 0
+  },
+  {
+   "threshold": 0.37,
+   "in_scope_pass_rate": 1.0,
+   "refuse_set_blocked": 0
+  },
+  {
+   "threshold": 0.38,
+   "in_scope_pass_rate": 1.0,
+   "refuse_set_blocked": 0
+  },
+  {
+   "threshold": 0.39,
+   "in_scope_pass_rate": 1.0,
+   "refuse_set_blocked": 3
+  },
+  {
+   "threshold": 0.4,
+   "in_scope_pass_rate": 1.0,
+   "refuse_set_blocked": 5
+  },
+  {
+   "threshold": 0.41,
+   "in_scope_pass_rate": 1.0,
+   "refuse_set_blocked": 5
+  },
+  {
+   "threshold": 0.42,
+   "in_scope_pass_rate": 1.0,
+   "refuse_set_blocked": 5
+  },
+  {
+   "threshold": 0.43,
+   "in_scope_pass_rate": 1.0,
+   "refuse_set_blocked": 6
+  },
+  {
+   "threshold": 0.44,
+   "in_scope_pass_rate": 1.0,
+   "refuse_set_blocked": 7
+  },
+  {
+   "threshold": 0.45,
+   "in_scope_pass_rate": 0.9962,
+   "refuse_set_blocked": 7
+  },
+  {
+   "threshold": 0.46,
+   "in_scope_pass_rate": 0.9924,
+   "refuse_set_blocked": 8
+  },
+  {
+   "threshold": 0.47,
+   "in_scope_pass_rate": 0.9905,
+   "refuse_set_blocked": 9
+  },
+  {
+   "threshold": 0.48,
+   "in_scope_pass_rate": 0.9867,
+   "refuse_set_blocked": 11
+  },
+  {
+   "threshold": 0.49,
+   "in_scope_pass_rate": 0.9792,
+   "refuse_set_blocked": 12
+  },
+  {
+   "threshold": 0.5,
+   "in_scope_pass_rate": 0.9678,
+   "refuse_set_blocked": 14
+  },
+  {
+   "threshold": 0.51,
+   "in_scope_pass_rate": 0.9564,
+   "refuse_set_blocked": 15
+  },
+  {
+   "threshold": 0.52,
+   "in_scope_pass_rate": 0.9375,
+   "refuse_set_blocked": 15
+  },
+  {
+   "threshold": 0.53,
+   "in_scope_pass_rate": 0.9091,
+   "refuse_set_blocked": 17
+  },
+  {
+   "threshold": 0.54,
+   "in_scope_pass_rate": 0.8788,
+   "refuse_set_blocked": 18
+  },
+  {
+   "threshold": 0.55,
+   "in_scope_pass_rate": 0.839,
+   "refuse_set_blocked": 20
+  },
+  {
+   "threshold": 0.56,
+   "in_scope_pass_rate": 0.7879,
+   "refuse_set_blocked": 22
+  },
+  {
+   "threshold": 0.57,
+   "in_scope_pass_rate": 0.7443,
+   "refuse_set_blocked": 24
+  },
+  {
+   "threshold": 0.58,
+   "in_scope_pass_rate": 0.6856,
+   "refuse_set_blocked": 26
+  },
+  {
+   "threshold": 0.59,
+   "in_scope_pass_rate": 0.6477,
+   "refuse_set_blocked": 26
+  },
+  {
+   "threshold": 0.6,
+   "in_scope_pass_rate": 0.5871,
+   "refuse_set_blocked": 27
+  }
+ ],
+ "chosen": {
+  "threshold": 0.51,
+  "in_scope_pass_rate": 0.9564,
+  "refuse_set_blocked": 15
+ },
+ "new_in_scope": [
+  {
+   "set": "full_200",
+   "id": "F001",
+   "question": "What is Computer Engineering?",
+   "similarities": [
+    0.7576,
+    0.6661,
+    0.6724,
+    0.7338,
+    0.6836
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "F002",
+   "question": "What does a computer engineer actually study?",
+   "similarities": [
+    0.6714,
+    0.7284,
+    0.6584,
+    0.7144,
+    0.605
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "F003",
+   "question": "Is CENG mostly coding or also hardware?",
+   "similarities": [
+    0.7434,
+    0.7467,
+    0.7422,
+    0.6549,
+    0.7258
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "F004",
+   "question": "Explain computer engineering to a high school student.",
+   "similarities": [
+    0.7063,
+    0.7229,
+    0.7694,
+    0.6877,
+    0.6376
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "F005",
+   "question": "How is computer engineering different from computer science?",
+   "similarities": [
+    0.6704,
+    0.7103,
+    0.5513,
+    0.6888,
+    0.6771
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "F006",
+   "question": "CENG vs software engineering, which one is broader?",
+   "similarities": [
+    0.7283,
+    0.6946,
+    0.6626,
+    0.624,
+    0.6276
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "F007",
+   "question": "Do computer engineers build physical devices or just apps?",
+   "similarities": [
+    0.6392,
+    0.6176,
+    0.6266,
+    0.5884,
+    0.5729
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "F008",
+   "question": "Is computer engineering an engineering discipline or a computing major?",
+   "similarities": [
+    0.7449,
+    0.7549,
+    0.6914,
+    0.6937,
+    0.6756
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "F009",
+   "question": "What kind of problems do computer engineers solve?",
+   "similarities": [
+    0.6426,
+    0.6658,
+    0.6482,
+    0.6088,
+    0.4981
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "F010",
+   "question": "computer eng ne demek basically?",
+   "similarities": [
+    0.619,
+    0.4912,
+    0.616,
+    0.3566,
+    0.6085
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "F011",
+   "question": "Is computer engineering good for someone who likes both physics and code?",
+   "similarities": [
+    0.6187,
+    0.5567,
+    0.6148,
+    0.5986,
+    0.5805
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "F012",
+   "question": "What is the difference between IT and Computer Engineering?",
+   "similarities": [
+    0.6592,
+    0.6297,
+    0.527,
+    0.6447,
+    0.6314
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "C013",
+   "question": "What courses are taught in Computer Engineering?",
+   "similarities": [
+    0.7322,
+    0.7067,
+    0.7052,
+    0.4877,
+    0.6447
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "C014",
+   "question": "Which classes will I take in the first year?",
+   "similarities": [
+    0.5788,
+    0.5436,
+    0.5171,
+    0.5707,
+    0.563
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "C015",
+   "question": "Are there operating systems courses in the program?",
+   "similarities": [
+    0.6419,
+    0.621,
+    0.6187,
+    0.6667,
+    0.6622
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "C016",
+   "question": "Does the curriculum include databases and networks?",
+   "similarities": [
+    0.6708,
+    0.5958,
+    0.6212,
+    0.548,
+    0.6246
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "C017",
+   "question": "What is in CENG 303?",
+   "similarities": [
+    0.6863,
+    0.6495,
+    0.6857,
+    0.5773,
+    0.6831
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "C018",
+   "question": "Is there a workplace training or applied education course?",
+   "similarities": [
+    0.6159,
+    0.6157,
+    0.5948,
+    0.5664,
+    0.6037
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "C019",
+   "question": "Do students take electronics and digital logic?",
+   "similarities": [
+    0.7221,
+    0.6987,
+    0.6795,
+    0.6362,
+    0.6789
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "C020",
+   "question": "How much lab work is there in computer engineering?",
+   "similarities": [
+    0.659,
+    0.7234,
+    0.7171,
+    0.6114,
+    0.6693
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "C021",
+   "question": "What electives can help me specialize?",
+   "similarities": [
+    0.5892,
+    0.5351,
+    0.5451,
+    0.5815,
+    0.5654
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "C022",
+   "question": "what lesson r in ceng? typo but mean courses",
+   "similarities": [
+    0.6225,
+    0.6107,
+    0.5653,
+    0.6164,
+    0.575
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "C023",
+   "question": "Which subjects connect math, programming, and circuits together?",
+   "similarities": [
+    0.6298,
+    0.5654,
+    0.575,
+    0.5198,
+    0.5819
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "C024",
+   "question": "Can I avoid hardware courses if I only like software?",
+   "similarities": [
+    0.5345,
+    0.5457,
+    0.4757,
+    0.5809,
+    0.4
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "C025",
+   "question": "Is the curriculum closer to EE or CS?",
+   "similarities": [
+    0.5802,
+    0.5691,
+    0.5513,
+    0.5483,
+    0.5634
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "C026",
+   "question": "Are senior design projects part of CE education?",
+   "similarities": [
+    0.616,
+    0.6059,
+    0.6011,
+    0.5381,
+    0.5408
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "M027",
+   "question": "How much mathematics is required in Computer Engineering?",
+   "similarities": [
+    0.728,
+    0.7002,
+    0.7027,
+    0.6973,
+    0.6927
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "M028",
+   "question": "I am weak at math; can I still study computer engineering?",
+   "similarities": [
+    0.6069,
+    0.583,
+    0.6007,
+    0.5428,
+    0.5988
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "M029",
+   "question": "Which math topics matter most for CENG?",
+   "similarities": [
+    0.643,
+    0.6887,
+    0.5862,
+    0.6883,
+    0.6282
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "M030",
+   "question": "Is calculus used in computer engineering?",
+   "similarities": [
+    0.609,
+    0.6199,
+    0.6095,
+    0.5229,
+    0.5995
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "M031",
+   "question": "Do I need discrete math for software and algorithms?",
+   "similarities": [
+    0.6942,
+    0.6885,
+    0.69,
+    0.6981,
+    0.6933
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "M032",
+   "question": "math scary, should i quit ceng?",
+   "similarities": [
+    0.6388,
+    0.6792,
+    0.5581,
+    0.6743,
+    0.6068
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "M033",
+   "question": "Can good programming compensate for average mathematics?",
+   "similarities": [
+    0.5511,
+    0.5741,
+    0.4328,
+    0.5369,
+    0.5479
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "M034",
+   "question": "What should I review before starting university: algebra, calculus, or coding?",
+   "similarities": [
+    0.6153,
+    0.5827,
+    0.5667,
+    0.5911,
+    0.5769
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "M035",
+   "question": "mathematic requirment computr eng?",
+   "similarities": [
+    0.5325,
+    0.4645,
+    0.5119,
+    0.4301,
+    0.5119
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "M036",
+   "question": "How theoretical is the degree compared with practical engineering?",
+   "similarities": [
+    0.5913,
+    0.4784,
+    0.576,
+    0.421,
+    0.5745
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "M037",
+   "question": "Do I need statistics for AI or data science?",
+   "similarities": [
+    0.6294,
+    0.6384,
+    0.6317,
+    0.6321,
+    0.6096
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "M038",
+   "question": "Is linear algebra important for machine learning?",
+   "similarities": [
+    0.6424,
+    0.5502,
+    0.5379,
+    0.5884,
+    0.5083
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "P039",
+   "question": "What programming languages should a Computer Engineering student learn?",
+   "similarities": [
+    0.6498,
+    0.599,
+    0.6251,
+    0.6229,
+    0.5252
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "P040",
+   "question": "Should I start with Python, Java, or C++?",
+   "similarities": [
+    0.5525,
+    0.5678,
+    0.5485,
+    0.5465,
+    0.5641
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "P041",
+   "question": "Is C++ still useful for computer engineers?",
+   "similarities": [
+    0.5359,
+    0.5344,
+    0.5671,
+    0.4931,
+    0.4612
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "P042",
+   "question": "Do I need web development if I study CENG?",
+   "similarities": [
+    0.6464,
+    0.6287,
+    0.6795,
+    0.6193,
+    0.6586
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "P043",
+   "question": "Should every student learn Git and GitHub?",
+   "similarities": [
+    0.626,
+    0.5917,
+    0.5626,
+    0.5704,
+    0.6369
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "P044",
+   "question": "linux important?",
+   "similarities": [
+    0.5461,
+    0.555,
+    0.5183,
+    0.5483,
+    0.4198
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "P045",
+   "question": "Is Linux worth learning for embedded systems?",
+   "similarities": [
+    0.5718,
+    0.5812,
+    0.6014,
+    0.5405,
+    0.5474
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "P046",
+   "question": "I can only code simple apps; what skill next?",
+   "similarities": [
+    0.6262,
+    0.4303,
+    0.6137,
+    0.3668,
+    0.5865
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "P047",
+   "question": "How do I become better at algorithms?",
+   "similarities": [
+    0.7135,
+    0.7288,
+    0.7068,
+    0.6627,
+    0.6531
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "P048",
+   "question": "Should I learn data structures before building projects?",
+   "similarities": [
+    0.6913,
+    0.6452,
+    0.6937,
+    0.6742,
+    0.6615
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "P049",
+   "question": "git hub learn necessery?",
+   "similarities": [
+    0.5609,
+    0.5762,
+    0.546,
+    0.5175,
+    0.5211
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "P050",
+   "question": "What software engineering habits should I build early?",
+   "similarities": [
+    0.6843,
+    0.6052,
+    0.4916,
+    0.5915,
+    0.5097
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "P051",
+   "question": "Can I become a backend developer from computer engineering?",
+   "similarities": [
+    0.6238,
+    0.6578,
+    0.6678,
+    0.5183,
+    0.6622
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "P052",
+   "question": "frontend vs backend for ceng student?",
+   "similarities": [
+    0.6573,
+    0.7334,
+    0.7237,
+    0.6454,
+    0.717
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "P053",
+   "question": "Are databases important for computer engineers?",
+   "similarities": [
+    0.6147,
+    0.6548,
+    0.5843,
+    0.6541,
+    0.5314
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "P054",
+   "question": "Which is more useful first: SQL or React?",
+   "similarities": [
+    0.5655,
+    0.6067,
+    0.5609,
+    0.575,
+    0.5679
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "P055",
+   "question": "Should I learn testing and debugging?",
+   "similarities": [
+    0.644,
+    0.6635,
+    0.626,
+    0.6547,
+    0.6772
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "P056",
+   "question": "How important is command line usage?",
+   "similarities": [
+    0.6557,
+    0.6184,
+    0.5877,
+    0.6898,
+    0.6587
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "H057",
+   "question": "What hardware topics should I understand?",
+   "similarities": [
+    0.6252,
+    0.5905,
+    0.5903,
+    0.628,
+    0.5349
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "H058",
+   "question": "Is embedded systems a good path for Computer Engineering?",
+   "similarities": [
+    0.6209,
+    0.6136,
+    0.599,
+    0.4975,
+    0.5325
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "H059",
+   "question": "Do computer engineers work with microcontrollers?",
+   "similarities": [
+    0.7132,
+    0.7323,
+    0.7207,
+    0.6626,
+    0.6764
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "H060",
+   "question": "How important is computer architecture?",
+   "similarities": [
+    0.6863,
+    0.6938,
+    0.6336,
+    0.6814,
+    0.6513
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "H061",
+   "question": "Are networks part of Computer Engineering?",
+   "similarities": [
+    0.6882,
+    0.6892,
+    0.604,
+    0.6722,
+    0.6609
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "H062",
+   "question": "What network skills are useful for cybersecurity?",
+   "similarities": [
+    0.6509,
+    0.6322,
+    0.6086,
+    0.6163,
+    0.6342
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "H063",
+   "question": "hardware hard but software ok, can I survive?",
+   "similarities": [
+    0.5945,
+    0.5387,
+    0.609,
+    0.5346,
+    0.4643
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "H064",
+   "question": "Does CE include electronics labs?",
+   "similarities": [
+    0.738,
+    0.6959,
+    0.7217,
+    0.6001,
+    0.6417
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "H065",
+   "question": "Should I learn Arduino or FPGA first?",
+   "similarities": [
+    0.7094,
+    0.6488,
+    0.5867,
+    0.6604,
+    0.6516
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "H066",
+   "question": "What is the connection between operating systems and hardware?",
+   "similarities": [
+    0.5861,
+    0.5783,
+    0.5535,
+    0.5905,
+    0.5436
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "H067",
+   "question": "Can I work on IoT after Computer Engineering?",
+   "similarities": [
+    0.6551,
+    0.6351,
+    0.5987,
+    0.6765,
+    0.6691
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "H068",
+   "question": "Are computer networks useful outside cybersecurity?",
+   "similarities": [
+    0.6465,
+    0.6228,
+    0.598,
+    0.6515,
+    0.6026
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "A069",
+   "question": "Will artificial intelligence replace Computer Engineers?",
+   "similarities": [
+    0.5661,
+    0.564,
+    0.5791,
+    0.4674,
+    0.5748
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "A070",
+   "question": "How should I prepare for an AI-heavy software industry?",
+   "similarities": [
+    0.6328,
+    0.5699,
+    0.6089,
+    0.6047,
+    0.6035
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "A071",
+   "question": "Can a computer engineering student become an AI engineer?",
+   "similarities": [
+    0.6117,
+    0.5726,
+    0.5705,
+    0.5618,
+    0.5747
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "A072",
+   "question": "Do I need a master's degree for AI jobs?",
+   "similarities": [
+    0.636,
+    0.5799,
+    0.5703,
+    0.6165,
+    0.6653
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "A073",
+   "question": "What AI skills are useful besides prompt engineering?",
+   "similarities": [
+    0.5871,
+    0.6533,
+    0.551,
+    0.669,
+    0.5628
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "A074",
+   "question": "Is machine learning part of computer engineering?",
+   "similarities": [
+    0.6274,
+    0.7103,
+    0.5341,
+    0.6917,
+    0.5399
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "A075",
+   "question": "AI taking jobs, should I still study CENG?",
+   "similarities": [
+    0.6824,
+    0.6519,
+    0.6442,
+    0.6092,
+    0.5833
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "A076",
+   "question": "Which future technologies should a CENG student follow?",
+   "similarities": [
+    0.6665,
+    0.6852,
+    0.6564,
+    0.6972,
+    0.6876
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "A077",
+   "question": "Will software jobs disappear because of coding agents?",
+   "similarities": [
+    0.5839,
+    0.5523,
+    0.5075,
+    0.4469,
+    0.5894
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "A078",
+   "question": "how ai affect engineers work?",
+   "similarities": [
+    0.5724,
+    0.5658,
+    0.5975,
+    0.4923,
+    0.5738
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "A079",
+   "question": "Can I specialize in data science after computer engineering?",
+   "similarities": [
+    0.6065,
+    0.6289,
+    0.5717,
+    0.6229,
+    0.6018
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "A080",
+   "question": "Is robotics closer to computer engineering or mechanical engineering?",
+   "similarities": [
+    0.5714,
+    0.6025,
+    0.5056,
+    0.5761,
+    0.4725
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "A081",
+   "question": "Should I learn ML math before using AI tools?",
+   "similarities": [
+    0.6307,
+    0.5726,
+    0.5801,
+    0.5634,
+    0.5377
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "A082",
+   "question": "What parts of engineering work are changed by generative AI?",
+   "similarities": [
+    0.6645,
+    0.5949,
+    0.5976,
+    0.6062,
+    0.5939
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "Y083",
+   "question": "Can Computer Engineers work in cybersecurity?",
+   "similarities": [
+    0.6944,
+    0.6453,
+    0.6015,
+    0.7102,
+    0.6919
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "Y084",
+   "question": "What skills should I build for cybersecurity?",
+   "similarities": [
+    0.6723,
+    0.6333,
+    0.5922,
+    0.6352,
+    0.634
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "Y085",
+   "question": "Do I need networking before security?",
+   "similarities": [
+    0.5565,
+    0.5161,
+    0.5156,
+    0.535,
+    0.5429
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "Y086",
+   "question": "Is cybersecurity more software or hardware?",
+   "similarities": [
+    0.6774,
+    0.6246,
+    0.5892,
+    0.6414,
+    0.616
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "Y087",
+   "question": "How can I start ethical hacking safely as a student?",
+   "similarities": [
+    0.7092,
+    0.6494,
+    0.5928,
+    0.6438,
+    0.5703
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "Y088",
+   "question": "security career path from ceng?",
+   "similarities": [
+    0.6926,
+    0.6536,
+    0.6441,
+    0.5136,
+    0.689
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "Y089",
+   "question": "Should I learn Linux for cyber security?",
+   "similarities": [
+    0.5843,
+    0.5711,
+    0.5777,
+    0.4998,
+    0.4564
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "Y090",
+   "question": "Can I work in cloud security after CENG?",
+   "similarities": [
+    0.647,
+    0.6022,
+    0.6198,
+    0.6563,
+    0.5732
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "Y091",
+   "question": "cybersec certs or degree which matters?",
+   "similarities": [
+    0.6987,
+    0.6385,
+    0.5909,
+    0.6251,
+    0.6421
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "Y092",
+   "question": "Is cryptography too math-heavy for me?",
+   "similarities": [
+    0.5492,
+    0.5527,
+    0.4118,
+    0.4783,
+    0.5407
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "Y093",
+   "question": "What is the difference between cybersecurity and software engineering?",
+   "similarities": [
+    0.676,
+    0.6226,
+    0.6787,
+    0.6428,
+    0.7007
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "Y094",
+   "question": "Can I learn security without doing illegal hacking?",
+   "similarities": [
+    0.6847,
+    0.6124,
+    0.5928,
+    0.5875,
+    0.605
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "R095",
+   "question": "What jobs can I do after graduating from Computer Engineering?",
+   "similarities": [
+    0.6972,
+    0.6265,
+    0.6113,
+    0.666,
+    0.4796
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "R096",
+   "question": "Is it easy to find a job after CENG?",
+   "similarities": [
+    0.6653,
+    0.6226,
+    0.7063,
+    0.523,
+    0.695
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "R097",
+   "question": "What should I include in my CV as a CENG student?",
+   "similarities": [
+    0.7476,
+    0.623,
+    0.5761,
+    0.7215,
+    0.5731
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "R098",
+   "question": "How do I build a portfolio before graduation?",
+   "similarities": [
+    0.6777,
+    0.6628,
+    0.6294,
+    0.6365,
+    0.5835
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "R099",
+   "question": "Should I focus more on GPA, projects, or internships?",
+   "similarities": [
+    0.6661,
+    0.702,
+    0.6335,
+    0.5796,
+    0.6561
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "R100",
+   "question": "Does low GPA ruin my software career?",
+   "similarities": [
+    0.6639,
+    0.679,
+    0.6189,
+    0.6691,
+    0.5966
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "R101",
+   "question": "How important are internships?",
+   "similarities": [
+    0.5973,
+    0.6103,
+    0.5545,
+    0.6264,
+    0.5374
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "R102",
+   "question": "What if I graduate without internship experience?",
+   "similarities": [
+    0.6503,
+    0.6504,
+    0.6676,
+    0.6095,
+    0.5859
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "R103",
+   "question": "Can personal projects replace internship experience?",
+   "similarities": [
+    0.5531,
+    0.5497,
+    0.5413,
+    0.5239,
+    0.5574
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "R104",
+   "question": "Are hackathons useful for computer engineering students?",
+   "similarities": [
+    0.6775,
+    0.6502,
+    0.6488,
+    0.5988,
+    0.5785
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "R105",
+   "question": "How can I get my first internship?",
+   "similarities": [
+    0.6326,
+    0.6466,
+    0.5846,
+    0.6676,
+    0.5751
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "R106",
+   "question": "Where can Turkish students find internships?",
+   "similarities": [
+    0.6619,
+    0.5967,
+    0.625,
+    0.6179,
+    0.5274
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "R107",
+   "question": "Erasmus useful for computer engineering?",
+   "similarities": [
+    0.6588,
+    0.6139,
+    0.6193,
+    0.636,
+    0.5743
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "R108",
+   "question": "Can CENG graduates work abroad?",
+   "similarities": [
+    0.6678,
+    0.6472,
+    0.6545,
+    0.5788,
+    0.5797
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "R109",
+   "question": "Can I work remotely as a new graduate?",
+   "similarities": [
+    0.5444,
+    0.5574,
+    0.5844,
+    0.5518,
+    0.5753
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "R112",
+   "question": "How long until I become senior engineer?",
+   "similarities": [
+    0.5415,
+    0.5636,
+    0.5079,
+    0.5571,
+    0.4845
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "R113",
+   "question": "Will employers care about university name or skills?",
+   "similarities": [
+    0.6409,
+    0.5929,
+    0.4834,
+    0.4902,
+    0.4758
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "R114",
+   "question": "What kind of projects impress recruiters?",
+   "similarities": [
+    0.5264,
+    0.4376,
+    0.4907,
+    0.3359,
+    0.4895
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "R115",
+   "question": "Do open source contributions help?",
+   "similarities": [
+    0.5399,
+    0.5471,
+    0.5613,
+    0.5785,
+    0.548
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "R116",
+   "question": "Can I start freelancing while studying?",
+   "similarities": [
+    0.528,
+    0.4863,
+    0.5234,
+    0.4535,
+    0.5225
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "R117",
+   "question": "Should I build mobile apps, web apps, or embedded projects?",
+   "similarities": [
+    0.5672,
+    0.424,
+    0.5516,
+    0.3811,
+    0.5365
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "R118",
+   "question": "GPA project staj hangisi daha onemli?",
+   "similarities": [
+    0.6608,
+    0.6503,
+    0.6508,
+    0.6192,
+    0.6822
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "R119",
+   "question": "No experience, no internship, low GPA - what can I do?",
+   "similarities": [
+    0.6612,
+    0.6865,
+    0.6413,
+    0.6,
+    0.639
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "R120",
+   "question": "What are entry-level computer engineering job titles?",
+   "similarities": [
+    0.6141,
+    0.6063,
+    0.6028,
+    0.6058,
+    0.5486
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "R121",
+   "question": "Is LinkedIn useful for finding internships?",
+   "similarities": [
+    0.5528,
+    0.6211,
+    0.5682,
+    0.5798,
+    0.5692
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "R122",
+   "question": "Should I apply to jobs before graduating?",
+   "similarities": [
+    0.635,
+    0.6322,
+    0.6684,
+    0.6188,
+    0.5911
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "S123",
+   "question": "Should I do a master's after Computer Engineering?",
+   "similarities": [
+    0.6616,
+    0.6419,
+    0.6378,
+    0.6212,
+    0.6424
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "S124",
+   "question": "Is a master's necessary for industry jobs?",
+   "similarities": [
+    0.5796,
+    0.6066,
+    0.509,
+    0.5957,
+    0.5196
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "S125",
+   "question": "Can I go into academia after CENG?",
+   "similarities": [
+    0.6916,
+    0.6885,
+    0.6413,
+    0.708,
+    0.5102
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "S126",
+   "question": "What is student life like at OSTIM Technical University?",
+   "similarities": [
+    0.6062,
+    0.5626,
+    0.6237,
+    0.5562,
+    0.5645
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "S127",
+   "question": "OSTIMTECH social clubs/student communities?",
+   "similarities": [
+    0.6685,
+    0.5738,
+    0.5515,
+    0.7424,
+    0.4194
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "S128",
+   "question": "Does OSTIM have student clubs for engineering students?",
+   "similarities": [
+    0.6655,
+    0.5993,
+    0.5685,
+    0.5741,
+    0.7131
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "S129",
+   "question": "Which official regulation explains exams and grading?",
+   "similarities": [
+    0.5758,
+    0.5971,
+    0.6104,
+    0.4032,
+    0.568
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "S132",
+   "question": "Can I transfer from another university to CENG?",
+   "similarities": [
+    0.6289,
+    0.6188,
+    0.5653,
+    0.6363,
+    0.6109
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "S133",
+   "question": "Is the program in English?",
+   "similarities": [
+    0.5943,
+    0.5127,
+    0.577,
+    0.6116,
+    0.5386
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "S134",
+   "question": "Who are the academic staff in the department?",
+   "similarities": [
+    0.631,
+    0.5652,
+    0.4475,
+    0.5189,
+    0.4964
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "S135",
+   "question": "Is OSTIM connected with industry?",
+   "similarities": [
+    0.5846,
+    0.4689,
+    0.4723,
+    0.4419,
+    0.5114
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "S136",
+   "question": "What makes OSTIM CENG different?",
+   "similarities": [
+    0.6547,
+    0.6583,
+    0.6842,
+    0.5944,
+    0.6853
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "S137",
+   "question": "Are there competitions or student projects?",
+   "similarities": [
+    0.6771,
+    0.5756,
+    0.63,
+    0.5817,
+    0.7211
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "S139",
+   "question": "Does the department have Erasmus agreements?",
+   "similarities": [
+    0.6867,
+    0.6273,
+    0.5957,
+    0.5658,
+    0.5782
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "S140",
+   "question": "Can I study abroad for one semester as a CENG student?",
+   "similarities": [
+    0.6333,
+    0.6204,
+    0.6267,
+    0.6707,
+    0.6002
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "X141",
+   "question": "I like AI and cybersecurity but hate electronics; is CENG still a good choice and what should I learn first?",
+   "similarities": [
+    0.7235,
+    0.7767,
+    0.7365,
+    0.727,
+    0.6574
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "X142",
+   "question": "Compare focusing on GPA, internships, GitHub projects, and networking for getting a first software job.",
+   "similarities": [
+    0.6607,
+    0.6638,
+    0.6874,
+    0.6789,
+    0.668
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "X143",
+   "question": "If I want remote work abroad, should I prioritize English, portfolio, cloud, or algorithms?",
+   "similarities": [
+    0.6318,
+    0.6021,
+    0.5718,
+    0.6412,
+    0.5732
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "X144",
+   "question": "What should a first-year student do each semester to become employable by graduation?",
+   "similarities": [
+    0.51,
+    0.5489,
+    0.5061,
+    0.5698,
+    0.5189
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "X145",
+   "question": "I am choosing between data science, embedded systems, and cybersecurity; how do I explore them safely?",
+   "similarities": [
+    0.6871,
+    0.6665,
+    0.594,
+    0.6953,
+    0.6615
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "X146",
+   "question": "What are realistic expectations about salary, work-life balance, and job security?",
+   "similarities": [
+    0.5573,
+    0.5499,
+    0.6574,
+    0.533,
+    0.6234
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "X147",
+   "question": "Can you rank AI, cloud, cybersecurity, and embedded by future demand?",
+   "similarities": [
+    0.6161,
+    0.5994,
+    0.6257,
+    0.6216,
+    0.5508
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "X148",
+   "question": "What should I learn before internship interviews: data structures, Git, Linux, or databases?",
+   "similarities": [
+    0.6124,
+    0.6443,
+    0.5854,
+    0.6413,
+    0.637
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "X149",
+   "question": "I failed a course and my GPA is low; can projects and internships still help me?",
+   "similarities": [
+    0.6504,
+    0.6879,
+    0.6342,
+    0.6289,
+    0.562
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "X150",
+   "question": "How do curriculum courses connect to actual industry roles?",
+   "similarities": [
+    0.4524,
+    0.6017,
+    0.5301,
+    0.5747,
+    0.5201
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "X151",
+   "question": "I want to work in AI but also need a job quickly; should I start backend or ML first?",
+   "similarities": [
+    0.6388,
+    0.5771,
+    0.5778,
+    0.6373,
+    0.6281
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "X152",
+   "question": "If I dislike pure theory but enjoy building things, how should I approach CENG?",
+   "similarities": [
+    0.6251,
+    0.624,
+    0.5804,
+    0.5355,
+    0.5109
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q001_reworded",
+   "question": "How would you explain the field of Computer Engineering?",
+   "similarities": [
+    0.6596,
+    0.665,
+    0.6586,
+    0.4875,
+    0.5927
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q001_informal",
+   "question": "comp eng what is it",
+   "similarities": [
+    0.4726,
+    0.3138,
+    0.4696,
+    0.399,
+    0.4604
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q001_typo",
+   "question": "What is Compter Engineering?",
+   "similarities": [
+    0.5885,
+    0.5324,
+    0.6144,
+    0.5722,
+    0.5337
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q002_original",
+   "question": "What do Computer Engineering students study?",
+   "similarities": [
+    0.672,
+    0.7023,
+    0.7194,
+    0.6658,
+    0.6214
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q002_reworded",
+   "question": "What subjects would I cover in a Computer Engineering degree?",
+   "similarities": [
+    0.7432,
+    0.6914,
+    0.7276,
+    0.7205,
+    0.6459
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q002_informal",
+   "question": "what do comp eng students learn",
+   "similarities": [
+    0.5592,
+    0.5765,
+    0.4821,
+    0.5704,
+    0.5143
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q002_typo",
+   "question": "What do Compter Engineering students study?",
+   "similarities": [
+    0.6017,
+    0.5909,
+    0.5723,
+    0.6077,
+    0.4721
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q003_original",
+   "question": "Is Computer Engineering the right major for me?",
+   "similarities": [
+    0.7613,
+    0.7247,
+    0.6574,
+    0.7044,
+    0.7256
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q003_reworded",
+   "question": "How can I tell whether studying Computer Engineering would suit my interests?",
+   "similarities": [
+    0.697,
+    0.6683,
+    0.6828,
+    0.576,
+    0.6725
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q003_informal",
+   "question": "is comp eng a good fit for me",
+   "similarities": [
+    0.4832,
+    0.4647,
+    0.4819,
+    0.4179,
+    0.4805
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q003_typo",
+   "question": "Is Compter Engineering the right major for me?",
+   "similarities": [
+    0.7399,
+    0.6941,
+    0.7049,
+    0.6522,
+    0.7031
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q004_original",
+   "question": "What is the difference between Computer Engineering and Software Engineering?",
+   "similarities": [
+    0.6677,
+    0.6653,
+    0.6771,
+    0.6767,
+    0.6772
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q004_reworded",
+   "question": "How does a Computer Engineering degree differ from a Software Engineering degree?",
+   "similarities": [
+    0.6625,
+    0.6765,
+    0.6498,
+    0.6687,
+    0.6687
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q004_informal",
+   "question": "comp eng vs software eng difference",
+   "similarities": [
+    0.5868,
+    0.4101,
+    0.5619,
+    0.3982,
+    0.5583
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q004_typo",
+   "question": "What is the diffeence between Computer Engineering and Software Engineering?",
+   "similarities": [
+    0.6783,
+    0.6695,
+    0.6663,
+    0.6801,
+    0.6752
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q005_original",
+   "question": "What is the difference between Computer Engineering and Computer Science?",
+   "similarities": [
+    0.6822,
+    0.6792,
+    0.6609,
+    0.544,
+    0.6651
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q005_reworded",
+   "question": "How are Computer Engineering and Computer Science different subjects?",
+   "similarities": [
+    0.6837,
+    0.6528,
+    0.6662,
+    0.7094,
+    0.5805
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q005_informal",
+   "question": "comp eng vs cs whats different",
+   "similarities": [
+    0.4982,
+    0.4935,
+    0.5137,
+    0.5009,
+    0.4189
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q005_typo",
+   "question": "What is the diffeence between Computer Engineering and Computer Science?",
+   "similarities": [
+    0.6887,
+    0.6853,
+    0.6636,
+    0.6386,
+    0.671
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q006_original",
+   "question": "Is Computer Engineering more focused on hardware or software?",
+   "similarities": [
+    0.7326,
+    0.724,
+    0.7327,
+    0.6549,
+    0.7066
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q006_reworded",
+   "question": "Does Computer Engineering concentrate more on physical computer systems or on programs?",
+   "similarities": [
+    0.6702,
+    0.6448,
+    0.6441,
+    0.6464,
+    0.6354
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q006_informal",
+   "question": "comp eng more hardware or software",
+   "similarities": [
+    0.7233,
+    0.7044,
+    0.7216,
+    0.6459,
+    0.6809
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q006_typo",
+   "question": "Is Compter Engineering more focused on hardware or software?",
+   "similarities": [
+    0.715,
+    0.7272,
+    0.7283,
+    0.6661,
+    0.7065
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q007_original",
+   "question": "What kind of projects do Computer Engineering students build?",
+   "similarities": [
+    0.673,
+    0.6421,
+    0.6198,
+    0.593,
+    0.6757
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q007_reworded",
+   "question": "What sorts of things would I make for projects as a Computer Engineering student?",
+   "similarities": [
+    0.6073,
+    0.6648,
+    0.5781,
+    0.5977,
+    0.572
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q007_informal",
+   "question": "what projects do comp eng students make",
+   "similarities": [
+    0.5502,
+    0.5637,
+    0.5304,
+    0.4498,
+    0.499
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q007_typo",
+   "question": "What kind of projcts do Computer Engineering students build?",
+   "similarities": [
+    0.6609,
+    0.6298,
+    0.6578,
+    0.5928,
+    0.5823
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q008_original",
+   "question": "What programming languages are taught in Computer Engineering?",
+   "similarities": [
+    0.6513,
+    0.6593,
+    0.6295,
+    0.636,
+    0.5572
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q008_reworded",
+   "question": "Which coding languages would I be taught in a Computer Engineering program?",
+   "similarities": [
+    0.6609,
+    0.6644,
+    0.647,
+    0.5719,
+    0.5876
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q008_informal",
+   "question": "what languages do they teach in comp eng",
+   "similarities": [
+    0.5029,
+    0.4999,
+    0.5416,
+    0.5179,
+    0.3424
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q008_typo",
+   "question": "What progrmming languages are taught in Computer Engineering?",
+   "similarities": [
+    0.6568,
+    0.6273,
+    0.6153,
+    0.6158,
+    0.4309
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q009_original",
+   "question": "Do I need prior programming experience before starting Computer Engineering?",
+   "similarities": [
+    0.6425,
+    0.627,
+    0.6563,
+    0.6097,
+    0.5187
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q009_reworded",
+   "question": "Must I already know how to code before I begin a Computer Engineering degree?",
+   "similarities": [
+    0.6656,
+    0.6473,
+    0.6676,
+    0.486,
+    0.6454
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q009_informal",
+   "question": "need coding before starting comp eng",
+   "similarities": [
+    0.5852,
+    0.5183,
+    0.5647,
+    0.4703,
+    0.5633
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q009_typo",
+   "question": "Do I need pror programming experience before starting Computer Engineering?",
+   "similarities": [
+    0.6228,
+    0.6069,
+    0.6638,
+    0.591,
+    0.6457
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q010_reworded",
+   "question": "What level and range of math does a Computer Engineering degree involve?",
+   "similarities": [
+    0.6636,
+    0.7013,
+    0.5433,
+    0.5873,
+    0.5461
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q010_informal",
+   "question": "how much math in comp eng",
+   "similarities": [
+    0.5333,
+    0.5669,
+    0.4959,
+    0.5339,
+    0.4996
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q010_typo",
+   "question": "How much matheatics is required in Computer Engineering?",
+   "similarities": [
+    0.652,
+    0.673,
+    0.6731,
+    0.6443,
+    0.6507
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q011_original",
+   "question": "Is Computer Engineering one of the hardest engineering majors?",
+   "similarities": [
+    0.595,
+    0.6063,
+    0.5594,
+    0.6024,
+    0.5974
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q011_reworded",
+   "question": "Compared with other engineering degrees, is Computer Engineering among the most difficult?",
+   "similarities": [
+    0.6112,
+    0.6082,
+    0.6002,
+    0.6025,
+    0.5954
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q011_informal",
+   "question": "is comp eng one of the hardest majors",
+   "similarities": [
+    0.4943,
+    0.4383,
+    0.4914,
+    0.4539,
+    0.4815
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q011_typo",
+   "question": "Is Compter Engineering one of the hardest engineering majors?",
+   "similarities": [
+    0.5225,
+    0.5435,
+    0.4776,
+    0.5432,
+    0.4872
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q012_original",
+   "question": "Can someone with no coding experience succeed in Computer Engineering?",
+   "similarities": [
+    0.6293,
+    0.5984,
+    0.5977,
+    0.5871,
+    0.636
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q012_reworded",
+   "question": "Could I do well in Computer Engineering if I have never written a program?",
+   "similarities": [
+    0.5691,
+    0.595,
+    0.4999,
+    0.555,
+    0.5432
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q012_informal",
+   "question": "can i pass comp eng with zero coding",
+   "similarities": [
+    0.4877,
+    0.4773,
+    0.5093,
+    0.4307,
+    0.4911
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q012_typo",
+   "question": "Can somone with no coding experience succeed in Computer Engineering?",
+   "similarities": [
+    0.6289,
+    0.5984,
+    0.6012,
+    0.5918,
+    0.6387
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q013_original",
+   "question": "How many hours do Computer Engineering students typically study each week?",
+   "similarities": [
+    0.751,
+    0.7202,
+    0.6829,
+    0.6992,
+    0.6388
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q013_reworded",
+   "question": "On average, how much time per week do Computer Engineering students spend studying?",
+   "similarities": [
+    0.6792,
+    0.7108,
+    0.6858,
+    0.5028,
+    0.5954
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q013_informal",
+   "question": "comp eng study hours per week",
+   "similarities": [
+    0.7041,
+    0.6934,
+    0.6803,
+    0.6717,
+    0.6144
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q013_typo",
+   "question": "How many hors do Computer Engineering students typically study each week?",
+   "similarities": [
+    0.7075,
+    0.642,
+    0.6657,
+    0.629,
+    0.6123
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q014_original",
+   "question": "Is teamwork important in Computer Engineering?",
+   "similarities": [
+    0.7096,
+    0.6432,
+    0.7191,
+    0.6977,
+    0.6537
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q014_reworded",
+   "question": "How much does working with other people matter in Computer Engineering?",
+   "similarities": [
+    0.6823,
+    0.6062,
+    0.6047,
+    0.5034,
+    0.4248
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q014_informal",
+   "question": "does teamwork matter in comp eng",
+   "similarities": [
+    0.6606,
+    0.6461,
+    0.639,
+    0.6413,
+    0.6464
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q014_typo",
+   "question": "Is teamork important in Computer Engineering?",
+   "similarities": [
+    0.5703,
+    0.4856,
+    0.5458,
+    0.517,
+    0.4865
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q015_original",
+   "question": "What skills should I develop during university to become a successful computer engineer?",
+   "similarities": [
+    0.726,
+    0.6582,
+    0.6251,
+    0.6247,
+    0.7389
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q015_reworded",
+   "question": "What abilities should I build as an undergraduate to do well as a computer engineer?",
+   "similarities": [
+    0.679,
+    0.6643,
+    0.6313,
+    0.5764,
+    0.6016
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q015_informal",
+   "question": "skills to build at uni for comp eng",
+   "similarities": [
+    0.5954,
+    0.4918,
+    0.5945,
+    0.4406,
+    0.5873
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q015_typo",
+   "question": "What skils should I develop during university to become a successful computer engineer?",
+   "similarities": [
+    0.7208,
+    0.6552,
+    0.6272,
+    0.6187,
+    0.6963
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q016_original",
+   "question": "Is it easy to find a job after graduating from Computer Engineering in Turkey?",
+   "similarities": [
+    0.5754,
+    0.5574,
+    0.6007,
+    0.5621,
+    0.6367
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q016_reworded",
+   "question": "How difficult is it for a new Computer Engineering graduate to get hired in Turkey?",
+   "similarities": [
+    0.5647,
+    0.5408,
+    0.6492,
+    0.5962,
+    0.4892
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q016_informal",
+   "question": "easy to get comp eng job in turkey",
+   "similarities": [
+    0.5344,
+    0.5175,
+    0.589,
+    0.4391,
+    0.5562
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q016_typo",
+   "question": "Is it easy to find a job afer graduating from Computer Engineering in Turkey?",
+   "similarities": [
+    0.5704,
+    0.5564,
+    0.6072,
+    0.5646,
+    0.5662
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q017_original",
+   "question": "Is Computer Engineering still a good career choice in the AI era?",
+   "similarities": [
+    0.5582,
+    0.5808,
+    0.519,
+    0.5648,
+    0.582
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q017_reworded",
+   "question": "With artificial intelligence advancing, is Computer Engineering still worth pursuing as a career?",
+   "similarities": [
+    0.5682,
+    0.5713,
+    0.5015,
+    0.5884,
+    0.5354
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q017_informal",
+   "question": "comp eng still worth it with ai",
+   "similarities": [
+    0.5245,
+    0.5178,
+    0.5454,
+    0.514,
+    0.5425
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q017_typo",
+   "question": "Is Compter Engineering still a good career choice in the AI era?",
+   "similarities": [
+    0.5215,
+    0.549,
+    0.5412,
+    0.485,
+    0.5407
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q018_original",
+   "question": "Will AI replace software engineers and computer engineers?",
+   "similarities": [
+    0.6045,
+    0.5528,
+    0.6118,
+    0.4974,
+    0.6294
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q018_reworded",
+   "question": "Are AI tools going to take over the jobs of software and computer engineers?",
+   "similarities": [
+    0.643,
+    0.5909,
+    0.6397,
+    0.6571,
+    0.5216
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q018_informal",
+   "question": "will ai take software and comp eng jobs",
+   "similarities": [
+    0.594,
+    0.5982,
+    0.5568,
+    0.4028,
+    0.6023
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q018_typo",
+   "question": "Will AI repace software engineers and computer engineers?",
+   "similarities": [
+    0.5257,
+    0.5958,
+    0.4881,
+    0.5905,
+    0.4984
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q019_original",
+   "question": "What industries hire Computer Engineering graduates?",
+   "similarities": [
+    0.6686,
+    0.6655,
+    0.6366,
+    0.5754,
+    0.6281
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q019_reworded",
+   "question": "Which sectors employ people with Computer Engineering degrees?",
+   "similarities": [
+    0.73,
+    0.7015,
+    0.4932,
+    0.4205,
+    0.6507
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q019_informal",
+   "question": "what industries hire comp eng grads",
+   "similarities": [
+    0.6474,
+    0.6209,
+    0.536,
+    0.5993,
+    0.663
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q019_typo",
+   "question": "What indusries hire Computer Engineering graduates?",
+   "similarities": [
+    0.6007,
+    0.6057,
+    0.5851,
+    0.5386,
+    0.553
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q020_original",
+   "question": "Can Computer Engineering graduates work abroad?",
+   "similarities": [
+    0.6015,
+    0.5706,
+    0.638,
+    0.6278,
+    0.6291
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q020_reworded",
+   "question": "Does a Computer Engineering degree allow graduates to seek employment in other countries?",
+   "similarities": [
+    0.6494,
+    0.6191,
+    0.6245,
+    0.5987,
+    0.5903
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q020_informal",
+   "question": "can comp eng grads get jobs abroad",
+   "similarities": [
+    0.4717,
+    0.5129,
+    0.5348,
+    0.5136,
+    0.5124
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q020_typo",
+   "question": "Can Compter Engineering graduates work abroad?",
+   "similarities": [
+    0.5868,
+    0.5694,
+    0.5518,
+    0.6004,
+    0.5802
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q021_original",
+   "question": "Can I work remotely as a Computer Engineer?",
+   "similarities": [
+    0.642,
+    0.551,
+    0.6172,
+    0.6441,
+    0.4931
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q021_reworded",
+   "question": "Are there opportunities to do Computer Engineering work from home?",
+   "similarities": [
+    0.6444,
+    0.5489,
+    0.6564,
+    0.558,
+    0.649
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q021_informal",
+   "question": "can a comp engineer work remote",
+   "similarities": [
+    0.5358,
+    0.5584,
+    0.5401,
+    0.5454,
+    0.5129
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q021_typo",
+   "question": "Can I work remoely as a Computer Engineer?",
+   "similarities": [
+    0.5907,
+    0.5799,
+    0.5871,
+    0.6066,
+    0.58
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q022_original",
+   "question": "What are the most in-demand Computer Engineering jobs today?",
+   "similarities": [
+    0.6217,
+    0.6149,
+    0.5868,
+    0.5015,
+    0.5805
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q022_reworded",
+   "question": "Which jobs available to Computer Engineering graduates are employers especially looking for?",
+   "similarities": [
+    0.7198,
+    0.6411,
+    0.6407,
+    0.642,
+    0.6082
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q022_informal",
+   "question": "what comp eng jobs are in demand now",
+   "similarities": [
+    0.5578,
+    0.6156,
+    0.5235,
+    0.5852,
+    0.4778
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q022_typo",
+   "question": "What are the most in-demnd Computer Engineering jobs today?",
+   "similarities": [
+    0.6127,
+    0.6009,
+    0.5891,
+    0.5774,
+    0.5722
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q023_original",
+   "question": "Which specialization has the highest demand in the job market?",
+   "similarities": [
+    0.6089,
+    0.4628,
+    0.6116,
+    0.5419,
+    0.4297
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q023_reworded",
+   "question": "Which Computer Engineering specialty do employers need the most?",
+   "similarities": [
+    0.5867,
+    0.6396,
+    0.5657,
+    0.5987,
+    0.5979
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q023_informal",
+   "question": "which comp eng specialty has most demand",
+   "similarities": [
+    0.5104,
+    0.489,
+    0.5412,
+    0.3256,
+    0.5259
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q023_typo",
+   "question": "Whch specialization has the highest demand in the job market?",
+   "similarities": [
+    0.6075,
+    0.4717,
+    0.619,
+    0.5378,
+    0.6117
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q024_original",
+   "question": "Can Computer Engineering graduates start their own software company?",
+   "similarities": [
+    0.6386,
+    0.5046,
+    0.6212,
+    0.5583,
+    0.6153
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q024_reworded",
+   "question": "Could I set up a software business after a Computer Engineering degree?",
+   "similarities": [
+    0.6246,
+    0.6008,
+    0.569,
+    0.5118,
+    0.5228
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q024_informal",
+   "question": "can comp eng grads start a software company",
+   "similarities": [
+    0.5014,
+    0.6072,
+    0.4795,
+    0.5871,
+    0.3925
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q024_typo",
+   "question": "Can Compter Engineering graduates start their own software company?",
+   "similarities": [
+    0.6104,
+    0.4978,
+    0.5965,
+    0.4526,
+    0.5896
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q025_original",
+   "question": "Is the Computer Engineering job market becoming saturated?",
+   "similarities": [
+    0.5371,
+    0.5989,
+    0.6261,
+    0.5922,
+    0.5588
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q025_reworded",
+   "question": "Are there now too many Computer Engineering graduates for the available jobs?",
+   "similarities": [
+    0.6741,
+    0.5947,
+    0.601,
+    0.5848,
+    0.5321
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q025_informal",
+   "question": "is the comp eng job market overcrowded",
+   "similarities": [
+    0.5291,
+    0.2834,
+    0.5256,
+    0.3687,
+    0.5253
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q025_typo",
+   "question": "Is the Compter Engineering job market becoming saturated?",
+   "similarities": [
+    0.5618,
+    0.4791,
+    0.5336,
+    0.4459,
+    0.5309
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q026_original",
+   "question": "Will there still be enough job opportunities in the next 10 years?",
+   "similarities": [
+    0.6089,
+    0.5974,
+    0.5855,
+    0.4872,
+    0.3946
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q026_reworded",
+   "question": "Will the job market still offer enough opportunities for computer engineers a decade from now?",
+   "similarities": [
+    0.6054,
+    0.5856,
+    0.6046,
+    0.5125,
+    0.5795
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q026_informal",
+   "question": "enough comp eng jobs in 10 years",
+   "similarities": [
+    0.525,
+    0.5191,
+    0.5328,
+    0.3076,
+    0.5215
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q026_typo",
+   "question": "Will thre still be enough job opportunities in the next 10 years?",
+   "similarities": [
+    0.5982,
+    0.5949,
+    0.604,
+    0.4809,
+    0.3922
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q027_original",
+   "question": "Is Computer Engineering a future-proof career?",
+   "similarities": [
+    0.7,
+    0.6812,
+    0.5743,
+    0.6665,
+    0.6817
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q027_reworded",
+   "question": "How secure is Computer Engineering as a career as technology changes?",
+   "similarities": [
+    0.6471,
+    0.6222,
+    0.6249,
+    0.6216,
+    0.6234
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q027_informal",
+   "question": "is comp eng future proof",
+   "similarities": [
+    0.6328,
+    0.6108,
+    0.6326,
+    0.5458,
+    0.629
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q027_typo",
+   "question": "Is Compter Engineering a future-proof career?",
+   "similarities": [
+    0.6742,
+    0.5571,
+    0.6384,
+    0.6381,
+    0.5442
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q028_reworded",
+   "question": "How might finishing my degree without an internship affect my job prospects?",
+   "similarities": [
+    0.6125,
+    0.6162,
+    0.6212,
+    0.6258,
+    0.5872
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q028_informal",
+   "question": "graduating with no internship what then",
+   "similarities": [
+    0.576,
+    0.5325,
+    0.5725,
+    0.4955,
+    0.5151
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q028_typo",
+   "question": "What if I gradate without internship experience?",
+   "similarities": [
+    0.5771,
+    0.6158,
+    0.592,
+    0.5539,
+    0.561
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q029_original",
+   "question": "What happens if I graduate with a low GPA?",
+   "similarities": [
+    0.6399,
+    0.6697,
+    0.6344,
+    0.6668,
+    0.6035
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q029_reworded",
+   "question": "How could poor university grades affect me once I graduate?",
+   "similarities": [
+    0.544,
+    0.5445,
+    0.4896,
+    0.5315,
+    0.5644
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q029_informal",
+   "question": "low gpa after graduation am i stuck",
+   "similarities": [
+    0.6259,
+    0.6438,
+    0.6336,
+    0.6161,
+    0.6561
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q029_typo",
+   "question": "What hapens if I graduate with a low GPA?",
+   "similarities": [
+    0.6432,
+    0.6762,
+    0.6412,
+    0.6701,
+    0.609
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q030_original",
+   "question": "Is GPA more important than personal projects?",
+   "similarities": [
+    0.6702,
+    0.6487,
+    0.6288,
+    0.6404,
+    0.6652
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q030_reworded",
+   "question": "When applying for jobs, do grades matter more than the projects I build myself?",
+   "similarities": [
+    0.6102,
+    0.4533,
+    0.5717,
+    0.465,
+    0.562
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q030_informal",
+   "question": "gpa or side projects which matters more",
+   "similarities": [
+    0.661,
+    0.6224,
+    0.6588,
+    0.6117,
+    0.6708
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q030_typo",
+   "question": "Is GPA more impotant than personal projects?",
+   "similarities": [
+    0.6617,
+    0.6368,
+    0.6229,
+    0.6349,
+    0.6455
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q031_original",
+   "question": "What is the average starting salary for Computer Engineering graduates in Turkey or World?",
+   "similarities": [
+    0.598,
+    0.6056,
+    0.694,
+    0.5716,
+    0.569
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q031_reworded",
+   "question": "How much do newly qualified computer engineers earn on average in Turkey or internationally?",
+   "similarities": [
+    0.5773,
+    0.561,
+    0.5784,
+    0.6513,
+    0.4962
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q031_informal",
+   "question": "starting comp eng salary turkey or worldwide",
+   "similarities": [
+    0.6215,
+    0.6013,
+    0.5581,
+    0.5177,
+    0.479
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q031_typo",
+   "question": "What is the aveage starting salary for Computer Engineering graduates in Turkey or World?",
+   "similarities": [
+    0.5972,
+    0.691,
+    0.595,
+    0.5594,
+    0.4769
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q032_original",
+   "question": "Which Computer Engineering specialization offers the highest salaries in Turkey?",
+   "similarities": [
+    0.6226,
+    0.6045,
+    0.6689,
+    0.5639,
+    0.5489
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q032_reworded",
+   "question": "Which Computer Engineering specialty pays the most in Turkey?",
+   "similarities": [
+    0.6229,
+    0.6004,
+    0.6771,
+    0.6721,
+    0.5431
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q032_informal",
+   "question": "best paid comp eng specialty in turkey",
+   "similarities": [
+    0.4553,
+    0.5396,
+    0.446,
+    0.4807,
+    0.4764
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q032_typo",
+   "question": "Whch Computer Engineering specialization offers the highest salaries in Turkey?",
+   "similarities": [
+    0.6137,
+    0.6275,
+    0.6731,
+    0.5617,
+    0.5061
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q033_original",
+   "question": "How long does it take to become a senior software engineer?",
+   "similarities": [
+    0.6285,
+    0.5468,
+    0.6032,
+    0.4852,
+    0.5975
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q033_reworded",
+   "question": "After starting in software, how many years does it usually take to reach senior engineer level?",
+   "similarities": [
+    0.5989,
+    0.6272,
+    0.4762,
+    0.6196,
+    0.5394
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q033_informal",
+   "question": "how many years to senior software engineer",
+   "similarities": [
+    0.5577,
+    0.5483,
+    0.5969,
+    0.4429,
+    0.4576
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q033_typo",
+   "question": "How long does it take to becme a senior software engineer?",
+   "similarities": [
+    0.5917,
+    0.5934,
+    0.6154,
+    0.5509,
+    0.599
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q034_original",
+   "question": "Can I become an AI engineer after studying Computer Engineering?",
+   "similarities": [
+    0.6003,
+    0.4956,
+    0.5656,
+    0.5347,
+    0.5506
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q034_reworded",
+   "question": "Would a Computer Engineering degree be a route into an AI engineering career?",
+   "similarities": [
+    0.5776,
+    0.5882,
+    0.5852,
+    0.5669,
+    0.5531
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q034_informal",
+   "question": "can comp eng lead to ai engineer",
+   "similarities": [
+    0.5184,
+    0.4556,
+    0.4892,
+    0.4373,
+    0.5082
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q034_typo",
+   "question": "Can I becme an AI engineer after studying Computer Engineering?",
+   "similarities": [
+    0.595,
+    0.487,
+    0.5456,
+    0.4909,
+    0.546
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q035_original",
+   "question": "Can I become a cybersecurity specialist with a Computer Engineering degree?",
+   "similarities": [
+    0.7033,
+    0.6408,
+    0.6968,
+    0.7203,
+    0.5905
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q035_reworded",
+   "question": "Could I enter cybersecurity after completing a Computer Engineering degree?",
+   "similarities": [
+    0.7237,
+    0.6431,
+    0.5785,
+    0.6591,
+    0.6212
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q035_informal",
+   "question": "can i do cybersecurity with comp eng",
+   "similarities": [
+    0.6266,
+    0.5671,
+    0.5751,
+    0.5869,
+    0.6101
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q035_typo",
+   "question": "Can I becme a cybersecurity specialist with a Computer Engineering degree?",
+   "similarities": [
+    0.703,
+    0.6377,
+    0.6739,
+    0.7006,
+    0.5798
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q036_original",
+   "question": "Which programming language should I learn first?",
+   "similarities": [
+    0.5601,
+    0.58,
+    0.6176,
+    0.5685,
+    0.5589
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q036_reworded",
+   "question": "What would be a sensible coding language for me to start with?",
+   "similarities": [
+    0.5481,
+    0.5337,
+    0.5841,
+    0.4431,
+    0.5654
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q036_informal",
+   "question": "what coding language first",
+   "similarities": [
+    0.5424,
+    0.5476,
+    0.5837,
+    0.4616,
+    0.4806
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q036_typo",
+   "question": "Whch programming language should I learn first?",
+   "similarities": [
+    0.5564,
+    0.577,
+    0.6076,
+    0.5604,
+    0.5514
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q037_original",
+   "question": "Which technologies should I learn before graduation?",
+   "similarities": [
+    0.6468,
+    0.6493,
+    0.6215,
+    0.6408,
+    0.6192
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q037_reworded",
+   "question": "What tools and technical areas should I know by the time I finish university?",
+   "similarities": [
+    0.648,
+    0.496,
+    0.6134,
+    0.5393,
+    0.6128
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q037_informal",
+   "question": "tech to learn before graduating",
+   "similarities": [
+    0.6121,
+    0.5112,
+    0.5961,
+    0.4832,
+    0.449
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q037_typo",
+   "question": "Whch technologies should I learn before graduation?",
+   "similarities": [
+    0.6415,
+    0.6294,
+    0.645,
+    0.6376,
+    0.6127
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q038_original",
+   "question": "Should I focus on web development, mobile development, AI, or cybersecurity?",
+   "similarities": [
+    0.6185,
+    0.6149,
+    0.6242,
+    0.6244,
+    0.5997
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q038_reworded",
+   "question": "How should I choose between web, mobile, artificial intelligence and security as my main focus?",
+   "similarities": [
+    0.548,
+    0.5246,
+    0.5153,
+    0.4286,
+    0.5739
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q038_informal",
+   "question": "web mobile ai or cyber what should i pick",
+   "similarities": [
+    0.4808,
+    0.4914,
+    0.5023,
+    0.4949,
+    0.4949
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q038_typo",
+   "question": "Shold I focus on web development, mobile development, AI, or cybersecurity?",
+   "similarities": [
+    0.6193,
+    0.6059,
+    0.65,
+    0.6227,
+    0.6138
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q039_original",
+   "question": "Is learning Linux important for Computer Engineering students?",
+   "similarities": [
+    0.5893,
+    0.6195,
+    0.5712,
+    0.6155,
+    0.6155
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q039_reworded",
+   "question": "How useful is Linux knowledge for someone studying Computer Engineering?",
+   "similarities": [
+    0.6197,
+    0.5829,
+    0.5286,
+    0.6159,
+    0.6052
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q039_informal",
+   "question": "do comp eng students need linux",
+   "similarities": [
+    0.5612,
+    0.523,
+    0.5382,
+    0.4581,
+    0.5379
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q039_typo",
+   "question": "Is learing Linux important for Computer Engineering students?",
+   "similarities": [
+    0.6203,
+    0.5896,
+    0.5838,
+    0.6267,
+    0.5792
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q040_original",
+   "question": "Should every Computer Engineering student learn Git and GitHub?",
+   "similarities": [
+    0.642,
+    0.5963,
+    0.5786,
+    0.5937,
+    0.6214
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q040_reworded",
+   "question": "Is it worth learning version control with Git and using GitHub during my Computer Engineering degree?",
+   "similarities": [
+    0.6554,
+    0.6357,
+    0.6189,
+    0.5412,
+    0.5713
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q040_informal",
+   "question": "should comp eng students learn git github",
+   "similarities": [
+    0.587,
+    0.5403,
+    0.5561,
+    0.5042,
+    0.4883
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q040_typo",
+   "question": "Shold every Computer Engineering student learn Git and GitHub?",
+   "similarities": [
+    0.6167,
+    0.5695,
+    0.5756,
+    0.5703,
+    0.5715
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q041_original",
+   "question": "How important are internships during Computer Engineering education?",
+   "similarities": [
+    0.6383,
+    0.5801,
+    0.6307,
+    0.6464,
+    0.61
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q041_reworded",
+   "question": "What value do internships add to a Computer Engineering degree?",
+   "similarities": [
+    0.6329,
+    0.6005,
+    0.6326,
+    0.4381,
+    0.6095
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q041_informal",
+   "question": "how much do comp eng internships matter",
+   "similarities": [
+    0.5696,
+    0.4884,
+    0.4932,
+    0.6023,
+    0.3234
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q041_typo",
+   "question": "How impotant are internships during Computer Engineering education?",
+   "similarities": [
+    0.5937,
+    0.6261,
+    0.5019,
+    0.621,
+    0.6016
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q042_original",
+   "question": "How can I find my first internship?",
+   "similarities": [
+    0.6449,
+    0.6454,
+    0.5921,
+    0.5949,
+    0.5707
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q042_reworded",
+   "question": "Where should I start looking to secure my first internship?",
+   "similarities": [
+    0.6351,
+    0.6401,
+    0.6279,
+    0.5913,
+    0.5674
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q042_informal",
+   "question": "how do i land my first internship",
+   "similarities": [
+    0.6106,
+    0.5957,
+    0.558,
+    0.5522,
+    0.6046
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q042_typo",
+   "question": "How can I find my fist internship?",
+   "similarities": [
+    0.5762,
+    0.539,
+    0.5491,
+    0.559,
+    0.5753
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q043_original",
+   "question": "What should I include in my CV as a Computer Engineering student?",
+   "similarities": [
+    0.6068,
+    0.6567,
+    0.704,
+    0.5814,
+    0.616
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q043_reworded",
+   "question": "As a Computer Engineering student, what information belongs on my resume?",
+   "similarities": [
+    0.6737,
+    0.6952,
+    0.7348,
+    0.6411,
+    0.6059
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q043_informal",
+   "question": "what goes on a comp eng student cv",
+   "similarities": [
+    0.6286,
+    0.651,
+    0.6964,
+    0.644,
+    0.5958
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q043_typo",
+   "question": "What shold I include in my CV as a Computer Engineering student?",
+   "similarities": [
+    0.6534,
+    0.682,
+    0.6015,
+    0.5923,
+    0.581
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q044_original",
+   "question": "How can I build an impressive portfolio before graduation?",
+   "similarities": [
+    0.6777,
+    0.6516,
+    0.6292,
+    0.6359,
+    0.5811
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q044_reworded",
+   "question": "How can I put together a strong collection of projects before I finish university?",
+   "similarities": [
+    0.5612,
+    0.5021,
+    0.549,
+    0.4766,
+    0.3688
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q044_informal",
+   "question": "how to build a good portfolio before graduation",
+   "similarities": [
+    0.6632,
+    0.6383,
+    0.6164,
+    0.5785,
+    0.6355
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q044_typo",
+   "question": "How can I buld an impressive portfolio before graduation?",
+   "similarities": [
+    0.6649,
+    0.6177,
+    0.6426,
+    0.6273,
+    0.6179
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q045_original",
+   "question": "Should I participate in hackathons and coding competitions?",
+   "similarities": [
+    0.6548,
+    0.6316,
+    0.6046,
+    0.5788,
+    0.5607
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q045_reworded",
+   "question": "Would hackathons and programming contests be useful activities for me as a student?",
+   "similarities": [
+    0.673,
+    0.6173,
+    0.61,
+    0.5763,
+    0.5398
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q045_informal",
+   "question": "are hackathons and coding contests worth it",
+   "similarities": [
+    0.5997,
+    0.5793,
+    0.5748,
+    0.5465,
+    0.5389
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q045_typo",
+   "question": "Shold I participate in hackathons and coding competitions?",
+   "similarities": [
+    0.66,
+    0.6485,
+    0.5929,
+    0.5629,
+    0.5933
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q046_original",
+   "question": "Do I need a master's degree to have a successful career?",
+   "similarities": [
+    0.607,
+    0.5846,
+    0.5685,
+    0.6613,
+    0.6478
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q046_reworded",
+   "question": "Is postgraduate study essential for a successful engineering career?",
+   "similarities": [
+    0.6054,
+    0.5858,
+    0.5852,
+    0.5805,
+    0.5482
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q046_informal",
+   "question": "need a masters to have a good career",
+   "similarities": [
+    0.5372,
+    0.5873,
+    0.4987,
+    0.5857,
+    0.5181
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q046_typo",
+   "question": "Do I need a maser's degree to have a successful career?",
+   "similarities": [
+    0.5236,
+    0.4982,
+    0.5414,
+    0.4011,
+    0.541
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q047_original",
+   "question": "Can I work in artificial intelligence without a master's degree?",
+   "similarities": [
+    0.5505,
+    0.5427,
+    0.6087,
+    0.5423,
+    0.618
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q047_reworded",
+   "question": "Can I get an artificial intelligence job with only an undergraduate degree?",
+   "similarities": [
+    0.5727,
+    0.5213,
+    0.588,
+    0.4204,
+    0.4802
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q047_informal",
+   "question": "ai job without a masters possible",
+   "similarities": [
+    0.5957,
+    0.5245,
+    0.5205,
+    0.5931,
+    0.5333
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q047_typo",
+   "question": "Can I work in artifcial intelligence without a master's degree?",
+   "similarities": [
+    0.5502,
+    0.5438,
+    0.5397,
+    0.6091,
+    0.5912
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q048_original",
+   "question": "Should I pursue graduate studies or start working immediately after graduation?",
+   "similarities": [
+    0.6723,
+    0.5684,
+    0.5947,
+    0.5372,
+    0.6303
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q048_reworded",
+   "question": "How do I decide between getting a job and doing a postgraduate degree straight after university?",
+   "similarities": [
+    0.6011,
+    0.5876,
+    0.5037,
+    0.6509,
+    0.6022
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q048_informal",
+   "question": "work or grad school right after graduating",
+   "similarities": [
+    0.6737,
+    0.5854,
+    0.5821,
+    0.5706,
+    0.6005
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q048_typo",
+   "question": "Shold I pursue graduate studies or start working immediately after graduation?",
+   "similarities": [
+    0.6664,
+    0.5573,
+    0.5264,
+    0.5781,
+    0.6224
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q049_original",
+   "question": "Which field of Computer Engineering is right for me?",
+   "similarities": [
+    0.7549,
+    0.7162,
+    0.7238,
+    0.6464,
+    0.6834
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q049_reworded",
+   "question": "How can I choose the Computer Engineering area that best matches my interests and strengths?",
+   "similarities": [
+    0.6727,
+    0.6585,
+    0.6781,
+    0.6258,
+    0.6257
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q049_informal",
+   "question": "which comp eng field suits me",
+   "similarities": [
+    0.5412,
+    0.3886,
+    0.5392,
+    0.4998,
+    0.54
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q049_typo",
+   "question": "Whch field of Computer Engineering is right for me?",
+   "similarities": [
+    0.6639,
+    0.6953,
+    0.6437,
+    0.6268,
+    0.6165
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q050_original",
+   "question": "If I don't enjoy coding, can I still succeed in Computer Engineering?",
+   "similarities": [
+    0.5963,
+    0.6158,
+    0.5618,
+    0.4762,
+    0.4712
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q050_reworded",
+   "question": "Could Computer Engineering still suit me if I dislike writing programs?",
+   "similarities": [
+    0.582,
+    0.5217,
+    0.5759,
+    0.5712,
+    0.4489
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q050_informal",
+   "question": "dont like coding can i still do comp eng",
+   "similarities": [
+    0.5078,
+    0.5051,
+    0.5327,
+    0.4789,
+    0.4326
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q050_typo",
+   "question": "If I don't enoy coding, can I still succeed in Computer Engineering?",
+   "similarities": [
+    0.581,
+    0.5998,
+    0.4889,
+    0.5967,
+    0.4689
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q051_original",
+   "question": "How do I discover which specialization I enjoy the most?",
+   "similarities": [
+    0.5277,
+    0.5105,
+    0.5065,
+    0.5554,
+    0.3159
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q051_reworded",
+   "question": "What can I do to find out which Computer Engineering specialty I like best?",
+   "similarities": [
+    0.6239,
+    0.6183,
+    0.6566,
+    0.6145,
+    0.6445
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q051_informal",
+   "question": "how do i find my favorite comp eng specialty",
+   "similarities": [
+    0.5607,
+    0.4213,
+    0.5174,
+    0.4005,
+    0.513
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q051_typo",
+   "question": "How do I discver which specialization I enjoy the most?",
+   "similarities": [
+    0.603,
+    0.5797,
+    0.5772,
+    0.593,
+    0.5851
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q052_original",
+   "question": "Which specialization is expected to grow the fastest in the future?",
+   "similarities": [
+    0.614,
+    0.5654,
+    0.6147,
+    0.3758,
+    0.5387
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q052_reworded",
+   "question": "Which Computer Engineering area is forecast to expand most rapidly?",
+   "similarities": [
+    0.5829,
+    0.5753,
+    0.6356,
+    0.5964,
+    0.578
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q052_informal",
+   "question": "which comp eng specialty will grow fastest",
+   "similarities": [
+    0.5612,
+    0.5206,
+    0.5485,
+    0.3245,
+    0.2959
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q052_typo",
+   "question": "Whch specialization is expected to grow the fastest in the future?",
+   "similarities": [
+    0.6163,
+    0.5649,
+    0.6175,
+    0.3785,
+    0.5418
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q053_original",
+   "question": "Do Computer Engineers have a good work-life balance?",
+   "similarities": [
+    0.6395,
+    0.6259,
+    0.5969,
+    0.5645,
+    0.6379
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q053_reworded",
+   "question": "How much room do computer engineers usually have for life outside work?",
+   "similarities": [
+    0.5734,
+    0.605,
+    0.5283,
+    0.428,
+    0.4987
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q053_informal",
+   "question": "comp eng good work life balance",
+   "similarities": [
+    0.5561,
+    0.5648,
+    0.577,
+    0.5236,
+    0.5749
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q053_typo",
+   "question": "Do Compter Engineers have a good work-life balance?",
+   "similarities": [
+    0.6015,
+    0.6094,
+    0.5721,
+    0.622,
+    0.5625
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q054_original",
+   "question": "Is Computer Engineering a stressful profession?",
+   "similarities": [
+    0.6102,
+    0.6443,
+    0.6385,
+    0.5477,
+    0.6346
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q054_reworded",
+   "question": "How much pressure do people experience when working as computer engineers?",
+   "similarities": [
+    0.5989,
+    0.5874,
+    0.6083,
+    0.6004,
+    0.5796
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q054_informal",
+   "question": "is working as a comp engineer stressful",
+   "similarities": [
+    0.596,
+    0.5934,
+    0.5768,
+    0.6217,
+    0.536
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q054_typo",
+   "question": "Is Compter Engineering a stressful profession?",
+   "similarities": [
+    0.5806,
+    0.6117,
+    0.5419,
+    0.6106,
+    0.5506
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q055_original",
+   "question": "Can Computer Engineers become digital nomads?",
+   "similarities": [
+    0.6337,
+    0.6215,
+    0.6311,
+    0.5819,
+    0.5696
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q055_reworded",
+   "question": "Could a computer engineer work while regularly moving between countries?",
+   "similarities": [
+    0.5828,
+    0.4929,
+    0.5729,
+    0.5097,
+    0.5709
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q055_informal",
+   "question": "can comp engineers be digital nomads",
+   "similarities": [
+    0.6048,
+    0.6247,
+    0.6022,
+    0.5513,
+    0.5474
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q055_typo",
+   "question": "Can Compter Engineers become digital nomads?",
+   "similarities": [
+    0.6236,
+    0.6166,
+    0.619,
+    0.5788,
+    0.5512
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q056_original",
+   "question": "Do Computer Engineers spend all day writing code?",
+   "similarities": [
+    0.7131,
+    0.6866,
+    0.6804,
+    0.6879,
+    0.7139
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q056_reworded",
+   "question": "Is a computer engineer's working day entirely spent programming?",
+   "similarities": [
+    0.6211,
+    0.6566,
+    0.5717,
+    0.5509,
+    0.6241
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q056_informal",
+   "question": "do comp engineers just code all day",
+   "similarities": [
+    0.633,
+    0.4875,
+    0.6037,
+    0.5326,
+    0.4748
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q056_typo",
+   "question": "Do Compter Engineers spend all day writing code?",
+   "similarities": [
+    0.695,
+    0.6735,
+    0.6629,
+    0.6662,
+    0.6937
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q057_original",
+   "question": "Is Computer Engineering only for people who are good at math?",
+   "similarities": [
+    0.6024,
+    0.6213,
+    0.3992,
+    0.6182,
+    0.6172
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q057_reworded",
+   "question": "Must I already be excellent at mathematics to study Computer Engineering?",
+   "similarities": [
+    0.6619,
+    0.6733,
+    0.6274,
+    0.5252,
+    0.6033
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q057_informal",
+   "question": "comp eng only for math geniuses",
+   "similarities": [
+    0.4961,
+    0.465,
+    0.4635,
+    0.4809,
+    0.4207
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q057_typo",
+   "question": "Is Compter Engineering only for people who are good at math?",
+   "similarities": [
+    0.5694,
+    0.5786,
+    0.3851,
+    0.5748,
+    0.5724
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q058_original",
+   "question": "Can women have successful careers in Computer Engineering?",
+   "similarities": [
+    0.6392,
+    0.6427,
+    0.641,
+    0.6713,
+    0.6432
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q058_reworded",
+   "question": "Are successful Computer Engineering careers open to women?",
+   "similarities": [
+    0.6635,
+    0.6866,
+    0.6843,
+    0.7051,
+    0.7034
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q058_informal",
+   "question": "can women do well in comp eng",
+   "similarities": [
+    0.6801,
+    0.6582,
+    0.6709,
+    0.6337,
+    0.6869
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q058_typo",
+   "question": "Can woen have successful careers in Computer Engineering?",
+   "similarities": [
+    0.6904,
+    0.6685,
+    0.6426,
+    0.6348,
+    0.6328
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q059_original",
+   "question": "Is it too late to start learning programming at university?",
+   "similarities": [
+    0.6181,
+    0.5983,
+    0.5943,
+    0.5527,
+    0.5256
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q059_reworded",
+   "question": "Can I begin coding at university rather than learning it earlier?",
+   "similarities": [
+    0.5559,
+    0.5806,
+    0.4469,
+    0.5617,
+    0.4736
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q059_informal",
+   "question": "too late to learn coding at uni",
+   "similarities": [
+    0.5646,
+    0.5188,
+    0.4646,
+    0.5452,
+    0.5182
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q059_typo",
+   "question": "Is it too late to strt learning programming at university?",
+   "similarities": [
+    0.5991,
+    0.4898,
+    0.5647,
+    0.5335,
+    0.5246
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q060_original",
+   "question": "Why should I choose Computer Engineering instead of another engineering discipline?",
+   "similarities": [
+    0.765,
+    0.7664,
+    0.7276,
+    0.6631,
+    0.6928
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q060_reworded",
+   "question": "What reasons might make Computer Engineering a better fit for me than a different engineering degree?",
+   "similarities": [
+    0.6604,
+    0.6527,
+    0.6508,
+    0.6508,
+    0.6523
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q060_informal",
+   "question": "why choose comp eng over other engineering",
+   "similarities": [
+    0.5895,
+    0.5354,
+    0.4139,
+    0.5722,
+    0.4205
+   ]
+  },
+  {
+   "set": "paraphrase",
+   "id": "q060_typo",
+   "question": "Why shold I choose Computer Engineering instead of another engineering discipline?",
+   "similarities": [
+    0.7574,
+    0.7587,
+    0.7286,
+    0.6598,
+    0.6839
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_department_itself_001",
+   "question": "What does being near the OSTIM industrial zone actually change for me as a CENG student?",
+   "similarities": [
+    0.5995,
+    0.5809,
+    0.5357,
+    0.6325,
+    0.5492
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_department_itself_002",
+   "question": "Can students do research with lecturers at OSTIM's Cezeri center, or is it just for staff?",
+   "similarities": [
+    0.6683,
+    0.5269,
+    0.641,
+    0.4184,
+    0.568
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_department_itself_003",
+   "question": "Are there people in OSTIM CENG working on language AI, like chatbots?",
+   "similarities": [
+    0.5219,
+    0.6487,
+    0.5377,
+    0.6136,
+    0.5392
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_department_itself_004",
+   "question": "Who in OSTIM CENG could I email about an interest in computer networks?",
+   "similarities": [
+    0.6602,
+    0.5882,
+    0.5779,
+    0.605,
+    0.5727
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_department_itself_005",
+   "question": "Roughly how many students would be in my first-year CENG class at OSTIM?",
+   "similarities": [
+    0.6376,
+    0.6272,
+    0.5288,
+    0.6197,
+    0.5222
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_department_itself_006",
+   "question": "Does OSTIM's English CENG degree have MUDEK or ABET accreditation?",
+   "similarities": [
+    0.7032,
+    0.6439,
+    0.6204,
+    0.672,
+    0.6125
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_department_itself_007",
+   "question": "How do I book a first appointment with OSTIM's KARPİEM career center?",
+   "similarities": [
+    0.564,
+    0.4691,
+    0.5269,
+    0.5317,
+    0.5256
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_department_itself_008",
+   "question": "What score would let me skip OSTIM's English prep school?",
+   "similarities": [
+    0.614,
+    0.3932,
+    0.6093,
+    0.3384,
+    0.607
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_department_itself_009",
+   "question": "Where are the CENG lecturers' offices at OSTIM if I want to go ask a question?",
+   "similarities": [
+    0.6084,
+    0.6691,
+    0.4014,
+    0.6221,
+    0.4115
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_department_itself_010",
+   "question": "If I come up with a product idea at OSTIM, is there somewhere on campus to turn it into a prototype?",
+   "similarities": [
+    0.5981,
+    0.5802,
+    0.5855,
+    0.5058,
+    0.605
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_academic_curriculum_001",
+   "question": "If I spend a year in English prep at OSTIM, does that use up one of the four degree years?",
+   "similarities": [
+    0.522,
+    0.5576,
+    0.6741,
+    0.3574,
+    0.6026
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_academic_curriculum_002",
+   "question": "At OSTIM, does doing a minor give me another degree like a double major does?",
+   "similarities": [
+    0.5253,
+    0.5698,
+    0.5758,
+    0.3796,
+    0.5252
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_academic_curriculum_003",
+   "question": "What GPA would I need to apply for a double major alongside OSTIM CENG?",
+   "similarities": [
+    0.7031,
+    0.7006,
+    0.7007,
+    0.5377,
+    0.5636
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_academic_curriculum_004",
+   "question": "Which minors can an OSTIM CENG student actually choose this year?",
+   "similarities": [
+    0.6648,
+    0.6112,
+    0.6518,
+    0.5879,
+    0.6722
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_academic_curriculum_005",
+   "question": "Do first-year students at OSTIM get physics lab sessions, or is physics all lectures?",
+   "similarities": [
+    0.5929,
+    0.4664,
+    0.5532,
+    0.4861,
+    0.547
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_academic_curriculum_006",
+   "question": "In OSTIM's networking class, would I learn how the internet's different layers work?",
+   "similarities": [
+    0.5843,
+    0.5725,
+    0.5713,
+    0.5397,
+    0.4369
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_academic_curriculum_007",
+   "question": "Would OSTIM teach us why programs freeze because of deadlocks?",
+   "similarities": [
+    0.5279,
+    0.4058,
+    0.4948,
+    0.3957,
+    0.4894
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_academic_curriculum_008",
+   "question": "Will I get any practice presenting technical ideas in OSTIM's Computer Networks class?",
+   "similarities": [
+    0.5439,
+    0.582,
+    0.552,
+    0.5407,
+    0.5435
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_academic_curriculum_009",
+   "question": "If I change a class after registering at OSTIM, do I need my advisor to approve it again?",
+   "similarities": [
+    0.5626,
+    0.5977,
+    0.3734,
+    0.3565,
+    0.5857
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_academic_curriculum_010",
+   "question": "What would a normal weekly English prep timetable at OSTIM look like?",
+   "similarities": [
+    0.6747,
+    0.539,
+    0.2719,
+    0.5661,
+    0.509
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_student_life_001",
+   "question": "Is there anywhere quiet to study at OSTIM when home is too noisy?",
+   "similarities": [
+    0.449,
+    0.5416,
+    0.3371,
+    0.5326,
+    0.434
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_student_life_002",
+   "question": "Could I use a library late at night at the Cezeri center?",
+   "similarities": [
+    0.4776,
+    0.5675,
+    0.3701,
+    0.4623,
+    0.3554
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_student_life_003",
+   "question": "Are there places to play basketball or work out at OSTIM between classes?",
+   "similarities": [
+    0.4976,
+    0.6381,
+    0.3353,
+    0.6278,
+    0.3545
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_student_life_004",
+   "question": "Do student clubs have their own spaces in the Cezeri center?",
+   "similarities": [
+    0.6543,
+    0.5941,
+    0.551,
+    0.6118,
+    0.5082
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_student_life_005",
+   "question": "What are the names of the coding and robotics clubs I could join at OSTIM?",
+   "similarities": [
+    0.5647,
+    0.3224,
+    0.5631,
+    0.3494,
+    0.5489
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_student_life_006",
+   "question": "Can a first-year CENG student use OSTIM computer labs after 7 pm?",
+   "similarities": [
+    0.6195,
+    0.6119,
+    0.6483,
+    0.5349,
+    0.6462
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_student_life_008",
+   "question": "If I get really homesick at OSTIM, how do I book a student counseling session?",
+   "similarities": [
+    0.5881,
+    0.3728,
+    0.5699,
+    0.3437,
+    0.5661
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_student_life_009",
+   "question": "Are there cafes or places to sit with friends on the OSTIM campus?",
+   "similarities": [
+    0.5096,
+    0.6502,
+    0.3812,
+    0.6125,
+    0.3909
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_student_life_010",
+   "question": "Does OSTIM have a first-year course to help us settle into university life?",
+   "similarities": [
+    0.6133,
+    0.6666,
+    0.5083,
+    0.4467,
+    0.6127
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_programming_001",
+   "question": "If I mess up a project, can Git help me get back an earlier version?",
+   "similarities": [
+    0.6526,
+    0.6182,
+    0.5903,
+    0.3591,
+    0.4942
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_programming_002",
+   "question": "What could I actually use terminal commands for besides looking like a hacker?",
+   "similarities": [
+    0.6104,
+    0.4649,
+    0.5168,
+    0.4971,
+    0.3676
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_programming_003",
+   "question": "When I stare at a coding task and have no clue where to start, what should I try first?",
+   "similarities": [
+    0.5735,
+    0.6132,
+    0.5511,
+    0.5011,
+    0.6309
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_programming_004",
+   "question": "My program seems to run, so why would I still bother writing tests?",
+   "similarities": [
+    0.5308,
+    0.5297,
+    0.5752,
+    0.5762,
+    0.5273
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_programming_005",
+   "question": "Will I get to learn SQL and build a database in OSTIM CENG?",
+   "similarities": [
+    0.6486,
+    0.603,
+    0.6774,
+    0.6217,
+    0.5065
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_programming_006",
+   "question": "Do OSTIM's object-oriented programming classes cover things like classes and inheritance?",
+   "similarities": [
+    0.5604,
+    0.4892,
+    0.5223,
+    0.5219,
+    0.4564
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_programming_007",
+   "question": "Could learning through a small game be a real way into programming, rather than just doing data exercises?",
+   "similarities": [
+    0.5794,
+    0.5067,
+    0.5146,
+    0.563,
+    0.5595
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_programming_008",
+   "question": "Will OSTIM's first programming course look at how efficient an algorithm is, not just whether it works?",
+   "similarities": [
+    0.678,
+    0.6579,
+    0.6439,
+    0.588,
+    0.582
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_programming_009",
+   "question": "What minimum laptop RAM does OSTIM officially recommend for first-year CENG?",
+   "similarities": [
+    0.6253,
+    0.6213,
+    0.6038,
+    0.6196,
+    0.6313
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_programming_010",
+   "question": "Which editor or IDE does OSTIM require us to install before the first programming class?",
+   "similarities": [
+    0.4439,
+    0.4756,
+    0.4229,
+    0.5508,
+    0.4965
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_specialization_areas_001",
+   "question": "Is working with an FPGA basically the same thing as programming an Arduino-type board?",
+   "similarities": [
+    0.7378,
+    0.6364,
+    0.6138,
+    0.6041,
+    0.5939
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_specialization_areas_002",
+   "question": "How would learning for cloud security differ from learning for embedded-device security?",
+   "similarities": [
+    0.515,
+    0.5182,
+    0.5215,
+    0.5261,
+    0.5569
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_specialization_areas_003",
+   "question": "Is cybersecurity mostly hacking websites, or are there other sides to it?",
+   "similarities": [
+    0.681,
+    0.6305,
+    0.6089,
+    0.615,
+    0.6276
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_specialization_areas_004",
+   "question": "If I like networks, does that mean I have to specialize in cybersecurity?",
+   "similarities": [
+    0.6557,
+    0.6276,
+    0.5919,
+    0.6058,
+    0.5998
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_specialization_areas_005",
+   "question": "What does a data scientist actually do with data before making a model?",
+   "similarities": [
+    0.635,
+    0.6002,
+    0.5361,
+    0.4511,
+    0.5889
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_specialization_areas_006",
+   "question": "Would FPGA work suit someone who likes digital circuits and making things run fast?",
+   "similarities": [
+    0.7245,
+    0.637,
+    0.6544,
+    0.5912,
+    0.58
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_specialization_areas_007",
+   "question": "I keep seeing IT and information systems degrees too; are they focused on different things?",
+   "similarities": [
+    0.6316,
+    0.6594,
+    0.6529,
+    0.5252,
+    0.5209
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_specialization_areas_008",
+   "question": "Can I mix interests like hardware and AI instead of sticking to only one specialization?",
+   "similarities": [
+    0.5735,
+    0.5303,
+    0.5504,
+    0.4655,
+    0.5685
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_specialization_areas_009",
+   "question": "Does OSTIM offer a hands-on FPGA elective every single year?",
+   "similarities": [
+    0.6623,
+    0.6481,
+    0.6216,
+    0.6283,
+    0.6055
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_specialization_areas_010",
+   "question": "Will an OSTIM diploma actually say cybersecurity if I choose security electives?",
+   "similarities": [
+    0.662,
+    0.6182,
+    0.5691,
+    0.5832,
+    0.5762
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_career_opportunities_001",
+   "question": "What would a hardware testing engineer do on a normal project?",
+   "similarities": [
+    0.7283,
+    0.6797,
+    0.6147,
+    0.6692,
+    0.6661
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_career_opportunities_002",
+   "question": "Are there software jobs where figuring out what users need is a big part of the work?",
+   "similarities": [
+    0.6411,
+    0.4439,
+    0.6206,
+    0.4272,
+    0.6168
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_career_opportunities_003",
+   "question": "For a cloud career, what basics should I understand before learning a specific company's platform?",
+   "similarities": [
+    0.6022,
+    0.4868,
+    0.54,
+    0.5353,
+    0.5253
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_career_opportunities_004",
+   "question": "Could a CENG graduate work on computers inside cars instead of desktop PCs?",
+   "similarities": [
+    0.6676,
+    0.5729,
+    0.6549,
+    0.4992,
+    0.5437
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_career_opportunities_005",
+   "question": "How does Cezeri support a student idea between the first sketch and starting a company?",
+   "similarities": [
+    0.5602,
+    0.412,
+    0.3454,
+    0.5351,
+    0.4553
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_career_opportunities_006",
+   "question": "Could computer engineering work involve testing systems for the defense industry?",
+   "similarities": [
+    0.6781,
+    0.6624,
+    0.6212,
+    0.6803,
+    0.7116
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_career_opportunities_007",
+   "question": "If I go into data work, would explaining results to people be part of my job too?",
+   "similarities": [
+    0.5797,
+    0.5846,
+    0.5627,
+    0.579,
+    0.5305
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_career_opportunities_008",
+   "question": "Would software engineers have to keep looking after a product after it launches?",
+   "similarities": [
+    0.5726,
+    0.5375,
+    0.574,
+    0.4516,
+    0.4366
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_career_opportunities_009",
+   "question": "Which companies hired OSTIM CENG's last graduating class?",
+   "similarities": [
+    0.6217,
+    0.5969,
+    0.6223,
+    0.5319,
+    0.6082
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_internships_001",
+   "question": "In OSTIM's published 2025-26 Erasmus internship call, how high did my GPA need to be?",
+   "similarities": [
+    0.7008,
+    0.6786,
+    0.6289,
+    0.612,
+    0.5506
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_internships_002",
+   "question": "In OSTIM's 2025-26 Erasmus call, did students have to find their own internship company?",
+   "similarities": [
+    0.6699,
+    0.631,
+    0.6365,
+    0.5964,
+    0.6937
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_internships_003",
+   "question": "Was a company acceptance letter compulsory when applying for OSTIM's 2025-26 Erasmus internship?",
+   "similarities": [
+    0.6745,
+    0.6489,
+    0.6653,
+    0.6458,
+    0.5445
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_internships_004",
+   "question": "For OSTIM's 2025-26 Erasmus internship grant, was all the money paid before students went abroad?",
+   "similarities": [
+    0.6145,
+    0.6605,
+    0.6153,
+    0.5707,
+    0.6699
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_internships_005",
+   "question": "Could a prep exemption exam result be used for OSTIM's 2025-26 Erasmus internship language requirement?",
+   "similarities": [
+    0.65,
+    0.6352,
+    0.6179,
+    0.6431,
+    0.5436
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_internships_006",
+   "question": "What paperwork does OSTIM list for recording workplace attendance and what my mentor thinks?",
+   "similarities": [
+    0.5149,
+    0.5812,
+    0.5291,
+    0.5729,
+    0.5042
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_internships_007",
+   "question": "In OSTIM's final workplace experience, would I be expected to develop a project with the company?",
+   "similarities": [
+    0.5876,
+    0.5583,
+    0.4591,
+    0.5338,
+    0.4343
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_internships_008",
+   "question": "Exactly how many compulsory summer internship days do OSTIM CENG students have to finish?",
+   "similarities": [
+    0.6399,
+    0.6142,
+    0.6536,
+    0.5921,
+    0.5973
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_internships_009",
+   "question": "Who pays my accident insurance during an OSTIM CENG internship?",
+   "similarities": [
+    0.6072,
+    0.6353,
+    0.5703,
+    0.6582,
+    0.5927
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_internships_010",
+   "question": "Can a fully remote internship count toward OSTIM CENG's compulsory internship?",
+   "similarities": [
+    0.6703,
+    0.6394,
+    0.5272,
+    0.6224,
+    0.523
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_graduate_studies_001",
+   "question": "Does OSTIM have an English CENG master's where you write a thesis?",
+   "similarities": [
+    0.7511,
+    0.6901,
+    0.6251,
+    0.5996,
+    0.5664
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_graduate_studies_002",
+   "question": "What would be different about a thesis master's compared with just taking more undergraduate classes?",
+   "similarities": [
+    0.5408,
+    0.5258,
+    0.5881,
+    0.5482,
+    0.4334
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_graduate_studies_003",
+   "question": "What's the difference between a research master's and a professional master's?",
+   "similarities": [
+    0.6809,
+    0.509,
+    0.513,
+    0.5313,
+    0.4833
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_graduate_studies_004",
+   "question": "Who could I talk to at university to figure out what courses would prepare me for grad school?",
+   "similarities": [
+    0.5509,
+    0.5451,
+    0.5436,
+    0.5105,
+    0.5184
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_graduate_studies_005",
+   "question": "If I might want to do research later, should I start reading papers while I'm still an undergrad?",
+   "similarities": [
+    0.595,
+    0.4612,
+    0.5818,
+    0.4496,
+    0.5815
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_graduate_studies_006",
+   "question": "Would OSTIM's CENG master's go deeper into networks than the bachelor's?",
+   "similarities": [
+    0.6712,
+    0.6509,
+    0.5319,
+    0.6186,
+    0.5723
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_graduate_studies_007",
+   "question": "What ALES score would I need for OSTIM's CENG master's?",
+   "similarities": [
+    0.6736,
+    0.6464,
+    0.5425,
+    0.6285,
+    0.5949
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_graduate_studies_008",
+   "question": "What IELTS or TOEFL score would OSTIM accept for its English CENG master's?",
+   "similarities": [
+    0.7127,
+    0.6722,
+    0.6302,
+    0.614,
+    0.5925
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_graduate_studies_009",
+   "question": "Could I get a paid research assistantship to cover an OSTIM CENG master's, and how much would it pay?",
+   "similarities": [
+    0.6511,
+    0.6213,
+    0.5976,
+    0.6357,
+    0.4513
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_graduate_studies_010",
+   "question": "Does OSTIM currently run a separate Computer Engineering PhD program?",
+   "similarities": [
+    0.6534,
+    0.5874,
+    0.5696,
+    0.5818,
+    0.5042
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_employment_prospects_001",
+   "question": "If I apply for a job in another European country, who can help explain whether my Turkish degree is recognized?",
+   "similarities": [
+    0.6222,
+    0.6178,
+    0.5471,
+    0.6023,
+    0.6011
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_employment_prospects_002",
+   "question": "Would I need to get my diploma or transcript translated before applying for work abroad?",
+   "similarities": [
+    0.6605,
+    0.6277,
+    0.6148,
+    0.5864,
+    0.6186
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_employment_prospects_003",
+   "question": "For the EU Blue Card, would my degree be enough or would I need a job offer too?",
+   "similarities": [
+    0.7532,
+    0.6963,
+    0.6733,
+    0.6059,
+    0.5885
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_employment_prospects_004",
+   "question": "How would I check if an engineering job abroad is a regulated profession before applying?",
+   "similarities": [
+    0.648,
+    0.5246,
+    0.5294,
+    0.5675,
+    0.547
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_employment_prospects_005",
+   "question": "Were Turkey's IT companies actually adding more workers in 2024?",
+   "similarities": [
+    0.6026,
+    0.6758,
+    0.6706,
+    0.4153,
+    0.6576
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_employment_prospects_006",
+   "question": "What do NQF and EQF levels mean when I'm trying to explain my degree to a European employer?",
+   "similarities": [
+    0.6644,
+    0.6249,
+    0.5399,
+    0.5557,
+    0.574
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_employment_prospects_007",
+   "question": "What percentage of OSTIM CENG graduates get a job within six months?",
+   "similarities": [
+    0.6282,
+    0.6468,
+    0.5946,
+    0.6767,
+    0.3992
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_employment_prospects_008",
+   "question": "What German-language level do employers in Germany usually ask new CENG graduates for?",
+   "similarities": [
+    0.6339,
+    0.6444,
+    0.6139,
+    0.6119,
+    0.5118
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_employment_prospects_009",
+   "question": "If I'm an international student, how much would a Turkish work permit cost after graduation?",
+   "similarities": [
+    0.5922,
+    0.5435,
+    0.5335,
+    0.5918,
+    0.5607
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_future_technologies_001",
+   "question": "When people say an app runs in the cloud, what does that actually mean?",
+   "similarities": [
+    0.6099,
+    0.3941,
+    0.5884,
+    0.4383,
+    0.4559
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_future_technologies_002",
+   "question": "Are SaaS, PaaS and IaaS three names for the same cloud thing?",
+   "similarities": [
+    0.4922,
+    0.4987,
+    0.4716,
+    0.4922,
+    0.4685
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_future_technologies_003",
+   "question": "Why would a smart thermostat need networking knowledge, not just code inside it?",
+   "similarities": [
+    0.5482,
+    0.5261,
+    0.361,
+    0.5222,
+    0.4784
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_future_technologies_004",
+   "question": "Why might an engineer use an FPGA instead of just running more software on a normal processor?",
+   "similarities": [
+    0.7512,
+    0.6567,
+    0.6452,
+    0.6915,
+    0.6129
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_future_technologies_005",
+   "question": "How could 5G help smart factories in Turkey?",
+   "similarities": [
+    0.7302,
+    0.6468,
+    0.5345,
+    0.6562,
+    0.5035
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_future_technologies_006",
+   "question": "Is quantum computing actually on the plan for OSTIM's New Trends class?",
+   "similarities": [
+    0.5693,
+    0.5216,
+    0.5557,
+    0.5129,
+    0.4519
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_future_technologies_007",
+   "question": "Does OSTIM's New Trends class cover microservices and CI/CD, or only futuristic ideas?",
+   "similarities": [
+    0.5222,
+    0.4927,
+    0.4801,
+    0.4171,
+    0.5048
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_future_technologies_008",
+   "question": "In the jobs report, why is keeping on learning such a big deal for tech students?",
+   "similarities": [
+    0.5897,
+    0.6227,
+    0.5362,
+    0.6056,
+    0.4913
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_future_technologies_009",
+   "question": "Does OSTIM have an actual quantum computer that undergrads can book time on?",
+   "similarities": [
+    0.5666,
+    0.5205,
+    0.5596,
+    0.5017,
+    0.5543
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_artificial_intelligence_001",
+   "question": "Why do AI courses keep talking about vectors and matrices?",
+   "similarities": [
+    0.5712,
+    0.5461,
+    0.5338,
+    0.5508,
+    0.4755
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_artificial_intelligence_002",
+   "question": "What would probability and statistics help me understand about an AI model?",
+   "similarities": [
+    0.6267,
+    0.6003,
+    0.5929,
+    0.5722,
+    0.5918
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_artificial_intelligence_003",
+   "question": "If an AI writes code that looks convincing, what parts still need my own judgment?",
+   "similarities": [
+    0.6327,
+    0.5587,
+    0.5595,
+    0.5892,
+    0.5536
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_artificial_intelligence_004",
+   "question": "Could I just get really good at prompts and skip learning how programs work?",
+   "similarities": [
+    0.5245,
+    0.4159,
+    0.5198,
+    0.3687,
+    0.5173
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_artificial_intelligence_005",
+   "question": "What would an AI or data project need to show besides a model with a good-looking score?",
+   "similarities": [
+    0.5517,
+    0.5785,
+    0.5928,
+    0.5621,
+    0.3683
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_artificial_intelligence_006",
+   "question": "Is there an AI and image-processing space at OSTIM's Cezeri center?",
+   "similarities": [
+    0.6314,
+    0.4934,
+    0.6263,
+    0.4083,
+    0.5452
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_artificial_intelligence_007",
+   "question": "If an AI gives me code, should I trust it just because it passes one benchmark?",
+   "similarities": [
+    0.6565,
+    0.5554,
+    0.573,
+    0.4793,
+    0.5684
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_artificial_intelligence_008",
+   "question": "I saw Python was GitHub's biggest language in 2024; does that mean other languages stopped mattering?",
+   "similarities": [
+    0.7127,
+    0.4963,
+    0.5116,
+    0.4279,
+    0.6016
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_artificial_intelligence_009",
+   "question": "What exactly is OSTIM's rule on using ChatGPT for programming homework?",
+   "similarities": [
+    0.5152,
+    0.4418,
+    0.5171,
+    0.4536,
+    0.3191
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_artificial_intelligence_010",
+   "question": "Do first-year OSTIM students get free GPU time for training their own models?",
+   "similarities": [
+    0.5686,
+    0.5544,
+    0.4002,
+    0.5519,
+    0.3094
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_common_concerns_001",
+   "question": "My family needs to budget now; what's the total tuition for OSTIM's English CENG next year?",
+   "similarities": [
+    0.6672,
+    0.6489,
+    0.6682,
+    0.6917,
+    0.6575
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_common_concerns_002",
+   "question": "I'm scared of losing my scholarship if my grades slip; what are OSTIM's renewal rules?",
+   "similarities": [
+    0.5536,
+    0.5871,
+    0.5419,
+    0.614,
+    0.3734
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_common_concerns_003",
+   "question": "If I fail OSTIM's English prep year, what exactly happens to my place on the degree?",
+   "similarities": [
+    0.6418,
+    0.5376,
+    0.6359,
+    0.4296,
+    0.6299
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_common_concerns_004",
+   "question": "I have dyslexia and timed exams worry me; what extra-time arrangements could I get at OSTIM?",
+   "similarities": [
+    0.623,
+    0.38,
+    0.6202,
+    0.3971,
+    0.557
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_common_concerns_005",
+   "question": "I can't afford a laptop straight away; does OSTIM lend students one?",
+   "similarities": [
+    0.5792,
+    0.5656,
+    0.59,
+    0.5038,
+    0.4922
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_common_concerns_006",
+   "question": "If I fall behind in coding lectures, is rewatching everything the best way to catch up?",
+   "similarities": [
+    0.6494,
+    0.5128,
+    0.5546,
+    0.5304,
+    0.5275
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_common_concerns_007",
+   "question": "I got good school maths marks by memorizing formulas; will that approach be enough for engineering classes?",
+   "similarities": [
+    0.5786,
+    0.5685,
+    0.559,
+    0.4651,
+    0.5168
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_common_concerns_008",
+   "question": "I'm shy about asking questions in a big lecture; could a tiny study group be a useful way to learn?",
+   "similarities": [
+    0.5233,
+    0.6451,
+    0.5152,
+    0.6358,
+    0.463
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_common_concerns_009",
+   "question": "If my first semester feels too much, can I ask my OSTIM advisor about taking fewer credits?",
+   "similarities": [
+    0.5465,
+    0.5111,
+    0.589,
+    0.4215,
+    0.5803
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_common_concerns_010",
+   "question": "I'm nervous about speaking English; do OSTIM's Academic English classes practice speaking and listening too?",
+   "similarities": [
+    0.5588,
+    0.6366,
+    0.4449,
+    0.5638,
+    0.5028
+   ]
+  },
+  {
+   "set": "retrieval_test",
+   "id": "department_001",
+   "question": "What is Computer Engineering at OSTIM Technical University?",
+   "similarities": [
+    0.6609,
+    0.6083,
+    0.6601,
+    0.6065,
+    0.5478
+   ]
+  },
+  {
+   "set": "retrieval_test",
+   "id": "programming_para_001",
+   "question": "Which coding languages are most useful for someone studying Computer Engineering?",
+   "similarities": [
+    0.5917,
+    0.6127,
+    0.6444,
+    0.6026,
+    0.6162
+   ]
+  },
+  {
+   "set": "retrieval_test",
+   "id": "math_001",
+   "question": "How important is mathematics in Computer Engineering courses?",
+   "similarities": [
+    0.7402,
+    0.7039,
+    0.6828,
+    0.5797,
+    0.6129
+   ]
+  },
+  {
+   "set": "retrieval_test",
+   "id": "employment_001",
+   "question": "Is Computer Engineering still a good career choice?",
+   "similarities": [
+    0.6337,
+    0.5945,
+    0.5728,
+    0.5593,
+    0.5592
+   ]
+  },
+  {
+   "set": "retrieval_test",
+   "id": "cybersecurity_002",
+   "question": "What cybersecurity careers can a Computer Engineering graduate do?",
+   "similarities": [
+    0.7253,
+    0.6725,
+    0.7701,
+    0.572,
+    0.7169
+   ]
+  },
+  {
+   "set": "retrieval_test",
+   "id": "internships_001",
+   "question": "How important are internships for Computer Engineering students?",
+   "similarities": [
+    0.6263,
+    0.6426,
+    0.598,
+    0.6404,
+    0.6218
+   ]
+  },
+  {
+   "set": "retrieval_test",
+   "id": "skills_001",
+   "question": "What technical skills should Computer Engineering students develop?",
+   "similarities": [
+    0.6829,
+    0.6848,
+    0.679,
+    0.6323,
+    0.6071
+   ]
+  },
+  {
+   "set": "retrieval_test",
+   "id": "graduate_001",
+   "question": "Is a master's degree necessary after Computer Engineering?",
+   "similarities": [
+    0.6471,
+    0.5632,
+    0.6554,
+    0.5797,
+    0.6511
+   ]
+  },
+  {
+   "set": "retrieval_test",
+   "id": "specializations_001",
+   "question": "Which specialization can I choose in Computer Engineering?",
+   "similarities": [
+    0.7006,
+    0.662,
+    0.6345,
+    0.6507,
+    0.6434
+   ]
+  },
+  {
+   "set": "retrieval_test",
+   "id": "future_001",
+   "question": "Which future technologies are important for Computer Engineering students?",
+   "similarities": [
+    0.6899,
+    0.6188,
+    0.6202,
+    0.6774,
+    0.6114
+   ]
+  },
+  {
+   "set": "retrieval_test",
+   "id": "remote_001",
+   "question": "Can Computer Engineers work remotely?",
+   "similarities": [
+    0.5457,
+    0.6142,
+    0.6444,
+    0.4994,
+    0.6436
+   ]
+  },
+  {
+   "set": "retrieval_test",
+   "id": "entrepreneurship_001",
+   "question": "Can a Computer Engineering graduate start a technology company?",
+   "similarities": [
+    0.5575,
+    0.5378,
+    0.5165,
+    0.5324,
+    0.498
+   ]
+  },
+  {
+   "set": "retrieval_test",
+   "id": "work_life_001",
+   "question": "What is work-life balance like for software and Computer Engineering careers?",
+   "similarities": [
+    0.5956,
+    0.6348,
+    0.5472,
+    0.6256,
+    0.5463
+   ]
+  },
+  {
+   "set": "retrieval_test",
+   "id": "misconceptions_001",
+   "question": "Do I need to be a math genius to study Computer Engineering?",
+   "similarities": [
+    0.6184,
+    0.6483,
+    0.5364,
+    0.6393,
+    0.5941
+   ]
+  },
+  {
+   "set": "retrieval_test",
+   "id": "multi_001",
+   "question": "Should I focus more on GPA, projects, or internships when preparing for a software career?",
+   "similarities": [
+    0.6723,
+    0.6851,
+    0.6846,
+    0.6072,
+    0.5708
+   ]
+  },
+  {
+   "set": "rag_test",
+   "id": "programming_paraphrase",
+   "question": "Which coding languages are useful for someone studying Computer Engineering?",
+   "similarities": [
+    0.5924,
+    0.6157,
+    0.6538,
+    0.6204,
+    0.597
+   ]
+  },
+  {
+   "set": "comprehensive",
+   "id": "p001",
+   "question": "Could you explain CENG in simple terms for a high-school student?",
+   "similarities": [
+    0.7361,
+    0.7655,
+    0.685,
+    0.6531,
+    0.781
+   ]
+  },
+  {
+   "set": "comprehensive",
+   "id": "p002",
+   "question": "What will I actually learn semester by semester in OSTIM Computer Engineering?",
+   "similarities": [
+    0.616,
+    0.5525,
+    0.6338,
+    0.4972,
+    0.6337
+   ]
+  },
+  {
+   "set": "comprehensive",
+   "id": "p003",
+   "question": "I have never coded before. Am I already behind if I choose this department?",
+   "similarities": [
+    0.6328,
+    0.6197,
+    0.6144,
+    0.579,
+    0.61
+   ]
+  },
+  {
+   "set": "comprehensive",
+   "id": "p004",
+   "question": "Is the major mostly coding, electronics, or a mixture of both?",
+   "similarities": [
+    0.7301,
+    0.6953,
+    0.7077,
+    0.6089,
+    0.6947
+   ]
+  },
+  {
+   "set": "comprehensive",
+   "id": "p005",
+   "question": "How much calculus, discrete mathematics, and statistics should I expect?",
+   "similarities": [
+    0.663,
+    0.6347,
+    0.6251,
+    0.6057,
+    0.561
+   ]
+  },
+  {
+   "set": "comprehensive",
+   "id": "p006",
+   "question": "Which student projects would help me show employers that I can build real systems?",
+   "similarities": [
+    0.5711,
+    0.5794,
+    0.5898,
+    0.558,
+    0.5254
+   ]
+  },
+  {
+   "set": "comprehensive",
+   "id": "p008",
+   "question": "What careers can combine cybersecurity with a computer engineering background?",
+   "similarities": [
+    0.6883,
+    0.6535,
+    0.7314,
+    0.5608,
+    0.682
+   ]
+  },
+  {
+   "set": "comprehensive",
+   "id": "p009",
+   "question": "Can I get my first internship if my CV is mostly course projects?",
+   "similarities": [
+    0.6141,
+    0.6169,
+    0.6602,
+    0.5964,
+    0.6132
+   ]
+  },
+  {
+   "set": "comprehensive",
+   "id": "p015",
+   "question": "What if I like hardware and embedded systems more than websites and apps?",
+   "similarities": [
+    0.5336,
+    0.5831,
+    0.4879,
+    0.5634,
+    0.4732
+   ]
+  },
+  {
+   "set": "comprehensive",
+   "id": "p016",
+   "question": "Is startup entrepreneurship realistic after finishing a computer engineering degree?",
+   "similarities": [
+    0.5994,
+    0.5888,
+    0.463,
+    0.6276,
+    0.5068
+   ]
+  },
+  {
+   "set": "comprehensive",
+   "id": "p017",
+   "question": "How should I choose between AI, cybersecurity, embedded systems, and software development?",
+   "similarities": [
+    0.653,
+    0.6349,
+    0.6738,
+    0.6428,
+    0.6436
+   ]
+  },
+  {
+   "set": "comprehensive",
+   "id": "p020",
+   "question": "When should I choose a master's degree instead of going straight into industry?",
+   "similarities": [
+    0.6277,
+    0.6129,
+    0.5713,
+    0.6592,
+    0.5226
+   ]
+  }
+ ],
+ "new_refuse_set": [
+  {
+   "set": "full_200",
+   "id": "R110",
+   "question": "Which specialization pays the most in Turkey?",
+   "similarities": [
+    0.6037,
+    0.6239,
+    0.6765,
+    0.6761,
+    0.5097
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "R111",
+   "question": "What is starting salary for OSTIM CENG graduates?",
+   "similarities": [
+    0.658,
+    0.6138,
+    0.6607,
+    0.4221,
+    0.6055
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "S130",
+   "question": "What is the attendance rule for CENG courses?",
+   "similarities": [
+    0.668,
+    0.6202,
+    0.6533,
+    0.5921,
+    0.6465
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "S131",
+   "question": "What is the exact 2026 tuition fee?",
+   "similarities": [
+    0.5705,
+    0.3708,
+    0.5419,
+    0.2776,
+    0.531
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "S138",
+   "question": "Can I ask about scholarship opportunities?",
+   "similarities": [
+    0.5771,
+    0.6184,
+    0.3827,
+    0.6158,
+    0.4253
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "U153",
+   "question": "What is the exact job placement rate of OSTIM CENG graduates in 2026?",
+   "similarities": [
+    0.6065,
+    0.6652,
+    0.573,
+    0.6768,
+    0.5431
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "U154",
+   "question": "Which professor is the easiest grader?",
+   "similarities": [
+    0.5443,
+    0.5015,
+    0.5671,
+    0.5689,
+    0.578
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "U155",
+   "question": "Give me the private phone number of the department chair.",
+   "similarities": [
+    0.5229,
+    0.4099,
+    0.5216,
+    0.4642,
+    0.5558
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "U156",
+   "question": "What is the guaranteed salary if I graduate first in class?",
+   "similarities": [
+    0.6945,
+    0.5915,
+    0.5726,
+    0.6437,
+    0.5167
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "U157",
+   "question": "Which company will hire me after graduation?",
+   "similarities": [
+    0.6006,
+    0.5715,
+    0.6167,
+    0.5176,
+    0.5463
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "U158",
+   "question": "Predict whether I personally will succeed in CENG.",
+   "similarities": [
+    0.6842,
+    0.6171,
+    0.6724,
+    0.6316,
+    0.6677
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "U159",
+   "question": "What exact questions will be on CENG 303 final exam?",
+   "similarities": [
+    0.6466,
+    0.6897,
+    0.6172,
+    0.6561,
+    0.6231
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "U160",
+   "question": "Can you write my internship report for me?",
+   "similarities": [
+    0.5695,
+    0.5532,
+    0.54,
+    0.5103,
+    0.5226
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "U161",
+   "question": "Tell me the current exchange rate for tuition payment.",
+   "similarities": [
+    0.6841,
+    0.5862,
+    0.6733,
+    0.5846,
+    0.4987
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "U162",
+   "question": "What is the best laptop deal today?",
+   "similarities": [
+    0.4889,
+    0.4029,
+    0.4654,
+    0.4513,
+    0.4668
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "U163",
+   "question": "Give me a list of all 2027 CENG exam dates.",
+   "similarities": [
+    0.6437,
+    0.6481,
+    0.5793,
+    0.5127,
+    0.6559
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "U164",
+   "question": "What GPA do I need to guarantee a Google internship?",
+   "similarities": [
+    0.6757,
+    0.6892,
+    0.615,
+    0.6042,
+    0.5595
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "U165",
+   "question": "Can you promise I will get a remote job after this degree?",
+   "similarities": [
+    0.5696,
+    0.6015,
+    0.5406,
+    0.5604,
+    0.5597
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "O166",
+   "question": "How do I bake sourdough bread?",
+   "similarities": [
+    0.4267,
+    0.313,
+    0.3958,
+    0.3931,
+    0.3836
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "O167",
+   "question": "Who won the football match yesterday?",
+   "similarities": [
+    0.3881,
+    0.3927,
+    0.2953,
+    0.3902,
+    0.2597
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "O168",
+   "question": "Write a love poem in Spanish.",
+   "similarities": [
+    0.3839,
+    0.4247,
+    0.3093,
+    0.4224,
+    0.3062
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "O169",
+   "question": "What is the capital of Australia?",
+   "similarities": [
+    0.4409,
+    0.312,
+    0.4394,
+    0.3139,
+    0.4343
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "O170",
+   "question": "Can you diagnose my chest pain?",
+   "similarities": [
+    0.441,
+    0.4252,
+    0.4206,
+    0.4125,
+    0.4123
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "O171",
+   "question": "What stocks should I buy today?",
+   "similarities": [
+    0.507,
+    0.4137,
+    0.4996,
+    0.4129,
+    0.4985
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "O172",
+   "question": "Plan a seven-day beach vacation.",
+   "similarities": [
+    0.4875,
+    0.3918,
+    0.4726,
+    0.4316,
+    0.4722
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "O173",
+   "question": "Translate this legal contract.",
+   "similarities": [
+    0.585,
+    0.4553,
+    0.5517,
+    0.4131,
+    0.5084
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "O174",
+   "question": "Make a workout plan for bodybuilding.",
+   "similarities": [
+    0.5306,
+    0.341,
+    0.5212,
+    0.379,
+    0.508
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "O175",
+   "question": "What is the weather tomorrow?",
+   "similarities": [
+    0.5539,
+    0.486,
+    0.5082,
+    0.4203,
+    0.4136
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "O176",
+   "question": "Summarize the latest NBA game.",
+   "similarities": [
+    0.4708,
+    0.3345,
+    0.4581,
+    0.334,
+    0.4521
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "O177",
+   "question": "Find me cheap flights to Berlin.",
+   "similarities": [
+    0.4809,
+    0.3365,
+    0.48,
+    0.3763,
+    0.4721
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "O178",
+   "question": "Give me a recipe for Turkish coffee.",
+   "similarities": [
+    0.4906,
+    0.456,
+    0.4846,
+    0.5122,
+    0.4041
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_student_life_007",
+   "question": "How much would a student dorm near OSTIM cost me each month?",
+   "similarities": [
+    0.6478,
+    0.4959,
+    0.5953,
+    0.4485,
+    0.5877
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_career_opportunities_010",
+   "question": "Does OSTIM have a signed agreement that guarantees every CENG student a job offer?",
+   "similarities": [
+    0.6467,
+    0.5978,
+    0.6477,
+    0.6572,
+    0.5532
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_employment_prospects_010",
+   "question": "How many junior software or hardware vacancies are there in Ankara right now?",
+   "similarities": [
+    0.5719,
+    0.4384,
+    0.5454,
+    0.5166,
+    0.6063
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_future_technologies_010",
+   "question": "If I start learning now, which programming language is going to be the main one for engineers in 2035?",
+   "similarities": [
+    0.5356,
+    0.5576,
+    0.4678,
+    0.5432,
+    0.4328
+   ]
+  },
+  {
+   "set": "retrieval_test",
+   "id": "unrelated_001",
+   "question": "What is the best recipe for chocolate cake?",
+   "similarities": [
+    0.3967,
+    0.2471,
+    0.3951,
+    0.2669,
+    0.3871
+   ]
+  },
+  {
+   "set": "retrieval_test",
+   "id": "unrelated_003",
+   "question": "How do I repair a washing machine?",
+   "similarities": [
+    0.4823,
+    0.3773,
+    0.4738,
+    0.3692,
+    0.4655
+   ]
+  },
+  {
+   "set": "rag_test",
+   "id": "unsupported_in_domain",
+   "question": "What is the exact 2026 tuition fee for OSTIM Technical University Computer Engineering?",
+   "similarities": [
+    0.5675,
+    0.5834,
+    0.5568,
+    0.7378,
+    0.6762
+   ]
+  },
+  {
+   "set": "rag_test",
+   "id": "out_of_scope_cake",
+   "question": "What is the best chocolate cake recipe?",
+   "similarities": [
+    0.3876,
+    0.3905,
+    0.2427,
+    0.2554,
+    0.383
+   ]
+  }
+ ],
+ "old_refuse_set": [
+  {
+   "set": "full_200",
+   "id": "R110",
+   "question": "Which specialization pays the most in Turkey?",
+   "similarities": [
+    0.651,
+    0.625,
+    0.5815,
+    0.5599,
+    0.5364
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "R111",
+   "question": "What is starting salary for OSTIM CENG graduates?",
+   "similarities": [
+    0.5459,
+    0.5382,
+    0.4832,
+    0.4523,
+    0.5791
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "S130",
+   "question": "What is the attendance rule for CENG courses?",
+   "similarities": [
+    0.6199,
+    0.6181,
+    0.6151,
+    0.5717,
+    0.536
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "S131",
+   "question": "What is the exact 2026 tuition fee?",
+   "similarities": [
+    0.4658,
+    0.425,
+    0.3815,
+    0.3645,
+    0.3513
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "S138",
+   "question": "Can I ask about scholarship opportunities?",
+   "similarities": [
+    0.4643,
+    0.3791,
+    0.3722,
+    0.3691,
+    0.3576
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "U153",
+   "question": "What is the exact job placement rate of OSTIM CENG graduates in 2026?",
+   "similarities": [
+    0.5999,
+    0.5987,
+    0.5111,
+    0.5389,
+    0.5663
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "U154",
+   "question": "Which professor is the easiest grader?",
+   "similarities": [
+    0.5044,
+    0.5555,
+    0.4207,
+    0.3958,
+    0.4181
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "U155",
+   "question": "Give me the private phone number of the department chair.",
+   "similarities": [
+    0.2265,
+    0.1996,
+    0.1931,
+    0.1906,
+    0.2343
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "U156",
+   "question": "What is the guaranteed salary if I graduate first in class?",
+   "similarities": [
+    0.4958,
+    0.4827,
+    0.3979,
+    0.4445,
+    0.4411
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "U157",
+   "question": "Which company will hire me after graduation?",
+   "similarities": [
+    0.4432,
+    0.425,
+    0.4086,
+    0.403,
+    0.4013
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "U158",
+   "question": "Predict whether I personally will succeed in CENG.",
+   "similarities": [
+    0.6284,
+    0.609,
+    0.5849,
+    0.5651,
+    0.5596
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "U159",
+   "question": "What exact questions will be on CENG 303 final exam?",
+   "similarities": [
+    0.6098,
+    0.5946,
+    0.5856,
+    0.5795,
+    0.5217
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "U160",
+   "question": "Can you write my internship report for me?",
+   "similarities": [
+    0.4295,
+    0.404,
+    0.3739,
+    0.3721,
+    0.3685
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "U161",
+   "question": "Tell me the current exchange rate for tuition payment.",
+   "similarities": [
+    0.5191,
+    0.4731,
+    0.4484,
+    0.4414,
+    0.438
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "U162",
+   "question": "What is the best laptop deal today?",
+   "similarities": [
+    0.3715,
+    0.344,
+    0.3356,
+    0.3223,
+    0.318
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "U163",
+   "question": "Give me a list of all 2027 CENG exam dates.",
+   "similarities": [
+    0.6108,
+    0.5967,
+    0.5907,
+    0.5885,
+    0.5489
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "U164",
+   "question": "What GPA do I need to guarantee a Google internship?",
+   "similarities": [
+    0.4576,
+    0.386,
+    0.3794,
+    0.3598,
+    0.3694
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "U165",
+   "question": "Can you promise I will get a remote job after this degree?",
+   "similarities": [
+    0.4691,
+    0.4396,
+    0.4319,
+    0.4058,
+    0.3995
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "O166",
+   "question": "How do I bake sourdough bread?",
+   "similarities": [
+    0.1955,
+    0.1753,
+    0.1633,
+    0.1352,
+    0.131
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "O167",
+   "question": "Who won the football match yesterday?",
+   "similarities": [
+    0.2537,
+    0.1987,
+    0.1967,
+    0.1955,
+    0.1896
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "O168",
+   "question": "Write a love poem in Spanish.",
+   "similarities": [
+    0.2303,
+    0.2233,
+    0.1815,
+    0.1782,
+    0.1782
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "O169",
+   "question": "What is the capital of Australia?",
+   "similarities": [
+    0.2742,
+    0.2728,
+    0.2566,
+    0.2554,
+    0.241
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "O170",
+   "question": "Can you diagnose my chest pain?",
+   "similarities": [
+    0.1425,
+    0.1025,
+    0.0907,
+    0.0805,
+    0.0765
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "O171",
+   "question": "What stocks should I buy today?",
+   "similarities": [
+    0.2458,
+    0.2368,
+    0.2361,
+    0.2313,
+    0.2262
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "O172",
+   "question": "Plan a seven-day beach vacation.",
+   "similarities": [
+    0.1962,
+    0.1924,
+    0.1922,
+    0.1782,
+    0.1662
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "O173",
+   "question": "Translate this legal contract.",
+   "similarities": [
+    0.3111,
+    0.2782,
+    0.2672,
+    0.2662,
+    0.2496
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "O174",
+   "question": "Make a workout plan for bodybuilding.",
+   "similarities": [
+    0.3075,
+    0.2775,
+    0.2611,
+    0.2326,
+    0.2298
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "O175",
+   "question": "What is the weather tomorrow?",
+   "similarities": [
+    0.2333,
+    0.2135,
+    0.2128,
+    0.2075,
+    0.1924
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "O176",
+   "question": "Summarize the latest NBA game.",
+   "similarities": [
+    0.2236,
+    0.2034,
+    0.1787,
+    0.1751,
+    0.1743
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "O177",
+   "question": "Find me cheap flights to Berlin.",
+   "similarities": [
+    0.2784,
+    0.2444,
+    0.2275,
+    0.2184,
+    0.2242
+   ]
+  },
+  {
+   "set": "full_200",
+   "id": "O178",
+   "question": "Give me a recipe for Turkish coffee.",
+   "similarities": [
+    0.4123,
+    0.358,
+    0.3433,
+    0.3153,
+    0.293
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_student_life_007",
+   "question": "How much would a student dorm near OSTIM cost me each month?",
+   "similarities": [
+    0.3764,
+    0.3818,
+    0.278,
+    0.2761,
+    0.3228
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_career_opportunities_010",
+   "question": "Does OSTIM have a signed agreement that guarantees every CENG student a job offer?",
+   "similarities": [
+    0.5596,
+    0.5927,
+    0.5095,
+    0.4982,
+    0.5242
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_employment_prospects_010",
+   "question": "How many junior software or hardware vacancies are there in Ankara right now?",
+   "similarities": [
+    0.4907,
+    0.5459,
+    0.4575,
+    0.435,
+    0.5071
+   ]
+  },
+  {
+   "set": "unseen",
+   "id": "unseen_future_technologies_010",
+   "question": "If I start learning now, which programming language is going to be the main one for engineers in 2035?",
+   "similarities": [
+    0.5094,
+    0.4884,
+    0.5478,
+    0.4688,
+    0.4642
+   ]
+  },
+  {
+   "set": "retrieval_test",
+   "id": "unrelated_001",
+   "question": "What is the best recipe for chocolate cake?",
+   "similarities": [
+    0.2097,
+    0.176,
+    0.1665,
+    0.1646,
+    0.1518
+   ]
+  },
+  {
+   "set": "retrieval_test",
+   "id": "unrelated_003",
+   "question": "How do I repair a washing machine?",
+   "similarities": [
+    0.1647,
+    0.1371,
+    0.1335,
+    0.1311,
+    0.1149
+   ]
+  },
+  {
+   "set": "rag_test",
+   "id": "unsupported_in_domain",
+   "question": "What is the exact 2026 tuition fee for OSTIM Technical University Computer Engineering?",
+   "similarities": [
+    0.5533,
+    0.5626,
+    0.434,
+    0.4021,
+    0.4486
+   ]
+  },
+  {
+   "set": "rag_test",
+   "id": "out_of_scope_cake",
+   "question": "What is the best chocolate cake recipe?",
+   "similarities": [
+    0.2116,
+    0.185,
+    0.1796,
+    0.1737,
+    0.1576
+   ]
+  }
+ ]
+}

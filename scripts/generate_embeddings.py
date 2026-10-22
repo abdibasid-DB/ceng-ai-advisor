@@ -28,8 +28,10 @@ CHUNKS_PATH = PROJECT_ROOT / "knowledge_base" / "chunks" / "chunks.jsonl"
 CHUNKING_MANIFEST_PATH = PROJECT_ROOT / "knowledge_base" / "chunks" / "chunking_manifest.json"
 OUTPUT_DIR = PROJECT_ROOT / "knowledge_base" / "embeddings"
 
-MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
-BATCH_SIZE = 32
+MODEL_NAME = "BAAI/bge-m3"
+MAX_SEQ_LENGTH = 512
+# bge-m3 (568M parameters) uses small batches to stay within laptop RAM.
+BATCH_SIZE = 8
 NORMALIZE_EMBEDDINGS = True
 SIMILARITY_METRIC = "cosine"
 
@@ -107,6 +109,13 @@ def main() -> None:
     parser.add_argument("--model", default=MODEL_NAME, help="Sentence Transformers model name.")
     parser.add_argument("--batch-size", type=int, default=BATCH_SIZE, help="Batch size for local encoding.")
     parser.add_argument("--output-dir", type=Path, default=OUTPUT_DIR, help="Embedding artifact output directory.")
+    parser.add_argument(
+        "--reuse",
+        nargs=2,
+        type=Path,
+        metavar=("CHUNKS_JSONL", "EMBEDDINGS_NPY"),
+        help="Reuse embeddings computed earlier with the same model, if their chunk IDs and texts match chunks.jsonl exactly.",
+    )
     args = parser.parse_args()
 
     chunks = load_chunks(CHUNKS_PATH)
@@ -114,19 +123,29 @@ def main() -> None:
     texts = [chunk["text"] for chunk in chunks]
 
     start_time = time.perf_counter()
-    model = SentenceTransformer(args.model)
-    embeddings = model.encode(
-        texts,
-        batch_size=args.batch_size,
-        normalize_embeddings=NORMALIZE_EMBEDDINGS,
-        convert_to_numpy=True,
-        show_progress_bar=True,
-    )
+    reused_from = None
+    if args.reuse:
+        reuse_chunks = load_chunks(args.reuse[0])
+        if [(c["chunk_id"], c["text"]) for c in reuse_chunks] != [(c["chunk_id"], c["text"]) for c in chunks]:
+            raise SystemExit(f"{args.reuse[0]} does not match {CHUNKS_PATH}; embeddings cannot be reused.")
+        embeddings = np.load(args.reuse[1])
+        reused_from = [str(path).replace("\\", "/") for path in args.reuse]
+        device = "reused"
+    else:
+        model = SentenceTransformer(args.model)
+        model.max_seq_length = MAX_SEQ_LENGTH
+        embeddings = model.encode(
+            texts,
+            batch_size=args.batch_size,
+            normalize_embeddings=NORMALIZE_EMBEDDINGS,
+            convert_to_numpy=True,
+            show_progress_bar=True,
+        )
+        device = str(getattr(model, "device", "unknown"))
     elapsed_seconds = round(time.perf_counter() - start_time, 2)
     embeddings = embeddings.astype(np.float32, copy=False)
 
     validation = validate_embeddings(embeddings, chunks)
-    device = str(getattr(model, "device", "unknown"))
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
     embeddings_path = args.output_dir / "embeddings.npy"
@@ -144,6 +163,8 @@ def main() -> None:
         "model_provider_repository": "Hugging Face / Sentence Transformers",
         "model_type": "sentence-transformers dense embedding model",
         "embedding_dimension": validation["embedding_dimension"],
+        "max_seq_length": MAX_SEQ_LENGTH,
+        "reused_from": reused_from,
         "total_chunks": len(chunks),
         "total_embeddings": validation["total_embeddings"],
         "normalization_setting": NORMALIZE_EMBEDDINGS,

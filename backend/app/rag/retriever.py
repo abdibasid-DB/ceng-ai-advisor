@@ -1,6 +1,7 @@
 """Reusable retrieval layer for local ChromaDB evidence search.
 
-Stage 13 only: this module retrieves source chunks. It does not generate final
+Stage 13 only: this module retrieves source chunks (bge-m3 vectors from ChromaDB
+fused with BM25 by reciprocal rank fusion). It does not generate final
 answers, construct RAG prompts, call Ollama, or implement chatbot behavior.
 """
 
@@ -8,6 +9,8 @@ from __future__ import annotations
 
 import json
 import os
+import re
+import unicodedata
 from dataclasses import dataclass
 from pathlib import Path
 from typing import TYPE_CHECKING, Any
@@ -16,29 +19,57 @@ os.environ.setdefault("HF_HUB_OFFLINE", "1")
 os.environ.setdefault("TRANSFORMERS_OFFLINE", "1")
 
 import chromadb
+import numpy as np
 
 if TYPE_CHECKING:
     from sentence_transformers import SentenceTransformer
 
 from ..core.retrieval_config import (
+    BM25_CANDIDATES,
     CANDIDATE_TOP_K,
     CATEGORY_BOOST,
     CATEGORY_CANDIDATES_PER_CATEGORY,
     CHROMA_PATH,
+    CHUNKS_PATH,
     COLLECTION_NAME,
     DEFAULT_TOP_K,
     EMBEDDING_DIMENSION,
+    EMBEDDING_MAX_SEQ_LENGTH,
     EMBEDDING_MODEL_NAME,
+    EMBEDDINGS_PATH,
+    HYBRID_SEARCH_ENABLED,
     MAX_RESULTS_PER_SOURCE,
     MIN_RESULTS_ABOVE_THRESHOLD,
     MIN_SIMILARITY_THRESHOLD,
     OFFICIAL_SOURCE_BOOST,
+    RRF_K,
     TITLE_KEYWORD_BOOST,
     VECTOR_STORE_MANIFEST_PATH,
 )
 
 
+BM25_STOPWORDS = set(
+    "a an and are as at be but by can do does for from how i if in into is it its me my of on or our should so than "
+    "that the their them there these they this to was we what when where which who why will with would you your".split()
+)
+
 EXCLUDED_SOURCE_IDS = {"src_019", "src_021", "src_022", "src_023", "src_024", "src_027", "src_046"}
+
+CHUNK_METADATA_FIELDS = (
+    "source_id",
+    "chunk_index",
+    "title",
+    "source_name",
+    "source_type",
+    "url",
+    "publication_date",
+    "category",
+    "language",
+    "processed_file_path",
+    "section_heading",
+    "word_count",
+    "character_count",
+)
 
 QUERY_EXPANSION_RULES: tuple[tuple[tuple[str, ...], str], ...] = (
     (
@@ -185,6 +216,9 @@ class Retriever:
         chroma_path: Path = CHROMA_PATH,
         collection_name: str = COLLECTION_NAME,
         model_name: str = EMBEDDING_MODEL_NAME,
+        hybrid: bool = HYBRID_SEARCH_ENABLED,
+        chunks_path: Path = CHUNKS_PATH,
+        embeddings_path: Path = EMBEDDINGS_PATH,
     ) -> None:
         self.chroma_path = chroma_path
         self.collection_name = collection_name
@@ -192,6 +226,12 @@ class Retriever:
         self._model: SentenceTransformer | None = None
         self._client = chromadb.PersistentClient(path=str(self.chroma_path))
         self._collection = self._client.get_collection(self.collection_name)
+        self.hybrid = hybrid
+        self.chunks_path = chunks_path
+        self.embeddings_path = embeddings_path
+        self._bm25: Any = None
+        self._hybrid_chunks: list[dict[str, Any]] = []
+        self._hybrid_embeddings: Any = None
 
     @property
     def collection_count(self) -> int:
@@ -206,7 +246,23 @@ class Retriever:
             from sentence_transformers import SentenceTransformer
 
             self._model = SentenceTransformer(self.model_name)
+            self._model.max_seq_length = EMBEDDING_MAX_SEQ_LENGTH
         return self._model
+
+    def get_bm25(self) -> Any:
+        """BM25 index over the same chunks as the vector store, built on first use."""
+        if self._bm25 is None:
+            from rank_bm25 import BM25Okapi
+
+            with self.chunks_path.open("r", encoding="utf-8") as file:
+                chunks = [json.loads(line) for line in file if line.strip()]
+            # Same deterministic order as scripts/generate_embeddings.py, so row i of embeddings.npy is chunk i.
+            self._hybrid_chunks = sorted(chunks, key=lambda item: (item["source_id"], item["chunk_index"], item["chunk_id"]))
+            self._hybrid_embeddings = np.load(self.embeddings_path)
+            if len(self._hybrid_chunks) != len(self._hybrid_embeddings):
+                raise ValueError(f"{self.chunks_path} and {self.embeddings_path} have different lengths.")
+            self._bm25 = BM25Okapi([bm25_tokens(chunk["text"]) for chunk in self._hybrid_chunks])
+        return self._bm25
 
     def encode_query(self, query: str) -> list[float]:
         cleaned = self._clean_query(query)
@@ -254,6 +310,8 @@ class Retriever:
         candidates.extend(self._category_supplemental_candidates(query_embedding, profile))
         candidates = deduplicate_candidates(candidates)
         reranked = rerank_candidates(candidates, profile)
+        if self.hybrid:
+            reranked = self._fuse_with_bm25(reranked, expanded_query, query_embedding)
         selected = diversify_results(reranked, top_k=top_k)
         selected = [dict(result, rank=index) for index, result in enumerate(selected, start=1)]
 
@@ -266,6 +324,7 @@ class Retriever:
             "retrieval_query": expanded_query,
             "top_k": top_k,
             "candidate_top_k": candidate_top_k,
+            "hybrid_search": self.hybrid,
             "similarity_threshold": MIN_SIMILARITY_THRESHOLD,
             "results_above_threshold": above_threshold,
             "top_similarity_score": top_similarity,
@@ -273,6 +332,47 @@ class Retriever:
             "out_of_scope": not evidence_sufficient,
             "results": selected,
         }
+
+    def _fuse_with_bm25(
+        self, vector_ranked: list[dict[str, Any]], expanded_query: str, query_embedding: list[float]
+    ) -> list[dict[str, Any]]:
+        """Reciprocal rank fusion of the reranked vector candidates and the top BM25 chunks."""
+        bm25 = self.get_bm25()
+        scores = bm25.get_scores(bm25_tokens(expanded_query))
+        bm25_indices = [int(index) for index in np.argsort(-scores)[:BM25_CANDIDATES] if scores[index] > 0]
+        query_vector = np.asarray(query_embedding, dtype=np.float32)
+
+        fused: dict[str, dict[str, Any]] = {}
+        for rank, candidate in enumerate(vector_ranked, start=1):
+            fused[candidate["chunk_id"]] = dict(candidate, vector_rank=rank, bm25_rank=None, rerank_score=1.0 / (RRF_K + rank))
+        for rank, index in enumerate(bm25_indices, start=1):
+            chunk = self._hybrid_chunks[index]
+            if chunk["source_id"] in EXCLUDED_SOURCE_IDS:
+                continue
+            entry = fused.get(chunk["chunk_id"])
+            if entry is None:
+                similarity = float(self._hybrid_embeddings[index] @ query_vector)
+                entry = {
+                    "rank": 0,
+                    "chunk_id": chunk["chunk_id"],
+                    "source_id": chunk["source_id"],
+                    "text": chunk["text"],
+                    "title": chunk.get("title") or "",
+                    "source_name": chunk.get("source_name") or "",
+                    "url": chunk.get("url") or "",
+                    "category": chunk.get("category") or "",
+                    "section_heading": chunk.get("section_heading") or "",
+                    "similarity_score": similarity,
+                    "distance": 1.0 - similarity,
+                    "metadata": {field: chunk.get(field) for field in CHUNK_METADATA_FIELDS},
+                    "vector_rank": None,
+                    "rerank_score": 0.0,
+                }
+                fused[chunk["chunk_id"]] = entry
+            entry["bm25_rank"] = rank
+            entry["rerank_score"] += 1.0 / (RRF_K + rank)
+
+        return sorted(fused.values(), key=lambda item: (item["rerank_score"], item["similarity_score"]), reverse=True)
 
     def _format_candidates(self, raw: dict[str, Any]) -> list[dict[str, Any]]:
         ids = raw.get("ids", [[]])[0]
@@ -329,6 +429,16 @@ class Retriever:
         if not cleaned:
             raise ValueError("Query must not be empty.")
         return cleaned
+
+
+def fold(text: str) -> str:
+    """Case- and diacritic-insensitive form, so OSTİM, OSTIM and ostim compare equal."""
+    decomposed = unicodedata.normalize("NFKD", text.casefold())
+    return "".join(char for char in decomposed if not unicodedata.combining(char)).replace("ı", "i")
+
+
+def bm25_tokens(text: str) -> list[str]:
+    return [token for token in re.findall(r"\w+", fold(text)) if len(token) > 1 and token not in BM25_STOPWORDS]
 
 
 def expand_query_for_retrieval(query: str) -> str:

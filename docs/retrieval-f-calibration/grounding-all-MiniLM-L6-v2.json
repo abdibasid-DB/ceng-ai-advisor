@@ -1,0 +1,3375 @@
+{
+ "replayability": {
+  "refused_before_llm": [
+   "P054",
+   "H065",
+   "R104",
+   "R112",
+   "R116",
+   "S129",
+   "X151"
+  ],
+  "llm_called_with_saved_generation": [],
+  "llm_called_without_saved_generation": [
+   "F007",
+   "C017",
+   "C018",
+   "C021",
+   "C026",
+   "M031",
+   "M033",
+   "M034",
+   "M035",
+   "P046",
+   "P052",
+   "H059",
+   "H063",
+   "H066",
+   "A070",
+   "A071",
+   "A075",
+   "A077",
+   "A080",
+   "A082",
+   "Y092",
+   "R096",
+   "R100",
+   "R102",
+   "R103",
+   "R105",
+   "R106",
+   "R115",
+   "R118",
+   "R122",
+   "S127",
+   "S128",
+   "S132",
+   "S135",
+   "S136",
+   "S139",
+   "X143",
+   "X148",
+   "X150",
+   "T182",
+   "T183",
+   "T185",
+   "T191"
+  ]
+ },
+ "question_answer": {
+  "correct": [
+   {
+    "id": "F001",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.7916909456253052
+   },
+   {
+    "id": "F002",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.7452008724212646
+   },
+   {
+    "id": "F003",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.6453725099563599
+   },
+   {
+    "id": "F005",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.7327491044998169
+   },
+   {
+    "id": "F006",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.6287357807159424
+   },
+   {
+    "id": "F008",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.8178213834762573
+   },
+   {
+    "id": "F009",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.6091086268424988
+   },
+   {
+    "id": "F011",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.5801870822906494
+   },
+   {
+    "id": "F012",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.7598862051963806
+   },
+   {
+    "id": "C013",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.7398219108581543
+   },
+   {
+    "id": "C014",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.3962095081806183
+   },
+   {
+    "id": "C015",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.8277360200881958
+   },
+   {
+    "id": "C019",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.5450360178947449
+   },
+   {
+    "id": "C022",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.44195273518562317
+   },
+   {
+    "id": "C023",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.764929473400116
+   },
+   {
+    "id": "C024",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.49064791202545166
+   },
+   {
+    "id": "C025",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.70695960521698
+   },
+   {
+    "id": "M027",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.7970834970474243
+   },
+   {
+    "id": "M028",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.5016178488731384
+   },
+   {
+    "id": "M029",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.727102518081665
+   },
+   {
+    "id": "M030",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.8316597938537598
+   },
+   {
+    "id": "M032",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.6551493406295776
+   },
+   {
+    "id": "M036",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.4394344091415405
+   },
+   {
+    "id": "M037",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.37595072388648987
+   },
+   {
+    "id": "M038",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.42187392711639404
+   },
+   {
+    "id": "P039",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.748268187046051
+   },
+   {
+    "id": "P041",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.8592832684516907
+   },
+   {
+    "id": "P042",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.8774917721748352
+   },
+   {
+    "id": "P043",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.7754079699516296
+   },
+   {
+    "id": "P044",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.5433852672576904
+   },
+   {
+    "id": "P045",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.6740177869796753
+   },
+   {
+    "id": "P047",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.42155811190605164
+   },
+   {
+    "id": "P048",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.5009015798568726
+   },
+   {
+    "id": "P050",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.5555621385574341
+   },
+   {
+    "id": "P051",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.569731593132019
+   },
+   {
+    "id": "P053",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.801467776298523
+   },
+   {
+    "id": "P055",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.7051020264625549
+   },
+   {
+    "id": "P056",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.4945334196090698
+   },
+   {
+    "id": "H057",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.7288479804992676
+   },
+   {
+    "id": "H058",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.7719283103942871
+   },
+   {
+    "id": "H060",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.7826520204544067
+   },
+   {
+    "id": "H061",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.7156529426574707
+   },
+   {
+    "id": "H062",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.7358828783035278
+   },
+   {
+    "id": "H064",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.5614811182022095
+   },
+   {
+    "id": "H067",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.8394626975059509
+   },
+   {
+    "id": "H068",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.8448097705841064
+   },
+   {
+    "id": "A069",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.7016394138336182
+   },
+   {
+    "id": "A072",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.7920712828636169
+   },
+   {
+    "id": "A074",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.8039465546607971
+   },
+   {
+    "id": "A076",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.6393680572509766
+   },
+   {
+    "id": "A078",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.6335903406143188
+   },
+   {
+    "id": "A079",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.5810798406600952
+   },
+   {
+    "id": "A081",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.815690815448761
+   },
+   {
+    "id": "Y083",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.6673269867897034
+   },
+   {
+    "id": "Y084",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.6504294872283936
+   },
+   {
+    "id": "Y085",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.2554112374782562
+   },
+   {
+    "id": "Y086",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.8132038116455078
+   },
+   {
+    "id": "Y087",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.35558903217315674
+   },
+   {
+    "id": "Y088",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.7550930976867676
+   },
+   {
+    "id": "Y090",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.5144574642181396
+   },
+   {
+    "id": "Y093",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.8105908632278442
+   },
+   {
+    "id": "Y094",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.6004963517189026
+   },
+   {
+    "id": "R095",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.6382785439491272
+   },
+   {
+    "id": "R097",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.7685415744781494
+   },
+   {
+    "id": "R098",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.35564783215522766
+   },
+   {
+    "id": "R099",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.6387479901313782
+   },
+   {
+    "id": "R109",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.7058160305023193
+   },
+   {
+    "id": "R113",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.4695475399494171
+   },
+   {
+    "id": "R117",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.33146095275878906
+   },
+   {
+    "id": "R119",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.471811443567276
+   },
+   {
+    "id": "R120",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.6846775412559509
+   },
+   {
+    "id": "R121",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.8503069877624512
+   },
+   {
+    "id": "S123",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.7046856880187988
+   },
+   {
+    "id": "S124",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.7343142628669739
+   },
+   {
+    "id": "S125",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.5859495401382446
+   },
+   {
+    "id": "S126",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.5541648268699646
+   },
+   {
+    "id": "S134",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.5358588099479675
+   },
+   {
+    "id": "S137",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.4017655849456787
+   },
+   {
+    "id": "X141",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.49345535039901733
+   },
+   {
+    "id": "X142",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.3064503073692322
+   },
+   {
+    "id": "X144",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.5522329807281494
+   },
+   {
+    "id": "X147",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.4257062077522278
+   },
+   {
+    "id": "X149",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.3751111626625061
+   },
+   {
+    "id": "X152",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.5257712602615356
+   },
+   {
+    "id": "T179",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.7647078037261963
+   },
+   {
+    "id": "T180",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.437505841255188
+   },
+   {
+    "id": "T184",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.7431934475898743
+   },
+   {
+    "id": "T186",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.4062778651714325
+   },
+   {
+    "id": "T187",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.7402514219284058
+   },
+   {
+    "id": "T189",
+    "label": "correct_evidence_supported",
+    "lexical_reason": null,
+    "similarity": 0.4534176290035248
+   }
+  ],
+  "unsupported": [
+   {
+    "id": "F004",
+    "label": "unsupported_incorrect_or_misleading",
+    "lexical_reason": null,
+    "similarity": 0.790913462638855
+   },
+   {
+    "id": "F010",
+    "label": "unsupported_incorrect_or_misleading",
+    "lexical_reason": null,
+    "similarity": 0.473589152097702
+   },
+   {
+    "id": "C016",
+    "label": "unsupported_incorrect_or_misleading",
+    "lexical_reason": null,
+    "similarity": 0.8651560544967651
+   },
+   {
+    "id": "C020",
+    "label": "unsupported_incorrect_or_misleading",
+    "lexical_reason": null,
+    "similarity": 0.4372970461845398
+   },
+   {
+    "id": "P040",
+    "label": "unsupported_incorrect_or_misleading",
+    "lexical_reason": null,
+    "similarity": 0.3946317434310913
+   },
+   {
+    "id": "P049",
+    "label": "unsupported_incorrect_or_misleading",
+    "lexical_reason": null,
+    "similarity": 0.6423906087875366
+   },
+   {
+    "id": "A073",
+    "label": "unsupported_incorrect_or_misleading",
+    "lexical_reason": null,
+    "similarity": 0.3362410068511963
+   },
+   {
+    "id": "Y089",
+    "label": "unsupported_incorrect_or_misleading",
+    "lexical_reason": null,
+    "similarity": 0.5033800601959229
+   },
+   {
+    "id": "Y091",
+    "label": "unsupported_incorrect_or_misleading",
+    "lexical_reason": null,
+    "similarity": 0.6188483238220215
+   },
+   {
+    "id": "R101",
+    "label": "unsupported_incorrect_or_misleading",
+    "lexical_reason": null,
+    "similarity": 0.6964823007583618
+   },
+   {
+    "id": "R107",
+    "label": "unsupported_incorrect_or_misleading",
+    "lexical_reason": null,
+    "similarity": 0.7893985509872437
+   },
+   {
+    "id": "R108",
+    "label": "unsupported_incorrect_or_misleading",
+    "lexical_reason": null,
+    "similarity": 0.2386288344860077
+   },
+   {
+    "id": "R114",
+    "label": "unsupported_incorrect_or_misleading",
+    "lexical_reason": null,
+    "similarity": 0.23275044560432434
+   },
+   {
+    "id": "S133",
+    "label": "unsupported_incorrect_or_misleading",
+    "lexical_reason": null,
+    "similarity": 0.6278242468833923
+   },
+   {
+    "id": "X145",
+    "label": "unsupported_incorrect_or_misleading",
+    "lexical_reason": null,
+    "similarity": 0.7091401815414429
+   },
+   {
+    "id": "T181",
+    "label": "unsupported_incorrect_or_misleading",
+    "lexical_reason": "generated answer did not address the question's distinctive topic terms",
+    "similarity": 0.21773940324783325
+   },
+   {
+    "id": "T188",
+    "label": "unsupported_incorrect_or_misleading",
+    "lexical_reason": null,
+    "similarity": 0.6082861423492432
+   },
+   {
+    "id": "T190",
+    "label": "unsupported_incorrect_or_misleading",
+    "lexical_reason": null,
+    "similarity": 0.6028597354888916
+   },
+   {
+    "id": "T192",
+    "label": "unsupported_incorrect_or_misleading",
+    "lexical_reason": null,
+    "similarity": 0.7749555706977844
+   }
+  ],
+  "mismatched": [
+   0.33233216404914856,
+   0.5639827251434326,
+   0.25841808319091797,
+   0.5326455235481262,
+   0.6200827360153198,
+   0.4643102288246155,
+   0.4557601809501648,
+   0.23592878878116608,
+   0.4859941005706787,
+   0.41197478771209717,
+   0.16519765555858612,
+   0.5681520700454712,
+   0.17047633230686188,
+   0.35079386830329895,
+   0.47313594818115234,
+   0.4543425738811493,
+   0.5660603046417236,
+   0.25841808319091797,
+   0.4678519368171692,
+   0.17686808109283447,
+   0.5717925429344177,
+   0.3573160171508789,
+   0.3956873118877411,
+   0.26538538932800293,
+   0.08623161911964417,
+   0.1836179494857788,
+   0.4558389484882355,
+   0.38714107871055603,
+   0.5636153817176819,
+   0.16036073863506317,
+   0.3718946874141693,
+   0.3841676712036133,
+   0.4210265874862671,
+   0.5473756790161133,
+   0.5564793944358826,
+   0.4348480701446533,
+   0.3484247326850891,
+   0.4057229161262512,
+   0.4249255657196045,
+   0.3316850960254669,
+   0.1665206104516983,
+   0.4867830276489258,
+   0.3438189625740051,
+   0.10876449197530746,
+   0.38193902373313904,
+   0.054717786610126495,
+   0.391041100025177,
+   0.36473017930984497,
+   0.3846021890640259,
+   0.43231678009033203,
+   0.44308239221572876,
+   0.43870463967323303,
+   0.4053635001182556,
+   0.4193328619003296,
+   0.20284825563430786,
+   0.39286190271377563,
+   0.3870016932487488,
+   0.23645305633544922,
+   0.5604040026664734,
+   0.5421955585479736,
+   0.10894307494163513,
+   0.032944176346063614,
+   0.1305932104587555,
+   0.13937543332576752,
+   0.1727561056613922,
+   0.2202155590057373,
+   0.42484909296035767,
+   0.6299906969070435,
+   0.328075110912323,
+   0.4172705411911011,
+   0.1543004810810089,
+   0.3388974070549011,
+   0.301297128200531,
+   0.29521459341049194,
+   0.391902357339859,
+   0.3423706889152527,
+   0.31053686141967773,
+   0.4259415864944458,
+   0.4112479090690613,
+   0.3352207541465759,
+   0.2894481122493744,
+   0.4302256405353546,
+   0.38785606622695923,
+   0.23151549696922302,
+   0.3724437654018402,
+   0.3758983612060547,
+   0.39551401138305664,
+   0.3883104920387268,
+   0.3965641260147095,
+   0.41180282831192017,
+   0.2040330320596695,
+   0.32920539379119873,
+   0.5700212717056274,
+   0.45546701550483704,
+   0.42740386724472046,
+   0.3513467013835907,
+   0.1950773447751999,
+   0.33494657278060913,
+   0.3672196865081787,
+   0.2857908010482788,
+   0.26958274841308594,
+   0.45295751094818115,
+   0.21913698315620422,
+   0.3035535216331482,
+   0.3228694200515747,
+   0.2200518399477005,
+   0.4709969758987427,
+   0.34500831365585327,
+   0.4372292757034302,
+   0.235577791929245,
+   0.35300320386886597,
+   0.2589930295944214,
+   0.4362233579158783,
+   0.46473363041877747,
+   0.2385135293006897,
+   0.5497156381607056,
+   0.30404430627822876,
+   0.5529873967170715,
+   0.21510359644889832,
+   0.1673998087644577,
+   0.20908299088478088,
+   0.22963213920593262,
+   0.13069701194763184,
+   0.3171457052230835,
+   0.42403411865234375,
+   0.250484436750412,
+   0.11954569071531296,
+   0.2212023288011551,
+   0.460890531539917,
+   0.3697976768016815,
+   0.14969879388809204,
+   0.20286118984222412,
+   0.2574496865272522,
+   0.2058839350938797,
+   0.21471600234508514,
+   0.3589574098587036,
+   0.022488489747047424,
+   0.11094191670417786,
+   0.20587992668151855,
+   0.5564115643501282,
+   0.03014953061938286,
+   0.4078986346721649,
+   0.12171605229377747,
+   0.02184448018670082,
+   0.2447764128446579,
+   0.34473156929016113,
+   0.25875627994537354,
+   0.18669596314430237,
+   0.3552159070968628,
+   0.24435657262802124,
+   0.23390838503837585,
+   0.15075048804283142,
+   0.2218601256608963,
+   0.19204172492027283,
+   0.22030720114707947,
+   0.23544462025165558,
+   0.31215184926986694,
+   0.3237026035785675,
+   0.3015848398208618,
+   0.06400460004806519,
+   0.3901956081390381,
+   0.4402771294116974,
+   0.437132865190506,
+   0.31620556116104126,
+   0.4337105453014374,
+   0.2643336057662964,
+   0.0035624306183308363,
+   0.10770470649003983,
+   0.19106221199035645,
+   0.13428841531276703,
+   0.22291600704193115,
+   0.09957663714885712,
+   0.20436620712280273,
+   0.13072040677070618,
+   0.12433753907680511,
+   0.04401781037449837,
+   0.20075130462646484,
+   0.2061183750629425,
+   0.16908107697963715,
+   0.08233407884836197,
+   0.25629377365112305,
+   0.07664904743432999,
+   0.17705212533473969,
+   0.24622409045696259,
+   0.2728779911994934,
+   0.04655780643224716,
+   0.13897529244422913,
+   0.23260493576526642,
+   0.33009493350982666,
+   0.36463603377342224,
+   0.22264039516448975,
+   0.12617793679237366,
+   0.2466013878583908,
+   0.008237816393375397,
+   0.06962819397449493,
+   0.33569422364234924,
+   0.32558393478393555,
+   -0.030792245641350746,
+   0.25152722001075745,
+   0.1357315182685852,
+   0.24638408422470093,
+   0.10123617947101593,
+   0.3616151809692383,
+   0.3444834351539612,
+   0.49266403913497925,
+   0.4360019862651825,
+   0.39981910586357117,
+   0.10743444412946701,
+   0.43338602781295776,
+   0.4036392569541931,
+   0.2535370886325836,
+   0.22455474734306335,
+   0.25959721207618713,
+   0.2129499316215515,
+   0.1529645323753357,
+   0.16673141717910767,
+   -0.014132779091596603,
+   0.15712708234786987,
+   0.2573644518852234,
+   0.08854071795940399,
+   0.02192491479218006,
+   0.31544849276542664,
+   -0.042394332587718964,
+   0.16245201230049133,
+   0.25520753860473633,
+   0.29222673177719116,
+   0.3384561836719513,
+   0.26836419105529785,
+   0.011703357100486755,
+   0.3449411988258362,
+   0.3661692142486572,
+   0.2493404597043991,
+   0.32344457507133484,
+   0.2763223648071289,
+   0.5151959657669067,
+   0.40026402473449707,
+   0.1480562388896942,
+   0.5601038932800293,
+   0.23348213732242584,
+   0.5559360980987549,
+   0.28040334582328796,
+   0.2872457504272461,
+   0.2775232791900635,
+   0.12043000757694244,
+   0.23204699158668518,
+   0.35426729917526245,
+   0.3729158639907837,
+   0.305463969707489,
+   0.2619439959526062,
+   0.24565503001213074,
+   0.391409695148468,
+   0.38669919967651367,
+   0.09420086443424225,
+   0.2877625524997711,
+   0.0064925700426101685,
+   0.07280757278203964,
+   0.08030984550714493,
+   -0.014301495626568794,
+   0.48144280910491943,
+   0.17024165391921997,
+   0.026426877826452255,
+   0.21131417155265808,
+   0.4298367500305176,
+   0.1375163495540619,
+   0.3556181490421295,
+   0.38822200894355774,
+   0.2822516858577728,
+   0.2885463237762451,
+   0.2543522119522095,
+   0.1704522669315338,
+   0.256487637758255,
+   0.4504755437374115,
+   0.30491799116134644,
+   0.3030359745025635,
+   0.21898391842842102,
+   0.3470020294189453,
+   0.3390645682811737,
+   0.03665720671415329,
+   0.5473344922065735,
+   0.3091006875038147,
+   0.5877203941345215,
+   0.30642014741897583,
+   0.48906219005584717,
+   0.5278716683387756,
+   0.4077135920524597,
+   0.037928540259599686,
+   0.13925564289093018,
+   0.14061440527439117,
+   0.38886380195617676,
+   0.2516283094882965,
+   0.43775424361228943,
+   0.2736790180206299,
+   0.36552441120147705,
+   0.24527910351753235,
+   0.11150636523962021,
+   0.5315330028533936,
+   0.06472230702638626,
+   0.12607881426811218,
+   0.4393494129180908,
+   0.2743152976036072,
+   0.5343238115310669,
+   0.1238345205783844,
+   0.3923256993293762,
+   0.4959457814693451,
+   0.3613206744194031,
+   -0.004613553173840046,
+   0.24639028310775757,
+   0.19346201419830322,
+   0.21642105281352997,
+   0.10984095931053162,
+   0.12831151485443115,
+   0.08968929201364517,
+   -0.0037115365266799927,
+   0.21626068651676178,
+   0.025971747934818268,
+   0.6091879606246948,
+   0.38403889536857605,
+   0.26096031069755554,
+   0.5468277335166931,
+   0.5110122561454773,
+   0.15198297798633575,
+   0.2590358257293701,
+   0.2105967104434967,
+   0.10756659507751465,
+   0.06655852496623993,
+   0.5252602100372314,
+   0.37547117471694946,
+   0.10943607985973358,
+   0.6758403778076172,
+   0.3555501103401184,
+   -0.0066268667578697205,
+   0.23714573681354523,
+   0.12927092611789703,
+   0.19764477014541626,
+   0.06628268212080002,
+   0.28966039419174194,
+   0.3681698441505432,
+   0.27570948004722595,
+   0.08898402750492096,
+   0.14000122249126434,
+   0.5052751898765564,
+   0.2028401643037796,
+   0.32441264390945435,
+   0.4221588969230652,
+   0.368301123380661,
+   0.27847760915756226,
+   0.1898995339870453,
+   0.3881491422653198,
+   0.3112086057662964,
+   0.20540723204612732,
+   0.13827848434448242,
+   0.20301233232021332,
+   0.27746522426605225,
+   0.29091838002204895,
+   0.12856924533843994,
+   0.22992083430290222,
+   0.31641334295272827,
+   0.44567814469337463,
+   0.4957730174064636,
+   0.43773072957992554,
+   0.3875861167907715,
+   0.28556883335113525,
+   0.38071298599243164,
+   0.21458038687705994,
+   0.39059996604919434,
+   0.07387940585613251,
+   0.313523530960083,
+   0.22195783257484436,
+   0.16405177116394043,
+   0.14194674789905548,
+   0.21904054284095764,
+   0.14774388074874878,
+   0.15550822019577026,
+   0.0921313688158989,
+   0.05042334645986557,
+   0.22126096487045288,
+   0.13907909393310547,
+   0.1409941166639328,
+   0.12084175646305084,
+   0.23744329810142517,
+   0.23930954933166504,
+   0.07471629232168198,
+   0.13415345549583435,
+   0.31834763288497925,
+   0.38930025696754456,
+   0.29277172684669495,
+   0.3972961902618408,
+   0.3235720098018646,
+   0.12652499973773956,
+   0.5031846761703491,
+   0.1383347511291504,
+   0.09690061211585999,
+   0.2053525149822235,
+   0.00576456543058157,
+   0.2159896343946457,
+   0.0942702367901802,
+   0.32366466522216797,
+   0.04040373116731644,
+   0.18118014931678772,
+   0.08669067919254303,
+   0.2059807926416397,
+   0.1819392740726471,
+   0.17874784767627716,
+   0.2006818950176239,
+   0.2135646939277649,
+   0.1110135167837143,
+   0.07057823985815048,
+   0.15068693459033966,
+   0.10669377446174622,
+   0.09549514949321747,
+   0.058979135006666183,
+   0.07760913670063019,
+   0.1259050965309143,
+   -0.09662698209285736,
+   0.15887713432312012,
+   0.38302361965179443,
+   0.3752177655696869,
+   0.23127971589565277,
+   0.33728545904159546,
+   0.4142145812511444,
+   0.1290433257818222,
+   0.03289647027850151,
+   0.07199463993310928,
+   0.1141946017742157,
+   0.029443945735692978,
+   0.33294618129730225,
+   0.2685430645942688,
+   0.4712787866592407,
+   0.4113416373729706,
+   0.05679601430892944,
+   0.14769388735294342,
+   0.23098528385162354,
+   0.1821998655796051,
+   0.3741169273853302,
+   0.22987622022628784,
+   0.41401875019073486,
+   0.01866803504526615,
+   0.07617228478193283,
+   0.13246747851371765,
+   0.37849682569503784,
+   0.19257350265979767,
+   0.16341641545295715,
+   0.1009029895067215,
+   0.3079085946083069,
+   0.0653429925441742,
+   0.13931943476200104,
+   0.27933764457702637,
+   0.12255644798278809,
+   0.13606128096580505,
+   0.14613398909568787,
+   0.23283860087394714,
+   0.2630431354045868,
+   0.21299299597740173,
+   0.13066473603248596,
+   0.35524478554725647,
+   0.3342878818511963,
+   0.1398697793483734,
+   0.2745704650878906,
+   0.09554991871118546,
+   0.1988397240638733,
+   0.3277025520801544,
+   0.30900681018829346,
+   0.49464136362075806,
+   0.43581390380859375,
+   0.4295279085636139,
+   0.1784355640411377,
+   0.19582946598529816,
+   0.33809030055999756,
+   0.2672739326953888,
+   0.33654165267944336,
+   0.06537038087844849,
+   0.08830882608890533,
+   0.10178417712450027,
+   0.26715654134750366,
+   0.05929205194115639,
+   0.2862752676010132,
+   0.31216976046562195,
+   0.48919934034347534,
+   0.10161323100328445,
+   0.41481801867485046,
+   0.40451186895370483,
+   0.21597149968147278,
+   0.24500975012779236,
+   0.16785220801830292,
+   0.17806527018547058,
+   0.15079361200332642,
+   0.29663750529289246,
+   0.06979253143072128,
+   0.07877834141254425,
+   0.03137841820716858,
+   0.2594243288040161,
+   0.3754291832447052,
+   0.2985176742076874,
+   0.47524064779281616,
+   0.03658803552389145,
+   0.4106649160385132,
+   0.26417261362075806,
+   0.4689022898674011,
+   0.1866217702627182,
+   0.29926785826683044,
+   0.22554707527160645,
+   0.15870434045791626,
+   0.2233007550239563,
+   0.09939812123775482,
+   0.22575798630714417,
+   -0.015559695661067963,
+   -0.02932959794998169,
+   0.05643974617123604,
+   -0.06738258898258209,
+   0.20766037702560425,
+   0.5907968282699585,
+   0.039705291390419006,
+   0.3076346814632416,
+   0.29219165444374084,
+   0.19437143206596375,
+   0.4689217209815979,
+   0.09071715921163559,
+   0.05426742136478424,
+   0.19643613696098328,
+   -0.00035858526825904846,
+   0.5288586616516113,
+   0.5821421146392822,
+   0.35406267642974854,
+   0.4012265205383301,
+   0.21286118030548096,
+   0.6894170045852661,
+   0.2107195258140564,
+   0.22244149446487427,
+   0.3345225751399994,
+   0.3859265148639679,
+   0.25713127851486206,
+   0.25632354617118835,
+   0.12963806092739105,
+   0.39456260204315186,
+   0.2208687663078308,
+   -0.05925602465867996,
+   0.37205684185028076,
+   0.1895599365234375,
+   0.05210084468126297,
+   0.07882276177406311,
+   0.33603525161743164,
+   0.30449122190475464,
+   0.3059570789337158,
+   0.20211897790431976,
+   0.3384399116039276
+  ]
+ },
+ "sentence_passage": {
+  "correct": [
+   {
+    "id": "F001",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.9620494246482849,
+    "claim": "Computer Engineering is a discipline that involves the design and construction of processor-based systems, encompassing hardware, software, and communications components [S1]."
+   },
+   {
+    "id": "F001",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7854599952697754,
+    "claim": "This field is generally closest to the boundary between computing and engineering hardware, as evidenced by the ACM's categorization of computing into five sub-disciplines, including Computer Engineer"
+   },
+   {
+    "id": "F002",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7043641209602356,
+    "claim": "A computer engineer's study typically covers foundational areas such as basic sciences, mathematics for both discrete and continuous domains, and applications of probability and statistics [S1]."
+   },
+   {
+    "id": "F002",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.5979716777801514,
+    "claim": "Depending on the specific program, they might study a wide range of subjects that span the entire field or focus on one specific aspect in depth [S1]."
+   },
+   {
+    "id": "F003",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6763208508491516,
+    "claim": "Computer engineering programs typically cover both programming and hardware aspects [S1] [S5]."
+   },
+   {
+    "id": "F003",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.9041797518730164,
+    "claim": "The [S1] section mentions that computer-related coursework includes topics such as computer organization and architecture, algorithms, programming, databases, networks, software engineering, and commu"
+   },
+   {
+    "id": "F005",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7297797203063965,
+    "claim": "Computer engineering and computer science are related but distinct fields [S4]."
+   },
+   {
+    "id": "F005",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8069230318069458,
+    "claim": "For instance, in the ACM Curricular Guidance, computer engineering is described as a discipline that involves the design and construction of processor-based systems, encompassing hardware, software, a"
+   },
+   {
+    "id": "F006",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.5798048973083496,
+    "claim": "CENG (Computer Engineering) is generally considered broader than Software Engineering [S4]."
+   },
+   {
+    "id": "F006",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7644440531730652,
+    "claim": "According to the ACM's categorization, Computer Engineering involves the design and construction of processor-based systems, encompassing hardware, software, and communications components [S1]."
+   },
+   {
+    "id": "F006",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7410012483596802,
+    "claim": "This comprehensive scope indicates a more extensive focus compared to Software Engineering, which focuses on the principles underlying the development and maintenance of correct software [S2]."
+   },
+   {
+    "id": "F008",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8160403370857239,
+    "claim": "Computer engineering is an engineering discipline [S1] [S3]."
+   },
+   {
+    "id": "F008",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8254700303077698,
+    "claim": "The [S3] source note from the Computing Curricula 2020: Paradigms for Global Computing Education states that Computer Engineering is generally closest to the boundary between computing and engineering"
+   },
+   {
+    "id": "F008",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7724729776382446,
+    "claim": "Therefore, computer engineering can be considered an engineering discipline [S1] [S3]."
+   },
+   {
+    "id": "F009",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8307859897613525,
+    "claim": "Computer engineers solve a variety of problems, including those related to the design and development of computer-based systems for specialized applications [S3]."
+   },
+   {
+    "id": "F009",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6424062252044678,
+    "claim": "They work on projects that involve embedded systems, such as those found in automobiles, control systems, major appliances, and the internet of things (IoT) [S3]."
+   },
+   {
+    "id": "F009",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8060428500175476,
+    "claim": "They also address applications in mobile devices, tablets, multimedia, location-aware devices, and wireless networks [S3]."
+   },
+   {
+    "id": "F009",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6607235074043274,
+    "claim": "Additionally, they tackle challenges in the design of computer systems for specific needs, such as those found in control systems and specialized applications [S3]."
+   },
+   {
+    "id": "F011",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7532250285148621,
+    "claim": "The curriculum typically includes foundational areas such as basic sciences, mathematics for both discrete and continuous domains, and applications of probability and statistics, which aligns with the"
+   },
+   {
+    "id": "F011",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.676652193069458,
+    "claim": "Additionally, the curriculum often includes courses that cover the scientific method, which is a basis for much of the discipline of computer engineering [S4]."
+   },
+   {
+    "id": "F011",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6217916011810303,
+    "claim": "This exposure to the scientific method, including hypothesis formation, experimentation, and data collection, is beneficial for someone who is interested in both physics and coding [S4]."
+   },
+   {
+    "id": "F012",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8821876049041748,
+    "claim": "Computer Engineering involves the design and construction of processor-based systems, including hardware, software, and communications components, while Information Technology focuses on the design, i"
+   },
+   {
+    "id": "C013",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6344890594482422,
+    "claim": "Computer Engineering curricula can vary widely among programs, and the specific courses taught may differ [S1]."
+   },
+   {
+    "id": "C014",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8267307877540588,
+    "claim": "In the first year of study, students in the Computer Engineering program should experience at least two computer engineering modules [S2]."
+   },
+   {
+    "id": "C014",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7342118620872498,
+    "claim": "This aligns with the guidelines provided in [S2], which states that each module is approximately 42 hours for instruction and that students should take at least two computer engineering modules in the"
+   },
+   {
+    "id": "C015",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6958972811698914,
+    "claim": "Yes, there are operating systems courses in the program [S1]."
+   },
+   {
+    "id": "C015",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8799915313720703,
+    "claim": "CENG 303 Operating Systems Design & Construction is a course that combines theoretical foundations with hands-on experience, including practical exercises and projects that explore real-world operatin"
+   },
+   {
+    "id": "C019",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7571209669113159,
+    "claim": "The curriculum focuses on the synthesis of electrical engineering and computer science, which includes coursework in circuits, digital logic, microelectronics, and signal processing [S4]."
+   },
+   {
+    "id": "C019",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6130322217941284,
+    "claim": "These courses are essential for understanding the design and construction of processor-based systems, as mentioned in [S3]."
+   },
+   {
+    "id": "C022",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8139784336090088,
+    "claim": "The retrieved source states: \"The course covers many of the same topics as CS 61A, but using different examples, smaller-scale projects, and a beginner-friendly computing environment.\" [S4]."
+   },
+   {
+    "id": "C022",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.3080585300922394,
+    "claim": "The retrieved evidence does not establish the rest [S4]."
+   },
+   {
+    "id": "C023",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6432117819786072,
+    "claim": "The subjects that connect programming and circuits together in a Computer Engineering curriculum include mathematics [S1]."
+   },
+   {
+    "id": "C023",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.9255142211914062,
+    "claim": "Specifically, the course CENG 213 Discrete Computing Structures introduces fundamental mathematical concepts and techniques that form the foundation of computer science and software engineering [S2]."
+   },
+   {
+    "id": "C024",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.657905101776123,
+    "claim": "The curriculum emphasizes a breadth of knowledge across the discipline, including computer organization and architecture, algorithms, programming, databases, networks, software engineering, and commun"
+   },
+   {
+    "id": "C024",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6248424053192139,
+    "claim": "Students can focus more on software-related courses like programming and software engineering [S1]."
+   },
+   {
+    "id": "C025",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6652179956436157,
+    "claim": "The curriculum in question is closer to Computer Science (CS) rather than Electrical Engineering (EE) [S4]."
+   },
+   {
+    "id": "C025",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6683915853500366,
+    "claim": "This conclusion is supported by the mention of a curriculum that leads to a bachelor’s degree in computer engineering, which is typically associated with a Computer Science program [S4]."
+   },
+   {
+    "id": "M027",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6132596731185913,
+    "claim": "The amount of mathematics required in Computer Engineering varies depending on the specific program [S4]."
+   },
+   {
+    "id": "M027",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8143236041069031,
+    "claim": "Mathematics is insufficient to produce a competent computer engineer, and thus the mathematics component focuses only on supporting essential components of the computer engineering content areas [S1]."
+   },
+   {
+    "id": "M028",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7820231914520264,
+    "claim": "The model program includes one year of mathematics and science, which can help you build a strong foundation in the necessary math areas [S1]."
+   },
+   {
+    "id": "M028",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8407647609710693,
+    "claim": "Additionally, you can take courses outside of the computer engineering department, such as Math 1A, which is a prerequisite or co-requisite for Computer Science 61A [S3]."
+   },
+   {
+    "id": "M028",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6109858155250549,
+    "claim": "This will allow you to learn the required math material without having to take a math course specifically for computer engineering [S3]."
+   },
+   {
+    "id": "M029",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6916126012802124,
+    "claim": "[According to the provided context, the most relevant math topics for computer engineering are those that form the foundation of the field and are integral to its fundamental underpinnings [S1]."
+   },
+   {
+    "id": "M029",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7537933588027954,
+    "claim": "These mathematical concepts provide a language, tools, and theoretical framework essential for understanding and working with ideas relevant to computer engineering [S1]."
+   },
+   {
+    "id": "M029",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7836698889732361,
+    "claim": "Additionally, the curated note on Mathematics for Machine Learning and Data Science Specialization [S2] suggests that courses like Mathematics for Machine Learning and Data Science are useful for iden"
+   },
+   {
+    "id": "M030",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6037591695785522,
+    "claim": "[According to the context, calculus is used in computer engineering [S1]."
+   },
+   {
+    "id": "M030",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.910715639591217,
+    "claim": "Specifically, the document [S1] mentions that basic differential and integral calculus will likely be under the purview of faculty members outside the department where computer engineering resides."
+   },
+   {
+    "id": "M030",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6811058521270752,
+    "claim": "Calculus is an important foundational subject for computer engineering students [S1]."
+   },
+   {
+    "id": "M030",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6623719930648804,
+    "claim": "Therefore, calculus is used in computer engineering.] [S1]"
+   },
+   {
+    "id": "M032",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.5999158620834351,
+    "claim": "Mathematics is crucial for a career in computer engineering, as evidenced by the need to prepare for foundational courses like Calculus and programming [S2]."
+   },
+   {
+    "id": "M032",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.872673511505127,
+    "claim": "If you are delayed in Calculus, you may be locked out of essential courses that define your first two years in the field, as stated in the UC Berkeley Engineering's \"Chain Reaction: Why Math Controls "
+   },
+   {
+    "id": "M032",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.820497989654541,
+    "claim": "However, the curriculum for computer engineering programs varies, and each program decides the quantity and level of mathematics for its graduates [S3]."
+   },
+   {
+    "id": "M036",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8075399994850159,
+    "claim": "In the ACM Curricular Guidance, it is mentioned that Computer Engineering involves the design and construction of processor-based systems, which implies a focus on theoretical aspects rather than prac"
+   },
+   {
+    "id": "M037",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8081071972846985,
+    "claim": "The retrieved source states: \"Data science commonly draws on computer science, statistics, mathematics, and domain knowledge.\" [S2]."
+   },
+   {
+    "id": "M037",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": -0.008134648203849792,
+    "claim": "The retrieved evidence does not establish the rest [S2]."
+   },
+   {
+    "id": "M038",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7791267037391663,
+    "claim": "The retrieved source states: \"The source highlights linear algebra, calculus, probability, and statistics as important foundations for machine learning and data science.\" [S1]."
+   },
+   {
+    "id": "M038",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.17525124549865723,
+    "claim": "The retrieved evidence does not establish the rest [S1]."
+   },
+   {
+    "id": "P039",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.728430986404419,
+    "claim": "To determine the programming languages you should learn, consider the state of the developer ecosystem and the prevalence of AI and ML [S2]."
+   },
+   {
+    "id": "P039",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7919123768806458,
+    "claim": "Additionally, since CENG110 Programming and Computation II and SENG116 Object Oriented Programming both mention practical experience with object-oriented languages such as Python or C++, these courses"
+   },
+   {
+    "id": "P041",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7260448932647705,
+    "claim": "[C++ is still useful for computer engineers as evidenced by the substantial percentage of C++ developers who are actively involved in AI and ML [S1]."
+   },
+   {
+    "id": "P042",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.45528581738471985,
+    "claim": "Do I need web development if I study computer engineering [S1] [S3]?"
+   },
+   {
+    "id": "P042",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7812759876251221,
+    "claim": "Based on the information provided, having a degree in computer engineering is still highly valued in the job market, as 69% of computer programmer positions and 95% of mobile application developer job"
+   },
+   {
+    "id": "P042",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8967586755752563,
+    "claim": "However, focusing on skills during hiring is more effective in predicting job performance than hiring for education [S2]."
+   },
+   {
+    "id": "P043",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7853171825408936,
+    "claim": "[Git/GitHub is a practical tool for version control, collaboration, and transparency in development workflows [S1] [S2]."
+   },
+   {
+    "id": "P043",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.400426983833313,
+    "claim": "It is recommended for students to learn Git and GitHub, as they are essential for managing code changes, collaborating with peers, and maintaining project history [S4]."
+   },
+   {
+    "id": "P043",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8571567535400391,
+    "claim": "For example, [S1] states that Git repositories allow for interaction with the history, cloning the repository, creating branches, committing, merging, comparing changes across versions of code, and mo"
+   },
+   {
+    "id": "P043",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.4879709482192993,
+    "claim": "These features are crucial for managing software development projects effectively [S4]."
+   },
+   {
+    "id": "P043",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.9208112955093384,
+    "claim": "Additionally, [S2] mentions that students who know basic shell commands, Git, and other tools can work more comfortably with development servers and engineering workflows."
+   },
+   {
+    "id": "P043",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.45735645294189453,
+    "claim": "Therefore, learning Git and GitHub is beneficial for Computer Engineering students [S4]."
+   },
+   {
+    "id": "P043",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7348644733428955,
+    "claim": "However, it is not mandatory for every student to learn every aspect of Git and GitHub immediately, as [S2] suggests beginners do not need to master every shell feature immediately.]"
+   },
+   {
+    "id": "P044",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7792279720306396,
+    "claim": "The CENG 303 Operating Systems Design and Construction course at OSTIM Technical University includes practical exercises and projects that explore real-world operating system implementations such as L"
+   },
+   {
+    "id": "P044",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": false,
+    "similarity": 0.6652039885520935,
+    "claim": "Understanding Linux is important for students in the Computer Engineering program [S1]."
+   },
+   {
+    "id": "P045",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.599810004234314,
+    "claim": "[Linux is a valuable skill for embedded systems development, as evidenced by the course CENG 303 at OSTIM Technical University [S1] [S3]."
+   },
+   {
+    "id": "P045",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.803898811340332,
+    "claim": "This course covers the design and construction of operating systems, including practical exercises on Linux, which is widely used in embedded systems [S1]."
+   },
+   {
+    "id": "P047",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6945571899414062,
+    "claim": "According to [S4], the curriculum includes courses like MTHE101 Discrete Structures for Computing, MTHE103 Calculus and Geometry, and MTHE104 Linear Algebra, which are essential for understanding and "
+   },
+   {
+    "id": "P048",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.62700355052948,
+    "claim": "The curated note on Mathematics for Machine Learning and Data Science Specialization emphasizes the importance of reviewing algebra and functions before calculus, which could imply that data structure"
+   },
+   {
+    "id": "P050",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7754901647567749,
+    "claim": "To build early software engineering habits, students should start with foundational courses like Computer Science 61A, which is a rigorous and fast-paced introduction to computer science designed for "
+   },
+   {
+    "id": "P050",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.4324880540370941,
+    "claim": "Additionally, the SWEBOK Guide provides knowledge areas such as requirements, architecture, design, construction, testing, maintenance, configuration management, and professional practice, which are e"
+   },
+   {
+    "id": "P051",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.5830844640731812,
+    "claim": "Computer engineering programs often prepare students for professional practice, including careers in backend development [S1]."
+   },
+   {
+    "id": "P051",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6573431491851807,
+    "claim": "The field of computer engineering encompasses a broad range of diverse career sectors, including those that use computers to automate or drive products or services efficiently [S1]."
+   },
+   {
+    "id": "P051",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.94129478931427,
+    "claim": "Additionally, the Bureau of Labor Statistics (BLS) indicates that computer occupations are expected to increase by 17.7% by 2022, with information security leading by 36.5%, suggesting a promising car"
+   },
+   {
+    "id": "P053",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7487602233886719,
+    "claim": "[According to the source [S2], four-year programs in computer engineering (CE) have developed and expanded throughout industry, indicating that databases are important for CE professionals."
+   },
+   {
+    "id": "P053",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.55621337890625,
+    "claim": "Additionally, the source [S4] suggests that having a degree is still highly valued in the job market, which implies that knowledge of databases is crucial for computer engineers."
+   },
+   {
+    "id": "P055",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.5519849061965942,
+    "claim": "Learning testing and debugging is important for a Computer Engineering curriculum [S1] [S3]."
+   },
+   {
+    "id": "P055",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7857227325439453,
+    "claim": "The [S3] section mentions that students should \"Effectively use a debugger to trace code execution and identify defects in code,\" which is a crucial skill in software engineering."
+   },
+   {
+    "id": "P056",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7424584627151489,
+    "claim": "The Missing Semester course by MIT CSAIL explains the practical computing tools that many students need but often do not learn formally [S1]."
+   },
+   {
+    "id": "P056",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.9470246434211731,
+    "claim": "The shell lesson is useful for understanding why command-line skills matter, as it covers navigating files, running programs, combining tools, automating tasks, inspecting logs, managing development e"
+   },
+   {
+    "id": "H057",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6846438050270081,
+    "claim": "To understand hardware topics in Computer Engineering, you should focus on the design and construction of software and hardware components of modern computing systems and computer-controlled equipment"
+   },
+   {
+    "id": "H057",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.48052364587783813,
+    "claim": "This includes understanding the science and technology of design, construction, implementation, and maintenance of these components [S2]."
+   },
+   {
+    "id": "H057",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7146720290184021,
+    "claim": "Additionally, you should appreciate the concept of a computer system, the design of the hardware and software for that system, and the processes involved in constructing, analyzing, and maintaining it"
+   },
+   {
+    "id": "H058",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8336053490638733,
+    "claim": "Embedded systems are indeed a good path for Computer Engineering, as evidenced by the proliferation of applications involving embedded systems, such as automobiles, control systems, major appliances, "
+   },
+   {
+    "id": "H058",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.9937887191772461,
+    "claim": "Computer engineers are increasingly involved in the design of computer-based systems to address highly specialized and specific application needs [S1]."
+   },
+   {
+    "id": "H058",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7546857595443726,
+    "claim": "This aligns with the curriculum and focus areas of Computer Engineering, which emphasize the design and development of embedded systems and other specialized applications [S1] [S4]."
+   },
+   {
+    "id": "H060",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.5493210554122925,
+    "claim": "Understanding computer architecture is crucial for Computer Engineering students [S1]."
+   },
+   {
+    "id": "H061",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6554824709892273,
+    "claim": "[According to the context, Computer Engineering involves the study of computer networks [S1] [S4]."
+   },
+   {
+    "id": "H062",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7579120397567749,
+    "claim": "For Computer Engineering students interested in cybersecurity, network skills are particularly useful [S2]."
+   },
+   {
+    "id": "H062",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.5755401849746704,
+    "claim": "In the cybersecurity pathway tool provided by the National Institute of Standards and Technology (NICE Framework), network security is a key component of the role [S4]."
+   },
+   {
+    "id": "H062",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8147399425506592,
+    "claim": "Additionally, the curated note on cybersecurity curricular guidelines highlights the natural connection between cybersecurity and network-related topics such as networks, operating systems, programmin"
+   },
+   {
+    "id": "H064",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.5750360488891602,
+    "claim": "The curriculum focuses on courses like Calculus, Physics, and Programming Fundamentals, which are foundational for computer engineering but do not include specific electronics labs [S1]."
+   },
+   {
+    "id": "H067",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.4812377989292145,
+    "claim": "You can work on IoT (Internet of Things) after completing a Computer Engineering degree [S4]."
+   },
+   {
+    "id": "H067",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.5913631916046143,
+    "claim": "The curriculum suggests that Computer Engineers are already or will soon be interacting with IoT technologies, indicating that IoT is a relevant and evolving field within the Computer Engineering doma"
+   },
+   {
+    "id": "H068",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6642398834228516,
+    "claim": "Computer networks are indeed useful outside cybersecurity [S2]."
+   },
+   {
+    "id": "H068",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.9919254779815674,
+    "claim": "For Computer Engineering students, cybersecurity naturally connects with networks, operating systems, programming, databases, cloud computing, cryptography, embedded systems, and hardware security [S2"
+   },
+   {
+    "id": "H068",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7746037244796753,
+    "claim": "This connection makes cybersecurity a natural fit for Computer Engineering programs, where understanding computer networks is crucial for developing secure and efficient systems [S2]."
+   },
+   {
+    "id": "A069",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.638018012046814,
+    "claim": "The report indicates that the industry is less focused on upskilling and reskilling its workforce compared to other sectors, which could imply that AI might not fully replace human engineers [S1]."
+   },
+   {
+    "id": "A069",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.5119609236717224,
+    "claim": "Additionally, the report highlights the importance of curiosity, lifelong learning, and marketing and media skills, suggesting that human engineers may still have a role in these areas [S1]."
+   },
+   {
+    "id": "A072",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6320993900299072,
+    "claim": "Based on the provided sources, there is insufficient information to definitively state whether a master's degree is necessary for AI jobs in the field of Computer Engineering [S4]."
+   },
+   {
+    "id": "A072",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.68321692943573,
+    "claim": "The program syllabus for the Master's Degree in Computer Engineering suggests that a master's degree can support deeper specialization and advanced technical roles, but it does not confirm that a mast"
+   },
+   {
+    "id": "A072",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7475855350494385,
+    "claim": "Therefore, a master's degree may be beneficial for certain roles, but it is not a universal requirement [S4]."
+   },
+   {
+    "id": "A074",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.38808104395866394,
+    "claim": "Machine learning is a component of the curriculum for computer engineering programs.] [S3]"
+   },
+   {
+    "id": "A076",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.675851583480835,
+    "claim": "Based on the [S1] Future of Jobs Report 2025, the increasing importance of AI, big data, networks, and cybersecurity, as well as technological literacy, are expected to drive skills change in the next"
+   },
+   {
+    "id": "A076",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.930633008480072,
+    "claim": "These trends are not only responsible for the growth of these skills but also for the rising importance of analytical thinking and systems thinking [S3]."
+   },
+   {
+    "id": "A076",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6441992521286011,
+    "claim": "Therefore, a computer engineering student should follow the future technologies of AI, big data, networks, cybersecurity, and technological literacy to stay ahead in their field [S3]."
+   },
+   {
+    "id": "A078",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.9379034638404846,
+    "claim": "According to the report \"How Gen AI Affects the Value of Development Work\" by Kevin Storer from DORA, Google [S1], the use of generative artificial intelligence in development can change how the value"
+   },
+   {
+    "id": "A078",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.9286336898803711,
+    "claim": "However, the report also highlights that while AI tools can assist with various tasks such as coding, explanation, search, testing ideas, and prototyping, engineers still need to understand requiremen"
+   },
+   {
+    "id": "A079",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6813669204711914,
+    "claim": "The Association for Computing Machinery Data Science Task Force has outlined computing competencies for undergraduate data science curricula, which include strong communication skills and the ability "
+   },
+   {
+    "id": "A081",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6964386701583862,
+    "claim": "Learning machine learning (ML) math before using AI tools is recommended [S1]."
+   },
+   {
+    "id": "A081",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.905800461769104,
+    "claim": "The Mathematics for Machine Learning and Data Science Specialization course sequence, as curated by DeepLearning.AI, is useful for identifying math areas that support machine learning and data science"
+   },
+   {
+    "id": "Y083",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7898703813552856,
+    "claim": "The framework is useful for role exploration and shows that cybersecurity is not limited to a single job [S1]."
+   },
+   {
+    "id": "Y083",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8380828499794006,
+    "claim": "Additionally, the cybersecurity curricular guidelines CSEC 2017, a professional curricular guideline for post-secondary cybersecurity education, explains cybersecurity as a broad field, further suppor"
+   },
+   {
+    "id": "Y084",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6842062473297119,
+    "claim": "Use the cybersecurity workforce framework to explore roles, tasks, knowledge, and skills in cybersecurity work [S1]."
+   },
+   {
+    "id": "Y084",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.2371014952659607,
+    "claim": "The retrieved evidence does not justify promising a specific job outcome or recommending a particular certification path [S1]."
+   },
+   {
+    "id": "Y085",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8317403793334961,
+    "claim": "The retrieved source states: \"A student interested in cloud security should emphasize networking, Linux, cloud services, IAM, logging, and secure deployment.\" [S2]."
+   },
+   {
+    "id": "Y085",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": -0.08138395845890045,
+    "claim": "The retrieved evidence does not establish the rest [S2]."
+   },
+   {
+    "id": "Y086",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6096012592315674,
+    "claim": "Cybersecurity is more software than hardware in the context of Computer Engineering [S3]."
+   },
+   {
+    "id": "Y086",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6723510026931763,
+    "claim": "The Computing Curricula 2020 [S3] suggests that cybersecurity naturally connects with topics like networks, operating systems, programming, databases, cloud computing, cryptography, embedded systems, "
+   },
+   {
+    "id": "Y087",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8153910636901855,
+    "claim": "The Cybersecurity Curricular Guidelines CSEC 2017 [S1] is a professional curricular guideline that can help you understand cybersecurity as a broad field rather than just ethical hacking or penetratio"
+   },
+   {
+    "id": "Y087",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8575783967971802,
+    "claim": "The Cyber Career Pathways Tool [S2] from the Cybersecurity and Infrastructure Security Agency (CISA) can help you understand that cybersecurity is not a single job but a diverse field involving roles "
+   },
+   {
+    "id": "Y088",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8535764813423157,
+    "claim": "Computer Engineering students can build a strong foundation in cybersecurity by focusing on topics such as networks, operating systems, programming, databases, cloud computing, cryptography, embedded "
+   },
+   {
+    "id": "Y088",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7241674661636353,
+    "claim": "This curriculum helps students understand the interconnectedness of cybersecurity, which involves not only code vulnerabilities but also people, processes, and organizational decisions [S2]."
+   },
+   {
+    "id": "Y088",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7018383741378784,
+    "claim": "Given the cybersecurity pathway tool provided by the National Institute of Standards and Technology (NICE Framework), students can identify cybersecurity roles that fit their interests and skill sets "
+   },
+   {
+    "id": "Y088",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8379055857658386,
+    "claim": "The cybersecurity career pathways tool offers resources aligned with the NICE Framework, aiding in role exploration and understanding that cybersecurity encompasses various roles beyond a single job ["
+   },
+   {
+    "id": "Y090",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.5780867338180542,
+    "claim": "The NICE Framework, a resource provided by the National Institute of Standards and Technology, outlines various cybersecurity roles, including cloud security [S4]."
+   },
+   {
+    "id": "Y090",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8802504539489746,
+    "claim": "This framework suggests that cybersecurity naturally connects with Computer Engineering, as the field involves networks, operating systems, programming, databases, and cloud computing [S2]."
+   },
+   {
+    "id": "Y093",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.5764148235321045,
+    "claim": "In software engineering, the primary emphasis is on the development and maintenance of software applications, including requirements, design, construction, testing, and maintenance [S4]."
+   },
+   {
+    "id": "Y093",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6060754656791687,
+    "claim": "Software engineering also covers topics such as models and methods, quality, security, professional practice, economics, and computing foundations [S4]."
+   },
+   {
+    "id": "Y093",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8784705400466919,
+    "claim": "On the other hand, cybersecurity involves secure software, systems defense, incident response, digital forensics, risk management, security architecture, vulnerability assessment, cloud security, gove"
+   },
+   {
+    "id": "Y093",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8506935834884644,
+    "claim": "It requires a different mix of skills, including programming, networking, operating systems, communication, documentation, risk thinking, and hands-on tools [S2]."
+   },
+   {
+    "id": "Y094",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8833639621734619,
+    "claim": "According to the source [S1], cybersecurity education includes both technical and nontechnical dimensions, which means you can study security through courses and resources that focus on ethical hackin"
+   },
+   {
+    "id": "Y094",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7196466326713562,
+    "claim": "This aligns with the source [S2], which provides cybersecurity career pathway resources aligned with the NICE Framework, suggesting that there are multiple career paths within cybersecurity that do no"
+   },
+   {
+    "id": "R095",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.9363282322883606,
+    "claim": "Bureau of Labor Statistics, describes Data Scientists as workers who use analytical tools and techniques to extract insights from data, and this role is commonly related to computer science, statistic"
+   },
+   {
+    "id": "R095",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.5064866542816162,
+    "claim": "Therefore, you can consider a career as a Computer Hardware Engineer or a Data Scientist after graduating from Computer Engineering [S2]."
+   },
+   {
+    "id": "R095",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.5528061985969543,
+    "claim": "[S3] and [S4] do not provide specific job roles, but they suggest that Computer Engineering graduates can also consider related fields such as software engineering, cybersecurity, information systems,"
+   },
+   {
+    "id": "R097",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6040313243865967,
+    "claim": "As a computer engineering student, you should include a skills/functional resume in your CV [S1] [S2] [S3] [S5]."
+   },
+   {
+    "id": "R097",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6109505891799927,
+    "claim": "It allows you to highlight your relevant skills and experiences, such as those from internships, labs, hackathons, and open-source work, which are important for demonstrating your readiness in the fie"
+   },
+   {
+    "id": "R097",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7072964906692505,
+    "claim": "Additionally, your CV should reflect your career readiness competencies, including communication, critical thinking, equity and inclusion, leadership, professionalism, teamwork, technology, and career"
+   },
+   {
+    "id": "R098",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8428330421447754,
+    "claim": "The retrieved source states: \"Student-facing guidance: a strong portfolio should combine technical artifacts with explanation.\" [S2]."
+   },
+   {
+    "id": "R098",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.03669115900993347,
+    "claim": "The retrieved evidence does not establish the rest [S2]."
+   },
+   {
+    "id": "R099",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7495818734169006,
+    "claim": "While GPA can still matter in some academic or screening contexts, the emphasis is shifting towards skills-based hiring, which values internships and projects more highly [S2]."
+   },
+   {
+    "id": "R099",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.4553936719894409,
+    "claim": "Internships and projects demonstrate a student's ability to learn, communicate, solve problems, work with others, and complete technical work, which are crucial for employability in Computer Engineeri"
+   },
+   {
+    "id": "R109",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.4080696105957031,
+    "claim": "Remote work opportunities are available, especially for new graduates in the industry [S4]."
+   },
+   {
+    "id": "R113",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.9258130788803101,
+    "claim": "The retrieved source states: \"Industry respondents reported requiring experience or skills in similar areas to those required by college or university Data Science programs.\" [S3]."
+   },
+   {
+    "id": "R113",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.08607053756713867,
+    "claim": "The retrieved evidence does not establish the rest [S3]."
+   },
+   {
+    "id": "R117",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7448288202285767,
+    "claim": "The context highlights the importance of embedded systems in various applications such as automobiles, control systems, major appliances, and the internet of things (IoT) [S1]."
+   },
+   {
+    "id": "R119",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.910954475402832,
+    "claim": "The retrieved source states: \"A student's major, industry, and internship experience are crucial, whether or not employers screen by GPA.\" [S1]."
+   },
+   {
+    "id": "R119",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.11713182926177979,
+    "claim": "The retrieved evidence does not establish the rest [S1]."
+   },
+   {
+    "id": "R120",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6772764921188354,
+    "claim": "According to [S1], computer hardware engineers are involved in designing, developing, or testing computer or computer-related equipment for various industries."
+   },
+   {
+    "id": "R120",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7224845886230469,
+    "claim": "Another entry-level position could be a software engineer, as mentioned in [S4], which is one of the sub-disciplines of computing categorized by the Association for Computing Machinery (ACM)."
+   },
+   {
+    "id": "R121",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7941206693649292,
+    "claim": "LinkedIn is useful for finding internships, as evidenced by the platform's announcement in early 2026, where LinkedIn introduced features allowing users to display proficiency in selected AI tools ver"
+   },
+   {
+    "id": "S123",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6044651865959167,
+    "claim": "Based on the information provided, a master's degree in Computer Engineering can be beneficial for students who want to pursue advanced research, specialized machine learning, or academic work [S3]."
+   },
+   {
+    "id": "S123",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6768449544906616,
+    "claim": "The program emphasizes project work, which is often significant in the final year, especially for innovative concepts close to the frontiers of new developments or research [S2]."
+   },
+   {
+    "id": "S123",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6256375312805176,
+    "claim": "Additionally, the field of computer engineering has a broad range of diverse career sectors, including business, industry, government, services, and organizations [S4]."
+   },
+   {
+    "id": "S124",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7634203433990479,
+    "claim": "A master's degree is not necessarily required for industry jobs in Computer Engineering, but it may be beneficial for roles that involve advanced research, specialized engineering, or academic work [S"
+   },
+   {
+    "id": "S125",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7970783114433289,
+    "claim": "The curated note on Data Scientists suggests that adding courses in statistics, linear algebra, machine learning, database, Python, data visualization, and project experience can help you transition i"
+   },
+   {
+    "id": "S125",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.637458860874176,
+    "claim": "Additionally, the program syllabus for a Computer Engineering English Thesis Master's Degree Program indicates that this path can support deeper specialization, research preparation, and academic care"
+   },
+   {
+    "id": "S126",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6458210349082947,
+    "claim": "At OSTIM Technical University, the Department of Computer Engineering offers a barrier-free education model that emphasizes applied education, integrating practical applications with theoretical knowl"
+   },
+   {
+    "id": "S126",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.820859432220459,
+    "claim": "The university's International Student Admission Directive also ensures that international students are considered for admission to various programs, including associate, undergraduate, and graduate l"
+   },
+   {
+    "id": "S134",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.5935120582580566,
+    "claim": "The academic staff in the Department of Computer Engineering at OSTIM Technical University includes Prof [S3]."
+   },
+   {
+    "id": "S134",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.42456525564193726,
+    "claim": "Dr., who can be found in the Academic Staff section of the university's website [S3]."
+   },
+   {
+    "id": "S137",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8481227159500122,
+    "claim": "In the [S1] course, which is a capstone project, students identify a research or design problem related to computer systems and develop a comprehensive project plan."
+   },
+   {
+    "id": "S137",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8408529758453369,
+    "claim": "Additionally, the [S2] course, which focuses on new trends in computer engineering, includes assignments and projects that foster analytical thinking and practical skills, such as problem-solving usin"
+   },
+   {
+    "id": "S137",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.938640296459198,
+    "claim": "These projects often involve real-world considerations like cost, safety, efficiency, and user suitability, as outlined in the [S4]"
+   },
+   {
+    "id": "X141",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8195642232894897,
+    "claim": "For cybersecurity, students should focus on networking, Linux, cloud services, identity and access management (IAM), logging, and secure deployment [S3]."
+   },
+   {
+    "id": "X141",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8593648672103882,
+    "claim": "This aligns with the curriculum's emphasis on cybersecurity connections with networks, operating systems, programming, databases, cloud computing, cryptography, embedded systems, and hardware security"
+   },
+   {
+    "id": "X141",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7044435739517212,
+    "claim": "For AI, students should learn programming, code review, testing, threat modeling, and web/application security, as these topics are emphasized in the curriculum [S3]."
+   },
+   {
+    "id": "X142",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8416798710823059,
+    "claim": "The retrieved source states: \"The source supports balanced advice about GPA, projects, and internships.\" [S2]."
+   },
+   {
+    "id": "X142",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.04429228976368904,
+    "claim": "The retrieved evidence does not establish the rest [S2]."
+   },
+   {
+    "id": "X144",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.5916255712509155,
+    "claim": "To become employable by graduation, a first-year student in Computer Engineering should study four to five modules per semester, each approximately 42 hours for instruction [S2]."
+   },
+   {
+    "id": "X144",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6792911887168884,
+    "claim": "This aligns with the information provided in [S2], which outlines the structure of the curriculum, including the number of modules and hours per semester."
+   },
+   {
+    "id": "X147",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8660266399383545,
+    "claim": "The retrieved source states: \"Cybersecurity roles can involve secure software, systems defense, incident response, digital forensics, risk management, security architecture, vulnerability assessment, "
+   },
+   {
+    "id": "X147",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.041398242115974426,
+    "claim": "The retrieved evidence does not establish the rest [S2]."
+   },
+   {
+    "id": "X149",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.681248664855957,
+    "claim": "The National Association of Colleges and Employers (NACE) highlights that while GPA screening is declining, employers are increasingly focusing on skills-based hiring, which can be demonstrated throug"
+   },
+   {
+    "id": "X152",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7238556146621704,
+    "claim": "The curriculum should include a blend of theory and practice, with theory guiding your practical work [S1]."
+   },
+   {
+    "id": "X152",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.909480094909668,
+    "claim": "This blend is supported by the content in [S1], which states that a blend of theory and practice, with theory guiding practice, is the best approach to the discipline."
+   },
+   {
+    "id": "X152",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8279018402099609,
+    "claim": "Additionally, you should look for programs that distribute settled material (like circuits or supporting mathematics courses) more evenly across the years of study, as discussed in [S2]."
+   },
+   {
+    "id": "X152",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.5583900213241577,
+    "claim": "This will allow you to enjoy and be successful in more advanced levels of study [S2]."
+   },
+   {
+    "id": "X152",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.49000176787376404,
+    "claim": "[S3] also emphasizes the importance of an appropriate selection of tools and techniques, as well as a disciplined approach to problem-solving, which aligns with your interest in building things."
+   },
+   {
+    "id": "X152",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7696108818054199,
+    "claim": "Lastly, [S4] highlights the importance of design and related laboratory experiences, which can provide you with the practical skills you seek."
+   },
+   {
+    "id": "T179",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7702770233154297,
+    "claim": "The [S1] source, the Cyber Career Pathways Tool, suggests that cybersecurity is a broad field with various roles, not limited to ethical hacking or penetration testing."
+   },
+   {
+    "id": "T179",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8742306232452393,
+    "claim": "The [S2] source, the Cybersecurity Curricular Guidelines CSEC 2017, further emphasizes this by providing a professional curricular guideline for cybersecurity education, which highlights the breadth o"
+   },
+   {
+    "id": "T179",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6415494680404663,
+    "claim": "For Computer Engineers to work in cybersecurity, they should build skills that align with the NICE Framework, which is a national initiative for cybersecurity education [S4]."
+   },
+   {
+    "id": "T179",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7073782682418823,
+    "claim": "The [S4] source, the NICE Framework, outlines the competencies, knowledge, roles, tasks, and skills needed for cybersecurity professionals."
+   },
+   {
+    "id": "T179",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6637338399887085,
+    "claim": "These include cybersecurity, knowledge, role, security, skill, task, team, training, workforce, and work role [S4]."
+   },
+   {
+    "id": "T180",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.682393491268158,
+    "claim": "Based on the information provided, if a student is interested in pursuing advanced research, specialized machine learning, or academic work in data science, they may benefit from a master's degree in "
+   },
+   {
+    "id": "T180",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7167961597442627,
+    "claim": "The master's program can provide deeper research, advanced modeling, and academic work, which can be beneficial for students who want to delve into these areas [S2]."
+   },
+   {
+    "id": "T180",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.735271692276001,
+    "claim": "However, for entry-level data science roles, a bachelor's degree in a related field, such as Computer Engineering, can suffice [S2]."
+   },
+   {
+    "id": "T184",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.818657636642456,
+    "claim": "Projects in hardware engineering for Computer Engineering could include designing and developing computer-based systems for specialized applications, such as embedded systems found in automobiles, con"
+   },
+   {
+    "id": "T186",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8040211200714111,
+    "claim": "Based on the information provided, CENG 303 Operating Systems Design and Construction course at OSTIM Technical University covers the exploration of real-world operating system implementations such as"
+   },
+   {
+    "id": "T187",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.5165989398956299,
+    "claim": "Linux is important in the field of cybersecurity, especially in the context of operating systems and system design [S1]."
+   },
+   {
+    "id": "T187",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8098362684249878,
+    "claim": "The course CENG 303 Operating Systems Design & Construction at OSTIM Technical University covers practical exercises and projects that explore real-world operating system implementations, including Li"
+   },
+   {
+    "id": "T189",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7393532395362854,
+    "claim": "The context emphasizes the importance of showcasing real responsibilities and reflection in projects, not just a list of tools [S1]."
+   },
+   {
+    "id": "T189",
+    "label": "correct_evidence_supported",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7405081391334534,
+    "claim": "It highlights that projects and internships are valuable when they demonstrate the ability to learn, communicate, solve problems, work with others, and complete technical work [S1]."
+   }
+  ],
+  "unsupported": [
+   {
+    "id": "F004",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.9620494246482849,
+    "claim": "Computer Engineering is a discipline that involves the design and construction of processor-based systems, encompassing hardware, software, and communications components [S1] [S2]."
+   },
+   {
+    "id": "F004",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8099271059036255,
+    "claim": "This field is generally closest to the boundary between computing and engineering hardware, as indicated by the ACM's categorization of the overarching discipline of computing into five sub-discipline"
+   },
+   {
+    "id": "F010",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.682819664478302,
+    "claim": "According to [S1], the curriculum for computer engineering includes understanding engineering concepts and artifacts, as well as the basic skills necessary to apply this knowledge to real-world proble"
+   },
+   {
+    "id": "F010",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": false,
+    "lexical_pass": false,
+    "similarity": 0.5307596325874329,
+    "claim": "This field also involves exploring the subdisciplines such as artificial intelligence, robotics, and cybernetics, as mentioned in [S2]."
+   },
+   {
+    "id": "C016",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": false,
+    "lexical_pass": true,
+    "similarity": 0.6057400703430176,
+    "claim": "The curriculum does include databases [S1]."
+   },
+   {
+    "id": "C020",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.919553816318512,
+    "claim": "The retrieved source states: \"Good laboratory experiences also expose students to state-of-the-art tools and methodologies that will prepare them for real engineering work after graduation.\" [S3]."
+   },
+   {
+    "id": "C020",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": false,
+    "lexical_pass": true,
+    "similarity": 0.01467372477054596,
+    "claim": "The retrieved evidence does not establish the rest [S3]."
+   },
+   {
+    "id": "P040",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8846067190170288,
+    "claim": "The retrieved source states: \"SENG116 Object Oriented Programming says students gain practical experience using object-oriented languages such as Python or C++.\" [S1]."
+   },
+   {
+    "id": "P040",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": false,
+    "lexical_pass": true,
+    "similarity": -0.03267107158899307,
+    "claim": "The retrieved evidence does not establish the rest [S1]."
+   },
+   {
+    "id": "P049",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7908800840377808,
+    "claim": "Git, a core component of GitHub, allows for interaction with project history, cloning repositories, and managing branches, which are essential for collaborative projects [S1]."
+   },
+   {
+    "id": "A073",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.9423828125,
+    "claim": "The retrieved source states: \"For employers, these insights emphasize the need for training and upskilling initiatives that focus on both advanced prompt-writing skills and broader GenAI literacy.\" [S"
+   },
+   {
+    "id": "A073",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": false,
+    "lexical_pass": true,
+    "similarity": 0.07128743827342987,
+    "claim": "The retrieved evidence does not establish the rest [S4]."
+   },
+   {
+    "id": "Y089",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7721782922744751,
+    "claim": "The course CENG 303 Operating Systems Design & Construction at OSTIM Technical University covers theoretical foundations and practical exercises related to operating systems, including real-world impl"
+   },
+   {
+    "id": "Y089",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.8208004236221313,
+    "claim": "This aligns well with the curriculum's emphasis on cybersecurity, which naturally connects with operating systems, programming, databases, and cloud computing [S2]."
+   },
+   {
+    "id": "Y091",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7013422250747681,
+    "claim": "According to the Cyber Career Pathways Tool, cybersecurity is a significant career pathway, and the CSEC 2017 guidelines emphasize cybersecurity as a broad field [S2]."
+   },
+   {
+    "id": "R101",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": false,
+    "lexical_pass": false,
+    "similarity": 0.46043720841407776,
+    "claim": "Internships are considered important in Computer Engineering [S3]."
+   },
+   {
+    "id": "R101",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6563031673431396,
+    "claim": "The [S2] source from the Association for Computing Machinery and IEEE Computer Society highlights that internship experience can provide students with constructive industry experience, which is benefi"
+   },
+   {
+    "id": "R107",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6147156953811646,
+    "claim": "The Erasmus+ project agreements listed in [S1] include partnerships with universities in Spain, Denmark, and Italy, which are relevant to the field of computer engineering."
+   },
+   {
+    "id": "R107",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7246173024177551,
+    "claim": "Additionally, the Erasmus Student Internship Mobility Call [S2] allows students to participate in internships, which can be beneficial for gaining practical experience and networking opportunities."
+   },
+   {
+    "id": "R107",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": false,
+    "lexical_pass": true,
+    "similarity": 0.46700289845466614,
+    "claim": "[S1] and [S2] support the claim that Erasmus can be useful for computer engineering students."
+   },
+   {
+    "id": "R108",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7483950853347778,
+    "claim": "The retrieved source states: \"Here is a check-list of tips and information to help prepare for work abroad.\" [S2]."
+   },
+   {
+    "id": "R108",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": false,
+    "lexical_pass": true,
+    "similarity": 0.03922760859131813,
+    "claim": "The retrieved evidence does not establish the rest [S2]."
+   },
+   {
+    "id": "R114",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.9283881187438965,
+    "claim": "The retrieved source states: \"Project Room”, places candidates in a virtual environment where project -related information is presented across Gantt charts, pie charts, tables, and data.\" [S1]."
+   },
+   {
+    "id": "R114",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": false,
+    "lexical_pass": true,
+    "similarity": -0.008353402838110924,
+    "claim": "The retrieved evidence does not establish the rest [S1]."
+   },
+   {
+    "id": "S133",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.5534153580665588,
+    "claim": "The program in Computer Engineering at OSTIM Technical University is offered in English [S1]."
+   },
+   {
+    "id": "S133",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": false,
+    "lexical_pass": true,
+    "similarity": 0.2731165587902069,
+    "claim": "This is evident from the title \"About the Department | MF-Bilgisayar Mühendisliği (İngilizce)\" which directly states that the program is in English [S1]."
+   },
+   {
+    "id": "X145",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7393912672996521,
+    "claim": "To explore cybersecurity and embedded systems in Computer Engineering, you should focus on courses that emphasize hardware and cybersecurity [S1] [S2] [S3]."
+   },
+   {
+    "id": "X145",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7626552581787109,
+    "claim": "For cybersecurity, you should emphasize networking, Linux, cloud services, identity and access management (IAM), logging, and secure deployment [S2]."
+   },
+   {
+    "id": "X145",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": false,
+    "lexical_pass": true,
+    "similarity": 0.3926984667778015,
+    "claim": "This aligns with the guidance provided in the curated note on Cybersecurity Career Pathways Tool [S2]."
+   },
+   {
+    "id": "X145",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7776170969009399,
+    "claim": "For embedded systems, you should emphasize digital systems, firmware, electronics, protocols, and low-level debugging [S2]."
+   },
+   {
+    "id": "T188",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6390434503555298,
+    "claim": "Computer Engineering explicitly includes hardware alongside software and communications; the retrieved excerpt does not quantify the hardware content of Computer Science [S1]."
+   },
+   {
+    "id": "T190",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.49687659740448,
+    "claim": "Internships can compensate for the lack of academic credit and exams in a Computer Engineering curriculum [S2]."
+   },
+   {
+    "id": "T190",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7387984395027161,
+    "claim": "According to [S2], internships often provide students with constructive industry experience, which is beneficial for future employment."
+   },
+   {
+    "id": "T190",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.7761825323104858,
+    "claim": "Additionally, internships can help students decide on their future career goals by blending real-world experience with academic endeavors [S2]."
+   },
+   {
+    "id": "T190",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": false,
+    "lexical_pass": true,
+    "similarity": 0.4602733552455902,
+    "claim": "Therefore, internships can serve as a valuable supplement to a Computer Engineering curriculum [S4]."
+   },
+   {
+    "id": "T192",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.5345064401626587,
+    "claim": "CENG students can indeed participate in Erasmus programs in Computer Engineering, as evidenced by the Erasmus Student Internship Mobility Call published by OSTIM Technical University [S4]."
+   },
+   {
+    "id": "T192",
+    "label": "unsupported_incorrect_or_misleading",
+    "evaluator_supported": true,
+    "lexical_pass": true,
+    "similarity": 0.6462579965591431,
+    "claim": "Such experiences are often beneficial for career readiness, as they help students develop communication, teamwork, and professional habits, which are important competencies according to the Career Rea"
+   }
+  ],
+  "mismatched": [
+   0.6986304521560669,
+   0.6411060094833374,
+   0.536548912525177,
+   0.5284141898155212,
+   0.45238590240478516,
+   0.638853907585144,
+   0.6329954862594604,
+   0.5029573440551758,
+   0.4770947992801666,
+   0.5045121908187866,
+   0.3741816282272339,
+   0.4043910503387451,
+   0.6745040416717529,
+   0.3240237832069397,
+   0.5226604342460632,
+   0.3876977562904358,
+   0.3949210047721863,
+   0.4283163547515869,
+   0.32850903272628784,
+   0.3766164779663086,
+   0.3781627416610718,
+   0.62144935131073,
+   0.31527578830718994,
+   0.4885287284851074,
+   0.34678855538368225,
+   0.42043638229370117,
+   0.4324111044406891,
+   0.6402879357337952,
+   0.49251025915145874,
+   0.09399056434631348,
+   0.4663473665714264,
+   0.51849365234375,
+   0.5483386516571045,
+   0.36826759576797485,
+   0.5047354698181152,
+   0.5584993362426758,
+   0.3319626748561859,
+   0.30856943130493164,
+   0.39047175645828247,
+   0.527571976184845,
+   0.44047194719314575,
+   0.48435741662979126,
+   0.4586004614830017,
+   0.3980886936187744,
+   0.4888417720794678,
+   0.31341761350631714,
+   0.37796998023986816,
+   0.5825611352920532,
+   0.34746062755584717,
+   0.5244565010070801,
+   0.2915371060371399,
+   0.40213918685913086,
+   0.2608627676963806,
+   0.3585392236709595,
+   0.09871010482311249,
+   0.5060691833496094,
+   0.42570555210113525,
+   0.4840276837348938,
+   0.47004687786102295,
+   0.6535127758979797,
+   0.30409717559814453,
+   0.21033993363380432,
+   0.32184821367263794,
+   0.296532541513443,
+   0.17479047179222107,
+   0.2477639615535736,
+   0.5231682062149048,
+   0.2294064164161682,
+   0.4050053358078003,
+   0.36195650696754456,
+   0.5562237501144409,
+   0.2786713242530823,
+   0.5999839305877686,
+   0.7384562492370605,
+   0.419491171836853,
+   0.46967339515686035,
+   0.5531265139579773,
+   0.468731164932251,
+   0.44852638244628906,
+   0.45018571615219116,
+   0.4023207426071167,
+   0.74341881275177,
+   0.4386459290981293,
+   0.5300154685974121,
+   0.29819774627685547,
+   0.5030077695846558,
+   0.5587096214294434,
+   0.39427101612091064,
+   0.6670478582382202,
+   0.6577836871147156,
+   0.2908517122268677,
+   0.41297367215156555,
+   0.4581313133239746,
+   0.4269216060638428,
+   0.4810558557510376,
+   0.6642398834228516,
+   0.3800975978374481,
+   0.3703557848930359,
+   0.42645463347435,
+   0.4120594263076782,
+   0.39084678888320923,
+   0.4405677914619446,
+   0.23027387261390686,
+   0.43128567934036255,
+   0.4530574083328247,
+   0.2972649335861206,
+   0.529077410697937,
+   0.19475452601909637,
+   0.4589862525463104,
+   0.4955395758152008,
+   0.2817980647087097,
+   0.3913644254207611,
+   0.2776820659637451,
+   0.5474417209625244,
+   0.7386587262153625,
+   0.26541444659233093,
+   0.8317403793334961,
+   0.10340122878551483,
+   0.35225048661231995,
+   0.45323193073272705,
+   0.3296935558319092,
+   0.38038814067840576,
+   0.5277033448219299,
+   0.4390990138053894,
+   0.6639350652694702,
+   0.42648008465766907,
+   0.3841313123703003,
+   0.3881903886795044,
+   0.5918686389923096,
+   0.3432041108608246,
+   0.5622173547744751,
+   0.3657809793949127,
+   0.3871348202228546,
+   0.3905445337295532,
+   0.7305963039398193,
+   0.4679081439971924,
+   0.5257192850112915,
+   0.31713631749153137,
+   0.42066752910614014,
+   0.04591365158557892,
+   0.23375371098518372,
+   0.4085882306098938,
+   0.3494328260421753,
+   0.3310530185699463,
+   0.062350183725357056,
+   0.38147103786468506,
+   0.6768934726715088,
+   -0.04078644514083862,
+   0.45600804686546326,
+   0.49772408604621887,
+   0.36688223481178284,
+   0.5082137584686279,
+   0.2799634635448456,
+   0.5840942859649658,
+   0.6107502579689026,
+   0.43715643882751465,
+   0.5683019757270813,
+   0.4267185926437378,
+   0.3718310594558716,
+   0.396223247051239,
+   0.23225410282611847,
+   0.5212567448616028,
+   0.5037004351615906,
+   0.2775191366672516,
+   0.3124912977218628,
+   0.3314262926578522,
+   0.49640846252441406,
+   0.30963969230651855,
+   0.10340122878551483,
+   0.31651589274406433,
+   0.266815185546875,
+   0.2867565453052521,
+   0.041398242115974426,
+   0.3040751516819,
+   0.32973867654800415,
+   0.36174291372299194,
+   0.4159373641014099,
+   0.5449182987213135,
+   0.4095461964607239,
+   0.6937376260757446,
+   0.5566576719284058,
+   0.3923237919807434,
+   0.3758503794670105,
+   0.4965841770172119,
+   0.30581438541412354,
+   0.2396891564130783,
+   0.41549068689346313,
+   0.4694209694862366,
+   0.46326473355293274
+  ]
+ }
+}

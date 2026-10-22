@@ -48,9 +48,9 @@ function AboutProjectPage() {
             <dt>Backend</dt>
             <dd>FastAPI</dd>
             <dt>Retrieval</dt>
-            <dd>ChromaDB</dd>
+            <dd>ChromaDB + BM25 hybrid search</dd>
             <dt>Embeddings</dt>
-            <dd>sentence-transformers/all-MiniLM-L6-v2</dd>
+            <dd>BAAI/bge-m3</dd>
             <dt>Local LLM</dt>
             <dd>qwen2.5:3b through Ollama</dd>
           </dl>

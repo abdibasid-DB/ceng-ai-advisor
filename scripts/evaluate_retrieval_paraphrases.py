@@ -30,14 +30,11 @@ from __future__ import annotations
 import argparse
 import json
 import random
-import re
 import shutil
 import subprocess
 import sys
 import threading
 import time
-import unicodedata
-from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -61,12 +58,13 @@ from backend.app.core.retrieval_config import (
     CANDIDATE_TOP_K,
     CHROMA_PATH,
     COLLECTION_NAME,
-    EMBEDDING_MODEL_NAME,
 )
 from backend.app.core.storage_config import ensure_disk_space, prepare_evaluation_storage
 from backend.app.rag.retriever import (
     Retriever,
+    bm25_tokens,
     deduplicate_candidates,
+    fold,
     diversify_results,
     expand_query_for_retrieval,
     infer_query_profile,
@@ -88,13 +86,14 @@ BM25_CANDIDATES = CANDIDATE_TOP_K
 EMBED_BATCH_SIZE = 32
 BOOTSTRAP_SAMPLES = 2000
 
-MINILM = EMBEDDING_MODEL_NAME
+MINILM = "sentence-transformers/all-MiniLM-L6-v2"
 BGE = "BAAI/bge-small-en-v1.5"
 E5 = "intfloat/multilingual-e5-small"
 BGE_M3 = "BAAI/bge-m3"
 BGE_QUERY_INSTRUCTION = "Represent this sentence for searching relevant passages: "
 
-CURRENT_CHUNKING = {"target_words": chunking.TARGET_WORDS, "max_words": chunking.MAX_WORDS, "overlap_words": chunking.OVERLAP_WORDS, "clean": False}
+# Chunking before Step 1.2 (scripts/chunk_documents.py now uses SMALL_CHUNKING).
+CURRENT_CHUNKING = {"target_words": 380, "max_words": 500, "overlap_words": 60, "clean": False}
 SMALL_CHUNKING = {"target_words": 180, "max_words": 220, "overlap_words": 40, "clean": True}
 
 OPTIONS: dict[str, dict[str, Any]] = {
@@ -108,26 +107,6 @@ OPTIONS: dict[str, dict[str, Any]] = {
     "e": {"label": "e: a + bge-m3 (dense, 512 tokens)", "chunking": SMALL_CHUNKING, "model": BGE_M3, "query_prefix": "", "passage_prefix": "", "max_seq_length": 512, "batch_size": 8},
     "f": {"label": "f: e + BM25 (RRF)", "hybrid": "e"},
 }
-
-# Short digit-free HTML blocks found in the header or footer zone of at least
-# this many different HTML documents are treated as navigation/menu
-# boilerplate. Table rows (country names, percentages) sit mid-page and stay.
-NAV_BLOCK_MAX_WORDS = 12
-NAV_BLOCK_MIN_DOCUMENTS = 3
-NAV_EDGE_SHARE = 0.2
-# Repeated paragraphs inside one HTML page (pages rendered twice) are dropped
-# from their second occurrence; short repeated labels such as place names are kept.
-REPEATED_BLOCK_MIN_WORDS = 8
-COOKIE_BLOCK_MAX_WORDS = 80
-COOKIE_RE = re.compile(r"cookie|çerez|kvkk|gdpr|kabul et\b|accept all|strictly necessary", re.IGNORECASE)
-PAGE_NUMBER_RE = re.compile(r"^page\s+\d+$", re.IGNORECASE)
-SOURCE_ID_HEADER_RE = re.compile(r"^source id:\s*\S+$", re.IGNORECASE)
-
-BM25_STOPWORDS = set(
-    "a an and are as at be but by can do does for from how i if in into is it its me my of on or our should so than "
-    "that the their them there these they this to was we what when where which who why will with would you your".split()
-)
-
 
 def utc_now() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
@@ -152,16 +131,6 @@ def git_commit() -> str:
         return subprocess.run(["git", "rev-parse", "--short", "HEAD"], cwd=PROJECT_ROOT, capture_output=True, text=True, check=True).stdout.strip()
     except (OSError, subprocess.CalledProcessError):
         return "unknown"
-
-
-def fold(text: str) -> str:
-    """Case- and diacritic-insensitive form, so OSTİM, OSTIM and ostim compare equal."""
-    decomposed = unicodedata.normalize("NFKD", text.casefold())
-    return "".join(char for char in decomposed if not unicodedata.combining(char)).replace("ı", "i")
-
-
-def normalize_block(block: str) -> str:
-    return " ".join(block.split()).casefold()
 
 
 # ---------------------------------------------------------------- test cases
@@ -209,64 +178,19 @@ def load_cases(sources: dict[str, dict[str, Any]]) -> tuple[list[dict[str, Any]]
 # ------------------------------------------------------------------ chunking
 
 
-def html_boilerplate_blocks(documents: list[tuple[dict[str, Any], str]]) -> set[str]:
-    document_counts: Counter[str] = Counter()
-    for record, text in documents:
-        if record.get("input_file_type") != "html":
-            continue
-        blocks = chunking.split_blocks(text)
-        edge = max(1, int(len(blocks) * NAV_EDGE_SHARE))
-        edge_blocks = {
-            normalize_block(block)
-            for index, block in enumerate(blocks)
-            if (index < edge or index >= len(blocks) - edge)
-            and chunking.count_words(block) <= NAV_BLOCK_MAX_WORDS
-            and not any(char.isdigit() for char in block)
-        }
-        document_counts.update(edge_blocks)
-    return {block for block, count in document_counts.items() if count >= NAV_BLOCK_MIN_DOCUMENTS}
-
-
-def clean_document(text: str, file_type: str, boilerplate: set[str]) -> str:
-    kept: list[str] = []
-    seen_paragraphs: set[str] = set()
-    for block in chunking.split_blocks(text):
-        lines = [
-            line
-            for line in block.splitlines()
-            if not SOURCE_ID_HEADER_RE.match(line.strip()) and not PAGE_NUMBER_RE.match(line.strip())
-        ]
-        block = "\n".join(lines).strip()
-        if not block:
-            continue
-        key = normalize_block(block)
-        words = chunking.count_words(block)
-        if words <= COOKIE_BLOCK_MAX_WORDS and COOKIE_RE.search(block):
-            continue
-        if file_type == "html":
-            if key in boilerplate:
-                continue
-            if words >= REPEATED_BLOCK_MIN_WORDS:
-                if key in seen_paragraphs:
-                    continue
-                seen_paragraphs.add(key)
-        kept.append(block)
-    return "\n\n".join(kept) + "\n"
-
-
 def build_chunks(settings: dict[str, Any]) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     manifest = load_json(PROCESSING_MANIFEST_PATH)
     sources = {source["source_id"]: source for source in load_json(SOURCES_PATH)["sources"]}
     records = sorted((record for record in manifest["records"] if record.get("chunking_eligible") is True), key=lambda item: item["source_id"])
     documents = [(record, (PROJECT_ROOT / record["processed_file_path"]).read_text(encoding="utf-8")) for record in records]
-    boilerplate = html_boilerplate_blocks(documents) if settings["clean"] else set()
+    boilerplate = chunking.html_boilerplate_blocks(documents) if settings["clean"] else set()
 
     chunks: list[dict[str, Any]] = []
     words_before = words_after = 0
     for record, text in documents:
         words_before += chunking.count_words(text)
         if settings["clean"]:
-            text = clean_document(text, record.get("input_file_type", ""), boilerplate)
+            text = chunking.clean_document(text, record.get("input_file_type", ""), boilerplate)
         words_after += chunking.count_words(text)
         units = chunking.build_text_units(text)
         pieces = chunking.create_chunks_from_units(
@@ -399,10 +323,6 @@ def build_index(path: Path, chunks: list[dict[str, Any]], embeddings: np.ndarray
 # ----------------------------------------------------------------- retrieval
 
 
-def bm25_tokens(text: str) -> list[str]:
-    return [token for token in re.findall(r"\w+", fold(text)) if len(token) > 1 and token not in BM25_STOPWORDS]
-
-
 class ExperimentRetriever(Retriever):
     """The live retriever on an experiment index, with model-specific query prefixes and optional BM25 fusion."""
 
@@ -416,7 +336,7 @@ class ExperimentRetriever(Retriever):
         hybrid_chunks: list[dict[str, Any]] | None = None,
         hybrid_embeddings: np.ndarray | None = None,
     ) -> None:
-        super().__init__(chroma_path=chroma_path, collection_name=COLLECTION_NAME, model_name=model_name)
+        super().__init__(chroma_path=chroma_path, collection_name=COLLECTION_NAME, model_name=model_name, hybrid=False)
         self._model = model
         self.query_prefix = query_prefix
         self.hybrid_chunks = hybrid_chunks

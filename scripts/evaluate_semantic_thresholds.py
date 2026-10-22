@@ -12,7 +12,7 @@ unrelated (mismatched) pairs reach it. Lexical checks are replayed with the
 semantic encoder disabled, so they show the pipeline's word-overlap behaviour.
 
 Usage:
-    python scripts/evaluate_semantic_thresholds.py RESULTS_JSON [--trace TRACE_JSON] [--output OUT_JSON]
+    python scripts/evaluate_semantic_thresholds.py RESULTS_JSON [--trace TRACE_JSON] [--output OUT_JSON] [--model NAME]
 """
 
 from __future__ import annotations
@@ -35,18 +35,20 @@ from sentence_transformers import SentenceTransformer  # noqa: E402
 from backend.app.core.retrieval_config import EMBEDDING_MODEL_NAME  # noqa: E402
 from backend.app.rag import rag_pipeline as rp  # noqa: E402
 
-QUESTION_ANSWER_CANDIDATES = (0.55, 0.60, 0.65)
-SENTENCE_PASSAGE_CANDIDATES = (0.60, 0.65, 0.70)
+QUESTION_ANSWER_CANDIDATES = tuple(round(0.45 + 0.05 * step, 2) for step in range(9))
+SENTENCE_PASSAGE_CANDIDATES = tuple(round(0.50 + 0.05 * step, 2) for step in range(9))
 NO_EVIDENCE_PREFIX = "The retrieved evidence does not establish"
 
 _model: SentenceTransformer | None = None
+_model_name = EMBEDDING_MODEL_NAME
 _cache: dict[str, np.ndarray] = {}
 
 
 def embed(texts: list[str]) -> np.ndarray:
     global _model
     if _model is None:
-        _model = SentenceTransformer(EMBEDDING_MODEL_NAME)
+        _model = SentenceTransformer(_model_name)
+        _model.max_seq_length = min(_model.max_seq_length, 512)
     missing = [text for text in dict.fromkeys(texts) if text not in _cache]
     if missing:
         vectors = _model.encode(missing, normalize_embeddings=True, convert_to_numpy=True, show_progress_bar=False)
@@ -199,7 +201,11 @@ def main() -> int:
     parser.add_argument("results", type=Path, help="results.json from a full-200 evaluation run")
     parser.add_argument("--trace", type=Path, help="optional trace JSON with raw generations ({question, raw})")
     parser.add_argument("--output", type=Path, help="write detailed per-case scores to this JSON file")
+    parser.add_argument("--model", default=EMBEDDING_MODEL_NAME, help="embedding model to score with (default: the live retrieval model)")
     args = parser.parse_args()
+    global _model_name
+    _model_name = args.model
+    print(f"model: {_model_name}")
     output = replay(args.results, args.trace)
     if args.output:
         args.output.write_text(json.dumps(output, ensure_ascii=False, indent=1), encoding="utf-8")

@@ -1,18 +1,23 @@
 {
   "schema_version": "1.0",
   "stage": "Stage 11 - Embedding Model Design and Testing",
-  "generation_timestamp": "2026-10-13T16:55:32+00:00",
-  "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "generation_timestamp": "2026-10-22T15:52:58+00:00",
+  "model_name": "BAAI/bge-m3",
   "model_provider_repository": "Hugging Face / Sentence Transformers",
   "model_type": "sentence-transformers dense embedding model",
-  "embedding_dimension": 384,
-  "total_chunks": 1132,
-  "total_embeddings": 1132,
+  "embedding_dimension": 1024,
+  "max_seq_length": 512,
+  "reused_from": [
+    "D:/ceng-ai-advisor-data/evaluations/retrieval-paraphrases-step-1-2/indexes/e_chunks.jsonl",
+    "D:/ceng-ai-advisor-data/evaluations/retrieval-paraphrases-step-1-2/indexes/e_embeddings.npy"
+  ],
+  "total_chunks": 2822,
+  "total_embeddings": 2822,
   "normalization_setting": true,
   "similarity_metric_intended": "cosine",
-  "batch_size": 32,
-  "device_used": "cpu",
-  "generation_time_seconds": 806.19,
+  "batch_size": 8,
+  "device_used": "reused",
+  "generation_time_seconds": 0.13,
   "input_files": {
     "chunks": "knowledge_base/chunks/chunks.jsonl",
     "chunking_manifest": "knowledge_base/chunks/chunking_manifest.json"
@@ -22,11 +27,11 @@
     "metadata": "knowledge_base/embeddings/embedding_metadata.jsonl",
     "manifest": "knowledge_base/embeddings/embedding_manifest.json"
   },
-  "chunking_manifest_total_chunks": 1132,
+  "chunking_manifest_total_chunks": 2822,
   "validation_results": {
-    "total_chunks": 1132,
-    "total_embeddings": 1132,
-    "embedding_dimension": 384,
+    "total_chunks": 2822,
+    "total_embeddings": 2822,
+    "embedding_dimension": 1024,
     "embedding_count_matches_chunks": true,
     "nan_value_count": 0,
     "infinite_value_count": 0,

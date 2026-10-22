@@ -10,7 +10,7 @@ COPY requirements.txt ./
 # Install CPU PyTorch first to avoid bundling unused CUDA libraries.
 RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu \
     && pip install --no-cache-dir -r requirements.txt
-RUN python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')"
+RUN python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('BAAI/bge-m3')"
 
 COPY backend/ ./backend/
 COPY knowledge_base/ ./knowledge_base/

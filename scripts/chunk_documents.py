@@ -12,6 +12,7 @@ import hashlib
 import json
 import re
 import statistics
+from collections import Counter
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -23,9 +24,12 @@ PROCESSING_MANIFEST_PATH = PROJECT_ROOT / "knowledge_base" / "processed" / "proc
 SOURCES_PATH = PROJECT_ROOT / "knowledge_base" / "sources.json"
 DEFAULT_OUTPUT_DIR = PROJECT_ROOT / "knowledge_base" / "chunks"
 
-TARGET_WORDS = 380
-MAX_WORDS = 500
-OVERLAP_WORDS = 60
+# ~180-word chunks keep almost every chunk inside the embedding model's
+# 512-token window; the earlier 380/500/60 chunks lost text to truncation
+# (Step 1.2, docs/retrieval-paraphrases-step-1-2/summary.md).
+TARGET_WORDS = 180
+MAX_WORDS = 220
+OVERLAP_WORDS = 40
 EXTREMELY_SHORT_WORDS = 40
 OVERSIZED_WORDS = MAX_WORDS
 
@@ -33,6 +37,20 @@ REPRESENTATIVE_SAMPLE_IDS = ["src_001", "src_018", "src_017", "src_007"]
 
 WORD_RE = re.compile(r"\S+")
 SENTENCE_BOUNDARY_RE = re.compile(r"(?<=[.!?])\s+")
+
+# Short digit-free HTML blocks found in the header or footer zone of at least
+# this many different HTML documents are treated as navigation/menu
+# boilerplate. Table rows (country names, percentages) sit mid-page and stay.
+NAV_BLOCK_MAX_WORDS = 12
+NAV_BLOCK_MIN_DOCUMENTS = 3
+NAV_EDGE_SHARE = 0.2
+# Repeated paragraphs inside one HTML page (pages rendered twice) are dropped
+# from their second occurrence; short repeated labels such as place names are kept.
+REPEATED_BLOCK_MIN_WORDS = 8
+COOKIE_BLOCK_MAX_WORDS = 80
+COOKIE_RE = re.compile(r"cookie|çerez|kvkk|gdpr|kabul et\b|accept all|strictly necessary", re.IGNORECASE)
+PAGE_NUMBER_RE = re.compile(r"^page\s+\d+$", re.IGNORECASE)
+SOURCE_ID_HEADER_RE = re.compile(r"^source id:\s*\S+$", re.IGNORECASE)
 
 
 @dataclass
@@ -76,6 +94,56 @@ def split_blocks(text: str) -> list[str]:
         if block:
             blocks.append(block)
     return blocks
+
+
+def block_key(block: str) -> str:
+    return " ".join(block.split()).casefold()
+
+
+def html_boilerplate_blocks(documents: list[tuple[dict[str, Any], str]]) -> set[str]:
+    document_counts: Counter[str] = Counter()
+    for record, text in documents:
+        if record.get("input_file_type") != "html":
+            continue
+        blocks = split_blocks(text)
+        edge = max(1, int(len(blocks) * NAV_EDGE_SHARE))
+        edge_blocks = {
+            block_key(block)
+            for index, block in enumerate(blocks)
+            if (index < edge or index >= len(blocks) - edge)
+            and count_words(block) <= NAV_BLOCK_MAX_WORDS
+            and not any(char.isdigit() for char in block)
+        }
+        document_counts.update(edge_blocks)
+    return {block for block, count in document_counts.items() if count >= NAV_BLOCK_MIN_DOCUMENTS}
+
+
+def clean_document(text: str, file_type: str, boilerplate: set[str]) -> str:
+    """Drop source-id headers, page numbers, cookie banners, shared HTML navigation and repeated HTML paragraphs."""
+    kept: list[str] = []
+    seen_paragraphs: set[str] = set()
+    for block in split_blocks(text):
+        lines = [
+            line
+            for line in block.splitlines()
+            if not SOURCE_ID_HEADER_RE.match(line.strip()) and not PAGE_NUMBER_RE.match(line.strip())
+        ]
+        block = "\n".join(lines).strip()
+        if not block:
+            continue
+        key = block_key(block)
+        words = count_words(block)
+        if words <= COOKIE_BLOCK_MAX_WORDS and COOKIE_RE.search(block):
+            continue
+        if file_type == "html":
+            if key in boilerplate:
+                continue
+            if words >= REPEATED_BLOCK_MIN_WORDS:
+                if key in seen_paragraphs:
+                    continue
+                seen_paragraphs.add(key)
+        kept.append(block)
+    return "\n\n".join(kept) + "\n"
 
 
 def looks_like_heading(block: str) -> bool:
@@ -386,6 +454,15 @@ def chunk_documents(sample: bool = False, output_dir: Path = DEFAULT_OUTPUT_DIR)
     eligible_ids = {record["source_id"] for record in eligible_records}
     excluded_ids = {record["source_id"] for record in excluded_records}
 
+    all_eligible, _ = get_eligible_records(processing_manifest, sample=False)
+    boilerplate = html_boilerplate_blocks(
+        [
+            (record, (PROJECT_ROOT / record["processed_file_path"]).read_text(encoding="utf-8"))
+            for record in all_eligible
+            if (PROJECT_ROOT / record["processed_file_path"]).exists()
+        ]
+    )
+
     all_chunks: list[dict[str, Any]] = []
     per_source: list[dict[str, Any]] = []
 
@@ -421,7 +498,8 @@ def chunk_documents(sample: bool = False, output_dir: Path = DEFAULT_OUTPUT_DIR)
             )
             continue
 
-        text = processed_path.read_text(encoding="utf-8")
+        original_text = processed_path.read_text(encoding="utf-8")
+        text = clean_document(original_text, record.get("input_file_type", ""), boilerplate)
         units = build_text_units(text)
         chunks = create_chunks_from_units(
             units,
@@ -447,7 +525,8 @@ def chunk_documents(sample: bool = False, output_dir: Path = DEFAULT_OUTPUT_DIR)
                 "source_id": source_id,
                 "processed_file_path": record.get("processed_file_path"),
                 "number_of_chunks": source_chunk_count,
-                "total_source_words": count_words(text),
+                "total_source_words": count_words(original_text),
+                "words_after_cleaning": count_words(text),
                 "chunking_status": "success" if source_chunk_count else "failed",
                 "warnings": sorted(set(warnings)),
             }
@@ -460,7 +539,7 @@ def chunk_documents(sample: bool = False, output_dir: Path = DEFAULT_OUTPUT_DIR)
 
     manifest = {
         "schema_version": "1.0",
-        "stage": "Stage 10 - Document Chunking",
+        "stage": "Stage 10 - Document Chunking (Step 1.2 option f: 180-word cleaned chunks)",
         "processing_timestamp": utc_now(),
         "sample_run": sample,
         "chunking_configuration": {
@@ -469,13 +548,16 @@ def chunk_documents(sample: bool = False, output_dir: Path = DEFAULT_OUTPUT_DIR)
             "maximum_word_count": MAX_WORDS,
             "overlap_word_count": OVERLAP_WORDS,
             "extremely_short_word_threshold": EXTREMELY_SHORT_WORDS,
+            "cleaning": True,
         },
         "chunking_method": {
             "name": "structure_aware_word_chunking",
             "description": "Detect simple headings, preserve paragraph blocks, group related blocks up to the configured target/maximum size, split oversized blocks by sentence or word windows, and apply controlled word overlap across chunk boundaries.",
             "heading_handling": "Short title-like lines are attached to the following content and also stored as section_heading metadata when detected.",
             "paragraph_handling": "Blank-line-separated processed text blocks are preserved where possible.",
-            "overlap_handling": "A 60-word tail overlap is applied only after chunks at or above the target size; overlap is skipped if it would dominate the next chunk.",
+            "overlap_handling": f"A {OVERLAP_WORDS}-word tail overlap is applied only after chunks at or above the target size; overlap is skipped if it would dominate the next chunk.",
+            "cleaning": "Before chunking, source-id header lines, 'Page N' lines and short cookie/consent blocks are removed; for HTML documents, short digit-free header/footer blocks shared by at least 3 HTML documents (navigation menus) and repeated paragraphs of 8+ words are removed.",
+            "boilerplate_block_patterns": len(boilerplate),
         },
         "input_manifest": str(PROCESSING_MANIFEST_PATH.relative_to(PROJECT_ROOT)).replace("\\", "/"),
         "source_registry": str(SOURCES_PATH.relative_to(PROJECT_ROOT)).replace("\\", "/"),
