@@ -5,7 +5,7 @@ from __future__ import annotations
 import json
 import re
 from collections import deque
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from collections.abc import Iterator
 from threading import Lock
 from typing import Any
@@ -21,7 +21,9 @@ from ..query_understanding import (
     refers_to_previous_answer,
     resolve_query,
 )
+from ..core.llm_config import FOLLOW_UP_REWRITE_ENABLED
 from ..rag.rag_pipeline import ANSWERED, ERROR, INSUFFICIENT_INFORMATION, OUT_OF_SCOPE, RAGPipeline
+from ..services.follow_up_rewriter import needs_rewrite, rewrite_follow_up
 from ..services.llm_service import LocalLLMError
 
 
@@ -68,6 +70,7 @@ def chat(request: ChatRequest, pipeline: RAGPipeline = Depends(get_rag_pipeline)
     session_id = prepare_session(request.session_id, reset=request.reset_session)
     previous_turn = last_context_turn(session_id)
     resolution = resolve_query(request.question, previous_turn)
+    resolution = apply_follow_up_rewrite(resolution, context_turns(session_id), getattr(pipeline, "llm_service", None))
 
     if resolution.kind == "source_follow_up" and latest_turn_was_unsourced(session_id):
         result = unsourced_previous_turn_response(request.question)
@@ -131,6 +134,7 @@ def chat_stream(request: ChatRequest, pipeline: RAGPipeline = Depends(get_rag_pi
     def events() -> Iterator[str]:
         previous_turn = last_context_turn(session_id)
         resolution = resolve_query(request.question, previous_turn)
+        resolution = apply_follow_up_rewrite(resolution, context_turns(session_id), getattr(pipeline, "llm_service", None))
 
         if resolution.kind == "source_follow_up" and latest_turn_was_unsourced(session_id):
             result = unsourced_previous_turn_response(request.question)
@@ -340,6 +344,36 @@ def unsourced_previous_turn_response(question: str) -> dict[str, Any]:
     )
 
 
+def context_turns(session_id: str) -> list[ConversationTurn]:
+    """Earlier turns that carry domain context, oldest first."""
+    with _session_lock:
+        turns = list(_sessions.get(session_id, ()))
+    return [turn for turn in turns if turn.status not in {HELP, ERROR} and previous_turn_has_domain_context(turn)]
+
+
+def apply_follow_up_rewrite(
+    resolution: QueryResolution,
+    turns: list[ConversationTurn],
+    llm_service: Any,
+    *,
+    enabled: bool | None = None,
+) -> QueryResolution:
+    """Replace the rule-based follow-up resolution with the local LLM's standalone rewrite when it is usable.
+
+    Both versions are kept in retrieval_metadata["follow_up_rewrite"].
+    """
+    if llm_service is None or not (FOLLOW_UP_REWRITE_ENABLED if enabled is None else enabled):
+        return resolution
+    if not needs_rewrite(resolution.question, resolution.kind, bool(turns)):
+        return resolution
+    rewrite, metadata = rewrite_follow_up(llm_service, turns, resolution.question)
+    rule_based = resolution.resolved_question
+    metadata = {**metadata, "rule_based": rule_based, "used": "llm" if rewrite else "rule_based"}
+    if not rewrite:
+        return replace(resolution, rewrite_metadata=metadata)
+    return replace(resolution, resolved_question=rewrite, rewrite_metadata=metadata)
+
+
 def last_context_turn(session_id: str) -> ConversationTurn | None:
     with _session_lock:
         turns = list(_sessions.get(session_id, ()))
@@ -419,6 +453,8 @@ def attach_resolution_metadata(result: dict[str, Any], resolution: QueryResoluti
     if resolution.resolved_question:
         metadata["resolved_question"] = resolution.resolved_question
     metadata["query_kind"] = resolution.kind
+    if resolution.rewrite_metadata:
+        metadata["follow_up_rewrite"] = resolution.rewrite_metadata
     if resolution.normalization_metadata:
         metadata["query_normalization"] = resolution.normalization_metadata
     return {**result, "retrieval_metadata": metadata}

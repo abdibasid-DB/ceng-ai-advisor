@@ -82,6 +82,7 @@ class QueryResolution:
     previous_turn: Any | None = None
     understanding: QueryUnderstanding | None = None
     normalization_metadata: dict[str, Any] | None = None
+    rewrite_metadata: dict[str, Any] | None = None
 
 
 TOKEN_REPLACEMENTS = {
@@ -992,6 +993,7 @@ def is_assistant_help_text(tokens: list[str]) -> bool:
         rf"how (?:do|does) {assistant} work",
         r"tell me about yourself",
         r"can you help(?: me| us)?",
+        r"help(?: me)?",
     )
     return any(re.fullmatch(pattern, text) for pattern in patterns)
 

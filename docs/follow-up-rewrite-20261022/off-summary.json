@@ -1,0 +1,11 @@
+{
+ "mode": "off",
+ "single_turn_cases": 178,
+ "single_turn_rewrite_triggered": 0,
+ "labels": {
+  "incorrect_refusal_evidence_exists": 8,
+  "unsupported_incorrect_or_misleading": 4,
+  "correct_evidence_supported": 9,
+  "correct_insufficient_information": 1
+ }
+}

@@ -1,0 +1,3738 @@
+[
+ {
+  "id": "T179",
+  "question": "What skills should I build?",
+  "group": "multi_turn",
+  "expected_topics": [
+   "cybersecurity",
+   "skills"
+  ],
+  "expected_categories": [
+   "cybersecurity",
+   "skills_and_technologies"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": "Can Computer Engineers work in cybersecurity?",
+  "evaluation_label": "correct_evidence_supported",
+  "status": "answered",
+  "answer": "To work in cybersecurity, you should build skills in cognitive skills, technology skills, and ethics [S4]. Specifically, the report emphasizes the importance of skills such as AI and big data, networks and cybersecurity, technological literacy, and analytical thinking [S4].",
+  "resolved_question": "What skills should I build to work in cybersecurity?",
+  "follow_up_rewrite": {
+   "llm_rewrite": "What skills should I build to work in cybersecurity?",
+   "raw_output": "What skills should I build to work in cybersecurity?",
+   "error": null,
+   "seconds": 9.303,
+   "rule_based": "What skills should I build? for Can Computer Engineers work in cybersecurity in Computer Engineering.",
+   "used": "llm"
+  },
+  "previous_answer": "Computer engineers can work in cybersecurity, as they possess the foundational knowledge and skills to help organizations defend their information systems against various cybersecurity threats [S3].",
+  "sources": [
+   "src_017"
+  ],
+  "diagnostics": {
+   "query_kind": "contextual_follow_up",
+   "resolved_question": "What skills should I build to work in cybersecurity?",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S4"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "removed_trailing_source_labels",
+     "added_supported_inline_label",
+     "source_name_to_inline_label",
+     "pruned_unverified_sentences",
+     "partial_answer"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "To work in cybersecurity, you should build skills in cognitive skills, technology skills, and ethics [S4].",
+      "labels": [
+       "S4"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "cognitive",
+       "cybersecurity",
+       "ethics",
+       "skills",
+       "technology"
+      ]
+     },
+     {
+      "claim": "Specifically, the report emphasizes the importance of skills such as AI and big data, networks and cybersecurity, technological literacy, and analytical thinking [S4].",
+      "labels": [
+       "S4"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "analytical",
+       "and",
+       "big",
+       "cybersecurity",
+       "data",
+       "literacy",
+       "networks",
+       "skills",
+       "technological",
+       "the",
+       "thinking"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.6755345463752747,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "What skills should I build to work in cybersecurity?",
+    "query_kind": "contextual_follow_up",
+    "follow_up_rewrite": {
+     "llm_rewrite": "What skills should I build to work in cybersecurity?",
+     "raw_output": "What skills should I build to work in cybersecurity?",
+     "error": null,
+     "seconds": 9.303,
+     "rule_based": "What skills should I build? for Can Computer Engineers work in cybersecurity in Computer Engineering.",
+     "used": "llm"
+    },
+    "query_normalization": {
+     "original_question": "What skills should I build?",
+     "normalized_question": "What skills should I build?",
+     "retrieval_question": null,
+     "kind": "contextual_follow_up",
+     "topics": [
+      {
+       "name": "skills",
+       "matched_terms": [
+        "skills"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "explain",
+     "constraints": [],
+     "entities": [
+      "skills"
+     ],
+     "referents": [],
+     "requires_context": true,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.84,
+     "debug": {
+      "token_count": 5,
+      "replacements": [],
+      "normalized_tokens": [
+       "what",
+       "skills",
+       "should",
+       "i",
+       "build"
+      ],
+      "changed": false,
+      "contextual_skill_follow_up": true
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.34,
+    "context_construction_seconds": 0.004,
+    "llm_generation_seconds": 40.85,
+    "initial_llm_generation_seconds": 40.85,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 40.836,
+    "total_seconds": 43.944
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "elapsed_wall_seconds": 90.69
+ },
+ {
+  "id": "T180",
+  "question": "Do I need a master's?",
+  "group": "multi_turn",
+  "expected_topics": [
+   "ai",
+   "graduate_studies"
+  ],
+  "expected_categories": [
+   "artificial_intelligence",
+   "graduate_studies"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": "I want to become an AI engineer.",
+  "evaluation_label": "correct_evidence_supported",
+  "status": "answered",
+  "answer": "The [S1] source provides information about an English thesis-based master's program in Computer Engineering at OSTIM Technical University. This program requires students to apply and evaluate various areas of computer engineering and be equipped to move to a related second cycle or master’s degree program [S2]. Therefore, based on the information provided, you would need to pursue a master's degree in Computer Engineering if you are interested in this program [S1].",
+  "resolved_question": "Do I need a master s? (Computer Engineering)",
+  "follow_up_rewrite": null,
+  "previous_answer": "The curriculum should include design throughout the curriculum, ensuring that students are exposed to various design approaches to become familiar with their strengths and weaknesses [S3]. Additionally, given the current situation where many CS teachers are eager to incorporate AI into their curriculum but feel unprepared, it might be beneficial to seek out resources and courses that can help you acquire the necessary skills and knowledge in AI [S4].",
+  "sources": [
+   "src_088",
+   "src_067"
+  ],
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "Do I need a master s? (Computer Engineering)",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S1",
+     "S2"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "added_supported_inline_label",
+     "pruned_unverified_sentences"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "The [S1] source provides information about an English thesis-based master's program in Computer Engineering at OSTIM Technical University.",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "english",
+       "master",
+       "ostim",
+       "program",
+       "source",
+       "technical",
+       "the",
+       "thesis-based"
+      ]
+     },
+     {
+      "claim": "This program requires students to apply and evaluate various areas of computer engineering and be equipped to move to a related second cycle or master’s degree program [S2].",
+      "labels": [
+       "S2"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "apply",
+       "areas",
+       "cycle",
+       "degree",
+       "equipped",
+       "evaluate",
+       "master",
+       "move",
+       "program",
+       "related",
+       "second"
+      ]
+     },
+     {
+      "claim": "Therefore, based on the information provided, you would need to pursue a master's degree in Computer Engineering if you are interested in this program [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "based",
+       "degree",
+       "master",
+       "program",
+       "the",
+       "this"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.671656608581543,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "Do I need a master s? (Computer Engineering)",
+    "query_kind": "standalone_domain_question",
+    "query_normalization": {
+     "original_question": "Do I need a master's?",
+     "normalized_question": "Do I need a master s?",
+     "retrieval_question": "Do I need a master s? (Computer Engineering)",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "graduate_studies",
+       "matched_terms": [
+        "master"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "assess",
+     "constraints": [],
+     "entities": [
+      "graduate_studies"
+     ],
+     "referents": [],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 6,
+      "replacements": [],
+      "normalized_tokens": [
+       "do",
+       "i",
+       "need",
+       "a",
+       "master",
+       "s"
+      ],
+      "changed": true
+     },
+     "changed": true
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.166,
+    "context_construction_seconds": 0.004,
+    "llm_generation_seconds": 26.634,
+    "initial_llm_generation_seconds": 26.634,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 26.623,
+    "total_seconds": 26.812
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "elapsed_wall_seconds": 56.15
+ },
+ {
+  "id": "T181",
+  "question": "What sources did you use?",
+  "group": "multi_turn",
+  "expected_topics": [],
+  "expected_categories": [],
+  "expected_behavior": "source_follow_up",
+  "previous_question": "Should I learn Git and GitHub?",
+  "evaluation_label": "unsupported_incorrect_or_misleading",
+  "status": "answered",
+  "answer": "The previous answer cited Curated note: Missing Semester: The Shell.",
+  "resolved_question": null,
+  "follow_up_rewrite": null,
+  "previous_answer": "Students who know basic Git commands, paths, processes, environment variables, package tools, and scripting can work more comfortably with these tools [S2].",
+  "sources": [
+   "src_090"
+  ],
+  "diagnostics": {
+   "query_kind": "source_follow_up",
+   "resolved_question": null,
+   "status": "answered",
+   "llm_called": false,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S2"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4",
+     "S5"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "removed_trailing_source_labels",
+     "added_supported_inline_label",
+     "pruned_unverified_sentences",
+     "partial_answer"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": false,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 1,
+    "checks": [
+     {
+      "claim": "The previous answer cited Curated note: Missing Semester: The Shell.",
+      "labels": [],
+      "supported": false,
+      "reason": "missing inline citation"
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": "generated answer did not address the question's distinctive topic terms",
+   "retrieval_metadata": {
+    "used_previous_answer_sources": true,
+    "evidence_sufficient": true,
+    "query_kind": "source_follow_up",
+    "query_normalization": {
+     "original_question": "What sources did you use?",
+     "normalized_question": "What sources did you use?",
+     "retrieval_question": null,
+     "kind": "source_follow_up",
+     "topics": [],
+     "task": "source_request",
+     "constraints": [],
+     "entities": [],
+     "referents": [],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": true,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.98,
+     "debug": {
+      "token_count": 5,
+      "replacements": [],
+      "normalized_tokens": [
+       "what",
+       "sources",
+       "did",
+       "you",
+       "use"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {},
+   "model": null,
+   "error": null
+  },
+  "elapsed_wall_seconds": 29.92
+ },
+ {
+  "id": "T182",
+  "question": "How can I prepare before first year?",
+  "group": "multi_turn",
+  "expected_topics": [
+   "mathematics"
+  ],
+  "expected_categories": [
+   "mathematics",
+   "curriculum"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": "I am weak at math.",
+  "evaluation_label": "unsupported_incorrect_or_misleading",
+  "status": "answered",
+  "answer": "For Differential Equations (MATH 202), you should study first-order differential equations, linear equations, homogeneous and non-homogeneous equations, series solutions, and the Laplace transform [S3]. Additionally, you can refer to resources like the curated note on Mathematics for Machine Learning and Data Science Specialization, which can provide insights into the math areas that support machine learning and data science, although it is not a requirement for the OSTIM curriculum [S4].",
+  "resolved_question": "How can I prepare for the math courses, specifically Differential Equations (MATH 202) and Algebra (MATH 101), in the third year of the Computer Engineering program at OSTIM Technical University?",
+  "follow_up_rewrite": {
+   "llm_rewrite": "How can I prepare for the math courses, specifically Differential Equations (MATH 202) and Algebra (MATH 101), in the third year of the Computer Engineering program at OSTIM Technical University?",
+   "raw_output": "How can I prepare for the math courses, specifically Differential Equations (MATH 202) and Algebra (MATH 101), in the third year of the Computer Engineering program at OSTIM Technical University?",
+   "error": null,
+   "seconds": 10.929,
+   "rule_based": "How can I prepare before first year? Regarding I am weak at math in Computer Engineering.",
+   "used": "llm"
+  },
+  "previous_answer": "According to the [S3] label, the curriculum for the third year of the Computer Engineering program at OSTIM Technical University includes MATH 202 Differential Equations and MATH 101. Starting your math preparation early, as suggested in the [S4] label, can provide a strong foundation in mathematics, which is crucial for your computing studies.",
+  "sources": [
+   "src_004",
+   "src_092"
+  ],
+  "diagnostics": {
+   "query_kind": "contextual_follow_up",
+   "resolved_question": "How can I prepare for the math courses, specifically Differential Equations (MATH 202) and Algebra (MATH 101), in the third year of the Computer Engineering program at OSTIM Technical University?",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S3",
+     "S4"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4",
+     "S5"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "removed_trailing_source_labels",
+     "added_supported_inline_label",
+     "pruned_unverified_sentences",
+     "partial_answer"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "For Differential Equations (MATH 202), you should study first-order differential equations, linear equations, homogeneous and non-homogeneous equations, series solutions, and the Laplace transform [S3].",
+      "labels": [
+       "S3"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "differential",
+       "equations",
+       "first-order",
+       "for",
+       "homogeneous",
+       "laplace",
+       "linear",
+       "math",
+       "non-homogeneous",
+       "series",
+       "solutions"
+      ]
+     },
+     {
+      "claim": "Additionally, you can refer to resources like the curated note on Mathematics for Machine Learning and Data Science Specialization, which can provide insights into the math areas that support machine learning and data science, although it is not a requirement for the OSTIM curriculum [S4].",
+      "labels": [
+       "S4"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "areas",
+       "curated",
+       "curriculum",
+       "data",
+       "for",
+       "learning",
+       "machine",
+       "math",
+       "mathematics",
+       "not",
+       "note"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": "generated answer did not address the question's distinctive topic terms",
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.6515214443206787,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "How can I prepare for the math courses, specifically Differential Equations (MATH 202) and Algebra (MATH 101), in the third year of the Computer Engineering program at OSTIM Technical University?",
+    "query_kind": "contextual_follow_up",
+    "follow_up_rewrite": {
+     "llm_rewrite": "How can I prepare for the math courses, specifically Differential Equations (MATH 202) and Algebra (MATH 101), in the third year of the Computer Engineering program at OSTIM Technical University?",
+     "raw_output": "How can I prepare for the math courses, specifically Differential Equations (MATH 202) and Algebra (MATH 101), in the third year of the Computer Engineering program at OSTIM Technical University?",
+     "error": null,
+     "seconds": 10.929,
+     "rule_based": "How can I prepare before first year? Regarding I am weak at math in Computer Engineering.",
+     "used": "llm"
+    },
+    "query_normalization": {
+     "original_question": "How can I prepare before first year?",
+     "normalized_question": "How can I prepare before first year?",
+     "retrieval_question": null,
+     "kind": "contextual_follow_up",
+     "topics": [],
+     "task": "assess",
+     "constraints": [
+      "first_year"
+     ],
+     "entities": [],
+     "referents": [],
+     "requires_context": true,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.83,
+     "debug": {
+      "token_count": 7,
+      "replacements": [],
+      "normalized_tokens": [
+       "how",
+       "can",
+       "i",
+       "prepare",
+       "before",
+       "first",
+       "year"
+      ],
+      "changed": false,
+      "contextual_advice_follow_up": true
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.379,
+    "context_construction_seconds": 0.004,
+    "llm_generation_seconds": 55.737,
+    "initial_llm_generation_seconds": 55.737,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 55.717,
+    "total_seconds": 57.989
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "elapsed_wall_seconds": 103.13
+ },
+ {
+  "id": "T183",
+  "question": "Where can I find one in Turkey?",
+  "group": "multi_turn",
+  "expected_topics": [
+   "internships"
+  ],
+  "expected_categories": [
+   "internships",
+   "employment"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": "I care about internships.",
+  "evaluation_label": "correct_evidence_supported",
+  "status": "answered",
+  "answer": "One such resource is the internship program offered by OSTİM Technical University, where students can participate in an internship in a factory or production unit in Ankara [S1]. Additionally, the National Association of Colleges and Employers (NACE) highlights that previous internship experience with the organization or in the industry gives students an edge in the selection process [S2]. However, it is important to note that the digital services tax and restrictions on social media platforms may pose challenges for international companies operating in Turkey [S3]. Despite these challenges, the country's investment climate in the Information and Communication Technology (ICT) sector remains favorable, with an estimated USD 21 billion in international investments since the early 2000s and a growing pool of university graduates in engineering and ICT fields [S4].",
+  "resolved_question": "Where can I find an internship in Turkey?",
+  "follow_up_rewrite": {
+   "llm_rewrite": "Where can I find an internship in Turkey?",
+   "raw_output": "Where can I find an internship in Turkey?",
+   "error": null,
+   "seconds": 8.073,
+   "rule_based": "Where can I find one in turkey? Regarding I care about internships in Computer Engineering.",
+   "used": "llm"
+  },
+  "previous_answer": "According to the source [S3], students recognize the importance of gaining internship experience, with more than two-thirds of 2024 graduating seniors engaging in an internship during their college career, up from around 61% of 2023 graduates. Internships are highly valued and beneficial for students in the field of Computer Engineering [S2].",
+  "sources": [
+   "src_004",
+   "src_037",
+   "src_026",
+   "src_025"
+  ],
+  "diagnostics": {
+   "query_kind": "contextual_follow_up",
+   "resolved_question": "Where can I find an internship in Turkey?",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "removed_trailing_source_labels",
+     "added_supported_inline_label",
+     "source_name_to_inline_label",
+     "pruned_unverified_sentences"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "One such resource is the internship program offered by OSTİM Technical University, where students can participate in an internship in a factory or production unit in Ankara [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "ankara",
+       "factory",
+       "internship",
+       "osti",
+       "production",
+       "technical",
+       "the",
+       "unit",
+       "university"
+      ]
+     },
+     {
+      "claim": "Additionally, the National Association of Colleges and Employers (NACE) highlights that previous internship experience with the organization or in the industry gives students an edge in the selection process [S2].",
+      "labels": [
+       "S2"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "edge",
+       "employers",
+       "experience",
+       "gives",
+       "industry",
+       "internship",
+       "organization",
+       "previous",
+       "the"
+      ]
+     },
+     {
+      "claim": "However, it is important to note that the digital services tax and restrictions on social media platforms may pose challenges for international companies operating in Turkey [S3].",
+      "labels": [
+       "S3"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "companies",
+       "digital",
+       "for",
+       "international",
+       "media",
+       "platforms",
+       "restrictions",
+       "services",
+       "social",
+       "tax",
+       "the"
+      ]
+     },
+     {
+      "claim": "Despite these challenges, the country's investment climate in the Information and Communication Technology (ICT) sector remains favorable, with an estimated USD 21 billion in international investments since the early 2000s and a growing pool of university graduates in engineering and ICT fields [S4].",
+      "labels": [
+       "S4"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "billion",
+       "country",
+       "early",
+       "fields",
+       "graduates",
+       "ict",
+       "international",
+       "investment",
+       "investments",
+       "pool",
+       "sector"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.6050938367843628,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "Where can I find an internship in Turkey?",
+    "query_kind": "contextual_follow_up",
+    "follow_up_rewrite": {
+     "llm_rewrite": "Where can I find an internship in Turkey?",
+     "raw_output": "Where can I find an internship in Turkey?",
+     "error": null,
+     "seconds": 8.073,
+     "rule_based": "Where can I find one in turkey? Regarding I care about internships in Computer Engineering.",
+     "used": "llm"
+    },
+    "query_normalization": {
+     "original_question": "Where can I find one in Turkey?",
+     "normalized_question": "Where can I find one in turkey?",
+     "retrieval_question": null,
+     "kind": "contextual_follow_up",
+     "topics": [],
+     "task": "assess",
+     "constraints": [
+      "turkey"
+     ],
+     "entities": [
+      "Turkey"
+     ],
+     "referents": [
+      "one"
+     ],
+     "requires_context": true,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.85,
+     "debug": {
+      "token_count": 7,
+      "replacements": [],
+      "normalized_tokens": [
+       "where",
+       "can",
+       "i",
+       "find",
+       "one",
+       "in",
+       "turkey"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.263,
+    "context_construction_seconds": 0.005,
+    "llm_generation_seconds": 48.593,
+    "initial_llm_generation_seconds": 48.593,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 48.583,
+    "total_seconds": 51.477
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "elapsed_wall_seconds": 86.28
+ },
+ {
+  "id": "T184",
+  "question": "What projects should I build?",
+  "group": "multi_turn",
+  "expected_topics": [
+   "hardware",
+   "projects"
+  ],
+  "expected_categories": [
+   "hardware",
+   "projects"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": "I prefer hardware.",
+  "evaluation_label": "incorrect_refusal_evidence_exists",
+  "status": "insufficient_information",
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "resolved_question": "What projects should I build if I prefer hardware?",
+  "follow_up_rewrite": {
+   "llm_rewrite": "What projects should I build if I prefer hardware?",
+   "raw_output": "What projects should I build if I prefer hardware?",
+   "error": null,
+   "seconds": 7.753,
+   "rule_based": "What projects should I build? Regarding hardware in Computer Engineering.",
+   "used": "llm"
+  },
+  "previous_answer": "If you prefer hardware, Computer Engineering (as a discipline) is a good fit for you [S2] [S4]. Computer Engineering is generally closest to the boundary between computing and engineering hardware, as per the Computing Curricula 2020 [S1] [S2]. Computer Engineering involves designing, developing, or testing computer-related equipment, which aligns with a hardware focus [S4].",
+  "sources": [],
+  "diagnostics": {
+   "query_kind": "contextual_follow_up",
+   "resolved_question": "What projects should I build if I prefer hardware?",
+   "status": "insufficient_information",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4",
+     "S5"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "added_supported_inline_label"
+    ],
+    "reason": "unsupported claim could not be matched to retrieved evidence",
+    "retry_attempted": true,
+    "retry_successful": false,
+    "generations_attempted": 2,
+    "retry_failure_reason": "unsupported claim could not be matched to retrieved evidence",
+    "discarded_invalid_generation": true,
+    "discarded_generation_reason": "unsupported claim could not be matched to retrieved evidence"
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": []
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 4,
+    "top_similarity_score": 0.5138051509857178,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "unsupported_reason": "unsupported claim could not be matched to retrieved evidence",
+    "discarded_generation": "If you prefer hardware, you should build projects that involve building, testing, and modifying product prototypes. This aligns with the information provided in [S1], which states that related occupations to Computer Hardware Engineers include building, testing, and modifying product prototypes, using working models or theoretical models constructed with computer simulation. Therefore, you should focus on projects that allow you to work with hardware and software interfaces, as well as the operational and performance requirements of overall systems. \n\nUSED_SOURCES:\n[S1]",
+    "discarded_retry_generation": "If you prefer hardware, you should build projects that involve building, testing, and modifying product prototypes. This aligns with the information provided in [S1], which states that related occupations to Computer Hardware Engineers include building, testing, and modifying product prototypes, using working models or theoretical models constructed with computer simulation. Therefore, you should focus on projects that allow you to work with hardware and software interfaces, as well as the operational and performance requirements of overall systems.\n\nUSED_SOURCES:\n[S1]",
+    "resolved_question": "What projects should I build if I prefer hardware?",
+    "query_kind": "contextual_follow_up",
+    "follow_up_rewrite": {
+     "llm_rewrite": "What projects should I build if I prefer hardware?",
+     "raw_output": "What projects should I build if I prefer hardware?",
+     "error": null,
+     "seconds": 7.753,
+     "rule_based": "What projects should I build? Regarding hardware in Computer Engineering.",
+     "used": "llm"
+    },
+    "query_normalization": {
+     "original_question": "What projects should I build?",
+     "normalized_question": "What projects should I build?",
+     "retrieval_question": null,
+     "kind": "contextual_follow_up",
+     "topics": [
+      {
+       "name": "projects",
+       "matched_terms": [
+        "projects"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "explain",
+     "constraints": [],
+     "entities": [
+      "projects"
+     ],
+     "referents": [],
+     "requires_context": true,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.83,
+     "debug": {
+      "token_count": 5,
+      "replacements": [],
+      "normalized_tokens": [
+       "what",
+       "projects",
+       "should",
+       "i",
+       "build"
+      ],
+      "changed": false,
+      "contextual_project_follow_up": true
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.243,
+    "context_construction_seconds": 0.027,
+    "llm_generation_seconds": 72.953,
+    "initial_llm_generation_seconds": 40.401,
+    "retry_llm_generation_seconds": 32.552,
+    "llm_reported_total_duration_seconds": 40.39,
+    "total_seconds": 75.424
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "elapsed_wall_seconds": 108.19
+ },
+ {
+  "id": "T185",
+  "question": "What about remote work?",
+  "group": "multi_turn",
+  "expected_topics": [
+   "remote_work",
+   "employment"
+  ],
+  "expected_categories": [
+   "remote_work",
+   "employment"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": "I asked about software jobs.",
+  "evaluation_label": "correct_evidence_supported",
+  "status": "answered",
+  "answer": "The implications of remote work for software jobs are multifaceted [S1] [S2] [S4]. On the other hand, remote workers, including those in software jobs, often feel just as much belonging as in-office workers, according to the How tech workers really feel about work right now report [S2] [S4]. Remote work can enhance job satisfaction and engagement, contrary to the common assumption that in-office work inherently creates stronger feelings of belonging and job enjoyment [S2] [S4].",
+  "resolved_question": "What are the implications of remote work for software jobs?",
+  "follow_up_rewrite": {
+   "llm_rewrite": "What are the implications of remote work for software jobs?",
+   "raw_output": "What are the implications of remote work for software jobs?",
+   "error": null,
+   "seconds": 8.296,
+   "rule_based": "What about remote work? Regarding I asked about software jobs in Computer Engineering.",
+   "used": "llm"
+  },
+  "previous_answer": "In Computer Engineering, software engineers play a crucial role in designing, developing, and maintaining software systems [S1]. The curriculum for Computer Engineering typically includes courses like SWEE301: Software Engineering, which covers the principles of software engineering, software development processes, and software maintenance [S1]. Additionally, the course CENG 316 New Trends in Computer Engineering, as outlined in [S2], focuses on the latest trends in software engineering, including frontend and backend development, DevOps, software testing, embedded systems, data engineering, artificial intelligence, cybersecurity, cloud computing, mobile app development, blockchain, and game development.",
+  "sources": [
+   "src_102",
+   "src_101"
+  ],
+  "diagnostics": {
+   "query_kind": "contextual_follow_up",
+   "resolved_question": "What are the implications of remote work for software jobs?",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S1",
+     "S2",
+     "S4"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4",
+     "S5"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "added_supported_inline_label",
+     "source_name_to_inline_label",
+     "pruned_unverified_sentences",
+     "partial_answer"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "The implications of remote work for software jobs are multifaceted [S1] [S2] [S4].",
+      "labels": [
+       "S1",
+       "S2",
+       "S4"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "are",
+       "jobs",
+       "remote",
+       "the"
+      ]
+     },
+     {
+      "claim": "On the other hand, remote workers, including those in software jobs, often feel just as much belonging as in-office workers, according to the How tech workers really feel about work right now report [S2] [S4].",
+      "labels": [
+       "S2",
+       "S4"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "belonging",
+       "feel",
+       "how",
+       "in-office",
+       "just",
+       "much",
+       "remote",
+       "the",
+       "those",
+       "workers"
+      ]
+     },
+     {
+      "claim": "Remote work can enhance job satisfaction and engagement, contrary to the common assumption that in-office work inherently creates stronger feelings of belonging and job enjoyment [S2] [S4].",
+      "labels": [
+       "S2",
+       "S4"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "assumption",
+       "belonging",
+       "common",
+       "contrary",
+       "creates",
+       "engagement",
+       "enjoyment",
+       "feelings",
+       "in-office",
+       "inherently",
+       "job"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.5544654130935669,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "What are the implications of remote work for software jobs?",
+    "query_kind": "contextual_follow_up",
+    "follow_up_rewrite": {
+     "llm_rewrite": "What are the implications of remote work for software jobs?",
+     "raw_output": "What are the implications of remote work for software jobs?",
+     "error": null,
+     "seconds": 8.296,
+     "rule_based": "What about remote work? Regarding I asked about software jobs in Computer Engineering.",
+     "used": "llm"
+    },
+    "query_normalization": {
+     "original_question": "What about remote work?",
+     "normalized_question": "What about remote work?",
+     "retrieval_question": null,
+     "kind": "contextual_follow_up",
+     "topics": [
+      {
+       "name": "career",
+       "matched_terms": [
+        "work"
+       ],
+       "confidence": 1.0
+      },
+      {
+       "name": "remote_work",
+       "matched_terms": [
+        "remote"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "explain",
+     "constraints": [],
+     "entities": [
+      "career",
+      "remote_work"
+     ],
+     "referents": [],
+     "requires_context": true,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.85,
+     "debug": {
+      "token_count": 4,
+      "replacements": [],
+      "normalized_tokens": [
+       "what",
+       "about",
+       "remote",
+       "work"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.342,
+    "context_construction_seconds": 0.026,
+    "llm_generation_seconds": 53.426,
+    "initial_llm_generation_seconds": 53.426,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 53.411,
+    "total_seconds": 57.178
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "elapsed_wall_seconds": 104.88
+ },
+ {
+  "id": "T186",
+  "question": "Does it include Linux?",
+  "group": "multi_turn",
+  "expected_topics": [
+   "operating_systems",
+   "curriculum"
+  ],
+  "expected_categories": [
+   "curriculum"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": "Tell me about the curriculum.",
+  "evaluation_label": "correct_evidence_supported",
+  "status": "answered",
+  "answer": "The curriculum of CENG 303 Operating Systems Design & Construction at OSTIM Technical University includes Linux as one of the operating systems covered [S1]. The course content states, \"This course provides a comprehensive introduction to the fundamental concepts, principles, and design of modern operating systems [S1]. The course covers key topics such as process management, thread scheduling, synchronization, deadlocks, memory management, file systems, input/output systems, and security.\" Since Linux is mentioned as one of the operating systems, it is clear that Linux is included in the curriculum of this course [S1].",
+  "resolved_question": "What part of the curriculum includes Linux?",
+  "follow_up_rewrite": {
+   "llm_rewrite": "What part of the curriculum includes Linux?",
+   "raw_output": "What part of the curriculum includes Linux?",
+   "error": null,
+   "seconds": 7.023,
+   "rule_based": "Does it include linux? (Computer Engineering)",
+   "used": "llm"
+  },
+  "previous_answer": "The curriculum is based on the Body of Knowledge (BoK) for Computer Engineering, which is defined in Appendix A of the report [S1].",
+  "sources": [
+   "src_130"
+  ],
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "What part of the curriculum includes Linux?",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S1"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "added_supported_inline_label"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "The curriculum of CENG 303 Operating Systems Design & Construction at OSTIM Technical University includes Linux as one of the operating systems covered [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "ceng",
+       "construction",
+       "design",
+       "linux",
+       "operating",
+       "systems",
+       "the"
+      ]
+     },
+     {
+      "claim": "The course content states, \"This course provides a comprehensive introduction to the fundamental concepts, principles, and design of modern operating systems [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "comprehensive",
+       "concepts",
+       "content",
+       "course",
+       "design",
+       "fundamental",
+       "introduction",
+       "modern",
+       "operating",
+       "principles",
+       "provides"
+      ]
+     },
+     {
+      "claim": "The course covers key topics such as process management, thread scheduling, synchronization, deadlocks, memory management, file systems, input/output systems, and security.\" Since Linux is mentioned as one of the operating systems, it is clear that Linux is included in the curriculum of this course [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "course",
+       "covers",
+       "deadlocks",
+       "file",
+       "input",
+       "key",
+       "linux",
+       "management",
+       "memory",
+       "operating",
+       "output"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 4,
+    "top_similarity_score": 0.5658512711524963,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "What part of the curriculum includes Linux?",
+    "query_kind": "standalone_domain_question",
+    "follow_up_rewrite": {
+     "llm_rewrite": "What part of the curriculum includes Linux?",
+     "raw_output": "What part of the curriculum includes Linux?",
+     "error": null,
+     "seconds": 7.023,
+     "rule_based": "Does it include linux? (Computer Engineering)",
+     "used": "llm"
+    },
+    "query_normalization": {
+     "original_question": "Does it include Linux?",
+     "normalized_question": "Does it include linux?",
+     "retrieval_question": "Does it include linux? (Computer Engineering)",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "operating_systems",
+       "matched_terms": [
+        "linux"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "assess",
+     "constraints": [],
+     "entities": [
+      "operating_systems"
+     ],
+     "referents": [
+      "it"
+     ],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 4,
+      "replacements": [],
+      "normalized_tokens": [
+       "does",
+       "it",
+       "include",
+       "linux"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.237,
+    "context_construction_seconds": 0.004,
+    "llm_generation_seconds": 27.818,
+    "initial_llm_generation_seconds": 27.818,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 27.809,
+    "total_seconds": 28.065
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "elapsed_wall_seconds": 63.9
+ },
+ {
+  "id": "T187",
+  "question": "Is Linux important too?",
+  "group": "multi_turn",
+  "expected_topics": [
+   "cybersecurity",
+   "operating_systems"
+  ],
+  "expected_categories": [
+   "cybersecurity",
+   "skills_and_technologies"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": "I want cybersecurity.",
+  "evaluation_label": "correct_evidence_supported",
+  "status": "answered",
+  "answer": "Cybersecurity is a broad field with various roles and technologies, not limited to Linux [S2].",
+  "resolved_question": "What other technologies or subdisciplines in Computer Engineering are important for cybersecurity besides Linux?",
+  "follow_up_rewrite": {
+   "llm_rewrite": "What other technologies or subdisciplines in Computer Engineering are important for cybersecurity besides Linux?",
+   "raw_output": "What other technologies or subdisciplines in Computer Engineering are important for cybersecurity besides Linux?",
+   "error": null,
+   "seconds": 8.42,
+   "rule_based": "Is linux important too? Regarding I want cybersecurity in Computer Engineering.",
+   "used": "llm"
+  },
+  "previous_answer": "I recommend focusing on the subdisciplines of Computer Engineering that involve cybersecurity, such as trust, reliability, and security [S5]. Cybersecurity is a computing-based discipline that involves technology, people, information, and processes to enable assured operations in the context of adversaries [S4]. This aligns with the curriculum guidance provided by the ACM Committee for Computing Education in Community Colleges, which states that upon graduation, students should be able to design and implement systems that involve the integration of software and hardware devices, including cybersecurity [S4]. Additionally, the University of Illinois Urbana-Champaign Department of Electrical and Computer Engineering lists cybersecurity as a specialization area under the subdiscipline of trust, reliability, and security [S5].",
+  "sources": [
+   "src_094"
+  ],
+  "diagnostics": {
+   "query_kind": "contextual_follow_up",
+   "resolved_question": "What other technologies or subdisciplines in Computer Engineering are important for cybersecurity besides Linux?",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S2"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "pruned_unverified_sentences",
+     "partial_answer"
+    ],
+    "reason": null,
+    "retry_attempted": true,
+    "retry_successful": true,
+    "generations_attempted": 2,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "Cybersecurity is a broad field with various roles and technologies, not limited to Linux [S2].",
+      "labels": [
+       "S2"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "cybersecurity",
+       "not"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.6913930177688599,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "What other technologies or subdisciplines in Computer Engineering are important for cybersecurity besides Linux?",
+    "query_kind": "contextual_follow_up",
+    "follow_up_rewrite": {
+     "llm_rewrite": "What other technologies or subdisciplines in Computer Engineering are important for cybersecurity besides Linux?",
+     "raw_output": "What other technologies or subdisciplines in Computer Engineering are important for cybersecurity besides Linux?",
+     "error": null,
+     "seconds": 8.42,
+     "rule_based": "Is linux important too? Regarding I want cybersecurity in Computer Engineering.",
+     "used": "llm"
+    },
+    "query_normalization": {
+     "original_question": "Is Linux important too?",
+     "normalized_question": "Is linux important too?",
+     "retrieval_question": null,
+     "kind": "contextual_follow_up",
+     "topics": [
+      {
+       "name": "operating_systems",
+       "matched_terms": [
+        "linux"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "assess",
+     "constraints": [],
+     "entities": [
+      "operating_systems"
+     ],
+     "referents": [],
+     "requires_context": true,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.85,
+     "debug": {
+      "token_count": 4,
+      "replacements": [],
+      "normalized_tokens": [
+       "is",
+       "linux",
+       "important",
+       "too"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.347,
+    "context_construction_seconds": 0.002,
+    "llm_generation_seconds": 61.815999999999995,
+    "initial_llm_generation_seconds": 34.111,
+    "retry_llm_generation_seconds": 27.705,
+    "llm_reported_total_duration_seconds": 34.1,
+    "total_seconds": 63.046
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "elapsed_wall_seconds": 105.83
+ },
+ {
+  "id": "T188",
+  "question": "Which one has more hardware?",
+  "group": "multi_turn",
+  "expected_topics": [
+   "hardware",
+   "computer_engineering"
+  ],
+  "expected_categories": [
+   "curriculum",
+   "common_misconceptions"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": "Computer Engineering vs Computer Science?",
+  "evaluation_label": "correct_evidence_supported",
+  "status": "answered",
+  "answer": "[According to the provided context, computer engineering has more of both hardware and software compared to computer science [S1]. Computer engineering integrates knowledge in both hardware and software, unlike computer science which focuses more on software development [S1]. Therefore, computer engineering has more of both hardware and software compared to computer science.] [S1]",
+  "resolved_question": "What does computer engineering have more of compared to computer science, hardware or software?",
+  "follow_up_rewrite": {
+   "llm_rewrite": "What does computer engineering have more of compared to computer science, hardware or software?",
+   "raw_output": "What does computer engineering have more of compared to computer science, hardware or software?",
+   "error": null,
+   "seconds": 7.627,
+   "rule_based": "Which one has more hardware? Regarding Computer Engineering vs Computer Science in Computer Engineering.",
+   "used": "llm"
+  },
+  "previous_answer": "The retrieved source states: \"Traditionally, computer engineering is some combination of both electrical engineering (EE) and computer science (CS).\" [S1]. The retrieved evidence does not establish the rest [S1].",
+  "sources": [
+   "src_067"
+  ],
+  "diagnostics": {
+   "query_kind": "contextual_follow_up",
+   "resolved_question": "What does computer engineering have more of compared to computer science, hardware or software?",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S1"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "added_supported_inline_label",
+     "pruned_unverified_sentences"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "[According to the provided context, computer engineering has more of both hardware and software compared to computer science [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "both",
+       "hardware",
+       "science",
+       "software",
+       "the"
+      ]
+     },
+     {
+      "claim": "Computer engineering integrates knowledge in both hardware and software, unlike computer science which focuses more on software development [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "both",
+       "hardware",
+       "knowledge",
+       "science",
+       "software"
+      ]
+     },
+     {
+      "claim": "Therefore, computer engineering has more of both hardware and software compared to computer science.] [S1]",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "both",
+       "hardware",
+       "software"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.7561037540435791,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "What does computer engineering have more of compared to computer science, hardware or software?",
+    "query_kind": "contextual_follow_up",
+    "follow_up_rewrite": {
+     "llm_rewrite": "What does computer engineering have more of compared to computer science, hardware or software?",
+     "raw_output": "What does computer engineering have more of compared to computer science, hardware or software?",
+     "error": null,
+     "seconds": 7.627,
+     "rule_based": "Which one has more hardware? Regarding Computer Engineering vs Computer Science in Computer Engineering.",
+     "used": "llm"
+    },
+    "query_normalization": {
+     "original_question": "Which one has more hardware?",
+     "normalized_question": "Which one has more hardware?",
+     "retrieval_question": null,
+     "kind": "contextual_follow_up",
+     "topics": [
+      {
+       "name": "hardware",
+       "matched_terms": [
+        "hardware"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "recommend",
+     "constraints": [],
+     "entities": [
+      "hardware"
+     ],
+     "referents": [
+      "one"
+     ],
+     "requires_context": true,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.85,
+     "debug": {
+      "token_count": 5,
+      "replacements": [],
+      "normalized_tokens": [
+       "which",
+       "one",
+       "has",
+       "more",
+       "hardware"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.333,
+    "context_construction_seconds": 0.003,
+    "llm_generation_seconds": 40.092,
+    "initial_llm_generation_seconds": 40.092,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 40.061,
+    "total_seconds": 40.438
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "elapsed_wall_seconds": 72.3
+ },
+ {
+  "id": "T189",
+  "question": "Should they be team projects or solo?",
+  "group": "multi_turn",
+  "expected_topics": [
+   "projects"
+  ],
+  "expected_categories": [
+   "projects",
+   "employment"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": "I want to build portfolio projects.",
+  "evaluation_label": "correct_evidence_supported",
+  "status": "answered",
+  "answer": "Both team projects and solo projects can be valuable for a portfolio [S1]. For instance, [S1] mentions that a strong portfolio demonstrates commitment to personal and professional development, which can be achieved through either team or solo projects.",
+  "resolved_question": "Should the portfolio projects be team projects or solo?",
+  "follow_up_rewrite": {
+   "llm_rewrite": "Should the portfolio projects be team projects or solo?",
+   "raw_output": "Should the portfolio projects be team projects or solo?",
+   "error": null,
+   "seconds": 7.68,
+   "rule_based": "should they be team projects or solo? Regarding portfolio projects in Computer Engineering.",
+   "used": "llm"
+  },
+  "previous_answer": "To build portfolio projects in Computer Engineering, you can include projects that showcase your technical skills in use [S3]. For software engineering and computer science, projects are a common way to demonstrate your technical abilities [S3]. Consider including your GitHub link in your header to highlight your open-source work [S3].",
+  "sources": [
+   "src_035"
+  ],
+  "diagnostics": {
+   "query_kind": "contextual_follow_up",
+   "resolved_question": "Should the portfolio projects be team projects or solo?",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S1"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4",
+     "S5"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "added_supported_inline_label",
+     "pruned_unverified_sentences",
+     "partial_answer"
+    ],
+    "reason": null,
+    "retry_attempted": true,
+    "retry_successful": true,
+    "generations_attempted": 2,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "Both team projects and solo projects can be valuable for a portfolio [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "for",
+       "portfolio",
+       "team"
+      ]
+     },
+     {
+      "claim": "For instance, [S1] mentions that a strong portfolio demonstrates commitment to personal and professional development, which can be achieved through either team or solo projects.",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "commitment",
+       "demonstrates",
+       "development",
+       "for",
+       "personal",
+       "portfolio",
+       "professional",
+       "strong",
+       "team"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.5633164048194885,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "Should the portfolio projects be team projects or solo?",
+    "query_kind": "contextual_follow_up",
+    "follow_up_rewrite": {
+     "llm_rewrite": "Should the portfolio projects be team projects or solo?",
+     "raw_output": "Should the portfolio projects be team projects or solo?",
+     "error": null,
+     "seconds": 7.68,
+     "rule_based": "should they be team projects or solo? Regarding portfolio projects in Computer Engineering.",
+     "used": "llm"
+    },
+    "query_normalization": {
+     "original_question": "Should they be team projects or solo?",
+     "normalized_question": "should they be team projects or solo?",
+     "retrieval_question": null,
+     "kind": "contextual_follow_up",
+     "topics": [
+      {
+       "name": "projects",
+       "matched_terms": [
+        "projects"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "assess",
+     "constraints": [],
+     "entities": [
+      "projects"
+     ],
+     "referents": [
+      "they"
+     ],
+     "requires_context": true,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.83,
+     "debug": {
+      "token_count": 7,
+      "replacements": [],
+      "normalized_tokens": [
+       "should",
+       "they",
+       "be",
+       "team",
+       "projects",
+       "or",
+       "solo"
+      ],
+      "changed": false,
+      "contextual_project_follow_up": true
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.261,
+    "context_construction_seconds": 0.002,
+    "llm_generation_seconds": 75.37100000000001,
+    "initial_llm_generation_seconds": 41.607,
+    "retry_llm_generation_seconds": 33.764,
+    "llm_reported_total_duration_seconds": 41.596,
+    "total_seconds": 78.467
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "elapsed_wall_seconds": 119.69
+ },
+ {
+  "id": "T190",
+  "question": "Can internships compensate?",
+  "group": "multi_turn",
+  "expected_topics": [
+   "gpa",
+   "internships"
+  ],
+  "expected_categories": [
+   "employment",
+   "internships"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": "I have low GPA.",
+  "evaluation_label": "correct_evidence_supported",
+  "status": "answered",
+  "answer": "Internships are recognized as valuable experiences by students, with more than two-thirds of 2024 graduating seniors engaging in an internship during their college career, up from around 61% of 2023 graduates [S1]. According to NACE's 2024 Student Survey, the percent of graduating seniors who participated in an internship is the highest in the past six years [S1]. Internships offer students the opportunity to gain valuable industry experience, which can compensate for study demands such as study load and financial stress, as suggested by Naylor's research [S4].",
+  "resolved_question": "Can internships compensate? (Computer Engineering)",
+  "follow_up_rewrite": null,
+  "previous_answer": "If you have a low GPA, it is important to focus on demonstrating your skills and abilities through projects, internships, and other activities [S2]. The National Association of Colleges and Employers (NACE) suggests that employers are increasingly using skills-based hiring practices, which means that your academic achievements, such as your GPA, may not be the only factor considered [S1]. Instead, your ability to learn, communicate, solve problems, work with others, and complete technical work can be more important [S2].",
+  "sources": [
+   "src_018",
+   "src_054"
+  ],
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "Can internships compensate? (Computer Engineering)",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S1",
+     "S4"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "added_supported_inline_label",
+     "pruned_unverified_sentences"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "Internships are recognized as valuable experiences by students, with more than two-thirds of 2024 graduating seniors engaging in an internship during their college career, up from around 61% of 2023 graduates [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "are",
+       "around",
+       "career",
+       "college",
+       "during",
+       "graduates",
+       "graduating",
+       "internship",
+       "internships",
+       "seniors",
+       "than",
+       "two-thirds"
+      ]
+     },
+     {
+      "claim": "According to NACE's 2024 Student Survey, the percent of graduating seniors who participated in an internship is the highest in the past six years [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "according",
+       "graduating",
+       "highest",
+       "internship",
+       "nace",
+       "participated",
+       "past",
+       "percent",
+       "seniors",
+       "six",
+       "survey",
+       "the"
+      ]
+     },
+     {
+      "claim": "Internships offer students the opportunity to gain valuable industry experience, which can compensate for study demands such as study load and financial stress, as suggested by Naylor's research [S4].",
+      "labels": [
+       "S4"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "can",
+       "compensate",
+       "demands",
+       "financial",
+       "for",
+       "load",
+       "naylor",
+       "research",
+       "stress",
+       "study",
+       "such"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 4,
+    "top_similarity_score": 0.6013050675392151,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "Can internships compensate? (Computer Engineering)",
+    "query_kind": "standalone_domain_question",
+    "query_normalization": {
+     "original_question": "Can internships compensate?",
+     "normalized_question": "Can internships compensate?",
+     "retrieval_question": "Can internships compensate? (Computer Engineering)",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "internships",
+       "matched_terms": [
+        "internships"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "assess",
+     "constraints": [],
+     "entities": [
+      "internships"
+     ],
+     "referents": [],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 3,
+      "replacements": [],
+      "normalized_tokens": [
+       "can",
+       "internships",
+       "compensate"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.183,
+    "context_construction_seconds": 0.002,
+    "llm_generation_seconds": 35.172,
+    "initial_llm_generation_seconds": 35.172,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 35.147,
+    "total_seconds": 36.794
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "elapsed_wall_seconds": 69.23
+ },
+ {
+  "id": "T191",
+  "question": "What makes it different?",
+  "group": "multi_turn",
+  "expected_topics": [
+   "department_information"
+  ],
+  "expected_categories": [
+   "department_information"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": "Tell me about OSTIM CENG.",
+  "evaluation_label": "correct_evidence_supported",
+  "status": "answered",
+  "answer": "OSTIM's Department of Computer Engineering differs from other programs in its focus on providing comprehensive education in both computer software and hardware [S3]. The department collaborates with both the Computer Science and Electrical Engineering departments to offer a curriculum that integrates these areas, ensuring students gain a balanced understanding of computer systems, hardware, and software [S3]. Additionally, the department emphasizes the importance of technical management, problem-solving, and personal research, preparing students to contribute effectively to their institutions and organizations [S1].",
+  "resolved_question": "What makes OSTIM's Department of Computer Engineering different?",
+  "follow_up_rewrite": {
+   "llm_rewrite": "What makes OSTIM's Department of Computer Engineering different?",
+   "raw_output": "What makes OSTIM's Department of Computer Engineering different?",
+   "error": null,
+   "seconds": 7.531,
+   "rule_based": "What makes it different? Regarding OSTIM CENG in Computer Engineering.",
+   "used": "llm"
+  },
+  "previous_answer": "OSTIM's Department of Computer Engineering aims to educate Computer engineers who will contribute to the institution and organization in which they are participating [S1]. The department focuses on enabling students to gain skills for technical management, analyze, synthesize, and model engineering problems, and develop the ability to conduct personal research [S1]. Students are expected to produce information from a universal perspective, transfer technology into the industry, and share knowledge and experience with society and industry [S1].",
+  "sources": [
+   "src_001",
+   "src_067"
+  ],
+  "diagnostics": {
+   "query_kind": "contextual_follow_up",
+   "resolved_question": "What makes OSTIM's Department of Computer Engineering different?",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S3",
+     "S1"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "removed_trailing_source_labels",
+     "added_supported_inline_label",
+     "pruned_unverified_sentences"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "OSTIM's Department of Computer Engineering differs from other programs in its focus on providing comprehensive education in both computer software and hardware [S3].",
+      "labels": [
+       "S3"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "both",
+       "department",
+       "hardware",
+       "providing",
+       "software"
+      ]
+     },
+     {
+      "claim": "The department collaborates with both the Computer Science and Electrical Engineering departments to offer a curriculum that integrates these areas, ensuring students gain a balanced understanding of computer systems, hardware, and software [S3].",
+      "labels": [
+       "S3"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "both",
+       "curriculum",
+       "department",
+       "electrical",
+       "hardware",
+       "science",
+       "software",
+       "systems",
+       "the"
+      ]
+     },
+     {
+      "claim": "Additionally, the department emphasizes the importance of technical management, problem-solving, and personal research, preparing students to contribute effectively to their institutions and organizations [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "contribute",
+       "department",
+       "management",
+       "personal",
+       "research",
+       "technical",
+       "the"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.6550623178482056,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "What makes OSTIM's Department of Computer Engineering different?",
+    "query_kind": "contextual_follow_up",
+    "follow_up_rewrite": {
+     "llm_rewrite": "What makes OSTIM's Department of Computer Engineering different?",
+     "raw_output": "What makes OSTIM's Department of Computer Engineering different?",
+     "error": null,
+     "seconds": 7.531,
+     "rule_based": "What makes it different? Regarding OSTIM CENG in Computer Engineering.",
+     "used": "llm"
+    },
+    "query_normalization": {
+     "original_question": "What makes it different?",
+     "normalized_question": "What makes it different?",
+     "retrieval_question": null,
+     "kind": "contextual_follow_up",
+     "topics": [],
+     "task": "explain",
+     "constraints": [],
+     "entities": [],
+     "referents": [
+      "it"
+     ],
+     "requires_context": true,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.85,
+     "debug": {
+      "token_count": 4,
+      "replacements": [],
+      "normalized_tokens": [
+       "what",
+       "makes",
+       "it",
+       "different"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.255,
+    "context_construction_seconds": 0.003,
+    "llm_generation_seconds": 44.794,
+    "initial_llm_generation_seconds": 44.794,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 44.783,
+    "total_seconds": 46.527
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "elapsed_wall_seconds": 78.91
+ },
+ {
+  "id": "T192",
+  "question": "Will it help my career?",
+  "group": "multi_turn",
+  "expected_topics": [
+   "erasmus",
+   "career"
+  ],
+  "expected_categories": [
+   "internships",
+   "career_opportunities"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": "Can CENG students do Erasmus?",
+  "evaluation_label": "unsupported_incorrect_or_misleading",
+  "status": "answered",
+  "answer": "The International Student Admission Directive from OSTIM Technical University's International Student and Academic Relations Office outlines the procedures for international student admissions, including the benefits of Erasmus programs [S2]. The Entrepreneurship Scorecard mentioned in the context also suggests that students who participate in Erasmus might receive support and awards, such as start-up capital support for their projects or job opportunities in OSTİM Technopark [S3].",
+  "resolved_question": "Can CENG students benefit their career by participating in Erasmus?",
+  "follow_up_rewrite": {
+   "llm_rewrite": "Can CENG students benefit their career by participating in Erasmus?",
+   "raw_output": "Can CENG students benefit their career by participating in Erasmus?",
+   "error": null,
+   "seconds": 6.974,
+   "rule_based": "will it help my career? Regarding Can CENG students do Erasmus in Computer Engineering.",
+   "used": "llm"
+  },
+  "previous_answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "sources": [
+   "src_089",
+   "src_005"
+  ],
+  "diagnostics": {
+   "query_kind": "contextual_follow_up",
+   "resolved_question": "Can CENG students benefit their career by participating in Erasmus?",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S2",
+     "S3"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "added_supported_inline_label",
+     "pruned_unverified_sentences",
+     "partial_answer"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "The International Student Admission Directive from OSTIM Technical University's International Student and Academic Relations Office outlines the procedures for international student admissions, including the benefits of Erasmus programs [S2].",
+      "labels": [
+       "S2"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "academic",
+       "admission",
+       "admissions",
+       "and",
+       "directive",
+       "for",
+       "international",
+       "office",
+       "ostim",
+       "programs",
+       "relations",
+       "technical"
+      ]
+     },
+     {
+      "claim": "The Entrepreneurship Scorecard mentioned in the context also suggests that students who participate in Erasmus might receive support and awards, such as start-up capital support for their projects or job opportunities in OSTİM Technopark [S3].",
+      "labels": [
+       "S3"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "awards",
+       "capital",
+       "entrepreneurship",
+       "for",
+       "job",
+       "opportunities",
+       "osti",
+       "scorecard",
+       "start-up",
+       "such",
+       "support"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": "generated answer did not address the question's distinctive topic terms",
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.6383851170539856,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "Can CENG students benefit their career by participating in Erasmus?",
+    "query_kind": "contextual_follow_up",
+    "follow_up_rewrite": {
+     "llm_rewrite": "Can CENG students benefit their career by participating in Erasmus?",
+     "raw_output": "Can CENG students benefit their career by participating in Erasmus?",
+     "error": null,
+     "seconds": 6.974,
+     "rule_based": "will it help my career? Regarding Can CENG students do Erasmus in Computer Engineering.",
+     "used": "llm"
+    },
+    "query_normalization": {
+     "original_question": "Will it help my career?",
+     "normalized_question": "will it help my career?",
+     "retrieval_question": null,
+     "kind": "contextual_follow_up",
+     "topics": [
+      {
+       "name": "career",
+       "matched_terms": [
+        "career"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": null,
+     "constraints": [],
+     "entities": [
+      "career"
+     ],
+     "referents": [
+      "it"
+     ],
+     "requires_context": true,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.85,
+     "debug": {
+      "token_count": 5,
+      "replacements": [],
+      "normalized_tokens": [
+       "will",
+       "it",
+       "help",
+       "my",
+       "career"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.456,
+    "context_construction_seconds": 0.001,
+    "llm_generation_seconds": 46.828,
+    "initial_llm_generation_seconds": 46.828,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 46.795,
+    "total_seconds": 50.746
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "elapsed_wall_seconds": 81.15
+ },
+ {
+  "id": "T193",
+  "question": "And salaries?",
+  "group": "multi_turn",
+  "expected_topics": [
+   "salary",
+   "career"
+  ],
+  "expected_categories": [
+   "salaries",
+   "employment"
+  ],
+  "expected_behavior": "insufficient",
+  "previous_question": "What jobs can graduates do?",
+  "evaluation_label": "correct_insufficient_information",
+  "status": "insufficient_information",
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "resolved_question": "What jobs can graduates do and what are their corresponding salaries?",
+  "follow_up_rewrite": {
+   "llm_rewrite": "What jobs can graduates do and what are their corresponding salaries?",
+   "raw_output": "What jobs can graduates do and what are their corresponding salaries?",
+   "error": null,
+   "seconds": 6.676,
+   "rule_based": "and salaries? Regarding What jobs can graduates do in Computer Engineering.",
+   "used": "llm"
+  },
+  "previous_answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "sources": [],
+  "diagnostics": {
+   "query_kind": "contextual_follow_up",
+   "resolved_question": "What jobs can graduates do and what are their corresponding salaries?",
+   "status": "insufficient_information",
+   "llm_called": false,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {},
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": []
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.7004590630531311,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "unsupported_reason": "retrieved evidence has too little overlap with the question terms: ['corresponding', 'jobs', 'salaries', 'their']",
+    "resolved_question": "What jobs can graduates do and what are their corresponding salaries?",
+    "query_kind": "contextual_follow_up",
+    "follow_up_rewrite": {
+     "llm_rewrite": "What jobs can graduates do and what are their corresponding salaries?",
+     "raw_output": "What jobs can graduates do and what are their corresponding salaries?",
+     "error": null,
+     "seconds": 6.676,
+     "rule_based": "and salaries? Regarding What jobs can graduates do in Computer Engineering.",
+     "used": "llm"
+    },
+    "query_normalization": {
+     "original_question": "And salaries?",
+     "normalized_question": "and salaries?",
+     "retrieval_question": null,
+     "kind": "contextual_follow_up",
+     "topics": [
+      {
+       "name": "salary",
+       "matched_terms": [
+        "salaries"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": null,
+     "constraints": [],
+     "entities": [
+      "salary"
+     ],
+     "referents": [],
+     "requires_context": true,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.85,
+     "debug": {
+      "token_count": 2,
+      "replacements": [],
+      "normalized_tokens": [
+       "and",
+       "salaries"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.369,
+    "context_construction_seconds": 0.0,
+    "llm_generation_seconds": 0.0,
+    "total_seconds": 0.371
+   },
+   "model": null,
+   "error": null
+  },
+  "elapsed_wall_seconds": 69.72
+ },
+ {
+  "id": "T194",
+  "question": "So will it replace us?",
+  "group": "multi_turn",
+  "expected_topics": [
+   "ai",
+   "career"
+  ],
+  "expected_categories": [
+   "artificial_intelligence",
+   "future_technologies"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": "Is AI changing engineering work?",
+  "evaluation_label": "incorrect_refusal_evidence_exists",
+  "status": "insufficient_information",
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "resolved_question": "Will AI replace engineers in their current roles?",
+  "follow_up_rewrite": {
+   "llm_rewrite": "Will AI replace engineers in their current roles?",
+   "raw_output": "Will AI replace engineers in their current roles?",
+   "error": null,
+   "seconds": 8.161,
+   "rule_based": "so will it replace us? Regarding Is AI changing engineering work in Computer Engineering.",
+   "used": "llm"
+  },
+  "previous_answer": "[AI tools are assisting engineers in various tasks such as coding, explanation, search, testing ideas, and prototyping, but engineers still need to understand requirements, constraints, correctness, security, maintainability, users, and ethical consequences [S1]. However, manual dexterity, endurance, precision, and reading, writing, and mathematics skills are expected to diminish in relevance due to automation [S2]. Up- and re-skilling may be necessary for workers in these fields as technologies replace tasks.] [S4]",
+  "sources": [],
+  "diagnostics": {
+   "query_kind": "contextual_follow_up",
+   "resolved_question": "Will AI replace engineers in their current roles?",
+   "status": "insufficient_information",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S1"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4",
+     "S5"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "source_name_to_inline_label",
+     "added_supported_inline_label",
+     "pruned_unverified_sentences",
+     "partial_answer"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": []
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 4,
+    "top_similarity_score": 0.6208747625350952,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "unsupported_reason": "generated answer did not address the question's distinctive topic terms",
+    "discarded_generation": "ANSWER: The evidence from the World Economic Forum's \"The Future of Jobs Report 2025\" suggests that AI will not entirely replace engineers in their current roles. The report indicates that while there are concerns about hiring challenges, 9% of employers are worried about talent retention, compared to 19% globally. Instead, the focus is on automation, upskilling, and transitioning staff to growing roles. Additionally, the OECD's \"Skills for the digital age\" suggests that while AI may not entirely substitute engineers, their work organization will need to adapt, and workers may need up- and re-skilling as technologies replace workers for several tasks (Lassébie and Quintini, 2022 [44]). Therefore, AI is expected to complement rather than replace engineers in their current roles, necessitating continuous learning and adaptation.\n\nUSED_SOURCES:\n[S1]\n[S2]\n[S4]",
+    "resolved_question": "Will AI replace engineers in their current roles?",
+    "query_kind": "contextual_follow_up",
+    "follow_up_rewrite": {
+     "llm_rewrite": "Will AI replace engineers in their current roles?",
+     "raw_output": "Will AI replace engineers in their current roles?",
+     "error": null,
+     "seconds": 8.161,
+     "rule_based": "so will it replace us? Regarding Is AI changing engineering work in Computer Engineering.",
+     "used": "llm"
+    },
+    "query_normalization": {
+     "original_question": "So will it replace us?",
+     "normalized_question": "so will it replace us?",
+     "retrieval_question": null,
+     "kind": "contextual_follow_up",
+     "topics": [],
+     "task": null,
+     "constraints": [],
+     "entities": [],
+     "referents": [
+      "it"
+     ],
+     "requires_context": true,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.85,
+     "debug": {
+      "token_count": 5,
+      "replacements": [],
+      "normalized_tokens": [
+       "so",
+       "will",
+       "it",
+       "replace",
+       "us"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.249,
+    "context_construction_seconds": 0.003,
+    "llm_generation_seconds": 53.816,
+    "initial_llm_generation_seconds": 53.816,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 53.76,
+    "total_seconds": 56.506
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "elapsed_wall_seconds": 109.23
+ },
+ {
+  "id": "T195",
+  "question": "Is it hard?",
+  "group": "multi_turn",
+  "expected_topics": [
+   "operating_systems",
+   "curriculum"
+  ],
+  "expected_categories": [
+   "curriculum"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": "What is CENG 303?",
+  "evaluation_label": "incorrect_refusal_evidence_exists",
+  "status": "insufficient_information",
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "resolved_question": "What is CENG 303?",
+  "follow_up_rewrite": {
+   "llm_rewrite": "What is CENG 303?",
+   "raw_output": "What is CENG 303?",
+   "error": null,
+   "seconds": 7.501,
+   "rule_based": "Is CENG 303 hard? in the context of Computer Engineering?",
+   "used": "llm"
+  },
+  "previous_answer": "Computer Engineering is a four-year curriculum that focuses on the design and construction of processor-based systems, encompassing hardware, software, and communications components [S1]. This program, as described in [S1], integrates electrical engineering and computer science to design systems such as cellular communications, consumer electronics, medical imaging and devices, alarm systems, and military technologies. Upon graduation, students are prepared to design and implement systems that involve the integration of software and hardware devices [S1]. [S1] provides a clear definition of what Computer Engineering entails.",
+  "sources": [],
+  "diagnostics": {
+   "query_kind": "contextual_follow_up",
+   "resolved_question": "What is CENG 303?",
+   "status": "insufficient_information",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S3"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "removed_trailing_source_labels",
+     "added_supported_inline_label",
+     "pruned_unverified_sentences",
+     "partial_answer"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": []
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.6620393991470337,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "unsupported_reason": "generated answer did not address the question's distinctive topic terms",
+    "discarded_generation": "CENG 303, titled \"Operating Systems Design and Construction,\" is a compulsory course offered by the Department of Computer Engineering at OSTIM Technical University. This course is part of the curriculum and is designed to provide students with foundational knowledge and skills in operating systems design and construction, which are crucial for computer engineering graduates. The course is typically offered in the fall semester and consists of 3 credit hours, with 8 total hours including theory and practice. Students enrolled in this course will gain understanding of the design and construction of operating systems, which are the core systems that manage computer hardware and software resources. [S3]\n\nUSED_SOURCES:\n[S3]",
+    "resolved_question": "What is CENG 303?",
+    "query_kind": "contextual_follow_up",
+    "follow_up_rewrite": {
+     "llm_rewrite": "What is CENG 303?",
+     "raw_output": "What is CENG 303?",
+     "error": null,
+     "seconds": 7.501,
+     "rule_based": "Is CENG 303 hard? in the context of Computer Engineering?",
+     "used": "llm"
+    },
+    "query_normalization": {
+     "original_question": "Is it hard?",
+     "normalized_question": "Is it hard?",
+     "retrieval_question": null,
+     "kind": "contextual_follow_up",
+     "topics": [],
+     "task": "assess",
+     "constraints": [],
+     "entities": [],
+     "referents": [
+      "it"
+     ],
+     "requires_context": true,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.85,
+     "debug": {
+      "token_count": 3,
+      "replacements": [],
+      "normalized_tokens": [
+       "is",
+       "it",
+       "hard"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.285,
+    "context_construction_seconds": 0.026,
+    "llm_generation_seconds": 46.807,
+    "initial_llm_generation_seconds": 46.807,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 46.792,
+    "total_seconds": 50.401
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "elapsed_wall_seconds": 77.67
+ },
+ {
+  "id": "T196",
+  "question": "For cloud security?",
+  "group": "multi_turn",
+  "expected_topics": [
+   "networks",
+   "cybersecurity"
+  ],
+  "expected_categories": [
+   "cybersecurity",
+   "skills_and_technologies"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": "How important are networks?",
+  "evaluation_label": "correct_evidence_supported",
+  "status": "answered",
+  "answer": "For cloud security, Computer Engineering students should focus on understanding the architecture of a data center, risks associated with cloud computing, and security issues for cloud, including cloud computing, cloud storage, and virtual machines [S3]. They should also be familiar with distributed file systems and design security strategies for cloud environments [S3]. Additionally, knowledge of cloud services that support big data applications and the design of data centers is crucial [S3].",
+  "resolved_question": "for cloud security? (Computer Engineering)",
+  "follow_up_rewrite": null,
+  "previous_answer": "I am a Computer Engineering student advisor. I can help with Computer Engineering education, curriculum, courses, skills, careers, internships, AI, cybersecurity, programming, and related study paths.",
+  "sources": [
+   "src_069"
+  ],
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "for cloud security? (Computer Engineering)",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S3"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "removed_trailing_source_labels",
+     "added_supported_inline_label"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "For cloud security, Computer Engineering students should focus on understanding the architecture of a data center, risks associated with cloud computing, and security issues for cloud, including cloud computing, cloud storage, and virtual machines [S3].",
+      "labels": [
+       "S3"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "architecture",
+       "associated",
+       "center",
+       "cloud",
+       "computing",
+       "data",
+       "for",
+       "including",
+       "issues",
+       "machines",
+       "risks"
+      ]
+     },
+     {
+      "claim": "They should also be familiar with distributed file systems and design security strategies for cloud environments [S3].",
+      "labels": [
+       "S3"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "cloud",
+       "design",
+       "distributed",
+       "file",
+       "for",
+       "security",
+       "strategies",
+       "systems"
+      ]
+     },
+     {
+      "claim": "Additionally, knowledge of cloud services that support big data applications and the design of data centers is crucial [S3].",
+      "labels": [
+       "S3"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "applications",
+       "big",
+       "cloud",
+       "data",
+       "design",
+       "services",
+       "support",
+       "that",
+       "the"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.5700368285179138,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "for cloud security? (Computer Engineering)",
+    "query_kind": "standalone_domain_question",
+    "query_normalization": {
+     "original_question": "For cloud security?",
+     "normalized_question": "for cloud security?",
+     "retrieval_question": "for cloud security? (Computer Engineering)",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "cybersecurity",
+       "matched_terms": [
+        "security"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": null,
+     "constraints": [],
+     "entities": [
+      "cybersecurity"
+     ],
+     "referents": [],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 3,
+      "replacements": [],
+      "normalized_tokens": [
+       "for",
+       "cloud",
+       "security"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.19,
+    "context_construction_seconds": 0.003,
+    "llm_generation_seconds": 22.009,
+    "initial_llm_generation_seconds": 22.009,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 21.995,
+    "total_seconds": 22.208
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "elapsed_wall_seconds": 22.22
+ },
+ {
+  "id": "T197",
+  "question": "or C++?",
+  "group": "multi_turn",
+  "expected_topics": [
+   "programming"
+  ],
+  "expected_categories": [
+   "programming"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": "Should I learn Python first?",
+  "evaluation_label": "unsupported_incorrect_or_misleading",
+  "status": "answered",
+  "answer": "Given this information, if your primary goal is to learn a language that is widely used and has a strong community support system, Python might be the better choice [S5].",
+  "resolved_question": "Should I learn Python or C++ first?",
+  "follow_up_rewrite": {
+   "llm_rewrite": "Should I learn Python or C++ first?",
+   "raw_output": "Should I learn Python or C++ first?",
+   "error": null,
+   "seconds": 6.658,
+   "rule_based": "or c++? Regarding Should I learn Python first in Computer Engineering.",
+   "used": "llm"
+  },
+  "previous_answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "sources": [
+   "src_051"
+  ],
+  "diagnostics": {
+   "query_kind": "contextual_follow_up",
+   "resolved_question": "Should I learn Python or C++ first?",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S5"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4",
+     "S5"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "added_supported_inline_label",
+     "pruned_unverified_sentences",
+     "partial_answer"
+    ],
+    "reason": null,
+    "retry_attempted": true,
+    "retry_successful": true,
+    "generations_attempted": 2,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "Given this information, if your primary goal is to learn a language that is widely used and has a strong community support system, Python might be the better choice [S5].",
+      "labels": [
+       "S5"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "community",
+       "given",
+       "language",
+       "primary",
+       "python",
+       "strong",
+       "support",
+       "the",
+       "used"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": "generated answer did not address the question's distinctive topic terms",
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.6057536602020264,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "Should I learn Python or C++ first?",
+    "query_kind": "contextual_follow_up",
+    "follow_up_rewrite": {
+     "llm_rewrite": "Should I learn Python or C++ first?",
+     "raw_output": "Should I learn Python or C++ first?",
+     "error": null,
+     "seconds": 6.658,
+     "rule_based": "or c++? Regarding Should I learn Python first in Computer Engineering.",
+     "used": "llm"
+    },
+    "query_normalization": {
+     "original_question": "or C++?",
+     "normalized_question": "or c++?",
+     "retrieval_question": null,
+     "kind": "contextual_follow_up",
+     "topics": [
+      {
+       "name": "programming",
+       "matched_terms": [
+        "c++"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": null,
+     "constraints": [],
+     "entities": [
+      "programming"
+     ],
+     "referents": [],
+     "requires_context": true,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.85,
+     "debug": {
+      "token_count": 2,
+      "replacements": [],
+      "normalized_tokens": [
+       "or",
+       "c++"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.249,
+    "context_construction_seconds": 0.002,
+    "llm_generation_seconds": 102.34899999999999,
+    "initial_llm_generation_seconds": 53.317,
+    "retry_llm_generation_seconds": 49.032,
+    "llm_reported_total_duration_seconds": 53.307,
+    "total_seconds": 105.59
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "elapsed_wall_seconds": 146.13
+ },
+ {
+  "id": "T198",
+  "question": "What skills matter most?",
+  "group": "multi_turn",
+  "expected_topics": [
+   "remote_work",
+   "skills"
+  ],
+  "expected_categories": [
+   "remote_work",
+   "skills_and_technologies"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": "Can I work abroad?",
+  "evaluation_label": "incorrect_refusal_evidence_exists",
+  "status": "insufficient_information",
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "resolved_question": "What skills matter most for working abroad?",
+  "follow_up_rewrite": {
+   "llm_rewrite": "What skills matter most for working abroad?",
+   "raw_output": "What skills matter most for working abroad?",
+   "error": null,
+   "seconds": 7.824,
+   "rule_based": "What skills matter most? for Can I work abroad in Computer Engineering.",
+   "used": "llm"
+  },
+  "previous_answer": "The sources suggest that understanding your qualification level on the National Qualifications Framework (NQF) in your country is important for preparing to work abroad [S1]. Additionally, you can have your qualifications recognized by contacting the ENIC-NARIC centre in the country where you want to work [S2]. This can help you explain your qualifications to potential employers and recruiters [S2].",
+  "sources": [],
+  "diagnostics": {
+   "query_kind": "contextual_follow_up",
+   "resolved_question": "What skills matter most for working abroad?",
+   "status": "insufficient_information",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4",
+     "S5"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "removed_trailing_source_labels",
+     "added_supported_inline_label",
+     "source_name_to_inline_label"
+    ],
+    "reason": "unsupported claim could not be matched to retrieved evidence",
+    "retry_attempted": true,
+    "retry_successful": false,
+    "generations_attempted": 2,
+    "retry_failure_reason": "unsupported claim could not be matched to retrieved evidence",
+    "discarded_invalid_generation": true,
+    "discarded_generation_reason": "unsupported claim could not be matched to retrieved evidence"
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": []
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 3,
+    "top_similarity_score": 0.6011205315589905,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "unsupported_reason": "unsupported claim could not be matched to retrieved evidence",
+    "discarded_generation": "Based on the provided context, the most important skills for working abroad appear to be foundational skills such as science, reading, and mathematics, as well as digital technologies and technological literacy. These foundational skills are crucial for effectively utilizing digital technologies, which are essential in the digital age. Additionally, the Future of Jobs Report 2025 highlights the importance of skills like AI, big data, technological literacy, networks, and cybersecurity, which are expected to grow significantly in the coming years. These skills are not only important for the digital age but also for the future of the labor market, as they are recognized as a spectrum of available talent that needs to be utilized effectively. [S2] [S4]\n\nUSED_SOURCES:\n[S1]\n[S2]\n[S3]\n[S4]\n[S5]",
+    "discarded_retry_generation": "Based on the provided context, the most important skills for working abroad appear to be foundational skills such as science, reading, and mathematics, as well as digital technologies and technological literacy. These foundational skills are crucial for effectively utilizing digital technologies, which are essential in the digital age. Additionally, the Future of Jobs Report 2025 highlights the importance of skills like AI, big data, technological literacy, networks, and cybersecurity, which are expected to grow significantly in the coming years. These skills are not only important for the digital age but also for the future of the labor market, as they are recognized as a spectrum of available talent that needs to be utilized effectively. [S1] [S2] [S4]\n\nUSED_SOURCES:\n[S1]\n[S2]\n[S4]",
+    "resolved_question": "What skills matter most for working abroad?",
+    "query_kind": "contextual_follow_up",
+    "follow_up_rewrite": {
+     "llm_rewrite": "What skills matter most for working abroad?",
+     "raw_output": "What skills matter most for working abroad?",
+     "error": null,
+     "seconds": 7.824,
+     "rule_based": "What skills matter most? for Can I work abroad in Computer Engineering.",
+     "used": "llm"
+    },
+    "query_normalization": {
+     "original_question": "What skills matter most?",
+     "normalized_question": "What skills matter most?",
+     "retrieval_question": null,
+     "kind": "contextual_follow_up",
+     "topics": [
+      {
+       "name": "skills",
+       "matched_terms": [
+        "skills"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "explain",
+     "constraints": [],
+     "entities": [
+      "skills"
+     ],
+     "referents": [],
+     "requires_context": true,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.84,
+     "debug": {
+      "token_count": 4,
+      "replacements": [],
+      "normalized_tokens": [
+       "what",
+       "skills",
+       "matter",
+       "most"
+      ],
+      "changed": false,
+      "contextual_skill_follow_up": true
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.185,
+    "context_construction_seconds": 0.006,
+    "llm_generation_seconds": 85.191,
+    "initial_llm_generation_seconds": 45.833,
+    "retry_llm_generation_seconds": 39.358,
+    "llm_reported_total_duration_seconds": 45.818,
+    "total_seconds": 87.786
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "elapsed_wall_seconds": 122.37
+ },
+ {
+  "id": "T199",
+  "question": "Which one should I prioritize this semester?",
+  "group": "multi_turn",
+  "expected_topics": [
+   "gpa",
+   "projects"
+  ],
+  "expected_categories": [
+   "employment",
+   "projects"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": "I asked about GPA and projects.",
+  "evaluation_label": "unsupported_incorrect_or_misleading",
+  "status": "answered",
+  "answer": "The National Association of Colleges and Employers (NACE) highlights that skills-based hiring is becoming more prevalent, with nearly two-thirds of employers using such practices [S1]. Employers are valuing practical experience and hands-on projects more than traditional GPA [S1]. Additionally, the curated note from CENG AI Advisor emphasizes that employability depends on evidence of learning, communication, problem-solving, teamwork, and technical work, which are often demonstrated through projects and internships [S2].",
+  "resolved_question": "Which one should I prioritize this semester between GPA and hands-on projects?",
+  "follow_up_rewrite": {
+   "llm_rewrite": "Which one should I prioritize this semester between GPA and hands-on projects?",
+   "raw_output": "Which one should I prioritize this semester between GPA and hands-on projects?",
+   "error": null,
+   "seconds": 8.325,
+   "rule_based": "Which one should I prioritize this semester? Regarding I asked about GPA and projects in Computer Engineering.",
+   "used": "llm"
+  },
+  "previous_answer": "[According to the context, GPA can matter for some academic, scholarship, or screening contexts, but employability also depends on evidence that a student can learn, communicate, solve problems, work with others, and complete technical work [S1]. Projects, internships, and other hands-on experiences are also crucial for demonstrating these skills [S1]. For example, [S1] highlights that projects, internships, and other practical experiences can be used to demonstrate the competencies needed for employability in computer engineering.]",
+  "sources": [
+   "src_127",
+   "src_091"
+  ],
+  "diagnostics": {
+   "query_kind": "contextual_follow_up",
+   "resolved_question": "Which one should I prioritize this semester between GPA and hands-on projects?",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S1",
+     "S2"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "source_name_to_inline_label",
+     "added_supported_inline_label",
+     "pruned_unverified_sentences"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "The National Association of Colleges and Employers (NACE) highlights that skills-based hiring is becoming more prevalent, with nearly two-thirds of employers using such practices [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "employers",
+       "hiring",
+       "nearly",
+       "practices",
+       "skills-based",
+       "the",
+       "two-thirds",
+       "using"
+      ]
+     },
+     {
+      "claim": "Employers are valuing practical experience and hands-on projects more than traditional GPA [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "are",
+       "employers",
+       "experience",
+       "gpa",
+       "than"
+      ]
+     },
+     {
+      "claim": "Additionally, the curated note from CENG AI Advisor emphasizes that employability depends on evidence of learning, communication, problem-solving, teamwork, and technical work, which are often demonstrated through projects and internships [S2].",
+      "labels": [
+       "S2"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "ceng",
+       "demonstrated",
+       "depends",
+       "employability",
+       "evidence",
+       "internships",
+       "projects",
+       "teamwork",
+       "technical",
+       "that",
+       "the"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": "generated answer did not address the question's distinctive topic terms",
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.7251971960067749,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "Which one should I prioritize this semester between GPA and hands-on projects?",
+    "query_kind": "contextual_follow_up",
+    "follow_up_rewrite": {
+     "llm_rewrite": "Which one should I prioritize this semester between GPA and hands-on projects?",
+     "raw_output": "Which one should I prioritize this semester between GPA and hands-on projects?",
+     "error": null,
+     "seconds": 8.325,
+     "rule_based": "Which one should I prioritize this semester? Regarding I asked about GPA and projects in Computer Engineering.",
+     "used": "llm"
+    },
+    "query_normalization": {
+     "original_question": "Which one should I prioritize this semester?",
+     "normalized_question": "Which one should I prioritize this semester?",
+     "retrieval_question": null,
+     "kind": "contextual_follow_up",
+     "topics": [
+      {
+       "name": "curriculum",
+       "matched_terms": [
+        "semester"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "recommend",
+     "constraints": [],
+     "entities": [
+      "curriculum"
+     ],
+     "referents": [
+      "one",
+      "this"
+     ],
+     "requires_context": true,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.83,
+     "debug": {
+      "token_count": 7,
+      "replacements": [],
+      "normalized_tokens": [
+       "which",
+       "one",
+       "should",
+       "i",
+       "prioritize",
+       "this",
+       "semester"
+      ],
+      "changed": false,
+      "contextual_advice_follow_up": true
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.411,
+    "context_construction_seconds": 0.026,
+    "llm_generation_seconds": 42.541,
+    "initial_llm_generation_seconds": 42.541,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 42.529,
+    "total_seconds": 44.218
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "elapsed_wall_seconds": 81.42
+ },
+ {
+  "id": "T200",
+  "question": "Where do I find them?",
+  "group": "multi_turn",
+  "expected_topics": [
+   "student_life"
+  ],
+  "expected_categories": [
+   "student_life"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": "I asked about student clubs.",
+  "evaluation_label": "correct_evidence_supported",
+  "status": "answered",
+  "answer": "To find student clubs at OSTIM Technical University, you can visit the Student Affairs Main Page [S1]. The Student Affairs Main Page is accessible through the link provided in the [S1] context.",
+  "resolved_question": "Where do I find student clubs?",
+  "follow_up_rewrite": {
+   "llm_rewrite": "Where do I find student clubs?",
+   "raw_output": "Where do I find student clubs?",
+   "error": null,
+   "seconds": 6.675,
+   "rule_based": "Where do I find them? Regarding I asked about student clubs in Computer Engineering.",
+   "used": "llm"
+  },
+  "previous_answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "sources": [
+   "src_059"
+  ],
+  "diagnostics": {
+   "query_kind": "contextual_follow_up",
+   "resolved_question": "Where do I find student clubs?",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S1"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "removed_trailing_source_labels",
+     "source_name_to_inline_label",
+     "pruned_unverified_sentences"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "To find student clubs at OSTIM Technical University, you can visit the Student Affairs Main Page [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "affairs",
+       "main",
+       "ostim",
+       "page",
+       "university"
+      ]
+     },
+     {
+      "claim": "The Student Affairs Main Page is accessible through the link provided in the [S1] context.",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "affairs",
+       "main",
+       "page"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 4,
+    "top_similarity_score": 0.6800330877304077,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "Where do I find student clubs?",
+    "query_kind": "contextual_follow_up",
+    "follow_up_rewrite": {
+     "llm_rewrite": "Where do I find student clubs?",
+     "raw_output": "Where do I find student clubs?",
+     "error": null,
+     "seconds": 6.675,
+     "rule_based": "Where do I find them? Regarding I asked about student clubs in Computer Engineering.",
+     "used": "llm"
+    },
+    "query_normalization": {
+     "original_question": "Where do I find them?",
+     "normalized_question": "Where do I find them?",
+     "retrieval_question": null,
+     "kind": "contextual_follow_up",
+     "topics": [],
+     "task": "assess",
+     "constraints": [],
+     "entities": [],
+     "referents": [
+      "them"
+     ],
+     "requires_context": true,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.85,
+     "debug": {
+      "token_count": 5,
+      "replacements": [],
+      "normalized_tokens": [
+       "where",
+       "do",
+       "i",
+       "find",
+       "them"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.298,
+    "context_construction_seconds": 0.026,
+    "llm_generation_seconds": 36.147,
+    "initial_llm_generation_seconds": 36.147,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 36.136,
+    "total_seconds": 36.657
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "elapsed_wall_seconds": 43.55
+ }
+]
