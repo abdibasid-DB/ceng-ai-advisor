@@ -165,8 +165,7 @@ class RAGPipeline:
         except Exception as exc:
             return self._error_result(cleaned, f"Retrieval failed: {friendly_error(exc)}", start_total), None
 
-        evidence_query = f"{cleaned} {retrieval_query}" if retrieval_query != cleaned else retrieval_query
-        evidence_results = augment_context_results(evidence_query, retrieval.get("results", []))
+        evidence_results = retrieval.get("results", [])
 
         if not retrieval.get("evidence_sufficient"):
             status = OUT_OF_SCOPE if retrieval.get("out_of_scope") else INSUFFICIENT_INFORMATION
@@ -365,7 +364,7 @@ class RAGPipeline:
         citation_validation = validate_citations(answer_text, context_items)
         early_fallback_validation = None
         if not citation_validation.valid:
-            early_fallback = bounded_fallback_answer(gate_question, context_items, citation_validation.reason or "")
+            early_fallback = extractive_partial_answer(gate_question, context_items)
             if early_fallback:
                 candidate = validate_citations(early_fallback, context_items)
                 if candidate.valid and not unsupported_generated_answer_reason(gate_question, candidate.answer, context_items):
@@ -405,7 +404,7 @@ class RAGPipeline:
             error_message = citation_validation.reason or "Local LLM response did not include valid evidence labels."
             if retry_error:
                 error_message = f"{error_message} {retry_error}"
-            fallback_answer = None if early_fallback_validation else bounded_fallback_answer(gate_question, context_items, error_message)
+            fallback_answer = None if early_fallback_validation else extractive_partial_answer(gate_question, context_items)
             if early_fallback_validation or fallback_answer:
                 fallback_validation = early_fallback_validation or validate_citations(fallback_answer, context_items)
                 if fallback_validation.valid and not unsupported_generated_answer_reason(gate_question, fallback_validation.answer, context_items):
@@ -431,7 +430,7 @@ class RAGPipeline:
                         },
                         "error": None,
                         "model": llm_response.model,
-                        "answer_warnings": ["local_llm_answer_replaced_with_bounded_fallback"],
+                        "answer_warnings": ["local_llm_answer_replaced_with_extractive_fallback"],
                         "citation_metadata": citation_metadata(
                             fallback_validation,
                             retry_attempted,
@@ -483,7 +482,7 @@ class RAGPipeline:
 
         generated_answer_reason = unsupported_generated_answer_reason(gate_question, answer_text, context_items)
         if generated_answer_reason:
-            fallback_answer = bounded_fallback_answer(gate_question, context_items, generated_answer_reason)
+            fallback_answer = extractive_partial_answer(gate_question, context_items)
             if fallback_answer:
                 fallback_validation = validate_citations(fallback_answer, context_items)
                 if fallback_validation.valid and not unsupported_generated_answer_reason(gate_question, fallback_validation.answer, context_items):
@@ -525,7 +524,7 @@ class RAGPipeline:
 
         answer_is_insufficient = is_insufficient_answer(answer_text)
         if answer_is_insufficient:
-            fallback_answer = bounded_fallback_answer(gate_question, context_items, "model returned insufficient information")
+            fallback_answer = extractive_partial_answer(gate_question, context_items)
             if fallback_answer:
                 fallback_validation = validate_citations(fallback_answer, context_items)
                 if fallback_validation.valid and not unsupported_generated_answer_reason(gate_question, fallback_validation.answer, context_items):
@@ -837,7 +836,7 @@ def select_context_results(question: str, results: list[dict[str, Any]]) -> list
             result
             for result in results
             if (result.get("category") or "").lower() == "specializations"
-            or (result.get("source_id") or "") == "src_043"
+            or (result.get("source_id") or "") in {"src_043", "src_131"}
             or "subdiscipline" in (result.get("title") or "").lower()
         ]
         if preferred:
@@ -847,8 +846,7 @@ def select_context_results(question: str, results: list[dict[str, Any]]) -> list
         preferred = [
             result
             for result in results
-            if (result.get("source_id") or "") == "src_042"
-            or (result.get("chunk_id") or "") == "src_042_computer_engineering_definition"
+            if (result.get("source_id") or "") in {"src_042", "src_128"}
         ]
         if preferred:
             return preferred + [result for result in results if result not in preferred]
@@ -857,7 +855,7 @@ def select_context_results(question: str, results: list[dict[str, Any]]) -> list
         preferred = [
             result
             for result in results
-            if (result.get("source_id") or "") in {"src_063", "src_043"}
+            if (result.get("source_id") or "") in {"src_063", "src_129", "src_043", "src_131"}
             or "new trends" in (result.get("title") or "").lower()
             or "subdiscipline" in (result.get("title") or "").lower()
         ]
@@ -877,7 +875,7 @@ def select_context_results(question: str, results: list[dict[str, Any]]) -> list
         broad_definition = [
             result
             for result in results
-            if (result.get("source_id") or "") == "src_042"
+            if (result.get("source_id") or "") in {"src_042", "src_128"}
             or "curricular guidance" in (result.get("title") or "").lower()
             or (result.get("category") or "").lower() == "common_misconceptions"
         ]
@@ -918,150 +916,6 @@ def select_context_results(question: str, results: list[dict[str, Any]]) -> list
     return results
 
 
-def augment_context_results(question: str, results: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    """Add precise source snippets for broad advising questions when retrieval found the source."""
-    if is_programming_language_question(question):
-        programming_passage = programming_languages_passage()
-        if programming_passage and not any((result.get("chunk_id") or "") == "src_004_programming_languages" for result in results):
-            enriched = {
-                "rank": 0,
-                "chunk_id": "src_004_programming_languages",
-                "source_id": "src_004",
-                "text": programming_passage,
-                "title": "Course Contents",
-                "source_name": "OSTIM Technical University - Department of Computer Engineering",
-                "source_type": "course_descriptions",
-                "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
-                "category": "curriculum",
-                "section_heading": "Programming courses and languages",
-                "similarity_score": results[0].get("similarity_score") if results else None,
-                "distance": results[0].get("distance") if results else None,
-                "metadata": {"source_type": "course_descriptions"},
-            }
-            return [enriched] + results
-
-    if is_computer_engineering_definition_question(question):
-        definition_passage = computer_engineering_definition_passage(include_it=is_computer_engineering_it_comparison_question(question))
-        if definition_passage and not any((result.get("chunk_id") or "") == "src_042_computer_engineering_definition" for result in results):
-            enriched = {
-                "rank": 0,
-                "chunk_id": "src_042_computer_engineering_definition",
-                "source_id": "src_042",
-                "text": definition_passage,
-                "title": "Curricular Guidance",
-                "source_name": "ACM Curricular Guidance",
-                "source_type": "curricular_guidance",
-                "url": "https://www.acm.org/education/curricula-recommendations",
-                "category": "common_misconceptions",
-                "section_heading": "Computing disciplines",
-                "similarity_score": results[0].get("similarity_score") if results else None,
-                "distance": results[0].get("distance") if results else None,
-                "metadata": {"source_type": "curricular_guidance"},
-            }
-            return [enriched] + results
-
-    if is_future_technology_question(question):
-        retrieved_future_source = any(
-            (result.get("source_id") or "") in {"src_063", "src_043"}
-            or "new trends" in (result.get("title") or "").lower()
-            or "subdiscipline" in (result.get("title") or "").lower()
-            for result in results[:5]
-        )
-        future_passage = future_technologies_passage() if retrieved_future_source else ""
-        if future_passage and not any((result.get("chunk_id") or "") == "src_063_future_technologies" for result in results):
-            enriched = {
-                "rank": 0,
-                "chunk_id": "src_063_future_technologies",
-                "source_id": "src_063",
-                "text": future_passage,
-                "title": "CENG 316 New Trends in Computer Engineering Course Syllabus",
-                "source_name": "OSTIM Technical University",
-                "source_type": "official_course_syllabus",
-                "url": "https://mfcs.ostimteknik.edu.tr/web/content/328250?download=true&unique=8167bdf89f6647714ad5d1975b94716cbc85afb4",
-                "category": "curriculum",
-                "section_heading": "New trends and emerging technologies",
-                "similarity_score": results[0].get("similarity_score") if results else None,
-                "distance": results[0].get("distance") if results else None,
-                "metadata": {"source_type": "official_course_syllabus"},
-            }
-            return [enriched] + results
-
-    if is_linux_operating_system_question(question):
-        evidence_text = " ".join((result.get("text") or "").lower() for result in results[:5])
-        if linux_operating_system_evidence_text(evidence_text):
-            linux_passage = linux_operating_system_passage()
-            if linux_passage and not any((result.get("chunk_id") or "") == "src_004_linux_operating_systems" for result in results):
-                enriched = {
-                    "rank": 0,
-                    "chunk_id": "src_004_linux_operating_systems",
-                    "source_id": "src_004",
-                    "text": linux_passage,
-                    "title": "Course Contents",
-                    "source_name": "OSTIM Technical University - Department of Computer Engineering",
-                    "source_type": "course_descriptions",
-                    "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
-                    "category": "curriculum",
-                    "section_heading": "Operating systems and Linux",
-                    "similarity_score": results[0].get("similarity_score") if results else None,
-                    "distance": results[0].get("distance") if results else None,
-                    "metadata": {"source_type": "course_descriptions"},
-                }
-                return [enriched] + results
-
-    if is_gpa_project_question(question):
-        gpa_passage = gpa_screening_passage()
-        if gpa_passage and not any((result.get("chunk_id") or "") == "src_033_gpa_screening" for result in results):
-            enriched = {
-                "rank": 0,
-                "chunk_id": "src_033_gpa_screening",
-                "source_id": "src_033",
-                "text": gpa_passage,
-                "title": "Hiring Projections Level Off for the College Class of 2025",
-                "source_name": "National Association of Colleges and Employers (NACE)",
-                "source_type": "professional_career_organization_article",
-                "url": "https://naceweb.org/job-market/trends-and-predictions/5a704a5b-acf5-499f-a37b-327f58cdbef9",
-                "category": "employment",
-                "section_heading": "GPA and skills-based hiring",
-                "similarity_score": results[0].get("similarity_score") if results else None,
-                "distance": results[0].get("distance") if results else None,
-                "metadata": {"source_type": "professional_career_organization_article"},
-            }
-            return [enriched] + results
-
-    if not is_specialization_question(question):
-        return results
-    subdiscipline_result = next(
-        (
-            result
-            for result in results
-            if (result.get("source_id") or "") == "src_043"
-            or "subdiscipline" in (result.get("title") or "").lower()
-        ),
-        None,
-    )
-    if not subdiscipline_result:
-        return results
-
-    summary = specialization_areas_passage()
-    if not summary:
-        return results
-
-    enriched = {
-        **subdiscipline_result,
-        "chunk_id": "src_043_specialization_areas",
-        "text": summary,
-        "section_heading": "Specialization areas in Computer Engineering",
-        "similarity_score": subdiscipline_result.get("similarity_score"),
-        "distance": subdiscipline_result.get("distance"),
-    }
-    remaining = [
-        result
-        for result in results
-        if result.get("chunk_id") != enriched["chunk_id"]
-    ]
-    return [enriched] + remaining
-
-
 def is_specialization_question(question: str) -> bool:
     q = (question or "").lower()
     return any(
@@ -1082,26 +936,6 @@ def is_specialization_question(question: str) -> bool:
             "sub-discipline",
             "sub-disciplines",
         ]
-    )
-
-
-def is_computer_engineering_definition_question(question: str) -> bool:
-    q = (question or "").lower()
-    return "computer engineering" in q and any(
-        phrase in q
-        for phrase in (
-            "what is",
-            "define",
-            "definition",
-            "meaning",
-            "explain",
-            "compare",
-            "difference between",
-            "different from",
-            "choosing between",
-            "versus",
-            " vs ",
-        )
     )
 
 
@@ -1162,14 +996,6 @@ def is_programming_language_question(question: str) -> bool:
     return asks_language and asks_program
 
 
-def is_gpa_project_question(question: str) -> bool:
-    q = (question or "").lower()
-    return contains_any_term(q, ("gpa", "grade point", "grade")) and contains_any_term(
-        q,
-        ("project", "projects", "portfolio", "experience"),
-    )
-
-
 def is_linux_operating_system_question(question: str) -> bool:
     q = (question or "").lower()
     return contains_any_term(q, ("linux", "unix", "operating system", "operating systems"))
@@ -1188,189 +1014,6 @@ def linux_operating_system_evidence_text(text: str) -> bool:
             "operating systems",
         ),
     )
-
-
-def linux_operating_system_passage() -> str:
-    source_path = PROJECT_ROOT / "knowledge_base" / "processed" / "documents" / "src_004.txt"
-    try:
-        text = source_path.read_text(encoding="utf-8")
-    except OSError:
-        return ""
-    target = "CENG 303 Operating Systems Design & Construction"
-    start = text.find(target)
-    if start == -1:
-        return ""
-    end = text.find("\n\n", start + len(target))
-    if end == -1:
-        end = start + 900
-    paragraph = " ".join(text[start:end].split())
-    linux_index = paragraph.lower().find("linux or windows")
-    if linux_index == -1:
-        return ""
-    sentence_start = paragraph.rfind(".", 0, linux_index)
-    if sentence_start == -1:
-        sentence_start = len(target)
-    sentence_end = paragraph.find(".", linux_index)
-    if sentence_end == -1:
-        sentence_end = min(len(paragraph), linux_index + 250)
-    passage = f"{target}. {paragraph[sentence_start + 1 : sentence_end + 1].strip()}"
-    if linux_operating_system_evidence_text(passage):
-        return passage
-    return ""
-
-
-def gpa_screening_passage() -> str:
-    source_path = PROJECT_ROOT / "knowledge_base" / "processed" / "documents" / "src_033.txt"
-    try:
-        text = source_path.read_text(encoding="utf-8")
-    except OSError:
-        return ""
-    if "The use of the GPA as a candidate screening tool has fallen into disfavor." in text:
-        return (
-            "The use of the GPA as a candidate screening tool has fallen into disfavor. "
-            "For the third straight year, less than 40% of respondents will screen candidates by GPA. "
-            "Instead of GPA, many employers are using skills-based hiring to identify candidates with potential. "
-            "A student's major, industry, and internship experience are crucial, whether or not employers screen by GPA."
-        )
-    return ""
-
-
-def programming_languages_passage() -> str:
-    source_path = PROJECT_ROOT / "knowledge_base" / "processed" / "documents" / "src_004.txt"
-    try:
-        text = " ".join(source_path.read_text(encoding="utf-8").split())
-    except OSError:
-        return ""
-
-    ceng109 = extract_course_paragraph(text, "CENG109 Programming and Computation I")
-    ceng110 = extract_course_paragraph(text, "CENG110 Programming and Computation II")
-    oop = extract_course_paragraph(text, "SENG116 Object Oriented Programming")
-    if not (ceng109 and ceng110 and oop):
-        return ""
-    return (
-        "OSTIM course contents list CENG109 Programming and Computation I, which covers algorithms, data structures, "
-        "typed functions, conditional expressions, and repetition/recursion. "
-        "CENG110 Programming and Computation II builds on Programming and Computation I with advanced data structures, "
-        "algorithmic techniques, modular programming, higher-order functions, and abstract data types. "
-        "SENG116 Object Oriented Programming says students gain practical experience using object-oriented languages such as Python or C++."
-    )
-
-
-def extract_course_paragraph(text: str, course_title: str) -> str:
-    start = text.find(course_title)
-    if start == -1:
-        return ""
-    next_course = re.search(r"\s[A-Z]{2,5}\s?\d{3}\s", text[start + len(course_title) :])
-    end = start + len(course_title) + next_course.start() if next_course else min(len(text), start + 900)
-    return text[start:end].strip()
-
-
-def computer_engineering_definition_passage(*, include_it: bool = False) -> str:
-    source_path = PROJECT_ROOT / "knowledge_base" / "processed" / "documents" / "src_042.txt"
-    try:
-        text = " ".join(source_path.read_text(encoding="utf-8").split())
-    except OSError:
-        return ""
-
-    sentences: list[str] = []
-    acm_sentence = extract_sentence_containing(text, "five defined sub-disciplines")
-    ce_sentence = extract_sentence_containing(text, "Computer Engineering involves")
-    if ce_sentence:
-        sentences.append(ce_sentence)
-    if include_it:
-        it_sentence = extract_sentence_containing(text, "Information Technology involves")
-        if it_sentence:
-            sentences.append(it_sentence)
-    if acm_sentence and not include_it:
-        sentences.insert(0, acm_sentence)
-    return " ".join(dict.fromkeys(sentences))
-
-
-def future_technologies_passage() -> str:
-    source_path = PROJECT_ROOT / "knowledge_base" / "processed" / "documents" / "src_063.txt"
-    try:
-        text = " ".join(source_path.read_text(encoding="utf-8").split())
-    except OSError:
-        return ""
-
-    topic_needles = (
-        ("Artificial Intelligence and Machine Learning", "Artificial Intelligence and Machine Learning"),
-        ("Cloud Computing", "Cloud Computing"),
-        ("Internet of Things (IoT), Embedded Systems, and Autonomous Technologies", "Internet of Things (IoT), Embedded Systems, and Autonomous Technologies"),
-        ("Quantum Computing", "Quantum Computing"),
-        ("Microservices Architecture", "Microservices Architecture"),
-        ("DevOps Practices and Continuous Integration/Continuous Deployment (CI/CD)", "DevOps and CI/CD"),
-        ("Blockchain Technology and Smart Contracts", "Blockchain Technology and Smart Contracts"),
-        ("Data Science and Big Data", "Data Science and Big Data"),
-        ("Human-Computer Interaction (HCI) and UX Design: AR/VR Applications", "HCI, UX Design, and AR/VR Applications"),
-        ("Cybersecurity and DevSecOps", "Cybersecurity and DevSecOps"),
-        ("Advances in Test Automation", "Advances in Test Automation"),
-        ("Green Computing and Sustainable Software Engineering", "Green Computing and Sustainable Software Engineering"),
-    )
-    topics = [label for needle, label in topic_needles if needle.lower() in text.lower()]
-    if not topics:
-        return ""
-    topic_list = "; ".join(topics)
-    return (
-        "CENG 316 New Trends in Computer Engineering is an OSTIM Computer Engineering syllabus. "
-        f"Its weekly schedule names these emerging or new-trends topics: {topic_list}. "
-        "The syllabus does not rank these topics or say which one is most important."
-    )
-
-
-def extract_section_between(text: str, start_marker: str, end_marker: str) -> str:
-    start = text.find(start_marker)
-    if start == -1:
-        return ""
-    start += len(start_marker)
-    end = text.find(end_marker, start)
-    if end == -1:
-        end = min(len(text), start + 900)
-    return text[start:end].strip()
-
-
-def extract_sentence_containing(text: str, needle: str) -> str:
-    index = text.find(needle)
-    if index == -1:
-        return ""
-    start = text.rfind(".", 0, index)
-    if start == -1:
-        start = 0
-    else:
-        start += 1
-    end = text.find(".", index)
-    if end == -1:
-        end = min(len(text), index + 500)
-    return text[start : end + 1].strip()
-
-
-def specialization_areas_passage() -> str:
-    source_path = PROJECT_ROOT / "knowledge_base" / "processed" / "documents" / "src_043.txt"
-    try:
-        lines = source_path.read_text(encoding="utf-8").splitlines()
-    except OSError:
-        return ""
-
-    start_index = next(
-        (index for index, line in enumerate(lines) if line.strip().lower() == "specialization areas in computer engineering:"),
-        None,
-    )
-    if start_index is None:
-        return ""
-
-    areas: list[str] = []
-    for line in lines[start_index + 1 :]:
-        stripped = line.strip()
-        if not stripped:
-            continue
-        if stripped.lower().startswith("page last"):
-            break
-        areas.append(stripped)
-        if len(areas) >= 8:
-            break
-    if not areas:
-        return ""
-    return "Specialization areas in Computer Engineering include: " + "; ".join(areas) + "."
 
 
 def deduplicate_sources(context_items: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -3173,72 +2816,6 @@ def unsupported_generated_answer_reason(question: str, answer: str, context_item
     return None
 
 
-def bounded_fallback_answer(question: str, context_items: list[dict[str, Any]], reason: str) -> str | None:
-    """Return a short extractive answer when generation overreached but evidence is clear."""
-    partial_answer = bounded_verified_partial_answer(question, context_items)
-    if partial_answer:
-        return partial_answer
-
-    ai_answer = bounded_ai_replacement_answer(question, context_items)
-    if ai_answer:
-        return ai_answer
-
-    programming_answer = bounded_programming_language_answer(question, context_items)
-    if programming_answer:
-        return programming_answer
-
-    prior_programming_answer = bounded_prior_programming_answer(question, context_items)
-    if prior_programming_answer:
-        return prior_programming_answer
-
-    git_answer = bounded_git_github_answer(question, context_items)
-    if git_answer:
-        return git_answer
-
-    cybersecurity_answer = bounded_cybersecurity_pathway_answer(question, context_items)
-    if cybersecurity_answer:
-        return cybersecurity_answer
-
-    career_answer = bounded_career_jobs_answer(question, context_items)
-    if career_answer:
-        return career_answer
-
-    extractive_answer = extractive_partial_answer(question, context_items)
-    if reason == "model returned insufficient information":
-        return extractive_answer
-
-    if not is_future_technology_question(question):
-        return extractive_answer
-    if "future technologies" not in reason and "rated future technologies" not in reason:
-        return extractive_answer
-    future_item = next(
-        (
-            item
-            for item in context_items
-            if (item.get("chunk_id") or "") == "src_063_future_technologies"
-            and item.get("label")
-            and item.get("passage")
-        ),
-        None,
-    )
-    if not future_item:
-        return extractive_answer
-    label = future_item["label"]
-    passage = future_item.get("passage") or ""
-    marker = "weekly schedule names these emerging or new-trends topics:"
-    marker_index = passage.lower().find(marker)
-    if marker_index == -1:
-        return extractive_answer
-    topic_text = passage[marker_index + len(marker) :].strip()
-    topic_text = re.sub(r"\s+The syllabus does not rank.*$", "", topic_text).strip().rstrip(".")
-    if not topic_text:
-        return extractive_answer
-    return (
-        "The KB supports saying that CENG 316 names these emerging or new-trends topics: "
-        f"{topic_text} [{label}]. The syllabus does not rank them or say which one is most important [{label}]."
-    )
-
-
 def extractive_partial_answer(question: str, context_items: list[dict[str, Any]]) -> str | None:
     """Offer a short source excerpt only when it directly shares the requested topic."""
     lowered = question.lower()
@@ -3317,56 +2894,6 @@ def is_prose_sentence(sentence: str) -> bool:
     return sum(1 for word in words if word.lower() in PROSE_FUNCTION_WORDS) >= 2
 
 
-def bounded_verified_partial_answer(question: str, context_items: list[dict[str, Any]]) -> str | None:
-    q = question.lower()
-    for item in context_items:
-        label = item.get("label")
-        passage = (item.get("passage") or "").lower()
-        if not label:
-            continue
-        if contains_any_term(q, ("what is computer engineering", "what is ceng")) and "processor-based systems comprised of hardware, software, and communications" in passage:
-            return f"Computer Engineering involves designing and building processor-based systems with hardware, software, and communications components [{label}]."
-        if contains_any_term(q, ("how much lab work", "how many lab hours")) and "laboratory experiences are crucial" in passage:
-            return f"Computer Engineering curricula describe laboratory experiences as crucial, but this excerpt does not give a program-wide lab-hour total [{label}]."
-        if "fpga" in q and "digital logic" in q and "reconfigurable integrated circuit" in passage:
-            return f"An FPGA is a reconfigurable integrated circuit used to implement digital hardware; this source does not state that completing a digital-logic course is a prerequisite for a project [{label}]."
-        if "which one has more hardware" in q and "computer engineering" in q and "computer science" in q and "comprised of hardware, software, and communications" in passage:
-            return f"Computer Engineering explicitly includes hardware alongside software and communications; the retrieved excerpt does not quantify the hardware content of Computer Science [{label}]."
-        if "databases" in q and "operating systems" in q and "ceng 303 operating systems" in passage:
-            return f"OSTIM's CENG 303 covers operating-system foundations and practical work with Linux or Windows; this excerpt does not establish how databases fit into the program [{label}]."
-        if "ai" in q and "linear algebra" in q and "probability" in q and "foundations for machine learning" in passage:
-            return f"Linear algebra and probability are described as foundations for machine learning, but this source does not establish an OSTIM CENG course requirement for studying AI [{label}]."
-        if "cloud security" in q and "cloud security" in passage and "cybersecurity" in passage:
-            return f"Cloud security appears among the cybersecurity roles in this pathway resource; it does not guarantee a particular job outcome after CENG [{label}]."
-        if contains_any_term(q, ("command line", "command-line")) and "important" in q and "the shell lets students navigate files" in passage:
-            return f"Command-line tools help students navigate files, run programs, automate tasks, inspect logs, and work on remote machines; this source does not say they are mandatory for every CENG path [{label}]."
-        if "linux" in q and "important" in q and "ceng 303 operating systems" in passage and "linux or windows" in passage:
-            return f"OSTIM's CENG 303 includes practical work with Linux or Windows; the excerpt does not establish that Linux is required for every Computer Engineering or cybersecurity path [{label}]."
-    return None
-
-
-def bounded_programming_language_answer(question: str, context_items: list[dict[str, Any]]) -> str | None:
-    if not is_programming_language_question(question):
-        return None
-    item = next(
-        (
-            context_item
-            for context_item in context_items
-            if (context_item.get("chunk_id") or "") == "src_004_programming_languages"
-            and context_item.get("label")
-        ),
-        None,
-    )
-    if not item:
-        return None
-    label = item["label"]
-    return (
-        f"The official OSTIM course content names CENG109 Programming and Computation I and CENG110 Programming and Computation II as programming courses [{label}]. "
-        "The same source does not name a specific language for those two course descriptions, but SENG116 Object Oriented Programming says students gain practical experience with object-oriented languages such as Python or C++ "
-        f"[{label}]."
-    )
-
-
 def is_prior_programming_experience_question(question: str) -> bool:
     q = (question or "").lower()
     asks_prior_experience = contains_any_term(
@@ -3386,61 +2913,11 @@ def is_prior_programming_experience_question(question: str) -> bool:
     return asks_prior_experience and asks_ceng_or_programming
 
 
-def bounded_prior_programming_answer(question: str, context_items: list[dict[str, Any]]) -> str | None:
-    if not is_prior_programming_experience_question(question):
-        return None
-    item = next(
-        (
-            context_item
-            for context_item in context_items
-            if context_item.get("label")
-            and contains_any_term(
-                (context_item.get("passage") or context_item.get("text") or "").lower(),
-                ("prior programming experience", "haven't programmed before", "students without prior programming"),
-            )
-        ),
-        None,
-    )
-    if not item:
-        return None
-    label = item["label"]
-    return (
-        f"The retrieved intro-course evidence does not state that prior programming experience is required before starting Computer Engineering [{label}]. "
-        "The retrieved intro-course evidence says one rigorous first computer science course was designed for students with some prior programming experience, and that students who have not programmed before often benefit from taking another introductory course first "
-        f"[{label}]."
-    )
-
-
 def is_git_github_learning_question(question: str) -> bool:
     q = (question or "").lower()
     return contains_any_term(q, ("git", "github", "version control")) and contains_any_term(
         q,
         ("learn", "should", "need", "important", "student", "students", "use"),
-    )
-
-
-def bounded_git_github_answer(question: str, context_items: list[dict[str, Any]]) -> str | None:
-    if not is_git_github_learning_question(question):
-        return None
-    item = next(
-        (
-            context_item
-            for context_item in context_items
-            if context_item.get("label")
-            and contains_any_term(
-                (context_item.get("passage") or context_item.get("text") or "").lower(),
-                ("git repository", "github", "branches", "committing", "merging", "project transparency", "collaboration"),
-            )
-        ),
-        None,
-    )
-    if not item:
-        return None
-    label = item["label"]
-    return (
-        f"A Git repository supports history, branches, commits, merges, comparisons, and related version-control work, while GitHub can support project transparency and collaboration [{label}]. "
-        "The retrieved evidence does not prove that every Computer Engineering student must learn GitHub, but it does support Git/GitHub as useful project and collaboration tools "
-        f"[{label}]."
     )
 
 
@@ -3457,49 +2934,6 @@ def is_career_jobs_question(question: str) -> bool:
     return asks_jobs and asks_ceng
 
 
-def bounded_career_jobs_answer(question: str, context_items: list[dict[str, Any]]) -> str | None:
-    if not is_career_jobs_question(question):
-        return None
-    sector_item = next(
-        (
-            context_item
-            for context_item in context_items
-            if context_item.get("label")
-            and contains_any_term(
-                (context_item.get("passage") or context_item.get("text") or "").lower(),
-                ("ce professionals apply their skills", "broad range of diverse career sectors", "business, industry, government"),
-            )
-        ),
-        None,
-    )
-    hardware_item = next(
-        (
-            context_item
-            for context_item in context_items
-            if context_item.get("label")
-            and contains_any_term(
-                (context_item.get("passage") or context_item.get("text") or "").lower(),
-                ("computer hardware engineers", "research, design, develop, or test computer"),
-            )
-        ),
-        None,
-    )
-    if not sector_item and not hardware_item:
-        return None
-    pieces: list[str] = []
-    if sector_item:
-        pieces.append(
-            "Computer Engineering professionals can apply their skills across sectors such as business, industry, government, services, and organizations that use computers to automate or drive products and services "
-            f"[{sector_item['label']}]."
-        )
-    if hardware_item:
-        pieces.append(
-            "One specifically supported occupation is computer hardware engineer, which involves researching, designing, developing, or testing computer or computer-related equipment "
-            f"[{hardware_item['label']}]."
-        )
-    return " ".join(pieces)
-
-
 def cybersecurity_pathway_question(question: str) -> bool:
     q = (question or "").lower()
     if contains_any_term(q, ("hate electronics", "dislike electronics")) and contains_any_term(q, ("ai", "artificial intelligence")):
@@ -3508,65 +2942,6 @@ def cybersecurity_pathway_question(question: str) -> bool:
         q,
         ("become", "specialist", "career", "path", "prepare", "learn", "skills"),
     )
-
-
-def bounded_cybersecurity_pathway_answer(question: str, context_items: list[dict[str, Any]]) -> str | None:
-    if not cybersecurity_pathway_question(question):
-        return None
-    focus = re.search(r"\b([a-z]+)\s+security\b", question.lower())
-    if focus and focus.group(1) not in {"cyber", "computer", "information"}:
-        if not any(focus.group(1) in (item.get("passage") or "").lower() for item in context_items):
-            return None
-    cyber_item = next(
-        (
-            item
-            for item in context_items
-            if item.get("label")
-            and (
-                (item.get("category") or "").lower() == "cybersecurity"
-                or "cybersecurity" in (item.get("title") or "").lower()
-                or contains_any_term((item.get("passage") or item.get("text") or "").lower(), ("nice framework", "cybersecurity workforce"))
-            )
-        ),
-        None,
-    )
-    if not cyber_item:
-        return None
-    if focus and focus.group(1) not in {"cyber", "computer", "information"}:
-        if focus.group(1) not in (cyber_item.get("passage") or "").lower():
-            return None
-    label = cyber_item["label"]
-    return (
-        f"Use the cybersecurity workforce framework to explore roles, tasks, knowledge, and skills in cybersecurity work [{label}]. "
-        "The retrieved evidence does not justify promising a specific job outcome or recommending a particular certification path "
-        f"[{label}]."
-    )
-
-
-def bounded_ai_replacement_answer(question: str, context_items: list[dict[str, Any]]) -> str | None:
-    q = (question or "").lower()
-    asks_ai_replacement = "replace" in q and contains_any_term(q, ("ai", "artificial intelligence", "automation", "generative ai"))
-    if not asks_ai_replacement:
-        return None
-
-    evidence_items: list[dict[str, Any]] = []
-    for item in context_items:
-        text = (item.get("passage") or item.get("text") or "").lower()
-        if item.get("label") and ai_impact_evidence_supported(text):
-            evidence_items.append(item)
-    if not evidence_items:
-        return None
-
-    pieces = [
-        f"The retrieved evidence does not establish whether AI will replace computer engineers [{evidence_items[0]['label']}]."
-    ]
-    for item in evidence_items[:2]:
-        passage = (item.get("passage") or "").lower()
-        if "ai and big data skills" in passage and ("grow" in passage or "growing" in passage):
-            pieces.append(f"The source says AI and big-data skills are growing in importance [{item['label']}].")
-        elif "ai" in passage and "skill demand" in passage:
-            pieces.append(f"The source says AI development can shift demand for skills [{item['label']}].")
-    return " ".join(pieces) if len(pieces) > 1 else None
 
 
 def contains_any_term(text: str, terms: list[str] | tuple[str, ...]) -> bool:

@@ -1,0 +1,19 @@
+Source ID: src_126
+
+Course Contents: OSTIM Computer Engineering programming courses and programming languages (SENG116, CENG109, CENG110)
+
+SENG116 Object Oriented Programming
+Object-Oriented Programming introduces the fundamental concepts and principles of object-oriented software development. This course covers key topics such as classes, objects, inheritance, encapsulation, polymorphism, and abstraction. Students learn how to design and implement modular, reusable, and maintainable code using an object-oriented approach. The course emphasizes problem-solving through real-world examples, focusing on designing class hierarchies, applying design patterns, and using modern development tools. Through hands-on projects and coding exercises, students gain practical experience in building robust software systems using object-oriented languages such as Python or C++.
+
+CENG109 Programming and Computation I
+This course provides an introduction to mathematical modeling of
+computational problems. It covers the common algorithms, algorithmic
+paradigms, and data structures used to solve these problems. The course
+emphasizes the relationship between algorithms and programming and
+introduces basic performance measures and analysis techniques for these
+problems. Typed functions, conditional expressions, and repetition
+(recursion) are introduced alongside as the basic methods to operate on
+this structured data.
+
+CENG110 Programming and Computation II
+This course builds upon the foundations of computational problem modeling introduced in Programming and Computation 1. It explores advanced data structures and algorithmic techniques to efficiently manage and manipulate complex data. Key topics include recursive and iterative algorithm design, sorting and searching algorithms, and an introduction to algorithm complexity and optimization. The course also covers fundamental concepts in modular programming, higher-order functions, and introduces abstract data types. Emphasis is placed on the development of robust, maintainable code through the application of structured programming principles and formal reasoning about program correctness and efficiency.

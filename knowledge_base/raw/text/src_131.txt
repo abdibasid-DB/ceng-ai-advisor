@@ -1,0 +1,17 @@
+Subdisciplines: specialization areas in Computer Engineering
+
+Specialization areas in Computer Engineering:
+
+Hardware systems
+
+Cyberphysical systems
+
+Foundations and theory
+
+Trust, reliability, and security
+
+Networking, mobile, and distributed computing
+
+Big Data analytics and systems
+
+Artificial intelligence, robotics, and cybernetics

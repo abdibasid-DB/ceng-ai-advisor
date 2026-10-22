@@ -1,0 +1,2820 @@
+[
+ {
+  "key": "full_200|F001",
+  "set": "full_200",
+  "id": "F001",
+  "question": "What is Computer Engineering?",
+  "previous_question": null,
+  "built_for": [
+   "computer_engineering_definition_passage",
+   "bounded_verified_partial_answer"
+  ],
+  "status": "answered",
+  "answer": "Computer Engineering is a four-year curriculum that focuses on the design and construction of processor-based systems, encompassing hardware, software, and communications components [S1]. This program integrates electrical engineering and computer science to design systems such as cellular communications, consumer electronics, medical imaging and devices, alarm systems, and military technologies [S1]. Upon graduation, students are prepared to design and implement systems that involve the integration of software and hardware devices [S1].",
+  "source_ids": [
+   "src_042"
+  ],
+  "retrieved_chunk_ids": [
+   "src_042_chunk_002",
+   "src_080_chunk_001"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 28.08
+ },
+ {
+  "key": "full_200|F004",
+  "set": "full_200",
+  "id": "F004",
+  "question": "Explain computer engineering to a high school student.",
+  "previous_question": null,
+  "built_for": [
+   "computer_engineering_definition_passage"
+  ],
+  "status": "answered",
+  "answer": "Computer Engineering is a field that focuses on the design and construction of processor-based systems, which include hardware, software, and communications components [S1]. This curriculum is designed to synthesize electrical engineering and computer science to address the design of systems such as cellular communications, consumer electronics, medical imaging and devices, alarm systems, and military technologies [S1]. Upon graduation, students who pursue careers in computer engineering are expected to be able to design and implement systems that involve the integration of software and hardware devices [S1].",
+  "source_ids": [
+   "src_042"
+  ],
+  "retrieved_chunk_ids": [
+   "src_042_chunk_002",
+   "src_080_chunk_001"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 12.27
+ },
+ {
+  "key": "full_200|F005",
+  "set": "full_200",
+  "id": "F005",
+  "question": "How is computer engineering different from computer science?",
+  "previous_question": null,
+  "built_for": [
+   "computer_engineering_definition_passage"
+  ],
+  "status": "answered",
+  "answer": "Computer engineering and computer science are related but distinct fields [S1]. Computer engineering focuses more on the hardware and systems integration, whereas computer science emphasizes software development and theoretical aspects [S3]. According to [S1], computer engineering is a discipline that embodies the design, construction, implementation, and maintenance of software and hardware components of modern computing systems, computer-controlled equipment, and networks of intelligent devices. In contrast, computer science is a broader field that includes the study of algorithms, data structures, computer systems, and software engineering [S1]. [S3] provides more detail, stating that computer engineering involves the design and construction of processor-based systems comprised of hardware, software, and communications components. Therefore, computer engineering is closer to the boundary between computing and engineering hardware, as mentioned in [S2].",
+  "source_ids": [
+   "src_067",
+   "src_080",
+   "src_042"
+  ],
+  "retrieved_chunk_ids": [
+   "src_067_chunk_029",
+   "src_080_chunk_001",
+   "src_042_chunk_002",
+   "src_067_chunk_327"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 40.86
+ },
+ {
+  "key": "full_200|F012",
+  "set": "full_200",
+  "id": "F012",
+  "question": "What is the difference between IT and Computer Engineering?",
+  "previous_question": null,
+  "built_for": [
+   "computer_engineering_definition_passage"
+  ],
+  "status": "insufficient_information",
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "source_ids": [],
+  "retrieved_chunk_ids": [
+   "src_042_chunk_002",
+   "src_080_chunk_001",
+   "src_067_chunk_038",
+   "src_067_chunk_029"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 28.81
+ },
+ {
+  "key": "full_200|C015",
+  "set": "full_200",
+  "id": "C015",
+  "question": "Are there operating systems courses in the program?",
+  "previous_question": null,
+  "built_for": [
+   "linux_operating_system_passage"
+  ],
+  "status": "answered",
+  "answer": "Yes, there are operating systems courses in the program [S1] [S2] [S3]. This course is included in the curriculum and provides a comprehensive introduction to the subject, including topics such as process management, thread scheduling, synchronization, deadlocks, memory management, file systems, input/output systems, and security [S3].",
+  "source_ids": [
+   "src_067",
+   "src_064",
+   "src_130"
+  ],
+  "retrieved_chunk_ids": [
+   "src_067_chunk_310",
+   "src_064_chunk_002",
+   "src_130_chunk_001"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 21.85
+ },
+ {
+  "key": "full_200|C020",
+  "set": "full_200",
+  "id": "C020",
+  "question": "How much lab work is there in computer engineering?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_verified_partial_answer",
+   "bounded_career_jobs_answer"
+  ],
+  "status": "answered",
+  "answer": "The amount of laboratory work can vary among institutions, depending on the time allocated within the curriculum, physical space, and resources [S3].",
+  "source_ids": [
+   "src_067"
+  ],
+  "retrieved_chunk_ids": [
+   "src_067_chunk_163",
+   "src_067_chunk_357",
+   "src_067_chunk_093",
+   "src_067_chunk_363"
+  ],
+  "answer_warnings": [
+   "partial_answer"
+  ],
+  "fallback_used": false,
+  "seconds": 25.23
+ },
+ {
+  "key": "full_200|M034",
+  "set": "full_200",
+  "id": "M034",
+  "question": "What should I review before starting university: algebra, calculus, or coding?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_prior_programming_answer"
+  ],
+  "status": "answered",
+  "answer": "Before starting university algebra, calculus, or coding in a Computer Engineering program, it is recommended to review algebra and functions [S3]. Additionally, learning vectors and matrices for linear algebra is also beneficial [S3]. For a deeper understanding of machine learning and data science, students should practice probability and statistics with real datasets and connect mathematical concepts to code through small projects [S3].",
+  "source_ids": [
+   "src_092"
+  ],
+  "retrieved_chunk_ids": [
+   "src_067_chunk_373",
+   "src_071_chunk_003",
+   "src_092_chunk_001"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 22.16
+ },
+ {
+  "key": "full_200|P039",
+  "set": "full_200",
+  "id": "P039",
+  "question": "What programming languages should a Computer Engineering student learn?",
+  "previous_question": null,
+  "built_for": [
+   "programming_languages_passage",
+   "bounded_programming_language_answer"
+  ],
+  "status": "answered",
+  "answer": "For a more comprehensive understanding, you might consider learning other languages such as Rust, which is also highlighted as one of the most adopted languages in the [S1] report.",
+  "source_ids": [
+   "src_051"
+  ],
+  "retrieved_chunk_ids": [
+   "src_051_chunk_002",
+   "src_126_chunk_001",
+   "src_067_chunk_368",
+   "src_039_chunk_007",
+   "src_051_chunk_010"
+  ],
+  "answer_warnings": [
+   "partial_answer"
+  ],
+  "fallback_used": false,
+  "seconds": 33.12
+ },
+ {
+  "key": "full_200|P043",
+  "set": "full_200",
+  "id": "P043",
+  "question": "Should every student learn Git and GitHub?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_git_github_answer"
+  ],
+  "status": "answered",
+  "answer": "The retrieved source states: \"GitHub and the command line Basic Git commands To use Git, developers use specific commands to copy, create, change, and combine code.\" [S1]. The retrieved evidence does not establish the rest [S1].",
+  "source_ids": [
+   "src_015"
+  ],
+  "retrieved_chunk_ids": [
+   "src_015_chunk_004",
+   "src_090_chunk_001",
+   "src_067_chunk_126",
+   "src_015_chunk_003",
+   "src_015_chunk_001"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 10.57
+ },
+ {
+  "key": "full_200|P044",
+  "set": "full_200",
+  "id": "P044",
+  "question": "linux important?",
+  "previous_question": null,
+  "built_for": [
+   "linux_operating_system_passage",
+   "bounded_verified_partial_answer"
+  ],
+  "status": "answered",
+  "answer": "The retrieved source states: \"Accordingly, students will need access to Linux command line training to learn how to navigate and run code f rom the command line.\" [S1]. The retrieved evidence does not establish the rest [S1].",
+  "source_ids": [
+   "src_069"
+  ],
+  "retrieved_chunk_ids": [
+   "src_069_chunk_085"
+  ],
+  "answer_warnings": [
+   "local_llm_answer_replaced_with_extractive_fallback"
+  ],
+  "fallback_used": true,
+  "seconds": 7.24
+ },
+ {
+  "key": "full_200|P045",
+  "set": "full_200",
+  "id": "P045",
+  "question": "Is Linux worth learning for embedded systems?",
+  "previous_question": null,
+  "built_for": [
+   "linux_operating_system_passage"
+  ],
+  "status": "answered",
+  "answer": "CENG 303 Operating Systems Design & Construction (Linux or Windows) at OSTIM Technical University covers essential concepts such as process management, thread scheduling, synchronization, and memory management, which are crucial for embedded systems [S1].",
+  "source_ids": [
+   "src_130"
+  ],
+  "retrieved_chunk_ids": [
+   "src_130_chunk_001",
+   "src_069_chunk_085"
+  ],
+  "answer_warnings": [
+   "partial_answer"
+  ],
+  "fallback_used": false,
+  "seconds": 18.38
+ },
+ {
+  "key": "full_200|P049",
+  "set": "full_200",
+  "id": "P049",
+  "question": "git hub learn necessery?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_git_github_answer"
+  ],
+  "status": "answered",
+  "answer": "[GitHub learning is necessary for a Computer Engineering student [S3] [S4]. It is essential for version control, collaboration, and transparency in software development projects [S4]. Additionally, understanding Git and GitHub can help students navigate the GitHub Marketplace for free and for-purchase apps.] [S1]",
+  "source_ids": [
+   "src_015",
+   "src_074",
+   "src_081"
+  ],
+  "retrieved_chunk_ids": [
+   "src_015_chunk_004",
+   "src_087_chunk_001",
+   "src_074_chunk_008",
+   "src_081_chunk_001",
+   "src_015_chunk_007"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 26.43
+ },
+ {
+  "key": "full_200|P056",
+  "set": "full_200",
+  "id": "P056",
+  "question": "How important is command line usage?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_verified_partial_answer"
+  ],
+  "status": "answered",
+  "answer": "The retrieved source states: \"The shell lesson is useful for answering why command-line skills matter.\" [S1]. The retrieved evidence does not establish the rest [S1].",
+  "source_ids": [
+   "src_090"
+  ],
+  "retrieved_chunk_ids": [
+   "src_090_chunk_001",
+   "src_067_chunk_380",
+   "src_081_chunk_001",
+   "src_067_chunk_102"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 26.82
+ },
+ {
+  "key": "full_200|H062",
+  "set": "full_200",
+  "id": "H062",
+  "question": "What network skills are useful for cybersecurity?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_cybersecurity_pathway_answer"
+  ],
+  "status": "insufficient_information",
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "source_ids": [],
+  "retrieved_chunk_ids": [
+   "src_085_chunk_001",
+   "src_094_chunk_001",
+   "src_128_chunk_002",
+   "src_068_chunk_002"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 16.74
+ },
+ {
+  "key": "full_200|H066",
+  "set": "full_200",
+  "id": "H066",
+  "question": "What is the connection between operating systems and hardware?",
+  "previous_question": null,
+  "built_for": [
+   "linux_operating_system_passage"
+  ],
+  "status": "answered",
+  "answer": "The connection between operating systems and hardware is that operating systems serve as the interface between hardware and software, managing resources and ensuring system stability and performance [S4] [S1].",
+  "source_ids": [
+   "src_130",
+   "src_004"
+  ],
+  "retrieved_chunk_ids": [
+   "src_130_chunk_001",
+   "src_064_chunk_002",
+   "src_067_chunk_025",
+   "src_004_chunk_012"
+  ],
+  "answer_warnings": [
+   "partial_answer"
+  ],
+  "fallback_used": false,
+  "seconds": 28.28
+ },
+ {
+  "key": "full_200|A069",
+  "set": "full_200",
+  "id": "A069",
+  "question": "Will artificial intelligence replace Computer Engineers?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_ai_replacement_answer"
+  ],
+  "status": "answered",
+  "answer": "The retrieved source states: \"This four-year curriculum focuses on the theoretical foundations of computing, algorithms, and programming techniques, as applied to operating systems, artificial intelligence, informatics and the like.\" [S4]. The retrieved evidence does not establish the rest [S4].",
+  "source_ids": [
+   "src_128"
+  ],
+  "retrieved_chunk_ids": [
+   "src_093_chunk_001",
+   "src_017_chunk_029",
+   "src_131_chunk_001",
+   "src_128_chunk_001"
+  ],
+  "answer_warnings": [
+   "local_llm_answer_replaced_with_extractive_fallback"
+  ],
+  "fallback_used": true,
+  "seconds": 24.5
+ },
+ {
+  "key": "full_200|A076",
+  "set": "full_200",
+  "id": "A076",
+  "question": "Which future technologies should a CENG student follow?",
+  "previous_question": null,
+  "built_for": [
+   "future_technologies_passage"
+  ],
+  "status": "insufficient_information",
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "source_ids": [],
+  "retrieved_chunk_ids": [
+   "src_129_chunk_001",
+   "src_067_chunk_085",
+   "src_067_chunk_083",
+   "src_067_chunk_041",
+   "src_045_chunk_019"
+  ],
+  "answer_warnings": [
+   "local_llm_answer_failed_citation_validation"
+  ],
+  "fallback_used": false,
+  "seconds": 65.35
+ },
+ {
+  "key": "full_200|Y084",
+  "set": "full_200",
+  "id": "Y084",
+  "question": "What skills should I build for cybersecurity?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_cybersecurity_pathway_answer"
+  ],
+  "status": "answered",
+  "answer": "For cybersecurity in computer engineering, you should build skills in understanding and defending information systems against various threats [S3]. This includes knowledge of law, policy, human factors, ethics, and risk management [S3]. Upon graduation, you should possess basic skills to assist organizations in protecting their information systems from cybersecurity threats [S3].",
+  "source_ids": [
+   "src_128"
+  ],
+  "retrieved_chunk_ids": [
+   "src_085_chunk_001",
+   "src_094_chunk_001",
+   "src_128_chunk_002",
+   "src_042_chunk_002"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 12.45
+ },
+ {
+  "key": "full_200|Y088",
+  "set": "full_200",
+  "id": "Y088",
+  "question": "security career path from ceng?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_cybersecurity_pathway_answer",
+   "bounded_career_jobs_answer"
+  ],
+  "status": "answered",
+  "answer": "Security career paths for Computer Engineering students are diverse and multifaceted, as cybersecurity naturally aligns with the curriculum content in creating and maintaining secure computing environments [S3]. The [S2] curated note from the Cyber Career Pathways Tool by the Cybersecurity and Infrastructure Security Agency (CISA) also supports this, as it provides resources aligned with the NICE Framework for role exploration and highlights that cybersecurity is not a single job but a broad field. Students interested in security should build legal and ethical habits from the beginning, as suggested in the [S1] curated note.",
+  "source_ids": [
+   "src_085",
+   "src_094",
+   "src_042"
+  ],
+  "retrieved_chunk_ids": [
+   "src_085_chunk_001",
+   "src_094_chunk_001",
+   "src_042_chunk_005",
+   "src_068_chunk_002"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 31.59
+ },
+ {
+  "key": "full_200|Y089",
+  "set": "full_200",
+  "id": "Y089",
+  "question": "Should I learn Linux for cyber security?",
+  "previous_question": null,
+  "built_for": [
+   "linux_operating_system_passage",
+   "bounded_cybersecurity_pathway_answer"
+  ],
+  "status": "answered",
+  "answer": "The context emphasizes the importance of cybersecurity in various aspects such as networks, operating systems, programming, databases, cloud computing, cryptography, embedded systems, and hardware security [S1].",
+  "source_ids": [
+   "src_085"
+  ],
+  "retrieved_chunk_ids": [
+   "src_085_chunk_001",
+   "src_094_chunk_001"
+  ],
+  "answer_warnings": [
+   "partial_answer"
+  ],
+  "fallback_used": false,
+  "seconds": 12.49
+ },
+ {
+  "key": "full_200|Y090",
+  "set": "full_200",
+  "id": "Y090",
+  "question": "Can I work in cloud security after CENG?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_verified_partial_answer"
+  ],
+  "status": "answered",
+  "answer": "The retrieved source states: \"For Computer Engineering students, cybersecurity connects naturally with networks, operating systems, programming, databases, cloud computing, cryptography, embedded systems, and hardware security.\" [S1]. The retrieved evidence does not establish the rest [S1].",
+  "source_ids": [
+   "src_085"
+  ],
+  "retrieved_chunk_ids": [
+   "src_085_chunk_001",
+   "src_094_chunk_001",
+   "src_068_chunk_002",
+   "src_131_chunk_001",
+   "src_083_chunk_001"
+  ],
+  "answer_warnings": [
+   "local_llm_answer_replaced_with_extractive_fallback"
+  ],
+  "fallback_used": true,
+  "seconds": 23.79
+ },
+ {
+  "key": "full_200|Y094",
+  "set": "full_200",
+  "id": "Y094",
+  "question": "Can I learn security without doing illegal hacking?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_cybersecurity_pathway_answer"
+  ],
+  "status": "insufficient_information",
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "source_ids": [],
+  "retrieved_chunk_ids": [
+   "src_085_chunk_001",
+   "src_094_chunk_001",
+   "src_067_chunk_139",
+   "src_131_chunk_001",
+   "src_067_chunk_260"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 26.26
+ },
+ {
+  "key": "full_200|R095",
+  "set": "full_200",
+  "id": "R095",
+  "question": "What jobs can I do after graduating from Computer Engineering?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ],
+  "status": "answered",
+  "answer": "After graduating from Computer Engineering, you can pursue a variety of jobs [S1] [S4]. According to the source [S3], Computer Engineering involves the design and construction of processor-based systems, which can be applied to various fields such as cellular communications, consumer electronics, medical imaging and devices, alarm systems, and military technologies. Additionally, the source [S2] indicates that Computer Hardware Engineers are in demand, with a bright outlook and the potential for growth in the future. Therefore, you can consider roles such as Computer Hardware Engineer, which involves designing and developing computer-related equipment for various industries [S3].",
+  "source_ids": [
+   "src_067",
+   "src_014",
+   "src_042"
+  ],
+  "retrieved_chunk_ids": [
+   "src_067_chunk_079",
+   "src_014_chunk_001",
+   "src_042_chunk_002",
+   "src_067_chunk_141"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 27.74
+ },
+ {
+  "key": "full_200|R096",
+  "set": "full_200",
+  "id": "R096",
+  "question": "Is it easy to find a job after CENG?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ],
+  "status": "insufficient_information",
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "source_ids": [],
+  "retrieved_chunk_ids": [
+   "src_051_chunk_012",
+   "src_067_chunk_308",
+   "src_014_chunk_001",
+   "src_045_chunk_370"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 29.21
+ },
+ {
+  "key": "full_200|R099",
+  "set": "full_200",
+  "id": "R099",
+  "question": "Should I focus more on GPA, projects, or internships?",
+  "previous_question": null,
+  "built_for": [
+   "gpa_screening_passage"
+  ],
+  "status": "answered",
+  "answer": "The sources indicate that GPA screening is declining in favor of skills-based hiring, and that internships and projects are crucial for demonstrating employability [S1] [S2]. Internships and projects are emphasized as important for developing workplace skills, but the importance of GPA varies [S2].",
+  "source_ids": [
+   "src_127",
+   "src_091"
+  ],
+  "retrieved_chunk_ids": [
+   "src_127_chunk_001",
+   "src_091_chunk_001",
+   "src_067_chunk_119",
+   "src_034_chunk_002",
+   "src_067_chunk_081"
+  ],
+  "answer_warnings": [
+   "partial_answer"
+  ],
+  "fallback_used": false,
+  "seconds": 32.01
+ },
+ {
+  "key": "full_200|R110",
+  "set": "full_200",
+  "id": "R110",
+  "question": "Which specialization pays the most in Turkey?",
+  "previous_question": null,
+  "built_for": [
+   "specialization_areas_passage"
+  ],
+  "status": "insufficient_information",
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "source_ids": [],
+  "retrieved_chunk_ids": [
+   "src_026_chunk_002",
+   "src_026_chunk_001",
+   "src_025_chunk_002",
+   "src_026_chunk_003",
+   "src_086_chunk_001"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 0.31
+ },
+ {
+  "key": "full_200|R111",
+  "set": "full_200",
+  "id": "R111",
+  "question": "What is starting salary for OSTIM CENG graduates?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ],
+  "status": "insufficient_information",
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "source_ids": [],
+  "retrieved_chunk_ids": [
+   "src_025_chunk_002",
+   "src_005_chunk_001",
+   "src_026_chunk_002",
+   "src_026_chunk_001",
+   "src_086_chunk_001"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 0.32
+ },
+ {
+  "key": "full_200|R118",
+  "set": "full_200",
+  "id": "R118",
+  "question": "GPA project staj hangisi daha onemli?",
+  "previous_question": null,
+  "built_for": [
+   "gpa_screening_passage"
+  ],
+  "status": "answered",
+  "answer": "The retrieved source states: \"The source supports balanced advice about GPA, projects, and internships.\" [S2]. The retrieved evidence does not establish the rest [S2].",
+  "source_ids": [
+   "src_091"
+  ],
+  "retrieved_chunk_ids": [
+   "src_127_chunk_001",
+   "src_091_chunk_001",
+   "src_067_chunk_119",
+   "src_034_chunk_002",
+   "src_067_chunk_081"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 14.79
+ },
+ {
+  "key": "full_200|R119",
+  "set": "full_200",
+  "id": "R119",
+  "question": "No experience, no internship, low GPA - what can I do?",
+  "previous_question": null,
+  "built_for": [
+   "gpa_screening_passage"
+  ],
+  "status": "answered",
+  "answer": "The retrieved source states: \"A student's major, industry, and internship experience are crucial, whether or not employers screen by GPA.\" [S1]. The retrieved evidence does not establish the rest [S1].",
+  "source_ids": [
+   "src_127"
+  ],
+  "retrieved_chunk_ids": [
+   "src_127_chunk_001",
+   "src_091_chunk_001",
+   "src_067_chunk_119",
+   "src_074_chunk_010",
+   "src_036_chunk_006"
+  ],
+  "answer_warnings": [
+   "local_llm_answer_replaced_with_extractive_fallback"
+  ],
+  "fallback_used": true,
+  "seconds": 36.83
+ },
+ {
+  "key": "full_200|X142",
+  "set": "full_200",
+  "id": "X142",
+  "question": "Compare focusing on GPA, internships, GitHub projects, and networking for getting a first software job.",
+  "previous_question": null,
+  "built_for": [
+   "gpa_screening_passage"
+  ],
+  "status": "answered",
+  "answer": "A strong GPA indicates academic performance, which is important for many employers [S2]. However, the emphasis should be balanced, as the National Association of Colleges and Employers (NACE) suggests that skills-based hiring is more prevalent, and internships, GPA, and projects are all important for demonstrating employability [S1].",
+  "source_ids": [
+   "src_127",
+   "src_091"
+  ],
+  "retrieved_chunk_ids": [
+   "src_127_chunk_001",
+   "src_091_chunk_001",
+   "src_067_chunk_119",
+   "src_074_chunk_008"
+  ],
+  "answer_warnings": [
+   "partial_answer"
+  ],
+  "fallback_used": false,
+  "seconds": 19.06
+ },
+ {
+  "key": "full_200|X148",
+  "set": "full_200",
+  "id": "X148",
+  "question": "What should I learn before internship interviews: data structures, Git, Linux, or databases?",
+  "previous_question": null,
+  "built_for": [
+   "linux_operating_system_passage",
+   "bounded_git_github_answer"
+  ],
+  "status": "insufficient_information",
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "source_ids": [],
+  "retrieved_chunk_ids": [
+   "src_063_chunk_003",
+   "src_081_chunk_001",
+   "src_126_chunk_001",
+   "src_067_chunk_044",
+   "src_067_chunk_380"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 0.47
+ },
+ {
+  "key": "full_200|X149",
+  "set": "full_200",
+  "id": "X149",
+  "question": "I failed a course and my GPA is low; can projects and internships still help me?",
+  "previous_question": null,
+  "built_for": [
+   "gpa_screening_passage"
+  ],
+  "status": "answered",
+  "answer": "The National Association of Colleges and Employers (NACE) notes that GPA is not the only factor considered by employers [S1]. Skills-based hiring is increasingly popular, and projects, internships, and other experiential opportunities are crucial for demonstrating employability [S4]. The curated note from CENG AI Advisor also emphasizes that projects, internships, and other activities are important for developing the skills that employers value [S2].",
+  "source_ids": [
+   "src_127",
+   "src_091",
+   "src_034"
+  ],
+  "retrieved_chunk_ids": [
+   "src_127_chunk_001",
+   "src_091_chunk_001",
+   "src_067_chunk_081",
+   "src_034_chunk_002",
+   "src_067_chunk_119"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 22.17
+ },
+ {
+  "key": "full_200|U153",
+  "set": "full_200",
+  "id": "U153",
+  "question": "What is the exact job placement rate of OSTIM CENG graduates in 2026?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ],
+  "status": "insufficient_information",
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "source_ids": [],
+  "retrieved_chunk_ids": [
+   "src_079_chunk_001",
+   "src_001_chunk_001",
+   "src_088_chunk_001",
+   "src_108_chunk_001",
+   "src_018_chunk_003"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 0.3
+ },
+ {
+  "key": "full_200|T186",
+  "set": "full_200",
+  "id": "T186",
+  "question": "Does it include Linux?",
+  "previous_question": "Tell me about the curriculum.",
+  "built_for": [
+   "linux_operating_system_passage"
+  ],
+  "status": "insufficient_information",
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "source_ids": [],
+  "retrieved_chunk_ids": [
+   "src_067_chunk_380"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 10.02
+ },
+ {
+  "key": "full_200|T187",
+  "set": "full_200",
+  "id": "T187",
+  "question": "Is Linux important too?",
+  "previous_question": "I want cybersecurity.",
+  "built_for": [
+   "linux_operating_system_passage",
+   "bounded_verified_partial_answer"
+  ],
+  "status": "answered",
+  "answer": "The context focuses more on the importance of understanding cybersecurity as a broad field and the variety of career pathways within it, rather than specific technologies like Linux [S1].",
+  "source_ids": [
+   "src_085"
+  ],
+  "retrieved_chunk_ids": [
+   "src_085_chunk_001",
+   "src_094_chunk_001"
+  ],
+  "answer_warnings": [
+   "partial_answer"
+  ],
+  "fallback_used": false,
+  "seconds": 19.9
+ },
+ {
+  "key": "full_200|T188",
+  "set": "full_200",
+  "id": "T188",
+  "question": "Which one has more hardware?",
+  "previous_question": "Computer Engineering vs Computer Science?",
+  "built_for": [
+   "bounded_verified_partial_answer"
+  ],
+  "status": "answered",
+  "answer": "[According to the provided context, Computer Engineering tends to have more hardware focus compared to Computer Science [S2]. Computer Engineering is described as a discipline that embodies the science and technology of design, construction, implementation, and maintenance of software and hardware components of modern computing systems [S1] [S2] [S3].",
+  "source_ids": [
+   "src_067",
+   "src_080",
+   "src_128"
+  ],
+  "retrieved_chunk_ids": [
+   "src_067_chunk_029",
+   "src_080_chunk_001",
+   "src_128_chunk_001"
+  ],
+  "answer_warnings": [
+   "partial_answer"
+  ],
+  "fallback_used": false,
+  "seconds": 29.42
+ },
+ {
+  "key": "full_200|T196",
+  "set": "full_200",
+  "id": "T196",
+  "question": "For cloud security?",
+  "previous_question": "How important are networks?",
+  "built_for": [
+   "bounded_verified_partial_answer"
+  ],
+  "status": "answered",
+  "answer": "For students interested in cloud security within the field of Computer Engineering, understanding the nature of cloud computing and its advantages is crucial [S1]. This includes knowledge of cloud service architectures, security issues such as cloud computing, cloud storage, and virtual machines, as well as security strategies for cloud environments [S3]. Additionally, familiarity with distributed file systems and virtualization technology is important [S1]. Students should also be aware of the risks associated with cloud computing and the different approaches to supporting cloud computing [S3].",
+  "source_ids": [
+   "src_082",
+   "src_069"
+  ],
+  "retrieved_chunk_ids": [
+   "src_082_chunk_001",
+   "src_094_chunk_001",
+   "src_069_chunk_113",
+   "src_085_chunk_001"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 29.15
+ },
+ {
+  "key": "comprehensive|q004",
+  "set": "comprehensive",
+  "id": "q004",
+  "question": "What is the difference between Computer Engineering and Software Engineering?",
+  "previous_question": null,
+  "built_for": [
+   "computer_engineering_definition_passage"
+  ],
+  "status": "answered",
+  "answer": "Computer Engineering focuses on the design and implementation of hardware systems, including computers and their components [S1]. On the other hand, Software Engineering is concerned with the design, development, and maintenance of software systems [S1]. It emphasizes the use of programming languages and software tools to create applications that meet specific needs [S1]. While both fields are integral to the computing industry, Computer Engineering is closer to the boundary between computing and engineering hardware, as per the Computing Curricula 2020 [S1] [S2].",
+  "source_ids": [
+   "src_067",
+   "src_080"
+  ],
+  "retrieved_chunk_ids": [
+   "src_067_chunk_073",
+   "src_080_chunk_001",
+   "src_128_chunk_001"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 29.64
+ },
+ {
+  "key": "comprehensive|q005",
+  "set": "comprehensive",
+  "id": "q005",
+  "question": "What is the difference between Computer Engineering and Computer Science?",
+  "previous_question": null,
+  "built_for": [
+   "computer_engineering_definition_passage"
+  ],
+  "status": "answered",
+  "answer": "Computer Engineering and Computer Science are related but distinct fields within the broader discipline of computing [S2]. According to [S2], Computer Engineering is a discipline that combines both electrical engineering and computer science to design, construct, implement, and maintain software and hardware components of modern computing systems, computer-controlled equipment, and networks of intelligent devices. On the other hand, Computer Science focuses on design and innovation developed from computing principles, as described in [S3]. Therefore, Computer Engineering is more closely aligned with the intersection of computing and engineering hardware, as stated in [S1]. [S2] and [S3] provide these distinctions, clarifying the differences between Computer Engineering and Computer Science.",
+  "source_ids": [
+   "src_080",
+   "src_067",
+   "src_128"
+  ],
+  "retrieved_chunk_ids": [
+   "src_080_chunk_001",
+   "src_067_chunk_029",
+   "src_128_chunk_001"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 29.91
+ },
+ {
+  "key": "comprehensive|q008",
+  "set": "comprehensive",
+  "id": "q008",
+  "question": "What programming languages are taught in Computer Engineering?",
+  "previous_question": null,
+  "built_for": [
+   "programming_languages_passage",
+   "bounded_programming_language_answer"
+  ],
+  "status": "answered",
+  "answer": "[According to the context, the programming languages taught in Computer Engineering include C, C++, C#, Python, Ruby, and Java [S4].",
+  "source_ids": [
+   "src_067"
+  ],
+  "retrieved_chunk_ids": [
+   "src_067_chunk_328",
+   "src_126_chunk_001",
+   "src_080_chunk_001",
+   "src_067_chunk_380"
+  ],
+  "answer_warnings": [
+   "partial_answer"
+  ],
+  "fallback_used": false,
+  "seconds": 22.03
+ },
+ {
+  "key": "comprehensive|q009",
+  "set": "comprehensive",
+  "id": "q009",
+  "question": "Do I need prior programming experience before starting Computer Engineering?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_prior_programming_answer"
+  ],
+  "status": "answered",
+  "answer": "Prior programming experience is not a strict requirement for starting a computer engineering program, but it can be beneficial [S4]. The [S3] source from Brown University Department of Computer Science indicates that roughly half of the students in introductory courses have never programmed before. However, the source [S4] from UC Berkeley Engineering recommends studying Python over the summer through online sources like Khan Academy for students without prior programming experience, as they may struggle in CS 61A. Therefore, while prior programming experience is not necessary, it can help students better prepare for their first computer science course [S4].",
+  "source_ids": [
+   "src_039",
+   "src_070"
+  ],
+  "retrieved_chunk_ids": [
+   "src_070_chunk_001",
+   "src_067_chunk_162",
+   "src_039_chunk_012",
+   "src_070_chunk_002"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 34.32
+ },
+ {
+  "key": "comprehensive|q016",
+  "set": "comprehensive",
+  "id": "q016",
+  "question": "Is it easy to find a job after graduating from Computer Engineering in Turkey?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ],
+  "status": "answered",
+  "answer": "Based on the information provided in [S5], Turkey has attracted an estimated USD 21 billion worth of international investments since the early 2000s, leading to over 246,000 jobs in the Information and Communication Technology (ICT) sector. Additionally, almost 60% of the employment in the ICT sector is in R&D personnel, and 70% of those employed are younger than 35 [S5]. The job market for software developers in Turkey is robust, with a growing number of university graduates in engineering and ICT fields [S5].",
+  "source_ids": [
+   "src_025"
+  ],
+  "retrieved_chunk_ids": [
+   "src_026_chunk_002",
+   "src_051_chunk_012",
+   "src_086_chunk_001",
+   "src_067_chunk_308",
+   "src_025_chunk_002"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 37.04
+ },
+ {
+  "key": "comprehensive|q017",
+  "set": "comprehensive",
+  "id": "q017",
+  "question": "Is Computer Engineering still a good career choice in the AI era?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ],
+  "status": "answered",
+  "answer": "Computer engineering remains a strong career choice in the AI era, as AI tools can assist with coding, testing ideas, and prototyping [S1]. However, engineers still need to understand requirements, constraints, correctness, security, maintainability, users, and ethical consequences [S1]. This aligns with the source [S1], which emphasizes the importance of human understanding and professional responsibility in AI applications. Additionally, the source [S2] suggests that SMEs may struggle to provide the same level of career advancement prospects as larger organizations, which could limit the attractiveness of computer engineering careers for smaller businesses.",
+  "source_ids": [
+   "src_093",
+   "src_045"
+  ],
+  "retrieved_chunk_ids": [
+   "src_093_chunk_001",
+   "src_045_chunk_199",
+   "src_075_chunk_001",
+   "src_017_chunk_027"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 29.06
+ },
+ {
+  "key": "comprehensive|q018",
+  "set": "comprehensive",
+  "id": "q018",
+  "question": "Will AI replace software engineers and computer engineers?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_ai_replacement_answer"
+  ],
+  "status": "answered",
+  "answer": "The evidence suggests that AI will not entirely replace software engineers and computer engineers [S3]. Instead, the work organization will need to adapt, and workers in these jobs may need up- and re-skilling as technologies replace workers for several tasks (OECD, 2022 [S3]).",
+  "source_ids": [
+   "src_045"
+  ],
+  "retrieved_chunk_ids": [
+   "src_093_chunk_001",
+   "src_017_chunk_104",
+   "src_045_chunk_203",
+   "src_067_chunk_123",
+   "src_017_chunk_049"
+  ],
+  "answer_warnings": [
+   "partial_answer"
+  ],
+  "fallback_used": false,
+  "seconds": 35.16
+ },
+ {
+  "key": "comprehensive|q019",
+  "set": "comprehensive",
+  "id": "q019",
+  "question": "What industries hire Computer Engineering graduates?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ],
+  "status": "insufficient_information",
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "source_ids": [],
+  "retrieved_chunk_ids": [
+   "src_026_chunk_001",
+   "src_025_chunk_002",
+   "src_017_chunk_254",
+   "src_067_chunk_079",
+   "src_026_chunk_002"
+  ],
+  "answer_warnings": [
+   "local_llm_answer_failed_citation_validation"
+  ],
+  "fallback_used": false,
+  "seconds": 62.41
+ },
+ {
+  "key": "comprehensive|q022",
+  "set": "comprehensive",
+  "id": "q022",
+  "question": "What are the most in-demand Computer Engineering jobs today?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ],
+  "status": "answered",
+  "answer": "The most in-demand computer engineering jobs today, based on the data from the \"Skills for the digital age\" report, are software engineer and full stack engineer, with no changes in demand compared to the previous quarter [S1].",
+  "source_ids": [
+   "src_045"
+  ],
+  "retrieved_chunk_ids": [
+   "src_045_chunk_195",
+   "src_067_chunk_037",
+   "src_017_chunk_011",
+   "src_014_chunk_001"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 5.62
+ },
+ {
+  "key": "comprehensive|q023",
+  "set": "comprehensive",
+  "id": "q023",
+  "question": "Which specialization has the highest demand in the job market?",
+  "previous_question": null,
+  "built_for": [
+   "specialization_areas_passage"
+  ],
+  "status": "answered",
+  "answer": "Based on the information provided, the specialization area of Artificial intelligence, robotics, and cybernetics has the highest demand in the job market [S2].",
+  "source_ids": [
+   "src_043"
+  ],
+  "retrieved_chunk_ids": [
+   "src_131_chunk_001",
+   "src_043_chunk_002",
+   "src_067_chunk_327",
+   "src_045_chunk_195",
+   "src_067_chunk_079"
+  ],
+  "answer_warnings": [
+   "partial_answer"
+  ],
+  "fallback_used": false,
+  "seconds": 26.46
+ },
+ {
+  "key": "comprehensive|q025",
+  "set": "comprehensive",
+  "id": "q025",
+  "question": "Is the Computer Engineering job market becoming saturated?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ],
+  "status": "answered",
+  "answer": "The context does not provide specific information about the saturation of the Computer Engineering job market [S5]. However, it mentions that the degree credential is likely necessary but not sufficient for a position, indicating that the market might be competitive [S4]. Additionally, the curriculum emphasizes a balanced common core and specialization, suggesting a need for a diverse skill set [S5].",
+  "source_ids": [
+   "src_067"
+  ],
+  "retrieved_chunk_ids": [
+   "src_067_chunk_012",
+   "src_031_chunk_188",
+   "src_045_chunk_195",
+   "src_067_chunk_080",
+   "src_067_chunk_327"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 26.9
+ },
+ {
+  "key": "comprehensive|q027",
+  "set": "comprehensive",
+  "id": "q027",
+  "question": "Is Computer Engineering a future-proof career?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ],
+  "status": "answered",
+  "answer": "The retrieved source states: \"Develop plans and goals for one’s future career.\" [S2]. The retrieved evidence does not establish the rest [S2].",
+  "source_ids": [
+   "src_073"
+  ],
+  "retrieved_chunk_ids": [
+   "src_091_chunk_001",
+   "src_073_chunk_002",
+   "src_067_chunk_032",
+   "src_017_chunk_206",
+   "src_067_chunk_079"
+  ],
+  "answer_warnings": [
+   "local_llm_answer_replaced_with_extractive_fallback"
+  ],
+  "fallback_used": true,
+  "seconds": 25.67
+ },
+ {
+  "key": "comprehensive|q030",
+  "set": "comprehensive",
+  "id": "q030",
+  "question": "Is GPA more important than personal projects?",
+  "previous_question": null,
+  "built_for": [
+   "gpa_screening_passage"
+  ],
+  "status": "answered",
+  "answer": "GPA screening is declining and being replaced by skills-based hiring, indicating that skills and achievements might be more important than GPA [S1]. However, [S2] emphasizes that GPA can still matter in certain contexts, such as academic or scholarship applications. [S3] highlights the importance of being able to handle a successful interview, which is a skill that can be demonstrated through projects and internships.",
+  "source_ids": [
+   "src_127",
+   "src_091",
+   "src_067"
+  ],
+  "retrieved_chunk_ids": [
+   "src_127_chunk_001",
+   "src_091_chunk_001",
+   "src_067_chunk_119",
+   "src_074_chunk_008",
+   "src_036_chunk_006"
+  ],
+  "answer_warnings": [
+   "partial_answer"
+  ],
+  "fallback_used": false,
+  "seconds": 32.95
+ },
+ {
+  "key": "comprehensive|q031",
+  "set": "comprehensive",
+  "id": "q031",
+  "question": "What is the average starting salary for Computer Engineering graduates in Turkey or World?",
+  "previous_question": null,
+  "built_for": [
+   "computer_engineering_definition_passage",
+   "bounded_career_jobs_answer"
+  ],
+  "status": "insufficient_information",
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "source_ids": [],
+  "retrieved_chunk_ids": [
+   "src_026_chunk_002",
+   "src_026_chunk_001",
+   "src_086_chunk_001",
+   "src_025_chunk_002",
+   "src_005_chunk_001"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 0.33
+ },
+ {
+  "key": "comprehensive|q032",
+  "set": "comprehensive",
+  "id": "q032",
+  "question": "Which Computer Engineering specialization offers the highest salaries in Turkey?",
+  "previous_question": null,
+  "built_for": [
+   "specialization_areas_passage"
+  ],
+  "status": "insufficient_information",
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "source_ids": [],
+  "retrieved_chunk_ids": [
+   "src_026_chunk_002",
+   "src_026_chunk_001",
+   "src_025_chunk_002",
+   "src_051_chunk_010",
+   "src_086_chunk_001"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 0.31
+ },
+ {
+  "key": "comprehensive|q035",
+  "set": "comprehensive",
+  "id": "q035",
+  "question": "Can I become a cybersecurity specialist with a Computer Engineering degree?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_cybersecurity_pathway_answer"
+  ],
+  "status": "insufficient_information",
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "source_ids": [],
+  "retrieved_chunk_ids": [
+   "src_085_chunk_001",
+   "src_094_chunk_001",
+   "src_067_chunk_157",
+   "src_042_chunk_002"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 27.25
+ },
+ {
+  "key": "comprehensive|q036",
+  "set": "comprehensive",
+  "id": "q036",
+  "question": "Which programming language should I learn first?",
+  "previous_question": null,
+  "built_for": [
+   "programming_languages_passage",
+   "bounded_programming_language_answer"
+  ],
+  "status": "answered",
+  "answer": "The most relevant information for choosing a first programming language is the prevalence of Python for AI and ML, as stated in [S1]. Python is the most commonly used programming language for AI and ML, indicating its importance and versatility in the field [S1].",
+  "source_ids": [
+   "src_051"
+  ],
+  "retrieved_chunk_ids": [
+   "src_051_chunk_006",
+   "src_051_chunk_010",
+   "src_051_chunk_002",
+   "src_067_chunk_374",
+   "src_067_chunk_368"
+  ],
+  "answer_warnings": [
+   "partial_answer"
+  ],
+  "fallback_used": false,
+  "seconds": 26.47
+ },
+ {
+  "key": "comprehensive|q039",
+  "set": "comprehensive",
+  "id": "q039",
+  "question": "Is learning Linux important for Computer Engineering students?",
+  "previous_question": null,
+  "built_for": [
+   "linux_operating_system_passage",
+   "bounded_verified_partial_answer"
+  ],
+  "status": "answered",
+  "answer": "Learning Linux is important for Computer Engineering students, as evidenced by the Association for Computing Machinery Data Science Task Force's recommendation that tools for topics such as visualization, machine learning, and other Big Data processing needs to run in a distributed fashion [S1]. Additionally, the curated note on the Shell by CENG AI Advisor highlights the importance of basic shell commands and tools for students, suggesting that a foundational understanding of Linux is beneficial for their engineering workflows and development servers [S2].",
+  "source_ids": [
+   "src_069",
+   "src_090"
+  ],
+  "retrieved_chunk_ids": [
+   "src_069_chunk_085",
+   "src_090_chunk_001"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 16.91
+ },
+ {
+  "key": "comprehensive|q040",
+  "set": "comprehensive",
+  "id": "q040",
+  "question": "Should every Computer Engineering student learn Git and GitHub?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_git_github_answer"
+  ],
+  "status": "answered",
+  "answer": "The retrieved source states: \"GitHub and the command line Basic Git commands To use Git, developers use specific commands to copy, create, change, and combine code.\" [S1]. The retrieved evidence does not establish the rest [S1].",
+  "source_ids": [
+   "src_015"
+  ],
+  "retrieved_chunk_ids": [
+   "src_015_chunk_004",
+   "src_090_chunk_001",
+   "src_067_chunk_126",
+   "src_015_chunk_003",
+   "src_015_chunk_001"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 3.51
+ },
+ {
+  "key": "comprehensive|q049",
+  "set": "comprehensive",
+  "id": "q049",
+  "question": "Which field of Computer Engineering is right for me?",
+  "previous_question": null,
+  "built_for": [
+   "specialization_areas_passage"
+  ],
+  "status": "answered",
+  "answer": "The field of Computer Engineering that aligns well with your interests is Artificial Intelligence, Robotics, and Cybernetics [S1]. This specialization area encompasses a variety of subdisciplines including hardware systems, cyberphysical systems, foundations and theory, trust, reliability, and security, networking, mobile, and distributed computing, big data analytics and systems, and artificial intelligence, robotics, and cybernetics [S1]. This field offers a comprehensive understanding of the core principles of computer engineering while also providing in-depth knowledge in specific areas, which can be beneficial for specialization [S3].",
+  "source_ids": [
+   "src_131",
+   "src_067"
+  ],
+  "retrieved_chunk_ids": [
+   "src_131_chunk_001",
+   "src_043_chunk_001",
+   "src_067_chunk_157",
+   "src_067_chunk_123"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 23.67
+ },
+ {
+  "key": "comprehensive|q051",
+  "set": "comprehensive",
+  "id": "q051",
+  "question": "How do I discover which specialization I enjoy the most?",
+  "previous_question": null,
+  "built_for": [
+   "specialization_areas_passage"
+  ],
+  "status": "answered",
+  "answer": "To discover which specialization in computer engineering you enjoy the most, you can start by exploring the main areas of specialization or focus within the field, such as artificial intelligence, robotics, and cybernetics [S1]. The University of Illinois Urbana-Champaign Department of Electrical and Computer Engineering provides a detailed overview of these areas, including suggested courses and faculty members who specialize in them [S1]. Additionally, you can gather information about your interests and aptitudes through the O*NET Interest Profiler, which can help you identify your interests in areas like number facility and facility with computers [S4].",
+  "source_ids": [
+   "src_043",
+   "src_014"
+  ],
+  "retrieved_chunk_ids": [
+   "src_043_chunk_002",
+   "src_049_chunk_005",
+   "src_049_chunk_006",
+   "src_014_chunk_014",
+   "src_045_chunk_173"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 27.65
+ },
+ {
+  "key": "comprehensive|q052",
+  "set": "comprehensive",
+  "id": "q052",
+  "question": "Which specialization is expected to grow the fastest in the future?",
+  "previous_question": null,
+  "built_for": [
+   "specialization_areas_passage"
+  ],
+  "status": "insufficient_information",
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "source_ids": [],
+  "retrieved_chunk_ids": [
+   "src_131_chunk_001",
+   "src_043_chunk_002",
+   "src_067_chunk_032",
+   "src_017_chunk_013",
+   "src_067_chunk_079"
+  ],
+  "answer_warnings": [
+   "local_llm_answer_failed_citation_validation"
+  ],
+  "fallback_used": false,
+  "seconds": 46.99
+ },
+ {
+  "key": "comprehensive|p007",
+  "set": "comprehensive",
+  "id": "p007",
+  "question": "Is software engineering safer than computer engineering because AI is changing programming jobs?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ],
+  "status": "answered",
+  "answer": "The Software Engineering Body of Knowledge (SWEBOK Guide) emphasizes disciplined engineering practices such as requirements, design, testing, quality, process, and project constraints, which can make software engineering safer compared to computer engineering [S1].",
+  "source_ids": [
+   "src_081"
+  ],
+  "retrieved_chunk_ids": [
+   "src_081_chunk_001",
+   "src_129_chunk_001",
+   "src_080_chunk_001",
+   "src_067_chunk_079"
+  ],
+  "answer_warnings": [
+   "partial_answer"
+  ],
+  "fallback_used": false,
+  "seconds": 53.0
+ },
+ {
+  "key": "comprehensive|p008",
+  "set": "comprehensive",
+  "id": "p008",
+  "question": "What careers can combine cybersecurity with a computer engineering background?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ],
+  "status": "answered",
+  "answer": "Cybersecurity can be combined with a computer engineering background to pursue careers such as cybersecurity technicians and analysts [S4]. Additionally, the ACM Committee for Computing Education in Community Colleges' curricular guidance indicates that cybersecurity is an interdisciplinary field that includes aspects of law, policy, human factors, ethics, and risk management, which aligns with the NICE Framework for cybersecurity careers [S3] [S4]. Therefore, a computer engineering background can complement the cybersecurity field by providing technical expertise in information systems defense [S4].",
+  "source_ids": [
+   "src_042",
+   "src_128"
+  ],
+  "retrieved_chunk_ids": [
+   "src_085_chunk_001",
+   "src_094_chunk_001",
+   "src_042_chunk_002",
+   "src_128_chunk_002",
+   "src_068_chunk_001"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 19.88
+ },
+ {
+  "key": "comprehensive|p019",
+  "set": "comprehensive",
+  "id": "p019",
+  "question": "Is computer engineering welcoming for women who want technical careers?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ],
+  "status": "answered",
+  "answer": "Computer engineering can be welcoming for women who want technical careers, as evidenced by initiatives that promote a welcoming and supportive work environment for all faculty [S3]. Additionally, efforts to change perceptions of ICT careers as inherently male, such as highlighting communal goals and promoting social challenges that can be solved with ICT-related skills [S5], suggest that computer engineering is making strides in inclusivity. However, gender gaps in technical fields persist, indicating that more work is needed to ensure equal opportunities for women in this field [S2].",
+  "source_ids": [
+   "src_045",
+   "src_069"
+  ],
+  "retrieved_chunk_ids": [
+   "src_041_chunk_001",
+   "src_045_chunk_359",
+   "src_069_chunk_064",
+   "src_045_chunk_369",
+   "src_045_chunk_370"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 22.29
+ },
+ {
+  "key": "paraphrase|q001_reworded",
+  "set": "paraphrase",
+  "id": "q001_reworded",
+  "question": "How would you explain the field of Computer Engineering?",
+  "previous_question": null,
+  "built_for": [
+   "computer_engineering_definition_passage",
+   "specialization_areas_passage"
+  ],
+  "status": "answered",
+  "answer": "Computer Engineering is a field that combines principles from electrical engineering and computer science to design and develop computer systems and software [S5]. The field is characterized by its interdisciplinary nature, as evidenced by the Association for Computing Machinery Data Science Task Force's [S1] which highlights the inherent interdisciplinarity of Data Science, a field closely related to Computer Engineering. In terms of specialization areas, the University of Illinois Urbana-Champaign Department of Electrical and Computer Engineering [S2] outlines several subdisciplines including Artificial intelligence, robotics, and cybernetics, which are crucial components of modern computer engineering. This specialization allows computer engineers to address complex problems in areas such as hardware systems, cyberphysical systems, and big data analytics [S2]. The curriculum for Computer Engineering [S3] emphasizes the breadth of the field, with curricular content varying widely among programs and even among students within the same program. This curriculum also highlights the evolution of computer engineering from the disciplines of electrical engineering and computer science, as described in [S5].",
+  "source_ids": [
+   "src_069",
+   "src_131",
+   "src_067"
+  ],
+  "retrieved_chunk_ids": [
+   "src_069_chunk_014",
+   "src_131_chunk_001",
+   "src_067_chunk_013",
+   "src_067_chunk_044",
+   "src_067_chunk_032"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 35.11
+ },
+ {
+  "key": "paraphrase|q004_typo",
+  "set": "paraphrase",
+  "id": "q004_typo",
+  "question": "What is the diffeence between Computer Engineering and Software Engineering?",
+  "previous_question": null,
+  "built_for": [
+   "computer_engineering_definition_passage"
+  ],
+  "status": "answered",
+  "answer": "The difference between computer engineering and software engineering lies in their primary focus and scope [S1]. Computer engineering is more focused on the hardware side of computing, including the design and implementation of computer systems and hardware components [S1]. On the other hand, software engineering is centered on the development and management of software systems [S1]. While both fields are integral to the computing industry, computer engineering emphasizes the integration of hardware and software, whereas software engineering focuses on the design and implementation of software applications [S1].",
+  "source_ids": [
+   "src_067"
+  ],
+  "retrieved_chunk_ids": [
+   "src_067_chunk_073",
+   "src_080_chunk_001",
+   "src_128_chunk_001"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 11.59
+ },
+ {
+  "key": "paraphrase|q005_typo",
+  "set": "paraphrase",
+  "id": "q005_typo",
+  "question": "What is the diffeence between Computer Engineering and Computer Science?",
+  "previous_question": null,
+  "built_for": [
+   "computer_engineering_definition_passage"
+  ],
+  "status": "answered",
+  "answer": "Computer engineering and computer science are related but distinct fields within the broader discipline of computing [S2]. According to [S2], computer engineering is a discipline that combines both electrical engineering and computer science to design, construct, implement, and maintain software and hardware components of modern computing systems, computer-controlled equipment, and networks of intelligent devices. On the other hand, [S3] states that computer science focuses on design and innovation developed from computing principles. Therefore, computer engineering is more closely aligned with the intersection of computing and engineering hardware, as mentioned in [S1].",
+  "source_ids": [
+   "src_080",
+   "src_067",
+   "src_128"
+  ],
+  "retrieved_chunk_ids": [
+   "src_080_chunk_001",
+   "src_067_chunk_029",
+   "src_128_chunk_001"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 13.25
+ },
+ {
+  "key": "paraphrase|q009_informal",
+  "set": "paraphrase",
+  "id": "q009_informal",
+  "question": "need coding before starting comp eng",
+  "previous_question": null,
+  "built_for": [
+   "bounded_prior_programming_answer"
+  ],
+  "status": "answered",
+  "answer": "Students do not need to take a specific coding course before starting a Computer Engineering program [S4]. However, taking a course like CS C8, which is an introduction to programming and statistics, can be beneficial as it prepares students for later courses like CS 61A [S4]. This course can help students gain programming experience and practice, which is helpful for taking CS 61A later or concurrently [S4].",
+  "source_ids": [
+   "src_070"
+  ],
+  "retrieved_chunk_ids": [
+   "src_067_chunk_320",
+   "src_081_chunk_001",
+   "src_092_chunk_001",
+   "src_070_chunk_002"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 23.57
+ },
+ {
+  "key": "paraphrase|q009_typo",
+  "set": "paraphrase",
+  "id": "q009_typo",
+  "question": "Do I need pror programming experience before starting Computer Engineering?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_prior_programming_answer"
+  ],
+  "status": "answered",
+  "answer": "The retrieved source states: \"By taking this course, students gain programming experience and practice, which is certainly helpful for taking CS 61A later or concurrently.\" [S1]. The retrieved evidence does not establish the rest [S1].",
+  "source_ids": [
+   "src_070"
+  ],
+  "retrieved_chunk_ids": [
+   "src_070_chunk_002",
+   "src_070_chunk_001",
+   "src_067_chunk_048",
+   "src_067_chunk_091",
+   "src_067_chunk_320"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 28.35
+ },
+ {
+  "key": "paraphrase|q011_reworded",
+  "set": "paraphrase",
+  "id": "q011_reworded",
+  "question": "Compared with other engineering degrees, is Computer Engineering among the most difficult?",
+  "previous_question": null,
+  "built_for": [
+   "computer_engineering_definition_passage"
+  ],
+  "status": "answered",
+  "answer": "Computer Engineering is indeed a challenging field, as evidenced by the curriculum design that emphasizes the integration of hardware and software design, as well as the increasing demand for qualified professionals [S2]. Additionally, the [S1] context points out the difficulty in making trade-off decisions at the software/hardware interface, indicating the complexity of the field. Furthermore, the [S4] context mentions that the Bureau of Labor Statistics predicts a 17.7% increase in computer occupations by 2022, but also notes that finding qualified people to fill these roles is often difficult, suggesting that the field remains challenging despite the growing demand. [S3] does not directly address the difficulty of Computer Engineering, but it does mention that mastering error correction and designing quantum algorithms are active areas of research, indicating the ongoing complexity and depth of the field.",
+  "source_ids": [
+   "src_067",
+   "src_042",
+   "src_045"
+  ],
+  "retrieved_chunk_ids": [
+   "src_067_chunk_088",
+   "src_042_chunk_002",
+   "src_045_chunk_456",
+   "src_067_chunk_079"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 31.59
+ },
+ {
+  "key": "paraphrase|q016_reworded",
+  "set": "paraphrase",
+  "id": "q016_reworded",
+  "question": "How difficult is it for a new Computer Engineering graduate to get hired in Turkey?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ],
+  "status": "answered",
+  "answer": "Computer Engineering is indeed considered a challenging field [S1]. The curriculum, as outlined in [S2], emphasizes the synthesis of electrical engineering and computer science to design systems like cellular communications, consumer electronics, and military technologies. Additionally, the increasing demand for qualified professionals in this field, as indicated by the Bureau of Labor Statistics (BLS) [S4], highlights the difficulty in finding suitable candidates, further emphasizing the challenging nature of the field. [S1] also points out the difficulty in the software/hardware interface, which involves making difficult trade-off decisions and appreciating computer architecture. These factors contribute to the perception of Computer Engineering as a challenging area of study [S1].",
+  "source_ids": [
+   "src_067",
+   "src_042"
+  ],
+  "retrieved_chunk_ids": [
+   "src_067_chunk_088",
+   "src_042_chunk_002",
+   "src_045_chunk_456",
+   "src_067_chunk_079"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 16.41
+ },
+ {
+  "key": "paraphrase|q016_typo",
+  "set": "paraphrase",
+  "id": "q016_typo",
+  "question": "Is it easy to find a job afer graduating from Computer Engineering in Turkey?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ],
+  "status": "answered",
+  "answer": "The country has seen significant growth in the Information and Communication Technology (ICT) sector, with over 246,000 people employed in this field [S4]. Furthermore, the availability of a qualified workforce and modest labor costs make Turkey a competitive country in the region [S4]. These factors suggest that graduates from computer engineering programs in Turkey have a good chance of finding employment in their field [S4].",
+  "source_ids": [
+   "src_025"
+  ],
+  "retrieved_chunk_ids": [
+   "src_026_chunk_002",
+   "src_051_chunk_012",
+   "src_086_chunk_001",
+   "src_025_chunk_002"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 26.41
+ },
+ {
+  "key": "paraphrase|q017_reworded",
+  "set": "paraphrase",
+  "id": "q017_reworded",
+  "question": "With artificial intelligence advancing, is Computer Engineering still worth pursuing as a career?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ],
+  "status": "insufficient_information",
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "source_ids": [],
+  "retrieved_chunk_ids": [
+   "src_093_chunk_001",
+   "src_017_chunk_027",
+   "src_129_chunk_001",
+   "src_075_chunk_001"
+  ],
+  "answer_warnings": [
+   "local_llm_answer_failed_citation_validation"
+  ],
+  "fallback_used": false,
+  "seconds": 52.73
+ },
+ {
+  "key": "paraphrase|q019_typo",
+  "set": "paraphrase",
+  "id": "q019_typo",
+  "question": "What indusries hire Computer Engineering graduates?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ],
+  "status": "answered",
+  "answer": "Computer Engineering graduates are hired in various industries [S1] [S4].",
+  "source_ids": [
+   "src_067"
+  ],
+  "retrieved_chunk_ids": [
+   "src_067_chunk_013",
+   "src_014_chunk_001",
+   "src_031_chunk_029",
+   "src_067_chunk_105"
+  ],
+  "answer_warnings": [
+   "partial_answer"
+  ],
+  "fallback_used": false,
+  "seconds": 31.6
+ },
+ {
+  "key": "paraphrase|q020_reworded",
+  "set": "paraphrase",
+  "id": "q020_reworded",
+  "question": "Does a Computer Engineering degree allow graduates to seek employment in other countries?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ],
+  "status": "answered",
+  "answer": "A Computer Engineering degree does not inherently guarantee employment in other countries, as the degree alone is not sufficient for employment in the field [S1].",
+  "source_ids": [
+   "src_067"
+  ],
+  "retrieved_chunk_ids": [
+   "src_067_chunk_080",
+   "src_045_chunk_364",
+   "src_091_chunk_001",
+   "src_067_chunk_048",
+   "src_067_chunk_105"
+  ],
+  "answer_warnings": [
+   "partial_answer"
+  ],
+  "fallback_used": false,
+  "seconds": 18.9
+ },
+ {
+  "key": "paraphrase|q021_reworded",
+  "set": "paraphrase",
+  "id": "q021_reworded",
+  "question": "Are there opportunities to do Computer Engineering work from home?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ],
+  "status": "answered",
+  "answer": "The retrieved source states: \"People working hybrid (mostly from home) felt much better about their job than those who work in-office, a 21% difference in sentiment.\" [S3]. The retrieved evidence does not establish the rest [S3].",
+  "source_ids": [
+   "src_101"
+  ],
+  "retrieved_chunk_ids": [
+   "src_049_chunk_002",
+   "src_067_chunk_105",
+   "src_101_chunk_009",
+   "src_050_chunk_001",
+   "src_067_chunk_110"
+  ],
+  "answer_warnings": [
+   "local_llm_answer_replaced_with_extractive_fallback"
+  ],
+  "fallback_used": true,
+  "seconds": 14.09
+ },
+ {
+  "key": "paraphrase|q022_reworded",
+  "set": "paraphrase",
+  "id": "q022_reworded",
+  "question": "Which jobs available to Computer Engineering graduates are employers especially looking for?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ],
+  "status": "answered",
+  "answer": "Based on the information provided, employers are especially looking for Computer Hardware Engineers among Computer Engineering graduates [S4]. Additionally, the source [S3] suggests focusing on occupations facing severe labour shortages, and Computer Hardware Engineers fall under the category of information and communications technology professionals, which are in high demand.",
+  "source_ids": [
+   "src_031",
+   "src_067"
+  ],
+  "retrieved_chunk_ids": [
+   "src_067_chunk_079",
+   "src_014_chunk_001",
+   "src_031_chunk_188",
+   "src_067_chunk_013"
+  ],
+  "answer_warnings": [
+   "partial_answer"
+  ],
+  "fallback_used": false,
+  "seconds": 24.96
+ },
+ {
+  "key": "paraphrase|q022_typo",
+  "set": "paraphrase",
+  "id": "q022_typo",
+  "question": "What are the most in-demnd Computer Engineering jobs today?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ],
+  "status": "insufficient_information",
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "source_ids": [],
+  "retrieved_chunk_ids": [
+   "src_045_chunk_195",
+   "src_067_chunk_037",
+   "src_017_chunk_049",
+   "src_051_chunk_012",
+   "src_067_chunk_032"
+  ],
+  "answer_warnings": [
+   "local_llm_answer_failed_citation_validation"
+  ],
+  "fallback_used": false,
+  "seconds": 30.33
+ },
+ {
+  "key": "paraphrase|q023_typo",
+  "set": "paraphrase",
+  "id": "q023_typo",
+  "question": "Whch specialization has the highest demand in the job market?",
+  "previous_question": null,
+  "built_for": [
+   "specialization_areas_passage"
+  ],
+  "status": "answered",
+  "answer": "The specialization in Artificial intelligence, robotics, and cybernetics has the highest demand in the job market [S1] [S2]. Additionally, the source [S3] indicates that the most in-demand jobs are those with the highest number of job posts, and the source [S4] mentions that Computer engineering students receive a flexible curriculum that includes technical elective courses for specialization. Therefore, based on these sources, the specialization in Artificial intelligence, robotics, and cybernetics is the most in-demand area in the job market for Computer Engineering graduates [S1] [S2].",
+  "source_ids": [
+   "src_131",
+   "src_043",
+   "src_045",
+   "src_067"
+  ],
+  "retrieved_chunk_ids": [
+   "src_131_chunk_001",
+   "src_043_chunk_002",
+   "src_045_chunk_195",
+   "src_067_chunk_327",
+   "src_067_chunk_079"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 23.63
+ },
+ {
+  "key": "paraphrase|q025_reworded",
+  "set": "paraphrase",
+  "id": "q025_reworded",
+  "question": "Are there now too many Computer Engineering graduates for the available jobs?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ],
+  "status": "insufficient_information",
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "source_ids": [],
+  "retrieved_chunk_ids": [
+   "src_067_chunk_079",
+   "src_067_chunk_031",
+   "src_031_chunk_188",
+   "src_031_chunk_029"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 18.53
+ },
+ {
+  "key": "paraphrase|q027_reworded",
+  "set": "paraphrase",
+  "id": "q027_reworded",
+  "question": "How secure is Computer Engineering as a career as technology changes?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ],
+  "status": "answered",
+  "answer": "Computer Engineering as a career is secure due to the convergence of technologies and the associated innovation, which are driving economic development and creating many opportunities for computer engineers [S4]. This convergence, as highlighted in the context, involves the integration of software and hardware devices, making graduates well-equipped to design and implement systems that involve both aspects [S1]. Additionally, the curriculum emphasizes security in computing environments, ensuring that graduates are prepared to manage and secure large-scale software systems throughout their lifecycle [S2]. These factors contribute to the stability and growth of the field, making Computer Engineering a secure career path as technology continues to evolve [S4].",
+  "source_ids": [
+   "src_042",
+   "src_067"
+  ],
+  "retrieved_chunk_ids": [
+   "src_042_chunk_002",
+   "src_042_chunk_005",
+   "src_067_chunk_080",
+   "src_067_chunk_032"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 25.43
+ },
+ {
+  "key": "paraphrase|q030_informal",
+  "set": "paraphrase",
+  "id": "q030_informal",
+  "question": "gpa or side projects which matters more",
+  "previous_question": null,
+  "built_for": [
+   "gpa_screening_passage"
+  ],
+  "status": "answered",
+  "answer": "According to [S1], employers are increasingly using skills-based hiring, which suggests that side projects can be a strong indicator of a candidate's potential. [S2] also supports the idea that projects, internships, and other hands-on experiences are crucial for demonstrating employability, even if GPA is not screened by employers. Therefore, while GPA can still be important for some contexts, side projects can provide more concrete evidence of a student's abilities and achievements [S2]. [S3] emphasizes the importance of being able to handle career interviews, which can be a skill that is developed through side projects and other practical experiences. [S4] provides guidance on how to include projects in a resume, indicating their relevance in Computer Engineering.",
+  "source_ids": [
+   "src_127",
+   "src_091",
+   "src_067",
+   "src_074"
+  ],
+  "retrieved_chunk_ids": [
+   "src_127_chunk_001",
+   "src_091_chunk_001",
+   "src_067_chunk_119",
+   "src_074_chunk_008",
+   "src_067_chunk_081"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 27.68
+ },
+ {
+  "key": "paraphrase|q030_typo",
+  "set": "paraphrase",
+  "id": "q030_typo",
+  "question": "Is GPA more impotant than personal projects?",
+  "previous_question": null,
+  "built_for": [
+   "gpa_screening_passage"
+  ],
+  "status": "answered",
+  "answer": "The National Association of Colleges and Employers (NACE) report suggests that while GPA screening is becoming less common, it still matters for some academic and screening contexts [S1]. On the other hand, the curated note from CENG AI Advisor emphasizes that employability also depends on evidence that a student can learn, communicate, solve problems, work with others, and complete technical work, which can be demonstrated through projects, internships, and other activities [S2].",
+  "source_ids": [
+   "src_127",
+   "src_091"
+  ],
+  "retrieved_chunk_ids": [
+   "src_127_chunk_001",
+   "src_091_chunk_001",
+   "src_067_chunk_119",
+   "src_074_chunk_008",
+   "src_036_chunk_006"
+  ],
+  "answer_warnings": [
+   "partial_answer"
+  ],
+  "fallback_used": false,
+  "seconds": 28.98
+ },
+ {
+  "key": "paraphrase|q031_typo",
+  "set": "paraphrase",
+  "id": "q031_typo",
+  "question": "What is the aveage starting salary for Computer Engineering graduates in Turkey or World?",
+  "previous_question": null,
+  "built_for": [
+   "computer_engineering_definition_passage",
+   "bounded_career_jobs_answer"
+  ],
+  "status": "insufficient_information",
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "source_ids": [],
+  "retrieved_chunk_ids": [
+   "src_026_chunk_002",
+   "src_026_chunk_001",
+   "src_025_chunk_002",
+   "src_086_chunk_001",
+   "src_005_chunk_001"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 0.38
+ },
+ {
+  "key": "paraphrase|q032_typo",
+  "set": "paraphrase",
+  "id": "q032_typo",
+  "question": "Whch Computer Engineering specialization offers the highest salaries in Turkey?",
+  "previous_question": null,
+  "built_for": [
+   "specialization_areas_passage"
+  ],
+  "status": "insufficient_information",
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "source_ids": [],
+  "retrieved_chunk_ids": [
+   "src_026_chunk_002",
+   "src_026_chunk_001",
+   "src_025_chunk_002",
+   "src_086_chunk_001",
+   "src_025_chunk_001"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 0.33
+ },
+ {
+  "key": "paraphrase|q034_reworded",
+  "set": "paraphrase",
+  "id": "q034_reworded",
+  "question": "Would a Computer Engineering degree be a route into an AI engineering career?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ],
+  "status": "answered",
+  "answer": "A computer engineering degree can be a route into an AI engineering career, as computer engineering has evolved from the disciplines of electrical engineering and computer science, and the convergence of technologies and innovation are key areas for computer engineers [S3]. However, the availability of career advancement prospects can vary depending on the size of the organization, with SMEs often struggling to offer well-established career paths and mentorship programs, which can limit their attractiveness [S2].",
+  "source_ids": [
+   "src_045",
+   "src_067"
+  ],
+  "retrieved_chunk_ids": [
+   "src_093_chunk_001",
+   "src_045_chunk_199",
+   "src_067_chunk_032",
+   "src_075_chunk_001"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 22.73
+ },
+ {
+  "key": "paraphrase|q035_typo",
+  "set": "paraphrase",
+  "id": "q035_typo",
+  "question": "Can I becme a cybersecurity specialist with a Computer Engineering degree?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_cybersecurity_pathway_answer"
+  ],
+  "status": "answered",
+  "answer": "The CSEC 2017 guidelines suggest that cybersecurity is a broad field that goes beyond ethical hacking or penetration testing, indicating that a Computer Engineering degree can provide a solid foundation for understanding the principles and practices of cybersecurity [S1].",
+  "source_ids": [
+   "src_085"
+  ],
+  "retrieved_chunk_ids": [
+   "src_085_chunk_001",
+   "src_094_chunk_001",
+   "src_068_chunk_001",
+   "src_045_chunk_430",
+   "src_067_chunk_157"
+  ],
+  "answer_warnings": [
+   "partial_answer"
+  ],
+  "fallback_used": false,
+  "seconds": 24.36
+ },
+ {
+  "key": "paraphrase|q036_typo",
+  "set": "paraphrase",
+  "id": "q036_typo",
+  "question": "Whch programming language should I learn first?",
+  "previous_question": null,
+  "built_for": [
+   "programming_languages_passage",
+   "bounded_programming_language_answer"
+  ],
+  "status": "answered",
+  "answer": "Python is a valuable language to learn first, especially if you are interested in AI and ML [S1]. Additionally, the report indicates that Python is also the most used programming language among all developers worldwide, as it is used to create web pages [S3].",
+  "source_ids": [
+   "src_051"
+  ],
+  "retrieved_chunk_ids": [
+   "src_051_chunk_006",
+   "src_051_chunk_010",
+   "src_051_chunk_002",
+   "src_067_chunk_374",
+   "src_067_chunk_368"
+  ],
+  "answer_warnings": [
+   "partial_answer"
+  ],
+  "fallback_used": false,
+  "seconds": 12.15
+ },
+ {
+  "key": "paraphrase|q037_reworded",
+  "set": "paraphrase",
+  "id": "q037_reworded",
+  "question": "What tools and technical areas should I know by the time I finish university?",
+  "previous_question": null,
+  "built_for": [
+   "specialization_areas_passage"
+  ],
+  "status": "out_of_scope",
+  "answer": "I am a Computer Engineering student advisor. I can help with Computer Engineering education, curriculum, courses, skills, careers, internships, AI, cybersecurity, programming, and related study paths.",
+  "source_ids": [],
+  "retrieved_chunk_ids": [],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 0.02
+ },
+ {
+  "key": "paraphrase|q039_reworded",
+  "set": "paraphrase",
+  "id": "q039_reworded",
+  "question": "How useful is Linux knowledge for someone studying Computer Engineering?",
+  "previous_question": null,
+  "built_for": [
+   "linux_operating_system_passage"
+  ],
+  "status": "insufficient_information",
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "source_ids": [],
+  "retrieved_chunk_ids": [
+   "src_090_chunk_001"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 11.71
+ },
+ {
+  "key": "paraphrase|q039_informal",
+  "set": "paraphrase",
+  "id": "q039_informal",
+  "question": "do comp eng students need linux",
+  "previous_question": null,
+  "built_for": [
+   "linux_operating_system_passage"
+  ],
+  "status": "answered",
+  "answer": "Computer engineering students do need Linux, as evidenced by the Computing Competencies for Undergraduate Data Science Curricula [S2]. This source indicates that running code from the command line is essential, and Linux command line training is necessary for students to navigate and run code effectively [S2]. Additionally, the Missing Semester: The Shell suggests that familiarity with shell commands, paths, processes, environment variables, package tools, Git, SSH, and scripting is beneficial for working with development servers, Linux systems, and engineering workflows [S1].",
+  "source_ids": [
+   "src_090",
+   "src_069"
+  ],
+  "retrieved_chunk_ids": [
+   "src_090_chunk_001",
+   "src_069_chunk_085"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 16.16
+ },
+ {
+  "key": "paraphrase|q039_typo",
+  "set": "paraphrase",
+  "id": "q039_typo",
+  "question": "Is learing Linux important for Computer Engineering students?",
+  "previous_question": null,
+  "built_for": [
+   "linux_operating_system_passage",
+   "bounded_verified_partial_answer"
+  ],
+  "status": "insufficient_information",
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "source_ids": [],
+  "retrieved_chunk_ids": [
+   "src_069_chunk_085",
+   "src_090_chunk_001"
+  ],
+  "answer_warnings": [
+   "local_llm_answer_failed_citation_validation"
+  ],
+  "fallback_used": false,
+  "seconds": 38.98
+ },
+ {
+  "key": "paraphrase|q040_informal",
+  "set": "paraphrase",
+  "id": "q040_informal",
+  "question": "should comp eng students learn git github",
+  "previous_question": null,
+  "built_for": [
+   "bounded_git_github_answer"
+  ],
+  "status": "answered",
+  "answer": "Computer engineering students should learn Git and GitHub, as they are essential tools for version control, collaboration, and transparency in development workflows [S2]. Basic Git commands are fundamental for developers, and GitHub provides a platform to contribute to existing repositories and manage code changes effectively [S5]. Additionally, understanding Git and GitHub can enhance their ability to work with development servers, Linux systems, and engineering workflows, as recommended by the curated note on shell commands [S2]. This knowledge is particularly useful for students who need to work comfortably with these tools, especially those who are beginners [S2].",
+  "source_ids": [
+   "src_090",
+   "src_015"
+  ],
+  "retrieved_chunk_ids": [
+   "src_015_chunk_004",
+   "src_090_chunk_001",
+   "src_087_chunk_001",
+   "src_015_chunk_007",
+   "src_015_chunk_003"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 27.6
+ },
+ {
+  "key": "paraphrase|q040_typo",
+  "set": "paraphrase",
+  "id": "q040_typo",
+  "question": "Shold every Computer Engineering student learn Git and GitHub?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_git_github_answer"
+  ],
+  "status": "answered",
+  "answer": "Git and GitHub are widely used in the industry, and understanding these tools is crucial for Computer Engineering students to work effectively with development servers, Linux systems, and engineering workflows [S2]. They are practical layers that make these subjects easier to use, enabling students to work more comfortably with these technologies [S2].",
+  "source_ids": [
+   "src_090"
+  ],
+  "retrieved_chunk_ids": [
+   "src_015_chunk_004",
+   "src_090_chunk_001",
+   "src_067_chunk_126",
+   "src_015_chunk_003",
+   "src_015_chunk_001"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 25.41
+ },
+ {
+  "key": "paraphrase|q049_reworded",
+  "set": "paraphrase",
+  "id": "q049_reworded",
+  "question": "How can I choose the Computer Engineering area that best matches my interests and strengths?",
+  "previous_question": null,
+  "built_for": [
+   "specialization_areas_passage"
+  ],
+  "status": "insufficient_information",
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "source_ids": [],
+  "retrieved_chunk_ids": [
+   "src_043_chunk_002",
+   "src_067_chunk_156",
+   "src_067_chunk_044",
+   "src_067_chunk_121"
+  ],
+  "answer_warnings": [
+   "local_llm_answer_failed_citation_validation"
+  ],
+  "fallback_used": false,
+  "seconds": 55.02
+ },
+ {
+  "key": "paraphrase|q049_informal",
+  "set": "paraphrase",
+  "id": "q049_informal",
+  "question": "which comp eng field suits me",
+  "previous_question": null,
+  "built_for": [
+   "specialization_areas_passage"
+  ],
+  "status": "answered",
+  "answer": "Based on the information provided, the field of computer engineering suits you if you are interested in both electrical and computer science [S1]. The curricula suggest that you would benefit from courses in computer organization and architecture, algorithms, programming, databases, networks, software engineering, and communications [S2]. Additionally, the evolution of computer engineering from electrical engineering and computer science indicates that you would be well-prepared for a successful career in this field [S4].",
+  "source_ids": [
+   "src_043",
+   "src_067"
+  ],
+  "retrieved_chunk_ids": [
+   "src_043_chunk_002",
+   "src_067_chunk_044",
+   "src_067_chunk_012",
+   "src_067_chunk_032"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 20.14
+ },
+ {
+  "key": "paraphrase|q049_typo",
+  "set": "paraphrase",
+  "id": "q049_typo",
+  "question": "Whch field of Computer Engineering is right for me?",
+  "previous_question": null,
+  "built_for": [
+   "specialization_areas_passage"
+  ],
+  "status": "answered",
+  "answer": "The field of Computer Engineering that might be right for you is Artificial Intelligence, Robotics, and Cybernetics [S1]. This specialization is detailed in the source [S1], which mentions that students often select courses listed under this area, and it is a focus area for many students. Additionally, the source [S4] indicates that Computer Engineering evolved from the disciplines of Electrical Engineering and Computer Science, and it often involves specialization within Electrical Engineering programs.",
+  "source_ids": [
+   "src_043",
+   "src_067"
+  ],
+  "retrieved_chunk_ids": [
+   "src_043_chunk_002",
+   "src_067_chunk_044",
+   "src_067_chunk_012",
+   "src_067_chunk_032"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 14.06
+ },
+ {
+  "key": "paraphrase|q051_typo",
+  "set": "paraphrase",
+  "id": "q051_typo",
+  "question": "How do I discver which specialization I enjoy the most?",
+  "previous_question": null,
+  "built_for": [
+   "specialization_areas_passage"
+  ],
+  "status": "insufficient_information",
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "source_ids": [],
+  "retrieved_chunk_ids": [
+   "src_036_chunk_005",
+   "src_035_chunk_002",
+   "src_074_chunk_009",
+   "src_036_chunk_003"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 2.76
+ },
+ {
+  "key": "paraphrase|q052_reworded",
+  "set": "paraphrase",
+  "id": "q052_reworded",
+  "question": "Which Computer Engineering area is forecast to expand most rapidly?",
+  "previous_question": null,
+  "built_for": [
+   "specialization_areas_passage"
+  ],
+  "status": "answered",
+  "answer": "The Computer Engineering area forecast to expand most rapidly is technology-related roles, including Big Data Specialists, Fintech Engineers, AI and Machine Learning Specialists, and Software and Application Developers, as indicated in the [S3]",
+  "source_ids": [
+   "src_017"
+  ],
+  "retrieved_chunk_ids": [
+   "src_067_chunk_167",
+   "src_016_chunk_019",
+   "src_017_chunk_013",
+   "src_067_chunk_079",
+   "src_067_chunk_021"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 20.88
+ },
+ {
+  "key": "paraphrase|q052_typo",
+  "set": "paraphrase",
+  "id": "q052_typo",
+  "question": "Whch specialization is expected to grow the fastest in the future?",
+  "previous_question": null,
+  "built_for": [
+   "specialization_areas_passage"
+  ],
+  "status": "answered",
+  "answer": "The specialization in Artificial intelligence, robotics, and cybernetics is expected to grow the fastest in the future [S1] [S2]. According to the source [S2], this specialization area is one of the main areas of specialization in CompE and EE programs, which suggests it is a growing field. Additionally, the source [S3] from the World Economic Forum highlights that technology-related roles, including AI and Machine Learning Specialists, are the fastest-growing jobs in percentage terms over the next five years.",
+  "source_ids": [
+   "src_131",
+   "src_043",
+   "src_017"
+  ],
+  "retrieved_chunk_ids": [
+   "src_131_chunk_001",
+   "src_043_chunk_002",
+   "src_017_chunk_013",
+   "src_067_chunk_032"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 16.58
+ },
+ {
+  "key": "paraphrase|q058_reworded",
+  "set": "paraphrase",
+  "id": "q058_reworded",
+  "question": "Are successful Computer Engineering careers open to women?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ],
+  "status": "answered",
+  "answer": "Successful Computer Engineering careers are open to women, as evidenced by the OECD's Skills for the Digital Age report, which suggests that more women can pursue ICT careers and become ICT inventors with the right strategies and educational programs [S2]. The report highlights the importance of encouraging more women to engage in digital innovation, which can contribute to the productivity-enhancing benefits of the digital future [S2]. Additionally, the CENG AI Advisor summary from the National Association of Colleges and Employers emphasizes the importance of career readiness competencies, including communication, teamwork, and professional habits, which are crucial for Computer Engineering students [S3]. These competencies are essential for employers and career centers to discuss employability, indicating that women can be successful in Computer Engineering careers [S2] [S3].",
+  "source_ids": [
+   "src_045",
+   "src_091"
+  ],
+  "retrieved_chunk_ids": [
+   "src_041_chunk_001",
+   "src_045_chunk_383",
+   "src_091_chunk_001",
+   "src_067_chunk_124"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 28.22
+ },
+ {
+  "key": "unseen|unseen_specialization_areas_002",
+  "set": "unseen",
+  "id": "unseen_specialization_areas_002",
+  "question": "How would learning for cloud security differ from learning for embedded-device security?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_verified_partial_answer"
+  ],
+  "status": "answered",
+  "answer": "The retrieved source states: \"For Computer Engineering students, cybersecurity connects naturally with networks, operating systems, programming, databases, cloud computing, cryptography, embedded systems, and hardware security.\" [S1]. The retrieved evidence does not establish the rest [S1].",
+  "source_ids": [
+   "src_085"
+  ],
+  "retrieved_chunk_ids": [
+   "src_085_chunk_001",
+   "src_094_chunk_001",
+   "src_083_chunk_001",
+   "src_129_chunk_001",
+   "src_045_chunk_430"
+  ],
+  "answer_warnings": [
+   "local_llm_answer_replaced_with_extractive_fallback"
+  ],
+  "fallback_used": true,
+  "seconds": 34.4
+ },
+ {
+  "key": "unseen|unseen_specialization_areas_008",
+  "set": "unseen",
+  "id": "unseen_specialization_areas_008",
+  "question": "Can I mix interests like hardware and AI instead of sticking to only one specialization?",
+  "previous_question": null,
+  "built_for": [
+   "specialization_areas_passage"
+  ],
+  "status": "answered",
+  "answer": "The curriculum is designed to be flexible, allowing students to tailor their studies to their interests and employers' needs [S5]. The subdiscipline of Artificial intelligence, robotics, and cybernetics includes specialization areas such as artificial intelligence, robotics, and cybernetics, which can be pursued alongside hardware systems [S1] [S2]. This flexibility is supported by the statement in [S3] that \"Specialization occurs via technical elective courses chosen from either department, tailoring a curriculum to a student’s interest and employers’ needs in a dynamic job market.\" Therefore, it is feasible to pursue interests in both hardware and AI within a Computer Engineering program.]",
+  "source_ids": [
+   "src_131",
+   "src_043",
+   "src_067"
+  ],
+  "retrieved_chunk_ids": [
+   "src_131_chunk_001",
+   "src_043_chunk_002",
+   "src_067_chunk_327",
+   "src_014_chunk_001",
+   "src_067_chunk_157"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 26.26
+ },
+ {
+  "key": "unseen|unseen_career_opportunities_010",
+  "set": "unseen",
+  "id": "unseen_career_opportunities_010",
+  "question": "Does OSTIM have a signed agreement that guarantees every CENG student a job offer?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ],
+  "status": "insufficient_information",
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "source_ids": [],
+  "retrieved_chunk_ids": [
+   "src_089_chunk_001",
+   "src_001_chunk_001",
+   "src_004_chunk_018"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 21.93
+ },
+ {
+  "key": "unseen|unseen_employment_prospects_007",
+  "set": "unseen",
+  "id": "unseen_employment_prospects_007",
+  "question": "What percentage of OSTIM CENG graduates get a job within six months?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ],
+  "status": "insufficient_information",
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "source_ids": [],
+  "retrieved_chunk_ids": [
+   "src_001_chunk_001",
+   "src_079_chunk_001",
+   "src_005_chunk_001"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 2.07
+ },
+ {
+  "key": "unseen|unseen_employment_prospects_008",
+  "set": "unseen",
+  "id": "unseen_employment_prospects_008",
+  "question": "What German-language level do employers in Germany usually ask new CENG graduates for?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ],
+  "status": "insufficient_information",
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "source_ids": [],
+  "retrieved_chunk_ids": [
+   "src_067_chunk_034",
+   "src_036_chunk_004",
+   "src_014_chunk_012",
+   "src_067_chunk_045",
+   "src_067_chunk_380"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 17.19
+ },
+ {
+  "key": "unseen|unseen_future_technologies_010",
+  "set": "unseen",
+  "id": "unseen_future_technologies_010",
+  "question": "If I start learning now, which programming language is going to be the main one for engineers in 2035?",
+  "previous_question": null,
+  "built_for": [
+   "programming_languages_passage",
+   "bounded_programming_language_answer"
+  ],
+  "status": "answered",
+  "answer": "The retrieved source states: \"Code functionality by primary programming language Which programming languages are being used for artificial intelligence (AI) and machine learning (ML)?\" [S1]. The retrieved evidence does not establish the rest [S1].",
+  "source_ids": [
+   "src_051"
+  ],
+  "retrieved_chunk_ids": [
+   "src_051_chunk_006",
+   "src_051_chunk_010",
+   "src_051_chunk_002",
+   "src_067_chunk_374",
+   "src_067_chunk_368"
+  ],
+  "answer_warnings": [
+   "local_llm_answer_replaced_with_extractive_fallback"
+  ],
+  "fallback_used": true,
+  "seconds": 11.47
+ },
+ {
+  "key": "rag_test|department_supported",
+  "set": "rag_test",
+  "id": "department_supported",
+  "question": "What is Computer Engineering at OSTIM Technical University?",
+  "previous_question": null,
+  "built_for": [
+   "computer_engineering_definition_passage",
+   "bounded_verified_partial_answer"
+  ],
+  "status": "answered",
+  "answer": "Computer Engineering is a four-year curriculum that focuses on the design and construction of processor-based systems, encompassing hardware, software, and communications components [S1]. This program, as described in [S1], synthesizes electrical engineering and computer science to design systems such as cellular communications, consumer electronics, medical imaging and devices, alarm systems, and military technologies. Upon graduation, students are prepared to design and implement systems that integrate software and hardware devices [S1]. [S1] provides a clear definition of what Computer Engineering entails.",
+  "source_ids": [
+   "src_042"
+  ],
+  "retrieved_chunk_ids": [
+   "src_042_chunk_002",
+   "src_080_chunk_001"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 16.88
+ },
+ {
+  "key": "rag_test|cybersecurity_careers",
+  "set": "rag_test",
+  "id": "cybersecurity_careers",
+  "question": "What cybersecurity careers can a Computer Engineering graduate do?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ],
+  "status": "answered",
+  "answer": "A Computer Engineering graduate can pursue various cybersecurity careers, including those of cybersecurity technicians and analysts, based on the curricular guidance provided [S4]. Graduates should possess basic knowledge and skills to help organizations defend their information systems against various cybersecurity threats [S3] [S4]. Additionally, the NICE Framework, provided by the National Institute of Standards and Technology, offers a workforce framework for cybersecurity, which can guide students in exploring different career pathways within the field [S2].",
+  "source_ids": [
+   "src_094",
+   "src_128",
+   "src_042"
+  ],
+  "retrieved_chunk_ids": [
+   "src_085_chunk_001",
+   "src_094_chunk_001",
+   "src_128_chunk_002",
+   "src_042_chunk_002",
+   "src_068_chunk_001"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 29.19
+ },
+ {
+  "key": "rag_test|future_supported",
+  "set": "rag_test",
+  "id": "future_supported",
+  "question": "Which future technologies are important for Computer Engineering students?",
+  "previous_question": null,
+  "built_for": [
+   "future_technologies_passage"
+  ],
+  "status": "insufficient_information",
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "source_ids": [],
+  "retrieved_chunk_ids": [
+   "src_129_chunk_001",
+   "src_067_chunk_085",
+   "src_004_chunk_014",
+   "src_067_chunk_084",
+   "src_067_chunk_021"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 26.72
+ },
+ {
+  "key": "rag_test|multi_topic",
+  "set": "rag_test",
+  "id": "multi_topic",
+  "question": "Should I focus more on GPA, projects, or internships when preparing for a software career?",
+  "previous_question": null,
+  "built_for": [
+   "gpa_screening_passage"
+  ],
+  "status": "answered",
+  "answer": "The National Association of Colleges and Employers (NACE) highlights that while GPA screening is becoming less common, it still matters in some contexts such as academic and scholarship applications [S2]. However, the NACE also emphasizes that employability depends on evidence of a student's ability to learn, communicate, solve problems, work with others, and complete technical work [S2]. Projects and internships are crucial for demonstrating these skills [S1] [S2].",
+  "source_ids": [
+   "src_127",
+   "src_091"
+  ],
+  "retrieved_chunk_ids": [
+   "src_127_chunk_001",
+   "src_091_chunk_001",
+   "src_067_chunk_119",
+   "src_034_chunk_002"
+  ],
+  "answer_warnings": [
+   "partial_answer"
+  ],
+  "fallback_used": false,
+  "seconds": 32.01
+ },
+ {
+  "key": "rag_test|unsupported_in_domain",
+  "set": "rag_test",
+  "id": "unsupported_in_domain",
+  "question": "What is the exact 2026 tuition fee for OSTIM Technical University Computer Engineering?",
+  "previous_question": null,
+  "built_for": [
+   "computer_engineering_definition_passage"
+  ],
+  "status": "insufficient_information",
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "source_ids": [],
+  "retrieved_chunk_ids": [
+   "src_089_chunk_001",
+   "src_108_chunk_001",
+   "src_088_chunk_001",
+   "src_079_chunk_001",
+   "src_058_chunk_001"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 0.29
+ },
+ {
+  "key": "retrieval_test|employment_001",
+  "set": "retrieval_test",
+  "id": "employment_001",
+  "question": "Is Computer Engineering still a good career choice?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ],
+  "status": "answered",
+  "answer": "Computer Engineering remains a good career choice, as it is a field with a strong demand for skilled professionals [S1]. The degree credential is necessary but not sufficient for securing employment; a combination of technical skills and soft skills such as communication and teamwork is also important [S1]. However, it is essential to address the perception that STEM fields are inherently masculine, as this can discourage women from pursuing these careers [S3].",
+  "source_ids": [
+   "src_067",
+   "src_045"
+  ],
+  "retrieved_chunk_ids": [
+   "src_067_chunk_080",
+   "src_067_chunk_163",
+   "src_045_chunk_363",
+   "src_045_chunk_370"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 26.79
+ },
+ {
+  "key": "retrieval_test|specializations_001",
+  "set": "retrieval_test",
+  "id": "specializations_001",
+  "question": "Which specialization can I choose in Computer Engineering?",
+  "previous_question": null,
+  "built_for": [
+   "specialization_areas_passage"
+  ],
+  "status": "answered",
+  "answer": "In Computer Engineering, you can choose from several subdisciplines, including Artificial intelligence, robotics, and cybernetics [S1] [S2]. This specialization area encompasses a variety of topics such as hardware systems, cyberphysical systems, foundations and theory, trust, reliability, and security, networking, mobile, and distributed computing, big data analytics and systems, and artificial intelligence, robotics, and cybernetics [S1].",
+  "source_ids": [
+   "src_131",
+   "src_043"
+  ],
+  "retrieved_chunk_ids": [
+   "src_131_chunk_001",
+   "src_043_chunk_002",
+   "src_043_chunk_001",
+   "src_067_chunk_327"
+  ],
+  "answer_warnings": [],
+  "fallback_used": false,
+  "seconds": 21.76
+ },
+ {
+  "key": "retrieval_test|work_life_001",
+  "set": "retrieval_test",
+  "id": "work_life_001",
+  "question": "What is work-life balance like for software and Computer Engineering careers?",
+  "previous_question": null,
+  "built_for": [
+   "computer_engineering_definition_passage",
+   "bounded_career_jobs_answer"
+  ],
+  "status": "answered",
+  "answer": "The retrieved source states: \"Other benefits include better work/life balance, experiencing new cultures, and meeting new people.\" [S3]. The retrieved evidence does not establish the rest [S3].",
+  "source_ids": [
+   "src_102"
+  ],
+  "retrieved_chunk_ids": [
+   "src_067_chunk_130",
+   "src_041_chunk_001",
+   "src_102_chunk_008",
+   "src_067_chunk_107"
+  ],
+  "answer_warnings": [
+   "local_llm_answer_replaced_with_extractive_fallback"
+  ],
+  "fallback_used": true,
+  "seconds": 28.92
+ }
+]

@@ -1,0 +1,1038 @@
+[
+ {
+  "set": "full_200",
+  "id": "F001",
+  "question": "What is Computer Engineering?",
+  "previous_question": null,
+  "built_for": [
+   "computer_engineering_definition_passage",
+   "bounded_verified_partial_answer"
+  ]
+ },
+ {
+  "set": "full_200",
+  "id": "F004",
+  "question": "Explain computer engineering to a high school student.",
+  "previous_question": null,
+  "built_for": [
+   "computer_engineering_definition_passage"
+  ]
+ },
+ {
+  "set": "full_200",
+  "id": "F005",
+  "question": "How is computer engineering different from computer science?",
+  "previous_question": null,
+  "built_for": [
+   "computer_engineering_definition_passage"
+  ]
+ },
+ {
+  "set": "full_200",
+  "id": "F012",
+  "question": "What is the difference between IT and Computer Engineering?",
+  "previous_question": null,
+  "built_for": [
+   "computer_engineering_definition_passage"
+  ]
+ },
+ {
+  "set": "full_200",
+  "id": "C015",
+  "question": "Are there operating systems courses in the program?",
+  "previous_question": null,
+  "built_for": [
+   "linux_operating_system_passage"
+  ]
+ },
+ {
+  "set": "full_200",
+  "id": "C020",
+  "question": "How much lab work is there in computer engineering?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_verified_partial_answer",
+   "bounded_career_jobs_answer"
+  ]
+ },
+ {
+  "set": "full_200",
+  "id": "M034",
+  "question": "What should I review before starting university: algebra, calculus, or coding?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_prior_programming_answer"
+  ]
+ },
+ {
+  "set": "full_200",
+  "id": "P039",
+  "question": "What programming languages should a Computer Engineering student learn?",
+  "previous_question": null,
+  "built_for": [
+   "programming_languages_passage",
+   "bounded_programming_language_answer"
+  ]
+ },
+ {
+  "set": "full_200",
+  "id": "P043",
+  "question": "Should every student learn Git and GitHub?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_git_github_answer"
+  ]
+ },
+ {
+  "set": "full_200",
+  "id": "P044",
+  "question": "linux important?",
+  "previous_question": null,
+  "built_for": [
+   "linux_operating_system_passage",
+   "bounded_verified_partial_answer"
+  ]
+ },
+ {
+  "set": "full_200",
+  "id": "P045",
+  "question": "Is Linux worth learning for embedded systems?",
+  "previous_question": null,
+  "built_for": [
+   "linux_operating_system_passage"
+  ]
+ },
+ {
+  "set": "full_200",
+  "id": "P049",
+  "question": "git hub learn necessery?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_git_github_answer"
+  ]
+ },
+ {
+  "set": "full_200",
+  "id": "P056",
+  "question": "How important is command line usage?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_verified_partial_answer"
+  ]
+ },
+ {
+  "set": "full_200",
+  "id": "H062",
+  "question": "What network skills are useful for cybersecurity?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_cybersecurity_pathway_answer"
+  ]
+ },
+ {
+  "set": "full_200",
+  "id": "H066",
+  "question": "What is the connection between operating systems and hardware?",
+  "previous_question": null,
+  "built_for": [
+   "linux_operating_system_passage"
+  ]
+ },
+ {
+  "set": "full_200",
+  "id": "A069",
+  "question": "Will artificial intelligence replace Computer Engineers?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_ai_replacement_answer"
+  ]
+ },
+ {
+  "set": "full_200",
+  "id": "A076",
+  "question": "Which future technologies should a CENG student follow?",
+  "previous_question": null,
+  "built_for": [
+   "future_technologies_passage"
+  ]
+ },
+ {
+  "set": "full_200",
+  "id": "Y084",
+  "question": "What skills should I build for cybersecurity?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_cybersecurity_pathway_answer"
+  ]
+ },
+ {
+  "set": "full_200",
+  "id": "Y088",
+  "question": "security career path from ceng?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_cybersecurity_pathway_answer",
+   "bounded_career_jobs_answer"
+  ]
+ },
+ {
+  "set": "full_200",
+  "id": "Y089",
+  "question": "Should I learn Linux for cyber security?",
+  "previous_question": null,
+  "built_for": [
+   "linux_operating_system_passage",
+   "bounded_cybersecurity_pathway_answer"
+  ]
+ },
+ {
+  "set": "full_200",
+  "id": "Y090",
+  "question": "Can I work in cloud security after CENG?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_verified_partial_answer"
+  ]
+ },
+ {
+  "set": "full_200",
+  "id": "Y094",
+  "question": "Can I learn security without doing illegal hacking?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_cybersecurity_pathway_answer"
+  ]
+ },
+ {
+  "set": "full_200",
+  "id": "R095",
+  "question": "What jobs can I do after graduating from Computer Engineering?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ]
+ },
+ {
+  "set": "full_200",
+  "id": "R096",
+  "question": "Is it easy to find a job after CENG?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ]
+ },
+ {
+  "set": "full_200",
+  "id": "R099",
+  "question": "Should I focus more on GPA, projects, or internships?",
+  "previous_question": null,
+  "built_for": [
+   "gpa_screening_passage"
+  ]
+ },
+ {
+  "set": "full_200",
+  "id": "R110",
+  "question": "Which specialization pays the most in Turkey?",
+  "previous_question": null,
+  "built_for": [
+   "specialization_areas_passage"
+  ]
+ },
+ {
+  "set": "full_200",
+  "id": "R111",
+  "question": "What is starting salary for OSTIM CENG graduates?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ]
+ },
+ {
+  "set": "full_200",
+  "id": "R118",
+  "question": "GPA project staj hangisi daha onemli?",
+  "previous_question": null,
+  "built_for": [
+   "gpa_screening_passage"
+  ]
+ },
+ {
+  "set": "full_200",
+  "id": "R119",
+  "question": "No experience, no internship, low GPA - what can I do?",
+  "previous_question": null,
+  "built_for": [
+   "gpa_screening_passage"
+  ]
+ },
+ {
+  "set": "full_200",
+  "id": "X142",
+  "question": "Compare focusing on GPA, internships, GitHub projects, and networking for getting a first software job.",
+  "previous_question": null,
+  "built_for": [
+   "gpa_screening_passage"
+  ]
+ },
+ {
+  "set": "full_200",
+  "id": "X148",
+  "question": "What should I learn before internship interviews: data structures, Git, Linux, or databases?",
+  "previous_question": null,
+  "built_for": [
+   "linux_operating_system_passage",
+   "bounded_git_github_answer"
+  ]
+ },
+ {
+  "set": "full_200",
+  "id": "X149",
+  "question": "I failed a course and my GPA is low; can projects and internships still help me?",
+  "previous_question": null,
+  "built_for": [
+   "gpa_screening_passage"
+  ]
+ },
+ {
+  "set": "full_200",
+  "id": "U153",
+  "question": "What is the exact job placement rate of OSTIM CENG graduates in 2026?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ]
+ },
+ {
+  "set": "full_200",
+  "id": "T186",
+  "question": "Does it include Linux?",
+  "previous_question": "Tell me about the curriculum.",
+  "built_for": [
+   "linux_operating_system_passage"
+  ]
+ },
+ {
+  "set": "full_200",
+  "id": "T187",
+  "question": "Is Linux important too?",
+  "previous_question": "I want cybersecurity.",
+  "built_for": [
+   "linux_operating_system_passage",
+   "bounded_verified_partial_answer"
+  ]
+ },
+ {
+  "set": "full_200",
+  "id": "T188",
+  "question": "Which one has more hardware?",
+  "previous_question": "Computer Engineering vs Computer Science?",
+  "built_for": [
+   "bounded_verified_partial_answer"
+  ]
+ },
+ {
+  "set": "full_200",
+  "id": "T196",
+  "question": "For cloud security?",
+  "previous_question": "How important are networks?",
+  "built_for": [
+   "bounded_verified_partial_answer"
+  ]
+ },
+ {
+  "set": "comprehensive",
+  "id": "q004",
+  "question": "What is the difference between Computer Engineering and Software Engineering?",
+  "previous_question": null,
+  "built_for": [
+   "computer_engineering_definition_passage"
+  ]
+ },
+ {
+  "set": "comprehensive",
+  "id": "q005",
+  "question": "What is the difference between Computer Engineering and Computer Science?",
+  "previous_question": null,
+  "built_for": [
+   "computer_engineering_definition_passage"
+  ]
+ },
+ {
+  "set": "comprehensive",
+  "id": "q008",
+  "question": "What programming languages are taught in Computer Engineering?",
+  "previous_question": null,
+  "built_for": [
+   "programming_languages_passage",
+   "bounded_programming_language_answer"
+  ]
+ },
+ {
+  "set": "comprehensive",
+  "id": "q009",
+  "question": "Do I need prior programming experience before starting Computer Engineering?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_prior_programming_answer"
+  ]
+ },
+ {
+  "set": "comprehensive",
+  "id": "q016",
+  "question": "Is it easy to find a job after graduating from Computer Engineering in Turkey?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ]
+ },
+ {
+  "set": "comprehensive",
+  "id": "q017",
+  "question": "Is Computer Engineering still a good career choice in the AI era?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ]
+ },
+ {
+  "set": "comprehensive",
+  "id": "q018",
+  "question": "Will AI replace software engineers and computer engineers?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_ai_replacement_answer"
+  ]
+ },
+ {
+  "set": "comprehensive",
+  "id": "q019",
+  "question": "What industries hire Computer Engineering graduates?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ]
+ },
+ {
+  "set": "comprehensive",
+  "id": "q022",
+  "question": "What are the most in-demand Computer Engineering jobs today?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ]
+ },
+ {
+  "set": "comprehensive",
+  "id": "q023",
+  "question": "Which specialization has the highest demand in the job market?",
+  "previous_question": null,
+  "built_for": [
+   "specialization_areas_passage"
+  ]
+ },
+ {
+  "set": "comprehensive",
+  "id": "q025",
+  "question": "Is the Computer Engineering job market becoming saturated?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ]
+ },
+ {
+  "set": "comprehensive",
+  "id": "q027",
+  "question": "Is Computer Engineering a future-proof career?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ]
+ },
+ {
+  "set": "comprehensive",
+  "id": "q030",
+  "question": "Is GPA more important than personal projects?",
+  "previous_question": null,
+  "built_for": [
+   "gpa_screening_passage"
+  ]
+ },
+ {
+  "set": "comprehensive",
+  "id": "q031",
+  "question": "What is the average starting salary for Computer Engineering graduates in Turkey or World?",
+  "previous_question": null,
+  "built_for": [
+   "computer_engineering_definition_passage",
+   "bounded_career_jobs_answer"
+  ]
+ },
+ {
+  "set": "comprehensive",
+  "id": "q032",
+  "question": "Which Computer Engineering specialization offers the highest salaries in Turkey?",
+  "previous_question": null,
+  "built_for": [
+   "specialization_areas_passage"
+  ]
+ },
+ {
+  "set": "comprehensive",
+  "id": "q035",
+  "question": "Can I become a cybersecurity specialist with a Computer Engineering degree?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_cybersecurity_pathway_answer"
+  ]
+ },
+ {
+  "set": "comprehensive",
+  "id": "q036",
+  "question": "Which programming language should I learn first?",
+  "previous_question": null,
+  "built_for": [
+   "programming_languages_passage",
+   "bounded_programming_language_answer"
+  ]
+ },
+ {
+  "set": "comprehensive",
+  "id": "q039",
+  "question": "Is learning Linux important for Computer Engineering students?",
+  "previous_question": null,
+  "built_for": [
+   "linux_operating_system_passage",
+   "bounded_verified_partial_answer"
+  ]
+ },
+ {
+  "set": "comprehensive",
+  "id": "q040",
+  "question": "Should every Computer Engineering student learn Git and GitHub?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_git_github_answer"
+  ]
+ },
+ {
+  "set": "comprehensive",
+  "id": "q049",
+  "question": "Which field of Computer Engineering is right for me?",
+  "previous_question": null,
+  "built_for": [
+   "specialization_areas_passage"
+  ]
+ },
+ {
+  "set": "comprehensive",
+  "id": "q051",
+  "question": "How do I discover which specialization I enjoy the most?",
+  "previous_question": null,
+  "built_for": [
+   "specialization_areas_passage"
+  ]
+ },
+ {
+  "set": "comprehensive",
+  "id": "q052",
+  "question": "Which specialization is expected to grow the fastest in the future?",
+  "previous_question": null,
+  "built_for": [
+   "specialization_areas_passage"
+  ]
+ },
+ {
+  "set": "comprehensive",
+  "id": "p007",
+  "question": "Is software engineering safer than computer engineering because AI is changing programming jobs?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ]
+ },
+ {
+  "set": "comprehensive",
+  "id": "p008",
+  "question": "What careers can combine cybersecurity with a computer engineering background?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ]
+ },
+ {
+  "set": "comprehensive",
+  "id": "p019",
+  "question": "Is computer engineering welcoming for women who want technical careers?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q001_reworded",
+  "question": "How would you explain the field of Computer Engineering?",
+  "previous_question": null,
+  "built_for": [
+   "computer_engineering_definition_passage",
+   "specialization_areas_passage"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q004_typo",
+  "question": "What is the diffeence between Computer Engineering and Software Engineering?",
+  "previous_question": null,
+  "built_for": [
+   "computer_engineering_definition_passage"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q005_typo",
+  "question": "What is the diffeence between Computer Engineering and Computer Science?",
+  "previous_question": null,
+  "built_for": [
+   "computer_engineering_definition_passage"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q009_informal",
+  "question": "need coding before starting comp eng",
+  "previous_question": null,
+  "built_for": [
+   "bounded_prior_programming_answer"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q009_typo",
+  "question": "Do I need pror programming experience before starting Computer Engineering?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_prior_programming_answer"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q011_reworded",
+  "question": "Compared with other engineering degrees, is Computer Engineering among the most difficult?",
+  "previous_question": null,
+  "built_for": [
+   "computer_engineering_definition_passage"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q016_reworded",
+  "question": "How difficult is it for a new Computer Engineering graduate to get hired in Turkey?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q016_typo",
+  "question": "Is it easy to find a job afer graduating from Computer Engineering in Turkey?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q017_reworded",
+  "question": "With artificial intelligence advancing, is Computer Engineering still worth pursuing as a career?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q019_typo",
+  "question": "What indusries hire Computer Engineering graduates?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q020_reworded",
+  "question": "Does a Computer Engineering degree allow graduates to seek employment in other countries?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q021_reworded",
+  "question": "Are there opportunities to do Computer Engineering work from home?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q022_reworded",
+  "question": "Which jobs available to Computer Engineering graduates are employers especially looking for?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q022_typo",
+  "question": "What are the most in-demnd Computer Engineering jobs today?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q023_typo",
+  "question": "Whch specialization has the highest demand in the job market?",
+  "previous_question": null,
+  "built_for": [
+   "specialization_areas_passage"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q025_reworded",
+  "question": "Are there now too many Computer Engineering graduates for the available jobs?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q027_reworded",
+  "question": "How secure is Computer Engineering as a career as technology changes?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q030_informal",
+  "question": "gpa or side projects which matters more",
+  "previous_question": null,
+  "built_for": [
+   "gpa_screening_passage"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q030_typo",
+  "question": "Is GPA more impotant than personal projects?",
+  "previous_question": null,
+  "built_for": [
+   "gpa_screening_passage"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q031_typo",
+  "question": "What is the aveage starting salary for Computer Engineering graduates in Turkey or World?",
+  "previous_question": null,
+  "built_for": [
+   "computer_engineering_definition_passage",
+   "bounded_career_jobs_answer"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q032_typo",
+  "question": "Whch Computer Engineering specialization offers the highest salaries in Turkey?",
+  "previous_question": null,
+  "built_for": [
+   "specialization_areas_passage"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q034_reworded",
+  "question": "Would a Computer Engineering degree be a route into an AI engineering career?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q035_typo",
+  "question": "Can I becme a cybersecurity specialist with a Computer Engineering degree?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_cybersecurity_pathway_answer"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q036_typo",
+  "question": "Whch programming language should I learn first?",
+  "previous_question": null,
+  "built_for": [
+   "programming_languages_passage",
+   "bounded_programming_language_answer"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q037_reworded",
+  "question": "What tools and technical areas should I know by the time I finish university?",
+  "previous_question": null,
+  "built_for": [
+   "specialization_areas_passage"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q039_reworded",
+  "question": "How useful is Linux knowledge for someone studying Computer Engineering?",
+  "previous_question": null,
+  "built_for": [
+   "linux_operating_system_passage"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q039_informal",
+  "question": "do comp eng students need linux",
+  "previous_question": null,
+  "built_for": [
+   "linux_operating_system_passage"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q039_typo",
+  "question": "Is learing Linux important for Computer Engineering students?",
+  "previous_question": null,
+  "built_for": [
+   "linux_operating_system_passage",
+   "bounded_verified_partial_answer"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q040_informal",
+  "question": "should comp eng students learn git github",
+  "previous_question": null,
+  "built_for": [
+   "bounded_git_github_answer"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q040_typo",
+  "question": "Shold every Computer Engineering student learn Git and GitHub?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_git_github_answer"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q049_reworded",
+  "question": "How can I choose the Computer Engineering area that best matches my interests and strengths?",
+  "previous_question": null,
+  "built_for": [
+   "specialization_areas_passage"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q049_informal",
+  "question": "which comp eng field suits me",
+  "previous_question": null,
+  "built_for": [
+   "specialization_areas_passage"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q049_typo",
+  "question": "Whch field of Computer Engineering is right for me?",
+  "previous_question": null,
+  "built_for": [
+   "specialization_areas_passage"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q051_typo",
+  "question": "How do I discver which specialization I enjoy the most?",
+  "previous_question": null,
+  "built_for": [
+   "specialization_areas_passage"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q052_reworded",
+  "question": "Which Computer Engineering area is forecast to expand most rapidly?",
+  "previous_question": null,
+  "built_for": [
+   "specialization_areas_passage"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q052_typo",
+  "question": "Whch specialization is expected to grow the fastest in the future?",
+  "previous_question": null,
+  "built_for": [
+   "specialization_areas_passage"
+  ]
+ },
+ {
+  "set": "paraphrase",
+  "id": "q058_reworded",
+  "question": "Are successful Computer Engineering careers open to women?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ]
+ },
+ {
+  "set": "unseen",
+  "id": "unseen_specialization_areas_002",
+  "question": "How would learning for cloud security differ from learning for embedded-device security?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_verified_partial_answer"
+  ]
+ },
+ {
+  "set": "unseen",
+  "id": "unseen_specialization_areas_008",
+  "question": "Can I mix interests like hardware and AI instead of sticking to only one specialization?",
+  "previous_question": null,
+  "built_for": [
+   "specialization_areas_passage"
+  ]
+ },
+ {
+  "set": "unseen",
+  "id": "unseen_career_opportunities_010",
+  "question": "Does OSTIM have a signed agreement that guarantees every CENG student a job offer?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ]
+ },
+ {
+  "set": "unseen",
+  "id": "unseen_employment_prospects_007",
+  "question": "What percentage of OSTIM CENG graduates get a job within six months?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ]
+ },
+ {
+  "set": "unseen",
+  "id": "unseen_employment_prospects_008",
+  "question": "What German-language level do employers in Germany usually ask new CENG graduates for?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ]
+ },
+ {
+  "set": "unseen",
+  "id": "unseen_future_technologies_010",
+  "question": "If I start learning now, which programming language is going to be the main one for engineers in 2035?",
+  "previous_question": null,
+  "built_for": [
+   "programming_languages_passage",
+   "bounded_programming_language_answer"
+  ]
+ },
+ {
+  "set": "rag_test",
+  "id": "department_supported",
+  "question": "What is Computer Engineering at OSTIM Technical University?",
+  "previous_question": null,
+  "built_for": [
+   "computer_engineering_definition_passage",
+   "bounded_verified_partial_answer"
+  ]
+ },
+ {
+  "set": "rag_test",
+  "id": "cybersecurity_careers",
+  "question": "What cybersecurity careers can a Computer Engineering graduate do?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ]
+ },
+ {
+  "set": "rag_test",
+  "id": "future_supported",
+  "question": "Which future technologies are important for Computer Engineering students?",
+  "previous_question": null,
+  "built_for": [
+   "future_technologies_passage"
+  ]
+ },
+ {
+  "set": "rag_test",
+  "id": "multi_topic",
+  "question": "Should I focus more on GPA, projects, or internships when preparing for a software career?",
+  "previous_question": null,
+  "built_for": [
+   "gpa_screening_passage"
+  ]
+ },
+ {
+  "set": "rag_test",
+  "id": "unsupported_in_domain",
+  "question": "What is the exact 2026 tuition fee for OSTIM Technical University Computer Engineering?",
+  "previous_question": null,
+  "built_for": [
+   "computer_engineering_definition_passage"
+  ]
+ },
+ {
+  "set": "retrieval_test",
+  "id": "employment_001",
+  "question": "Is Computer Engineering still a good career choice?",
+  "previous_question": null,
+  "built_for": [
+   "bounded_career_jobs_answer"
+  ]
+ },
+ {
+  "set": "retrieval_test",
+  "id": "specializations_001",
+  "question": "Which specialization can I choose in Computer Engineering?",
+  "previous_question": null,
+  "built_for": [
+   "specialization_areas_passage"
+  ]
+ },
+ {
+  "set": "retrieval_test",
+  "id": "work_life_001",
+  "question": "What is work-life balance like for software and Computer Engineering careers?",
+  "previous_question": null,
+  "built_for": [
+   "computer_engineering_definition_passage",
+   "bounded_career_jobs_answer"
+  ]
+ }
+]

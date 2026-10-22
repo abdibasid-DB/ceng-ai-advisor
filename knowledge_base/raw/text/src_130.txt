@@ -1,0 +1,4 @@
+Course Contents: CENG 303 Operating Systems Design & Construction (Linux or Windows)
+
+CENG 303 Operating Systems Design & Construction
+This course provides a comprehensive introduction to the fundamental concepts, principles, and design of modern operating systems. The course covers key topics such as process management, thread scheduling, synchronization, deadlocks, memory management, file systems, input/output systems, and security. Students learn how operating systems serve as the interface between hardware and software, managing resources and ensuring system stability and performance. The course combines theoretical foundations with hands-on experience, including practical exercises and projects that explore real-world operating system implementations such as Linux or Windows.

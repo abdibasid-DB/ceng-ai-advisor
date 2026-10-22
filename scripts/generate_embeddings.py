@@ -114,7 +114,7 @@ def main() -> None:
         nargs=2,
         type=Path,
         metavar=("CHUNKS_JSONL", "EMBEDDINGS_NPY"),
-        help="Reuse embeddings computed earlier with the same model, if their chunk IDs and texts match chunks.jsonl exactly.",
+        help="Reuse embeddings computed earlier with the same model for chunks whose ID and text are unchanged; only the rest are encoded.",
     )
     args = parser.parse_args()
 
@@ -124,24 +124,39 @@ def main() -> None:
 
     start_time = time.perf_counter()
     reused_from = None
+    previous: dict[tuple[str, str], np.ndarray] = {}
     if args.reuse:
         reuse_chunks = load_chunks(args.reuse[0])
-        if [(c["chunk_id"], c["text"]) for c in reuse_chunks] != [(c["chunk_id"], c["text"]) for c in chunks]:
-            raise SystemExit(f"{args.reuse[0]} does not match {CHUNKS_PATH}; embeddings cannot be reused.")
-        embeddings = np.load(args.reuse[1])
+        reuse_embeddings = np.load(args.reuse[1])
+        if len(reuse_chunks) != len(reuse_embeddings):
+            raise SystemExit(f"{args.reuse[0]} and {args.reuse[1]} have different lengths.")
+        previous = {(chunk["chunk_id"], chunk["text"]): vector for chunk, vector in zip(reuse_chunks, reuse_embeddings)}
         reused_from = [str(path).replace("\\", "/") for path in args.reuse]
-        device = "reused"
-    else:
+
+    # Only chunks whose ID and text are new or changed are encoded.
+    to_encode = [index for index, chunk in enumerate(chunks) if (chunk["chunk_id"], chunk["text"]) not in previous]
+    embeddings = np.zeros((len(chunks), 0), dtype=np.float32)
+    device = "reused"
+    if to_encode:
         model = SentenceTransformer(args.model)
         model.max_seq_length = MAX_SEQ_LENGTH
-        embeddings = model.encode(
-            texts,
+        encoded = model.encode(
+            [texts[index] for index in to_encode],
             batch_size=args.batch_size,
             normalize_embeddings=NORMALIZE_EMBEDDINGS,
             convert_to_numpy=True,
             show_progress_bar=True,
         )
         device = str(getattr(model, "device", "unknown"))
+        embeddings = np.zeros((len(chunks), encoded.shape[1]), dtype=np.float32)
+        for row, index in enumerate(to_encode):
+            embeddings[index] = encoded[row]
+    for index, chunk in enumerate(chunks):
+        vector = previous.get((chunk["chunk_id"], chunk["text"]))
+        if vector is not None:
+            if embeddings.shape[1] == 0:
+                embeddings = np.zeros((len(chunks), vector.shape[0]), dtype=np.float32)
+            embeddings[index] = vector
     elapsed_seconds = round(time.perf_counter() - start_time, 2)
     embeddings = embeddings.astype(np.float32, copy=False)
 
@@ -165,6 +180,8 @@ def main() -> None:
         "embedding_dimension": validation["embedding_dimension"],
         "max_seq_length": MAX_SEQ_LENGTH,
         "reused_from": reused_from,
+        "reused_embeddings": len(chunks) - len(to_encode),
+        "newly_encoded_embeddings": len(to_encode),
         "total_chunks": len(chunks),
         "total_embeddings": validation["total_embeddings"],
         "normalization_setting": NORMALIZE_EMBEDDINGS,

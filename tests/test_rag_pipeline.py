@@ -14,11 +14,8 @@ from backend.app.rag.rag_pipeline import (
     OUT_OF_SCOPE,
     RAG_NUM_PREDICT,
     RAGPipeline,
-    augment_context_results,
     build_context,
-    bounded_verified_partial_answer,
     select_context_results,
-    specialization_areas_passage,
     unsupported_answerability_reason,
     unsupported_category_reason,
     unsupported_generated_answer_reason,
@@ -123,6 +120,14 @@ class FakeStreamingLLM(FakeLLM):
 
 
 class RAGPipelineTests(unittest.TestCase):
+
+    def assert_overreach_withheld(self, result, phrase):
+        """An overreaching generation is replaced by a verbatim source excerpt or refused, never shown."""
+        self.assertNotIn(phrase.lower(), (result["answer"] or "").lower())
+        if result["status"] == ANSWERED:
+            self.assertTrue(result["answer"].startswith("The retrieved source states:"), result["answer"])
+        else:
+            self.assertEqual(result["status"], INSUFFICIENT_INFORMATION)
     def test_valid_question_invokes_llm(self):
         llm = FakeLLM()
         result = RAGPipeline(retriever=FakeRetriever(retrieval_result()), llm_service=llm).answer("What is Computer Engineering?")
@@ -736,164 +741,20 @@ class RAGPipelineTests(unittest.TestCase):
         selected = select_context_results("What fields are available in Computer Engineering?", results)
         self.assertEqual(selected[0]["source_id"], "src_043")
 
-    def test_specialization_areas_passage_extracts_source_list(self):
-        passage = specialization_areas_passage()
-        self.assertIn("Hardware systems", passage)
-        self.assertIn("Trust, reliability, and security", passage)
-        self.assertIn("Artificial intelligence, robotics, and cybernetics", passage)
-
-    def test_fields_question_enriches_subdiscipline_source(self):
-        results = [
-            {
-                "chunk_id": "src_043_chunk_001",
-                "source_id": "src_043",
-                "category": "specializations",
-                "title": "Subdisciplines",
-                "text": "Computer engineering branches into many areas.",
-            }
-        ]
-        enriched = augment_context_results("What fields are available in Computer Engineering?", results)
-        self.assertEqual(enriched[0]["chunk_id"], "src_043_specialization_areas")
-        self.assertIn("Hardware systems", enriched[0]["text"])
-
-    def test_gpa_project_question_enriches_gpa_screening_evidence(self):
-        results = [
-            {
-                "chunk_id": "src_036_chunk_003",
-                "source_id": "src_036",
-                "category": "employment",
-                "title": "Resumes",
-                "text": "A portfolio can show projects and experience.",
-            }
-        ]
-        enriched = augment_context_results("Is GPA more important than personal projects?", results)
-        self.assertEqual(enriched[0]["chunk_id"], "src_033_gpa_screening")
-        self.assertIn("candidate screening", enriched[0]["text"])
-        self.assertIn("skills-based hiring", enriched[0]["text"])
-
-    def test_definition_question_enriches_precise_computer_engineering_evidence(self):
-        results = [
-            {
-                "chunk_id": "src_067_chunk_001",
-                "source_id": "src_067",
-                "category": "curriculum",
-                "title": "Computer Engineering Curricula 2016",
-                "text": "This chapter presents characteristics that distinguish computer engineering from other computing disciplines.",
-            }
-        ]
-        enriched = augment_context_results("What is Computer Engineering?", results)
-        self.assertEqual(enriched[0]["chunk_id"], "src_042_computer_engineering_definition")
-        self.assertIn("Computer Engineering involves", enriched[0]["text"])
-        self.assertIn("hardware, software", enriched[0]["text"])
-
-    def test_it_comparison_definition_enrichment_includes_it_evidence(self):
-        enriched = augment_context_results("What is the difference between IT and Computer Engineering?", [])
-        self.assertEqual(enriched[0]["chunk_id"], "src_042_computer_engineering_definition")
-        self.assertIn("Computer Engineering involves", enriched[0]["text"])
-        self.assertIn("Information Technology involves", enriched[0]["text"])
-
-    def test_it_comparison_context_keeps_it_sentence_before_truncation(self):
-        enriched = augment_context_results("Compare Information Technology with Computer Engineering.", [])
-        selected = select_context_results("Compare Information Technology with Computer Engineering.", enriched)
-        context_items, context_text = build_context(selected)
-        self.assertEqual(context_items[0]["source_id"], "src_042")
-        self.assertIn("Computer Engineering involves", context_text)
-        self.assertIn("Information Technology involves", context_text)
-
-    def test_future_technology_question_adds_precise_new_trends_context_when_retrieved(self):
-        results = [
-            {
-                "chunk_id": "src_063_chunk_001",
-                "source_id": "src_063",
-                "text": "CENG 316 New Trends in Computer Engineering is a course syllabus.",
-                "title": "CENG 316 New Trends in Computer Engineering Course Syllabus",
-                "source_name": "OSTIM Technical University",
-                "url": "https://example.edu/ceng-316",
-                "category": "curriculum",
-                "section_heading": "Course syllabus",
-                "similarity_score": 0.45,
-                "distance": 0.55,
-                "metadata": {"source_type": "official_course_syllabus"},
-            }
-        ]
-        enriched = augment_context_results("Which future technologies should a CENG student follow?", results)
-        self.assertEqual(enriched[0]["chunk_id"], "src_063_future_technologies")
-        self.assertIn("Artificial Intelligence", enriched[0]["text"])
-        self.assertIn("Cloud Computing", enriched[0]["text"])
-        self.assertIn("Quantum Computing", enriched[0]["text"])
-        self.assertIn("does not rank", enriched[0]["text"])
-
-    def test_modern_tech_topics_paraphrase_adds_new_trends_context_when_retrieved(self):
-        results = [
-            {
-                "chunk_id": "src_063_chunk_001",
-                "source_id": "src_063",
-                "text": "CENG 316 New Trends in Computer Engineering is a course syllabus.",
-                "title": "CENG 316 New Trends in Computer Engineering Course Syllabus",
-                "category": "curriculum",
-            }
-        ]
-        enriched = augment_context_results("Which modern tech topics are covered for CENG students?", results)
-        self.assertEqual(enriched[0]["chunk_id"], "src_063_future_technologies")
-        self.assertIn("Artificial Intelligence", enriched[0]["text"])
-        self.assertIn("does not rank", enriched[0]["text"])
-
-    def test_future_technology_context_is_compact_and_claim_bounded(self):
-        enriched = augment_context_results(
-            "What emerging technologies should Computer Engineering students track?",
-            [
-                {
-                    "chunk_id": "src_063_chunk_001",
-                    "source_id": "src_063",
-                    "text": "CENG 316 New Trends in Computer Engineering covers emerging technologies.",
-                    "title": "CENG 316 New Trends in Computer Engineering Course Syllabus",
-                    "category": "curriculum",
-                }
-            ],
-        )
-        context_items, context_text = build_context(enriched)
-        self.assertLess(len(context_items[0]["passage"]), 900)
-        self.assertIn("weekly schedule names", context_text)
-        self.assertIn("does not rank", context_text)
-
-    def test_future_technology_question_does_not_attach_unretrieved_source(self):
-        results = [
-            {
-                "chunk_id": "src_001_chunk_001",
-                "source_id": "src_001",
-                "text": "Computer Engineering combines software, hardware, and systems topics.",
-                "title": "About the Department",
-                "category": "department_information",
-            }
-        ]
-        enriched = augment_context_results("Which future technologies should a CENG student follow?", results)
-        self.assertEqual(enriched, results)
-
-    def test_programming_language_question_adds_official_course_language_context(self):
-        results = [
-            {
-                "chunk_id": "src_067_chunk_130",
-                "source_id": "src_067",
-                "text": "Computer engineering curricula mention programming but do not specify local course languages.",
-                "title": "Computer Engineering Curricula 2016",
-                "category": "curriculum",
-            }
-        ]
-        enriched = augment_context_results("Which programming languages are taught in CENG?", results)
-        self.assertEqual(enriched[0]["chunk_id"], "src_004_programming_languages")
-        self.assertIn("CENG109 Programming and Computation I", enriched[0]["text"])
-        self.assertIn("Python or C++", enriched[0]["text"])
-
     def test_programming_language_question_uses_official_context_in_answer(self):
         retrieval = retrieval_result()
         retrieval["results"] = [
             {
                 **retrieval["results"][0],
-                "chunk_id": "src_067_chunk_130",
-                "source_id": "src_067",
-                "text": "Computer engineering curricula mention programming languages generally.",
-                "title": "Computer Engineering Curricula 2016",
-                "category": "curriculum",
+                "chunk_id": "src_126_chunk_001",
+                "source_id": "src_126",
+                "text": (
+                    "CENG109 Programming and Computation I. CENG110 Programming and Computation II. "
+                    "SENG116 Object Oriented Programming: through hands-on projects and coding exercises, students gain "
+                    "practical experience in building robust software systems using object-oriented languages such as Python or C++."
+                ),
+                "title": "Course Contents: programming courses (CENG109, CENG110, SENG116)",
+                "category": "programming",
             }
         ]
         result = RAGPipeline(
@@ -908,7 +769,7 @@ class RAGPipelineTests(unittest.TestCase):
         self.assertEqual(result["status"], ANSWERED)
         self.assertEqual(result["citation_metadata"]["cited_labels"], ["S1"])
 
-    def test_programming_language_overinference_gets_bounded_fallback(self):
+    def test_programming_language_overinference_is_withheld(self):
         retrieval = retrieval_result()
         retrieval["results"] = [
             {
@@ -929,11 +790,9 @@ class RAGPipelineTests(unittest.TestCase):
                 )
             ),
         ).answer("Which programming languages are taught in CENG?")
-        self.assertEqual(result["status"], ANSWERED)
-        self.assertIn("does not name a specific language for those two course descriptions", result["answer"])
-        self.assertIn("Python or C++", result["answer"])
+        self.assert_overreach_withheld(result, "might be introduced")
 
-    def test_programming_language_could_be_bridge_gets_bounded_fallback(self):
+    def test_programming_language_could_be_bridge_is_withheld(self):
         retrieval = retrieval_result()
         retrieval["results"] = [
             {
@@ -954,11 +813,9 @@ class RAGPipelineTests(unittest.TestCase):
                 )
             ),
         ).answer("Which programming languages are taught in CENG?")
-        self.assertEqual(result["status"], ANSWERED)
-        self.assertIn("does not name a specific language for those two course descriptions", result["answer"])
-        self.assertNotIn("could be either", result["answer"].lower())
+        self.assert_overreach_withheld(result, "could be either")
 
-    def test_prior_programming_requirement_overreach_gets_bounded_fallback(self):
+    def test_prior_programming_requirement_overreach_is_withheld(self):
         retrieval = retrieval_result()
         retrieval["results"] = [
             {
@@ -975,11 +832,9 @@ class RAGPipelineTests(unittest.TestCase):
             retriever=FakeRetriever(retrieval),
             llm_service=FakeLLM(text="Prior programming experience is not strictly required but is beneficial for starting the computer engineering program [S1]."),
         ).answer("Do I need prior programming experience before starting Computer Engineering?")
-        self.assertEqual(result["status"], ANSWERED)
-        self.assertIn("does not state that prior programming experience is required", result["answer"])
-        self.assertNotIn("beneficial for starting the computer engineering program", result["answer"].lower())
+        self.assert_overreach_withheld(result, "beneficial for starting the computer engineering program")
 
-    def test_git_github_invalid_generation_gets_bounded_fallback(self):
+    def test_git_github_invalid_generation_is_withheld(self):
         retrieval = retrieval_result()
         retrieval["results"] = [
             {
@@ -996,9 +851,7 @@ class RAGPipelineTests(unittest.TestCase):
             retriever=FakeRetriever(retrieval),
             llm_service=FakeLLM(responses=["Every student must learn GitHub.", "Every student must learn GitHub."]),
         ).answer("Should every student learn Git and GitHub?")
-        self.assertEqual(result["status"], ANSWERED)
-        self.assertIn("does not prove that every Computer Engineering student must learn GitHub", result["answer"])
-        self.assertIn("version-control", result["answer"])
+        self.assert_overreach_withheld(result, "every student must learn github")
 
     def test_command_line_importance_claim_requires_direct_importance_evidence(self):
         context_items = [
@@ -1064,7 +917,7 @@ class RAGPipelineTests(unittest.TestCase):
         )
         self.assertIn("rated future technologies", reason)
 
-    def test_future_technology_overreach_gets_bounded_extract_fallback(self):
+    def test_future_technology_overreach_is_withheld(self):
         retrieval = retrieval_result()
         retrieval["results"] = [
             {
@@ -1080,10 +933,7 @@ class RAGPipelineTests(unittest.TestCase):
             retriever=FakeRetriever(retrieval),
             llm_service=FakeLLM(text="AI and machine learning will have significant growth in the future [S1]."),
         ).answer("Which future technologies should a CENG student follow?")
-        self.assertEqual(result["status"], ANSWERED)
-        self.assertIn("The KB supports saying", result["answer"])
-        self.assertIn("does not rank", result["answer"])
-        self.assertIn("[S1]", result["answer"])
+        self.assert_overreach_withheld(result, "significant growth in the future")
 
     def test_non_curriculum_context_prefers_unique_sources(self):
         results = [
@@ -1114,15 +964,6 @@ class RAGPipelineTests(unittest.TestCase):
         self.assertTrue(context[0]["title"].startswith("Curated note:"))
         self.assertEqual(context[0]["source_type"], "curated_source_note")
         self.assertIn("summary based on Altera", prompt)
-
-    def test_valid_bounded_fallback_avoids_citation_retry(self):
-        retrieval = retrieval_result()
-        retrieval["results"] = [{**retrieval["results"][0], "text": "Laboratory experiences are crucial in computer engineering curricula."}]
-        llm = FakeLLM(text="Every computer engineering program requires 28 lab hours.")
-        result = RAGPipeline(retriever=FakeRetriever(retrieval), llm_service=llm).answer("How much lab work is in Computer Engineering?")
-        self.assertEqual(result["status"], ANSWERED)
-        self.assertEqual(llm.calls, 1)
-        self.assertFalse(result["citation_metadata"]["retry_attempted"])
 
     def test_failed_generation_uses_relevant_digital_logic_excerpt(self):
         retrieval = retrieval_result()
@@ -1244,41 +1085,6 @@ class RAGPipelineTests(unittest.TestCase):
         ]
         reason = unsupported_answerability_reason("Should Computer Engineering students learn Linux?", results)
         self.assertIsNone(reason)
-
-    def test_linux_question_adds_precise_operating_system_context_when_supported(self):
-        results = [
-            {
-                "chunk_id": "src_064_chunk_001",
-                "source_id": "src_064",
-                "text": "Operating Systems Design and Construction covers process management and operating system concepts.",
-                "title": "CENG 303 Operating Systems Design and Construction Course Syllabus",
-                "source_name": "OSTIM Technical University",
-                "url": "https://example.edu/os",
-                "category": "curriculum",
-                "section_heading": "Course syllabus",
-                "similarity_score": 0.42,
-                "distance": 0.58,
-                "metadata": {"source_type": "official_course_syllabus"},
-            }
-        ]
-        enriched = augment_context_results("Is learning Linux important for Computer Engineering students?", results)
-        self.assertEqual(enriched[0]["chunk_id"], "src_004_linux_operating_systems")
-        self.assertIn("Linux or Windows", enriched[0]["text"])
-        selected = select_context_results("Is learning Linux important for Computer Engineering students?", enriched)
-        self.assertEqual(selected[0]["chunk_id"], "src_004_linux_operating_systems")
-
-    def test_linux_question_does_not_add_context_without_retrieved_os_support(self):
-        results = [
-            {
-                "chunk_id": "src_001_chunk_001",
-                "source_id": "src_001",
-                "text": "Computer Engineering combines software, hardware, and systems topics.",
-                "title": "About the Department",
-                "category": "department_information",
-            }
-        ]
-        enriched = augment_context_results("Is learning Linux important for Computer Engineering students?", results)
-        self.assertEqual(enriched, results)
 
     def test_answerability_accepts_git_github_version_control_evidence(self):
         results = [
@@ -1473,7 +1279,7 @@ class RAGPipelineTests(unittest.TestCase):
         self.assertIn("do not invent a universal ranking", llm.prompts[0])
         self.assertNotIn("unsupported_reason", result["retrieval_metadata"])
 
-    def test_gpa_projects_internships_generated_ranking_becomes_bounded_partial(self):
+    def test_gpa_projects_internships_generated_ranking_is_withheld(self):
         retrieval = retrieval_result()
         retrieval["results"] = [
             {
@@ -1494,11 +1300,9 @@ class RAGPipelineTests(unittest.TestCase):
                 )
             ),
         ).answer("Should I focus more on GPA, projects, or internships when preparing for a software career?")
-        self.assertEqual(result["status"], ANSWERED)
-        self.assertIn("does not establish the rest", result["answer"])
-        self.assertNotIn("focus on projects and internships over GPA", result["answer"])
+        self.assert_overreach_withheld(result, "focus on projects and internships over GPA")
 
-    def test_ai_replacement_generated_definite_claim_is_replaced_with_bounded_answer(self):
+    def test_ai_replacement_generated_definite_claim_is_withheld(self):
         retrieval = retrieval_result()
         retrieval["results"] = [
             {
@@ -1512,11 +1316,9 @@ class RAGPipelineTests(unittest.TestCase):
             retriever=FakeRetriever(retrieval),
             llm_service=FakeLLM(text="AI will not replace computer engineers because they can learn new skills [S1]."),
         ).answer("Will artificial intelligence replace Computer Engineers?")
-        self.assertEqual(result["status"], ANSWERED)
-        self.assertIn("does not establish whether AI will replace", result["answer"])
-        self.assertNotIn("will not replace computer engineers", result["answer"].lower())
+        self.assert_overreach_withheld(result, "will not replace computer engineers")
 
-    def test_ai_replacement_invalid_generation_gets_bounded_fallback(self):
+    def test_ai_replacement_invalid_generation_is_withheld(self):
         retrieval = retrieval_result()
         retrieval["results"] = [
             {
@@ -1541,11 +1343,9 @@ class RAGPipelineTests(unittest.TestCase):
                 ]
             ),
         ).answer("Will artificial intelligence replace Computer Engineers?")
-        self.assertEqual(result["status"], ANSWERED)
-        self.assertIn("does not establish whether AI will replace", result["answer"])
-        self.assertEqual(result["citation_metadata"]["cited_labels"], ["S1", "S2"])
+        self.assert_overreach_withheld(result, "will not replace computer engineers")
 
-    def test_ai_replacement_model_insufficient_gets_bounded_fallback_when_evidence_exists(self):
+    def test_ai_replacement_model_insufficient_gives_no_template_answer(self):
         retrieval = retrieval_result()
         retrieval["results"] = [
             {
@@ -1559,8 +1359,7 @@ class RAGPipelineTests(unittest.TestCase):
             retriever=FakeRetriever(retrieval),
             llm_service=FakeLLM(text="INSUFFICIENT_INFORMATION"),
         ).answer("Will artificial intelligence replace Computer Engineers?")
-        self.assertEqual(result["status"], ANSWERED)
-        self.assertIn("does not establish whether AI will replace", result["answer"])
+        self.assert_overreach_withheld(result, "will not replace")
 
     def test_cybersecurity_pathway_question_accepts_cybersecurity_framework_evidence(self):
         results = [
@@ -1573,7 +1372,7 @@ class RAGPipelineTests(unittest.TestCase):
         reason = unsupported_answerability_reason("How can I become a cybersecurity specialist?", results)
         self.assertIsNone(reason)
 
-    def test_cybersecurity_certification_overreach_gets_bounded_fallback(self):
+    def test_cybersecurity_certification_overreach_is_withheld(self):
         retrieval = retrieval_result()
         retrieval["results"] = [
             {
@@ -1587,11 +1386,9 @@ class RAGPipelineTests(unittest.TestCase):
             retriever=FakeRetriever(retrieval),
             llm_service=FakeLLM(text="You should take cybersecurity courses and certifications to become a specialist [S1]."),
         ).answer("How can I become a cybersecurity specialist?")
-        self.assertEqual(result["status"], ANSWERED)
-        self.assertIn("does not justify", result["answer"])
-        self.assertNotIn("you should take cybersecurity courses and certifications", result["answer"].lower())
+        self.assert_overreach_withheld(result, "you should take cybersecurity courses and certifications")
 
-    def test_cybersecurity_generic_pathway_advice_gets_bounded_fallback(self):
+    def test_cybersecurity_generic_pathway_advice_is_withheld(self):
         retrieval = retrieval_result()
         retrieval["results"] = [
             {
@@ -1610,11 +1407,9 @@ class RAGPipelineTests(unittest.TestCase):
                 )
             ),
         ).answer("How can I become a cybersecurity specialist?")
-        self.assertEqual(result["status"], ANSWERED)
-        self.assertIn("Use the cybersecurity workforce framework", result["answer"])
-        self.assertNotIn("continuing professional development will be beneficial", result["answer"].lower())
+        self.assert_overreach_withheld(result, "continuing professional development will be beneficial")
 
-    def test_career_question_invalid_generation_gets_bounded_fallback(self):
+    def test_career_question_invalid_generation_is_withheld(self):
         retrieval = retrieval_result()
         retrieval["results"] = [
             {
@@ -1637,11 +1432,9 @@ class RAGPipelineTests(unittest.TestCase):
             retriever=FakeRetriever(retrieval),
             llm_service=FakeLLM(responses=["Computer engineering graduates can work in many jobs.", "They can work in hardware."]),
         ).answer("What jobs can Computer Engineering graduates do?")
-        self.assertEqual(result["status"], ANSWERED)
-        self.assertIn("business, industry, government", result["answer"])
-        self.assertIn("computer hardware engineer", result["answer"].lower())
+        self.assert_overreach_withheld(result, "can work in many jobs")
 
-    def test_career_question_broad_role_overreach_gets_bounded_fallback(self):
+    def test_career_question_broad_role_overreach_is_withheld(self):
         retrieval = retrieval_result()
         retrieval["results"] = [
             {
@@ -1669,9 +1462,7 @@ class RAGPipelineTests(unittest.TestCase):
                 )
             ),
         ).answer("What jobs can Computer Engineering graduates do?")
-        self.assertEqual(result["status"], ANSWERED)
-        self.assertIn("business, industry, government", result["answer"])
-        self.assertNotIn("mobile application developers", result["answer"].lower())
+        self.assert_overreach_withheld(result, "mobile application developers")
 
     def test_work_abroad_is_not_answered_with_generic_career_sectors(self):
         retrieval = retrieval_result()
@@ -1704,34 +1495,6 @@ class RAGPipelineTests(unittest.TestCase):
         )
         self.assertIn("sample course hours", reason)
 
-    def test_fpga_course_order_needs_direct_prerequisite_evidence(self):
-        context = [{"label": "S1", "passage": "An FPGA is a reconfigurable integrated circuit used to implement digital hardware."}]
-        reason = unsupported_generated_answer_reason(
-            "Can I build an FPGA project before taking digital logic?",
-            "It is not recommended to build an FPGA project before digital logic [S1].",
-            context,
-        )
-        self.assertIn("prerequisite", reason)
-        self.assertIn("does not state", bounded_verified_partial_answer(
-            "Can I build an FPGA project before taking digital logic?", context
-        ))
-
-    def test_ai_math_partial_answer_distinguishes_foundation_from_requirement(self):
-        answer = bounded_verified_partial_answer(
-            "Does studying AI in CENG require linear algebra and probability?",
-            [{"label": "S1", "passage": "Linear algebra and probability are important foundations for machine learning."}],
-        )
-        self.assertIn("foundations", answer)
-        self.assertIn("does not establish an OSTIM CENG course requirement", answer)
-
-    def test_command_line_partial_answer_uses_shell_evidence(self):
-        answer = bounded_verified_partial_answer(
-            "How important is command line usage?",
-            [{"label": "S1", "passage": "The shell lets students navigate files, run programs, automate tasks, inspect logs, and work on remote machines."}],
-        )
-        self.assertIn("navigate files", answer)
-        self.assertIn("does not say they are mandatory", answer)
-
     def test_math_foundation_is_not_a_degree_requirement(self):
         reason = unsupported_generated_answer_reason(
             "Does studying AI in CENG require linear algebra and probability?",
@@ -1748,23 +1511,6 @@ class RAGPipelineTests(unittest.TestCase):
             [{"label": "S1", "passage": passage}],
         )
         self.assertIn("unsupported CENG/CS hardware ranking", reason)
-        partial = bounded_verified_partial_answer(
-            "Which one has more hardware? Regarding Computer Engineering vs Computer Science.",
-            [{"label": "S1", "passage": passage}],
-        )
-        self.assertIn("does not quantify", partial)
-
-    def test_linux_course_does_not_prove_field_wide_importance(self):
-        passage = "CENG 303 Operating Systems Design & Construction explores Linux or Windows."
-        reason = unsupported_generated_answer_reason(
-            "Is Linux important too? (Computer Engineering)",
-            "Linux is important in Computer Engineering [S1].",
-            [{"label": "S1", "passage": passage}],
-        )
-        self.assertIn("field-wide", reason)
-        self.assertIn("CENG 303", bounded_verified_partial_answer(
-            "Is Linux important too? (Computer Engineering)", [{"label": "S1", "passage": passage}]
-        ))
 
     def test_definition_cannot_invent_disciplinary_position(self):
         reason = unsupported_generated_answer_reason(

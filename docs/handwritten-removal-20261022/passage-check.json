@@ -1,0 +1,863 @@
+{
+ "programming_languages_passage": {
+  "source_id": "src_004",
+  "key_text": [
+   "object-oriented languages such as python or c++"
+  ],
+  "questions": 5,
+  "covered": 0,
+  "decision": "curated_source_note",
+  "rows": [
+   {
+    "set": "full_200",
+    "id": "P039",
+    "question": "What programming languages should a Computer Engineering student learn?",
+    "covered_by": null,
+    "top5": [
+     "src_067_chunk_380",
+     "src_081_chunk_001",
+     "src_067_chunk_162",
+     "src_080_chunk_001",
+     "src_087_chunk_001"
+    ]
+   },
+   {
+    "set": "comprehensive",
+    "id": "q008",
+    "question": "What programming languages are taught in Computer Engineering?",
+    "covered_by": null,
+    "top5": [
+     "src_067_chunk_328",
+     "src_067_chunk_380",
+     "src_067_chunk_162",
+     "src_080_chunk_001",
+     "src_051_chunk_010"
+    ]
+   },
+   {
+    "set": "comprehensive",
+    "id": "q036",
+    "question": "Which programming language should I learn first?",
+    "covered_by": null,
+    "top5": [
+     "src_051_chunk_006",
+     "src_051_chunk_010",
+     "src_051_chunk_002",
+     "src_067_chunk_374",
+     "src_067_chunk_368"
+    ]
+   },
+   {
+    "set": "paraphrase",
+    "id": "q036_typo",
+    "question": "Whch programming language should I learn first?",
+    "covered_by": null,
+    "top5": [
+     "src_051_chunk_006",
+     "src_051_chunk_010",
+     "src_051_chunk_002",
+     "src_067_chunk_374",
+     "src_087_chunk_001"
+    ]
+   },
+   {
+    "set": "unseen",
+    "id": "unseen_future_technologies_010",
+    "question": "If I start learning now, which programming language is going to be the main one for engineers in 2035?",
+    "covered_by": null,
+    "top5": [
+     "src_051_chunk_003",
+     "src_051_chunk_002",
+     "src_067_chunk_368",
+     "src_051_chunk_005",
+     "src_004_chunk_003"
+    ]
+   }
+  ]
+ },
+ "gpa_screening_passage": {
+  "source_id": "src_033",
+  "key_text": [
+   "gpa as a candidate screening tool has fallen into disfavor"
+  ],
+  "questions": 9,
+  "covered": 3,
+  "decision": "curated_source_note",
+  "rows": [
+   {
+    "set": "full_200",
+    "id": "R099",
+    "question": "Should I focus more on GPA, projects, or internships?",
+    "covered_by": "src_033_chunk_001",
+    "top5": [
+     "src_091_chunk_001",
+     "src_034_chunk_002",
+     "src_036_chunk_006",
+     "src_033_chunk_001",
+     "src_031_chunk_204"
+    ]
+   },
+   {
+    "set": "full_200",
+    "id": "R118",
+    "question": "GPA project staj hangisi daha onemli?",
+    "covered_by": null,
+    "top5": [
+     "src_091_chunk_001",
+     "src_031_chunk_204",
+     "src_067_chunk_119",
+     "src_036_chunk_009",
+     "src_034_chunk_002"
+    ]
+   },
+   {
+    "set": "full_200",
+    "id": "R119",
+    "question": "No experience, no internship, low GPA - what can I do?",
+    "covered_by": null,
+    "top5": [
+     "src_091_chunk_001",
+     "src_074_chunk_010",
+     "src_036_chunk_006",
+     "src_018_chunk_002",
+     "src_067_chunk_119"
+    ]
+   },
+   {
+    "set": "full_200",
+    "id": "X142",
+    "question": "Compare focusing on GPA, internships, GitHub projects, and networking for getting a first software job.",
+    "covered_by": null,
+    "top5": [
+     "src_091_chunk_001",
+     "src_074_chunk_008",
+     "src_067_chunk_119",
+     "src_034_chunk_002",
+     "src_031_chunk_204"
+    ]
+   },
+   {
+    "set": "full_200",
+    "id": "X149",
+    "question": "I failed a course and my GPA is low; can projects and internships still help me?",
+    "covered_by": "src_033_chunk_001",
+    "top5": [
+     "src_091_chunk_001",
+     "src_034_chunk_002",
+     "src_036_chunk_006",
+     "src_067_chunk_119",
+     "src_033_chunk_001"
+    ]
+   },
+   {
+    "set": "comprehensive",
+    "id": "q030",
+    "question": "Is GPA more important than personal projects?",
+    "covered_by": null,
+    "top5": [
+     "src_091_chunk_001",
+     "src_074_chunk_008",
+     "src_035_chunk_002",
+     "src_036_chunk_006",
+     "src_067_chunk_119"
+    ]
+   },
+   {
+    "set": "paraphrase",
+    "id": "q030_informal",
+    "question": "gpa or side projects which matters more",
+    "covered_by": null,
+    "top5": [
+     "src_091_chunk_001",
+     "src_036_chunk_006",
+     "src_067_chunk_119",
+     "src_074_chunk_008",
+     "src_031_chunk_204"
+    ]
+   },
+   {
+    "set": "paraphrase",
+    "id": "q030_typo",
+    "question": "Is GPA more impotant than personal projects?",
+    "covered_by": null,
+    "top5": [
+     "src_091_chunk_001",
+     "src_074_chunk_008",
+     "src_035_chunk_002",
+     "src_036_chunk_006",
+     "src_067_chunk_119"
+    ]
+   },
+   {
+    "set": "rag_test",
+    "id": "multi_topic",
+    "question": "Should I focus more on GPA, projects, or internships when preparing for a software career?",
+    "covered_by": "src_033_chunk_001",
+    "top5": [
+     "src_091_chunk_001",
+     "src_034_chunk_002",
+     "src_067_chunk_119",
+     "src_036_chunk_006",
+     "src_033_chunk_001"
+    ]
+   }
+  ]
+ },
+ "computer_engineering_definition_passage": {
+  "source_id": "src_042",
+  "key_text": [
+   "computer engineering involves"
+  ],
+  "questions": 15,
+  "covered": 6,
+  "decision": "curated_source_note",
+  "rows": [
+   {
+    "set": "full_200",
+    "id": "F001",
+    "question": "What is Computer Engineering?",
+    "covered_by": "src_042_chunk_002",
+    "top5": [
+     "src_067_chunk_029",
+     "src_067_chunk_327",
+     "src_067_chunk_037",
+     "src_042_chunk_002",
+     "src_080_chunk_001"
+    ]
+   },
+   {
+    "set": "full_200",
+    "id": "F004",
+    "question": "Explain computer engineering to a high school student.",
+    "covered_by": null,
+    "top5": [
+     "src_067_chunk_327",
+     "src_001_chunk_001",
+     "src_067_chunk_029",
+     "src_067_chunk_310",
+     "src_081_chunk_001"
+    ]
+   },
+   {
+    "set": "full_200",
+    "id": "F005",
+    "question": "How is computer engineering different from computer science?",
+    "covered_by": "src_042_chunk_002",
+    "top5": [
+     "src_067_chunk_327",
+     "src_067_chunk_029",
+     "src_067_chunk_299",
+     "src_080_chunk_001",
+     "src_042_chunk_002"
+    ]
+   },
+   {
+    "set": "full_200",
+    "id": "F012",
+    "question": "What is the difference between IT and Computer Engineering?",
+    "covered_by": "src_042_chunk_002",
+    "top5": [
+     "src_080_chunk_001",
+     "src_067_chunk_038",
+     "src_067_chunk_254",
+     "src_067_chunk_029",
+     "src_042_chunk_002"
+    ]
+   },
+   {
+    "set": "comprehensive",
+    "id": "q004",
+    "question": "What is the difference between Computer Engineering and Software Engineering?",
+    "covered_by": null,
+    "top5": [
+     "src_067_chunk_073",
+     "src_067_chunk_274",
+     "src_080_chunk_001",
+     "src_067_chunk_029",
+     "src_081_chunk_001"
+    ]
+   },
+   {
+    "set": "comprehensive",
+    "id": "q005",
+    "question": "What is the difference between Computer Engineering and Computer Science?",
+    "covered_by": "src_042_chunk_002",
+    "top5": [
+     "src_080_chunk_001",
+     "src_067_chunk_029",
+     "src_067_chunk_327",
+     "src_067_chunk_254",
+     "src_042_chunk_002"
+    ]
+   },
+   {
+    "set": "comprehensive",
+    "id": "q031",
+    "question": "What is the average starting salary for Computer Engineering graduates in Turkey or World?",
+    "covered_by": null,
+    "top5": [
+     "src_026_chunk_001",
+     "src_026_chunk_002",
+     "src_025_chunk_002",
+     "src_086_chunk_001",
+     "src_045_chunk_366"
+    ]
+   },
+   {
+    "set": "paraphrase",
+    "id": "q001_reworded",
+    "question": "How would you explain the field of Computer Engineering?",
+    "covered_by": null,
+    "top5": [
+     "src_067_chunk_013",
+     "src_067_chunk_044",
+     "src_067_chunk_032",
+     "src_069_chunk_014",
+     "src_043_chunk_002"
+    ]
+   },
+   {
+    "set": "paraphrase",
+    "id": "q004_typo",
+    "question": "What is the diffeence between Computer Engineering and Software Engineering?",
+    "covered_by": null,
+    "top5": [
+     "src_067_chunk_029",
+     "src_067_chunk_073",
+     "src_067_chunk_274",
+     "src_080_chunk_001",
+     "src_081_chunk_001"
+    ]
+   },
+   {
+    "set": "paraphrase",
+    "id": "q005_typo",
+    "question": "What is the diffeence between Computer Engineering and Computer Science?",
+    "covered_by": "src_042_chunk_002",
+    "top5": [
+     "src_080_chunk_001",
+     "src_067_chunk_029",
+     "src_067_chunk_327",
+     "src_067_chunk_037",
+     "src_042_chunk_002"
+    ]
+   },
+   {
+    "set": "paraphrase",
+    "id": "q011_reworded",
+    "question": "Compared with other engineering degrees, is Computer Engineering among the most difficult?",
+    "covered_by": "src_042_chunk_002",
+    "top5": [
+     "src_067_chunk_044",
+     "src_067_chunk_047",
+     "src_067_chunk_035",
+     "src_042_chunk_002",
+     "src_080_chunk_001"
+    ]
+   },
+   {
+    "set": "paraphrase",
+    "id": "q031_typo",
+    "question": "What is the aveage starting salary for Computer Engineering graduates in Turkey or World?",
+    "covered_by": null,
+    "top5": [
+     "src_026_chunk_001",
+     "src_025_chunk_002",
+     "src_026_chunk_002",
+     "src_086_chunk_001",
+     "src_005_chunk_001"
+    ]
+   },
+   {
+    "set": "rag_test",
+    "id": "department_supported",
+    "question": "What is Computer Engineering at OSTIM Technical University?",
+    "covered_by": null,
+    "top5": [
+     "src_001_chunk_001",
+     "src_089_chunk_001",
+     "src_088_chunk_001",
+     "src_079_chunk_001",
+     "src_004_chunk_018"
+    ]
+   },
+   {
+    "set": "rag_test",
+    "id": "unsupported_in_domain",
+    "question": "What is the exact 2026 tuition fee for OSTIM Technical University Computer Engineering?",
+    "covered_by": null,
+    "top5": [
+     "src_089_chunk_001",
+     "src_088_chunk_001",
+     "src_079_chunk_001",
+     "src_108_chunk_002",
+     "src_108_chunk_001"
+    ]
+   },
+   {
+    "set": "retrieval_test",
+    "id": "work_life_001",
+    "question": "What is work-life balance like for software and Computer Engineering careers?",
+    "covered_by": null,
+    "top5": [
+     "src_041_chunk_001",
+     "src_042_chunk_005",
+     "src_100_chunk_002",
+     "src_101_chunk_003",
+     "src_102_chunk_008"
+    ]
+   }
+  ]
+ },
+ "future_technologies_passage": {
+  "source_id": "src_063",
+  "key_text": [
+   "quantum computing",
+   "microservices architecture",
+   "blockchain technology"
+  ],
+  "questions": 2,
+  "covered": 0,
+  "decision": "curated_source_note",
+  "rows": [
+   {
+    "set": "full_200",
+    "id": "A076",
+    "question": "Which future technologies should a CENG student follow?",
+    "covered_by": null,
+    "top5": [
+     "src_067_chunk_021",
+     "src_067_chunk_032",
+     "src_091_chunk_001",
+     "src_004_chunk_014",
+     "src_067_chunk_054"
+    ]
+   },
+   {
+    "set": "rag_test",
+    "id": "future_supported",
+    "question": "Which future technologies are important for Computer Engineering students?",
+    "covered_by": null,
+    "top5": [
+     "src_067_chunk_085",
+     "src_067_chunk_021",
+     "src_067_chunk_086",
+     "src_004_chunk_014",
+     "src_045_chunk_019"
+    ]
+   }
+  ]
+ },
+ "linux_operating_system_passage": {
+  "source_id": "src_004",
+  "key_text": [
+   "linux or windows"
+  ],
+  "questions": 12,
+  "covered": 3,
+  "decision": "curated_source_note",
+  "rows": [
+   {
+    "set": "full_200",
+    "id": "C015",
+    "question": "Are there operating systems courses in the program?",
+    "covered_by": null,
+    "top5": [
+     "src_067_chunk_310",
+     "src_067_chunk_358",
+     "src_067_chunk_311",
+     "src_064_chunk_002",
+     "src_064_chunk_001"
+    ]
+   },
+   {
+    "set": "full_200",
+    "id": "P044",
+    "question": "linux important?",
+    "covered_by": null,
+    "top5": [
+     "src_069_chunk_085",
+     "src_016_chunk_042",
+     "src_016_chunk_044",
+     "src_090_chunk_001",
+     "src_016_chunk_001"
+    ]
+   },
+   {
+    "set": "full_200",
+    "id": "P045",
+    "question": "Is Linux worth learning for embedded systems?",
+    "covered_by": null,
+    "top5": [
+     "src_067_chunk_232",
+     "src_067_chunk_233",
+     "src_067_chunk_231",
+     "src_090_chunk_001",
+     "src_069_chunk_085"
+    ]
+   },
+   {
+    "set": "full_200",
+    "id": "H066",
+    "question": "What is the connection between operating systems and hardware?",
+    "covered_by": "src_004_chunk_012",
+    "top5": [
+     "src_004_chunk_012",
+     "src_069_chunk_120",
+     "src_067_chunk_073",
+     "src_083_chunk_001",
+     "src_067_chunk_025"
+    ]
+   },
+   {
+    "set": "full_200",
+    "id": "Y089",
+    "question": "Should I learn Linux for cyber security?",
+    "covered_by": null,
+    "top5": [
+     "src_094_chunk_001",
+     "src_069_chunk_085",
+     "src_085_chunk_001",
+     "src_045_chunk_415",
+     "src_045_chunk_443"
+    ]
+   },
+   {
+    "set": "full_200",
+    "id": "X148",
+    "question": "What should I learn before internship interviews: data structures, Git, Linux, or databases?",
+    "covered_by": null,
+    "top5": [
+     "src_081_chunk_001",
+     "src_063_chunk_003",
+     "src_051_chunk_007",
+     "src_069_chunk_202",
+     "src_069_chunk_203"
+    ]
+   },
+   {
+    "set": "full_200",
+    "id": "T186",
+    "question": "Does it include Linux?",
+    "covered_by": "src_004_chunk_012",
+    "top5": [
+     "src_016_chunk_042",
+     "src_016_chunk_044",
+     "src_004_chunk_012",
+     "src_067_chunk_246",
+     "src_067_chunk_097"
+    ]
+   },
+   {
+    "set": "full_200",
+    "id": "T187",
+    "question": "Is Linux important too?",
+    "covered_by": null,
+    "top5": [
+     "src_069_chunk_085",
+     "src_016_chunk_042",
+     "src_016_chunk_044",
+     "src_016_chunk_001",
+     "src_090_chunk_001"
+    ]
+   },
+   {
+    "set": "comprehensive",
+    "id": "q039",
+    "question": "Is learning Linux important for Computer Engineering students?",
+    "covered_by": null,
+    "top5": [
+     "src_067_chunk_126",
+     "src_067_chunk_163",
+     "src_069_chunk_085",
+     "src_067_chunk_168",
+     "src_042_chunk_002"
+    ]
+   },
+   {
+    "set": "paraphrase",
+    "id": "q039_reworded",
+    "question": "How useful is Linux knowledge for someone studying Computer Engineering?",
+    "covered_by": null,
+    "top5": [
+     "src_090_chunk_001",
+     "src_067_chunk_156",
+     "src_067_chunk_251",
+     "src_067_chunk_168",
+     "src_042_chunk_002"
+    ]
+   },
+   {
+    "set": "paraphrase",
+    "id": "q039_informal",
+    "question": "do comp eng students need linux",
+    "covered_by": "src_004_chunk_011",
+    "top5": [
+     "src_067_chunk_163",
+     "src_069_chunk_085",
+     "src_067_chunk_178",
+     "src_004_chunk_011",
+     "src_067_chunk_105"
+    ]
+   },
+   {
+    "set": "paraphrase",
+    "id": "q039_typo",
+    "question": "Is learing Linux important for Computer Engineering students?",
+    "covered_by": null,
+    "top5": [
+     "src_090_chunk_001",
+     "src_067_chunk_126",
+     "src_067_chunk_156",
+     "src_067_chunk_163",
+     "src_069_chunk_085"
+    ]
+   }
+  ]
+ },
+ "specialization_areas_passage": {
+  "source_id": "src_043",
+  "key_text": [
+   "specialization areas in computer engineering"
+  ],
+  "questions": 18,
+  "covered": 11,
+  "decision": "curated_source_note",
+  "rows": [
+   {
+    "set": "full_200",
+    "id": "R110",
+    "question": "Which specialization pays the most in Turkey?",
+    "covered_by": null,
+    "top5": [
+     "src_026_chunk_001",
+     "src_026_chunk_002",
+     "src_025_chunk_002",
+     "src_025_chunk_001",
+     "src_086_chunk_001"
+    ]
+   },
+   {
+    "set": "comprehensive",
+    "id": "q023",
+    "question": "Which specialization has the highest demand in the job market?",
+    "covered_by": "src_043_chunk_002",
+    "top5": [
+     "src_045_chunk_195",
+     "src_043_chunk_002",
+     "src_017_chunk_092",
+     "src_045_chunk_196",
+     "src_018_chunk_001"
+    ]
+   },
+   {
+    "set": "comprehensive",
+    "id": "q032",
+    "question": "Which Computer Engineering specialization offers the highest salaries in Turkey?",
+    "covered_by": null,
+    "top5": [
+     "src_026_chunk_002",
+     "src_026_chunk_001",
+     "src_025_chunk_002",
+     "src_051_chunk_010",
+     "src_086_chunk_001"
+    ]
+   },
+   {
+    "set": "comprehensive",
+    "id": "q049",
+    "question": "Which field of Computer Engineering is right for me?",
+    "covered_by": "src_043_chunk_002",
+    "top5": [
+     "src_067_chunk_157",
+     "src_067_chunk_123",
+     "src_067_chunk_048",
+     "src_043_chunk_001",
+     "src_043_chunk_002"
+    ]
+   },
+   {
+    "set": "comprehensive",
+    "id": "q051",
+    "question": "How do I discover which specialization I enjoy the most?",
+    "covered_by": "src_043_chunk_002",
+    "top5": [
+     "src_043_chunk_002",
+     "src_049_chunk_005",
+     "src_049_chunk_006",
+     "src_014_chunk_014",
+     "src_045_chunk_173"
+    ]
+   },
+   {
+    "set": "comprehensive",
+    "id": "q052",
+    "question": "Which specialization is expected to grow the fastest in the future?",
+    "covered_by": null,
+    "top5": [
+     "src_017_chunk_013",
+     "src_017_chunk_014",
+     "src_017_chunk_090",
+     "src_045_chunk_270",
+     "src_016_chunk_019"
+    ]
+   },
+   {
+    "set": "paraphrase",
+    "id": "q001_reworded",
+    "question": "How would you explain the field of Computer Engineering?",
+    "covered_by": "src_043_chunk_002",
+    "top5": [
+     "src_067_chunk_013",
+     "src_067_chunk_044",
+     "src_067_chunk_032",
+     "src_069_chunk_014",
+     "src_043_chunk_002"
+    ]
+   },
+   {
+    "set": "paraphrase",
+    "id": "q023_typo",
+    "question": "Whch specialization has the highest demand in the job market?",
+    "covered_by": "src_043_chunk_002",
+    "top5": [
+     "src_045_chunk_195",
+     "src_043_chunk_002",
+     "src_017_chunk_092",
+     "src_045_chunk_196",
+     "src_017_chunk_091"
+    ]
+   },
+   {
+    "set": "paraphrase",
+    "id": "q032_typo",
+    "question": "Whch Computer Engineering specialization offers the highest salaries in Turkey?",
+    "covered_by": "src_043_chunk_002",
+    "top5": [
+     "src_026_chunk_001",
+     "src_026_chunk_002",
+     "src_025_chunk_002",
+     "src_086_chunk_001",
+     "src_043_chunk_002"
+    ]
+   },
+   {
+    "set": "paraphrase",
+    "id": "q037_reworded",
+    "question": "What tools and technical areas should I know by the time I finish university?",
+    "covered_by": null,
+    "top5": [
+     "src_067_chunk_046",
+     "src_004_chunk_018",
+     "src_067_chunk_022",
+     "src_043_chunk_001",
+     "src_067_chunk_146"
+    ]
+   },
+   {
+    "set": "paraphrase",
+    "id": "q049_reworded",
+    "question": "How can I choose the Computer Engineering area that best matches my interests and strengths?",
+    "covered_by": "src_043_chunk_002",
+    "top5": [
+     "src_043_chunk_002",
+     "src_067_chunk_156",
+     "src_067_chunk_044",
+     "src_067_chunk_121",
+     "src_001_chunk_001"
+    ]
+   },
+   {
+    "set": "paraphrase",
+    "id": "q049_informal",
+    "question": "which comp eng field suits me",
+    "covered_by": "src_043_chunk_002",
+    "top5": [
+     "src_043_chunk_002",
+     "src_069_chunk_137",
+     "src_043_chunk_001",
+     "src_003_chunk_001",
+     "src_067_chunk_184"
+    ]
+   },
+   {
+    "set": "paraphrase",
+    "id": "q049_typo",
+    "question": "Whch field of Computer Engineering is right for me?",
+    "covered_by": "src_043_chunk_002",
+    "top5": [
+     "src_067_chunk_044",
+     "src_067_chunk_012",
+     "src_067_chunk_037",
+     "src_001_chunk_001",
+     "src_043_chunk_002"
+    ]
+   },
+   {
+    "set": "paraphrase",
+    "id": "q051_typo",
+    "question": "How do I discver which specialization I enjoy the most?",
+    "covered_by": null,
+    "top5": [
+     "src_036_chunk_005",
+     "src_036_chunk_003",
+     "src_036_chunk_004",
+     "src_035_chunk_002",
+     "src_074_chunk_009"
+    ]
+   },
+   {
+    "set": "paraphrase",
+    "id": "q052_reworded",
+    "question": "Which Computer Engineering area is forecast to expand most rapidly?",
+    "covered_by": null,
+    "top5": [
+     "src_067_chunk_167",
+     "src_067_chunk_031",
+     "src_067_chunk_079",
+     "src_016_chunk_019",
+     "src_017_chunk_013"
+    ]
+   },
+   {
+    "set": "paraphrase",
+    "id": "q052_typo",
+    "question": "Whch specialization is expected to grow the fastest in the future?",
+    "covered_by": null,
+    "top5": [
+     "src_017_chunk_013",
+     "src_017_chunk_014",
+     "src_017_chunk_090",
+     "src_045_chunk_270",
+     "src_016_chunk_019"
+    ]
+   },
+   {
+    "set": "unseen",
+    "id": "unseen_specialization_areas_008",
+    "question": "Can I mix interests like hardware and AI instead of sticking to only one specialization?",
+    "covered_by": "src_043_chunk_002",
+    "top5": [
+     "src_045_chunk_204",
+     "src_043_chunk_002",
+     "src_017_chunk_027",
+     "src_074_chunk_006",
+     "src_045_chunk_189"
+    ]
+   },
+   {
+    "set": "retrieval_test",
+    "id": "specializations_001",
+    "question": "Which specialization can I choose in Computer Engineering?",
+    "covered_by": "src_043_chunk_002",
+    "top5": [
+     "src_043_chunk_002",
+     "src_067_chunk_327",
+     "src_043_chunk_001",
+     "src_067_chunk_328",
+     "src_080_chunk_001"
+    ]
+   }
+  ]
+ }
+}

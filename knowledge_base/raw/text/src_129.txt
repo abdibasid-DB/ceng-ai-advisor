@@ -1,0 +1,52 @@
+CENG 316 New Trends in Computer Engineering: course content and weekly topics
+
+Course Content
+This syllabus is designed to cover each branch of software engineering and the
+latest trends. The course content spans various domains including frontend and
+backend development, DevOps, software testing, embedded systems, data
+engineering, artificial intelligence, cybersecurity, cloud computing, mobile app
+development, blockchain, and game development. It highlights practical
+applications and emerging trends like microservices, serverless computing, AI-
+powered tools, and decentralized systems. Students will engage with tools,
+frameworks, and methodologies relevant to each discipline while exploring
+advanced topics such as quantum computing, low-code platforms, and the future
+of software engineering. The syllabus integrates assignments and resources to
+foster a hands-on and analytical learning experience.
+
+Weekly Schedule
+No Topics Materials/Notes
+1 Introduction to Emerging Trends in Software and Computer
+Engineering
+
+2 Advancements in Artificial Intelligence and Machine
+Learning
+
+3 Cloud Computing: Modern Software Development and
+Deployment
+
+4 The Internet of Things (IoT), Embedded Systems, and
+Autonomous Technologies
+
+5 Quantum Computing: The Future of Computation
+6 Microservices Architecture: Scalable and Resilient Systems
+7 DevOps Practices and Continuous Integration/Continuous
+Deployment (CI/CD)
+
+8 Blockchain Technology and Smart Contracts: Decentralized
+Innovation
+
+9 Midterm Exam
+10 Data Science and Big Data: Extracting Value from
+Information
+
+11 Human-Computer Interaction (HCI) and UX Design: AR/VR
+Applications
+
+12 Cybersecurity and DevSecOps: Securing the Software
+Ecosystem
+
+13 Agile Software Development, Project Management, and
+Advances in Test Automation
+
+14 Green Computing and Sustainable Software Engineering
+15 Final exam

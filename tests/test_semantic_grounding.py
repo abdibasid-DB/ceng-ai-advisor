@@ -143,9 +143,11 @@ class DiscardedGenerationTests(unittest.TestCase):
     def test_answer_replaced_by_fallback_keeps_raw_generation(self):
         first = "Bananas are yellow fruit grown in tropical climates."
         llm = FakeLLM(responses=[first, first])
-        result = RAGPipeline(retriever=FakeRetriever(retrieval_result()), llm_service=llm).answer("What is Computer Engineering?")
+        result = RAGPipeline(retriever=FakeRetriever(retrieval_result()), llm_service=llm).answer(
+            "What professional skills do Computer Engineering students learn?"
+        )
         self.assertEqual(result["status"], ANSWERED)
-        self.assertIn("local_llm_answer_replaced_with_bounded_fallback", result["answer_warnings"])
+        self.assertIn("local_llm_answer_replaced_with_extractive_fallback", result["answer_warnings"])
         self.assertEqual(result["retrieval_metadata"]["discarded_generation"], first)
 
     def test_accepted_answer_has_no_discarded_generation(self):
