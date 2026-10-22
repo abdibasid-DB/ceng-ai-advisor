@@ -21,6 +21,8 @@ Options:
             "passage: " prefixes)
   d         best of a/b/c (by overall Recall@5, then MRR) + BM25 fused with
             the vector ranking by reciprocal rank fusion
+  e         option a chunks + BAAI/bge-m3 dense embeddings, max_seq_length 512
+  f         option e + BM25 (RRF), as in d
 """
 
 from __future__ import annotations
@@ -32,6 +34,7 @@ import re
 import shutil
 import subprocess
 import sys
+import threading
 import time
 import unicodedata
 from collections import Counter
@@ -49,6 +52,7 @@ for path in (PROJECT_ROOT, PROJECT_ROOT / "scripts"):
 
 import chromadb
 import numpy as np
+import psutil
 from rank_bm25 import BM25Okapi
 from sentence_transformers import SentenceTransformer
 
@@ -87,6 +91,7 @@ BOOTSTRAP_SAMPLES = 2000
 MINILM = EMBEDDING_MODEL_NAME
 BGE = "BAAI/bge-small-en-v1.5"
 E5 = "intfloat/multilingual-e5-small"
+BGE_M3 = "BAAI/bge-m3"
 BGE_QUERY_INSTRUCTION = "Represent this sentence for searching relevant passages: "
 
 CURRENT_CHUNKING = {"target_words": chunking.TARGET_WORDS, "max_words": chunking.MAX_WORDS, "overlap_words": chunking.OVERLAP_WORDS, "clean": False}
@@ -98,7 +103,10 @@ OPTIONS: dict[str, dict[str, Any]] = {
     "a": {"label": "a: 180w chunks + cleaning, MiniLM", "chunking": SMALL_CHUNKING, "model": MINILM, "query_prefix": "", "passage_prefix": ""},
     "b": {"label": "b: a + bge-small-en-v1.5", "chunking": SMALL_CHUNKING, "model": BGE, "query_prefix": BGE_QUERY_INSTRUCTION, "passage_prefix": ""},
     "c": {"label": "c: a + multilingual-e5-small", "chunking": SMALL_CHUNKING, "model": E5, "query_prefix": "query: ", "passage_prefix": "passage: "},
-    "d": {"label": "d: best of a/b/c + BM25 (RRF)", "hybrid": True},
+    "d": {"label": "d: best of a/b/c + BM25 (RRF)", "hybrid": "best_of_abc"},
+    # bge-m3 (568M parameters) uses small batches to stay within laptop RAM.
+    "e": {"label": "e: a + bge-m3 (dense, 512 tokens)", "chunking": SMALL_CHUNKING, "model": BGE_M3, "query_prefix": "", "passage_prefix": "", "max_seq_length": 512, "batch_size": 8},
+    "f": {"label": "f: e + BM25 (RRF)", "hybrid": "e"},
 }
 
 # Short digit-free HTML blocks found in the header or footer zone of at least
@@ -307,13 +315,68 @@ def truncation_stats(model: SentenceTransformer, texts: list[str]) -> dict[str, 
     }
 
 
-def embed_chunks(model: SentenceTransformer, chunks: list[dict[str, Any]], passage_prefix: str) -> tuple[np.ndarray, dict[str, Any]]:
+class MemoryMonitor:
+    """Samples this process's RSS and the system's available RAM while a block runs."""
+
+    def __init__(self, interval: float = 0.25) -> None:
+        self.interval = interval
+        self.process = psutil.Process()
+        self.peak_rss = 0
+        self.min_available = psutil.virtual_memory().total
+        self._stop = threading.Event()
+        self._thread = threading.Thread(target=self._run, daemon=True)
+
+    def _sample(self) -> None:
+        self.peak_rss = max(self.peak_rss, self.process.memory_info().rss)
+        self.min_available = min(self.min_available, psutil.virtual_memory().available)
+
+    def _run(self) -> None:
+        while not self._stop.is_set():
+            self._sample()
+            self._stop.wait(self.interval)
+
+    def __enter__(self) -> "MemoryMonitor":
+        self._sample()
+        self._thread.start()
+        return self
+
+    def __exit__(self, *_exc: Any) -> None:
+        self._stop.set()
+        self._thread.join()
+        self._sample()
+
+    def stats(self) -> dict[str, Any]:
+        memory = psutil.virtual_memory()
+        return {
+            "peak_process_rss_gb": round(self.peak_rss / 1024**3, 2),
+            "min_system_available_gb": round(self.min_available / 1024**3, 2),
+            "system_total_gb": round(memory.total / 1024**3, 1),
+        }
+
+
+def get_model(models: dict[str, SentenceTransformer], option: dict[str, Any]) -> SentenceTransformer:
+    name = option["model"]
+    if name not in models:
+        models[name] = SentenceTransformer(name)
+        if option.get("max_seq_length"):
+            models[name].max_seq_length = option["max_seq_length"]
+    return models[name]
+
+
+def embed_chunks(model: SentenceTransformer, chunks: list[dict[str, Any]], passage_prefix: str, batch_size: int = EMBED_BATCH_SIZE) -> tuple[np.ndarray, dict[str, Any]]:
     texts = [passage_prefix + chunk["text"] for chunk in chunks]
     truncation = truncation_stats(model, texts)
-    start = time.perf_counter()
-    embeddings = model.encode(texts, batch_size=EMBED_BATCH_SIZE, normalize_embeddings=True, convert_to_numpy=True, show_progress_bar=False)
-    seconds = time.perf_counter() - start
-    return embeddings.astype(np.float32), {"embedding_seconds": round(seconds, 1), "chunks_per_second": round(len(texts) / seconds, 1), **truncation}
+    with MemoryMonitor() as memory:
+        start = time.perf_counter()
+        embeddings = model.encode(texts, batch_size=batch_size, normalize_embeddings=True, convert_to_numpy=True, show_progress_bar=False)
+        seconds = time.perf_counter() - start
+    return embeddings.astype(np.float32), {
+        "embedding_seconds": round(seconds, 1),
+        "chunks_per_second": round(len(texts) / seconds, 1),
+        "batch_size": batch_size,
+        "memory": memory.stats(),
+        **truncation,
+    }
 
 
 def build_index(path: Path, chunks: list[dict[str, Any]], embeddings: np.ndarray) -> None:
@@ -456,20 +519,21 @@ def evaluate_cases(retriever: Retriever, cases: list[dict[str, Any]]) -> tuple[l
 
 
 def run_vector_option(name: str, option: dict[str, Any], run_dir: Path, cases: list[dict[str, Any]], models: dict[str, SentenceTransformer]) -> dict[str, Any]:
-    model = models.setdefault(option["model"], SentenceTransformer(option["model"]))
+    model = get_model(models, option)
+    batch_size = option.get("batch_size", EMBED_BATCH_SIZE)
     index_path = run_dir / "indexes" / name
 
     if option["chunking"] is None:
         chunks = load_live_chunks()
         chunk_stats = {"settings": "live knowledge_base/chunks/chunks.jsonl", "chunk_count": len(chunks), "average_chunk_words": round(float(np.mean([c["word_count"] for c in chunks])), 1)}
-        _, embedding_stats = embed_chunks(model, chunks, option["passage_prefix"])
+        _, embedding_stats = embed_chunks(model, chunks, option["passage_prefix"], batch_size)
         embedding_stats["note"] = "Live chunks re-encoded in memory for timing only; queries run on a file copy of the live index."
         if index_path.exists():
             shutil.rmtree(index_path)
         shutil.copytree(CHROMA_PATH, index_path)
     else:
         chunks, chunk_stats = build_chunks(option["chunking"])
-        embeddings, embedding_stats = embed_chunks(model, chunks, option["passage_prefix"])
+        embeddings, embedding_stats = embed_chunks(model, chunks, option["passage_prefix"], batch_size)
         build_index(index_path, chunks, embeddings)
         np.save(run_dir / "indexes" / f"{name}_embeddings.npy", embeddings)
         with (run_dir / "indexes" / f"{name}_chunks.jsonl").open("w", encoding="utf-8", newline="\n") as file:
@@ -480,7 +544,13 @@ def run_vector_option(name: str, option: dict[str, Any], run_dir: Path, cases: l
     case_results, seconds_per_query = evaluate_cases(retriever, cases)
     return {
         "chunking": chunk_stats,
-        "embedding": {"model": option["model"], "query_prefix": option["query_prefix"], "passage_prefix": option["passage_prefix"], **embedding_stats},
+        "embedding": {
+            "model": option["model"],
+            "max_seq_length": model.max_seq_length,
+            "query_prefix": option["query_prefix"],
+            "passage_prefix": option["passage_prefix"],
+            **embedding_stats,
+        },
         "seconds_per_query": round(seconds_per_query, 4),
         "metrics": aggregate(case_results),
         "cases": case_results,
@@ -498,10 +568,12 @@ def pick_best(run_dir: Path) -> str:
     return max(candidates)[2]
 
 
-def run_hybrid_option(run_dir: Path, cases: list[dict[str, Any]], models: dict[str, SentenceTransformer]) -> dict[str, Any]:
-    base_name = pick_best(run_dir)
+def run_hybrid_option(option: dict[str, Any], run_dir: Path, cases: list[dict[str, Any]], models: dict[str, SentenceTransformer]) -> dict[str, Any]:
+    base_name = pick_best(run_dir) if option["hybrid"] == "best_of_abc" else option["hybrid"]
+    if not (run_dir / "results" / f"{base_name}.json").exists():
+        raise RuntimeError(f"Hybrid option needs finished results for option {base_name}.")
     base = OPTIONS[base_name]
-    model = models.setdefault(base["model"], SentenceTransformer(base["model"]))
+    model = get_model(models, base)
     with (run_dir / "indexes" / f"{base_name}_chunks.jsonl").open("r", encoding="utf-8") as file:
         chunks = [json.loads(line) for line in file if line.strip()]
     embeddings = np.load(run_dir / "indexes" / f"{base_name}_embeddings.npy")
@@ -557,18 +629,20 @@ def paired_bootstrap(results: dict[str, dict[str, Any]], reference: str, metric:
 
 def summary_table(results: dict[str, dict[str, Any]]) -> str:
     lines = [
-        "| Option | Recall@5 overall | MRR overall | Recall@5 Turkish | MRR Turkish | Recall@5 OSTİM | MRR OSTİM | Chunks | Embedding time |",
-        "| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |",
+        "| Option | R@5 all | MRR all | Hit@5 all | R@5 TR | MRR TR | Hit@5 TR | R@5 OSTİM | MRR OSTİM | Hit@5 OSTİM | Chunks | Embedding time | s/query |",
+        "| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |",
     ]
     for name, result in results.items():
         metrics = result["metrics"]
         embedding = result["embedding"]
-        time_text = f"{embedding['embedding_seconds']} s" if name != "d" else f"{embedding['embedding_seconds']} s (+BM25)"
+        time_text = f"{embedding['embedding_seconds']} s" + (" (+BM25)" if OPTIONS[name].get("hybrid") else "")
+        cells = [
+            f"{metrics[group][metric]:.3f}"
+            for group in ("overall", "turkish_source", "ostim_specific")
+            for metric in ("recall_at_5", "mrr_at_10", "hit_at_5")
+        ]
         lines.append(
-            f"| {OPTIONS[name]['label']} | {metrics['overall']['recall_at_5']:.3f} | {metrics['overall']['mrr_at_10']:.3f} | "
-            f"{metrics['turkish_source']['recall_at_5']:.3f} | {metrics['turkish_source']['mrr_at_10']:.3f} | "
-            f"{metrics['ostim_specific']['recall_at_5']:.3f} | {metrics['ostim_specific']['mrr_at_10']:.3f} | "
-            f"{result['chunking']['chunk_count']} | {time_text} |"
+            f"| {OPTIONS[name]['label']} | {' | '.join(cells)} | {result['chunking']['chunk_count']} | {time_text} | {result['seconds_per_query']:.3f} |"
         )
     return "\n".join(lines)
 
@@ -598,7 +672,7 @@ def main() -> int:
         print(f"{name}: running {OPTIONS[name]['label']} ...", flush=True)
         started = time.perf_counter()
         if OPTIONS[name].get("hybrid"):
-            result = run_hybrid_option(run_dir, cases, models)
+            result = run_hybrid_option(OPTIONS[name], run_dir, cases, models)
         else:
             result = run_vector_option(name, OPTIONS[name], run_dir, cases, models)
         result = {
@@ -617,8 +691,8 @@ def main() -> int:
     finished = {name: load_json(run_dir / "results" / f"{name}.json") for name in OPTIONS if (run_dir / "results" / f"{name}.json").exists()}
     if "baseline" in finished:
         comparisons = {
-            reference: {metric: paired_bootstrap(finished, reference, metric) for metric in ("recall_at_5", "reciprocal_rank")}
-            for reference in ("baseline", "a0")
+            reference: {metric: paired_bootstrap(finished, reference, metric) for metric in ("recall_at_5", "reciprocal_rank", "hit_at_5")}
+            for reference in ("baseline", "a0", "d")
             if reference in finished
         }
         summary = {
