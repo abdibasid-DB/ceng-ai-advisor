@@ -1,0 +1,386 @@
+{
+ "oct18": {
+  "fundamentals": {
+   "n": 12,
+   "correct_evidence_supported": 9,
+   "correct_insufficient_information": 0,
+   "incorrect_refusal_evidence_exists": 1,
+   "unsupported_incorrect_or_misleading": 2,
+   "runtime_error": 0,
+   "mean_seconds": 25.0
+  },
+  "ALL": {
+   "n": 193,
+   "correct_evidence_supported": 90,
+   "correct_insufficient_information": 34,
+   "incorrect_refusal_evidence_exists": 50,
+   "unsupported_incorrect_or_misleading": 19,
+   "runtime_error": 0,
+   "mean_seconds": 26.7
+  },
+  "curriculum": {
+   "n": 14,
+   "correct_evidence_supported": 8,
+   "correct_insufficient_information": 0,
+   "incorrect_refusal_evidence_exists": 4,
+   "unsupported_incorrect_or_misleading": 2,
+   "runtime_error": 0,
+   "mean_seconds": 26.9
+  },
+  "mathematics": {
+   "n": 12,
+   "correct_evidence_supported": 8,
+   "correct_insufficient_information": 0,
+   "incorrect_refusal_evidence_exists": 4,
+   "unsupported_incorrect_or_misleading": 0,
+   "runtime_error": 0,
+   "mean_seconds": 33.2
+  },
+  "programming_software": {
+   "n": 18,
+   "correct_evidence_supported": 13,
+   "correct_insufficient_information": 0,
+   "incorrect_refusal_evidence_exists": 3,
+   "unsupported_incorrect_or_misleading": 2,
+   "runtime_error": 0,
+   "mean_seconds": 24.3
+  },
+  "hardware_networks": {
+   "n": 12,
+   "correct_evidence_supported": 8,
+   "correct_insufficient_information": 0,
+   "incorrect_refusal_evidence_exists": 4,
+   "unsupported_incorrect_or_misleading": 0,
+   "runtime_error": 0,
+   "mean_seconds": 25.7
+  },
+  "ai_future": {
+   "n": 14,
+   "correct_evidence_supported": 7,
+   "correct_insufficient_information": 0,
+   "incorrect_refusal_evidence_exists": 6,
+   "unsupported_incorrect_or_misleading": 1,
+   "runtime_error": 0,
+   "mean_seconds": 41.1
+  },
+  "cybersecurity": {
+   "n": 12,
+   "correct_evidence_supported": 9,
+   "correct_insufficient_information": 0,
+   "incorrect_refusal_evidence_exists": 1,
+   "unsupported_incorrect_or_misleading": 2,
+   "runtime_error": 0,
+   "mean_seconds": 28.4
+  },
+  "career_employment": {
+   "n": 28,
+   "correct_evidence_supported": 10,
+   "correct_insufficient_information": 2,
+   "incorrect_refusal_evidence_exists": 12,
+   "unsupported_incorrect_or_misleading": 4,
+   "runtime_error": 0,
+   "mean_seconds": 27.1
+  },
+  "student_local": {
+   "n": 18,
+   "correct_evidence_supported": 6,
+   "correct_insufficient_information": 4,
+   "incorrect_refusal_evidence_exists": 7,
+   "unsupported_incorrect_or_misleading": 1,
+   "runtime_error": 0,
+   "mean_seconds": 20.5
+  },
+  "complex": {
+   "n": 12,
+   "correct_evidence_supported": 6,
+   "correct_insufficient_information": 1,
+   "incorrect_refusal_evidence_exists": 4,
+   "unsupported_incorrect_or_misleading": 1,
+   "runtime_error": 0,
+   "mean_seconds": 26.8
+  },
+  "unsupported": {
+   "n": 13,
+   "correct_evidence_supported": 0,
+   "correct_insufficient_information": 13,
+   "incorrect_refusal_evidence_exists": 0,
+   "unsupported_incorrect_or_misleading": 0,
+   "runtime_error": 0,
+   "mean_seconds": 0.0
+  },
+  "out_of_scope": {
+   "n": 13,
+   "correct_evidence_supported": 0,
+   "correct_insufficient_information": 13,
+   "incorrect_refusal_evidence_exists": 0,
+   "unsupported_incorrect_or_misleading": 0,
+   "runtime_error": 0,
+   "mean_seconds": 0.0
+  },
+  "multi_turn": {
+   "n": 15,
+   "correct_evidence_supported": 6,
+   "correct_insufficient_information": 1,
+   "incorrect_refusal_evidence_exists": 4,
+   "unsupported_incorrect_or_misleading": 4,
+   "runtime_error": 0,
+   "mean_seconds": 64.2
+  }
+ },
+ "final": {
+  "fundamentals": {
+   "n": 12,
+   "correct_evidence_supported": 10,
+   "correct_insufficient_information": 0,
+   "incorrect_refusal_evidence_exists": 0,
+   "unsupported_incorrect_or_misleading": 2,
+   "runtime_error": 0,
+   "mean_seconds": 32.8
+  },
+  "ALL": {
+   "n": 200,
+   "correct_evidence_supported": 94,
+   "correct_insufficient_information": 33,
+   "incorrect_refusal_evidence_exists": 43,
+   "unsupported_incorrect_or_misleading": 30,
+   "runtime_error": 0,
+   "mean_seconds": 29.7
+  },
+  "curriculum": {
+   "n": 14,
+   "correct_evidence_supported": 9,
+   "correct_insufficient_information": 0,
+   "incorrect_refusal_evidence_exists": 3,
+   "unsupported_incorrect_or_misleading": 2,
+   "runtime_error": 0,
+   "mean_seconds": 23.8
+  },
+  "mathematics": {
+   "n": 12,
+   "correct_evidence_supported": 5,
+   "correct_insufficient_information": 0,
+   "incorrect_refusal_evidence_exists": 5,
+   "unsupported_incorrect_or_misleading": 2,
+   "runtime_error": 0,
+   "mean_seconds": 35.2
+  },
+  "programming_software": {
+   "n": 18,
+   "correct_evidence_supported": 11,
+   "correct_insufficient_information": 0,
+   "incorrect_refusal_evidence_exists": 3,
+   "unsupported_incorrect_or_misleading": 4,
+   "runtime_error": 0,
+   "mean_seconds": 24.0
+  },
+  "hardware_networks": {
+   "n": 12,
+   "correct_evidence_supported": 7,
+   "correct_insufficient_information": 0,
+   "incorrect_refusal_evidence_exists": 4,
+   "unsupported_incorrect_or_misleading": 1,
+   "runtime_error": 0,
+   "mean_seconds": 23.6
+  },
+  "ai_future": {
+   "n": 14,
+   "correct_evidence_supported": 10,
+   "correct_insufficient_information": 0,
+   "incorrect_refusal_evidence_exists": 3,
+   "unsupported_incorrect_or_misleading": 1,
+   "runtime_error": 0,
+   "mean_seconds": 34.3
+  },
+  "cybersecurity": {
+   "n": 12,
+   "correct_evidence_supported": 9,
+   "correct_insufficient_information": 0,
+   "incorrect_refusal_evidence_exists": 2,
+   "unsupported_incorrect_or_misleading": 1,
+   "runtime_error": 0,
+   "mean_seconds": 30.7
+  },
+  "career_employment": {
+   "n": 28,
+   "correct_evidence_supported": 12,
+   "correct_insufficient_information": 3,
+   "incorrect_refusal_evidence_exists": 9,
+   "unsupported_incorrect_or_misleading": 4,
+   "runtime_error": 0,
+   "mean_seconds": 32.4
+  },
+  "student_local": {
+   "n": 18,
+   "correct_evidence_supported": 4,
+   "correct_insufficient_information": 3,
+   "incorrect_refusal_evidence_exists": 7,
+   "unsupported_incorrect_or_misleading": 4,
+   "runtime_error": 0,
+   "mean_seconds": 27.1
+  },
+  "complex": {
+   "n": 12,
+   "correct_evidence_supported": 7,
+   "correct_insufficient_information": 0,
+   "incorrect_refusal_evidence_exists": 4,
+   "unsupported_incorrect_or_misleading": 1,
+   "runtime_error": 0,
+   "mean_seconds": 21.7
+  },
+  "unsupported": {
+   "n": 13,
+   "correct_evidence_supported": 0,
+   "correct_insufficient_information": 13,
+   "incorrect_refusal_evidence_exists": 0,
+   "unsupported_incorrect_or_misleading": 0,
+   "runtime_error": 0,
+   "mean_seconds": 0.2
+  },
+  "out_of_scope": {
+   "n": 13,
+   "correct_evidence_supported": 0,
+   "correct_insufficient_information": 13,
+   "incorrect_refusal_evidence_exists": 0,
+   "unsupported_incorrect_or_misleading": 0,
+   "runtime_error": 0,
+   "mean_seconds": 0.0
+  },
+  "multi_turn": {
+   "n": 22,
+   "correct_evidence_supported": 10,
+   "correct_insufficient_information": 1,
+   "incorrect_refusal_evidence_exists": 3,
+   "unsupported_incorrect_or_misleading": 8,
+   "runtime_error": 0,
+   "mean_seconds": 71.5
+  }
+ },
+ "final_on_oct18_case_ids": {
+  "fundamentals": {
+   "n": 12,
+   "correct_evidence_supported": 10,
+   "correct_insufficient_information": 0,
+   "incorrect_refusal_evidence_exists": 0,
+   "unsupported_incorrect_or_misleading": 2,
+   "runtime_error": 0,
+   "mean_seconds": 32.8
+  },
+  "ALL": {
+   "n": 193,
+   "correct_evidence_supported": 90,
+   "correct_insufficient_information": 33,
+   "incorrect_refusal_evidence_exists": 41,
+   "unsupported_incorrect_or_misleading": 29,
+   "runtime_error": 0,
+   "mean_seconds": 28.2
+  },
+  "curriculum": {
+   "n": 14,
+   "correct_evidence_supported": 9,
+   "correct_insufficient_information": 0,
+   "incorrect_refusal_evidence_exists": 3,
+   "unsupported_incorrect_or_misleading": 2,
+   "runtime_error": 0,
+   "mean_seconds": 23.8
+  },
+  "mathematics": {
+   "n": 12,
+   "correct_evidence_supported": 5,
+   "correct_insufficient_information": 0,
+   "incorrect_refusal_evidence_exists": 5,
+   "unsupported_incorrect_or_misleading": 2,
+   "runtime_error": 0,
+   "mean_seconds": 35.2
+  },
+  "programming_software": {
+   "n": 18,
+   "correct_evidence_supported": 11,
+   "correct_insufficient_information": 0,
+   "incorrect_refusal_evidence_exists": 3,
+   "unsupported_incorrect_or_misleading": 4,
+   "runtime_error": 0,
+   "mean_seconds": 24.0
+  },
+  "hardware_networks": {
+   "n": 12,
+   "correct_evidence_supported": 7,
+   "correct_insufficient_information": 0,
+   "incorrect_refusal_evidence_exists": 4,
+   "unsupported_incorrect_or_misleading": 1,
+   "runtime_error": 0,
+   "mean_seconds": 23.6
+  },
+  "ai_future": {
+   "n": 14,
+   "correct_evidence_supported": 10,
+   "correct_insufficient_information": 0,
+   "incorrect_refusal_evidence_exists": 3,
+   "unsupported_incorrect_or_misleading": 1,
+   "runtime_error": 0,
+   "mean_seconds": 34.3
+  },
+  "cybersecurity": {
+   "n": 12,
+   "correct_evidence_supported": 9,
+   "correct_insufficient_information": 0,
+   "incorrect_refusal_evidence_exists": 2,
+   "unsupported_incorrect_or_misleading": 1,
+   "runtime_error": 0,
+   "mean_seconds": 30.7
+  },
+  "career_employment": {
+   "n": 28,
+   "correct_evidence_supported": 12,
+   "correct_insufficient_information": 3,
+   "incorrect_refusal_evidence_exists": 9,
+   "unsupported_incorrect_or_misleading": 4,
+   "runtime_error": 0,
+   "mean_seconds": 32.4
+  },
+  "student_local": {
+   "n": 18,
+   "correct_evidence_supported": 4,
+   "correct_insufficient_information": 3,
+   "incorrect_refusal_evidence_exists": 7,
+   "unsupported_incorrect_or_misleading": 4,
+   "runtime_error": 0,
+   "mean_seconds": 27.1
+  },
+  "complex": {
+   "n": 12,
+   "correct_evidence_supported": 7,
+   "correct_insufficient_information": 0,
+   "incorrect_refusal_evidence_exists": 4,
+   "unsupported_incorrect_or_misleading": 1,
+   "runtime_error": 0,
+   "mean_seconds": 21.7
+  },
+  "unsupported": {
+   "n": 13,
+   "correct_evidence_supported": 0,
+   "correct_insufficient_information": 13,
+   "incorrect_refusal_evidence_exists": 0,
+   "unsupported_incorrect_or_misleading": 0,
+   "runtime_error": 0,
+   "mean_seconds": 0.2
+  },
+  "out_of_scope": {
+   "n": 13,
+   "correct_evidence_supported": 0,
+   "correct_insufficient_information": 13,
+   "incorrect_refusal_evidence_exists": 0,
+   "unsupported_incorrect_or_misleading": 0,
+   "runtime_error": 0,
+   "mean_seconds": 0.0
+  },
+  "multi_turn": {
+   "n": 15,
+   "correct_evidence_supported": 6,
+   "correct_insufficient_information": 1,
+   "incorrect_refusal_evidence_exists": 1,
+   "unsupported_incorrect_or_misleading": 7,
+   "runtime_error": 0,
+   "mean_seconds": 70.8
+  }
+ }
+}

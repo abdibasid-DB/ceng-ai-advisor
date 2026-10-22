@@ -1,0 +1,37 @@
+{
+ "model": "cross-encoder/nli-deberta-v3-small (scripts/evaluate_nli_claims.py defaults: premises=pairs, context=hypothesis)",
+ "threshold": 0.5,
+ "all": {
+  "answered_cases_with_cited_sentences": 167,
+  "cited_sentences": 377,
+  "mean_entailment": 0.472,
+  "sentences_entailed_share": 0.469,
+  "answers_fully_entailed_share": 0.299,
+  "mean_answer_faithfulness": 0.501
+ },
+ "full200": {
+  "answered_cases_with_cited_sentences": 123,
+  "cited_sentences": 273,
+  "mean_entailment": 0.495,
+  "sentences_entailed_share": 0.495,
+  "answers_fully_entailed_share": 0.341,
+  "mean_answer_faithfulness": 0.534
+ },
+ "ceng60": {
+  "answered_cases_with_cited_sentences": 43,
+  "cited_sentences": 101,
+  "mean_entailment": 0.414,
+  "sentences_entailed_share": 0.406,
+  "answers_fully_entailed_share": 0.186,
+  "mean_answer_faithfulness": 0.409
+ },
+ "spec4": {
+  "answered_cases_with_cited_sentences": 1,
+  "cited_sentences": 3,
+  "mean_entailment": 0.311,
+  "sentences_entailed_share": 0.333,
+  "answers_fully_entailed_share": 0.0,
+  "mean_answer_faithfulness": 0.333
+ },
+ "uncited_sentences": 2
+}
