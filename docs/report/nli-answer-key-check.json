@@ -1,0 +1,537 @@
+{
+ "rows": [
+  {
+   "id": "F007",
+   "index": 0,
+   "sentence": "Computer engineers build both physical devices and apps [S4].",
+   "hypothesis": "Computer engineers build both physical devices and apps .",
+   "context_added": false,
+   "score": 0.008814052678644657,
+   "best_premise": "x Electrical engineering spans a wide range of areas, including bioengineering, power engineering, electronics, telecommunications, and digital systems."
+  },
+  {
+   "id": "F007",
+   "index": 1,
+   "sentence": "The context from [S2] indicates that computer engineering curricula include laboratories that involve physical implementation of designs, such as electronic and digital circuits, breadboarding, microcontroller-based systems, prototyping, and firmware implementation.",
+   "hypothesis": "Computer engineering curricula include laboratories that involve physical implementation of designs, such as electronic and digital circuits, breadboarding, microcontroller-based systems, prototyping, and firmware implementation.",
+   "context_added": false,
+   "score": 0.9971551895141602,
+   "best_premise": "Table 4.2: Suggested Additional Computer Engineering Laboratories Audio Engineering Computers in Manufacturing Electrical Energy Systems Graphics Mechatronics Microwave Measurements Operating Systems Robotics Specialized Electronics Lab Teaching Enhancement Telecommunications Laboratories should inc"
+  },
+  {
+   "id": "F007",
+   "index": 2,
+   "sentence": "Additionally, [S3] mentions hardware design and analysis tools, which further supports the involvement of physical devices in computer engineering. [S4] also supports this by noting that computer engineers focus on the theoretical and algorithmic aspects of computing, while electrical engineers focus on the physical aspects of electronics, including circuits and microelectronic devices.",
+   "hypothesis": "Computer engineering curricula include laboratories that involve physical implementation of designs, such as electronic and digital circuits, breadboarding, microcontroller-based systems, prototyping, and firmware implementation. Hardware design and analysis tools, which further supports the involvement of physical devices in computer engineering. also supports this by noting that computer engineers focus on the theoretical and algorithmic aspects of computing, while electrical engineers focus on the physical aspects of electronics, including circuits and microelectronic devices.",
+   "context_added": true,
+   "score": 0.8984342813491821,
+   "best_premise": "Related to the field of computer engineering, electrical engineers concern themselves primarily with the physical aspects of electronics including circuits, signal analysis, and microelectronic devices. x Computer scientists concern themselves primarily with the theoretical and algorithmic aspects o"
+  },
+  {
+   "id": "F007",
+   "index": 3,
+   "sentence": "Therefore, computer engineers are involved in building physical devices as well as developing software applications [S4]. [S1] supports this by highlighting the proliferation of mobile smart phones, tablet computers, and other physical devices that are the result of computer engineering efforts.",
+   "hypothesis": "Hardware design and analysis tools, which further supports the involvement of physical devices in computer engineering. also supports this by noting that computer engineers focus on the theoretical and algorithmic aspects of computing, while electrical engineers focus on the physical aspects of electronics, including circuits and microelectronic devices. Therefore, computer engineers are involved in building physical devices as well as developing software applications . supports this by highlighting the proliferation of mobile smart phones, tablet computers, and other physical devices that are the result of computer engineering efforts.",
+   "context_added": true,
+   "score": 0.6218423843383789,
+   "best_premise": "These applications manifest themselves in the proliferation of mobile smart phones, tablet computers, multimedia and location-aware devices, wireless networks, and similar products."
+  },
+  {
+   "id": "C021",
+   "index": 0,
+   "sentence": "At the junior and senior level in Computer Engineering, students have the opportunity to specialize through a variety of technical elective courses [S2].",
+   "hypothesis": "At the junior and senior level in Computer Engineering, students have the opportunity to specialize through a variety of technical elective courses .",
+   "context_added": false,
+   "score": 0.947527289390564,
+   "best_premise": "When EE and CompE students reach junior year, they find that, for the first time in their undergraduate career, they have to make choices among large numbers of technical elective courses."
+  },
+  {
+   "id": "C021",
+   "index": 1,
+   "sentence": "These electives allow them to delve deeper into specific areas of interest, such as bioengineering, power systems, and artificial intelligence [S2].",
+   "hypothesis": "At the junior and senior level in Computer Engineering, students have the opportunity to specialize through a variety of technical elective courses . These electives allow them to delve deeper into specific areas of interest, such as bioengineering, power systems, and artificial intelligence .",
+   "context_added": true,
+   "score": 0.0034057602752000093,
+   "best_premise": "At the junior and senior level, however, they branch into a large and diverse set of rich intellectual areas, ranging from bioengineering to power systems. When EE and CompE students reach junior year, they find that, for the first time in their undergraduate career, they have to make choices among "
+  },
+  {
+   "id": "C021",
+   "index": 2,
+   "sentence": "For instance, students can choose from courses like CS 10, which fulfills the Technical Elective requirement for the EECS major if taken before CS 61A, or Computer Science C8, which introduces programming and statistics [S3].",
+   "hypothesis": "These electives allow them to delve deeper into specific areas of interest, such as bioengineering, power systems, and artificial intelligence . For instance, students can choose from courses like CS 10, which fulfills the Technical Elective requirement for the EECS major if taken before CS 61A, or Computer Science C8, which introduces programming and statistics .",
+   "context_added": true,
+   "score": 0.003740753512829542,
+   "best_premise": "CS 10 will fulfill the Technical Elective requirement for the EECS major if taken before CS 61A. Computer Science C8is an introduction to programming and statistics."
+  },
+  {
+   "id": "C021",
+   "index": 3,
+   "sentence": "Additionally, students can explore more advanced electives in areas like artificial intelligence, robotics, and cybernetics, which are available at the junior and senior levels [S2].",
+   "hypothesis": "For instance, students can choose from courses like CS 10, which fulfills the Technical Elective requirement for the EECS major if taken before CS 61A, or Computer Science C8, which introduces programming and statistics . Additionally, students can explore more advanced electives in areas like artificial intelligence, robotics, and cybernetics, which are available at the junior and senior levels .",
+   "context_added": true,
+   "score": 0.013314475305378437,
+   "best_premise": "At the junior and senior level, however, they branch into a large and diverse set of rich intellectual areas, ranging from bioengineering to power systems."
+  },
+  {
+   "id": "M031",
+   "index": 0,
+   "sentence": "Mathematics is insufficient to produce a competent computer engineer, and [S2] states that mathematics is a strong foundation for [S1].",
+   "hypothesis": "Mathematics is insufficient to produce a competent computer engineer, and states that mathematics is a strong foundation for .",
+   "context_added": false,
+   "score": 0.0006334895733743906,
+   "best_premise": "Mathematics A strong foundation in mathematics provides the necessary basis for associate-degree transfer programs in computing."
+  },
+  {
+   "id": "M034",
+   "index": 0,
+   "sentence": "According to [S1], the Computer Sciences faculty at UC Berkeley recommend reviewing basic engineering mathematics, including functions, limits, continuity, differentiation, and integration, which are essential for your first semester.",
+   "hypothesis": "The Computer Sciences faculty at UC Berkeley recommend reviewing basic engineering mathematics, including functions, limits, continuity, differentiation, and integration, which are essential for your first semester.",
+   "context_added": false,
+   "score": 0.0018914847169071436,
+   "best_premise": "Home > Students > New students > First computer science course EECS Majors: Choosing your first computer science course As an EECS major, which computer programming course is the right one for you your first semester?"
+  },
+  {
+   "id": "M034",
+   "index": 1,
+   "sentence": "Additionally, [S2] from OSTIM Technical University mentions that students in the first semester should be familiar with engineering mathematics courses such as Math 101, which covers functions, limits, continuity, differentiation, and integration.",
+   "hypothesis": "The Computer Sciences faculty at UC Berkeley recommend reviewing basic engineering mathematics, including functions, limits, continuity, differentiation, and integration, which are essential for your first semester. Additionally, from OSTIM Technical University mentions that students in the first semester should be familiar with engineering mathematics courses such as Math 101, which covers functions, limits, continuity, differentiation, and integration.",
+   "context_added": true,
+   "score": 0.7311743497848511,
+   "best_premise": "Source ID: src_004 Course Contents | MF-Bilgisayar Mühendisliği (İngilizce) Barrier Free FIRST SEMESTER MATH 101 Engineering Mathematics I Functions, limits, continuity, differentiation and applications, integration, fundamental theorem of calculus, techniques and applications of integration, improp"
+  },
+  {
+   "id": "M034",
+   "index": 2,
+   "sentence": "Lastly, [S5] from UC Berkeley Engineering stresses the importance of mathematics in your schedule, stating that if you are delayed in Calculus, you may be \"locked out\" of foundational courses like physics and programming.",
+   "hypothesis": "Additionally, from OSTIM Technical University mentions that students in the first semester should be familiar with engineering mathematics courses such as Math 101, which covers functions, limits, continuity, differentiation, and integration. Lastly, from UC Berkeley Engineering stresses the importance of mathematics in your schedule, stating that if you are delayed in Calculus, you may be \"locked out\" of foundational courses like physics and programming.",
+   "context_added": true,
+   "score": 0.0024560079909861088,
+   "best_premise": "The Chain Reaction: Why Math Controls Your Schedule Math is the “key” that unlocks your other core requirements. If you are delayed in Calculus, you are effectively “locked out” of the foundational Physics and programming courses that define your first two years."
+  },
+  {
+   "id": "M035",
+   "index": 0,
+   "sentence": "The specific mathematics courses and their relevance to the field are detailed in [S1] and [S2].]",
+   "hypothesis": "The specific mathematics courses and their relevance to the field are detailed in and .]",
+   "context_added": false,
+   "score": 0.05657939240336418,
+   "best_premise": "Dönem SENG 202 Introduction to Database Systems 4."
+  },
+  {
+   "id": "P046",
+   "index": 0,
+   "sentence": "To advance your coding skills in Computer Engineering, you should focus on developing a deeper understanding of software engineering practices [S3].",
+   "hypothesis": "To advance your coding skills in Computer Engineering, you should focus on developing a deeper understanding of software engineering practices .",
+   "context_added": false,
+   "score": 0.9006468653678894,
+   "best_premise": "Student-facing guidance: a CENG student who wants backend, frontend, mobile, cloud, AI, or embedded software work should build not only language knowledge but also project structure, testing, Git/GitHub, debugging, design, communication, and teamwork skills."
+  },
+  {
+   "id": "P046",
+   "index": 1,
+   "sentence": "This includes understanding how to effectively use a debugger to trace code execution and identify defects, as mentioned in the source [S2].",
+   "hypothesis": "To advance your coding skills in Computer Engineering, you should focus on developing a deeper understanding of software engineering practices . This includes understanding how to effectively use a debugger to trace code execution and identify defects, as mentioned in the .",
+   "context_added": true,
+   "score": 0.0015541000757366419,
+   "best_premise": " Identify the expected functionality of a typical modern integrated development environment (IDE).  Use an IDE to develop a simple application."
+  },
+  {
+   "id": "P046",
+   "index": 2,
+   "sentence": "These practices will help you build a more professional portfolio and prepare for more advanced software engineering roles [S3].",
+   "hypothesis": "This includes understanding how to effectively use a debugger to trace code execution and identify defects, as mentioned in the . These practices will help you build a more professional portfolio and prepare for more advanced software engineering roles .",
+   "context_added": true,
+   "score": 0.00112933071795851,
+   "best_premise": "Student-facing guidance: a CENG student who wants backend, frontend, mobile, cloud, AI, or embedded software work should build not only language knowledge but also project structure, testing, Git/GitHub, debugging, design, communication, and teamwork skills. These practices make portfolio projects m"
+  },
+  {
+   "id": "H059",
+   "index": 0,
+   "sentence": "Computer engineers often work with microcontrollers, which are small, low-cost microprocessors that can be programmed to perform specific tasks [S1].",
+   "hypothesis": "Computer engineers often work with microcontrollers, which are small, low-cost microprocessors that can be programmed to perform specific tasks .",
+   "context_added": false,
+   "score": 0.0037375944666564465,
+   "best_premise": "They design high-tech devices ranging from tiny microelectronic integrated-circuit chips, to powerful systems that utilize those chips and efficient telecommunication systems that interconnect those systems."
+  },
+  {
+   "id": "H059",
+   "index": 1,
+   "sentence": "This aligns with the context provided, which states that computer engineers design high-tech devices ranging from tiny microelectronic integrated-circuit chips to powerful systems that utilize those chips [S1].",
+   "hypothesis": "Computer engineers often work with microcontrollers, which are small, low-cost microprocessors that can be programmed to perform specific tasks . This aligns with the context provided, which states that computer engineers design high-tech devices ranging from tiny microelectronic integrated-circuit chips to powerful systems that utilize those chips .",
+   "context_added": true,
+   "score": 0.03511229529976845,
+   "best_premise": "They design high-tech devices ranging from tiny microelectronic integrated-circuit chips, to powerful systems that utilize those chips and efficient telecommunication systems that interconnect those systems."
+  },
+  {
+   "id": "H066",
+   "index": 0,
+   "sentence": "Understanding this connection is crucial for designing and managing computing infrastructures and creating high-performance and concurrent software applications [S1].",
+   "hypothesis": "Understanding this connection is crucial for designing and managing computing infrastructures and creating high-performance and concurrent software applications .",
+   "context_added": false,
+   "score": 0.0047955382615327835,
+   "best_premise": "Students can design and manage computing infrastructures, create high performance and concurrent software applications, and create systems applications and libraries. Course Content Introduction, Operating-System Structures , Processes, Threads & Concurrency, CPU Scheduling , Synchronization Tools a"
+  },
+  {
+   "id": "A082",
+   "index": 0,
+   "sentence": "The report suggests that generative AI can enhance human skills and performance in the workplace, which could affect how tasks are completed and how value is assessed [S1].",
+   "hypothesis": "Generative AI can enhance human skills and performance in the workplace, which could affect how tasks are completed and how value is assessed .",
+   "context_added": false,
+   "score": 0.0006344247376546264,
+   "best_premise": "6 While the full extent of long-term productivity gains from the technology remains uncertain, workplace studies have identified various initial ways for generative AI to enhance human skills and performance."
+  },
+  {
+   "id": "A082",
+   "index": 1,
+   "sentence": "For example, the report highlights that 86% of employers surveyed see generative AI as likely to drive business transformation, indicating its potential to change the nature of work in the field of computer engineering [S4].",
+   "hypothesis": "Generative AI can enhance human skills and performance in the workplace, which could affect how tasks are completed and how value is assessed . 86% of employers surveyed see generative AI as likely to drive business transformation, indicating its potential to change the nature of work in the field of computer engineering .",
+   "context_added": true,
+   "score": 0.0005939906113781035,
+   "best_premise": "AI and information processing technologies Robots and autonomous systems Energy generation, storage and distribution New materials and composites Semiconductors and computing technologies Sensing, laser and optical technologies Quantum and encryption Biotechnology and gene technologies Satellites an"
+  },
+  {
+   "id": "A082",
+   "index": 2,
+   "sentence": "Additionally, the DORA report by Google Research suggests that the use of generative artificial intelligence in development could change how the value of development work is assessed, further emphasizing the impact of generative AI on engineering work [S2].",
+   "hypothesis": "86% of employers surveyed see generative AI as likely to drive business transformation, indicating its potential to change the nature of work in the field of computer engineering . Additionally, the DORA report by Google Research suggests that the use of generative artificial intelligence in development could change how the value of development work is assessed, further emphasizing the impact of generative AI on engineering work .",
+   "context_added": true,
+   "score": 0.00024322920944541693,
+   "best_premise": "Research Areas Machine intelligence Software engineering Meet the teams driving innovation Our teams advance the state of the art through research, systems engineering, and collaboration across Google."
+  },
+  {
+   "id": "Y092",
+   "index": 0,
+   "sentence": "The sources indicate that mathematics is essential for a Computer Engineering degree, focusing on the knowledge and skills that support essential components of the field [S4].",
+   "hypothesis": "The indicate that mathematics is essential for a Computer Engineering degree, focusing on the knowledge and skills that support essential components of the field .",
+   "context_added": false,
+   "score": 0.8377253413200378,
+   "best_premise": "mathematics is insufficient to produce a competent computer engineer, so the knowledge units in the mathematics component focus only on the knowledge and skills that support essential components of the computer engineering content areas."
+  },
+  {
+   "id": "Y092",
+   "index": 1,
+   "sentence": "Sources [S3] and [S4] suggest that mathematics is necessary to support the essential components of Computer Engineering, but they do not specify the level of mathematics required for cryptography.",
+   "hypothesis": "And suggest that mathematics is necessary to support the essential components of Computer Engineering, but they do not specify the level of mathematics required for cryptography.",
+   "context_added": false,
+   "score": 0.00040858020656742156,
+   "best_premise": "Dönem MATH 202 Differential Equations MATH 101 2."
+  },
+  {
+   "id": "Y092",
+   "index": 2,
+   "sentence": "Source [S5] discusses the importance of mathematics in Computer Engineering and mentions that computer engineering professionals apply their skills in various sectors, including those that involve cryptography.",
+   "hypothesis": "Discusses the importance of mathematics in Computer Engineering and mentions that computer engineering professionals apply their skills in various sectors, including those that involve cryptography.",
+   "context_added": false,
+   "score": 0.0077472226694226265,
+   "best_premise": "People seeking CE careers have a great potential for success."
+  },
+  {
+   "id": "Y092",
+   "index": 3,
+   "sentence": "Source [S1] does not provide information relevant to this question, and source [S2] focuses on network and web security rather than cryptography.",
+   "hypothesis": "Does not provide information relevant to this question, and focuses on network and web security rather than cryptography.",
+   "context_added": false,
+   "score": 7.747962808934972e-05,
+   "best_premise": "It should not be treated as an OSTIM degree requirement; official curriculum pages remain the source for required courses."
+  },
+  {
+   "id": "R103",
+   "index": 0,
+   "sentence": "The retrieved source states: \"For CENG students, these competencies can be demonstrated through projects, internships, labs, hackathons, student clubs, open-source work, presentations, documentation, and responsible teamwork.\" [S1].",
+   "hypothesis": "The retrieved states: \"For CENG students, these competencies can be demonstrated through projects, internships, labs, hackathons, student clubs, open- work, presentations, documentation, and responsible teamwork.\" .",
+   "context_added": false,
+   "score": 0.9845057129859924,
+   "best_premise": "Career readiness includes communication, critical thinking, equity and inclusion, leadership, professionalism, teamwork, technology, and career/self-development. For CENG students, these competencies can be demonstrated through projects, internships, labs, hackathons, student clubs, open-source work"
+  },
+  {
+   "id": "R103",
+   "index": 1,
+   "sentence": "The retrieved evidence does not establish the rest [S1].",
+   "hypothesis": "The retrieved evidence does not establish the rest .",
+   "context_added": false,
+   "score": null,
+   "note": "exempt"
+  },
+  {
+   "id": "R106",
+   "index": 0,
+   "sentence": "One such source is the Erasmus Student Internship Mobility Call from OSTİM Technical University, which is open for applications in the 2025-2026 academic year [S3].",
+   "hypothesis": "One such is the Erasmus Student Internship Mobility Call from OSTİM Technical University, which is open for applications in the 2025-2026 academic year .",
+   "context_added": false,
+   "score": 0.7006129622459412,
+   "best_premise": "Source ID: src_061 Title: Erasmus Student Internship Mobility Call Page 1 OSTİM TEKNİK ÜNİVERSİTESİ 2025-2026 AKADEMİK YILI YAZ DÖNEMİ ÖĞRENCİ STAJ HAREKETLİLİGİ BAŞVURU İLANI Proje Numarası 2025-1-TR01-KA131-HED-000306197 BAŞVURU ve SEÇİM TAKVİMİ 16/02/2026- 09/03/2026 Başvuru (online) GENEL BİLGİL"
+  },
+  {
+   "id": "R118",
+   "index": 0,
+   "sentence": "The National Association of Colleges and Employers (NACE) indicates that while GPA is no longer a primary screening tool, internships remain crucial for employers [S1].",
+   "hypothesis": "The National Association of Colleges and Employers (NACE) indicates that while GPA is no longer a primary screening tool, internships remain crucial for employers .",
+   "context_added": false,
+   "score": 0.218397855758667,
+   "best_premise": "Instead of GPA, many employers are using skills-based hiring to identify candidates with potential. A student's major, industry, and internship experience are crucial, whether or not employers screen by GPA."
+  },
+  {
+   "id": "R118",
+   "index": 1,
+   "sentence": "The curated note from CENG AI Advisor emphasizes that employability depends on evidence of learning, communication, problem-solving, teamwork, and technical work, which can be demonstrated through internships, projects, and other activities [S2].",
+   "hypothesis": "Employability depends on evidence of learning, communication, problem-solving, teamwork, and technical work, which can be demonstrated through internships, projects, and other activities .",
+   "context_added": false,
+   "score": 0.994499921798706,
+   "best_premise": "The source supports balanced advice about GPA, projects, and internships. GPA can matter for some academic, scholarship, or screening contexts, but employability also depends on evidence that a student can learn, communicate, solve problems, work with others, and complete technical work."
+  },
+  {
+   "id": "S132",
+   "index": 0,
+   "sentence": "The context mentions that transferring between demanding and non-demanding computer engineering programs is likely, but transferring from a non-demanding program to a demanding one is unlikely [S1].",
+   "hypothesis": "Transferring between demanding and non-demanding computer engineering programs is likely, but transferring from a non-demanding program to a demanding one is unlikely .",
+   "context_added": false,
+   "score": 0.2698734700679779,
+   "best_premise": "Notwithstanding, one would expect that successful transfers between two demanding CE programs and transfers between two non- demanding CE programs would be highly more likely than a transfer from a non-demanding CE program to a demanding CE program. 7.4.2 Technical institute transfers It would be un"
+  },
+  {
+   "id": "S132",
+   "index": 1,
+   "sentence": "Additionally, the context suggests that transferring from a technical institute to a four-year university program is not feasible due to the significant differences in program contexts [S1].",
+   "hypothesis": "Transferring between demanding and non-demanding computer engineering programs is likely, but transferring from a non-demanding program to a demanding one is unlikely . Transferring from a technical institute to a four-year university program is not feasible due to the significant differences in program contexts .",
+   "context_added": true,
+   "score": 0.14202263951301575,
+   "best_premise": "7.4.2 Technical institute transfers It would be unlikely that a person enrolled in a program at a technical institute could successfully transfer to four- year computer engineering program at a university. The contexts of the two programs would be very different."
+  },
+  {
+   "id": "S132",
+   "index": 2,
+   "sentence": "However, if the source of your current program is a technical institute, transferring to a demanding university program might not be possible [S1].",
+   "hypothesis": "Transferring from a technical institute to a four-year university program is not feasible due to the significant differences in program contexts . However, if the of your current program is a technical institute, transferring to a demanding university program might not be possible .",
+   "context_added": true,
+   "score": 0.9882090091705322,
+   "best_premise": "7.4.2 Technical institute transfers It would be unlikely that a person enrolled in a program at a technical institute could successfully transfer to four- year computer engineering program at a university. The contexts of the two programs would be very different."
+  },
+  {
+   "id": "S135",
+   "index": 0,
+   "sentence": "OSTIM Technical University - Department of Computer Engineering (English) is connected with industry through its emphasis on applied education and practical training [S1] [S2] [S3].",
+   "hypothesis": "OSTIM Technical University - Department of Computer Engineering (English) is connected with industry through its emphasis on applied education and practical training .",
+   "context_added": false,
+   "score": 0.766266405582428,
+   "best_premise": "Source ID: src_001 About the Department | MF-Bilgisayar Mühendisliği (İngilizce) Barrier Free Department of Computer Engineering (English) The aim of the Department of Computer Engineering is to educate Computer engineers who will contribute to the institution and organization in which they are part"
+  },
+  {
+   "id": "S135",
+   "index": 1,
+   "sentence": "The department provides students with opportunities to gain hands-on experience by conducting practical training in factories or production units located in Ankara or its provinces [S3].",
+   "hypothesis": "The department provides students with opportunities to gain hands-on experience by conducting practical training in factories or production units located in Ankara or its provinces .",
+   "context_added": false,
+   "score": 0.9785155057907104,
+   "best_premise": "ELEC-3 Technical Elective III ELEC-4 Technical Elective IV ELEC-5 Technical Elective V ELEC-6 Technical Elective VI ELEC-7 Technical Elective VII EIGHTH SEMESTER WEX 428 Workplace Experience III In the last semester of the program, all of the students will carry out practical training in a factory /"
+  },
+  {
+   "id": "S136",
+   "index": 0,
+   "sentence": "OSTIM Technical University's Department of Computer Engineering emphasizes the education of Computer engineers who can contribute to their institutions and organizations, enabling them to gain skills for technical management [S1].",
+   "hypothesis": "OSTIM Technical University's Department of Computer Engineering emphasizes the education of Computer engineers who can contribute to their institutions and organizations, enabling them to gain skills for technical management .",
+   "context_added": false,
+   "score": 0.9935939908027649,
+   "best_premise": "Source ID: src_001 About the Department | MF-Bilgisayar Mühendisliği (İngilizce) Barrier Free Department of Computer Engineering (English) The aim of the Department of Computer Engineering is to educate Computer engineers who will contribute to the institution and organization in which they are part"
+  },
+  {
+   "id": "S136",
+   "index": 1,
+   "sentence": "This program also focuses on teaching students how to analyze, synthesize, and model solutions to engineering problems, as well as fostering the ability to conduct personal research and share knowledge and experience with society and industry [S1].",
+   "hypothesis": "OSTIM Technical University's Department of Computer Engineering emphasizes the education of Computer engineers who can contribute to their institutions and organizations, enabling them to gain skills for technical management . This program also focuses on teaching students how to analyze, synthesize, and model solutions to engineering problems, as well as fostering the ability to conduct personal research and share knowledge and experience with society and industry .",
+   "context_added": true,
+   "score": 0.9914664030075073,
+   "best_premise": "Source ID: src_001 About the Department | MF-Bilgisayar Mühendisliği (İngilizce) Barrier Free Department of Computer Engineering (English) The aim of the Department of Computer Engineering is to educate Computer engineers who will contribute to the institution and organization in which they are part"
+  },
+  {
+   "id": "S139",
+   "index": 0,
+   "sentence": "The context does not provide direct information about Erasmus agreements specifically for the Department of Computer Engineering at OSTIM Technical University [S1].",
+   "hypothesis": "The context does not provide direct information about Erasmus agreements specifically for the Department of Computer Engineering at OSTIM Technical University .",
+   "context_added": false,
+   "score": 0.002284970600157976,
+   "best_premise": "Source ID: src_060 Our Bilateral Agreements | Erasmus Engelsiz Kütüphane Main Site Accessibility ERASMUS+ PROJECT COORDINATION Our Student Mobility Agreements Faculty of Engineering Computer Engineering University Name Country University of Jean İSPANYA Fundacion Universitaria San Antonio İSPANYA Un"
+  },
+  {
+   "id": "S139",
+   "index": 1,
+   "sentence": "The list of bilateral agreements in [S1] includes the Erasmus+ project with the University of Jean in Spain, which is relevant to the institution as a whole, not to a specific department.",
+   "hypothesis": "The list of bilateral agreements in includes the Erasmus+ project with the University of Jean in Spain, which is relevant to the institution as a whole, not to a specific department.",
+   "context_added": false,
+   "score": 0.002074602758511901,
+   "best_premise": "Source ID: src_060 Our Bilateral Agreements | Erasmus Engelsiz Kütüphane Main Site Accessibility ERASMUS+ PROJECT COORDINATION Our Student Mobility Agreements Faculty of Engineering Computer Engineering University Name Country University of Jean İSPANYA Fundacion Universitaria San Antonio İSPANYA Un"
+  },
+  {
+   "id": "X150",
+   "index": 0,
+   "sentence": "Curriculum courses in Computer Engineering connect directly to actual industry roles through a structured set of learning outcomes and knowledge units [S1].",
+   "hypothesis": "Curriculum courses in Computer Engineering connect directly to actual industry roles through a structured set of learning outcomes and knowledge units .",
+   "context_added": false,
+   "score": 0.0002253078273497522,
+   "best_premise": "set of learning outcomes defines each knowledge unit."
+  },
+  {
+   "id": "X150",
+   "index": 1,
+   "sentence": "Professional and ethical considerations are also vital, as they prepare students for the professional responsibilities and legal issues they will face in their careers [S3].",
+   "hypothesis": "Professional and ethical considerations are also vital, as they prepare students for the professional responsibilities and legal issues they will face in their careers .",
+   "context_added": false,
+   "score": 0.9563292860984802,
+   "best_premise": "At the same time, students must be encouraged from the very beginning to maintain a professional and responsible attitude toward their work and give credence to the ethical and legal issues affecting their professional practice. Page 55 Page 54 of 149 6.3 Basic Computer Engineering Curriculum Compon"
+  },
+  {
+   "id": "T182",
+   "index": 0,
+   "sentence": "According to [S1], all engineering programs require courses in mathematics that are necessary for understanding technical material.",
+   "hypothesis": "All engineering programs require courses in mathematics that are necessary for understanding technical material.",
+   "context_added": false,
+   "score": 0.0007788033690303564,
+   "best_premise": "and written methods that are necessary for all engineering programs."
+  },
+  {
+   "id": "T182",
+   "index": 1,
+   "sentence": "However, it is essential to include communication requirements within computer engineering courses to ensure you can communicate discipline-specific content effectively [S1].",
+   "hypothesis": "All engineering programs require courses in mathematics that are necessary for understanding technical material. However, it is essential to include communication requirements within computer engineering courses to ensure you can communicate discipline-specific content effectively .",
+   "context_added": true,
+   "score": 0.0006685751141048968,
+   "best_premise": "Inclusion of communication requirements within computer engineering courses ensures that students can communicate discipline-specific content and contributes to the students’ learning of technical material."
+  },
+  {
+   "id": "T182",
+   "index": 2,
+   "sentence": "Additionally, [S2] emphasizes the importance of math in your academic journey, stating that math is the \"key\" that unlocks your other core requirements.",
+   "hypothesis": "However, it is essential to include communication requirements within computer engineering courses to ensure you can communicate discipline-specific content effectively . The importance of math in your academic journey, stating that math is the \"key\" that unlocks your other core requirements.",
+   "context_added": true,
+   "score": 0.006460139993578196,
+   "best_premise": "The Chain Reaction: Why Math Controls Your Schedule Math is the “key” that unlocks your other core requirements."
+  },
+  {
+   "id": "T182",
+   "index": 3,
+   "sentence": "If you are delayed in Calculus, you may be effectively \"locked out\" of foundational Physics and programming courses, which are critical for your first two years [S2].",
+   "hypothesis": "If you are delayed in Calculus, you may be effectively \"locked out\" of foundational Physics and programming courses, which are critical for your first two years .",
+   "context_added": false,
+   "score": 0.9860618710517883,
+   "best_premise": "The Chain Reaction: Why Math Controls Your Schedule Math is the “key” that unlocks your other core requirements. If you are delayed in Calculus, you are effectively “locked out” of the foundational Physics and programming courses that define your first two years."
+  },
+  {
+   "id": "T182",
+   "index": 4,
+   "sentence": "Therefore, it is important to start preparing for Calculus as soon as possible to avoid any delays [S2].",
+   "hypothesis": "If you are delayed in Calculus, you may be effectively \"locked out\" of foundational Physics and programming courses, which are critical for your first two years . Therefore, it is important to start preparing for Calculus as soon as possible to avoid any delays .",
+   "context_added": true,
+   "score": 0.0019998757634311914,
+   "best_premise": "The Chain Reaction: Why Math Controls Your Schedule Math is the “key” that unlocks your other core requirements. If you are delayed in Calculus, you are effectively “locked out” of the foundational Physics and programming courses that define your first two years."
+  },
+  {
+   "id": "T182",
+   "index": 5,
+   "sentence": "For a more specific approach, you might consider taking preparatory courses in Precalculus, as mentioned in [S5].",
+   "hypothesis": "For a more specific approach, you might consider taking preparatory courses in Precalculus, as mentioned in .",
+   "context_added": false,
+   "score": 0.9872926473617554,
+   "best_premise": "Starting with a strong math foundation can make your first semester feel more manageable and less overwhelming; Lower the Risk of Academic Notice (in some places this is known as Academic Probation) – Students who come in with a strong Precalculus background have higher GPAs and are less likely to b"
+  },
+  {
+   "id": "T182",
+   "index": 6,
+   "sentence": "This can help you build a strong math foundation, which can make your first semester feel more manageable and less overwhelming [S5].",
+   "hypothesis": "For a more specific approach, you might consider taking preparatory courses in Precalculus, as mentioned in . This can help you build a strong math foundation, which can make your first semester feel more manageable and less overwhelming .",
+   "context_added": true,
+   "score": 0.9934425354003906,
+   "best_premise": "Starting with a strong math foundation can make your first semester feel more manageable and less overwhelming; Lower the Risk of Academic Notice (in some places this is known as Academic Probation) – Students who come in with a strong Precalculus background have higher GPAs and are less likely to b"
+  },
+  {
+   "id": "T183",
+   "index": 0,
+   "sentence": "There are internship opportunities available in Turkey for Computer Engineering students [S1].",
+   "hypothesis": "There are internship opportunities available in Turkey for Computer Engineering students .",
+   "context_added": false,
+   "score": 0.0017939648823812604,
+   "best_premise": "In addition, internship / on-the-job training will be carried out in a factory / production unit located in Ankara within the framework of the cooperation protocol between the OSTİM Technical University and the OSTİM Clusters within the framework of the development and cooperation."
+  },
+  {
+   "id": "T183",
+   "index": 1,
+   "sentence": "Students can participate in internships at a factory or production unit in Ankara, as stipulated in the document [S1] from OSTİM Technical University - Department of Computer Engineering.",
+   "hypothesis": "Students can participate in internships at a factory or production unit in Ankara, as stipulated in the document from OSTİM Technical University - Department of Computer Engineering.",
+   "context_added": false,
+   "score": 0.8472275137901306,
+   "best_premise": "In addition, internship / on-the-job training will be carried out in a factory / production unit located in Ankara within the framework of the cooperation protocol between the OSTİM Technical University and the OSTİM Clusters within the framework of the development and cooperation."
+  },
+  {
+   "id": "T191",
+   "index": 0,
+   "sentence": "OSTIM CENG stands out in Computer Engineering due to its focus on preparing students for both technical management and personal research [S1].",
+   "hypothesis": "OSTIM CENG stands out in Computer Engineering due to its focus on preparing students for both technical management and personal research .",
+   "context_added": false,
+   "score": 0.0028448577504605055,
+   "best_premise": "Source ID: src_001 About the Department | MF-Bilgisayar Mühendisliği (İngilizce) Barrier Free Department of Computer Engineering (English) The aim of the Department of Computer Engineering is to educate Computer engineers who will contribute to the institution and organization in which they are part"
+  },
+  {
+   "id": "T191",
+   "index": 1,
+   "sentence": "The department emphasizes the ability to solve engineering problems through analysis, synthesis, and modeling, as well as the capability to conduct independent research and share knowledge and experience with society and industry [S1].",
+   "hypothesis": "The department emphasizes the ability to solve engineering problems through analysis, synthesis, and modeling, as well as the capability to conduct independent research and share knowledge and experience with society and industry .",
+   "context_added": false,
+   "score": 0.9980351328849792,
+   "best_premise": "Source ID: src_001 About the Department | MF-Bilgisayar Mühendisliği (İngilizce) Barrier Free Department of Computer Engineering (English) The aim of the Department of Computer Engineering is to educate Computer engineers who will contribute to the institution and organization in which they are part"
+  },
+  {
+   "id": "T191",
+   "index": 2,
+   "sentence": "This comprehensive approach is evident in courses like CENG 303, which covers Operating Systems Design and Construction, indicating a strong emphasis on foundational knowledge and practical skills [S2].",
+   "hypothesis": "The department emphasizes the ability to solve engineering problems through analysis, synthesis, and modeling, as well as the capability to conduct independent research and share knowledge and experience with society and industry . This comprehensive approach is evident in courses like CENG 303, which covers Operating Systems Design and Construction, indicating a strong emphasis on foundational knowledge and practical skills .",
+   "context_added": true,
+   "score": 0.4052988886833191,
+   "best_premise": "Source ID: src_064 Title: CENG 303 Operating Systems Design and Construction Course Syllabus Page 1 FACULTY OF ENGINEERING COURSE SYLLABUS FORM Doküman Kodu MF.FR.003 Yayın Tarihi 06.09.2024 Revizyon No 0 Revizyon Tarihi 0 Gizlilik Sınıfı Hizmet içi CENG 303 – OPERATING SYSTEMS DESIGN AND CONSTRUCTI"
+  }
+ ],
+ "summaries": {
+  "0.3": {
+   "good_answers_fully_kept": "4/8",
+   "flawed_answers_fixed": "10/11",
+   "bad_sentences_removed": "13/15",
+   "ok_sentences_lost_in_flawed": 6,
+   "good_answers_damaged": [
+    "P046",
+    "R118",
+    "T183",
+    "T191"
+   ],
+   "flawed_answers_not_fixed": [
+    "F007"
+   ]
+  },
+  "0.5": {
+   "good_answers_fully_kept": "4/8",
+   "flawed_answers_fixed": "10/11",
+   "bad_sentences_removed": "13/15",
+   "ok_sentences_lost_in_flawed": 6,
+   "good_answers_damaged": [
+    "P046",
+    "R118",
+    "T183",
+    "T191"
+   ],
+   "flawed_answers_not_fixed": [
+    "F007"
+   ]
+  },
+  "0.7": {
+   "good_answers_fully_kept": "4/8",
+   "flawed_answers_fixed": "10/11",
+   "bad_sentences_removed": "14/15",
+   "ok_sentences_lost_in_flawed": 6,
+   "good_answers_damaged": [
+    "P046",
+    "R118",
+    "T183",
+    "T191"
+   ],
+   "flawed_answers_not_fixed": [
+    "F007"
+   ]
+  }
+ }
+}
