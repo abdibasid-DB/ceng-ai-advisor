@@ -113,6 +113,16 @@ QUERY_EXPANSION_RULES: tuple[tuple[tuple[str, ...], str], ...] = (
         "future skills technology demand career adaptability reskilling",
     ),
     (
+        # Whether the degree pays off is asked about in value words; the
+        # evidence is written as job outlook and demand.
+        ("worth studying", "worth it", "still worth", "worth the effort", "good investment"),
+        "career outlook job growth employment demand graduates computer occupations",
+    ),
+    (
+        ("find a job", "get a job", "find job", "find work", "job after", "jobs after", "employed after"),
+        "graduate employment rate job outlook job growth time to first job computer occupations",
+    ),
+    (
         ("low gpa", "gpa", "grade point"),
         "GPA candidate screening skills-based hiring major internship experience resume portfolio projects employer hiring career readiness",
     ),

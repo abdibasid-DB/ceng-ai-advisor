@@ -69,6 +69,48 @@ def normalize(text: str) -> str:
     return " ".join(re.findall(r"\w+", (text or "").casefold()))
 
 
+# Words a rewrite may drop: references it resolves and fillers ("Is Linux important too?").
+REWRITE_FILLER_WORDS = {
+    "a", "an", "the", "is", "are", "am", "was", "be", "do", "does", "did", "can", "could", "should", "would", "will",
+    "i", "me", "my", "you", "your", "we", "us", "our", "it", "its", "that", "this", "those", "these", "them", "they",
+    "their", "what", "which",
+    "how", "why", "when", "where", "who", "about", "first", "one", "too", "also", "then", "so", "and", "or", "but",
+    "of", "to", "in", "on", "for", "with", "at", "by", "from", "as", "if", "any", "there", "really", "ok", "okay",
+    # Generic verbs a correct paraphrase may replace ("Does it include Linux?" -> "... Linux covered ...").
+    "include", "includes", "have", "has", "get", "make", "use", "go", "take", "give", "cover", "covers",
+}
+
+
+def content_words(text: str) -> set[str]:
+    return {word for word in re.findall(r"[a-z0-9+#]+", (text or "").casefold()) if word not in REWRITE_FILLER_WORDS}
+
+
+def word_kept(word: str, rewrite_words: set[str]) -> bool:
+    """"prepare" is kept by "preparing", "years" by "year"."""
+    stem = word[:5] if len(word) > 5 else word.rstrip("s")
+    return any(candidate.startswith(stem) for candidate in rewrite_words)
+
+
+def rewrite_problem(rewrite: str, question: str, turns: list[Turn]) -> str | None:
+    """Why a fluent rewrite still changes the question, or None.
+
+    "Is Linux important too?" -> "What role does Linux play in cybersecurity?"
+    drops "important"; "How can I prepare before first year?" -> "... considering
+    MATH 101 and MATH 202?" imports course codes from the advisor's answer.
+    """
+    if normalize(rewrite) == normalize(question):
+        return "rewrite left the question unchanged"
+    rewrite_words = content_words(rewrite)
+    dropped = sorted(word for word in content_words(question) if not word_kept(word, rewrite_words))
+    if dropped:
+        return f"rewrite dropped words of the question: {dropped}"
+    student_text = " ".join([question, *(turn.question for turn in turns)])
+    added_numbers = set(re.findall(r"\d+", rewrite)) - set(re.findall(r"\d+", student_text))
+    if added_numbers:
+        return f"rewrite added numbers not asked by the student: {sorted(added_numbers)}"
+    return None
+
+
 def rewrite_follow_up(llm_service: Any, turns: list[Turn], question: str) -> tuple[str | None, dict[str, Any]]:
     """(standalone question or None, metadata for retrieval_metadata)."""
     start = time.perf_counter()
@@ -86,6 +128,10 @@ def rewrite_follow_up(llm_service: Any, turns: list[Turn], question: str) -> tup
         if rewrite and any(normalize(rewrite) == normalize(turn.question) for turn in turns):
             rewrite = None
             metadata["error"] = "rewrite repeated a previous question"
+        problem = rewrite_problem(rewrite, question, turns) if rewrite else None
+        if problem:
+            rewrite = None
+            metadata["error"] = problem
         metadata["llm_rewrite"] = rewrite
     except Exception as exc:
         metadata["error"] = str(exc) or exc.__class__.__name__

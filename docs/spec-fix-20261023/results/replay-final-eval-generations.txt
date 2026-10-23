@@ -1,0 +1,37 @@
+group                  correct_eviden   correct_insuff   incorrect_refu   unsupported_in
+ai_future                 11 -> 13           0 -> 0            2 -> 0            1 -> 1     
+career_employment         12 -> 16           3 -> 3            9 -> 7            4 -> 2     
+complex                    7 -> 7            0 -> 0            4 -> 4            1 -> 1     
+curriculum                10 -> 9            0 -> 0            3 -> 3            1 -> 2     
+cybersecurity              9 -> 9            0 -> 0            2 -> 2            1 -> 1     
+fundamentals              10 -> 10           0 -> 0            0 -> 0            2 -> 2     
+hardware_networks          7 -> 7            0 -> 0            4 -> 4            1 -> 1     
+mathematics                5 -> 6            0 -> 0            5 -> 5            2 -> 1     
+multi_turn                11 -> 11           1 -> 1            4 -> 3            6 -> 7     
+out_of_scope               0 -> 0           13 -> 13           0 -> 0            0 -> 0     
+programming_software      11 -> 15           0 -> 0            3 -> 2            4 -> 1     
+student_local              4 -> 5            3 -> 3            7 -> 7            4 -> 3     
+unsupported                0 -> 0           13 -> 13           0 -> 0            0 -> 0     
+ALL                       97 -> 108         33 -> 33          43 -> 37          27 -> 22    
+
+changed labels:
+  C023   curriculum         correct_evidence_supported -> unsupported_incorrect_or_misleading
+  M036   mathematics        unsupported_incorrect_or_misleading -> correct_evidence_supported
+  P039   programming_software unsupported_incorrect_or_misleading -> correct_evidence_supported
+  P040   programming_software incorrect_refusal_evidence_exists -> correct_evidence_supported
+  P048   programming_software unsupported_incorrect_or_misleading -> correct_evidence_supported
+  P053   programming_software unsupported_incorrect_or_misleading -> correct_evidence_supported
+  A076   ai_future          incorrect_refusal_evidence_exists -> correct_evidence_supported
+  A081   ai_future          incorrect_refusal_evidence_exists -> correct_evidence_supported
+  Y086   cybersecurity      unsupported_incorrect_or_misleading -> correct_evidence_supported
+  Y089   cybersecurity      correct_evidence_supported -> unsupported_incorrect_or_misleading
+  R100   career_employment  incorrect_refusal_evidence_exists -> correct_evidence_supported
+  R104   career_employment  unsupported_incorrect_or_misleading -> correct_evidence_supported
+  R114   career_employment  unsupported_incorrect_or_misleading -> correct_evidence_supported
+  R115   career_employment  incorrect_refusal_evidence_exists -> correct_evidence_supported
+  S125   student_local      unsupported_incorrect_or_misleading -> incorrect_refusal_evidence_exists
+  S135   student_local      incorrect_refusal_evidence_exists -> correct_evidence_supported
+  T184   multi_turn         incorrect_refusal_evidence_exists -> unsupported_incorrect_or_misleading
+  T187   multi_turn         unsupported_incorrect_or_misleading -> correct_evidence_supported
+  T192   multi_turn         correct_evidence_supported -> incorrect_refusal_evidence_exists
+  T194   multi_turn         incorrect_refusal_evidence_exists -> unsupported_incorrect_or_misleading

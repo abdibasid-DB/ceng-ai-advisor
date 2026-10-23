@@ -1,0 +1,4941 @@
+[
+ {
+  "id": "p001",
+  "question": "Could you explain CENG in simple terms for a high-school student?",
+  "group": "paraphrase",
+  "expected_topics": [],
+  "expected_categories": [
+   "department_information",
+   "curriculum"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": null,
+  "evaluation_label": "unsupported_incorrect_or_misleading",
+  "elapsed_wall_seconds": 83.16,
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "What is Computer Engineering?",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": false,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S1"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "removed_trailing_source_labels",
+     "added_supported_inline_label"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "Computer Engineering is a four-year curriculum that focuses on the synthesis of electrical engineering and computer science, aimed at designing and constructing processor-based systems that include hardware, software, and communications components [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "communications",
+       "components",
+       "curriculum",
+       "electrical",
+       "focuses",
+       "four-year",
+       "hardware",
+       "processor-based",
+       "science",
+       "software",
+       "synthesis"
+      ]
+     },
+     {
+      "claim": "Graduates should be able to design and implement systems that integrate software and hardware devices [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "able",
+       "and",
+       "design",
+       "devices",
+       "hardware",
+       "implement",
+       "software",
+       "systems",
+       "that"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": "generated answer did not address the question's distinctive topic terms",
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.7575972080230713,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "What is Computer Engineering?",
+    "query_kind": "standalone_domain_question",
+    "query_normalization": {
+     "original_question": "Could you explain CENG in simple terms for a high-school student?",
+     "normalized_question": "could you explain computer engineering in simple terms for a high school student?",
+     "retrieval_question": "What is Computer Engineering?",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "computer_engineering",
+       "matched_terms": [
+        "computer engineering"
+       ],
+       "confidence": 1.0
+      },
+      {
+       "name": "definition",
+       "matched_terms": [
+        "explain"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "explain",
+     "constraints": [],
+     "entities": [
+      "computer_engineering"
+     ],
+     "referents": [],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 13,
+      "replacements": [
+       {
+        "from": "\\bceng\\b",
+        "to": "computer engineering"
+       }
+      ],
+      "normalized_tokens": [
+       "could",
+       "you",
+       "explain",
+       "computer",
+       "engineering",
+       "in",
+       "simple",
+       "terms",
+       "for",
+       "a",
+       "high",
+       "school",
+       "student"
+      ],
+      "changed": true
+     },
+     "changed": true
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 32.01,
+    "context_construction_seconds": 0.011,
+    "llm_generation_seconds": 49.708,
+    "initial_llm_generation_seconds": 49.708,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 49.569,
+    "total_seconds": 81.773
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "answer": "Computer Engineering is a four-year curriculum that focuses on the synthesis of electrical engineering and computer science, aimed at designing and constructing processor-based systems that include hardware, software, and communications components [S1]. Graduates should be able to design and implement systems that integrate software and hardware devices [S1].",
+  "answer_warnings": [],
+  "sources": [
+   {
+    "source_id": "src_042",
+    "title": "Curricular Guidance",
+    "source_name": "ACM Committee for Computing Education in Community Colleges",
+    "source_type": "professional_curricular_guidance",
+    "url": "https://ccecc.acm.org/guidance",
+    "category": "common_misconceptions",
+    "supporting_chunk_ids": [
+     "src_042_chunk_002"
+    ],
+    "evidence_labels": [
+     "S1"
+    ],
+    "best_similarity_score": 0.7337636351585388
+   }
+  ],
+  "retrieved_context": [
+   {
+    "label": "S1",
+    "chunk_id": "src_042_chunk_002",
+    "source_id": "src_042",
+    "title": "Curricular Guidance",
+    "category": "common_misconceptions",
+    "similarity_score": 0.7337636351585388,
+    "url": "https://ccecc.acm.org/guidance",
+    "passage": "Computer Engineering involves the design and construction of processor-based systems comprised of hardware, software, and communications components. This four-year curriculum focuses on the synthesis of electrical engineering and computer science as applied to the design of systems such as cellular communications, consumer electronics, medical imaging and devices, alarm systems and military technologies. Upon graduation, students initiating careers as computer engineers should be able to design and implement systems that involve the integration of software and hardware devices."
+   },
+   {
+    "label": "S2",
+    "chunk_id": "src_080_chunk_001",
+    "source_id": "src_080",
+    "title": "Computing Curricula 2020: Paradigms for Global Computing Education",
+    "category": "common_misconceptions",
+    "similarity_score": 0.6835991144180298,
+    "url": "https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf",
+    "passage": "Title: Computing Curricula 2020: Paradigms for Global Computing Education Source: ACM and IEEE Computer Society URL: https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf Date accessed: 2026-10-13 Curated source note Computing Curricula 2020 compares major computing disciplines and is useful when students ask whether Computer Engineering is the same as Computer Science, Software Engineering, Information Technology, Information Systems, or Cybersecurity. Computer Engineering is generally closest to the boundary between computing and engineering hardware."
+   }
+  ],
+  "previous_turn_setup": null
+ },
+ {
+  "id": "p002",
+  "question": "What will I actually learn semester by semester in OSTIM Computer Engineering?",
+  "group": "paraphrase",
+  "expected_topics": [],
+  "expected_categories": [
+   "curriculum",
+   "department_information"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": null,
+  "evaluation_label": "correct_evidence_supported",
+  "elapsed_wall_seconds": 45.704,
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "What will I actually learn semester by semester in ostim computer engineering? (constraints: ostim)",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S1",
+     "S3"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "removed_trailing_source_labels",
+     "source_name_to_inline_label",
+     "added_supported_inline_label",
+     "pruned_unverified_sentences"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "In the eighth semester at OSTIM Computer Engineering, students will engage in practical training at a factory or production unit in Ankara [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "ankara",
+       "eighth",
+       "factory",
+       "ostim",
+       "practical",
+       "production",
+       "semester",
+       "the",
+       "training",
+       "unit",
+       "will"
+      ]
+     },
+     {
+      "claim": "Additionally, students will study Object-Oriented Programming, which introduces them to essential concepts in software development [S3].",
+      "labels": [
+       "S3"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "concepts",
+       "development",
+       "introduces",
+       "object-oriented",
+       "programming",
+       "software"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.6068252921104431,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "What will I actually learn semester by semester in ostim computer engineering? (constraints: ostim)",
+    "query_kind": "standalone_domain_question",
+    "query_normalization": {
+     "original_question": "What will I actually learn semester by semester in OSTIM Computer Engineering?",
+     "normalized_question": "What will I actually learn semester by semester in ostim computer engineering?",
+     "retrieval_question": "What will I actually learn semester by semester in ostim computer engineering? (constraints: ostim)",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "computer_engineering",
+       "matched_terms": [
+        "computer engineering"
+       ],
+       "confidence": 1.0
+      },
+      {
+       "name": "curriculum",
+       "matched_terms": [
+        "semester"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "explain",
+     "constraints": [
+      "ostim"
+     ],
+     "entities": [
+      "computer_engineering",
+      "curriculum",
+      "OSTIM Technical University"
+     ],
+     "referents": [],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 12,
+      "replacements": [],
+      "normalized_tokens": [
+       "what",
+       "will",
+       "i",
+       "actually",
+       "learn",
+       "semester",
+       "by",
+       "semester",
+       "in",
+       "ostim",
+       "computer",
+       "engineering"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.564,
+    "context_construction_seconds": 0.003,
+    "llm_generation_seconds": 41.935,
+    "initial_llm_generation_seconds": 41.935,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 41.917,
+    "total_seconds": 45.668
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "answer": "In the eighth semester at OSTIM Computer Engineering, students will engage in practical training at a factory or production unit in Ankara [S1]. Additionally, students will study Object-Oriented Programming, which introduces them to essential concepts in software development [S3].",
+  "answer_warnings": [],
+  "sources": [
+   {
+    "source_id": "src_004",
+    "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+    "source_name": "OSTIM Technical University - Department of Computer Engineering (English)",
+    "source_type": "course_descriptions",
+    "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+    "category": "curriculum",
+    "supporting_chunk_ids": [
+     "src_004_chunk_018"
+    ],
+    "evidence_labels": [
+     "S1"
+    ],
+    "best_similarity_score": 0.6068252921104431
+   },
+   {
+    "source_id": "src_126",
+    "title": "Course Contents: OSTIM Computer Engineering programming courses and programming languages (SENG116, CENG109, CENG110)",
+    "source_name": "OSTIM Technical University - Department of Computer Engineering (English)",
+    "source_type": "course_descriptions",
+    "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+    "category": "programming",
+    "supporting_chunk_ids": [
+     "src_126_chunk_001"
+    ],
+    "evidence_labels": [
+     "S3"
+    ],
+    "best_similarity_score": 0.6155615448951721
+   }
+  ],
+  "retrieved_context": [
+   {
+    "label": "S1",
+    "chunk_id": "src_004_chunk_018",
+    "source_id": "src_004",
+    "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+    "category": "curriculum",
+    "similarity_score": 0.6068252921104431,
+    "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+    "passage": "ELEC-3 Technical Elective III ELEC-4 Technical Elective IV ELEC-5 Technical Elective V ELEC-6 Technical Elective VI ELEC-7 Technical Elective VII EIGHTH SEMESTER WEX 428 Workplace Experience III In the last semester of the program, all of the students will carry out practical training in a factory / production unit located in all provinces of Ankara or in Ankara in accordance with the predefined principles and principles that OSTIM Technical University deems appropriate."
+   },
+   {
+    "label": "S2",
+    "chunk_id": "src_067_chunk_312",
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "category": "curriculum",
+    "similarity_score": 0.5877151489257812,
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "passage": "149 B.4.3 Four-Year Model for Curriculum A CE: can be offered in computer engineering department ECE: offered in the electrical and computer engineering department CSC: offered in the computer science department *CE technical electives: approved elective course in either department Course Description Credit Course Description Credit Semester 1 Semester 2 MTH 101 Calculus I 3 MTH 102 Calculus II 3 CHM 101 Chemistry I & Lab 4 PHY 101 Physics I 3 CSCA101 Introduction to Computer Programming 4 CSCA102 Intermediate Computer Programming 4 English Composition I 3 ECEA101 Introduction to ECE 2 Humanities Elective 3 English Composition II 3 Total Credit Hours 17 Total Credit Hours 15 Semester 3..."
+   },
+   {
+    "label": "S3",
+    "chunk_id": "src_126_chunk_001",
+    "source_id": "src_126",
+    "title": "Course Contents: OSTIM Computer Engineering programming courses and programming languages (SENG116, CENG109, CENG110)",
+    "category": "programming",
+    "similarity_score": 0.6155615448951721,
+    "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+    "passage": "Course Contents: OSTIM Computer Engineering programming courses and programming languages (SENG116, CENG109, CENG110) SENG116 Object Oriented Programming Object-Oriented Programming introduces the fundamental concepts and principles of object-oriented software development. This course covers key topics such as classes, objects, inheritance, encapsulation, polymorphism, and abstraction."
+   },
+   {
+    "label": "S4",
+    "chunk_id": "src_067_chunk_076",
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "category": "curriculum",
+    "similarity_score": 0.5671453475952148,
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "passage": "Within a typical semester system, a four-year undergraduate program typically has at least 120 semester credit hours. One year of study consists of two semesters or 30 semester hours and one semester consists of 15 semester hours (or credits)."
+   }
+  ],
+  "previous_turn_setup": null
+ },
+ {
+  "id": "p003",
+  "question": "I have never coded before. Am I already behind if I choose this department?",
+  "group": "paraphrase",
+  "expected_topics": [],
+  "expected_categories": [
+   "programming",
+   "common_misconceptions",
+   "skills",
+   "skills_and_technologies"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": null,
+  "evaluation_label": "incorrect_refusal_evidence_exists",
+  "elapsed_wall_seconds": 46.772,
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "I have never coded before am I already behind if I choose this department? (Computer Engineering)",
+   "status": "insufficient_information",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S2",
+     "S3",
+     "S4"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4",
+     "S5"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "removed_trailing_source_labels",
+     "added_supported_inline_label",
+     "pruned_unverified_sentences",
+     "partial_answer"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": []
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.6595013737678528,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "unsupported_reason": "generated answer did not address the question's distinctive topic terms",
+    "discarded_generation": "Based on the information provided, choosing the Computer Engineering department does not necessarily mean you are already behind if you have never coded before. The sources indicate that half of the students in introductory computer engineering courses have never programmed before. Additionally, the courses offered cover fundamental topics such as basic programming, digital logic, basic computer organization, and electrical circuits, which can serve as a foundation for further study. Therefore, you can start at a similar level as other students who have not had prior programming experience. [S3] [S4]\n\nUSED_SOURCES:\n[S1]\n[S2]\n[S3]\n[S4]",
+    "resolved_question": "I have never coded before am I already behind if I choose this department? (Computer Engineering)",
+    "query_kind": "standalone_domain_question",
+    "query_normalization": {
+     "original_question": "I have never coded before. Am I already behind if I choose this department?",
+     "normalized_question": "I have never coded before am I already behind if I choose this department?",
+     "retrieval_question": "I have never coded before am I already behind if I choose this department? (Computer Engineering)",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "electives",
+       "matched_terms": [
+        "choose"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "recommend",
+     "constraints": [],
+     "entities": [
+      "electives"
+     ],
+     "referents": [
+      "this"
+     ],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 14,
+      "replacements": [],
+      "normalized_tokens": [
+       "i",
+       "have",
+       "never",
+       "coded",
+       "before",
+       "am",
+       "i",
+       "already",
+       "behind",
+       "if",
+       "i",
+       "choose",
+       "this",
+       "department"
+      ],
+      "changed": true
+     },
+     "changed": true
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.529,
+    "context_construction_seconds": 0.002,
+    "llm_generation_seconds": 41.856,
+    "initial_llm_generation_seconds": 41.856,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 41.779,
+    "total_seconds": 46.748
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "answer_warnings": [],
+  "sources": [],
+  "retrieved_context": [
+   {
+    "label": "S1",
+    "chunk_id": "src_070_chunk_001",
+    "source_id": "src_070",
+    "title": "EECS Majors: Choosing your first computer science course",
+    "category": "programming",
+    "similarity_score": 0.6595013737678528,
+    "url": "https://engineering.berkeley.edu/students/new-students/eecs-majors-choosing-your-first-computer-science-course/",
+    "passage": "Title: EECS Majors: Choosing your first computer science course First computer science course - Berkeley Engineering Skip to primary navigation Educating leaders. Creating knowledge. Serving society. Home > Students > New students > First computer science course EECS Majors: Choosing your first computer science course As an EECS major, which computer programming course is the right one for you your first semester? Here’s some advice from the Computer Sciences faculty about your options for your first semester. Computer Science 61Ais a rigorous and fast-paced introduction to computer science that was designed for students with some prior programming experience."
+   },
+   {
+    "label": "S2",
+    "chunk_id": "src_067_chunk_162",
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "category": "curriculum",
+    "similarity_score": 0.6717911958694458,
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "passage": "6.3.2 Course Arrangement Course sequences are typically used for subject coverage, with the sequence following introductory, intermediate, and advanced areas of study as the student progresses along the curriculum. Examples of introductory computer engineering courses are basic programming courses, digital logic, basic computer organization, and electrical circuits that provide the foundation required for further study. Intermediate courses generally add depth and expose students to state of the art techniques in these areas."
+   },
+   {
+    "label": "S3",
+    "chunk_id": "src_039_chunk_012",
+    "source_id": "src_039",
+    "title": "Which Introductory Course Should I Take?",
+    "category": "programming",
+    "similarity_score": 0.6408331394195557,
+    "url": "https://cs.brown.edu/degrees/undergrad/whatcourse/",
+    "passage": "Each of 0111, 0150, and 0170 covers something relevant for 200 that the other two do not, so everyone comes in on different but equivalent footing. I've never programmed before -- can I take a CS Intro course? Absolutely!"
+   },
+   {
+    "label": "S4",
+    "chunk_id": "src_039_chunk_013",
+    "source_id": "src_039",
+    "title": "Which Introductory Course Should I Take?",
+    "category": "programming",
+    "similarity_score": 0.6249288320541382,
+    "url": "https://cs.brown.edu/degrees/undergrad/whatcourse/",
+    "passage": "half of the students in each of these courses has never programmed before. The majority of students with significant prior programming experience take 0190 (or sometimes 0170 since it uses a different style of programming than most high school courses)."
+   },
+   {
+    "label": "S5",
+    "chunk_id": "src_067_chunk_310",
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "category": "curriculum",
+    "similarity_score": 0.6448596715927124,
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "passage": "B.4.1 Program Goals and Features This program leads to a bachelor’s degree in computer engineering, as might be offered by a traditional electrical and computer engineering (ECE) department. A computer science department sometimes offers foundation courses in computer science such as programming; the ECE department teaches the remaining courses."
+   }
+  ],
+  "previous_turn_setup": null
+ },
+ {
+  "id": "p004",
+  "question": "Is the major mostly coding, electronics, or a mixture of both?",
+  "group": "paraphrase",
+  "expected_topics": [],
+  "expected_categories": [
+   "department_information",
+   "curriculum"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": null,
+  "evaluation_label": "correct_evidence_supported",
+  "elapsed_wall_seconds": 44.314,
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "Is the major mostly coding electronics or a mixture of both? (Computer Engineering; topics: programming, hardware)",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S4",
+     "S1"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "removed_trailing_source_labels",
+     "added_supported_inline_label",
+     "pruned_unverified_sentences"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "The curriculum focuses on the synthesis of electrical engineering and computer science, which includes courses in computer architecture, operating systems, networks, and computer security [S4].",
+      "labels": [
+       "S4"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "architecture",
+       "courses",
+       "curriculum",
+       "networks",
+       "operating",
+       "security",
+       "systems"
+      ]
+     },
+     {
+      "claim": "Additionally, the program devotes more hours to computer engineering areas, such as circuits/electronics, digital design, embedded systems, and computer programming [S4].",
+      "labels": [
+       "S4"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "areas",
+       "circuits",
+       "design",
+       "digital",
+       "electronics",
+       "embedded",
+       "hours",
+       "program",
+       "programming",
+       "systems"
+      ]
+     },
+     {
+      "claim": "The curriculum covers both hardware and software aspects, suggesting a mixture of coding electronics and programming [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "both",
+       "curriculum",
+       "hardware",
+       "software",
+       "the"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.738537073135376,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "Is the major mostly coding electronics or a mixture of both? (Computer Engineering; topics: programming, hardware)",
+    "query_kind": "standalone_domain_question",
+    "query_normalization": {
+     "original_question": "Is the major mostly coding, electronics, or a mixture of both?",
+     "normalized_question": "Is the major mostly coding electronics or a mixture of both?",
+     "retrieval_question": "Is the major mostly coding electronics or a mixture of both? (Computer Engineering; topics: programming, hardware)",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "programming",
+       "matched_terms": [
+        "coding"
+       ],
+       "confidence": 1.0
+      },
+      {
+       "name": "hardware",
+       "matched_terms": [
+        "electronics"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "assess",
+     "constraints": [],
+     "entities": [
+      "programming",
+      "hardware"
+     ],
+     "referents": [],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 11,
+      "replacements": [],
+      "normalized_tokens": [
+       "is",
+       "the",
+       "major",
+       "mostly",
+       "coding",
+       "electronics",
+       "or",
+       "a",
+       "mixture",
+       "of",
+       "both"
+      ],
+      "changed": true
+     },
+     "changed": true
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.379,
+    "context_construction_seconds": 0.002,
+    "llm_generation_seconds": 40.348,
+    "initial_llm_generation_seconds": 40.348,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 40.332,
+    "total_seconds": 44.302
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "answer": "The curriculum focuses on the synthesis of electrical engineering and computer science, which includes courses in computer architecture, operating systems, networks, and computer security [S4]. Additionally, the program devotes more hours to computer engineering areas, such as circuits/electronics, digital design, embedded systems, and computer programming [S4]. The curriculum covers both hardware and software aspects, suggesting a mixture of coding electronics and programming [S1].",
+  "answer_warnings": [],
+  "sources": [
+   {
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "source_name": "Association for Computing Machinery and IEEE Computer Society",
+    "source_type": "professional_curriculum_report",
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "category": "curriculum",
+    "supporting_chunk_ids": [
+     "src_067_chunk_327",
+     "src_067_chunk_310"
+    ],
+    "evidence_labels": [
+     "S1",
+     "S4"
+    ],
+    "best_similarity_score": 0.738537073135376
+   }
+  ],
+  "retrieved_context": [
+   {
+    "label": "S1",
+    "chunk_id": "src_067_chunk_327",
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "category": "curriculum",
+    "similarity_score": 0.738537073135376,
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "passage": "Page 120 of 149 B.6 Curriculum C: Administered jointly by CS and EE Computer Engineering Program Administered Jointly by a Computer Science Department and an Electrical Engineering Department B.6.1 Program Goals and Features A computer science (CSC) department and an electrical and computer engineering (ECE) department jointly administer this program leading to a bachelor’s degree in computer engineering (CE). This curriculum brings a core competency and unique value of integrated knowledge in both computer software and hardware, providing a balance among computer systems, hardware, and software as well as theory and applications."
+   },
+   {
+    "label": "S2",
+    "chunk_id": "src_001_chunk_001",
+    "source_id": "src_001",
+    "title": "About the Department | MF-Bilgisayar Mühendisliği (İngilizce)",
+    "category": "department_information",
+    "similarity_score": 0.650161623954773,
+    "url": "https://mfcs.ostimteknik.edu.tr/about-the-department",
+    "passage": "About the Department | MF-Bilgisayar Mühendisliği (İngilizce) Department of Computer Engineering (English) The aim of the Department of Computer Engineering is to educate Computer engineers who will contribute to the institution and organization in which they are participating, enabling them to gain skills for technical management; teach them analysis, synthesis and modelling in order ato solve engineering problems, ensure ability which will lead to carry out personal research, produce information based on a universal perspective, be able to transfer this technology into industry and share knowledge and experience with society and industry and also be successful in carrying out and..."
+   },
+   {
+    "label": "S3",
+    "chunk_id": "src_042_chunk_002",
+    "source_id": "src_042",
+    "title": "Curricular Guidance",
+    "category": "common_misconceptions",
+    "similarity_score": 0.7189995050430298,
+    "url": "https://ccecc.acm.org/guidance",
+    "passage": "Computer Engineering involves the design and construction of processor-based systems comprised of hardware, software, and communications components. This four-year curriculum focuses on the synthesis of electrical engineering and computer science as applied to the design of systems such as cellular communications, consumer electronics, medical imaging and devices, alarm systems and military technologies."
+   },
+   {
+    "label": "S4",
+    "chunk_id": "src_067_chunk_310",
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "category": "curriculum",
+    "similarity_score": 0.7207653522491455,
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "passage": "As is typical of most programs in engineering, this program has a smaller general education component than Curriculum B (described next), with more hours devoted to computer engineering areas. This program usually has multi- course sequences in circuits/electronics, digital design, embedded systems, and computer programming. Breadth coverage occurs through courses in computer architecture, operating systems, networks, and computer security."
+   }
+  ],
+  "previous_turn_setup": null
+ },
+ {
+  "id": "p005",
+  "question": "How much calculus, discrete mathematics, and statistics should I expect?",
+  "group": "paraphrase",
+  "expected_topics": [],
+  "expected_categories": [
+   "mathematics",
+   "curriculum"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": null,
+  "evaluation_label": "incorrect_refusal_evidence_exists",
+  "elapsed_wall_seconds": 106.7,
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "How much mathematics is required in Computer Engineering?",
+   "status": "insufficient_information",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "removed_trailing_source_labels",
+     "source_name_to_inline_label",
+     "added_supported_inline_label"
+    ],
+    "reason": "cited passage does not support one or more answer claims",
+    "retry_attempted": true,
+    "retry_successful": false,
+    "generations_attempted": 2,
+    "retry_failure_reason": "cited passage does not support one or more answer claims",
+    "discarded_invalid_generation": true,
+    "discarded_generation_reason": "cited passage does not support one or more answer claims"
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": []
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.7279619574546814,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "unsupported_reason": "cited passage does not support one or more answer claims",
+    "discarded_generation": "According to the Computer Engineering Curricula 2016, graduates will be required to complete 18 credits of mathematics as part of their general education component. This is stated in Section [S1] of the document, which outlines the general education requirements for the program. Additionally, students may need to take additional mathematics courses to support their studies in areas such as communications theory, security, signals and systems, analog electronics, and artificial intelligence. These additional courses might include further calculus, transform theory, numerical methods, complex variables, geometry, number theory, optimization methods, or symbolic logic. Therefore, the total mathematics requirement in Computer Engineering is 18 credits of general education plus potentially more credits for additional courses, totaling more than 18 credits. [S1], [S3]\n\nUSED_SOURCES:\n[S1]\n[S3]",
+    "discarded_retry_generation": "According to the Computer Engineering Curricula 2016, graduates will be required to complete 18 credits of mathematics as part of their general education component. This is stated in Section [S1] of the document, which outlines the general education requirements for the program. Additionally, students may need to take additional mathematics courses to support their studies in areas such as communications theory, security, signals and systems, analog electronics, and artificial intelligence. These additional courses might include further calculus, transform theory, numerical methods, complex variables, geometry, number theory, optimization methods, or symbolic logic. Therefore, the total mathematics requirement in Computer Engineering is 18 credits of general education plus potentially more credits for additional courses, totaling more than 18 credits. [S1], [S3]\n\nUSED_SOURCES:\n[S1]\n[S3]",
+    "resolved_question": "How much mathematics is required in Computer Engineering?",
+    "query_kind": "standalone_domain_question",
+    "query_normalization": {
+     "original_question": "How much calculus, discrete mathematics, and statistics should I expect?",
+     "normalized_question": "How much calculus discrete mathematics and statistics should I expect?",
+     "retrieval_question": "How much mathematics is required in Computer Engineering?",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "mathematics",
+       "matched_terms": [
+        "mathematics",
+        "calculus"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "assess",
+     "constraints": [],
+     "entities": [
+      "mathematics"
+     ],
+     "referents": [],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 10,
+      "replacements": [],
+      "normalized_tokens": [
+       "how",
+       "much",
+       "calculus",
+       "discrete",
+       "mathematics",
+       "and",
+       "statistics",
+       "should",
+       "i",
+       "expect"
+      ],
+      "changed": true
+     },
+     "changed": true
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.36,
+    "context_construction_seconds": 0.002,
+    "llm_generation_seconds": 106.304,
+    "initial_llm_generation_seconds": 44.408,
+    "retry_llm_generation_seconds": 61.896,
+    "llm_reported_total_duration_seconds": 44.367,
+    "total_seconds": 106.687
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "answer_warnings": [
+   "local_llm_answer_failed_citation_validation"
+  ],
+  "sources": [],
+  "retrieved_context": [
+   {
+    "label": "S1",
+    "chunk_id": "src_067_chunk_328",
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "category": "curriculum",
+    "similarity_score": 0.7279619574546814,
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "passage": "Hence, graduates will be well prepared to pursue advanced studies in computer engineering or they can choose from many different careers related to computers and their applications in high technology environments. B.6.2 Summary of Requirements The general education component of this curriculum consists of 21 credits of mathematics, 16 credits of natural science, and 18 credits of humanities and social science courses."
+   },
+   {
+    "label": "S2",
+    "chunk_id": "src_067_chunk_165",
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "category": "curriculum",
+    "similarity_score": 0.7002257704734802,
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "passage": "Inclusion of communication requirements within computer engineering courses ensures that students can communicate discipline-specific content and contributes to the students’ learning of technical material. 6.4 Course Material Presented by Other Departments In addition to the technical courses specifically on computer engineering, other courses offer material required within the curriculum. For example, computer engineering students must study mathematics and science that form the basis for engineering."
+   },
+   {
+    "label": "S3",
+    "chunk_id": "src_067_chunk_169",
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "category": "curriculum",
+    "similarity_score": 0.7027027010917664,
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "passage": "Students may need to take additional mathematics courses to develop their sophistication in this area and to support additional studies such as communications theory, security, signals and systems, analog electronics, and artificial intelligence. The additional mathematics might consist of courses in any number of areas, including further calculus, transform theory, numerical methods, complex variables, geometry, number theory, optimization methods, or symbolic logic."
+   },
+   {
+    "label": "S4",
+    "chunk_id": "src_067_chunk_311",
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "category": "curriculum",
+    "similarity_score": 0.6972866654396057,
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "passage": "B.4.2 Summary of Requirements This program of study contains five required computer science courses (17 credits) and 14 required electrical and computer engineering (ECE) courses (42 credits). The two computer engineering electives (6 credits), chosen from courses in either the computer science or electrical and computer engineering departments, provide flexibility in the program."
+   }
+  ],
+  "previous_turn_setup": null
+ },
+ {
+  "id": "p006",
+  "question": "Which student projects would help me show employers that I can build real systems?",
+  "group": "paraphrase",
+  "expected_topics": [],
+  "expected_categories": [
+   "projects",
+   "skills",
+   "employment",
+   "skills_and_technologies",
+   "career_opportunities"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": null,
+  "evaluation_label": "correct_evidence_supported",
+  "elapsed_wall_seconds": 49.53,
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "Which student projects would help me show employers that I can build real systems? (Computer Engineering; topics: hardware, projects)",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S1",
+     "S4"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "removed_trailing_source_labels",
+     "added_supported_inline_label",
+     "pruned_unverified_sentences",
+     "partial_answer"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "Projects that involve real responsibilities and reflection, such as internships or hands-on coursework, are particularly valuable [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "are",
+       "internships",
+       "projects",
+       "real",
+       "reflection",
+       "responsibilities",
+       "that",
+       "valuable"
+      ]
+     },
+     {
+      "claim": "Additionally, analyzing current research and engaging in real-world case studies can help you understand how these systems are used in practical applications [S4].",
+      "labels": [
+       "S4"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "applications",
+       "are",
+       "case",
+       "current",
+       "how",
+       "real-world",
+       "research",
+       "studies",
+       "systems",
+       "understand"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.6062744855880737,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "Which student projects would help me show employers that I can build real systems? (Computer Engineering; topics: hardware, projects)",
+    "query_kind": "standalone_domain_question",
+    "query_normalization": {
+     "original_question": "Which student projects would help me show employers that I can build real systems?",
+     "normalized_question": "Which student projects would help me show employers that I can build real systems?",
+     "retrieval_question": "Which student projects would help me show employers that I can build real systems? (Computer Engineering; topics: hardware, projects)",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "hardware",
+       "matched_terms": [
+        "systems"
+       ],
+       "confidence": 1.0
+      },
+      {
+       "name": "projects",
+       "matched_terms": [
+        "projects"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "recommend",
+     "constraints": [],
+     "entities": [
+      "hardware",
+      "projects"
+     ],
+     "referents": [
+      "that"
+     ],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 14,
+      "replacements": [],
+      "normalized_tokens": [
+       "which",
+       "student",
+       "projects",
+       "would",
+       "help",
+       "me",
+       "show",
+       "employers",
+       "that",
+       "i",
+       "can",
+       "build",
+       "real",
+       "systems"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.396,
+    "context_construction_seconds": 0.004,
+    "llm_generation_seconds": 42.83,
+    "initial_llm_generation_seconds": 42.83,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 42.787,
+    "total_seconds": 49.519
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "answer": "Projects that involve real responsibilities and reflection, such as internships or hands-on coursework, are particularly valuable [S1]. Additionally, analyzing current research and engaging in real-world case studies can help you understand how these systems are used in practical applications [S4].",
+  "answer_warnings": [
+   "partial_answer"
+  ],
+  "sources": [
+   {
+    "source_id": "src_091",
+    "title": "Career Readiness Competencies",
+    "source_name": "National Association of Colleges and Employers",
+    "source_type": "professional_career_readiness_framework",
+    "url": "https://naceweb.org/career-readiness/competencies/career-readiness-defined",
+    "category": "skills_and_technologies",
+    "supporting_chunk_ids": [
+     "src_091_chunk_001"
+    ],
+    "evidence_labels": [
+     "S1"
+    ],
+    "best_similarity_score": 0.6062744855880737
+   },
+   {
+    "source_id": "src_004",
+    "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+    "source_name": "OSTIM Technical University - Department of Computer Engineering (English)",
+    "source_type": "course_descriptions",
+    "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+    "category": "curriculum",
+    "supporting_chunk_ids": [
+     "src_004_chunk_014"
+    ],
+    "evidence_labels": [
+     "S4"
+    ],
+    "best_similarity_score": 0.5656791925430298
+   }
+  ],
+  "retrieved_context": [
+   {
+    "label": "S1",
+    "chunk_id": "src_091_chunk_001",
+    "source_id": "src_091",
+    "title": "Career Readiness Competencies",
+    "category": "skills_and_technologies",
+    "similarity_score": 0.6062744855880737,
+    "url": "https://naceweb.org/career-readiness/competencies/career-readiness-defined",
+    "passage": "GPA can matter for some academic, scholarship, or screening contexts, but employability also depends on evidence that a student can learn, communicate, solve problems, work with others, and complete technical work. Projects and internships are valuable when they show real responsibilities and reflection, not only a list of tools. Student-facing guidance: a strong portfolio should combine technical artifacts with explanation."
+   },
+   {
+    "label": "S2",
+    "chunk_id": "src_014_chunk_001",
+    "source_id": "src_014",
+    "title": "Computer Hardware Engineers: 17-2061.00",
+    "category": "skills_and_technologies",
+    "similarity_score": 0.6259716749191284,
+    "url": "https://www.onetonline.org/link/summary/17-2061.00",
+    "passage": "Title: Computer Hardware Engineers: 17-2061.00 17-2061.00 - Computer Hardware Engineers Occupation keyword search Type a title or code for matches No quick matches found Search for keyword results Computer Hardware Engineers 17-2061.00 Bright Outlook Updated 2026 Research, design, develop, or test computer or computer-related equipment for commercial, industrial, military, or scientific use. May supervise the manufacturing and installation of computer or computer-related equipment and components."
+   },
+   {
+    "label": "S3",
+    "chunk_id": "src_094_chunk_001",
+    "source_id": "src_094",
+    "title": "Cyber Career Pathways Tool",
+    "category": "cybersecurity",
+    "similarity_score": 0.5537208914756775,
+    "url": "https://niccs.cisa.gov/workforce-development/cyber-career-pathways-tool",
+    "passage": "A student interested in cloud security should emphasize networking, Linux, cloud services, IAM, logging, and secure deployment. A student interested in embedded or hardware security should emphasize digital systems, firmware, electronics, protocols, and low-level debugging. A student interested in secure software should emphasize programming, code review, testing, threat modeling, and web/application security."
+   },
+   {
+    "label": "S4",
+    "chunk_id": "src_004_chunk_014",
+    "source_id": "src_004",
+    "title": "Course Contents | MF-Bilgisayar Mühendisliği (İngilizce)",
+    "category": "curriculum",
+    "similarity_score": 0.5656791925430298,
+    "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+    "passage": "The course covers contemporary topics such as agile and DevOps practices, continuous integration and delivery, microservices architecture, cloud-native development, artificial intelligence in computer engineering, blockchain applications, software analytics, and emerging software quality assurance techniques. Students will analyze current research, study real-world case studies, and engage in hands-on projects to understand how these trends impact the design, development, deployment, and maintenance of modern software systems. The course aims to equip students with the awareness and adaptability needed to navigate the rapidly evolving landscape of computer engineering."
+   }
+  ],
+  "previous_turn_setup": null
+ },
+ {
+  "id": "p007",
+  "question": "Is software engineering safer than computer engineering because AI is changing programming jobs?",
+  "group": "paraphrase",
+  "expected_topics": [],
+  "expected_categories": [
+   "AI",
+   "employment",
+   "future_technologies",
+   "artificial_intelligence",
+   "career_opportunities"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": null,
+  "evaluation_label": "incorrect_refusal_evidence_exists",
+  "elapsed_wall_seconds": 42.883,
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "Is software engineering safer than computer engineering because AI is changing programming jobs? (topics: programming, software, ai, career)",
+   "status": "insufficient_information",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4"
+    ],
+    "normalized": false,
+    "repair_actions": [],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": []
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.619185745716095,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "unsupported_reason": "generated answer did not address the question's distinctive topic terms",
+    "discarded_generation": "[INSUFFICIENT_INFORMATION] The provided context does not contain specific information about the safety or career prospects of software engineering versus computer engineering in relation to AI. The context discusses the scope of software engineering and computer engineering curricula, but does not provide data on job safety or career outcomes related to AI. [S1], [S2], [S3], [S4]\n\nUSED_SOURCES:\n[S1]\n[S2]\n[S3]\n[S4]",
+    "resolved_question": "Is software engineering safer than computer engineering because AI is changing programming jobs? (topics: programming, software, ai, career)",
+    "query_kind": "standalone_domain_question",
+    "query_normalization": {
+     "original_question": "Is software engineering safer than computer engineering because AI is changing programming jobs?",
+     "normalized_question": "Is software engineering safer than computer engineering because AI is changing programming jobs?",
+     "retrieval_question": "Is software engineering safer than computer engineering because AI is changing programming jobs? (topics: programming, software, ai, career)",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "computer_engineering",
+       "matched_terms": [
+        "computer engineering"
+       ],
+       "confidence": 1.0
+      },
+      {
+       "name": "programming",
+       "matched_terms": [
+        "programming"
+       ],
+       "confidence": 1.0
+      },
+      {
+       "name": "software",
+       "matched_terms": [
+        "software"
+       ],
+       "confidence": 1.0
+      },
+      {
+       "name": "ai",
+       "matched_terms": [
+        "ai"
+       ],
+       "confidence": 1.0
+      },
+      {
+       "name": "career",
+       "matched_terms": [
+        "jobs"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "assess",
+     "constraints": [],
+     "entities": [
+      "computer_engineering",
+      "programming",
+      "software",
+      "ai",
+      "career"
+     ],
+     "referents": [],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 13,
+      "replacements": [],
+      "normalized_tokens": [
+       "is",
+       "software",
+       "engineering",
+       "safer",
+       "than",
+       "computer",
+       "engineering",
+       "because",
+       "ai",
+       "is",
+       "changing",
+       "programming",
+       "jobs"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.671,
+    "context_construction_seconds": 0.005,
+    "llm_generation_seconds": 41.54,
+    "initial_llm_generation_seconds": 41.54,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 41.522,
+    "total_seconds": 42.869
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "answer_warnings": [],
+  "sources": [],
+  "retrieved_context": [
+   {
+    "label": "S1",
+    "chunk_id": "src_081_chunk_001",
+    "source_id": "src_081",
+    "title": "Software Engineering Body of Knowledge (SWEBOK Guide), Version 4.0",
+    "category": "programming",
+    "similarity_score": 0.619185745716095,
+    "url": "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+    "passage": "Title: Software Engineering Body of Knowledge (SWEBOK Guide), Version 4.0 Source: IEEE Computer Society URL: https://www.computer.org/education/bodies-of-knowledge/software-engineering Date accessed: 2026-10-13 Curated source note The IEEE Computer Society's SWEBOK Guide describes software engineering as more than writing code. It organizes professional software work into knowledge areas that include requirements, architecture, design, construction, testing, maintenance, configuration management, engineering process, models and methods, quality, security, professional practice, economics, and computing foundations."
+   },
+   {
+    "label": "S2",
+    "chunk_id": "src_129_chunk_001",
+    "source_id": "src_129",
+    "title": "CENG 316 New Trends in Computer Engineering: course content and weekly topics",
+    "category": "future_technologies",
+    "similarity_score": 0.5867189764976501,
+    "url": "https://mfcs.ostimteknik.edu.tr/web/content/328250?download=true&unique=8167bdf89f6647714ad5d1975b94716cbc85afb4",
+    "passage": "CENG 316 New Trends in Computer Engineering: course content and weekly topics Course Content This syllabus is designed to cover each branch of software engineering and the latest trends. The course content spans various domains including frontend and backend development, DevOps, software testing, embedded systems, data engineering, artificial intelligence, cybersecurity, cloud computing, mobile app development, blockchain, and game development."
+   },
+   {
+    "label": "S3",
+    "chunk_id": "src_080_chunk_001",
+    "source_id": "src_080",
+    "title": "Computing Curricula 2020: Paradigms for Global Computing Education",
+    "category": "common_misconceptions",
+    "similarity_score": 0.6379431486129761,
+    "url": "https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf",
+    "passage": "It emphasizes computer systems, embedded systems, digital logic, computer architecture, electronics-related foundations, and the integration of hardware and software. Computer Science emphasizes computation, algorithms, theory, programming languages, systems, AI, and software foundations. Software Engineering emphasizes building and maintaining software systems using disciplined engineering practices such as requirements, design, testing, quality, process, and project constraints."
+   },
+   {
+    "label": "S4",
+    "chunk_id": "src_067_chunk_079",
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "category": "curriculum",
+    "similarity_score": 0.6365495324134827,
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "passage": "students to engineering (specifically, computer engineering), teaching them to think and function as engineers, and setting expectations for the future. Preparation for practice is essential because many graduates from four-year programs directly begin professional practice in much of the world. The field of computer engineering (CE) has developed, matured, and expanded throughout industry."
+   }
+  ],
+  "previous_turn_setup": null
+ },
+ {
+  "id": "p008",
+  "question": "What careers can combine cybersecurity with a computer engineering background?",
+  "group": "paraphrase",
+  "expected_topics": [],
+  "expected_categories": [
+   "cybersecurity",
+   "employment",
+   "skills",
+   "specializations",
+   "career_opportunities",
+   "skills_and_technologies"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": null,
+  "evaluation_label": "correct_evidence_supported",
+  "elapsed_wall_seconds": 55.022,
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "What careers can combine cybersecurity with a computer engineering background?",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S4"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4",
+     "S5"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "removed_trailing_source_labels",
+     "added_supported_inline_label",
+     "pruned_unverified_sentences",
+     "partial_answer"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "Cybersecurity can be combined with a computer engineering background to pursue careers as cybersecurity technicians and analysts [S4].",
+      "labels": [
+       "S4"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "analysts",
+       "and",
+       "careers",
+       "cybersecurity",
+       "technicians"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.6882843971252441,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "What careers can combine cybersecurity with a computer engineering background?",
+    "query_kind": "standalone_domain_question",
+    "query_normalization": {
+     "original_question": "What careers can combine cybersecurity with a computer engineering background?",
+     "normalized_question": "What careers can combine cybersecurity with a computer engineering background?",
+     "retrieval_question": "What careers can combine cybersecurity with a computer engineering background?",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "computer_engineering",
+       "matched_terms": [
+        "computer engineering"
+       ],
+       "confidence": 1.0
+      },
+      {
+       "name": "cybersecurity",
+       "matched_terms": [
+        "cybersecurity"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "explain",
+     "constraints": [],
+     "entities": [
+      "computer_engineering",
+      "cybersecurity"
+     ],
+     "referents": [],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 10,
+      "replacements": [],
+      "normalized_tokens": [
+       "what",
+       "careers",
+       "can",
+       "combine",
+       "cybersecurity",
+       "with",
+       "a",
+       "computer",
+       "engineering",
+       "background"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.502,
+    "context_construction_seconds": 0.005,
+    "llm_generation_seconds": 49.737,
+    "initial_llm_generation_seconds": 49.737,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 49.691,
+    "total_seconds": 55.006
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "answer": "Cybersecurity can be combined with a computer engineering background to pursue careers as cybersecurity technicians and analysts [S4].",
+  "answer_warnings": [
+   "partial_answer"
+  ],
+  "sources": [
+   {
+    "source_id": "src_128",
+    "title": "Curricular Guidance: the sub-disciplines of computing (computer engineering, computer science, software engineering, information technology)",
+    "source_name": "ACM Committee for Computing Education in Community Colleges",
+    "source_type": "professional_curricular_guidance",
+    "url": "https://ccecc.acm.org/guidance",
+    "category": "common_misconceptions",
+    "supporting_chunk_ids": [
+     "src_128_chunk_002"
+    ],
+    "evidence_labels": [
+     "S4"
+    ],
+    "best_similarity_score": 0.749596893787384
+   }
+  ],
+  "retrieved_context": [
+   {
+    "label": "S1",
+    "chunk_id": "src_085_chunk_001",
+    "source_id": "src_085",
+    "title": "Cybersecurity Curricular Guidelines CSEC 2017",
+    "category": "cybersecurity",
+    "similarity_score": 0.6882843971252441,
+    "url": "https://cybered.acm.org/",
+    "passage": "Title: Cybersecurity Curricular Guidelines CSEC 2017 Source: ACM, IEEE Computer Society, AIS SIGSEC, and IFIP WG 11.8 URL: https://cybered.acm.org/ Date accessed: 2026-10-13 Curated source note CSEC2017 is a professional curricular guideline for post-secondary cybersecurity education. It is useful for explaining cybersecurity as a broad field rather than only ethical hacking or penetration testing."
+   },
+   {
+    "label": "S2",
+    "chunk_id": "src_094_chunk_001",
+    "source_id": "src_094",
+    "title": "Cyber Career Pathways Tool",
+    "category": "cybersecurity",
+    "similarity_score": 0.6535289287567139,
+    "url": "https://niccs.cisa.gov/workforce-development/cyber-career-pathways-tool",
+    "passage": "Title: Cyber Career Pathways Tool Source: Cybersecurity and Infrastructure Security Agency / NICCS URL: https://niccs.cisa.gov/workforce-development/cyber-career-pathways-tool Date accessed: 2026-10-13 Curated source note NICCS/CISA provides cybersecurity career pathway resources aligned with the NICE Framework. The tool is useful for role exploration and for showing students that cybersecurity is not a single job."
+   },
+   {
+    "label": "S3",
+    "chunk_id": "src_042_chunk_002",
+    "source_id": "src_042",
+    "title": "Curricular Guidance",
+    "category": "common_misconceptions",
+    "similarity_score": 0.7314283847808838,
+    "url": "https://ccecc.acm.org/guidance",
+    "passage": "It is an interdisciplinary course of study, including aspects of law, policy, human factors, ethics, and risk management. Upon graduation, students initiating careers as cybersecurity technicians and analysts should possess basic knowledge and skills to help organizations defend their information systems against various cybersecurity threats."
+   },
+   {
+    "label": "S4",
+    "chunk_id": "src_128_chunk_002",
+    "source_id": "src_128",
+    "title": "Curricular Guidance: the sub-disciplines of computing (computer engineering, computer science, software engineering, information technology)",
+    "category": "common_misconceptions",
+    "similarity_score": 0.749596893787384,
+    "url": "https://ccecc.acm.org/guidance",
+    "passage": "It is an interdisciplinary course of study, including aspects of law, policy, human factors, ethics, and risk management. Upon graduation, students initiating careers as cybersecurity technicians and analysts should possess basic knowledge and skills to help organizations defend their information systems against various cybersecurity threats."
+   },
+   {
+    "label": "S5",
+    "chunk_id": "src_068_chunk_001",
+    "source_id": "src_068",
+    "title": "Workforce Framework for Cybersecurity (NICE Framework)",
+    "category": "cybersecurity",
+    "similarity_score": 0.5607686042785645,
+    "url": "https://www.nist.gov/publications/workforce-framework-cybersecurity-nice-framework",
+    "passage": "Workforce Framework for Cybersecurity (NICE Framework) | NIST Here’s how you know Official websites use .gov A .gov website belongs to an official government organization in the United States. Secure .gov websites use HTTPS A lock ( ) or https:// means you’ve safely connected to the .gov website."
+   }
+  ],
+  "previous_turn_setup": null
+ },
+ {
+  "id": "p009",
+  "question": "Can I get my first internship if my CV is mostly course projects?",
+  "group": "paraphrase",
+  "expected_topics": [],
+  "expected_categories": [
+   "internships",
+   "projects",
+   "employment",
+   "skills",
+   "career_opportunities",
+   "skills_and_technologies"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": null,
+  "evaluation_label": "correct_evidence_supported",
+  "elapsed_wall_seconds": 62.221,
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "Can I get my first internship if my CV is mostly course projects? (Computer Engineering; topics: curriculum, internships, projects, cv)",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S4"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4",
+     "S5"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "pruned_unverified_sentences",
+     "partial_answer"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "The National Association of Colleges and Employers (NACE) suggests that coursework, internships, and other experiential opportunities all help students develop workplace skills that employers are looking for [S4].",
+      "labels": [
+       "S4"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "all",
+       "and",
+       "are",
+       "coursework",
+       "develop",
+       "employers",
+       "experiential",
+       "for",
+       "internships",
+       "looking",
+       "opportunities",
+       "other"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.6670296788215637,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "Can I get my first internship if my CV is mostly course projects? (Computer Engineering; topics: curriculum, internships, projects, cv)",
+    "query_kind": "standalone_domain_question",
+    "query_normalization": {
+     "original_question": "Can I get my first internship if my CV is mostly course projects?",
+     "normalized_question": "Can I get my first internship if my CV is mostly course projects?",
+     "retrieval_question": "Can I get my first internship if my CV is mostly course projects? (Computer Engineering; topics: curriculum, internships, projects, cv)",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "curriculum",
+       "matched_terms": [
+        "course"
+       ],
+       "confidence": 1.0
+      },
+      {
+       "name": "internships",
+       "matched_terms": [
+        "internship"
+       ],
+       "confidence": 1.0
+      },
+      {
+       "name": "projects",
+       "matched_terms": [
+        "projects"
+       ],
+       "confidence": 1.0
+      },
+      {
+       "name": "cv",
+       "matched_terms": [
+        "cv"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "assess",
+     "constraints": [],
+     "entities": [
+      "curriculum",
+      "internships",
+      "projects",
+      "cv"
+     ],
+     "referents": [],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 13,
+      "replacements": [],
+      "normalized_tokens": [
+       "can",
+       "i",
+       "get",
+       "my",
+       "first",
+       "internship",
+       "if",
+       "my",
+       "cv",
+       "is",
+       "mostly",
+       "course",
+       "projects"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.884,
+    "context_construction_seconds": 0.004,
+    "llm_generation_seconds": 54.986,
+    "initial_llm_generation_seconds": 54.986,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 54.969,
+    "total_seconds": 62.211
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "answer": "The National Association of Colleges and Employers (NACE) suggests that coursework, internships, and other experiential opportunities all help students develop workplace skills that employers are looking for [S4].",
+  "answer_warnings": [
+   "partial_answer"
+  ],
+  "sources": [
+   {
+    "source_id": "src_034",
+    "title": "Employers Say New Grads Are Largely Prepared for Work, With Room to Improve",
+    "source_name": "National Association of Colleges and Employers (NACE)",
+    "source_type": "professional_career_organization_article",
+    "url": "https://www.naceweb.org/career-readiness/trends-and-predictions/employers-say-new-grads-are-largely-prepared-for-work-with-room-to-improve",
+    "category": "skills_and_technologies",
+    "supporting_chunk_ids": [
+     "src_034_chunk_002"
+    ],
+    "evidence_labels": [
+     "S4"
+    ],
+    "best_similarity_score": 0.6488733887672424
+   }
+  ],
+  "retrieved_context": [
+   {
+    "label": "S1",
+    "chunk_id": "src_074_chunk_008",
+    "source_id": "src_074",
+    "title": "Write a Resume/CV",
+    "category": "employment",
+    "similarity_score": 0.6670296788215637,
+    "url": "https://careerservices.upenn.edu/channels/resume/",
+    "passage": "Projects: Usually for software engineering and computer science resumes, as a way to show technical skills in use. Consider also including your Github link in your header."
+   },
+   {
+    "label": "S2",
+    "chunk_id": "src_036_chunk_003",
+    "source_id": "src_036",
+    "title": "Resumes",
+    "category": "employment",
+    "similarity_score": 0.6393052339553833,
+    "url": "https://career.berkeley.edu/prepare-for-success/resumes/",
+    "passage": "Resumes provide a brief overview of your skills and experience, and demonstrate your aptitude for the job you are applying for. You might use a resume at career fairs and during informational interviews, to apply to jobs and internships, to accompany a request for a letter of recommendation, and as part of a graduate school application. What’s the difference between a resume and a curriculum vitae?"
+   },
+   {
+    "label": "S3",
+    "chunk_id": "src_091_chunk_001",
+    "source_id": "src_091",
+    "title": "Career Readiness Competencies",
+    "category": "skills_and_technologies",
+    "similarity_score": 0.6812227368354797,
+    "url": "https://naceweb.org/career-readiness/competencies/career-readiness-defined",
+    "passage": "Career readiness includes communication, critical thinking, equity and inclusion, leadership, professionalism, teamwork, technology, and career/self-development. For CENG students, these competencies can be demonstrated through projects, internships, labs, hackathons, student clubs, open-source work, presentations, documentation, and responsible teamwork. The source supports balanced advice about GPA, projects, and internships."
+   },
+   {
+    "label": "S4",
+    "chunk_id": "src_034_chunk_002",
+    "source_id": "src_034",
+    "title": "Employers Say New Grads Are Largely Prepared for Work, With Room to Improve",
+    "category": "skills_and_technologies",
+    "similarity_score": 0.6488733887672424,
+    "url": "https://www.naceweb.org/career-readiness/trends-and-predictions/employers-say-new-grads-are-largely-prepared-for-work-with-room-to-improve",
+    "passage": "results point to the importance of integrating career readiness skills across the student experience. Coursework, internships and other experiential opportunities, and co-curricular activities all help students develop workplace skills that employers are looking for and can support their workforce preparation. The results also suggest that students need help articulating and demonstrating their skills to employers."
+   },
+   {
+    "label": "S5",
+    "chunk_id": "src_036_chunk_010",
+    "source_id": "src_036",
+    "title": "Resumes",
+    "category": "employment",
+    "similarity_score": 0.6323607563972473,
+    "url": "https://career.berkeley.edu/prepare-for-success/resumes/",
+    "passage": "Finding Job Announcements The CV – Part 1 Overview The CV – Part 2 Elements The Cover Letter Letters of Recommendation for Grad Students & Postdocs Teaching Portfolio The Transition from Grad Student to Assistant Professor Career Exploration for Grad Students & Postdocs Career Clarity for Grad Students & Postdocs Events and Workshops for Grad Students and Postdocs Job Boards & Resources Grad Students FAQ If You’re a Postdoc Grad Students & Postdocs: Experiential Learning & Internships Alumni Services Alumni Eligibility Publicly Available Services Sponsor an Extern – Cal Job Shadow Program Learn About the Campus Visiting Campus By the Numbers Academic & Recruiting Calendar Recruit at Cal..."
+   }
+  ],
+  "previous_turn_setup": null
+ },
+ {
+  "id": "p010",
+  "question": "For my first year, should I start with Python, Java, C, or something else?",
+  "group": "paraphrase",
+  "expected_topics": [],
+  "expected_categories": [
+   "programming",
+   "curriculum",
+   "skills",
+   "skills_and_technologies"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": null,
+  "evaluation_label": "correct_evidence_supported",
+  "elapsed_wall_seconds": 59.773,
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "for my first year should I start with python java c or something else? (Computer Engineering; constraints: first_year)",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S1"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "removed_trailing_source_labels",
+     "added_supported_inline_label",
+     "pruned_unverified_sentences"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "For your first year in Computer Engineering, you can start with Python, Java, or another language depending on your comfort level and the flexibility of the EECS curriculum [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "can",
+       "comfort",
+       "curriculum",
+       "eecs",
+       "first",
+       "flexibility",
+       "for",
+       "python",
+       "start",
+       "the",
+       "you"
+      ]
+     },
+     {
+      "claim": "The context from UC Berkeley suggests that students without programming experience may struggle in CS 61A, which is typically taken in the first semester [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "experience",
+       "first",
+       "programming",
+       "semester",
+       "struggle",
+       "the",
+       "without"
+      ]
+     },
+     {
+      "claim": "However, the curriculum allows for flexibility, and you can take an introductory programming course like CS 10 or CS C8 in your first semester [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "can",
+       "course",
+       "curriculum",
+       "first",
+       "flexibility",
+       "for",
+       "however",
+       "introductory",
+       "like",
+       "programming",
+       "semester"
+      ]
+     },
+     {
+      "claim": "This would give you time to build your programming skills before taking CS 61A in your second semester [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "programming",
+       "second",
+       "semester",
+       "time",
+       "you",
+       "your"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.6192560195922852,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "for my first year should I start with python java c or something else? (Computer Engineering; constraints: first_year)",
+    "query_kind": "standalone_domain_question",
+    "query_normalization": {
+     "original_question": "For my first year, should I start with Python, Java, C, or something else?",
+     "normalized_question": "for my first year should I start with python java c or something else?",
+     "retrieval_question": "for my first year should I start with python java c or something else? (Computer Engineering; constraints: first_year)",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "programming",
+       "matched_terms": [
+        "python",
+        "java"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "recommend",
+     "constraints": [
+      "first_year"
+     ],
+     "entities": [
+      "programming"
+     ],
+     "referents": [],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 14,
+      "replacements": [],
+      "normalized_tokens": [
+       "for",
+       "my",
+       "first",
+       "year",
+       "should",
+       "i",
+       "start",
+       "with",
+       "python",
+       "java",
+       "c",
+       "or",
+       "something",
+       "else"
+      ],
+      "changed": true
+     },
+     "changed": true
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.589,
+    "context_construction_seconds": 0.003,
+    "llm_generation_seconds": 52.626,
+    "initial_llm_generation_seconds": 52.626,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 52.575,
+    "total_seconds": 59.754
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "answer": "For your first year in Computer Engineering, you can start with Python, Java, or another language depending on your comfort level and the flexibility of the EECS curriculum [S1]. The context from UC Berkeley suggests that students without programming experience may struggle in CS 61A, which is typically taken in the first semester [S1]. However, the curriculum allows for flexibility, and you can take an introductory programming course like CS 10 or CS C8 in your first semester [S1]. This would give you time to build your programming skills before taking CS 61A in your second semester [S1].",
+  "answer_warnings": [],
+  "sources": [
+   {
+    "source_id": "src_070",
+    "title": "EECS Majors: Choosing your first computer science course",
+    "source_name": "UC Berkeley Engineering",
+    "source_type": "university_academic_advising_resource",
+    "url": "https://engineering.berkeley.edu/students/new-students/eecs-majors-choosing-your-first-computer-science-course/",
+    "category": "programming",
+    "supporting_chunk_ids": [
+     "src_070_chunk_003"
+    ],
+    "evidence_labels": [
+     "S1"
+    ],
+    "best_similarity_score": 0.6192560195922852
+   }
+  ],
+  "retrieved_context": [
+   {
+    "label": "S1",
+    "chunk_id": "src_070_chunk_003",
+    "source_id": "src_070",
+    "title": "EECS Majors: Choosing your first computer science course",
+    "category": "programming",
+    "similarity_score": 0.6192560195922852,
+    "url": "https://engineering.berkeley.edu/students/new-students/eecs-majors-choosing-your-first-computer-science-course/",
+    "passage": "study Python over the summer through online sources like Khan Academy. Students without programming experience can struggle in CS 61A, and all of them report spending a great deal of time trying to keep up with their more experienced peers. In general, most EECS students will take CS 61A their first semester. However, we want you to start where you are most comfortable. There is definitely enough flexibility in the EECS curriculum for you to take an introductory course in programming, such as CS 10 or CS C8, your first semester and wait until your second semester to take CS 61A. You will still be able to graduate in eight semesters."
+   },
+   {
+    "label": "S2",
+    "chunk_id": "src_039_chunk_015",
+    "source_id": "src_039",
+    "title": "Which Introductory Course Should I Take?",
+    "category": "programming",
+    "similarity_score": 0.5932168364524841,
+    "url": "https://cs.brown.edu/degrees/undergrad/whatcourse/",
+    "passage": "You can comfortably start an AB as late as your fourth semester. For an ScB, you can start as late as your third semester (especially if you already took at least one of the math courses), though taking at least one course (math or CSCI) in your first year can take the edge off. Computer Science at Brown University Providence, Rhode Island 02912 USA Phone: 401-863-7600 Map & Directions / Contact Us"
+   },
+   {
+    "label": "S3",
+    "chunk_id": "src_067_chunk_380",
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "category": "curriculum",
+    "similarity_score": 0.5582389831542969,
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "passage": "Page 146 of 149 Typical Offering: Upper level; one three-hour laboratory experience per week. C.9 Software Design Typical Description: Experience in software construction; testing, debugging, and associated tools; configuration management; low-level file and device I/O; systems and event-driven programming; languages to include C, C++, C#, Python, Ruby, Java and/or other appropriate languages in support of the computer engineering program."
+   },
+   {
+    "label": "S4",
+    "chunk_id": "src_039_chunk_013",
+    "source_id": "src_039",
+    "title": "Which Introductory Course Should I Take?",
+    "category": "programming",
+    "similarity_score": 0.6033341884613037,
+    "url": "https://cs.brown.edu/degrees/undergrad/whatcourse/",
+    "passage": "There's no single answer to this because each course takes a different perspective and different students respond well to different perspectives. 0111 goes a bit more slowly than the others (especially at first), since it has the benefit of the bridgework to help students accelerate if and when they are ready, but all of 0111, 0150, and 0170 have been successful for students with a range of backgrounds."
+   }
+  ],
+  "previous_turn_setup": null
+ },
+ {
+  "id": "p011",
+  "question": "Do employers care more about GitHub projects than grades when hiring new graduates?",
+  "group": "paraphrase",
+  "expected_topics": [],
+  "expected_categories": [
+   "employment",
+   "projects",
+   "skills",
+   "career_opportunities",
+   "skills_and_technologies"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": null,
+  "evaluation_label": "correct_evidence_supported",
+  "elapsed_wall_seconds": 71.664,
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "Do employers care more about github projects than grades when hiring new graduates? (Computer Engineering; topics: gpa, projects)",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S1"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4",
+     "S5"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "removed_trailing_source_labels",
+     "added_supported_inline_label",
+     "pruned_unverified_sentences",
+     "partial_answer"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "According to the source [S1], the use of GPA as a candidate screening tool has fallen into disfavor, with only less than 40% of respondents planning to screen candidates by GPA.",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "candidate",
+       "candidates",
+       "disfavor",
+       "fallen",
+       "gpa",
+       "gpa.",
+       "has",
+       "into",
+       "less",
+       "respondents",
+       "screen",
+       "screening"
+      ]
+     },
+     {
+      "claim": "Instead, many employers are using skills-based hiring to identify candidates with potential [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "are",
+       "candidates",
+       "employers",
+       "hiring",
+       "instead",
+       "many",
+       "potential",
+       "skills-based",
+       "using"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.7289942502975464,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "Do employers care more about github projects than grades when hiring new graduates? (Computer Engineering; topics: gpa, projects)",
+    "query_kind": "standalone_domain_question",
+    "query_normalization": {
+     "original_question": "Do employers care more about GitHub projects than grades when hiring new graduates?",
+     "normalized_question": "Do employers care more about github projects than grades when hiring new graduates?",
+     "retrieval_question": "Do employers care more about github projects than grades when hiring new graduates? (Computer Engineering; topics: gpa, projects)",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "gpa",
+       "matched_terms": [
+        "grades"
+       ],
+       "confidence": 1.0
+      },
+      {
+       "name": "projects",
+       "matched_terms": [
+        "projects",
+        "github"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "assess",
+     "constraints": [],
+     "entities": [
+      "gpa",
+      "projects"
+     ],
+     "referents": [],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 13,
+      "replacements": [],
+      "normalized_tokens": [
+       "do",
+       "employers",
+       "care",
+       "more",
+       "about",
+       "github",
+       "projects",
+       "than",
+       "grades",
+       "when",
+       "hiring",
+       "new",
+       "graduates"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.893,
+    "context_construction_seconds": 0.005,
+    "llm_generation_seconds": 65.755,
+    "initial_llm_generation_seconds": 65.755,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 65.707,
+    "total_seconds": 71.636
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "answer": "According to the source [S1], the use of GPA as a candidate screening tool has fallen into disfavor, with only less than 40% of respondents planning to screen candidates by GPA. Instead, many employers are using skills-based hiring to identify candidates with potential [S1].",
+  "answer_warnings": [
+   "partial_answer"
+  ],
+  "sources": [
+   {
+    "source_id": "src_127",
+    "title": "Hiring Projections Level Off for the College Class of 2025: GPA screening and skills-based hiring",
+    "source_name": "National Association of Colleges and Employers (NACE)",
+    "source_type": "professional_career_organization_article",
+    "url": "https://naceweb.org/job-market/trends-and-predictions/5a704a5b-acf5-499f-a37b-327f58cdbef9",
+    "category": "employment",
+    "supporting_chunk_ids": [
+     "src_127_chunk_001"
+    ],
+    "evidence_labels": [
+     "S1"
+    ],
+    "best_similarity_score": 0.7289942502975464
+   }
+  ],
+  "retrieved_context": [
+   {
+    "label": "S1",
+    "chunk_id": "src_127_chunk_001",
+    "source_id": "src_127",
+    "title": "Hiring Projections Level Off for the College Class of 2025: GPA screening and skills-based hiring",
+    "category": "employment",
+    "similarity_score": 0.7289942502975464,
+    "url": "https://naceweb.org/job-market/trends-and-predictions/5a704a5b-acf5-499f-a37b-327f58cdbef9",
+    "passage": "Hiring Projections Level Off for the College Class of 2025: GPA screening and skills-based hiring The use of the GPA as a candidate screening tool has fallen into disfavor. For the third straight year, less than 40% of respondents will screen candidates by GPA. Instead of GPA, many employers are using skills-based hiring to help them ID candidates with potential. In fact, nearly two-thirds of employers report using skills-based hiring practices all or most of the time. A student's major, industry, and internship experience are crucial, whether or not employers screen by GPA."
+   },
+   {
+    "label": "S2",
+    "chunk_id": "src_091_chunk_001",
+    "source_id": "src_091",
+    "title": "Career Readiness Competencies",
+    "category": "skills_and_technologies",
+    "similarity_score": 0.6788942813873291,
+    "url": "https://naceweb.org/career-readiness/competencies/career-readiness-defined",
+    "passage": "For CENG students, these competencies can be demonstrated through projects, internships, labs, hackathons, student clubs, open-source work, presentations, documentation, and responsible teamwork. The source supports balanced advice about GPA, projects, and internships. GPA can matter for some academic, scholarship, or screening contexts, but employability also depends on evidence that a student can learn, communicate, solve problems, work with others, and complete technical work."
+   },
+   {
+    "label": "S3",
+    "chunk_id": "src_074_chunk_008",
+    "source_id": "src_074",
+    "title": "Write a Resume/CV",
+    "category": "employment",
+    "similarity_score": 0.6655592918395996,
+    "url": "https://careerservices.upenn.edu/channels/resume/",
+    "passage": "Projects: Usually for software engineering and computer science resumes, as a way to show technical skills in use. Consider also including your Github link in your header."
+   },
+   {
+    "label": "S4",
+    "chunk_id": "src_036_chunk_006",
+    "source_id": "src_036",
+    "title": "Resumes",
+    "category": "employment",
+    "similarity_score": 0.6238629817962646,
+    "url": "https://career.berkeley.edu/prepare-for-success/resumes/",
+    "passage": "Do I include personal information, such as interests and hobbies? add Placing your interests and hobbies on your resume can help an employer get an idea about who you are as an individual. However, this is not an essential part of most resumes and is one of the first sections to be removed if you run out of space."
+   },
+   {
+    "label": "S5",
+    "chunk_id": "src_087_chunk_001",
+    "source_id": "src_087",
+    "title": "Octoverse 2024: AI leads Python to top language as the number of global developers surges",
+    "category": "future_technologies",
+    "similarity_score": 0.5989046096801758,
+    "url": "https://github.blog/news-insights/octoverse/octoverse-2024/",
+    "passage": "Students should not learn only prompt use; they should learn how software works well enough to evaluate, test, and maintain AI-assisted output. Student-facing guidance: GitHub can be more than a file dump. Good student portfolios show readable code, commit history, documentation, tests when appropriate, issue tracking or project notes, and projects that connect to a real interest such as web, data, embedded, robotics, cybersecurity, or AI."
+   }
+  ],
+  "previous_turn_setup": null
+ },
+ {
+  "id": "p012",
+  "question": "Can studying Computer Engineering at OSTIM help me work internationally later?",
+  "group": "paraphrase",
+  "expected_topics": [],
+  "expected_categories": [
+   "employment",
+   "graduate_studies",
+   "remote_work",
+   "career_opportunities",
+   "work_life_balance"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": null,
+  "evaluation_label": "correct_evidence_supported",
+  "elapsed_wall_seconds": 51.533,
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "Can studying computer engineering at ostim help me work internationally later? (constraints: ostim)",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S2",
+     "S1"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "removed_trailing_source_labels",
+     "added_supported_inline_label",
+     "pruned_unverified_sentences",
+     "partial_answer"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "Studying computer engineering at OSTIM can indeed help you work internationally later, as the university offers a master's program in English, which is a significant advantage for international students [S2].",
+      "labels": [
+       "S2"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "english",
+       "for",
+       "master",
+       "ostim",
+       "program",
+       "the",
+       "university"
+      ]
+     },
+     {
+      "claim": "Additionally, the OSTIM Technical University International Student Admission Directive outlines the admission procedures, including the acceptance of international students, which further supports the possibility of working internationally after graduation [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "admission",
+       "directive",
+       "international",
+       "ostim",
+       "technical",
+       "the",
+       "university"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.6606746912002563,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "Can studying computer engineering at ostim help me work internationally later? (constraints: ostim)",
+    "query_kind": "standalone_domain_question",
+    "query_normalization": {
+     "original_question": "Can studying Computer Engineering at OSTIM help me work internationally later?",
+     "normalized_question": "Can studying computer engineering at ostim help me work internationally later?",
+     "retrieval_question": "Can studying computer engineering at ostim help me work internationally later? (constraints: ostim)",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "computer_engineering",
+       "matched_terms": [
+        "computer engineering"
+       ],
+       "confidence": 1.0
+      },
+      {
+       "name": "career",
+       "matched_terms": [
+        "work"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "assess",
+     "constraints": [
+      "ostim"
+     ],
+     "entities": [
+      "computer_engineering",
+      "career",
+      "OSTIM Technical University"
+     ],
+     "referents": [],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 11,
+      "replacements": [],
+      "normalized_tokens": [
+       "can",
+       "studying",
+       "computer",
+       "engineering",
+       "at",
+       "ostim",
+       "help",
+       "me",
+       "work",
+       "internationally",
+       "later"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.593,
+    "context_construction_seconds": 0.005,
+    "llm_generation_seconds": 45.882,
+    "initial_llm_generation_seconds": 45.882,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 45.828,
+    "total_seconds": 51.523
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "answer": "Studying computer engineering at OSTIM can indeed help you work internationally later, as the university offers a master's program in English, which is a significant advantage for international students [S2]. Additionally, the OSTIM Technical University International Student Admission Directive outlines the admission procedures, including the acceptance of international students, which further supports the possibility of working internationally after graduation [S1].",
+  "answer_warnings": [
+   "partial_answer"
+  ],
+  "sources": [
+   {
+    "source_id": "src_089",
+    "title": "International Student Admission Directive",
+    "source_name": "OSTIM Technical University International Student and Academic Relations Office",
+    "source_type": "official_admission_directive",
+    "url": "https://ird.ostimteknik.edu.tr/web/content/198099?download=true&unique=97234f0c84b6ad847cb59728a89f51636f3c7768",
+    "category": "department_information",
+    "supporting_chunk_ids": [
+     "src_089_chunk_001"
+    ],
+    "evidence_labels": [
+     "S1"
+    ],
+    "best_similarity_score": 0.6606746912002563
+   },
+   {
+    "source_id": "src_088",
+    "title": "Program Syllabus: Computer Engineering English Thesis Master's Degree Program",
+    "source_name": "OSTIM Technical University Institute of Science",
+    "source_type": "official_graduate_program_page",
+    "url": "https://fbebilgisayar.ostimteknik.edu.tr/program-syllabus",
+    "category": "graduate_studies",
+    "supporting_chunk_ids": [
+     "src_088_chunk_001"
+    ],
+    "evidence_labels": [
+     "S2"
+    ],
+    "best_similarity_score": 0.6314008831977844
+   }
+  ],
+  "retrieved_context": [
+   {
+    "label": "S1",
+    "chunk_id": "src_089_chunk_001",
+    "source_id": "src_089",
+    "title": "International Student Admission Directive",
+    "category": "department_information",
+    "similarity_score": 0.6606746912002563,
+    "url": "https://ird.ostimteknik.edu.tr/web/content/198099?download=true&unique=97234f0c84b6ad847cb59728a89f51636f3c7768",
+    "passage": "Title: International Student Admission Directive Source: OSTIM Technical University International Student and Academic Relations Office URL: https://ird.ostimteknik.edu.tr/web/content/198099?download=true&unique=97234f0c84b6ad847cb59728a89f51636f3c7768 Date accessed: 2026-10-13 Curated source note OSTIM Technical University's International Student Admission Directive is an official university document about admission of international students to associate, undergraduate, and graduate programs. It is reliable for procedure context, but applicants must verify current quotas, dates, accepted exams, fees, language rules, and document requirements with the university's current admissions pages."
+   },
+   {
+    "label": "S2",
+    "chunk_id": "src_088_chunk_001",
+    "source_id": "src_088",
+    "title": "Program Syllabus: Computer Engineering English Thesis Master's Degree Program",
+    "category": "graduate_studies",
+    "similarity_score": 0.6314008831977844,
+    "url": "https://fbebilgisayar.ostimteknik.edu.tr/program-syllabus",
+    "passage": "Title: Program Syllabus: Computer Engineering English Thesis Master's Degree Program Source: OSTIM Technical University Institute of Science URL: https://fbebilgisayar.ostimteknik.edu.tr/program-syllabus Date accessed: 2026-10-13 Curated source note OSTIM Technical University lists an English thesis-based master's program in Computer Engineering through the Institute of Science. This is an OSTIM-specific graduate-study source and should be used for local MSc questions, while current admissions, fees, and application dates should be checked on official university pages."
+   },
+   {
+    "label": "S3",
+    "chunk_id": "src_079_chunk_001",
+    "source_id": "src_079",
+    "title": "Criteria for Accrediting Engineering Programs, 2026-2027",
+    "category": "curriculum",
+    "similarity_score": 0.6251232624053955,
+    "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-programs-2026-2027/",
+    "passage": "Title: Criteria for Accrediting Engineering Programs, 2026-2027 Source: ABET URL: https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-programs-2026-2027/ Date accessed: 2026-10-13 Curated source note ABET's engineering accreditation criteria are useful for general questions about what an engineering degree is expected to develop. They are not an OSTIM-specific curriculum document and should not be used to claim that a particular program is ABET-accredited unless the university separately states that. For prospective Computer Engineering students, the ABET criteria support a broad view of engineering education."
+   },
+   {
+    "label": "S4",
+    "chunk_id": "src_028_chunk_001",
+    "source_id": "src_028",
+    "title": "Preparing for work abroad",
+    "category": "remote_work",
+    "similarity_score": 0.5875552892684937,
+    "url": "https://europass.europa.eu/en/work-europe/preparing-work-abroad",
+    "passage": "Here is a check-list of tips and information to help prepare for work abroad. Check your NQF Know the level of your qualification on the National Qualifications Framework (NQF)in your country."
+   }
+  ],
+  "previous_turn_setup": null
+ },
+ {
+  "id": "p013",
+  "question": "Which technologies are growing fastest for students to watch before graduation?",
+  "group": "paraphrase",
+  "expected_topics": [],
+  "expected_categories": [
+   "future_technologies",
+   "AI",
+   "cybersecurity",
+   "employment",
+   "artificial_intelligence",
+   "specializations",
+   "career_opportunities"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": null,
+  "evaluation_label": "correct_evidence_supported",
+  "elapsed_wall_seconds": 39.355,
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "Which technologies are growing fastest for students to watch before graduation?",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S1"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4"
+    ],
+    "normalized": false,
+    "repair_actions": [],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "The retrieved source states: \"As noted in Chapter 2, robots and autonomous systems are also among the primary drivers behind the fastest-growing jobs.\" [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "among",
+       "and",
+       "are",
+       "autonomous",
+       "behind",
+       "chapter",
+       "drivers",
+       "fastest-growing",
+       "jobs.",
+       "noted",
+       "primary",
+       "robots"
+      ]
+     },
+     {
+      "claim": "The retrieved evidence does not establish the rest [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "not",
+       "the"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.6625510454177856,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "discarded_generation": "According to the \"The Future of Jobs Report 2025\" by the World Economic Forum, the fastest-growing skills are AI and big data, followed closely by networks and cybersecurity, and technological literacy. Students should watch these technologies closely before graduation to stay ahead of the curve. [S1]",
+    "resolved_question": "Which technologies are growing fastest for students to watch before graduation?",
+    "query_kind": "standalone_domain_question",
+    "query_normalization": {
+     "original_question": "Which technologies are growing fastest for students to watch before graduation?",
+     "normalized_question": "Which technologies are growing fastest for students to watch before graduation?",
+     "retrieval_question": "Which technologies are growing fastest for students to watch before graduation?",
+     "kind": "standalone_domain_question",
+     "topics": [],
+     "task": "recommend",
+     "constraints": [],
+     "entities": [],
+     "referents": [],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.86,
+     "debug": {
+      "token_count": 11,
+      "replacements": [],
+      "normalized_tokens": [
+       "which",
+       "technologies",
+       "are",
+       "growing",
+       "fastest",
+       "for",
+       "students",
+       "to",
+       "watch",
+       "before",
+       "graduation"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.421,
+    "context_construction_seconds": 0.004,
+    "llm_generation_seconds": 34.751,
+    "initial_llm_generation_seconds": 34.751,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 34.736,
+    "total_seconds": 39.334
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "answer": "The retrieved source states: \"As noted in Chapter 2, robots and autonomous systems are also among the primary drivers behind the fastest-growing jobs.\" [S1]. The retrieved evidence does not establish the rest [S1].",
+  "answer_warnings": [
+   "local_llm_answer_replaced_with_extractive_fallback"
+  ],
+  "sources": [
+   {
+    "source_id": "src_017",
+    "title": "The Future of Jobs Report 2025",
+    "source_name": "World Economic Forum",
+    "source_type": "recognized_international_report",
+    "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+    "category": "future_technologies",
+    "supporting_chunk_ids": [
+     "src_017_chunk_103"
+    ],
+    "evidence_labels": [
+     "S1"
+    ],
+    "best_similarity_score": 0.6625510454177856
+   }
+  ],
+  "retrieved_context": [
+   {
+    "label": "S1",
+    "chunk_id": "src_017_chunk_103",
+    "source_id": "src_017",
+    "title": "The Future of Jobs Report 2025",
+    "category": "future_technologies",
+    "similarity_score": 0.6625510454177856,
+    "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+    "passage": "Robots and autonomous systems are also seen as a key driver of skills change, contributing to the increased demand for not only the three top-growing skills, but also programming and systems thinking – skills essential for managing and optimizing interactions with autonomous technology. As noted in Chapter 2, robots and autonomous systems are also among the primary drivers behind the fastest-growing jobs. Coupled with the rising demand for the three top growing skills, and programming, this trend underscores the importance of technological expertise and systems thinking as core skills in technical fields."
+   },
+   {
+    "label": "S2",
+    "chunk_id": "src_073_chunk_007",
+    "source_id": "src_073",
+    "title": "What is Career Readiness?",
+    "category": "employment",
+    "similarity_score": 0.6087508797645569,
+    "url": "https://naceweb.org/career-readiness/competencies/career-readiness-defined",
+    "passage": "Participants learn practical ways to integrate competencies into courses, assignments, and co-curricular experiences—supporting academically rigorous learning while expanding access to career-relevant, experiential opportunities that prepare students for the workforce after graduation. Contact usExplore the program Not sure where to start? Get the \"NACE Framework for Creating a Career-Ready Campus\" to explore all of the ways you can strengthen career readiness—at any stage of your journey."
+   },
+   {
+    "label": "S3",
+    "chunk_id": "src_034_chunk_001",
+    "source_id": "src_034",
+    "title": "Employers Say New Grads Are Largely Prepared for Work, With Room to Improve",
+    "category": "skills_and_technologies",
+    "similarity_score": 0.5743168592453003,
+    "url": "https://www.naceweb.org/career-readiness/trends-and-predictions/employers-say-new-grads-are-largely-prepared-for-work-with-room-to-improve",
+    "passage": "Employers Say New Grads Are Largely Prepared for Work, With Room to Improve Home / Career Readiness / Trends & Predictions New Grad Preparation Date: April 20, 2026 By: Mary Gatta AAA candidate selectioncareer readinessnace insightssurveys Overall, employers say new college graduates are reasonably well prepared for the jobs they will enter after graduation—and more than 20% say they are very well prepared, according to NACE’s Job Outlook 2026 Spring Update. New graduate skills also track with employer needs. More than 40% of employers taking part in the survey said new grads skills are very closely aligned to their hiring needs, and 56% say they are partially aligned."
+   },
+   {
+    "label": "S4",
+    "chunk_id": "src_017_chunk_088",
+    "source_id": "src_017",
+    "title": "The Future of Jobs Report 2025",
+    "category": "future_technologies",
+    "similarity_score": 0.6919122338294983,
+    "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+    "passage": "endurance and precision Skill evolution According to employer expectations for the evolution of skills in the next five years, as shown in Figure 3.4, technological skills are projected to grow in importance more rapidly than any other type of skills. Among these, AI and big data top the list as the fastest-growing skills, followed closely by networks and cybersecurity and technological literacy. Complementing these technological skills, creative thinking and two socio-emotional attitudes – resilience, flexibility, and agility, along with curiosity and lifelong learning – are also seen as rising in importance."
+   }
+  ],
+  "previous_turn_setup": null
+ },
+ {
+  "id": "p014",
+  "question": "Are remote developer jobs common enough that I can plan my career around them?",
+  "group": "paraphrase",
+  "expected_topics": [],
+  "expected_categories": [
+   "remote_work",
+   "employment",
+   "work_life_balance",
+   "career_opportunities"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": null,
+  "evaluation_label": "correct_evidence_supported",
+  "elapsed_wall_seconds": 54.375,
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "are remote developer jobs common enough that I can plan my career around them? (Computer Engineering; topics: career, remote_work)",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S2"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4",
+     "S5"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "removed_trailing_source_labels",
+     "source_name_to_inline_label",
+     "added_supported_inline_label",
+     "pruned_unverified_sentences",
+     "partial_answer"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "A significant portion of developers are engaging in remote learning and development activities [S2].",
+      "labels": [
+       "S2"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "developers",
+       "development",
+       "learning"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.6171570420265198,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "are remote developer jobs common enough that I can plan my career around them? (Computer Engineering; topics: career, remote_work)",
+    "query_kind": "standalone_domain_question",
+    "query_normalization": {
+     "original_question": "Are remote developer jobs common enough that I can plan my career around them?",
+     "normalized_question": "are remote developer jobs common enough that I can plan my career around them?",
+     "retrieval_question": "are remote developer jobs common enough that I can plan my career around them? (Computer Engineering; topics: career, remote_work)",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "career",
+       "matched_terms": [
+        "career",
+        "jobs"
+       ],
+       "confidence": 1.0
+      },
+      {
+       "name": "remote_work",
+       "matched_terms": [
+        "remote"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "assess",
+     "constraints": [],
+     "entities": [
+      "career",
+      "remote_work"
+     ],
+     "referents": [
+      "that",
+      "them"
+     ],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 14,
+      "replacements": [],
+      "normalized_tokens": [
+       "are",
+       "remote",
+       "developer",
+       "jobs",
+       "common",
+       "enough",
+       "that",
+       "i",
+       "can",
+       "plan",
+       "my",
+       "career",
+       "around",
+       "them"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.4,
+    "context_construction_seconds": 0.003,
+    "llm_generation_seconds": 50.863,
+    "initial_llm_generation_seconds": 50.863,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 50.826,
+    "total_seconds": 54.357
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "answer": "A significant portion of developers are engaging in remote learning and development activities [S2].",
+  "answer_warnings": [
+   "partial_answer"
+  ],
+  "sources": [
+   {
+    "source_id": "src_049",
+    "title": "Work | 2024 Stack Overflow Developer Survey",
+    "source_name": "Stack Overflow",
+    "source_type": "developer_survey_report",
+    "url": "https://survey.stackoverflow.co/2024/work",
+    "category": "remote_work",
+    "supporting_chunk_ids": [
+     "src_049_chunk_006"
+    ],
+    "evidence_labels": [
+     "S2"
+    ],
+    "best_similarity_score": 0.5711660981178284
+   }
+  ],
+  "retrieved_context": [
+   {
+    "label": "S1",
+    "chunk_id": "src_101_chunk_009",
+    "source_id": "src_101",
+    "title": "How tech workers really feel about work right now",
+    "category": "work_life_balance",
+    "similarity_score": 0.6171570420265198,
+    "url": "https://www.lennysnewsletter.com/p/how-tech-workers-really-feel-about",
+    "passage": "Tech workers’ interest, involvement, and connection to their work aren’t related to where they do it. And contrary to common assumptions, remote workers feel just as much belonging as in-office workers do. But when we dove deeper, we revealed some unexpected patterns: We asked respondents directly how their work setup has impacted their feelings about their job."
+   },
+   {
+    "label": "S2",
+    "chunk_id": "src_049_chunk_006",
+    "source_id": "src_049",
+    "title": "Work | 2024 Stack Overflow Developer Survey",
+    "category": "remote_work",
+    "similarity_score": 0.5711660981178284,
+    "url": "https://survey.stackoverflow.co/2024/work",
+    "passage": "Select all that apply. All Respondents By Developer Type 43,668 (66.7%) 34,541 (52.8%) 4.5Coding outside of work Coding outside of work Most developers code outside of work as a hobby (68%), and almost 40% code outside of work for professional development or self-paced learning from online courses. Which of the following best describes the code you write outside of work?"
+   },
+   {
+    "label": "S3",
+    "chunk_id": "src_014_chunk_001",
+    "source_id": "src_014",
+    "title": "Computer Hardware Engineers: 17-2061.00",
+    "category": "skills_and_technologies",
+    "similarity_score": 0.6374266147613525,
+    "url": "https://www.onetonline.org/link/summary/17-2061.00",
+    "passage": "Title: Computer Hardware Engineers: 17-2061.00 17-2061.00 - Computer Hardware Engineers Occupation keyword search Type a title or code for matches No quick matches found Search for keyword results Computer Hardware Engineers 17-2061.00 Bright Outlook Updated 2026 Research, design, develop, or test computer or computer-related equipment for commercial, industrial, military, or scientific use. May supervise the manufacturing and installation of computer or computer-related equipment and components."
+   },
+   {
+    "label": "S4",
+    "chunk_id": "src_017_chunk_234",
+    "source_id": "src_017",
+    "title": "The Future of Jobs Report 2025",
+    "category": "future_technologies",
+    "similarity_score": 0.6066408157348633,
+    "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+    "passage": "work processes. To attract talent, 48% of companies – twice the global industry average – plan to offer remote work across borders, while 22% of respondents are evaluating options for moving operations closer to their homebase through reshoring or nearshoring."
+   },
+   {
+    "label": "S5",
+    "chunk_id": "src_050_chunk_001",
+    "source_id": "src_050",
+    "title": "Professional Developers | 2024 Stack Overflow Developer Survey",
+    "category": "work_life_balance",
+    "similarity_score": 0.5992954969406128,
+    "url": "https://survey.stackoverflow.co/2024/professional-developers",
+    "passage": "Professional Developers | 2024 Stack Overflow Developer Survey 2024DeveloperSurvey Advertising & TalentReach devs & technologists worldwide about your product, service or employer brand 6 Professional Developers We asked Professional Developers to tell us about what impacts their productivity at work, how often it happens, and how much time it takes out of their day. We also asked them about the developer experience at work—do they have the processes, tools, and programs they need to make their jobs easier? 6.1."
+   }
+  ],
+  "previous_turn_setup": null
+ },
+ {
+  "id": "p015",
+  "question": "What if I like hardware and embedded systems more than websites and apps?",
+  "group": "paraphrase",
+  "expected_topics": [],
+  "expected_categories": [
+   "curriculum",
+   "skills",
+   "employment",
+   "skills_and_technologies",
+   "career_opportunities"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": null,
+  "evaluation_label": "correct_evidence_supported",
+  "elapsed_wall_seconds": 51.47,
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "What if I like hardware and embedded systems more than websites and apps? (Computer Engineering)",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S1",
+     "S2"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4",
+     "S5"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "added_supported_inline_label",
+     "pruned_unverified_sentences",
+     "partial_answer"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "The curriculum covers courses in computer architecture, operating systems, networks, and computer security, which aligns with your interests in hardware and embedded systems [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "architecture",
+       "courses",
+       "hardware",
+       "networks",
+       "operating",
+       "security",
+       "systems"
+      ]
+     },
+     {
+      "claim": "Additionally, the program is oriented more towards hardware and system design, providing a strong foundation in digital logic, computer architecture, electronics, hardware description languages, embedded systems, and performance tradeoffs [S2].",
+      "labels": [
+       "S2"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "architecture",
+       "description",
+       "digital",
+       "electronics",
+       "embedded",
+       "hardware",
+       "languages",
+       "logic",
+       "performance",
+       "system",
+       "systems"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 4,
+    "top_similarity_score": 0.6000426411628723,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "What if I like hardware and embedded systems more than websites and apps? (Computer Engineering)",
+    "query_kind": "standalone_domain_question",
+    "query_normalization": {
+     "original_question": "What if I like hardware and embedded systems more than websites and apps?",
+     "normalized_question": "What if I like hardware and embedded systems more than websites and apps?",
+     "retrieval_question": "What if I like hardware and embedded systems more than websites and apps? (Computer Engineering)",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "hardware",
+       "matched_terms": [
+        "hardware",
+        "embedded",
+        "systems"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "explain",
+     "constraints": [],
+     "entities": [
+      "hardware"
+     ],
+     "referents": [],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 13,
+      "replacements": [],
+      "normalized_tokens": [
+       "what",
+       "if",
+       "i",
+       "like",
+       "hardware",
+       "and",
+       "embedded",
+       "systems",
+       "more",
+       "than",
+       "websites",
+       "and",
+       "apps"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.281,
+    "context_construction_seconds": 0.003,
+    "llm_generation_seconds": 40.261,
+    "initial_llm_generation_seconds": 40.261,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 40.246,
+    "total_seconds": 51.461
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "answer": "The curriculum covers courses in computer architecture, operating systems, networks, and computer security, which aligns with your interests in hardware and embedded systems [S1]. Additionally, the program is oriented more towards hardware and system design, providing a strong foundation in digital logic, computer architecture, electronics, hardware description languages, embedded systems, and performance tradeoffs [S2].",
+  "answer_warnings": [
+   "partial_answer"
+  ],
+  "sources": [
+   {
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "source_name": "Association for Computing Machinery and IEEE Computer Society",
+    "source_type": "professional_curriculum_report",
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "category": "curriculum",
+    "supporting_chunk_ids": [
+     "src_067_chunk_310"
+    ],
+    "evidence_labels": [
+     "S1"
+    ],
+    "best_similarity_score": 0.6000426411628723
+   },
+   {
+    "source_id": "src_084",
+    "title": "What Is an FPGA?",
+    "source_name": "Altera",
+    "source_type": "industry_technical_education_resource",
+    "url": "https://www.altera.com/what-is-an-fpga",
+    "category": "specializations",
+    "supporting_chunk_ids": [
+     "src_084_chunk_001"
+    ],
+    "evidence_labels": [
+     "S2"
+    ],
+    "best_similarity_score": 0.5475155711174011
+   }
+  ],
+  "retrieved_context": [
+   {
+    "label": "S1",
+    "chunk_id": "src_067_chunk_310",
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "category": "curriculum",
+    "similarity_score": 0.6000426411628723,
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "passage": "Breadth coverage occurs through courses in computer architecture, operating systems, networks, and computer security. This program is oriented more towards hardware and system design, but contains more than sufficient software coverage to enable graduates to be effective computer engineers."
+   },
+   {
+    "label": "S2",
+    "chunk_id": "src_084_chunk_001",
+    "source_id": "src_084",
+    "title": "What Is an FPGA?",
+    "category": "specializations",
+    "similarity_score": 0.5475155711174011,
+    "url": "https://www.altera.com/what-is-an-fpga",
+    "passage": "This makes it useful when engineers need custom parallel hardware behavior, real-time performance, or the ability to update hardware logic after deployment. For Computer Engineering students, FPGAs connect digital logic, computer architecture, electronics, hardware description languages, embedded systems, signal processing, and performance tradeoffs. They are different from microcontrollers."
+   },
+   {
+    "label": "S3",
+    "chunk_id": "src_045_chunk_506",
+    "source_id": "src_045",
+    "title": "Skills for the digital age",
+    "category": "skills_and_technologies",
+    "similarity_score": 0.4794117212295532,
+    "url": "https://www.oecd.org/en/publications/2024/11/oecd-digital-economy-outlook-2024-volume-2_9b2801fc/full-report/skills-for-the-digital-age_da6162fb.html",
+    "passage": "avoid certain websites and apps than Finnish people with the lowest levels of income and education. Conversely, people with tertiary education in Luxembourg (4 pp) and Spain (5 pp) are less likely to avoid online spaces because of privacy concerns."
+   },
+   {
+    "label": "S4",
+    "chunk_id": "src_067_chunk_030",
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "category": "curriculum",
+    "similarity_score": 0.6300419569015503,
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "passage": "Historically, the field of computer engineering has been widely viewed as “designing computers.” In fact, the design of computers themselves has been the province of relatively few highly skilled engineers whose goal was to push forward the limits of computer and microelectronics technology. The successful miniaturization of silicon devices and their increased reliability as system building blocks and complete systems on chips have created an environment in which computers have become pervasive and replaced more conventional electronic devices."
+   },
+   {
+    "label": "S5",
+    "chunk_id": "src_067_chunk_096",
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "category": "curriculum",
+    "similarity_score": 0.6009266376495361,
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "passage": "laboratory setting should help students develop confidence in their technical ability. Laboratory experiences should help students develop the expertise needed to build new products and to appreciate the important role of technical staff, workshop teams, and professionals from other disciplines. Page 35 of 149 4.4.2 Software considerations Software tools and packages related to computer engineering will vary based on the philosophy and needs of each program. Table 4.3 suggests some software that could appear on all machines within specific laboratory settings."
+   }
+  ],
+  "previous_turn_setup": null
+ },
+ {
+  "id": "p016",
+  "question": "Is startup entrepreneurship realistic after finishing a computer engineering degree?",
+  "group": "paraphrase",
+  "expected_topics": [],
+  "expected_categories": [
+   "entrepreneurship",
+   "employment",
+   "skills",
+   "career_opportunities",
+   "skills_and_technologies"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": null,
+  "evaluation_label": "correct_evidence_supported",
+  "elapsed_wall_seconds": 56.805,
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "Is startup entrepreneurship realistic after finishing a computer engineering degree?",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S1",
+     "S3",
+     "S4",
+     "S5"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4",
+     "S5"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "removed_trailing_source_labels",
+     "pruned_unverified_sentences",
+     "partial_answer"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "Computer engineering emerged as a distinct field after 2010, alongside software engineering and cyberspace security, which are important first-level disciplines [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "are",
+       "cyberspace",
+       "disciplines",
+       "first-level",
+       "security",
+       "software"
+      ]
+     },
+     {
+      "claim": "Additionally, [S3] highlights that 26% of developers work for startups, and 6% work for governmental organizations.",
+      "labels": [
+       "S3"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "developers",
+       "for",
+       "governmental",
+       "organizations.",
+       "startups",
+       "that"
+      ]
+     },
+     {
+      "claim": "However, the [S4] context clarifies that unlike professions such as law and medicine, engineering generally does not require an advanced degree for employment, which further supports the idea of starting a startup.",
+      "labels": [
+       "S4"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "advanced",
+       "and",
+       "degree",
+       "does",
+       "employment",
+       "for",
+       "generally",
+       "law",
+       "medicine",
+       "not",
+       "professions",
+       "require"
+      ]
+     },
+     {
+      "claim": "Students often engage in co-op or internship experiences, which can be valuable for gaining practical experience in the field [S5].",
+      "labels": [
+       "S5"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "co-op",
+       "engage",
+       "for",
+       "internship",
+       "the"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 4,
+    "top_similarity_score": 0.5888198614120483,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "Is startup entrepreneurship realistic after finishing a computer engineering degree?",
+    "query_kind": "standalone_domain_question",
+    "query_normalization": {
+     "original_question": "Is startup entrepreneurship realistic after finishing a computer engineering degree?",
+     "normalized_question": "Is startup entrepreneurship realistic after finishing a computer engineering degree?",
+     "retrieval_question": "Is startup entrepreneurship realistic after finishing a computer engineering degree?",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "computer_engineering",
+       "matched_terms": [
+        "computer engineering"
+       ],
+       "confidence": 1.0
+      },
+      {
+       "name": "entrepreneurship",
+       "matched_terms": [
+        "startup"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "assess",
+     "constraints": [],
+     "entities": [
+      "computer_engineering",
+      "entrepreneurship"
+     ],
+     "referents": [],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 10,
+      "replacements": [],
+      "normalized_tokens": [
+       "is",
+       "startup",
+       "entrepreneurship",
+       "realistic",
+       "after",
+       "finishing",
+       "a",
+       "computer",
+       "engineering",
+       "degree"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.792,
+    "context_construction_seconds": 0.004,
+    "llm_generation_seconds": 50.402,
+    "initial_llm_generation_seconds": 50.402,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 50.368,
+    "total_seconds": 56.781
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "answer": "Computer engineering emerged as a distinct field after 2010, alongside software engineering and cyberspace security, which are important first-level disciplines [S1]. Additionally, [S3] highlights that 26% of developers work for startups, and 6% work for governmental organizations. However, the [S4] context clarifies that unlike professions such as law and medicine, engineering generally does not require an advanced degree for employment, which further supports the idea of starting a startup. Students often engage in co-op or internship experiences, which can be valuable for gaining practical experience in the field [S5].",
+  "answer_warnings": [
+   "partial_answer"
+  ],
+  "sources": [
+   {
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "source_name": "Association for Computing Machinery and IEEE Computer Society",
+    "source_type": "professional_curriculum_report",
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "category": "curriculum",
+    "supporting_chunk_ids": [
+     "src_067_chunk_034",
+     "src_067_chunk_048",
+     "src_067_chunk_134"
+    ],
+    "evidence_labels": [
+     "S1",
+     "S4",
+     "S5"
+    ],
+    "best_similarity_score": 0.6275626420974731
+   },
+   {
+    "source_id": "src_051",
+    "title": "State of Developer Ecosystem Report 2024",
+    "source_name": "JetBrains",
+    "source_type": "industry_developer_survey_report",
+    "url": "https://www.jetbrains.com/lp/devecosystem-2024/",
+    "category": "skills_and_technologies",
+    "supporting_chunk_ids": [
+     "src_051_chunk_015"
+    ],
+    "evidence_labels": [
+     "S3"
+    ],
+    "best_similarity_score": 0.5068228244781494
+   }
+  ],
+  "retrieved_context": [
+   {
+    "label": "S1",
+    "chunk_id": "src_067_chunk_034",
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "category": "curriculum",
+    "similarity_score": 0.5888198614120483,
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "passage": "disciplines. The knowledge of computer engineering occurred in the first-level discipline, ‘computer science and technology.’ After 2010, the Ministry of Education added ‘software engineering’ and ‘cyberspace security’ as new first-level disciplines, which were as important as computer science and technology. Within the UK, the term computer engineering tended to be associated with work stemming from the universities of Manchester and Cambridge where some of the early computers were developed."
+   },
+   {
+    "label": "S2",
+    "chunk_id": "src_020_chunk_002",
+    "source_id": "src_020",
+    "title": "Business Guide",
+    "category": "entrepreneurship",
+    "similarity_score": 0.46302998065948486,
+    "url": "https://www.sba.gov/business-guide",
+    "passage": "Find help in your area Resource Partners Small Business Development Centers (SBDC) SCORE Business Mentoring Veterans Business Outreach Centers (VBOC) Women’s Business Centers Targeted support and services Federal contracting assistance Regional Innovation Clusters (RICs) Veterans Business Development Officers Export and trade assistance Finance Managers U.S. Export Assistance Centers Business guide SBA’s helpful guide walks you through the process of starting and growing your small business."
+   },
+   {
+    "label": "S3",
+    "chunk_id": "src_051_chunk_015",
+    "source_id": "src_051",
+    "title": "State of Developer Ecosystem Report 2024",
+    "category": "skills_and_technologies",
+    "similarity_score": 0.5068228244781494,
+    "url": "https://www.jetbrains.com/lp/devecosystem-2024/",
+    "passage": "Khalid Abuhakmeh .NET Developer Advocate Which of the following sectors is your company or organization primarily active in? 26%of all developers claim to work for a startup, while 6% reported that they work for governmental organizations. It is interesting to note that some of the respondents claiming to be employed by startups work in companies with more than 1,000 employees."
+   },
+   {
+    "label": "S4",
+    "chunk_id": "src_067_chunk_048",
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "category": "curriculum",
+    "similarity_score": 0.5994360446929932,
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "passage": "for these programs is “Computer Engineering.” Other titles may reflect program specializations, organizational structures, historical constraints, or other factors. The principles presented in this report apply to all computer engineering programs regardless of their organizational structure or official degree title. 2.5 Preparation for professional practice Unlike professions such as law and medicine, engineering generally does not require an advanced degree for employment in the field."
+   },
+   {
+    "label": "S5",
+    "chunk_id": "src_067_chunk_134",
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "category": "curriculum",
+    "similarity_score": 0.6275626420974731,
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "passage": "Having adequate administrative support for such programs is essential to their success. Students typically work during the summers and/or from one to three semesters while they are engaged in their four-year degree. The students who do a co-op or an internship generally do so off campus and so may interrupt their education for a summer or a semester."
+   }
+  ],
+  "previous_turn_setup": null
+ },
+ {
+  "id": "p017",
+  "question": "How should I choose between AI, cybersecurity, embedded systems, and software development?",
+  "group": "paraphrase",
+  "expected_topics": [],
+  "expected_categories": [
+   "skills",
+   "AI",
+   "cybersecurity",
+   "employment",
+   "skills_and_technologies",
+   "artificial_intelligence",
+   "specializations",
+   "career_opportunities"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": null,
+  "evaluation_label": "correct_evidence_supported",
+  "elapsed_wall_seconds": 31.311,
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "How should I choose between AI cybersecurity embedded systems and software development? (Computer Engineering; topics: electives, hardware, software, ai, cybersecurity)",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "added_supported_inline_label"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "To choose between AI cybersecurity, embedded systems, and software development in a Computer Engineering program, consider the focus of your interests and career goals [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "cybersecurity",
+       "embedded",
+       "program",
+       "software",
+       "systems",
+       "the"
+      ]
+     },
+     {
+      "claim": "If you are interested in cybersecurity, you can explore courses in AI cybersecurity, which involves technology, people, information, and processes to enable assured operations in the context of adversaries [S2].",
+      "labels": [
+       "S2"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "adversaries",
+       "and",
+       "are",
+       "assured",
+       "context",
+       "cybersecurity",
+       "enable",
+       "information",
+       "operations",
+       "people",
+       "processes",
+       "technology"
+      ]
+     },
+     {
+      "claim": "This aligns with the curriculum that emphasizes cybersecurity as a computing-based discipline [S2] [S3].",
+      "labels": [
+       "S2",
+       "S3"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "computing-based",
+       "curriculum",
+       "cybersecurity",
+       "discipline",
+       "that",
+       "the",
+       "this"
+      ]
+     },
+     {
+      "claim": "For embedded systems, you can look into courses that cover computer systems, embedded systems, digital logic, computer architecture, electronics-related foundations, and the integration of hardware and software [S4].",
+      "labels": [
+       "S4"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "architecture",
+       "digital",
+       "electronics-related",
+       "embedded",
+       "foundations",
+       "hardware",
+       "integration",
+       "logic",
+       "software",
+       "systems",
+       "the"
+      ]
+     },
+     {
+      "claim": "This curriculum is closer to the boundary between computing and engineering hardware, focusing on the design and construction of processor-based systems [S2] [S3] [S4].",
+      "labels": [
+       "S2",
+       "S3",
+       "S4"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "boundary",
+       "computing",
+       "construction",
+       "curriculum",
+       "design",
+       "hardware",
+       "processor-based",
+       "systems",
+       "the",
+       "this"
+      ]
+     },
+     {
+      "claim": "Lastly, for software development, you can choose courses that emphasize computation, algorithms, theory, programming languages, systems, AI, and software foundations [S4].",
+      "labels": [
+       "S4"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "algorithms",
+       "and",
+       "computation",
+       "emphasize",
+       "foundations",
+       "languages",
+       "programming",
+       "software",
+       "systems",
+       "theory"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.6990157961845398,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "How should I choose between AI cybersecurity embedded systems and software development? (Computer Engineering; topics: electives, hardware, software, ai, cybersecurity)",
+    "query_kind": "standalone_domain_question",
+    "query_normalization": {
+     "original_question": "How should I choose between AI, cybersecurity, embedded systems, and software development?",
+     "normalized_question": "How should I choose between AI cybersecurity embedded systems and software development?",
+     "retrieval_question": "How should I choose between AI cybersecurity embedded systems and software development? (Computer Engineering; topics: electives, hardware, software, ai, cybersecurity)",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "electives",
+       "matched_terms": [
+        "choose"
+       ],
+       "confidence": 1.0
+      },
+      {
+       "name": "hardware",
+       "matched_terms": [
+        "embedded",
+        "systems"
+       ],
+       "confidence": 1.0
+      },
+      {
+       "name": "software",
+       "matched_terms": [
+        "software"
+       ],
+       "confidence": 1.0
+      },
+      {
+       "name": "ai",
+       "matched_terms": [
+        "ai"
+       ],
+       "confidence": 1.0
+      },
+      {
+       "name": "cybersecurity",
+       "matched_terms": [
+        "cybersecurity"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "recommend",
+     "constraints": [],
+     "entities": [
+      "electives",
+      "hardware",
+      "software",
+      "ai",
+      "cybersecurity"
+     ],
+     "referents": [],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 12,
+      "replacements": [],
+      "normalized_tokens": [
+       "how",
+       "should",
+       "i",
+       "choose",
+       "between",
+       "ai",
+       "cybersecurity",
+       "embedded",
+       "systems",
+       "and",
+       "software",
+       "development"
+      ],
+      "changed": true
+     },
+     "changed": true
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.649,
+    "context_construction_seconds": 0.002,
+    "llm_generation_seconds": 27.326,
+    "initial_llm_generation_seconds": 27.326,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 27.317,
+    "total_seconds": 31.301
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "answer": "To choose between AI cybersecurity, embedded systems, and software development in a Computer Engineering program, consider the focus of your interests and career goals [S1]. If you are interested in cybersecurity, you can explore courses in AI cybersecurity, which involves technology, people, information, and processes to enable assured operations in the context of adversaries [S2]. This aligns with the curriculum that emphasizes cybersecurity as a computing-based discipline [S2] [S3]. For embedded systems, you can look into courses that cover computer systems, embedded systems, digital logic, computer architecture, electronics-related foundations, and the integration of hardware and software [S4]. This curriculum is closer to the boundary between computing and engineering hardware, focusing on the design and construction of processor-based systems [S2] [S3] [S4]. Lastly, for software development, you can choose courses that emphasize computation, algorithms, theory, programming languages, systems, AI, and software foundations [S4].",
+  "answer_warnings": [],
+  "sources": [
+   {
+    "source_id": "src_085",
+    "title": "Cybersecurity Curricular Guidelines CSEC 2017",
+    "source_name": "ACM, IEEE Computer Society, AIS SIGSEC, and IFIP WG 11.8",
+    "source_type": "professional_curriculum_report",
+    "url": "https://cybered.acm.org/",
+    "category": "cybersecurity",
+    "supporting_chunk_ids": [
+     "src_085_chunk_001"
+    ],
+    "evidence_labels": [
+     "S1"
+    ],
+    "best_similarity_score": 0.6990157961845398
+   },
+   {
+    "source_id": "src_128",
+    "title": "Curricular Guidance: the sub-disciplines of computing (computer engineering, computer science, software engineering, information technology)",
+    "source_name": "ACM Committee for Computing Education in Community Colleges",
+    "source_type": "professional_curricular_guidance",
+    "url": "https://ccecc.acm.org/guidance",
+    "category": "common_misconceptions",
+    "supporting_chunk_ids": [
+     "src_128_chunk_002"
+    ],
+    "evidence_labels": [
+     "S2"
+    ],
+    "best_similarity_score": 0.7297736406326294
+   },
+   {
+    "source_id": "src_042",
+    "title": "Curricular Guidance",
+    "source_name": "ACM Committee for Computing Education in Community Colleges",
+    "source_type": "professional_curricular_guidance",
+    "url": "https://ccecc.acm.org/guidance",
+    "category": "common_misconceptions",
+    "supporting_chunk_ids": [
+     "src_042_chunk_002"
+    ],
+    "evidence_labels": [
+     "S3"
+    ],
+    "best_similarity_score": 0.7166208624839783
+   },
+   {
+    "source_id": "src_080",
+    "title": "Computing Curricula 2020: Paradigms for Global Computing Education",
+    "source_name": "ACM and IEEE Computer Society",
+    "source_type": "professional_curriculum_report",
+    "url": "https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf",
+    "category": "common_misconceptions",
+    "supporting_chunk_ids": [
+     "src_080_chunk_001"
+    ],
+    "evidence_labels": [
+     "S4"
+    ],
+    "best_similarity_score": 0.6940709948539734
+   }
+  ],
+  "retrieved_context": [
+   {
+    "label": "S1",
+    "chunk_id": "src_085_chunk_001",
+    "source_id": "src_085",
+    "title": "Cybersecurity Curricular Guidelines CSEC 2017",
+    "category": "cybersecurity",
+    "similarity_score": 0.6990157961845398,
+    "url": "https://cybered.acm.org/",
+    "passage": "This breadth matters because many security failures involve people, process, software design, configuration, networks, or organizational decisions, not only code vulnerabilities. For Computer Engineering students, cybersecurity connects naturally with networks, operating systems, programming, databases, cloud computing, cryptography, embedded systems, and hardware security. Students interested in security should build legal and ethical habits from the beginning."
+   },
+   {
+    "label": "S2",
+    "chunk_id": "src_128_chunk_002",
+    "source_id": "src_128",
+    "title": "Curricular Guidance: the sub-disciplines of computing (computer engineering, computer science, software engineering, information technology)",
+    "category": "common_misconceptions",
+    "similarity_score": 0.7297736406326294,
+    "url": "https://ccecc.acm.org/guidance",
+    "passage": "such as cellular communications, consumer electronics, medical imaging and devices, alarm systems and military technologies. Upon graduation, students initiating careers as computer engineers should be able to design and implement systems that involve the integration of software and hardware devices. Cybersecurity is a computing-based discipline involving technology, people, information, and processes to enable assured operations in the context of adversaries."
+   },
+   {
+    "label": "S3",
+    "chunk_id": "src_042_chunk_002",
+    "source_id": "src_042",
+    "title": "Curricular Guidance",
+    "category": "common_misconceptions",
+    "similarity_score": 0.7166208624839783,
+    "url": "https://ccecc.acm.org/guidance",
+    "passage": "Computer Engineering involves the design and construction of processor-based systems comprised of hardware, software, and communications components. This four-year curriculum focuses on the synthesis of electrical engineering and computer science as applied to the design of systems such as cellular communications, consumer electronics, medical imaging and devices, alarm systems and military technologies."
+   },
+   {
+    "label": "S4",
+    "chunk_id": "src_080_chunk_001",
+    "source_id": "src_080",
+    "title": "Computing Curricula 2020: Paradigms for Global Computing Education",
+    "category": "common_misconceptions",
+    "similarity_score": 0.6940709948539734,
+    "url": "https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf",
+    "passage": "Computer Engineering is generally closest to the boundary between computing and engineering hardware. It emphasizes computer systems, embedded systems, digital logic, computer architecture, electronics-related foundations, and the integration of hardware and software. Computer Science emphasizes computation, algorithms, theory, programming languages, systems, AI, and software foundations."
+   }
+  ],
+  "previous_turn_setup": null
+ },
+ {
+  "id": "p018",
+  "question": "Can I succeed in computing if math makes me anxious?",
+  "group": "paraphrase",
+  "expected_topics": [],
+  "expected_categories": [
+   "mathematics",
+   "common_misconceptions",
+   "skills",
+   "curriculum",
+   "skills_and_technologies"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": null,
+  "evaluation_label": "correct_evidence_supported",
+  "elapsed_wall_seconds": 27.222,
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "Can I succeed in computing if math makes me anxious? (Computer Engineering)",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S4",
+     "S3"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4",
+     "S5"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "added_supported_inline_label",
+     "source_name_to_inline_label",
+     "pruned_unverified_sentences",
+     "partial_answer"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "The curriculum for the Computer Engineering program at OSTIM Technical University includes a course titled \"MATH 301 Numerical Methods and Scientific Computing,\" which is a foundational course that is essential for the computing programs [S4].",
+      "labels": [
+       "S4"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "computing",
+       "math",
+       "methods",
+       "numerical",
+       "scientific"
+      ]
+     },
+     {
+      "claim": "However, the curriculum also emphasizes the importance of a strong foundation in mathematics, which can be achieved through both mathematical techniques and formal mathematical reasoning [S3].",
+      "labels": [
+       "S3"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "both",
+       "formal",
+       "foundation",
+       "mathematical",
+       "mathematics",
+       "reasoning",
+       "strong",
+       "techniques",
+       "the"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 4,
+    "top_similarity_score": 0.5626005530357361,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "Can I succeed in computing if math makes me anxious? (Computer Engineering)",
+    "query_kind": "standalone_domain_question",
+    "query_normalization": {
+     "original_question": "Can I succeed in computing if math makes me anxious?",
+     "normalized_question": "Can I succeed in computing if math makes me anxious?",
+     "retrieval_question": "Can I succeed in computing if math makes me anxious? (Computer Engineering)",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "mathematics",
+       "matched_terms": [
+        "math"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "assess",
+     "constraints": [],
+     "entities": [
+      "mathematics"
+     ],
+     "referents": [],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 10,
+      "replacements": [],
+      "normalized_tokens": [
+       "can",
+       "i",
+       "succeed",
+       "in",
+       "computing",
+       "if",
+       "math",
+       "makes",
+       "me",
+       "anxious"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.285,
+    "context_construction_seconds": 0.003,
+    "llm_generation_seconds": 22.908,
+    "initial_llm_generation_seconds": 22.908,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 22.879,
+    "total_seconds": 27.208
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "answer": "The curriculum for the Computer Engineering program at OSTIM Technical University includes a course titled \"MATH 301 Numerical Methods and Scientific Computing,\" which is a foundational course that is essential for the computing programs [S4]. However, the curriculum also emphasizes the importance of a strong foundation in mathematics, which can be achieved through both mathematical techniques and formal mathematical reasoning [S3].",
+  "answer_warnings": [
+   "partial_answer"
+  ],
+  "sources": [
+   {
+    "source_id": "src_042",
+    "title": "Curricular Guidance",
+    "source_name": "ACM Committee for Computing Education in Community Colleges",
+    "source_type": "professional_curricular_guidance",
+    "url": "https://ccecc.acm.org/guidance",
+    "category": "common_misconceptions",
+    "supporting_chunk_ids": [
+     "src_042_chunk_023"
+    ],
+    "evidence_labels": [
+     "S3"
+    ],
+    "best_similarity_score": 0.5664708018302917
+   },
+   {
+    "source_id": "src_003",
+    "title": "Curriculum | MF-Bilgisayar Mühendisliği (İngilizce)",
+    "source_name": "OSTIM Technical University - Department of Computer Engineering (English)",
+    "source_type": "curriculum_document",
+    "url": "https://mfcs.ostimteknik.edu.tr/tr/curriculum",
+    "category": "curriculum",
+    "supporting_chunk_ids": [
+     "src_003_chunk_002"
+    ],
+    "evidence_labels": [
+     "S4"
+    ],
+    "best_similarity_score": 0.4829871654510498
+   }
+  ],
+  "retrieved_context": [
+   {
+    "label": "S1",
+    "chunk_id": "src_071_chunk_001",
+    "source_id": "src_071",
+    "title": "Math Preparation for the College of Engineering",
+    "category": "mathematics",
+    "similarity_score": 0.5626005530357361,
+    "url": "https://engineering.berkeley.edu/students/undergraduate-guide/policies-procedures/math-preparation-for-the-college-of-engineering/",
+    "passage": "Math Preparation for the College of Engineering - Berkeley Engineering Skip to primary navigation Educating leaders. Creating knowledge."
+   },
+   {
+    "label": "S2",
+    "chunk_id": "src_045_chunk_362",
+    "source_id": "src_045",
+    "title": "Skills for the digital age",
+    "category": "skills_and_technologies",
+    "similarity_score": 0.5670722126960754,
+    "url": "https://www.oecd.org/en/publications/2024/11/oecd-digital-economy-outlook-2024-volume-2_9b2801fc/full-report/skills-for-the-digital-age_da6162fb.html",
+    "passage": "Responses to the 2022 PISA survey reveal that parents more frequently expect their sons rather than their daughters to pursue mathematics-related careers (OECD, 2024 [10]).2 At the same time, teachers can reinforce traditional gender stereotypes regarding the appropriate roles for men and women through conscious or unconscious biases, teaching methods, extracurricular activities or textbook choices (OECD, 2023 [5]). Gender stereotypes related to culture can also contribute to girls’ belief in their inability to succeed in mathematics – so-called self-efficacy – despite comparable performance (Zander et al., 2020 [12])."
+   },
+   {
+    "label": "S3",
+    "chunk_id": "src_042_chunk_023",
+    "source_id": "src_042",
+    "title": "Curricular Guidance",
+    "category": "common_misconceptions",
+    "similarity_score": 0.5664708018302917,
+    "url": "https://ccecc.acm.org/guidance",
+    "passage": "Mathematics A strong foundation in mathematics provides the necessary basis for associate-degree transfer programs in computing. This foundation must include both mathematical techniques and formal mathematical reasoning."
+   },
+   {
+    "label": "S4",
+    "chunk_id": "src_003_chunk_002",
+    "source_id": "src_003",
+    "title": "Curriculum | MF-Bilgisayar Mühendisliği (İngilizce)",
+    "category": "curriculum",
+    "similarity_score": 0.4829871654510498,
+    "url": "https://mfcs.ostimteknik.edu.tr/tr/curriculum",
+    "passage": "Yıl 5. Dönem MATH 301 Numerical Methods and Scientific Computing 3. Yıl 5."
+   },
+   {
+    "label": "S5",
+    "chunk_id": "src_101_chunk_002",
+    "source_id": "src_101",
+    "title": "How tech workers really feel about work right now",
+    "category": "work_life_balance",
+    "similarity_score": 0.5643817186355591,
+    "url": "https://www.lennysnewsletter.com/p/how-tech-workers-really-feel-about",
+    "passage": "Managers need help: Only 26% of tech workers consider their managers highly effective, while over 40% view them as ineffective. Where people work makes little difference in how they feel about work—on the surface. But dig deeper, and hybrid workers are the happiest, remote workers are doing well, and in-office workers are experiencing hidden frustrations."
+   }
+  ],
+  "previous_turn_setup": null
+ },
+ {
+  "id": "p019",
+  "question": "Is computer engineering welcoming for women who want technical careers?",
+  "group": "paraphrase",
+  "expected_topics": [],
+  "expected_categories": [
+   "common_misconceptions",
+   "employment",
+   "career_opportunities"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": null,
+  "evaluation_label": "correct_evidence_supported",
+  "elapsed_wall_seconds": 33.701,
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "Is computer engineering welcoming for women who want technical careers?",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S1",
+     "S2",
+     "S5"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4",
+     "S5"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "pruned_unverified_sentences"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "The National Center for Women & Information Technology (NCWIT) highlights the importance of showing students the social, economic, and cultural impacts of the problems computer scientists address [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "cultural",
+       "economic",
+       "impacts",
+       "problems",
+       "scientists",
+       "social",
+       "the"
+      ]
+     },
+     {
+      "claim": "Additionally, the OECD’s Skills for the Digital Age report emphasizes the need for a range of skills, including foundational, ICT, and complementary skills, which can be beneficial for women in technical fields [S2].",
+      "labels": [
+       "S2"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "can",
+       "complementary",
+       "digital",
+       "fields",
+       "foundational",
+       "ict",
+       "need",
+       "oecd",
+       "range",
+       "skills",
+       "technical"
+      ]
+     },
+     {
+      "claim": "Furthermore, initiatives like Girls Who Code and Engineers Without Borders have successfully attracted women by promoting social challenges that can be solved with ICT-related skills [S5].",
+      "labels": [
+       "S5"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "borders",
+       "can",
+       "challenges",
+       "code",
+       "girls",
+       "ict-related",
+       "promoting",
+       "skills",
+       "social",
+       "solved",
+       "that"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.6644220352172852,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "Is computer engineering welcoming for women who want technical careers?",
+    "query_kind": "standalone_domain_question",
+    "query_normalization": {
+     "original_question": "Is computer engineering welcoming for women who want technical careers?",
+     "normalized_question": "Is computer engineering welcoming for women who want technical careers?",
+     "retrieval_question": "Is computer engineering welcoming for women who want technical careers?",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "computer_engineering",
+       "matched_terms": [
+        "computer engineering"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "assess",
+     "constraints": [],
+     "entities": [
+      "computer_engineering"
+     ],
+     "referents": [],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 10,
+      "replacements": [],
+      "normalized_tokens": [
+       "is",
+       "computer",
+       "engineering",
+       "welcoming",
+       "for",
+       "women",
+       "who",
+       "want",
+       "technical",
+       "careers"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.41,
+    "context_construction_seconds": 0.002,
+    "llm_generation_seconds": 28.297,
+    "initial_llm_generation_seconds": 28.297,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 28.287,
+    "total_seconds": 33.69
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "answer": "The National Center for Women & Information Technology (NCWIT) highlights the importance of showing students the social, economic, and cultural impacts of the problems computer scientists address [S1]. Additionally, the OECD’s Skills for the Digital Age report emphasizes the need for a range of skills, including foundational, ICT, and complementary skills, which can be beneficial for women in technical fields [S2]. Furthermore, initiatives like Girls Who Code and Engineers Without Borders have successfully attracted women by promoting social challenges that can be solved with ICT-related skills [S5].",
+  "answer_warnings": [],
+  "sources": [
+   {
+    "source_id": "src_041",
+    "title": "Engagement Practices Framework: Address Misconceptions About the Field of CS",
+    "source_name": "National Center for Women & Information Technology (NCWIT)",
+    "source_type": "professional_education_guidance",
+    "url": "https://ncwit.org/engagement-practices-framework-matter-misconceptions/",
+    "category": "common_misconceptions",
+    "supporting_chunk_ids": [
+     "src_041_chunk_001"
+    ],
+    "evidence_labels": [
+     "S1"
+    ],
+    "best_similarity_score": 0.6644220352172852
+   },
+   {
+    "source_id": "src_045",
+    "title": "Skills for the digital age",
+    "source_name": "Organisation for Economic Co-operation and Development (OECD)",
+    "source_type": "recognized_international_report",
+    "url": "https://www.oecd.org/en/publications/2024/11/oecd-digital-economy-outlook-2024-volume-2_9b2801fc/full-report/skills-for-the-digital-age_da6162fb.html",
+    "category": "skills_and_technologies",
+    "supporting_chunk_ids": [
+     "src_045_chunk_359",
+     "src_045_chunk_370"
+    ],
+    "evidence_labels": [
+     "S2",
+     "S5"
+    ],
+    "best_similarity_score": 0.6781938076019287
+   }
+  ],
+  "retrieved_context": [
+   {
+    "label": "S1",
+    "chunk_id": "src_041_chunk_001",
+    "source_id": "src_041",
+    "title": "Engagement Practices Framework: Address Misconceptions About the Field of CS",
+    "category": "common_misconceptions",
+    "similarity_score": 0.6644220352172852,
+    "url": "https://ncwit.org/engagement-practices-framework-matter-misconceptions/",
+    "passage": "TIPS Show how computer scientists make a difference. Many students want careers where they can “make a difference.” Help your students see that the problems computer scientists tackle can have important social, economic, and cultural impacts. Show the diversity of work that computer scientists do."
+   },
+   {
+    "label": "S2",
+    "chunk_id": "src_045_chunk_359",
+    "source_id": "src_045",
+    "title": "Skills for the digital age",
+    "category": "skills_and_technologies",
+    "similarity_score": 0.6566421389579773,
+    "url": "https://www.oecd.org/en/publications/2024/11/oecd-digital-economy-outlook-2024-volume-2_9b2801fc/full-report/skills-for-the-digital-age_da6162fb.html",
+    "passage": "The Spotlight then explores how policy can support a more innovative and inclusive digital future. Gender gaps in technical fields emerge early in life and persist throughout women’s professional careers Everyone needs a range of skills – foundational, ICT and complementary – to use digital technologies effectively in life and at work (OECD, 2019 [8]). Yet gender gaps in skills are particularly troubling."
+   },
+   {
+    "label": "S3",
+    "chunk_id": "src_069_chunk_064",
+    "source_id": "src_069",
+    "title": "Computing Competencies for Undergraduate Data Science Curricula",
+    "category": "specializations",
+    "similarity_score": 0.6502151489257812,
+    "url": "https://www.acm.org/binaries/content/assets/education/curricula-recommendations/dstf_ccdsc2021.pdf",
+    "passage": "techniques for welcoming new faculty. 2 Once hired, it is even more important to provide a welcoming and supportive work environment for all faculty."
+   },
+   {
+    "label": "S4",
+    "chunk_id": "src_045_chunk_369",
+    "source_id": "src_045",
+    "title": "Skills for the digital age",
+    "category": "skills_and_technologies",
+    "similarity_score": 0.6514856815338135,
+    "url": "https://www.oecd.org/en/publications/2024/11/oecd-digital-economy-outlook-2024-volume-2_9b2801fc/full-report/skills-for-the-digital-age_da6162fb.html",
+    "passage": "The media often reinforce this stereotype, frequently portraying female scientists as lonely heroines (Kool, Azevedo and Avraamidou, 2022 [29]). The misalignment between personal goals and the perception of ICT-related careers may discourage some women from STEM studies. However, perceptions are changeable."
+   },
+   {
+    "label": "S5",
+    "chunk_id": "src_045_chunk_370",
+    "source_id": "src_045",
+    "title": "Skills for the digital age",
+    "category": "skills_and_technologies",
+    "similarity_score": 0.6781938076019287,
+    "url": "https://www.oecd.org/en/publications/2024/11/oecd-digital-economy-outlook-2024-volume-2_9b2801fc/full-report/skills-for-the-digital-age_da6162fb.html",
+    "passage": "This created a female community and enhanced the confidence of female students (Jivani, 2020 [31]). Many non-profit organisations also attract women by promoting social challenges that can be solved with ICT-related skills, for example Girls Who Code or Engineers Without Borders (McCart, 31 August 2016 [32]; Girls Who Code, 2024 [33]). Looking ahead, it is important to take steps to change the perception of ICT careers as inherently male, including by emphasising related “communal goals”."
+   }
+  ],
+  "previous_turn_setup": null
+ },
+ {
+  "id": "p020",
+  "question": "When should I choose a master's degree instead of going straight into industry?",
+  "group": "paraphrase",
+  "expected_topics": [],
+  "expected_categories": [
+   "graduate_studies",
+   "employment",
+   "career_opportunities"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": null,
+  "evaluation_label": "correct_evidence_supported",
+  "elapsed_wall_seconds": 32.657,
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "When should I choose a master s degree instead of going straight into industry? (Computer Engineering; topics: electives, graduate_studies)",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S3",
+     "S4"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "removed_trailing_source_labels",
+     "added_supported_inline_label",
+     "pruned_unverified_sentences"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "In the Computer Engineering Master's program at OSTIM Technical University, students have the opportunity to choose two third-year electives from a set of four computer engineering courses [S3].",
+      "labels": [
+       "S3"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "choose",
+       "courses",
+       "electives",
+       "four",
+       "set",
+       "the",
+       "third-year",
+       "two"
+      ]
+     },
+     {
+      "claim": "These electives allow for specialization in areas such as Computer Graphics, Intelligent Systems and Robotics, Device Development, and Multimedia Systems [S3].",
+      "labels": [
+       "S3"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "allow",
+       "and",
+       "development",
+       "device",
+       "electives",
+       "for",
+       "graphics",
+       "intelligent",
+       "multimedia",
+       "robotics",
+       "systems"
+      ]
+     },
+     {
+      "claim": "Additionally, the program's curriculum is designed to be flexible, with core material providing breadth across the discipline and more in-depth knowledge in key areas, which can be beneficial for a career in industry [S4].",
+      "labels": [
+       "S4"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "across",
+       "and",
+       "areas",
+       "breadth",
+       "core",
+       "discipline",
+       "for",
+       "in-depth",
+       "key",
+       "knowledge",
+       "material",
+       "program"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.6125121116638184,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "When should I choose a master s degree instead of going straight into industry? (Computer Engineering; topics: electives, graduate_studies)",
+    "query_kind": "standalone_domain_question",
+    "query_normalization": {
+     "original_question": "When should I choose a master's degree instead of going straight into industry?",
+     "normalized_question": "When should I choose a master s degree instead of going straight into industry?",
+     "retrieval_question": "When should I choose a master s degree instead of going straight into industry? (Computer Engineering; topics: electives, graduate_studies)",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "electives",
+       "matched_terms": [
+        "choose"
+       ],
+       "confidence": 1.0
+      },
+      {
+       "name": "graduate_studies",
+       "matched_terms": [
+        "master"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "recommend",
+     "constraints": [],
+     "entities": [
+      "electives",
+      "graduate_studies"
+     ],
+     "referents": [],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 14,
+      "replacements": [],
+      "normalized_tokens": [
+       "when",
+       "should",
+       "i",
+       "choose",
+       "a",
+       "master",
+       "s",
+       "degree",
+       "instead",
+       "of",
+       "going",
+       "straight",
+       "into",
+       "industry"
+      ],
+      "changed": true
+     },
+     "changed": true
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.461,
+    "context_construction_seconds": 0.003,
+    "llm_generation_seconds": 28.673,
+    "initial_llm_generation_seconds": 28.673,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 28.644,
+    "total_seconds": 32.633
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "answer": "In the Computer Engineering Master's program at OSTIM Technical University, students have the opportunity to choose two third-year electives from a set of four computer engineering courses [S3]. These electives allow for specialization in areas such as Computer Graphics, Intelligent Systems and Robotics, Device Development, and Multimedia Systems [S3]. Additionally, the program's curriculum is designed to be flexible, with core material providing breadth across the discipline and more in-depth knowledge in key areas, which can be beneficial for a career in industry [S4].",
+  "answer_warnings": [],
+  "sources": [
+   {
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "source_name": "Association for Computing Machinery and IEEE Computer Society",
+    "source_type": "professional_curriculum_report",
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "category": "curriculum",
+    "supporting_chunk_ids": [
+     "src_067_chunk_358",
+     "src_067_chunk_156"
+    ],
+    "evidence_labels": [
+     "S3",
+     "S4"
+    ],
+    "best_similarity_score": 0.624476969242096
+   }
+  ],
+  "retrieved_context": [
+   {
+    "label": "S1",
+    "chunk_id": "src_088_chunk_001",
+    "source_id": "src_088",
+    "title": "Program Syllabus: Computer Engineering English Thesis Master's Degree Program",
+    "category": "graduate_studies",
+    "similarity_score": 0.6125121116638184,
+    "url": "https://fbebilgisayar.ostimteknik.edu.tr/program-syllabus",
+    "passage": "Title: Program Syllabus: Computer Engineering English Thesis Master's Degree Program Source: OSTIM Technical University Institute of Science URL: https://fbebilgisayar.ostimteknik.edu.tr/program-syllabus Date accessed: 2026-10-13 Curated source note OSTIM Technical University lists an English thesis-based master's program in Computer Engineering through the Institute of Science. This is an OSTIM-specific graduate-study source and should be used for local MSc questions, while current admissions, fees, and application dates should be checked on official university pages."
+   },
+   {
+    "label": "S2",
+    "chunk_id": "src_043_chunk_001",
+    "source_id": "src_043",
+    "title": "Subdisciplines",
+    "category": "specializations",
+    "similarity_score": 0.6015089154243469,
+    "url": "https://ece.illinois.edu/academics/ugrad/subdisciplines",
+    "passage": "Subdisciplines | Electrical & Computer Engineering | Illinois University of Illinois Urbana-Champaign Apply Give My.ECE The Grainger College of Engineering Electrical & Computer Engineering Subdisciplines Breadth and Depth in Electrical and Computer Engineering Both electrical and computer engineering build from a core understanding of electrical phenomena, the concepts of systems and signals, and computers. At the junior and senior level, however, they branch into a large and diverse set of rich intellectual areas, ranging from bioengineering to power systems."
+   },
+   {
+    "label": "S3",
+    "chunk_id": "src_067_chunk_358",
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "category": "curriculum",
+    "similarity_score": 0.6055365204811096,
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "passage": "The illustration allows for electives (options) available in the third year of study. Students may choose two third- year electives selected from a set of four computer engineering courses (modules). These four third-year electives are: Computer Graphics, Intelligent Systems and Robotics, Device Development, and Multimedia Systems."
+   },
+   {
+    "label": "S4",
+    "chunk_id": "src_067_chunk_156",
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "category": "curriculum",
+    "similarity_score": 0.624476969242096,
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "passage": "Other considerations will also influence the characteristics of an individual degree program. These considerations include: x local needs (institutional or regional) x needs of an increasingly diverse student population x interests and background of the faculty This report promotes flexibility in the design of computer engineering programs by not prescribing how to package core material into courses and leaving room for elective and innovative courses. The core of the body of knowledge provides breadth across the discipline with more in-depth knowledge in key areas."
+   }
+  ],
+  "previous_turn_setup": null
+ }
+]

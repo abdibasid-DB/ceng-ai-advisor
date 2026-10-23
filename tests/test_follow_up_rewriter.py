@@ -71,6 +71,41 @@ class FollowUpRewriterTests(unittest.TestCase):
         self.assertEqual(kept.resolved_question, resolution.resolved_question)
         self.assertEqual(kept.rewrite_metadata["used"], "rule_based")
 
+    def test_rewrite_that_changes_the_question_is_rejected(self):
+        weak_at_math = ConversationTurn(
+            question="I am weak at math.", status="answered",
+            answer="The curriculum includes MATH 202 Differential Equations and MATH 101 [S3].",
+        )
+        cybersecurity = ConversationTurn(question="I want cybersecurity.", status="answered", answer="Cybersecurity is a broad field [S1].")
+        cases = (
+            # T182: course codes from the advisor's answer replace the student's concern.
+            (weak_at_math, "How can I prepare before first year?",
+             "How should I prepare before the first year, considering MATH 101 and MATH 202?"),
+            # T187: "important" is dropped; the rewrite asks about Linux's role instead.
+            (cybersecurity, "Is Linux important too?", "What role does Linux play in cybersecurity?"),
+            # A rewrite that resolves nothing.
+            (cybersecurity, "Is Linux important too?", "Is Linux important too?"),
+        )
+        for previous, question, rewrite in cases:
+            with self.subTest(rewrite=rewrite):
+                resolution = resolve_query(question, previous)
+                kept = apply_follow_up_rewrite(resolution, [previous], FakeLLM(text=rewrite), enabled=True)
+                self.assertEqual(kept.resolved_question, resolution.resolved_question)
+                self.assertEqual(kept.rewrite_metadata["used"], "rule_based")
+                self.assertTrue(kept.rewrite_metadata["error"].startswith("rewrite "))
+
+    def test_faithful_paraphrases_are_kept(self):
+        curriculum = ConversationTurn(question="Tell me about the curriculum.", status="answered", answer="It covers CENG 303 [S1].")
+        ai = ConversationTurn(question="Is AI changing engineering work?", status="answered", answer="AI changes tasks [S1].")
+        for previous, question, rewrite in (
+            (curriculum, "Does it include Linux?", "What topics related to Linux are covered in the curriculum?"),
+            (ai, "So will it replace us?", "Will AI replace engineers?"),
+            (PREVIOUS, "What projects should I build?", "What projects should I build if I prefer hardware?"),
+        ):
+            with self.subTest(rewrite=rewrite):
+                kept = apply_follow_up_rewrite(resolve_query(question, previous), [previous], FakeLLM(text=rewrite), enabled=True)
+                self.assertEqual(kept.resolved_question, rewrite)
+
     def test_disabled_flag_skips_llm(self):
         resolution = resolve_query("What projects should I build?", PREVIOUS)
         llm = FakeLLM(text="unused")

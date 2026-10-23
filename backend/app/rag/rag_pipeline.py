@@ -9,7 +9,7 @@ from __future__ import annotations
 
 import time
 from collections.abc import Callable, Iterator
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 from functools import lru_cache
 from pathlib import Path
 import re
@@ -1093,7 +1093,25 @@ def validate_citations(answer: str, context_items: list[dict[str, Any]]) -> Cita
     discard an otherwise grounded answer. Such sentences are removed instead,
     and the remaining answer must pass the full strict validation again.
     """
-    validation = validate_citations_strict(clean_answer_artifacts(answer), context_items)
+    cleaned = clean_answer_artifacts(answer)
+    trimmed = trim_unsupported_inference_clauses(cleaned, context_items)
+    validation = validate_citations_strict(trimmed, context_items)
+    if normalize_citation_format(answer or "")[1] and not validation.normalized:
+        # The cleanup already made "[S 1]" or "(S2)" canonical.
+        validation = replace(validation, normalized=True)
+    if trimmed != cleaned and validation.valid:
+        validation = CitationValidation(
+            True, validation.answer, validation.cited_labels, (), validation.available_labels, True, None,
+            tuple(dict.fromkeys(validation.repair_actions + ("trimmed_unsupported_inference_clause",))),
+        )
+    if validation.valid and starts_with_dangling_reference(validation.answer):
+        lines = validation.answer.split("\n", 1)
+        lines[0] = drop_leading_connective(lines[0])
+        if not starts_with_dangling_reference(lines[0]):
+            validation = CitationValidation(
+                True, "\n".join(lines), validation.cited_labels, (), validation.available_labels, True, None,
+                tuple(dict.fromkeys(validation.repair_actions + ("dropped_leading_connective",))),
+            )
     if validation.valid and not starts_with_dangling_reference(validation.answer):
         deduplicated = remove_repeated_sentences(validation.answer)
         if deduplicated != validation.answer and deduplicated.strip():
@@ -1152,6 +1170,9 @@ SPECULATIVE_CLAIM = re.compile(
 )
 
 
+COMPARATIVE_CLAIM = re.compile(
+    r"\b(?:more|less|better|worse|greater|fewer|rather)\b(?:\s+[\w-]+){0,3}?\s+than\b", re.IGNORECASE
+)
 NEGATION = re.compile(r"\b(?:not|no|never|none|neither|nor|cannot|without)\b|n't\b", re.IGNORECASE)
 ABSENCE_CLAIM = re.compile(
     r"\b(?:source|sources|excerpt|evidence|passage|context|syllabus|it|this)\s+(?:does|do|did)\s+not\s+"
@@ -1254,9 +1275,31 @@ def clean_answer_artifacts(answer: str) -> str:
         lambda match: f"{match.group(1).upper()}:",
         text,
     )
-    # An answer wrapped in one pair of square brackets: "[Computer engineers ... [S2] ...]".
-    if text.startswith("[") and closing_bracket_index(text) == len(text) - 1 and not re.match(r"\[S\d+\]", text):
-        text = text[1:-1].strip()
+    # The same headers written inline: "[ANSWER] The field ..." and "... studying. [USED_SOURCES]".
+    text = re.sub(r"^\s*\[ANSWER\]\s*:?\s*", "ANSWER:\n", text, flags=re.IGNORECASE)
+    text = re.sub(r"\s*(?:\[|\*\*)\s*USED_SOURCES\s*(?:\]|\*\*)\s*:?", "\nUSED_SOURCES:", text, flags=re.IGNORECASE)
+    # "[INSUFFICIENT_INFORMATION] The sources do not say X, but they state Y [S1]."
+    # The marker alone is a refusal; followed by cited text it only introduces
+    # a hedged partial answer, whose claims are checked like any other.
+    marker = re.match(r"\s*\[?\s*INSUFFICIENT_INFORMATION\s*\]?\s*[:.]?\s*", text, re.IGNORECASE)
+    if marker and re.search(r"\[S\d+\]", split_structured_answer(text[marker.end():])[0]):
+        text = text[marker.end():]
+    # An answer wrapped in one pair of square brackets: "[Computer engineers ... [S2] ...]",
+    # possibly followed by its USED_SOURCES list.
+    head, separator, tail = text, "", ""
+    sources_header = re.search(r"\s*\bUSED_SOURCES:", text, re.IGNORECASE)
+    if sources_header:
+        head, separator, tail = text[: sources_header.start()], "\n", text[sources_header.start():].strip()
+    head = head.strip()
+    if head.startswith("[") and closing_bracket_index(head) == len(head) - 1 and not re.match(r"\[S\d+\]", head):
+        text = head[1:-1].strip() + separator + tail
+    # Author-date wrappers around a label: "(World Economic Forum, Not specified [S3])" -> "[S3]".
+    text = re.sub(
+        r"\s*\(\s*[^()\[\]]{0,80}?,\s*(?:\d{4}|n\.?\s?d\.?|not specified|undated|no date)\s*((?:\[\s*S\d+\s*\]\s*)+)\)",
+        lambda match: " " + match.group(1).strip(),
+        text,
+        flags=re.IGNORECASE,
+    )
     # "as evidenced by the [S2] source" -> "as evidenced by the source [S2]"
     text = re.sub(r"\bthe (\[S\d+\]) (source|passage|document)\b", r"the \2 \1", text)
     text = META_OPENER.sub(lambda match: match.group(1) + match.group(2).upper(), text)
@@ -1266,6 +1309,14 @@ def clean_answer_artifacts(answer: str) -> str:
     text = "\n".join(rewrite_label_subject_sentences(line) for line in text.splitlines())
     # "components.] [S1]" -> "components [S1]."
     text = re.sub(r"([.!?])\]\s*((?:\[S\d+\]\s*)+)", lambda match: f" {match.group(2).strip()}{match.group(1)}", text)
+    # Other square brackets are formatting noise, not citations:
+    # "[OSTIM Technical University] was founded ..." or a stray "]".
+    # Citation variants ("[S1, S2]", "[source 3]") are made canonical first.
+    # Numeric markers ("[1]", "[44]") are left alone: they are not our labels
+    # and must not turn into one.
+    text, _ = normalize_citation_format(text)
+    text = re.sub(r"\[(?!\s*S\d+\s*\]|\d+\])([^\[\]\n]{1,200})\](?!\()", r"\1", text)
+    text = re.sub(r"\[(?!S\d+\]|\d+\]|[^\[\]\n]*\]\()|(?<!\[S\d)(?<!\[S\d\d)(?<!\[\d)(?<!\[\d\d)\](?!\()", "", text)
     return text
 
 
@@ -1279,6 +1330,30 @@ EARLY_ALSO = re.compile(r"^\W*(?:\w+\W+){0,5}also\b", re.IGNORECASE)
 
 def is_dangling_opening(sentence: str) -> bool:
     return bool(DANGLING_OPENER.match(sentence) or EARLY_ALSO.match(sentence))
+
+
+# Connectives and hedges that only link to the previous sentence. When that
+# sentence was pruned, "However, a master's degree can ..." still makes sense
+# as "A master's degree can ..."; a pronoun opener ("They are ...") does not.
+LEADING_CONNECTIVE = re.compile(
+    r"^(?P<lead>\s*(?:[-*•]\s*)?)(?:additionally|furthermore|moreover|also|however|therefore|thus|hence|consequently|"
+    r"in addition|as a result|similarly|for instance|for example|first(?:ly)?|second(?:ly)?|finally|lastly|overall|"
+    r"in summary|in conclusion|in short|to summari[sz]e|"
+    r"it (?:seems|appears|is clear|is evident) that|it is (?:important|worth) (?:to note|noting) that)\s*,?\s+(?P<first>\w)",
+    re.IGNORECASE,
+)
+
+
+CONCLUSION_OPENER = re.compile(
+    r"^\s*(?:[-*•]\s*)?(?:therefore|thus|hence|consequently|overall|in summary|in conclusion|in short|to summari[sz]e|"
+    r"as a result|this means|these (?:steps|considerations|factors|points|aspects|findings|skills|practices|experiences|activities))\b",
+    re.IGNORECASE,
+)
+
+
+def drop_leading_connective(sentence: str) -> str:
+    """Remove a linking opener so a sentence can stand first; unchanged if it has none."""
+    return LEADING_CONNECTIVE.sub(lambda match: match.group("lead") + match.group("first").upper(), sentence, count=1)
 
 
 def starts_with_dangling_reference(answer: str) -> bool:
@@ -1305,6 +1380,8 @@ def prune_unverified_sentences(answer: str, context_items: list[dict[str, Any]])
     kept_lines: list[str] = []
     total = kept = 0
     first_kept = False
+    rewritten = False
+    previous_kept = False
     for line in answer.splitlines():
         if not line.strip():
             continue
@@ -1320,20 +1397,72 @@ def prune_unverified_sentences(answer: str, context_items: list[dict[str, Any]])
                 and all(label in available for label in labels)
                 and any(cited_claim_supported(sentence, context_by_label[label]) for label in labels)
             )
-            if verified and kept == 0 and is_dangling_opening(sentence):
-                verified = False
+            if not verified and labels and answer_line_ends_cleanly(sentence) and all(label in available for label in labels):
+                # A claim cited to the wrong passage keeps its place when
+                # another retrieved passage supports it under the same checks.
+                # A label that was never retrieved ([S8]) is not a mix-up.
+                relabeled = relabel_to_supporting_passage(sentence, context_items)
+                if relabeled:
+                    sentence, verified, rewritten = relabeled, True, True
+            # "These steps help ..." refers to the sentence before it; once
+            # that sentence is pruned the reference points at nothing.
+            if verified and not previous_kept and is_dangling_opening(sentence):
+                sentence = drop_leading_connective(sentence)
+                verified = not is_dangling_opening(sentence)
+                rewritten = rewritten or verified
+            previous_kept = verified
             if verified:
                 kept += 1
                 first_kept = first_kept or total == 1
                 kept_sentences.append(sentence.strip())
         if kept_sentences:
             kept_lines.append(" ".join(kept_sentences))
-    if kept == 0 or kept == total:
+    if kept == 0 or (kept == total and not rewritten):
         return None
     # Relevance of what remains is checked afterwards by
     # unsupported_generated_answer_reason, so one verified, on-topic claim is a
     # better reply than a refusal.
     return "\n".join(kept_lines)
+
+
+# A trailing clause that draws the model's own conclusion from the sentence:
+# "... increased participation, making students more attractive to recruiters [S2]."
+INFERENCE_CLAUSE = re.compile(
+    r",\s*(?:(?:which|this|that)\s+(?:\w+ly\s+|further\s+|also\s+)?"
+    r"(?:indicates?|suggests?|impl(?:y|ies)|means?|shows?|demonstrates?|highlights?|underscores?|reflects?|emphasi[sz]es?|supports?)|"
+    r"(?:further\s+)?(?:indicating|suggesting|implying|meaning|showing|demonstrating|highlighting|underscoring|reflecting|emphasi[sz]ing)|"
+    r"making|ensuring|allowing|enabling)\b[^.!?\[\n]*",
+    re.IGNORECASE,
+)
+
+
+def trim_unsupported_inference_clauses(answer: str, context_items: list[dict[str, Any]]) -> str:
+    """Cut a trailing conclusion clause that no retrieved passage supports; keep the cited main claim."""
+    context_by_label = {item.get("label"): item for item in context_items if item.get("label")}
+
+    def trim(match: re.Match) -> str:
+        clause = match.group(0).lstrip(", ")
+        sentence_end = re.search(r"[.!?\n]", match.string[match.end():])
+        rest = match.string[match.end(): match.end() + sentence_end.start()] if sentence_end else match.string[match.end():]
+        cited = [context_by_label[label] for label in extract_citation_labels(rest) if label in context_by_label]
+        for item in cited or context_items:
+            if claim_support_score(clause, item) >= 0.5 or semantically_supported(clause, item):
+                return match.group(0)
+        return ""
+
+    return INFERENCE_CLAUSE.sub(trim, answer)
+
+
+def relabel_to_supporting_passage(sentence: str, context_items: list[dict[str, Any]]) -> str | None:
+    """Replace the citation of a claim its cited passage does not support, if another passage does."""
+    claim = re.sub(r"\s*\[S\d+\]", "", sentence).strip()
+    labels = semantic_supported_labels(claim, context_items) or tuple(
+        label for label in best_supported_labels(claim, context_items)
+        if cited_claim_supported(claim, next(item for item in context_items if item.get("label") == label))
+    )[:1]
+    if not labels:
+        return None
+    return append_citation_labels(claim, labels)
 
 
 def validate_citations_strict(answer: str, context_items: list[dict[str, Any]]) -> CitationValidation:
@@ -1540,8 +1669,12 @@ def repair_missing_inline_citations(
             if labels:
                 repaired_sentences.append(sentence)
                 continue
-            if re.search(r"\[[^\]]+\]", sentence):
+            if re.search(r"\[[^\]]+\]", sentence) or CONCLUSION_OPENER.match(sentence):
+                # A conclusion the model drew itself ("These steps can help
+                # them ...") resembles a passage only through shared topic
+                # words, so it does not get a citation attached here.
                 repaired_sentences.append(sentence)
+                unsupported.extend([sentence] if CONCLUSION_OPENER.match(sentence) else [])
                 continue
 
             source_name_labels = labels_from_source_names(sentence, context_items)
@@ -1668,23 +1801,117 @@ def cited_claim_supported(line: str, context_item: dict[str, Any]) -> bool:
         # "X is likely a core unit, so it is important" is the model's guess,
         # not something the cited passage states.
         return False
-    claim_numbers = set(re.findall(r"\b\d+(?:\.\d+)?\b", claim))
-    if claim_numbers - set(re.findall(r"\b\d+(?:\.\d+)?\b", passage)):
+    # Years and course codes in the source's own name ("Future of Jobs Report
+    # 2025", "CENG 316 New Trends ...") are how the model names the source,
+    # not numeric facts the passage must repeat.
+    source_name = " ".join(str(context_item.get(key) or "") for key in ("title", "source_name"))
+    claim_numbers = set(re.findall(NUMBER, claim)) - set(re.findall(NUMBER, source_name))
+    if not all(number_used_as_in_passage(number, claim, passage) for number in claim_numbers):
+        return False
+    # "Practical skills are more important than mathematics" ranks two things;
+    # the passage must make a comparison, not only mention one of them.
+    if COMPARATIVE_CLAIM.search(claim) and not re.search(r"\b(?:than|compared|whereas|unlike)\b", passage, re.IGNORECASE):
         return False
     if not re.search(r"\b(?:does not|do not|not stated|no evidence|cannot establish)\b", claim, re.I):
         strong_claims = r"\b(?:guarantee\w*|mandatory|prerequisite|requir\w*|must|always|never|every|all)\b"
+        # In the claim only a predicate counts: "X is required", "X requires
+        # Y" or "X is a fundamental requirement", not a noun phrase like "the
+        # mathematics required for graduates".
+        strong_claim_forms = (
+            r"\b(?:guarantee\w*|mandatory|prerequisite|must|always|never|every|all|requires?|"
+            r"(?:is|are|be|been|was|were)\s+(?:\w+\s+)?required|"
+            r"(?:is|are|be|been|was|were)\s+(?:(?:a|an|the)\s+)?(?:\w+\s+){0,2}requirements?)\b"
+        )
         lowered_claim = claim.lower()
         lowered_passage = passage.lower()
-        if re.search(strong_claims, lowered_claim) and not re.search(strong_claims, lowered_passage):
+        strong = re.search(strong_claim_forms, lowered_claim)
+        if strong and not strong_word_about_same_subject(lowered_claim, strong, lowered_passage, strong_claims):
             return False
         # Taxonomy claims ("software engineering is a subset of computer
         # engineering") must come from the passage, not from word overlap.
         relation = re.search(RELATION_CLAIM, lowered_claim)
         if relation and not re.search(RELATION_CLAIM, lowered_passage):
             return False
+    # "You can still succeed, as the curriculum does not fix the amount of
+    # mathematics" draws the model's conclusion from a cited reason; the
+    # conclusion itself must be in the passage too. Word overlap cannot judge
+    # that ("succeed", "good", "engineering" all occur), so the sentence
+    # embedding decides when it is available.
+    causal = CAUSAL_REASON.search(claim)
+    if causal:
+        conclusion = claim[: causal.start()]
+        similarity = semantic_sentence_support(conclusion, context_item)
+        if similarity is None:
+            if claim_support_score(conclusion, context_item) < 0.5:
+                return False
+        elif similarity < SENTENCE_PASSAGE_SIMILARITY_THRESHOLD:
+            return False
     # Paraphrases share few words with the passage; a close sentence-level
     # embedding match counts as support once the guards above have passed.
     return claim_support_score(claim, context_item) >= 0.25 or semantically_supported(claim, context_item)
+
+
+CAUSAL_REASON = re.compile(
+    # "as per [S3]", "as stated in", "as suggested by" name the source, not a reason.
+    r",\s+(?:as|since)\s+(?!well\b|an?\b|of\b|for\b|in\b|part\b|such\b|per\b|"
+    r"(?:shown|described|noted|mentioned|stated|outlined|suggested|indicated|reported|highlighted|discussed|explained|defined)\b)"
+    r"|\s+because\s+(?!of\b)",
+    re.IGNORECASE,
+)
+
+
+NUMBER = r"\b\d+(?:\.\d+)?\b"
+YEAR = re.compile(r"(?:19|20)\d\d")
+
+
+def number_window_terms(text: str, start: int, end: int, width: int = 4) -> set[str]:
+    """Significant words within `width` words either side of text[start:end]."""
+    before = re.findall(r"[a-zA-Z0-9+]{3,}", text[:start])
+    after = re.findall(r"[a-zA-Z0-9+]{3,}", text[end:])
+    words = [word for word in before[-width * 2:] if not word.isdigit()][-width:]
+    words += [word for word in after[: width * 2] if not word.isdigit()][:width]
+    return significant_terms(" ".join(words))
+
+
+def number_used_as_in_passage(number: str, claim: str, passage: str) -> bool:
+    """The passage states this number about the same thing the claim does.
+
+    "18 credits of mathematics" is not supported by "21 credits of mathematics
+    ... 18 credits of humanities": the number occurs, but next to other words.
+    A decimal comma in the passage ("11,4 ay") counts as a decimal point.
+    """
+    passage = re.sub(r"(?<=\d),(?=\d{1,2}\b)", ".", passage)
+    occurrences = [match for match in re.finditer(NUMBER, passage) if match.group(0) == number]
+    if not occurrences:
+        return False
+    # Years need no context; neither can a Turkish passage share words with an
+    # English claim, so there the number itself has to do.
+    if YEAR.fullmatch(number) or len(re.findall(r"\b(?:the|and|of|to|in|is|are|for|with)\b", passage, re.IGNORECASE)) < 3:
+        return True
+    claim_match = next(match for match in re.finditer(NUMBER, claim) if match.group(0) == number)
+    claim_terms = number_window_terms(claim, claim_match.start(), claim_match.end())
+    if len(claim_terms) < 2:
+        return True
+    return any(
+        len(claim_terms & number_window_terms(passage, match.start(), match.end())) * 2 >= len(claim_terms)
+        for match in occurrences
+    )
+
+
+def strong_word_about_same_subject(claim: str, claim_match: re.Match, passage: str, passage_pattern: str) -> bool:
+    """The passage uses a strong word ("must", "required") about what the claim does.
+
+    "Mathematics is a fundamental requirement" is not supported by "a
+    professional must be a good communicator": the passage has a strong word,
+    but next to other words.
+    """
+    claim_terms = {word_stem(term) for term in number_window_terms(claim, claim_match.start(), claim_match.end())}
+    if len(claim_terms) < 2:
+        return bool(re.search(passage_pattern, passage))
+    return any(
+        len(claim_terms & {word_stem(term) for term in number_window_terms(passage, match.start(), match.end())}) * 2 >= len(claim_terms)
+        for match in re.finditer(passage_pattern, passage)
+    )
 
 
 def claim_support_score(line: str, context_item: dict[str, Any]) -> float:
@@ -1934,6 +2161,8 @@ TERM_ALIASES = {
     "ceng": ("ceng", "computer engineering"),
     "computer engineering": ("computer engineering", "computer engineer", "engineering"),
     "ai": ("ai", "artificial intelligence", "machine learning"),
+    "worth": ("worth", "worthwhile", "valuable", "value", "outlook", "demand", "growth", "potential", "prospects"),
+    "succeed": ("succeed", "success", "successful", "succeeding"),
     "artificial": ("ai", "artificial intelligence"),
     "intelligence": ("ai", "artificial intelligence"),
     "math": ("math", "mathematics", "calculus", "differential", "probability", "statistics", "discrete"),
@@ -2510,15 +2739,23 @@ def unsupported_generated_answer_reason(question: str, answer: str, context_item
         "job", "jobs", "work", "study", "studying", "taking", "after", "still",
         "graduate", "graduates", "future", "technologies", "technology", "follow",
         "good", "choice", "choose", "like", "hate", "first", "right", "project",
+        # Modal and degree words carry no topic ("Will AI replace engineers?").
+        "will", "would", "can", "could", "should", "shall", "may", "might", "must",
+        "not", "very", "really", "much",
     }
     # Feelings and decision words describe the student, not the topic a
     # grounded answer must cover ("math scary, should I quit?" is about math).
     focus -= EMOTIONAL_TERMS
-    answer_stems = {word_stem(word) for word in re.findall(r"[a-z0-9+#]+", normalized_answer)}
+    answer_words = set(re.findall(r"[a-z0-9+#]+", normalized_answer))
+    answer_stems = {word_stem(word) for word in answer_words}
     covered = {
         term
         for term in focus
-        if term_supported_by_evidence(term, normalized_answer) or (" " not in term and word_stem(term) in answer_stems)
+        if term_supported_by_evidence(term, normalized_answer)
+        or (" " not in term and word_stem(term) in answer_stems)
+        # word_stem cuts long words to six letters ("starting" -> "starti"),
+        # so a short term is also matched as a word prefix ("start").
+        or (len(term) >= 5 and any(word.startswith(term) for word in answer_words))
     }
     if focus and len(covered) < (2 if len(focus) >= 3 else 1) and not answer_addresses_question(question, answer):
         # Word coverage misses paraphrased answers; the embedding check accepts

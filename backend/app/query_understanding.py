@@ -859,10 +859,13 @@ def build_retrieval_question(
     topics: tuple[QueryTopic, ...],
     constraints: tuple[str, ...],
 ) -> str:
-    base = normalize_special_case_question(normalized_question_text)
-    if is_compatibility_canonical_question(normalized_question_text):
-        return base
     topic_names = [topic.name for topic in topics if topic.name not in {"computer_engineering", "definition"}]
+    # "Do I need discrete math for software and algorithms?" names more than
+    # the amount of mathematics; the generic canonical question would drop it.
+    specific = bool(set(topic_names) - {"mathematics"})
+    base = normalize_special_case_question(normalized_question_text, specific_math_question=specific)
+    if is_compatibility_canonical_question(normalized_question_text, specific_math_question=specific):
+        return base
     extras: list[str] = []
     if "computer_engineering" not in {topic.name for topic in topics} and topic_names:
         extras.append("Computer Engineering")
@@ -875,7 +878,7 @@ def build_retrieval_question(
     return base
 
 
-def normalize_special_case_question(question: str) -> str:
+def normalize_special_case_question(question: str, specific_math_question: bool = False) -> str:
     text = normalized_question(question).rstrip("?.!")
     tokens = tokenize_for_resolution(text)
     has_ce = "computer" in tokens and "engineering" in tokens
@@ -915,7 +918,11 @@ def normalize_special_case_question(question: str) -> str:
         return readable_question(text)
     if any(term in tokens for term in ("club", "clubs", "community", "communities")):
         return readable_question(text)
-    if any(term in tokens for term in ("math", "mathematics", "calculus")) and any(term in tokens for term in ("need", "required", "much")):
+    if (
+        not specific_math_question
+        and any(term in tokens for term in ("math", "mathematics", "calculus"))
+        and any(term in tokens for term in ("need", "required", "much"))
+    ):
         return "How much mathematics is required in Computer Engineering?"
     if "work" in tokens and "life" in tokens and "balance" in tokens and (has_ce or "engineers" in tokens):
         return "Do Computer Engineers have a good work-life balance?"
@@ -931,7 +938,7 @@ def asks_what_computer_engineering_is(text: str) -> bool:
     return re.match(r"what(?: is|'s| exactly is)\s+(?:a\s+|the\s+)?computer engineering\b", text) is not None
 
 
-def is_compatibility_canonical_question(question: str) -> bool:
+def is_compatibility_canonical_question(question: str, specific_math_question: bool = False) -> bool:
     text = normalized_question(question).rstrip("?.!")
     tokens = tokenize_for_resolution(text)
     has_ce = "computer" in tokens and "engineering" in tokens
@@ -945,7 +952,8 @@ def is_compatibility_canonical_question(question: str) -> bool:
         or ("programming" in tokens and ("language" in tokens or "languages" in tokens) and any(term in tokens for term in ("learn", "start", "first")))
         or ("ai" in tokens and "work" in tokens and has_ce)
         or (
-            any(term in tokens for term in ("math", "mathematics", "calculus"))
+            not specific_math_question
+            and any(term in tokens for term in ("math", "mathematics", "calculus"))
             and any(term in tokens for term in ("need", "required", "much"))
         )
         or ("work" in tokens and "life" in tokens and "balance" in tokens and (has_ce or "engineers" in tokens))

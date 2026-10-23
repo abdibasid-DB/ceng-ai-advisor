@@ -118,6 +118,13 @@ class RetrieverTests(unittest.TestCase):
         expanded = expand_query_for_retrieval("Should I participate in hackathons and coding competitions?")
         self.assertIn("hackathons coding competitions projects skills portfolio", expanded)
 
+    def test_query_expansion_adds_outlook_terms_for_degree_value_and_job_finding(self):
+        expanded = expand_query_for_retrieval("Is Computer Engineering still worth studying?")
+        self.assertIn("career outlook job growth employment demand", expanded)
+        self.assertIn("career_opportunities", infer_query_profile(expanded).preferred_categories)
+        expanded = expand_query_for_retrieval("Can I find a job after graduation?")
+        self.assertIn("graduate employment rate job outlook", expanded)
+
     def test_query_expansion_adds_practical_software_terms(self):
         expanded = expand_query_for_retrieval("Should I learn testing and debugging from the command line?")
         self.assertIn("software development testing debugging command line", expanded)

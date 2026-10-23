@@ -153,6 +153,16 @@ class AnswerQualityGuardTests(unittest.TestCase):
         )
         self.assertNotEqual(reason, "generated answer did not address the question's distinctive topic terms")
 
+    def test_topic_coverage_matches_short_term_as_word_prefix(self):
+        from backend.app.rag.rag_pipeline import unsupported_generated_answer_reason
+
+        reason = unsupported_generated_answer_reason(
+            "Should I start with Python, Java, or C++?",
+            "Starting with Python as a first programming course is common [S2].",
+            [{"label": "S2", "passage": "Python is used in the first programming course."}],
+        )
+        self.assertIsNone(reason)
+
     def test_repeated_sentence_is_removed(self):
         answer = (
             "You need skills in debugging embedded programs [S1]. "
@@ -175,6 +185,167 @@ class AnswerQualityGuardTests(unittest.TestCase):
     def test_ok_is_not_dropped_as_filler(self):
         resolution = resolve_query("is it ok if im bad at physics, does ceng need alot of it?", None)
         self.assertIn("is it ok", resolution.resolved_question.lower())
+
+    def test_year_or_course_code_in_source_title_is_not_a_numeric_claim(self):
+        item = {
+            "label": "S3",
+            "title": "The Future of Jobs Report 2025",
+            "passage": "Technology should focus on enhancing rather than substituting for human capabilities.",
+        }
+        self.assertTrue(cited_claim_supported(
+            "The Future of Jobs Report 2025 says technology should focus on enhancing rather than substituting human capabilities [S3].", item
+        ))
+        self.assertFalse(cited_claim_supported(
+            "By 2030 technology should focus on enhancing rather than substituting human capabilities [S3].", item
+        ))
+
+    def test_number_must_describe_the_same_thing_as_in_the_passage(self):
+        from backend.app.rag.rag_pipeline import number_used_as_in_passage
+
+        item = {
+            "label": "S1",
+            "passage": "The general education component of this curriculum consists of 21 credits of mathematics, "
+            "16 credits of natural science, and 18 credits of humanities and social science courses.",
+        }
+        self.assertFalse(cited_claim_supported("The curriculum requires 18 credits of mathematics in general education [S1].", item))
+        self.assertTrue(cited_claim_supported("The general education component consists of 21 credits of mathematics [S1].", item))
+        # A decimal comma in a Turkish passage is the same number.
+        self.assertTrue(number_used_as_in_passage("11.4", "ICT graduates found a first job in 11.4 months", "bilişim ve iletişim teknolojileri (11,4 ay)"))
+
+    def test_comparison_needs_a_comparison_in_the_passage(self):
+        item = {"label": "S3", "passage": "The most crucial aspect employers seek is relevant hands-on experience from previous employment."}
+        self.assertFalse(cited_claim_supported("Hands-on experience is more important than mathematics for employers [S3].", item))
+        self.assertTrue(cited_claim_supported("Employers seek relevant hands-on experience from previous employment [S3].", item))
+
+    def test_required_as_a_noun_modifier_is_not_a_requirement_claim(self):
+        item = {"label": "S4", "passage": "It is up to each program to decide the quantity and level of mathematics for its graduates."}
+        self.assertTrue(cited_claim_supported(
+            "The quantity and level of mathematics required for graduates is up to each program to decide [S4].", item
+        ))
+        self.assertFalse(cited_claim_supported("Advanced mathematics is required for each program's graduates [S4].", item))
+
+    def test_requirement_claim_needs_the_strong_word_about_the_same_subject(self):
+        item = {"label": "S1", "passage": (
+            "The degree credential is likely to be necessary, but it is not sufficient for a position. A successful "
+            "professional must be a good communicator, a strong team player, and a person with passion to succeed."
+        )}
+        self.assertFalse(cited_claim_supported(
+            "A strong foundation in mathematics is a fundamental requirement for many aspects of the field [S1].", item
+        ))
+        self.assertTrue(cited_claim_supported("A successful professional must be a good communicator and team player [S1].", item))
+        internship = {"label": "S2", "passage": "Students must complete a 20 working day internship in order to graduate."}
+        self.assertTrue(cited_claim_supported("Students must complete an internship to graduate [S2].", internship))
+
+    def test_conclusion_drawn_from_a_cited_reason_needs_support_itself(self):
+        item = {"label": "S4", "passage": "It is up to each program to decide the quantity and level of mathematics for its graduates."}
+        self.assertFalse(cited_claim_supported(
+            "You can still succeed despite weak mathematics, as each program decides the quantity and level of mathematics [S4].", item
+        ))
+        self.assertTrue(cited_claim_supported(
+            "Each program decides the quantity and level of mathematics, as it is up to the program [S4].", item
+        ))
+        self.assertTrue(cited_claim_supported(
+            "For graduates, as per [S4], each program decides the quantity and level of mathematics [S4].", item
+        ))
+
+    def test_modal_words_are_not_topic_terms(self):
+        from backend.app.rag.rag_pipeline import unsupported_generated_answer_reason
+
+        reason = unsupported_generated_answer_reason(
+            "Will AI replace computer engineers?",
+            "Workers may need re-skilling as technologies replace workers for several tasks [S1].",
+            [{"label": "S1", "passage": "Workers may need up-skilling and re-skilling as technologies replace workers for several tasks."}],
+        )
+        self.assertIsNone(reason)
+
+    def test_connective_is_dropped_when_the_sentence_before_was_pruned(self):
+        item = {"label": "S1", "chunk_id": "src_088_chunk_001", "source_id": "src_088",
+                "passage": "A master's degree can support deeper specialization, research preparation and academic careers."}
+        validation = validate_citations(
+            "A bachelor's degree is always enough for industry. "
+            "However, a master's degree can support deeper specialization and research preparation [S1].",
+            [item],
+        )
+        self.assertTrue(validation.valid)
+        self.assertTrue(validation.answer.startswith("A master's degree can support"))
+
+    def test_back_reference_to_a_pruned_sentence_is_dropped(self):
+        from backend.app.rag.rag_pipeline import prune_unverified_sentences
+
+        answer = (
+            "PHYSICS 5A or 7A are required for all engineering majors [S3]. "
+            "Most students find physics easy. "
+            "It must be preceded by Calculus [S3]."
+        )
+        self.assertEqual(
+            prune_unverified_sentences(answer, [PHYSICS_ITEM]),
+            "PHYSICS 5A or 7A are required for all engineering majors [S3].",
+        )
+
+    def test_claim_cited_to_the_wrong_retrieved_passage_is_relabelled(self):
+        ethics = {"label": "S4", "chunk_id": "src_067_chunk_251", "source_id": "src_067",
+                  "passage": "Contrast ethical and legal issues as related to computer engineering."}
+        validation = validate_citations(
+            "PHYSICS 5A or 7A are required for all engineering majors [S3]. "
+            "Computer engineering study contrasts ethical and legal issues [S3].",
+            [PHYSICS_ITEM, ethics],
+        )
+        self.assertTrue(validation.valid)
+        self.assertIn("ethical and legal issues [S4]", validation.answer)
+
+    def test_unsupported_trailing_conclusion_clause_is_cut(self):
+        item = {"label": "S2", "chunk_id": "src_045_chunk_370", "source_id": "src_045",
+                "passage": "Emphasising real-life applications increased female participation and confidence."}
+        validation = validate_citations(
+            "Emphasising real-life applications increased female participation and confidence, "
+            "making students more attractive to recruiters [S2].",
+            [item],
+        )
+        self.assertTrue(validation.valid)
+        self.assertNotIn("recruiters", validation.answer)
+        self.assertIn("trimmed_unsupported_inference_clause", validation.repair_actions)
+
+    def test_insufficient_marker_before_a_cited_partial_answer(self):
+        item = {"label": "S1", "chunk_id": "src_127_chunk_001", "source_id": "src_127",
+                "passage": "GPA screening is falling out of favor as employers adopt skills-based hiring."}
+        partial = validate_citations(
+            "[INSUFFICIENT_INFORMATION] The sources say GPA screening is falling out of favor as employers adopt skills-based hiring [S1].",
+            [item],
+        )
+        self.assertTrue(partial.valid)
+        self.assertNotIn("INSUFFICIENT", partial.answer)
+        refusal = validate_citations("[INSUFFICIENT_INFORMATION] The context does not cover this.", [item])
+        self.assertEqual(refusal.cited_labels, ())
+
+    def test_bracket_noise_is_removed_but_citations_and_links_stay(self):
+        self.assertEqual(
+            clean_answer_artifacts("[Hackathons help students build projects [S2].]\n\nUSED_SOURCES: [S2]"),
+            "Hackathons help students build projects [S2].\nUSED_SOURCES: [S2]",
+        )
+        self.assertEqual(
+            clean_answer_artifacts("[OSTIM Technical University] was founded in an industrial basin [S1]."),
+            "OSTIM Technical University was founded in an industrial basin [S1].",
+        )
+        self.assertEqual(
+            clean_answer_artifacts("AI will enhance work (World Economic Forum, Not specified [S3])."),
+            "AI will enhance work [S3].",
+        )
+        self.assertEqual(clean_answer_artifacts("See [the guide](https://x.org) [S1, S2]."), "See [the guide](https://x.org) [S1] [S2].")
+        self.assertEqual(clean_answer_artifacts("Hardware matters [1]."), "Hardware matters [1].")
+
+    def test_model_conclusion_gets_no_automatic_citation(self):
+        from backend.app.rag.rag_pipeline import repair_missing_inline_citations
+
+        conclusion = "Therefore, PHYSICS 5A or 7A are required for all engineering majors."
+        _, _, unsupported = repair_missing_inline_citations(conclusion, [PHYSICS_ITEM], ())
+        self.assertEqual(unsupported, (conclusion,))
+        _, actions, unsupported = repair_missing_inline_citations("PHYSICS 5A or 7A are required for all engineering majors.", [PHYSICS_ITEM], ())
+        self.assertIn("added_supported_inline_label", actions)
+        self.assertEqual(unsupported, ())
+
+    def test_specific_math_question_keeps_its_subject(self):
+        self.assertIn("discrete math", understand_query("Do I need discrete math for software and algorithms?").retrieval_question)
+        self.assertEqual(understand_query("how much math i need").retrieval_question, "How much mathematics is required in Computer Engineering?")
 
     def test_ordinal_follow_up_uses_first_sentence_list_not_later_detail(self):
         previous = PreviousTurn(

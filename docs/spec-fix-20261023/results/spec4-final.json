@@ -1,0 +1,884 @@
+[
+ {
+  "id": "SPEC1",
+  "question": "Will AI replace computer engineers?",
+  "group": "spec",
+  "expected_topics": [],
+  "expected_categories": [],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": null,
+  "evaluation_label": "correct_insufficient_information",
+  "elapsed_wall_seconds": 76.865,
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "will AI replace computer engineers?",
+   "status": "insufficient_information",
+   "llm_called": true,
+   "evidence_exists_by_eval": false,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S1"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "source_name_to_inline_label",
+     "added_supported_inline_label",
+     "pruned_unverified_sentences",
+     "partial_answer"
+    ],
+    "reason": null,
+    "retry_attempted": true,
+    "retry_successful": true,
+    "generations_attempted": 2,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": []
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.6179796457290649,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "unsupported_reason": "generated answer did not address the question's distinctive topic terms",
+    "discarded_generation": "[AI cannot directly state the answer based on the given context. The context suggests that AI will not entirely replace computer engineers, but rather enhance their capabilities. However, it also highlights the risks of technological development focusing on replacing human work, which could increase inequality and unemployment. Therefore, the answer is nuanced and acknowledges the potential for AI to complement rather than replace computer engineers.]\n\nUSED_SOURCES:\n[S1]\n[S2]\n[S3]\n[S4]",
+    "discarded_retry_generation": "The context suggests that AI will not entirely replace computer engineers, but rather enhance their capabilities. The OECD's \"Skills for the digital age\" report indicates that while some tasks could be automated, the work organization will need to adapt and workers may need up-skilling. This adaptation implies that AI will complement rather than replace human roles, particularly in industries where human expertise is crucial for specialized applications.\n\nHowever, the context also highlights a risk: without appropriate decision-making frameworks, economic incentive structures, and possibly government regulations, technological development might focus on replacing human work, which could lead to increased inequality and unemployment. This suggests that while AI can enhance human capabilities, it does not guarantee the complete elimination of human roles in computer engineering.\n\nUSED_SOURCES:\n[S1]\n[S3]\n[S4]",
+    "resolved_question": "will AI replace computer engineers?",
+    "query_kind": "standalone_domain_question",
+    "query_normalization": {
+     "original_question": "Will AI replace computer engineers?",
+     "normalized_question": "will AI replace computer engineers?",
+     "retrieval_question": "will AI replace computer engineers?",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "computer_engineering",
+       "matched_terms": [
+        "computer engineers"
+       ],
+       "confidence": 1.0
+      },
+      {
+       "name": "ai",
+       "matched_terms": [
+        "ai"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": null,
+     "constraints": [],
+     "entities": [
+      "computer_engineering",
+      "ai"
+     ],
+     "referents": [],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 5,
+      "replacements": [],
+      "normalized_tokens": [
+       "will",
+       "ai",
+       "replace",
+       "computer",
+       "engineers"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 9.047,
+    "context_construction_seconds": 0.005,
+    "llm_generation_seconds": 64.131,
+    "initial_llm_generation_seconds": 23.798,
+    "retry_llm_generation_seconds": 40.333,
+    "llm_reported_total_duration_seconds": 23.742,
+    "total_seconds": 76.856
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "answer": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+  "answer_warnings": [],
+  "sources": [],
+  "retrieved_context": [
+   {
+    "label": "S1",
+    "chunk_id": "src_045_chunk_203",
+    "source_id": "src_045",
+    "title": "Skills for the digital age",
+    "category": "skills_and_technologies",
+    "similarity_score": 0.6179796457290649,
+    "url": "https://www.oecd.org/en/publications/2024/11/oecd-digital-economy-outlook-2024-volume-2_9b2801fc/full-report/skills-for-the-digital-age_da6162fb.html",
+    "passage": "not likely to be entirely substituted by automated solutions. Instead, the work organisation will have to be adapted and workers in these jobs may need up- and re-skilling as technologies replace workers for several tasks (Lassébie and Quintini, 2022 [44]). In parallel, a survey of workers and employers in the manufacturing and financial sectors in Austria, Canada, France, Germany, Ireland, the United Kingdom and the United States aimed to capture perceptions of the current and future impact of AI on the workplace (Lane, Williams and Broecke, 2023[45])."
+   },
+   {
+    "label": "S2",
+    "chunk_id": "src_093_chunk_001",
+    "source_id": "src_093",
+    "title": "Curated note: Computing Machinery and Intelligence",
+    "category": "artificial_intelligence",
+    "similarity_score": 0.5900399088859558,
+    "url": "https://plato.stanford.edu/entries/turing-test/",
+    "passage": "Title: Computing Machinery and Intelligence Source: Stanford Encyclopedia of Philosophy URL: https://plato.stanford.edu/entries/turing-test/ Date accessed: 2026-10-13 Curated source note The Stanford Encyclopedia of Philosophy article on computing machinery and intelligence provides conceptual background for AI questions. It is useful for cautious reasoning about claims such as \"AI will replace programmers\" or \"AI can think like humans.\" For advising, the important point is that AI capability claims require careful definitions."
+   },
+   {
+    "label": "S3",
+    "chunk_id": "src_017_chunk_029",
+    "source_id": "src_017",
+    "title": "The Future of Jobs Report 2025",
+    "category": "future_technologies",
+    "similarity_score": 0.5933048129081726,
+    "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+    "passage": "on enhancing rather than substituting for human capabilities.12 However, without appropriate decision-making frameworks, economic incentive structures and, possibly, government regulations, there remains a risk that technological development will be focused on replacing human work, which could increase inequality and unemployment. on enhancing rather than substituting for human capabilities.12 However, without appropriate decision-making frameworks, economic incentive structures and, possibly, government regulations, there remains a risk that technological development will be focused on replacing human work, which could increase inequality and unemployment."
+   },
+   {
+    "label": "S4",
+    "chunk_id": "src_067_chunk_031",
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "category": "curriculum",
+    "similarity_score": 0.549964189529419,
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "passage": "Increasingly, computer engineers are involved in the design of computer-based systems to address highly specialized and specific application needs. Computer engineers work in most industries, including the computer, automobile, aerospace, telecommunications, power production, manufacturing, defense, and electronics industries. They design high-tech devices ranging from tiny microelectronic integrated-circuit chips, to powerful systems that utilize those chips and efficient telecommunication systems that interconnect those systems."
+   }
+  ],
+  "previous_turn_setup": null
+ },
+ {
+  "id": "SPEC2",
+  "question": "Is Computer Engineering still worth studying?",
+  "group": "spec",
+  "expected_topics": [],
+  "expected_categories": [],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": null,
+  "evaluation_label": "unsupported_incorrect_or_misleading",
+  "elapsed_wall_seconds": 35.29,
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "Is computer engineering still worth studying?",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": false,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S2"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "added_supported_inline_label",
+     "pruned_unverified_sentences",
+     "partial_answer"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": false,
+    "unsupported_claim_count": 1,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "Computer Engineering remains a worthwhile field of study, as evidenced by its continued relevance and growth in various sectors [S2].",
+      "labels": [
+       "S2"
+      ],
+      "supported": false,
+      "overlap_terms": [
+       "and",
+       "field",
+       "sectors"
+      ]
+     },
+     {
+      "claim": "The field of computer engineering has expanded and matured, with professionals applying their skills in diverse career sectors including business, industry, government, services, organizations, and other structured entities that utilize computers to automate or enhance their operations [S2].",
+      "labels": [
+       "S2"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "automate",
+       "business",
+       "career",
+       "computers",
+       "diverse",
+       "entities",
+       "expanded",
+       "field",
+       "government",
+       "has",
+       "industry"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.6705535650253296,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "Is computer engineering still worth studying?",
+    "query_kind": "standalone_domain_question",
+    "query_normalization": {
+     "original_question": "Is Computer Engineering still worth studying?",
+     "normalized_question": "Is computer engineering still worth studying?",
+     "retrieval_question": "Is computer engineering still worth studying?",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "computer_engineering",
+       "matched_terms": [
+        "computer engineering"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "assess",
+     "constraints": [],
+     "entities": [
+      "computer_engineering"
+     ],
+     "referents": [],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 6,
+      "replacements": [],
+      "normalized_tokens": [
+       "is",
+       "computer",
+       "engineering",
+       "still",
+       "worth",
+       "studying"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.22,
+    "context_construction_seconds": 0.003,
+    "llm_generation_seconds": 31.594,
+    "initial_llm_generation_seconds": 31.594,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 31.566,
+    "total_seconds": 35.266
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "answer": "Computer Engineering remains a worthwhile field of study, as evidenced by its continued relevance and growth in various sectors [S2]. The field of computer engineering has expanded and matured, with professionals applying their skills in diverse career sectors including business, industry, government, services, organizations, and other structured entities that utilize computers to automate or enhance their operations [S2].",
+  "answer_warnings": [
+   "partial_answer"
+  ],
+  "sources": [
+   {
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "source_name": "Association for Computing Machinery and IEEE Computer Society",
+    "source_type": "professional_curriculum_report",
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "category": "curriculum",
+    "supporting_chunk_ids": [
+     "src_067_chunk_079"
+    ],
+    "evidence_labels": [
+     "S2"
+    ],
+    "best_similarity_score": 0.7364561557769775
+   }
+  ],
+  "retrieved_context": [
+   {
+    "label": "S1",
+    "chunk_id": "src_014_chunk_001",
+    "source_id": "src_014",
+    "title": "Computer Hardware Engineers: 17-2061.00",
+    "category": "skills_and_technologies",
+    "similarity_score": 0.6705535650253296,
+    "url": "https://www.onetonline.org/link/summary/17-2061.00",
+    "passage": "Title: Computer Hardware Engineers: 17-2061.00 17-2061.00 - Computer Hardware Engineers Occupation keyword search Type a title or code for matches No quick matches found Search for keyword results Computer Hardware Engineers 17-2061.00 Bright Outlook Updated 2026 Research, design, develop, or test computer or computer-related equipment for commercial, industrial, military, or scientific use. May supervise the manufacturing and installation of computer or computer-related equipment and components."
+   },
+   {
+    "label": "S2",
+    "chunk_id": "src_067_chunk_079",
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "category": "curriculum",
+    "similarity_score": 0.7364561557769775,
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "passage": "students to engineering (specifically, computer engineering), teaching them to think and function as engineers, and setting expectations for the future. Preparation for practice is essential because many graduates from four-year programs directly begin professional practice in much of the world. The field of computer engineering (CE) has developed, matured, and expanded throughout industry. CE professionals apply their skills in a broad range of diverse career sectors that include business, industry, government, services, organizations, and other structured entities that use computers to automate or drive their products or services efficiently."
+   },
+   {
+    "label": "S3",
+    "chunk_id": "src_045_chunk_200",
+    "source_id": "src_045",
+    "title": "Skills for the digital age",
+    "category": "skills_and_technologies",
+    "similarity_score": 0.5801994800567627,
+    "url": "https://www.oecd.org/en/publications/2024/11/oecd-digital-economy-outlook-2024-volume-2_9b2801fc/full-report/skills-for-the-digital-age_da6162fb.html",
+    "passage": "from computer scientists, these studies identify tasks that machines are unlikely to perform within a sample of occupations or jobs. The studies then develop a model of automatability and predict how susceptible jobs across the entire economy are to automation. According to one study, nearly 14% of jobs in OECD countries were likely to be automated in 2019, while 32% were at high risk of being partially automated (Nedelkoska and Quintini, 2018 [42]). More recently, based on data across 21 OECD countries over 2012-21 (Georgieff and Milanez, 2021 [43]), all countries experienced employment growth over the past decade with no evidence for net job destruction at the broad country level."
+   },
+   {
+    "label": "S4",
+    "chunk_id": "src_067_chunk_156",
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "category": "curriculum",
+    "similarity_score": 0.6648439764976501,
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "passage": "During their initial academic terms, if students only take courses on mathematics and science, without obvious computer engineering applications, they may become frustrated and disillusioned with the program. New engineering areas are often at the forefront of research and development and after studying them, students can genuinely claim to be up-to-date in their subject area. That is important since they enter industry or employment as the agents of technology change and transfer."
+   }
+  ],
+  "previous_turn_setup": null
+ },
+ {
+  "id": "SPEC3",
+  "question": "Can I find a job after graduation?",
+  "group": "spec",
+  "expected_topics": [],
+  "expected_categories": [],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": null,
+  "evaluation_label": "unsupported_incorrect_or_misleading",
+  "elapsed_wall_seconds": 26.245,
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "Can I find a job after graduation? (Computer Engineering)",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": false,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S2",
+     "S5"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4",
+     "S5"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "removed_trailing_source_labels",
+     "added_supported_inline_label",
+     "pruned_unverified_sentences"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "The degree credential is likely to be necessary, but it is not sufficient for a position [S2].",
+      "labels": [
+       "S2"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "but",
+       "credential",
+       "degree",
+       "for",
+       "likely",
+       "necessary",
+       "not",
+       "position",
+       "sufficient",
+       "the"
+      ]
+     },
+     {
+      "claim": "Additionally, the field is experiencing a much faster than average projected growth [S5].",
+      "labels": [
+       "S5"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "average",
+       "faster",
+       "growth",
+       "much",
+       "projected",
+       "than",
+       "the"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.6658534407615662,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "Can I find a job after graduation? (Computer Engineering)",
+    "query_kind": "standalone_domain_question",
+    "query_normalization": {
+     "original_question": "Can I find a job after graduation?",
+     "normalized_question": "Can I find a job after graduation?",
+     "retrieval_question": "Can I find a job after graduation? (Computer Engineering)",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "career",
+       "matched_terms": [
+        "job"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "assess",
+     "constraints": [],
+     "entities": [
+      "career"
+     ],
+     "referents": [],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 7,
+      "replacements": [],
+      "normalized_tokens": [
+       "can",
+       "i",
+       "find",
+       "a",
+       "job",
+       "after",
+       "graduation"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.237,
+    "context_construction_seconds": 0.003,
+    "llm_generation_seconds": 23.022,
+    "initial_llm_generation_seconds": 23.022,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 23.01,
+    "total_seconds": 26.239
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "answer": "The degree credential is likely to be necessary, but it is not sufficient for a position [S2]. Additionally, the field is experiencing a much faster than average projected growth [S5].",
+  "answer_warnings": [],
+  "sources": [
+   {
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "source_name": "Association for Computing Machinery and IEEE Computer Society",
+    "source_type": "professional_curriculum_report",
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "category": "curriculum",
+    "supporting_chunk_ids": [
+     "src_067_chunk_080"
+    ],
+    "evidence_labels": [
+     "S2"
+    ],
+    "best_similarity_score": 0.6654596924781799
+   },
+   {
+    "source_id": "src_014",
+    "title": "Computer Hardware Engineers: 17-2061.00",
+    "source_name": "O*NET OnLine",
+    "source_type": "government_occupational_profile",
+    "url": "https://www.onetonline.org/link/summary/17-2061.00",
+    "category": "skills_and_technologies",
+    "supporting_chunk_ids": [
+     "src_014_chunk_016"
+    ],
+    "evidence_labels": [
+     "S5"
+    ],
+    "best_similarity_score": 0.6166329383850098
+   }
+  ],
+  "retrieved_context": [
+   {
+    "label": "S1",
+    "chunk_id": "src_014_chunk_001",
+    "source_id": "src_014",
+    "title": "Computer Hardware Engineers: 17-2061.00",
+    "category": "skills_and_technologies",
+    "similarity_score": 0.6658534407615662,
+    "url": "https://www.onetonline.org/link/summary/17-2061.00",
+    "passage": "Title: Computer Hardware Engineers: 17-2061.00 17-2061.00 - Computer Hardware Engineers Occupation keyword search Type a title or code for matches No quick matches found Search for keyword results Computer Hardware Engineers 17-2061.00 Bright Outlook Updated 2026 Research, design, develop, or test computer or computer-related equipment for commercial, industrial, military, or scientific use. May supervise the manufacturing and installation of computer or computer-related equipment and components."
+   },
+   {
+    "label": "S2",
+    "chunk_id": "src_067_chunk_080",
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "category": "curriculum",
+    "similarity_score": 0.6654596924781799,
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "passage": "This understanding may be true in some fields, but not in computer engineering. Belief in this myth has stymied many a job hunter worldwide. The degree credential is likely to be necessary, but it is not sufficient for a position."
+   },
+   {
+    "label": "S3",
+    "chunk_id": "src_051_chunk_012",
+    "source_id": "src_051",
+    "title": "State of Developer Ecosystem Report 2024",
+    "category": "skills_and_technologies",
+    "similarity_score": 0.5344480276107788,
+    "url": "https://www.jetbrains.com/lp/devecosystem-2024/",
+    "passage": "In your current job, how would you rate the amount of work you do compared to what is expected of you? How would you describe the current job market for software developers in your city or area, particularly in terms of how easy it is to get a job?"
+   },
+   {
+    "label": "S4",
+    "chunk_id": "src_045_chunk_370",
+    "source_id": "src_045",
+    "title": "Skills for the digital age",
+    "category": "skills_and_technologies",
+    "similarity_score": 0.6358087062835693,
+    "url": "https://www.oecd.org/en/publications/2024/11/oecd-digital-economy-outlook-2024-volume-2_9b2801fc/full-report/skills-for-the-digital-age_da6162fb.html",
+    "passage": "It increased the number of computer science graduates from 12% to 40% in five years by emphasising real-life applications at early stages in the curriculum. This created a female community and enhanced the confidence of female students (Jivani, 2020 [31]). Many non-profit organisations also attract women by promoting social challenges that can be solved with ICT-related skills, for example Girls Who Code or Engineers Without Borders (McCart, 31 August 2016 [32]; Girls Who Code, 2024 [33]). Looking ahead, it is important to take steps to change the perception of ICT careers as inherently male, including by emphasising related “communal goals”."
+   },
+   {
+    "label": "S5",
+    "chunk_id": "src_014_chunk_016",
+    "source_id": "src_014",
+    "title": "Computer Hardware Engineers: 17-2061.00",
+    "category": "skills_and_technologies",
+    "similarity_score": 0.6166329383850098,
+    "url": "https://www.onetonline.org/link/summary/17-2061.00",
+    "passage": "work-related obligations. Workforce Characteristics Wages & Employment Trends Median wages (2025) $77.76 hourly, $161,740 annual State wages Local wages ZIP CodeGo Employment (2024) 76,800 employees Projected growth (2024-2034) Much faster than average (7% or higher) Projected job openings (2024-2034) 4,700 State trends Top industries (2024) Professional, Scientific, and Technical Services Manufacturing Source: Bureau of Labor Statistics 2025 wage dataexternal site and 2024-2034 employment projectionsexternal site. “Projected growth” represents the estimated change in total employment over the projections period (2024-2034)."
+   }
+  ],
+  "previous_turn_setup": null
+ },
+ {
+  "id": "SPEC4",
+  "question": "I'm not very good at mathematics. Can I still succeed in Computer Engineering?",
+  "group": "spec",
+  "expected_topics": [],
+  "expected_categories": [],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": null,
+  "evaluation_label": "unsupported_incorrect_or_misleading",
+  "elapsed_wall_seconds": 32.33,
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "I m not very good at mathematics can I still succeed in computer engineering?",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": false,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S4",
+     "S5",
+     "S1"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4",
+     "S5"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "pruned_unverified_sentences"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "I can still succeed in computer engineering despite not being very good at mathematics, as the curriculum does not require a specific quantity or level of mathematics for graduates [S4].",
+      "labels": [
+       "S4"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "for",
+       "graduates",
+       "level",
+       "mathematics",
+       "quantity",
+       "the"
+      ]
+     },
+     {
+      "claim": "However, teamwork skills are essential in computer engineering, and professionals often need to work in collaboration with others [S5].",
+      "labels": [
+       "S5"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "are",
+       "need",
+       "professionals",
+       "skills",
+       "teamwork"
+      ]
+     },
+     {
+      "claim": "While a degree is necessary but not sufficient for employment, having a general understanding of communication, teamwork, and passion is also important [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "but",
+       "degree",
+       "employment",
+       "for",
+       "general",
+       "having",
+       "necessary",
+       "not",
+       "passion",
+       "sufficient",
+       "understanding"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 4,
+    "top_similarity_score": 0.6039215326309204,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "I m not very good at mathematics can I still succeed in computer engineering?",
+    "query_kind": "standalone_domain_question",
+    "query_normalization": {
+     "original_question": "I'm not very good at mathematics. Can I still succeed in Computer Engineering?",
+     "normalized_question": "I m not very good at mathematics can I still succeed in computer engineering?",
+     "retrieval_question": "I m not very good at mathematics can I still succeed in computer engineering?",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "computer_engineering",
+       "matched_terms": [
+        "computer engineering"
+       ],
+       "confidence": 1.0
+      },
+      {
+       "name": "mathematics",
+       "matched_terms": [
+        "mathematics"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "assess",
+     "constraints": [],
+     "entities": [
+      "computer_engineering",
+      "mathematics"
+     ],
+     "referents": [],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 14,
+      "replacements": [],
+      "normalized_tokens": [
+       "i",
+       "m",
+       "not",
+       "very",
+       "good",
+       "at",
+       "mathematics",
+       "can",
+       "i",
+       "still",
+       "succeed",
+       "in",
+       "computer",
+       "engineering"
+      ],
+      "changed": true
+     },
+     "changed": true
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.161,
+    "context_construction_seconds": 0.004,
+    "llm_generation_seconds": 28.774,
+    "initial_llm_generation_seconds": 28.774,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 28.745,
+    "total_seconds": 32.324
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "answer": "I can still succeed in computer engineering despite not being very good at mathematics, as the curriculum does not require a specific quantity or level of mathematics for graduates [S4]. However, teamwork skills are essential in computer engineering, and professionals often need to work in collaboration with others [S5]. While a degree is necessary but not sufficient for employment, having a general understanding of communication, teamwork, and passion is also important [S1].",
+  "answer_warnings": [],
+  "sources": [
+   {
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "source_name": "Association for Computing Machinery and IEEE Computer Society",
+    "source_type": "professional_curriculum_report",
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "category": "curriculum",
+    "supporting_chunk_ids": [
+     "src_067_chunk_080",
+     "src_067_chunk_077",
+     "src_067_chunk_110"
+    ],
+    "evidence_labels": [
+     "S1",
+     "S4",
+     "S5"
+    ],
+    "best_similarity_score": 0.6039215326309204
+   }
+  ],
+  "retrieved_context": [
+   {
+    "label": "S1",
+    "chunk_id": "src_067_chunk_080",
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "category": "curriculum",
+    "similarity_score": 0.6039215326309204,
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "passage": "The degree credential is likely to be necessary, but it is not sufficient for a position. A general understanding exists in engineering and other fields that a successful professional must be a good communicator, a strong team player, and a person with passion to succeed. Hence, having a degree is not sufficient to secure employment."
+   },
+   {
+    "label": "S2",
+    "chunk_id": "src_045_chunk_362",
+    "source_id": "src_045",
+    "title": "Skills for the digital age",
+    "category": "skills_and_technologies",
+    "similarity_score": 0.5610796213150024,
+    "url": "https://www.oecd.org/en/publications/2024/11/oecd-digital-economy-outlook-2024-volume-2_9b2801fc/full-report/skills-for-the-digital-age_da6162fb.html",
+    "passage": "Responses to the 2022 PISA survey reveal that parents more frequently expect their sons rather than their daughters to pursue mathematics-related careers (OECD, 2024 [10]).2 At the same time, teachers can reinforce traditional gender stereotypes regarding the appropriate roles for men and women through conscious or unconscious biases, teaching methods, extracurricular activities or textbook choices (OECD, 2023 [5]). Gender stereotypes related to culture can also contribute to girls’ belief in their inability to succeed in mathematics – so-called self-efficacy – despite comparable performance (Zander et al., 2020 [12])."
+   },
+   {
+    "label": "S3",
+    "chunk_id": "src_016_chunk_030",
+    "source_id": "src_016",
+    "title": "2024 State of Tech Talent Report",
+    "category": "skills_and_technologies",
+    "similarity_score": 0.4537442922592163,
+    "url": "https://www.linuxfoundation.org/research/open-source-jobs-report-2024",
+    "passage": "Certifications are key criteria in the hiring process Employers utilize various methods to evaluate candidates’ skills during the hiring process. FIGURE 17 shows that the most crucial aspect they seek is relevant hands-on experience from previous employment, deemed extremely or very important by 71% of respondents. Additionally, the importance of showcasing a portfolio of past achievements to demonstrate skills is increasing."
+   },
+   {
+    "label": "S4",
+    "chunk_id": "src_067_chunk_077",
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "category": "curriculum",
+    "similarity_score": 0.5926904082298279,
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "passage": "the knowledge and skills that support essential components of the computer engineering content areas. It is up to each program to decide the quantity and level of mathematics for its graduates. See Chapter 6 for more discussion on this issue."
+   },
+   {
+    "label": "S5",
+    "chunk_id": "src_067_chunk_110",
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "category": "curriculum",
+    "similarity_score": 0.6021226644515991,
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "passage": "Apart from the obvious need to address areas such as email, Page 39 of 149 electronic calendars, and code and document repositories, students should engage, at some level, with effective cooperative working and group learning. 4.7.2 Teamwork skills Few computer engineering professionals can expect to work in isolation for very much of the time. Groups of people working together as a team implement major computer engineering projects."
+   }
+  ],
+  "previous_turn_setup": null
+ }
+]
