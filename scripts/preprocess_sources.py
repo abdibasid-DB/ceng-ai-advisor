@@ -171,7 +171,11 @@ class ProcessingRecord:
 
 
 ACCEPT_VALID_SHORT_DOCUMENTS = {"src_007"}
-EXCLUDE_FROM_CHUNKING_AFTER_REVIEW = {"src_019", "src_021", "src_022", "src_023", "src_024", "src_027", "src_046", "src_122", "src_124"}
+EXCLUDE_FROM_CHUNKING_AFTER_REVIEW = {"src_019", "src_021", "src_022", "src_023", "src_024", "src_027", "src_046", "src_124"}
+# Data tables whose rows are meaningless without the column headers (the BLS
+# "Software developers" row is only numbers): each row is written out as
+# "header: value" pairs with the table caption.
+TABLE_ROWS_WITH_HEADERS = {"src_095"}
 
 
 class ConservativeHTMLTextExtractor(HTMLParser):
@@ -247,8 +251,73 @@ def decode_text(data: bytes) -> str:
     return data.decode("utf-8", errors="replace")
 
 
-def extract_html(path: Path) -> str:
+def render_tables_with_headers(raw: str) -> str:
+    """Replace each <table> that has a header row by one line per body row.
+
+    "Software developers: 2025 National Employment Matrix code: 15-1252;
+    Employment, 2025: 1,717.8; ..." keeps every value next to its column name,
+    so a chunk holding the row can be understood on its own.
+    """
+
+    def cell_text(fragment: str) -> str:
+        return " ".join(html.unescape(re.sub(r"(?s)<[^>]+>", " ", fragment)).split())
+
+    def render(match: re.Match[str]) -> str:
+        table = match.group(0)
+        caption_match = re.search(r"(?is)<caption[^>]*>(.*?)</caption>", table)
+        caption = cell_text(caption_match.group(1)) if caption_match else ""
+        headers: list[str] = []
+        lines: list[str] = []
+        for row in re.findall(r"(?is)<tr[^>]*>(.*?)</tr>", table):
+            cells = re.findall(r"(?is)<(th|td)[^>]*>(.*?)</\1>", row)
+            if not headers and cells and all(tag.lower() == "th" for tag, _ in cells):
+                headers = [cell_text(content) for _, content in cells]
+                continue
+            values = [cell_text(content) for _, content in cells]
+            if not headers or not values:
+                continue
+            pairs = [f"{header}: {value}" for header, value in zip(headers[1:], values[1:]) if value]
+            line = f"{values[0]}: {'; '.join(pairs)}."
+            lines.append(f"{caption} - {line}" if caption else line)
+        if not headers:
+            return table
+        return "".join(f"<p>{html.escape(line)}</p>" for line in lines)
+
+    return re.sub(r"(?is)<table\b.*?</table>", render, raw)
+
+
+def extract_embedded_listing(raw: str) -> str:
+    """Club listing that the SKS student-communities page keeps in inline JavaScript.
+
+    The page draws its cards from `var CATS` (category names in several
+    languages) and `var COMM` (name and category of each community), so the
+    HTML text holds only the page frame.
+    """
+    category_block = raw[raw.find("var CATS"):raw.find("var COMM")]
+    categories = {number: (turkish, english) for number, turkish, english in re.findall(r"(\d+):\{tr:'([^']*)',en:'([^']*)'", category_block)}
+    listing = raw[raw.find("var COMM"):]
+    communities = re.findall(r"\{n:'([^']*)',c:(\d+)", listing[: listing.find("];")])
+    if not categories or not communities:
+        return ""
+    lines = [
+        "OSTİM Technical University student communities (Öğrenci Toplulukları, student clubs and societies): "
+        f"{len(communities)} communities in {len(categories)} categories."
+    ]
+    for number, (turkish, english) in categories.items():
+        names = [name for name, category in communities if category == number]
+        if names:
+            lines.append(f"{english} ({turkish}) student communities: {'; '.join(names)}.")
+    return "\n\n".join(lines)
+
+
+# Pages whose content is page data rather than HTML text.
+EMBEDDED_DATA_EXTRACTORS = {"src_122": extract_embedded_listing}
+
+
+def extract_html(path: Path, source_id: str = "") -> str:
     raw = decode_text(path.read_bytes())
+    if source_id in TABLE_ROWS_WITH_HEADERS:
+        raw = render_tables_with_headers(raw)
     title_match = re.search(r"<title[^>]*>(.*?)</title>", raw, flags=re.I | re.S)
     title = ""
     if title_match:
@@ -259,6 +328,8 @@ def extract_html(path: Path) -> str:
     fallback = extract_html_regex_fallback(raw)
     if word_count(text) < 80 and word_count(fallback) > max(120, word_count(text) * 2):
         text = fallback
+    if source_id in EMBEDDED_DATA_EXTRACTORS:
+        text = EMBEDDED_DATA_EXTRACTORS[source_id](raw) or text
     if title:
         text = f"{title}\n\n{text}"
     return text
@@ -411,8 +482,12 @@ def process_source(source: dict[str, Any]) -> ProcessingRecord:
         if not raw_path.exists():
             raise FileNotFoundError(raw_rel)
         if file_type == "html":
-            extracted = extract_html(raw_path)
+            extracted = extract_html(raw_path, source_id)
             method = "html_parser_conservative"
+            if source_id in TABLE_ROWS_WITH_HEADERS:
+                method = "html_parser_table_rows_with_headers"
+            if source_id in EMBEDDED_DATA_EXTRACTORS:
+                method = "embedded_page_data"
         elif file_type == "pdf":
             extracted = extract_pdf(raw_path)
             method = "pypdf_extract_text"
@@ -511,12 +586,19 @@ def apply_duplicate_detection(records: list[ProcessingRecord]) -> None:
                 break
 
 
-def save_manifest(records: list[ProcessingRecord]) -> None:
+def save_manifest(records: list[ProcessingRecord], merge: bool = False) -> None:
+    """Write the manifest; with merge, replace only the given sources' records."""
+    rows = [asdict(record) for record in records]
+    if merge and MANIFEST_PATH.exists():
+        updated = {row["source_id"]: row for row in rows}
+        existing = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))["records"]
+        known = {row["source_id"] for row in existing}
+        rows = [updated.get(row["source_id"], row) for row in existing] + [row for row in rows if row["source_id"] not in known]
     payload = {
         "schema_version": "1.0",
         "generated_at": utc_now(),
-        "document_count": len(records),
-        "records": [asdict(record) for record in records],
+        "document_count": len(rows),
+        "records": rows,
     }
     MANIFEST_PATH.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
@@ -538,7 +620,8 @@ def main() -> int:
     selected = select_sources(sources, set(args.source_id) if args.source_id else None)
     records = [process_source(source) for source in selected]
     apply_duplicate_detection(records)
-    save_manifest(records)
+    # Processing a few sources must not drop the other sources from the manifest.
+    save_manifest(records, merge=bool(args.source_id))
 
     status_counts = Counter(record.processing_status for record in records)
     type_counts = Counter(record.input_file_type for record in records)

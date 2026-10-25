@@ -23,6 +23,9 @@ Options:
             the vector ranking by reciprocal rank fusion
   e         option a chunks + BAAI/bge-m3 dense embeddings, max_seq_length 512
   f         option e + BM25 (RRF), as in d
+  live      the live Retriever (current model, BM25 and expansion rules) on a
+            file copy of the live index; nothing is re-encoded. Use it to
+            compare the index before and after a knowledge-base update.
 """
 
 from __future__ import annotations
@@ -106,6 +109,7 @@ OPTIONS: dict[str, dict[str, Any]] = {
     # bge-m3 (568M parameters) uses small batches to stay within laptop RAM.
     "e": {"label": "e: a + bge-m3 (dense, 512 tokens)", "chunking": SMALL_CHUNKING, "model": BGE_M3, "query_prefix": "", "passage_prefix": "", "max_seq_length": 512, "batch_size": 8},
     "f": {"label": "f: e + BM25 (RRF)", "hybrid": "e"},
+    "live": {"label": "Live retriever on a copy of the live index", "live": True},
 }
 
 def utc_now() -> str:
@@ -477,6 +481,23 @@ def run_vector_option(name: str, option: dict[str, Any], run_dir: Path, cases: l
     }
 
 
+def run_live_option(run_dir: Path, cases: list[dict[str, Any]]) -> dict[str, Any]:
+    index_path = run_dir / "indexes" / "live"
+    if index_path.exists():
+        shutil.rmtree(index_path)
+    shutil.copytree(CHROMA_PATH, index_path)
+    retriever = Retriever(chroma_path=index_path)
+    manifest = load_json(CHROMA_PATH.parent / "vector_store_manifest.json")
+    case_results, seconds_per_query = evaluate_cases(retriever, cases)
+    return {
+        "chunking": {"settings": "live knowledge_base/chunks/chunks.jsonl", "chunk_count": retriever.collection_count},
+        "embedding": {"model": manifest.get("embedding_model"), "note": "Live index and live Retriever; nothing re-encoded.", "embedding_seconds": 0},
+        "seconds_per_query": round(seconds_per_query, 4),
+        "metrics": aggregate(case_results),
+        "cases": case_results,
+    }
+
+
 def pick_best(run_dir: Path) -> str:
     candidates = []
     for name in ("a", "b", "c"):
@@ -591,7 +612,9 @@ def main() -> int:
         ensure_disk_space()
         print(f"{name}: running {OPTIONS[name]['label']} ...", flush=True)
         started = time.perf_counter()
-        if OPTIONS[name].get("hybrid"):
+        if OPTIONS[name].get("live"):
+            result = run_live_option(run_dir, cases)
+        elif OPTIONS[name].get("hybrid"):
             result = run_hybrid_option(OPTIONS[name], run_dir, cases, models)
         else:
             result = run_vector_option(name, OPTIONS[name], run_dir, cases, models)

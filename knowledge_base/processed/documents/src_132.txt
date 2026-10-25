@@ -1,0 +1,27 @@
+Source ID: src_132
+
+Curated English note of src_103: Higher Education Employment Indicators 2025 (TÜİK Yükseköğretim İstihdam Göstergeleri, 2025)
+
+This is a curated English note of src_103. It translates the key figures of the news report "Lisans mezunlarının istihdam oranı geçen yıl yüzde 73,9'a indi" (Ekonomi Gazetesi, 23 July 2026), which reports the Turkish Statistical Institute (TÜİK) bulletin "Yükseköğretim İstihdam Göstergeleri, 2025" published on 23 July 2026. Figures are quoted exactly as reported; the Turkish wording is given in brackets. Source URL: https://www.ekonomigazetesi.com/ekonomi/lisans-mezunlarinin-istihdam-orani-gecen-yil-yuzde-739a-indi-83776
+
+Registered employment rate of graduates in Türkiye (kayıtlı istihdam oranı):
+Bachelor's (lisans) graduates: 75% in 2024 and 73.9% (yüzde 73,9) in 2025.
+Associate degree (ön lisans) graduates: 66.4% in 2024 and 65.7% in 2025.
+
+Registered employment rate of bachelor's graduates by field of education (ISCED-F 2013), top five fields in 2025:
+health and welfare 84.5%; engineering, manufacturing and construction 82.1%; information and communication technologies (bilişim ve iletişim teknolojileri, ICT) 76.7% (yüzde 76,7); education 75.4%; business, administration and law 74.1%.
+
+Time to first job (ilk iş bulma süresi) of graduates in Türkiye:
+Bachelor's graduates: on average 14.4 months in 2024 and 14.2 months in 2025.
+Associate degree graduates: on average 16 months in 2024 and 15.8 months in 2025.
+Fields with the shortest average time to first job for bachelor's graduates: health and welfare 9 months; information and communication technologies (ICT, bilişim ve iletişim teknolojileri) 11.4 months (11,4 ay); engineering, manufacturing and construction 11.6 months; education 12.9 months; services 13.4 months.
+Fields with the shortest average time to first job for associate degree graduates include information and communication technologies at 15.8 months.
+
+Working in a job that matches the field of study (salaried SGK 4/A employees):
+Bachelor's graduates: 56.1% in 2024 and 56.7% in 2025.
+Information and communication technologies bachelor's graduates: 56.1% work in an occupation group that matches their field of education.
+The lowest match is social sciences, journalism and information at 20.6%.
+
+Earnings: the article ranks programmes by average monthly earnings (the highest for bachelor's graduates are piloting, mathematical engineering, space engineering, aircraft engineering, and control and automation engineering) but gives no earnings amounts.
+
+Scope note: the figures are for whole fields of education. The article gives no separate figure for computer engineering (bilgisayar mühendisliği) or for OSTİM Technical University graduates.

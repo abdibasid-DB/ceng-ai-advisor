@@ -1,25 +1,25 @@
 {
   "schema_version": "1.0",
   "stage": "Stage 11 - Embedding Model Design and Testing",
-  "generation_timestamp": "2026-10-22T17:11:17+00:00",
+  "generation_timestamp": "2026-10-25T14:17:45+00:00",
   "model_name": "BAAI/bge-m3",
   "model_provider_repository": "Hugging Face / Sentence Transformers",
   "model_type": "sentence-transformers dense embedding model",
   "embedding_dimension": 1024,
   "max_seq_length": 512,
   "reused_from": [
-    "C:/Users/HP/AppData/Local/Temp/claude/c--Users-HP-OneDrive-Documents-ChatGPT-ceng-ai-advisor/6b1757f6-9935-463e-b435-1697eef5cd58/scratchpad/prev_chunks.jsonl",
-    "C:/Users/HP/AppData/Local/Temp/claude/c--Users-HP-OneDrive-Documents-ChatGPT-ceng-ai-advisor/6b1757f6-9935-463e-b435-1697eef5cd58/scratchpad/prev_embeddings.npy"
+    "D:/ceng-backup-20261025-pre-kb-update/chunks/chunks.jsonl",
+    "D:/ceng-backup-20261025-pre-kb-update/embeddings/embeddings.npy"
   ],
-  "reused_embeddings": 2822,
-  "newly_encoded_embeddings": 11,
-  "total_chunks": 2833,
-  "total_embeddings": 2833,
+  "reused_embeddings": 2830,
+  "newly_encoded_embeddings": 14,
+  "total_chunks": 2844,
+  "total_embeddings": 2844,
   "normalization_setting": true,
   "similarity_metric_intended": "cosine",
   "batch_size": 8,
   "device_used": "cpu",
-  "generation_time_seconds": 13.0,
+  "generation_time_seconds": 35.12,
   "input_files": {
     "chunks": "knowledge_base/chunks/chunks.jsonl",
     "chunking_manifest": "knowledge_base/chunks/chunking_manifest.json"
@@ -29,10 +29,10 @@
     "metadata": "knowledge_base/embeddings/embedding_metadata.jsonl",
     "manifest": "knowledge_base/embeddings/embedding_manifest.json"
   },
-  "chunking_manifest_total_chunks": 2833,
+  "chunking_manifest_total_chunks": 2844,
   "validation_results": {
-    "total_chunks": 2833,
-    "total_embeddings": 2833,
+    "total_chunks": 2844,
+    "total_embeddings": 2844,
     "embedding_dimension": 1024,
     "embedding_count_matches_chunks": true,
     "nan_value_count": 0,

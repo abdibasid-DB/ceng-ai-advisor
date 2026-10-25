@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-22T17:10:49+00:00",
-  "document_count": 119,
+  "generated_at": "2026-10-25T14:16:24+00:00",
+  "document_count": 120,
   "records": [
     {
       "source_id": "src_001",
@@ -1649,10 +1649,10 @@
       "processed_file_path": "knowledge_base/processed/documents/src_095.txt",
       "input_file_type": "html",
       "processing_status": "success",
-      "extraction_method": "html_parser_conservative",
+      "extraction_method": "html_parser_table_rows_with_headers",
       "raw_size": 88423,
-      "extracted_character_count": 3967,
-      "extracted_word_count": 725,
+      "extracted_character_count": 12551,
+      "extracted_word_count": 1936,
       "title": "Occupations with the most job growth, 2025 and projected 2035",
       "category": "employment",
       "language": "English",
@@ -1660,7 +1660,7 @@
       "possible_duplicate_of": null,
       "chunking_eligible": true,
       "warnings": [],
-      "processing_timestamp": "2026-10-20T18:35:26+00:00"
+      "processing_timestamp": "2026-10-25T14:16:24+00:00"
     },
     {
       "source_id": "src_096",
@@ -2142,21 +2142,19 @@
       "raw_file_path": "knowledge_base/raw/html/src_122.html",
       "processed_file_path": "knowledge_base/processed/documents/src_122.txt",
       "input_file_type": "html",
-      "processing_status": "excluded_from_chunking",
-      "extraction_method": "html_parser_conservative",
+      "processing_status": "success",
+      "extraction_method": "embedded_page_data",
       "raw_size": 153928,
-      "extracted_character_count": 2266,
-      "extracted_word_count": 296,
+      "extracted_character_count": 1592,
+      "extracted_word_count": 185,
       "title": "Öğrenci Topluluklarımız",
       "category": "student_life",
       "language": "Turkish",
       "duplicate_flag": false,
       "possible_duplicate_of": null,
-      "chunking_eligible": false,
-      "warnings": [
-        "Stage 9B review: excluded from chunking because local raw content is not substantively usable"
-      ],
-      "processing_timestamp": "2026-10-20T18:35:32+00:00"
+      "chunking_eligible": true,
+      "warnings": [],
+      "processing_timestamp": "2026-10-25T14:16:24+00:00"
     },
     {
       "source_id": "src_123",
@@ -2196,7 +2194,7 @@
       "warnings": [
         "Stage 9B review: excluded from chunking because local raw content is not substantively usable"
       ],
-      "processing_timestamp": "2026-10-20T18:35:32+00:00"
+      "processing_timestamp": "2026-10-23T18:51:22+00:00"
     },
     {
       "source_id": "src_125",
@@ -2334,6 +2332,25 @@
         "Curated excerpt: accepted as a valid short document"
       ],
       "processing_timestamp": "2026-10-22T17:10:49+00:00"
+    },
+    {
+      "source_id": "src_132",
+      "raw_file_path": "knowledge_base/raw/text/src_132.txt",
+      "processed_file_path": "knowledge_base/processed/documents/src_132.txt",
+      "input_file_type": "text",
+      "processing_status": "success",
+      "extraction_method": "plain_text_read",
+      "raw_size": 2758,
+      "extracted_character_count": 2741,
+      "extracted_word_count": 404,
+      "title": "Curated English note of src_103: Higher Education Employment Indicators 2025 (TÜİK Yükseköğretim İstihdam Göstergeleri, 2025)",
+      "category": "employment",
+      "language": "English",
+      "duplicate_flag": false,
+      "possible_duplicate_of": null,
+      "chunking_eligible": true,
+      "warnings": [],
+      "processing_timestamp": "2026-10-25T14:16:24+00:00"
     }
   ]
 }

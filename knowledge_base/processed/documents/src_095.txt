@@ -44,460 +44,68 @@ Occupations with the most job growth
 
 Other available formats (XLSX)
 
-Table 1.4 Occupations with the most job growth, 2025 and projected 2035 (Employment in thousands)
+Table 1.4 Occupations with the most job growth, 2025 and projected 2035 (Employment in thousands) - Total, all occupations: 2025 National Employment Matrix code: 00-0000; Employment, 2025: 170,280.8; Employment, 2035: 176,198.5; Employment change, numeric, 2025–35: 5,917.6; Employment change, percent, 2025–35: 3.5; Median annual wage, dollars, 2025: 50,980.
 
-2025 National Employment Matrix title
+Table 1.4 Occupations with the most job growth, 2025 and projected 2035 (Employment in thousands) - Home health and personal care aides: 2025 National Employment Matrix code: 31-1120; Employment, 2025: 4,677.1; Employment, 2035: 5,524.4; Employment change, numeric, 2025–35: 847.3; Employment change, percent, 2025–35: 18.1; Median annual wage, dollars, 2025: 35,800.
 
-2025 National Employment Matrix code
+Table 1.4 Occupations with the most job growth, 2025 and projected 2035 (Employment in thousands) - Stockers and order fillers: 2025 National Employment Matrix code: 53-7065; Employment, 2025: 2,804.3; Employment, 2035: 3,055.0; Employment change, numeric, 2025–35: 250.7; Employment change, percent, 2025–35: 8.9; Median annual wage, dollars, 2025: 37,330.
 
-Employment, 2025
+Table 1.4 Occupations with the most job growth, 2025 and projected 2035 (Employment in thousands) - Fast food and counter workers: 2025 National Employment Matrix code: 35-3023; Employment, 2025: 3,855.9; Employment, 2035: 4,079.1; Employment change, numeric, 2025–35: 223.3; Employment change, percent, 2025–35: 5.8; Median annual wage, dollars, 2025: 31,200.
 
-Employment, 2035
+Table 1.4 Occupations with the most job growth, 2025 and projected 2035 (Employment in thousands) - Registered nurses: 2025 National Employment Matrix code: 29-1141; Employment, 2025: 3,465.4; Employment, 2035: 3,660.1; Employment change, numeric, 2025–35: 194.7; Employment change, percent, 2025–35: 5.6; Median annual wage, dollars, 2025: 97,550.
 
-Employment change, numeric, 2025–35
+Table 1.4 Occupations with the most job growth, 2025 and projected 2035 (Employment in thousands) - General and operations managers: 2025 National Employment Matrix code: 11-1021; Employment, 2025: 3,599.0; Employment, 2035: 3,780.3; Employment change, numeric, 2025–35: 181.3; Employment change, percent, 2025–35: 5.0; Median annual wage, dollars, 2025: 105,770.
 
-Employment change, percent, 2025–35
+Table 1.4 Occupations with the most job growth, 2025 and projected 2035 (Employment in thousands) - Software developers: 2025 National Employment Matrix code: 15-1252; Employment, 2025: 1,717.8; Employment, 2035: 1,892.6; Employment change, numeric, 2025–35: 174.7; Employment change, percent, 2025–35: 10.2; Median annual wage, dollars, 2025: 135,980.
 
-Median annual wage, dollars, 2025
+Table 1.4 Occupations with the most job growth, 2025 and projected 2035 (Employment in thousands) - Cooks, restaurant: 2025 National Employment Matrix code: 35-2014; Employment, 2025: 1,417.5; Employment, 2035: 1,588.8; Employment change, numeric, 2025–35: 171.4; Employment change, percent, 2025–35: 12.1; Median annual wage, dollars, 2025: 37,390.
 
-Total, all occupations
+Table 1.4 Occupations with the most job growth, 2025 and projected 2035 (Employment in thousands) - Medical and health services managers: 2025 National Employment Matrix code: 11-9111; Employment, 2025: 640.4; Employment, 2035: 795.5; Employment change, numeric, 2025–35: 155.1; Employment change, percent, 2025–35: 24.2; Median annual wage, dollars, 2025: 123,860.
 
-00-0000
+Table 1.4 Occupations with the most job growth, 2025 and projected 2035 (Employment in thousands) - Nurse practitioners: 2025 National Employment Matrix code: 29-1171; Employment, 2025: 336.3; Employment, 2035: 474.1; Employment change, numeric, 2025–35: 137.8; Employment change, percent, 2025–35: 41.0; Median annual wage, dollars, 2025: 132,300.
 
-170,280.8
+Table 1.4 Occupations with the most job growth, 2025 and projected 2035 (Employment in thousands) - Construction laborers: 2025 National Employment Matrix code: 47-2061; Employment, 2025: 1,489.3; Employment, 2035: 1,598.6; Employment change, numeric, 2025–35: 109.3; Employment change, percent, 2025–35: 7.3; Median annual wage, dollars, 2025: 47,120.
 
-176,198.5
+Table 1.4 Occupations with the most job growth, 2025 and projected 2035 (Employment in thousands) - Management analysts: 2025 National Employment Matrix code: 13-1111; Employment, 2025: 1,077.1; Employment, 2035: 1,186.3; Employment change, numeric, 2025–35: 109.2; Employment change, percent, 2025–35: 10.1; Median annual wage, dollars, 2025: 101,860.
 
-5,917.6
+Table 1.4 Occupations with the most job growth, 2025 and projected 2035 (Employment in thousands) - Computer and information systems managers: 2025 National Employment Matrix code: 11-3021; Employment, 2025: 685.8; Employment, 2035: 793.9; Employment change, numeric, 2025–35: 108.1; Employment change, percent, 2025–35: 15.8; Median annual wage, dollars, 2025: 175,140.
 
-3.5
+Table 1.4 Occupations with the most job growth, 2025 and projected 2035 (Employment in thousands) - Medical assistants: 2025 National Employment Matrix code: 31-9092; Employment, 2025: 833.9; Employment, 2035: 941.5; Employment change, numeric, 2025–35: 107.6; Employment change, percent, 2025–35: 12.9; Median annual wage, dollars, 2025: 45,690.
 
-50,980
+Table 1.4 Occupations with the most job growth, 2025 and projected 2035 (Employment in thousands) - Substance abuse, behavioral disorder, and mental health counselors: 2025 National Employment Matrix code: 21-1018; Employment, 2025: 533.4; Employment, 2035: 631.4; Employment change, numeric, 2025–35: 98.0; Employment change, percent, 2025–35: 18.4; Median annual wage, dollars, 2025: 59,350.
 
-Home health and personal care aides
+Table 1.4 Occupations with the most job growth, 2025 and projected 2035 (Employment in thousands) - Data scientists: 2025 National Employment Matrix code: 15-2051; Employment, 2025: 275.6; Employment, 2035: 371.0; Employment change, numeric, 2025–35: 95.4; Employment change, percent, 2025–35: 34.6; Median annual wage, dollars, 2025: 120,230.
 
-31-1120
+Table 1.4 Occupations with the most job growth, 2025 and projected 2035 (Employment in thousands) - Financial managers: 2025 National Employment Matrix code: 11-3031; Employment, 2025: 879.7; Employment, 2035: 964.6; Employment change, numeric, 2025–35: 84.9; Employment change, percent, 2025–35: 9.7; Median annual wage, dollars, 2025: 166,570.
 
-4,677.1
+Table 1.4 Occupations with the most job growth, 2025 and projected 2035 (Employment in thousands) - Heavy and tractor-trailer truck drivers: 2025 National Employment Matrix code: 53-3032; Employment, 2025: 2,221.2; Employment, 2035: 2,305.0; Employment change, numeric, 2025–35: 83.8; Employment change, percent, 2025–35: 3.8; Median annual wage, dollars, 2025: 58,640.
 
-5,524.4
+Table 1.4 Occupations with the most job growth, 2025 and projected 2035 (Employment in thousands) - Industrial machinery mechanics: 2025 National Employment Matrix code: 49-9041; Employment, 2025: 446.9; Employment, 2035: 526.6; Employment change, numeric, 2025–35: 79.7; Employment change, percent, 2025–35: 17.8; Median annual wage, dollars, 2025: 64,520.
 
-847.3
+Table 1.4 Occupations with the most job growth, 2025 and projected 2035 (Employment in thousands) - Accountants and auditors: 2025 National Employment Matrix code: 13-2011; Employment, 2025: 1,595.2; Employment, 2035: 1,674.6; Employment change, numeric, 2025–35: 79.4; Employment change, percent, 2025–35: 5.0; Median annual wage, dollars, 2025: 83,680.
 
-18.1
+Table 1.4 Occupations with the most job growth, 2025 and projected 2035 (Employment in thousands) - Electricians: 2025 National Employment Matrix code: 47-2111; Employment, 2025: 821.0; Employment, 2035: 896.9; Employment change, numeric, 2025–35: 75.9; Employment change, percent, 2025–35: 9.2; Median annual wage, dollars, 2025: 63,190.
 
-35,800
+Table 1.4 Occupations with the most job growth, 2025 and projected 2035 (Employment in thousands) - Project management specialists: 2025 National Employment Matrix code: 13-1082; Employment, 2025: 1,094.3; Employment, 2035: 1,167.4; Employment change, numeric, 2025–35: 73.2; Employment change, percent, 2025–35: 6.7; Median annual wage, dollars, 2025: 102,320.
 
-Stockers and order fillers
+Table 1.4 Occupations with the most job growth, 2025 and projected 2035 (Employment in thousands) - Maintenance and repair workers, general: 2025 National Employment Matrix code: 49-9071; Employment, 2025: 1,621.8; Employment, 2035: 1,690.5; Employment change, numeric, 2025–35: 68.6; Employment change, percent, 2025–35: 4.2; Median annual wage, dollars, 2025: 49,590.
 
-53-7065
+Table 1.4 Occupations with the most job growth, 2025 and projected 2035 (Employment in thousands) - Light truck drivers: 2025 National Employment Matrix code: 53-3033; Employment, 2025: 1,068.5; Employment, 2035: 1,136.4; Employment change, numeric, 2025–35: 67.8; Employment change, percent, 2025–35: 6.3; Median annual wage, dollars, 2025: 44,860.
 
-2,804.3
+Table 1.4 Occupations with the most job growth, 2025 and projected 2035 (Employment in thousands) - First-line supervisors of food preparation and serving workers: 2025 National Employment Matrix code: 35-1012; Employment, 2025: 1,236.4; Employment, 2035: 1,303.5; Employment change, numeric, 2025–35: 67.1; Employment change, percent, 2025–35: 5.4; Median annual wage, dollars, 2025: 44,080.
 
-3,055.0
+Table 1.4 Occupations with the most job growth, 2025 and projected 2035 (Employment in thousands) - Market research analysts and marketing specialists: 2025 National Employment Matrix code: 13-1161; Employment, 2025: 952.7; Employment, 2035: 1,019.0; Employment change, numeric, 2025–35: 66.3; Employment change, percent, 2025–35: 7.0; Median annual wage, dollars, 2025: 78,760.
 
-250.7
+Table 1.4 Occupations with the most job growth, 2025 and projected 2035 (Employment in thousands) - Managers, all other: 2025 National Employment Matrix code: 11-9199; Employment, 2025: 1,338.8; Employment, 2035: 1,404.4; Employment change, numeric, 2025–35: 65.6; Employment change, percent, 2025–35: 4.9; Median annual wage, dollars, 2025: 141,900.
 
-8.9
+Table 1.4 Occupations with the most job growth, 2025 and projected 2035 (Employment in thousands) - Human resources specialists: 2025 National Employment Matrix code: 13-1071; Employment, 2025: 939.7; Employment, 2035: 999.7; Employment change, numeric, 2025–35: 60.1; Employment change, percent, 2025–35: 6.4; Median annual wage, dollars, 2025: 75,940.
 
-37,330
+Table 1.4 Occupations with the most job growth, 2025 and projected 2035 (Employment in thousands) - Landscaping and groundskeeping workers: 2025 National Employment Matrix code: 37-3011; Employment, 2025: 1,188.6; Employment, 2035: 1,244.2; Employment change, numeric, 2025–35: 55.6; Employment change, percent, 2025–35: 4.7; Median annual wage, dollars, 2025: 39,150.
 
-Fast food and counter workers
+Table 1.4 Occupations with the most job growth, 2025 and projected 2035 (Employment in thousands) - Construction managers: 2025 National Employment Matrix code: 11-9021; Employment, 2025: 609.1; Employment, 2035: 664.3; Employment change, numeric, 2025–35: 55.2; Employment change, percent, 2025–35: 9.1; Median annual wage, dollars, 2025: 114,990.
 
-35-3023
+Table 1.4 Occupations with the most job growth, 2025 and projected 2035 (Employment in thousands) - Janitors and cleaners, except maids and housekeeping cleaners: 2025 National Employment Matrix code: 37-2011; Employment, 2025: 2,432.6; Employment, 2035: 2,486.2; Employment change, numeric, 2025–35: 53.6; Employment change, percent, 2025–35: 2.2; Median annual wage, dollars, 2025: 36,840.
 
-3,855.9
-
-4,079.1
-
-223.3
-
-5.8
-
-31,200
-
-Registered nurses
-
-29-1141
-
-3,465.4
-
-3,660.1
-
-194.7
-
-5.6
-
-97,550
-
-General and operations managers
-
-11-1021
-
-3,599.0
-
-3,780.3
-
-181.3
-
-5.0
-
-105,770
-
-Software developers
-
-15-1252
-
-1,717.8
-
-1,892.6
-
-174.7
-
-10.2
-
-135,980
-
-Cooks, restaurant
-
-35-2014
-
-1,417.5
-
-1,588.8
-
-171.4
-
-12.1
-
-37,390
-
-Medical and health services managers
-
-11-9111
-
-640.4
-
-795.5
-
-155.1
-
-24.2
-
-123,860
-
-Nurse practitioners
-
-29-1171
-
-336.3
-
-474.1
-
-137.8
-
-41.0
-
-132,300
-
-Construction laborers
-
-47-2061
-
-1,489.3
-
-1,598.6
-
-109.3
-
-7.3
-
-47,120
-
-Management analysts
-
-13-1111
-
-1,077.1
-
-1,186.3
-
-109.2
-
-10.1
-
-101,860
-
-Computer and information systems managers
-
-11-3021
-
-685.8
-
-793.9
-
-108.1
-
-15.8
-
-175,140
-
-Medical assistants
-
-31-9092
-
-833.9
-
-941.5
-
-107.6
-
-12.9
-
-45,690
-
-Substance abuse, behavioral disorder, and mental health counselors
-
-21-1018
-
-533.4
-
-631.4
-
-98.0
-
-18.4
-
-59,350
-
-Data scientists
-
-15-2051
-
-275.6
-
-371.0
-
-95.4
-
-34.6
-
-120,230
-
-Financial managers
-
-11-3031
-
-879.7
-
-964.6
-
-84.9
-
-9.7
-
-166,570
-
-Heavy and tractor-trailer truck drivers
-
-53-3032
-
-2,221.2
-
-2,305.0
-
-83.8
-
-3.8
-
-58,640
-
-Industrial machinery mechanics
-
-49-9041
-
-446.9
-
-526.6
-
-79.7
-
-17.8
-
-64,520
-
-Accountants and auditors
-
-13-2011
-
-1,595.2
-
-1,674.6
-
-79.4
-
-5.0
-
-83,680
-
-Electricians
-
-47-2111
-
-821.0
-
-896.9
-
-75.9
-
-9.2
-
-63,190
-
-Project management specialists
-
-13-1082
-
-1,094.3
-
-1,167.4
-
-73.2
-
-6.7
-
-102,320
-
-Maintenance and repair workers, general
-
-49-9071
-
-1,621.8
-
-1,690.5
-
-68.6
-
-4.2
-
-49,590
-
-Light truck drivers
-
-53-3033
-
-1,068.5
-
-1,136.4
-
-67.8
-
-6.3
-
-44,860
-
-First-line supervisors of food preparation and serving workers
-
-35-1012
-
-1,236.4
-
-1,303.5
-
-67.1
-
-5.4
-
-44,080
-
-Market research analysts and marketing specialists
-
-13-1161
-
-952.7
-
-1,019.0
-
-66.3
-
-7.0
-
-78,760
-
-Managers, all other
-
-11-9199
-
-1,338.8
-
-1,404.4
-
-65.6
-
-4.9
-
-141,900
-
-Human resources specialists
-
-13-1071
-
-939.7
-
-999.7
-
-60.1
-
-6.4
-
-75,940
-
-Landscaping and groundskeeping workers
-
-37-3011
-
-1,188.6
-
-1,244.2
-
-55.6
-
-4.7
-
-39,150
-
-Construction managers
-
-11-9021
-
-609.1
-
-664.3
-
-55.2
-
-9.1
-
-114,990
-
-Janitors and cleaners, except maids and housekeeping cleaners
-
-37-2011
-
-2,432.6
-
-2,486.2
-
-53.6
-
-2.2
-
-36,840
-
-Note:
-
-Wage data are from the Occupational Employment and Wage Statistics program. The wage data cover non-farm wage and salary workers and do not cover the self-employed, owners and partners in unincorporated firms, or household workers.
-
-Source: U.S. Bureau of Labor Statistics.
+Table 1.4 Occupations with the most job growth, 2025 and projected 2035 (Employment in thousands) - Note: Wage data are from the Occupational Employment and Wage Statistics program. The wage data cover non-farm wage and salary workers and do not cover the self-employed, owners and partners in unincorporated firms, or household workers. Source: U.S. Bureau of Labor Statistics.: .
 
 Last modified date: August 27, 2026

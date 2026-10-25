@@ -8,8 +8,8 @@
   "embedding_model": "BAAI/bge-m3",
   "embedding_dimension": 1024,
   "distance_metric": "cosine",
-  "expected_chunk_count": 2833,
-  "indexed_record_count": 2833,
+  "expected_chunk_count": 2844,
+  "indexed_record_count": 2844,
   "metadata_fields": [
     "source_id",
     "chunk_index",
@@ -25,7 +25,7 @@
     "word_count",
     "character_count"
   ],
-  "build_timestamp": "2026-10-22T17:11:24+00:00",
+  "build_timestamp": "2026-10-25T14:22:32+00:00",
   "rebuild_strategy": "Upsert deterministic chunk IDs and precomputed embeddings into the existing persistent Chroma collection.",
   "input_files": {
     "chunks": "knowledge_base/chunks/chunks.jsonl",
@@ -34,10 +34,10 @@
     "embedding_manifest": "knowledge_base/embeddings/embedding_manifest.json"
   },
   "validation_results": {
-    "chunk_count": 2833,
-    "embedding_count": 2833,
+    "chunk_count": 2844,
+    "embedding_count": 2844,
     "embedding_dimension": 1024,
-    "metadata_count": 2833,
+    "metadata_count": 2844,
     "chunk_id_duplicates": 0,
     "mapping_order_matches": true,
     "all_sources_approved": true,
@@ -46,8 +46,8 @@
     "infinite_value_count": 0,
     "collection_exists": true,
     "collection_count_before_indexing": 0,
-    "indexed_record_count": 2833,
-    "persistent_reload_record_count": 2833,
+    "indexed_record_count": 2844,
+    "persistent_reload_record_count": 2844,
     "indexed_count_matches_expected": true,
     "persistent_reload_ok": true,
     "sample_documents_present": true,

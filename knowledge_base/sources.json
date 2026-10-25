@@ -1392,7 +1392,7 @@
       "language": "English",
       "reliability_note": "Official U.S. Bureau of Labor Statistics employment projections table; reliable for projected U.S. occupational growth, not for Turkey.",
       "raw_file_path": "knowledge_base/raw/html/src_095.html",
-      "notes": "Projected 2025-35 job growth by occupation, including software and computer occupations (BLS replaced the 2024-34 table at this URL; page last modified 2026-08-27). Geographic scope: United States."
+      "notes": "Projected 2025-35 job growth by occupation, including software and computer occupations (BLS replaced the 2024-34 table at this URL; page last modified 2026-08-27). Geographic scope: United States. Extraction (2026-10-23): each table row is written out with its column headers (occupation, matrix code, employment 2025, employment 2035, numeric and percent change 2025-35, median annual wage 2025) and the table caption, so a row can be read on its own."
     },
     {
       "source_id": "src_096",
@@ -1770,7 +1770,7 @@
       "language": "Turkish",
       "reliability_note": "Official OSTİM Technical University web page.",
       "raw_file_path": "knowledge_base/raw/html/src_122.html",
-      "notes": "List of student clubs and societies. Complements the student clubs directive (src_112). Content limitation: the club list is loaded by JavaScript, so the automatically saved page contains only the page frame (\"45 topluluk\") and no club names; a browser save of the rendered page is needed for useful content. Excluded from chunking after preprocessing review on 2026-10-20."
+      "notes": "List of student clubs and societies. Complements the student clubs directive (src_112). Content limitation: the club list is loaded by JavaScript, so the automatically saved page contains only the page frame (\"45 topluluk\") and no club names; a browser save of the rendered page is needed for useful content. Earlier excluded from chunking (2026-10-20). Fixed 2026-10-23: the saved page does contain the full list in its inline page data (var CATS / var COMM), which is now extracted: 45 communities in 7 categories, with the page's own Turkish and English category names. Club descriptions and events are not in the saved page."
     },
     {
       "source_id": "src_123",
@@ -1798,7 +1798,7 @@
       "language": "Turkish",
       "reliability_note": "Official OSTİM Technical University web page.",
       "raw_file_path": "knowledge_base/raw/html/src_124.html",
-      "notes": "Career planning, on-the-job training (işbaşı eğitimi) and alumni relations office. Secondary categories: internships, employment. Content limitation: the home page has little text (announcements load dynamically) and was served in English; the substantive content is on subpages such as workplace experience, FAQ, documents and career days. Excluded from chunking after preprocessing review on 2026-10-20: the processed text holds only section headings and an unfilled CMS placeholder."
+      "notes": "Career planning, on-the-job training (işbaşı eğitimi) and alumni relations office. Secondary categories: internships, employment. Content limitation: the home page has little text (announcements load dynamically) and was served in English; the substantive content is on subpages such as workplace experience, FAQ, documents and career days. Excluded from chunking after preprocessing review on 2026-10-20: the processed text holds only section headings and an unfilled CMS placeholder. Re-downloaded 2026-10-23 (Turkish and English home page): still only headings and the unfilled CMS placeholder, so it stays excluded. Substantive content is on subpages such as https://karpiem.ostimteknik.edu.tr/en/karpiem-faaliyet-alanlari (career counselling, company-visit programme, employer network), which are not part of this source."
     },
     {
       "source_id": "src_125",
@@ -1903,6 +1903,21 @@
       "raw_file_path": "knowledge_base/raw/text/src_131.txt",
       "notes": "Curated source note made on 2026-10-22 from src_043 to replace the hand-written specialization_areas_passage() in backend/app/rag/rag_pipeline.py; the full source stays indexed as src_043.",
       "curated_from": "src_043"
+    },
+    {
+      "source_id": "src_132",
+      "title": "Curated English note of src_103: Higher Education Employment Indicators 2025 (TÜİK Yükseköğretim İstihdam Göstergeleri, 2025)",
+      "source_name": "Ekonomi Gazetesi (report of TÜİK Yükseköğretim İstihdam Göstergeleri 2025)",
+      "source_type": "news_report_of_employment_statistics",
+      "url": "https://www.ekonomigazetesi.com/ekonomi/lisans-mezunlarinin-istihdam-orani-gecen-yil-yuzde-739a-indi-83776",
+      "publication_date": "2026-07-23",
+      "date_accessed": "2026-10-23",
+      "category": "employment",
+      "language": "English",
+      "reliability_note": "Curated English note of src_103; same publisher and URL. Key figures of the TÜİK bulletin Yükseköğretim İstihdam Göstergeleri 2025 quoted exactly as reported by Ekonomi Gazetesi (secondary report, not taken directly from TÜİK), with the Turkish wording in brackets. Figures are for whole fields of education; there is no separate figure for computer engineering.",
+      "raw_file_path": "knowledge_base/raw/text/src_132.txt",
+      "notes": "Curated source note made on 2026-10-23 from src_103 because the Turkish article was not retrieved for English questions (vector rank 122, BM25 score 0 for 'Can I find a job after graduation?'). The full source stays indexed as src_103.",
+      "curated_from": "src_103"
     }
   ]
 }

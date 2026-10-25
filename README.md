@@ -115,6 +115,15 @@ The backend reads these process environment variables at startup, with local def
 
 - `OLLAMA_BASE_URL`: default `http://127.0.0.1:11434`
 - `OLLAMA_MODEL`: default `qwen2.5:3b`
+- `LLM_TEMPERATURE`: default `0`; `LLM_SEED`: default `42`. Every generation, including the follow-up rewrite, uses them.
+- `LLM_RESET_PROMPT_CACHE`: default `1`. A one-token request before each generation gives every prompt the same starting cache state; set `0` to skip it.
+
+With these defaults the same question gives the same answer, provided the Ollama server is started with `LLAMA_ARG_CACHE_RAM=0`. Without it, Ollama's llama-server restores the closest of its recently cached prompts, and the answer can depend on what was asked before. The `docker-compose.yml` Ollama service already sets it. For a local Ollama:
+
+- Windows: run `setx LLAMA_ARG_CACHE_RAM 0`, then quit Ollama completely (tray icon → Quit Ollama, or end both `ollama app.exe` and `ollama.exe` in Task Manager) and start it again. Reopening the app while the old server still runs keeps the old server and its settings, because the app logs "existing instance found, exiting".
+- macOS/Linux: start the server with `LLAMA_ARG_CACHE_RAM=0 ollama serve`, or set it in the systemd unit (`Environment="LLAMA_ARG_CACHE_RAM=0"`).
+
+To check, send one request and look in the server log (`%LOCALAPPDATA%\Ollama\server.log` on Windows). It must say `prompt cache is disabled`, not `prompt cache is enabled, size limit: 8192 MiB`.
 
 For example, in PowerShell before starting the backend:
 
