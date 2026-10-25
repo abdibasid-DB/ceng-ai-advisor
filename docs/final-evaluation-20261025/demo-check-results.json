@@ -2268,5 +2268,507 @@
    "status": "out_of_scope",
    "answer": "I am a Computer Engineering student advisor. I can help with Computer Engineering education, curriculum, courses, skills, careers, internships, AI, cybersecurity, programming, and related study paths."
   }
+ },
+ {
+  "id": "T186",
+  "question": "Does it include Linux?",
+  "group": "multi_turn",
+  "expected_topics": [
+   "operating_systems",
+   "curriculum"
+  ],
+  "expected_categories": [
+   "curriculum"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": "Tell me about the curriculum.",
+  "evaluation_label": "correct_evidence_supported",
+  "elapsed_wall_seconds": 89.186,
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "What specific topics related to Linux are covered in the curriculum?",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S1",
+     "S2"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "added_supported_inline_label"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "The curriculum for CENG 303 Operating Systems Design & Construction at OSTIM Technical University covers specific topics related to Linux, including process management, thread scheduling, synchronization, deadlocks, memory management, file systems, input/output systems, and security [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "ceng",
+       "construction",
+       "covers",
+       "deadlocks",
+       "design",
+       "file",
+       "input",
+       "linux",
+       "management",
+       "memory",
+       "operating"
+      ]
+     },
+     {
+      "claim": "These topics are essential for understanding how to design and construct operating systems, and given the context that most clusters are Linux-based, students will need to gain proficiency in using the Linux command line to navigate and run code [S2].",
+      "labels": [
+       "S2"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "are",
+       "clusters",
+       "code",
+       "command",
+       "how",
+       "line",
+       "linux",
+       "linux-based",
+       "most",
+       "navigate",
+       "need"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 4,
+    "top_similarity_score": 0.610024631023407,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "What specific topics related to Linux are covered in the curriculum?",
+    "query_kind": "standalone_domain_question",
+    "follow_up_rewrite": {
+     "llm_rewrite": "What specific topics related to Linux are covered in the curriculum?",
+     "raw_output": "What specific topics related to Linux are covered in the curriculum?",
+     "error": null,
+     "seconds": 8.374,
+     "rule_based": "Does it include linux? (Computer Engineering)",
+     "used": "llm"
+    },
+    "query_normalization": {
+     "original_question": "Does it include Linux?",
+     "normalized_question": "Does it include linux?",
+     "retrieval_question": "Does it include linux? (Computer Engineering)",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "operating_systems",
+       "matched_terms": [
+        "linux"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "assess",
+     "constraints": [],
+     "entities": [
+      "operating_systems"
+     ],
+     "referents": [
+      "it"
+     ],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 4,
+      "replacements": [],
+      "normalized_tokens": [
+       "does",
+       "it",
+       "include",
+       "linux"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.326,
+    "context_construction_seconds": 0.007,
+    "llm_generation_seconds": 32.609,
+    "initial_llm_generation_seconds": 32.609,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 28.661,
+    "total_seconds": 34.387
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "answer": "The curriculum for CENG 303 Operating Systems Design & Construction at OSTIM Technical University covers specific topics related to Linux, including process management, thread scheduling, synchronization, deadlocks, memory management, file systems, input/output systems, and security [S1]. These topics are essential for understanding how to design and construct operating systems, and given the context that most clusters are Linux-based, students will need to gain proficiency in using the Linux command line to navigate and run code [S2].",
+  "answer_warnings": [],
+  "sources": [
+   {
+    "source_id": "src_130",
+    "title": "Course Contents: CENG 303 Operating Systems Design & Construction (Linux or Windows)",
+    "source_name": "OSTIM Technical University - Department of Computer Engineering (English)",
+    "source_type": "course_descriptions",
+    "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+    "category": "curriculum",
+    "supporting_chunk_ids": [
+     "src_130_chunk_001"
+    ],
+    "evidence_labels": [
+     "S1"
+    ],
+    "best_similarity_score": 0.610024631023407
+   },
+   {
+    "source_id": "src_069",
+    "title": "Computing Competencies for Undergraduate Data Science Curricula",
+    "source_name": "Association for Computing Machinery Data Science Task Force",
+    "source_type": "professional_curriculum_report",
+    "url": "https://www.acm.org/binaries/content/assets/education/curricula-recommendations/dstf_ccdsc2021.pdf",
+    "category": "specializations",
+    "supporting_chunk_ids": [
+     "src_069_chunk_085"
+    ],
+    "evidence_labels": [
+     "S2"
+    ],
+    "best_similarity_score": 0.5703573822975159
+   }
+  ],
+  "retrieved_context": [
+   {
+    "label": "S1",
+    "chunk_id": "src_130_chunk_001",
+    "source_id": "src_130",
+    "title": "Course Contents: CENG 303 Operating Systems Design & Construction (Linux or Windows)",
+    "category": "curriculum",
+    "similarity_score": 0.610024631023407,
+    "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+    "passage": "Course Contents: CENG 303 Operating Systems Design & Construction (Linux or Windows) CENG 303 Operating Systems Design & Construction This course provides a comprehensive introduction to the fundamental concepts, principles, and design of modern operating systems. The course covers key topics such as process management, thread scheduling, synchronization, deadlocks, memory management, file systems, input/output systems, and security."
+   },
+   {
+    "label": "S2",
+    "chunk_id": "src_069_chunk_085",
+    "source_id": "src_069",
+    "title": "Computing Competencies for Undergraduate Data Science Curricula",
+    "category": "specializations",
+    "similarity_score": 0.5703573822975159,
+    "url": "https://www.acm.org/binaries/content/assets/education/curricula-recommendations/dstf_ccdsc2021.pdf",
+    "passage": "Running on a single server is typically not sufficient. Most clusters are Linux-based. Accordingly, students will need access to Linux command line training to learn how to navigate and run code f rom the command line."
+   }
+  ],
+  "previous_turn_setup": {
+   "question": "Tell me about the curriculum.",
+   "status": "answered",
+   "answer": "The curriculum is outlined in detail in the report, which is available on the Association for Computing Machinery and IEEE Computer Society's website [S1] [S2] [S3]."
+  }
+ },
+ {
+  "id": "A082",
+  "question": "What parts of engineering work are changed by generative AI?",
+  "group": "ai_future",
+  "expected_topics": [
+   "ai",
+   "career"
+  ],
+  "expected_categories": [
+   "artificial_intelligence",
+   "skills_and_technologies"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": null,
+  "evaluation_label": "correct_evidence_supported",
+  "elapsed_wall_seconds": 49.753,
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "What parts of engineering work are changed by generative AI? (Computer Engineering; topics: ai, career)",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S2",
+     "S3"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4",
+     "S5"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "added_supported_inline_label",
+     "pruned_unverified_sentences"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "Generative AI has the potential to change various aspects of engineering work, particularly in software development [S2].",
+      "labels": [
+       "S2"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "change",
+       "development",
+       "generative",
+       "software",
+       "the"
+      ]
+     },
+     {
+      "claim": "In the context of the [S2] report, it is mentioned that professional developers are assessing the value of their work differently when using generative artificial intelligence (AI).",
+      "labels": [
+       "S2"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "are",
+       "artificial",
+       "developers",
+       "generative",
+       "intelligence",
+       "professional",
+       "report",
+       "the",
+       "value"
+      ]
+     },
+     {
+      "claim": "The [S3] report indicates that organizations are planning to use AI for tasks such as data analysis and reporting, IT infrastructure monitoring, and software development.",
+      "labels": [
+       "S3"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "analysis",
+       "and",
+       "are",
+       "data",
+       "development.",
+       "for",
+       "infrastructure",
+       "monitoring",
+       "organizations",
+       "planning",
+       "report",
+       "reporting"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.6758714914321899,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "What parts of engineering work are changed by generative AI? (Computer Engineering; topics: ai, career)",
+    "query_kind": "standalone_domain_question",
+    "query_normalization": {
+     "original_question": "What parts of engineering work are changed by generative AI?",
+     "normalized_question": "What parts of engineering work are changed by generative AI?",
+     "retrieval_question": "What parts of engineering work are changed by generative AI? (Computer Engineering; topics: ai, career)",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "ai",
+       "matched_terms": [
+        "ai"
+       ],
+       "confidence": 1.0
+      },
+      {
+       "name": "career",
+       "matched_terms": [
+        "work"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "explain",
+     "constraints": [],
+     "entities": [
+      "ai",
+      "career"
+     ],
+     "referents": [],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 10,
+      "replacements": [],
+      "normalized_tokens": [
+       "what",
+       "parts",
+       "of",
+       "engineering",
+       "work",
+       "are",
+       "changed",
+       "by",
+       "generative",
+       "ai"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 11.612,
+    "context_construction_seconds": 0.006,
+    "llm_generation_seconds": 35.174,
+    "initial_llm_generation_seconds": 35.174,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 34.919,
+    "total_seconds": 49.742
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "answer": "Generative AI has the potential to change various aspects of engineering work, particularly in software development [S2]. In the context of the [S2] report, it is mentioned that professional developers are assessing the value of their work differently when using generative artificial intelligence (AI). The [S3] report indicates that organizations are planning to use AI for tasks such as data analysis and reporting, IT infrastructure monitoring, and software development.",
+  "answer_warnings": [],
+  "sources": [
+   {
+    "source_id": "src_053",
+    "title": "How Gen AI Affects the Value of Development Work",
+    "source_name": "DORA, Google",
+    "source_type": "software_engineering_research_report",
+    "url": "https://research.google/pubs/how-gen-ai-affects-the-value-of-development-work/",
+    "category": "artificial_intelligence",
+    "supporting_chunk_ids": [
+     "src_053_chunk_001"
+    ],
+    "evidence_labels": [
+     "S2"
+    ],
+    "best_similarity_score": 0.6132821440696716
+   },
+   {
+    "source_id": "src_016",
+    "title": "2024 State of Tech Talent Report",
+    "source_name": "The Linux Foundation",
+    "source_type": "industry_research_report",
+    "url": "https://www.linuxfoundation.org/research/open-source-jobs-report-2024",
+    "category": "skills_and_technologies",
+    "supporting_chunk_ids": [
+     "src_016_chunk_006"
+    ],
+    "evidence_labels": [
+     "S3"
+    ],
+    "best_similarity_score": 0.6213007569313049
+   }
+  ],
+  "retrieved_context": [
+   {
+    "label": "S1",
+    "chunk_id": "src_017_chunk_028",
+    "source_id": "src_017",
+    "title": "The Future of Jobs Report 2025",
+    "category": "future_technologies",
+    "similarity_score": 0.6758714914321899,
+    "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+    "passage": "on the margins, with currently minimal use of this technology. 6 While the full extent of long-term productivity gains from the technology remains uncertain, workplace studies have identified various initial ways for generative AI to enhance human skills and performance."
+   },
+   {
+    "label": "S2",
+    "chunk_id": "src_053_chunk_001",
+    "source_id": "src_053",
+    "title": "How Gen AI Affects the Value of Development Work",
+    "category": "artificial_intelligence",
+    "similarity_score": 0.6132821440696716,
+    "url": "https://research.google/pubs/how-gen-ai-affects-the-value-of-development-work/",
+    "passage": "How Gen AI Affects the Value of Development Work GoogleResearch Kevin Storer DORA, Google (2024) DownloadGoogle Scholar Copy Bibtex Listen with Illuminate Abstract This report outlines a series of 10 in-depth interviews aimed at understanding how professional developers ascribe value to their work and whether the use of generative artificial intelligence in development changes how the value of development work is assessment. Research Areas Machine intelligence Software engineering Meet the teams driving innovation Our teams advance the state of the art through research, systems engineering, and collaboration across Google. See our teams"
+   },
+   {
+    "label": "S3",
+    "chunk_id": "src_016_chunk_006",
+    "source_id": "src_016",
+    "title": "2024 State of Tech Talent Report",
+    "category": "skills_and_technologies",
+    "similarity_score": 0.6213007569313049,
+    "url": "https://www.linuxfoundation.org/research/open-source-jobs-report-2024",
+    "passage": "Unsurprisingly, demand for cloud, DevOps, cybersecurity, and AI / ML talent continues to grow. We couldn’t look at today’s IT talent market without attempting to ascertain the impact of generative artificial intelligence (GenAI) on hiring as well as work roles. GenAI continues to drive intelligent automation across the workforce, with organizations planning to use it for data analysis and reporting, IT infrastructure monitoring, and software development."
+   },
+   {
+    "label": "S4",
+    "chunk_id": "src_017_chunk_031",
+    "source_id": "src_017",
+    "title": "The Future of Jobs Report 2025",
+    "category": "future_technologies",
+    "similarity_score": 0.5666681528091431,
+    "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+    "passage": "reveals significant growth in demand for Generative AI training among both individual learners and enterprises (Figure B1.1). Demand for AI skills has accelerated globally, with India and the United States leading in enrolment numbers."
+   },
+   {
+    "label": "S5",
+    "chunk_id": "src_017_chunk_104",
+    "source_id": "src_017",
+    "title": "The Future of Jobs Report 2025",
+    "category": "future_technologies",
+    "similarity_score": 0.6174010038375854,
+    "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+    "passage": "certain skills, it also accelerates the decline of others. Skills such as manual dexterity, endurance, precision, and reading, writing, and mathematics are expected to diminish in relevance as digital access, AI and information processing, and robotics increasingly automate these tasks. Interestingly, whereas programming remains stable as an in-demand skill, both respondents expecting growth in its use and those expecting decline consistently point to technological change as the primary driver behind this change."
+   }
+  ],
+  "previous_turn_setup": null
  }
 ]

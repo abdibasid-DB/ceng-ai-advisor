@@ -90,4 +90,6 @@ SPEC1, SPEC2 and SPEC4 give answers identical to the three temperature-0 runs of
 
 ## Reproducibility check
 
-The 10 demo questions ([../demo-questions.md](../demo-questions.md)) were run a second time through the same path. All 10 answers, retrieved sources and the follow-up setup answer were identical. [demo-check-results.json](demo-check-results.json)
+The 10 demo questions ([../demo-questions.md](../demo-questions.md)) and two dropped candidates (A078, T196) were run a second time through the same path. All 12 answers, their retrieved sources and the follow-up setup answers were identical to the final run. [demo-check-results.json](demo-check-results.json)
+
+The final run also shares 138 cases with the 2026-10-23 temperature-0 run (`cases-t0.json` in [../temperature-seed-20261025/results](../temperature-seed-20261025/results)), which used the index before the update. 128 of those answers are word-for-word identical. For the other 10 (P049, R096, R107, R115, S126, S127, S128, S137, S140, T200) the retrieved passages changed: 8 now include a new src_095, src_122 or src_132 chunk, and in P049 and R115 src_087 moved into the top 5. So every case whose retrieved passages stayed the same gave the identical answer.
