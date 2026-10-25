@@ -1,0 +1,2366 @@
+[
+ {
+  "id": "F001",
+  "question": "What is Computer Engineering?",
+  "group": "fundamentals",
+  "expected_topics": [
+   "computer_engineering"
+  ],
+  "expected_categories": [
+   "department_information",
+   "common_misconceptions"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": null,
+  "evaluation_label": "correct_evidence_supported",
+  "elapsed_wall_seconds": 38.7,
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "What is Computer Engineering?",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S1"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "removed_trailing_source_labels",
+     "added_supported_inline_label"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "Computer Engineering is a four-year curriculum that focuses on the synthesis of electrical engineering and computer science, aimed at designing and constructing processor-based systems that include hardware, software, and communications components [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "communications",
+       "components",
+       "curriculum",
+       "electrical",
+       "focuses",
+       "four-year",
+       "hardware",
+       "processor-based",
+       "science",
+       "software",
+       "synthesis"
+      ]
+     },
+     {
+      "claim": "Graduates of this program are expected to design and implement systems that integrate software and hardware devices, such as those found in cellular communications, consumer electronics, medical imaging and devices, alarm systems, and military technologies [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "alarm",
+       "and",
+       "are",
+       "cellular",
+       "communications",
+       "consumer",
+       "design",
+       "devices",
+       "electronics",
+       "hardware",
+       "imaging",
+       "implement"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.7575972080230713,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "What is Computer Engineering?",
+    "query_kind": "standalone_domain_question",
+    "query_normalization": {
+     "original_question": "What is Computer Engineering?",
+     "normalized_question": "What is computer engineering?",
+     "retrieval_question": "What is Computer Engineering?",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "computer_engineering",
+       "matched_terms": [
+        "computer engineering"
+       ],
+       "confidence": 1.0
+      },
+      {
+       "name": "definition",
+       "matched_terms": [
+        "what is"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "explain",
+     "constraints": [],
+     "entities": [
+      "computer_engineering"
+     ],
+     "referents": [],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 4,
+      "replacements": [],
+      "normalized_tokens": [
+       "what",
+       "is",
+       "computer",
+       "engineering"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 17.138,
+    "context_construction_seconds": 0.009,
+    "llm_generation_seconds": 21.505,
+    "initial_llm_generation_seconds": 21.505,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 21.221,
+    "total_seconds": 38.691
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "answer": "Computer Engineering is a four-year curriculum that focuses on the synthesis of electrical engineering and computer science, aimed at designing and constructing processor-based systems that include hardware, software, and communications components [S1]. Graduates of this program are expected to design and implement systems that integrate software and hardware devices, such as those found in cellular communications, consumer electronics, medical imaging and devices, alarm systems, and military technologies [S1].",
+  "answer_warnings": [],
+  "sources": [
+   {
+    "source_id": "src_042",
+    "title": "Curricular Guidance",
+    "source_name": "ACM Committee for Computing Education in Community Colleges",
+    "source_type": "professional_curricular_guidance",
+    "url": "https://ccecc.acm.org/guidance",
+    "category": "common_misconceptions",
+    "supporting_chunk_ids": [
+     "src_042_chunk_002"
+    ],
+    "evidence_labels": [
+     "S1"
+    ],
+    "best_similarity_score": 0.7337636351585388
+   }
+  ],
+  "retrieved_context": [
+   {
+    "label": "S1",
+    "chunk_id": "src_042_chunk_002",
+    "source_id": "src_042",
+    "title": "Curricular Guidance",
+    "category": "common_misconceptions",
+    "similarity_score": 0.7337636351585388,
+    "url": "https://ccecc.acm.org/guidance",
+    "passage": "Computer Engineering involves the design and construction of processor-based systems comprised of hardware, software, and communications components. This four-year curriculum focuses on the synthesis of electrical engineering and computer science as applied to the design of systems such as cellular communications, consumer electronics, medical imaging and devices, alarm systems and military technologies. Upon graduation, students initiating careers as computer engineers should be able to design and implement systems that involve the integration of software and hardware devices."
+   },
+   {
+    "label": "S2",
+    "chunk_id": "src_080_chunk_001",
+    "source_id": "src_080",
+    "title": "Curated note: Computing Curricula 2020: Paradigms for Global Computing Education",
+    "category": "common_misconceptions",
+    "similarity_score": 0.6835991144180298,
+    "url": "https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf",
+    "passage": "Title: Computing Curricula 2020: Paradigms for Global Computing Education Source: ACM and IEEE Computer Society URL: https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf Date accessed: 2026-10-13 Curated source note Computing Curricula 2020 compares major computing disciplines and is useful when students ask whether Computer Engineering is the same as Computer Science, Software Engineering, Information Technology, Information Systems, or Cybersecurity. Computer Engineering is generally closest to the boundary between computing and engineering hardware."
+   }
+  ],
+  "previous_turn_setup": null
+ },
+ {
+  "id": "F007",
+  "question": "Do computer engineers build physical devices or just apps?",
+  "group": "fundamentals",
+  "expected_topics": [
+   "hardware",
+   "software"
+  ],
+  "expected_categories": [
+   "curriculum",
+   "hardware"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": null,
+  "evaluation_label": "correct_evidence_supported",
+  "elapsed_wall_seconds": 38.147,
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "Do computer engineers build physical devices or just apps?",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S1",
+     "S2",
+     "S3"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "added_supported_inline_label",
+     "pruned_unverified_sentences"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "Computer engineers build both physical devices and apps [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "devices"
+      ]
+     },
+     {
+      "claim": "The context indicates that computer engineers design and construct processor-based systems that include hardware, software, and communications components [S2].",
+      "labels": [
+       "S2"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "communications",
+       "components",
+       "construct",
+       "design",
+       "hardware",
+       "processor-based",
+       "software",
+       "systems",
+       "that",
+       "the"
+      ]
+     },
+     {
+      "claim": "This encompasses a wide range of physical devices such as cellular communications, consumer electronics, medical imaging devices, and military technologies [S2] [S3].",
+      "labels": [
+       "S2",
+       "S3"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "cellular",
+       "communications",
+       "consumer",
+       "devices",
+       "electronics",
+       "imaging",
+       "medical",
+       "military",
+       "such",
+       "technologies",
+       "this"
+      ]
+     },
+     {
+      "claim": "Additionally, they work on distributed computing environments and embedded computer systems, such as those found in aircraft, spacecraft, and automobile control systems [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "aircraft",
+       "and",
+       "automobile",
+       "computing",
+       "control",
+       "distributed",
+       "embedded",
+       "environments",
+       "spacecraft",
+       "such",
+       "systems",
+       "those"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.6392064094543457,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "Do computer engineers build physical devices or just apps?",
+    "query_kind": "standalone_domain_question",
+    "query_normalization": {
+     "original_question": "Do computer engineers build physical devices or just apps?",
+     "normalized_question": "Do computer engineers build physical devices or just apps?",
+     "retrieval_question": "Do computer engineers build physical devices or just apps?",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "computer_engineering",
+       "matched_terms": [
+        "computer engineers"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "assess",
+     "constraints": [],
+     "entities": [
+      "computer_engineering"
+     ],
+     "referents": [],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 9,
+      "replacements": [],
+      "normalized_tokens": [
+       "do",
+       "computer",
+       "engineers",
+       "build",
+       "physical",
+       "devices",
+       "or",
+       "just",
+       "apps"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.269,
+    "context_construction_seconds": 0.004,
+    "llm_generation_seconds": 33.649,
+    "initial_llm_generation_seconds": 33.649,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 33.41,
+    "total_seconds": 38.117
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "answer": "Computer engineers build both physical devices and apps [S1]. The context indicates that computer engineers design and construct processor-based systems that include hardware, software, and communications components [S2]. This encompasses a wide range of physical devices such as cellular communications, consumer electronics, medical imaging devices, and military technologies [S2] [S3]. Additionally, they work on distributed computing environments and embedded computer systems, such as those found in aircraft, spacecraft, and automobile control systems [S1].",
+  "answer_warnings": [],
+  "sources": [
+   {
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "source_name": "Association for Computing Machinery and IEEE Computer Society",
+    "source_type": "professional_curriculum_report",
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "category": "curriculum",
+    "supporting_chunk_ids": [
+     "src_067_chunk_031"
+    ],
+    "evidence_labels": [
+     "S1"
+    ],
+    "best_similarity_score": 0.6392064094543457
+   },
+   {
+    "source_id": "src_042",
+    "title": "Curricular Guidance",
+    "source_name": "ACM Committee for Computing Education in Community Colleges",
+    "source_type": "professional_curricular_guidance",
+    "url": "https://ccecc.acm.org/guidance",
+    "category": "common_misconceptions",
+    "supporting_chunk_ids": [
+     "src_042_chunk_002"
+    ],
+    "evidence_labels": [
+     "S2"
+    ],
+    "best_similarity_score": 0.5883798599243164
+   },
+   {
+    "source_id": "src_128",
+    "title": "Curricular Guidance: the sub-disciplines of computing (computer engineering, computer science, software engineering, information technology)",
+    "source_name": "ACM Committee for Computing Education in Community Colleges",
+    "source_type": "professional_curricular_guidance",
+    "url": "https://ccecc.acm.org/guidance",
+    "category": "common_misconceptions",
+    "supporting_chunk_ids": [
+     "src_128_chunk_002"
+    ],
+    "evidence_labels": [
+     "S3"
+    ],
+    "best_similarity_score": 0.5564429759979248
+   }
+  ],
+  "retrieved_context": [
+   {
+    "label": "S1",
+    "chunk_id": "src_067_chunk_031",
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "category": "curriculum",
+    "similarity_score": 0.6392064094543457,
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "passage": "Computer engineers work in most industries, including the computer, automobile, aerospace, telecommunications, power production, manufacturing, defense, and electronics industries. They design high-tech devices ranging from tiny microelectronic integrated-circuit chips, to powerful systems that utilize those chips and efficient telecommunication systems that interconnect those systems. Computer engineers also work on distributed computing environments—local and wide area networks, wireless networks, internets, intranets—and embedded computer systems—such as in aircraft, spacecraft, and automobile control systems where they perform various functions."
+   },
+   {
+    "label": "S2",
+    "chunk_id": "src_042_chunk_002",
+    "source_id": "src_042",
+    "title": "Curricular Guidance",
+    "category": "common_misconceptions",
+    "similarity_score": 0.5883798599243164,
+    "url": "https://ccecc.acm.org/guidance",
+    "passage": "Computer Engineering involves the design and construction of processor-based systems comprised of hardware, software, and communications components. This four-year curriculum focuses on the synthesis of electrical engineering and computer science as applied to the design of systems such as cellular communications, consumer electronics, medical imaging and devices, alarm systems and military technologies. Upon graduation, students initiating careers as computer engineers should be able to design and implement systems that involve the integration of software and hardware devices."
+   },
+   {
+    "label": "S3",
+    "chunk_id": "src_128_chunk_002",
+    "source_id": "src_128",
+    "title": "Curricular Guidance: the sub-disciplines of computing (computer engineering, computer science, software engineering, information technology)",
+    "category": "common_misconceptions",
+    "similarity_score": 0.5564429759979248,
+    "url": "https://ccecc.acm.org/guidance",
+    "passage": "such as cellular communications, consumer electronics, medical imaging and devices, alarm systems and military technologies. Upon graduation, students initiating careers as computer engineers should be able to design and implement systems that involve the integration of software and hardware devices."
+   },
+   {
+    "label": "S4",
+    "chunk_id": "src_067_chunk_012",
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "category": "curriculum",
+    "similarity_score": 0.617551863193512,
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "passage": "Therefore, this unique combination prepares students for careers that deal with computer systems from their design through their implementation. Computing systems are components of a wide range of products for example, as fuel injection systems in vehicles, medical devices such as x-ray machines, communication devices such as smart phones, and household devices such as alarm systems and washing machines. Designing computing systems and computing components for products, designing network computers and devices for the internet of things, developing and testing their prototypes, and implementing them to market are examples of what computer engineers typically do."
+   }
+  ],
+  "previous_turn_setup": null
+ },
+ {
+  "id": "C026",
+  "question": "Are senior design projects part of CE education?",
+  "group": "curriculum",
+  "expected_topics": [
+   "projects",
+   "curriculum"
+  ],
+  "expected_categories": [
+   "curriculum",
+   "projects"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": null,
+  "evaluation_label": "correct_evidence_supported",
+  "elapsed_wall_seconds": 36.184,
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "are senior design projects part of CE education? (Computer Engineering)",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S1"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "added_supported_inline_label",
+     "pruned_unverified_sentences"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "The curriculum includes a two-course sequence in the senior year, known as CE Design I and CE Design II, which is a culminating design experience [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "culminating",
+       "design",
+       "experience",
+       "senior",
+       "sequence",
+       "the",
+       "two-course",
+       "year"
+      ]
+     },
+     {
+      "claim": "This is detailed in [S1], which states that the culminating design experience is a two-course sequence in the senior year of the curriculum.",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "culminating",
+       "design",
+       "experience",
+       "senior",
+       "sequence",
+       "the",
+       "two-course",
+       "year"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.6534790396690369,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "are senior design projects part of CE education? (Computer Engineering)",
+    "query_kind": "standalone_domain_question",
+    "query_normalization": {
+     "original_question": "Are senior design projects part of CE education?",
+     "normalized_question": "are senior design projects part of CE education?",
+     "retrieval_question": "are senior design projects part of CE education? (Computer Engineering)",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "projects",
+       "matched_terms": [
+        "projects"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": null,
+     "constraints": [],
+     "entities": [
+      "projects"
+     ],
+     "referents": [],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 8,
+      "replacements": [],
+      "normalized_tokens": [
+       "are",
+       "senior",
+       "design",
+       "projects",
+       "part",
+       "of",
+       "ce",
+       "education"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.286,
+    "context_construction_seconds": 0.003,
+    "llm_generation_seconds": 31.709,
+    "initial_llm_generation_seconds": 31.709,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 31.491,
+    "total_seconds": 36.176
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "answer": "The curriculum includes a two-course sequence in the senior year, known as CE Design I and CE Design II, which is a culminating design experience [S1]. This is detailed in [S1], which states that the culminating design experience is a two-course sequence in the senior year of the curriculum.",
+  "answer_warnings": [],
+  "sources": [
+   {
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "source_name": "Association for Computing Machinery and IEEE Computer Society",
+    "source_type": "professional_curriculum_report",
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "category": "curriculum",
+    "supporting_chunk_ids": [
+     "src_067_chunk_328"
+    ],
+    "evidence_labels": [
+     "S1"
+    ],
+    "best_similarity_score": 0.6534790396690369
+   }
+  ],
+  "retrieved_context": [
+   {
+    "label": "S1",
+    "chunk_id": "src_067_chunk_328",
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "category": "curriculum",
+    "similarity_score": 0.6534790396690369,
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "passage": "Specialization occurs via technical electives chosen in various knowledge areas from either department. Finally, the culminating design experience is a two-course sequence in the senior year (CE Design I and CE Design II). Credit hours are distributed as follows."
+   },
+   {
+    "label": "S2",
+    "chunk_id": "src_091_chunk_001",
+    "source_id": "src_091",
+    "title": "Curated note: Career Readiness Competencies",
+    "category": "skills_and_technologies",
+    "similarity_score": 0.5671127438545227,
+    "url": "https://naceweb.org/career-readiness/competencies/career-readiness-defined",
+    "passage": "Career readiness includes communication, critical thinking, equity and inclusion, leadership, professionalism, teamwork, technology, and career/self-development. For CENG students, these competencies can be demonstrated through projects, internships, labs, hackathons, student clubs, open-source work, presentations, documentation, and responsible teamwork. The source supports balanced advice about GPA, projects, and internships."
+   },
+   {
+    "label": "S3",
+    "chunk_id": "src_014_chunk_001",
+    "source_id": "src_014",
+    "title": "Computer Hardware Engineers: 17-2061.00",
+    "category": "skills_and_technologies",
+    "similarity_score": 0.5564398169517517,
+    "url": "https://www.onetonline.org/link/summary/17-2061.00",
+    "passage": "Title: Computer Hardware Engineers: 17-2061.00 17-2061.00 - Computer Hardware Engineers Occupation keyword search Type a title or code for matches No quick matches found Search for keyword results Computer Hardware Engineers 17-2061.00 Bright Outlook Updated 2026 Research, design, develop, or test computer or computer-related equipment for commercial, industrial, military, or scientific use. May supervise the manufacturing and installation of computer or computer-related equipment and components."
+   },
+   {
+    "label": "S4",
+    "chunk_id": "src_067_chunk_325",
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "category": "curriculum",
+    "similarity_score": 0.6369754076004028,
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "passage": "Page 119 of 149 devices Prerequisites: CSCB201, CSCB202 Credit Hours: 3; Lecture Hours: 28; Lab Hours: 42 BoK Coverage: CE-SRM 1-6; Supplementary CE-SRM 7-8 CSCB401: Senior Project I Individually designed projects oriented toward providing experience in project management, risk management, specification of system requirements and architecture, system design, integration, testing, and deployment; solution of open-ended problems; emerging technologies discussed in the context of these projects Prerequisites: CSEB302, CSEB312, CSEB332 Credit Hours: 2; Lecture Hours: 14; Lab Hours: 42 BoK Coverage: CE-PPP 2-4, 6-9, CE-SPE 1-12 CSCB402 Senior Project II Continuation of Senior Project I focused..."
+   }
+  ],
+  "previous_turn_setup": null
+ },
+ {
+  "id": "A073",
+  "question": "What AI skills are useful besides prompt engineering?",
+  "group": "ai_future",
+  "expected_topics": [
+   "ai",
+   "skills"
+  ],
+  "expected_categories": [
+   "artificial_intelligence",
+   "skills_and_technologies"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": null,
+  "evaluation_label": "correct_evidence_supported",
+  "elapsed_wall_seconds": 33.175,
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "What AI skills are useful besides prompt engineering? (Computer Engineering; topics: ai, skills)",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S4",
+     "S1",
+     "S3"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "added_supported_inline_label",
+     "source_name_to_inline_label",
+     "pruned_unverified_sentences"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "AI skills such as prompt engineering are useful in computer engineering, but there are other AI skills that are also important [S4].",
+      "labels": [
+       "S4"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "are",
+       "other",
+       "skills",
+       "such"
+      ]
+     },
+     {
+      "claim": "For instance, programming skills are highly versatile and applicable in a wide range of fields, enhancing problem-solving abilities and offering numerous career opportunities [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "abilities",
+       "and",
+       "applicable",
+       "are",
+       "career",
+       "fields",
+       "highly",
+       "numerous",
+       "opportunities",
+       "problem-solving",
+       "programming",
+       "range"
+      ]
+     },
+     {
+      "claim": "Additionally, AI impacts in BLS employment projections show that AI can support many tasks involved in architecture and engineering occupations, potentially increasing worker productivity [S3].",
+      "labels": [
+       "S3"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "architecture",
+       "can",
+       "employment",
+       "increasing",
+       "involved",
+       "many",
+       "occupations",
+       "potentially",
+       "productivity",
+       "support",
+       "tasks"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.6891717910766602,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "What AI skills are useful besides prompt engineering? (Computer Engineering; topics: ai, skills)",
+    "query_kind": "standalone_domain_question",
+    "query_normalization": {
+     "original_question": "What AI skills are useful besides prompt engineering?",
+     "normalized_question": "What AI skills are useful besides prompt engineering?",
+     "retrieval_question": "What AI skills are useful besides prompt engineering? (Computer Engineering; topics: ai, skills)",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "ai",
+       "matched_terms": [
+        "ai"
+       ],
+       "confidence": 1.0
+      },
+      {
+       "name": "skills",
+       "matched_terms": [
+        "skills"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "explain",
+     "constraints": [],
+     "entities": [
+      "ai",
+      "skills"
+     ],
+     "referents": [],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 8,
+      "replacements": [],
+      "normalized_tokens": [
+       "what",
+       "ai",
+       "skills",
+       "are",
+       "useful",
+       "besides",
+       "prompt",
+       "engineering"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.341,
+    "context_construction_seconds": 0.004,
+    "llm_generation_seconds": 32.8,
+    "initial_llm_generation_seconds": 32.8,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 32.57,
+    "total_seconds": 33.163
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "answer": "AI skills such as prompt engineering are useful in computer engineering, but there are other AI skills that are also important [S4]. For instance, programming skills are highly versatile and applicable in a wide range of fields, enhancing problem-solving abilities and offering numerous career opportunities [S1]. Additionally, AI impacts in BLS employment projections show that AI can support many tasks involved in architecture and engineering occupations, potentially increasing worker productivity [S3].",
+  "answer_warnings": [],
+  "sources": [
+   {
+    "source_id": "src_045",
+    "title": "Skills for the digital age",
+    "source_name": "Organisation for Economic Co-operation and Development (OECD)",
+    "source_type": "recognized_international_report",
+    "url": "https://www.oecd.org/en/publications/2024/11/oecd-digital-economy-outlook-2024-volume-2_9b2801fc/full-report/skills-for-the-digital-age_da6162fb.html",
+    "category": "skills_and_technologies",
+    "supporting_chunk_ids": [
+     "src_045_chunk_189"
+    ],
+    "evidence_labels": [
+     "S1"
+    ],
+    "best_similarity_score": 0.6891717910766602
+   },
+   {
+    "source_id": "src_134",
+    "title": "AI impacts in BLS employment projections",
+    "source_name": "U.S. Bureau of Labor Statistics, The Economics Daily",
+    "source_type": "government_labor_statistics_article",
+    "url": "https://www.bls.gov/opub/ted/2025/ai-impacts-in-bls-employment-projections.htm",
+    "category": "artificial_intelligence",
+    "supporting_chunk_ids": [
+     "src_134_chunk_004"
+    ],
+    "evidence_labels": [
+     "S3"
+    ],
+    "best_similarity_score": 0.590419352054596
+   },
+   {
+    "source_id": "src_017",
+    "title": "The Future of Jobs Report 2025",
+    "source_name": "World Economic Forum",
+    "source_type": "recognized_international_report",
+    "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+    "category": "future_technologies",
+    "supporting_chunk_ids": [
+     "src_017_chunk_104"
+    ],
+    "evidence_labels": [
+     "S4"
+    ],
+    "best_similarity_score": 0.6756092309951782
+   }
+  ],
+  "retrieved_context": [
+   {
+    "label": "S1",
+    "chunk_id": "src_045_chunk_189",
+    "source_id": "src_045",
+    "title": "Skills for the digital age",
+    "category": "skills_and_technologies",
+    "similarity_score": 0.6891717910766602,
+    "url": "https://www.oecd.org/en/publications/2024/11/oecd-digital-economy-outlook-2024-volume-2_9b2801fc/full-report/skills-for-the-digital-age_da6162fb.html",
+    "passage": "Programming skills are highly versatile and applicable in a wide range of fields. They enhance problem-solving abilities, promote creativity and innovation, and offer numerous career opportunities."
+   },
+   {
+    "label": "S2",
+    "chunk_id": "src_093_chunk_001",
+    "source_id": "src_093",
+    "title": "Curated note: Computing Machinery and Intelligence",
+    "category": "artificial_intelligence",
+    "similarity_score": 0.6046746373176575,
+    "url": "https://plato.stanford.edu/entries/turing-test/",
+    "passage": "Title: Computing Machinery and Intelligence Source: Stanford Encyclopedia of Philosophy URL: https://plato.stanford.edu/entries/turing-test/ Date accessed: 2026-10-13 Curated source note The Stanford Encyclopedia of Philosophy article on computing machinery and intelligence provides conceptual background for AI questions. It is useful for cautious reasoning about claims such as \"AI will replace programmers\" or \"AI can think like humans.\" For advising, the important point is that AI capability claims require careful definitions."
+   },
+   {
+    "label": "S3",
+    "chunk_id": "src_134_chunk_004",
+    "source_id": "src_134",
+    "title": "AI impacts in BLS employment projections",
+    "category": "artificial_intelligence",
+    "similarity_score": 0.590419352054596,
+    "url": "https://www.bls.gov/opub/ted/2025/ai-impacts-in-bls-employment-projections.htm",
+    "passage": "The business and financial operations occupational group also may be affected by AI. Personal financial advisors have already begun to see job competition from AI. Specifically, app-based “robo-advisors” have started to compete with human advisors by providing automated financial advice. Although AI technology can compete with personal financial advisors at their core tasks, demand for human advisors is still expected to remain very strong. Employment of personal financial advisors is projected to grow 17.1 percent from 2023 to 2033, much faster than average. AI can support many tasks involved in architecture and engineering occupations, potentially increasing worker productivity."
+   },
+   {
+    "label": "S4",
+    "chunk_id": "src_017_chunk_104",
+    "source_id": "src_017",
+    "title": "The Future of Jobs Report 2025",
+    "category": "future_technologies",
+    "similarity_score": 0.6756092309951782,
+    "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+    "passage": "certain skills, it also accelerates the decline of others. Skills such as manual dexterity, endurance, precision, and reading, writing, and mathematics are expected to diminish in relevance as digital access, AI and information processing, and robotics increasingly automate these tasks."
+   }
+  ],
+  "previous_turn_setup": null
+ },
+ {
+  "id": "A082",
+  "question": "What parts of engineering work are changed by generative AI?",
+  "group": "ai_future",
+  "expected_topics": [
+   "ai",
+   "career"
+  ],
+  "expected_categories": [
+   "artificial_intelligence",
+   "skills_and_technologies"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": null,
+  "evaluation_label": "unsupported_incorrect_or_misleading",
+  "elapsed_wall_seconds": 44.589,
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "What parts of engineering work are changed by generative AI? (Computer Engineering; topics: ai, career)",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S1",
+     "S3",
+     "S2"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4",
+     "S5"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "removed_trailing_source_labels",
+     "added_supported_inline_label",
+     "source_name_to_inline_label"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": false,
+    "unsupported_claim_count": 1,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "Generative AI is expected to enhance human skills and performance in various ways [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "enhance",
+       "generative",
+       "human",
+       "performance",
+       "skills",
+       "various",
+       "ways"
+      ]
+     },
+     {
+      "claim": "In the field of Computer Engineering, generative AI could change the way tasks are approached and completed [S3].",
+      "labels": [
+       "S3"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "tasks",
+       "the"
+      ]
+     },
+     {
+      "claim": "For instance, in software development, AI can support many tasks involved in architecture and engineering occupations, potentially increasing worker productivity [S3].",
+      "labels": [
+       "S3"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "architecture",
+       "can",
+       "for",
+       "increasing",
+       "involved",
+       "many",
+       "occupations",
+       "potentially",
+       "productivity",
+       "support",
+       "tasks"
+      ]
+     },
+     {
+      "claim": "Additionally, the use of generative AI in development work is being studied to understand how it affects the value of development work, as outlined in the report \"How Gen AI Affects the Value of Development Work\" by GoogleResearch [S2].",
+      "labels": [
+       "S2"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "affects",
+       "development",
+       "gen",
+       "generative",
+       "googleresearch",
+       "how",
+       "report",
+       "the",
+       "understand",
+       "use",
+       "value"
+      ]
+     },
+     {
+      "claim": "Generative AI could change the nature of work in software development and related engineering roles by automating certain tasks and improving the efficiency of developers [S3].",
+      "labels": [
+       "S3"
+      ],
+      "supported": false,
+      "overlap_terms": [
+       "and",
+       "tasks",
+       "the"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.6758714914321899,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "What parts of engineering work are changed by generative AI? (Computer Engineering; topics: ai, career)",
+    "query_kind": "standalone_domain_question",
+    "query_normalization": {
+     "original_question": "What parts of engineering work are changed by generative AI?",
+     "normalized_question": "What parts of engineering work are changed by generative AI?",
+     "retrieval_question": "What parts of engineering work are changed by generative AI? (Computer Engineering; topics: ai, career)",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "ai",
+       "matched_terms": [
+        "ai"
+       ],
+       "confidence": 1.0
+      },
+      {
+       "name": "career",
+       "matched_terms": [
+        "work"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "explain",
+     "constraints": [],
+     "entities": [
+      "ai",
+      "career"
+     ],
+     "referents": [],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 10,
+      "replacements": [],
+      "normalized_tokens": [
+       "what",
+       "parts",
+       "of",
+       "engineering",
+       "work",
+       "are",
+       "changed",
+       "by",
+       "generative",
+       "ai"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.43,
+    "context_construction_seconds": 0.003,
+    "llm_generation_seconds": 37.876,
+    "initial_llm_generation_seconds": 37.876,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 37.63,
+    "total_seconds": 44.579
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "answer": "Generative AI is expected to enhance human skills and performance in various ways [S1]. In the field of Computer Engineering, generative AI could change the way tasks are approached and completed [S3]. For instance, in software development, AI can support many tasks involved in architecture and engineering occupations, potentially increasing worker productivity [S3]. Additionally, the use of generative AI in development work is being studied to understand how it affects the value of development work, as outlined in the report \"How Gen AI Affects the Value of Development Work\" by GoogleResearch [S2]. Generative AI could change the nature of work in software development and related engineering roles by automating certain tasks and improving the efficiency of developers [S3].",
+  "answer_warnings": [],
+  "sources": [
+   {
+    "source_id": "src_017",
+    "title": "The Future of Jobs Report 2025",
+    "source_name": "World Economic Forum",
+    "source_type": "recognized_international_report",
+    "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+    "category": "future_technologies",
+    "supporting_chunk_ids": [
+     "src_017_chunk_028"
+    ],
+    "evidence_labels": [
+     "S1"
+    ],
+    "best_similarity_score": 0.6758714914321899
+   },
+   {
+    "source_id": "src_053",
+    "title": "How Gen AI Affects the Value of Development Work",
+    "source_name": "DORA, Google",
+    "source_type": "software_engineering_research_report",
+    "url": "https://research.google/pubs/how-gen-ai-affects-the-value-of-development-work/",
+    "category": "artificial_intelligence",
+    "supporting_chunk_ids": [
+     "src_053_chunk_001"
+    ],
+    "evidence_labels": [
+     "S2"
+    ],
+    "best_similarity_score": 0.6132821440696716
+   },
+   {
+    "source_id": "src_134",
+    "title": "AI impacts in BLS employment projections",
+    "source_name": "U.S. Bureau of Labor Statistics, The Economics Daily",
+    "source_type": "government_labor_statistics_article",
+    "url": "https://www.bls.gov/opub/ted/2025/ai-impacts-in-bls-employment-projections.htm",
+    "category": "artificial_intelligence",
+    "supporting_chunk_ids": [
+     "src_134_chunk_004"
+    ],
+    "evidence_labels": [
+     "S3"
+    ],
+    "best_similarity_score": 0.605508029460907
+   }
+  ],
+  "retrieved_context": [
+   {
+    "label": "S1",
+    "chunk_id": "src_017_chunk_028",
+    "source_id": "src_017",
+    "title": "The Future of Jobs Report 2025",
+    "category": "future_technologies",
+    "similarity_score": 0.6758714914321899,
+    "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+    "passage": "on the margins, with currently minimal use of this technology. 6 While the full extent of long-term productivity gains from the technology remains uncertain, workplace studies have identified various initial ways for generative AI to enhance human skills and performance."
+   },
+   {
+    "label": "S2",
+    "chunk_id": "src_053_chunk_001",
+    "source_id": "src_053",
+    "title": "How Gen AI Affects the Value of Development Work",
+    "category": "artificial_intelligence",
+    "similarity_score": 0.6132821440696716,
+    "url": "https://research.google/pubs/how-gen-ai-affects-the-value-of-development-work/",
+    "passage": "How Gen AI Affects the Value of Development Work GoogleResearch Kevin Storer DORA, Google (2024) DownloadGoogle Scholar Copy Bibtex Listen with Illuminate Abstract This report outlines a series of 10 in-depth interviews aimed at understanding how professional developers ascribe value to their work and whether the use of generative artificial intelligence in development changes how the value of development work is assessment. Research Areas Machine intelligence Software engineering Meet the teams driving innovation Our teams advance the state of the art through research, systems engineering, and collaboration across Google. See our teams"
+   },
+   {
+    "label": "S3",
+    "chunk_id": "src_134_chunk_004",
+    "source_id": "src_134",
+    "title": "AI impacts in BLS employment projections",
+    "category": "artificial_intelligence",
+    "similarity_score": 0.605508029460907,
+    "url": "https://www.bls.gov/opub/ted/2025/ai-impacts-in-bls-employment-projections.htm",
+    "passage": "The business and financial operations occupational group also may be affected by AI. Personal financial advisors have already begun to see job competition from AI. Specifically, app-based “robo-advisors” have started to compete with human advisors by providing automated financial advice. Although AI technology can compete with personal financial advisors at their core tasks, demand for human advisors is still expected to remain very strong. Employment of personal financial advisors is projected to grow 17.1 percent from 2023 to 2033, much faster than average. AI can support many tasks involved in architecture and engineering occupations, potentially increasing worker productivity."
+   },
+   {
+    "label": "S4",
+    "chunk_id": "src_016_chunk_006",
+    "source_id": "src_016",
+    "title": "2024 State of Tech Talent Report",
+    "category": "skills_and_technologies",
+    "similarity_score": 0.6213007569313049,
+    "url": "https://www.linuxfoundation.org/research/open-source-jobs-report-2024",
+    "passage": "Unsurprisingly, demand for cloud, DevOps, cybersecurity, and AI / ML talent continues to grow. We couldn’t look at today’s IT talent market without attempting to ascertain the impact of generative artificial intelligence (GenAI) on hiring as well as work roles. GenAI continues to drive intelligent automation across the workforce, with organizations planning to use it for data analysis and reporting, IT infrastructure monitoring, and software development."
+   },
+   {
+    "label": "S5",
+    "chunk_id": "src_017_chunk_031",
+    "source_id": "src_017",
+    "title": "The Future of Jobs Report 2025",
+    "category": "future_technologies",
+    "similarity_score": 0.5666681528091431,
+    "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+    "passage": "reveals significant growth in demand for Generative AI training among both individual learners and enterprises (Figure B1.1). Demand for AI skills has accelerated globally, with India and the United States leading in enrolment numbers."
+   }
+  ],
+  "previous_turn_setup": null
+ },
+ {
+  "id": "Y086",
+  "question": "Is cybersecurity more software or hardware?",
+  "group": "cybersecurity",
+  "expected_topics": [
+   "cybersecurity",
+   "software",
+   "hardware"
+  ],
+  "expected_categories": [
+   "cybersecurity",
+   "curriculum"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": null,
+  "evaluation_label": "correct_evidence_supported",
+  "elapsed_wall_seconds": 33.758,
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "Is cybersecurity more software or hardware? (Computer Engineering; topics: hardware, software, cybersecurity)",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S1",
+     "S2",
+     "S3"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "removed_trailing_source_labels",
+     "added_supported_inline_label",
+     "pruned_unverified_sentences"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "Cybersecurity is not exclusively software or hardware; it involves both [S1] [S2] [S3].",
+      "labels": [
+       "S1",
+       "S2",
+       "S3"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "cybersecurity",
+       "hardware",
+       "not",
+       "software"
+      ]
+     },
+     {
+      "claim": "In Computer Engineering, cybersecurity is a computing-based discipline that encompasses technology, people, information, and processes to enable assured operations in the context of adversaries [S3].",
+      "labels": [
+       "S3"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "adversaries",
+       "and",
+       "assured",
+       "computing-based",
+       "context",
+       "cybersecurity",
+       "discipline",
+       "enable",
+       "information",
+       "operations",
+       "people",
+       "processes"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.7122021317481995,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "Is cybersecurity more software or hardware? (Computer Engineering; topics: hardware, software, cybersecurity)",
+    "query_kind": "standalone_domain_question",
+    "query_normalization": {
+     "original_question": "Is cybersecurity more software or hardware?",
+     "normalized_question": "Is cybersecurity more software or hardware?",
+     "retrieval_question": "Is cybersecurity more software or hardware? (Computer Engineering; topics: hardware, software, cybersecurity)",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "hardware",
+       "matched_terms": [
+        "hardware"
+       ],
+       "confidence": 1.0
+      },
+      {
+       "name": "software",
+       "matched_terms": [
+        "software"
+       ],
+       "confidence": 1.0
+      },
+      {
+       "name": "cybersecurity",
+       "matched_terms": [
+        "cybersecurity"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "assess",
+     "constraints": [],
+     "entities": [
+      "hardware",
+      "software",
+      "cybersecurity"
+     ],
+     "referents": [],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 6,
+      "replacements": [],
+      "normalized_tokens": [
+       "is",
+       "cybersecurity",
+       "more",
+       "software",
+       "or",
+       "hardware"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.45,
+    "context_construction_seconds": 0.004,
+    "llm_generation_seconds": 30.224,
+    "initial_llm_generation_seconds": 30.224,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 30.005,
+    "total_seconds": 33.754
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "answer": "Cybersecurity is not exclusively software or hardware; it involves both [S1] [S2] [S3]. In Computer Engineering, cybersecurity is a computing-based discipline that encompasses technology, people, information, and processes to enable assured operations in the context of adversaries [S3].",
+  "answer_warnings": [],
+  "sources": [
+   {
+    "source_id": "src_085",
+    "title": "Curated note: Cybersecurity Curricular Guidelines CSEC 2017",
+    "source_name": "CENG AI Advisor summary based on ACM, IEEE Computer Society, AIS SIGSEC, and IFIP WG 11.8",
+    "source_type": "curated_source_note",
+    "url": "https://cybered.acm.org/",
+    "category": "cybersecurity",
+    "supporting_chunk_ids": [
+     "src_085_chunk_001"
+    ],
+    "evidence_labels": [
+     "S1"
+    ],
+    "best_similarity_score": 0.7122021317481995
+   },
+   {
+    "source_id": "src_094",
+    "title": "Curated note: Cyber Career Pathways Tool",
+    "source_name": "CENG AI Advisor summary based on Cybersecurity and Infrastructure Security Agency / NICCS",
+    "source_type": "curated_source_note",
+    "url": "https://niccs.cisa.gov/workforce-development/cyber-career-pathways-tool",
+    "category": "cybersecurity",
+    "supporting_chunk_ids": [
+     "src_094_chunk_001"
+    ],
+    "evidence_labels": [
+     "S2"
+    ],
+    "best_similarity_score": 0.6398428678512573
+   },
+   {
+    "source_id": "src_128",
+    "title": "Curricular Guidance: the sub-disciplines of computing (computer engineering, computer science, software engineering, information technology)",
+    "source_name": "ACM Committee for Computing Education in Community Colleges",
+    "source_type": "professional_curricular_guidance",
+    "url": "https://ccecc.acm.org/guidance",
+    "category": "common_misconceptions",
+    "supporting_chunk_ids": [
+     "src_128_chunk_002"
+    ],
+    "evidence_labels": [
+     "S3"
+    ],
+    "best_similarity_score": 0.7313668131828308
+   }
+  ],
+  "retrieved_context": [
+   {
+    "label": "S1",
+    "chunk_id": "src_085_chunk_001",
+    "source_id": "src_085",
+    "title": "Curated note: Cybersecurity Curricular Guidelines CSEC 2017",
+    "category": "cybersecurity",
+    "similarity_score": 0.7122021317481995,
+    "url": "https://cybered.acm.org/",
+    "passage": "This breadth matters because many security failures involve people, process, software design, configuration, networks, or organizational decisions, not only code vulnerabilities. For Computer Engineering students, cybersecurity connects naturally with networks, operating systems, programming, databases, cloud computing, cryptography, embedded systems, and hardware security. Students interested in security should build legal and ethical habits from the beginning."
+   },
+   {
+    "label": "S2",
+    "chunk_id": "src_094_chunk_001",
+    "source_id": "src_094",
+    "title": "Curated note: Cyber Career Pathways Tool",
+    "category": "cybersecurity",
+    "similarity_score": 0.6398428678512573,
+    "url": "https://niccs.cisa.gov/workforce-development/cyber-career-pathways-tool",
+    "passage": "The tool is useful for role exploration and for showing students that cybersecurity is not a single job. Cybersecurity roles can involve secure software, systems defense, incident response, digital forensics, risk management, security architecture, vulnerability assessment, cloud security, governance, education, and operations. Different roles require different mixes of programming, networking, operating systems, communication, documentation, risk thinking, and hands-on tools."
+   },
+   {
+    "label": "S3",
+    "chunk_id": "src_128_chunk_002",
+    "source_id": "src_128",
+    "title": "Curricular Guidance: the sub-disciplines of computing (computer engineering, computer science, software engineering, information technology)",
+    "category": "common_misconceptions",
+    "similarity_score": 0.7313668131828308,
+    "url": "https://ccecc.acm.org/guidance",
+    "passage": "such as cellular communications, consumer electronics, medical imaging and devices, alarm systems and military technologies. Upon graduation, students initiating careers as computer engineers should be able to design and implement systems that involve the integration of software and hardware devices. Cybersecurity is a computing-based discipline involving technology, people, information, and processes to enable assured operations in the context of adversaries."
+   },
+   {
+    "label": "S4",
+    "chunk_id": "src_042_chunk_002",
+    "source_id": "src_042",
+    "title": "Curricular Guidance",
+    "category": "common_misconceptions",
+    "similarity_score": 0.7071115970611572,
+    "url": "https://ccecc.acm.org/guidance",
+    "passage": "Computer Engineering involves the design and construction of processor-based systems comprised of hardware, software, and communications components. This four-year curriculum focuses on the synthesis of electrical engineering and computer science as applied to the design of systems such as cellular communications, consumer electronics, medical imaging and devices, alarm systems and military technologies."
+   }
+  ],
+  "previous_turn_setup": null
+ },
+ {
+  "id": "R102",
+  "question": "What if I graduate without internship experience?",
+  "group": "career_employment",
+  "expected_topics": [
+   "internships",
+   "employment"
+  ],
+  "expected_categories": [
+   "internships",
+   "employment"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": null,
+  "evaluation_label": "correct_evidence_supported",
+  "elapsed_wall_seconds": 39.887,
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "What if I graduate without internship experience? (Computer Engineering; constraints: no_internship)",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S1",
+     "S2"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4",
+     "S5"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "removed_trailing_source_labels",
+     "added_supported_inline_label",
+     "pruned_unverified_sentences",
+     "partial_answer"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "If a student graduates without internship experience, they may face challenges in certain industry environments where prior industry experience is valued [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "certain",
+       "environments",
+       "experience",
+       "graduates",
+       "industry",
+       "may",
+       "prior",
+       "without"
+      ]
+     },
+     {
+      "claim": "Engaging with professionals in the field can provide valuable insights into the most important skills and opportunities available in the industry [S2].",
+      "labels": [
+       "S2"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "can",
+       "field",
+       "into",
+       "most",
+       "opportunities",
+       "skills",
+       "the"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 4,
+    "top_similarity_score": 0.6315934658050537,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "What if I graduate without internship experience? (Computer Engineering; constraints: no_internship)",
+    "query_kind": "standalone_domain_question",
+    "query_normalization": {
+     "original_question": "What if I graduate without internship experience?",
+     "normalized_question": "What if I graduate without internship experience?",
+     "retrieval_question": "What if I graduate without internship experience? (Computer Engineering; constraints: no_internship)",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "internships",
+       "matched_terms": [
+        "internship"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "explain",
+     "constraints": [
+      "no_internship"
+     ],
+     "entities": [
+      "internships"
+     ],
+     "referents": [],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 7,
+      "replacements": [],
+      "normalized_tokens": [
+       "what",
+       "if",
+       "i",
+       "graduate",
+       "without",
+       "internship",
+       "experience"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.382,
+    "context_construction_seconds": 0.003,
+    "llm_generation_seconds": 34.185,
+    "initial_llm_generation_seconds": 34.185,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 33.978,
+    "total_seconds": 39.879
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "answer": "If a student graduates without internship experience, they may face challenges in certain industry environments where prior industry experience is valued [S1]. Engaging with professionals in the field can provide valuable insights into the most important skills and opportunities available in the industry [S2].",
+  "answer_warnings": [
+   "partial_answer"
+  ],
+  "sources": [
+   {
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "source_name": "Association for Computing Machinery and IEEE Computer Society",
+    "source_type": "professional_curriculum_report",
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "category": "curriculum",
+    "supporting_chunk_ids": [
+     "src_067_chunk_113"
+    ],
+    "evidence_labels": [
+     "S1"
+    ],
+    "best_similarity_score": 0.6315934658050537
+   },
+   {
+    "source_id": "src_074",
+    "title": "Write a Resume/CV",
+    "source_name": "University of Pennsylvania Career Services",
+    "source_type": "university_career_center_resource",
+    "url": "https://careerservices.upenn.edu/channels/resume/",
+    "category": "employment",
+    "supporting_chunk_ids": [
+     "src_074_chunk_010"
+    ],
+    "evidence_labels": [
+     "S2"
+    ],
+    "best_similarity_score": 0.627081573009491
+   }
+  ],
+  "retrieved_context": [
+   {
+    "label": "S1",
+    "chunk_id": "src_067_chunk_113",
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "category": "curriculum",
+    "similarity_score": 0.6315934658050537,
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "passage": "4.7.4 Experience Even with the requisite personal, communication, and teamwork skills, technical knowledge may not be sufficient in certain industry environments without prior industry experience. This chicken-and-egg scenario has haunted university graduates for decades and centuries."
+   },
+   {
+    "label": "S2",
+    "chunk_id": "src_074_chunk_010",
+    "source_id": "src_074",
+    "title": "Write a Resume/CV",
+    "category": "employment",
+    "similarity_score": 0.627081573009491,
+    "url": "https://careerservices.upenn.edu/channels/resume/",
+    "passage": "Focus on transferable or soft skills in the job/internship description – even if they were used in a different context, what similar skills have you used? For internships, there is an expectation that you may not have real-world experience and that they will teach and train you. This is also an instance where talking with people in the field you’re applying to can give you better insight into what skills are most important, where others look for opportunities in the field, etc."
+   },
+   {
+    "label": "S3",
+    "chunk_id": "src_018_chunk_001",
+    "source_id": "src_018",
+    "title": "Students Recognize the Importance of Gaining Internship Experience",
+    "category": "internships",
+    "similarity_score": 0.6000484824180603,
+    "url": "https://naceweb.org/job-market/internships/students-recognize-the-importance-of-gaining-internship-experience",
+    "passage": "Students Recognize the Importance of Gaining Internship Experience Home / Job Market / Internships Internships Date: September 23, 2024 By: Kevin Gray AAA co opscompensationInternshipsnace insightsstudent attitudessurveys The percent of graduating seniors who participated in an internship is the highest that NACE has recorded in the past six years, according to results of NACE’s 2024 Student Survey. More than two-thirds of 2024 graduating seniors engaged in an internship experience during their college career, up from around 61% of 2023 graduates and outpacing pre-pandemic 2019 graduates ."
+   },
+   {
+    "label": "S4",
+    "chunk_id": "src_067_chunk_048",
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "category": "curriculum",
+    "similarity_score": 0.5957496762275696,
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "passage": "This preparation encompasses several areas. Section 2.3.2 defined the professionalism and ethics that are fundamental characteristics of a computer engineering graduate. Preparation for professional practice requires graduates to understand the responsibilities associated with engineering practice, as well as an ability to apply these principles to specific situations."
+   },
+   {
+    "label": "S5",
+    "chunk_id": "src_067_chunk_089",
+    "source_id": "src_067",
+    "title": "Computer Engineering Curricula 2016",
+    "category": "curriculum",
+    "similarity_score": 0.48626235127449036,
+    "url": "https://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf",
+    "passage": "4.3.2 The culminating design experience The concept of a culminating design project is widely valued as an important experience occurring toward the end of a curriculum. Students consider a significant problem associated with a discipline and, in solving the problem, demonstrate their ability to apply methodically engineering principles to generate a solution."
+   }
+  ],
+  "previous_turn_setup": null
+ },
+ {
+  "id": "S127",
+  "question": "OSTIMTECH social clubs/student communities?",
+  "group": "student_local",
+  "expected_topics": [
+   "student_life"
+  ],
+  "expected_categories": [
+   "student_life"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": null,
+  "evaluation_label": "correct_evidence_supported",
+  "elapsed_wall_seconds": 41.822,
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "ostim technical university social clubs student communities? (Computer Engineering; constraints: ostim)",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S1"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2",
+     "S3",
+     "S4"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "removed_trailing_source_labels",
+     "added_supported_inline_label",
+     "pruned_unverified_sentences"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "OSTİM Technical University has several student communities, including those in the Software, AI & Tech category [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "communities",
+       "osti",
+       "software",
+       "tech",
+       "technical",
+       "university"
+      ]
+     },
+     {
+      "claim": "Specifically, there are student clubs such as Yapay Zeka, Pandora AI, Siber Güvenlik, Software Club, Google Developer Student Clubs, Huawei Student Developers, IEEE, Yönetim Bilişim Sistemleri, and Sosyal Teknoloji [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "are",
+       "bili",
+       "club",
+       "clubs",
+       "developer",
+       "developers",
+       "google",
+       "huawei",
+       "ieee",
+       "netim",
+       "pandora"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 5,
+    "top_similarity_score": 0.6725174188613892,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "ostim technical university social clubs student communities? (Computer Engineering; constraints: ostim)",
+    "query_kind": "standalone_domain_question",
+    "query_normalization": {
+     "original_question": "OSTIMTECH social clubs/student communities?",
+     "normalized_question": "ostim technical university social clubs student communities?",
+     "retrieval_question": "ostim technical university social clubs student communities? (Computer Engineering; constraints: ostim)",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "student_life",
+       "matched_terms": [
+        "clubs",
+        "student communities",
+        "social clubs",
+        "communities"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": null,
+     "constraints": [
+      "ostim"
+     ],
+     "entities": [
+      "student_life",
+      "OSTIM Technical University"
+     ],
+     "referents": [],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 7,
+      "replacements": [
+       {
+        "from": "\\bostimtech\\b",
+        "to": "ostim technical university"
+       }
+      ],
+      "normalized_tokens": [
+       "ostim",
+       "technical",
+       "university",
+       "social",
+       "clubs",
+       "student",
+       "communities"
+      ],
+      "changed": true
+     },
+     "changed": true
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.42,
+    "context_construction_seconds": 0.004,
+    "llm_generation_seconds": 36.56,
+    "initial_llm_generation_seconds": 36.56,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 36.319,
+    "total_seconds": 41.809
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "answer": "OSTİM Technical University has several student communities, including those in the Software, AI & Tech category [S1]. Specifically, there are student clubs such as Yapay Zeka, Pandora AI, Siber Güvenlik, Software Club, Google Developer Student Clubs, Huawei Student Developers, IEEE, Yönetim Bilişim Sistemleri, and Sosyal Teknoloji [S1].",
+  "answer_warnings": [],
+  "sources": [
+   {
+    "source_id": "src_122",
+    "title": "Öğrenci Topluluklarımız",
+    "source_name": "OSTİM Teknik Üniversitesi Sağlık, Kültür ve Spor Daire Başkanlığı",
+    "source_type": "official_student_life_page",
+    "url": "https://sks.ostimteknik.edu.tr/ogrenci-topluluklarimiz",
+    "category": "student_life",
+    "supporting_chunk_ids": [
+     "src_122_chunk_001"
+    ],
+    "evidence_labels": [
+     "S1"
+    ],
+    "best_similarity_score": 0.6725174188613892
+   }
+  ],
+  "retrieved_context": [
+   {
+    "label": "S1",
+    "chunk_id": "src_122_chunk_001",
+    "source_id": "src_122",
+    "title": "Öğrenci Topluluklarımız",
+    "category": "student_life",
+    "similarity_score": 0.6725174188613892,
+    "url": "https://sks.ostimteknik.edu.tr/ogrenci-topluluklarimiz",
+    "passage": "Öğrenci Topluluklarımız | Sağlık Kültür ve Spor Müdürlüğünd Sports OSTİM Technical University student communities (Öğrenci Toplulukları, student clubs and societies): 45 communities in 7 categories. Software, AI & Tech (Yazılım, YZ & Teknoloji) student communities: Yapay Zeka; Pandora AI; Siber Güvenlik; Software Club; Google Developer Student Clubs; Huawei Student Developers; IEEE; Yönetim Bilişim Sistemleri; Sosyal Teknoloji."
+   },
+   {
+    "label": "S2",
+    "chunk_id": "src_059_chunk_001",
+    "source_id": "src_059",
+    "title": "Student Affairs Main Page",
+    "category": "student_life",
+    "similarity_score": 0.671392560005188,
+    "url": "https://oidb.ostimteknik.edu.tr/",
+    "passage": "Title: Student Affairs Main Page Ana Sayfa | Öğrenci İşleri Daire Başkanlığı | Ostim Teknik University Student Affairs Ana Sayfa OBS﻿﻿ Engelsiz﻿﻿ EBYS﻿﻿ Kütüphane﻿﻿ LMS﻿ ﻿ Ücretler Sosyal Medya Ana Sayfa OBS﻿﻿ Engelsiz﻿﻿ EBYS﻿﻿ Kütüphane﻿﻿ Sosyal Medya Department of Student Affairs ACADEMIC CALENDER INTERNATİONAL GUİDES AND FORMS KARPİEM SKS TUITION FEES INFORMATION TEXT ANNOUNCEMENTS Dinamik Snippet'iniz burada görüntülenir... Bu ileti, kullanılacak bir filtre ve şablon sağlamadığınız için görüntülenir. VİEW ALL ENOUNCEMENTS EVENTS VİEW ALL EVENTS"
+   },
+   {
+    "label": "S3",
+    "chunk_id": "src_089_chunk_001",
+    "source_id": "src_089",
+    "title": "Curated note: International Student Admission Directive",
+    "category": "department_information",
+    "similarity_score": 0.5973605513572693,
+    "url": "https://ird.ostimteknik.edu.tr/web/content/198099?download=true&unique=97234f0c84b6ad847cb59728a89f51636f3c7768",
+    "passage": "Title: International Student Admission Directive Source: OSTIM Technical University International Student and Academic Relations Office URL: https://ird.ostimteknik.edu.tr/web/content/198099?download=true&unique=97234f0c84b6ad847cb59728a89f51636f3c7768 Date accessed: 2026-10-13 Curated source note OSTIM Technical University's International Student Admission Directive is an official university document about admission of international students to associate, undergraduate, and graduate programs. It is reliable for procedure context, but applicants must verify current quotas, dates, accepted exams, fees, language rules, and document requirements with the university's current admissions pages."
+   },
+   {
+    "label": "S4",
+    "chunk_id": "src_088_chunk_001",
+    "source_id": "src_088",
+    "title": "Curated note: Program Syllabus: Computer Engineering English Thesis Master's Degree Program",
+    "category": "graduate_studies",
+    "similarity_score": 0.6052871942520142,
+    "url": "https://fbebilgisayar.ostimteknik.edu.tr/program-syllabus",
+    "passage": "Title: Program Syllabus: Computer Engineering English Thesis Master's Degree Program Source: OSTIM Technical University Institute of Science URL: https://fbebilgisayar.ostimteknik.edu.tr/program-syllabus Date accessed: 2026-10-13 Curated source note OSTIM Technical University lists an English thesis-based master's program in Computer Engineering through the Institute of Science. This is an OSTIM-specific graduate-study source and should be used for local MSc questions, while current admissions, fees, and application dates should be checked on official university pages."
+   }
+  ],
+  "previous_turn_setup": null
+ },
+ {
+  "id": "O166",
+  "question": "How do I bake sourdough bread?",
+  "group": "out_of_scope",
+  "expected_topics": [],
+  "expected_categories": [],
+  "expected_behavior": "out_of_scope",
+  "previous_question": null,
+  "evaluation_label": "correct_insufficient_information",
+  "elapsed_wall_seconds": 0.009,
+  "diagnostics": {
+   "query_kind": "out_of_scope_persona_meta",
+   "resolved_question": null,
+   "status": "out_of_scope",
+   "llm_called": false,
+   "evidence_exists_by_eval": false,
+   "citation_valid": true,
+   "citation_metadata": {},
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": []
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "classified_out_of_scope": true,
+    "evidence_sufficient": false,
+    "out_of_scope": true,
+    "query_kind": "out_of_scope_persona_meta",
+    "query_normalization": {
+     "original_question": "How do I bake sourdough bread?",
+     "normalized_question": "How do I bake sourdough bread?",
+     "retrieval_question": null,
+     "kind": "out_of_scope_persona_meta",
+     "topics": [],
+     "task": "assess",
+     "constraints": [],
+     "entities": [],
+     "referents": [],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": true,
+     "confidence": 0.9,
+     "debug": {
+      "token_count": 6,
+      "replacements": [],
+      "normalized_tokens": [
+       "how",
+       "do",
+       "i",
+       "bake",
+       "sourdough",
+       "bread"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {},
+   "model": null,
+   "error": null
+  },
+  "answer": "I am a Computer Engineering student advisor. I can help with Computer Engineering education, curriculum, courses, skills, careers, internships, AI, cybersecurity, programming, and related study paths.",
+  "answer_warnings": [],
+  "sources": [],
+  "retrieved_context": [],
+  "previous_turn_setup": null
+ },
+ {
+  "id": "T186",
+  "question": "Does it include Linux?",
+  "group": "multi_turn",
+  "expected_topics": [
+   "operating_systems",
+   "curriculum"
+  ],
+  "expected_categories": [
+   "curriculum"
+  ],
+  "expected_behavior": "answer_or_gap",
+  "previous_question": "Tell me about the curriculum.",
+  "evaluation_label": "correct_evidence_supported",
+  "elapsed_wall_seconds": 75.862,
+  "diagnostics": {
+   "query_kind": "standalone_domain_question",
+   "resolved_question": "What specific topics related to Linux are covered in the curriculum?",
+   "status": "answered",
+   "llm_called": true,
+   "evidence_exists_by_eval": true,
+   "citation_valid": true,
+   "citation_metadata": {
+    "valid": true,
+    "cited_labels": [
+     "S1",
+     "S2"
+    ],
+    "invalid_labels": [],
+    "available_labels": [
+     "S1",
+     "S2"
+    ],
+    "normalized": true,
+    "repair_actions": [
+     "added_supported_inline_label"
+    ],
+    "reason": null,
+    "retry_attempted": false,
+    "retry_successful": false,
+    "generations_attempted": 1,
+    "retry_failure_reason": null
+   },
+   "support_check": {
+    "all_claims_cited": true,
+    "all_cited_claims_supported_by_overlap": true,
+    "unsupported_claim_count": 0,
+    "uncited_claim_count": 0,
+    "checks": [
+     {
+      "claim": "The curriculum for CENG 303 Operating Systems Design & Construction at OSTIM Technical University covers specific topics related to Linux, including process management, thread scheduling, synchronization, deadlocks, memory management, file systems, input/output systems, and security [S1].",
+      "labels": [
+       "S1"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "ceng",
+       "construction",
+       "covers",
+       "deadlocks",
+       "design",
+       "file",
+       "input",
+       "linux",
+       "management",
+       "memory",
+       "operating"
+      ]
+     },
+     {
+      "claim": "These topics are essential for understanding how to design and construct operating systems, and given the context that most clusters are Linux-based, students will need to gain proficiency in using the Linux command line to navigate and run code [S2].",
+      "labels": [
+       "S2"
+      ],
+      "supported": true,
+      "overlap_terms": [
+       "and",
+       "are",
+       "clusters",
+       "code",
+       "command",
+       "how",
+       "line",
+       "linux",
+       "linux-based",
+       "most",
+       "navigate",
+       "need"
+      ]
+     }
+    ]
+   },
+   "unsupported_generated_answer_reason": null,
+   "retrieval_metadata": {
+    "top_k": 5,
+    "candidate_top_k": 12,
+    "similarity_threshold": 0.5,
+    "results_above_threshold": 4,
+    "top_similarity_score": 0.610024631023407,
+    "evidence_sufficient": true,
+    "out_of_scope": false,
+    "resolved_question": "What specific topics related to Linux are covered in the curriculum?",
+    "query_kind": "standalone_domain_question",
+    "follow_up_rewrite": {
+     "llm_rewrite": "What specific topics related to Linux are covered in the curriculum?",
+     "raw_output": "What specific topics related to Linux are covered in the curriculum?",
+     "error": null,
+     "seconds": 9.347,
+     "rule_based": "Does it include linux? (Computer Engineering)",
+     "used": "llm"
+    },
+    "query_normalization": {
+     "original_question": "Does it include Linux?",
+     "normalized_question": "Does it include linux?",
+     "retrieval_question": "Does it include linux? (Computer Engineering)",
+     "kind": "standalone_domain_question",
+     "topics": [
+      {
+       "name": "operating_systems",
+       "matched_terms": [
+        "linux"
+       ],
+       "confidence": 1.0
+      }
+     ],
+     "task": "assess",
+     "constraints": [],
+     "entities": [
+      "operating_systems"
+     ],
+     "referents": [
+      "it"
+     ],
+     "requires_context": false,
+     "requires_clarification": false,
+     "is_source_follow_up": false,
+     "is_persona_meta": false,
+     "is_out_of_domain": false,
+     "confidence": 0.92,
+     "debug": {
+      "token_count": 4,
+      "replacements": [],
+      "normalized_tokens": [
+       "does",
+       "it",
+       "include",
+       "linux"
+      ],
+      "changed": false
+     },
+     "changed": false
+    }
+   },
+   "timing": {
+    "retrieval_seconds": 0.206,
+    "context_construction_seconds": 0.005,
+    "llm_generation_seconds": 26.837,
+    "initial_llm_generation_seconds": 26.837,
+    "retry_llm_generation_seconds": 0.0,
+    "llm_reported_total_duration_seconds": 23.585,
+    "total_seconds": 29.05
+   },
+   "model": "qwen2.5:3b",
+   "error": null
+  },
+  "answer": "The curriculum for CENG 303 Operating Systems Design & Construction at OSTIM Technical University covers specific topics related to Linux, including process management, thread scheduling, synchronization, deadlocks, memory management, file systems, input/output systems, and security [S1]. These topics are essential for understanding how to design and construct operating systems, and given the context that most clusters are Linux-based, students will need to gain proficiency in using the Linux command line to navigate and run code [S2].",
+  "answer_warnings": [],
+  "sources": [
+   {
+    "source_id": "src_130",
+    "title": "Course Contents: CENG 303 Operating Systems Design & Construction (Linux or Windows)",
+    "source_name": "OSTIM Technical University - Department of Computer Engineering (English)",
+    "source_type": "course_descriptions",
+    "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+    "category": "curriculum",
+    "supporting_chunk_ids": [
+     "src_130_chunk_001"
+    ],
+    "evidence_labels": [
+     "S1"
+    ],
+    "best_similarity_score": 0.610024631023407
+   },
+   {
+    "source_id": "src_069",
+    "title": "Computing Competencies for Undergraduate Data Science Curricula",
+    "source_name": "Association for Computing Machinery Data Science Task Force",
+    "source_type": "professional_curriculum_report",
+    "url": "https://www.acm.org/binaries/content/assets/education/curricula-recommendations/dstf_ccdsc2021.pdf",
+    "category": "specializations",
+    "supporting_chunk_ids": [
+     "src_069_chunk_085"
+    ],
+    "evidence_labels": [
+     "S2"
+    ],
+    "best_similarity_score": 0.5703573822975159
+   }
+  ],
+  "retrieved_context": [
+   {
+    "label": "S1",
+    "chunk_id": "src_130_chunk_001",
+    "source_id": "src_130",
+    "title": "Course Contents: CENG 303 Operating Systems Design & Construction (Linux or Windows)",
+    "category": "curriculum",
+    "similarity_score": 0.610024631023407,
+    "url": "https://mfcs.ostimteknik.edu.tr/course-contents",
+    "passage": "Course Contents: CENG 303 Operating Systems Design & Construction (Linux or Windows) CENG 303 Operating Systems Design & Construction This course provides a comprehensive introduction to the fundamental concepts, principles, and design of modern operating systems. The course covers key topics such as process management, thread scheduling, synchronization, deadlocks, memory management, file systems, input/output systems, and security."
+   },
+   {
+    "label": "S2",
+    "chunk_id": "src_069_chunk_085",
+    "source_id": "src_069",
+    "title": "Computing Competencies for Undergraduate Data Science Curricula",
+    "category": "specializations",
+    "similarity_score": 0.5703573822975159,
+    "url": "https://www.acm.org/binaries/content/assets/education/curricula-recommendations/dstf_ccdsc2021.pdf",
+    "passage": "Running on a single server is typically not sufficient. Most clusters are Linux-based. Accordingly, students will need access to Linux command line training to learn how to navigate and run code f rom the command line."
+   }
+  ],
+  "previous_turn_setup": {
+   "question": "Tell me about the curriculum.",
+   "status": "answered",
+   "answer": "The curriculum is outlined in detail in the report, which is available on the Association for Computing Machinery and IEEE Computer Society's website [S1] [S2] [S3]."
+  }
+ }
+]

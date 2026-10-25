@@ -1,0 +1,300 @@
+{
+ "answer_cases": {
+  "n": 116,
+  "correct_evidence_supported": 42,
+  "correct_insufficient_information": 36,
+  "incorrect_refusal_evidence_exists": 22,
+  "unsupported_incorrect_or_misleading": 16,
+  "runtime_error": 0,
+  "expected_source_retrieved": 56,
+  "mean_seconds": 36.3
+ },
+ "insufficient_cases": {
+  "n": 4,
+  "correct_evidence_supported": 0,
+  "correct_insufficient_information": 2,
+  "incorrect_refusal_evidence_exists": 0,
+  "unsupported_incorrect_or_misleading": 2,
+  "runtime_error": 0,
+  "expected_source_retrieved": 0,
+  "mean_seconds": 32.6
+ },
+ "by_topic_answer_cases": {
+  "academic_curriculum": {
+   "n": 10,
+   "correct_evidence_supported": 5,
+   "correct_insufficient_information": 3,
+   "incorrect_refusal_evidence_exists": 2,
+   "unsupported_incorrect_or_misleading": 0,
+   "runtime_error": 0,
+   "expected_source_retrieved": 4,
+   "mean_seconds": 38.4
+  },
+  "artificial_intelligence": {
+   "n": 10,
+   "correct_evidence_supported": 5,
+   "correct_insufficient_information": 3,
+   "incorrect_refusal_evidence_exists": 0,
+   "unsupported_incorrect_or_misleading": 2,
+   "runtime_error": 0,
+   "expected_source_retrieved": 6,
+   "mean_seconds": 37.7
+  },
+  "career_opportunities": {
+   "n": 9,
+   "correct_evidence_supported": 3,
+   "correct_insufficient_information": 1,
+   "incorrect_refusal_evidence_exists": 3,
+   "unsupported_incorrect_or_misleading": 2,
+   "runtime_error": 0,
+   "expected_source_retrieved": 7,
+   "mean_seconds": 43.9
+  },
+  "common_concerns": {
+   "n": 10,
+   "correct_evidence_supported": 3,
+   "correct_insufficient_information": 3,
+   "incorrect_refusal_evidence_exists": 3,
+   "unsupported_incorrect_or_misleading": 1,
+   "runtime_error": 0,
+   "expected_source_retrieved": 6,
+   "mean_seconds": 41.2
+  },
+  "department_itself": {
+   "n": 10,
+   "correct_evidence_supported": 1,
+   "correct_insufficient_information": 3,
+   "incorrect_refusal_evidence_exists": 4,
+   "unsupported_incorrect_or_misleading": 2,
+   "runtime_error": 0,
+   "expected_source_retrieved": 4,
+   "mean_seconds": 58.8
+  },
+  "employment_prospects": {
+   "n": 9,
+   "correct_evidence_supported": 3,
+   "correct_insufficient_information": 5,
+   "incorrect_refusal_evidence_exists": 1,
+   "unsupported_incorrect_or_misleading": 0,
+   "runtime_error": 0,
+   "expected_source_retrieved": 4,
+   "mean_seconds": 26.1
+  },
+  "future_technologies": {
+   "n": 9,
+   "correct_evidence_supported": 3,
+   "correct_insufficient_information": 6,
+   "incorrect_refusal_evidence_exists": 0,
+   "unsupported_incorrect_or_misleading": 0,
+   "runtime_error": 0,
+   "expected_source_retrieved": 2,
+   "mean_seconds": 25.5
+  },
+  "graduate_studies": {
+   "n": 10,
+   "correct_evidence_supported": 5,
+   "correct_insufficient_information": 3,
+   "incorrect_refusal_evidence_exists": 1,
+   "unsupported_incorrect_or_misleading": 1,
+   "runtime_error": 0,
+   "expected_source_retrieved": 4,
+   "mean_seconds": 28.6
+  },
+  "internships": {
+   "n": 10,
+   "correct_evidence_supported": 4,
+   "correct_insufficient_information": 2,
+   "incorrect_refusal_evidence_exists": 4,
+   "unsupported_incorrect_or_misleading": 0,
+   "runtime_error": 0,
+   "expected_source_retrieved": 6,
+   "mean_seconds": 46.1
+  },
+  "programming": {
+   "n": 10,
+   "correct_evidence_supported": 4,
+   "correct_insufficient_information": 4,
+   "incorrect_refusal_evidence_exists": 0,
+   "unsupported_incorrect_or_misleading": 2,
+   "runtime_error": 0,
+   "expected_source_retrieved": 3,
+   "mean_seconds": 29.0
+  },
+  "specialization_areas": {
+   "n": 10,
+   "correct_evidence_supported": 5,
+   "correct_insufficient_information": 1,
+   "incorrect_refusal_evidence_exists": 0,
+   "unsupported_incorrect_or_misleading": 4,
+   "runtime_error": 0,
+   "expected_source_retrieved": 7,
+   "mean_seconds": 36.3
+  },
+  "student_life": {
+   "n": 9,
+   "correct_evidence_supported": 1,
+   "correct_insufficient_information": 2,
+   "incorrect_refusal_evidence_exists": 4,
+   "unsupported_incorrect_or_misleading": 2,
+   "runtime_error": 0,
+   "expected_source_retrieved": 3,
+   "mean_seconds": 20.7
+  }
+ },
+ "wrongly_refused": [
+  {
+   "id": "unseen_department_itself_004",
+   "topic": "department_itself",
+   "question": "Who in OSTIM CENG could I email about an interest in computer networks?",
+   "gate": "generated-answer topic check: generated answer did not address the question's distinctive topic terms",
+   "expected_source_retrieved": false
+  },
+  {
+   "id": "unseen_department_itself_008",
+   "topic": "department_itself",
+   "question": "What score would let me skip OSTIM's English prep school?",
+   "gate": "citation / claim validation after generation: unsupported claim could not be matched to retrieved evidence",
+   "expected_source_retrieved": true
+  },
+  {
+   "id": "unseen_department_itself_009",
+   "topic": "department_itself",
+   "question": "Where are the CENG lecturers' offices at OSTIM if I want to go ask a question?",
+   "gate": "citation / claim validation after generation: unsupported claim could not be matched to retrieved evidence",
+   "expected_source_retrieved": false
+  },
+  {
+   "id": "unseen_department_itself_010",
+   "topic": "department_itself",
+   "question": "If I come up with a product idea at OSTIM, is there somewhere on campus to turn it into a prototype?",
+   "gate": "citation / claim validation after generation: unsupported claim could not be matched to retrieved evidence",
+   "expected_source_retrieved": true
+  },
+  {
+   "id": "unseen_academic_curriculum_002",
+   "topic": "academic_curriculum",
+   "question": "At OSTIM, does doing a minor give me another degree like a double major does?",
+   "gate": "citation / claim validation after generation: unsupported claim could not be matched to retrieved evidence",
+   "expected_source_retrieved": true
+  },
+  {
+   "id": "unseen_academic_curriculum_005",
+   "topic": "academic_curriculum",
+   "question": "Do first-year students at OSTIM get physics lab sessions, or is physics all lectures?",
+   "gate": "answerability guard (before the LLM): retrieved evidence does not compare the requested learning order or prerequisites",
+   "expected_source_retrieved": false
+  },
+  {
+   "id": "unseen_student_life_001",
+   "topic": "student_life",
+   "question": "Is there anywhere quiet to study at OSTIM when home is too noisy?",
+   "gate": "answerability guard (before the LLM): retrieved evidence has too little overlap with the question terms: ['anywhere', 'home', 'noisy', 'quiet', 'study', 'too']",
+   "expected_source_retrieved": true
+  },
+  {
+   "id": "unseen_student_life_004",
+   "topic": "student_life",
+   "question": "Do student clubs have their own spaces in the Cezeri center?",
+   "gate": "answerability guard (before the LLM): retrieved evidence has too little overlap with the question terms: ['center', 'cezeri', 'own', 'spaces', 'their']",
+   "expected_source_retrieved": false
+  },
+  {
+   "id": "unseen_student_life_008",
+   "topic": "student_life",
+   "question": "If I get really homesick at OSTIM, how do I book a student counseling session?",
+   "gate": "answerability guard (before the LLM): retrieved evidence has too little overlap with the question terms: ['book', 'counseling', 'get', 'homesick', 'really', 'session']",
+   "expected_source_retrieved": false
+  },
+  {
+   "id": "unseen_student_life_009",
+   "topic": "student_life",
+   "question": "Are there cafes or places to sit with friends on the OSTIM campus?",
+   "gate": "answerability guard (before the LLM): retrieved evidence has too little overlap with the question terms: ['cafes', 'campus', 'friends', 'places', 'sit']",
+   "expected_source_retrieved": true
+  },
+  {
+   "id": "unseen_career_opportunities_002",
+   "topic": "career_opportunities",
+   "question": "Are there software jobs where figuring out what users need is a big part of the work?",
+   "gate": "generated-answer topic check: generated answer did not address the question's distinctive topic terms",
+   "expected_source_retrieved": true
+  },
+  {
+   "id": "unseen_career_opportunities_004",
+   "topic": "career_opportunities",
+   "question": "Could a CENG graduate work on computers inside cars instead of desktop PCs?",
+   "gate": "citation / claim validation after generation: unsupported claim could not be matched to retrieved evidence",
+   "expected_source_retrieved": true
+  },
+  {
+   "id": "unseen_career_opportunities_005",
+   "topic": "career_opportunities",
+   "question": "How does Cezeri support a student idea between the first sketch and starting a company?",
+   "gate": "generated-answer topic check: generated answer did not address the question's distinctive topic terms",
+   "expected_source_retrieved": true
+  },
+  {
+   "id": "unseen_internships_002",
+   "topic": "internships",
+   "question": "In OSTIM's 2025-26 Erasmus call, did students have to find their own internship company?",
+   "gate": "citation / claim validation after generation: unsupported claim could not be matched to retrieved evidence",
+   "expected_source_retrieved": true
+  },
+  {
+   "id": "unseen_internships_003",
+   "topic": "internships",
+   "question": "Was a company acceptance letter compulsory when applying for OSTIM's 2025-26 Erasmus internship?",
+   "gate": "generated-answer topic check: generated answer did not address the question's distinctive topic terms",
+   "expected_source_retrieved": true
+  },
+  {
+   "id": "unseen_internships_005",
+   "topic": "internships",
+   "question": "Could a prep exemption exam result be used for OSTIM's 2025-26 Erasmus internship language requirement?",
+   "gate": "citation / claim validation after generation: unsupported claim could not be matched to retrieved evidence",
+   "expected_source_retrieved": true
+  },
+  {
+   "id": "unseen_internships_008",
+   "topic": "internships",
+   "question": "Exactly how many compulsory summer internship days do OSTIM CENG students have to finish?",
+   "gate": "citation / claim validation after generation: unsupported claim could not be matched to retrieved evidence",
+   "expected_source_retrieved": false
+  },
+  {
+   "id": "unseen_graduate_studies_007",
+   "topic": "graduate_studies",
+   "question": "What ALES score would I need for OSTIM's CENG master's?",
+   "gate": "generated-answer topic check: generated answer did not address the question's distinctive topic terms",
+   "expected_source_retrieved": false
+  },
+  {
+   "id": "unseen_employment_prospects_002",
+   "topic": "employment_prospects",
+   "question": "Would I need to get my diploma or transcript translated before applying for work abroad?",
+   "gate": "generated-answer topic check: generated answer did not address the question's distinctive topic terms",
+   "expected_source_retrieved": true
+  },
+  {
+   "id": "unseen_common_concerns_003",
+   "topic": "common_concerns",
+   "question": "If I fail OSTIM's English prep year, what exactly happens to my place on the degree?",
+   "gate": "citation / claim validation after generation: unsupported claim could not be matched to retrieved evidence",
+   "expected_source_retrieved": true
+  },
+  {
+   "id": "unseen_common_concerns_004",
+   "topic": "common_concerns",
+   "question": "I have dyslexia and timed exams worry me; what extra-time arrangements could I get at OSTIM?",
+   "gate": "generated-answer topic check: generated answer did not address the question's distinctive topic terms",
+   "expected_source_retrieved": true
+  },
+  {
+   "id": "unseen_common_concerns_009",
+   "topic": "common_concerns",
+   "question": "If my first semester feels too much, can I ask my OSTIM advisor about taking fewer credits?",
+   "gate": "citation / claim validation after generation: unsupported claim could not be matched to retrieved evidence",
+   "expected_source_retrieved": true
+  }
+ ]
+}
