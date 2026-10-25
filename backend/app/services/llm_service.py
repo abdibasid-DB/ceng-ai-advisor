@@ -22,6 +22,8 @@ from ..core.llm_config import (
     LLM_NUM_PREDICT,
     LLM_KEEP_ALIVE,
     LLM_REQUEST_TIMEOUT_SECONDS,
+    LLM_RESET_PROMPT_CACHE,
+    LLM_SEED,
     LLM_TEMPERATURE,
     OLLAMA_BASE_URL,
     OLLAMA_GENERATE_ENDPOINT,
@@ -80,10 +82,12 @@ class LocalLLMService:
         base_url: str = OLLAMA_BASE_URL,
         model: str = SELECTED_LLM_MODEL,
         timeout_seconds: int = LLM_REQUEST_TIMEOUT_SECONDS,
+        reset_prompt_cache: bool = LLM_RESET_PROMPT_CACHE,
     ) -> None:
         self.base_url = base_url.rstrip("/")
         self.model = model
         self.timeout_seconds = timeout_seconds
+        self.reset_prompt_cache = reset_prompt_cache
         self._model_available_until = 0.0
 
     def version(self) -> dict[str, Any]:
@@ -106,6 +110,7 @@ class LocalLLMService:
         prompt: str,
         *,
         temperature: float = LLM_TEMPERATURE,
+        seed: int = LLM_SEED,
         num_ctx: int = LLM_NUM_CTX,
         num_predict: int = LLM_NUM_PREDICT,
         keep_alive: str | None = LLM_KEEP_ALIVE,
@@ -117,7 +122,7 @@ class LocalLLMService:
         parts: list[str] = []
         final_chunk: LLMStreamChunk | None = None
         for chunk in self.generate_stream(
-            prompt, temperature=temperature, num_ctx=num_ctx,
+            prompt, temperature=temperature, seed=seed, num_ctx=num_ctx,
             num_predict=num_predict, keep_alive=keep_alive,
         ):
             parts.append(chunk.text)
@@ -143,6 +148,7 @@ class LocalLLMService:
         prompt: str,
         *,
         temperature: float = LLM_TEMPERATURE,
+        seed: int = LLM_SEED,
         num_ctx: int = LLM_NUM_CTX,
         num_predict: int = LLM_NUM_PREDICT,
         keep_alive: str | None = LLM_KEEP_ALIVE,
@@ -155,16 +161,16 @@ class LocalLLMService:
                 f"Local Ollama model '{self.model}' is not available. Run: ollama pull {self.model}"
             )
 
+        options = {"temperature": temperature, "seed": seed, "num_ctx": num_ctx}
+        if self.reset_prompt_cache:
+            self._reset_prompt_cache(options, keep_alive)
+
         payload = {
             "model": self.model,
             "prompt": prompt,
             "stream": True,
             "keep_alive": keep_alive,
-            "options": {
-                "temperature": temperature,
-                "num_ctx": num_ctx,
-                "num_predict": num_predict,
-            },
+            "options": {**options, "num_predict": num_predict},
         }
         url = f"{self.base_url}{OLLAMA_GENERATE_ENDPOINT}"
         data = json.dumps(payload).encode("utf-8")
@@ -234,6 +240,20 @@ class LocalLLMService:
             raise OllamaConnectionError(f"Could not connect to local Ollama at {self.base_url}: {exc.reason}") from exc
         except (http.client.HTTPException, ConnectionError) as exc:
             raise LocalLLMError(f"Ollama stream was interrupted: {exc}") from exc
+
+    def _reset_prompt_cache(self, options: dict[str, Any], keep_alive: str | None) -> None:
+        """Generate one token from "." so every prompt starts from the same cache.
+
+        The options match the real request; a different num_ctx would reload the model.
+        A failure here is left to the real request to report.
+        """
+        try:
+            self._request_json("POST", OLLAMA_GENERATE_ENDPOINT, {
+                "model": self.model, "prompt": ".", "stream": False, "keep_alive": keep_alive,
+                "options": {**options, "num_predict": 1},
+            })
+        except LocalLLMError:
+            pass
 
     def _request_json(self, method: str, endpoint: str, payload: dict[str, Any] | None = None) -> dict[str, Any]:
         url = f"{self.base_url}{endpoint}"

@@ -40,6 +40,12 @@ class FakeHTTPResponse:
 
 
 class LLMServiceTests(unittest.TestCase):
+    def setUp(self):
+        # The cache-reset request is tested on its own; the other tests mock one generate request.
+        patcher = patch.object(LocalLLMService, "_reset_prompt_cache")
+        self.reset_prompt_cache = patcher.start()
+        self.addCleanup(patcher.stop)
+
     def test_config_uses_local_ollama_without_api_key(self):
         self.assertEqual(llm_config.OLLAMA_BASE_URL, "http://127.0.0.1:11434")
         self.assertEqual(llm_config.SELECTED_LLM_MODEL, "qwen2.5:3b")
@@ -93,6 +99,27 @@ class LLMServiceTests(unittest.TestCase):
         self.assertEqual(response.text, "grounded answer")
         payload = json.loads(mock_urlopen.call_args_list[-1].args[0].data)
         self.assertTrue(payload["stream"])
+        # Reproducible answers: temperature 0 and a fixed seed by default.
+        self.assertEqual(payload["options"]["temperature"], 0)
+        self.assertEqual(payload["options"]["seed"], 42)
+        self.reset_prompt_cache.assert_called_once()
+
+    @patch("backend.app.services.llm_service.urllib.request.urlopen")
+    def test_prompt_cache_reset_uses_the_same_options_and_one_token(self, mock_urlopen):
+        patch.stopall()  # use the real reset request
+        mock_urlopen.side_effect = [
+            FakeHTTPResponse({"models": [{"name": "qwen2.5:3b"}]}),
+            FakeHTTPResponse({"model": "qwen2.5:3b", "response": "", "done": True}),
+            FakeHTTPResponse([{"model": "qwen2.5:3b", "response": "answer", "done": True}]),
+        ]
+        LocalLLMService().generate("Answer from evidence", num_ctx=2048)
+        reset = json.loads(mock_urlopen.call_args_list[1].args[0].data)
+        real = json.loads(mock_urlopen.call_args_list[2].args[0].data)
+        self.assertEqual(reset["prompt"], ".")
+        self.assertEqual(reset["options"]["num_predict"], 1)
+        self.assertEqual({k: v for k, v in reset["options"].items() if k != "num_predict"},
+                         {k: v for k, v in real["options"].items() if k != "num_predict"})
+        self.assertEqual(real["prompt"], "Answer from evidence")
 
     @patch("backend.app.services.llm_service.urllib.request.urlopen")
     def test_generation_deadline_applies_between_chunks(self, mock_urlopen):

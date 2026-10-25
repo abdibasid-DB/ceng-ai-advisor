@@ -51,6 +51,7 @@ class FollowUpRewriterTests(unittest.TestCase):
         rewritten = apply_follow_up_rewrite(resolution, [PREVIOUS], llm, enabled=True)
         self.assertEqual(rewritten.resolved_question, "What hardware projects should a Computer Engineering student build?")
         self.assertEqual(llm.kwargs[0]["temperature"], 0.0)
+        self.assertEqual(llm.kwargs[0]["seed"], 42)
         self.assertEqual(llm.kwargs[0]["num_predict"], 60)
         metadata = attach_resolution_metadata({"retrieval_metadata": {}}, rewritten)["retrieval_metadata"]["follow_up_rewrite"]
         self.assertEqual(metadata["used"], "llm")

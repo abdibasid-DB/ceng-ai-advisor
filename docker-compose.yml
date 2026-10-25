@@ -4,6 +4,8 @@ services:
     restart: unless-stopped
     environment:
       OLLAMA_HOST: 0.0.0.0:11434
+      # Reproducible answers: no host-memory prompt cache in llama-server.
+      LLAMA_ARG_CACHE_RAM: "0"
     volumes:
       - ollama_models:/root/.ollama
     entrypoint: ["/bin/sh", "-c"]

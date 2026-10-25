@@ -9,7 +9,18 @@ OLLAMA_VERSION_ENDPOINT = "/api/version"
 
 SELECTED_LLM_MODEL = os.environ.get("OLLAMA_MODEL", "qwen2.5:3b")
 LLM_REQUEST_TIMEOUT_SECONDS = 120
-LLM_TEMPERATURE = 0.2
+# Temperature 0 and a fixed seed make answers reproducible: the same question
+# and retrieved evidence give the same answer on every run.
+LLM_TEMPERATURE = float(os.environ.get("LLM_TEMPERATURE", "0"))
+LLM_SEED = int(os.environ.get("LLM_SEED", "42"))
+# Ollama reuses the cached prompt prefix of the previous request; how much it
+# reuses changes the floating-point results of long prompts, so the same
+# prompt gave different answers depending on what ran before. A one-token
+# request before each generation leaves the same cache state every time.
+# Ollama's llama-server also keeps a host-memory cache of recent prompts and
+# restores the closest one, which the client cannot switch off; for identical
+# answers start the Ollama server with LLAMA_ARG_CACHE_RAM=0.
+LLM_RESET_PROMPT_CACHE = os.environ.get("LLM_RESET_PROMPT_CACHE", "1") != "0"
 LLM_NUM_CTX = 4096
 LLM_NUM_PREDICT = 256
 LLM_KEEP_ALIVE = "2h"

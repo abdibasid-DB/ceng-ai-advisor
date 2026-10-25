@@ -12,7 +12,7 @@ import re
 import time
 from typing import Any, Protocol
 
-from ..core.llm_config import FOLLOW_UP_REWRITE_NUM_CTX, FOLLOW_UP_REWRITE_NUM_PREDICT
+from ..core.llm_config import FOLLOW_UP_REWRITE_NUM_CTX, FOLLOW_UP_REWRITE_NUM_PREDICT, LLM_SEED
 
 REFERENCE_RE = re.compile(r"\b(?:it|that|those|what about|the first one)\b", re.IGNORECASE)
 PREVIOUS_ANSWER_CHARACTERS = 400
@@ -119,6 +119,7 @@ def rewrite_follow_up(llm_service: Any, turns: list[Turn], question: str) -> tup
         response = llm_service.generate(
             build_rewrite_prompt(turns, question),
             temperature=0.0,
+            seed=LLM_SEED,
             num_ctx=FOLLOW_UP_REWRITE_NUM_CTX,
             num_predict=FOLLOW_UP_REWRITE_NUM_PREDICT,
         )
