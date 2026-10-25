@@ -1,6 +1,39 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
+import rehypeHighlight from "rehype-highlight";
 import SourceCard from "./SourceCard.jsx";
+
+const REVEAL_DURATION = 1600;
+
+// Only messages created by onFinal carry a reveal timestamp. Stored history
+// renders immediately, and raw model tokens never reach this component.
+function useFinalAnswerReveal(message) {
+  const [reducedMotion, setReducedMotion] = useState(() => window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+  const [progress, setProgress] = useState(() => message.revealStartedAt
+    ? Math.min(1, (Date.now() - message.revealStartedAt) / REVEAL_DURATION) : 1);
+  useEffect(() => {
+    const media = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const update = () => setReducedMotion(media.matches);
+    media.addEventListener("change", update);
+    return () => media.removeEventListener("change", update);
+  }, []);
+  useEffect(() => {
+    if (reducedMotion) { setProgress(1); return; }
+    if (!message.revealStartedAt || progress >= 1) return;
+    let frame;
+    function tick() {
+      const next = Math.min(1, (Date.now() - message.revealStartedAt) / REVEAL_DURATION);
+      setProgress(next);
+      if (next < 1) frame = requestAnimationFrame(tick);
+    }
+    frame = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(frame);
+  }, [message.revealStartedAt, reducedMotion, progress >= 1]);
+  const animating = !reducedMotion && progress < 1;
+  const characters = Array.from(message.content || "");
+  return { animating, text: animating ? characters.slice(0, Math.floor(characters.length * progress)).join("") : message.content || "",
+    skip: () => setProgress(1) };
+}
 
 // Transform Markdown text nodes only, leaving code and existing links intact.
 function citationLinks(options) {
@@ -42,6 +75,7 @@ function statusTitle(status) {
 function ChatMessage({ message, sourceRegistry = [], onExampleQuestion, isLoading = false }) {
   const [copyStatus, setCopyStatus] = useState("");
   const isUser = message.role === "user";
+  const reveal = useFinalAnswerReveal(message);
   const title = !isUser ? statusTitle(message.status) : null;
   const showSources = !isUser && message.status === "answered" && message.sources?.length > 0;
   const targets = {};
@@ -62,9 +96,13 @@ function ChatMessage({ message, sourceRegistry = [], onExampleQuestion, isLoadin
     <div className={`message-row ${isUser ? "user-row" : "assistant-row"}`}>
       <article className={`message ${isUser ? "user-message" : "assistant-message"} status-${message.status || "plain"}`}>
         {!isUser && title ? <p className="message-status">{title}</p> : null}
-        <div className="message-text">
+        {reveal.animating && !isUser ? <button type="button" className="skip-animation secondary-button" onClick={reveal.skip}>Skip animation</button> : null}
+        {reveal.animating && !isUser ? <span className="sr-only">{message.content}</span> : null}
+        <div className="message-text" data-animating={reveal.animating && !isUser}
+          aria-hidden={reveal.animating && !isUser ? true : undefined}
+          onClick={reveal.animating ? reveal.skip : undefined}>
           {isUser ? <p>{message.content}</p> : (
-            <ReactMarkdown remarkPlugins={[[citationLinks, { targets }]]} components={{
+            <ReactMarkdown remarkPlugins={[[citationLinks, { targets }]]} rehypePlugins={[[rehypeHighlight, { detect: false }]]} components={{
               a: ({ href, children }) => {
                 const isCitation = Object.values(targets).some((target) => href === `#${target}`);
                 return isCitation ? (
@@ -72,12 +110,12 @@ function ChatMessage({ message, sourceRegistry = [], onExampleQuestion, isLoadin
                     onClick={(event) => {
                       event.preventDefault();
                       const card = document.getElementById(href.slice(1));
-                      card?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+                      card?.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth", block: "nearest" });
                       card?.focus({ preventScroll: true });
                     }}>{children}</a>
                 ) : <a href={href} target="_blank" rel="noopener noreferrer">{children}</a>;
               },
-            }}>{message.content || ""}</ReactMarkdown>
+            }}>{reveal.text}</ReactMarkdown>
           )}
         </div>
         {!isUser && message.status === "help" && message.exampleQuestions?.length > 0 ? (
