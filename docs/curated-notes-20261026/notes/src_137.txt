@@ -1,0 +1,18 @@
+Curated English note of src_134: AI impacts in BLS employment projections (U.S. Bureau of Labor Statistics, 2025)
+
+This is a curated note of src_134, the U.S. Bureau of Labor Statistics (BLS) article "AI impacts in BLS employment projections" (The Economics Daily, March 11, 2025). Sentences are quoted exactly from the article. Source URL: https://www.bls.gov/opub/ted/2025/ai-impacts-in-bls-employment-projections.htm
+
+"Over the 2023–33 employment projections period, AI is expected to primarily affect occupations whose core tasks can be most easily replicated by Generative AI in its current form. However, other jobs, including some in the computer, legal, business and financial, and architecture and engineering occupational groups are also potentially susceptible to AI-related impacts, although the employment trajectories of these occupations remain uncertain."
+
+"Workers in many computer-related occupations use AI in their day-to-day work. Programming is one of many work activities in which AI is well suited to augment worker efforts and increase productivity. Software developers can use AI to develop, test, and document code; improve data quality; and build user stories that articulate how a software feature will provide value. However, AI may also support demand for computer occupations, as software developers may be needed to develop AI-based business solutions and maintain AI systems, and database administrators and architects are expected to be needed to set up and maintain more complex data infrastructure."
+
+"BLS projects employment of software developers to increase 17.9 percent between 2023 and 2033, much faster than the average for all occupations (4.0 percent)."
+
+"Underlying demand for engineering services is expected to remain strong, resulting in employment growth for most engineering occupations over the 2023–33 decade." "Employment is expected to grow for electrical and electronics engineers (9.1 percent), electrical and electronic engineering technologists and technicians (3.0 percent), and computer hardware engineers (7.2 percent)"
+
+From the article's table "Employment projections for selected occupations susceptible to potential artificial intelligence impacts, 2023–33":
+Software developers: percent change 2023–33 17.9; employment 2023 1,692,100; projected employment 2033 1,995,700.
+Computer occupations: percent change 2023–33 11.7; employment 2023 5,021,800; projected employment 2033 5,608,500.
+Total, all occupations: percent change 2023–33 4.0.
+
+Scope: the figures are United States projections; the article gives no figures for Türkiye.

@@ -1,0 +1,19 @@
+Curated English note of src_135: Artificial intelligence, information technology, and employment, 2024–34 (U.S. Bureau of Labor Statistics, 2026)
+
+This is a curated note of src_135, the U.S. Bureau of Labor Statistics (BLS) article "Artificial intelligence, information technology, and employment, 2024–34" (The Economics Daily, July 16, 2026). Sentences are quoted exactly from the article. Source URL: https://www.bls.gov/opub/ted/2026/artificial-intelligence-information-technology-and-employment-2024-34.htm
+
+"Increasing use of information technology (IT), including artificial intelligence (AI), will boost demand for workers in some occupations over the 2024–34 decade, while other occupations may see their numbers decrease. Adoption of AI technologies, including generative AI tools, is expected to fuel strong job growth among computer and mathematical occupations in coming years. Employment of data scientists is projected to increase 33.5 percent between 2024 and 2034."
+
+"Information security analysts, actuaries, operations research analysts, and computer and information research scientists are projected to see job growth of at least 19.0 percent between 2024 and 2034. The number of software developers is projected to grow by 15.8 percent over this period, though this represents an increase of over 267,000 jobs, the largest increase in the number of jobs among these occupations."
+
+"Conversely, the growing adoption of AI technology and resulting productivity gains are expected to dampen labor demand in a variety of fields. As the integration of AI technologies into workflows expands, various types of office and administrative support workers are expected to see additional efficiency gains."
+
+From the article's chart "Employment in selected artificial intelligence- and information technology-related occupations, projected change, 2024–2034":
+Data scientists: percent change in employment 33.5; change in employment 82,500.
+Information security analysts: percent change 28.5; change 52,100.
+Computer and information research scientists: percent change 19.7; change 7,900.
+Software developers: percent change 15.8; change 267,700.
+Total employment, all occupations: percent change 3.1.
+Customer service representatives: percent change -5.5; change -153,700.
+
+Scope: the figures are United States projections; the article gives no figures for Türkiye.

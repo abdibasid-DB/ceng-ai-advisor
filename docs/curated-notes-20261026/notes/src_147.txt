@@ -1,0 +1,15 @@
+Curated English note of src_114: OSTİM Technical University computer laboratories, rules of use
+
+This is a curated English note of src_114, the OSTİM Teknik Üniversitesi "Bilgisayar Laboratuvarları Kullanım Usul ve Esasları" (Procedures and Principles for the Use of Computer Laboratories; Senate 23.02.2026 no. 165, Board of Trustees 22.04.2026 no. 92). It is a faithful English translation of the relevant articles, not an official translation; the Turkish terms are in brackets. Source URL: https://ostimteknik.edu.tr/web/content/472170?unique=a80c111bde16676f4d128b59ba15a8f9b9bf57e2&download=false
+
+Scope (Article 2): the rules cover all computer laboratories (bilgisayar laboratuvarları) of the university's faculties, schools, vocational school and institutes.
+
+Use (Article 4): computer laboratories are used only for education and academic activities. Their use is planned by the units; use outside the plan needs the approval of the unit head. When not in use, the laboratories are kept closed and locked, and unauthorised access is not allowed.
+
+Technical support (Article 5): the Information Management Department (Bilgi Yönetimi Daire Başkanlığı, BYDB) prepares and updates the standard system images, manages licensed software centrally, carries out security updates and infrastructure services, and provides technical support for faults and incidents.
+
+Daily operation (Articles 6 to 8): each unit appoints a faculty representative and assistant students (asistan öğrenci) and coordinates the laboratory technicians. Assistant students check the laboratory before and after classes, record missing or damaged equipment and report faults through the BYDB support system. Laboratory technicians ensure the technical readiness of the laboratories before classes and exams.
+
+Software (Article 10): individual or unauthorised software cannot be installed on laboratory computers. Software requests go through BYDB, and software is installed only after licence and security compliance are ensured.
+
+Scope note: the document does not give the number of laboratories, their equipment or their opening hours.

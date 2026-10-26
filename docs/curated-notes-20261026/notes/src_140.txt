@@ -1,0 +1,19 @@
+Curated English note of src_133: Stack Overflow 2025 Developer Survey, developers' views on AI and their jobs
+
+This is a curated note of src_133, the Stack Overflow press release "Stack Overflow's 2025 Developer Survey Reveals Trust in AI at an All Time Low" (July 29, 2025). Sentences are quoted exactly from the press release. Source URL: https://stackoverflow.co/company/press/archive/stack-overflow-2025-developer-survey/
+
+Survey basis: "Stack Overflow received over 49,000 responses from 177 countries across 62 questions focused on 314 different technologies".
+
+AI and developers' jobs: "Despite headlines that imply otherwise, the majority of developers (64%) still do not perceive AI as a threat to their jobs. However, this is a slight decrease from 68% in 2024."
+
+AI tool use and trust: "84% saying they use or plan to use AI tools in their development process, up from 76% in 2024. However, 46% of developers said they don't trust the accuracy of the output from AI tools, a significant increase from 31% last year."
+
+"A key frustration from 45% of respondents was that debugging AI-generated code is time-consuming, despite often repeated claims that coding can be handled solely by AI tools."
+
+"If AI can do most coding tasks in the future, developers told us why they would still want to ask another person for help: Three quarters (75.3%) of users said they don't trust AI answers, 61.7% said they have ethical or security concerns about code, and 61.3% said they want to fully understand their code."
+
+AI agents: "only 31% using them currently, 17% planning to, and 38% of respondents not planning to use AI agents. However, for those developers who have used AI agents at work, 69% agree they have experienced an increase in productivity."
+
+"nearly 77% said vibe coding is not part of their professional development work."
+
+Learning: "69% of developers have spent time in the last year learning new coding techniques or a new programming language; 36% learned AI-enabled tools for their job or to advance their career."

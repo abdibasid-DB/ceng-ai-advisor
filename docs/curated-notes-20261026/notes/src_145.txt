@@ -1,0 +1,16 @@
+Curated English note of src_122 and src_112: OSTİM Technical University student clubs, list and how to join
+
+This is a curated English note of src_122, the page "Öğrenci Topluluklarımız" (Our Student Communities) of the OSTİM Technical University Health, Culture and Sports Directorate (Sağlık, Kültür ve Spor Müdürlüğü, SKS), https://sks.ostimteknik.edu.tr/ogrenci-topluluklarimiz (accessed 2026-10-19), and of src_112, the "Öğrenci Toplulukları Yönergesi" (Student Communities Directive; Senate 11/10/2019, Board of Trustees 18/10/2019), https://www.ostimteknik.edu.tr/web/content/247209?unique=19cf483c8a6fef9596a12844c8491969972f5ad7. The club names are given as on the page; the directive is translated faithfully, not officially.
+
+List (src_122): the page lists 45 student communities (öğrenci toplulukları, student clubs) in 7 categories.
+Software, AI & Tech: Yapay Zeka; Pandora AI; Siber Güvenlik; Software Club; Google Developer Student Clubs; Huawei Student Developers; IEEE; Yönetim Bilişim Sistemleri; Sosyal Teknoloji.
+Engineering, Aviation & Defence: Elektrikli Araçlar; Elektro Optik; Elektronik Harp ve Hava Savunma; Havacılık ve Uzay; Hava Araçları Teknolojileri Geliştirme; İHA; Savunma Sanayi; Kalite, Mühendislik ve İnovasyon; Teknofest; Motor Sporları.
+Entrepreneurship & Business: İşletme; İş-Biz; Ekonomik ve Sosyal Araştırmalar; Fintech; Fikridea; PMI Türkiye.
+Design, Art & Culture: Endüstriyel Tasarım; İç Mimarlık, Mesleki Gelişim ve İnovasyon; Evrensel Müzik; Fotoğrafçılık ve Çağdaş Sanatlar; Tiyatro; Halk Dansları; Rus Kültür ve Edebiyat; Akıl ve Zeka Oyunları.
+International, Language & Diplomacy: English Speaking Club; ERASMUS+; Türk Dünyası Araştırmaları; Türkiye-Azerbaycan Dostluk; Münazara ve Hitabet.
+Social Responsibility: LÖSEV Fayda; Genç TEMA; Toplumsal Kültür ve Yardımlaşma.
+Sports & Recreation: E-Spor; Voleybol; UNIGFB; Gezi.
+
+How to join (src_112, Articles 6, 12 and 13): only bachelor's, school (yüksekokul) and master's students of OSTİM Technical University can be members; graduates receive honorary membership without voting rights. A student who wants to join applies with a petition (dilekçe) to the community's board of directors (Topluluk Yönetim Kurulu); students with a disciplinary penalty cannot join. Membership starts when the application is accepted, and members can vote and be elected. Every member may leave by submitting a petition to the board.
+
+Founding a club (src_112, Articles 6, 7, 8 and 10): a new community is founded with at least nine founding members, through an application to the Health, Culture and Sports Directorate and with the approval of the Rectorate. Applications are made within the first forty days of each semester. Each community has an academic advisor (Topluluk Akademik Danışmanı), a board of directors and an audit board.

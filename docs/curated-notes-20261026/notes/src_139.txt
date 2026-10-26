@@ -1,0 +1,25 @@
+Curated English note of src_136: Computer and Information Technology Occupations, outlook, openings and wages (BLS Occupational Outlook Handbook)
+
+This is a curated note of src_136, the U.S. Bureau of Labor Statistics (BLS) Occupational Outlook Handbook page "Computer and Information Technology Occupations" (last modified August 27, 2026). Sentences are quoted exactly from the page. Source URL: https://www.bls.gov/ooh/computer-and-information-technology
+
+"These workers create or support computer applications, systems, and networks."
+
+"Overall employment in computer and information technology occupations is projected to grow faster than the average for all occupations from 2025 to 2035. About 280,000 openings are projected each year, on average, in these occupations due to employment growth and the need to replace workers who leave the occupations permanently."
+
+"The median annual wage for this group was $109,470 in May 2025, which was higher than the median annual wage for all occupations of $50,980."
+
+From the page's table (occupation; entry-level education; 2025 median pay):
+Computer and Information Research Scientists: Master's degree; $140,300.
+Computer Network Architects: Bachelor's degree; $134,050.
+Software Developers, Quality Assurance Analysts, and Testers: Bachelor's degree; $134,040.
+Information Security Analysts: Bachelor's degree; $129,180.
+Database Administrators and Architects: Bachelor's degree; $126,760.
+Computer Systems Analysts: Bachelor's degree; $105,850.
+Computer Programmers: Bachelor's degree; $100,390.
+Web Developers and Digital Designers: Bachelor's degree; $99,520.
+Network and Computer Systems Administrators: Bachelor's degree; $99,130.
+Computer Support Specialists: see How to Become One; $62,890.
+
+"2025 Median Pay: The wage at which half of the workers in the occupation earned more than that amount and half earned less."
+
+Scope: the figures are for the United States; the page gives no figures for Türkiye.

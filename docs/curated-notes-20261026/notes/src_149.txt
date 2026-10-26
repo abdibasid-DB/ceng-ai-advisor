@@ -1,0 +1,13 @@
+Curated English note of src_111 and src_088: OSTİM Technical University graduate (master's) programs in Computer Engineering
+
+This is a curated note of src_088, the OSTİM Technical University Institute of Science page "Program Syllabus: Computer Engineering English Thesis Master's Degree Program", https://fbebilgisayar.ostimteknik.edu.tr/program-syllabus, and of src_111, the "OSTİM Teknik Üniversitesi Lisansüstü Eğitim-Öğretim Yönetmeliği" (Graduate Education Regulation; Resmî Gazete 18/10/2020 no. 31278, amended 22/9/2023 no. 32317), https://www.ostimteknik.edu.tr/web/content/247200?unique=2cb5939fec4d8fcf21aeb84a47afdd45f1b7fda4. The regulation is translated faithfully, not officially; the Turkish terms are in brackets.
+
+Program (src_088): OSTİM Technical University offers a Computer Engineering English Thesis Master's Degree Program (tezli yüksek lisans) through its Institute of Science (Fen Bilimleri Enstitüsü).
+
+Admission to a thesis master's program (src_111, Article 5): a bachelor's diploma, an ALES score (at least 55 in the program's score type, as set by the Senate) or an equivalent international exam accepted by the Senate, the transcript, and, for programs taught in English, a foreign language proficiency document. Admission to a non-thesis master's program (tezsiz yüksek lisans) does not require ALES.
+
+Thesis master's program (src_111, Article 24): at least seven credit courses with at least 21 credits, a seminar and a thesis, in total at least 120 ECTS; the courses must be completed with a GPA of at least 3.00. A thesis advisor is assigned by the end of the first semester and the thesis topic is set by the end of the second semester. The program lasts four semesters and must be completed in at most six semesters, not counting scientific preparation and English preparation.
+
+Non-thesis master's program (src_111, Article 27): at least ten courses and a 30-ECTS term project, 90 ECTS in total, completed with a GPA of at least 2.50, in at least two and at most three semesters.
+
+Graduate discounts (src_104, Burs ve İndirim Yönergesi, Article 4(3)): OSTİM Technical University's own bachelor's graduates receive a 25% discount; for Institute of Science graduate programs, students with a bachelor's GPA of 3.75 or higher out of 4, or an ALES score of 90 or higher, or a patent receive an additional 50% discount, and those meeting any two of the three criteria receive a full scholarship.

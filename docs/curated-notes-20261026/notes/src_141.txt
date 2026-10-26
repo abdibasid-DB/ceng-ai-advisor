@@ -1,0 +1,11 @@
+Curated English note: OSTİM Technical University Department of Computer Engineering (English), aims and program facts
+
+This is a curated note of src_001 (About the Department), src_002 (Mission and Vision), src_003 (Curriculum) and src_005 (Our Difference), the official pages of the OSTİM Technical University Department of Computer Engineering (English), https://mfcs.ostimteknik.edu.tr. English sentences are quoted exactly; Turkish table labels are translated, with the Turkish in brackets.
+
+Aim (src_001, https://mfcs.ostimteknik.edu.tr/about-the-department): "The program is designed to provide students with the knowledge and skills to design, develop and implement computer / information systems in the field of hardware, software and systems including both components. In the program, students are introduced to their professions by obtaining information about engineering and computer engineering from the first year."
+
+Mission (src_002, https://mfcs.ostimteknik.edu.tr/mission-and-vission): "To train computer engineers who have acquired learning and research skills, who are technically competent enough to use their knowledge effectively on the day they graduate, and who are sensitive to environmental and social problems in an environment supported by advanced technology and intertwined with industry."
+
+Program facts (src_003, https://mfcs.ostimteknik.edu.tr/tr/curriculum): the department name is "Department of Computer Engineering (English)" (MF-Bilgisayar Mühendisliği (İngilizce)). The current curriculum (Güncel Müfredat, 2024-2025 onward) runs over 4 years (1.–4. Yıl) and 8 semesters (Dönem). Its general summary (Genel Özet) is 168 credits and 240 ECTS. The 7th and 8th semesters include the Graduation Project (CENG 401, CENG 402).
+
+Applied education (src_005, https://mfcs.ostimteknik.edu.tr/our-difference): "Students will receive practical training in the 2-7 semesters starting from the first year in order to gain the skills of observation, being a participant of the application, innovation and management skills in the application environment of the giant companies which are ranked in the field of defense industry, especially in OSTİM enterprises worldwide."
