@@ -24,6 +24,7 @@ from ..query_understanding import (
 from ..core.llm_config import FOLLOW_UP_REWRITE_ENABLED
 from ..rag.rag_pipeline import ANSWERED, ERROR, INSUFFICIENT_INFORMATION, OUT_OF_SCOPE, RAGPipeline
 from ..services.follow_up_rewriter import needs_rewrite, rewrite_follow_up
+from ..services.follow_up_rewriter import normalize as normalize_rewrite_text
 from ..services.llm_service import LocalLLMError
 
 
@@ -42,6 +43,16 @@ HELP_EXAMPLE_QUESTIONS = (
     "How do internships work at OSTIM Technical University?",
     "What careers can Computer Engineering graduates pursue?",
 )
+FEEDBACK_REPLIES = {
+    "complaint": (
+        "Sorry about that. Could you ask your question again in a full sentence? "
+        "For example: 'What courses are in the first year?'"
+    ),
+    "acknowledgement": (
+        "You're welcome. If you have another question, ask it in a full sentence. "
+        "For example: 'What courses are in the first year?'"
+    ),
+}
 
 
 @dataclass(frozen=True)
@@ -95,6 +106,12 @@ def chat(request: ChatRequest, pipeline: RAGPipeline = Depends(get_rag_pipeline)
             "I am not sure which previous topic or information you are referring to. Please ask a complete question about Computer Engineering.",
         )
         result = attach_resolution_metadata(result, resolution)
+        response = build_chat_response(result, session_id=session_id)
+        record_turn(session_id, result)
+        return response
+
+    if resolution.kind == "conversational_feedback":
+        result = attach_resolution_metadata(conversational_feedback_response(request.question, resolution), resolution)
         response = build_chat_response(result, session_id=session_id)
         record_turn(session_id, result)
         return response
@@ -163,6 +180,13 @@ def chat_stream(request: ChatRequest, pipeline: RAGPipeline = Depends(get_rag_pi
                 "I am not sure which previous topic or information you are referring to. Please ask a complete question about Computer Engineering.",
             )
             result = attach_resolution_metadata(result, resolution)
+            response = build_chat_response(result, session_id=session_id)
+            record_turn(session_id, result)
+            yield encode_stream_event("final", response.model_dump(mode="json"))
+            return
+
+        if resolution.kind == "conversational_feedback":
+            result = attach_resolution_metadata(conversational_feedback_response(request.question, resolution), resolution)
             response = build_chat_response(result, session_id=session_id)
             record_turn(session_id, result)
             yield encode_stream_event("final", response.model_dump(mode="json"))
@@ -428,6 +452,29 @@ def assistant_help_response(question: str) -> dict[str, Any]:
     }
 
 
+def conversational_feedback_response(question: str, resolution: QueryResolution) -> dict[str, Any]:
+    """Fixed reply to "that's wrong", "thanks" or "ok": no retrieval and no LLM.
+
+    The HELP status keeps the turn out of follow-up context, so the next real
+    follow-up still refers to the last answered question.
+    """
+    feedback = resolution.understanding.task if resolution.understanding else None
+    return {
+        "question": " ".join((question or "").split()),
+        "status": HELP,
+        "answer": FEEDBACK_REPLIES.get(feedback, FEEDBACK_REPLIES["complaint"]),
+        "llm_called": False,
+        "sources": [],
+        "retrieved_context": [],
+        "retrieval_metadata": {"conversational_feedback": feedback or "complaint"},
+        "timing": {},
+        "citation_metadata": {},
+        "answer_warnings": [],
+        "model": None,
+        "error": None,
+    }
+
+
 def out_of_scope_response(question: str) -> dict[str, Any]:
     return {
         "question": " ".join((question or "").split()),
@@ -457,7 +504,18 @@ def attach_resolution_metadata(result: dict[str, Any], resolution: QueryResoluti
         metadata["follow_up_rewrite"] = resolution.rewrite_metadata
     if resolution.normalization_metadata:
         metadata["query_normalization"] = resolution.normalization_metadata
-    return {**result, "retrieval_metadata": metadata}
+    answered_as = answered_as_question(resolution) if result.get("status") != ERROR else None
+    return {**result, "retrieval_metadata": metadata, "answered_as": answered_as}
+
+
+def answered_as_question(resolution: QueryResolution) -> str | None:
+    """The rewritten question when a follow-up was answered as a different question, else None."""
+    rewrite = resolution.rewrite_metadata or {}
+    rewritten = resolution.kind == "contextual_follow_up" or rewrite.get("used") == "llm"
+    resolved = resolution.resolved_question
+    if not rewritten or not resolved or normalize_rewrite_text(resolved) == normalize_rewrite_text(resolution.question):
+        return None
+    return resolved
 
 
 def previous_source_response(question: str, previous_turn: ConversationTurn) -> dict[str, Any]:
@@ -503,6 +561,7 @@ def build_chat_response(result: dict[str, Any], session_id: str | None = None) -
         answer=result.get("answer") or "",
         llm_called=bool(result.get("llm_called")),
         example_questions=result.get("example_questions") or [],
+        answered_as=result.get("answered_as"),
         sources=sources,
         retrieved_context=[RetrievedContextResponse(**item) for item in context_items],
         retrieval_metadata=result.get("retrieval_metadata") or {},

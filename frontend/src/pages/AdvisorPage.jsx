@@ -194,6 +194,7 @@ function AdvisorPage({ questionRequest }) {
                     revealStartedAt: Date.now(),
                     status: response.status,
                     exampleQuestions: response.example_questions || [],
+                    answeredAs: response.answered_as || null,
                     sources: response.sources || [],
                     retrievedContext: response.retrieved_context || [],
                     retrievalMetadata: response.retrieval_metadata || {},

@@ -114,5 +114,20 @@ class FollowUpRewriterTests(unittest.TestCase):
         self.assertEqual(llm.calls, 0)
 
 
+class AnsweredAsTests(unittest.TestCase):
+    def test_answered_as_is_the_llm_rewrite(self):
+        resolution = resolve_query("What projects should I build?", PREVIOUS)
+        rewritten = apply_follow_up_rewrite(resolution, [PREVIOUS], FakeLLM(text="What hardware projects should a Computer Engineering student build?"), enabled=True)
+        result = attach_resolution_metadata({"status": "answered", "retrieval_metadata": {}}, rewritten)
+        self.assertEqual(result["answered_as"], "What hardware projects should a Computer Engineering student build?")
+
+    def test_no_answered_as_without_a_rewrite_or_after_an_error(self):
+        standalone = resolve_query("What is Computer Engineering?", None)
+        self.assertIsNone(attach_resolution_metadata({"status": "answered"}, standalone)["answered_as"])
+        follow_up = resolve_query("What about internships?", PREVIOUS)
+        self.assertIsNotNone(attach_resolution_metadata({"status": "answered"}, follow_up)["answered_as"])
+        self.assertIsNone(attach_resolution_metadata({"status": "error"}, follow_up)["answered_as"])
+
+
 if __name__ == "__main__":
     unittest.main()

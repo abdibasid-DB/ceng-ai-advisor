@@ -564,6 +564,13 @@ a {
   text-transform: uppercase;
 }
 
+.answered-as {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 13px;
+  font-style: italic;
+}
+
 .message-text p {
   margin: 0 0 8px;
   white-space: pre-wrap;

@@ -13,6 +13,7 @@ if str(PROJECT_ROOT) not in sys.path:
 from backend.app.api.chat import clear_all_sessions_for_tests, get_rag_pipeline
 from backend.app.api import sources as sources_api
 from backend.app.main import app
+from tests.test_rag_pipeline import FakeLLM
 
 
 def rag_result(status="answered"):
@@ -686,6 +687,66 @@ class ApiTests(unittest.TestCase):
             sources_api.SOURCES_REGISTRY_PATH = original_path
         self.assertEqual(response.status_code, 503)
         self.assertEqual(response.json()["detail"], "The source registry is currently unavailable.")
+
+
+class ConversationalFeedbackApiTests(unittest.TestCase):
+    setUp = ApiTests.setUp
+    tearDown = ApiTests.tearDown
+    override_pipeline = ApiTests.override_pipeline
+
+    def test_feedback_gets_fixed_reply_without_retrieval_or_llm(self):
+        llm = FakeLLM(text="What is Computer Engineering in Computer Engineering?")
+        pipeline = EchoPipeline()
+        pipeline.llm_service = llm
+        stream_pipeline = FakeStreamPipeline()
+        stream_pipeline.llm_service = llm
+        for endpoint, active in (("/api/v1/chat", pipeline), ("/api/v1/chat/stream", stream_pipeline)):
+            with self.subTest(endpoint=endpoint):
+                self.override_pipeline(active)
+                session = f"feedback-{endpoint}"
+                self.client.post(endpoint, json={"question": "What is Computer Engineering?", "session_id": session})
+                calls, llm_calls = len(active.calls), llm.calls
+                response = self.client.post(endpoint, json={"question": "but i didnt ask that question", "session_id": session})
+                data = decode_stream_response(response)[-1]["data"] if endpoint.endswith("stream") else response.json()
+                self.assertEqual(response.status_code, 200)
+                self.assertEqual(data["status"], "help")
+                self.assertTrue(data["answer"].startswith("Sorry about that. Could you ask your question again in a full sentence?"))
+                self.assertFalse(data["llm_called"])
+                self.assertEqual(data["sources"], [])
+                self.assertIsNone(data["answered_as"])
+                self.assertEqual(data["retrieval_metadata"]["query_kind"], "conversational_feedback")
+                self.assertEqual(len(active.calls), calls)
+                self.assertEqual(llm.calls, llm_calls)
+
+    def test_thanks_gets_acknowledgement_reply(self):
+        pipeline = self.override_pipeline(EchoPipeline())
+        data = self.client.post("/api/v1/chat", json={"question": "thanks!"}).json()
+        self.assertEqual(data["status"], "help")
+        self.assertTrue(data["answer"].startswith("You're welcome."))
+        self.assertEqual(pipeline.calls, [])
+
+    def test_follow_up_after_feedback_still_uses_the_answered_topic(self):
+        pipeline = self.override_pipeline(EchoPipeline())
+        for question in ("Can Computer Engineers work in cybersecurity?", "that's wrong", "What skills should I build?"):
+            self.client.post("/api/v1/chat", json={"question": question, "session_id": "feedback-context"})
+        self.assertEqual(len(pipeline.calls), 2)
+        self.assertIn("cybersecurity", pipeline.calls[-1]["resolved_question"].lower())
+
+    def test_answered_as_shows_the_rewritten_follow_up_only(self):
+        pipeline = self.override_pipeline(EchoPipeline())
+        first = self.client.post("/api/v1/chat", json={"question": "What programming languages are taught?", "session_id": "answered-as"}).json()
+        follow_up = self.client.post("/api/v1/chat", json={"question": "What about internships?", "session_id": "answered-as"}).json()
+        self.assertIsNone(first["answered_as"])
+        self.assertEqual(follow_up["answered_as"], pipeline.calls[1]["resolved_question"])
+        self.assertIn("internships", follow_up["answered_as"].lower())
+        self.assertNotEqual(follow_up["answered_as"], "What about internships?")
+
+    def test_answered_as_on_stream_endpoint(self):
+        pipeline = self.override_pipeline(FakeStreamPipeline())
+        self.client.post("/api/v1/chat/stream", json={"question": "What programming languages are taught?", "session_id": "answered-as-stream"})
+        response = self.client.post("/api/v1/chat/stream", json={"question": "What about internships?", "session_id": "answered-as-stream"})
+        final = decode_stream_response(response)[-1]["data"]
+        self.assertEqual(final["answered_as"], pipeline.calls[1]["resolved_question"])
 
 
 if __name__ == "__main__":

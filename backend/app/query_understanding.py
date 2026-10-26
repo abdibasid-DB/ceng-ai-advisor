@@ -20,6 +20,7 @@ QueryKind = Literal[
     "vague_no_referent",
     "assistant_help",
     "out_of_scope_persona_meta",
+    "conversational_feedback",
 ]
 
 
@@ -482,6 +483,18 @@ def understand_query(question: str, previous_turn: Any | None = None) -> QueryUn
     referents = extract_referents(tokens)
     task = infer_task(text, tokens)
     correction = extract_correction_request(cleaned)
+
+    feedback = conversational_feedback_type(cleaned)
+    if feedback:
+        return QueryUnderstanding(
+            original_question=cleaned,
+            normalized_question=normalized,
+            retrieval_question=None,
+            kind="conversational_feedback",
+            task=feedback,
+            confidence=0.97,
+            debug=debug,
+        )
 
     if correction:
         normalized_correction, correction_debug = normalize_question_text(correction)
@@ -982,6 +995,54 @@ def is_source_follow_up_text(text: str, tokens: list[str]) -> bool:
     return (asks_origin and refers_to_previous) or (asks_for_sources and refers_to_previous) or (
         asks_for_sources and len(tokens) <= 5 and not has_domain_anchor(text)
     )
+
+
+FEEDBACK_LEADING_WORDS = {"no", "nope", "nah", "but", "and", "so", "well", "oh", "um", "uh", "hmm", "hey", "sorry", "actually", "bro", "dude", "man", "lol", "ok", "okay"}
+FEEDBACK_TRAILING_WORDS = {"bro", "dude", "man", "lol", "though", "tho", "sorry", "again", "here"}
+ACKNOWLEDGEMENT_WORDS = {
+    "ok", "okay", "k", "kk", "alright", "fine", "sure", "cool", "great", "nice", "good", "perfect", "awesome", "wow",
+    "yes", "yeah", "yep", "thanks", "thank", "thx", "ty", "cheers", "got", "it", "understood", "you", "a", "lot", "so",
+    "much", "very", "bye", "goodbye",
+}
+ACKNOWLEDGEMENT_FILLER_WORDS = {"it", "you", "a", "lot", "so", "much", "very"}
+
+
+def conversational_feedback_type(question: str) -> str | None:
+    """"complaint" or "acknowledgement" for messages that are not questions, else None.
+
+    Only whole messages match, so "that's wrong, what about salaries?" and
+    "no, I meant internships" still go through the normal resolution.
+    """
+    text = re.sub(r"['’`]", "", (question or "").lower())
+    tokens = [TOKEN_REPLACEMENTS.get(token, token) for token in re.findall(r"[a-z0-9]+", text)]
+    tokens = " ".join(tokens).split()
+    while tokens and tokens[0] in FEEDBACK_LEADING_WORDS and len(tokens) > 1:
+        tokens = tokens[1:]
+    while tokens and tokens[-1] in FEEDBACK_TRAILING_WORDS and len(tokens) > 1:
+        tokens = tokens[:-1]
+    if not tokens:
+        return None
+    text = " ".join(tokens)
+
+    asked = r"(?:asked|meant|wanted|was asking|was asking about|asked for|asked about|wanted to know)"
+    subject = r"(?:that|this|it|thats|its|your answer|the answer|that answer|this answer)(?: is| was| s)?"
+    complaints = (
+        r"no|nope|nah|wrong|incorrect|not (?:right|correct|true|helpful)",
+        r"(?:i )?(?:did not|didnt|never|do not|dont) (?:ask|asked|mean|meant|want|wanted)"
+        r"(?: (?:you )?(?:that|this|for that|for this|about that|about this|that one|this one))?(?: question)?",
+        rf"{subject} (?:not )?(?:wrong|incorrect|right|correct|true|helpful|relevant|irrelevant|off topic)(?: answer)?",
+        rf"{subject} not (?:what i {asked}|my question|the question i asked|an answer to my question|what i was looking for)",
+        rf"not (?:what i {asked}|my question|the question i asked|what i was looking for)",
+        r"wrong (?:answer|question|topic)",
+        r"(?:you are|youre) wrong|you misunderstood(?: me| my question| the question)?|you got (?:it|that) wrong",
+        r"(?:you|that|this|it) (?:did not|didnt|does not|doesnt) answer (?:my|the) question",
+        r"you answered (?:the |a )?(?:wrong|different) question|i asked (?:something else|a different question)",
+    )
+    if any(re.fullmatch(pattern, text) for pattern in complaints):
+        return "complaint"
+    if set(tokens) <= ACKNOWLEDGEMENT_WORDS and not set(tokens) <= ACKNOWLEDGEMENT_FILLER_WORDS:
+        return "acknowledgement"
+    return None
 
 
 def is_assistant_help_text(tokens: list[str]) -> bool:

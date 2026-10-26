@@ -304,5 +304,49 @@ class QueryUnderstandingTests(unittest.TestCase):
         self.assertEqual(resolution.kind, "standalone_domain_question")
 
 
+class ConversationalFeedbackTests(unittest.TestCase):
+    PREVIOUS = PreviousTurn("What is Computer Engineering?", "Computer Engineering is a four-year curriculum [S1].")
+
+    def test_complaints_and_acknowledgements_are_not_questions(self):
+        cases = {
+            "but i didnt ask that question": "complaint",
+            "I didn't ask that!": "complaint",
+            "that's wrong": "complaint",
+            "Not what I asked.": "complaint",
+            "No, that's not what I asked about": "complaint",
+            "you misunderstood me": "complaint",
+            "nah bro u r wrong": "complaint",
+            "wrong answer": "complaint",
+            "no": "complaint",
+            "thanks": "acknowledgement",
+            "Thank you so much!": "acknowledgement",
+            "ok": "acknowledgement",
+            "got it": "acknowledgement",
+        }
+        for question, feedback in cases.items():
+            for previous in (self.PREVIOUS, None):
+                with self.subTest(question=question, previous=bool(previous)):
+                    resolution = resolve_query(question, previous)
+                    self.assertEqual(resolution.kind, "conversational_feedback")
+                    self.assertEqual(resolution.understanding.task, feedback)
+                    self.assertIsNone(resolution.resolved_question)
+
+    def test_real_follow_ups_and_corrections_are_not_feedback(self):
+        for question in (
+            "does it include Linux?",
+            "what about salaries?",
+            "is it hard?",
+            "is that true?",
+            "tell me more",
+            "no, I meant internships",
+            "I asked about internships",
+            "that's wrong, what about salaries?",
+            "ok what about salaries?",
+            "no programming experience?",
+        ):
+            with self.subTest(question=question):
+                self.assertNotEqual(resolve_query(question, self.PREVIOUS).kind, "conversational_feedback")
+
+
 if __name__ == "__main__":
     unittest.main()

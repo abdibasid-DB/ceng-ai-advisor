@@ -96,6 +96,7 @@ function ChatMessage({ message, sourceRegistry = [], onExampleQuestion, isLoadin
     <div className={`message-row ${isUser ? "user-row" : "assistant-row"}`}>
       <article className={`message ${isUser ? "user-message" : "assistant-message"} status-${message.status || "plain"}`}>
         {!isUser && title ? <p className="message-status">{title}</p> : null}
+        {!isUser && message.answeredAs ? <p className="answered-as">Answered as: {message.answeredAs}</p> : null}
         {reveal.animating && !isUser ? <button type="button" className="skip-animation secondary-button" onClick={reveal.skip}>Skip animation</button> : null}
         {reveal.animating && !isUser ? <span className="sr-only">{message.content}</span> : null}
         <div className="message-text" data-animating={reveal.animating && !isUser}

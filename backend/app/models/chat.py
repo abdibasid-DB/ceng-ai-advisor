@@ -88,6 +88,7 @@ class ChatResponse(BaseModel):
     answer: str
     llm_called: bool = False
     example_questions: list[str] = Field(default_factory=list)
+    answered_as: str | None = None
     sources: list[SourceResponse] = Field(default_factory=list)
     retrieved_context: list[RetrievedContextResponse] = Field(default_factory=list)
     retrieval_metadata: dict[str, Any] = Field(default_factory=dict)
