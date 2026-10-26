@@ -107,7 +107,7 @@ test("theme follows system by default and remembers a manual choice", async ({ p
   await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
 });
 
-test("final answers reveal in 1.6 seconds; clicking skips and citations still work", async ({ page }) => {
+test("final answers type out word by word with a cursor; clicking skips and citations still work", async ({ page }) => {
   await mockApi(page);
   await page.goto("/#advisor");
   await page.clock.install();
@@ -120,13 +120,16 @@ test("final answers reveal in 1.6 seconds; clicking skips and citations still wo
   await ask();
   const answer = page.locator(".assistant-message .message-text").first();
   await expect(answer).toHaveAttribute("data-animating", "true");
-  await page.clock.runFor(800);
+  // Sources and actions wait until the text has finished typing.
+  await expect(page.locator(".source-card")).toHaveCount(0);
+  await page.clock.runFor(500);
   expect((await answer.textContent()).length).toBeGreaterThan(0);
   await expect(answer).not.toContainText("Programming");
-  await page.clock.runFor(850);
+  await page.clock.runFor(1000);
   await expect(answer).toHaveAttribute("data-animating", "false");
   await expect(answer).toContainText("Programming");
   await expect(page.getByRole("button", { name: "Skip animation" })).toHaveCount(0);
+  await expect(page.locator(".source-card")).toHaveCount(1);
   await page.locator(".citation-badge").click();
   await expect(page.locator(".source-card")).toBeFocused();
 
@@ -139,6 +142,26 @@ test("final answers reveal in 1.6 seconds; clicking skips and citations still wo
   await expect(page.locator(".source-card").last()).toBeFocused();
   await page.reload();
   await expect(page.locator('[data-animating="true"]')).toHaveCount(0);
+});
+
+test("the first answer of a new conversation types out, and finished answers do not type again", async ({ page }) => {
+  await mockApi(page);
+  await page.goto("/#advisor");
+  await page.clock.install();
+  await page.clock.pauseAt(new Date());
+  await page.getByRole("button", { name: "New Conversation", exact: true }).click();
+  await page.getByLabel("Ask a question", { exact: true }).fill("What is Computer Engineering?");
+  await page.getByRole("button", { name: "Send", exact: true }).click();
+  const first = page.locator(".assistant-message .message-text").first();
+  await expect(first).toHaveAttribute("data-animating", "true");
+  await page.clock.runFor(2000);
+  await expect(first).toHaveAttribute("data-animating", "false");
+  // Open another conversation and come back: the finished answer must show at once.
+  await page.getByRole("button", { name: "New Conversation", exact: true }).click();
+  await page.getByRole("complementary", { name: "Conversation history" })
+    .getByRole("button", { name: "What is Computer Engineering?", exact: true }).click();
+  await expect(page.locator(".assistant-message .message-text").first()).toHaveAttribute("data-animating", "false");
+  await expect(page.locator(".assistant-message .message-text").first()).toContainText("Programming");
 });
 
 test("skip control works with the keyboard and reduced motion finishes an active reveal", async ({ page }) => {

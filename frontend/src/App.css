@@ -534,6 +534,12 @@ a {
   overflow-wrap: anywhere;
 }
 
+/* Answers keep one fixed width, so the box does not grow sideways while the
+   text types out or when the loading message is replaced by the answer. */
+.assistant-message {
+  width: min(820px, 92%);
+}
+
 .user-message {
   background: #2f6fed;
   color: #ffffff;
@@ -975,6 +981,10 @@ a {
     max-width: 100%;
   }
 
+  .assistant-message {
+    width: 100%;
+  }
+
   .example-grid {
     grid-template-columns: 1fr;
   }
@@ -1051,7 +1061,9 @@ a {
 :root[data-theme="dark"] .message-text .hljs-comment,
 :root[data-theme="dark"] .message-text .hljs-quote { color: #aebed5; }
 .message-text[data-animating="true"] { cursor: pointer; min-height: 1.6em; }
-.skip-animation { margin-bottom: 8px; font-size: 12px; }
+/* Small text button under the typing answer, so nothing above the text moves. */
+.skip-animation { margin-top: 6px; padding: 2px 0; border: 0; background: none; color: var(--muted); font-size: 12px; text-decoration: underline; cursor: pointer; }
+.skip-animation:hover, .skip-animation:focus-visible { color: var(--link); }
 .advisor-purpose { margin-bottom: 18px; border: 1px solid var(--border); border-radius: 8px; padding: 16px; background: var(--surface); }
 .advisor-purpose summary { cursor: pointer; font-weight: 800; color: var(--link); }
 .advisor-purpose-content { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px 24px; padding-top: 14px; color: var(--text-secondary); line-height: 1.6; }
@@ -1088,6 +1100,19 @@ a {
   .chat-toolbar { padding: 16px; }
   .loading-message { align-items: flex-start; }
 }
+/* Blinking cursor at the end of an answer while it types out. */
+.message-text[data-animating="true"] > :last-child:not(ul):not(ol):not(pre)::after,
+.message-text[data-animating="true"] > :is(ul, ol):last-child > li:last-child::after {
+  content: "";
+  display: inline-block;
+  width: 0.5em;
+  height: 1.05em;
+  margin-left: 2px;
+  vertical-align: text-bottom;
+  background: var(--link);
+  animation: typing-cursor 1s steps(1) infinite;
+}
+@keyframes typing-cursor { 50% { opacity: 0; } }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .loading-spinner { animation: none; }
