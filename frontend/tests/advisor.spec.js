@@ -7,7 +7,7 @@ const source = {
   supporting_passages: ["Computer engineers design hardware and software."],
 };
 
-async function mockApi(page, { delay = 0, fail = false } = {}) {
+async function mockApi(page, { delay = 0, fail = false, answer = "## Engineering\n\nStudy **hardware** and software [S1].\n\n- Circuits\n- Programming\n\n`[S1]`" } = {}) {
   const requests = [];
   await page.route("**/api/v1/**", async (route) => {
     const path = new URL(route.request().url()).pathname;
@@ -19,7 +19,7 @@ async function mockApi(page, { delay = 0, fail = false } = {}) {
     if (fail) return route.fulfill({ status: 503, json: { error: "Model unavailable" } });
     return route.fulfill({ contentType: "application/x-ndjson", body: JSON.stringify({
       event: "final", data: { session_id: request.session_id, status: "answered",
-        answer: "## Engineering\n\nStudy **hardware** and software [S1].\n\n- Circuits\n- Programming\n\n`[S1]`",
+        answer,
         sources: [{ ...source, publication_date: undefined }] },
     }) });
   });
@@ -27,6 +27,28 @@ async function mockApi(page, { delay = 0, fail = false } = {}) {
 }
 
 for (const width of [375, 768, 1280]) {
+  test(`purpose panel is collapsible and fits at ${width}px`, async ({ page }) => {
+    await page.setViewportSize({ width, height: 900 });
+    await mockApi(page);
+    await page.goto("/#advisor");
+    const panel = page.locator(".advisor-purpose");
+    const toggle = panel.locator("summary");
+    await expect(panel.locator("ol")).toBeHidden();
+    await toggle.focus();
+    await page.keyboard.press("Enter");
+    await expect(panel.locator("ol li")).toHaveCount(4);
+    await expect(panel).toContainText("prospective OSTİM Computer Engineering students");
+    await expect(panel).toContainText("no commercial AI API");
+    await expect(panel).toContainText("does not have enough information");
+    await expect(panel.locator("ol")).toBeVisible();
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    const bounds = await panel.boundingBox();
+    expect(bounds.x + bounds.width).toBeLessThanOrEqual(width);
+    await page.screenshot({ path: `node_modules/.cache/purpose-${width}.png`, fullPage: true });
+    await toggle.click();
+    await expect(panel.locator("ol")).toBeHidden();
+  });
+
   test(`home, chat, citations and history at ${width}px`, async ({ page }) => {
     await page.setViewportSize({ width, height: 900 });
     const requests = await mockApi(page);
@@ -83,6 +105,87 @@ test("theme follows system by default and remembers a manual choice", async ({ p
   await page.getByLabel("Theme").selectOption("dark");
   await page.reload();
   await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+});
+
+test("final answers reveal in 1.6 seconds; clicking skips and citations still work", async ({ page }) => {
+  await mockApi(page);
+  await page.goto("/#advisor");
+  await page.clock.install();
+  await page.clock.pauseAt(new Date());
+  const ask = async () => {
+    await page.getByLabel("Ask a question", { exact: true }).fill("Explain engineering");
+    await page.getByRole("button", { name: "Send", exact: true }).click();
+    await expect(page.getByRole("button", { name: "Skip animation" })).toBeVisible();
+  };
+  await ask();
+  const answer = page.locator(".assistant-message .message-text").first();
+  await expect(answer).toHaveAttribute("data-animating", "true");
+  await page.clock.runFor(800);
+  expect((await answer.textContent()).length).toBeGreaterThan(0);
+  await expect(answer).not.toContainText("Programming");
+  await page.clock.runFor(850);
+  await expect(answer).toHaveAttribute("data-animating", "false");
+  await expect(answer).toContainText("Programming");
+  await expect(page.getByRole("button", { name: "Skip animation" })).toHaveCount(0);
+  await page.locator(".citation-badge").click();
+  await expect(page.locator(".source-card")).toBeFocused();
+
+  await ask();
+  await page.clock.runFor(200);
+  await page.locator(".assistant-message .message-text").last().click();
+  await expect(page.locator(".assistant-message .message-text").last()).toHaveAttribute("data-animating", "false");
+  await expect(page.locator(".assistant-message .message-text").last()).toContainText("Programming");
+  await page.locator(".citation-badge").last().click();
+  await expect(page.locator(".source-card").last()).toBeFocused();
+  await page.reload();
+  await expect(page.locator('[data-animating="true"]')).toHaveCount(0);
+});
+
+test("skip control works with the keyboard and reduced motion finishes an active reveal", async ({ page }) => {
+  await mockApi(page);
+  await page.goto("/#advisor");
+  await page.clock.install();
+  await page.clock.pauseAt(new Date());
+  for (const method of ["keyboard", "reduced-motion"]) {
+    await page.getByLabel("Ask a question", { exact: true }).fill("Explain engineering");
+    await page.getByRole("button", { name: "Send", exact: true }).click();
+    const skip = page.getByRole("button", { name: "Skip animation" });
+    await expect(skip).toBeVisible();
+    if (method === "keyboard") {
+      await skip.focus();
+      await page.keyboard.press("Enter");
+    } else {
+      await page.emulateMedia({ reducedMotion: "reduce" });
+    }
+    await expect(page.locator(".assistant-message .message-text").last()).toContainText("Programming");
+    await expect(skip).toHaveCount(0);
+  }
+});
+
+test("reduced motion renders full code with syntax colors following the app theme", async ({ page }) => {
+  const codeAnswer = "Use `const` here.\n\n```javascript\nconst greeting = \"Hello\"; // example\nconsole.log(greeting);\n```\n\n[S1]\n\n```unknown-language\nplain <example>\n```";
+  await mockApi(page, { answer: codeAnswer });
+  await page.emulateMedia({ reducedMotion: "reduce", colorScheme: "light" });
+  await page.goto("/#advisor");
+  await page.getByLabel("Ask a question", { exact: true }).fill("Show code");
+  await page.getByRole("button", { name: "Send", exact: true }).click();
+  await expect(page.locator(".assistant-message .message-text")).toHaveAttribute("data-animating", "false");
+  await expect(page.getByRole("button", { name: "Skip animation" })).toHaveCount(0);
+  await expect(page.locator("pre .hljs-keyword")).toHaveText("const");
+  await expect(page.locator("pre .hljs-string")).toHaveText('"Hello"');
+  await expect(page.locator("p > code")).toHaveText("const");
+  await expect(page.locator(".language-unknown-language")).toHaveText("plain <example>\n");
+  const keyword = page.locator(".hljs-keyword");
+  const lightColor = await keyword.evaluate((element) => getComputedStyle(element).color);
+  await page.getByLabel("Theme").selectOption("dark");
+  await expect(keyword).not.toHaveCSS("color", lightColor);
+  for (const width of [375, 768, 1280]) {
+    await page.setViewportSize({ width, height: 900 });
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    await page.locator(".message-text").last().screenshot({ path: `node_modules/.cache/code-dark-${width}.png` });
+  }
+  await page.locator(".citation-badge").click();
+  await expect(page.locator(".source-card")).toBeFocused();
 });
 
 test("switching conversations while a reply is pending keeps the reply in its original chat", async ({ page }) => {

@@ -42,7 +42,7 @@ function restoreHistory() {
       return {
         activeId: saved.conversations.some((item) => item.id === saved.activeId) ? saved.activeId : saved.conversations[0].id,
         conversations: saved.conversations.map((item) => ({ ...item, messages: item.messages.map((message) =>
-          message.isStreaming ? { ...message, isStreaming: false, status: "error", content: "This reply was interrupted. Please send your question again." } : message),
+          message.isStreaming ? { ...message, isStreaming: false, status: "error", content: "This reply was interrupted. Please send your question again." } : { ...message, revealStartedAt: undefined }),
         })),
       };
     }
@@ -191,6 +191,7 @@ function AdvisorPage({ questionRequest }) {
                 ? {
                     ...message,
                     content: response.answer || "",
+                    revealStartedAt: Date.now(),
                     status: response.status,
                     exampleQuestions: response.example_questions || [],
                     sources: response.sources || [],
@@ -258,6 +259,19 @@ function AdvisorPage({ questionRequest }) {
       </div>
 
       {storageWarning ? <p role="status">{storageWarning}</p> : null}
+      <details className="advisor-purpose">
+        <summary>About this advisor · How it works</summary>
+        <div className="advisor-purpose-content">
+          <p>A local RAG (retrieval-augmented generation) assistant for prospective OSTİM Computer Engineering students.</p>
+          <ol>
+            <li>Search the knowledge base for your question.</li>
+            <li>Find relevant passages.</li>
+            <li>A local open-source model writes the answer.</li>
+            <li>Sources are shown so you can check the evidence.</li>
+          </ol>
+          <p>It runs locally with an open-source model and no commercial AI API. When it does not have enough information, it says so.</p>
+        </div>
+      </details>
       <div className="advisor-workspace">
         <aside className="history-panel" aria-label="Conversation history">
           <h2>Conversations</h2>
