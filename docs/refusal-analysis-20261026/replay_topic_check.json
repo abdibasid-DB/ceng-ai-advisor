@@ -1,0 +1,2515 @@
+{
+  "refused": [
+    {
+      "id": "F012",
+      "question": "What is the difference between it and computer engineering?",
+      "focus": [
+        "between",
+        "difference"
+      ],
+      "need": 1,
+      "covered_after_pruning": [],
+      "covered_raw": [],
+      "sim_after": 0.666,
+      "sim_raw": 0.704,
+      "reproduced": "generated answer did not address the question's distinctive topic terms",
+      "final": "Computer Engineering involves the design and construction of processor-based systems, including hardware, software, and communications components, with a focus on the integration of software and hardware devices [S1].",
+      "repairs": [
+        "removed_trailing_source_labels",
+        "added_supported_inline_label",
+        "pruned_unverified_sentences",
+        "partial_answer"
+      ]
+    },
+    {
+      "id": "C019",
+      "question": "Do students take electronics and digital logic?",
+      "focus": [
+        "digital",
+        "electronics",
+        "logic",
+        "take"
+      ],
+      "need": 2,
+      "covered_after_pruning": [],
+      "covered_raw": [
+        "digital",
+        "electronics",
+        "logic",
+        "take"
+      ],
+      "sim_after": 0.525,
+      "sim_raw": 0.639,
+      "reproduced": "generated answer did not address the question's distinctive topic terms",
+      "final": "Students in a Computer Engineering program at OSTIM Technical University aim to gain skills for technical management and solve engineering problems [S2]. The program is designed to educate Computer engineers who will contribute to their institution and organization [S2].",
+      "repairs": [
+        "removed_trailing_source_labels",
+        "added_supported_inline_label",
+        "pruned_unverified_sentences"
+      ]
+    },
+    {
+      "id": "C022",
+      "question": "What lesson are in computer engineering typo but mean courses?",
+      "focus": [
+        "but",
+        "courses",
+        "lesson",
+        "mean",
+        "typo"
+      ],
+      "need": 2,
+      "covered_after_pruning": [
+        "courses"
+      ],
+      "covered_raw": [
+        "courses"
+      ],
+      "sim_after": 0.604,
+      "sim_raw": 0.604,
+      "reproduced": "generated answer did not address the question's distinctive topic terms",
+      "final": "In computer engineering curricula, introductory courses typically cover basic programming, digital logic, basic computer organization, and electrical circuits [S1].",
+      "repairs": [
+        "removed_trailing_source_labels",
+        "added_supported_inline_label",
+        "pruned_unverified_sentences",
+        "partial_answer"
+      ]
+    },
+    {
+      "id": "C025",
+      "question": "Is the curriculum closer to ee or CS?",
+      "focus": [
+        "cs",
+        "curriculum",
+        "ee"
+      ],
+      "need": 2,
+      "covered_after_pruning": [
+        "curriculum"
+      ],
+      "covered_raw": [
+        "curriculum"
+      ],
+      "sim_after": 0.638,
+      "sim_raw": 0.641,
+      "reproduced": "generated answer did not address the question's distinctive topic terms",
+      "final": "The curriculum for Computer Engineering (CE) is closer to Computer Science (CSC) as it is administered jointly by a Computer Science Department and an Electrical Engineering Department [S1]. This joint administration ensures a balance among computer systems, hardware, and software, as well as theory and applications, which are core competencies in Computer Science [S1].",
+      "repairs": [
+        "removed_trailing_source_labels",
+        "added_supported_inline_label"
+      ]
+    },
+    {
+      "id": "M032",
+      "question": "math scary should I quit computer engineering?",
+      "focus": [
+        "math"
+      ],
+      "need": 1,
+      "covered_after_pruning": [],
+      "covered_raw": [
+        "math"
+      ],
+      "sim_after": 0.365,
+      "sim_raw": 0.701,
+      "reproduced": "generated answer did not address the question's distinctive topic terms",
+      "final": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+      "repairs": []
+    },
+    {
+      "id": "M033",
+      "question": "Can good programming compensate for average mathematics?",
+      "focus": [
+        "average",
+        "compensate",
+        "mathematics",
+        "programming"
+      ],
+      "need": 2,
+      "covered_after_pruning": [],
+      "covered_raw": [
+        "average",
+        "compensate",
+        "mathematics",
+        "programming"
+      ],
+      "sim_after": 0.399,
+      "sim_raw": 0.725,
+      "reproduced": "generated answer did not address the question's distinctive topic terms",
+      "final": "I understand your question, but I don't currently have enough reliable information in my knowledge base to answer it.",
+      "repairs": []
+    },
+    {
+      "id": "P040",
+      "question": "should I start with python java or c++?",
+      "focus": [
+        "c++",
+        "java",
+        "python",
+        "start"
+      ],
+      "need": 2,
+      "covered_after_pruning": [
+        "python"
+      ],
+      "covered_raw": [
+        "c++",
+        "java",
+        "python",
+        "start"
+      ],
+      "sim_after": 0.523,
+      "sim_raw": 0.683,
+      "reproduced": "generated answer did not address the question's distinctive topic terms",
+      "final": "The UC Berkeley Engineering resource suggests that students without programming experience may struggle in CS 61A, which is typically taken by EECS students in their first semester [S2]. Additionally, the note from CENG AI Advisor highlights Python's popularity as the most-used language on GitHub [S3].",
+      "repairs": [
+        "added_supported_inline_label",
+        "pruned_unverified_sentences",
+        "partial_answer"
+      ]
+    },
+    {
+      "id": "P041",
+      "question": "Is c++ still useful for computer engineers?",
+      "focus": [
+        "c++"
+      ],
+      "need": 1,
+      "covered_after_pruning": [],
+      "covered_raw": [
+        "c++"
+      ],
+      "sim_after": 0.542,
+      "sim_raw": 0.802,
+      "reproduced": "generated answer did not address the question's distinctive topic terms",
+      "final": "The 2016 Computer Engineering Curricula by the Association for Computing Machinery and IEEE Computer Society [S1] states that computer engineering students should engage in an in-depth study of significant applications that use computing engineering.",
+      "repairs": [
+        "pruned_unverified_sentences",
+        "partial_answer"
+      ]
+    },
+    {
+      "id": "P046",
+      "question": "I can only code simple apps what skill next?",
+      "focus": [
+        "apps",
+        "code",
+        "next",
+        "only",
+        "simple",
+        "skill"
+      ],
+      "need": 2,
+      "covered_after_pruning": [
+        "code"
+      ],
+      "covered_raw": [
+        "apps",
+        "code",
+        "next",
+        "only",
+        "simple",
+        "skill"
+      ],
+      "sim_after": 0.517,
+      "sim_raw": 0.76,
+      "reproduced": "generated answer did not address the question's distinctive topic terms",
+      "final": "Building a portfolio of projects that demonstrate your ability to develop software professionally will also be crucial [S3].",
+      "repairs": [
+        "removed_trailing_source_labels",
+        "added_supported_inline_label",
+        "pruned_unverified_sentences",
+        "partial_answer"
+      ]
+    },
+    {
+      "id": "H059",
+      "question": "Do computer engineers work with microcontrollers?",
+      "focus": [
+        "microcontrollers"
+      ],
+      "need": 1,
+      "covered_after_pruning": [],
+      "covered_raw": [
+        "microcontrollers"
+      ],
+      "sim_after": 0.527,
+      "sim_raw": 0.809,
+      "reproduced": "generated answer did not address the question's distinctive topic terms",
+      "final": "The curriculum and career focus of computer engineering programs, as described in [S3] and [S4], emphasize the design of systems that involve the integration of software and hardware devices.",
+      "repairs": [
+        "pruned_unverified_sentences",
+        "partial_answer"
+      ]
+    },
+    {
+      "id": "Y092",
+      "question": "Is cryptography too math heavy for me?",
+      "focus": [
+        "cryptography",
+        "heavy",
+        "math",
+        "too"
+      ],
+      "need": 2,
+      "covered_after_pruning": [
+        "cryptography"
+      ],
+      "covered_raw": [
+        "cryptography",
+        "heavy",
+        "math"
+      ],
+      "sim_after": 0.525,
+      "sim_raw": 0.652,
+      "reproduced": "generated answer did not address the question's distinctive topic terms",
+      "final": "The curricula include sections on secret and public key cryptography, which are discussed in terms of their motivation and the impact of processing power on their effectiveness [S1]. Additionally, the Computing Competencies for Undergraduate Data Science Curricula section covers cryptographic concepts, including encryption, decryption, and public-key cryptography [S3].",
+      "repairs": [
+        "removed_trailing_source_labels",
+        "added_supported_inline_label",
+        "source_name_to_inline_label",
+        "pruned_unverified_sentences",
+        "partial_answer"
+      ]
+    },
+    {
+      "id": "R097",
+      "question": "What should I include in my CV as a computer engineering student?",
+      "focus": [
+        "cv",
+        "include",
+        "my"
+      ],
+      "need": 2,
+      "covered_after_pruning": [
+        "include"
+      ],
+      "covered_raw": [
+        "include"
+      ],
+      "sim_after": 0.671,
+      "sim_raw": 0.691,
+      "reproduced": "generated answer did not address the question's distinctive topic terms",
+      "final": "As a computer engineering student, you should include sections that highlight your technical skills and experiences, such as projects, internships, labs, hackathons, and open-source work [S3]. Additionally, it's important to demonstrate your career readiness by showcasing your communication, critical thinking, equity and inclusion, leadership, professionalism, teamwork, and technology skills [S3]. This can be done through various projects and experiences, as well as presentations, documentation, and responsible teamwork [S3]. [S3] and [S4] provide insights into the importance of career readiness for computer engineering students, emphasizing the need to balance technical skills with soft skills like communication and teamwork.",
+      "repairs": [
+        "added_supported_inline_label"
+      ]
+    },
+    {
+      "id": "R100",
+      "question": "Does low GPA ruin my software career?",
+      "focus": [
+        "gpa",
+        "low",
+        "my",
+        "ruin",
+        "software"
+      ],
+      "need": 2,
+      "covered_after_pruning": [
+        "gpa"
+      ],
+      "covered_raw": [
+        "gpa",
+        "low",
+        "ruin",
+        "software"
+      ],
+      "sim_after": 0.543,
+      "sim_raw": 0.78,
+      "reproduced": "generated answer did not address the question's distinctive topic terms",
+      "final": "While GPA is not the only factor considered by employers, it is still an important aspect of a student's academic performance [S1]. The context suggests that employers are increasingly using skills-based hiring rather than GPA screening [S1].",
+      "repairs": [
+        "removed_trailing_source_labels",
+        "added_supported_inline_label",
+        "pruned_unverified_sentences",
+        "partial_answer"
+      ]
+    },
+    {
+      "id": "R105",
+      "question": "How can I get my first internship?",
+      "focus": [
+        "get",
+        "internship",
+        "my"
+      ],
+      "need": 2,
+      "covered_after_pruning": [
+        "internship"
+      ],
+      "covered_raw": [
+        "get",
+        "internship"
+      ],
+      "sim_after": 0.552,
+      "sim_raw": 0.672,
+      "reproduced": "generated answer did not address the question's distinctive topic terms",
+      "final": "Participating in co-curricular activities and demonstrating your career readiness skills through projects, internships, and other experiences can also be beneficial [S3].",
+      "repairs": [
+        "removed_trailing_source_labels",
+        "added_supported_inline_label",
+        "pruned_unverified_sentences",
+        "partial_answer"
+      ]
+    },
+    {
+      "id": "R112",
+      "question": "How long until I become senior engineer?",
+      "focus": [
+        "long",
+        "senior",
+        "until"
+      ],
+      "need": 2,
+      "covered_after_pruning": [],
+      "covered_raw": [
+        "senior"
+      ],
+      "sim_after": 0.462,
+      "sim_raw": 0.745,
+      "reproduced": "generated answer did not address the question's distinctive topic terms",
+      "final": "The typical program structure includes 120 semester credit hours, with each year of study consisting of 30 semester hours [S2].",
+      "repairs": [
+        "removed_trailing_source_labels",
+        "added_supported_inline_label",
+        "pruned_unverified_sentences",
+        "partial_answer"
+      ]
+    },
+    {
+      "id": "R113",
+      "question": "will employers care about university name or skills?",
+      "focus": [
+        "care",
+        "employers",
+        "skills",
+        "university"
+      ],
+      "need": 2,
+      "covered_after_pruning": [
+        "skills"
+      ],
+      "covered_raw": [
+        "care",
+        "employers",
+        "skills",
+        "university"
+      ],
+      "sim_after": 0.399,
+      "sim_raw": 0.744,
+      "reproduced": "generated answer did not address the question's distinctive topic terms",
+      "final": "The content from the Association for Computing Machinery and IEEE Computer Society suggests that computer engineers need to be lifelong learners to maintain their knowledge and skills within their chosen discipline [S3].",
+      "repairs": [
+        "added_supported_inline_label",
+        "pruned_unverified_sentences",
+        "partial_answer"
+      ]
+    },
+    {
+      "id": "R116",
+      "question": "Can I start freelancing while studying?",
+      "focus": [
+        "freelancing",
+        "start",
+        "while"
+      ],
+      "need": 2,
+      "covered_after_pruning": [
+        "while"
+      ],
+      "covered_raw": [
+        "freelancing",
+        "start",
+        "while"
+      ],
+      "sim_after": 0.551,
+      "sim_raw": 0.688,
+      "reproduced": "generated answer did not address the question's distinctive topic terms",
+      "final": "The context mentions that students often work part-time while studying, which can provide them with the necessary real-world experience to help them decide on future career goals [S4]. Additionally, the curricula suggest that students may become disillusioned if they only focus on mathematics and science without computer engineering applications [S1].",
+      "repairs": [
+        "removed_trailing_source_labels",
+        "added_supported_inline_label",
+        "pruned_unverified_sentences",
+        "partial_answer"
+      ]
+    },
+    {
+      "id": "R122",
+      "question": "should I apply to jobs before graduating?",
+      "focus": [
+        "apply"
+      ],
+      "need": 1,
+      "covered_after_pruning": [],
+      "covered_raw": [
+        "apply"
+      ],
+      "sim_after": 0.476,
+      "sim_raw": 0.647,
+      "reproduced": "generated answer did not address the question's distinctive topic terms",
+      "final": "The NACE survey mentioned in indicates that students are increasingly recognizing the importance of gaining internship experience, with more than two-thirds of 2024 graduating seniors engaging in an internship during their college career [S3].",
+      "repairs": [
+        "removed_trailing_source_labels",
+        "pruned_unverified_sentences",
+        "partial_answer"
+      ]
+    },
+    {
+      "id": "S124",
+      "question": "Is a master s necessary for industry jobs?",
+      "focus": [
+        "industry",
+        "master",
+        "necessary"
+      ],
+      "need": 2,
+      "covered_after_pruning": [
+        "industry"
+      ],
+      "covered_raw": [
+        "industry",
+        "master",
+        "necessary"
+      ],
+      "sim_after": 0.561,
+      "sim_raw": 0.716,
+      "reproduced": "generated answer did not address the question's distinctive topic terms",
+      "final": "The [S2] context indicates that a bachelor's degree is often sufficient for industry positions, and the [S4] context emphasizes the importance of specific technical and personal skill sets for a successful career in Computer Engineering.",
+      "repairs": [
+        "removed_trailing_source_labels",
+        "pruned_unverified_sentences",
+        "partial_answer"
+      ]
+    },
+    {
+      "id": "S135",
+      "question": "Is ostim connected with industry?",
+      "focus": [
+        "connected",
+        "industry",
+        "ostim"
+      ],
+      "need": 2,
+      "covered_after_pruning": [
+        "ostim"
+      ],
+      "covered_raw": [
+        "connected",
+        "industry",
+        "ostim"
+      ],
+      "sim_after": 0.494,
+      "sim_raw": 0.654,
+      "reproduced": "generated answer did not address the question's distinctive topic terms",
+      "final": "OSTIM Technical University - Department of Computer Engineering (English) states that a participatory training will be given to practical applications by giving importance to practical training besides theoretical knowledge [S1].",
+      "repairs": [
+        "added_supported_inline_label",
+        "pruned_unverified_sentences",
+        "partial_answer"
+      ]
+    },
+    {
+      "id": "S136",
+      "question": "What makes ostim computer engineering different?",
+      "focus": [
+        "different",
+        "makes",
+        "ostim"
+      ],
+      "need": 2,
+      "covered_after_pruning": [
+        "ostim"
+      ],
+      "covered_raw": [
+        "ostim"
+      ],
+      "sim_after": 0.682,
+      "sim_raw": 0.679,
+      "reproduced": "generated answer did not address the question's distinctive topic terms",
+      "final": "OSTIM Technical University's Computer Engineering program is distinguished by its focus on developing skills for technical management and the ability to solve engineering problems through analysis, synthesis, and modeling [S1]. The program also emphasizes personal research, the production of information from a universal perspective, and the transfer of technology into the industry [S1]. Additionally, it encourages the sharing of knowledge and experience with society and industry [S1].",
+      "repairs": [
+        "added_supported_inline_label",
+        "pruned_unverified_sentences"
+      ]
+    },
+    {
+      "id": "S140",
+      "question": "Can I study abroad for one semester as a computer engineering student?",
+      "focus": [
+        "abroad",
+        "one",
+        "semester"
+      ],
+      "need": 2,
+      "covered_after_pruning": [
+        "abroad"
+      ],
+      "covered_raw": [
+        "abroad",
+        "one",
+        "semester"
+      ],
+      "sim_after": 0.504,
+      "sim_raw": 0.678,
+      "reproduced": "generated answer did not address the question's distinctive topic terms",
+      "final": "The curriculum details mention courses in mathematics, physics, programming, and English-medium study expectations, but there is no specific mention of Erasmus or study abroad programs [S1].",
+      "repairs": [
+        "removed_trailing_source_labels",
+        "added_supported_inline_label",
+        "pruned_unverified_sentences",
+        "partial_answer"
+      ]
+    },
+    {
+      "id": "X141",
+      "question": "I like AI and cybersecurity but hate electronics is computer engineering still a good choice and what should I learn first?",
+      "focus": [
+        "ai",
+        "but",
+        "cybersecurity",
+        "electronics"
+      ],
+      "need": 2,
+      "covered_after_pruning": [
+        "cybersecurity"
+      ],
+      "covered_raw": [
+        "ai",
+        "cybersecurity",
+        "electronics"
+      ],
+      "sim_after": 0.534,
+      "sim_raw": 0.808,
+      "reproduced": "generated answer did not address the question's distinctive topic terms",
+      "final": "For cybersecurity, you should emphasize topics like cloud services, IAM, logging, and secure deployment, which are more aligned with your interests [S4].",
+      "repairs": [
+        "removed_trailing_source_labels",
+        "added_supported_inline_label",
+        "pruned_unverified_sentences",
+        "partial_answer"
+      ]
+    },
+    {
+      "id": "T184",
+      "question": "What projects should I build as a preference for hardware?",
+      "focus": [
+        "hardware",
+        "preference",
+        "projects"
+      ],
+      "need": 2,
+      "covered_after_pruning": [
+        "hardware"
+      ],
+      "covered_raw": [
+        "hardware",
+        "preference",
+        "projects"
+      ],
+      "sim_after": 0.572,
+      "sim_raw": 0.717,
+      "reproduced": "generated answer did not address the question's distinctive topic terms",
+      "final": "You could work on building and modifying product prototypes, which is a related occupation as mentioned in the context [S2]. This would allow you to apply your skills in hardware engineering and interface with software and system requirements [S2].",
+      "repairs": [
+        "removed_trailing_source_labels",
+        "added_supported_inline_label",
+        "pruned_unverified_sentences",
+        "partial_answer"
+      ]
+    },
+    {
+      "id": "T192",
+      "question": "will it help my career? Regarding Can CENG students do Erasmus in Computer Engineering.",
+      "focus": [],
+      "need": 0,
+      "covered_after_pruning": [],
+      "covered_raw": [
+        "erasmus",
+        "help"
+      ],
+      "sim_after": null,
+      "sim_raw": 0.761,
+      "reproduced": "citation invalid",
+      "final": "",
+      "repairs": [
+        "removed_trailing_source_labels"
+      ]
+    }
+  ],
+  "answered": [
+    {
+      "id": "F001",
+      "label": "correct_evidence_supported",
+      "focus": [],
+      "covered": [],
+      "need": 1,
+      "sim": 0.754
+    },
+    {
+      "id": "F002",
+      "label": "correct_evidence_supported",
+      "focus": [],
+      "covered": [],
+      "need": 1,
+      "sim": 0.774
+    },
+    {
+      "id": "F003",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "also",
+        "coding",
+        "hardware"
+      ],
+      "covered": [
+        "coding",
+        "hardware"
+      ],
+      "need": 2,
+      "sim": 0.708
+    },
+    {
+      "id": "F004",
+      "label": "unsupported_incorrect_or_misleading",
+      "focus": [],
+      "covered": [],
+      "need": 1,
+      "sim": 0.754
+    },
+    {
+      "id": "F005",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "different",
+        "science"
+      ],
+      "covered": [
+        "science"
+      ],
+      "need": 1,
+      "sim": 0.783
+    },
+    {
+      "id": "F006",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "broader",
+        "one",
+        "software",
+        "vs"
+      ],
+      "covered": [
+        "broader",
+        "software",
+        "vs"
+      ],
+      "need": 2,
+      "sim": 0.758
+    },
+    {
+      "id": "F007",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "apps",
+        "devices",
+        "just",
+        "physical"
+      ],
+      "covered": [
+        "apps",
+        "devices",
+        "physical"
+      ],
+      "need": 2,
+      "sim": 0.779
+    },
+    {
+      "id": "F008",
+      "label": "unsupported_incorrect_or_misleading",
+      "focus": [
+        "computing",
+        "discipline",
+        "major"
+      ],
+      "covered": [
+        "computing",
+        "discipline"
+      ],
+      "need": 2,
+      "sim": 0.783
+    },
+    {
+      "id": "F009",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "problems",
+        "solve"
+      ],
+      "covered": [
+        "problems",
+        "solve"
+      ],
+      "need": 1,
+      "sim": 0.776
+    },
+    {
+      "id": "F010",
+      "label": "unsupported_incorrect_or_misleading",
+      "focus": [],
+      "covered": [],
+      "need": 1,
+      "sim": 0.722
+    },
+    {
+      "id": "F011",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "both",
+        "code",
+        "likes",
+        "physics",
+        "someone"
+      ],
+      "covered": [
+        "both",
+        "code",
+        "likes",
+        "physics",
+        "someone"
+      ],
+      "need": 2,
+      "sim": 0.579
+    },
+    {
+      "id": "C013",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "courses",
+        "taught"
+      ],
+      "covered": [
+        "courses"
+      ],
+      "need": 1,
+      "sim": 0.729
+    },
+    {
+      "id": "C014",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "classes",
+        "take",
+        "year"
+      ],
+      "covered": [
+        "classes",
+        "take",
+        "year"
+      ],
+      "need": 2,
+      "sim": 0.669
+    },
+    {
+      "id": "C015",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "courses",
+        "operating",
+        "program",
+        "systems"
+      ],
+      "covered": [
+        "courses",
+        "operating",
+        "program",
+        "systems"
+      ],
+      "need": 2,
+      "sim": 0.9
+    },
+    {
+      "id": "C016",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "curriculum",
+        "databases",
+        "include",
+        "networks"
+      ],
+      "covered": [
+        "databases",
+        "networks"
+      ],
+      "need": 2,
+      "sim": 0.608
+    },
+    {
+      "id": "C017",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "303"
+      ],
+      "covered": [
+        "303"
+      ],
+      "need": 1,
+      "sim": 0.586
+    },
+    {
+      "id": "C018",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "applied",
+        "course",
+        "education",
+        "training",
+        "workplace"
+      ],
+      "covered": [
+        "course",
+        "training",
+        "workplace"
+      ],
+      "need": 2,
+      "sim": 0.646
+    },
+    {
+      "id": "C020",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "lab"
+      ],
+      "covered": [
+        "lab"
+      ],
+      "need": 1,
+      "sim": 0.69
+    },
+    {
+      "id": "C021",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "electives",
+        "help",
+        "specialize"
+      ],
+      "covered": [
+        "electives",
+        "specialize"
+      ],
+      "need": 2,
+      "sim": 0.67
+    },
+    {
+      "id": "C023",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "circuits",
+        "connect",
+        "math",
+        "programming",
+        "subjects",
+        "together"
+      ],
+      "covered": [
+        "circuits",
+        "connect",
+        "math",
+        "programming",
+        "subjects",
+        "together"
+      ],
+      "need": 2,
+      "sim": 0.689
+    },
+    {
+      "id": "C024",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "avoid",
+        "courses",
+        "hardware",
+        "only",
+        "software"
+      ],
+      "covered": [
+        "hardware",
+        "software"
+      ],
+      "need": 2,
+      "sim": 0.619
+    },
+    {
+      "id": "C026",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "design",
+        "education",
+        "part",
+        "projects",
+        "senior"
+      ],
+      "covered": [
+        "design",
+        "projects",
+        "senior"
+      ],
+      "need": 2,
+      "sim": 0.69
+    },
+    {
+      "id": "M027",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "mathematics",
+        "required"
+      ],
+      "covered": [
+        "mathematics"
+      ],
+      "need": 1,
+      "sim": 0.567
+    },
+    {
+      "id": "M028",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "math",
+        "weak"
+      ],
+      "covered": [
+        "math"
+      ],
+      "need": 1,
+      "sim": 0.64
+    },
+    {
+      "id": "M029",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "math",
+        "matter",
+        "most"
+      ],
+      "covered": [
+        "math",
+        "matter",
+        "most"
+      ],
+      "need": 2,
+      "sim": 0.781
+    },
+    {
+      "id": "M030",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "calculus",
+        "used"
+      ],
+      "covered": [
+        "calculus",
+        "used"
+      ],
+      "need": 1,
+      "sim": 0.778
+    },
+    {
+      "id": "M034",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "algebra",
+        "calculus",
+        "coding",
+        "review",
+        "starting",
+        "university"
+      ],
+      "covered": [
+        "algebra",
+        "calculus",
+        "coding",
+        "review",
+        "starting",
+        "university"
+      ],
+      "need": 2,
+      "sim": 0.754
+    },
+    {
+      "id": "M035",
+      "label": "unsupported_incorrect_or_misleading",
+      "focus": [
+        "mathematics",
+        "requirment"
+      ],
+      "covered": [
+        "mathematics"
+      ],
+      "need": 1,
+      "sim": 0.71
+    },
+    {
+      "id": "M036",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "compared",
+        "degree",
+        "practical",
+        "theoretical"
+      ],
+      "covered": [
+        "degree",
+        "practical",
+        "theoretical"
+      ],
+      "need": 2,
+      "sim": 0.609
+    },
+    {
+      "id": "M037",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "ai",
+        "data",
+        "science",
+        "statistics"
+      ],
+      "covered": [
+        "ai",
+        "data",
+        "science",
+        "statistics"
+      ],
+      "need": 2,
+      "sim": 0.53
+    },
+    {
+      "id": "M038",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "algebra",
+        "learning",
+        "linear",
+        "machine"
+      ],
+      "covered": [
+        "algebra",
+        "learning",
+        "linear",
+        "machine"
+      ],
+      "need": 2,
+      "sim": 0.736
+    },
+    {
+      "id": "P039",
+      "label": "unsupported_incorrect_or_misleading",
+      "focus": [
+        "languages",
+        "programming"
+      ],
+      "covered": [
+        "languages",
+        "programming"
+      ],
+      "need": 1,
+      "sim": 0.514
+    },
+    {
+      "id": "P042",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "development",
+        "web"
+      ],
+      "covered": [
+        "development"
+      ],
+      "need": 1,
+      "sim": 0.581
+    },
+    {
+      "id": "P043",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "every",
+        "git",
+        "github"
+      ],
+      "covered": [
+        "git",
+        "github"
+      ],
+      "need": 2,
+      "sim": 0.714
+    },
+    {
+      "id": "P044",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "linux"
+      ],
+      "covered": [
+        "linux"
+      ],
+      "need": 1,
+      "sim": 0.515
+    },
+    {
+      "id": "P045",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "embedded",
+        "learning",
+        "linux",
+        "systems",
+        "worth"
+      ],
+      "covered": [
+        "embedded",
+        "linux",
+        "systems",
+        "worth"
+      ],
+      "need": 2,
+      "sim": 0.752
+    },
+    {
+      "id": "P047",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "algorithms",
+        "better"
+      ],
+      "covered": [
+        "algorithms",
+        "better"
+      ],
+      "need": 1,
+      "sim": 0.709
+    },
+    {
+      "id": "P048",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "data",
+        "projects",
+        "structures"
+      ],
+      "covered": [
+        "data",
+        "structures"
+      ],
+      "need": 2,
+      "sim": 0.573
+    },
+    {
+      "id": "P050",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "early",
+        "habits",
+        "software"
+      ],
+      "covered": [
+        "early",
+        "habits",
+        "software"
+      ],
+      "need": 2,
+      "sim": 0.745
+    },
+    {
+      "id": "P051",
+      "label": "unsupported_incorrect_or_misleading",
+      "focus": [
+        "backend",
+        "developer"
+      ],
+      "covered": [
+        "backend",
+        "developer"
+      ],
+      "need": 1,
+      "sim": 0.832
+    },
+    {
+      "id": "P052",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "backend",
+        "frontend",
+        "vs"
+      ],
+      "covered": [
+        "backend",
+        "frontend",
+        "vs"
+      ],
+      "need": 2,
+      "sim": 0.744
+    },
+    {
+      "id": "P053",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "databases"
+      ],
+      "covered": [
+        "databases"
+      ],
+      "need": 1,
+      "sim": 0.703
+    },
+    {
+      "id": "P055",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "debugging",
+        "testing"
+      ],
+      "covered": [
+        "debugging",
+        "testing"
+      ],
+      "need": 1,
+      "sim": 0.717
+    },
+    {
+      "id": "P056",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "command",
+        "line",
+        "usage"
+      ],
+      "covered": [
+        "command",
+        "line"
+      ],
+      "need": 2,
+      "sim": 0.602
+    },
+    {
+      "id": "H057",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "hardware",
+        "understand"
+      ],
+      "covered": [
+        "hardware",
+        "understand"
+      ],
+      "need": 1,
+      "sim": 0.698
+    },
+    {
+      "id": "H058",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "embedded",
+        "path",
+        "systems"
+      ],
+      "covered": [
+        "embedded",
+        "path",
+        "systems"
+      ],
+      "need": 2,
+      "sim": 0.518
+    },
+    {
+      "id": "H060",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "architecture"
+      ],
+      "covered": [
+        "architecture"
+      ],
+      "need": 1,
+      "sim": 0.718
+    },
+    {
+      "id": "H062",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "cybersecurity",
+        "network",
+        "skills"
+      ],
+      "covered": [
+        "cybersecurity",
+        "network"
+      ],
+      "need": 2,
+      "sim": 0.575
+    },
+    {
+      "id": "H063",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "but",
+        "hard",
+        "hardware",
+        "software"
+      ],
+      "covered": [
+        "hardware",
+        "software"
+      ],
+      "need": 2,
+      "sim": 0.485
+    },
+    {
+      "id": "H064",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "electronics",
+        "include",
+        "labs"
+      ],
+      "covered": [
+        "electronics",
+        "include"
+      ],
+      "need": 2,
+      "sim": 0.54
+    },
+    {
+      "id": "H066",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "between",
+        "connection",
+        "hardware",
+        "operating",
+        "systems"
+      ],
+      "covered": [
+        "between",
+        "connection",
+        "hardware",
+        "operating",
+        "systems"
+      ],
+      "need": 2,
+      "sim": 0.755
+    },
+    {
+      "id": "H067",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "iot"
+      ],
+      "covered": [
+        "iot"
+      ],
+      "need": 1,
+      "sim": 0.751
+    },
+    {
+      "id": "H068",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "cybersecurity",
+        "networks"
+      ],
+      "covered": [
+        "cybersecurity",
+        "networks"
+      ],
+      "need": 1,
+      "sim": 0.711
+    },
+    {
+      "id": "A069",
+      "label": "unsupported_incorrect_or_misleading",
+      "focus": [
+        "artificial",
+        "intelligence",
+        "replace"
+      ],
+      "covered": [
+        "artificial",
+        "intelligence"
+      ],
+      "need": 2,
+      "sim": 0.427
+    },
+    {
+      "id": "A070",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "ai",
+        "heavy",
+        "industry",
+        "prepare",
+        "software"
+      ],
+      "covered": [
+        "ai",
+        "software"
+      ],
+      "need": 2,
+      "sim": 0.56
+    },
+    {
+      "id": "A072",
+      "label": "unsupported_incorrect_or_misleading",
+      "focus": [
+        "ai",
+        "degree",
+        "master"
+      ],
+      "covered": [
+        "degree",
+        "master"
+      ],
+      "need": 2,
+      "sim": 0.538
+    },
+    {
+      "id": "A073",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "ai",
+        "besides",
+        "prompt",
+        "skills"
+      ],
+      "covered": [
+        "ai",
+        "besides",
+        "prompt",
+        "skills"
+      ],
+      "need": 2,
+      "sim": 0.788
+    },
+    {
+      "id": "A074",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "learning",
+        "machine",
+        "part"
+      ],
+      "covered": [
+        "learning",
+        "machine"
+      ],
+      "need": 2,
+      "sim": 0.483
+    },
+    {
+      "id": "A075",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "ai"
+      ],
+      "covered": [
+        "ai"
+      ],
+      "need": 1,
+      "sim": 0.688
+    },
+    {
+      "id": "A076",
+      "label": "correct_evidence_supported",
+      "focus": [],
+      "covered": [],
+      "need": 1,
+      "sim": 0.757
+    },
+    {
+      "id": "A077",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "agents",
+        "because",
+        "coding",
+        "disappear",
+        "software"
+      ],
+      "covered": [
+        "agents",
+        "coding",
+        "disappear",
+        "software"
+      ],
+      "need": 2,
+      "sim": 0.729
+    },
+    {
+      "id": "A078",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "affect",
+        "ai"
+      ],
+      "covered": [
+        "ai"
+      ],
+      "need": 1,
+      "sim": 0.645
+    },
+    {
+      "id": "A079",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "data",
+        "science",
+        "specialize"
+      ],
+      "covered": [
+        "data",
+        "science",
+        "specialize"
+      ],
+      "need": 2,
+      "sim": 0.69
+    },
+    {
+      "id": "A080",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "mechanical",
+        "robotics"
+      ],
+      "covered": [
+        "mechanical",
+        "robotics"
+      ],
+      "need": 1,
+      "sim": 0.627
+    },
+    {
+      "id": "A081",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "ai",
+        "math",
+        "ml",
+        "tools",
+        "using"
+      ],
+      "covered": [
+        "ai",
+        "math",
+        "ml"
+      ],
+      "need": 2,
+      "sim": 0.588
+    },
+    {
+      "id": "A082",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "ai",
+        "by",
+        "changed",
+        "generative",
+        "parts"
+      ],
+      "covered": [
+        "ai",
+        "generative"
+      ],
+      "need": 2,
+      "sim": 0.708
+    },
+    {
+      "id": "Y083",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "cybersecurity"
+      ],
+      "covered": [
+        "cybersecurity"
+      ],
+      "need": 1,
+      "sim": 0.655
+    },
+    {
+      "id": "Y084",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "cybersecurity",
+        "skills"
+      ],
+      "covered": [
+        "cybersecurity",
+        "skills"
+      ],
+      "need": 1,
+      "sim": 0.679
+    },
+    {
+      "id": "Y085",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "networking",
+        "security"
+      ],
+      "covered": [
+        "networking"
+      ],
+      "need": 1,
+      "sim": 0.533
+    },
+    {
+      "id": "Y086",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "cybersecurity",
+        "hardware",
+        "more",
+        "software"
+      ],
+      "covered": [
+        "cybersecurity",
+        "hardware",
+        "software"
+      ],
+      "need": 2,
+      "sim": 0.709
+    },
+    {
+      "id": "Y087",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "ethical",
+        "hacking",
+        "safely",
+        "start"
+      ],
+      "covered": [
+        "ethical",
+        "hacking"
+      ],
+      "need": 2,
+      "sim": 0.421
+    },
+    {
+      "id": "Y088",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "path",
+        "security"
+      ],
+      "covered": [
+        "path",
+        "security"
+      ],
+      "need": 1,
+      "sim": 0.709
+    },
+    {
+      "id": "Y089",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "cybersecurity",
+        "linux"
+      ],
+      "covered": [
+        "cybersecurity",
+        "linux"
+      ],
+      "need": 1,
+      "sim": 0.51
+    },
+    {
+      "id": "Y090",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "cloud",
+        "security"
+      ],
+      "covered": [
+        "cloud",
+        "security"
+      ],
+      "need": 1,
+      "sim": 0.542
+    },
+    {
+      "id": "Y091",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "certifications",
+        "cybersecurity",
+        "degree",
+        "matters"
+      ],
+      "covered": [
+        "certifications",
+        "cybersecurity",
+        "degree",
+        "matters"
+      ],
+      "need": 2,
+      "sim": 0.758
+    },
+    {
+      "id": "Y093",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "between",
+        "cybersecurity",
+        "difference",
+        "software"
+      ],
+      "covered": [
+        "cybersecurity",
+        "difference",
+        "software"
+      ],
+      "need": 2,
+      "sim": 0.707
+    },
+    {
+      "id": "R095",
+      "label": "correct_evidence_supported",
+      "focus": [],
+      "covered": [],
+      "need": 1,
+      "sim": 0.76
+    },
+    {
+      "id": "R098",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "portfolio"
+      ],
+      "covered": [
+        "portfolio"
+      ],
+      "need": 1,
+      "sim": 0.657
+    },
+    {
+      "id": "R099",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "focus",
+        "gpa",
+        "internships",
+        "more",
+        "projects"
+      ],
+      "covered": [
+        "gpa",
+        "internships",
+        "projects"
+      ],
+      "need": 2,
+      "sim": 0.671
+    },
+    {
+      "id": "R101",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "internships"
+      ],
+      "covered": [
+        "internships"
+      ],
+      "need": 1,
+      "sim": 0.661
+    },
+    {
+      "id": "R102",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "experience",
+        "internship",
+        "without"
+      ],
+      "covered": [
+        "experience",
+        "internship",
+        "without"
+      ],
+      "need": 2,
+      "sim": 0.73
+    },
+    {
+      "id": "R103",
+      "label": "unsupported_incorrect_or_misleading",
+      "focus": [
+        "experience",
+        "internship",
+        "projects",
+        "replace"
+      ],
+      "covered": [
+        "internship",
+        "projects"
+      ],
+      "need": 2,
+      "sim": 0.499
+    },
+    {
+      "id": "R104",
+      "label": "unsupported_incorrect_or_misleading",
+      "focus": [
+        "hackathons"
+      ],
+      "covered": [
+        "hackathons"
+      ],
+      "need": 1,
+      "sim": 0.531
+    },
+    {
+      "id": "R106",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "internships",
+        "turkish"
+      ],
+      "covered": [
+        "internships",
+        "turkish"
+      ],
+      "need": 1,
+      "sim": 0.711
+    },
+    {
+      "id": "R107",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "erasmus"
+      ],
+      "covered": [
+        "erasmus"
+      ],
+      "need": 1,
+      "sim": 0.635
+    },
+    {
+      "id": "R108",
+      "label": "unsupported_incorrect_or_misleading",
+      "focus": [
+        "abroad"
+      ],
+      "covered": [
+        "abroad"
+      ],
+      "need": 1,
+      "sim": 0.438
+    },
+    {
+      "id": "R114",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "projects"
+      ],
+      "covered": [
+        "projects"
+      ],
+      "need": 1,
+      "sim": 0.479
+    },
+    {
+      "id": "R118",
+      "label": "unsupported_incorrect_or_misleading",
+      "focus": [
+        "daha",
+        "gpa",
+        "hangisi",
+        "internship",
+        "onemli"
+      ],
+      "covered": [
+        "gpa",
+        "internship"
+      ],
+      "need": 2,
+      "sim": 0.486
+    },
+    {
+      "id": "R119",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "experience",
+        "gpa",
+        "internship",
+        "low",
+        "no"
+      ],
+      "covered": [
+        "experience",
+        "gpa",
+        "internship"
+      ],
+      "need": 2,
+      "sim": 0.551
+    },
+    {
+      "id": "R121",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "finding",
+        "internships",
+        "linkedin"
+      ],
+      "covered": [
+        "finding",
+        "internships",
+        "linkedin"
+      ],
+      "need": 2,
+      "sim": 0.937
+    },
+    {
+      "id": "S123",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "master"
+      ],
+      "covered": [
+        "master"
+      ],
+      "need": 1,
+      "sim": 0.624
+    },
+    {
+      "id": "S125",
+      "label": "unsupported_incorrect_or_misleading",
+      "focus": [
+        "academia",
+        "go",
+        "into"
+      ],
+      "covered": [
+        "academia"
+      ],
+      "need": 2,
+      "sim": 0.732
+    },
+    {
+      "id": "S126",
+      "label": "unsupported_incorrect_or_misleading",
+      "focus": [
+        "life",
+        "ostim",
+        "technical",
+        "university"
+      ],
+      "covered": [
+        "life",
+        "ostim",
+        "technical",
+        "university"
+      ],
+      "need": 2,
+      "sim": 0.693
+    },
+    {
+      "id": "S127",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "clubs",
+        "communities",
+        "ostim",
+        "social",
+        "technical",
+        "university"
+      ],
+      "covered": [
+        "clubs",
+        "communities",
+        "technical",
+        "university"
+      ],
+      "need": 2,
+      "sim": 0.721
+    },
+    {
+      "id": "S128",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "clubs",
+        "ostim"
+      ],
+      "covered": [
+        "clubs",
+        "ostim"
+      ],
+      "need": 1,
+      "sim": 0.739
+    },
+    {
+      "id": "S129",
+      "label": "unsupported_incorrect_or_misleading",
+      "focus": [
+        "exams",
+        "explains",
+        "grading",
+        "official",
+        "regulation"
+      ],
+      "covered": [
+        "official",
+        "regulation"
+      ],
+      "need": 2,
+      "sim": 0.548
+    },
+    {
+      "id": "S132",
+      "label": "unsupported_incorrect_or_misleading",
+      "focus": [
+        "another",
+        "transfer",
+        "university"
+      ],
+      "covered": [
+        "another",
+        "transfer",
+        "university"
+      ],
+      "need": 2,
+      "sim": 0.779
+    },
+    {
+      "id": "S133",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "english",
+        "program"
+      ],
+      "covered": [
+        "english",
+        "program"
+      ],
+      "need": 1,
+      "sim": 0.664
+    },
+    {
+      "id": "S134",
+      "label": "unsupported_incorrect_or_misleading",
+      "focus": [
+        "academic",
+        "department",
+        "staff"
+      ],
+      "covered": [
+        "academic",
+        "department",
+        "staff"
+      ],
+      "need": 2,
+      "sim": 0.557
+    },
+    {
+      "id": "S137",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "competitions",
+        "projects"
+      ],
+      "covered": [
+        "competitions",
+        "projects"
+      ],
+      "need": 1,
+      "sim": 0.662
+    },
+    {
+      "id": "X142",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "compare",
+        "focusing",
+        "getting",
+        "github",
+        "gpa",
+        "internships",
+        "networking",
+        "projects",
+        "software"
+      ],
+      "covered": [
+        "gpa",
+        "internships",
+        "projects"
+      ],
+      "need": 2,
+      "sim": 0.598
+    },
+    {
+      "id": "X144",
+      "label": "unsupported_incorrect_or_misleading",
+      "focus": [
+        "by",
+        "each",
+        "employable",
+        "semester",
+        "year"
+      ],
+      "covered": [
+        "each",
+        "semester",
+        "year"
+      ],
+      "need": 2,
+      "sim": 0.476
+    },
+    {
+      "id": "X145",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "between",
+        "choosing",
+        "cybersecurity",
+        "data",
+        "embedded",
+        "explore",
+        "safely",
+        "science",
+        "systems"
+      ],
+      "covered": [
+        "cybersecurity",
+        "embedded",
+        "explore",
+        "safely",
+        "systems"
+      ],
+      "need": 2,
+      "sim": 0.731
+    },
+    {
+      "id": "X147",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "ai",
+        "by",
+        "cloud",
+        "cybersecurity",
+        "demand",
+        "embedded",
+        "rank"
+      ],
+      "covered": [
+        "ai",
+        "cloud",
+        "cybersecurity",
+        "embedded"
+      ],
+      "need": 2,
+      "sim": 0.629
+    },
+    {
+      "id": "X149",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "course",
+        "failed",
+        "gpa",
+        "help",
+        "internships",
+        "low",
+        "my",
+        "projects"
+      ],
+      "covered": [
+        "gpa",
+        "internships",
+        "projects"
+      ],
+      "need": 2,
+      "sim": 0.582
+    },
+    {
+      "id": "X150",
+      "label": "unsupported_incorrect_or_misleading",
+      "focus": [
+        "actual",
+        "connect",
+        "courses",
+        "curriculum",
+        "industry",
+        "roles"
+      ],
+      "covered": [
+        "actual",
+        "connect",
+        "courses",
+        "curriculum",
+        "industry",
+        "roles"
+      ],
+      "need": 2,
+      "sim": 0.658
+    },
+    {
+      "id": "X152",
+      "label": "unsupported_incorrect_or_misleading",
+      "focus": [
+        "approach",
+        "but",
+        "dislike",
+        "enjoy",
+        "pure",
+        "theory",
+        "things"
+      ],
+      "covered": [
+        "approach",
+        "theory"
+      ],
+      "need": 2,
+      "sim": 0.432
+    },
+    {
+      "id": "T180",
+      "label": "unsupported_incorrect_or_misleading",
+      "focus": [
+        "master"
+      ],
+      "covered": [
+        "master"
+      ],
+      "need": 1,
+      "sim": 0.477
+    },
+    {
+      "id": "T181",
+      "label": "unsupported_incorrect_or_misleading",
+      "focus": [
+        "sources",
+        "use"
+      ],
+      "covered": [],
+      "need": 1,
+      "sim": 0.508
+    },
+    {
+      "id": "T182",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "math",
+        "prepare",
+        "weak",
+        "year"
+      ],
+      "covered": [
+        "math",
+        "prepare",
+        "weak",
+        "year"
+      ],
+      "need": 2,
+      "sim": 0.79
+    },
+    {
+      "id": "T183",
+      "label": "unsupported_incorrect_or_misleading",
+      "focus": [
+        "internship",
+        "turkey"
+      ],
+      "covered": [
+        "internship"
+      ],
+      "need": 1,
+      "sim": 0.528
+    },
+    {
+      "id": "T185",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "apply",
+        "aspects",
+        "key",
+        "remote",
+        "software",
+        "they"
+      ],
+      "covered": [
+        "remote",
+        "software"
+      ],
+      "need": 2,
+      "sim": 0.686
+    },
+    {
+      "id": "T186",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "covered",
+        "curriculum",
+        "linux",
+        "related",
+        "specific"
+      ],
+      "covered": [
+        "covered",
+        "curriculum",
+        "linux",
+        "related",
+        "specific"
+      ],
+      "need": 2,
+      "sim": 0.71
+    },
+    {
+      "id": "T187",
+      "label": "unsupported_incorrect_or_misleading",
+      "focus": [
+        "courses",
+        "cybersecurity",
+        "field",
+        "focus",
+        "linux",
+        "pursue",
+        "specific",
+        "too",
+        "within"
+      ],
+      "covered": [
+        "cybersecurity",
+        "field"
+      ],
+      "need": 2,
+      "sim": 0.479
+    },
+    {
+      "id": "T188",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "field",
+        "focuses",
+        "hardware",
+        "more",
+        "science"
+      ],
+      "covered": [
+        "field",
+        "focuses",
+        "hardware",
+        "more",
+        "science"
+      ],
+      "need": 2,
+      "sim": 0.785
+    },
+    {
+      "id": "T189",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "portfolio",
+        "projects",
+        "solo",
+        "team"
+      ],
+      "covered": [
+        "portfolio",
+        "projects",
+        "solo",
+        "team"
+      ],
+      "need": 2,
+      "sim": 0.733
+    },
+    {
+      "id": "T190",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "compensate",
+        "internships"
+      ],
+      "covered": [
+        "compensate",
+        "internships"
+      ],
+      "need": 1,
+      "sim": 0.665
+    },
+    {
+      "id": "T191",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "different",
+        "makes",
+        "ostim"
+      ],
+      "covered": [
+        "different",
+        "ostim"
+      ],
+      "need": 2,
+      "sim": 0.78
+    },
+    {
+      "id": "T196",
+      "label": "correct_evidence_supported",
+      "focus": [
+        "cloud",
+        "security"
+      ],
+      "covered": [
+        "cloud",
+        "security"
+      ],
+      "need": 1,
+      "sim": 0.632
+    },
+    {
+      "id": "T197",
+      "label": "unsupported_incorrect_or_misleading",
+      "focus": [
+        "c++",
+        "python"
+      ],
+      "covered": [
+        "python"
+      ],
+      "need": 1,
+      "sim": 0.548
+    },
+    {
+      "id": "T198",
+      "label": "unsupported_incorrect_or_misleading",
+      "focus": [
+        "abroad",
+        "matter",
+        "most",
+        "skills",
+        "working"
+      ],
+      "covered": [
+        "abroad",
+        "skills",
+        "working"
+      ],
+      "need": 2,
+      "sim": 0.693
+    },
+    {
+      "id": "T199",
+      "label": "unsupported_incorrect_or_misleading",
+      "focus": [
+        "gpa",
+        "one",
+        "prioritize",
+        "projects",
+        "semester"
+      ],
+      "covered": [
+        "gpa",
+        "projects"
+      ],
+      "need": 2,
+      "sim": 0.661
+    }
+  ]
+}

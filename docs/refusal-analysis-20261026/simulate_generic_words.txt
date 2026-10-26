@@ -1,0 +1,42 @@
+F012  focus [] covered [] need 1 -> PASS
+C019  focus ['digital', 'electronics', 'logic'] covered [] need 2 -> still refused
+C022  focus ['courses', 'lesson', 'typo'] covered ['courses'] need 2 -> still refused
+C025  focus ['cs', 'curriculum', 'ee'] covered ['curriculum'] need 2 -> still refused
+M032  focus ['math'] covered [] need 1 -> still refused
+M033  focus ['average', 'compensate', 'mathematics', 'programming'] covered [] need 2 -> still refused
+P040  focus ['c++', 'java', 'python', 'start'] covered ['python'] need 2 -> still refused
+P041  focus ['c++'] covered [] need 1 -> still refused
+P046  focus ['apps', 'code', 'simple', 'skill'] covered ['code'] need 2 -> still refused
+H059  focus ['microcontrollers'] covered [] need 1 -> still refused
+Y092  focus ['cryptography', 'heavy', 'math'] covered ['cryptography'] need 2 -> still refused
+R097  focus ['cv'] covered [] need 1 -> still refused
+R100  focus ['gpa', 'low', 'ruin', 'software'] covered ['gpa'] need 2 -> still refused
+R105  focus ['internship'] covered ['internship'] need 1 -> PASS
+R112  focus ['long', 'senior'] covered [] need 1 -> still refused
+R113  focus ['care', 'employers', 'skills', 'university'] covered ['skills'] need 2 -> still refused
+R116  focus ['freelancing', 'start'] covered [] need 1 -> still refused
+R122  focus ['apply'] covered [] need 1 -> still refused
+S124  focus ['industry', 'master', 'necessary'] covered ['industry'] need 2 -> still refused
+S135  focus ['connected', 'industry', 'ostim'] covered ['ostim'] need 2 -> still refused
+S136  focus ['ostim'] covered ['ostim'] need 1 -> PASS
+S140  focus ['abroad', 'semester'] covered ['abroad'] need 1 -> PASS
+X141  focus ['ai', 'cybersecurity', 'electronics'] covered ['cybersecurity'] need 2 -> still refused
+T184  focus ['hardware', 'preference', 'projects'] covered ['hardware'] need 2 -> still refused
+T192  focus [] covered [] need 1 -> PASS
+
+5 of 25 would pass
+
+F012 What is the difference between it and computer engineering?
+  Computer Engineering involves the design and construction of processor-based systems, including hardware, software, and communications components, with a focus on the integration of software and hardware devices [S1].
+
+R105 How can I get my first internship?
+  Participating in co-curricular activities and demonstrating your career readiness skills through projects, internships, and other experiences can also be beneficial [S3].
+
+S136 What makes ostim computer engineering different?
+  OSTIM Technical University's Computer Engineering program is distinguished by its focus on developing skills for technical management and the ability to solve engineering problems through analysis, synthesis, and modeling [S1]. The program also emphasizes personal research, the production of information from a universal perspective, and the transfer of technology into the industry [S1]. Additional
+
+S140 Can I study abroad for one semester as a computer engineering student?
+  The curriculum details mention courses in mathematics, physics, programming, and English-medium study expectations, but there is no specific mention of Erasmus or study abroad programs [S1].
+
+T192 will it help my career? Regarding Can CENG students do Erasmus in Computer Engineering.
+  

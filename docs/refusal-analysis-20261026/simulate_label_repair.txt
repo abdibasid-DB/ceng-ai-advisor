@@ -1,0 +1,84 @@
+F012  before: generated answer did not address the question's distinc | after: generated answer did not address the question's distinc 
+C019  before: generated answer did not address the question's distinc | after: generated answer did not address the question's distinc 
+C022  before: generated answer did not address the question's distinc | after: generated answer did not address the question's distinc 
+C025  before: generated answer did not address the question's distinc | after: generated answer did not address the question's distinc 
+M031  before: no generation (pre-generation gate)                     | after: no generation (pre-generation gate)                     
+M032  before: generated answer did not address the question's distinc | after: generated answer did not address the question's distinc 
+M033  before: generated answer did not address the question's distinc | after: generated answer did not address the question's distinc 
+P040  before: generated answer did not address the question's distinc | after: ANSWERED                                                FLIPS
+P041  before: generated answer did not address the question's distinc | after: generated answer did not address the question's distinc 
+P046  before: generated answer did not address the question's distinc | after: generated answer did not address the question's distinc 
+P049  before: citation invalid: cited passage does not support one or | after: citation invalid: unsupported claim could not be matche 
+P054  before: no generation (pre-generation gate)                     | after: no generation (pre-generation gate)                     
+H059  before: generated answer did not address the question's distinc | after: ANSWERED                                                FLIPS
+H061  before: citation invalid: unsupported claim could not be matche | after: citation invalid: unsupported claim could not be matche 
+H065  before: no generation (pre-generation gate)                     | after: no generation (pre-generation gate)                     
+A071  before: citation invalid: unsupported claim could not be matche | after: citation invalid: unsupported claim could not be matche 
+Y092  before: generated answer did not address the question's distinc | after: ANSWERED                                                FLIPS
+Y094  before: citation invalid: unsupported claim could not be matche | after: citation invalid: unsupported claim could not be matche 
+R096  before: citation invalid: unsupported claim could not be matche | after: citation invalid: unsupported claim could not be matche 
+R097  before: generated answer did not address the question's distinc | after: generated answer did not address the question's distinc 
+R100  before: generated answer did not address the question's distinc | after: generated answer did not address the question's distinc 
+R105  before: generated answer did not address the question's distinc | after: generated answer did not address the question's distinc 
+R109  before: citation invalid: unsupported claim could not be matche | after: ANSWERED                                                FLIPS
+R112  before: generated answer did not address the question's distinc | after: generated answer did not address the question's distinc 
+R113  before: generated answer did not address the question's distinc | after: ANSWERED                                                FLIPS
+R115  before: citation invalid: unsupported claim could not be matche | after: ANSWERED                                                FLIPS
+R116  before: generated answer did not address the question's distinc | after: ANSWERED                                                FLIPS
+R117  before: citation invalid: unsupported claim could not be matche | after: citation invalid: unsupported claim could not be matche 
+R120  before: citation invalid: unsupported claim could not be matche | after: generated answer labeled occupations entry-level withou 
+R122  before: generated answer did not address the question's distinc | after: generated answer did not address the question's distinc 
+S124  before: generated answer did not address the question's distinc | after: generated answer did not address the question's distinc 
+S135  before: generated answer did not address the question's distinc | after: generated answer did not address the question's distinc 
+S136  before: generated answer did not address the question's distinc | after: generated answer did not address the question's distinc 
+S139  before: citation invalid: unsupported claim could not be matche | after: ANSWERED                                                FLIPS
+S140  before: generated answer did not address the question's distinc | after: ANSWERED                                                FLIPS
+X141  before: generated answer did not address the question's distinc | after: ANSWERED                                                FLIPS
+X143  before: citation invalid: unsupported claim could not be matche | after: citation invalid: unsupported claim could not be matche 
+X146  before: no generation (pre-generation gate)                     | after: no generation (pre-generation gate)                     
+X148  before: no generation (pre-generation gate)                     | after: no generation (pre-generation gate)                     
+X151  before: no generation (pre-generation gate)                     | after: no generation (pre-generation gate)                     
+T179  before: citation invalid: unsupported claim could not be matche | after: generated answer gave cybersecurity pathway advice beyo 
+T184  before: generated answer did not address the question's distinc | after: generated answer did not address the question's distinc 
+T192  before: citation invalid: unsupported claim could not be matche | after: ANSWERED                                                FLIPS
+T194  before: generated answer made a definite AI replacement claim w | after: generated answer made a definite AI replacement claim w 
+T195  before: no generation (pre-generation gate)                     | after: no generation (pre-generation gate)                     
+T200  before: citation invalid: unsupported claim could not be matche | after: ANSWERED                                                FLIPS
+
+12 of 46 would be answered
+
+P040 Should I start with Python, Java, or C++?
+  The UC Berkeley Engineering resource suggests that students without programming experience may struggle in CS 61A, which is typically taken by EECS students in their first semester [S2]. Additionally, the note from CENG AI Advisor highlights Python's popularity as the most-used language on GitHub [S3]. Starting with Python can provide a solid foundation and ease the transition into more advanced courses like Java or C++ [S2].
+
+H059 Do computer engineers work with microcontrollers?
+  Computer engineers often work with microcontrollers, which are small, low-cost microprocessors used in various electronic devices [S4]. The curriculum and career focus of computer engineering programs, as described in [S3] and [S4], emphasize the design of systems that involve the integration of software and hardware devices. This specialization area includes hardware systems, which often involves working with microcontrollers [S1] [S3].
+
+Y092 Is cryptography too math-heavy for me?
+  Cryptography is not overly math heavy for a Computer Engineering student [S1]. The curricula include sections on secret and public key cryptography, which are discussed in terms of their motivation and the impact of processing power on their effectiveness [S1] [S3]. Additionally, the Computing Competencies for Undergraduate Data Science Curricula section covers cryptographic concepts, including encryption, decryption, and public-key cryptography [S3].
+
+R109 Can I work remotely as a new graduate?
+  Based on the information provided, it is possible to work remotely as a new graduate in Computer Engineering [S2].
+
+R113 Will employers care about university name or skills?
+  The content from the Association for Computing Machinery and IEEE Computer Society suggests that computer engineers need to be lifelong learners to maintain their knowledge and skills within their chosen discipline [S3]. Employers will value both the institution's reputation and the practical skills a student has developed [S2].
+
+R115 Do open source contributions help?
+  Open source contributions can indeed help in the field of Computer Engineering [S4].
+
+R116 Can I start freelancing while studying?
+  The context mentions that students often work part-time while studying, which can provide them with the necessary real-world experience to help them decide on future career goals [S4]. Additionally, the curricula suggest that students may become disillusioned if they only focus on mathematics and science without computer engineering applications [S1]. However, the context does not provide specific information about the availability of part-time work or freelancing opportunities within the Computer Engineering program [S4].
+
+S139 Does the department have Erasmus agreements?
+  The OSTİM Technical University Department of Computer Engineering does not have explicit information about Erasmus agreements in their provided context [S3].
+
+S140 Can I study abroad for one semester as a CENG student?
+  Based on the information provided, it is not explicitly stated whether students can study abroad for one semester as a Computer Engineering student at OSTİM Technical University [S1]. The curriculum details mention courses in mathematics, physics, programming, and English-medium study expectations, but there is no specific mention of Erasmus or study abroad programs [S1].
+
+X141 I like AI and cybersecurity but hate electronics; is CENG still a good choice and what should I learn first?
+  Computer Engineering can still be a good choice for someone interested in AI and cybersecurity, despite a dislike for electronics [S1] [S4]. Given your interests, you should start by focusing on the aspects of cybersecurity that do not heavily rely on hardware, such as AI and software development [S1]. For cybersecurity, you should emphasize topics like cloud services, IAM, logging, and secure deployment, which are more aligned with your interests [S4].
+
+T192 Will it help my career?
+  Erasmus is an exchange program that allows students to study or work at another university for a semester or academic year [S1]. For CENG students at OSTIM Technical University, participating in Erasmus can potentially help their career by broadening their academic and professional experiences [S1].
+
+T200 Where do I find them?
+  Based on the information provided, there is no specific mention of the locations of the student clubs at Sports OSTİM Technical University [S1].

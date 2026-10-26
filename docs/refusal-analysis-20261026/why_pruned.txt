@@ -1,0 +1,235 @@
+
+== F012 What is the difference between IT and Computer Engineering?  [generated answer did not addre]
+   [no label] Computer Engineering involves the design and construction of processor-based systems, including hardware, soft
+   [no label] In contrast, Information Technology (IT) encompasses the use and management of technology in a business or org
+   [ok] IT professionals manage and maintain computer systems, networks, and software, ensuring they are secure and ef
+
+== C019 Do students take electronics and digital logic?  [generated answer did not addre]
+   [no label] [According to the context, students in a Computer Engineering program at OSTIM Technical University aim to gai
+   [no label] The program is designed to educate Computer engineers who will contribute to their institution and organizatio
+   [speculative] This suggests that students likely take courses in electronics and digital logic, as these subjects are fundam
+
+== C022 what lesson r in ceng? typo but mean courses  [generated answer did not addre]
+   [no label] In computer engineering curricula, introductory courses typically cover basic programming, digital logic, basi
+   [ok] These courses provide foundational knowledge necessary for further study in the field. [S1]
+
+== C025 Is the curriculum closer to EE or CS?  [generated answer did not addre]
+   [no label] The curriculum for Computer Engineering (CE) is closer to Computer Science (CSC) as it is administered jointly
+   [ok] This joint administration ensures a balance among computer systems, hardware, and software, as well as theory 
+
+== M032 math scary, should i quit ceng?  [generated answer did not addre]
+   [no label] [INSUFFICIENT_INFORMATION]
+   [no label] The context provided does not contain specific information about the difficulty level of math courses or the l
+   [no label] Therefore, it is not possible to determine if quitting computer engineering would be advisable based solely on
+
+== M033 Can good programming compensate for average mathematics?  [generated answer did not addre]
+   [no label] [INSUFFICIENT_INFORMATION]
+   [no label] Good programming skills alone cannot compensate for average mathematics skills in a Computer Engineering curri
+   [no label] The context does not provide specific information about whether programming can compensate for mathematics.
+   [no label] However, it is clear that both programming and mathematics are essential components of a Computer Engineering 
+   [no label] Programming courses cover fundamental concepts like object-oriented programming, while mathematics courses cov
+   [no label] Without a strong foundation in both areas, students may struggle to fully understand and apply the technical c
+
+== P040 Should I start with Python, Java, or C++?  [generated answer did not addre]
+   [no label] Given the context, it seems most appropriate to start with Python.
+   [no label] The UC Berkeley Engineering resource suggests that students without programming experience may struggle in CS 
+   [no label] Additionally, the note from CENG AI Advisor highlights Python's popularity as the most-used language on GitHub
+   [no label] Starting with Python can provide a solid foundation and ease the transition into more advanced courses like Ja
+
+== P041 Is C++ still useful for computer engineers?  [generated answer did not addre]
+   [no label] [ANSWER]
+   [no label] C++ remains a useful language for computer engineers.
+   [no label] The 2016 Computer Engineering Curricula by the Association for Computing Machinery and IEEE Computer Society (
+   [no label] C++ is a powerful language that is still widely used in various applications, including operating systems, dev
+   [no label] Therefore, proficiency in C++ is still valuable for computer engineers.
+   [no label] [USED_SOURCES]
+   [overlap(lex=0.00,sem=None)] [S1]
+
+== P046 I can only code simple apps; what skill next?  [generated answer did not addre]
+   [no label] Given that you can only code simple apps, the next skill you should focus on is understanding and working with
+   [no label] This will allow you to build more complex applications and integrate them with existing systems.
+   [no label] Additionally, learning about project management and software engineering practices will be beneficial, as you 
+   [ok] Building a portfolio of projects that demonstrate your ability to develop software professionally will also be
+
+== P049 git hub learn necessery?  [cited passage does not support]
+   [no label] [GitHub learning is necessary for Computer Engineering students, as evidenced by the curated note on the Softw
+   [no label] This includes skills such as Git/GitHub, debugging, design, communication, and teamwork, which are crucial for
+
+== H059 Do computer engineers work with microcontrollers?  [generated answer did not addre]
+   [no label] Computer engineers often work with microcontrollers, which are small, low-cost microprocessors used in various
+   [ok] The curriculum and career focus of computer engineering programs, as described in [S3] and [S4], emphasize the
+   [no label] This specialization area includes hardware systems, which often involves working with microcontrollers.
+   [no label] Therefore, it is reasonable to conclude that computer engineers frequently collaborate with microcontrollers i
+
+== H061 Are networks part of Computer Engineering?  [unsupported claim could not be]
+   [no label] [According to the context, Computer Engineering involves the design and construction of processor-based system
+   [ok] Specifically, [S3] states that Computer Engineering focuses on the synthesis of electrical engineering and com
+   [strong/relation/causal] This implies that networks are indeed part of Computer Engineering. [S2] provides additional context by mentio
+   [no label] Therefore, networks are a part of Computer Engineering.]
+
+== A071 Can a computer engineering student become an AI engineer?  [unsupported claim could not be]
+   [no label] A computer engineering student can become an AI engineer, provided they have a strong foundation in computer e
+   [ok] The curriculum of a computer engineering program, as outlined in [S2], emphasizes the importance of design thr
+   [ok] Additionally, the increasing access to and enrollment in high school computer science courses, as mentioned in
+   [no label] Therefore, a student with a strong background in computer engineering can indeed become an AI engineer by furt
+
+== Y092 Is cryptography too math-heavy for me?  [generated answer did not addre]
+   [no label] Based on the provided context, cryptography is not overly math heavy for a Computer Engineering student.
+   [no label] The curricula include sections on secret and public key cryptography, which are discussed in terms of their mo
+   [no label] Additionally, the Computing Competencies for Undergraduate Data Science Curricula section covers cryptographic
+   [overlap(lex=0.21,sem=0.51)] These topics are presented in a way that balances theoretical understanding with practical applications, makin
+
+== Y094 Can I learn security without doing illegal hacking?  [unsupported claim could not be]
+   [no label] Yes, you can learn security without engaging in illegal hacking.
+   [no label] The provided context suggests that cybersecurity education includes both technical and nontechnical dimensions
+   [ok] For instance, [S1] mentions that cybersecurity education encompasses technical and nontechnical aspects, which
+   [ok] Additionally, [S2] highlights the cybersecurity career pathways tool, which is useful for role exploration and
+   [no label] This tool can help you understand various cybersecurity roles and responsibilities, including those that do no
+   [ok] Therefore, you can pursue a cybersecurity education that focuses on legitimate security practices and roles. [
+
+== R096 Is it easy to find a job after CENG?  [unsupported claim could not be]
+   [no label] Based on the information provided, the average time to find a job after obtaining a bachelor's degree in compu
+   [strong/relation/causal] This suggests that it is relatively easy to find a job after completing a bachelor's degree in computer engine
+
+== R097 What should I include in my CV as a CENG student?  [generated answer did not addre]
+   [no label] [ANSWER]
+   [no label] As a computer engineering student, you should include sections that highlight your technical skills and experi
+   [no label] Additionally, it's important to demonstrate your career readiness by showcasing your communication, critical t
+   [ok] This can be done through various projects and experiences, as well as presentations, documentation, and respon
+   [no label] [USED_SOURCES]
+   [overlap(lex=0.00,sem=0.41)] [S1], [S2], [S3], [S4]
+
+== R100 Does low GPA ruin my software career?  [generated answer did not addre]
+   [no label] Low GPA does not necessarily ruin your software career in Computer Engineering.
+   [no label] While GPA is not the only factor considered by employers, it is still an important aspect of a student's acade
+   [no label] The context suggests that employers are increasingly using skills-based hiring rather than GPA screening.
+   [no label] This means that a student's ability to demonstrate their skills and potential, through internships, projects, 
+   [overlap(lex=0.14,sem=0.67)] However, it is still crucial to have a strong academic foundation, as GPA is often seen as a measure of a stud
+
+== R105 How can I get my first internship?  [generated answer did not addre]
+   [no label] To get your first internship in Computer Engineering, you can start by developing a strong resume and cover le
+   [no label] Engaging in internships or on-the-job training during your studies is crucial, as it allows you to apply your 
+   [no label] Additionally, participating in co-curricular activities and demonstrating your career readiness skills through
+   [ok] These skills are valued by employers and can help you stand out in the job market. [S2] [S3] [S4]
+
+== R109 Can I work remotely as a new graduate?  [unsupported claim could not be]
+   [no label] [Based on the information provided, it is possible to work remotely as a new graduate in Computer Engineering.
+   [no label] However, the specific requirements and opportunities can vary widely depending on the employer and the job mar
+   [no label] For instance, the occupation of Computer Hardware Engineers (17-2061.00) has a bright outlook and may offer op
+   [overlap(lex=0.00,sem=0.43)] Additionally, the prevalence of hybrid work models suggests that remote work is becoming more common, but it i
+
+== R112 How long until I become senior engineer?  [generated answer did not addre]
+   [no label] Based on the information provided, becoming a senior engineer in a computer engineering program typically requ
+   [no label] The typical program structure includes 120 semester credit hours, with each year of study consisting of 30 sem
+   [no label] This means that to complete a computer engineering program, one would need to accumulate 360 semester hours ov
+   [overlap(lex=0.00,sem=0.5)] The specific timeline for becoming a senior engineer is not provided in the given context, but the structure o
+
+== R113 Will employers care about university name or skills?  [generated answer did not addre]
+   [no label] [Employers will likely care about both the university name and the skills acquired.
+   [no label] While a prestigious university name can be a positive indicator of quality education, it is the skills and kno
+   [no label] The content from the Association for Computing Machinery and IEEE Computer Society suggests that computer engi
+   [no label] This implies that employers will value both the institution's reputation and the practical skills a student ha
+
+== R115 Do open source contributions help?  [unsupported claim could not be]
+   [no label] [ANSWER]
+   [no label] Open source contributions can indeed help in the field of Computer Engineering.
+   [no label] For instance, the LAiSER initiative, an open-source project led by George Washington University, leverages lar
+   [no label] This initiative aims to address interoperability gaps by providing a common language for skills, which is bene
+   [no label] Additionally, the report on Octoverse 2024 from GitHub, which tracks public and open-source activity on GitHub
+   [no label] [USED_SOURCES]
+   [overlap(lex=0.00,sem=0.34)] [S1], [S2], [S3], [S4]
+
+== R116 Can I start freelancing while studying?  [generated answer did not addre]
+   [no label] Based on the provided context, it is possible to start freelancing while studying Computer Engineering, but it
+   [no label] The context mentions that students often work part-time while studying, which can provide them with the necess
+   [no label] Additionally, the curricula suggest that students may become disillusioned if they only focus on mathematics a
+   [ok] However, the context does not provide specific information about the availability of part-time work or freelan
+
+== R117 Should I build mobile apps, web apps, or embedded projects?  [unsupported claim could not be]
+   [no label] Based on the provided context, you should consider building projects that align with your interests and the sk
+   [ok] The [S1] source emphasizes the importance of a comprehensive skill set in software engineering, including back
+   [no label] Given this, you might want to explore projects that integrate multiple aspects of software engineering, such a
+   [ok] Additionally, the [S3] source highlights the importance of understanding and engaging with emerging technologi
+   [ok] Therefore, building projects that involve mobile apps, web apps, and embedded systems could be beneficial. [S2
+
+== R120 What are entry-level computer engineering job titles?  [unsupported claim could not be]
+   [no label] Entry-level job titles for computer engineering graduates include positions such as Computer Hardware Engineer
+   [overlap(lex=0.20,sem=0.65)] These roles often require a bachelor's degree in computer engineering or a related field. [S1] [S2]
+
+== R122 Should I apply to jobs before graduating?  [generated answer did not addre]
+   [no label] Based on the context provided, it seems that many employers value practical experience and examples of skills,
+   [number] The NACE survey mentioned in [S1] indicates that students are increasingly recognizing the importance of gaini
+   [overlap(lex=0.17,sem=0.63)] This suggests that applying to jobs before graduating could be beneficial, as it allows you to gain relevant e
+
+== S124 Is a master's necessary for industry jobs?  [generated answer did not addre]
+   [strong/relation/causal] A master's degree is not strictly necessary for industry jobs in Computer Engineering, as the [S1] context sug
+   [ok] However, the [S2] context indicates that a bachelor's degree is often sufficient for industry positions, and t
+   [strong/relation/causal] Therefore, while a master's degree may be beneficial, it is not a necessity for all industry jobs in Computer 
+
+== S135 Is OSTIM connected with industry?  [generated answer did not addre]
+   [no label] [OSTIM Technical University - Department of Computer Engineering (English)] states that a participatory traini
+   [no label] This indicates that OSTIM is connected with industry, as it aims to benefit from the knowledge and experiences
+
+== S136 What makes OSTIM CENG different?  [generated answer did not addre]
+   [no label] OSTIM Technical University's Computer Engineering program is distinguished by its focus on developing skills f
+   [no label] The program also emphasizes personal research, the production of information from a universal perspective, and
+   [no label] Additionally, it encourages the sharing of knowledge and experience with society and industry.
+   [no label] This program is tailored to meet the needs of the institution and organization, preparing students to contribu
+
+== S139 Does the department have Erasmus agreements?  [unsupported claim could not be]
+   [no label] [USED_SOURCES]
+   [overlap(lex=0.00,sem=0.36)] [S1], [S2], [S3], [S4]
+   [no label] The OSTİM Technical University Department of Computer Engineering does not have explicit information about Era
+   [no label] The context does not mention any Erasmus agreements or partnerships.
+   [no label] Therefore, based on the available information, there is insufficient evidence to determine if the department h
+   [no label] For a more comprehensive answer, additional research would be needed to confirm the presence or absence of Era
+
+== S140 Can I study abroad for one semester as a CENG student?  [generated answer did not addre]
+   [no label] Based on the information provided, it is not explicitly stated whether students can study abroad for one semes
+   [no label] The curriculum details mention courses in mathematics, physics, programming, and English-medium study expectat
+   [overlap(lex=0.00,sem=0.37)] Therefore, I cannot confirm or deny this option based solely on the given context. [S1]
+
+== X141 I like AI and cybersecurity but hate electronics; is CENG still a good choice and what should I learn first?  [generated answer did not addre]
+   [no label] Computer Engineering can still be a good choice for someone interested in AI and cybersecurity, despite a disl
+   [no label] Given your interests, you should start by focusing on the aspects of cybersecurity that do not heavily rely on
+   [no label] For cybersecurity, you should emphasize topics like cloud services, IAM, logging, and secure deployment, which
+   [no label] Additionally, since you have a preference for AI, you should also learn about programming, code review, testin
+   [overlap(lex=0.00,sem=0.52)] This will allow you to build a strong foundation in cybersecurity without needing to delve deeply into electro
+
+== X143 If I want remote work abroad, should I prioritize English, portfolio, cloud, or algorithms?  [unsupported claim could not be]
+   [no label] If you are looking to pursue remote work abroad in the field of computer engineering, it is important to prior
+   [no label] Given that many remote work opportunities require proficiency in English, having a strong English portfolio wi
+   [no label] Additionally, since cloud computing is a significant aspect of modern software engineering, understanding clou
+   [no label] Therefore, you should focus on improving your English language skills and gaining a solid understanding of clo
+
+== T179 What skills should I build?  [unsupported claim could not be]
+   [strong/relation/causal] To work in cybersecurity, you should build skills in cognitive skills, technology skills, and ethics, as these
+   [no label] The Future of Jobs Report 2025.
+   [no label] Specifically, the report emphasizes the importance of technology skills, such as AI and big data, and cybersec
+   [overlap(lex=0.00,sem=0.53)] Additionally, ethical considerations are important, as cybersecurity professionals need to ensure that their w
+
+== T184 What projects should I build?  [generated answer did not addre]
+   [no label] Given your preference for hardware, you might consider building projects that involve hardware design, prototy
+   [no label] For example, you could create a custom circuit board or a hardware device that interfaces with software system
+   [no label] Additionally, you could work on building and modifying product prototypes, which is a related occupation as me
+   [ok] This would allow you to apply your skills in hardware engineering and interface with software and system requi
+
+== T192 Will it help my career?  [generated answer did not addre]
+   [no label] [ANSWER]
+   [no label] Erasmus is an exchange program that allows students to study or work at another university for a semester or a
+   [no label] For CENG students at OSTIM Technical University, participating in Erasmus can potentially help their career by
+   [no label] Erasmus programs often involve studying abroad, which can expose students to different educational systems and
+   [no label] These skills are highly valued in many professional fields, including computer engineering.
+   [overlap(lex=0.00,sem=0.52)] Additionally, Erasmus can provide opportunities for students to collaborate with international peers and facul
+   [no label] [USED_SOURCES]
+   [overlap(lex=0.00,sem=None)] [S1]
+   [overlap(lex=0.00,sem=None)] [S2]
+
+== T200 Where do I find them?  [unsupported claim could not be]
+   [no label] Based on the information provided, there is no specific mention of the locations of the student clubs at Sport
+   [no label] The context only lists the categories and some of the names of the student clubs, but does not provide details
+   [no label] To find more information about the student clubs, you might want to visit the Student Affairs Main Page, which
+   [no label] However, I cannot provide specific locations without additional information.
+
+guards: {'no valid label': 114, 'ok': 19, 'speculative': 1, 'overlap': 16, 'strong/relation/causal': 5, 'number': 1}
+best semantic score of overlap-rejected sentences: [0, 0, 0, 0.35, 0.36, 0.37, 0.41, 0.5, 0.52, 0.53, 0.54, 0.59, 0.63, 0.64, 0.65, 0.67]

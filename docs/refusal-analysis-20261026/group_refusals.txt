@@ -1,0 +1,9 @@
+incorrect_refusal_evidence_exists: 46
+   25 topic-term check after generation: F012 C019 C022 C025 M032 M033 P040 P041 P046 H059 Y092 R097 R100 R105 R112 R113 R116 R122 S124 S135 S136 S140 X141 T184 T192
+   13 claim-support / citation validation: P049 H061 A071 Y094 R096 R109 R115 R117 R120 S139 X143 T179 T200
+    7 answerability guard before generation: M031 P054 H065 X146 X148 X151 T195
+    1 other guard after generation: generated answer made a definite AI replacement claim without direct replacement evidence: T194
+correct_insufficient_information: 32
+   17 retrieval evidence gate: U155 U160 U161 U162 O166 O167 O168 O169 O170 O171 O172 O173 O174 O175 O176 O177 O178
+   14 answerability guard before generation: R110 R111 S130 S138 U153 U154 U156 U157 U158 U159 U163 U164 U165 T193
+    1 claim-support / citation validation: S131
